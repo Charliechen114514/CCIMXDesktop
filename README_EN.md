@@ -1,0 +1,58 @@
+# CCIMXDESKTOP
+
+​	Hello!!! This is a Simple Desktop And Utils Which can be used in Multiple Embedded Devices. for me, it starts the suite tailored for the i.MX platform, combining built-in system gadgets and extendable external apps. This project is designed to try it best with Qt and supports integration with various hardware sensors and multimedia interfaces.
+
+## 🌟 Language For Starting Tour 🌟
+
+[English Version](./README_EN.md)
+
+[中文](./README.md)
+
+## 🌟 Project Overview 🌟
+
+**CCIMXDESKTOP** provides a lightweight, extensible desktop environment specifically optimized for embedded systems based on the NXP i.MX6ULL platform. It includes a series of built-in tools, device integration layers, and third-party apps, all presented in a cohesive user interface.
+
+------
+
+## 🛠️ Technologies Used for Base Build
+
+For beginners mappings the base desktop, it is simple that Qt6 Core Widgets And Core Networks should be supported in the  Embedded devices. And TSLIB and Linux framebuffer backend for display should be ready also.
+
+## 🛠️ Technologies Used for FULL Build
+
+- OpenCV For the Camera Support
+- MuPDF (for PDF rendering)     (These is used for the mupdf based pdfreader)
+
+------
+
+## 🧩 Developer Reference
+
+- [Module Explanations](Components-explain-EN.md)
+
+---
+
+## 📚Project Documentation
+
+If you are interested in the project production process and development documents, please refer to the Documentations folder
+
+## 💡 Future Plans
+
+- Plan to write and provide more external basic programs:
+
+  - Chat room
+  - Image browser
+  - Image processor
+  - Simple text editor
+  - Audio player
+  - Serial port assistant
+  - Image processor local processing of images and simple reasoning (face recognition)
+  - Light switch APP
+  - Horn APP
+  - Environment APP
+  - Posture detection APP
+
+------
+
+## 📝 License
+
+This project is based on MIT License, feel free to transplant, modified and use!
