@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>cloudy.png</file>
+        <file>rainy.png</file>
+        <file>snowy.png</file>
+        <file>sunny.png</file>
+        <file>refresh.png</file>
+        <file>exit.png</file>
+    </qresource>
+</RCC>

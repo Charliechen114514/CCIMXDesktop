@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>back_to_parent.png</file>
+        <file>back_to_root.png</file>
+        <file>arrow_down.png</file>
+        <file>arrow_right.png</file>
+    </qresource>
+</RCC>

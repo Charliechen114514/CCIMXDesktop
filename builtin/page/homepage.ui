@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HomePage</class>
+ <widget class="QWidget" name="HomePage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>642</width>
+    <height>399</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,1">
+   <item>
+    <widget class="QWidget" name="left_side_widget" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout_2" stretch="5,2">
+      <item>
+       <widget class="ClockWidget" name="left_top_widget" native="true"/>
+      </item>
+      <item>
+       <widget class="DigitalTimeWidget" name="left_bottom_widget" native="true"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="right_side_widget" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout" stretch="1,1">
+      <item>
+       <widget class="QWidget" name="right_top_widget" native="true">
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <widget class="QCalendarWidget" name="calendarWidget">
+           <property name="styleSheet">
+            <string notr="true">QCalendarWidget {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 16px;
+    font-family: &quot;Helvetica Neue&quot;, &quot;Arial&quot;, &quot;Microsoft YaHei&quot;;
+    font-size: 14px;
+    color: #333333;
+}
+
+QCalendarWidget QToolButton {
+    background-color: transparent;
+    color: #333333;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    margin: 6px;
+    border-radius: 8px;
+    padding: 4px 8px;
+}
+
+QCalendarWidget QToolButton:hover {
+    background-color: #e3f2fd;
+    color: #1e88e5;
+}
+
+QCalendarWidget QMenu {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+QCalendarWidget QSpinBox {
+    background: transparent;
+    font-size: 14px;
+    color: #333333;
+    border: none;
+}
+
+QCalendarWidget QWidget#qt_calendar_navigationbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+QCalendarWidget QTableView {
+    border: none;
+    gridline-color: #eeeeee;
+    selection-background-color: #90caf9;
+    selection-color: white;
+    font-size: 14px;
+    background-color: #ffffff;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+QCalendarWidget QHeaderView::section {
+    background-color: #ffffff;
+    color: #757575;
+    font-weight: bold;
+    border: none;
+    font-size: 13px;
+}
+
+QCalendarWidget QAbstractItemView:enabled {
+    color: #333333;
+    background-color: #ffffff;
+    selection-background-color: #90caf9;
+    selection-color: white;
+}
+
+QCalendarWidget QAbstractItemView:disabled {
+    color: #cccccc;
+}
+
+QCalendarWidget#qt_calendar_calendarview {
+    outline: 0;
+}</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="right_bottom_widget" native="true"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ClockWidget</class>
+   <extends>QWidget</extends>
+   <header>clockwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>DigitalTimeWidget</class>
+   <extends>QWidget</extends>
+   <header>digitaltimewidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

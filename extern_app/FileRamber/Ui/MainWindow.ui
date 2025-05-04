@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1025</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1024</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* 通用基础 */
+* {
+    font-family: &quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif;
+    font-size: 14px;
+    color: #1f1f1f;
+    background: transparent;
+}
+
+/* QWidget 的默认背景 */
+QWidget {
+    background-color: #f3f3f3;
+}
+
+/* QLabel，用于标题、提示等 */
+QLabel {
+    color: #2d2d2d;
+    background-color: transparent;
+    font-size: 14px;
+}
+
+/* QLabel 类别标题样式 */
+QLabel[role=&quot;title&quot;] {
+    font-weight: bold;
+    font-size: 16px;
+    padding: 6px;
+}
+
+/* QTextBrowser：正文内容展示 */
+QTextBrowser {
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    border-radius: 6px;
+    padding: 8px;
+    selection-background-color: #0078d4;
+    selection-color: white;
+}
+
+/* QTreeView 通用结构 */
+QTreeView {
+    background-color: #ffffff;
+    alternate-background-color: #f9f9f9;
+    border: 1px solid #cfcfcf;
+    border-radius: 6px;
+    show-decoration-selected: 1;
+    selection-background-color: #0078d4;
+    selection-color: white;
+    outline: none;
+}
+
+/* QTreeView 行样式 */
+QTreeView::item {
+    height: 28px;
+    padding: 4px 8px;
+    border: none;
+}
+
+/* 鼠标悬停 */
+QTreeView::item:hover {
+    background-color: #e5f1fb;
+}
+
+/* 选中行 */
+QTreeView::item:selected {
+    background-color: #0078d4;
+    color: white;
+}
+
+/* QTreeView 分支样式（展开图标） */
+QTreeView::branch:has-children:!has-siblings:closed,
+QTreeView::branch:closed:has-children:has-siblings {
+    image: url(:/icons/arrow_right.png);
+}
+QTreeView::branch:open:has-children:!has-siblings,
+QTreeView::branch:open:has-children:has-siblings  {
+    image: url(:/icons/arrow_down.png);
+}
+
+/* 隐藏缺省的 + - 展开符号背景 */
+QTreeView::branch {
+    background: transparent;
+}
+
+/* 滚动条 - 通用滚动条风格 */
+QScrollBar:vertical, QScrollBar:horizontal {
+    background: transparent;
+    border: none;
+    width: 10px;
+    height: 10px;
+    margin: 2px;
+}
+
+QScrollBar::handle:vertical {
+    background: #cccccc;
+    min-height: 20px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:horizontal {
+    background: #cccccc;
+    min-width: 20px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:hover {
+    background: #a0a0a0;
+}
+
+QScrollBar::add-line, QScrollBar::sub-line {
+    width: 0;
+    height: 0;
+}
+
+QScrollBar::add-page, QScrollBar::sub-page {
+    background: none;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Orientation::Horizontal</enum>
+      </property>
+      <property name="handleWidth">
+       <number>5</number>
+      </property>
+      <property name="childrenCollapsible">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="FileTreeWidget" native="true">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QLabel" name="processing_label">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTreeView" name="fileTreeView"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="display_widget" native="true">
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="FileInfoDisplayWidget" name="show_widget" native="true"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1025</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonStyle::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionbackto_parent"/>
+   <addaction name="actionbackto_root"/>
+  </widget>
+  <action name="actionbackto_parent">
+   <property name="icon">
+    <iconset resource="../source/icons.qrc">
+     <normaloff>:/icons/back_to_parent.png</normaloff>:/icons/back_to_parent.png</iconset>
+   </property>
+   <property name="text">
+    <string>backto_parent</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionbackto_root">
+   <property name="icon">
+    <iconset resource="../source/icons.qrc">
+     <normaloff>:/icons/back_to_root.png</normaloff>:/icons/back_to_root.png</iconset>
+   </property>
+   <property name="text">
+    <string>backto_root</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>FileInfoDisplayWidget</class>
+   <extends>QWidget</extends>
+   <header>FileInfoDisplayWidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../source/icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>sources/def_icon.png</file>
+        <file>sources/def_icon2.png</file>
+        <file>sources/bg.png</file>
+        <file>sources/pdf_browser.png</file>
+        <file>sources/bg2.png</file>
+        <file>sources/weather_app.png</file>
+    </qresource>
+</RCC>

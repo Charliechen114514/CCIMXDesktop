@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/toolbars">
+        <file>sources/open_document.png</file>
+        <file>sources/metainfo.png</file>
+        <file>sources/quit.png</file>
+        <file>sources/zoom_out.png</file>
+        <file>sources/zoom_in.png</file>
+        <file>sources/prev_page.png</file>
+        <file>sources/next_page.png</file>
+        <file>sources/tools.png</file>
+    </qresource>
+</RCC>

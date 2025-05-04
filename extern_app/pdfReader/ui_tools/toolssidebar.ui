@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ToolsSideBar</class>
+ <widget class="QWidget" name="ToolsSideBar">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>200</width>
+    <height>440</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>200</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>250</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QToolBox {
+    background-color: qlineargradient(
+        x1: 0, y1: 0, x2: 0, y2: 1,
+        stop: 0 #e3f2fd,
+        stop: 1 #bbdefb
+    );
+    border: 1px solid #90caf9;
+    border-radius: 10px;
+    font-family: &quot;Microsoft YaHei&quot;, &quot;Arial&quot;;
+    font-size: 15px;
+    color: #0d47a1;
+}
+
+
+QToolBox::tab {
+    padding: 6px 12px;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 4px;
+    min-height: 40px; 
+    font-weight: bold;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    color: #0d47a1;
+}
+
+/* 选中的tab样式 */
+QToolBox::tab:selected {
+    color: #0d47a1;
+    font-weight: bold;
+}
+
+QPushButton {
+    background-color: qlineargradient(
+        x1: 0, y1: 0, x2: 0, y2: 1,
+        stop: 0 #bbdefb,
+        stop: 1 #90caf9
+    );
+    color: blue;
+    border: 1px solid #90caf9;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-family: &quot;Microsoft YaHei&quot;, &quot;Arial&quot;;
+    font-size: 13px;
+    min-height: 36px;
+    min-width: 80px;
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(
+        x1: 0, y1: 0, x2: 0, y2: 1,
+        stop: 0 #64b5f6,
+        stop: 1 #42a5f5
+    );
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(
+        x1: 0, y1: 0, x2: 0, y2: 1,
+        stop: 0 #bbdefb,
+        stop: 1 #90caf9
+    );
+}
+
+QPushButton:disabled {
+    background-color: #cfd8dc;
+    color: #90a4ae;
+    border: 1px solid #b0bec5;
+}
+
+</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QToolBox" name="toolBox">
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="page">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>180</width>
+        <height>348</height>
+       </rect>
+      </property>
+      <attribute name="label">
+       <string>Chapter</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QTreeWidget" name="outline_tree">
+         <attribute name="headerVisible">
+          <bool>false</bool>
+         </attribute>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>180</width>
+        <height>348</height>
+       </rect>
+      </property>
+      <attribute name="label">
+       <string>Tools</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QPushButton" name="btn_open_meta_info_window">
+         <property name="text">
+          <string>open meta info</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

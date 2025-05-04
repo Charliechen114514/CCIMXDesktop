@@ -1,0 +1,73 @@
+cmake_minimum_required(VERSION 3.19)
+project(GeneralLocalCamera LANGUAGES CXX)
+SET(CMAKE_AUTORCC ON)
+find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets)
+
+if(MSVC)
+    message(STATUS "Compiling with MSVC on Windows")
+    set(OpenCV_DIR "D:/stdcpp-library/opencvLibrary")
+elseif(CMAKE_CXX_COMPILER MATCHES "arm.*-g\\+\\+")
+    message(STATUS "Cross-compiling for ARM (IMX6ULL)")
+    set(OpenCV_DIR "/home/charliechen/imx6ull/opencv_res/lib/cmake/opencv4")
+else()
+    message(STATUS "Compiling for x86_64 or host (non-MSVC)")
+    set(OpenCV_DIR "/home/charliechen/imx6ull/opencv_res/lib/cmake/opencv4")
+endif()
+
+find_package(OpenCV REQUIRED)
+message(STATUS "OpenCV_LIBS = ${OpenCV_LIBS}")
+message(STATUS "OpenCV_INCLUDE_DIRS = ${OpenCV_INCLUDE_DIRS}")
+
+include_directories(. ./Core ./Ui)
+
+qt_standard_project_setup()
+
+set(UiSource
+    Ui/CameraWindow.cpp
+    Ui/CameraWindow.h
+    Ui/CameraWindow.ui
+    Ui/CameraDisplayWidget.h
+    Ui/CameraDisplayWidget.cpp
+    Ui/CameraDisplayWidget.ui
+    Ui/DesktopToast.cpp
+    Ui/DesktopToast.h)
+
+set(CoreSource
+    Core/CameraDeviceSelector.h
+    Core/CameraDeviceSelector.cpp
+    Core/CameraCapture.h
+    Core/CameraCapture.cpp
+    Core/PhotoSaver.h
+    Core/PhotoSaver.cpp)
+
+
+qt_add_executable(GeneralLocalCamera
+    WIN32 MACOSX_BUNDLE
+    main.cpp
+    ${UiSource}
+    ${CoreSource}
+    sources/icons.qrc
+)
+target_include_directories(GeneralLocalCamera PRIVATE ${OpenCV_INCLUDE_DIRS} ${OpenCV_INCLUDE_DIRS}/opencv2)
+
+target_link_libraries(GeneralLocalCamera
+    PRIVATE
+        Qt::Core
+        Qt::Widgets
+        ${OpenCV_LIBS}
+)
+
+include(GNUInstallDirs)
+
+install(TARGETS GeneralLocalCamera
+    BUNDLE  DESTINATION .
+    RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
+)
+
+qt_generate_deploy_app_script(
+    TARGET GeneralLocalCamera
+    OUTPUT_SCRIPT deploy_script
+    NO_UNSUPPORTED_PLATFORM_ERROR
+)
+install(SCRIPT ${deploy_script})

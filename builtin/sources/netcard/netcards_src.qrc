@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>disconnected_wifi.png</file>
+        <file>connected_wifi.png</file>
+        <file>wait_connecting.png</file>
+        <file>local_only.png</file>
+    </qresource>
+</RCC>

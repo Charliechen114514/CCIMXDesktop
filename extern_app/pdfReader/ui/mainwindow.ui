@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background-color: #f0f4f7;
+    font-family: &quot;Microsoft YaHei&quot;, &quot;Arial&quot;;
+    font-size: 16px;
+    color: #333333;
+}
+
+QMenuBar {
+    background-color: #dde6ec;
+    color: #333333;
+}
+
+QMenuBar::item {
+    background: transparent;
+    padding: 6px 12px;
+}
+
+QMenuBar::item:selected {
+    background: #cce4f7;
+    border-radius: 4px;
+}
+
+/* 滚动区域（如果有） */
+QScrollBar:vertical, QScrollBar:horizontal {
+    background: #f0f0f0;
+    border: none;
+    width: 10px;
+    height: 10px;
+}
+
+QScrollBar::handle:vertical, QScrollBar::handle:horizontal {
+    background: #a6c1d9;
+    border-radius: 5px;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="SideBarWidget" name="sidebarWidget" native="true"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>36</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonStyle::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionOpenDocument"/>
+   <addaction name="actionopen_toolbars"/>
+   <addaction name="actionQuit"/>
+   <addaction name="separator"/>
+   <addaction name="actionprev_page"/>
+   <addaction name="actionnext_page"/>
+   <addaction name="separator"/>
+   <addaction name="actionzoom_in"/>
+   <addaction name="actionzoom_out"/>
+   <addaction name="separator"/>
+  </widget>
+  <action name="actionOpenDocument">
+   <property name="icon">
+    <iconset resource="../icons.qrc">
+     <normaloff>:/toolbars/sources/open_document.png</normaloff>:/toolbars/sources/open_document.png</iconset>
+   </property>
+   <property name="text">
+    <string>OpenDocument</string>
+   </property>
+   <property name="toolTip">
+    <string>Open the document</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="icon">
+    <iconset resource="../icons.qrc">
+     <normaloff>:/toolbars/sources/quit.png</normaloff>:/toolbars/sources/quit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Quit</string>
+   </property>
+   <property name="toolTip">
+    <string>Quit The Application</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionprev_page">
+   <property name="icon">
+    <iconset resource="../icons.qrc">
+     <normaloff>:/toolbars/sources/prev_page.png</normaloff>:/toolbars/sources/prev_page.png</iconset>
+   </property>
+   <property name="text">
+    <string>prev_page</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionnext_page">
+   <property name="icon">
+    <iconset resource="../icons.qrc">
+     <normaloff>:/toolbars/sources/next_page.png</normaloff>:/toolbars/sources/next_page.png</iconset>
+   </property>
+   <property name="text">
+    <string>next_page</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionzoom_in">
+   <property name="icon">
+    <iconset resource="../icons.qrc">
+     <normaloff>:/toolbars/sources/zoom_in.png</normaloff>:/toolbars/sources/zoom_in.png</iconset>
+   </property>
+   <property name="text">
+    <string>zoom_in</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionzoom_out">
+   <property name="icon">
+    <iconset resource="../icons.qrc">
+     <normaloff>:/toolbars/sources/zoom_out.png</normaloff>:/toolbars/sources/zoom_out.png</iconset>
+   </property>
+   <property name="text">
+    <string>zoom_out</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionopen_toolbars">
+   <property name="icon">
+    <iconset resource="../icons.qrc">
+     <normaloff>:/toolbars/sources/tools.png</normaloff>:/toolbars/sources/tools.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open ToolBox</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>SideBarWidget</class>
+   <extends>QWidget</extends>
+   <header>SideBarWidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
