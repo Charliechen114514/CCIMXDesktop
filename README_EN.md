@@ -2,7 +2,7 @@
 
 ​	Hello!!! This is a Simple Desktop And Utils Which can be used in Multiple Embedded Devices. for me, it starts the suite tailored for the i.MX platform, combining built-in system gadgets and extendable external apps. This project is designed to try it best with Qt and supports integration with various hardware sensors and multimedia interfaces.
 
-## 🌟 Language For Starting Tour 🌟
+## 🌐 Language For Starting Tour 🌐
 
 [English Version](./README_EN.md)
 
