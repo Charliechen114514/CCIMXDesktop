@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SystemStateWindow</class>
+ <widget class="QMainWindow" name="SystemStateWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SystemStateWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">* {
+    background-color: #e6f0fa;             /* 主背景：浅蓝灰 */
+    color: #1e1e2e;                        /* 主文字：深蓝灰 */
+    font-family: Segoe UI, Arial, sans-serif;
+    font-size: 9pt;
+}
+
+/* QPushButton 样式 */
+QPushButton {
+    background-color: #8ab4f8;             /* 按钮背景色：浅蓝色 */
+    color: #1e1e2e;                        /* 按钮文字色 */
+    border: 1px solid #679df6;             /* 边框颜色 */
+    border-radius: 4px;                    /* 圆角边框 */
+    padding: 6px 12px;                     /* 按钮内边距 */
+    font-size: 10pt;
+}
+
+QPushButton:hover {
+    background-color: #679df6;             /* 悬停时背景色变亮蓝 */
+    border-color: #4fa3f7;                 /* 悬停时边框颜色 */
+}
+
+QPushButton:pressed {
+    background-color: #4fa3f7;             /* 按下时背景色 */
+    border-color: #3b8fc9;                 /* 按下时边框颜色 */
+}
+
+/* QLabel 样式 */
+QLabel {
+    color: #1e1e2e;                        /* 标签文字颜色 */
+    font-size: 10pt;                        /* 标签文字大小 */
+    padding: 4px 6px;                       /* 内边距 */
+    background-color: transparent;         /* 背景透明 */
+}
+
+/* QLabel 悬停样式 */
+QLabel:hover {
+    color: #4fa3f7;                        /* 悬停时文字变为亮蓝色 */
+    background-color: rgba(171, 192, 255, 100); /* 悬停时背景带透明蓝色 */
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QStackedWidget" name="display_stackwidget"/>
+    </item>
+    <item>
+     <widget class="QWidget" name="operating_widget" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>100</height>
+       </size>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="btn_cpu">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>70</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>CPU Usage</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_memory">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>70</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Memory Info</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_process">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>70</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Process Broswer</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>18</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
