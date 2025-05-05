@@ -77,4 +77,18 @@ void SystemStateWindow::setup_connections() {
 	connect(ui->btn_process, &QPushButton::clicked, this, [this]() {
 		switch_index(PageIndex::ProcessBrowser);
 	});
+
+	connect(ui->actioncpu, &QAction::triggered, this, [this]() {
+		switch_index(PageIndex::CPUUsage);
+	});
+
+	connect(ui->actionmemory, &QAction::triggered, this, [this]() {
+		switch_index(PageIndex::MemoryInfo);
+	});
+
+	connect(ui->actionprocess, &QAction::triggered, this, [this]() {
+		switch_index(PageIndex::ProcessBrowser);
+	});
+
+	connect(ui->actionexit, &QAction::triggered, this, QApplication::exit);
 }

@@ -7,11 +7,21 @@ set(UiSrc
     Ui/SystemStateWindow.cpp
     Ui/SystemStateWindow.h
     Ui/SystemStateWindow.ui
+    Ui/stackpage_switcher_animation.cpp Ui/stackpage_switcher_animation.h
+    Ui/CPUUsageChart.h Ui/CPUUsageChart.cpp Ui/CPUUsageChart.ui
+    Ui/MemoryUsageChart.h Ui/MemoryUsageChart.cpp Ui/MemoryUsageChart.ui
+    Ui/ProcessBrowserWidget.h Ui/ProcessBrowserWidget.cpp Ui/ProcessBrowserWidget.ui
 )
 
 set(CoreSrc
     Core/MemoryInfoFetcher.h
-    Core/MemoryInfoFetcher.cpp)
+    Core/MemoryInfoFetcher.cpp
+    Core/CPUStateFetcher.h Core/CPUStateFetcher.cpp
+    Core/ProcessBroswer.h Core/ProcessBroswer.cpp)
+
+set(PlatformAdapter
+    platforms/PlatformDriverFactory.h
+    platforms/PlatformDriverFactory.cpp)
 
 if(WIN32)
     message(STATUS "Build As the Windows Driver Platform")
@@ -29,15 +39,14 @@ qt_add_executable(SystemState
     ${UiSrc}
     ${CoreSrc}
     ${PlatformDriver}
+    ${PlatformAdapter}
     main.cpp
-    platforms/PlatformDriverFactory.h platforms/PlatformDriverFactory.cpp
-    Core/CPUStateFetcher.h Core/CPUStateFetcher.cpp
-    Core/ProcessBroswer.h Core/ProcessBroswer.cpp
-    Ui/stackpage_switcher_animation.cpp Ui/stackpage_switcher_animation.h
-    Ui/CPUUsageChart.h Ui/CPUUsageChart.cpp Ui/CPUUsageChart.ui
-    Ui/MemoryUsageChart.h Ui/MemoryUsageChart.cpp Ui/MemoryUsageChart.ui
-    Ui/ProcessBrowserWidget.h Ui/ProcessBrowserWidget.cpp Ui/ProcessBrowserWidget.ui
+    sources/icons.qrc
+)
 
+add_custom_command(TARGET SystemState POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E make_directory ${CCIMX_ALL_RELEASE_DIR}
+    COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:SystemState> ${CCIMX_ALL_RELEASE_DIR}
 )
 
 target_link_libraries(SystemState

@@ -30,7 +30,7 @@ void WeatherChartWidget::
 
 void WeatherChartWidget::switch_to_page(const Page& p) {
 	int currentIndex = ui->stackedWidget->currentIndex();
-	if (currentIndex < 0 || currentIndex == index)
+	if (currentIndex < 0 || currentIndex == p)
 		return;
 
 	StackpageSwitcherAnimation::AnimationInfo info;

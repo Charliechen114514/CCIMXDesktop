@@ -6,5 +6,8 @@
         <file>sources/pdf_browser.png</file>
         <file>sources/bg2.png</file>
         <file>sources/weather_app.png</file>
+        <file>sources/camera_app.png</file>
+        <file>sources/file_ramber.png</file>
+        <file>sources/system_state.png</file>
     </qresource>
 </RCC>

@@ -8,11 +8,18 @@ set(UiSrc
     Ui/MainWindow.h
     Ui/MainWindow.ui
     Ui/CCIMXFileSystemModel.h
-    Ui/CCIMXFileSystemModel.cpp)
+    Ui/CCIMXFileSystemModel.cpp
+    Ui/FileInfoDisplayWidget.h
+    Ui/FileInfoDisplayWidget.cpp
+    Ui/FileInfoDisplayWidget.ui)
 
 set(CoreSrc
     Core/FileInfoProvider.h Core/FileInfoProvider.cpp
-    Core/FileNameProviders.h Core/FileNameProviders.cpp)
+    Core/FileNameProviders.h Core/FileNameProviders.cpp
+    Core/FileCountInfo.h Core/FileCountInfo.cpp
+    Core/DirentSizeCounter.h Core/DirentSizeCounter.cpp
+    Core/FileTypeInfo.h Core/FileTypeInfo.cpp
+    Core/FileRamberTools.h Core/FileRamberTools.cpp)
 
 qt_standard_project_setup()
 
@@ -21,13 +28,12 @@ qt_add_executable(FileRamber
     ${UiSrc}
     ${CoreSrc}
     main.cpp
-    Core/FileCountInfo.h Core/FileCountInfo.cpp
-    Core/DirentSizeCounter.h Core/DirentSizeCounter.cpp
-    Core/FileTypeInfo.h Core/FileTypeInfo.cpp
     source/icons.qrc
-    Ui/FileInfoDisplayWidget.h Ui/FileInfoDisplayWidget.cpp Ui/FileInfoDisplayWidget.ui
-    Core/FileRamberTools.h Core/FileRamberTools.cpp
+)
 
+add_custom_command(TARGET FileRamber POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E make_directory ${CCIMX_ALL_RELEASE_DIR}
+    COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:FileRamber> ${CCIMX_ALL_RELEASE_DIR}
 )
 
 target_link_libraries(FileRamber

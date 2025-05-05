@@ -136,3 +136,7 @@ add_subdirectory(extern_app/GeneralLocalCamera)
 message(STATUS
         "Ready to build the FileRamber due to the INCLUDE_FILERAMBER_APP")
 add_subdirectory(extern_app/FileRamber)
+
+message(STATUS
+        "Ready to build the FileRamber due to the INCLUDE_SYSTEMSTATUS_APP")
+add_subdirectory(extern_app/SystemState)

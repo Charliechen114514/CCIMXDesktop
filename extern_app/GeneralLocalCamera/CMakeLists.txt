@@ -48,6 +48,12 @@ qt_add_executable(GeneralLocalCamera
     ${CoreSource}
     sources/icons.qrc
 )
+
+add_custom_command(TARGET GeneralLocalCamera POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E make_directory ${CCIMX_ALL_RELEASE_DIR}
+    COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:GeneralLocalCamera> ${CCIMX_ALL_RELEASE_DIR}
+)
+
 target_include_directories(GeneralLocalCamera PRIVATE ${OpenCV_INCLUDE_DIRS} ${OpenCV_INCLUDE_DIRS}/opencv2)
 
 target_link_libraries(GeneralLocalCamera
