@@ -38,6 +38,7 @@ void from_windows_cpu(CPUStateFetcher::CPUState& stat) {
 	stat.idle = fileTimeToInt64(idleTime) / 10000000.0;
 	stat.kernel = fileTimeToInt64(kernelTime) / 10000000.0;
 	stat.user = fileTimeToInt64(userTime) / 10000000.0;
+	stat.tol = stat.kernel + stat.user;
 }
 
 QString getProcessUserName(HANDLE processHandle) {

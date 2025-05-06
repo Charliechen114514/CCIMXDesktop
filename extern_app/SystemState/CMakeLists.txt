@@ -25,9 +25,14 @@ set(PlatformAdapter
 
 if(WIN32)
     message(STATUS "Build As the Windows Driver Platform")
-    set(PlatformDriver platforms/Win32PlatformDrivers.h platforms/Win32PlatformDrivers.cpp)
+    set(PlatformDriver
+        platforms/Win32PlatformDrivers.h
+        platforms/Win32PlatformDrivers.cpp)
 else()
     message(STATUS "Build As the Linux or *nix Platform")
+    set(PlatformDriver
+        platforms/linuxplatformdrivers.h
+        platforms/linuxplatformdrivers.cpp)
 endif()
 
 include_directories(. ./Ui ./Core ./platform)

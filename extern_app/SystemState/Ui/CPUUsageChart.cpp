@@ -5,7 +5,7 @@
 #include <QValueAxis>
 void CPUUsageChart::flush_from_cpudriver(const CPUStateFetcher::CPUState& state) {
 
-	double tol = state.kernel + state.user;
+    double tol = state.tol;
 	double delta_tol = tol - cached_data.last_tol;
 	double delta_idle = state.idle - cached_data.last_idle;
 	/* cached the previous one */

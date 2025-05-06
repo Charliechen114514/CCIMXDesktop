@@ -14,6 +14,7 @@ public:
 		double idle;
 		double user;
 		double kernel;
+        double tol;
 	} cpustate;
 	void set_capture_state(bool st);
 signals:

@@ -67,7 +67,7 @@ if(MSVC)
     )
 else()
     set_target_properties(mupdf-third PROPERTIES
-        IMPORTED_LOCATION ${MUPDF_LIB_DIR}/mupdf-third.a
+        IMPORTED_LOCATION ${MUPDF_LIB_DIR}/libmupdf-third.a
 )
 endif()
 

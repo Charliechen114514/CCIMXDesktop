@@ -3,7 +3,7 @@
 #ifdef Q_OS_WIN
 #include "platforms/Win32PlatformDrivers.h"
 #else
-
+#include "platforms/linuxplatformdrivers.h"
 #endif
 
 CCIMX_AbstractMemoryInfoDriver* PlatformDriverFactory::
@@ -11,7 +11,7 @@ CCIMX_AbstractMemoryInfoDriver* PlatformDriverFactory::
 #ifdef Q_OS_WIN
 	return new Win32PlatformMemoryInfoDriver();
 #else
-	return nullptr;
+    return new LinuxPlatformMemoryInfoDriver();
 #endif
 }
 
@@ -20,7 +20,7 @@ CCIMX_AbstractCPUStateDriver* PlatformDriverFactory::
 #ifdef Q_OS_WIN
 	return new Win32PlatformCPUStateDriver();
 #else
-	return nullptr;
+    return new LinuxPlatformCPUStateDriver();
 #endif
 }
 
@@ -29,6 +29,6 @@ CCIMX_AbstractProcessBroswerDriver* PlatformDriverFactory::
 #ifdef Q_OS_WIN
 	return new Win32PlatformProcessBroswerDriver();
 #else
-	return nullptr;
+    return new LinuxPlatformProcessBrowserDriver();
 #endif
 }

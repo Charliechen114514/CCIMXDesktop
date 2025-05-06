@@ -32,17 +32,17 @@ void ProcessBroswer::flush_once() {
 	/* flush the info for once */
 	platform_driver_base->factory(process_list);
 #ifdef QT_DEBUG
-	qDebug() << "Fetch the process list once: " << process_list.size();
-	for (const auto& process : std::as_const(process_list)) {
-		qDebug() << "PID:" << process.pid
-				 << "PPID:" << process.ppid
-				 << "Name:" << process.name
-				 << "FullPath:" << process.fullPath
-				 << "ThreadCount:" << process.threadCount
-				 << "MemoryUsageKB:" << process.memoryUsageKB
-				 << "CPUPercent:" << process.cpuPercent
-				 << "UserName:" << process.userName;
-	}
+    // qDebug() << "Fetch the process list once: " << process_list.size();
+    // for (const auto& process : std::as_const(process_list)) {
+    // 	qDebug() << "PID:" << process.pid
+    // 			 << "PPID:" << process.ppid
+    // 			 << "Name:" << process.name
+    // 			 << "FullPath:" << process.fullPath
+    // 			 << "ThreadCount:" << process.threadCount
+    // 			 << "MemoryUsageKB:" << process.memoryUsageKB
+    // 			 << "CPUPercent:" << process.cpuPercent
+    // 			 << "UserName:" << process.userName;
+    // }
 #endif
 	emit fetch_finish(process_list);
 }
