@@ -12,6 +12,16 @@
 
 **CCIMXDESKTOP** provides a lightweight, extensible desktop environment specifically optimized for embedded systems based on the NXP i.MX6ULL platform. It includes a series of built-in tools, device integration layers, and third-party apps, all presented in a cohesive user interface.
 
+Currently, CCIMXDesktop supports one-click building including:
+
+- Basic desktop environment and application abstraction
+- Builtin Apps (Indoor temperature requires that the ICM20608 driver has been mounted and is available, and other sensors need to modify the interface content by themselves (just rewrite how to read) and network degree detection (requires Qt Networks Core to be supported))
+- WeatherAPP (requires your device to be connected to the Internet to be available)
+- pdfReader (requires you to have the dependent static library of mupdf on your platform)
+- FileRamber (file browser, with basic file navigation, Tiny version of Windows Explorer.exe)
+- GeneralLocalCamera (This is a basic camera based on Opencv VideoCapture, which can realize the photo taking function)
+- SystemState (view the CPU status, memory capacity status and process list of the running machine)
+
 ------
 
 ## 🛠️ Technologies Used for Base Build
