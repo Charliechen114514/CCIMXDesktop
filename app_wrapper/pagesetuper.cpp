@@ -67,45 +67,52 @@ void PageSetuper::
 QList<AppWidget*> PageSetuper::create_real_app(DesktopMainWindow* mainWindow) {
 
 	QList<PageSetuper::PageSetupSessionRequest> req;
-
+	ApplicationWrapper* wrapper = nullptr;
+#ifdef INCLUDE_PDF_BROWSER_APP
 	/* app page of PDF Browser */
 	QString pdf_path;
 	pdf_path = _EXTERNAPP_INSTALL_DIR "/pdfReader";
-	ApplicationWrapper* wrapper = new ApplicationWrapper(mainWindow, mainWindow);
+	wrapper = new ApplicationWrapper(mainWindow, mainWindow);
 	wrapper->set_app_path(pdf_path);
 	mainWindow->install_remote_appwrapper(wrapper);
 	req.push_back({ ":/icons/sources/pdf_browser.png", "PDF Browser", wrapper });
+#endif
 
-	/* app page of the weather app */
+#ifdef INCLUDE_WEATHER_APP
+	/* app page of the Weather */
 	QString weather_app_path;
 	weather_app_path = _EXTERNAPP_INSTALL_DIR "/WeatherApp";
 	wrapper = new ApplicationWrapper(mainWindow, mainWindow);
 	wrapper->set_app_path(weather_app_path);
 	mainWindow->install_remote_appwrapper(wrapper);
 	req.push_back({ ":/icons/sources/weather_app.png", "Weather App", wrapper });
+#endif
 
+#ifdef INCLUDE_CAMERA_APP
 	/* app page of the GeneralLocalCamera */
-	QString camera_app_path;
-	camera_app_path = _EXTERNAPP_INSTALL_DIR "/GeneralLocalCamera";
+	QString camera_app_path = _EXTERNAPP_INSTALL_DIR "/GeneralLocalCamera";
 	wrapper = new ApplicationWrapper(mainWindow, mainWindow);
 	wrapper->set_app_path(camera_app_path);
 	mainWindow->install_remote_appwrapper(wrapper);
 	req.push_back({ ":/icons/sources/camera_app.png", "Camera App", wrapper });
+#endif
+
+#ifdef INCLUDE_SYSTEMSTATUS_APP
 	/* app page of the SystemState */
-	QString system_state_path;
-	system_state_path = _EXTERNAPP_INSTALL_DIR "/SystemState";
+	QString system_state_path = _EXTERNAPP_INSTALL_DIR "/SystemState";
 	wrapper = new ApplicationWrapper(mainWindow, mainWindow);
 	wrapper->set_app_path(system_state_path);
 	mainWindow->install_remote_appwrapper(wrapper);
 	req.push_back({ ":/icons/sources/system_state.png", "SystemState", wrapper });
+#endif
 
+#ifdef INCLUDE_FILERAMBER_APP
 	/* app page of the FileRamber */
-	QString file_ramber_path;
-	file_ramber_path = _EXTERNAPP_INSTALL_DIR "/FileRamber";
+	QString file_ramber_path = _EXTERNAPP_INSTALL_DIR "/FileRamber";
 	wrapper = new ApplicationWrapper(mainWindow, mainWindow);
 	wrapper->set_app_path(file_ramber_path);
 	mainWindow->install_remote_appwrapper(wrapper);
 	req.push_back({ ":/icons/sources/file_ramber.png", "FileRamber", wrapper });
-
+#endif
 	return PageSetuper::create_one_app_only_page_append(mainWindow->stackedWidget(), mainWindow, req);
 }

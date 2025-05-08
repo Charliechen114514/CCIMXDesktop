@@ -1,30 +1,80 @@
 cmake_minimum_required(VERSION 3.19)
 project(CCIMX_Desktop LANGUAGES CXX)
 set(CMAKE_AUTORCC ON)
-find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets Network)
 
+# Options for support
+option(INCLUDE_WEATHER_APP "Build the Weather App" ON)
+option(INCLUDE_PDF_BROWSER_APP "Build the PDF Browser App" ON)
+option(INCLUDE_CAMERA_APP "Build the Camera App" ON)
+option(INCLUDE_FILERAMBER_APP "Build the FileRamber App" ON)
+option(INCLUDE_SYSTEMSTATUS_APP "Build the System Status App" ON)
+
+find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets Network)
 qt_standard_project_setup()
 
-get_filename_component(COMPILER_NAME ${CMAKE_CXX_COMPILER} NAME)
+# Options for the default use install
+set(_DEF_RELEASE_BASE_MSVC_RELEASE  "D:/NewQtProjects/Release/")
+set(_DEF_RELEASE_BASE_GCC_RELEASE   "/home/charliechen/imx6ull/qt683_project/CCDesktopRelease")
 
 # This part aims to find the Cross compile
 # If you only get the arm mupdf compiles, do notice to select the
 # correct kits with correct arch and compilers
+message(STATUS "Ready to select the install path for the cross compile")
+# if the CCIMX_ALL_RELEASE_DIR_BASE is not defined, set it to a default value
+if(NOT DEFINED CCIMX_ALL_RELEASE_DIR_BASE OR CCIMX_ALL_RELEASE_DIR_BASE STREQUAL "")
+    message(STATUS "CCIMX_ALL_RELEASE_DIR_BASE is not defined, set to default value")
+    if(MSVC)
+        message(STATUS "MSVC compiler detected, assume you are in Windows")
+        set(_default_release_base ${_DEF_RELEASE_BASE_MSVC_RELEASE})
+    else()
+        set(_default_release_base ${_DEF_RELEASE_BASE_GCC_RELEASE})
+    endif()
 
+    if(NOT IS_DIRECTORY "${_default_release_base}")
+        message(FATAL_ERROR
+            "Default path '${_default_release_base}' does not exist. Please manually specify CCIMX_ALL_RELEASE_DIR_BASE "
+            "in the top level CMakeLists.txt, or, "
+            "You are supposed to use cmake-gui to set the path.")
+    else()
+        message(STATUS "Pass check of the default path: '${_default_release_base}'")
+    endif()
+
+    set(CCIMX_ALL_RELEASE_DIR_BASE "${_default_release_base}" PATH "Base release install path for deployment")
+else()
+    message(STATUS "CCIMX_ALL_RELEASE_DIR_BASE is defined: ${CCIMX_ALL_RELEASE_DIR_BASE}")
+    if(NOT IS_DIRECTORY "${CCIMX_ALL_RELEASE_DIR_BASE}")
+        message(FATAL_ERROR
+            "Specified CCIMX_ALL_RELEASE_DIR_BASE does not exist: ${CCIMX_ALL_RELEASE_DIR_BASE}")
+    endif()
+endif()
+
+get_filename_component(COMPILER_NAME ${CMAKE_CXX_COMPILER} NAME)
+# Auto generate the CCIMX_ALL_RELEASE_DIR and base app dir
 if(MSVC)
-    set(CCIMX_ALL_RELEASE_DIR_BASE "D:/NewQtProjects/Release/")
-    set(CCIMX_ALL_RELEASE_DIR ${CCIMX_ALL_RELEASE_DIR_BASE}/msvc/ CACHE PATH "Deploy the install root directory")
+    message(STATUS "MSVC compiler detected, so build release in the msvc dirent")
+    set(CCIMX_ALL_RELEASE_DIR ${CCIMX_ALL_RELEASE_DIR_BASE}/msvc CACHE PATH "Deploy the install root directory")
     set(CCIMX_EXTERNAL_APP_BASE_DIR ${CCIMX_ALL_RELEASE_DIR})
 elseif(COMPILER_NAME MATCHES "arm.*-g\\+\\+")
-    add_compile_definitions(ARM_BUILD)
-    set(CCIMX_ALL_RELEASE_DIR_BASE "/home/charliechen/imx6ull/qt683_project/CCDesktopRelease")
-    set(CCIMX_ALL_RELEASE_DIR ${CCIMX_ALL_RELEASE_DIR_BASE}/arm32/ CACHE PATH "Deploy the install root directory")
+    message(STATUS "Cross compile detected, so build release in the arm dirent")
+    set(CCIMX_ALL_RELEASE_DIR ${CCIMX_ALL_RELEASE_DIR_BASE}/arm32 CACHE PATH "Deploy the install root directory")
     set(CCIMX_EXTERNAL_APP_BASE_DIR ".")
 else()
-    set(CCIMX_ALL_RELEASE_DIR_BASE "/home/charliechen/imx6ull/qt683_project/CCDesktopRelease")
-    set(CCIMX_ALL_RELEASE_DIR ${CCIMX_ALL_RELEASE_DIR_BASE}/x86/ CACHE PATH "Deploy the install root directory")
-    set(CCIMX_EXTERNAL_APP_BASE_DIR ${CCIMX_ALL_RELEASE_DIR})
+    message(STATUS "GCC compiler detected, so build release in the x86 dirent")
+    set(CCIMX_ALL_RELEASE_DIR ${CCIMX_ALL_RELEASE_DIR_BASE}/x86 CACHE PATH "Deploy the install root directory")
+    set(CCIMX_EXTERNAL_APP_BASE_DIR "${CCIMX_ALL_RELEASE_DIR}")
 endif()
+
+
+message(STATUS "About to check the extern app: ")
+add_compile_definitions(
+    $<$<BOOL:${INCLUDE_WEATHER_APP}>:INCLUDE_WEATHER_APP>
+    $<$<BOOL:${INCLUDE_PDF_BROWSER_APP}>:INCLUDE_PDF_BROWSER_APP>
+    $<$<BOOL:${INCLUDE_CAMERA_APP}>:INCLUDE_CAMERA_APP>
+    $<$<BOOL:${INCLUDE_FILERAMBER_APP}>:INCLUDE_FILERAMBER_APP>
+    $<$<BOOL:${INCLUDE_SYSTEMSTATUS_APP}>:INCLUDE_SYSTEMSTATUS_APP>
+)
+
+add_subdirectory(extern_app)
 
 include_directories(
     .
@@ -100,7 +150,6 @@ target_link_libraries(CCIMX_Desktop
         Qt6::Network
 )
 
-
 target_compile_definitions(
     CCIMX_Desktop PRIVATE
     _EXTERNAPP_INSTALL_DIR=\"${CCIMX_EXTERNAL_APP_BASE_DIR}\"
@@ -121,22 +170,23 @@ qt_generate_deploy_app_script(
 )
 install(SCRIPT ${deploy_script})
 
-message(STATUS
-        "Ready to build the Weather APP due to the INCLUDE_WEATHER_APP")
-add_subdirectory(extern_app/WeatherApp)
+message(STATUS  "About to dump the message of the building in order to ensure the settings")
+message(STATUS  "-----------------------------------------------------")
+message(STATUS "Install Issue End: ")
+message(STATUS "-----------------------------------------------------")
+message(STATUS "The base dirent of installations:   CCIMX_ALL_RELEASE_DIR_BASE = ${CCIMX_ALL_RELEASE_DIR_BASE}")
+message(STATUS "current kits installations:         CCIMX_ALL_RELEASE_DIR      = ${CCIMX_ALL_RELEASE_DIR}")
+message(STATUS "Extern app install locations:       CCIMX_EXTERNAL_APP_BASE_DIR= ${CCIMX_EXTERNAL_APP_BASE_DIR}")
+message(STATUS "-----------------------------------------------------")
+message(STATUS "Dumping the external apps: ")
+message(STATUS "Weather Application Built status Due to INCLUDE_WEATHER_APP: ${INCLUDE_WEATHER_APP}")
+message(STATUS "PDF Browser Built status Due to INCLUDE_PDF_BROWSER_APP: ${INCLUDE_PDF_BROWSER_APP}")
+message(STATUS "Camera Application Built status Due to INCLUDE_CAMERA_APP: ${INCLUDE_CAMERA_APP}")
+message(STATUS "File Ramber Built status due to INCLUDE_FILERAMBER_APP: ${INCLUDE_FILERAMBER_APP}")
+message(STATUS "System State Built due to INCLUDE_SYSTEMSTATUS_APP: ${INCLUDE_SYSTEMSTATUS_APP}")
+message(STATUS "-----------------------------------------------------")
 
-message(STATUS
-        "Ready to build the PDF Browser due to the INCLUDE_PDF_BROWSER_APP")
-add_subdirectory(extern_app/pdfReader)
 
-message(STATUS
-        "Ready to build the Camera App due to the INCLUDE_CAMERA_APP")
-add_subdirectory(extern_app/GeneralLocalCamera)
 
-message(STATUS
-        "Ready to build the FileRamber due to the INCLUDE_FILERAMBER_APP")
-add_subdirectory(extern_app/FileRamber)
 
-message(STATUS
-        "Ready to build the FileRamber due to the INCLUDE_SYSTEMSTATUS_APP")
-add_subdirectory(extern_app/SystemState)
+
