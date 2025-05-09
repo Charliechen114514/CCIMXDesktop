@@ -21,11 +21,15 @@ set(CVImageSrc
     cvimage/CVTools.h
     cvimage_src/CVTools.cpp)
 
+set(VideoPlayerSrc
+    videoplayer/VideoPlayer.h videoplayer_src/VideoPlayer.cpp
+    videoplayer/VideoPlayerImpl.h videoplayer_src/VideoPlayerImpl.cpp
+    videoplayer/VideoPlayerOpencvImpl.h videoplayer_src/VideoPlayerOpencvImpl.cpp)
+
+
 add_library(core_library STATIC
     ${CVImageSrc}
-    videoplayer_src/VideoPlayer.h videoplayer_src/VideoPlayer.cpp
-    videoplayer_src/VideoPlayerImpl.h videoplayer_src/VideoPlayerImpl.cpp
-    videoplayer_src/VideoPlayerOpencvImpl.h videoplayer_src/VideoPlayerOpencvImpl.cpp
+    ${VideoPlayerSrc}
 )
 
 target_include_directories(
@@ -35,6 +39,7 @@ target_include_directories(
         # Add the source file dirent
         # as we need to include the header files
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/cvimage>
+        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/videoplayer>
 )
 
 target_link_libraries(

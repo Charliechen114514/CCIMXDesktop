@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.19)
 project(OpencvQtAdapter LANGUAGES CXX)
 
-option(REQ_PROXY "Download externally needs proxy" OFF)
-set(_DEFAULT_PROXY "http://127.0.0.1:7890")
+option(REQ_PROXY "Download externally needs proxy" ON)
+set(_DEFAULT_PROXY "127.0.0.1:7890")
 
 if(REQ_PROXY)
     message(STATUS "Proxy is required due to the settings of REQ_PROXY")

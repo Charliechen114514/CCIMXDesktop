@@ -1,7 +1,8 @@
 #include "core_library/cvimage/CVTools.h"
-#include "core_library/videoplayer_src/VideoPlayerOpencvImpl.h"
+#include "core_library/videoplayer/VideoPlayerOpencvImpl.h"
 #include <QThread>
 #include <iostream>
+
 void show_video_message(const VideoPlayerOpencvImpl& impl) {
 	std::cout << "Video Info:" << std::endl;
 	std::cout << "Width: " << impl.current_video_info().width << std::endl;

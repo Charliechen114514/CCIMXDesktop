@@ -1,8 +1,11 @@
 #include "MainWindow.h"
 #include "./ui_MainWindow.h"
 #include "core_library/cvimage/CVImagePrivateOpencvImp.h"
-#include "core_library/videoplayer_src/VideoPlayer.h"
+#include "core_library/videoplayer/VideoPlayer.h"
+#include <QAudioOutput>
 #include <QFileDialog>
+#include <QMediaPlayer>
+
 QImage raw_image_to_qimage(const CVImage& image) {
 	cv::Mat raw_image = dynamic_cast<CVImageOpencvImpl*>(image.impl_ptr())->raw_image;
 	/* convert the raw image to QImage */
@@ -19,6 +22,8 @@ MainWindow::MainWindow(QWidget* parent)
     , ui(new Ui::MainWindow) {
 	ui->setupUi(this);
 	video_player = new VideoPlayer(this);
+	audio_player = new QMediaPlayer(this);
+	audio_output = new QAudioOutput(this);
 }
 
 MainWindow::~MainWindow() {
@@ -32,6 +37,9 @@ void MainWindow::on_btn_open_clicked() {
 		return;
 	}
 	video_player->open(file_path.toStdString().c_str());
+	audio_player->setSource(QUrl::fromLocalFile(file_path.toStdString().c_str()));
+	audio_player->setVideoOutput(nullptr);
+	audio_player->setAudioOutput(audio_output);
 }
 
 void MainWindow::on_btn_play_clicked() {
@@ -39,6 +47,7 @@ void MainWindow::on_btn_play_clicked() {
 		return;
 	} else {
 		video_player->play();
+		audio_player->play();
 	}
 	connect(video_player, &VideoPlayer::frameReady, this, [this](const CVImage image) {
 		ui->label->setPixmap(QPixmap::fromImage(raw_image_to_qimage(image)));
@@ -59,4 +68,5 @@ void MainWindow::on_btn_play_clicked() {
 
 void MainWindow::on_btn_stop_clicked() {
 	video_player->pause();
+	audio_player->pause();
 }
