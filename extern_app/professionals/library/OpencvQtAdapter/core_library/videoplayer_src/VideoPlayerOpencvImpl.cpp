@@ -139,6 +139,20 @@ void VideoPlayerOpencvImpl::escapeFrame() {
 	internal_current_frame++;
 }
 
+void VideoPlayerOpencvImpl::jumpToFrame(int frame_request) {
+	if (!isHandleOpened(internal_capture)) {
+		return;
+	}
+
+	if (frame_request < 0 || frame_request >= total_frame()) {
+		/* request overflow */
+		return;
+	}
+
+	internal_capture->set(cv::CAP_PROP_POS_FRAMES, frame_request);
+	internal_current_frame = frame_request;
+}
+
 VideoPlayerImpl* VideoPlayerImplFactory::request_impl() {
 	return new VideoPlayerOpencvImpl;
 }

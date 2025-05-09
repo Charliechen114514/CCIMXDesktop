@@ -19,6 +19,7 @@ public:
 	void close() override;
 	bool isOpened() const override;
 	void escapeFrame() override;
+	void jumpToFrame(int frame_request) override;
 
 private:
 	cv::VideoCapture* internal_capture { nullptr };

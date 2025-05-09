@@ -1,5 +1,16 @@
 #include "VideoPlayer.h"
 
+namespace VideoPlayerTools {
+qint64 frame_to_mseconds(int frame, int fps) {
+	return static_cast<qint64>(1000.0 * frame / fps);
+}
+
+qint64 mseconds_to_frame(qint64 msec, int fps) {
+	return static_cast<qint64>(msec * fps / 1000.0);
+}
+
+}
+
 VideoPlayer::VideoPlayer(QObject* parent)
 	: QObject { parent } {
 	impl = VideoPlayerImplFactory::request_impl();
@@ -83,7 +94,23 @@ qint64 VideoPlayer::currentFrameMSec() const {
 
 	if (info.fps <= 0)
 		return 0;
-	return static_cast<qint64>(1000.0 * impl->current_frame() / info.fps);
+	return VideoPlayerTools::frame_to_mseconds(current_frame(), info.fps);
+}
+
+bool VideoPlayer::setCurrentFrameMSec(const qint64 msec) {
+	if (!impl->isOpened()) {
+		/* thus the video is not opened */
+		return false;
+		;
+	}
+
+	if (msec < 0 || msec >= total_frame()) {
+		/* thus the video is not opened */
+		return false;
+	}
+
+	int frame_request = VideoPlayerTools::mseconds_to_frame(msec, info.fps);
+	return impl->jumpToFrame(frame_request);
 }
 
 void VideoPlayer::escapeFrame() {

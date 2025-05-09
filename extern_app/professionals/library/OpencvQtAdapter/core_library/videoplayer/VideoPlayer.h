@@ -9,6 +9,10 @@ namespace cv {
 class VideoCapture;
 };
 
+namespace VideoPlayerTools {
+
+};
+
 class VideoPlayer : public QObject {
 	Q_OBJECT
 public:
@@ -30,6 +34,8 @@ public:
 	inline bool is_playing() const { return on_play; }
 	/* compound for the audio-frame sync */
 	qint64 currentFrameMSec() const;
+	/* set current frame as mseconds */
+	bool setCurrentFrameMSec(const qint64 msec);
 	/* for the frame escape, then next frame will be abolished */
 	void escapeFrame();
 

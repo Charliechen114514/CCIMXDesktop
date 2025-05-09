@@ -47,7 +47,8 @@ public:
 
 	/* frame is supposed to abolished, pointer should be moved forward */
 	virtual void escapeFrame() = 0;
-
+	/* jump to frame */
+	virtual void jumpToFrame(int frame_request) = 0;
 	/*
 	 *	Function interfaces
 	 *		open: makes the resources available
