@@ -18,6 +18,7 @@ public:
 			  VideoPlayerOpenErrorCode& error_code) override;
 	void close() override;
 	bool isOpened() const override;
+	void escapeFrame() override;
 
 private:
 	cv::VideoCapture* internal_capture { nullptr };

@@ -28,6 +28,10 @@ public:
 	bool valid_video() const;
 	/* is current video on play? */
 	inline bool is_playing() const { return on_play; }
+	/* compound for the audio-frame sync */
+	qint64 currentFrameMSec() const;
+	/* for the frame escape, then next frame will be abolished */
+	void escapeFrame();
 
 signals:
 	/* error occurs */

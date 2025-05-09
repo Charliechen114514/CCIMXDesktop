@@ -26,6 +26,7 @@ private slots:
 	void on_btn_stop_clicked();
 
 private:
+	static constexpr const unsigned short MAX_MISTCH = 80;
 	Ui::MainWindow* ui;
 	VideoPlayer* video_player { nullptr };
 	QMediaPlayer* audio_player { nullptr };

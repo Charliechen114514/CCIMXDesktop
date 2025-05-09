@@ -45,6 +45,9 @@ public:
 	/* for upper level widgets, we need to get from the info */
 	virtual VideoPlayerInfo current_video_info() const = 0;
 
+	/* frame is supposed to abolished, pointer should be moved forward */
+	virtual void escapeFrame() = 0;
+
 	/*
 	 *	Function interfaces
 	 *		open: makes the resources available

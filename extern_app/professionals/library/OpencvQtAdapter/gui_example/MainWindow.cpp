@@ -50,6 +50,15 @@ void MainWindow::on_btn_play_clicked() {
 		audio_player->play();
 	}
 	connect(video_player, &VideoPlayer::frameReady, this, [this](const CVImage image) {
+		qint64 audio_time = audio_player->position(); // 当前音频播放时间（你需要确认该接口是否存在）
+		qint64 video_time = video_player->currentFrameMSec(); // 当前视频帧的时间戳（你也要实现或确认）
+
+		while (video_time + MainWindow::MAX_MISTCH < audio_time) {
+			video_player->escapeFrame(); // 跳过一帧
+			video_time = video_player->currentFrameMSec(); // 获取跳帧后的新时间戳
+		}
+
+		// 此时视频已经追上或接近音频，显示当前帧
 		ui->label->setPixmap(QPixmap::fromImage(raw_image_to_qimage(image)));
 	});
 	connect(video_player, &VideoPlayer::openError, this, [](const VideoPlayerOpenErrorCode error) {

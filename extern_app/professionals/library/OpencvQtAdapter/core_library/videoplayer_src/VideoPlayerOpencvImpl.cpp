@@ -134,6 +134,11 @@ bool VideoPlayerOpencvImpl::isOpened() const {
 	return false;
 }
 
+void VideoPlayerOpencvImpl::escapeFrame() {
+	internal_capture->grab();
+	internal_current_frame++;
+}
+
 VideoPlayerImpl* VideoPlayerImplFactory::request_impl() {
 	return new VideoPlayerOpencvImpl;
 }

@@ -75,6 +75,36 @@ bool VideoPlayer::valid_video() const {
 	return impl->isOpened();
 }
 
+qint64 VideoPlayer::currentFrameMSec() const {
+	if (!impl->isOpened()) {
+		/* thus the video is not opened */
+		return 0;
+	}
+
+	if (info.fps <= 0)
+		return 0;
+	return static_cast<qint64>(1000.0 * impl->current_frame() / info.fps);
+}
+
+void VideoPlayer::escapeFrame() {
+	if (!impl->isOpened()) {
+		/* thus the video is not opened */
+		return;
+	}
+
+	if (!on_play) {
+		/* thus the video is not playing */
+		return;
+	}
+
+	if (impl->current_frame() >= impl->total_frame()) {
+		/* thus the video is already finished */
+		return;
+	}
+	/* escape the frame */
+	impl->escapeFrame();
+}
+
 /* Time out calls this  */
 void VideoPlayer::time_to_fetch_next_frame() {
 
