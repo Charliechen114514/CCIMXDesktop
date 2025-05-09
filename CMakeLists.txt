@@ -8,6 +8,7 @@ option(INCLUDE_PDF_BROWSER_APP "Build the PDF Browser App" ON)
 option(INCLUDE_CAMERA_APP "Build the Camera App" ON)
 option(INCLUDE_FILERAMBER_APP "Build the FileRamber App" ON)
 option(INCLUDE_SYSTEMSTATUS_APP "Build the System Status App" ON)
+option(INCLUDE_PROFESSIONAL_APP "Build the professional App Enabled" ON)
 
 find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets Network)
 qt_standard_project_setup()
@@ -39,7 +40,7 @@ if(NOT DEFINED CCIMX_ALL_RELEASE_DIR_BASE OR CCIMX_ALL_RELEASE_DIR_BASE STREQUAL
         message(STATUS "Pass check of the default path: '${_default_release_base}'")
     endif()
 
-    set(CCIMX_ALL_RELEASE_DIR_BASE "${_default_release_base}" PATH "Base release install path for deployment")
+    set(CCIMX_ALL_RELEASE_DIR_BASE "${_default_release_base}" CACHE PATH "Base release install path for deployment")
 else()
     message(STATUS "CCIMX_ALL_RELEASE_DIR_BASE is defined: ${CCIMX_ALL_RELEASE_DIR_BASE}")
     if(NOT IS_DIRECTORY "${CCIMX_ALL_RELEASE_DIR_BASE}")

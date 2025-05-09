@@ -44,7 +44,12 @@ target_compile_definitions(test_cvImage
 add_test(   NAME test_cvImage
             COMMAND test_cvImage)
 
+get_filename_component(COMPILER_NAME ${CMAKE_CXX_COMPILER} NAME)
+if(COMPILER_NAME MATCHES "arm.*-g\\+\\+")
+  message(STATUS "Escape the test post invoke due to the cross compile case")
+else()
 add_custom_command(TARGET test_cvImage
                    POST_BUILD
                    COMMAND ${CMAKE_CTEST_COMMAND} --output-on-failure
                    COMMENT "Running unit tests after build")
+endif()

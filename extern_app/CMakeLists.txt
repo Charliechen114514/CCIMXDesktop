@@ -22,3 +22,9 @@ if (INCLUDE_SYSTEMSTATUS_APP)
     message(STATUS "Ready to build the System Status App due to the INCLUDE_SYSTEMSTATUS_APP")
     add_subdirectory(SystemState)
 endif()
+
+if(INCLUDE_PROFESSIONAL_APP)
+    message(STATUS "Professional App is enabled due to the INCLUDE_PROFESSIONAL_APP")
+    add_subdirectory(professionals)
+endif()
+
