@@ -27,6 +27,7 @@ private slots:
 
 private:
 	static constexpr const unsigned short MAX_MISTCH = 80;
+    static constexpr const float VOLUMN = 0.1;
 	Ui::MainWindow* ui;
 	VideoPlayer* video_player { nullptr };
 	QMediaPlayer* audio_player { nullptr };

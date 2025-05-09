@@ -66,6 +66,13 @@ else()
 endif()
 
 
+# Global Compile Specifications
+if(COMPILER_NAME MATCHES "arm.*-g\\+\\+")
+    set(ALSA_LIBRARY_PATH   "/home/charliechen/imx6ull/alsalib_res/lib")
+    set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -Wl,-rpath-link=${ALSA_LIBRARY_PATH}")
+endif()
+
+
 message(STATUS "About to check the extern app: ")
 add_compile_definitions(
     $<$<BOOL:${INCLUDE_WEATHER_APP}>:INCLUDE_WEATHER_APP>

@@ -24,6 +24,7 @@ MainWindow::MainWindow(QWidget* parent)
 	video_player = new VideoPlayer(this);
 	audio_player = new QMediaPlayer(this);
 	audio_output = new QAudioOutput(this);
+    audio_output->setVolume(VOLUMN);
 }
 
 MainWindow::~MainWindow() {
