@@ -8,8 +8,8 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Core)
-find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
+find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Core Gui)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core Gui)
 
 set(CVImageSrc
     cvimage/CVImage.h
@@ -26,10 +26,15 @@ set(VideoPlayerSrc
     videoplayer/VideoPlayerImpl.h videoplayer_src/VideoPlayerImpl.cpp
     videoplayer/VideoPlayerOpencvImpl.h videoplayer_src/VideoPlayerOpencvImpl.cpp)
 
+set(QtAdapter
+    QtAdapter/QtAdaptTools.h
+    QtAdapter/QtAdaptTools.cpp)
+
 
 add_library(core_library STATIC
     ${CVImageSrc}
     ${VideoPlayerSrc}
+    ${QtAdapter}
 )
 
 target_include_directories(
@@ -46,6 +51,7 @@ target_link_libraries(
     core_library
     PRIVATE
         Qt${QT_VERSION_MAJOR}::Core
+        Qt${QT_VERSION_MAJOR}::Gui
     PUBLIC
         ${OpenCV_LIBS}
 )
