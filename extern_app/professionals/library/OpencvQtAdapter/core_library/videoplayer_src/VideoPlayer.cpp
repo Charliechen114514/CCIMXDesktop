@@ -79,7 +79,7 @@ int VideoPlayer::total_frame() const {
 }
 
 int VideoPlayer::current_frame() const {
-	return impl->total_frame() - impl->current_frame();
+    return impl->current_frame();
 }
 
 bool VideoPlayer::valid_video() const {

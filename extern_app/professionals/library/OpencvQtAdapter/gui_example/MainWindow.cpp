@@ -25,6 +25,19 @@ MainWindow::MainWindow(QWidget* parent)
 	audio_player = new QMediaPlayer(this);
 	audio_output = new QAudioOutput(this);
 	audio_output->setVolume(VOLUMN);
+    connect(video_player, &VideoPlayer::frameReady, this, &MainWindow::handle_frame);
+    connect(video_player, &VideoPlayer::openError, this, [](const VideoPlayerOpenErrorCode error) {
+        switch (error) {
+        case VideoPlayerOpenErrorCode::DupOpen:
+            qDebug() << "Video is already opened!";
+            break;
+        case VideoPlayerOpenErrorCode::FileUnExsited:
+            qDebug() << "File does not exist!";
+            break;
+        default:
+            break;
+        }
+    });
 }
 
 MainWindow::~MainWindow() {
@@ -43,38 +56,29 @@ void MainWindow::on_btn_open_clicked() {
 	audio_player->setAudioOutput(audio_output);
 }
 
+void MainWindow::handle_frame(const CVImage &image)
+{
+    // fetch the time for current frame
+    qint64 audio_time = audio_player->position();
+    qint64 video_time = video_player->currentFrameMSec();
+    qDebug() << video_time << " " << audio_time;
+    while (video_time + MainWindow::MAX_MISTCH < audio_time) {
+        qDebug() << "escape frame: " << video_time << " " << audio_time;
+        video_player->escapeFrame(); // escape one frame
+        video_time = video_player->currentFrameMSec();
+    }
+
+    // the video and audio is nearly synced, thus display
+    qDebug() << "display frame";
+    ui->label->setPixmap(QPixmap::fromImage(raw_image_to_qimage(image)));
+}
+
 void MainWindow::on_btn_play_clicked() {
 	if (video_player->is_playing()) {
 		return;
-	} else {
-		video_player->play();
-		audio_player->play();
-	}
-	connect(video_player, &VideoPlayer::frameReady, this, [this](const CVImage image) {
-		// fetch the time for current frame
-		qint64 audio_time = audio_player->position();
-		qint64 video_time = video_player->currentFrameMSec();
-
-		while (video_time + MainWindow::MAX_MISTCH < audio_time) {
-			video_player->escapeFrame(); // escape one frame
-			video_time = video_player->currentFrameMSec();
-		}
-
-		// the video and audio is nearly synced, thus display
-		ui->label->setPixmap(QPixmap::fromImage(raw_image_to_qimage(image)));
-	});
-	connect(video_player, &VideoPlayer::openError, this, [](const VideoPlayerOpenErrorCode error) {
-		switch (error) {
-		case VideoPlayerOpenErrorCode::DupOpen:
-			qDebug() << "Video is already opened!";
-			break;
-		case VideoPlayerOpenErrorCode::FileUnExsited:
-			qDebug() << "File does not exist!";
-			break;
-		default:
-			break;
-		}
-	});
+    }
+    video_player->play();
+    audio_player->play();
 }
 
 void MainWindow::on_btn_stop_clicked() {

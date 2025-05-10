@@ -4,6 +4,7 @@
 class VideoPlayer;
 class QMediaPlayer;
 class QAudioOutput;
+class CVImage;
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
@@ -32,5 +33,6 @@ private:
 	VideoPlayer* video_player { nullptr };
 	QMediaPlayer* audio_player { nullptr };
 	QAudioOutput* audio_output { nullptr };
+    void handle_frame(const CVImage& image);
 };
 #endif // MAINWINDOW_H
