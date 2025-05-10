@@ -9,10 +9,6 @@ namespace cv {
 class VideoCapture;
 };
 
-namespace VideoPlayerTools {
-
-};
-
 class VideoPlayer : public QObject {
 	Q_OBJECT
 public:
@@ -31,14 +27,15 @@ public:
 	/* is current video valid */
 	bool valid_video() const;
 	/* is current video on play? */
-	inline bool is_playing() const { return on_play; }
+	bool is_playing() const;
 	/* compound for the audio-frame sync */
 	qint64 currentFrameMSec() const;
 	/* set current frame as mseconds */
 	bool setCurrentFrameMSec(const qint64 msec);
 	/* for the frame escape, then next frame will be abolished */
 	void escapeFrame();
-
+	/* request frame without rolling */
+	bool peekFrame(CVImage& container, int frame_request);
 signals:
 	/* error occurs */
 	void openError(const VideoPlayerOpenErrorCode error);
@@ -58,6 +55,7 @@ private:
 	bool on_play { false };
 	VideoPlayerInfo info;
 	int play_sleep { 0 };
+	QString last_open {};
 };
 
 #endif // VIDEOPLAYER_H
