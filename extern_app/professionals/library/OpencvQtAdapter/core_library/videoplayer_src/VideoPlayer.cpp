@@ -110,7 +110,8 @@ bool VideoPlayer::setCurrentFrameMSec(const qint64 msec) {
 	}
 
 	int frame_request = VideoPlayerTools::mseconds_to_frame(msec, info.fps);
-	return impl->jumpToFrame(frame_request);
+	impl->jumpToFrame(frame_request);
+	return true;
 }
 
 void VideoPlayer::escapeFrame() {
