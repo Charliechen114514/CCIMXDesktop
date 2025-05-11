@@ -42,6 +42,9 @@ void MainWindow::on_btn_open_clicked() {
 	audio_player->setSource(QUrl::fromLocalFile(file_path.toStdString().c_str()));
 	audio_player->setVideoOutput(nullptr);
 	audio_player->setAudioOutput(audio_output);
+	CVImage image;
+	video_player->peekFrame(image, 0);
+	ui->label->setPixmap(QPixmap::fromImage(QtAdaptTools::toQImage(image)));
 }
 
 void MainWindow::handle_frame(const CVImage& image) {

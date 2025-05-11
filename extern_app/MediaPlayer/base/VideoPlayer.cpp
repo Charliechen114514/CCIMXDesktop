@@ -85,7 +85,7 @@ int VideoPlayer::total_frame() const {
 }
 
 int VideoPlayer::current_frame() const {
-	return impl->total_frame() - impl->current_frame();
+	return impl->current_frame();
 }
 
 bool VideoPlayer::valid_video() const {
@@ -96,6 +96,7 @@ bool VideoPlayer::is_playing() const {
 	return on_play;
 }
 
+#include <QDebug>
 qint64 VideoPlayer::currentFrameMSec() const {
 	if (!impl->isOpened()) {
 		/* thus the video is not opened */
@@ -104,6 +105,7 @@ qint64 VideoPlayer::currentFrameMSec() const {
 
 	if (info.fps <= 0)
 		return 0;
+	qDebug() << "current frame:" << current_frame();
 	return VideoPlayerTools::frame_to_mseconds(current_frame(), info.fps);
 }
 
@@ -114,8 +116,8 @@ bool VideoPlayer::setCurrentFrameMSec(const qint64 msec) {
 		;
 	}
 
-	if (msec < 0 || msec >= total_frame()) {
-		/* thus the video is not opened */
+	if (msec < 0 || msec >= VideoPlayerTools::frame_to_mseconds(total_frame(), info.fps)) {
+		/* thus the msecs settings failed */
 		return false;
 	}
 
@@ -178,6 +180,9 @@ void VideoPlayer::time_to_fetch_next_frame() {
 		emit frameReady(image);
 	} else {
 		on_play = false;
+		/* video comes to its end then */
+		emit videoEnd();
+		return;
 	}
 	/* thus a next frame is about to come ... */
 	QTimer::singleShot(play_sleep, this, &VideoPlayer::time_to_fetch_next_frame);

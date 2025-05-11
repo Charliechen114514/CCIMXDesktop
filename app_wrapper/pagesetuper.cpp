@@ -114,5 +114,15 @@ QList<AppWidget*> PageSetuper::create_real_app(DesktopMainWindow* mainWindow) {
 	mainWindow->install_remote_appwrapper(wrapper);
 	req.push_back({ ":/icons/sources/file_ramber.png", "FileRamber", wrapper });
 #endif
+
+#ifdef INCLUDE_MEDIAPLAYER_APP
+	/* app page of the MediaPlayer */
+	QString media_player_path = _EXTERNAPP_INSTALL_DIR "/MediaPlayer";
+	wrapper = new ApplicationWrapper(mainWindow, mainWindow);
+	wrapper->set_app_path(media_player_path);
+	mainWindow->install_remote_appwrapper(wrapper);
+	req.push_back({ ":/icons/sources/mediaplayer_app.png", "MediaPlayer", wrapper });
+#endif
+
 	return PageSetuper::create_one_app_only_page_append(mainWindow->stackedWidget(), mainWindow, req);
 }

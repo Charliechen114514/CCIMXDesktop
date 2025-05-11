@@ -46,6 +46,7 @@ target_include_directories(
     gui_example
     PRIVATE
     ${CMAKE_SOURCE_DIR}
+    ..
 )
 
 target_link_libraries(

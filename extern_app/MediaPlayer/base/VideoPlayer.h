@@ -9,6 +9,11 @@ namespace cv {
 class VideoCapture;
 };
 
+namespace VideoPlayerTools {
+qint64 frame_to_mseconds(int frame, int fps);
+qint64 mseconds_to_frame(qint64 msec, int fps);
+}
+
 class VideoPlayer : public QObject {
 	Q_OBJECT
 public:
@@ -22,6 +27,13 @@ public:
 	bool pause();
 	/* get the total frame */
 	int total_frame() const;
+	inline int total_msecs() const {
+		return VideoPlayerTools::frame_to_mseconds(
+			total_frame(), info.fps);
+	}
+	/* infos */
+	inline VideoPlayerInfo get_info() const { return info; }
+
 	/* frame left for display */
 	int current_frame() const;
 	/* is current video valid */
@@ -43,6 +55,8 @@ signals:
 	void frameReady(const CVImage image);
 	/* frame is about to fetch */
 	void about_fetch_frame();
+	/* media end */
+	void videoEnd();
 
 private slots:
 	void time_to_fetch_next_frame();

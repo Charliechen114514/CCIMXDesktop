@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>media_displaying.png</file>
+        <file>media_paused.png</file>
+        <file>open_media.png</file>
+        <file>default_music_cover.png</file>
+        <file>tunearm.png</file>
+        <file>records.png</file>
+        <file>meida_info.png</file>
+    </qresource>
+</RCC>

@@ -21,6 +21,7 @@
 - FileRamber（文件浏览器，具备基本的文件导览，Windows Explorer.exe的Tiny版本）
 - GeneralLocalCamera（这是基于Opencv VideoCapture的基础相机，可以实现拍照功能）
 - SystemState（查看运行机的CPU状态，内存容量状态和进程列表）
+- MediaPlayer（需要您的QMediaPlayer支持ALSA或者是其他的音频播放，视频播放需要OpenCV支持）
 
 ------
 
@@ -52,13 +53,13 @@
   - 图像浏览器
   - 图像处理器
   - 文本简单的编辑器
-  - 音频播放器
   - 串口助手
   - 图像处理器本地处理图像和做简单的推理（人脸识别）
   - 开关灯APP
   - 鸣笛APP
   - 环境APP
   - 姿态检测APP
+  - 最简单的SimpleTerminal
 
 ------
 

@@ -23,6 +23,11 @@ if (INCLUDE_SYSTEMSTATUS_APP)
     add_subdirectory(SystemState)
 endif()
 
+if (INCLUDE_MEDIAPLAYER_APP)
+    message(STATUS "Ready to build the Media Player App due to the INCLUDE_MEDIAPLAYER_APP")
+    add_subdirectory(MediaPlayer)
+endif()
+
 if(INCLUDE_PROFESSIONAL_APP)
     message(STATUS "Professional App is enabled due to the INCLUDE_PROFESSIONAL_APP")
     add_subdirectory(professionals)

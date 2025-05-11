@@ -8,6 +8,7 @@ option(INCLUDE_PDF_BROWSER_APP "Build the PDF Browser App" ON)
 option(INCLUDE_CAMERA_APP "Build the Camera App" ON)
 option(INCLUDE_FILERAMBER_APP "Build the FileRamber App" ON)
 option(INCLUDE_SYSTEMSTATUS_APP "Build the System Status App" ON)
+option(INCLUDE_MEDIAPLAYER_APP "Build the MeidaPlayer App" ON)
 option(INCLUDE_PROFESSIONAL_APP "Build the professional App Enabled" ON)
 
 find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets Network)
@@ -80,6 +81,7 @@ add_compile_definitions(
     $<$<BOOL:${INCLUDE_CAMERA_APP}>:INCLUDE_CAMERA_APP>
     $<$<BOOL:${INCLUDE_FILERAMBER_APP}>:INCLUDE_FILERAMBER_APP>
     $<$<BOOL:${INCLUDE_SYSTEMSTATUS_APP}>:INCLUDE_SYSTEMSTATUS_APP>
+    $<$<BOOL:${INCLUDE_MEDIAPLAYER_APP}>:INCLUDE_MEDIAPLAYER_APP>
 )
 
 add_subdirectory(extern_app)
@@ -192,6 +194,7 @@ message(STATUS "PDF Browser Built status Due to INCLUDE_PDF_BROWSER_APP: ${INCLU
 message(STATUS "Camera Application Built status Due to INCLUDE_CAMERA_APP: ${INCLUDE_CAMERA_APP}")
 message(STATUS "File Ramber Built status due to INCLUDE_FILERAMBER_APP: ${INCLUDE_FILERAMBER_APP}")
 message(STATUS "System State Built due to INCLUDE_SYSTEMSTATUS_APP: ${INCLUDE_SYSTEMSTATUS_APP}")
+message(STATUS "Media Player Built due to INCLUDE_MEDIAPLAYER_APP: ${INCLUDE_MEDIAPLAYER_APP}")
 message(STATUS "-----------------------------------------------------")
 
 

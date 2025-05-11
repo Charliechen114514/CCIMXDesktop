@@ -21,6 +21,7 @@ Currently, CCIMXDesktop supports one-click building including:
 - FileRamber (file browser, with basic file navigation, Tiny version of Windows Explorer.exe)
 - GeneralLocalCamera (This is a basic camera based on Opencv VideoCapture, which can realize the photo taking function)
 - SystemState (view the CPU status, memory capacity status and process list of the running machine)
+- MediaPlayer (your QMediaPlayer needs to support ALSA or other audio playback, and video playback requires OpenCV support)
 
 ------
 
@@ -60,6 +61,7 @@ If you are interested in the project production process and development document
   - Horn APP
   - Environment APP
   - Posture detection APP
+  - Simplest SimpleTerminal
 
 ------
 
