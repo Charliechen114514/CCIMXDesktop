@@ -61,7 +61,6 @@ If you are interested in the project production process and development document
   - Horn APP
   - Environment APP
   - Posture detection APP
-  - Simplest SimpleTerminal
 
 ------
 

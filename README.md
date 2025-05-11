@@ -59,7 +59,6 @@
   - 鸣笛APP
   - 环境APP
   - 姿态检测APP
-  - 最简单的SimpleTerminal
 
 ------
 
