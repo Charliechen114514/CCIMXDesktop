@@ -53,6 +53,10 @@ void MediaPlayer::setSource(const char* local_file) {
 						QtAdaptTools::toQImage(first_page));
 }
 
+QString MediaPlayer::source() const {
+	return videoPlayer->current_handle();
+}
+
 void MediaPlayer::setVolume(const float percentage) {
 	audioPlayer->audioOutput()->setVolume(percentage);
 }
@@ -192,7 +196,7 @@ void MediaPlayer::handle_sync_position(qint64 position) {
 		position = videoPlayer->currentFrameMSec();
 	}
 	/* update status */
-	this->durations = position;
+	this->position = position;
 	emit positionChanged(position);
 }
 

@@ -1,10 +1,11 @@
 #ifndef MEDIAPLAYERWINDOW_H
 #define MEDIAPLAYERWINDOW_H
 
+#include "core/CCMediaPlayList.h"
 #include <QMainWindow>
-
 class MediaPlayer;
 class MediaInfoWindow;
+class PlayListMainWindow;
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MediaPlayerWindow;
@@ -18,7 +19,11 @@ public:
 	MediaPlayerWindow(QWidget* parent = nullptr);
 	/* open media from dialog */
 	void open_media();
+	void open_medias();
 	void toggle_playing_status();
+	void forward10sec();
+	void backward10sec();
+	void flow_mode_once();
 	~MediaPlayerWindow();
 
 private slots:
@@ -43,6 +48,10 @@ private:
 	MediaPlayer* mediaPlayer { nullptr };
 	/* info Window */
 	MediaInfoWindow* infoWindow { nullptr };
+	/* playlist handle */
+	CCMediaPlayList* medialist { nullptr };
+	/* playlist window */
+	PlayListMainWindow* playListWindow { nullptr };
 
 	bool manual_sliding { false };
 	bool is_playing { false };
@@ -55,5 +64,7 @@ private:
 	void post_do_video_unavailable();
 	void post_init_ui();
 	void process_playing_status();
+	void process_playmode_switching();
+	void handle_according_mails(const MediaListMails mails);
 };
 #endif // MEDIAPLAYERWINDOW_H

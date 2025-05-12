@@ -20,6 +20,7 @@ public:
 	explicit VideoPlayer(QObject* parent = nullptr);
 	~VideoPlayer();
 	bool open(const char* video_path);
+	QString current_handle() const { return last_open; }
 	bool close();
 	/* for the pause video, resume is OK */
 	bool play();

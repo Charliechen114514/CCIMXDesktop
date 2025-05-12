@@ -70,6 +70,8 @@ public:
 	Q_DISABLE_COPY(MediaPlayer);
 	/* open media */
 	void setSource(const char* local_file);
+	/* sources */
+	QString source() const;
 	/* the percentage of the volumn */
 	void setVolume(const float percentage);
 	/* volumn  */

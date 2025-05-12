@@ -31,3 +31,9 @@ MediaEnableSelectFactory::
         parent, title, ".",
         generateMediaEnableFilter());
 }
+
+QStringList MediaEnableSelectFactory::get_all_enabled_select_medias_fromdialog(QWidget* parent, const QString& title) {
+	return QFileDialog::getOpenFileNames(
+		parent, title, ".",
+		generateMediaEnableFilter());
+}

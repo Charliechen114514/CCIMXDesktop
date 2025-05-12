@@ -13,6 +13,100 @@
   <property name="windowTitle">
    <string>MediaPlayerWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">/* 通用字体和背景 */
+QWidget {
+    background-color: #eaf6fb; /* 浅蓝色背景 */
+    color: #1b2e4b;
+    font-family: &quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif;
+    font-size: 14px;
+}
+
+/* QLabel 美化 */
+QLabel {
+    color: #1b2e4b;
+    font-weight: 500;
+}
+
+/* QPushButton 基础样式 */
+QPushButton {
+    background-color: #a3d5f7;
+    border: 1px solid #81c3eb;
+    border-radius: 8px;
+    padding: 6px 14px;
+    color: #1b2e4b;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+QPushButton:hover {
+    background-color: #91cbee;
+    border-color: #6db5e0;
+}
+
+QPushButton:pressed {
+    background-color: #76b5de;
+    border-color: #5aa3d1;
+    color: white;
+}
+
+QPushButton:disabled {
+    background-color: #cce5f3;
+    border-color: #a8cde0;
+    color: #9ab0c2;
+}
+
+/* QSlider 样式（横向） */
+QSlider::groove:horizontal {
+    height: 6px;
+    background: #c6e6f7;
+    border-radius: 3px;
+}
+
+QSlider::handle:horizontal {
+    background: #5ab0dc;
+    border: 1px solid #429bc7;
+    width: 14px;
+    height: 14px;
+    margin: -5px 0;
+    border-radius: 7px;
+}
+
+QSlider::sub-page:horizontal {
+    background: #81cbee;
+    border-radius: 3px;
+}
+
+/* QTableWidget 美化 */
+QTableWidget {
+    background-color: #ffffff;
+    border: 1px solid #bcdff0;
+    border-radius: 6px;
+    gridline-color: #d1eaf6;
+    selection-background-color: #c2e4f7;
+    selection-color: #1b2e4b;
+    alternate-background-color: #f4fbff;
+}
+
+QHeaderView::section {
+    background-color: #d6edf9;
+    padding: 4px;
+    border: 1px solid #c0e0f2;
+    font-weight: bold;
+    color: #1b2e4b;
+}
+
+QTableWidget::item {
+    padding: 6px;
+    border: none;
+}
+
+QTableWidget::item:selected {
+    background-color: #b2dff6;
+    color: #0e2a47;
+}
+</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <property name="baseSize">
     <size>
@@ -74,21 +168,150 @@
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
-        <spacer name="horizontalSpacer">
-         <property name="orientation">
-          <enum>Qt::Orientation::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
+        <widget class="ScrollingLabel" name="display_label_widget" native="true">
+         <property name="minimumSize">
           <size>
-           <width>366</width>
-           <height>20</height>
+           <width>200</width>
+           <height>0</height>
           </size>
          </property>
-        </spacer>
+         <property name="maximumSize">
+          <size>
+           <width>200</width>
+           <height>16777215</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_prev_one">
+         <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="../sources/icons.qrc">
+           <normaloff>:/icons/prevone.png</normaloff>:/icons/prevone.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_gobackward">
+         <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="../sources/icons.qrc">
+           <normaloff>:/icons/replay10.png</normaloff>:/icons/replay10.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
        </item>
        <item>
         <widget class="QPushButton" name="btn_status_change">
          <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_goforward">
+         <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="../sources/icons.qrc">
+           <normaloff>:/icons/forward10.png</normaloff>:/icons/forward10.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_next_one">
+         <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="../sources/icons.qrc">
+           <normaloff>:/icons/nextone.png</normaloff>:/icons/nextone.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_mode_flow">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
           <size>
            <width>50</width>
            <height>50</height>
@@ -131,7 +354,10 @@
     <bool>false</bool>
    </attribute>
    <addaction name="actionaction_open_media"/>
+   <addaction name="actionimport_medias"/>
    <addaction name="actionmedia_info"/>
+   <addaction name="actionopen_medialist"/>
+   <addaction name="actionexit"/>
   </widget>
   <action name="actionaction_open_media">
    <property name="icon">
@@ -157,12 +383,54 @@
     <enum>QAction::MenuRole::NoRole</enum>
    </property>
   </action>
+  <action name="actionopen_medialist">
+   <property name="icon">
+    <iconset resource="../sources/icons.qrc">
+     <normaloff>:/icons/playlist.png</normaloff>:/icons/playlist.png</iconset>
+   </property>
+   <property name="text">
+    <string>open_medialist</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionexit">
+   <property name="icon">
+    <iconset resource="../sources/icons.qrc">
+     <normaloff>:/icons/exit.png</normaloff>:/icons/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>exit</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionimport_medias">
+   <property name="icon">
+    <iconset resource="../sources/icons.qrc">
+     <normaloff>:/icons/import_medias.png</normaloff>:/icons/import_medias.png</iconset>
+   </property>
+   <property name="text">
+    <string>import_medias</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
  </widget>
  <customwidgets>
   <customwidget>
    <class>DiskMusic</class>
    <extends>QWidget</extends>
    <header>DiskMusic.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ScrollingLabel</class>
+   <extends>QWidget</extends>
+   <header>ScrollingLabel.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

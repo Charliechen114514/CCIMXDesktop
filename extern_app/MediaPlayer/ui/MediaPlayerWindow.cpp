@@ -1,4 +1,5 @@
 #include "MediaPlayerWindow.h"
+#include "PlayListMainWindow.h"
 #include "base/MediaPlayer.h"
 #include "core/MediaEnableSelectFactory.h"
 #include "core/UiTools.h"
@@ -29,7 +30,21 @@ void MediaPlayerWindow::open_media() {
 		this, "Select Media File");
 	if (file.isEmpty())
 		return;
-	mediaPlayer->setSource(file.toStdString().c_str());
+	medialist->enqueue_play({ file });
+	/* set the media */
+	MediaListMails mails = medialist->fetch_first_play();
+	handle_according_mails(mails);
+}
+
+void MediaPlayerWindow::open_medias() {
+	QStringList files = MediaEnableSelectFactory::get_all_enabled_select_medias_fromdialog(
+		this, "Select Media Files");
+	if (files.isEmpty())
+		return;
+	medialist->enqueue_play(files);
+	/* set the media */
+	MediaListMails mails = medialist->fetch_first_play();
+	handle_according_mails(mails);
 }
 
 void MediaPlayerWindow::toggle_playing_status() {
@@ -37,6 +52,34 @@ void MediaPlayerWindow::toggle_playing_status() {
 	process_playing_status();
 	ui->music_widget->setStatus(is_playing);
 	is_playing ? mediaPlayer->resume() : mediaPlayer->pause();
+}
+
+void MediaPlayerWindow::forward10sec() {
+	/* if there is less then 10 secs, reject */
+	if (mediaPlayer->get_durations() - mediaPlayer->get_position() < UiTools::upcast_to_mseconds(10)) {
+		/* no enough 10 secs, set to the last end */
+		mediaPlayer->set_position(mediaPlayer->get_durations());
+		return;
+	}
+	auto position = mediaPlayer->get_position() + UiTools::upcast_to_mseconds(10);
+	mediaPlayer->set_position(position);
+}
+
+void MediaPlayerWindow::backward10sec() {
+
+	if (mediaPlayer->get_position() < UiTools::upcast_to_mseconds(10)) {
+		/* no enough 10 secs */
+		mediaPlayer->set_position(0);
+		return;
+	}
+	auto position = mediaPlayer->get_position() - UiTools::upcast_to_mseconds(10);
+	mediaPlayer->set_position(position);
+}
+
+void MediaPlayerWindow::flow_mode_once() {
+	medialist->flow_mode();
+	process_playmode_switching();
+	handle_according_mails(medialist->fetch_current_play());
 }
 
 MediaPlayerWindow::~MediaPlayerWindow() {
@@ -57,6 +100,9 @@ void MediaPlayerWindow::handle_display_src(bool available, const QImage& image) 
 	ui->sound_slider->setValue(mediaPlayer->volume() * 100);
 	ui->position_slidebar->setEnabled(true);
 	ui->btn_status_change->setEnabled(true);
+	ui->btn_goforward->setEnabled(true);
+	ui->btn_gobackward->setEnabled(true);
+	ui->display_label_widget->setText(UiTools::toScrollLabelText(mediaPlayer->source()));
 }
 
 void MediaPlayerWindow::post_do_video_unavailable() {
@@ -70,16 +116,40 @@ void MediaPlayerWindow::post_init_ui() {
 
 	ui->position_slidebar->setEnabled(false);
 	ui->btn_status_change->setEnabled(false);
+	ui->btn_goforward->setEnabled(false);
+	ui->btn_gobackward->setEnabled(false);
+	ui->btn_next_one->setEnabled(false);
+	ui->btn_prev_one->setEnabled(false);
 	ui->btn_status_change->setIconSize(QSize(50, 50));
 	ui->btn_status_change->setIcon(QIcon(":/icons/media_paused.png"));
+	process_playmode_switching();
 }
 
 void MediaPlayerWindow::process_playing_status() {
+	ui->music_widget->setStatus(is_playing);
 	if (is_playing) {
 		/* managing the playing one */
 		ui->btn_status_change->setIcon(QIcon(":/icons/media_displaying.png"));
 	} else {
 		ui->btn_status_change->setIcon(QIcon(":/icons/media_paused.png"));
+	}
+}
+
+void MediaPlayerWindow::process_playmode_switching() {
+	CCMediaPlayList::PlayMode mode = medialist->get_play_mode();
+	switch (mode) {
+	case CCMediaPlayList::PlayMode::OneShot:
+		ui->btn_mode_flow->setIcon(QIcon(":/icons/single.png"));
+		break;
+	case CCMediaPlayList::PlayMode::OneCycle:
+		ui->btn_mode_flow->setIcon(QIcon(":/icons/single_recycle.png"));
+		break;
+	case CCMediaPlayList::PlayMode::ListPlay:
+		ui->btn_mode_flow->setIcon(QIcon(":/icons/listplay.png"));
+		break;
+	case CCMediaPlayList::PlayMode::ListCycle:
+		ui->btn_mode_flow->setIcon(QIcon(":/icons/listrecycle.png"));
+		break;
 	}
 }
 
@@ -119,7 +189,6 @@ void MediaPlayerWindow::handle_slider_pressed() {
 	manual_sliding = true;
 	/* when pressed, we should pause the media */
 	mediaPlayer->pause();
-	ui->music_widget->setStatus(false);
 	is_playing = false;
 	process_playing_status();
 }
@@ -132,13 +201,29 @@ void MediaPlayerWindow::handle_slider_released() {
 	/* resume the media */
 	mediaPlayer->resume();
 	is_playing = true;
-	ui->music_widget->setStatus(true);
 	process_playing_status();
+}
+
+void MediaPlayerWindow::handle_according_mails(const MediaListMails mails) {
+	ui->btn_next_one->setEnabled(mails.next_enabled);
+	ui->btn_prev_one->setEnabled(mails.prev_enabled);
+	if (mails.current_playing.isEmpty()) {
+		return; /* invalid */
+	}
+	if (mediaPlayer->isPlaying()) {
+		mediaPlayer->pause();
+		is_playing = false;
+		process_playing_status();
+	}
+	mediaPlayer->setSource(mails.current_playing.toStdString().c_str());
+	toggle_playing_status();
 }
 
 void MediaPlayerWindow::init_memories() {
 	mediaPlayer = new MediaPlayer(this);
 	infoWindow = new MediaInfoWindow(this);
+	medialist = new CCMediaPlayList(this);
+	playListWindow = new PlayListMainWindow(this);
 }
 
 void MediaPlayerWindow::init_core_connections() {
@@ -151,9 +236,6 @@ void MediaPlayerWindow::init_core_connections() {
 				/* process the error */
 				MediaPlayerWindowHelper::handle_displayError(this, source, status);
 			});
-
-	connect(ui->btn_status_change, &QPushButton::clicked,
-			this, &MediaPlayerWindow::toggle_playing_status);
 
 	connect(mediaPlayer, &MediaPlayer::display_frame,
 			this, &MediaPlayerWindow::handle_imageDisplay);
@@ -171,10 +253,12 @@ void MediaPlayerWindow::init_core_connections() {
 }
 
 void MediaPlayerWindow::init_ui_connections() {
-
 	/* Tool Bars Connections */
 	connect(ui->actionaction_open_media, &QAction::triggered,
 			this, &MediaPlayerWindow::open_media);
+
+	connect(ui->actionimport_medias, &QAction::triggered,
+			this, &MediaPlayerWindow::open_medias);
 
 	connect(ui->actionmedia_info, &QAction::triggered,
 			infoWindow, &MediaInfoWindow::show);
@@ -184,12 +268,59 @@ void MediaPlayerWindow::init_ui_connections() {
 				mediaPlayer->setVolume(value / 100.0);
 			});
 
+	connect(ui->actionexit, &QAction::triggered,
+			this, &MediaPlayerWindow::close);
+
+	connect(ui->btn_goforward, &QPushButton::clicked,
+			this, &MediaPlayerWindow::forward10sec);
+	connect(ui->btn_gobackward, &QPushButton::clicked,
+			this, &MediaPlayerWindow::backward10sec);
+
+	connect(ui->btn_status_change, &QPushButton::clicked,
+			this, &MediaPlayerWindow::toggle_playing_status);
+
+	connect(ui->btn_next_one, &QPushButton::clicked,
+			this, [this]() {
+				handle_according_mails(medialist->fetch_next_play());
+			});
+
+	connect(ui->btn_prev_one, &QPushButton::clicked,
+			this, [this]() {
+				handle_according_mails(medialist->fetch_prev_play());
+			});
+
+	connect(ui->btn_mode_flow, &QPushButton::clicked,
+			this, &MediaPlayerWindow::flow_mode_once);
+
 	connect(ui->position_slidebar, &QSlider::valueChanged,
 			this, &MediaPlayerWindow::handle_slider_position_changed);
 	connect(ui->position_slidebar, &QSlider::sliderPressed,
 			this, &MediaPlayerWindow::handle_slider_pressed);
 	connect(ui->position_slidebar, &QSlider::sliderReleased,
 			this, &MediaPlayerWindow::handle_slider_released);
+
+	/* playlist info window */
+	connect(ui->actionopen_medialist, &QAction::triggered,
+			playListWindow, [this]() {
+				playListWindow->from_media_list(medialist->actualList());
+				playListWindow->show();
+			});
+	connect(playListWindow, &PlayListMainWindow::refresh_media_list,
+			this, [this]() {
+				/* flush the media list */
+				medialist->flush_play_list();
+				handle_according_mails(medialist->fetch_first_play());
+			});
+	connect(playListWindow, &PlayListMainWindow::play_media,
+			this, [this](const QString& media_src) {
+				/* set the media */
+				handle_according_mails(medialist->fetch_from_name(media_src));
+			});
+	connect(playListWindow, &PlayListMainWindow::delete_media,
+			this, [this](const QString& media_src) {
+				/* delete the media */
+				medialist->remove_play_list({ media_src });
+			});
 }
 
 void MediaPlayerWindow::init_connections() {

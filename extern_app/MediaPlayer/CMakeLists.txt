@@ -54,12 +54,17 @@ set(MediaBaseSource
 
 set(CoreSoruce
     core/MediaEnableSelectFactory.h
-    core/MediaEnableSelectFactory.cpp)
+    core/MediaEnableSelectFactory.cpp
+    core/UiTools.h core/UiTools.cpp
+    core/CCMediaPlayList.h core/CCMediaPlayList.cpp)
 
 set(UiSource
     ui/MediaPlayerWindow.cpp
     ui/MediaPlayerWindow.h
-    ui/MediaPlayerWindow.ui)
+    ui/MediaPlayerWindow.ui
+    ui/DiskMusic.h ui/DiskMusic.cpp ui/DiskMusic.ui
+    ui/MediaInfoWindow.h ui/MediaInfoWindow.cpp ui/MediaInfoWindow.ui
+    ui/PlayListMainWindow.h ui/PlayListMainWindow.cpp ui/PlayListMainWindow.ui)
 
 
 qt_add_executable(MediaPlayer
@@ -69,10 +74,7 @@ qt_add_executable(MediaPlayer
     ${CoreSoruce}
     main.cpp
     sources/icons.qrc
-    core/UiTools.h core/UiTools.cpp
-    ui/DiskMusic.h ui/DiskMusic.cpp ui/DiskMusic.ui
-    ui/MediaInfoWindow.h ui/MediaInfoWindow.cpp ui/MediaInfoWindow.ui
-
+    ui/ScrollingLabel.h ui/ScrollingLabel.cpp ui/ScrollingLabel.ui
 )
 
 target_include_directories(MediaPlayer

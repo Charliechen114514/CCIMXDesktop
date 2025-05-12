@@ -19,6 +19,8 @@ inline qint64 upcast_to_mseconds(qint64 position) {
 	return position * 1000;
 }
 
+QString toScrollLabelText(const QString& src_path);
+
 };
 
 #endif // UITOOLS_H

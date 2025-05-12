@@ -7,5 +7,16 @@
         <file>tunearm.png</file>
         <file>records.png</file>
         <file>meida_info.png</file>
+        <file>forward10.png</file>
+        <file>nextone.png</file>
+        <file>playlist.png</file>
+        <file>prevone.png</file>
+        <file>replay10.png</file>
+        <file>exit.png</file>
+        <file>import_medias.png</file>
+        <file>listplay.png</file>
+        <file>listrecycle.png</file>
+        <file>single.png</file>
+        <file>single_recycle.png</file>
     </qresource>
 </RCC>
