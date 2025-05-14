@@ -8,7 +8,7 @@ option(INCLUDE_PDF_BROWSER_APP "Build the PDF Browser App" ON)
 option(INCLUDE_CAMERA_APP "Build the Camera App" ON)
 option(INCLUDE_FILERAMBER_APP "Build the FileRamber App" ON)
 option(INCLUDE_SYSTEMSTATUS_APP "Build the System Status App" ON)
-option(INCLUDE_MEDIAPLAYER_APP "Build the MeidaPlayer App" OFF)
+option(INCLUDE_MEDIAPLAYER_APP "Build the MeidaPlayer App" ON)
 option(INCLUDE_PROFESSIONAL_APP "Build the professional App Enabled" ON)
 
 find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets Network)
@@ -196,8 +196,3 @@ message(STATUS "File Ramber Built status due to INCLUDE_FILERAMBER_APP: ${INCLUD
 message(STATUS "System State Built due to INCLUDE_SYSTEMSTATUS_APP: ${INCLUDE_SYSTEMSTATUS_APP}")
 message(STATUS "Media Player Built due to INCLUDE_MEDIAPLAYER_APP: ${INCLUDE_MEDIAPLAYER_APP}")
 message(STATUS "-----------------------------------------------------")
-
-
-
-
-

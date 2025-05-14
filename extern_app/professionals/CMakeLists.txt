@@ -5,6 +5,8 @@ option(INCLUDE_OPENCV_QT_ADAPTER    "OpenCV Qt Convient Adapter"    ON)
 
 add_subdirectory(library)
 
+add_subdirectory(boardlevel_application)
+
 
 
 
