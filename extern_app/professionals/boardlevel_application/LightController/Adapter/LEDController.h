@@ -8,7 +8,7 @@
 
 class LEDController {
 public:
-	LEDController() = default;
+    LEDController() = default;
 	~LEDController() = default;
 	/* this means switching to other led */
 	void redirectTo(const std::string& ledName) {

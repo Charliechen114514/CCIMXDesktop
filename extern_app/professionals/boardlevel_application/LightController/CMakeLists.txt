@@ -13,9 +13,9 @@ find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 
 set(UiSrc
-    ui/lightcontrollerwindow.cpp
-    ui/lightcontrollerwindow.h
-    ui/lightcontrollerwindow.ui)
+    Ui/lightcontrollerwindow.cpp
+    Ui/lightcontrollerwindow.h
+    Ui/lightcontrollerwindow.ui)
 
 set(AdapterSrc
     Adapter/led_adapter.cpp
@@ -35,7 +35,6 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(LightController
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
-
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET LightController APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
@@ -57,7 +56,7 @@ endif()
 target_include_directories(LightController
     PRIVATE
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/Adapter>
-        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/ui>
+        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/Ui>
 )
 target_link_libraries(LightController PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
 

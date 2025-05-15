@@ -19,6 +19,33 @@
   <property name="windowTitle">
    <string>LightControllerWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton {
+    background-color: #e6f2ff; /* 浅蓝底色 */
+    border: 2px solid #99ccff; /* 边框为稍深蓝色 */
+    border-radius: 12px;       /* 圆角美观 */
+    padding: 10px;
+    font: bold 16px &quot;Segoe UI&quot;;
+    color: #003366;            /* 字体为深蓝 */
+}
+
+QPushButton:hover {
+    background-color: #cce6ff; /* 悬停变亮 */
+    border-color: #66b3ff;
+}
+
+QPushButton:pressed {
+    background-color: #b3d9ff; /* 按下更深 */
+    border-color: #3399ff;
+}
+
+QPushButton:disabled {
+    background-color: #f0f5f9;
+    color: #a0a0a0;
+    border-color: #d0d0d0;
+}
+</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
@@ -86,7 +113,10 @@
          </property>
          <property name="font">
           <font>
-           <pointsize>35</pointsize>
+           <family>Segoe UI</family>
+           <pointsize>-1</pointsize>
+           <italic>false</italic>
+           <bold>true</bold>
           </font>
          </property>
          <property name="text">

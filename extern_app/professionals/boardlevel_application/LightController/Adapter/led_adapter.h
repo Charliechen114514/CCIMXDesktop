@@ -9,7 +9,7 @@
 #include <string>
 class LEDAdapter {
 public:
-	explicit LEDAdapter(const std::string& ledName);
+    explicit LEDAdapter() = default;
 	~LEDAdapter() = default;
 	/* this means switching to other led */
 	void redirectTo(const std::string& ledName);

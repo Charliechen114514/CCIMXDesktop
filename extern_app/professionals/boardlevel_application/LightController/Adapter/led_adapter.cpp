@@ -10,10 +10,6 @@ std::string composePath(const std::string& ledName) {
 }
 }
 
-LEDAdapter::LEDAdapter(const std::string& ledName) {
-	redirectTo(ledName);
-}
-
 void LEDAdapter::redirectTo(const std::string& ledName) {
 	this->led_path = composePath(ledName);
 }
