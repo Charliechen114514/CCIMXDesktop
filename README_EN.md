@@ -22,6 +22,8 @@ Currently, CCIMXDesktop supports one-click building including:
 - GeneralLocalCamera (This is a basic camera based on Opencv VideoCapture, which can realize the photo taking function)
 - SystemState (view the CPU status, memory capacity status and process list of the running machine)
 - MediaPlayer (your QMediaPlayer needs to support ALSA or other audio playback, and video playback requires OpenCV support)
+- Light switch APP(Light switch APP requires Platform LED driver to be enabled)
+- Environment APP (AP3216C driver needs to be mounted)
 
 ------
 
@@ -57,9 +59,6 @@ If you are interested in the project production process and development document
   - Audio player
   - Serial port assistant
   - Image processor local processing of images and simple reasoning (face recognition)
-  - Light switch APP
-  - Horn APP
-  - Environment APP
   - Posture detection APP
 
 ------

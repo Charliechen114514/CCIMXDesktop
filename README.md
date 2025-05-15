@@ -22,6 +22,8 @@
 - GeneralLocalCamera（这是基于Opencv VideoCapture的基础相机，可以实现拍照功能）
 - SystemState（查看运行机的CPU状态，内存容量状态和进程列表）
 - MediaPlayer（需要您的QMediaPlayer支持ALSA或者是其他的音频播放，视频播放需要OpenCV支持）
+- 开关灯APP（开关灯APP，需要 Platform LED 驱动使能）
+- 环境APP（AP3216C驱动需要被挂载）
 
 ------
 
@@ -55,9 +57,6 @@
   - 文本简单的编辑器
   - 串口助手
   - 图像处理器本地处理图像和做简单的推理（人脸识别）
-  - 开关灯APP
-  - 鸣笛APP
-  - 环境APP
   - 姿态检测APP
 
 ------
