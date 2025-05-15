@@ -1,5 +1,4 @@
 cmake_minimum_required(VERSION 3.16)
-
 project(Environment VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_AUTOUIC ON)
@@ -15,13 +14,18 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 set(UiSrc
     Ui/environmentwindow.cpp
     Ui/environmentwindow.h
-    Ui/environmentwindow.ui)
-
+    Ui/environmentwindow.ui
+    Ui/GaugeWidget.cpp
+    Ui/GaugeWidget.h)
 
 set(Adapters
     Adapter/ap3216c.h
     Adapter/ap3216c_adapter.cpp
     Adapter/ap3216c_adapter.h
+    Adapter/PesudoAP3216C.cpp
+    Adapter/PesudoAP3216C.h
+    Adapter/AP3216CAdapterFactory.h
+    Adapter/AP3216CAdapterFactory.cpp
 )
 
 set(PROJECT_SOURCES
@@ -34,6 +38,9 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(Environment
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+        sources/icons.qrc
+
+
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET Environment APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
@@ -52,6 +59,12 @@ else()
         )
     endif()
 endif()
+
+target_include_directories(Environment
+    PRIVATE
+        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/Adapter>
+        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/Ui>
+)
 
 target_link_libraries(Environment PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
 

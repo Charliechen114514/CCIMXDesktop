@@ -15,7 +15,8 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 set(UiSrc
 	Ui/sportshealthwindow.cpp
         Ui/sportshealthwindow.h
-        Ui/sportshealthwindow.ui	
+        Ui/sportshealthwindow.ui)
+
 
 set(PROJECT_SOURCES
         main.cpp
@@ -45,6 +46,11 @@ else()
     endif()
 endif()
 
+target_include_directories(SportsHealth
+    PRIVATE
+        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/Adapter>
+        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/Ui>
+)
 target_link_libraries(SportsHealth PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.

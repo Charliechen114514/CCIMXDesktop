@@ -5,7 +5,8 @@ get_filename_component(COMPILER_NAME ${CMAKE_CXX_COMPILER} NAME)
 # Auto generate the CCIMX_ALL_RELEASE_DIR and base app dir
 if(COMPILER_NAME MATCHES "arm.*-g\\+\\+")
     message(STATUS "Cross compile detected, so this will compile in the real adapters")
-    add_compile_definitions(BUILD_IN_ARM)
+    # defines in the file with real adapters
+    add_compile_definitions(USE_REAL_ADAPTER)
 else()
     message(STATUS "Non-arm platform detected, so choose to compile the pesudo one")
 endif()

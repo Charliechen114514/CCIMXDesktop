@@ -13,9 +13,9 @@ find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 
 set(UiSrc
-        lightcontrollerwindow.cpp
-        lightcontrollerwindow.h
-        lightcontrollerwindow.ui)
+    ui/lightcontrollerwindow.cpp
+    ui/lightcontrollerwindow.h
+    ui/lightcontrollerwindow.ui)
 
 set(PROJECT_SOURCES
         main.cpp
@@ -44,7 +44,11 @@ else()
         )
     endif()
 endif()
-
+target_include_directories(LightController
+    PRIVATE
+        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/Adapter>
+        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/ui>
+)
 target_link_libraries(LightController PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
