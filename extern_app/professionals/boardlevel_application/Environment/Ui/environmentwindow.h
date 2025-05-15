@@ -9,6 +9,8 @@ class EnvironmentWindow;
 }
 QT_END_NAMESPACE
 
+static constexpr const char* DEV_FILE = "/dev/ap3216c";
+
 class EnvironmentWindow : public QMainWindow {
 	Q_OBJECT
 

@@ -14,6 +14,7 @@ EnvironmentWindow::~EnvironmentWindow() {
 }
 
 void EnvironmentWindow::setup_memory() {
+    factory.bind_file(DEV_FILE);
 	period_request_timer = new QTimer(this);
 	connect(period_request_timer, &QTimer::timeout, this, [this]() {
 		factory.request_data();
