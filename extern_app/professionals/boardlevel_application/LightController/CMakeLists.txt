@@ -17,15 +17,25 @@ set(UiSrc
     ui/lightcontrollerwindow.h
     ui/lightcontrollerwindow.ui)
 
+set(AdapterSrc
+    Adapter/led_adapter.cpp
+    Adapter/led_adapter.h
+    Adapter/LEDController.h
+    Adapter/LEDParamsPackage.h
+    Adapter/PesudoLedController.h)
+
 set(PROJECT_SOURCES
-        main.cpp
-	${UiSrc}
+    main.cpp
+    ${UiSrc}
+    ${AdapterSrc}
+    sources/icons.qrc
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(LightController
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET LightController APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

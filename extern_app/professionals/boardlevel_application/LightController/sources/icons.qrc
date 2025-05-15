@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>blink_mode.png</file>
+        <file>exit.png</file>
+        <file>led_off.png</file>
+        <file>led_on.png</file>
+        <file>manual_control.png</file>
+    </qresource>
+</RCC>
