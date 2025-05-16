@@ -15,8 +15,6 @@ class SportsChart : public QWidget {
 	Q_OBJECT
 
 public:
-	static constexpr short MAX_A_POINTS = 8;
-	static constexpr short MAX_G_POINTS = 2000;
 	explicit SportsChart(QWidget* parent = nullptr);
 	~SportsChart();
 

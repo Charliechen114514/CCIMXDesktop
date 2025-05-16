@@ -10,5 +10,8 @@
         <file>sources/file_ramber.png</file>
         <file>sources/system_state.png</file>
         <file>sources/mediaplayer_app.png</file>
+        <file>sources/env_app.png</file>
+        <file>sources/ledcontrol_app.png</file>
+        <file>sources/sports_health_app.png</file>
     </qresource>
 </RCC>

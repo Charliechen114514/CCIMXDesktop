@@ -12,7 +12,8 @@ SportsHealthWindow::SportsHealthWindow(QWidget* parent)
             &SportsChart::flush_one_request);
     connect(ui->sports_chart, &SportsChart::fetch_once_data,
             ui->display_labels_widget, &SportsDisplayWidget::setDisplay);
-    timer->start(1000);
+    connect(ui->pushButton, &QPushButton::clicked, this, &SportsHealthWindow::close);
+    timer->start(FLUSH_FREQ);
 }
 
 SportsHealthWindow::~SportsHealthWindow() {

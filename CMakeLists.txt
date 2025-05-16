@@ -10,6 +10,16 @@ option(INCLUDE_FILERAMBER_APP "Build the FileRamber App" ON)
 option(INCLUDE_SYSTEMSTATUS_APP "Build the System Status App" ON)
 option(INCLUDE_MEDIAPLAYER_APP "Build the MeidaPlayer App" ON)
 option(INCLUDE_PROFESSIONAL_APP "Build the professional App Enabled" ON)
+if(INCLUDE_PROFESSIONAL_APP)
+    option(INCLUDE_LED_APP "Build the LEDController App" ON)
+    option(INCLUDE_ENV_APP "Build the Environment App" ON)
+    option(INCLUDE_SPORT_APP "Build the SportsHealth App" ON)
+    add_compile_definitions(
+        $<$<BOOL:${INCLUDE_LED_APP}>:INCLUDE_LED_APP>
+        $<$<BOOL:${INCLUDE_ENV_APP}>:INCLUDE_ENV_APP>
+        $<$<BOOL:${INCLUDE_SPORT_APP}>:INCLUDE_SPORT_APP>
+    )
+endif()
 
 find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets Network)
 qt_standard_project_setup()
@@ -60,6 +70,7 @@ elseif(COMPILER_NAME MATCHES "arm.*-g\\+\\+")
     message(STATUS "Cross compile detected, so build release in the arm dirent")
     set(CCIMX_ALL_RELEASE_DIR ${CCIMX_ALL_RELEASE_DIR_BASE}/arm32 CACHE PATH "Deploy the install root directory")
     set(CCIMX_EXTERNAL_APP_BASE_DIR ".")
+    add_compile_definitions(ARM_BUILD)
 else()
     message(STATUS "GCC compiler detected, so build release in the x86 dirent")
     set(CCIMX_ALL_RELEASE_DIR ${CCIMX_ALL_RELEASE_DIR_BASE}/x86 CACHE PATH "Deploy the install root directory")

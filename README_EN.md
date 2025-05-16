@@ -24,14 +24,14 @@ Currently, CCIMXDesktop supports one-click building including:
 - MediaPlayer (your QMediaPlayer needs to support ALSA or other audio playback, and video playback requires OpenCV support)
 - Light switch APP(Light switch APP requires Platform LED driver to be enabled)
 - Environment APP (AP3216C driver needs to be mounted)
-
+- Posture detection APP(ICM20608 driver needs to be mounted)
 ------
 
 ## 🛠️ Technologies Used for Base Build
 
 For beginners mappings the base desktop, it is simple that Qt6 Core Widgets And Core Networks should be supported in the  Embedded devices. And TSLIB and Linux framebuffer backend for display should be ready also.
 
-## 🛠️ Technologies Used for FULL Build
+## 🛠️ Technologies Used for FULL Build  - Posture detection APP
 
 - OpenCV For the Camera Support
 - MuPDF (for PDF rendering)     (These is used for the mupdf based pdfreader)
@@ -59,8 +59,6 @@ If you are interested in the project production process and development document
   - Audio player
   - Serial port assistant
   - Image processor local processing of images and simple reasoning (face recognition)
-  - Posture detection APP
-
 ------
 
 ## 📝 License

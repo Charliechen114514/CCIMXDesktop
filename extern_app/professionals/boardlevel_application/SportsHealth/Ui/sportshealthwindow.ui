@@ -71,7 +71,7 @@ QLabel[data-step-count=&quot;true&quot;] {
 }</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QVBoxLayout" name="verticalLayout" stretch="10,1">
+   <layout class="QVBoxLayout" name="verticalLayout" stretch="5,1">
     <item>
      <widget class="SportsChart" name="sports_chart" native="true"/>
     </item>

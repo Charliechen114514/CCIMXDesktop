@@ -13,6 +13,7 @@ class SportsHealthWindow : public QMainWindow {
 	Q_OBJECT
 
 public:
+    static constexpr int FLUSH_FREQ = 1000;
 	SportsHealthWindow(QWidget* parent = nullptr);
 	~SportsHealthWindow();
 

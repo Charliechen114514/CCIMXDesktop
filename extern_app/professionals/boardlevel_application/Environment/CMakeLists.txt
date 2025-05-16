@@ -89,6 +89,11 @@ install(TARGETS Environment
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
 
+add_custom_command(TARGET Environment POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E make_directory ${CCIMX_ALL_RELEASE_DIR}
+    COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:Environment> ${CCIMX_ALL_RELEASE_DIR}
+)
+
 if(QT_VERSION_MAJOR EQUAL 6)
     qt_finalize_executable(Environment)
 endif()

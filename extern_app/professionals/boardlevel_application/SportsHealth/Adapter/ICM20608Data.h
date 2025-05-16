@@ -21,7 +21,7 @@ typedef struct {
 
 static constexpr const int G_MAX_VAL = 8;
 static constexpr const int G_MIN_VAL = -8;
-static constexpr const int ROL_MAX_VAL = 2000;
-static constexpr const int ROL_MIN_VAL = -2000;
+static constexpr const int ROL_MAX_VAL = 180;
+static constexpr const int ROL_MIN_VAL = -180;
 
 #endif // ICM20608DATA_H
