@@ -9,15 +9,14 @@ class SportsHealthWindow;
 }
 QT_END_NAMESPACE
 
-class SportsHealthWindow : public QMainWindow
-{
-    Q_OBJECT
+class SportsHealthWindow : public QMainWindow {
+	Q_OBJECT
 
 public:
-    SportsHealthWindow(QWidget *parent = nullptr);
-    ~SportsHealthWindow();
+	SportsHealthWindow(QWidget* parent = nullptr);
+	~SportsHealthWindow();
 
 private:
-    Ui::SportsHealthWindow *ui;
+	Ui::SportsHealthWindow* ui;
 };
 #endif // SPORTSHEALTHWINDOW_H

@@ -6,26 +6,125 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
+    <width>1024</width>
     <height>600</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1024</width>
+    <height>600</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>SportsHealthWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background-color: #E0F7FA;
+    color: #01579B;
+    font-family: &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+    font-size: 12px;
+}
+
+/* 主窗口与中央区域 */
+QMainWindow {
+    background-color: #E0F7FA;
+}
+QFrame#centralWidget {
+    background-color: #E0F7FA;
+    border: none;
+}
+
+/* QChartView 容器 */
+QChartView {
+    background-color: #FFFFFF;
+    border: 2px solid #81D4FA;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+/* 按钮风格 */
+QPushButton {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #B3E5FC, stop:1 #81D4FA);
+    border: 1px solid #4FC3F7;
+    border-radius: 6px;
+    padding: 6px 12px;
+    min-width: 80px;
+    color: #01579B;
+}
+QPushButton:hover {
+    background: #4FC3F7;
+}
+QPushButton:pressed {
+    background: #29B6F6;
+}
+
+/* 标签与数值显示 */
+QLabel {
+    background: transparent;
+    padding: 2px;
+}
+QLabel[data-step-count=&quot;true&quot;] {
+    font-size: 14px;
+    font-weight: bold;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout" stretch="10,1">
+    <item>
+     <widget class="SportsChart" name="sports_chart" native="true"/>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget" native="true">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="pushButton">
+         <property name="minimumSize">
+          <size>
+           <width>106</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Exit</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="SportsDisplayWidget" name="display_labels_widget" native="true"/>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
-     <height>23</height>
+     <width>1024</width>
+     <height>22</height>
     </rect>
    </property>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>SportsChart</class>
+   <extends>QWidget</extends>
+   <header>SportsChart.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>SportsDisplayWidget</class>
+   <extends>QWidget</extends>
+   <header>SportsDisplayWidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

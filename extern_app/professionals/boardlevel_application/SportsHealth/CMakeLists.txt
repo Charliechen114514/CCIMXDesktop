@@ -9,24 +9,37 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
-find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
+find_package(QT NAMES Qt6 Qt5
+    REQUIRED COMPONENTS Widgets Charts)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED
+    COMPONENTS Widgets Charts)
 
 set(UiSrc
-	Ui/sportshealthwindow.cpp
-        Ui/sportshealthwindow.h
-        Ui/sportshealthwindow.ui)
+    Ui/sportshealthwindow.cpp
+    Ui/sportshealthwindow.h
+    Ui/sportshealthwindow.ui)
+
+set(AdapterSrc
+    Adapter/icm20608.h
+    Adapter/icm20608_adapter.h
+    Adapter/icm20608_adapter.cpp)
 
 
 set(PROJECT_SOURCES
-        main.cpp
-	${UiSrc}
+    main.cpp
+    ${UiSrc}
+    ${AdapterSrc}
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(SportsHealth
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+        Adapter/PesudoICM20608.h Adapter/PesudoICM20608.cpp
+        Adapter/ICM20608Data.h
+        Adapter/ICM20608DataFactory.h
+        Ui/SportsChart.h Ui/SportsChart.cpp Ui/SportsChart.ui
+        Ui/SportsDisplayWidget.h Ui/SportsDisplayWidget.cpp Ui/SportsDisplayWidget.ui
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET SportsHealth APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
@@ -51,7 +64,9 @@ target_include_directories(SportsHealth
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/Adapter>
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/Ui>
 )
-target_link_libraries(SportsHealth PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+target_link_libraries(SportsHealth PRIVATE
+    Qt${QT_VERSION_MAJOR}::Widgets
+    Qt${QT_VERSION_MAJOR}::Charts)
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an
