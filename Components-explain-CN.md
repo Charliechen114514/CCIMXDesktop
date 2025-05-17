@@ -1,33 +1,52 @@
-# 🧩 模块描述
+# 🧩 模块描述 
 
- 如果您希望修改模块以便更好地移植到您的嵌入式设备，以下是供开发人员参考的模块描述。
+![Modules](https://img.shields.io/badge/Modules-6%20Core%20Components-blueviolet)
 
-## 🔧 `app_wrapper`
+如果您希望修改模块以便更好地移植到您的嵌入式设备，以下是供开发人员参考的模块描述。
 
- 应用程序启动器和系统引导程序。它初始化 Qt 环境、设置全局样式并管理启动和关闭顺序。
+## 🔧 `app_wrapper` 
+
+![Launcher](https://img.shields.io/badge/Component-System%20Launcher-important)
+
+应用程序启动器和系统引导程序。它初始化 Qt 环境、设置全局样式并管理启动和关闭顺序。
 
 ------
 
 ## 🧬 `builtin`
 
+![Builtin](https://img.shields.io/badge/Category-Core%20Utilities-yellowgreen)
+
 包含嵌入在桌面环境中的核心系统工具和默认实用程序。
 
 - `core/icm20608`
-**ICM-20608 IMU 传感器** 的驱动程序和逻辑，用于处理陀螺仪和加速度计的实时数据采集，并通过 I2C 接口连接。（补充：如果您使用其他芯片，也应该修改并重写内部函数）
+  ![Sensor](https://img.shields.io/badge/Driver-IMU%20Sensor-blue)
+  **ICM-20608 IMU 传感器** 的驱动程序和逻辑，用于处理陀螺仪和加速度计的实时数据采集，并通过 I2C 接口连接。（补充：如果您使用其他芯片，也应该修改并重写内部函数）
+
 - `gadgets`
-界面友好的小工具，例如时钟、CPU/网络仪表或用于用户交互的快速启动图块。
-- `page`
-用于内部 UI 路由的逻辑页面管理（例如，在主页、应用页面等之间切换）。
+  ![UI](https://img.shields.io/badge/Type-UI%20Widgets-9cf)
+  界面友好的小工具，例如时钟、CPU/网络仪表或用于用户交互的快速启动图块。
+
+- `page` 
+  ![Navigation](https://img.shields.io/badge/Feature-Page%20Routing-ff69b4)
+  用于内部 UI 路由的逻辑页面管理（例如，在主页、应用页面等之间切换）。
+
 - `sources/localweather`
-用于获取或模拟本地天气数据的天气信息提供模块。
+  ![Weather](https://img.shields.io/badge/Data-Weather%20API-green)
+  用于获取或模拟本地天气数据的天气信息提供模块。
+
 - `sources/netcard`
-用于处理网卡信息、状态显示，并可能提供 IP/网络诊断。
+  ![Network](https://img.shields.io/badge/Service-Network%20Status-lightgrey)
+  用于处理网卡信息、状态显示，并可能提供 IP/网络诊断。
+
 - `ui`
-内置模块特有的 UI 组件，这些文件支持桌面本身的 UI 样式。
+  ![Theme](https://img.shields.io/badge/Style-UI%20Components-important)
+  内置模块特有的 UI 组件，这些文件支持桌面本身的 UI 样式。
 
 ------
 
 ## ⚙️ `core`
+
+![System](https://img.shields.io/badge/Layer-System%20Services-critical)
 
 系统级服务和共享基类，例如全局上下文管理、信号总线或单例基础架构。可能包含跨模块使用的系统抽象。
 
@@ -35,40 +54,22 @@
 
 ## 🚀 `extern_app`
 
-第三方或用户可扩展的应用，集成到桌面系统中，但已模块化，方便添加/删除。
+![Extensible](https://img.shields.io/badge/Architecture-Pluggable%20Apps-success)
 
-- `FileRamber`
-自定义文件管理工具。
-- `Core`：文件操作的核心逻辑。
-- `source`：与文件系统交互，路径解析等。
-- `Ui`：用于浏览和管理文件的前端。
-- `GeneralLocalCamera` 一个通用的相机应用
-- `Core`：相机控制逻辑。
-- `sources`：设备接口。
-- `Ui`：视觉显示和用户交互。
-- `LocalCamera`
-本地相机的最小版本或旧版本，可能用于回退或测试。（由于 I.MX6UL 系统对 QMultiMedia 后端的支持较少，默认情况下它不会进入 buildroot。如果您完成这些后端的移植，则构建是可接受的。）
-- `pdfReader`
-一个基于 **MuPDF** 构建的轻量级 PDF 阅读器。
-- `mupdf_adapter`：连接 MuPDF 和 Qt 的适配器代码。
-- `mupdf_tools`：用于提取、渲染或操作页面的实用函数。
-- `sources`：查看器逻辑和文件管理。
-- `ui`、`ui_tools`：GUI 组件和 UI 实用程序。
-- `WeatherApp`
-一个功能齐全的天气应用，独立于内置小工具版本。
-- `Core`：处理天气 API 或传感器输入。
-- `MainWindow`：窗口控制器。
-- `sources`：功能模块。
-- `Ui`：界面渲染。
+第三方或用户可扩展的应用，集成到桌面系统中，但已模块化，方便添加/删除。您需要自己去下方对应的文档去翻阅其中的细节，需要注意的是，你只需要几乎0成本的修改就能将这些extern_app中的子项独立出来进行运行，作为您自己的一个项目进行改善和细化
 
 ------
 
 ## 🧩 `sources`
 
-桌面本身使用到的Ui资源
+![Resources](https://img.shields.io/badge/Assets-UI%20Resources-blue)
+
+桌面本身使用到的Ui资源，如果您需要替换成自己的资源，直接同名替换即可。
 
 ------
 
 ## 🎨 `ui`
+
+![Theme](https://img.shields.io/badge/Design-Theme%20System-ff69b4)
 
 顶级 UI 模板、主题或布局定义。可作为整个桌面样式或皮肤的基础。
