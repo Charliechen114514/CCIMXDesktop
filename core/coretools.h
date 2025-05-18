@@ -9,10 +9,6 @@ QStringList     enumeratefiles(const QString& path, const QStringList& nameFilte
 
 float           random_float(const float min, const float max);
 
-
-
-
-
 }
 
 #endif // CORETOOLS_H

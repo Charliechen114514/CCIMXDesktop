@@ -44,7 +44,7 @@ set(MediaBaseSource
     base/CVTools.cpp base/CVTools.h
     base/VideoPlayer.cpp
     base/VideoPlayer.h
-    base/VideoPlayerImpl.cpp
+
     base/VideoPlayerImpl.h
     base/VideoPlayerOpencvImpl.cpp
     base/VideoPlayerOpencvImpl.h

@@ -18,7 +18,7 @@
 
 - 🔨 完成上述工作后，您可以使用——QtCreator的 CMake 配置界面，CMake-GUI对项目进行编译，目前笔者仍然在尝试优化配置逻辑（包含自动依赖检查），因此到目前为止，您仍然需要一部分的手改依赖配置来启动这个项目的编译
 - ⚙️ 您可以调整INCLUDE_*APP来调整哪些APP是您想要的，哪些不需要，凡是不需要的APP只需要设置该变量为OFF即可。他就不会参与编译。
-- 📁 需要设置`CCIMX_ALL_RELEASE_DIR_BASE`变量作为下载的一个基础，一个即将的修改是——不存在则会自动创建而不是报错，截止到目前，您仍然需要创建CCIMX_ALL_RELEASE_DIR_BASE作为不同发行版的根基下载路径（Install Path）
+- 📁 需要设置`CCIMX_ALL_RELEASE_DIR_BASE`变量作为下载的一个基础。您需要创建CCIMX_ALL_RELEASE_DIR_BASE作为不同发行版的根基下载路径（Install Path）
 
 # 📦 How to build this project?
 
@@ -40,4 +40,4 @@
 
 - 🔨 After completing the above work, you can use the CMake configuration interface of QtCreator, CMake-GUI to compile the project. At present, the author is still trying to optimize the configuration logic (including automatic dependency checking), so so far, you still need to manually modify some dependency configurations to start the compilation of this project
 - ⚙️ You can adjust INCLUDE_*APP to adjust which APPs you want and which you don’t need. For all unnecessary APPs, just set the variable to OFF. It will not participate in the compilation.
-- 📁 You need to set the `CCIMX_ALL_RELEASE_DIR_BASE` variable as a basis for downloading. An upcoming change is that if it does not exist, it will be automatically created instead of an error. As of now, you still need to create CCIMX_ALL_RELEASE_DIR_BASE as the root download path (Install Path) of different distributions
+- 📁 You need to set the `CCIMX_ALL_RELEASE_DIR_BASE` variable as a basis for downloading. you need to create CCIMX_ALL_RELEASE_DIR_BASE as the root download path (Install Path) of different distributions

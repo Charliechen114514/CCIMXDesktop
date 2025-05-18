@@ -103,7 +103,7 @@ set(MuPdfAdapter
 set(MuPdfTools
     	mupdf_tools/mupdf_tools.h mupdf_tools/mupdf_tools.cpp
 	mupdf_tools/ccpdfnavigationpolicy.h mupdf_tools/ccpdfnavigationpolicy.cpp
-    	mupdf_tools/ccpdfzoommanagepolicy.h mupdf_tools/ccpdfzoommanagepolicy.cpp)
+    )
 
 set(UiTools
 	ui_tools/uipagenavigationpolicy.h ui_tools/uipagenavigationpolicy.cpp

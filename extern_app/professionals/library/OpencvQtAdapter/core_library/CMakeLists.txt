@@ -23,7 +23,7 @@ set(CVImageSrc
 
 set(VideoPlayerSrc
     videoplayer/VideoPlayer.h videoplayer_src/VideoPlayer.cpp
-    videoplayer/VideoPlayerImpl.h videoplayer_src/VideoPlayerImpl.cpp
+    videoplayer/VideoPlayerImpl.h
     videoplayer/VideoPlayerOpencvImpl.h videoplayer_src/VideoPlayerOpencvImpl.cpp)
 
 set(QtAdapter
