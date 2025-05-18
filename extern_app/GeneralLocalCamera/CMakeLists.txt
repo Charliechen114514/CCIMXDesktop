@@ -3,21 +3,7 @@ project(GeneralLocalCamera LANGUAGES CXX)
 SET(CMAKE_AUTORCC ON)
 find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets)
 
-if(MSVC)
-    message(STATUS "Compiling with MSVC on Windows")
-    set(OpenCV_DIR "D:/stdcpp-library/opencvLibrary")
-elseif(CMAKE_CXX_COMPILER MATCHES "arm.*-g\\+\\+")
-    message(STATUS "Cross-compiling for ARM (IMX6ULL)")
-    set(OpenCV_DIR "/home/charliechen/imx6ull/opencv_arm_res/lib/cmake/opencv4")
-else()
-    message(STATUS "Compiling for x86_64 or host (non-MSVC)")
-    set(OpenCV_DIR "/home/charliechen/imx6ull/opencv_res/lib/cmake/opencv4")
-endif()
-
 find_package(OpenCV REQUIRED)
-message(STATUS "OpenCV_LIBS = ${OpenCV_LIBS}")
-message(STATUS "OpenCV_INCLUDE_DIRS = ${OpenCV_INCLUDE_DIRS}")
-
 include_directories(. ./Core ./Ui)
 
 qt_standard_project_setup()

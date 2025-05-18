@@ -17,27 +17,29 @@
 ## 🛠️ 本项目的编译事项
 
 - 🔨 完成上述工作后，您可以使用——QtCreator的 CMake 配置界面，CMake-GUI对项目进行编译，目前笔者仍然在尝试优化配置逻辑（包含自动依赖检查），因此到目前为止，您仍然需要一部分的手改依赖配置来启动这个项目的编译
-- ⚙️ 您可以调整INCLUDE_*APP来调整哪些APP是您想要的，哪些不需要，凡是不需要的APP只需要设置该变量为OFF即可。他就不会参与编译。
+- ⚙️ 您可以调整INCLUDE\_*\_APP来调整哪些APP是您想要的，哪些不需要，凡是不需要的APP只需要设置该变量为OFF即可。他就不会参与编译。
+- ⚙️ 注意，现在如果不提供依赖的配置项的话，对应的App不会参与编译。
+  - OpenCV若安装在非标准路径下，需要指定OpenCV_DIR作为下载的根路径（这个路径需要直接存在OpenCVConfig.cmake文件）
+  - MuPDF则需要指定`MUPDF_INCLUDE_DIR`和`MUPDF_LIB_DIR`，这个变量名称很可能之后会发生变化，您可能需要查看CMake的构建日志进行具体的调整
 - 📁 需要设置`CCIMX_ALL_RELEASE_DIR_BASE`变量作为下载的一个基础。您需要创建CCIMX_ALL_RELEASE_DIR_BASE作为不同发行版的根基下载路径（Install Path）
 
-# 📦 How to build this project?
+#  📦  How to build this project?
 
-![MSVC](https://img.shields.io/badge/MSVC-Support-blue)
-![x86-GCC](https://img.shields.io/badge/x86--GCC-Support-brightgreen)
-![Arm32-linux-gnueabihf-GCC](https://img.shields.io/badge/Arm32_linux_gnueabihf_GCC-support-red)
-
-🔧 This project is written in C++ programming language, and is a desktop project for the i.MX6ULL Zhengdian Atom Alpha development board. It requires that your lower computer environment has at least deployed the following basic environment:
-
-- ⚙️ Basic C/C++ runtime environment (that is, with C/C++ library)
-- 🖥️ 4.3-inch or 7-inch LCD with touch chip interactive function, and the touch driver has been successfully loaded and can work normally.
-- 🌐 For network projects (including weather forecast APP), the network card driver needs to work properly and can access the Internet
-- 🎨 Basic support for QtCore / QtWidget / QtNetWork / QtGui / QtCharts / QtMultiMedia
-- 📚 For PDF browsers based on MuPDF, compilation requires the cross-compiled static library and header files of MuPDF
-- 📷 For all OpenCV-based projects (including but not limited to MediaPlayer, GeneralLocalCamera), OpenCV4.12.0 compilation support is required.
-- 🔗 If the lower computer uses a third-party library, such as ALSA-Lib, which is a third-party library, if it is a dynamic library, please ensure that the lower computer environment exists, and the upper computer also needs to ensure that the cross-compiled dynamic library can be retrieved when cross-compiling.
-
-## 🛠️ Compilation matters of this project
-
-- 🔨 After completing the above work, you can use the CMake configuration interface of QtCreator, CMake-GUI to compile the project. At present, the author is still trying to optimize the configuration logic (including automatic dependency checking), so so far, you still need to manually modify some dependency configurations to start the compilation of this project
-- ⚙️ You can adjust INCLUDE_*APP to adjust which APPs you want and which you don’t need. For all unnecessary APPs, just set the variable to OFF. It will not participate in the compilation.
-- 📁 You need to set the `CCIMX_ALL_RELEASE_DIR_BASE` variable as a basis for downloading. you need to create CCIMX_ALL_RELEASE_DIR_BASE as the root download path (Install Path) of different distributions
+![MSVC]( https://img.shields.io/badge/MSVC-Support-blue )
+![x86-GCC]( https://img.shields.io/badge/x86--GCC-Support-brightgreen )
+![Arm32-linux-gnueabihf-GCC]( https://img.shields.io/badge/Arm32_linux_gnueabihf_GCC-support-red )
+🔧  This project is written in the C++programming language and is a desktop project for the I.MX6ULL Point Atom Alpha development board. Your lower computer environment needs to have deployed at least the following basic environments:
+-  ⚙️  Basic C/C++runtime environment (i.e. with C/C++libraries)
+-  🖥️  4.3-inch or 7-inch LCD with touch chip for interactive function, and the touch driver has been successfully loaded and can work normally.
+-  🌐  For the network part of the project (including the weather forecast APP), the network card driver needs to work normally and can access the Internet
+-  🎨  Basic support for QtCore/QtWidget/QtNetWork/QtGui/QtCharts/QtMultiMedia
+-  📚  For MuPDF based PDF browsers, compiling requires providing MuPDF's cross compiled static library and header files
+-  📷  For all OpenCV based projects (including but not limited to MediaPlayer, GeneralLocalCamera), OpenCV4.12.0 compilation support is required.
+-  🔗  If the lower computer uses third-party libraries, such as ALSA Lib which is a third-party dynamic library, please ensure that the lower computer environment exists and that the upper computer can retrieve the cross compiled dynamic library during cross compilation.
+##  🛠️  Compilation matters for this project
+-  🔨  After completing the above work, you can use the CMake configuration interface of QtCreator to compile the project. However, I am still trying to optimize the configuration logic (including automatic dependency checking). Therefore, so far, you still need to manually modify some dependency configurations to start the compilation of this project
+-  ⚙️  You can adjust the INCLUDE_ * _ APP to determine which apps are what you want and which are not. For apps that are not needed, simply set the variable to OFF. He will not participate in the compilation.
+-  ⚙️  Note that if dependent configuration items are not provided now, the corresponding app will not participate in compilation.
+-If OpenCV is installed in a non-standard path, OpenCV_DIR needs to be specified as the download root path (this path needs to directly exist in the OpenCVConfig. cmake file)
+-For MuPDF, you need to specify 'MUPDF-INCLUDE-DIR' and 'MUPDF_LIB-DIR'. The variable name is likely to change in the future, and you may need to check the construction logs of CMake for specific adjustments
+-  📁  We need to set the 'CCIMX_LAL-RELEASE-DIR-BASE' variable as a basis for downloading. You need to create CCIMX_LAL-RELEASE-DIR-BASE as the basic download path (Install Path) for different distributions

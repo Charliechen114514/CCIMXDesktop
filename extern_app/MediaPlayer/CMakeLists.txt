@@ -2,37 +2,6 @@ cmake_minimum_required(VERSION 3.19)
 project(MediaPlayer LANGUAGES CXX)
 set(CMAKE_AUTORCC ON)
 find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets Multimedia)
-
-set(DEFAULT_OPENCV_DIR "" CACHE PATH "Path to OpenCV library")
-set(_DEFAULT_OPENCV_DIR_MSVC "D:/stdcpp-library/opencvLibrary")
-set(_DEFAULT_OPENCV_DIR_ARM "/home/charliechen/imx6ull/opencv_arm_res/lib/cmake/opencv4")
-set(_DEFAULT_OPENCV_DIR_GCC "/home/charliechen/imx6ull/opencv_res/lib/cmake/opencv4")
-set(MEDIAPLAYER_ALSA_LIBRARY "/home/charliechen/imx6ull/alsalib_res/lib" CACHE PATH "Path to the ALSA Library")
-if(MSVC)
-    message(STATUS "Compiling with MSVC on Windows")
-    if(NOT DEFAULT_OPENCV_DIR)
-        set(DEFAULT_OPENCV_DIR ${_DEFAULT_OPENCV_DIR_MSVC})
-    endif()
-elseif(CMAKE_CXX_COMPILER MATCHES "arm.*-g\\+\\+")
-    message(STATUS "Cross-compiling for ARM (IMX6ULL)")
-    if(NOT DEFAULT_OPENCV_DIR)
-        set(DEFAULT_OPENCV_DIR ${_DEFAULT_OPENCV_DIR_ARM})
-        # For IMX6ULL, we need to add the hard float support
-    endif()
-    set(CMAKE_C_FLAGS   "${CMAKE_C_FLAGS} -march=armv7-a -mfpu=neon -mfloat-abi=hard")
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -march=armv7-a -mfpu=neon -mfloat-abi=hard")
-    set(ALSA_LIBRARY_PATH ${MEDIAPLAYER_ALSA_LIBRARY})
-    message(STATUS "Select the building ALSA Library =${ALSA_LIBRARY_PATH}")
-    set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -Wl,-rpath-link=${ALSA_LIBRARY_PATH}")
-else()
-    message(STATUS "Compiling for x86_64 or host (non-MSVC)")
-    if(NOT DEFAULT_OPENCV_DIR)
-        set(DEFAULT_OPENCV_DIR ${_DEFAULT_OPENCV_DIR_GCC})
-    endif()
-endif()
-
-set(OpenCV_DIR "${DEFAULT_OPENCV_DIR}")
-message(STATUS "OpenCV_DIR is set to: ${OpenCV_DIR}")
 find_package(OpenCV REQUIRED)
 
 qt_standard_project_setup()
@@ -64,7 +33,8 @@ set(UiSource
     ui/MediaPlayerWindow.ui
     ui/DiskMusic.h ui/DiskMusic.cpp ui/DiskMusic.ui
     ui/MediaInfoWindow.h ui/MediaInfoWindow.cpp ui/MediaInfoWindow.ui
-    ui/PlayListMainWindow.h ui/PlayListMainWindow.cpp ui/PlayListMainWindow.ui)
+    ui/PlayListMainWindow.h ui/PlayListMainWindow.cpp ui/PlayListMainWindow.ui
+    ui/ScrollingLabel.h ui/ScrollingLabel.cpp ui/ScrollingLabel.ui)
 
 
 qt_add_executable(MediaPlayer
@@ -74,7 +44,6 @@ qt_add_executable(MediaPlayer
     ${CoreSoruce}
     main.cpp
     sources/icons.qrc
-    ui/ScrollingLabel.h ui/ScrollingLabel.cpp ui/ScrollingLabel.ui
 )
 
 target_include_directories(MediaPlayer

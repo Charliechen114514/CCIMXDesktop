@@ -11,6 +11,7 @@ option(INCLUDE_SYSTEMSTATUS_APP "Build the System Status App" ON)
 option(INCLUDE_MEDIAPLAYER_APP "Build the MeidaPlayer App" ON)
 option(INCLUDE_PROFESSIONAL_APP "Build the professional App Enabled" ON)
 if(INCLUDE_PROFESSIONAL_APP)
+    option(INCLUDE_OPENCV_QT_ADAPTER    "OpenCV Qt Convient Adapter"    ON)
     option(INCLUDE_LED_APP "Build the LEDController App" ON)
     option(INCLUDE_ENV_APP "Build the Environment App" ON)
     option(INCLUDE_SPORT_APP "Build the SportsHealth App" ON)
@@ -27,6 +28,10 @@ qt_standard_project_setup()
 # Options for the default use install
 set(_DEF_RELEASE_BASE_MSVC_RELEASE  "D:/NewQtProjects/Release/")
 set(_DEF_RELEASE_BASE_GCC_RELEASE   "/home/charliechen/imx6ull/qt683_project/CCDesktopRelease")
+
+# Options for the MuPDF Path
+set(MUPDF_INCLUDE_DIR "" CACHE PATH "MuPDF Include Directory")
+set(MUPDF_LIB_DIR "" CACHE PATH "MuPDF Library Directory")
 
 # This part aims to find the Cross compile
 # If you only get the arm mupdf compiles, do notice to select the
@@ -77,13 +82,75 @@ else()
     set(CCIMX_EXTERNAL_APP_BASE_DIR "${CCIMX_ALL_RELEASE_DIR}")
 endif()
 
+# Global Check the dependencies
+# Try To figure out OpenCV
+message(STATUS  "About to Check the OpenCV Due to the Required of the MediaPlayer And professional apps")
+find_package(OpenCV)
+if(OpenCV_FOUND)
+    message("OpenCV is found, accept the compile of the MediaPlayer and so on related")
+    set(INCLUDE_MEDIAPLAYER_APP ON)
+    set(INCLUDE_CAMERA_APP ON)
+else()
+    message("OpenCV is not found, If you install the opencv in a non-standard path, please specify the OpenCV_DIR")
+    set(INCLUDE_MEDIAPLAYER_APP OFF)
+    set(INCLUDE_CAMERA_APP OFF)
+endif()
+
+# Check the MuPDF
+#     set(MUPDF_INCLUDE_DIR "D:/stdcpp-library/mupdf")
+#     # Fuck MSVC, The Debug Level disequal makes the linkage
+#     # impossible, we have to make a seperate change
+#     MSCV's
+#     set(MUPDF_LIB_DIR "D:/stdcpp-library/mupdf/Debug")
+#     set(MUPDF_LIB_DIR "D:/stdcpp-library/mupdf/Release")
+#     GCC
+#     set(MUPDF_INCLUDE_DIR /home/charliechen/imx6ull/mupdfdebug/include)
+#     set(MUPDF_LIB_DIR /home/charliechen/imx6ull/mupdfdebug)
+function(validate_path var_name out_result)
+    set(is_valid FALSE)
+    if(DEFINED ${var_name} AND NOT "${${var_name}}" STREQUAL "")
+        if(EXISTS "${${var_name}}" AND IS_DIRECTORY "${${var_name}}")
+            set(is_valid TRUE)
+        endif()
+    endif()
+    set(${out_result} ${is_valid} PARENT_SCOPE)
+endfunction()
+
+function(MuPDF_MSVC_Build_Tips)
+    message(STATUS "Hey, Here is a tips: ")
+    message(STATUS  "MSVC's library is Debug level required, so"
+                    "if you are using a debug build, you must specify to the debug library, else link failed :|")
+endfunction()
+
+message(STATUS "About to check the MuPDF paths, dumping for the user first!")
+message(STATUS "The MuPDF include dirent is: ${MUPDF_INCLUDE_DIR}")
+message(STATUS "The MuPDF library dirent is: ${MUPDF_LIB_DIR}")
+validate_path(MUPDF_INCLUDE_DIR MUPDF_INCLUDE_VALID)
+validate_path(MUPDF_LIB_DIR MUPDF_LIB_VALID)
+
+if(MUPDF_INCLUDE_VALID AND MUPDF_LIB_VALID)
+    message(STATUS "MuPDF is specified, and also are valid.")
+    set(INCLUDE_PDF_BROWSER_APP ON)
+    if(MSVC)
+        MuPDF_MSVC_Build_Tips()
+    endif()
+else()
+    message(WARNING "MuPDF paths are invalid. Skipping build PDF Browser.")
+    message(WARNING "You need to specify the MuPDF_INCLUDE_DIR and MUPDF_LIB_DIR in the CMake GUI")
+    set(INCLUDE_PDF_BROWSER_APP OFF)
+endif()
+
+
 
 # Global Compile Specifications
 if(COMPILER_NAME MATCHES "arm.*-g\\+\\+")
-    set(ALSA_LIBRARY_PATH   "/home/charliechen/imx6ull/alsalib_res/lib")
-    set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -Wl,-rpath-link=${ALSA_LIBRARY_PATH}")
+    if(INCLUDE_MEDIAPLAYER_APP)
+        message(STATUS "Cross compile detected, For QMediaPlayer we need to link the backend")
+        message(STATUS "If you are using a different backend, you need to specify belowing by yourself")
+        set(ALSA_LIBRARY_PATH   "/home/charliechen/imx6ull/alsalib_res/lib")
+        set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -Wl,-rpath-link=${ALSA_LIBRARY_PATH}")
+    endif()
 endif()
-
 
 message(STATUS "About to check the extern app: ")
 add_compile_definitions(
@@ -97,6 +164,7 @@ add_compile_definitions(
 
 add_subdirectory(extern_app)
 
+message(STATUS "About to check the CCIMXDesktop Main Face Dependencies...")
 include_directories(
     .
     ./ui
@@ -200,10 +268,15 @@ message(STATUS "current kits installations:         CCIMX_ALL_RELEASE_DIR      =
 message(STATUS "Extern app install locations:       CCIMX_EXTERNAL_APP_BASE_DIR= ${CCIMX_EXTERNAL_APP_BASE_DIR}")
 message(STATUS "-----------------------------------------------------")
 message(STATUS "Dumping the external apps: ")
-message(STATUS "Weather Application Built status Due to INCLUDE_WEATHER_APP: ${INCLUDE_WEATHER_APP}")
-message(STATUS "PDF Browser Built status Due to INCLUDE_PDF_BROWSER_APP: ${INCLUDE_PDF_BROWSER_APP}")
-message(STATUS "Camera Application Built status Due to INCLUDE_CAMERA_APP: ${INCLUDE_CAMERA_APP}")
-message(STATUS "File Ramber Built status due to INCLUDE_FILERAMBER_APP: ${INCLUDE_FILERAMBER_APP}")
-message(STATUS "System State Built due to INCLUDE_SYSTEMSTATUS_APP: ${INCLUDE_SYSTEMSTATUS_APP}")
-message(STATUS "Media Player Built due to INCLUDE_MEDIAPLAYER_APP: ${INCLUDE_MEDIAPLAYER_APP}")
+message(STATUS "Weather Application Built status Due to INCLUDE_WEATHER_APP:    ${INCLUDE_WEATHER_APP}")
+message(STATUS "PDF Browser Built status Due to INCLUDE_PDF_BROWSER_APP:        ${INCLUDE_PDF_BROWSER_APP}")
+message(STATUS "Camera Application Built status Due to INCLUDE_CAMERA_APP:      ${INCLUDE_CAMERA_APP}")
+message(STATUS "File Ramber Built status due to INCLUDE_FILERAMBER_APP:         ${INCLUDE_FILERAMBER_APP}")
+message(STATUS "System State Built due to INCLUDE_SYSTEMSTATUS_APP:             ${INCLUDE_SYSTEMSTATUS_APP}")
+message(STATUS "Media Player Built due to INCLUDE_MEDIAPLAYER_APP:              ${INCLUDE_MEDIAPLAYER_APP}")
+message(STATUS "Professional App Built status due to INCLUDE_PROFESSIONAL_APP:  ${INCLUDE_PROFESSIONAL_APP}")
+message(STATUS "LED Controller Built status due to INCLUDE_LED_APP:             ${INCLUDE_LED_APP}")
+message(STATUS "Environment Built status due to INCLUDE_ENV_APP:                ${INCLUDE_ENV_APP}")
+message(STATUS "Sports Health Built status due to INCLUDE_SPORT_APP:            ${INCLUDE_SPORT_APP}")
+message(STATUS "OpenCV Adapters Built status due to INCLUDE_OPENCV_QT_ADAPTER:  ${INCLUDE_OPENCV_QT_ADAPTER}")
 message(STATUS "-----------------------------------------------------")

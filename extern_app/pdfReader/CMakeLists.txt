@@ -12,29 +12,11 @@ get_filename_component(COMPILER_NAME ${CMAKE_CXX_COMPILER} NAME)
 # This part aims to find the Cross compile
 # If you only get the arm mupdf compiles, do notice to select the
 # correct kits with correct arch and compilers
-
 if(COMPILER_NAME MATCHES "arm.*-g\\+\\+")
     message(STATUS "Detected cross compiler: ${COMPILER_NAME}")
-    set(MUPDF_INCLUDE_DIR /home/charliechen/imx6ull/mupdf_res/include)
-    set(MUPDF_LIB_DIR /home/charliechen/imx6ull/mupdf_res)
-    # Bonus Compile Supports
     set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -mfpu=neon -mfloat-abi=hard")
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -mfpu=neon -mfloat-abi=hard")
-elseif(MSVC)
-    set(MUPDF_INCLUDE_DIR "D:/stdcpp-library/mupdf")
-    # Fuck MSVC, The Debug Level disequal makes the linkage
-    # impossible, we have to make a seperate change
-    if(CMAKE_BUILD_TYPE STREQUAL "Debug")
-        set(MUPDF_LIB_DIR "D:/stdcpp-library/mupdf/Debug")
-    else()
-        set(MUPDF_LIB_DIR "D:/stdcpp-library/mupdf/Release")
-    endif()
-else()
-    message(STATUS "Detected desktop compiler: ${COMPILER_NAME}")
-    set(MUPDF_INCLUDE_DIR /home/charliechen/imx6ull/mupdfdebug/include)
-    set(MUPDF_LIB_DIR /home/charliechen/imx6ull/mupdfdebug)
 endif()
-
 
 message(STATUS "Now install the mupdf settings!")
 message(STATUS "The include dirent is: ${MUPDF_INCLUDE_DIR}")

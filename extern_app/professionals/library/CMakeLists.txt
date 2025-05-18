@@ -1,8 +1,10 @@
 message(STATUS "About to build selected library")
 
-
-
-if(INCLUDE_OPENCV_QT_ADAPTER)
+if(OpenCV_FOUND)
     message(STATUS "Build Qt_OpenCV_Adapter Due to the INCLUDE_OPENCV_QT_ADAPTER")
     add_subdirectory(OpencvQtAdapter)
+    set(INCLUDE_OPENCV_QT_ADAPTER ON CACHE BOOL "OpenCV is found" FORCE)
+else()
+    message("OpenCV is not found due to previous check! OpencvQtAdapter is not build then")
+    set(INCLUDE_OPENCV_QT_ADAPTER OFF CACHE BOOL "Forced OFF due to missing OpenCV" FORCE)
 endif()
