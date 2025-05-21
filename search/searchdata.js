@@ -1,6 +1,6 @@
 var indexSectionsWithContent =
 {
-  0: "_abcdefghijklmnopqrstuvwyz~⚙一基完工开未模许项🌐🌟🎨💡📚📝🔧🖥🚀🛠🧩🧬",
+  0: "_abcdefghijklmnopqrstuvwyz~⚙一基完开未模许项🌐🌟🎨💡📚📝🔧🖥🚀🛠🧩🧬",
   1: "acdefghilmnpstvw",
   2: "cmqsv",
   3: "_abcdefghijlmnoprstuvwz~",
@@ -8,7 +8,7 @@ var indexSectionsWithContent =
   5: "p",
   6: "efinprsz",
   7: "acdfhiklmnopstuwz",
-  8: "cdfmpr工模🖥🧩"
+  8: "cdm模🖥🧩"
 };
 
 var indexSectionNames =

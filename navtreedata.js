@@ -25,52 +25,43 @@
 var NAVTREE =
 [
   [ "CCIMXDesktop", "index.html", [
-    [ "🧩 模块描述", "md_Components-explain-CN.html", [
-      [ "🔧 <tt>app_wrapper</tt>", "md_Components-explain-CN.html#autotoc_md1", null ],
-      [ "🧬 <tt>builtin</tt>", "md_Components-explain-CN.html#autotoc_md3", null ],
-      [ "⚙️ <tt>core</tt>", "md_Components-explain-CN.html#autotoc_md5", null ],
-      [ "🚀 <tt>extern_app</tt>", "md_Components-explain-CN.html#autotoc_md7", null ],
-      [ "🧩 <tt>sources</tt>", "md_Components-explain-CN.html#autotoc_md9", null ],
-      [ "🎨 <tt>ui</tt>", "md_Components-explain-CN.html#autotoc_md11", null ]
-    ] ],
-    [ "🧩 Module Descriptions", "md_Components-explain-EN.html", [
-      [ "🔧 <tt>app_wrapper</tt>", "md_Components-explain-EN.html#autotoc_md13", null ],
-      [ "🧬 <tt>builtin</tt>", "md_Components-explain-EN.html#autotoc_md15", null ],
-      [ "⚙️ <tt>core</tt>", "md_Components-explain-EN.html#autotoc_md17", null ],
-      [ "🚀 <tt>extern_app</tt>", "md_Components-explain-EN.html#autotoc_md19", null ],
-      [ "🧩 <tt>sources</tt>", "md_Components-explain-EN.html#autotoc_md21", null ],
-      [ "🎨 <tt>ui</tt>", "md_Components-explain-EN.html#autotoc_md23", null ]
-    ] ],
-    [ "ReadME", "md_extern__app_2FileRamber_2README.html", null ],
-    [ "README", "md_extern__app_2GeneralLocalCamera_2README.html", null ],
-    [ "ReadMe", "md_extern__app_2MediaPlayer_2README.html", null ],
-    [ "CCIMX Desktop 工程文档（PDF阅读器）", "md_extern__app_2pdfReader_2README.html", null ],
-    [ "ReadME", "md_extern__app_2professionals_2boardlevel__application_2README.html", null ],
-    [ "Professional Folder", "md_extern__app_2professionals_2README.html", null ],
-    [ "README", "md_extern__app_2README.html", null ],
-    [ "ReadME", "md_extern__app_2SystemState_2README.html", null ],
-    [ "README", "md_extern__app_2WeatherApp_2README.html", null ],
     [ "🖥️ CCIMXDESKTOP", "md_README.html", [
-      [ "🌐 开始之前，选择你的语言！ 🌐", "md_README.html#autotoc_md32", null ],
-      [ "🌟 项目概述 🌟", "md_README.html#autotoc_md33", null ],
-      [ "一些运行截图", "md_README.html#autotoc_md35", null ],
-      [ "🛠️ 基础构建所用技术", "md_README.html#autotoc_md36", null ],
-      [ "🛠️ 完整构建所用技术", "md_README.html#autotoc_md37", null ],
-      [ "🧩开发者参考", "md_README.html#autotoc_md39", null ],
-      [ "📚项目文档", "md_README.html#autotoc_md41", null ],
-      [ "💡 未来计划", "md_README.html#autotoc_md42", null ],
-      [ "📝 许可证", "md_README.html#autotoc_md44", null ]
+      [ "🌐 开始之前，选择你的语言！ 🌐", "md_README.html#autotoc_md1", null ],
+      [ "🌟 项目概述 🌟", "md_README.html#autotoc_md2", null ],
+      [ "一些运行截图", "md_README.html#autotoc_md4", null ],
+      [ "🛠️ 基础构建所用技术", "md_README.html#autotoc_md5", null ],
+      [ "🛠️ 完整构建所用技术", "md_README.html#autotoc_md6", null ],
+      [ "🧩开发者参考", "md_README.html#autotoc_md8", null ],
+      [ "📚项目文档", "md_README.html#autotoc_md10", null ],
+      [ "💡 未来计划", "md_README.html#autotoc_md11", null ],
+      [ "📝 许可证", "md_README.html#autotoc_md13", null ]
     ] ],
     [ "🖥️ CCIMXDESKTOP", "md_README__EN.html", [
-      [ "🌐 Before you start, choose your language! 🌐", "md_README__EN.html#autotoc_md46", null ],
-      [ "🌟 Project Overview 🌟", "md_README__EN.html#autotoc_md47", null ],
-      [ "Some running screenshots", "md_README__EN.html#autotoc_md49", null ],
-      [ "🛠️ Basic build technologies", "md_README__EN.html#autotoc_md50", null ],
-      [ "🛠️ Full build of technologies", "md_README__EN.html#autotoc_md51", null ],
-      [ "🧩 Developer Reference", "md_README__EN.html#autotoc_md53", null ],
-      [ "📚Project Documentation", "md_README__EN.html#autotoc_md55", null ],
-      [ "💡 Future Plans", "md_README__EN.html#autotoc_md56", null ],
-      [ "📝 License", "md_README__EN.html#autotoc_md58", null ]
+      [ "🌐 Before you start, choose your language! 🌐", "md_README__EN.html#autotoc_md15", null ],
+      [ "🌟 Project Overview 🌟", "md_README__EN.html#autotoc_md16", null ],
+      [ "Some running screenshots", "md_README__EN.html#autotoc_md18", null ],
+      [ "🛠️ Basic build technologies", "md_README__EN.html#autotoc_md19", null ],
+      [ "🛠️ Full build of technologies", "md_README__EN.html#autotoc_md20", null ],
+      [ "🧩 Developer Reference", "md_README__EN.html#autotoc_md22", null ],
+      [ "📚Project Documentation", "md_README__EN.html#autotoc_md24", null ],
+      [ "💡 Future Plans", "md_README__EN.html#autotoc_md25", null ],
+      [ "📝 License", "md_README__EN.html#autotoc_md27", null ]
+    ] ],
+    [ "🧩 模块描述", "md_Components-explain-CN.html", [
+      [ "🔧 <tt>app_wrapper</tt>", "md_Components-explain-CN.html#autotoc_md29", null ],
+      [ "🧬 <tt>builtin</tt>", "md_Components-explain-CN.html#autotoc_md31", null ],
+      [ "⚙️ <tt>core</tt>", "md_Components-explain-CN.html#autotoc_md33", null ],
+      [ "🚀 <tt>extern_app</tt>", "md_Components-explain-CN.html#autotoc_md35", null ],
+      [ "🧩 <tt>sources</tt>", "md_Components-explain-CN.html#autotoc_md37", null ],
+      [ "🎨 <tt>ui</tt>", "md_Components-explain-CN.html#autotoc_md39", null ]
+    ] ],
+    [ "🧩 Module Descriptions", "md_Components-explain-EN.html", [
+      [ "🔧 <tt>app_wrapper</tt>", "md_Components-explain-EN.html#autotoc_md41", null ],
+      [ "🧬 <tt>builtin</tt>", "md_Components-explain-EN.html#autotoc_md43", null ],
+      [ "⚙️ <tt>core</tt>", "md_Components-explain-EN.html#autotoc_md45", null ],
+      [ "🚀 <tt>extern_app</tt>", "md_Components-explain-EN.html#autotoc_md47", null ],
+      [ "🧩 <tt>sources</tt>", "md_Components-explain-EN.html#autotoc_md49", null ],
+      [ "🎨 <tt>ui</tt>", "md_Components-explain-EN.html#autotoc_md51", null ]
     ] ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],

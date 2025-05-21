@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['folder_0',['Professional Folder',['../md_extern__app_2professionals_2README.html',1,'']]]
+  ['module_20descriptions_0',['🧩 Module Descriptions',['../md_Components-explain-EN.html',1,'']]]
 ];

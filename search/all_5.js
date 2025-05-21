@@ -12,5 +12,5 @@ var searchData=
   ['eventfilter_9',['eventFilter',['../classAppCardWidget.html#aaa303f4e4011e02c6cf0c776ca093ac3',1,'AppCardWidget']]],
   ['exit_5fcode_10',['exit_code',['../structApplicationWrapper_1_1ApplicationFinishResult.html#a9bd31e7691e31b6be8aff6a0ba60a0c4',1,'ApplicationWrapper::ApplicationFinishResult']]],
   ['expected_5fappcards_5fwidgets_11',['expected_appcards_widgets',['../classHomePage.html#a760f39daccf8d87ac86d15c0983e1cfe',1,'HomePage']]],
-  ['extern_5fapp_20tt_12',['extern_app tt',['../md_Components-explain-CN.html#autotoc_md7',1,'🚀 &lt;tt&gt;extern_app&lt;/tt&gt;'],['../md_Components-explain-EN.html#autotoc_md19',1,'🚀 &lt;tt&gt;extern_app&lt;/tt&gt;']]]
+  ['extern_5fapp_20tt_12',['extern_app tt',['../md_Components-explain-CN.html#autotoc_md35',1,'🚀 &lt;tt&gt;extern_app&lt;/tt&gt;'],['../md_Components-explain-EN.html#autotoc_md47',1,'🚀 &lt;tt&gt;extern_app&lt;/tt&gt;']]]
 ];

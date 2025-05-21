@@ -105,13 +105,13 @@ $(function(){initNavTree('md__r_e_a_d_m_e.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">🖥️ CCIMXDESKTOP</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md31"></a></p>
+<div class="textblock"><p><a class="anchor" id="autotoc_md0"></a></p>
 <p><img src="https://img.shields.io/badge/Qt-6.8.3-green" alt="Qt" class="inline"/><img src="https://img.shields.io/badge/OpenCV-4.12.0-blue" alt="OpenCV" class="inline"/><img src="https://img.shields.io/badge/MuPDF-supported-orange" alt="MuPDF" class="inline"/><img src="https://img.shields.io/badge/C++-17+-green" alt="Qt" class="inline"/></p>
 <p>🔌 您好！这是一个可在多种嵌入式设备中使用的简单桌面和实用程序。对我来说，它启动了专为 i.MX 平台定制的套件，结合了内置系统小工具和可扩展的外部应用程序。该项目使用 Qt 设计，正在尽可能支持与各种硬件传感器和多媒体接口集成。</p>
-<h1><a class="anchor" id="autotoc_md32"></a>
+<h1><a class="anchor" id="autotoc_md1"></a>
 🌐 开始之前，选择你的语言！ 🌐</h1>
 <p><a class="el" href="md__r_e_a_d_m_e___e_n.html">🇬🇧 English Version</a> | <a class="el" href="md__r_e_a_d_m_e.html">🇨🇳 中文</a></p>
-<h1><a class="anchor" id="autotoc_md33"></a>
+<h1><a class="anchor" id="autotoc_md2"></a>
 🌟 项目概述 🌟</h1>
 <p><b>CCIMXDESKTOP</b> 提供了一个轻量级、可扩展的桌面环境，专为基于 NXP i.MX6ULL 平台的嵌入式系统优化。它包含一系列内置工具、设备集成层和第三方应用程序，所有这些都在一个统一的用户界面中呈现。</p>
 <p><img src="https://img.shields.io/badge/NXP-i.MX6ULL-yellow" alt="i.MX6ULL" class="inline"/> <img src="https://img.shields.io/badge/Platform-Embedded%20Linux-lightgrey" alt="Embedded" class="inline"/></p>
@@ -130,15 +130,15 @@ $(function(){initNavTree('md__r_e_a_d_m_e.html',''); initResizable(true); });
 <li>🏃 SportHealth App (ICM20608驱动需要被挂载)</li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md35"></a>
+<h1><a class="anchor" id="autotoc_md4"></a>
 一些运行截图</h1>
 <p><img src="./README/image-20250518085608736.png" alt="image-20250518085608736" class="inline"/></p>
 <p><img src="./README/image-20250518085912716.png" alt="image-20250518085912716" class="inline"/></p>
-<h1><a class="anchor" id="autotoc_md36"></a>
+<h1><a class="anchor" id="autotoc_md5"></a>
 🛠️ 基础构建所用技术</h1>
 <p><img src="https://img.shields.io/badge/Qt-Core%20%26%20Network-41cd52" alt="Qt" class="inline"/> <img src="https://img.shields.io/badge/TSLIB-required-green" alt="TSLIB" class="inline"/></p>
 <p>对于映射基础桌面的初学者来说，嵌入式设备应该支持 Qt6 核心控件和核心网络。此外，用于显示的 TSLIB 和 Linux 帧缓冲后端也应该已准备就绪。</p>
-<h1><a class="anchor" id="autotoc_md37"></a>
+<h1><a class="anchor" id="autotoc_md6"></a>
 🛠️ 完整构建所用技术</h1>
 <p><img src="https://img.shields.io/badge/OpenCV-Camera%20Support-blue" alt="OpenCV" class="inline"/> <img src="https://img.shields.io/badge/MuPDF-PDF%20Rendering-orange" alt="MuPDF" class="inline"/></p>
 <ul>
@@ -146,18 +146,21 @@ $(function(){initNavTree('md__r_e_a_d_m_e.html',''); initResizable(true); });
 <li>MuPDF（用于 PDF 渲染）（这些用于基于 mupdf 的 PDF 阅读器）</li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md39"></a>
+<h1><a class="anchor" id="autotoc_md8"></a>
 🧩开发者参考</h1>
 <ul>
 <li><a class="el" href="md__components-explain-_c_n.html">📖 汉语模块说明</a></li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md41"></a>
+<h1><a class="anchor" id="autotoc_md10"></a>
 📚项目文档</h1>
-<p>🛠️ 如何构建本项目？（X86 gcc, ARM-linux-gnueabihf-gcc与Windows GCC都支持！）</p>
 <p><img src="https://img.shields.io/badge/GCC-cross--compile-yellowgreen" alt="GCC" class="inline"/> <img src="https://img.shields.io/badge/ARM-linux--gnueabihf-red" alt="ARM" class="inline"/></p>
-<p>如果您对项目的制作流程和开发文档感兴趣，请参考Documentations文件夹</p>
-<h1><a class="anchor" id="autotoc_md42"></a>
+<p>如果您对项目的制作流程和开发文档感兴趣，请参考Documentations文件夹。</p>
+<p>目前，本项目完全支持使用Doxygen自动化生成定制文档，您可以直接参考<a href="Documentations/doxygen_styles"><code>Documentations/doxygen_style</code></a>进行阅读，或者您打算客制化本文档的构建，需要您参考构建手册进行客制化的修改</p>
+<blockquote class="doxtable">
+<p>&zwj;🛠️ 如何构建本项目？（X86 gcc, ARM-linux-gnueabihf-gcc与Windows GCC都支持！） </p>
+</blockquote>
+<h1><a class="anchor" id="autotoc_md11"></a>
 💡 未来计划</h1>
 <ul>
 <li>🚀 计划编写和提供更多的外部基础程序：<ul>
@@ -172,7 +175,7 @@ $(function(){initNavTree('md__r_e_a_d_m_e.html',''); initResizable(true); });
 </li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md44"></a>
+<h1><a class="anchor" id="autotoc_md13"></a>
 📝 许可证</h1>
 <p><img src="https://img.shields.io/badge/License-MIT-brightgreen" alt="License" class="inline"/></p>
 <p>本项目基于 MIT 许可证，欢迎随意移植、修改和使用！ </p>

@@ -18,7 +18,7 @@ var searchData=
   ['parse_5fstart_15',['parse_start',['../classCCPdfChapterCreator.html#a81f895b1193099571057d5b917238694',1,'CCPdfChapterCreator']]],
   ['parsejsonstring_16',['parsejsonstring',['../structWeatherResult.html#a7241825ed885decb2ebb752a1502e400',1,'WeatherResult::parseJsonString()'],['../classAppWeatherResult.html#a29da2246f7b3941ae7f8b2d695536b33',1,'AppWeatherResult::parseJsonString()']]],
   ['pass_5fcopy_17',['pass_copy',['../classCVImageOpencvImpl.html#a79ba9b0969a2b6088729ba69025518af',1,'CVImageOpencvImpl::pass_copy(const CVImageImpl *copied) override'],['../classCVImageOpencvImpl.html#a79ba9b0969a2b6088729ba69025518af',1,'CVImageOpencvImpl::pass_copy(const CVImageImpl *copied) override'],['../classCVImageImpl.html#a4fcb8483f22fb19df433b6a52a30ce36',1,'CVImageImpl::pass_copy()'],['../classCVImageOpencvImpl.html#a79ba9b0969a2b6088729ba69025518af',1,'CVImageOpencvImpl::pass_copy()'],['../classCVImageImpl.html#a4fcb8483f22fb19df433b6a52a30ce36',1,'CVImageImpl::pass_copy()']]],
-  ['pause_18',['pause',['../classMediaPlayer.html#af20f090157c6f0be28027e1811e971f7',1,'MediaPlayer::pause()'],['../classVideoPlayer.html#af56cbd256c7aa5fe597c83c8b6ea3979',1,'VideoPlayer::pause()'],['../classVideoPlayer.html#af56cbd256c7aa5fe597c83c8b6ea3979',1,'VideoPlayer::pause()']]],
+  ['pause_18',['pause',['../classVideoPlayer.html#af56cbd256c7aa5fe597c83c8b6ea3979',1,'VideoPlayer::pause()'],['../classVideoPlayer.html#af56cbd256c7aa5fe597c83c8b6ea3979',1,'VideoPlayer::pause()'],['../classMediaPlayer.html#af20f090157c6f0be28027e1811e971f7',1,'MediaPlayer::pause()']]],
   ['pdfbrowseexceptionfunctor_19',['PdfBrowseExceptionFunctor',['../classCCPdfNavigationPolicy.html#a7ea598825fcdc49512b9c9bfb1d5ff79',1,'CCPdfNavigationPolicy']]],
   ['peek_5fframe_20',['peek_frame',['../classVideoPlayerOpencvImpl.html#a484886797cbb8c0b125d817a2b08d8cc',1,'VideoPlayerOpencvImpl::peek_frame()'],['../classVideoPlayerImpl.html#a38d07a450e3088c638949046067d8225',1,'VideoPlayerImpl::peek_frame()'],['../classVideoPlayerOpencvImpl.html#a484886797cbb8c0b125d817a2b08d8cc',1,'VideoPlayerOpencvImpl::peek_frame(CVImage &amp;container, int frame_request) override'],['../classVideoPlayerOpencvImpl.html#a484886797cbb8c0b125d817a2b08d8cc',1,'VideoPlayerOpencvImpl::peek_frame(CVImage &amp;container, int frame_request) override'],['../classVideoPlayerImpl.html#a38d07a450e3088c638949046067d8225',1,'VideoPlayerImpl::peek_frame()']]],
   ['peekframe_21',['peekframe',['../classVideoPlayer.html#ac9e16dfc5003c78a56600f7bf14fe361',1,'VideoPlayer::peekFrame(CVImage &amp;container, int frame_request)'],['../classVideoPlayer.html#ac9e16dfc5003c78a56600f7bf14fe361',1,'VideoPlayer::peekFrame(CVImage &amp;container, int frame_request)']]],
@@ -29,7 +29,7 @@ var searchData=
   ['photosaver_26',['PhotoSaver',['../classPhotoSaver.html',1,'']]],
   ['pid_27',['pid',['../structProcessBroswer_1_1ProcessInfo.html#a0660c66075e5bff01fd18f7d89edfc20',1,'ProcessBroswer::ProcessInfo']]],
   ['pixmap_5faddr_28',['pixmap_addr',['../structPageSetuper_1_1PageSetupSessionRequest.html#a96a020059da363d9355a655237b18949',1,'PageSetuper::PageSetupSessionRequest']]],
-  ['plans_29',['💡 Future Plans',['../md_README__EN.html#autotoc_md56',1,'']]],
+  ['plans_29',['💡 Future Plans',['../md_README__EN.html#autotoc_md25',1,'']]],
   ['platformdriverfactory_30',['PlatformDriverFactory',['../classPlatformDriverFactory.html',1,'']]],
   ['play_31',['play',['../classVideoPlayer.html#af032f2fcf964f2fcb91af66d609eab1f',1,'VideoPlayer::play()'],['../classVideoPlayer.html#af032f2fcf964f2fcb91af66d609eab1f',1,'VideoPlayer::play()']]],
   ['playlistmainwindow_32',['PlayListMainWindow',['../classPlayListMainWindow.html',1,'']]],
@@ -56,9 +56,8 @@ var searchData=
   ['processdriver_5ffrom_5fplatform_53',['processdriver_from_platform',['../classPlatformDriverFactory.html#ac6caa80e86d486d9acf05260d35d008a',1,'PlatformDriverFactory']]],
   ['processinfo_54',['ProcessInfo',['../structProcessBroswer_1_1ProcessInfo.html',1,'ProcessBroswer']]],
   ['producer_55',['producer',['../structCCPdfMetaInfo.html#a423cdbefdd1463da5d20fd464d9050a5aa6ad87aadc206f6491720e309821904a',1,'CCPdfMetaInfo::Producer'],['../structCCPdfMetaInfo.html#a4c76d1610732ddf92630f245068bfe16',1,'CCPdfMetaInfo::producer']]],
-  ['professional_20folder_56',['Professional Folder',['../md_extern__app_2professionals_2README.html',1,'']]],
-  ['project_20overview_20🌟_57',['🌟 Project Overview 🌟',['../md_README__EN.html#autotoc_md47',1,'']]],
-  ['provide_5fsection_5fname_58',['provide_section_name',['../classDirentSizeCounter.html#afb1587bf29eac1f0cf7979ba5301f708',1,'DirentSizeCounter::provide_section_name()'],['../classFileCountInfo.html#a42da804010c98ad6e95f028e0542a7f5',1,'FileCountInfo::provide_section_name()'],['../classFileInfoProvider.html#a25aa7631c3aff86607cae1b412548878',1,'FileInfoProvider::provide_section_name()'],['../classFileNameProviders.html#a3fc88ac86b53656f9e75a0476004ac18',1,'FileNameProviders::provide_section_name()'],['../classFileTypeInfo.html#adf07e8c01790f280a0eb81f65c6662c4',1,'FileTypeInfo::provide_section_name()']]],
-  ['ps_59',['ps',['../structAP3216CData.html#a5a85d6a0d77844a18eda81014f239ad8',1,'AP3216CData']]],
-  ['publisher_60',['publisher',['../structMediaInfo.html#a45fc7079d4e5ac0c1e1abfa788f98a84',1,'MediaInfo']]]
+  ['project_20overview_20🌟_56',['🌟 Project Overview 🌟',['../md_README__EN.html#autotoc_md16',1,'']]],
+  ['provide_5fsection_5fname_57',['provide_section_name',['../classDirentSizeCounter.html#afb1587bf29eac1f0cf7979ba5301f708',1,'DirentSizeCounter::provide_section_name()'],['../classFileCountInfo.html#a42da804010c98ad6e95f028e0542a7f5',1,'FileCountInfo::provide_section_name()'],['../classFileInfoProvider.html#a25aa7631c3aff86607cae1b412548878',1,'FileInfoProvider::provide_section_name()'],['../classFileNameProviders.html#a3fc88ac86b53656f9e75a0476004ac18',1,'FileNameProviders::provide_section_name()'],['../classFileTypeInfo.html#adf07e8c01790f280a0eb81f65c6662c4',1,'FileTypeInfo::provide_section_name()']]],
+  ['ps_58',['ps',['../structAP3216CData.html#a5a85d6a0d77844a18eda81014f239ad8',1,'AP3216CData']]],
+  ['publisher_59',['publisher',['../structMediaInfo.html#a45fc7079d4e5ac0c1e1abfa788f98a84',1,'MediaInfo']]]
 ];

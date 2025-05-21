@@ -17,7 +17,7 @@ var searchData=
   ['app_5fname_14',['app_name',['../structPageSetuper_1_1PageSetupSessionRequest.html#a5540028f3b30b884999e41dfe56600b5',1,'PageSetuper::PageSetupSessionRequest']]],
   ['app_5fresult_15',['app_result',['../structApplicationWrapper_1_1ApplicationFinishResult.html#acefc460bffc37c059a773fcc2bccf79f',1,'ApplicationWrapper::ApplicationFinishResult']]],
   ['app_5fwidget_16',['app_widget',['../classApplicationWrapper.html#a0b395ef8736c102556539b3fb96296cb',1,'ApplicationWrapper']]],
-  ['app_5fwrapper_20tt_17',['app_wrapper tt',['../md_Components-explain-EN.html#autotoc_md13',1,'🔧 &lt;tt&gt;app_wrapper&lt;/tt&gt;'],['../md_Components-explain-CN.html#autotoc_md1',1,'🔧 &lt;tt&gt;app_wrapper&lt;/tt&gt;']]],
+  ['app_5fwrapper_20tt_17',['app_wrapper tt',['../md_Components-explain-EN.html#autotoc_md41',1,'🔧 &lt;tt&gt;app_wrapper&lt;/tt&gt;'],['../md_Components-explain-CN.html#autotoc_md29',1,'🔧 &lt;tt&gt;app_wrapper&lt;/tt&gt;']]],
   ['appcardwidget_18',['AppCardWidget',['../classAppCardWidget.html',1,'']]],
   ['applicationdepatchresult_19',['ApplicationDepatchResult',['../structApplicationWrapper_1_1ApplicationDepatchResult.html',1,'ApplicationWrapper']]],
   ['applicationfinishresult_20',['ApplicationFinishResult',['../structApplicationWrapper_1_1ApplicationFinishResult.html',1,'ApplicationWrapper']]],

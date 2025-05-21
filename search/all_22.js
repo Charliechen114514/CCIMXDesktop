@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['模块描述_0',['🧩 模块描述',['../md_Components-explain-CN.html',1,'']]]
+  ['许可证_0',['📝 许可证',['../md_README.html#autotoc_md13',1,'']]]
 ];
