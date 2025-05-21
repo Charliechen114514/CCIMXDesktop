@@ -71,6 +71,8 @@ If you are interested in the project production process and development document
 Currently, this project fully supports the use of Doxygen to automatically generate customized documents. You can directly refer to [`Documentations/doxygen_style`](Documentations/doxygen_styles) for reading, or if you plan to customize the construction of this document, you need to refer to the build manual for customized modifications
 
 > [🛠️ How to build this project? (X86 gcc, ARM-linux-gnueabihf-gcc and Windows GCC are all supported!)](Documentations/HOW_To_Build_The_Desktop.md)
+>
+> The document has been automatically deployed on Gihub Actions: Project document address [CCIMXDesktop: Main Page](https://charliechen114514.github.io/CCIMXDesktop/)
 
 ## 💡 Future Plans
 

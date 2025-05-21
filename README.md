@@ -70,6 +70,8 @@
 目前，本项目完全支持使用Doxygen自动化生成定制文档，您可以直接参考[`Documentations/doxygen_style`](Documentations/doxygen_styles)进行阅读，或者您打算客制化本文档的构建，需要您参考构建手册进行客制化的修改
 
 > [🛠️ 如何构建本项目？（X86 gcc, ARM-linux-gnueabihf-gcc与Windows GCC都支持！）](Documentations/HOW_To_Build_The_Desktop.md)
+>
+> 文档已在Gihub Actions上自动化部署：项目文档地址[CCIMXDesktop: Main Page](https://charliechen114514.github.io/CCIMXDesktop/)
 
 ## 💡 未来计划
 
