@@ -109,55 +109,56 @@ $(function(){initNavTree('_my_weather_request_8h_source.html',''); initResizable
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define MYWEATHERREQUEST_H</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;QNetworkAccessManager&gt;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;QtClassHelperMacros&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> * my weather request is the virtual class trying to</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> * make a request to the web apps, including some neccesary interfaces</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">/* This is an abstruct Interfaces */</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">/* At some cases */</span></div>
-<div class="foldopen" id="foldopen00011" data-start="{" data-end="};">
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="struct_weather_result.html">   11</a></span><span class="keyword">struct </span>WeatherResult : <span class="keyword">public</span> QObject {</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    Q_OBJECT</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">explicit</span> WeatherResult(QObject* obj = <span class="keyword">nullptr</span>)</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        : QObject(obj) { }</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> parseJsonString(<span class="keyword">const</span> QString json) = 0;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>signals:</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordtype">void</span> finish_parse();</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="comment">/* when error occurs */</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordtype">void</span> error_occurs(QString cached_error_string);</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>};</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span></div>
+<div class="foldopen" id="foldopen00012" data-start="{" data-end="};">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="struct_weather_result.html">   12</a></span><span class="keyword">struct </span>WeatherResult : <span class="keyword">public</span> QObject {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    Q_OBJECT</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">explicit</span> WeatherResult(QObject* obj = <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        : QObject(obj) { }</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="struct_weather_result.html#a7241825ed885decb2ebb752a1502e400">   21</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="struct_weather_result.html#a7241825ed885decb2ebb752a1502e400">parseJsonString</a>(<span class="keyword">const</span> QString json) = 0;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>signals:</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="struct_weather_result.html#ac292b0cbe62ac22d94e271949f6b7b5e">   28</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="struct_weather_result.html#ac292b0cbe62ac22d94e271949f6b7b5e">finish_parse</a>();</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="struct_weather_result.html#ac0bbf6a55fec1721e157da2d1c50b9c3">   35</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="struct_weather_result.html#ac0bbf6a55fec1721e157da2d1c50b9c3">error_occurs</a>(QString cached_error_string);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>};</div>
 </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="foldopen" id="foldopen00024" data-start="{" data-end="};">
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_weather_request.html">   24</a></span><span class="keyword">class </span>WeatherRequest : <span class="keyword">public</span> QObject {</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    Q_OBJECT</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    Q_DISABLE_COPY(WeatherRequest);</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">explicit</span> WeatherRequest(QObject* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="comment">/* async compose the request */</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">void</span> async_request(<span class="keyword">const</span> <span class="keywordtype">char</span>* base_url);</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="comment">/*  interfaces */</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="comment">/* expected the redefined request method */</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">virtual</span> QUrlQuery compose_request() = 0;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="comment">/* actually managing the request */</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    QNetworkAccessManager manager;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* private_key = _DEF_WEATHER_PRIVATE_KEY;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>signals:</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="comment">/* post this again */</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordtype">void</span> errorOccurs(QNetworkReply* reply);</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="comment">/* bind the signals for the async fetch */</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordtype">void</span> result_available(<span class="keyword">const</span> QString json);</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">private</span> slots:</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordtype">void</span> onReplyFinished(QNetworkReply* reply);</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>};</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="foldopen" id="foldopen00038" data-start="{" data-end="};">
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="class_weather_request.html">   38</a></span><span class="keyword">class </span>WeatherRequest : <span class="keyword">public</span> QObject {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    Q_OBJECT</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    Q_DISABLE_COPY(WeatherRequest);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">explicit</span> WeatherRequest(QObject* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_weather_request.html#a536ac3f283539dd0b7d7885bb53fc7b5">async_request</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* base_url);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="comment">/*  interfaces */</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_weather_request.html#a2faec779862560dbe931d723025787d1">   59</a></span>    <span class="keyword">virtual</span> QUrlQuery <a class="code hl_function" href="class_weather_request.html#a2faec779862560dbe931d723025787d1">compose_request</a>() = 0;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="comment">/* actually managing the request */</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    QNetworkAccessManager manager;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* private_key = _DEF_WEATHER_PRIVATE_KEY;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>signals:</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="class_weather_request.html#ad6741445b3b9ed4fdb60f1a53293e720">   73</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="class_weather_request.html#ad6741445b3b9ed4fdb60f1a53293e720">errorOccurs</a>(QNetworkReply* reply);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="class_weather_request.html#a182f4d1dd7b4a801eb9a9469f88dc000">   81</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="class_weather_request.html#a182f4d1dd7b4a801eb9a9469f88dc000">result_available</a>(<span class="keyword">const</span> QString json);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="keyword">private</span> slots:</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keywordtype">void</span> onReplyFinished(QNetworkReply* reply);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>};</div>
 </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#endif </span><span class="comment">// MYWEATHERREQUEST_H</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="preprocessor">#endif </span><span class="comment">// MYWEATHERREQUEST_H</span></div>
+<div class="ttc" id="aclass_weather_request_html_a182f4d1dd7b4a801eb9a9469f88dc000"><div class="ttname"><a href="class_weather_request.html#a182f4d1dd7b4a801eb9a9469f88dc000">WeatherRequest::result_available</a></div><div class="ttdeci">void result_available(const QString json)</div><div class="ttdoc">result_available when the result is available, this signal will be emitted</div></div>
+<div class="ttc" id="aclass_weather_request_html_a2faec779862560dbe931d723025787d1"><div class="ttname"><a href="class_weather_request.html#a2faec779862560dbe931d723025787d1">WeatherRequest::compose_request</a></div><div class="ttdeci">virtual QUrlQuery compose_request()=0</div><div class="ttdoc">compose_request compose request required devs to complete the function of how to compose the request</div></div>
+<div class="ttc" id="aclass_weather_request_html_a536ac3f283539dd0b7d7885bb53fc7b5"><div class="ttname"><a href="class_weather_request.html#a536ac3f283539dd0b7d7885bb53fc7b5">WeatherRequest::async_request</a></div><div class="ttdeci">void async_request(const char *base_url)</div><div class="ttdoc">async_request this function is used to send the request</div><div class="ttdef"><b>Definition</b> MyWeatherRequest.cpp:11</div></div>
+<div class="ttc" id="aclass_weather_request_html_ad6741445b3b9ed4fdb60f1a53293e720"><div class="ttname"><a href="class_weather_request.html#ad6741445b3b9ed4fdb60f1a53293e720">WeatherRequest::errorOccurs</a></div><div class="ttdeci">void errorOccurs(QNetworkReply *reply)</div><div class="ttdoc">errorOccurs when an error occurs, this signal will be emitted</div></div>
+<div class="ttc" id="astruct_weather_result_html_a7241825ed885decb2ebb752a1502e400"><div class="ttname"><a href="struct_weather_result.html#a7241825ed885decb2ebb752a1502e400">WeatherResult::parseJsonString</a></div><div class="ttdeci">virtual void parseJsonString(const QString json)=0</div><div class="ttdoc">parseJsonString defines how to parse json strings</div></div>
+<div class="ttc" id="astruct_weather_result_html_ac0bbf6a55fec1721e157da2d1c50b9c3"><div class="ttname"><a href="struct_weather_result.html#ac0bbf6a55fec1721e157da2d1c50b9c3">WeatherResult::error_occurs</a></div><div class="ttdeci">void error_occurs(QString cached_error_string)</div><div class="ttdoc">error_occurs when an error occurs, this signal will be emitted</div></div>
+<div class="ttc" id="astruct_weather_result_html_ac292b0cbe62ac22d94e271949f6b7b5e"><div class="ttname"><a href="struct_weather_result.html#ac292b0cbe62ac22d94e271949f6b7b5e">WeatherResult::finish_parse</a></div><div class="ttdeci">void finish_parse()</div><div class="ttdoc">finish_parse when the parsing is finished, this signal will be emitted</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

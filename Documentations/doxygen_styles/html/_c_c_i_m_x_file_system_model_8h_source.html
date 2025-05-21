@@ -113,20 +113,29 @@ $(function(){initNavTree('_c_c_i_m_x_file_system_model_8h_source.html',''); init
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_c_c_i_m_x_file_system_model.html">    5</a></span><span class="keyword">class </span>CCIMXFileSystemModel : <span class="keyword">public</span> QFileSystemModel {</div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keyword">explicit</span> CCIMXFileSystemModel(QObject* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keywordtype">void</span> bindProviders(QList&lt;FileInfoProvider*&gt;&amp; providers) {</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        this-&gt;providers = providers;</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    }</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    QVariant data(<span class="keyword">const</span> QModelIndex&amp; index, <span class="keywordtype">int</span> role = Qt::DisplayRole) <span class="keyword">const override</span>;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    QVariant headerData(<span class="keywordtype">int</span> section, Qt::Orientation orientation, <span class="keywordtype">int</span> role = Qt::DisplayRole) <span class="keyword">const override</span>;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">const</span> QList&lt;FileInfoProvider*&gt;&amp; get_providers()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> providers; }</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    QList&lt;FileInfoProvider*&gt; providers;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>};</div>
+<div class="foldopen" id="foldopen00012" data-start="{" data-end="}">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_c_c_i_m_x_file_system_model.html#a6c3fcae5ed31391c9162017f0788ef1a">   12</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_c_c_i_m_x_file_system_model.html#a6c3fcae5ed31391c9162017f0788ef1a">bindProviders</a>(QList&lt;FileInfoProvider*&gt;&amp; providers) {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        this-&gt;providers = providers;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    }</div>
 </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#endif </span><span class="comment">// CCIMXFILESYSTEMMODEL_H</span></div>
-<div class="ttc" id="aclass_file_info_provider_html"><div class="ttname"><a href="class_file_info_provider.html">FileInfoProvider</a></div><div class="ttdef"><b>Definition</b> FileInfoProvider.h:9</div></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    QVariant <a class="code hl_function" href="class_c_c_i_m_x_file_system_model.html#aaf84050a2cf034967a22e0bece1da92a">data</a>(<span class="keyword">const</span> QModelIndex&amp; index, <span class="keywordtype">int</span> role = Qt::DisplayRole) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    QVariant <a class="code hl_function" href="class_c_c_i_m_x_file_system_model.html#aeceaa8e6c1e18cb36f20211176b60096">headerData</a>(<span class="keywordtype">int</span> section, Qt::Orientation orientation, <span class="keywordtype">int</span> role = Qt::DisplayRole) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_c_c_i_m_x_file_system_model.html#ac956dd7018b41c094ff51c38f7abd68b">   32</a></span>    <span class="keyword">const</span> QList&lt;FileInfoProvider*&gt;&amp; <a class="code hl_function" href="class_c_c_i_m_x_file_system_model.html#ac956dd7018b41c094ff51c38f7abd68b">get_providers</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> providers; }</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    QList&lt;FileInfoProvider*&gt; providers; </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>};</div>
+</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#endif </span><span class="comment">// CCIMXFILESYSTEMMODEL_H</span></div>
+<div class="ttc" id="aclass_c_c_i_m_x_file_system_model_html_a6c3fcae5ed31391c9162017f0788ef1a"><div class="ttname"><a href="class_c_c_i_m_x_file_system_model.html#a6c3fcae5ed31391c9162017f0788ef1a">CCIMXFileSystemModel::bindProviders</a></div><div class="ttdeci">void bindProviders(QList&lt; FileInfoProvider * &gt; &amp;providers)</div><div class="ttdoc">bindProviders bind the providers to the model</div><div class="ttdef"><b>Definition</b> CCIMXFileSystemModel.h:12</div></div>
+<div class="ttc" id="aclass_c_c_i_m_x_file_system_model_html_aaf84050a2cf034967a22e0bece1da92a"><div class="ttname"><a href="class_c_c_i_m_x_file_system_model.html#aaf84050a2cf034967a22e0bece1da92a">CCIMXFileSystemModel::data</a></div><div class="ttdeci">QVariant data(const QModelIndex &amp;index, int role=Qt::DisplayRole) const override</div><div class="ttdoc">provide_section_name provide the section name</div><div class="ttdef"><b>Definition</b> CCIMXFileSystemModel.cpp:7</div></div>
+<div class="ttc" id="aclass_c_c_i_m_x_file_system_model_html_ac956dd7018b41c094ff51c38f7abd68b"><div class="ttname"><a href="class_c_c_i_m_x_file_system_model.html#ac956dd7018b41c094ff51c38f7abd68b">CCIMXFileSystemModel::get_providers</a></div><div class="ttdeci">const QList&lt; FileInfoProvider * &gt; &amp; get_providers() const</div><div class="ttdoc">get_providers provide the providers installed in the model</div><div class="ttdef"><b>Definition</b> CCIMXFileSystemModel.h:32</div></div>
+<div class="ttc" id="aclass_c_c_i_m_x_file_system_model_html_aeceaa8e6c1e18cb36f20211176b60096"><div class="ttname"><a href="class_c_c_i_m_x_file_system_model.html#aeceaa8e6c1e18cb36f20211176b60096">CCIMXFileSystemModel::headerData</a></div><div class="ttdeci">QVariant headerData(int section, Qt::Orientation orientation, int role=Qt::DisplayRole) const override</div><div class="ttdoc">provide_section_name provide the section name</div><div class="ttdef"><b>Definition</b> CCIMXFileSystemModel.cpp:29</div></div>
+<div class="ttc" id="aclass_file_info_provider_html"><div class="ttname"><a href="class_file_info_provider.html">FileInfoProvider</a></div><div class="ttdoc">The FileInfoProvider class is such an abstract class that using in CCIMXFileSystemModel to provide th...</div><div class="ttdef"><b>Definition</b> FileInfoProvider.h:15</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

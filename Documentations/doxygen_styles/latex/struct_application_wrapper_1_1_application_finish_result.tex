@@ -1,5 +1,14 @@
 \doxysection{Application\+Wrapper\+::Application\+Finish\+Result Struct Reference}
 \hypertarget{struct_application_wrapper_1_1_application_finish_result}{}\label{struct_application_wrapper_1_1_application_finish_result}\index{ApplicationWrapper::ApplicationFinishResult@{ApplicationWrapper::ApplicationFinishResult}}
+
+
+The \doxylink{struct_application_wrapper_1_1_application_finish_result}{Application\+Finish\+Result} class marks the application depatching result, a typical scene of using this is, when your app if finished(\+Main\+App\+Window Close, or anything trigger the exit functions will make a process ends, this will emit the signals of App\+Process Finish signals)  
+
+
+
+
+{\ttfamily \#include $<$applicationwrapper.\+h$>$}
+
 \doxysubsubsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
@@ -13,11 +22,14 @@ enum class {\bfseries App\+Finish\+Result} \{ {\bfseries QUIT\+\_\+\+NORMAL}
 \item 
 \Hypertarget{struct_application_wrapper_1_1_application_finish_result_acefc460bffc37c059a773fcc2bccf79f}\label{struct_application_wrapper_1_1_application_finish_result_acefc460bffc37c059a773fcc2bccf79f} 
 App\+Finish\+Result {\bfseries app\+\_\+result}
-\item 
+\begin{DoxyCompactList}\small\item\em App Runnning result. \end{DoxyCompactList}\item 
 \Hypertarget{struct_application_wrapper_1_1_application_finish_result_a9bd31e7691e31b6be8aff6a0ba60a0c4}\label{struct_application_wrapper_1_1_application_finish_result_a9bd31e7691e31b6be8aff6a0ba60a0c4} 
 int {\bfseries exit\+\_\+code}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em exit code of the application \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+The \doxylink{struct_application_wrapper_1_1_application_finish_result}{Application\+Finish\+Result} class marks the application depatching result, a typical scene of using this is, when your app if finished(\+Main\+App\+Window Close, or anything trigger the exit functions will make a process ends, this will emit the signals of App\+Process Finish signals) 
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

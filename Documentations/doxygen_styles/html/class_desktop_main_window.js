@@ -3,6 +3,7 @@ var class_desktop_main_window =
     [ "WallPaperGroup", "struct_desktop_main_window_1_1_wall_paper_group.html", "struct_desktop_main_window_1_1_wall_paper_group" ],
     [ "deptach_app_cards_init", "class_desktop_main_window.html#a60543a4367ec2d3ae50a5dd2d8743ea7", null ],
     [ "desktop_toast", "class_desktop_main_window.html#ad96e7341abb14b361bf76d3baff81071", null ],
+    [ "downDockWidget", "class_desktop_main_window.html#a3c9d1ee127d737faa6b73e162a4c28b3", null ],
     [ "handle_app_status", "class_desktop_main_window.html#ad72a53e56f786aa89acd04b1544d709c", null ],
     [ "install_remote_appwrapper", "class_desktop_main_window.html#a39fb277355a84381bf009a605bd9bc7e", null ],
     [ "invoke_switch_bgpage", "class_desktop_main_window.html#a010608971bb06a048f8af50e68ac460f", null ],

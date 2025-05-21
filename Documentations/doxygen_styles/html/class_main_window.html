@@ -110,6 +110,11 @@ $(function(){initNavTree('class_main_window.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">MainWindow Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The main application window for PDF viewing and interaction.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="pdf_reader_2ui_2_main_window_8h_source.html">mainwindow.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for MainWindow:</div>
 <div class="dyncontent">
@@ -119,42 +124,50 @@ Inheritance diagram for MainWindow:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ad766a05d8996b153d8328819f3fef928" id="r_ad766a05d8996b153d8328819f3fef928"><td class="memItemLeft" align="right" valign="top"><a id="ad766a05d8996b153d8328819f3fef928" name="ad766a05d8996b153d8328819f3fef928"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>InfoIndex</b> { <br />
-&#160;&#160;<b>NameProviders</b>
-, <b>CountProviders</b>
-, <b>DirSizeProviders</b>
-, <b>TypeInfoProviders</b>
+<tr class="memitem:ad766a05d8996b153d8328819f3fef928" id="r_ad766a05d8996b153d8328819f3fef928"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad766a05d8996b153d8328819f3fef928">InfoIndex</a> { <br />
+&#160;&#160;<a class="el" href="#ad766a05d8996b153d8328819f3fef928a09675afd3cc4a09f7b50ba42fc455f9f">NameProviders</a>
+, <a class="el" href="#ad766a05d8996b153d8328819f3fef928a18b76fae0ca4ada44626178c4e0a2f23">CountProviders</a>
+, <a class="el" href="#ad766a05d8996b153d8328819f3fef928ab04f9653ea917c89c34061a3ba93d4b8">DirSizeProviders</a>
+, <a class="el" href="#ad766a05d8996b153d8328819f3fef928a7820a0e650c977902ca389fb734cb3ab">TypeInfoProviders</a>
 , <br />
-&#160;&#160;<b>InfoIndexMax</b>
+&#160;&#160;<a class="el" href="#ad766a05d8996b153d8328819f3fef928aae9b08f7c72513fb6e687f24948be53c">InfoIndexMax</a>
 <br />
  }</td></tr>
+<tr class="memdesc:ad766a05d8996b153d8328819f3fef928"><td class="mdescLeft">&#160;</td><td class="mdescRight">Info index that shell controlls which lines.  <a href="#ad766a05d8996b153d8328819f3fef928">More...</a><br /></td></tr>
 <tr class="separator:ad766a05d8996b153d8328819f3fef928"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-slots" name="pub-slots"></a>
 Public Slots</h2></td></tr>
 <tr class="memitem:a2494bb8710504a3a17ce355577b03425" id="r_a2494bb8710504a3a17ce355577b03425"><td class="memItemLeft" align="right" valign="top"><a id="a2494bb8710504a3a17ce355577b03425" name="a2494bb8710504a3a17ce355577b03425"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>open_documentFromDialog</b> ()</td></tr>
+<tr class="memdesc:a2494bb8710504a3a17ce355577b03425"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a PDF document using a file dialog. <br /></td></tr>
 <tr class="separator:a2494bb8710504a3a17ce355577b03425"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0d5bd0ef2a63f9fa672f284bf381c15" id="r_ad0d5bd0ef2a63f9fa672f284bf381c15"><td class="memItemLeft" align="right" valign="top"><a id="ad0d5bd0ef2a63f9fa672f284bf381c15" name="ad0d5bd0ef2a63f9fa672f284bf381c15"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>browse_document_metas</b> ()</td></tr>
+<tr class="memdesc:ad0d5bd0ef2a63f9fa672f284bf381c15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a window to browse document meta information. <br /></td></tr>
 <tr class="separator:ad0d5bd0ef2a63f9fa672f284bf381c15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b63e07d932653af812367ec62ac78d2" id="r_a9b63e07d932653af812367ec62ac78d2"><td class="memItemLeft" align="right" valign="top"><a id="a9b63e07d932653af812367ec62ac78d2" name="a9b63e07d932653af812367ec62ac78d2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>jump_to_page</b> (const int page_index)</td></tr>
+<tr class="memitem:a9b63e07d932653af812367ec62ac78d2" id="r_a9b63e07d932653af812367ec62ac78d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b63e07d932653af812367ec62ac78d2">jump_to_page</a> (const int page_index)</td></tr>
+<tr class="memdesc:a9b63e07d932653af812367ec62ac78d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Jumps to the specified page index.  <br /></td></tr>
 <tr class="separator:a9b63e07d932653af812367ec62ac78d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34067084782a3d0e1c0befca109707cc" id="r_a34067084782a3d0e1c0befca109707cc"><td class="memItemLeft" align="right" valign="top"><a id="a34067084782a3d0e1c0befca109707cc" name="a34067084782a3d0e1c0befca109707cc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>prev_page</b> (void)</td></tr>
+<tr class="memdesc:a34067084782a3d0e1c0befca109707cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Navigates to the previous page. <br /></td></tr>
 <tr class="separator:a34067084782a3d0e1c0befca109707cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc9d84a0a8b9bea132a960fdfa06b2cd" id="r_abc9d84a0a8b9bea132a960fdfa06b2cd"><td class="memItemLeft" align="right" valign="top"><a id="abc9d84a0a8b9bea132a960fdfa06b2cd" name="abc9d84a0a8b9bea132a960fdfa06b2cd"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>next_page</b> (void)</td></tr>
+<tr class="memdesc:abc9d84a0a8b9bea132a960fdfa06b2cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Navigates to the next page. <br /></td></tr>
 <tr class="separator:abc9d84a0a8b9bea132a960fdfa06b2cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3211ef3afcaf8be014a9d93b57807c0" id="r_aa3211ef3afcaf8be014a9d93b57807c0"><td class="memItemLeft" align="right" valign="top"><a id="aa3211ef3afcaf8be014a9d93b57807c0" name="aa3211ef3afcaf8be014a9d93b57807c0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>switch_toolbox_state</b> (void)</td></tr>
+<tr class="memdesc:aa3211ef3afcaf8be014a9d93b57807c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggles the visibility of the toolbox sidebar. <br /></td></tr>
 <tr class="separator:aa3211ef3afcaf8be014a9d93b57807c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49ca6815df00c49799f1a98c30c5729d" id="r_a49ca6815df00c49799f1a98c30c5729d"><td class="memItemLeft" align="right" valign="top"><a id="a49ca6815df00c49799f1a98c30c5729d" name="a49ca6815df00c49799f1a98c30c5729d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>zoom_in</b> (void)</td></tr>
+<tr class="memdesc:a49ca6815df00c49799f1a98c30c5729d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zooms into the current PDF view. <br /></td></tr>
 <tr class="separator:a49ca6815df00c49799f1a98c30c5729d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba9bba93bbc00ad8e697cfbfc244b417" id="r_aba9bba93bbc00ad8e697cfbfc244b417"><td class="memItemLeft" align="right" valign="top"><a id="aba9bba93bbc00ad8e697cfbfc244b417" name="aba9bba93bbc00ad8e697cfbfc244b417"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>zoom_out</b> (void)</td></tr>
+<tr class="memdesc:aba9bba93bbc00ad8e697cfbfc244b417"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zooms out of the current PDF view. <br /></td></tr>
 <tr class="separator:aba9bba93bbc00ad8e697cfbfc244b417"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -164,30 +177,138 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a996c5a2b6f77944776856f08ec30858d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d4e7882ab0a7c5b5a3c4a59fb73fc21" id="r_a7d4e7882ab0a7c5b5a3c4a59fb73fc21"><td class="memItemLeft" align="right" valign="top"><a id="a7d4e7882ab0a7c5b5a3c4a59fb73fc21" name="a7d4e7882ab0a7c5b5a3c4a59fb73fc21"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>try_goto_parent_view</b> ()</td></tr>
+<tr class="memdesc:a7d4e7882ab0a7c5b5a3c4a59fb73fc21"><td class="mdescLeft">&#160;</td><td class="mdescRight">try_goto_parent_view will attempt to switch to the root, no returns as is uncheckable <br /></td></tr>
 <tr class="separator:a7d4e7882ab0a7c5b5a3c4a59fb73fc21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc79266f6f099786471c01e0b8916fce" id="r_abc79266f6f099786471c01e0b8916fce"><td class="memItemLeft" align="right" valign="top"><a id="abc79266f6f099786471c01e0b8916fce" name="abc79266f6f099786471c01e0b8916fce"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>switch_to_global_root</b> ()</td></tr>
+<tr class="memitem:abc79266f6f099786471c01e0b8916fce" id="r_abc79266f6f099786471c01e0b8916fce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc79266f6f099786471c01e0b8916fce">switch_to_global_root</a> ()</td></tr>
+<tr class="memdesc:abc79266f6f099786471c01e0b8916fce"><td class="mdescLeft">&#160;</td><td class="mdescRight">switch_to_global_root will attempt to switch to the root  <br /></td></tr>
 <tr class="separator:abc79266f6f099786471c01e0b8916fce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a996c5a2b6f77944776856f08ec30858d" id="r_a996c5a2b6f77944776856f08ec30858d"><td class="memItemLeft" align="right" valign="top"><a id="a996c5a2b6f77944776856f08ec30858d" name="a996c5a2b6f77944776856f08ec30858d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>MainWindow</b> (QWidget *parent=nullptr)</td></tr>
+<tr class="memitem:a996c5a2b6f77944776856f08ec30858d" id="r_a996c5a2b6f77944776856f08ec30858d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a996c5a2b6f77944776856f08ec30858d">MainWindow</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:a996c5a2b6f77944776856f08ec30858d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs the main window and initializes the UI.  <br /></td></tr>
 <tr class="separator:a996c5a2b6f77944776856f08ec30858d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cdae6697856117053cc37318f70cdd9" id="r_a3cdae6697856117053cc37318f70cdd9"><td class="memItemLeft" align="right" valign="top"><a id="a3cdae6697856117053cc37318f70cdd9" name="a3cdae6697856117053cc37318f70cdd9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>fresh_available_camera_once</b> ()</td></tr>
-<tr class="separator:a3cdae6697856117053cc37318f70cdd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a996c5a2b6f77944776856f08ec30858d" id="r_a996c5a2b6f77944776856f08ec30858d"><td class="memItemLeft" align="right" valign="top"><a id="a996c5a2b6f77944776856f08ec30858d" name="a996c5a2b6f77944776856f08ec30858d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>MainWindow</b> (QWidget *parent=nullptr)</td></tr>
-<tr class="separator:a996c5a2b6f77944776856f08ec30858d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae98d00a93bc118200eeef9f9bba1dba7" id="r_ae98d00a93bc118200eeef9f9bba1dba7"><td class="memItemLeft" align="right" valign="top"><a id="ae98d00a93bc118200eeef9f9bba1dba7" name="ae98d00a93bc118200eeef9f9bba1dba7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~MainWindow</b> ()</td></tr>
+<tr class="memdesc:ae98d00a93bc118200eeef9f9bba1dba7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor to clean up resources. <br /></td></tr>
+<tr class="separator:ae98d00a93bc118200eeef9f9bba1dba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a996c5a2b6f77944776856f08ec30858d" id="r_a996c5a2b6f77944776856f08ec30858d"><td class="memItemLeft" align="right" valign="top"><a id="a996c5a2b6f77944776856f08ec30858d" name="a996c5a2b6f77944776856f08ec30858d"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>MainWindow</b> (QWidget *parent=nullptr)</td></tr>
 <tr class="separator:a996c5a2b6f77944776856f08ec30858d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The main application window for PDF viewing and interaction. </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="ad766a05d8996b153d8328819f3fef928" name="ad766a05d8996b153d8328819f3fef928"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad766a05d8996b153d8328819f3fef928">&#9670;&#160;</a></span>InfoIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ad766a05d8996b153d8328819f3fef928">MainWindow::InfoIndex</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Info index that shell controlls which lines. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad766a05d8996b153d8328819f3fef928a09675afd3cc4a09f7b50ba42fc455f9f" name="ad766a05d8996b153d8328819f3fef928a09675afd3cc4a09f7b50ba42fc455f9f"></a>NameProviders&#160;</td><td class="fielddoc"><p>name providers line </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad766a05d8996b153d8328819f3fef928a18b76fae0ca4ada44626178c4e0a2f23" name="ad766a05d8996b153d8328819f3fef928a18b76fae0ca4ada44626178c4e0a2f23"></a>CountProviders&#160;</td><td class="fielddoc"><p>count providers line </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad766a05d8996b153d8328819f3fef928ab04f9653ea917c89c34061a3ba93d4b8" name="ad766a05d8996b153d8328819f3fef928ab04f9653ea917c89c34061a3ba93d4b8"></a>DirSizeProviders&#160;</td><td class="fielddoc"><p>dirent providers line </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad766a05d8996b153d8328819f3fef928a7820a0e650c977902ca389fb734cb3ab" name="ad766a05d8996b153d8328819f3fef928a7820a0e650c977902ca389fb734cb3ab"></a>TypeInfoProviders&#160;</td><td class="fielddoc"><p>type info providers line </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad766a05d8996b153d8328819f3fef928aae9b08f7c72513fb6e687f24948be53c" name="ad766a05d8996b153d8328819f3fef928aae9b08f7c72513fb6e687f24948be53c"></a>InfoIndexMax&#160;</td><td class="fielddoc"><p>Max. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a996c5a2b6f77944776856f08ec30858d" name="a996c5a2b6f77944776856f08ec30858d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a996c5a2b6f77944776856f08ec30858d">&#9670;&#160;</a></span>MainWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MainWindow::MainWindow </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *</td>          <td class="paramname"><span class="paramname"><em>parent</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs the main window and initializes the UI. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>The parent widget. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9b63e07d932653af812367ec62ac78d2" name="a9b63e07d932653af812367ec62ac78d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b63e07d932653af812367ec62ac78d2">&#9670;&#160;</a></span>jump_to_page</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::jump_to_page </td>
+          <td>(</td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>page_index</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Jumps to the specified page index. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">page_index</td><td>The target page to jump to. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abc79266f6f099786471c01e0b8916fce" name="abc79266f6f099786471c01e0b8916fce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc79266f6f099786471c01e0b8916fce">&#9670;&#160;</a></span>switch_to_global_root()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::switch_to_global_root </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>switch_to_global_root will attempt to switch to the root </p>
+<dl class="section note"><dt>Note</dt><dd>Fuck Windows, we have to specify the root driver base to show where to display </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>extern_app/FileRamber/Ui/<a class="el" href="_file_ramber_2_ui_2_main_window_8h_source.html">MainWindow.h</a></li>
-<li>extern_app/LocalCamera/<a class="el" href="_local_camera_2_main_window_8h_source.html">MainWindow.h</a></li>
 <li>extern_app/pdfReader/ui/<a class="el" href="pdf_reader_2ui_2_main_window_8h_source.html">mainwindow.h</a></li>
 <li>extern_app/professionals/library/OpencvQtAdapter/gui_example/<a class="el" href="professionals_2library_2_opencv_qt_adapter_2gui__example_2_main_window_8h_source.html">MainWindow.h</a></li>
 <li>extern_app/FileRamber/Ui/<b>MainWindow.cpp</b></li>
-<li>extern_app/LocalCamera/<b>MainWindow.cpp</b></li>
 <li>extern_app/pdfReader/ui/<b>mainwindow.cpp</b></li>
 <li>extern_app/professionals/library/OpencvQtAdapter/gui_example/<b>MainWindow.cpp</b></li>
 </ul>

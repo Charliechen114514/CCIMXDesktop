@@ -1,5 +1,14 @@
 \doxysection{Process\+Broswer Class Reference}
 \hypertarget{class_process_broswer}{}\label{class_process_broswer}\index{ProcessBroswer@{ProcessBroswer}}
+
+
+The \doxylink{class_process_broswer}{Process\+Broswer} class.  
+
+
+
+
+{\ttfamily \#include $<$Process\+Broswer.\+h$>$}
+
 Inheritance diagram for Process\+Broswer\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -10,25 +19,75 @@ Inheritance diagram for Process\+Broswer\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{struct_process_broswer_1_1_process_info}{Process\+Info}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The \doxylink{struct_process_broswer_1_1_process_info}{Process\+Info} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Signals}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_process_broswer_aa24dce0e4e4b285c349690881e9db5e7}\label{class_process_broswer_aa24dce0e4e4b285c349690881e9db5e7} 
-void {\bfseries fetch\+\_\+finish} (const QList$<$ \mbox{\hyperlink{struct_process_broswer_1_1_process_info}{Process\+Broswer\+::\+Process\+Info}} $>$ \&infos)
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_process_broswer_aa24dce0e4e4b285c349690881e9db5e7}{fetch\+\_\+finish}} (const QList$<$ \mbox{\hyperlink{struct_process_broswer_1_1_process_info}{Process\+Broswer\+::\+Process\+Info}} $>$ \&infos)
+\begin{DoxyCompactList}\small\item\em about\+\_\+fetch\+\_\+process the signal indicating the process is ready \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \Hypertarget{class_process_broswer_a6c98f09926657816ca7c816b14f23fdb}\label{class_process_broswer_a6c98f09926657816ca7c816b14f23fdb} 
 {\bfseries Process\+Broswer} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
 \item 
-\Hypertarget{class_process_broswer_af5b7182bba575b4472c25aa1ea264744}\label{class_process_broswer_af5b7182bba575b4472c25aa1ea264744} 
-void {\bfseries set\+\_\+flush\+\_\+freq} (const int msecs)
-\item 
-\Hypertarget{class_process_broswer_ae80a044aa7574a365eecdce5c77001da}\label{class_process_broswer_ae80a044aa7574a365eecdce5c77001da} 
-void {\bfseries set\+\_\+capture\+\_\+state} (bool st)
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_process_broswer_af5b7182bba575b4472c25aa1ea264744}{set\+\_\+flush\+\_\+freq}} (const int msecs)
+\begin{DoxyCompactList}\small\item\em set\+\_\+flush\+\_\+freq set the flush frequency in msec times \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_process_broswer_ae80a044aa7574a365eecdce5c77001da}{set\+\_\+capture\+\_\+state}} (bool st)
+\begin{DoxyCompactList}\small\item\em set\+\_\+capture\+\_\+state \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_process_broswer}{Process\+Broswer} class. 
+
+\doxylink{class_process_broswer}{Process\+Broswer} is the process broswer provides the process information 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_process_broswer_aa24dce0e4e4b285c349690881e9db5e7}\index{ProcessBroswer@{ProcessBroswer}!fetch\_finish@{fetch\_finish}}
+\index{fetch\_finish@{fetch\_finish}!ProcessBroswer@{ProcessBroswer}}
+\doxysubsubsection{\texorpdfstring{fetch\_finish}{fetch\_finish}}
+{\footnotesize\ttfamily \label{class_process_broswer_aa24dce0e4e4b285c349690881e9db5e7} 
+void Process\+Broswer\+::fetch\+\_\+finish (\begin{DoxyParamCaption}\item[{const QList$<$ \mbox{\hyperlink{struct_process_broswer_1_1_process_info}{Process\+Broswer\+::\+Process\+Info}} $>$ \&}]{infos}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+about\+\_\+fetch\+\_\+process the signal indicating the process is ready 
+
+
+\begin{DoxyParams}{Parameters}
+{\em infos} & the process information \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_process_broswer_ae80a044aa7574a365eecdce5c77001da}\index{ProcessBroswer@{ProcessBroswer}!set\_capture\_state@{set\_capture\_state}}
+\index{set\_capture\_state@{set\_capture\_state}!ProcessBroswer@{ProcessBroswer}}
+\doxysubsubsection{\texorpdfstring{set\_capture\_state()}{set\_capture\_state()}}
+{\footnotesize\ttfamily \label{class_process_broswer_ae80a044aa7574a365eecdce5c77001da} 
+void Process\+Broswer\+::set\+\_\+capture\+\_\+state (\begin{DoxyParamCaption}\item[{bool}]{st}{}\end{DoxyParamCaption})}
+
+
+
+set\+\_\+capture\+\_\+state 
+
+
+\begin{DoxyParams}{Parameters}
+{\em st} & the state to set \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_process_broswer_af5b7182bba575b4472c25aa1ea264744}\index{ProcessBroswer@{ProcessBroswer}!set\_flush\_freq@{set\_flush\_freq}}
+\index{set\_flush\_freq@{set\_flush\_freq}!ProcessBroswer@{ProcessBroswer}}
+\doxysubsubsection{\texorpdfstring{set\_flush\_freq()}{set\_flush\_freq()}}
+{\footnotesize\ttfamily \label{class_process_broswer_af5b7182bba575b4472c25aa1ea264744} 
+void Process\+Broswer\+::set\+\_\+flush\+\_\+freq (\begin{DoxyParamCaption}\item[{const int}]{msecs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+set\+\_\+flush\+\_\+freq set the flush frequency in msec times 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msecs} & the msecs to set \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

@@ -5,13 +5,10 @@
 #include <QGridLayout>
 #include <QStackedWidget>
 
-static constexpr int MAX_WIDTH = 4;
-static constexpr int MAX_HEIGHT = 4;
-
 /* create for a page append */
 QList<AppWidget*>
 PageSetuper::create_one_app_only_page_append(
-    QStackedWidget* widget, DesktopMainWindow* mainWindow,
+    DesktopMainWindow* mainWindow,
     const QList<PageSetupSessionRequest>& sessionRequest) {
     QList<AppWidget*> appsWidgets;
     QWidget* page = new QWidget(mainWindow);
@@ -38,25 +35,29 @@ PageSetuper::create_one_app_only_page_append(
 	}
 
 	page->setLayout(gridLayout);
-	widget->addWidget(page);
+	mainWindow->stackedWidget()->addWidget(page);
 
 	return appsWidgets;
 }
 
 void PageSetuper::add_to_dock(
-    DownDockWidget* downdock,
     DesktopMainWindow* mainWindow,
     const QList<AppWidget*>& widgets) {
     QList<AppWidget*> copys;
     for (const auto& each : widgets) {
-        AppWidget* app = new AppWidget(each->icon().scaled(PageSetuper::APP_ICON_SZ, PageSetuper::APP_ICON_SZ, Qt::KeepAspectRatio, Qt::SmoothTransformation), each->app_name(), downdock);
+        AppWidget* app = new AppWidget(
+            each->icon().scaled(PageSetuper::APP_ICON_SZ,
+                                PageSetuper::APP_ICON_SZ,
+                                Qt::KeepAspectRatio,
+                                Qt::SmoothTransformation),
+            each->app_name(), mainWindow->downDockWidget());
         app->bindApp(each->get_app());
         app->showIconOnly(true);
         copys << app;
         QObject::connect(app, &AppWidget::postAppStatus, mainWindow, &DesktopMainWindow::handle_app_status);
     }
 
-    downdock->set_dock_apps(copys);
+    mainWindow->downDockWidget()->set_dock_apps(copys);
 }
 
 /* All mappings are defined, thus add directly is OK */
@@ -154,5 +155,5 @@ QList<AppWidget*> PageSetuper::create_real_app(DesktopMainWindow* mainWindow) {
 	req.push_back({ ":/icons/sources/sports_health_app.png", "SportsHealth", wrapper });
 #endif
 
-	return PageSetuper::create_one_app_only_page_append(mainWindow->stackedWidget(), mainWindow, req);
+	return PageSetuper::create_one_app_only_page_append(mainWindow, req);
 }

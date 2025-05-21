@@ -1,0 +1,29 @@
+\doxysection{CVImage\+Impl.\+h}
+\hypertarget{professionals_2library_2_opencv_qt_adapter_2core__library_2olds_2cvimage_2_c_v_image_impl_8h_source}{}\label{professionals_2library_2_opencv_qt_adapter_2core__library_2olds_2cvimage_2_c_v_image_impl_8h_source}\index{extern\_app/professionals/library/OpencvQtAdapter/core\_library/olds/cvimage/CVImageImpl.h@{extern\_app/professionals/library/OpencvQtAdapter/core\_library/olds/cvimage/CVImageImpl.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CVIMAGEIMPL\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CVIMAGEIMPL\_H}}
+\DoxyCodeLine{00003\ \textcolor{comment}{/*\ class\ interfaces\ */}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_v_image_impl}{CVImageImpl}}\ \{}
+\DoxyCodeLine{00006\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_v_image_impl_a298e52a3d0ff911c7e2ea2fdebf70c05}{load\_from\_file}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ filename)\ =\ 0;}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_v_image_impl_a301dc980e78028f18bfcc6e4c05761d2}{assigned}}(\textcolor{keyword}{const}\ CVImageImpl*\ impl,\ \textcolor{keywordtype}{bool}\ req\_copy)\ =\ 0;}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_v_image_impl_a4fcb8483f22fb19df433b6a52a30ce36}{pass\_copy}}(\textcolor{keyword}{const}\ CVImageImpl*\ copied)\ =\ 0;}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{virtual}\ \string~CVImageImpl()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_c_v_image_impl_a022dad3b12fdd6bbecb96584622ebdf8}{image\_valid}}()\ =\ 0;}
+\DoxyCodeLine{00012\ \};}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_v_image_impl_factory}{CVImageImplFactory}}\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00017\ \textcolor{comment}{\ \ \ \ \ *\ create\ from\ here,\ already\ assigned\ the}}
+\DoxyCodeLine{00018\ \textcolor{comment}{\ \ \ \ \ *\ correct\ son\ classes}}
+\DoxyCodeLine{00019\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{static}\ CVImageImpl*\ \mbox{\hyperlink{class_c_v_image_impl_factory_a474c58a11bc474ae63a59a4b3deea646}{target\_impl}}();}
+\DoxyCodeLine{00021\ \};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CVIMAGEIMPL\_H}}
+
+\end{DoxyCode}

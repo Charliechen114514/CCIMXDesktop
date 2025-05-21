@@ -1,25 +1,43 @@
 #ifndef PESUDOLEDCONTROLLER_H
 #define PESUDOLEDCONTROLLER_H
+
 #include "LEDParamsPackage.h"
 #include <string>
+
+/// @class PesudoLedController
+/// @brief Simulated LED controller used when real hardware is not available.
 class PesudoLedController {
 public:
+	/// @brief Default constructor.
 	PesudoLedController() = default;
+
+	/// @brief Default destructor.
 	~PesudoLedController() = default;
-	/* this means switching to other led */
+
+	/// @brief Redirects to another LED (no-op in simulation).
+	/// @param ledName LED identifier.
 	void redirectTo(const std::string& ledName) { (void)ledName; }
-	/* led written path */
+
+	/// @brief Returns the (simulated) LED path.
+	/// @return Fake path string.
 	std::string ledPath() const { return led_path; }
-	/* modes are set to define how to control packages */
+
+	/// @brief Sets the control mode.
+	/// @param mode Control mode.
 	inline void setMode(const Modes mode) { this->mode = mode; }
-	/* get the current mode */
+
+	/// @brief Gets the current control mode.
+	/// @return Current mode.
 	inline Modes getMode() const { return this->mode; }
-	/* bind the package with required parameters */
+
+	/// @brief Processes the parameter package (always succeeds in simulation).
+	/// @param package LED parameter package.
+	/// @return Always true.
 	bool processByPackage(const LEDParamsPackage* package) { return true; }
 
 private:
-	std::string led_path;
-	Modes mode { Modes::Plain };
+	std::string led_path; ///< Path string for LED (not used in pseudo).
+	Modes mode { Modes::Plain }; ///< Operating mode.
 };
 
 #endif // PESUDOLEDCONTROLLER_H

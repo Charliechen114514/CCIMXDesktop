@@ -108,33 +108,42 @@ $(function(){initNavTree('_media_player_2base_2_c_v_image_8h_source.html',''); i
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef CVIMAGE_H</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define CVIMAGE_H</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;CVImageImpl.h&quot;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_c_v_image.html">    5</a></span><span class="keyword">class </span>CVImage {</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="comment">/* Friend class are assigned for direct visit */</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    CVImage();</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    CVImage(<span class="keyword">const</span> CVImage&amp; image);</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keyword">const</span> CVImage&amp; operator=(<span class="keyword">const</span> CVImage&amp; image);</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    ~CVImage();</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="comment">/* load as file */</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keywordtype">void</span> loadFile(<span class="keyword">const</span> <span class="keywordtype">char</span>* filename);</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordtype">void</span> assigned(</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keyword">const</span> CVImage&amp; image, <span class="comment">/* other copy */</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="keywordtype">bool</span> load_as_copy = <span class="keyword">false</span> <span class="comment">/* req to copy */</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    );</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">inline</span> <span class="keywordtype">bool</span> image_valid()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> private_handle-&gt;image_valid(); }</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">inline</span> <a class="code hl_class" href="class_c_v_image_impl.html">CVImageImpl</a>* impl_ptr()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> private_handle; }</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <a class="code hl_class" href="class_c_v_image_impl.html">CVImageImpl</a>* private_handle { <span class="keyword">nullptr</span> };</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>};</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span></div>
+<div class="foldopen" id="foldopen00009" data-start="{" data-end="};">
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_c_v_image.html">    9</a></span><span class="keyword">class </span><a class="code hl_function" href="class_c_v_image.html#aff7830bea2e4d2d3e752acd22e183501">CVImage</a> {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <a class="code hl_function" href="class_c_v_image.html#aff7830bea2e4d2d3e752acd22e183501">CVImage</a>(); </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <a class="code hl_function" href="class_c_v_image.html#aff7830bea2e4d2d3e752acd22e183501">CVImage</a>(<span class="keyword">const</span> <a class="code hl_function" href="class_c_v_image.html#aff7830bea2e4d2d3e752acd22e183501">CVImage</a>&amp; image); </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">const</span> <a class="code hl_function" href="class_c_v_image.html#aff7830bea2e4d2d3e752acd22e183501">CVImage</a>&amp; <a class="code hl_function" href="class_c_v_image.html#af3aca0a5c5d2f8fc17310bab85f445ba">operator=</a>(<span class="keyword">const</span> <a class="code hl_function" href="class_c_v_image.html#aff7830bea2e4d2d3e752acd22e183501">CVImage</a>&amp; image); </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <a class="code hl_function" href="class_c_v_image.html#a2936f8bb73d627b0d6cd69b2eb685efa">~CVImage</a>(); </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="comment">/* load as file */</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_c_v_image.html#abbfa8ef2239701e79812d05da44995ab">loadFile</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* filename);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_c_v_image.html#ae0e9b2ab183866535eac01aee161beda">assigned</a>(</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="keyword">const</span> <a class="code hl_function" href="class_c_v_image.html#aff7830bea2e4d2d3e752acd22e183501">CVImage</a>&amp; image, <span class="comment">/* other copy */</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keywordtype">bool</span> load_as_copy = <span class="keyword">false</span> <span class="comment">/* req to copy */</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    );</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="class_c_v_image.html#a3a7a385b2393b3ceec80788250186214">   39</a></span>    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_c_v_image.html#a3a7a385b2393b3ceec80788250186214">image_valid</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> private_handle-&gt;image_valid(); }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_c_v_image.html#ae57298a7ada682bc9f5a2baa6622e9f3">   45</a></span>    <span class="keyword">inline</span> <a class="code hl_class" href="class_c_v_image_impl.html">CVImageImpl</a>* <a class="code hl_function" href="class_c_v_image.html#ae57298a7ada682bc9f5a2baa6622e9f3">impl_ptr</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> private_handle; }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <a class="code hl_class" href="class_c_v_image_impl.html">CVImageImpl</a>* private_handle { <span class="keyword">nullptr</span> }; </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>};</div>
 </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#endif </span><span class="comment">// CVIMAGE_H</span></div>
-<div class="ttc" id="aclass_c_v_image_impl_html"><div class="ttname"><a href="class_c_v_image_impl.html">CVImageImpl</a></div><div class="ttdef"><b>Definition</b> CVImageImpl.h:5</div></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#endif </span><span class="comment">// CVIMAGE_H</span></div>
+<div class="ttc" id="aclass_c_v_image_html_a2936f8bb73d627b0d6cd69b2eb685efa"><div class="ttname"><a href="class_c_v_image.html#a2936f8bb73d627b0d6cd69b2eb685efa">CVImage::~CVImage</a></div><div class="ttdeci">~CVImage()</div><div class="ttdoc">destructor</div><div class="ttdef"><b>Definition</b> CVImage.cpp:25</div></div>
+<div class="ttc" id="aclass_c_v_image_html_a3a7a385b2393b3ceec80788250186214"><div class="ttname"><a href="class_c_v_image.html#a3a7a385b2393b3ceec80788250186214">CVImage::image_valid</a></div><div class="ttdeci">bool image_valid() const</div><div class="ttdoc">assigned assigns the image to this image</div><div class="ttdef"><b>Definition</b> CVImage.h:39</div></div>
+<div class="ttc" id="aclass_c_v_image_html_abbfa8ef2239701e79812d05da44995ab"><div class="ttname"><a href="class_c_v_image.html#abbfa8ef2239701e79812d05da44995ab">CVImage::loadFile</a></div><div class="ttdeci">void loadFile(const char *filename)</div><div class="ttdoc">loadFile loads the file into the image</div><div class="ttdef"><b>Definition</b> CVImage.cpp:29</div></div>
+<div class="ttc" id="aclass_c_v_image_html_ae0e9b2ab183866535eac01aee161beda"><div class="ttname"><a href="class_c_v_image.html#ae0e9b2ab183866535eac01aee161beda">CVImage::assigned</a></div><div class="ttdeci">void assigned(const CVImage &amp;image, bool load_as_copy=false)</div><div class="ttdoc">assigned assigns the image to this image</div><div class="ttdef"><b>Definition</b> CVImage.cpp:33</div></div>
+<div class="ttc" id="aclass_c_v_image_html_ae57298a7ada682bc9f5a2baa6622e9f3"><div class="ttname"><a href="class_c_v_image.html#ae57298a7ada682bc9f5a2baa6622e9f3">CVImage::impl_ptr</a></div><div class="ttdeci">CVImageImpl * impl_ptr() const</div><div class="ttdoc">impl_ptr get the impl pointer</div><div class="ttdef"><b>Definition</b> CVImage.h:45</div></div>
+<div class="ttc" id="aclass_c_v_image_html_af3aca0a5c5d2f8fc17310bab85f445ba"><div class="ttname"><a href="class_c_v_image.html#af3aca0a5c5d2f8fc17310bab85f445ba">CVImage::operator=</a></div><div class="ttdeci">const CVImage &amp; operator=(const CVImage &amp;image)</div><div class="ttdoc">copy assignment</div><div class="ttdef"><b>Definition</b> CVImage.cpp:15</div></div>
+<div class="ttc" id="aclass_c_v_image_html_aff7830bea2e4d2d3e752acd22e183501"><div class="ttname"><a href="class_c_v_image.html#aff7830bea2e4d2d3e752acd22e183501">CVImage::CVImage</a></div><div class="ttdeci">CVImage()</div><div class="ttdoc">defines the default constructor</div><div class="ttdef"><b>Definition</b> CVImage.cpp:4</div></div>
+<div class="ttc" id="aclass_c_v_image_impl_html"><div class="ttname"><a href="class_c_v_image_impl.html">CVImageImpl</a></div><div class="ttdoc">The CVImageImpl class is the image interface classes, or, backend of the CVImage.</div><div class="ttdef"><b>Definition</b> CVImageImpl.h:9</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

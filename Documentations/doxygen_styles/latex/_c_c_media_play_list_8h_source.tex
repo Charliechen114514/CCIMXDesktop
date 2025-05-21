@@ -7,85 +7,78 @@
 \DoxyCodeLine{00003\ }
 \DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QObject>}}
 \DoxyCodeLine{00005\ }
-\DoxyCodeLine{00006\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_media_list_mails}{MediaListMails}}\ \{}
-\DoxyCodeLine{00007\ \ \ \ \ \textcolor{keywordtype}{bool}\ prev\_enabled\ \{\ \textcolor{keyword}{false}\ \},\ next\_enabled\ \{\ \textcolor{keyword}{false}\ \};}
-\DoxyCodeLine{00008\ \ \ \ \ QString\ current\_playing\ \{\};}
-\DoxyCodeLine{00009\ \};}
-\DoxyCodeLine{00010\ }
-\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }CCMediaPlayList\ :\ \textcolor{keyword}{public}\ QObject\ \{}
-\DoxyCodeLine{00012\ \ \ \ \ Q\_OBJECT}
-\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{explicit}\ CCMediaPlayList(QObject*\ parent\ =\ \textcolor{keyword}{nullptr});}
-\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{enum\ class}\ PlayMode\ \{}
-\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ OneShot,\ \textcolor{comment}{/*\ one\ shot\ makes\ the\ \ */}}
-\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ OneCycle,\ \textcolor{comment}{/*\ play\ current\ again\ and\ again\ \string~\ */}}
-\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ ListPlay,\ \textcolor{comment}{/*\ play\ in\ the\ list,\ till\ the\ end\ we\ stop\ */}}
-\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ ListCycle,\ \textcolor{comment}{/*\ cycling\ play\ the\ list\ */}}
-\DoxyCodeLine{00020\ \ \ \ \ \};}
-\DoxyCodeLine{00021\ }
-\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ PlayMode\ DEF\_MODE\ =\ PlayMode::ListCycle;}
-\DoxyCodeLine{00023\ }
-\DoxyCodeLine{00024\ \ \ \ \ \textcolor{comment}{/*\ set\ the\ play\ mode\ */}}
-\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ set\_play\_mode(\textcolor{keyword}{const}\ PlayMode\ mode);}
-\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ flow\_mode();}
-\DoxyCodeLine{00027\ \ \ \ \ \textcolor{comment}{/*\ mode\ */}}
-\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{inline}\ PlayMode\ get\_play\_mode()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ current\_mode;\ \}}
-\DoxyCodeLine{00029\ \ \ \ \ \textcolor{comment}{/*\ fetch\ the\ should\ play\ according\ modes\ and\ list\ */}}
-\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{struct_media_list_mails}{MediaListMails}}\ fetch\_prev\_play();}
-\DoxyCodeLine{00031\ \ \ \ \ \textcolor{comment}{/*\ fetch\ the\ next\ play\ */}}
-\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{struct_media_list_mails}{MediaListMails}}\ fetch\_next\_play();}
-\DoxyCodeLine{00033\ \ \ \ \ \textcolor{comment}{/*\ fetch\ current\ play\ */}}
-\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{struct_media_list_mails}{MediaListMails}}\ fetch\_current\_play()\ \{}
-\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ fetch\_from\_name(actual\_play\_list.at(moving\_index));}
-\DoxyCodeLine{00036\ \ \ \ \ \}}
-\DoxyCodeLine{00037\ \ \ \ \ \textcolor{comment}{/*\ fetch\ from\ given\ name\ */}}
-\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{struct_media_list_mails}{MediaListMails}}\ fetch\_from\_name(\textcolor{keyword}{const}\ QString\&\ where);}
-\DoxyCodeLine{00039\ \ \ \ \ \textcolor{comment}{/*\ fetch\ the\ first\ play\ */}}
-\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{struct_media_list_mails}{MediaListMails}}\ fetch\_first\_play();}
-\DoxyCodeLine{00041\ \ \ \ \ \textcolor{comment}{/*\ fetch\ the\ last\ play\ */}}
-\DoxyCodeLine{00042\ \ \ \ \ \mbox{\hyperlink{struct_media_list_mails}{MediaListMails}}\ fetch\_last\_play();}
-\DoxyCodeLine{00043\ }
-\DoxyCodeLine{00044\ \ \ \ \ \textcolor{comment}{/*\ Playlist\ */}}
-\DoxyCodeLine{00045\ \ \ \ \ QStringList\ currentPlayingList()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ actual\_play\_list;\ \}}
-\DoxyCodeLine{00046\ \ \ \ \ \textcolor{comment}{/*\ get\ the\ real\ playing\ list\ */}}
-\DoxyCodeLine{00047\ \ \ \ \ QStringList\ actualList()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ play\_list;\ \}}
-\DoxyCodeLine{00048\ \ \ \ \ \textcolor{comment}{/*\ get\ the\ actual\ play\ list\ size\ */}}
-\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{int}\ get\_actualListlist\_size()\ \{\ \textcolor{keywordflow}{return}\ play\_list.size();\ \}}
-\DoxyCodeLine{00050\ }
-\DoxyCodeLine{00051\ \ \ \ \ \textcolor{comment}{/*\ enqueue\ the\ play\ */}}
-\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}}
-\DoxyCodeLine{00053\ \ \ \ \ enqueue\_play(\textcolor{keyword}{const}\ QStringList\&\ media\_sources);}
-\DoxyCodeLine{00054\ \ \ \ \ \textcolor{comment}{/*\ delete\ the\ playlist\ */}}
-\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ remove\_play\_list(\textcolor{keyword}{const}\ QStringList\&\ media\_sources);}
-\DoxyCodeLine{00056\ signals:}
-\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ playModeChanged(\textcolor{keyword}{const}\ PlayMode\ mode);}
-\DoxyCodeLine{00058\ }
-\DoxyCodeLine{00059\ \textcolor{keyword}{public}\ slots:}
-\DoxyCodeLine{00060\ \ \ \ \ \textcolor{comment}{/*}}
-\DoxyCodeLine{00061\ \textcolor{comment}{\ \ \ \ \ *\ flush\ the\ play\ list,\ moves\ the\ playlist\ into\ actual\ one}}
-\DoxyCodeLine{00062\ \textcolor{comment}{\ \ \ \ \ */}}
-\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ flush\_play\_list();}
-\DoxyCodeLine{00064\ }
-\DoxyCodeLine{00065\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00066\ \ \ \ \ PlayMode\ current\_mode\ \{\ DEF\_MODE\ \};}
-\DoxyCodeLine{00067\ \ \ \ \ \textcolor{comment}{/*\ we\ make\ changes\ here\ */}}
-\DoxyCodeLine{00068\ \ \ \ \ QStringList\ play\_list\ \{\};}
-\DoxyCodeLine{00069\ \ \ \ \ \textcolor{comment}{/*}}
-\DoxyCodeLine{00070\ \textcolor{comment}{\ \ \ \ \ *\ these\ is\ the\ actual\ playlist,}}
-\DoxyCodeLine{00071\ \textcolor{comment}{\ \ \ \ \ *\ when\ receiving\ the\ flush\ issue}}
-\DoxyCodeLine{00072\ \textcolor{comment}{\ \ \ \ \ */}}
-\DoxyCodeLine{00073\ \ \ \ \ QStringList\ actual\_play\_list\ \{\};}
-\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{int}\ moving\_index\ \{\ -\/1\ \};}
-\DoxyCodeLine{00075\ \ \ \ \ \textcolor{comment}{/*\ invoke\ flush\ once\ means\ the\ step\ forward\ */}}
-\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keyword}{enum}\ Direction\ \{}
-\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ FORWARD,}
-\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ BACKWARD}
-\DoxyCodeLine{00079\ \ \ \ \ \};}
-\DoxyCodeLine{00080\ }
-\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{void}\ flush\_info\_according\_mode(Direction\ dir);}
-\DoxyCodeLine{00082\ \ \ \ \ \mbox{\hyperlink{struct_media_list_mails}{MediaListMails}}\ flush\_according\_index();}
-\DoxyCodeLine{00083\ \};}
+\DoxyCodeLine{00010\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_media_list_mails}{MediaListMails}}\ \{}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{bool}\ prev\_enabled\ \{\ \textcolor{keyword}{false}\ \},\ next\_enabled\ \{\ \textcolor{keyword}{false}\ \};}
+\DoxyCodeLine{00012\ \ \ \ \ QString\ current\_playing\ \{\};}
+\DoxyCodeLine{00013\ \};}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }CCMediaPlayList\ :\ \textcolor{keyword}{public}\ QObject\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{explicit}\ CCMediaPlayList(QObject*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{enum\ class}\ \mbox{\hyperlink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3}{PlayMode}}\ \{}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3ac7fc2ee61fad0e2bba6754efdee31481}{OneShot}},\ }
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3aa098ec399dbdac60e3ebd955ebf3452f}{OneCycle}},\ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3acae9881cfbdbd74078ce3d31eb060791}{ListPlay}},\ }
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3a2c62ffd47a07bdb6cb4720a0bad933cd}{ListCycle}},\ }
+\DoxyCodeLine{00028\ \ \ \ \ \};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3}{PlayMode}}\ \mbox{\hyperlink{class_c_c_media_play_list_a02e1f3f29461356cf685f51a7873c851}{DEF\_MODE}}\ =\ \mbox{\hyperlink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3a2c62ffd47a07bdb6cb4720a0bad933cd}{PlayMode::ListCycle}};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_c_media_play_list_ad51a9b2199e30a9bf4ca809ef62acd51}{set\_play\_mode}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3}{PlayMode}}\ mode);}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_c_media_play_list_aa87872c991b4c181e065aef59570391f}{flow\_mode}}();}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3}{PlayMode}}\ \mbox{\hyperlink{class_c_c_media_play_list_ac60aeacbb183d17126bfd2867cfa9280}{get\_play\_mode}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ current\_mode;\ \}}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00056\ \ \ \ \ \mbox{\hyperlink{struct_media_list_mails}{MediaListMails}}\ \mbox{\hyperlink{class_c_c_media_play_list_a7b6c8ec7d64c49707646386e74062488}{fetch\_prev\_play}}();}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00062\ \ \ \ \ \mbox{\hyperlink{struct_media_list_mails}{MediaListMails}}\ \mbox{\hyperlink{class_c_c_media_play_list_a87e0329a7a3f6d5a993f562228751f9c}{fetch\_next\_play}}();}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00068\ \ \ \ \ \mbox{\hyperlink{struct_media_list_mails}{MediaListMails}}\ \mbox{\hyperlink{class_c_c_media_play_list_a92825a1328290f7ccdc0629a002920e6}{fetch\_current\_play}}()\ \{}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_c_media_play_list_acdc84b23ae1686db0269226c94d90e8c}{fetch\_from\_name}}(actual\_play\_list.at(moving\_index));}
+\DoxyCodeLine{00070\ \ \ \ \ \}}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00077\ \ \ \ \ \mbox{\hyperlink{struct_media_list_mails}{MediaListMails}}\ \mbox{\hyperlink{class_c_c_media_play_list_acdc84b23ae1686db0269226c94d90e8c}{fetch\_from\_name}}(\textcolor{keyword}{const}\ QString\&\ where);}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00083\ \ \ \ \ \mbox{\hyperlink{struct_media_list_mails}{MediaListMails}}\ \mbox{\hyperlink{class_c_c_media_play_list_aae4da67df5bc12ee8e401c594dcdd5c3}{fetch\_first\_play}}();}
 \DoxyCodeLine{00084\ }
-\DoxyCodeLine{00085\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CCMEDIAPLAYLIST\_H}}
+\DoxyCodeLine{00089\ \ \ \ \ \mbox{\hyperlink{struct_media_list_mails}{MediaListMails}}\ \mbox{\hyperlink{class_c_c_media_play_list_a24b68f240ed39e66ad2e9286f60377a0}{fetch\_last\_play}}();}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00098\ \ \ \ \ QStringList\ \mbox{\hyperlink{class_c_c_media_play_list_a9c252087e36d48ff4b278c86f1df2330}{currentPlayingList}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ actual\_play\_list;\ \}}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00106\ \ \ \ \ QStringList\ \mbox{\hyperlink{class_c_c_media_play_list_a5e0b767ee157bfb31d8448da10f43e4b}{actualList}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ play\_list;\ \}}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00113\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_c_c_media_play_list_aa0c86cc509a3eb75da7128a471f715ee}{get\_actualListlist\_size}}()\ \{\ \textcolor{keywordflow}{return}\ play\_list.size();\ \}}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00119\ \ \ \ \ \textcolor{keywordtype}{void}}
+\DoxyCodeLine{00120\ \ \ \ \ \mbox{\hyperlink{class_c_c_media_play_list_a4a0901d47ef75d9543ecb9d603773c74}{enqueue\_play}}(\textcolor{keyword}{const}\ QStringList\&\ media\_sources);}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00126\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_c_media_play_list_a68daf8f790fd4be4389c284f2e1eb150}{remove\_play\_list}}(\textcolor{keyword}{const}\ QStringList\&\ media\_sources);}
+\DoxyCodeLine{00127\ signals:}
+\DoxyCodeLine{00132\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_c_media_play_list_addb3f2f5f4ec2b3c4df9f1cde7dc93b0}{playModeChanged}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3}{PlayMode}}\ mode);}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00134\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00139\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_c_media_play_list_a8cdc1504dab41103a260c634338fd6cd}{flush\_play\_list}}();}
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00141\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00142\ \ \ \ \ \mbox{\hyperlink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3}{PlayMode}}\ current\_mode\ \{\ \mbox{\hyperlink{class_c_c_media_play_list_a02e1f3f29461356cf685f51a7873c851}{DEF\_MODE}}\ \};\ }
+\DoxyCodeLine{00143\ \ \ \ \ QStringList\ play\_list\ \{\};\ }
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00145\ \ \ \ \ QStringList\ actual\_play\_list\ \{\};\ }
+\DoxyCodeLine{00146\ \ \ \ \ \textcolor{keywordtype}{int}\ moving\_index\ \{\ -\/1\ \};\ }
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00148\ \ \ \ \ \textcolor{keyword}{enum}\ Direction\ \{}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ FORWARD,\ }
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ BACKWARD\ }
+\DoxyCodeLine{00151\ \ \ \ \ \};}
+\DoxyCodeLine{00152\ }
+\DoxyCodeLine{00157\ \ \ \ \ \textcolor{keywordtype}{void}\ flush\_info\_according\_mode(Direction\ dir);}
+\DoxyCodeLine{00158\ }
+\DoxyCodeLine{00163\ \ \ \ \ MediaListMails\ flush\_according\_index();}
+\DoxyCodeLine{00164\ \};}
+\DoxyCodeLine{00165\ }
+\DoxyCodeLine{00166\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CCMEDIAPLAYLIST\_H}}
 
 \end{DoxyCode}

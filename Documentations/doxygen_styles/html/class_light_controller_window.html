@@ -110,6 +110,11 @@ $(function(){initNavTree('class_light_controller_window.html',''); initResizable
   <div class="headertitle"><div class="title">LightControllerWindow Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Main window class for controlling LEDs with various modes and speeds.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="lightcontrollerwindow_8h_source.html">lightcontrollerwindow.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for LightControllerWindow:</div>
 <div class="dyncontent">
@@ -119,39 +124,111 @@ Inheritance diagram for LightControllerWindow:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ad01b4159b975884f5398071749f17593" id="r_ad01b4159b975884f5398071749f17593"><td class="memItemLeft" align="right" valign="top"><a id="ad01b4159b975884f5398071749f17593" name="ad01b4159b975884f5398071749f17593"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>Speed</b> { <b>Slow</b>
-, <b>Normal</b>
-, <b>Fast</b>
+<tr class="memitem:ad01b4159b975884f5398071749f17593" id="r_ad01b4159b975884f5398071749f17593"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad01b4159b975884f5398071749f17593">Speed</a> { <a class="el" href="#ad01b4159b975884f5398071749f17593aefa5397985b8609a5dbeb430a4bcadd3">Slow</a>
+, <a class="el" href="#ad01b4159b975884f5398071749f17593a960b44c579bc2f6818d2daaf9e4c16f0">Normal</a>
+, <a class="el" href="#ad01b4159b975884f5398071749f17593ae16b5b7f26f54214445cbe38d72c2828">Fast</a>
  }</td></tr>
+<tr class="memdesc:ad01b4159b975884f5398071749f17593"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration for LED blinking speed.  <a href="#ad01b4159b975884f5398071749f17593">More...</a><br /></td></tr>
 <tr class="separator:ad01b4159b975884f5398071749f17593"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:add7241b973ac3a455955819094a71413" id="r_add7241b973ac3a455955819094a71413"><td class="memItemLeft" align="right" valign="top"><a id="add7241b973ac3a455955819094a71413" name="add7241b973ac3a455955819094a71413"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>LightControllerWindow</b> (QWidget *parent=nullptr)</td></tr>
+<tr class="memitem:add7241b973ac3a455955819094a71413" id="r_add7241b973ac3a455955819094a71413"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add7241b973ac3a455955819094a71413">LightControllerWindow</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:add7241b973ac3a455955819094a71413"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
 <tr class="separator:add7241b973ac3a455955819094a71413"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4a3ab37e5b8e3ce10c653e72700ab30" id="r_aa4a3ab37e5b8e3ce10c653e72700ab30"><td class="memItemLeft" align="right" valign="top"><a id="aa4a3ab37e5b8e3ce10c653e72700ab30" name="aa4a3ab37e5b8e3ce10c653e72700ab30"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~LightControllerWindow</b> ()</td></tr>
+<tr class="memdesc:aa4a3ab37e5b8e3ce10c653e72700ab30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
+<tr class="separator:aa4a3ab37e5b8e3ce10c653e72700ab30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21b6a9dd6383816e1e1abab8fe033c92" id="r_a21b6a9dd6383816e1e1abab8fe033c92"><td class="memItemLeft" align="right" valign="top"><a id="a21b6a9dd6383816e1e1abab8fe033c92" name="a21b6a9dd6383816e1e1abab8fe033c92"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>process_flip</b> ()</td></tr>
+<tr class="memdesc:a21b6a9dd6383816e1e1abab8fe033c92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle flipping the LED state. <br /></td></tr>
 <tr class="separator:a21b6a9dd6383816e1e1abab8fe033c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40549df6846a9c90873b79969574ed4a" id="r_a40549df6846a9c90873b79969574ed4a"><td class="memItemLeft" align="right" valign="top"><a id="a40549df6846a9c90873b79969574ed4a" name="a40549df6846a9c90873b79969574ed4a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>process_blink</b> ()</td></tr>
+<tr class="memdesc:a40549df6846a9c90873b79969574ed4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle blinking the LED. <br /></td></tr>
 <tr class="separator:a40549df6846a9c90873b79969574ed4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8318e6120013ebc8a85c2f94abb05a82" id="r_a8318e6120013ebc8a85c2f94abb05a82"><td class="memItemLeft" align="right" valign="top"><a id="a8318e6120013ebc8a85c2f94abb05a82" name="a8318e6120013ebc8a85c2f94abb05a82"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>process_mode_switching</b> ()</td></tr>
+<tr class="memdesc:a8318e6120013ebc8a85c2f94abb05a82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switch the LED operation mode. <br /></td></tr>
 <tr class="separator:a8318e6120013ebc8a85c2f94abb05a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb7462c0636ef7b66c52432b1b671251" id="r_aeb7462c0636ef7b66c52432b1b671251"><td class="memItemLeft" align="right" valign="top"><a id="aeb7462c0636ef7b66c52432b1b671251" name="aeb7462c0636ef7b66c52432b1b671251"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>process_speed_switching</b> ()</td></tr>
+<tr class="memdesc:aeb7462c0636ef7b66c52432b1b671251"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switch the blinking speed. <br /></td></tr>
 <tr class="separator:aeb7462c0636ef7b66c52432b1b671251"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:adbec4204da0949f49c696593aa1f4a64" id="r_adbec4204da0949f49c696593aa1f4a64"><td class="memItemLeft" align="right" valign="top"><a id="adbec4204da0949f49c696593aa1f4a64" name="adbec4204da0949f49c696593aa1f4a64"></a>
 static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><b>DEV_FILE</b> = &quot;red-led&quot;</td></tr>
+<tr class="memdesc:adbec4204da0949f49c696593aa1f4a64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Device file identifier for the red LED. <br /></td></tr>
 <tr class="separator:adbec4204da0949f49c696593aa1f4a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a3687f330f2ca5e1da07875f5565d60" id="r_a2a3687f330f2ca5e1da07875f5565d60"><td class="memItemLeft" align="right" valign="top"><a id="a2a3687f330f2ca5e1da07875f5565d60" name="a2a3687f330f2ca5e1da07875f5565d60"></a>
 static constexpr const short&#160;</td><td class="memItemRight" valign="bottom"><b>BLINK_DEF</b> = 500</td></tr>
+<tr class="memdesc:a2a3687f330f2ca5e1da07875f5565d60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default blink interval in milliseconds. <br /></td></tr>
 <tr class="separator:a2a3687f330f2ca5e1da07875f5565d60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Main window class for controlling LEDs with various modes and speeds. </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="ad01b4159b975884f5398071749f17593" name="ad01b4159b975884f5398071749f17593"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad01b4159b975884f5398071749f17593">&#9670;&#160;</a></span>Speed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#ad01b4159b975884f5398071749f17593">LightControllerWindow::Speed</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel strong">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Enumeration for LED blinking speed. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad01b4159b975884f5398071749f17593aefa5397985b8609a5dbeb430a4bcadd3" name="ad01b4159b975884f5398071749f17593aefa5397985b8609a5dbeb430a4bcadd3"></a>Slow&#160;</td><td class="fielddoc"><p>Slow blinking speed. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad01b4159b975884f5398071749f17593a960b44c579bc2f6818d2daaf9e4c16f0" name="ad01b4159b975884f5398071749f17593a960b44c579bc2f6818d2daaf9e4c16f0"></a>Normal&#160;</td><td class="fielddoc"><p>Normal blinking speed. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad01b4159b975884f5398071749f17593ae16b5b7f26f54214445cbe38d72c2828" name="ad01b4159b975884f5398071749f17593ae16b5b7f26f54214445cbe38d72c2828"></a>Fast&#160;</td><td class="fielddoc"><p>Fast blinking speed. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="add7241b973ac3a455955819094a71413" name="add7241b973ac3a455955819094a71413"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add7241b973ac3a455955819094a71413">&#9670;&#160;</a></span>LightControllerWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LightControllerWindow::LightControllerWindow </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *</td>          <td class="paramname"><span class="paramname"><em>parent</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Parent widget. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>extern_app/professionals/boardlevel_application/LightController/Ui/<a class="el" href="lightcontrollerwindow_8h_source.html">lightcontrollerwindow.h</a></li>
 <li>extern_app/professionals/boardlevel_application/LightController/Ui/<b>lightcontrollerwindow.cpp</b></li>

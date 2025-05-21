@@ -12,33 +12,35 @@
 \DoxyCodeLine{00008\ \textcolor{keyword}{class\ }WeatherChartWidget;}
 \DoxyCodeLine{00009\ \}}
 \DoxyCodeLine{00010\ }
-\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }WeatherChartWidget\ :\ \textcolor{keyword}{public}\ QWidget\ \{}
-\DoxyCodeLine{00012\ \ \ \ \ Q\_OBJECT}
-\DoxyCodeLine{00013\ }
-\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{enum}\ Page\ \{}
-\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ MAIN\_PAGE,}
-\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ HIGH\_TEMP,}
-\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ LOW\_TEMP,}
-\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ WINDSCALE,}
-\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ HUMIDITY}
-\DoxyCodeLine{00021\ \ \ \ \ \};}
-\DoxyCodeLine{00022\ }
-\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{explicit}\ WeatherChartWidget(QWidget*\ parent\ =\ \textcolor{keyword}{nullptr});}
-\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ fresh\_display(QList<AppWeatherResult::DailyWeather>\&\ weathers);}
-\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ switch\_to\_page(\textcolor{keyword}{const}\ Page\&\ p);}
-\DoxyCodeLine{00026\ \ \ \ \ \string~WeatherChartWidget();}
-\DoxyCodeLine{00027\ }
-\DoxyCodeLine{00028\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{using\ }FromDailySession\ =\ std::function<int(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_app_weather_result_1_1_daily_weather}{AppWeatherResult::DailyWeather}}\&)>;}
-\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ makeup\_chart(}
-\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QList<AppWeatherResult::DailyWeather>\&\ data,}
-\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\&\ title,}
-\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ FromDailySession\ sessionfunc);}
-\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ makeup\_mainpage(\textcolor{keyword}{const}\ QList<AppWeatherResult::DailyWeather>\&\ data);}
-\DoxyCodeLine{00035\ \ \ \ \ Ui::WeatherChartWidget*\ ui;}
-\DoxyCodeLine{00036\ \};}
-\DoxyCodeLine{00037\ }
-\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ WEATHERCHARTWIDGET\_H}}
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }WeatherChartWidget\ :\ \textcolor{keyword}{public}\ QWidget\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{enum}\ \mbox{\hyperlink{class_weather_chart_widget_ad917be16972dd0f90aa71df8d0e8e569}{Page}}\ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_weather_chart_widget_ad917be16972dd0f90aa71df8d0e8e569a8505178a1fe2781ae6efbb5a96ab3214}{MAIN\_PAGE}},\ }
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_weather_chart_widget_ad917be16972dd0f90aa71df8d0e8e569a5e3ee21d5c0a12992178c1939c4d7987}{HIGH\_TEMP}},\ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_weather_chart_widget_ad917be16972dd0f90aa71df8d0e8e569ac2e65573563c7444efbfc0dd2bca593c}{LOW\_TEMP}},\ }
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_weather_chart_widget_ad917be16972dd0f90aa71df8d0e8e569ad74a32bbd6239ec868d96541f20419ff}{WINDSCALE}},\ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_weather_chart_widget_ad917be16972dd0f90aa71df8d0e8e569ad95ec1b726d7df75e5cbe026d0c1b721}{HUMIDITY}}\ }
+\DoxyCodeLine{00031\ \ \ \ \ \};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_weather_chart_widget}{WeatherChartWidget}}(QWidget*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_weather_chart_widget_a9a61b7bf80f2920bbe80b8871e982e9d}{fresh\_display}}(QList<AppWeatherResult::DailyWeather>\&\ weathers);}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_weather_chart_widget_a3c13c404b506f87e7486247d544ea09c}{switch\_to\_page}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_weather_chart_widget_ad917be16972dd0f90aa71df8d0e8e569}{Page}}\&\ p);}
+\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{class_weather_chart_widget}{\string~WeatherChartWidget}}();}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keyword}{using\ }FromDailySession\ =\ std::function<int(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_app_weather_result_1_1_daily_weather}{AppWeatherResult::DailyWeather}}\&)>;}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ makeup\_chart(}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QList<AppWeatherResult::DailyWeather>\&\ data,}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\&\ title,}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ FromDailySession\ sessionfunc);}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ makeup\_mainpage(\textcolor{keyword}{const}\ QList<AppWeatherResult::DailyWeather>\&\ data);}
+\DoxyCodeLine{00057\ \ \ \ \ Ui::WeatherChartWidget*\ ui;}
+\DoxyCodeLine{00058\ \};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ WEATHERCHARTWIDGET\_H}}
 
 \end{DoxyCode}

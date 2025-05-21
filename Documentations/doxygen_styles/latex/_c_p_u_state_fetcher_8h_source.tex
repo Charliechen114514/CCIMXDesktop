@@ -7,40 +7,40 @@
 \DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <QObject>}}
 \DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QTimer>}}
 \DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_c_i_m_x___abstract_c_p_u_state_driver}{CCIMX\_AbstractCPUStateDriver}};}
-\DoxyCodeLine{00006\ \textcolor{comment}{/*\ This\ class\ is\ expected\ to\ fetch\ the\ cpu\ state\ */}}
-\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }CPUStateFetcher\ :\ \textcolor{keyword}{public}\ QObject\ \{}
-\DoxyCodeLine{00008\ \ \ \ \ Q\_OBJECT}
-\DoxyCodeLine{00009\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{explicit}\ CPUStateFetcher(QObject*\ parent\ =\ \textcolor{keyword}{nullptr});}
-\DoxyCodeLine{00011\ \ \ \ \ \string~CPUStateFetcher();}
-\DoxyCodeLine{00012\ }
-\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_c_p_u_state_fetcher_1_1_c_p_u_state}{CPUState}}\ \{}
-\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ idle;}
-\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ user;}
-\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ kernel;}
-\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ tol;}
-\DoxyCodeLine{00018\ \ \ \ \ \}\ cpustate;}
-\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ set\_capture\_state(\textcolor{keywordtype}{bool}\ st);}
-\DoxyCodeLine{00020\ signals:}
-\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ flush\_cpustate(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_c_p_u_state_fetcher_1_1_c_p_u_state}{CPUStateFetcher::CPUState}}\&\ state);}
-\DoxyCodeLine{00022\ }
-\DoxyCodeLine{00023\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_c_c_i_m_x___abstract_c_p_u_state_driver}{CCIMX\_AbstractCPUStateDriver}}*\ platform\_driver\_base\ \{\ \textcolor{keyword}{nullptr}\ \};}
-\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ setup\_platform\_relative();}
-\DoxyCodeLine{00026\ \ \ \ \ \textcolor{comment}{/*\ this\ is\ used\ to\ flush\ the\ cpu\ state\ */}}
-\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ flush\_once();}
-\DoxyCodeLine{00028\ \ \ \ \ QTimer\ flush\_timer;}
-\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{int}\ flush\_msecs\ \{\ 1500\ \};}
-\DoxyCodeLine{00030\ \};}
-\DoxyCodeLine{00031\ }
-\DoxyCodeLine{00032\ \textcolor{keyword}{class\ }CCIMX\_AbstractCPUStateDriver\ \{}
-\DoxyCodeLine{00033\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00034\ \ \ \ \ CCIMX\_AbstractCPUStateDriver()\ =\ \textcolor{keywordflow}{default};}
-\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{virtual}\ \string~CCIMX\_AbstractCPUStateDriver()\ =\ \textcolor{keywordflow}{default};}
-\DoxyCodeLine{00036\ \ \ \ \ \textcolor{comment}{/*\ driver\ is\ expected\ to\ make\ a\ stat\ back,\ locating\ in\ platforms\ */}}
-\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ factory(\mbox{\hyperlink{struct_c_p_u_state_fetcher_1_1_c_p_u_state}{CPUStateFetcher::CPUState}}\&\ state)\ =\ 0;}
-\DoxyCodeLine{00038\ \};}
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }CPUStateFetcher\ :\ \textcolor{keyword}{public}\ QObject\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{explicit}\ CPUStateFetcher(QObject*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00015\ \ \ \ \ \string~CPUStateFetcher();}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_c_p_u_state_fetcher_1_1_c_p_u_state}{CPUState}}\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{struct_c_p_u_state_fetcher_1_1_c_p_u_state_a3e6c2976b8903ed9234ff07877bce1fe}{idle}};\ }
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{struct_c_p_u_state_fetcher_1_1_c_p_u_state_aab23cf3aea621ea5b5eb81e36553280f}{user}};\ }
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{struct_c_p_u_state_fetcher_1_1_c_p_u_state_ac98ebbd51f61f4fbfba05f414813e365}{kernel}};\ }
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{struct_c_p_u_state_fetcher_1_1_c_p_u_state_a20f696bc5db8018c3561150623d4e856}{tol}};\ }
+\DoxyCodeLine{00026\ \ \ \ \ \}\ cpustate;}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_p_u_state_fetcher_a09065ec05cca98a163b284f9361a6b99}{set\_capture\_state}}(\textcolor{keywordtype}{bool}\ st);}
+\DoxyCodeLine{00033\ signals:}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_p_u_state_fetcher_aadbdb6b963c79d4c55562ab970e61c30}{flush\_cpustate}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_c_p_u_state_fetcher_1_1_c_p_u_state}{CPUStateFetcher::CPUState}}\&\ state);}
 \DoxyCodeLine{00039\ }
-\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CPUSTATEFETCHER\_H}}
+\DoxyCodeLine{00040\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{class_c_c_i_m_x___abstract_c_p_u_state_driver}{CCIMX\_AbstractCPUStateDriver}}*\ platform\_driver\_base\ \{\ \textcolor{keyword}{nullptr}\ \};}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ setup\_platform\_relative();}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{comment}{/*\ this\ is\ used\ to\ flush\ the\ cpu\ state\ */}}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ flush\_once();}
+\DoxyCodeLine{00045\ \ \ \ \ QTimer\ flush\_timer;}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{int}\ flush\_msecs\ \{\ 1500\ \};}
+\DoxyCodeLine{00047\ \};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00053\ \textcolor{keyword}{class\ }CCIMX\_AbstractCPUStateDriver\ \{}
+\DoxyCodeLine{00054\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00055\ \ \ \ \ CCIMX\_AbstractCPUStateDriver()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keyword}{virtual}\ \string~CCIMX\_AbstractCPUStateDriver()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{comment}{/*\ driver\ is\ expected\ to\ make\ a\ stat\ back,\ locating\ in\ platforms\ */}}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ factory(\mbox{\hyperlink{struct_c_p_u_state_fetcher_1_1_c_p_u_state}{CPUStateFetcher::CPUState}}\&\ state)\ =\ 0;}
+\DoxyCodeLine{00059\ \};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CPUSTATEFETCHER\_H}}
 
 \end{DoxyCode}

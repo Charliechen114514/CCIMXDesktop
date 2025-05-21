@@ -13,26 +13,26 @@ Inheritance diagram for File\+Count\+Info\+:\begin{figure}[H]
 {\bfseries File\+Count\+Info} (\mbox{\hyperlink{class_c_c_i_m_x_file_system_model}{CCIMXFile\+System\+Model}} \texorpdfstring{$\ast$}{*}model, QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
 \item 
 QString \mbox{\hyperlink{class_file_count_info_a42da804010c98ad6e95f028e0542a7f5}{provide\+\_\+section\+\_\+name}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em provide\+\_\+section\+\_\+name means everything in the name lol \end{DoxyCompactList}\item 
 std\+::pair$<$ bool, QVariant $>$ \mbox{\hyperlink{class_file_count_info_aa3a0221ae640730854e92c66e57c51de}{data}} (const QModel\+Index \&index, int role)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em data provide the data to the views \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_file_info_provider}{File\+Info\+Provider}}}
 \begin{DoxyCompactItemize}
 \item 
 {\bfseries Q\+\_\+\+DISABLE\+\_\+\+COPY} (\mbox{\hyperlink{class_file_info_provider}{File\+Info\+Provider}})
 \item 
-{\bfseries File\+Info\+Provider} (\mbox{\hyperlink{class_c_c_i_m_x_file_system_model}{CCIMXFile\+System\+Model}} \texorpdfstring{$\ast$}{*}models)
+{\bfseries File\+Info\+Provider} (\mbox{\hyperlink{class_c_c_i_m_x_file_system_model}{CCIMXFile\+System\+Model}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_file_info_provider_ae898e8c9bb3dc76decd869a018f9c0d9}{models}})
 \item 
-void {\bfseries set\+Current\+Handle\+Path} (const QString \&path)
-\item 
-QString {\bfseries current\+Handle\+Path} ()
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_file_info_provider_aa13112f10f0b93ab09d2c12385b13374}{set\+Current\+Handle\+Path}} (const QString \&path)
+\begin{DoxyCompactList}\small\item\em set\+Current\+Handle\+Path set the current handle path \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_file_info_provider_a4940f9f1d9930553090eb473fe8900f6}{current\+Handle\+Path}} ()
+\begin{DoxyCompactList}\small\item\em current\+Handle\+Path get the current handle path \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Additional Inherited Members}
 \doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_file_info_provider}{File\+Info\+Provider}}}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_c_c_i_m_x_file_system_model}{CCIMXFile\+System\+Model}} \texorpdfstring{$\ast$}{*} {\bfseries models}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em binding models \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Member Function Documentation}
@@ -44,7 +44,21 @@ std\+::pair$<$ bool, QVariant $>$ File\+Count\+Info\+::data (\begin{DoxyParamCap
 
 
 
-Implements \mbox{\hyperlink{class_file_info_provider}{File\+Info\+Provider}}.
+data provide the data to the views 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & the model index \\
+\hline
+{\em role} & the role of the index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns the file size of the index, if the data is not available, it will return with \{false, \{\}\} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_file_info_provider_a7eb35bc1c83233238a9a33c6d55a4124}{File\+Info\+Provider}}.
 
 \Hypertarget{class_file_count_info_a42da804010c98ad6e95f028e0542a7f5}\index{FileCountInfo@{FileCountInfo}!provide\_section\_name@{provide\_section\_name}}
 \index{provide\_section\_name@{provide\_section\_name}!FileCountInfo@{FileCountInfo}}
@@ -54,7 +68,14 @@ QString File\+Count\+Info\+::provide\+\_\+section\+\_\+name (\begin{DoxyParamCap
 
 
 
-Implements \mbox{\hyperlink{class_file_info_provider}{File\+Info\+Provider}}.
+provide\+\_\+section\+\_\+name means everything in the name lol 
+
+\begin{DoxyReturn}{Returns}
+the section name 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_file_info_provider_a25aa7631c3aff86607cae1b412548878}{File\+Info\+Provider}}.
 
 
 

@@ -57,11 +57,6 @@ create_from_raw(int exitCode, QProcess::ExitStatus status) {
 
 };
 
-/**
- * @brief Do Process Exit hooks
- * @param exitCode
- * @param status
- */
 void ApplicationWrapper::do_fin_hook(int exitCode, QProcess::ExitStatus status) {
 	/* no matter what, process should be delete */
 	appProcess->deleteLater();
@@ -77,10 +72,6 @@ void ApplicationWrapper::do_fin_hook(int exitCode, QProcess::ExitStatus status) 
 	}
 }
 
-/**
- * @brief This is the default error handler when application
- * depatching failed
- */
 void ApplicationWrapper::def_error_handler() {
 	/* clean up everythings */
 	appProcess->deleteLater();
@@ -103,11 +94,6 @@ ApplicationWrapper::
     pre_indicate = def_indicate;
 }
 
-/**
- * @brief ApplicationWrapper::depatch_app
- * this is the main function to depatch the application, core functions
- *
- */
 void ApplicationWrapper::depatch_app() {
 	/* we need to promise the app is exsited */
 	if (pre_indicate) {

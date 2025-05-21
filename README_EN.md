@@ -31,49 +31,64 @@ Now, CCIMXDesktop supports one-click building including:
 
 ------
 
-## 🛠️ Technologies used for basic builds
+## Some running screenshots
+
+![image-20250518085608736](./README/image-20250518085608736.png)
+
+![image-20250518085912716](./README/image-20250518085912716.png)
+
+## 🛠️ Basic build technologies
 
 ![Qt](https://img.shields.io/badge/Qt-Core%20%26%20Network-41cd52)
 ![TSLIB](https://img.shields.io/badge/TSLIB-required-green)
 
-For beginners mapping a basic desktop, the embedded device should support Qt6 core widgets and core networking. In addition, TSLIB and Linux framebuffer backends for display should also be ready.
+For beginners mapping a basic desktop, the embedded device should support Qt6 core controls and core networking. Additionally, TSLIB and Linux framebuffer backends for display should be ready.
 
 ## 🛠️ Full build of technologies
 
 ![OpenCV](https://img.shields.io/badge/OpenCV-Camera%20Support-blue)
+
 ![MuPDF](https://img.shields.io/badge/MuPDF-PDF%20Rendering-orange)
 
 - OpenCV for camera support
-- MuPDF (for PDF rendering) (these are used in mupdf-based PDF readers)
+- MuPDF (for PDF rendering) (these are used for mupdf-based PDF readers)
 
 ------
 
-## 🧩 Developer reference
+## 🧩 Developer Reference
 
-- [📖 Chinese module explanation](./Components-explain-CN.md)
+- [📖 Chinese Module Explanation](./Components-explain-CN.md)
 
 ---
 
-## 📚 Project documentation
-
-[🛠️ How to build this project? (X86 gcc, ARM-linux-gnueabihf-gcc and Windows GCC are all supported!)](Documentations/HOW_To_Build_The_Desktop.md)
+## 📚Project Documentation
 
 ![GCC](https://img.shields.io/badge/GCC-cross--compile-yellowgreen)
-
 ![ARM](https://img.shields.io/badge/ARM-linux--gnueabihf-red)
 
-If you are interested in the project production process and development documents, please refer to the Documentations folder
+If you are interested in the project production process and development documents, please refer to the Documentations folder.
 
-## 💡 Future plans
+Currently, this project fully supports the use of Doxygen to automatically generate customized documents. You can directly refer to [`Documentations/doxygen_style`](Documentations/doxygen_styles) for reading, or if you plan to customize the construction of this document, you need to refer to the build manual for customized modifications
+
+> [🛠️ How to build this project? (X86 gcc, ARM-linux-gnueabihf-gcc and Windows GCC are all supported!)](Documentations/HOW_To_Build_The_Desktop.md)
+
+## 💡 Future Plans
 
 - 🚀 Plan to write and provide more external basic programs:
+
 - 💬 Chat room (planned to be similar to QQ)
+
 - ⏰ Alarm clock APP
+
 - 🖼️ Image browser
+
 - 🎨 Image processor
+
 - ✏️ Simple text editor
+
 - 🔌 Serial port assistant
-- 🤖 Image processor locally processes images and does simple reasoning (face recognition)
+
+- 🤖 Image processor local image processing and simple reasoning (face recognition)
 
 ------
 
@@ -81,4 +96,4 @@ If you are interested in the project production process and development document
 
 ![License](https://img.shields.io/badge/License-MIT-brightgreen)
 
-This project is based on the MIT license, and you are welcome to port, modify and use it at will!
+This project is based on the MIT license, welcome to port, modify and use at will!

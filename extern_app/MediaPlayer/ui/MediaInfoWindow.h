@@ -7,6 +7,11 @@ namespace Ui {
 class MediaInfoWindow;
 }
 
+/**
+ * @brief The MediaInfoWindow class provides the media info window
+ * for display
+ * @note this is the meta data of the media
+ */
 class MediaInfoWindow : public QMainWindow {
 	Q_OBJECT
 
@@ -15,6 +20,10 @@ public:
 	~MediaInfoWindow();
 
 public slots:
+	/**
+	 * @brief filled_metainfo fill the media info
+	 * @param info the media info to fill
+	 */
 	void filled_metainfo(const MediaInfo info);
 
 private:

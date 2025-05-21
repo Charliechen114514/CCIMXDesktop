@@ -1,49 +1,52 @@
 #include "digitaltimewidget.h"
 #include "clockwidget.h"
 #include <QPainter>
-DigitalTimeWidget::DigitalTimeWidget(QWidget *parent)
-    : QWidget{parent}
-{
-    this->stored_time = QTime::currentTime();
+DigitalTimeWidget::DigitalTimeWidget(QWidget* parent)
+	: QWidget { parent } {
+	this->stored_time = QTime::currentTime();
 }
 
-void DigitalTimeWidget::bindClockWidget(ClockWidget *clock)
-{
-    clk_widget = clock;
-    connect(clk_widget, &ClockWidget::time_update,
-            this, &DigitalTimeWidget::process_time_update);
+void DigitalTimeWidget::bindClockWidget(ClockWidget* clock) {
+	clk_widget = clock;
+	connect(clk_widget, &ClockWidget::time_update,
+			this, &DigitalTimeWidget::process_time_update);
 }
 
-void DigitalTimeWidget::process_time_update(QTime process_time)
-{
-    update();
+void DigitalTimeWidget::process_time_update(QTime process_time) {
+	update();
 }
 
-void DigitalTimeWidget::paintEvent(QPaintEvent *event)
-{
-    QPainter painter(this);
-    painter.setRenderHint(QPainter::Antialiasing);
+void DigitalTimeWidget::paintEvent(QPaintEvent* event) {
+	QPainter painter(this);
+	painter.setRenderHint(QPainter::Antialiasing);
 
-    painter.setPen(Qt::NoPen);
-    painter.setBrush(Qt::NoBrush);
+	QTime time = QTime::currentTime();
+	QString timeText = time.toString("hh:mm:ss");
 
-    QTime time = QTime::currentTime();
-    QString timeText = time.toString("hh:mm:ss");
+	QDate date = QDate::currentDate();
+	QString dateText = date.toString("yyyy MMM dd ddd");
 
-    QDate date = QDate::currentDate();
-    QString dateText = date.toString("yyyy MMM dd ddd");
+	QFont timeFont("Helvetica Neue", 40, QFont::Bold);
+	painter.setFont(timeFont);
+	QFontMetrics timeMetrics(timeFont);
+	int timeTextHeight = timeMetrics.height();
 
-    QFont font("Helvetica Neue", 40, QFont::Bold);
-    painter.setFont(font);
+	QRect widgetRect = rect();
+	QRect timeRect = widgetRect;
+	timeRect.setHeight(timeTextHeight);
+	timeRect.moveTop(widgetRect.center().y() - timeTextHeight); // 垂直居中
 
-    QRect textRect = rect();
-    painter.setPen(QColor(255, 255, 255));
-    painter.drawText(textRect, Qt::AlignCenter, timeText);
+	painter.setPen(Qt::white);
+	painter.drawText(timeRect, Qt::AlignCenter, timeText);
 
-    QFont dateFont("Helvetica Neue", 15, QFont::Light);
-    painter.setFont(dateFont);
-    QRect dateRect = rect();
-    dateRect.moveTop(textRect.bottom() - 150);
-    painter.setPen(QColor(255, 255, 255));
-    painter.drawText(dateRect, Qt::AlignCenter, dateText);
+	QFont dateFont("Helvetica Neue", 15, QFont::Light);
+	painter.setFont(dateFont);
+	QFontMetrics dateMetrics(dateFont);
+	int dateTextHeight = dateMetrics.height();
+
+	QRect dateRect = widgetRect;
+	dateRect.setHeight(dateTextHeight);
+	dateRect.moveTop(timeRect.bottom() + 10);
+
+	painter.drawText(dateRect, Qt::AlignCenter, dateText);
 }

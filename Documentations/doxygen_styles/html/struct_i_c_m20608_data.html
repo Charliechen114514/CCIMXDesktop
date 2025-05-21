@@ -109,7 +109,7 @@ $(function(){initNavTree('struct_i_c_m20608_data.html',''); initResizable(true);
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="struct_i_c_m20608_data.html" title="ICM20608Data is a data structure for ICM20608 data which is supposed to be query from driver,...">ICM20608Data</a> is a data structure for <a class="el" href="class_i_c_m20608.html">ICM20608</a> data which is supposed to be query from driver, see CCIMXBase: <a href="https://github.com/Charliechen114514/CCIMXBase/tree/driver/drivers">https://github.com/Charliechen114514/CCIMXBase/tree/driver/drivers</a> for details.  
+<p><a class="el" href="struct_i_c_m20608_data.html" title="ICM20608Data is a data structure for ICM20608 data which is supposed to be query from driver,...">ICM20608Data</a> is a data structure for <a class="el" href="class_i_c_m20608.html" title="Interface class to communicate with ICM20608 sensor device.">ICM20608</a> data which is supposed to be query from driver, see CCIMXBase: <a href="https://github.com/Charliechen114514/CCIMXBase/tree/driver/drivers">https://github.com/Charliechen114514/CCIMXBase/tree/driver/drivers</a> for details.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="builtin_2core_2icm20608_2icm20608_8h_source.html">icm20608.h</a>&gt;</code></p>
@@ -146,6 +146,7 @@ struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:afd507633763e6ab1129f0e518ed78bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17b5f4df0ed346c123261afd577e2b0f" id="r_a17b5f4df0ed346c123261afd577e2b0f"><td class="memItemLeft" align="right" valign="top"><a id="a17b5f4df0ed346c123261afd577e2b0f" name="a17b5f4df0ed346c123261afd577e2b0f"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>temperature</b></td></tr>
+<tr class="memdesc:a17b5f4df0ed346c123261afd577e2b0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Temperature reading. <br /></td></tr>
 <tr class="separator:a17b5f4df0ed346c123261afd577e2b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54db1294211fe8ccfa081c1b99c20ffa" id="r_a54db1294211fe8ccfa081c1b99c20ffa"><td class="memItemLeft" ><a id="a54db1294211fe8ccfa081c1b99c20ffa" name="a54db1294211fe8ccfa081c1b99c20ffa"></a>
 struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
@@ -160,6 +161,7 @@ struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 &#160;&#160;&#160;int&#160;&#160;&#160;<b>z</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:a09fe6f14bc1412ff045ba1aaa866d03f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54db1294211fe8ccfa081c1b99c20ffa" id="r_a54db1294211fe8ccfa081c1b99c20ffa"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>g_acc</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="memdesc:a54db1294211fe8ccfa081c1b99c20ffa"><td class="mdescLeft">&#160;</td><td class="mdescRight">3D acceleration values <br /></td></tr>
 <tr class="separator:a54db1294211fe8ccfa081c1b99c20ffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f02b0533afd591a8b99752edf1b0065" id="r_a2f02b0533afd591a8b99752edf1b0065"><td class="memItemLeft" ><a id="a2f02b0533afd591a8b99752edf1b0065" name="a2f02b0533afd591a8b99752edf1b0065"></a>
 struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
@@ -174,10 +176,12 @@ struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 &#160;&#160;&#160;int&#160;&#160;&#160;<b>z</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:a6a3b3019018a4c19ae188901e59695b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f02b0533afd591a8b99752edf1b0065" id="r_a2f02b0533afd591a8b99752edf1b0065"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>rol</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="memdesc:a2f02b0533afd591a8b99752edf1b0065"><td class="mdescLeft">&#160;</td><td class="mdescRight">3D rotation delta values <br /></td></tr>
 <tr class="separator:a2f02b0533afd591a8b99752edf1b0065"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="struct_i_c_m20608_data.html" title="ICM20608Data is a data structure for ICM20608 data which is supposed to be query from driver,...">ICM20608Data</a> is a data structure for <a class="el" href="class_i_c_m20608.html">ICM20608</a> data which is supposed to be query from driver, see CCIMXBase: <a href="https://github.com/Charliechen114514/CCIMXBase/tree/driver/drivers">https://github.com/Charliechen114514/CCIMXBase/tree/driver/drivers</a> for details. </p>
+<div class="textblock"><p><a class="el" href="struct_i_c_m20608_data.html" title="ICM20608Data is a data structure for ICM20608 data which is supposed to be query from driver,...">ICM20608Data</a> is a data structure for <a class="el" href="class_i_c_m20608.html" title="Interface class to communicate with ICM20608 sensor device.">ICM20608</a> data which is supposed to be query from driver, see CCIMXBase: <a href="https://github.com/Charliechen114514/CCIMXBase/tree/driver/drivers">https://github.com/Charliechen114514/CCIMXBase/tree/driver/drivers</a> for details. </p>
+<p>Raw sensor data from <a class="el" href="class_i_c_m20608.html" title="Interface class to communicate with ICM20608 sensor device.">ICM20608</a> device. </p>
 </div><hr/>The documentation for this struct was generated from the following files:<ul>
 <li>builtin/core/icm20608/<a class="el" href="builtin_2core_2icm20608_2icm20608_8h_source.html">icm20608.h</a></li>
 <li>extern_app/professionals/boardlevel_application/SportsHealth/Adapter/<a class="el" href="extern__app_2professionals_2boardlevel__application_2_sports_health_2_adapter_2icm20608_8h_source.html">icm20608.h</a></li>

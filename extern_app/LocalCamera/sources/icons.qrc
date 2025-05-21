@@ -1,8 +1,0 @@
-<RCC>
-    <qresource prefix="/icons">
-        <file>capture.png</file>
-        <file>exit.png</file>
-        <file>refresh.png</file>
-        <file>redirect.png</file>
-    </qresource>
-</RCC>

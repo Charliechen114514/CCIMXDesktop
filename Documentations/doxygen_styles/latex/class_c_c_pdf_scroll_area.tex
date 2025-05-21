@@ -1,5 +1,14 @@
 \doxysection{CCPdf\+Scroll\+Area Class Reference}
 \hypertarget{class_c_c_pdf_scroll_area}{}\label{class_c_c_pdf_scroll_area}\index{CCPdfScrollArea@{CCPdfScrollArea}}
+
+
+A custom scroll area that supports gesture-\/based zooming for PDF viewing.  
+
+
+
+
+{\ttfamily \#include $<$ccpdfscrollarea.\+h$>$}
+
 Inheritance diagram for CCPdf\+Scroll\+Area\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -10,29 +19,110 @@ Inheritance diagram for CCPdf\+Scroll\+Area\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 \Hypertarget{class_c_c_pdf_scroll_area_a659bde2f5fe452c6cc90e0c8c042b18a}\label{class_c_c_pdf_scroll_area_a659bde2f5fe452c6cc90e0c8c042b18a} 
-void {\bfseries indicate\+\_\+zoom} (CCPdf\+Viewer\+::\+Zoom\+Direction)
-\end{DoxyCompactItemize}
+void {\bfseries indicate\+\_\+zoom} (\mbox{\hyperlink{class_c_c_pdf_viewer_ac8458daf2cedd1f6118454f199401336}{CCPdf\+Viewer\+::\+Zoom\+Direction}})
+\begin{DoxyCompactList}\small\item\em Emitted when a zoom gesture is detected. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_c_c_pdf_scroll_area_a7abde81eb52f2b6332ea7dc4217ca79a}\label{class_c_c_pdf_scroll_area_a7abde81eb52f2b6332ea7dc4217ca79a} 
-{\bfseries CCPdf\+Scroll\+Area} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{class_c_c_pdf_scroll_area_a7abde81eb52f2b6332ea7dc4217ca79a}{CCPdf\+Scroll\+Area}} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{class_c_c_pdf_scroll_area}{CCPdf\+Scroll\+Area} with optional parent widget. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_c_c_pdf_scroll_area_a89efd2947c242db9ca72649d65e40816}\label{class_c_c_pdf_scroll_area_a89efd2947c242db9ca72649d65e40816} 
-void {\bfseries mouse\+Press\+Event} (QMouse\+Event \texorpdfstring{$\ast$}{*}event) override
-\item 
-\Hypertarget{class_c_c_pdf_scroll_area_ab65775e577a1ebaccb70c180ab526d98}\label{class_c_c_pdf_scroll_area_ab65775e577a1ebaccb70c180ab526d98} 
-void {\bfseries mouse\+Release\+Event} (QMouse\+Event \texorpdfstring{$\ast$}{*}event) override
-\item 
-\Hypertarget{class_c_c_pdf_scroll_area_ad413d294c74313cc39189e71018b19aa}\label{class_c_c_pdf_scroll_area_ad413d294c74313cc39189e71018b19aa} 
-void {\bfseries mouse\+Move\+Event} (QMouse\+Event \texorpdfstring{$\ast$}{*}event) override
-\item 
-\Hypertarget{class_c_c_pdf_scroll_area_a688d7e77f99d63bbab5ca7ba24a5d452}\label{class_c_c_pdf_scroll_area_a688d7e77f99d63bbab5ca7ba24a5d452} 
-void {\bfseries handle\+Gesture\+Event} (QGesture\+Event \texorpdfstring{$\ast$}{*}event)
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_c_c_pdf_scroll_area_a89efd2947c242db9ca72649d65e40816}{mouse\+Press\+Event}} (QMouse\+Event \texorpdfstring{$\ast$}{*}event) override
+\begin{DoxyCompactList}\small\item\em Records initial press position when mouse is pressed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_c_pdf_scroll_area_ab65775e577a1ebaccb70c180ab526d98}{mouse\+Release\+Event}} (QMouse\+Event \texorpdfstring{$\ast$}{*}event) override
+\begin{DoxyCompactList}\small\item\em Ends click state when mouse is released. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_c_pdf_scroll_area_ad413d294c74313cc39189e71018b19aa}{mouse\+Move\+Event}} (QMouse\+Event \texorpdfstring{$\ast$}{*}event) override
+\begin{DoxyCompactList}\small\item\em Processes dragging or scrolling when mouse is moved. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_c_pdf_scroll_area_a688d7e77f99d63bbab5ca7ba24a5d452}{handle\+Gesture\+Event}} (QGesture\+Event \texorpdfstring{$\ast$}{*}event)
+\begin{DoxyCompactList}\small\item\em Handles gesture events such as pinch-\/to-\/zoom. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A custom scroll area that supports gesture-\/based zooming for PDF viewing. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_c_c_pdf_scroll_area_a7abde81eb52f2b6332ea7dc4217ca79a}\index{CCPdfScrollArea@{CCPdfScrollArea}!CCPdfScrollArea@{CCPdfScrollArea}}
+\index{CCPdfScrollArea@{CCPdfScrollArea}!CCPdfScrollArea@{CCPdfScrollArea}}
+\doxysubsubsection{\texorpdfstring{CCPdfScrollArea()}{CCPdfScrollArea()}}
+{\footnotesize\ttfamily \label{class_c_c_pdf_scroll_area_a7abde81eb52f2b6332ea7dc4217ca79a} 
+CCPdf\+Scroll\+Area\+::\+CCPdf\+Scroll\+Area (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Constructs a \doxylink{class_c_c_pdf_scroll_area}{CCPdf\+Scroll\+Area} with optional parent widget. 
+
+Enables touch event handling and pinch gesture recognition.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & The parent widget. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_c_c_pdf_scroll_area_a688d7e77f99d63bbab5ca7ba24a5d452}\index{CCPdfScrollArea@{CCPdfScrollArea}!handleGestureEvent@{handleGestureEvent}}
+\index{handleGestureEvent@{handleGestureEvent}!CCPdfScrollArea@{CCPdfScrollArea}}
+\doxysubsubsection{\texorpdfstring{handleGestureEvent()}{handleGestureEvent()}}
+{\footnotesize\ttfamily \label{class_c_c_pdf_scroll_area_a688d7e77f99d63bbab5ca7ba24a5d452} 
+void CCPdf\+Scroll\+Area\+::handle\+Gesture\+Event (\begin{DoxyParamCaption}\item[{QGesture\+Event \texorpdfstring{$\ast$}{*}}]{event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Handles gesture events such as pinch-\/to-\/zoom. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & Gesture event object. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_c_c_pdf_scroll_area_ad413d294c74313cc39189e71018b19aa}\index{CCPdfScrollArea@{CCPdfScrollArea}!mouseMoveEvent@{mouseMoveEvent}}
+\index{mouseMoveEvent@{mouseMoveEvent}!CCPdfScrollArea@{CCPdfScrollArea}}
+\doxysubsubsection{\texorpdfstring{mouseMoveEvent()}{mouseMoveEvent()}}
+{\footnotesize\ttfamily \label{class_c_c_pdf_scroll_area_ad413d294c74313cc39189e71018b19aa} 
+void CCPdf\+Scroll\+Area\+::mouse\+Move\+Event (\begin{DoxyParamCaption}\item[{QMouse\+Event \texorpdfstring{$\ast$}{*}}]{event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+
+
+Processes dragging or scrolling when mouse is moved. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & Mouse move event. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_c_c_pdf_scroll_area_a89efd2947c242db9ca72649d65e40816}\index{CCPdfScrollArea@{CCPdfScrollArea}!mousePressEvent@{mousePressEvent}}
+\index{mousePressEvent@{mousePressEvent}!CCPdfScrollArea@{CCPdfScrollArea}}
+\doxysubsubsection{\texorpdfstring{mousePressEvent()}{mousePressEvent()}}
+{\footnotesize\ttfamily \label{class_c_c_pdf_scroll_area_a89efd2947c242db9ca72649d65e40816} 
+void CCPdf\+Scroll\+Area\+::mouse\+Press\+Event (\begin{DoxyParamCaption}\item[{QMouse\+Event \texorpdfstring{$\ast$}{*}}]{event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+
+
+Records initial press position when mouse is pressed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & Mouse press event. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_c_c_pdf_scroll_area_ab65775e577a1ebaccb70c180ab526d98}\index{CCPdfScrollArea@{CCPdfScrollArea}!mouseReleaseEvent@{mouseReleaseEvent}}
+\index{mouseReleaseEvent@{mouseReleaseEvent}!CCPdfScrollArea@{CCPdfScrollArea}}
+\doxysubsubsection{\texorpdfstring{mouseReleaseEvent()}{mouseReleaseEvent()}}
+{\footnotesize\ttfamily \label{class_c_c_pdf_scroll_area_ab65775e577a1ebaccb70c180ab526d98} 
+void CCPdf\+Scroll\+Area\+::mouse\+Release\+Event (\begin{DoxyParamCaption}\item[{QMouse\+Event \texorpdfstring{$\ast$}{*}}]{event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+
+
+Ends click state when mouse is released. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & Mouse release event. \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

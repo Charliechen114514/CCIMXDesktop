@@ -107,106 +107,122 @@ $(function(){initNavTree('mupdf__tools_8h_source.html',''); initResizable(true);
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef MUPDF_TOOLS_H</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define MUPDF_TOOLS_H</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;QString&gt;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;QVariant&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;QImage&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;QImage&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;QString&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;QVariant&gt;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/* mupdf tools are expected to make some light wighted operations */</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">class </span><a class="code hl_class" href="class_c_c_pdf_document.html">CCPdfDocument</a>;</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">    The MuPdf Supports this infos, so make this be</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"></span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">#define FZ_META_FORMAT &quot;format&quot;</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">#define FZ_META_ENCRYPTION &quot;encryption&quot;</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"></span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">#define FZ_META_INFO &quot;info:&quot;</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">#define FZ_META_INFO_TITLE &quot;info:Title&quot;</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">#define FZ_META_INFO_AUTHOR &quot;info:Author&quot;</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">#define FZ_META_INFO_SUBJECT &quot;info:Subject&quot;</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">#define FZ_META_INFO_KEYWORDS &quot;info:Keywords&quot;</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">#define FZ_META_INFO_CREATOR &quot;info:Creator&quot;</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">#define FZ_META_INFO_PRODUCER &quot;info:Producer&quot;</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">#define FZ_META_INFO_CREATIONDATE &quot;info:CreationDate&quot;</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">#define FZ_META_INFO_MODIFICATIONDATE &quot;info:ModDate&quot;</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">*/</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">/* meta info packages */</span></div>
-<div class="foldopen" id="foldopen00028" data-start="{" data-end="};">
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="struct_c_c_pdf_meta_info.html">   28</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_c_c_pdf_meta_info.html">CCPdfMetaInfo</a></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    Q_GADGET</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="comment">/* some fields */</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">enum class</span> Field</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    {</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        Author,</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        Title,</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        Subject,</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        Keywords,</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        Creator,</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        Producer,</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        CreationDateTime,</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        ModifyDateTime</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    };</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    Q_ENUM(Field);</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    QString         author;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    QString         title;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    QString         subject;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    QString         keywords;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    QString         creator;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    QString         producer;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    QString         creation_datetime;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    QString         modify_datetime;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>};</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">    The MuPdf Supports this infos, so make this be</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"></span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">#define FZ_META_FORMAT &quot;format&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">#define FZ_META_ENCRYPTION &quot;encryption&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"></span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">#define FZ_META_INFO &quot;info:&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">#define FZ_META_INFO_TITLE &quot;info:Title&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">#define FZ_META_INFO_AUTHOR &quot;info:Author&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">#define FZ_META_INFO_SUBJECT &quot;info:Subject&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">#define FZ_META_INFO_KEYWORDS &quot;info:Keywords&quot;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">#define FZ_META_INFO_CREATOR &quot;info:Creator&quot;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">#define FZ_META_INFO_PRODUCER &quot;info:Producer&quot;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">#define FZ_META_INFO_CREATIONDATE &quot;info:CreationDate&quot;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">#define FZ_META_INFO_MODIFICATIONDATE &quot;info:ModDate&quot;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span></div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="};">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="struct_c_c_pdf_meta_info.html">   27</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_c_c_pdf_meta_info.html">CCPdfMetaInfo</a> {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    Q_GADGET</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00031" data-start="{" data-end="};">
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="struct_c_c_pdf_meta_info.html#a423cdbefdd1463da5d20fd464d9050a5">   31</a></span>    <span class="keyword">enum class</span> <a class="code hl_enumeration" href="struct_c_c_pdf_meta_info.html#a423cdbefdd1463da5d20fd464d9050a5">Field</a> {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="struct_c_c_pdf_meta_info.html#a423cdbefdd1463da5d20fd464d9050a5aa517747c3d12f99244ae598910d979c5">   32</a></span>        <a class="code hl_enumvalue" href="struct_c_c_pdf_meta_info.html#a423cdbefdd1463da5d20fd464d9050a5aa517747c3d12f99244ae598910d979c5">Author</a>, </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="struct_c_c_pdf_meta_info.html#a423cdbefdd1463da5d20fd464d9050a5ab78a3223503896721cca1303f776159b">   33</a></span>        <a class="code hl_enumvalue" href="struct_c_c_pdf_meta_info.html#a423cdbefdd1463da5d20fd464d9050a5ab78a3223503896721cca1303f776159b">Title</a>, </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="struct_c_c_pdf_meta_info.html#a423cdbefdd1463da5d20fd464d9050a5ac7892ebbb139886662c6f2fc8c450710">   34</a></span>        <a class="code hl_enumvalue" href="struct_c_c_pdf_meta_info.html#a423cdbefdd1463da5d20fd464d9050a5ac7892ebbb139886662c6f2fc8c450710">Subject</a>, </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="struct_c_c_pdf_meta_info.html#a423cdbefdd1463da5d20fd464d9050a5a867343577fa1f33caa632a19543bd252">   35</a></span>        <a class="code hl_enumvalue" href="struct_c_c_pdf_meta_info.html#a423cdbefdd1463da5d20fd464d9050a5a867343577fa1f33caa632a19543bd252">Keywords</a>, </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="struct_c_c_pdf_meta_info.html#a423cdbefdd1463da5d20fd464d9050a5aef1d00d8a237a1bbe431e1091f5715fb">   36</a></span>        <a class="code hl_enumvalue" href="struct_c_c_pdf_meta_info.html#a423cdbefdd1463da5d20fd464d9050a5aef1d00d8a237a1bbe431e1091f5715fb">Creator</a>, </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="struct_c_c_pdf_meta_info.html#a423cdbefdd1463da5d20fd464d9050a5aa6ad87aadc206f6491720e309821904a">   37</a></span>        <a class="code hl_enumvalue" href="struct_c_c_pdf_meta_info.html#a423cdbefdd1463da5d20fd464d9050a5aa6ad87aadc206f6491720e309821904a">Producer</a>, </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="struct_c_c_pdf_meta_info.html#a423cdbefdd1463da5d20fd464d9050a5a78682cca3735060e91c0a11ab30a891a">   38</a></span>        <a class="code hl_enumvalue" href="struct_c_c_pdf_meta_info.html#a423cdbefdd1463da5d20fd464d9050a5a78682cca3735060e91c0a11ab30a891a">CreationDateTime</a>, </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="struct_c_c_pdf_meta_info.html#a423cdbefdd1463da5d20fd464d9050a5a255d50462da112fa4dbf33ff772fdd29">   39</a></span>        <a class="code hl_enumvalue" href="struct_c_c_pdf_meta_info.html#a423cdbefdd1463da5d20fd464d9050a5a255d50462da112fa4dbf33ff772fdd29">ModifyDateTime</a> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    };</div>
 </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="foldopen" id="foldopen00056" data-start="{" data-end="};">
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="struct_c_c_pdf_image_request.html">   56</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_c_c_pdf_image_request.html">CCPdfImageRequest</a> {</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <a class="code hl_class" href="class_c_c_pdf_document.html">CCPdfDocument</a>*      request_document;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordtype">int</span>                 request_page;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordtype">float</span>               zoom;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>};</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    Q_ENUM(<a class="code hl_enumeration" href="struct_c_c_pdf_meta_info.html#a423cdbefdd1463da5d20fd464d9050a5">Field</a>);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="struct_c_c_pdf_meta_info.html#ad02f378caa4ba18913ff931c50c2fec9">   43</a></span>    QString <a class="code hl_variable" href="struct_c_c_pdf_meta_info.html#ad02f378caa4ba18913ff931c50c2fec9">author</a>; </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="struct_c_c_pdf_meta_info.html#a7332fab72592d6f8e6f9ed1d5844bfe0">   44</a></span>    QString <a class="code hl_variable" href="struct_c_c_pdf_meta_info.html#a7332fab72592d6f8e6f9ed1d5844bfe0">title</a>; </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="struct_c_c_pdf_meta_info.html#a6432628cd10311d15f38f6c8dee7031d">   45</a></span>    QString <a class="code hl_variable" href="struct_c_c_pdf_meta_info.html#a6432628cd10311d15f38f6c8dee7031d">subject</a>; </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="struct_c_c_pdf_meta_info.html#adeb1520aa049ca39cc794c4feb232b35">   46</a></span>    QString <a class="code hl_variable" href="struct_c_c_pdf_meta_info.html#adeb1520aa049ca39cc794c4feb232b35">keywords</a>; </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="struct_c_c_pdf_meta_info.html#a1c1a3c86022af3b969977e1309a08c28">   47</a></span>    QString <a class="code hl_variable" href="struct_c_c_pdf_meta_info.html#a1c1a3c86022af3b969977e1309a08c28">creator</a>; </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="struct_c_c_pdf_meta_info.html#a4c76d1610732ddf92630f245068bfe16">   48</a></span>    QString <a class="code hl_variable" href="struct_c_c_pdf_meta_info.html#a4c76d1610732ddf92630f245068bfe16">producer</a>; </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="struct_c_c_pdf_meta_info.html#a4f85c5b45e564cedb66e1b1586d397b9">   49</a></span>    QString <a class="code hl_variable" href="struct_c_c_pdf_meta_info.html#a4f85c5b45e564cedb66e1b1586d397b9">creation_datetime</a>; </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="struct_c_c_pdf_meta_info.html#a7a5ef458c0944b1833a882215934c4a5">   50</a></span>    QString <a class="code hl_variable" href="struct_c_c_pdf_meta_info.html#a7a5ef458c0944b1833a882215934c4a5">modify_datetime</a>; </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>};</div>
 </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="foldopen" id="foldopen00062" data-start="{" data-end="};">
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="struct_c_c_pdf_chapter_node.html">   62</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_c_c_pdf_chapter_node.html">CCPdfChapterNode</a> {</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    QString                 chapter_title;</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordtype">int</span>                     chapter_page;</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    QList&lt;CCPdfChapterNode&gt; childs; <span class="comment">/* childs of the current session */</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>};</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span></div>
+<div class="foldopen" id="foldopen00054" data-start="{" data-end="};">
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="struct_c_c_pdf_image_request.html">   54</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_c_c_pdf_image_request.html">CCPdfImageRequest</a> {</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="struct_c_c_pdf_image_request.html#aa718f86585d96f92687e5aec1527dd12">   55</a></span>    <a class="code hl_class" href="class_c_c_pdf_document.html">CCPdfDocument</a>* <a class="code hl_variable" href="struct_c_c_pdf_image_request.html#aa718f86585d96f92687e5aec1527dd12">request_document</a>; </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="struct_c_c_pdf_image_request.html#a3d5fb43822cf2a8c84399060ab727efc">   56</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_c_c_pdf_image_request.html#a3d5fb43822cf2a8c84399060ab727efc">request_page</a>; </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="struct_c_c_pdf_image_request.html#a08c0791b91ea220293517dcee6295294">   57</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_c_c_pdf_image_request.html#a08c0791b91ea220293517dcee6295294">zoom</a>; </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>};</div>
 </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment"> *  at here, we gain the tools if one day we only query the submetas</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">*/</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keyword">namespace </span>ccpdf_tools</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>{</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">/* request metas fulls*/</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><a class="code hl_struct" href="struct_c_c_pdf_meta_info.html">CCPdfMetaInfo</a></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>request_meta(<span class="keyword">const</span> <a class="code hl_class" href="class_c_c_pdf_document.html">CCPdfDocument</a> *document);</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">/* request metas seperates */</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>QVariant</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>request_target_meta(<span class="keyword">const</span> <a class="code hl_class" href="class_c_c_pdf_document.html">CCPdfDocument</a>* document,</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                    <span class="keyword">const</span> CCPdfMetaInfo::Field field);</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">/* request image, using by pdfview widget */</span></div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>QImage</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>request_target_page(<a class="code hl_struct" href="struct_c_c_pdf_image_request.html">CCPdfImageRequest</a>* simpleRequest);</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>QList&lt;CCPdfChapterNode&gt;</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>request_chapter_tree(<span class="keyword">const</span> <a class="code hl_class" href="class_c_c_pdf_document.html">CCPdfDocument</a>* document);</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>};</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="preprocessor">#endif </span><span class="comment">// MUPDF_TOOLS_H</span></div>
-<div class="ttc" id="aclass_c_c_pdf_document_html"><div class="ttname"><a href="class_c_c_pdf_document.html">CCPdfDocument</a></div><div class="ttdef"><b>Definition</b> ccpdfdocument.h:22</div></div>
-<div class="ttc" id="astruct_c_c_pdf_chapter_node_html"><div class="ttname"><a href="struct_c_c_pdf_chapter_node.html">CCPdfChapterNode</a></div><div class="ttdef"><b>Definition</b> mupdf_tools.h:62</div></div>
-<div class="ttc" id="astruct_c_c_pdf_image_request_html"><div class="ttname"><a href="struct_c_c_pdf_image_request.html">CCPdfImageRequest</a></div><div class="ttdef"><b>Definition</b> mupdf_tools.h:56</div></div>
-<div class="ttc" id="astruct_c_c_pdf_meta_info_html"><div class="ttname"><a href="struct_c_c_pdf_meta_info.html">CCPdfMetaInfo</a></div><div class="ttdef"><b>Definition</b> mupdf_tools.h:29</div></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span></div>
+<div class="foldopen" id="foldopen00061" data-start="{" data-end="};">
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="struct_c_c_pdf_chapter_node.html">   61</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_c_c_pdf_chapter_node.html">CCPdfChapterNode</a> {</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="struct_c_c_pdf_chapter_node.html#aa38e28f70d067bcd3759f32e6311b811">   62</a></span>    QString <a class="code hl_variable" href="struct_c_c_pdf_chapter_node.html#aa38e28f70d067bcd3759f32e6311b811">chapter_title</a>; </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="struct_c_c_pdf_chapter_node.html#aebccf9cdeff5bc1782743ed050f03b6b">   63</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_c_c_pdf_chapter_node.html#aebccf9cdeff5bc1782743ed050f03b6b">chapter_page</a>; </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="struct_c_c_pdf_chapter_node.html#aec27ffbb948af651fea64095efb35338">   64</a></span>    QList&lt;CCPdfChapterNode&gt; <a class="code hl_variable" href="struct_c_c_pdf_chapter_node.html#aec27ffbb948af651fea64095efb35338">childs</a>; </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>};</div>
+</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceccpdf__tools.html">ccpdf_tools</a> {</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><a class="code hl_struct" href="struct_c_c_pdf_meta_info.html">CCPdfMetaInfo</a></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><a class="code hl_function" href="namespaceccpdf__tools.html#a999c0788944933e4c5eb4ba9eeaf7497">request_meta</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_c_c_pdf_document.html">CCPdfDocument</a>* document);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>QVariant</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><a class="code hl_function" href="namespaceccpdf__tools.html#a4b7a9e4948f407d1efbbfd4a5d7e4a07">request_target_meta</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_c_c_pdf_document.html">CCPdfDocument</a>* document,</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                    <span class="keyword">const</span> <a class="code hl_enumeration" href="struct_c_c_pdf_meta_info.html#a423cdbefdd1463da5d20fd464d9050a5">CCPdfMetaInfo::Field</a> field);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>QImage</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><a class="code hl_function" href="namespaceccpdf__tools.html#a70c31d5eeb98044b0ddc6f868aaf68a4">request_target_page</a>(<a class="code hl_struct" href="struct_c_c_pdf_image_request.html">CCPdfImageRequest</a>* simpleRequest);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>QList&lt;CCPdfChapterNode&gt;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><a class="code hl_function" href="namespaceccpdf__tools.html#ab1c411f18137d7b0dd3e7cd6f3b421a7">request_chapter_tree</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_c_c_pdf_document.html">CCPdfDocument</a>* document);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>};</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="preprocessor">#endif </span><span class="comment">// MUPDF_TOOLS_H</span></div>
+<div class="ttc" id="aclass_c_c_pdf_document_html"><div class="ttname"><a href="class_c_c_pdf_document.html">CCPdfDocument</a></div><div class="ttdoc">The CCPdfDocument class CCPdfDocument is expected to hold a resources physically in Programming level...</div><div class="ttdef"><b>Definition</b> ccpdfdocument.h:22</div></div>
+<div class="ttc" id="anamespaceccpdf__tools_html"><div class="ttname"><a href="namespaceccpdf__tools.html">ccpdf_tools</a></div><div class="ttdoc">Tools to extract metadata and render content from PDF documents.</div><div class="ttdef"><b>Definition</b> mupdf_tools.cpp:19</div></div>
+<div class="ttc" id="anamespaceccpdf__tools_html_a4b7a9e4948f407d1efbbfd4a5d7e4a07"><div class="ttname"><a href="namespaceccpdf__tools.html#a4b7a9e4948f407d1efbbfd4a5d7e4a07">ccpdf_tools::request_target_meta</a></div><div class="ttdeci">QVariant request_target_meta(const CCPdfDocument *document, const CCPdfMetaInfo::Field field)</div><div class="ttdoc">Requests a single piece of metadata from the PDF document.</div><div class="ttdef"><b>Definition</b> mupdf_tools.cpp:67</div></div>
+<div class="ttc" id="anamespaceccpdf__tools_html_a70c31d5eeb98044b0ddc6f868aaf68a4"><div class="ttname"><a href="namespaceccpdf__tools.html#a70c31d5eeb98044b0ddc6f868aaf68a4">ccpdf_tools::request_target_page</a></div><div class="ttdeci">QImage request_target_page(CCPdfImageRequest *simpleRequest)</div><div class="ttdoc">Requests a rendered image of a specific page.</div><div class="ttdef"><b>Definition</b> mupdf_tools.cpp:128</div></div>
+<div class="ttc" id="anamespaceccpdf__tools_html_a999c0788944933e4c5eb4ba9eeaf7497"><div class="ttname"><a href="namespaceccpdf__tools.html#a999c0788944933e4c5eb4ba9eeaf7497">ccpdf_tools::request_meta</a></div><div class="ttdeci">CCPdfMetaInfo request_meta(const CCPdfDocument *document)</div><div class="ttdoc">Requests the full set of metadata from a PDF document.</div><div class="ttdef"><b>Definition</b> mupdf_tools.cpp:24</div></div>
+<div class="ttc" id="anamespaceccpdf__tools_html_ab1c411f18137d7b0dd3e7cd6f3b421a7"><div class="ttname"><a href="namespaceccpdf__tools.html#ab1c411f18137d7b0dd3e7cd6f3b421a7">ccpdf_tools::request_chapter_tree</a></div><div class="ttdeci">QList&lt; CCPdfChapterNode &gt; request_chapter_tree(const CCPdfDocument *document)</div><div class="ttdoc">Requests the chapter tree (e.g., bookmarks) of the document.</div><div class="ttdef"><b>Definition</b> mupdf_tools.cpp:203</div></div>
+<div class="ttc" id="astruct_c_c_pdf_chapter_node_html"><div class="ttname"><a href="struct_c_c_pdf_chapter_node.html">CCPdfChapterNode</a></div><div class="ttdoc">A single node in the chapter (bookmark) hierarchy.</div><div class="ttdef"><b>Definition</b> mupdf_tools.h:61</div></div>
+<div class="ttc" id="astruct_c_c_pdf_chapter_node_html_aa38e28f70d067bcd3759f32e6311b811"><div class="ttname"><a href="struct_c_c_pdf_chapter_node.html#aa38e28f70d067bcd3759f32e6311b811">CCPdfChapterNode::chapter_title</a></div><div class="ttdeci">QString chapter_title</div><div class="ttdoc">Title of the chapter.</div><div class="ttdef"><b>Definition</b> mupdf_tools.h:62</div></div>
+<div class="ttc" id="astruct_c_c_pdf_chapter_node_html_aebccf9cdeff5bc1782743ed050f03b6b"><div class="ttname"><a href="struct_c_c_pdf_chapter_node.html#aebccf9cdeff5bc1782743ed050f03b6b">CCPdfChapterNode::chapter_page</a></div><div class="ttdeci">int chapter_page</div><div class="ttdoc">Page number this chapter refers to.</div><div class="ttdef"><b>Definition</b> mupdf_tools.h:63</div></div>
+<div class="ttc" id="astruct_c_c_pdf_chapter_node_html_aec27ffbb948af651fea64095efb35338"><div class="ttname"><a href="struct_c_c_pdf_chapter_node.html#aec27ffbb948af651fea64095efb35338">CCPdfChapterNode::childs</a></div><div class="ttdeci">QList&lt; CCPdfChapterNode &gt; childs</div><div class="ttdoc">Children of the current chapter node.</div><div class="ttdef"><b>Definition</b> mupdf_tools.h:64</div></div>
+<div class="ttc" id="astruct_c_c_pdf_image_request_html"><div class="ttname"><a href="struct_c_c_pdf_image_request.html">CCPdfImageRequest</a></div><div class="ttdoc">Request structure for rendering a specific page as an image.</div><div class="ttdef"><b>Definition</b> mupdf_tools.h:54</div></div>
+<div class="ttc" id="astruct_c_c_pdf_image_request_html_a08c0791b91ea220293517dcee6295294"><div class="ttname"><a href="struct_c_c_pdf_image_request.html#a08c0791b91ea220293517dcee6295294">CCPdfImageRequest::zoom</a></div><div class="ttdeci">float zoom</div><div class="ttdoc">Zoom factor for rendering.</div><div class="ttdef"><b>Definition</b> mupdf_tools.h:57</div></div>
+<div class="ttc" id="astruct_c_c_pdf_image_request_html_a3d5fb43822cf2a8c84399060ab727efc"><div class="ttname"><a href="struct_c_c_pdf_image_request.html#a3d5fb43822cf2a8c84399060ab727efc">CCPdfImageRequest::request_page</a></div><div class="ttdeci">int request_page</div><div class="ttdoc">Page index to render.</div><div class="ttdef"><b>Definition</b> mupdf_tools.h:56</div></div>
+<div class="ttc" id="astruct_c_c_pdf_image_request_html_aa718f86585d96f92687e5aec1527dd12"><div class="ttname"><a href="struct_c_c_pdf_image_request.html#aa718f86585d96f92687e5aec1527dd12">CCPdfImageRequest::request_document</a></div><div class="ttdeci">CCPdfDocument * request_document</div><div class="ttdoc">Pointer to the document to render.</div><div class="ttdef"><b>Definition</b> mupdf_tools.h:55</div></div>
+<div class="ttc" id="astruct_c_c_pdf_meta_info_html"><div class="ttname"><a href="struct_c_c_pdf_meta_info.html">CCPdfMetaInfo</a></div><div class="ttdoc">Meta information package extracted from a PDF document.</div><div class="ttdef"><b>Definition</b> mupdf_tools.h:27</div></div>
+<div class="ttc" id="astruct_c_c_pdf_meta_info_html_a1c1a3c86022af3b969977e1309a08c28"><div class="ttname"><a href="struct_c_c_pdf_meta_info.html#a1c1a3c86022af3b969977e1309a08c28">CCPdfMetaInfo::creator</a></div><div class="ttdeci">QString creator</div><div class="ttdoc">The application that created the document.</div><div class="ttdef"><b>Definition</b> mupdf_tools.h:47</div></div>
+<div class="ttc" id="astruct_c_c_pdf_meta_info_html_a423cdbefdd1463da5d20fd464d9050a5"><div class="ttname"><a href="struct_c_c_pdf_meta_info.html#a423cdbefdd1463da5d20fd464d9050a5">CCPdfMetaInfo::Field</a></div><div class="ttdeci">Field</div><div class="ttdoc">Enum of metadata fields available from the document.</div><div class="ttdef"><b>Definition</b> mupdf_tools.h:31</div></div>
+<div class="ttc" id="astruct_c_c_pdf_meta_info_html_a423cdbefdd1463da5d20fd464d9050a5a255d50462da112fa4dbf33ff772fdd29"><div class="ttname"><a href="struct_c_c_pdf_meta_info.html#a423cdbefdd1463da5d20fd464d9050a5a255d50462da112fa4dbf33ff772fdd29">CCPdfMetaInfo::Field::ModifyDateTime</a></div><div class="ttdeci">@ ModifyDateTime</div><div class="ttdoc">The last modification date and time.</div><div class="ttdef"><b>Definition</b> mupdf_tools.h:39</div></div>
+<div class="ttc" id="astruct_c_c_pdf_meta_info_html_a423cdbefdd1463da5d20fd464d9050a5a78682cca3735060e91c0a11ab30a891a"><div class="ttname"><a href="struct_c_c_pdf_meta_info.html#a423cdbefdd1463da5d20fd464d9050a5a78682cca3735060e91c0a11ab30a891a">CCPdfMetaInfo::Field::CreationDateTime</a></div><div class="ttdeci">@ CreationDateTime</div><div class="ttdoc">The creation date and time.</div><div class="ttdef"><b>Definition</b> mupdf_tools.h:38</div></div>
+<div class="ttc" id="astruct_c_c_pdf_meta_info_html_a423cdbefdd1463da5d20fd464d9050a5a867343577fa1f33caa632a19543bd252"><div class="ttname"><a href="struct_c_c_pdf_meta_info.html#a423cdbefdd1463da5d20fd464d9050a5a867343577fa1f33caa632a19543bd252">CCPdfMetaInfo::Field::Keywords</a></div><div class="ttdeci">@ Keywords</div><div class="ttdoc">Keywords associated with the document.</div><div class="ttdef"><b>Definition</b> mupdf_tools.h:35</div></div>
+<div class="ttc" id="astruct_c_c_pdf_meta_info_html_a423cdbefdd1463da5d20fd464d9050a5aa517747c3d12f99244ae598910d979c5"><div class="ttname"><a href="struct_c_c_pdf_meta_info.html#a423cdbefdd1463da5d20fd464d9050a5aa517747c3d12f99244ae598910d979c5">CCPdfMetaInfo::Field::Author</a></div><div class="ttdeci">@ Author</div><div class="ttdoc">The document&#39;s author.</div><div class="ttdef"><b>Definition</b> mupdf_tools.h:32</div></div>
+<div class="ttc" id="astruct_c_c_pdf_meta_info_html_a423cdbefdd1463da5d20fd464d9050a5aa6ad87aadc206f6491720e309821904a"><div class="ttname"><a href="struct_c_c_pdf_meta_info.html#a423cdbefdd1463da5d20fd464d9050a5aa6ad87aadc206f6491720e309821904a">CCPdfMetaInfo::Field::Producer</a></div><div class="ttdeci">@ Producer</div><div class="ttdoc">The PDF producer.</div><div class="ttdef"><b>Definition</b> mupdf_tools.h:37</div></div>
+<div class="ttc" id="astruct_c_c_pdf_meta_info_html_a423cdbefdd1463da5d20fd464d9050a5ab78a3223503896721cca1303f776159b"><div class="ttname"><a href="struct_c_c_pdf_meta_info.html#a423cdbefdd1463da5d20fd464d9050a5ab78a3223503896721cca1303f776159b">CCPdfMetaInfo::Field::Title</a></div><div class="ttdeci">@ Title</div><div class="ttdoc">The document&#39;s title.</div><div class="ttdef"><b>Definition</b> mupdf_tools.h:33</div></div>
+<div class="ttc" id="astruct_c_c_pdf_meta_info_html_a423cdbefdd1463da5d20fd464d9050a5ac7892ebbb139886662c6f2fc8c450710"><div class="ttname"><a href="struct_c_c_pdf_meta_info.html#a423cdbefdd1463da5d20fd464d9050a5ac7892ebbb139886662c6f2fc8c450710">CCPdfMetaInfo::Field::Subject</a></div><div class="ttdeci">@ Subject</div><div class="ttdoc">The subject of the document.</div><div class="ttdef"><b>Definition</b> mupdf_tools.h:34</div></div>
+<div class="ttc" id="astruct_c_c_pdf_meta_info_html_a423cdbefdd1463da5d20fd464d9050a5aef1d00d8a237a1bbe431e1091f5715fb"><div class="ttname"><a href="struct_c_c_pdf_meta_info.html#a423cdbefdd1463da5d20fd464d9050a5aef1d00d8a237a1bbe431e1091f5715fb">CCPdfMetaInfo::Field::Creator</a></div><div class="ttdeci">@ Creator</div><div class="ttdoc">The application that created the document.</div><div class="ttdef"><b>Definition</b> mupdf_tools.h:36</div></div>
+<div class="ttc" id="astruct_c_c_pdf_meta_info_html_a4c76d1610732ddf92630f245068bfe16"><div class="ttname"><a href="struct_c_c_pdf_meta_info.html#a4c76d1610732ddf92630f245068bfe16">CCPdfMetaInfo::producer</a></div><div class="ttdeci">QString producer</div><div class="ttdoc">The software that produced the PDF.</div><div class="ttdef"><b>Definition</b> mupdf_tools.h:48</div></div>
+<div class="ttc" id="astruct_c_c_pdf_meta_info_html_a4f85c5b45e564cedb66e1b1586d397b9"><div class="ttname"><a href="struct_c_c_pdf_meta_info.html#a4f85c5b45e564cedb66e1b1586d397b9">CCPdfMetaInfo::creation_datetime</a></div><div class="ttdeci">QString creation_datetime</div><div class="ttdoc">Document creation date and time in string format.</div><div class="ttdef"><b>Definition</b> mupdf_tools.h:49</div></div>
+<div class="ttc" id="astruct_c_c_pdf_meta_info_html_a6432628cd10311d15f38f6c8dee7031d"><div class="ttname"><a href="struct_c_c_pdf_meta_info.html#a6432628cd10311d15f38f6c8dee7031d">CCPdfMetaInfo::subject</a></div><div class="ttdeci">QString subject</div><div class="ttdoc">The subject of the document.</div><div class="ttdef"><b>Definition</b> mupdf_tools.h:45</div></div>
+<div class="ttc" id="astruct_c_c_pdf_meta_info_html_a7332fab72592d6f8e6f9ed1d5844bfe0"><div class="ttname"><a href="struct_c_c_pdf_meta_info.html#a7332fab72592d6f8e6f9ed1d5844bfe0">CCPdfMetaInfo::title</a></div><div class="ttdeci">QString title</div><div class="ttdoc">The document&#39;s title.</div><div class="ttdef"><b>Definition</b> mupdf_tools.h:44</div></div>
+<div class="ttc" id="astruct_c_c_pdf_meta_info_html_a7a5ef458c0944b1833a882215934c4a5"><div class="ttname"><a href="struct_c_c_pdf_meta_info.html#a7a5ef458c0944b1833a882215934c4a5">CCPdfMetaInfo::modify_datetime</a></div><div class="ttdeci">QString modify_datetime</div><div class="ttdoc">Last modification date and time in string format.</div><div class="ttdef"><b>Definition</b> mupdf_tools.h:50</div></div>
+<div class="ttc" id="astruct_c_c_pdf_meta_info_html_ad02f378caa4ba18913ff931c50c2fec9"><div class="ttname"><a href="struct_c_c_pdf_meta_info.html#ad02f378caa4ba18913ff931c50c2fec9">CCPdfMetaInfo::author</a></div><div class="ttdeci">QString author</div><div class="ttdoc">The document&#39;s author.</div><div class="ttdef"><b>Definition</b> mupdf_tools.h:43</div></div>
+<div class="ttc" id="astruct_c_c_pdf_meta_info_html_adeb1520aa049ca39cc794c4feb232b35"><div class="ttname"><a href="struct_c_c_pdf_meta_info.html#adeb1520aa049ca39cc794c4feb232b35">CCPdfMetaInfo::keywords</a></div><div class="ttdeci">QString keywords</div><div class="ttdoc">Keywords for document classification.</div><div class="ttdef"><b>Definition</b> mupdf_tools.h:46</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

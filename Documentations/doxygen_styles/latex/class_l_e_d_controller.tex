@@ -1,23 +1,113 @@
 \doxysection{LEDController Class Reference}
 \hypertarget{class_l_e_d_controller}{}\label{class_l_e_d_controller}\index{LEDController@{LEDController}}
+
+
+High-\/level controller interface for controlling LEDs, abstracting real or pseudo backends.  
+
+
+
+
+{\ttfamily \#include $<$LEDController.\+h$>$}
+
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_l_e_d_controller_a375f3956f4fbdd3911d3aa616d46f746}\label{class_l_e_d_controller_a375f3956f4fbdd3911d3aa616d46f746} 
-void {\bfseries redirect\+To} (const std\+::string \&led\+Name)
-\item 
-\Hypertarget{class_l_e_d_controller_a90c32acd1da700863aab0faf164d76b0}\label{class_l_e_d_controller_a90c32acd1da700863aab0faf164d76b0} 
-std\+::string {\bfseries led\+Path} () const
-\item 
-\Hypertarget{class_l_e_d_controller_ab209cb9b76151dad3fd3b7080d658a99}\label{class_l_e_d_controller_ab209cb9b76151dad3fd3b7080d658a99} 
-void {\bfseries set\+Mode} (const Modes mode)
-\item 
-\Hypertarget{class_l_e_d_controller_a6bc5dddfbe9cdc210d1066a4254ab0fa}\label{class_l_e_d_controller_a6bc5dddfbe9cdc210d1066a4254ab0fa} 
-Modes {\bfseries get\+Mode} () const
-\item 
-\Hypertarget{class_l_e_d_controller_a096b7909d7569a92e31fdfd3c4b8bebc}\label{class_l_e_d_controller_a096b7909d7569a92e31fdfd3c4b8bebc} 
-bool {\bfseries process\+By\+Package} (const \mbox{\hyperlink{class_l_e_d_params_package}{LEDParams\+Package}} \texorpdfstring{$\ast$}{*}package)
-\end{DoxyCompactItemize}
+\Hypertarget{class_l_e_d_controller_aee3bdb63c97a7c22e9065eaab8c9ab6d}\label{class_l_e_d_controller_aee3bdb63c97a7c22e9065eaab8c9ab6d} 
+{\bfseries LEDController} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\Hypertarget{class_l_e_d_controller_aa52566770dfa4559fc09c63acb82d5c8}\label{class_l_e_d_controller_aa52566770dfa4559fc09c63acb82d5c8} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+LEDController} ()=default
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_l_e_d_controller_a375f3956f4fbdd3911d3aa616d46f746}{redirect\+To}} (const std\+::string \&led\+Name)
+\begin{DoxyCompactList}\small\item\em Redirects the controller to another LED. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_l_e_d_controller_a90c32acd1da700863aab0faf164d76b0}{led\+Path}} () const
+\begin{DoxyCompactList}\small\item\em Returns the LED path in use. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_l_e_d_controller_ab209cb9b76151dad3fd3b7080d658a99}{set\+Mode}} (const Modes mode)
+\begin{DoxyCompactList}\small\item\em Sets the control mode. \end{DoxyCompactList}\item 
+Modes \mbox{\hyperlink{class_l_e_d_controller_a6bc5dddfbe9cdc210d1066a4254ab0fa}{get\+Mode}} () const
+\begin{DoxyCompactList}\small\item\em Gets the current LED control mode. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_l_e_d_controller_a096b7909d7569a92e31fdfd3c4b8bebc}{process\+By\+Package}} (const \mbox{\hyperlink{class_l_e_d_params_package}{LEDParams\+Package}} \texorpdfstring{$\ast$}{*}package)
+\begin{DoxyCompactList}\small\item\em Processes the LED using a parameter package. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+High-\/level controller interface for controlling LEDs, abstracting real or pseudo backends. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_l_e_d_controller_a6bc5dddfbe9cdc210d1066a4254ab0fa}\index{LEDController@{LEDController}!getMode@{getMode}}
+\index{getMode@{getMode}!LEDController@{LEDController}}
+\doxysubsubsection{\texorpdfstring{getMode()}{getMode()}}
+{\footnotesize\ttfamily \label{class_l_e_d_controller_a6bc5dddfbe9cdc210d1066a4254ab0fa} 
+Modes LEDController\+::get\+Mode (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the current LED control mode. 
+
+\begin{DoxyReturn}{Returns}
+Current mode. 
+\end{DoxyReturn}
+\Hypertarget{class_l_e_d_controller_a90c32acd1da700863aab0faf164d76b0}\index{LEDController@{LEDController}!ledPath@{ledPath}}
+\index{ledPath@{ledPath}!LEDController@{LEDController}}
+\doxysubsubsection{\texorpdfstring{ledPath()}{ledPath()}}
+{\footnotesize\ttfamily \label{class_l_e_d_controller_a90c32acd1da700863aab0faf164d76b0} 
+std\+::string LEDController\+::led\+Path (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the LED path in use. 
+
+\begin{DoxyReturn}{Returns}
+Path as a string. 
+\end{DoxyReturn}
+\Hypertarget{class_l_e_d_controller_a096b7909d7569a92e31fdfd3c4b8bebc}\index{LEDController@{LEDController}!processByPackage@{processByPackage}}
+\index{processByPackage@{processByPackage}!LEDController@{LEDController}}
+\doxysubsubsection{\texorpdfstring{processByPackage()}{processByPackage()}}
+{\footnotesize\ttfamily \label{class_l_e_d_controller_a096b7909d7569a92e31fdfd3c4b8bebc} 
+bool LEDController\+::process\+By\+Package (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_l_e_d_params_package}{LEDParams\+Package}} \texorpdfstring{$\ast$}{*}}]{package}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Processes the LED using a parameter package. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em package} & Parameter package pointer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if operation succeeded. 
+\end{DoxyReturn}
+\Hypertarget{class_l_e_d_controller_a375f3956f4fbdd3911d3aa616d46f746}\index{LEDController@{LEDController}!redirectTo@{redirectTo}}
+\index{redirectTo@{redirectTo}!LEDController@{LEDController}}
+\doxysubsubsection{\texorpdfstring{redirectTo()}{redirectTo()}}
+{\footnotesize\ttfamily \label{class_l_e_d_controller_a375f3956f4fbdd3911d3aa616d46f746} 
+void LEDController\+::redirect\+To (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{led\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Redirects the controller to another LED. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em led\+Name} & Name of the target LED. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_l_e_d_controller_ab209cb9b76151dad3fd3b7080d658a99}\index{LEDController@{LEDController}!setMode@{setMode}}
+\index{setMode@{setMode}!LEDController@{LEDController}}
+\doxysubsubsection{\texorpdfstring{setMode()}{setMode()}}
+{\footnotesize\ttfamily \label{class_l_e_d_controller_ab209cb9b76151dad3fd3b7080d658a99} 
+void LEDController\+::set\+Mode (\begin{DoxyParamCaption}\item[{const Modes}]{mode}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the control mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & LED control mode. \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

@@ -1,17 +1,49 @@
 \doxysection{ICM20608\+Data\+Factory Class Reference}
 \hypertarget{class_i_c_m20608_data_factory}{}\label{class_i_c_m20608_data_factory}\index{ICM20608DataFactory@{ICM20608DataFactory}}
+
+
+Abstracts the real or pseudo adapter to provide sensor data.  
+
+
+
+
+{\ttfamily \#include $<$ICM20608\+Data\+Factory.\+h$>$}
+
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \Hypertarget{class_i_c_m20608_data_factory_afe9ed4a869dc91b565f45b60b645753e}\label{class_i_c_m20608_data_factory_afe9ed4a869dc91b565f45b60b645753e} 
 \mbox{\hyperlink{class_i_c_m20608_data_factory}{ICM20608\+Data\+Factory}} \& {\bfseries operator=} (const \mbox{\hyperlink{class_i_c_m20608_data_factory}{ICM20608\+Data\+Factory}} \&)=delete
-\item 
+\begin{DoxyCompactList}\small\item\em Disable copy assignment and copy constructor. \end{DoxyCompactList}\item 
 \Hypertarget{class_i_c_m20608_data_factory_a0ddc45a1875e9f9733aa07be3f26a7d6}\label{class_i_c_m20608_data_factory_a0ddc45a1875e9f9733aa07be3f26a7d6} 
 {\bfseries ICM20608\+Data\+Factory} (const \mbox{\hyperlink{class_i_c_m20608_data_factory}{ICM20608\+Data\+Factory}} \&)=delete
 \item 
-\Hypertarget{class_i_c_m20608_data_factory_a12eada95d4bd48b6cf2d000e92b48aa3}\label{class_i_c_m20608_data_factory_a12eada95d4bd48b6cf2d000e92b48aa3} 
-bool {\bfseries get\+\_\+package\+\_\+sync} (\mbox{\hyperlink{struct_i_c_m20608_app_data}{ICM20608\+App\+Data}} \&empty\+\_\+data\+\_\+pack)
-\end{DoxyCompactItemize}
+bool \mbox{\hyperlink{class_i_c_m20608_data_factory_a12eada95d4bd48b6cf2d000e92b48aa3}{get\+\_\+package\+\_\+sync}} (\mbox{\hyperlink{struct_i_c_m20608_app_data}{ICM20608\+App\+Data}} \&empty\+\_\+data\+\_\+pack)
+\begin{DoxyCompactList}\small\item\em Get sensor data package synchronously. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstracts the real or pseudo adapter to provide sensor data. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_i_c_m20608_data_factory_a12eada95d4bd48b6cf2d000e92b48aa3}\index{ICM20608DataFactory@{ICM20608DataFactory}!get\_package\_sync@{get\_package\_sync}}
+\index{get\_package\_sync@{get\_package\_sync}!ICM20608DataFactory@{ICM20608DataFactory}}
+\doxysubsubsection{\texorpdfstring{get\_package\_sync()}{get\_package\_sync()}}
+{\footnotesize\ttfamily \label{class_i_c_m20608_data_factory_a12eada95d4bd48b6cf2d000e92b48aa3} 
+bool ICM20608\+Data\+Factory\+::get\+\_\+package\+\_\+sync (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i_c_m20608_app_data}{ICM20608\+App\+Data}} \&}]{empty\+\_\+data\+\_\+pack}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get sensor data package synchronously. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em empty\+\_\+data\+\_\+pack} & Reference to data struct to fill. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if data is valid. 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

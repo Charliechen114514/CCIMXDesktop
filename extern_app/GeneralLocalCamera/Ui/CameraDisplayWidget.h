@@ -12,7 +12,17 @@ class CameraDisplayWidget : public QWidget {
 
 public:
 	explicit CameraDisplayWidget(QWidget* parent = nullptr);
+
+	/**
+	 * @brief setCurrentFrame set the current frame
+	 * @param image the image to set
+	 */
 	void setCurrentFrame(const QImage& image);
+
+	/**
+	 * @brief setCurrentFrame set the current frame
+	 * @param image the image to set
+	 */
 	QPixmap current_captures() const;
 	~CameraDisplayWidget();
 

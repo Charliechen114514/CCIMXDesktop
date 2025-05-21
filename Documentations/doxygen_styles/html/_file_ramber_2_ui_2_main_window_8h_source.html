@@ -125,37 +125,47 @@ $(function(){initNavTree('_file_ramber_2_ui_2_main_window_8h_source.html',''); i
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    MainWindow(QWidget* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">void</span> try_goto_parent_view();</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="comment">/* Fuck Windows */</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordtype">void</span> switch_to_global_root();</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    ~MainWindow();</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">enum</span> InfoIndex {</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        NameProviders,</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        CountProviders,</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        DirSizeProviders,</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        TypeInfoProviders,</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        InfoIndexMax</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    };</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">private</span> slots:</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordtype">void</span> processing_switch_double_click(<span class="keyword">const</span> QModelIndex&amp; index);</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordtype">void</span> processing_filecheck_issue(<span class="keyword">const</span> QModelIndex&amp; index);</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordtype">void</span> setupFileModels();</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordtype">void</span> setupUi();</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">void</span> setup_connections();</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    QList&lt;FileInfoProvider*&gt; providers;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    Ui::MainWindow* ui;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <a class="code hl_class" href="class_c_c_i_m_x_file_system_model.html">CCIMXFileSystemModel</a>* file_model { <span class="keyword">nullptr</span> };</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    QComboBox* box { <span class="keyword">nullptr</span> };</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    QLabel* pwd_label { <span class="keyword">nullptr</span> };</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>};</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_main_window.html#a7d4e7882ab0a7c5b5a3c4a59fb73fc21">try_goto_parent_view</a>();</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_main_window.html#abc79266f6f099786471c01e0b8916fce">switch_to_global_root</a>();</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    ~MainWindow();</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span></div>
+<div class="foldopen" id="foldopen00035" data-start="{" data-end="};">
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_main_window.html#ad766a05d8996b153d8328819f3fef928">   35</a></span>    <span class="keyword">enum</span> <a class="code hl_enumeration" href="class_main_window.html#ad766a05d8996b153d8328819f3fef928">InfoIndex</a> {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_main_window.html#ad766a05d8996b153d8328819f3fef928a09675afd3cc4a09f7b50ba42fc455f9f">   36</a></span>        <a class="code hl_enumvalue" href="class_main_window.html#ad766a05d8996b153d8328819f3fef928a09675afd3cc4a09f7b50ba42fc455f9f">NameProviders</a>, </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="class_main_window.html#ad766a05d8996b153d8328819f3fef928a18b76fae0ca4ada44626178c4e0a2f23">   37</a></span>        <a class="code hl_enumvalue" href="class_main_window.html#ad766a05d8996b153d8328819f3fef928a18b76fae0ca4ada44626178c4e0a2f23">CountProviders</a>, </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="class_main_window.html#ad766a05d8996b153d8328819f3fef928ab04f9653ea917c89c34061a3ba93d4b8">   38</a></span>        <a class="code hl_enumvalue" href="class_main_window.html#ad766a05d8996b153d8328819f3fef928ab04f9653ea917c89c34061a3ba93d4b8">DirSizeProviders</a>, </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="class_main_window.html#ad766a05d8996b153d8328819f3fef928a7820a0e650c977902ca389fb734cb3ab">   39</a></span>        <a class="code hl_enumvalue" href="class_main_window.html#ad766a05d8996b153d8328819f3fef928a7820a0e650c977902ca389fb734cb3ab">TypeInfoProviders</a>, </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_main_window.html#ad766a05d8996b153d8328819f3fef928aae9b08f7c72513fb6e687f24948be53c">   40</a></span>        <a class="code hl_enumvalue" href="class_main_window.html#ad766a05d8996b153d8328819f3fef928aae9b08f7c72513fb6e687f24948be53c">InfoIndexMax</a> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    };</div>
 </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#endif </span><span class="comment">// MAINWINDOW_H</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">private</span> slots:</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">void</span> processing_switch_double_click(<span class="keyword">const</span> QModelIndex&amp; index);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordtype">void</span> processing_filecheck_issue(<span class="keyword">const</span> QModelIndex&amp; index);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordtype">void</span> setupFileModels();</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordtype">void</span> setupUi();</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordtype">void</span> setup_connections();</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    QList&lt;FileInfoProvider*&gt; providers;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    Ui::MainWindow* ui;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <a class="code hl_class" href="class_c_c_i_m_x_file_system_model.html">CCIMXFileSystemModel</a>* file_model { <span class="keyword">nullptr</span> };</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    QComboBox* box { <span class="keyword">nullptr</span> };</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    QLabel* pwd_label { <span class="keyword">nullptr</span> };</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>};</div>
+</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">#endif </span><span class="comment">// MAINWINDOW_H</span></div>
 <div class="ttc" id="aclass_c_c_i_m_x_file_system_model_html"><div class="ttname"><a href="class_c_c_i_m_x_file_system_model.html">CCIMXFileSystemModel</a></div><div class="ttdef"><b>Definition</b> CCIMXFileSystemModel.h:5</div></div>
-<div class="ttc" id="aclass_file_info_provider_html"><div class="ttname"><a href="class_file_info_provider.html">FileInfoProvider</a></div><div class="ttdef"><b>Definition</b> FileInfoProvider.h:9</div></div>
+<div class="ttc" id="aclass_file_info_provider_html"><div class="ttname"><a href="class_file_info_provider.html">FileInfoProvider</a></div><div class="ttdoc">The FileInfoProvider class is such an abstract class that using in CCIMXFileSystemModel to provide th...</div><div class="ttdef"><b>Definition</b> FileInfoProvider.h:15</div></div>
+<div class="ttc" id="aclass_main_window_html_a7d4e7882ab0a7c5b5a3c4a59fb73fc21"><div class="ttname"><a href="class_main_window.html#a7d4e7882ab0a7c5b5a3c4a59fb73fc21">MainWindow::try_goto_parent_view</a></div><div class="ttdeci">void try_goto_parent_view()</div><div class="ttdoc">try_goto_parent_view will attempt to switch to the root, no returns as is uncheckable</div><div class="ttdef"><b>Definition</b> MainWindow.cpp:20</div></div>
+<div class="ttc" id="aclass_main_window_html_abc79266f6f099786471c01e0b8916fce"><div class="ttname"><a href="class_main_window.html#abc79266f6f099786471c01e0b8916fce">MainWindow::switch_to_global_root</a></div><div class="ttdeci">void switch_to_global_root()</div><div class="ttdoc">switch_to_global_root will attempt to switch to the root</div><div class="ttdef"><b>Definition</b> MainWindow.cpp:28</div></div>
+<div class="ttc" id="aclass_main_window_html_ad766a05d8996b153d8328819f3fef928"><div class="ttname"><a href="class_main_window.html#ad766a05d8996b153d8328819f3fef928">MainWindow::InfoIndex</a></div><div class="ttdeci">InfoIndex</div><div class="ttdoc">Info index that shell controlls which lines.</div><div class="ttdef"><b>Definition</b> MainWindow.h:35</div></div>
+<div class="ttc" id="aclass_main_window_html_ad766a05d8996b153d8328819f3fef928a09675afd3cc4a09f7b50ba42fc455f9f"><div class="ttname"><a href="class_main_window.html#ad766a05d8996b153d8328819f3fef928a09675afd3cc4a09f7b50ba42fc455f9f">MainWindow::NameProviders</a></div><div class="ttdeci">@ NameProviders</div><div class="ttdoc">name providers line</div><div class="ttdef"><b>Definition</b> MainWindow.h:36</div></div>
+<div class="ttc" id="aclass_main_window_html_ad766a05d8996b153d8328819f3fef928a18b76fae0ca4ada44626178c4e0a2f23"><div class="ttname"><a href="class_main_window.html#ad766a05d8996b153d8328819f3fef928a18b76fae0ca4ada44626178c4e0a2f23">MainWindow::CountProviders</a></div><div class="ttdeci">@ CountProviders</div><div class="ttdoc">count providers line</div><div class="ttdef"><b>Definition</b> MainWindow.h:37</div></div>
+<div class="ttc" id="aclass_main_window_html_ad766a05d8996b153d8328819f3fef928a7820a0e650c977902ca389fb734cb3ab"><div class="ttname"><a href="class_main_window.html#ad766a05d8996b153d8328819f3fef928a7820a0e650c977902ca389fb734cb3ab">MainWindow::TypeInfoProviders</a></div><div class="ttdeci">@ TypeInfoProviders</div><div class="ttdoc">type info providers line</div><div class="ttdef"><b>Definition</b> MainWindow.h:39</div></div>
+<div class="ttc" id="aclass_main_window_html_ad766a05d8996b153d8328819f3fef928aae9b08f7c72513fb6e687f24948be53c"><div class="ttname"><a href="class_main_window.html#ad766a05d8996b153d8328819f3fef928aae9b08f7c72513fb6e687f24948be53c">MainWindow::InfoIndexMax</a></div><div class="ttdeci">@ InfoIndexMax</div><div class="ttdoc">Max.</div><div class="ttdef"><b>Definition</b> MainWindow.h:40</div></div>
+<div class="ttc" id="aclass_main_window_html_ad766a05d8996b153d8328819f3fef928ab04f9653ea917c89c34061a3ba93d4b8"><div class="ttname"><a href="class_main_window.html#ad766a05d8996b153d8328819f3fef928ab04f9653ea917c89c34061a3ba93d4b8">MainWindow::DirSizeProviders</a></div><div class="ttdeci">@ DirSizeProviders</div><div class="ttdoc">dirent providers line</div><div class="ttdef"><b>Definition</b> MainWindow.h:38</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

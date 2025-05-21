@@ -1,5 +1,14 @@
 \doxysection{Video\+Player\+Impl Class Reference}
 \hypertarget{class_video_player_impl}{}\label{class_video_player_impl}\index{VideoPlayerImpl@{VideoPlayerImpl}}
+
+
+The \doxylink{class_video_player_impl}{Video\+Player\+Impl} class \doxylink{class_video_player_impl}{Video\+Player\+Impl} is the interface for video player and the impl class is supposed to be used for the video player.  
+
+
+
+
+{\ttfamily \#include $<$Video\+Player\+Impl.\+h$>$}
+
 Inheritance diagram for Video\+Player\+Impl\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -12,72 +21,600 @@ Inheritance diagram for Video\+Player\+Impl\+:\begin{figure}[H]
 \Hypertarget{class_video_player_impl_a1741d03d5ac669511a754bdac3107faa}\label{class_video_player_impl_a1741d03d5ac669511a754bdac3107faa} 
 {\bfseries Q\+\_\+\+DISABLE\+\_\+\+COPY} (\mbox{\hyperlink{class_video_player_impl}{Video\+Player\+Impl}})
 \item 
-\Hypertarget{class_video_player_impl_a8595b0bbe2ebb205c0c02b002755b0d0}\label{class_video_player_impl_a8595b0bbe2ebb205c0c02b002755b0d0} 
-virtual int {\bfseries total\+\_\+frame} () const =0
+virtual int \mbox{\hyperlink{class_video_player_impl_a8595b0bbe2ebb205c0c02b002755b0d0}{total\+\_\+frame}} () const =0
+\begin{DoxyCompactList}\small\item\em total\+\_\+frame get the total frame of the video \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_video_player_impl_a0f5d949b11337c59522fe6a0b5e88bc9}{current\+\_\+frame}} ()=0
+\begin{DoxyCompactList}\small\item\em current\+\_\+frame get the current frame of the video \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_video_player_impl_a09925d8ec75bd409d8526991e5cfa60e}{rollto\+\_\+next\+Frame}} (\mbox{\hyperlink{class_c_v_image}{CVImage}} \&container)=0
+\begin{DoxyCompactList}\small\item\em rollto\+\_\+next\+Frame roll to the next frame \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_video_player_impl_a38d07a450e3088c638949046067d8225}{peek\+\_\+frame}} (\mbox{\hyperlink{class_c_v_image}{CVImage}} \&container, int frame\+\_\+request)=0
+\begin{DoxyCompactList}\small\item\em peek\+\_\+frame peek the frame of the video \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{struct_video_player_info}{Video\+Player\+Info}} \mbox{\hyperlink{class_video_player_impl_aed67d09d2e16570de740b0ea011af60f}{current\+\_\+video\+\_\+info}} () const =0
+\begin{DoxyCompactList}\small\item\em current\+\_\+video\+\_\+info get the current video information \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_video_player_impl_a81ac288964b7630f2b934f30a871fbc4}{escape\+Frame}} ()=0
+\begin{DoxyCompactList}\small\item\em escape\+Frame escape the current frame \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_video_player_impl_af3287cbd611a3e497e7008eef5b345af}{jump\+To\+Frame}} (int frame\+\_\+request)=0
+\begin{DoxyCompactList}\small\item\em jump\+To\+Frame jump to the frame of the video \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_video_player_impl_a2c00fbac2097847c8a2e38af0707b56c}{open}} (const char \texorpdfstring{$\ast$}{*}filename, Video\+Player\+Open\+Error\+Code \&error\+\_\+code)=0
+\begin{DoxyCompactList}\small\item\em open open the video file \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_video_player_impl_af36e6361c5787ae5a92a483295bb11e3}{is\+Opened}} () const =0
+\begin{DoxyCompactList}\small\item\em is\+Opened check if the video is opened \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_video_player_impl_a5e9332a482f1d9294742f1ca1059b592}{close}} ()=0
+\begin{DoxyCompactList}\small\item\em close close the video file \end{DoxyCompactList}\item 
+\Hypertarget{class_video_player_impl_a1741d03d5ac669511a754bdac3107faa}\label{class_video_player_impl_a1741d03d5ac669511a754bdac3107faa} 
+{\bfseries Q\+\_\+\+DISABLE\+\_\+\+COPY} (\mbox{\hyperlink{class_video_player_impl}{Video\+Player\+Impl}})
 \item 
-\Hypertarget{class_video_player_impl_a0f5d949b11337c59522fe6a0b5e88bc9}\label{class_video_player_impl_a0f5d949b11337c59522fe6a0b5e88bc9} 
-virtual int {\bfseries current\+\_\+frame} ()=0
+virtual int \mbox{\hyperlink{class_video_player_impl_a8595b0bbe2ebb205c0c02b002755b0d0}{total\+\_\+frame}} () const =0
 \item 
-\Hypertarget{class_video_player_impl_a09925d8ec75bd409d8526991e5cfa60e}\label{class_video_player_impl_a09925d8ec75bd409d8526991e5cfa60e} 
-virtual bool {\bfseries rollto\+\_\+next\+Frame} (\mbox{\hyperlink{class_c_v_image}{CVImage}} \&container)=0
+virtual int \mbox{\hyperlink{class_video_player_impl_a0f5d949b11337c59522fe6a0b5e88bc9}{current\+\_\+frame}} ()=0
 \item 
-\Hypertarget{class_video_player_impl_a38d07a450e3088c638949046067d8225}\label{class_video_player_impl_a38d07a450e3088c638949046067d8225} 
-virtual bool {\bfseries peek\+\_\+frame} (\mbox{\hyperlink{class_c_v_image}{CVImage}} \&container, int frame\+\_\+request)=0
+virtual bool \mbox{\hyperlink{class_video_player_impl_a09925d8ec75bd409d8526991e5cfa60e}{rollto\+\_\+next\+Frame}} (\mbox{\hyperlink{class_c_v_image}{CVImage}} \&container)=0
 \item 
-\Hypertarget{class_video_player_impl_aed67d09d2e16570de740b0ea011af60f}\label{class_video_player_impl_aed67d09d2e16570de740b0ea011af60f} 
-virtual \mbox{\hyperlink{struct_video_player_info}{Video\+Player\+Info}} {\bfseries current\+\_\+video\+\_\+info} () const =0
+virtual bool \mbox{\hyperlink{class_video_player_impl_a38d07a450e3088c638949046067d8225}{peek\+\_\+frame}} (\mbox{\hyperlink{class_c_v_image}{CVImage}} \&container, int frame\+\_\+request)=0
 \item 
-\Hypertarget{class_video_player_impl_a81ac288964b7630f2b934f30a871fbc4}\label{class_video_player_impl_a81ac288964b7630f2b934f30a871fbc4} 
-virtual void {\bfseries escape\+Frame} ()=0
+virtual \mbox{\hyperlink{struct_video_player_info}{Video\+Player\+Info}} \mbox{\hyperlink{class_video_player_impl_aed67d09d2e16570de740b0ea011af60f}{current\+\_\+video\+\_\+info}} () const =0
 \item 
-\Hypertarget{class_video_player_impl_af3287cbd611a3e497e7008eef5b345af}\label{class_video_player_impl_af3287cbd611a3e497e7008eef5b345af} 
-virtual void {\bfseries jump\+To\+Frame} (int frame\+\_\+request)=0
+virtual void \mbox{\hyperlink{class_video_player_impl_a81ac288964b7630f2b934f30a871fbc4}{escape\+Frame}} ()=0
 \item 
-\Hypertarget{class_video_player_impl_a2c00fbac2097847c8a2e38af0707b56c}\label{class_video_player_impl_a2c00fbac2097847c8a2e38af0707b56c} 
-virtual bool {\bfseries open} (const char \texorpdfstring{$\ast$}{*}filename, Video\+Player\+Open\+Error\+Code \&error\+\_\+code)=0
+virtual void \mbox{\hyperlink{class_video_player_impl_af3287cbd611a3e497e7008eef5b345af}{jump\+To\+Frame}} (int frame\+\_\+request)=0
 \item 
-\Hypertarget{class_video_player_impl_af36e6361c5787ae5a92a483295bb11e3}\label{class_video_player_impl_af36e6361c5787ae5a92a483295bb11e3} 
-virtual bool {\bfseries is\+Opened} () const =0
+virtual bool \mbox{\hyperlink{class_video_player_impl_a2c00fbac2097847c8a2e38af0707b56c}{open}} (const char \texorpdfstring{$\ast$}{*}filename, Video\+Player\+Open\+Error\+Code \&error\+\_\+code)=0
 \item 
-\Hypertarget{class_video_player_impl_a5e9332a482f1d9294742f1ca1059b592}\label{class_video_player_impl_a5e9332a482f1d9294742f1ca1059b592} 
-virtual void {\bfseries close} ()=0
+virtual bool \mbox{\hyperlink{class_video_player_impl_af36e6361c5787ae5a92a483295bb11e3}{is\+Opened}} () const =0
+\item 
+virtual void \mbox{\hyperlink{class_video_player_impl_a5e9332a482f1d9294742f1ca1059b592}{close}} ()=0
 \item 
 \Hypertarget{class_video_player_impl_a1741d03d5ac669511a754bdac3107faa}\label{class_video_player_impl_a1741d03d5ac669511a754bdac3107faa} 
 {\bfseries Q\+\_\+\+DISABLE\+\_\+\+COPY} (\mbox{\hyperlink{class_video_player_impl}{Video\+Player\+Impl}})
 \item 
-\Hypertarget{class_video_player_impl_a8595b0bbe2ebb205c0c02b002755b0d0}\label{class_video_player_impl_a8595b0bbe2ebb205c0c02b002755b0d0} 
-virtual int {\bfseries total\+\_\+frame} () const =0
-\item 
-\Hypertarget{class_video_player_impl_a0f5d949b11337c59522fe6a0b5e88bc9}\label{class_video_player_impl_a0f5d949b11337c59522fe6a0b5e88bc9} 
-virtual int {\bfseries current\+\_\+frame} ()=0
-\item 
-\Hypertarget{class_video_player_impl_a09925d8ec75bd409d8526991e5cfa60e}\label{class_video_player_impl_a09925d8ec75bd409d8526991e5cfa60e} 
-virtual bool {\bfseries rollto\+\_\+next\+Frame} (\mbox{\hyperlink{class_c_v_image}{CVImage}} \&container)=0
-\item 
-\Hypertarget{class_video_player_impl_a38d07a450e3088c638949046067d8225}\label{class_video_player_impl_a38d07a450e3088c638949046067d8225} 
-virtual bool {\bfseries peek\+\_\+frame} (\mbox{\hyperlink{class_c_v_image}{CVImage}} \&container, int frame\+\_\+request)=0
-\item 
-\Hypertarget{class_video_player_impl_aed67d09d2e16570de740b0ea011af60f}\label{class_video_player_impl_aed67d09d2e16570de740b0ea011af60f} 
-virtual \mbox{\hyperlink{struct_video_player_info}{Video\+Player\+Info}} {\bfseries current\+\_\+video\+\_\+info} () const =0
-\item 
-\Hypertarget{class_video_player_impl_a81ac288964b7630f2b934f30a871fbc4}\label{class_video_player_impl_a81ac288964b7630f2b934f30a871fbc4} 
-virtual void {\bfseries escape\+Frame} ()=0
-\item 
-\Hypertarget{class_video_player_impl_af3287cbd611a3e497e7008eef5b345af}\label{class_video_player_impl_af3287cbd611a3e497e7008eef5b345af} 
-virtual void {\bfseries jump\+To\+Frame} (int frame\+\_\+request)=0
-\item 
-\Hypertarget{class_video_player_impl_a2c00fbac2097847c8a2e38af0707b56c}\label{class_video_player_impl_a2c00fbac2097847c8a2e38af0707b56c} 
-virtual bool {\bfseries open} (const char \texorpdfstring{$\ast$}{*}filename, Video\+Player\+Open\+Error\+Code \&error\+\_\+code)=0
-\item 
-\Hypertarget{class_video_player_impl_af36e6361c5787ae5a92a483295bb11e3}\label{class_video_player_impl_af36e6361c5787ae5a92a483295bb11e3} 
-virtual bool {\bfseries is\+Opened} () const =0
-\item 
-\Hypertarget{class_video_player_impl_a5e9332a482f1d9294742f1ca1059b592}\label{class_video_player_impl_a5e9332a482f1d9294742f1ca1059b592} 
-virtual void {\bfseries close} ()=0
-\end{DoxyCompactItemize}
+virtual int \mbox{\hyperlink{class_video_player_impl_a8595b0bbe2ebb205c0c02b002755b0d0}{total\+\_\+frame}} () const =0
+\begin{DoxyCompactList}\small\item\em total\+\_\+frame get the total frame of the video \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_video_player_impl_a0f5d949b11337c59522fe6a0b5e88bc9}{current\+\_\+frame}} ()=0
+\begin{DoxyCompactList}\small\item\em current\+\_\+frame get the current frame of the video \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_video_player_impl_a09925d8ec75bd409d8526991e5cfa60e}{rollto\+\_\+next\+Frame}} (\mbox{\hyperlink{class_c_v_image}{CVImage}} \&container)=0
+\begin{DoxyCompactList}\small\item\em rollto\+\_\+next\+Frame roll to the next frame \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_video_player_impl_a38d07a450e3088c638949046067d8225}{peek\+\_\+frame}} (\mbox{\hyperlink{class_c_v_image}{CVImage}} \&container, int frame\+\_\+request)=0
+\begin{DoxyCompactList}\small\item\em peek\+\_\+frame peek the frame of the video \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{struct_video_player_info}{Video\+Player\+Info}} \mbox{\hyperlink{class_video_player_impl_aed67d09d2e16570de740b0ea011af60f}{current\+\_\+video\+\_\+info}} () const =0
+\begin{DoxyCompactList}\small\item\em current\+\_\+video\+\_\+info get the current video information \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_video_player_impl_a81ac288964b7630f2b934f30a871fbc4}{escape\+Frame}} ()=0
+\begin{DoxyCompactList}\small\item\em escape\+Frame escape the current frame \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_video_player_impl_af3287cbd611a3e497e7008eef5b345af}{jump\+To\+Frame}} (int frame\+\_\+request)=0
+\begin{DoxyCompactList}\small\item\em jump\+To\+Frame jump to the frame of the video \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_video_player_impl_a2c00fbac2097847c8a2e38af0707b56c}{open}} (const char \texorpdfstring{$\ast$}{*}filename, Video\+Player\+Open\+Error\+Code \&error\+\_\+code)=0
+\begin{DoxyCompactList}\small\item\em open open the video file \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_video_player_impl_af36e6361c5787ae5a92a483295bb11e3}{is\+Opened}} () const =0
+\begin{DoxyCompactList}\small\item\em is\+Opened check if the video is opened \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_video_player_impl_a5e9332a482f1d9294742f1ca1059b592}{close}} ()=0
+\begin{DoxyCompactList}\small\item\em close close the video file \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_video_player_impl}{Video\+Player\+Impl} class \doxylink{class_video_player_impl}{Video\+Player\+Impl} is the interface for video player and the impl class is supposed to be used for the video player. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_video_player_impl_a5e9332a482f1d9294742f1ca1059b592}\index{VideoPlayerImpl@{VideoPlayerImpl}!close@{close}}
+\index{close@{close}!VideoPlayerImpl@{VideoPlayerImpl}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_video_player_impl_a5e9332a482f1d9294742f1ca1059b592} 
+virtual void Video\+Player\+Impl\+::close (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+close close the video file 
+
+\begin{DoxyReturn}{Returns}
+true if the video is closed successfully 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+in syntax level, it means making the resources un-\/available (disabled the resources, shutdown this) 
+\end{DoxyNote}
+
+
+Implemented in \mbox{\hyperlink{class_video_player_opencv_impl_a462b4f6b3463535f2bec58daa5010eaf}{Video\+Player\+Opencv\+Impl}}, \mbox{\hyperlink{class_video_player_opencv_impl_a462b4f6b3463535f2bec58daa5010eaf}{Video\+Player\+Opencv\+Impl}}, and \mbox{\hyperlink{class_video_player_opencv_impl_a462b4f6b3463535f2bec58daa5010eaf}{Video\+Player\+Opencv\+Impl}}.
+
+\Hypertarget{class_video_player_impl_a5e9332a482f1d9294742f1ca1059b592}\index{VideoPlayerImpl@{VideoPlayerImpl}!close@{close}}
+\index{close@{close}!VideoPlayerImpl@{VideoPlayerImpl}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_video_player_impl_a5e9332a482f1d9294742f1ca1059b592} 
+virtual void Video\+Player\+Impl\+::close (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_video_player_opencv_impl_a462b4f6b3463535f2bec58daa5010eaf}{Video\+Player\+Opencv\+Impl}}, \mbox{\hyperlink{class_video_player_opencv_impl_a462b4f6b3463535f2bec58daa5010eaf}{Video\+Player\+Opencv\+Impl}}, and \mbox{\hyperlink{class_video_player_opencv_impl_a462b4f6b3463535f2bec58daa5010eaf}{Video\+Player\+Opencv\+Impl}}.
+
+\Hypertarget{class_video_player_impl_a5e9332a482f1d9294742f1ca1059b592}\index{VideoPlayerImpl@{VideoPlayerImpl}!close@{close}}
+\index{close@{close}!VideoPlayerImpl@{VideoPlayerImpl}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_video_player_impl_a5e9332a482f1d9294742f1ca1059b592} 
+virtual void Video\+Player\+Impl\+::close (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+close close the video file 
+
+\begin{DoxyReturn}{Returns}
+true if the video is closed successfully 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+in syntax level, it means making the resources un-\/available (disabled the resources, shutdown this) 
+\end{DoxyNote}
+
+
+Implemented in \mbox{\hyperlink{class_video_player_opencv_impl_a462b4f6b3463535f2bec58daa5010eaf}{Video\+Player\+Opencv\+Impl}}, \mbox{\hyperlink{class_video_player_opencv_impl_a462b4f6b3463535f2bec58daa5010eaf}{Video\+Player\+Opencv\+Impl}}, and \mbox{\hyperlink{class_video_player_opencv_impl_a462b4f6b3463535f2bec58daa5010eaf}{Video\+Player\+Opencv\+Impl}}.
+
+\Hypertarget{class_video_player_impl_a0f5d949b11337c59522fe6a0b5e88bc9}\index{VideoPlayerImpl@{VideoPlayerImpl}!current\_frame@{current\_frame}}
+\index{current\_frame@{current\_frame}!VideoPlayerImpl@{VideoPlayerImpl}}
+\doxysubsubsection{\texorpdfstring{current\_frame()}{current\_frame()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_video_player_impl_a0f5d949b11337c59522fe6a0b5e88bc9} 
+virtual int Video\+Player\+Impl\+::current\+\_\+frame (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+current\+\_\+frame get the current frame of the video 
+
+\begin{DoxyReturn}{Returns}
+the current frame of the video 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_video_player_opencv_impl_aef36be3f19a38095b6df180238342e9a}{Video\+Player\+Opencv\+Impl}}, \mbox{\hyperlink{class_video_player_opencv_impl_aef36be3f19a38095b6df180238342e9a}{Video\+Player\+Opencv\+Impl}}, and \mbox{\hyperlink{class_video_player_opencv_impl_aef36be3f19a38095b6df180238342e9a}{Video\+Player\+Opencv\+Impl}}.
+
+\Hypertarget{class_video_player_impl_a0f5d949b11337c59522fe6a0b5e88bc9}\index{VideoPlayerImpl@{VideoPlayerImpl}!current\_frame@{current\_frame}}
+\index{current\_frame@{current\_frame}!VideoPlayerImpl@{VideoPlayerImpl}}
+\doxysubsubsection{\texorpdfstring{current\_frame()}{current\_frame()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_video_player_impl_a0f5d949b11337c59522fe6a0b5e88bc9} 
+virtual int Video\+Player\+Impl\+::current\+\_\+frame (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_video_player_opencv_impl_aef36be3f19a38095b6df180238342e9a}{Video\+Player\+Opencv\+Impl}}, \mbox{\hyperlink{class_video_player_opencv_impl_aef36be3f19a38095b6df180238342e9a}{Video\+Player\+Opencv\+Impl}}, and \mbox{\hyperlink{class_video_player_opencv_impl_aef36be3f19a38095b6df180238342e9a}{Video\+Player\+Opencv\+Impl}}.
+
+\Hypertarget{class_video_player_impl_a0f5d949b11337c59522fe6a0b5e88bc9}\index{VideoPlayerImpl@{VideoPlayerImpl}!current\_frame@{current\_frame}}
+\index{current\_frame@{current\_frame}!VideoPlayerImpl@{VideoPlayerImpl}}
+\doxysubsubsection{\texorpdfstring{current\_frame()}{current\_frame()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_video_player_impl_a0f5d949b11337c59522fe6a0b5e88bc9} 
+virtual int Video\+Player\+Impl\+::current\+\_\+frame (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+current\+\_\+frame get the current frame of the video 
+
+\begin{DoxyReturn}{Returns}
+the current frame of the video 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_video_player_opencv_impl_aef36be3f19a38095b6df180238342e9a}{Video\+Player\+Opencv\+Impl}}, \mbox{\hyperlink{class_video_player_opencv_impl_aef36be3f19a38095b6df180238342e9a}{Video\+Player\+Opencv\+Impl}}, and \mbox{\hyperlink{class_video_player_opencv_impl_aef36be3f19a38095b6df180238342e9a}{Video\+Player\+Opencv\+Impl}}.
+
+\Hypertarget{class_video_player_impl_aed67d09d2e16570de740b0ea011af60f}\index{VideoPlayerImpl@{VideoPlayerImpl}!current\_video\_info@{current\_video\_info}}
+\index{current\_video\_info@{current\_video\_info}!VideoPlayerImpl@{VideoPlayerImpl}}
+\doxysubsubsection{\texorpdfstring{current\_video\_info()}{current\_video\_info()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_video_player_impl_aed67d09d2e16570de740b0ea011af60f} 
+virtual \mbox{\hyperlink{struct_video_player_info}{Video\+Player\+Info}} Video\+Player\+Impl\+::current\+\_\+video\+\_\+info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+current\+\_\+video\+\_\+info get the current video information 
+
+\begin{DoxyReturn}{Returns}
+the current video information 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+for upper level widgets, we need to get from the info 
+\end{DoxyNote}
+
+
+Implemented in \mbox{\hyperlink{class_video_player_opencv_impl_afe9aafeb0361bb96f609072471e29d0a}{Video\+Player\+Opencv\+Impl}}, \mbox{\hyperlink{class_video_player_opencv_impl_afe9aafeb0361bb96f609072471e29d0a}{Video\+Player\+Opencv\+Impl}}, and \mbox{\hyperlink{class_video_player_opencv_impl_afe9aafeb0361bb96f609072471e29d0a}{Video\+Player\+Opencv\+Impl}}.
+
+\Hypertarget{class_video_player_impl_aed67d09d2e16570de740b0ea011af60f}\index{VideoPlayerImpl@{VideoPlayerImpl}!current\_video\_info@{current\_video\_info}}
+\index{current\_video\_info@{current\_video\_info}!VideoPlayerImpl@{VideoPlayerImpl}}
+\doxysubsubsection{\texorpdfstring{current\_video\_info()}{current\_video\_info()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_video_player_impl_aed67d09d2e16570de740b0ea011af60f} 
+virtual \mbox{\hyperlink{struct_video_player_info}{Video\+Player\+Info}} Video\+Player\+Impl\+::current\+\_\+video\+\_\+info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_video_player_opencv_impl_afe9aafeb0361bb96f609072471e29d0a}{Video\+Player\+Opencv\+Impl}}, \mbox{\hyperlink{class_video_player_opencv_impl_afe9aafeb0361bb96f609072471e29d0a}{Video\+Player\+Opencv\+Impl}}, and \mbox{\hyperlink{class_video_player_opencv_impl_afe9aafeb0361bb96f609072471e29d0a}{Video\+Player\+Opencv\+Impl}}.
+
+\Hypertarget{class_video_player_impl_aed67d09d2e16570de740b0ea011af60f}\index{VideoPlayerImpl@{VideoPlayerImpl}!current\_video\_info@{current\_video\_info}}
+\index{current\_video\_info@{current\_video\_info}!VideoPlayerImpl@{VideoPlayerImpl}}
+\doxysubsubsection{\texorpdfstring{current\_video\_info()}{current\_video\_info()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_video_player_impl_aed67d09d2e16570de740b0ea011af60f} 
+virtual \mbox{\hyperlink{struct_video_player_info}{Video\+Player\+Info}} Video\+Player\+Impl\+::current\+\_\+video\+\_\+info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+current\+\_\+video\+\_\+info get the current video information 
+
+\begin{DoxyReturn}{Returns}
+the current video information 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+for upper level widgets, we need to get from the info 
+\end{DoxyNote}
+
+
+Implemented in \mbox{\hyperlink{class_video_player_opencv_impl_afe9aafeb0361bb96f609072471e29d0a}{Video\+Player\+Opencv\+Impl}}, \mbox{\hyperlink{class_video_player_opencv_impl_afe9aafeb0361bb96f609072471e29d0a}{Video\+Player\+Opencv\+Impl}}, and \mbox{\hyperlink{class_video_player_opencv_impl_afe9aafeb0361bb96f609072471e29d0a}{Video\+Player\+Opencv\+Impl}}.
+
+\Hypertarget{class_video_player_impl_a81ac288964b7630f2b934f30a871fbc4}\index{VideoPlayerImpl@{VideoPlayerImpl}!escapeFrame@{escapeFrame}}
+\index{escapeFrame@{escapeFrame}!VideoPlayerImpl@{VideoPlayerImpl}}
+\doxysubsubsection{\texorpdfstring{escapeFrame()}{escapeFrame()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_video_player_impl_a81ac288964b7630f2b934f30a871fbc4} 
+virtual void Video\+Player\+Impl\+::escape\+Frame (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+escape\+Frame escape the current frame 
+
+\begin{DoxyNote}{Note}
+frame is supposed to abolished, pointer should be moved forward 
+\end{DoxyNote}
+
+
+Implemented in \mbox{\hyperlink{class_video_player_opencv_impl_a723cc96210168483c9cdd6a7d8715067}{Video\+Player\+Opencv\+Impl}}, \mbox{\hyperlink{class_video_player_opencv_impl_a723cc96210168483c9cdd6a7d8715067}{Video\+Player\+Opencv\+Impl}}, and \mbox{\hyperlink{class_video_player_opencv_impl_a723cc96210168483c9cdd6a7d8715067}{Video\+Player\+Opencv\+Impl}}.
+
+\Hypertarget{class_video_player_impl_a81ac288964b7630f2b934f30a871fbc4}\index{VideoPlayerImpl@{VideoPlayerImpl}!escapeFrame@{escapeFrame}}
+\index{escapeFrame@{escapeFrame}!VideoPlayerImpl@{VideoPlayerImpl}}
+\doxysubsubsection{\texorpdfstring{escapeFrame()}{escapeFrame()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_video_player_impl_a81ac288964b7630f2b934f30a871fbc4} 
+virtual void Video\+Player\+Impl\+::escape\+Frame (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_video_player_opencv_impl_a723cc96210168483c9cdd6a7d8715067}{Video\+Player\+Opencv\+Impl}}, \mbox{\hyperlink{class_video_player_opencv_impl_a723cc96210168483c9cdd6a7d8715067}{Video\+Player\+Opencv\+Impl}}, and \mbox{\hyperlink{class_video_player_opencv_impl_a723cc96210168483c9cdd6a7d8715067}{Video\+Player\+Opencv\+Impl}}.
+
+\Hypertarget{class_video_player_impl_a81ac288964b7630f2b934f30a871fbc4}\index{VideoPlayerImpl@{VideoPlayerImpl}!escapeFrame@{escapeFrame}}
+\index{escapeFrame@{escapeFrame}!VideoPlayerImpl@{VideoPlayerImpl}}
+\doxysubsubsection{\texorpdfstring{escapeFrame()}{escapeFrame()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_video_player_impl_a81ac288964b7630f2b934f30a871fbc4} 
+virtual void Video\+Player\+Impl\+::escape\+Frame (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+escape\+Frame escape the current frame 
+
+\begin{DoxyNote}{Note}
+frame is supposed to abolished, pointer should be moved forward 
+\end{DoxyNote}
+
+
+Implemented in \mbox{\hyperlink{class_video_player_opencv_impl_a723cc96210168483c9cdd6a7d8715067}{Video\+Player\+Opencv\+Impl}}, \mbox{\hyperlink{class_video_player_opencv_impl_a723cc96210168483c9cdd6a7d8715067}{Video\+Player\+Opencv\+Impl}}, and \mbox{\hyperlink{class_video_player_opencv_impl_a723cc96210168483c9cdd6a7d8715067}{Video\+Player\+Opencv\+Impl}}.
+
+\Hypertarget{class_video_player_impl_af36e6361c5787ae5a92a483295bb11e3}\index{VideoPlayerImpl@{VideoPlayerImpl}!isOpened@{isOpened}}
+\index{isOpened@{isOpened}!VideoPlayerImpl@{VideoPlayerImpl}}
+\doxysubsubsection{\texorpdfstring{isOpened()}{isOpened()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_video_player_impl_af36e6361c5787ae5a92a483295bb11e3} 
+virtual bool Video\+Player\+Impl\+::is\+Opened (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+is\+Opened check if the video is opened 
+
+\begin{DoxyReturn}{Returns}
+true if the video is opened 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_video_player_opencv_impl_ac6dd4e161e7086fef31b4c52729f50af}{Video\+Player\+Opencv\+Impl}}, \mbox{\hyperlink{class_video_player_opencv_impl_ac6dd4e161e7086fef31b4c52729f50af}{Video\+Player\+Opencv\+Impl}}, and \mbox{\hyperlink{class_video_player_opencv_impl_ac6dd4e161e7086fef31b4c52729f50af}{Video\+Player\+Opencv\+Impl}}.
+
+\Hypertarget{class_video_player_impl_af36e6361c5787ae5a92a483295bb11e3}\index{VideoPlayerImpl@{VideoPlayerImpl}!isOpened@{isOpened}}
+\index{isOpened@{isOpened}!VideoPlayerImpl@{VideoPlayerImpl}}
+\doxysubsubsection{\texorpdfstring{isOpened()}{isOpened()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_video_player_impl_af36e6361c5787ae5a92a483295bb11e3} 
+virtual bool Video\+Player\+Impl\+::is\+Opened (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_video_player_opencv_impl_ac6dd4e161e7086fef31b4c52729f50af}{Video\+Player\+Opencv\+Impl}}, \mbox{\hyperlink{class_video_player_opencv_impl_ac6dd4e161e7086fef31b4c52729f50af}{Video\+Player\+Opencv\+Impl}}, and \mbox{\hyperlink{class_video_player_opencv_impl_ac6dd4e161e7086fef31b4c52729f50af}{Video\+Player\+Opencv\+Impl}}.
+
+\Hypertarget{class_video_player_impl_af36e6361c5787ae5a92a483295bb11e3}\index{VideoPlayerImpl@{VideoPlayerImpl}!isOpened@{isOpened}}
+\index{isOpened@{isOpened}!VideoPlayerImpl@{VideoPlayerImpl}}
+\doxysubsubsection{\texorpdfstring{isOpened()}{isOpened()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_video_player_impl_af36e6361c5787ae5a92a483295bb11e3} 
+virtual bool Video\+Player\+Impl\+::is\+Opened (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+is\+Opened check if the video is opened 
+
+\begin{DoxyReturn}{Returns}
+true if the video is opened 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_video_player_opencv_impl_ac6dd4e161e7086fef31b4c52729f50af}{Video\+Player\+Opencv\+Impl}}, \mbox{\hyperlink{class_video_player_opencv_impl_ac6dd4e161e7086fef31b4c52729f50af}{Video\+Player\+Opencv\+Impl}}, and \mbox{\hyperlink{class_video_player_opencv_impl_ac6dd4e161e7086fef31b4c52729f50af}{Video\+Player\+Opencv\+Impl}}.
+
+\Hypertarget{class_video_player_impl_af3287cbd611a3e497e7008eef5b345af}\index{VideoPlayerImpl@{VideoPlayerImpl}!jumpToFrame@{jumpToFrame}}
+\index{jumpToFrame@{jumpToFrame}!VideoPlayerImpl@{VideoPlayerImpl}}
+\doxysubsubsection{\texorpdfstring{jumpToFrame()}{jumpToFrame()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_video_player_impl_af3287cbd611a3e497e7008eef5b345af} 
+virtual void Video\+Player\+Impl\+::jump\+To\+Frame (\begin{DoxyParamCaption}\item[{int}]{frame\+\_\+request}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+jump\+To\+Frame jump to the frame of the video 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame\+\_\+request} & the frame requested \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+this function should jump to the frame sync, 
+\end{DoxyNote}
+
+
+Implemented in \mbox{\hyperlink{class_video_player_opencv_impl_aac0098cdf634919d6f12937aefa0bf7f}{Video\+Player\+Opencv\+Impl}}, \mbox{\hyperlink{class_video_player_opencv_impl_aac0098cdf634919d6f12937aefa0bf7f}{Video\+Player\+Opencv\+Impl}}, and \mbox{\hyperlink{class_video_player_opencv_impl_aac0098cdf634919d6f12937aefa0bf7f}{Video\+Player\+Opencv\+Impl}}.
+
+\Hypertarget{class_video_player_impl_af3287cbd611a3e497e7008eef5b345af}\index{VideoPlayerImpl@{VideoPlayerImpl}!jumpToFrame@{jumpToFrame}}
+\index{jumpToFrame@{jumpToFrame}!VideoPlayerImpl@{VideoPlayerImpl}}
+\doxysubsubsection{\texorpdfstring{jumpToFrame()}{jumpToFrame()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_video_player_impl_af3287cbd611a3e497e7008eef5b345af} 
+virtual void Video\+Player\+Impl\+::jump\+To\+Frame (\begin{DoxyParamCaption}\item[{int}]{frame\+\_\+request}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_video_player_opencv_impl_aac0098cdf634919d6f12937aefa0bf7f}{Video\+Player\+Opencv\+Impl}}, \mbox{\hyperlink{class_video_player_opencv_impl_aac0098cdf634919d6f12937aefa0bf7f}{Video\+Player\+Opencv\+Impl}}, and \mbox{\hyperlink{class_video_player_opencv_impl_aac0098cdf634919d6f12937aefa0bf7f}{Video\+Player\+Opencv\+Impl}}.
+
+\Hypertarget{class_video_player_impl_af3287cbd611a3e497e7008eef5b345af}\index{VideoPlayerImpl@{VideoPlayerImpl}!jumpToFrame@{jumpToFrame}}
+\index{jumpToFrame@{jumpToFrame}!VideoPlayerImpl@{VideoPlayerImpl}}
+\doxysubsubsection{\texorpdfstring{jumpToFrame()}{jumpToFrame()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_video_player_impl_af3287cbd611a3e497e7008eef5b345af} 
+virtual void Video\+Player\+Impl\+::jump\+To\+Frame (\begin{DoxyParamCaption}\item[{int}]{frame\+\_\+request}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+jump\+To\+Frame jump to the frame of the video 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame\+\_\+request} & the frame requested \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+this function should jump to the frame sync, 
+\end{DoxyNote}
+
+
+Implemented in \mbox{\hyperlink{class_video_player_opencv_impl_aac0098cdf634919d6f12937aefa0bf7f}{Video\+Player\+Opencv\+Impl}}, \mbox{\hyperlink{class_video_player_opencv_impl_aac0098cdf634919d6f12937aefa0bf7f}{Video\+Player\+Opencv\+Impl}}, and \mbox{\hyperlink{class_video_player_opencv_impl_aac0098cdf634919d6f12937aefa0bf7f}{Video\+Player\+Opencv\+Impl}}.
+
+\Hypertarget{class_video_player_impl_a2c00fbac2097847c8a2e38af0707b56c}\index{VideoPlayerImpl@{VideoPlayerImpl}!open@{open}}
+\index{open@{open}!VideoPlayerImpl@{VideoPlayerImpl}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_video_player_impl_a2c00fbac2097847c8a2e38af0707b56c} 
+virtual bool Video\+Player\+Impl\+::open (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{filename}{, }\item[{Video\+Player\+Open\+Error\+Code \&}]{error\+\_\+code}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+open open the video file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & the file name to open \\
+\hline
+{\em error\+\_\+code} & the error code \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the video is opened successfully 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+in syntax level, it means making the resources available 
+\end{DoxyNote}
+
+
+Implemented in \mbox{\hyperlink{class_video_player_opencv_impl_aa2f3f59905c31d076b49c686db5bf0a2}{Video\+Player\+Opencv\+Impl}}, \mbox{\hyperlink{class_video_player_opencv_impl_aa2f3f59905c31d076b49c686db5bf0a2}{Video\+Player\+Opencv\+Impl}}, and \mbox{\hyperlink{class_video_player_opencv_impl_aa2f3f59905c31d076b49c686db5bf0a2}{Video\+Player\+Opencv\+Impl}}.
+
+\Hypertarget{class_video_player_impl_a2c00fbac2097847c8a2e38af0707b56c}\index{VideoPlayerImpl@{VideoPlayerImpl}!open@{open}}
+\index{open@{open}!VideoPlayerImpl@{VideoPlayerImpl}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_video_player_impl_a2c00fbac2097847c8a2e38af0707b56c} 
+virtual bool Video\+Player\+Impl\+::open (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{filename}{, }\item[{Video\+Player\+Open\+Error\+Code \&}]{error\+\_\+code}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_video_player_opencv_impl_aa2f3f59905c31d076b49c686db5bf0a2}{Video\+Player\+Opencv\+Impl}}, \mbox{\hyperlink{class_video_player_opencv_impl_aa2f3f59905c31d076b49c686db5bf0a2}{Video\+Player\+Opencv\+Impl}}, and \mbox{\hyperlink{class_video_player_opencv_impl_aa2f3f59905c31d076b49c686db5bf0a2}{Video\+Player\+Opencv\+Impl}}.
+
+\Hypertarget{class_video_player_impl_a2c00fbac2097847c8a2e38af0707b56c}\index{VideoPlayerImpl@{VideoPlayerImpl}!open@{open}}
+\index{open@{open}!VideoPlayerImpl@{VideoPlayerImpl}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_video_player_impl_a2c00fbac2097847c8a2e38af0707b56c} 
+virtual bool Video\+Player\+Impl\+::open (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{filename}{, }\item[{Video\+Player\+Open\+Error\+Code \&}]{error\+\_\+code}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+open open the video file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & the file name to open \\
+\hline
+{\em error\+\_\+code} & the error code \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the video is opened successfully 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+in syntax level, it means making the resources available 
+\end{DoxyNote}
+
+
+Implemented in \mbox{\hyperlink{class_video_player_opencv_impl_aa2f3f59905c31d076b49c686db5bf0a2}{Video\+Player\+Opencv\+Impl}}, \mbox{\hyperlink{class_video_player_opencv_impl_aa2f3f59905c31d076b49c686db5bf0a2}{Video\+Player\+Opencv\+Impl}}, and \mbox{\hyperlink{class_video_player_opencv_impl_aa2f3f59905c31d076b49c686db5bf0a2}{Video\+Player\+Opencv\+Impl}}.
+
+\Hypertarget{class_video_player_impl_a38d07a450e3088c638949046067d8225}\index{VideoPlayerImpl@{VideoPlayerImpl}!peek\_frame@{peek\_frame}}
+\index{peek\_frame@{peek\_frame}!VideoPlayerImpl@{VideoPlayerImpl}}
+\doxysubsubsection{\texorpdfstring{peek\_frame()}{peek\_frame()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_video_player_impl_a38d07a450e3088c638949046067d8225} 
+virtual bool Video\+Player\+Impl\+::peek\+\_\+frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_v_image}{CVImage}} \&}]{container}{, }\item[{int}]{frame\+\_\+request}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+peek\+\_\+frame peek the frame of the video 
+
+
+\begin{DoxyParams}{Parameters}
+{\em container} & the container to store the frame \\
+\hline
+{\em frame\+\_\+request} & the frame requested \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the frame is peeked successfully 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+the video will not be rolled, and the target frame will be request and if success, install to the container 
+\end{DoxyNote}
+
+
+Implemented in \mbox{\hyperlink{class_video_player_opencv_impl_a484886797cbb8c0b125d817a2b08d8cc}{Video\+Player\+Opencv\+Impl}}, \mbox{\hyperlink{class_video_player_opencv_impl_a484886797cbb8c0b125d817a2b08d8cc}{Video\+Player\+Opencv\+Impl}}, and \mbox{\hyperlink{class_video_player_opencv_impl_a484886797cbb8c0b125d817a2b08d8cc}{Video\+Player\+Opencv\+Impl}}.
+
+\Hypertarget{class_video_player_impl_a38d07a450e3088c638949046067d8225}\index{VideoPlayerImpl@{VideoPlayerImpl}!peek\_frame@{peek\_frame}}
+\index{peek\_frame@{peek\_frame}!VideoPlayerImpl@{VideoPlayerImpl}}
+\doxysubsubsection{\texorpdfstring{peek\_frame()}{peek\_frame()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_video_player_impl_a38d07a450e3088c638949046067d8225} 
+virtual bool Video\+Player\+Impl\+::peek\+\_\+frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_v_image}{CVImage}} \&}]{container}{, }\item[{int}]{frame\+\_\+request}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_video_player_opencv_impl_a484886797cbb8c0b125d817a2b08d8cc}{Video\+Player\+Opencv\+Impl}}, \mbox{\hyperlink{class_video_player_opencv_impl_a484886797cbb8c0b125d817a2b08d8cc}{Video\+Player\+Opencv\+Impl}}, and \mbox{\hyperlink{class_video_player_opencv_impl_a484886797cbb8c0b125d817a2b08d8cc}{Video\+Player\+Opencv\+Impl}}.
+
+\Hypertarget{class_video_player_impl_a38d07a450e3088c638949046067d8225}\index{VideoPlayerImpl@{VideoPlayerImpl}!peek\_frame@{peek\_frame}}
+\index{peek\_frame@{peek\_frame}!VideoPlayerImpl@{VideoPlayerImpl}}
+\doxysubsubsection{\texorpdfstring{peek\_frame()}{peek\_frame()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_video_player_impl_a38d07a450e3088c638949046067d8225} 
+virtual bool Video\+Player\+Impl\+::peek\+\_\+frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_v_image}{CVImage}} \&}]{container}{, }\item[{int}]{frame\+\_\+request}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+peek\+\_\+frame peek the frame of the video 
+
+
+\begin{DoxyParams}{Parameters}
+{\em container} & the container to store the frame \\
+\hline
+{\em frame\+\_\+request} & the frame requested \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the frame is peeked successfully 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+the video will not be rolled, and the target frame will be request and if success, install to the container 
+\end{DoxyNote}
+
+
+Implemented in \mbox{\hyperlink{class_video_player_opencv_impl_a484886797cbb8c0b125d817a2b08d8cc}{Video\+Player\+Opencv\+Impl}}, \mbox{\hyperlink{class_video_player_opencv_impl_a484886797cbb8c0b125d817a2b08d8cc}{Video\+Player\+Opencv\+Impl}}, and \mbox{\hyperlink{class_video_player_opencv_impl_a484886797cbb8c0b125d817a2b08d8cc}{Video\+Player\+Opencv\+Impl}}.
+
+\Hypertarget{class_video_player_impl_a09925d8ec75bd409d8526991e5cfa60e}\index{VideoPlayerImpl@{VideoPlayerImpl}!rollto\_nextFrame@{rollto\_nextFrame}}
+\index{rollto\_nextFrame@{rollto\_nextFrame}!VideoPlayerImpl@{VideoPlayerImpl}}
+\doxysubsubsection{\texorpdfstring{rollto\_nextFrame()}{rollto\_nextFrame()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_video_player_impl_a09925d8ec75bd409d8526991e5cfa60e} 
+virtual bool Video\+Player\+Impl\+::rollto\+\_\+next\+Frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_v_image}{CVImage}} \&}]{container}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+rollto\+\_\+next\+Frame roll to the next frame 
+
+
+\begin{DoxyParams}{Parameters}
+{\em container} & the container to store the frame \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the frame is rolled successfully 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+this function should peek the frame sync, with the video is supposed to roll the next level 
+\end{DoxyNote}
+
+
+Implemented in \mbox{\hyperlink{class_video_player_opencv_impl_ab0d491bb1ff965a4bcb1338a3f947fe9}{Video\+Player\+Opencv\+Impl}}, \mbox{\hyperlink{class_video_player_opencv_impl_ab0d491bb1ff965a4bcb1338a3f947fe9}{Video\+Player\+Opencv\+Impl}}, and \mbox{\hyperlink{class_video_player_opencv_impl_ab0d491bb1ff965a4bcb1338a3f947fe9}{Video\+Player\+Opencv\+Impl}}.
+
+\Hypertarget{class_video_player_impl_a09925d8ec75bd409d8526991e5cfa60e}\index{VideoPlayerImpl@{VideoPlayerImpl}!rollto\_nextFrame@{rollto\_nextFrame}}
+\index{rollto\_nextFrame@{rollto\_nextFrame}!VideoPlayerImpl@{VideoPlayerImpl}}
+\doxysubsubsection{\texorpdfstring{rollto\_nextFrame()}{rollto\_nextFrame()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_video_player_impl_a09925d8ec75bd409d8526991e5cfa60e} 
+virtual bool Video\+Player\+Impl\+::rollto\+\_\+next\+Frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_v_image}{CVImage}} \&}]{container}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_video_player_opencv_impl_ab0d491bb1ff965a4bcb1338a3f947fe9}{Video\+Player\+Opencv\+Impl}}, \mbox{\hyperlink{class_video_player_opencv_impl_ab0d491bb1ff965a4bcb1338a3f947fe9}{Video\+Player\+Opencv\+Impl}}, and \mbox{\hyperlink{class_video_player_opencv_impl_ab0d491bb1ff965a4bcb1338a3f947fe9}{Video\+Player\+Opencv\+Impl}}.
+
+\Hypertarget{class_video_player_impl_a09925d8ec75bd409d8526991e5cfa60e}\index{VideoPlayerImpl@{VideoPlayerImpl}!rollto\_nextFrame@{rollto\_nextFrame}}
+\index{rollto\_nextFrame@{rollto\_nextFrame}!VideoPlayerImpl@{VideoPlayerImpl}}
+\doxysubsubsection{\texorpdfstring{rollto\_nextFrame()}{rollto\_nextFrame()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_video_player_impl_a09925d8ec75bd409d8526991e5cfa60e} 
+virtual bool Video\+Player\+Impl\+::rollto\+\_\+next\+Frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_v_image}{CVImage}} \&}]{container}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+rollto\+\_\+next\+Frame roll to the next frame 
+
+
+\begin{DoxyParams}{Parameters}
+{\em container} & the container to store the frame \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the frame is rolled successfully 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+this function should peek the frame sync, with the video is supposed to roll the next level 
+\end{DoxyNote}
+
+
+Implemented in \mbox{\hyperlink{class_video_player_opencv_impl_ab0d491bb1ff965a4bcb1338a3f947fe9}{Video\+Player\+Opencv\+Impl}}, \mbox{\hyperlink{class_video_player_opencv_impl_ab0d491bb1ff965a4bcb1338a3f947fe9}{Video\+Player\+Opencv\+Impl}}, and \mbox{\hyperlink{class_video_player_opencv_impl_ab0d491bb1ff965a4bcb1338a3f947fe9}{Video\+Player\+Opencv\+Impl}}.
+
+\Hypertarget{class_video_player_impl_a8595b0bbe2ebb205c0c02b002755b0d0}\index{VideoPlayerImpl@{VideoPlayerImpl}!total\_frame@{total\_frame}}
+\index{total\_frame@{total\_frame}!VideoPlayerImpl@{VideoPlayerImpl}}
+\doxysubsubsection{\texorpdfstring{total\_frame()}{total\_frame()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_video_player_impl_a8595b0bbe2ebb205c0c02b002755b0d0} 
+virtual int Video\+Player\+Impl\+::total\+\_\+frame (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+total\+\_\+frame get the total frame of the video 
+
+\begin{DoxyReturn}{Returns}
+the total frame of the video 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_video_player_opencv_impl_a4cae59222a5def74c141cb109fe0b56e}{Video\+Player\+Opencv\+Impl}}, \mbox{\hyperlink{class_video_player_opencv_impl_a4cae59222a5def74c141cb109fe0b56e}{Video\+Player\+Opencv\+Impl}}, and \mbox{\hyperlink{class_video_player_opencv_impl_a4cae59222a5def74c141cb109fe0b56e}{Video\+Player\+Opencv\+Impl}}.
+
+\Hypertarget{class_video_player_impl_a8595b0bbe2ebb205c0c02b002755b0d0}\index{VideoPlayerImpl@{VideoPlayerImpl}!total\_frame@{total\_frame}}
+\index{total\_frame@{total\_frame}!VideoPlayerImpl@{VideoPlayerImpl}}
+\doxysubsubsection{\texorpdfstring{total\_frame()}{total\_frame()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_video_player_impl_a8595b0bbe2ebb205c0c02b002755b0d0} 
+virtual int Video\+Player\+Impl\+::total\+\_\+frame (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_video_player_opencv_impl_a4cae59222a5def74c141cb109fe0b56e}{Video\+Player\+Opencv\+Impl}}, \mbox{\hyperlink{class_video_player_opencv_impl_a4cae59222a5def74c141cb109fe0b56e}{Video\+Player\+Opencv\+Impl}}, and \mbox{\hyperlink{class_video_player_opencv_impl_a4cae59222a5def74c141cb109fe0b56e}{Video\+Player\+Opencv\+Impl}}.
+
+\Hypertarget{class_video_player_impl_a8595b0bbe2ebb205c0c02b002755b0d0}\index{VideoPlayerImpl@{VideoPlayerImpl}!total\_frame@{total\_frame}}
+\index{total\_frame@{total\_frame}!VideoPlayerImpl@{VideoPlayerImpl}}
+\doxysubsubsection{\texorpdfstring{total\_frame()}{total\_frame()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_video_player_impl_a8595b0bbe2ebb205c0c02b002755b0d0} 
+virtual int Video\+Player\+Impl\+::total\+\_\+frame (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+total\+\_\+frame get the total frame of the video 
+
+\begin{DoxyReturn}{Returns}
+the total frame of the video 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_video_player_opencv_impl_a4cae59222a5def74c141cb109fe0b56e}{Video\+Player\+Opencv\+Impl}}, \mbox{\hyperlink{class_video_player_opencv_impl_a4cae59222a5def74c141cb109fe0b56e}{Video\+Player\+Opencv\+Impl}}, and \mbox{\hyperlink{class_video_player_opencv_impl_a4cae59222a5def74c141cb109fe0b56e}{Video\+Player\+Opencv\+Impl}}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
 extern\+\_\+app/\+Media\+Player/base/Video\+Player\+Impl.\+h\item 
+extern\+\_\+app/professionals/library/\+Opencv\+Qt\+Adapter/core\+\_\+library/olds/videoplayer/Video\+Player\+Impl.\+h\item 
 extern\+\_\+app/professionals/library/\+Opencv\+Qt\+Adapter/core\+\_\+library/videoplayer/Video\+Player\+Impl.\+h\end{DoxyCompactItemize}

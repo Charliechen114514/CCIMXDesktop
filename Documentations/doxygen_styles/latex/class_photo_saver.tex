@@ -3,13 +3,12 @@
 \doxysubsubsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_photo_saver_a74898c501e061db0c56ab0b7684fa979}\label{class_photo_saver_a74898c501e061db0c56ab0b7684fa979} 
-enum class {\bfseries Error} \{ {\bfseries Save\+Success}
-, {\bfseries Null\+Image}
-, {\bfseries Dir\+Unsavable}
-, {\bfseries Image\+Self\+Save\+Failed}
+enum class \mbox{\hyperlink{class_photo_saver_a74898c501e061db0c56ab0b7684fa979}{Error}} \{ \mbox{\hyperlink{class_photo_saver_a74898c501e061db0c56ab0b7684fa979a6aa0dc678e191c86decf9a1fb2bd3bc2}{Save\+Success}}
+, \mbox{\hyperlink{class_photo_saver_a74898c501e061db0c56ab0b7684fa979a3ed7a65c58f2f380e6a74076e62a5fad}{Null\+Image}}
+, \mbox{\hyperlink{class_photo_saver_a74898c501e061db0c56ab0b7684fa979a0ee6b2f736ff8c61c56eafaabedea9a9}{Dir\+Unsavable}}
+, \mbox{\hyperlink{class_photo_saver_a74898c501e061db0c56ab0b7684fa979acaa2f3d619a191b0d0dfd1bae600841d}{Image\+Self\+Save\+Failed}}
  \}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The \doxylink{class_photo_saver_a74898c501e061db0c56ab0b7684fa979}{Error} enum provides the situations and cases of error types. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -19,12 +18,79 @@ enum class {\bfseries Error} \{ {\bfseries Save\+Success}
 \doxysubsubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_photo_saver_aceb47ee7501057dfe06e99d0a995d9d7}\label{class_photo_saver_aceb47ee7501057dfe06e99d0a995d9d7} 
-static bool {\bfseries dir\+Savable} (const QString \&dir)
-\item 
-\Hypertarget{class_photo_saver_ae2c7886868fdeb9c2042fb79fb53cfd6}\label{class_photo_saver_ae2c7886868fdeb9c2042fb79fb53cfd6} 
-static Error {\bfseries save\+Once} (const QPixmap \&image, const QString \&dir, const QString prefix="{}.jpg"{})
-\end{DoxyCompactItemize}
+static bool \mbox{\hyperlink{class_photo_saver_aceb47ee7501057dfe06e99d0a995d9d7}{dir\+Savable}} (const QString \&dir)
+\begin{DoxyCompactList}\small\item\em dir\+Savable check if the directory is savable \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_photo_saver_a74898c501e061db0c56ab0b7684fa979}{Error}} \mbox{\hyperlink{class_photo_saver_ae2c7886868fdeb9c2042fb79fb53cfd6}{save\+Once}} (const QPixmap \&image, const QString \&dir, const QString prefix="{}.jpg"{})
+\begin{DoxyCompactList}\small\item\em save\+Once save the image once \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\Hypertarget{class_photo_saver_a74898c501e061db0c56ab0b7684fa979}\index{PhotoSaver@{PhotoSaver}!Error@{Error}}
+\index{Error@{Error}!PhotoSaver@{PhotoSaver}}
+\doxysubsubsection{\texorpdfstring{Error}{Error}}
+{\footnotesize\ttfamily \label{class_photo_saver_a74898c501e061db0c56ab0b7684fa979} 
+enum class \mbox{\hyperlink{class_photo_saver_a74898c501e061db0c56ab0b7684fa979}{Photo\+Saver\+::\+Error}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+The \doxylink{class_photo_saver_a74898c501e061db0c56ab0b7684fa979}{Error} enum provides the situations and cases of error types. 
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SaveSuccess@{SaveSuccess}!PhotoSaver@{PhotoSaver}}\index{PhotoSaver@{PhotoSaver}!SaveSuccess@{SaveSuccess}}}\Hypertarget{class_photo_saver_a74898c501e061db0c56ab0b7684fa979a6aa0dc678e191c86decf9a1fb2bd3bc2}\label{class_photo_saver_a74898c501e061db0c56ab0b7684fa979a6aa0dc678e191c86decf9a1fb2bd3bc2} 
+Save\+Success&save success \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NullImage@{NullImage}!PhotoSaver@{PhotoSaver}}\index{PhotoSaver@{PhotoSaver}!NullImage@{NullImage}}}\Hypertarget{class_photo_saver_a74898c501e061db0c56ab0b7684fa979a3ed7a65c58f2f380e6a74076e62a5fad}\label{class_photo_saver_a74898c501e061db0c56ab0b7684fa979a3ed7a65c58f2f380e6a74076e62a5fad} 
+Null\+Image&image is null \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DirUnsavable@{DirUnsavable}!PhotoSaver@{PhotoSaver}}\index{PhotoSaver@{PhotoSaver}!DirUnsavable@{DirUnsavable}}}\Hypertarget{class_photo_saver_a74898c501e061db0c56ab0b7684fa979a0ee6b2f736ff8c61c56eafaabedea9a9}\label{class_photo_saver_a74898c501e061db0c56ab0b7684fa979a0ee6b2f736ff8c61c56eafaabedea9a9} 
+Dir\+Unsavable&directory is not savable \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ImageSelfSaveFailed@{ImageSelfSaveFailed}!PhotoSaver@{PhotoSaver}}\index{PhotoSaver@{PhotoSaver}!ImageSelfSaveFailed@{ImageSelfSaveFailed}}}\Hypertarget{class_photo_saver_a74898c501e061db0c56ab0b7684fa979acaa2f3d619a191b0d0dfd1bae600841d}\label{class_photo_saver_a74898c501e061db0c56ab0b7684fa979acaa2f3d619a191b0d0dfd1bae600841d} 
+Image\+Self\+Save\+Failed&image self save failed \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_photo_saver_aceb47ee7501057dfe06e99d0a995d9d7}\index{PhotoSaver@{PhotoSaver}!dirSavable@{dirSavable}}
+\index{dirSavable@{dirSavable}!PhotoSaver@{PhotoSaver}}
+\doxysubsubsection{\texorpdfstring{dirSavable()}{dirSavable()}}
+{\footnotesize\ttfamily \label{class_photo_saver_aceb47ee7501057dfe06e99d0a995d9d7} 
+bool Photo\+Saver\+::dir\+Savable (\begin{DoxyParamCaption}\item[{const QString \&}]{dir}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+dir\+Savable check if the directory is savable 
+
+\begin{DoxyReturn}{Returns}
+true if the directory is savable 
+\end{DoxyReturn}
+\Hypertarget{class_photo_saver_ae2c7886868fdeb9c2042fb79fb53cfd6}\index{PhotoSaver@{PhotoSaver}!saveOnce@{saveOnce}}
+\index{saveOnce@{saveOnce}!PhotoSaver@{PhotoSaver}}
+\doxysubsubsection{\texorpdfstring{saveOnce()}{saveOnce()}}
+{\footnotesize\ttfamily \label{class_photo_saver_ae2c7886868fdeb9c2042fb79fb53cfd6} 
+\mbox{\hyperlink{class_photo_saver_a74898c501e061db0c56ab0b7684fa979}{Photo\+Saver\+::\+Error}} Photo\+Saver\+::save\+Once (\begin{DoxyParamCaption}\item[{const QPixmap \&}]{image}{, }\item[{const QString \&}]{dir}{, }\item[{const QString}]{prefix}{ = {\ttfamily "{}.jpg"{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+save\+Once save the image once 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & the image to save \\
+\hline
+{\em dir} & the directory to save \\
+\hline
+{\em prefix} & the prefix of file name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the error code 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

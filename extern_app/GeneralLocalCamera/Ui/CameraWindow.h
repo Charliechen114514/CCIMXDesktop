@@ -16,11 +16,24 @@ class CameraWindow : public QMainWindow {
 
 public:
 	CameraWindow(QWidget* parent = nullptr);
+
+	/**
+	 * @brief fresh_cameralists refresh the camera lists
+	 * @note this will change the current selected camera, so
+	 * make sense when camera list is freshed
+	 */
 	void fresh_cameralists();
+	/**
+	 * @brief redirect to the save path
+	 * @param path the path to save
+	 */
 	void redirect(const QString path);
 	~CameraWindow();
 
 private slots:
+	/**
+	 * @brief on_btn_oppose_camera_clicked start/stop the camera sessions
+	 */
 	void on_btn_oppose_camera_clicked();
 
 private:

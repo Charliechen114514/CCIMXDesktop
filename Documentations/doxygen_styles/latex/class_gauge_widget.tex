@@ -1,5 +1,14 @@
 \doxysection{Gauge\+Widget Class Reference}
 \hypertarget{class_gauge_widget}{}\label{class_gauge_widget}\index{GaugeWidget@{GaugeWidget}}
+
+
+A customizable gauge widget for displaying numeric values.  
+
+
+
+
+{\ttfamily \#include $<$Gauge\+Widget.\+h$>$}
+
 Inheritance diagram for Gauge\+Widget\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,123 +18,246 @@ Inheritance diagram for Gauge\+Widget\+:\begin{figure}[H]
 \doxysubsubsection*{Signals}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_gauge_widget_a3283ed21959a4ebb277833eee3e3fd7c}\label{class_gauge_widget_a3283ed21959a4ebb277833eee3e3fd7c} 
-void {\bfseries value\+Changed} (double value)
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_gauge_widget_a3283ed21959a4ebb277833eee3e3fd7c}{value\+Changed}} (double value)
+\begin{DoxyCompactList}\small\item\em Signal emitted when the gauge value changes. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_gauge_widget_a465a803184afa3c090f36452d22483d3}\label{class_gauge_widget_a465a803184afa3c090f36452d22483d3} 
-{\bfseries Gauge\+Widget} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
-\item 
-\Hypertarget{class_gauge_widget_aff25912569d627ea1ccb78330c5c47e4}\label{class_gauge_widget_aff25912569d627ea1ccb78330c5c47e4} 
-void {\bfseries set\+Range} (int min, int max)
-\item 
-\Hypertarget{class_gauge_widget_a47bf448975b19e931df06afa074cc252}\label{class_gauge_widget_a47bf448975b19e931df06afa074cc252} 
-void {\bfseries set\+Title} (const QString \&title)
-\item 
-\Hypertarget{class_gauge_widget_a25854a94c156befbfc2850633d7c69fe}\label{class_gauge_widget_a25854a94c156befbfc2850633d7c69fe} 
-void {\bfseries set\+Unit} (const QString \&unit)
-\item 
-\Hypertarget{class_gauge_widget_a1c5e7d4bc4485033603c156f8b96af49}\label{class_gauge_widget_a1c5e7d4bc4485033603c156f8b96af49} 
-double {\bfseries value} () const
-\item 
-\Hypertarget{class_gauge_widget_a48d06bdd0fc8b272385679dc01a3a0cc}\label{class_gauge_widget_a48d06bdd0fc8b272385679dc01a3a0cc} 
-void {\bfseries update\+\_\+value} (const double value)
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{class_gauge_widget_a465a803184afa3c090f36452d22483d3}{Gauge\+Widget}} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gauge_widget_aff25912569d627ea1ccb78330c5c47e4}{set\+Range}} (int min, int max)
+\begin{DoxyCompactList}\small\item\em Set the gauge range. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gauge_widget_a47bf448975b19e931df06afa074cc252}{set\+Title}} (const QString \&title)
+\begin{DoxyCompactList}\small\item\em Set the title text displayed on the gauge. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gauge_widget_a25854a94c156befbfc2850633d7c69fe}{set\+Unit}} (const QString \&unit)
+\begin{DoxyCompactList}\small\item\em Set the unit text displayed with the value. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_gauge_widget_a1c5e7d4bc4485033603c156f8b96af49}{value}} () const
+\begin{DoxyCompactList}\small\item\em Get the current gauge value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gauge_widget_a48d06bdd0fc8b272385679dc01a3a0cc}{update\+\_\+value}} (const double value)
+\begin{DoxyCompactList}\small\item\em Update the gauge value with optional animation. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \Hypertarget{class_gauge_widget_a667fc249edc71ec4b237136bdeeff521}\label{class_gauge_widget_a667fc249edc71ec4b237136bdeeff521} 
 static constexpr int {\bfseries DEF\+\_\+\+MIN\+\_\+\+VALUE} \{ 0 \}
-\item 
+\begin{DoxyCompactList}\small\item\em Default minimum value of the gauge. \end{DoxyCompactList}\item 
 \Hypertarget{class_gauge_widget_a8823ed29ccfe8076f29097d75ed3ce55}\label{class_gauge_widget_a8823ed29ccfe8076f29097d75ed3ce55} 
 static constexpr int {\bfseries DEF\+\_\+\+MAX\+\_\+\+VALUE} \{ 100 \}
-\item 
+\begin{DoxyCompactList}\small\item\em Default maximum value of the gauge. \end{DoxyCompactList}\item 
 \Hypertarget{class_gauge_widget_a2abad1855cfcc2fad8d63f8eff5961f1}\label{class_gauge_widget_a2abad1855cfcc2fad8d63f8eff5961f1} 
 static constexpr short {\bfseries TITLE\+\_\+\+FONT\+\_\+\+SZ} \{ 12 \}
-\item 
+\begin{DoxyCompactList}\small\item\em Font size for the title text. \end{DoxyCompactList}\item 
 \Hypertarget{class_gauge_widget_ab14c90d903be853ce7e7e15581c00c90}\label{class_gauge_widget_ab14c90d903be853ce7e7e15581c00c90} 
 static constexpr short {\bfseries CURVAL\+\_\+\+FOUT\+\_\+\+SZ} \{ 10 \}
-\item 
+\begin{DoxyCompactList}\small\item\em Font size for the current value text. \end{DoxyCompactList}\item 
 \Hypertarget{class_gauge_widget_ad5c91a6fe3e9cd49a11309f4ea5b98cf}\label{class_gauge_widget_ad5c91a6fe3e9cd49a11309f4ea5b98cf} 
 static constexpr int {\bfseries ANIMATION\+\_\+\+DURATION} \{ 500 \}
-\item 
+\begin{DoxyCompactList}\small\item\em Duration of animation in milliseconds. \end{DoxyCompactList}\item 
 \Hypertarget{class_gauge_widget_a35028e69117120cc4f80029e5aaa18a7}\label{class_gauge_widget_a35028e69117120cc4f80029e5aaa18a7} 
 static constexpr float {\bfseries WIDGET\+\_\+\+MIN\+\_\+\+WIDTH} \{ 200 \}
-\item 
+\begin{DoxyCompactList}\small\item\em Minimum widget width. \end{DoxyCompactList}\item 
 \Hypertarget{class_gauge_widget_a53db40e089294fe5d482686b7e5d4a36}\label{class_gauge_widget_a53db40e089294fe5d482686b7e5d4a36} 
 static constexpr float {\bfseries WIDGET\+\_\+\+MIN\+\_\+\+HEIGHT} \{ 200 \}
-\item 
+\begin{DoxyCompactList}\small\item\em Minimum widget height. \end{DoxyCompactList}\item 
 \Hypertarget{class_gauge_widget_a256d1797b5bae4205fb30c68be6c05f4}\label{class_gauge_widget_a256d1797b5bae4205fb30c68be6c05f4} 
 static constexpr QColor {\bfseries BOARD\+\_\+\+COLOR} = QColor(160, 160, 160)
-\item 
+\begin{DoxyCompactList}\small\item\em Base color for the gauge board. \end{DoxyCompactList}\item 
 \Hypertarget{class_gauge_widget_aabd88fe0ae3e43c08b63b9d4a2cbf46e}\label{class_gauge_widget_aabd88fe0ae3e43c08b63b9d4a2cbf46e} 
 static constexpr QColor {\bfseries FROM\+\_\+\+BOARD\+\_\+\+COLOR} = QColor(190, 190, 190)
-\item 
+\begin{DoxyCompactList}\small\item\em Gradient start color for board. \end{DoxyCompactList}\item 
 \Hypertarget{class_gauge_widget_ae9e13dbb6231475b052219e055496cc1}\label{class_gauge_widget_ae9e13dbb6231475b052219e055496cc1} 
 static constexpr QColor {\bfseries TO\+\_\+\+BOARD\+\_\+\+COLOR} = QColor(110, 110, 110)
-\item 
+\begin{DoxyCompactList}\small\item\em Gradient end color for board. \end{DoxyCompactList}\item 
 \Hypertarget{class_gauge_widget_aec3958da812296d68d8093558f0d15e1}\label{class_gauge_widget_aec3958da812296d68d8093558f0d15e1} 
 static constexpr short {\bfseries BOARD\+\_\+\+LEN} = 1
-\item 
+\begin{DoxyCompactList}\small\item\em Width of the board outline. \end{DoxyCompactList}\item 
 \Hypertarget{class_gauge_widget_a99d142e2cd02e445962fdaa1007fc849}\label{class_gauge_widget_a99d142e2cd02e445962fdaa1007fc849} 
 static constexpr short {\bfseries START\+\_\+\+ANGLE} \{ 225 \}
-\item 
+\begin{DoxyCompactList}\small\item\em Start angle for gauge drawing (degrees) \end{DoxyCompactList}\item 
 \Hypertarget{class_gauge_widget_a8e198184645fd35131c09536c7e58007}\label{class_gauge_widget_a8e198184645fd35131c09536c7e58007} 
 static constexpr short {\bfseries TOTAL\+\_\+\+ANGLE} \{ 270 \}
-\item 
+\begin{DoxyCompactList}\small\item\em Total sweep angle of gauge arc (degrees) \end{DoxyCompactList}\item 
 \Hypertarget{class_gauge_widget_ac839af0e2b627f86e9fdc43397911f54}\label{class_gauge_widget_ac839af0e2b627f86e9fdc43397911f54} 
 static constexpr short {\bfseries COLOR\+\_\+\+GRAD\+\_\+\+WIDTH} \{ 8 \}
-\item 
+\begin{DoxyCompactList}\small\item\em Width of the color gradient arc. \end{DoxyCompactList}\item 
 \Hypertarget{class_gauge_widget_a906b102e5333288c507671010807fe3c}\label{class_gauge_widget_a906b102e5333288c507671010807fe3c} 
 static constexpr short {\bfseries COLOR\+\_\+\+RADIUS} \{ 90 \}
-\item 
+\begin{DoxyCompactList}\small\item\em Radius for the gradient arc. \end{DoxyCompactList}\item 
 \Hypertarget{class_gauge_widget_a0fb785ba1093f3e7076d5fe4b791abc9}\label{class_gauge_widget_a0fb785ba1093f3e7076d5fe4b791abc9} 
 static constexpr QColor {\bfseries START\+\_\+\+COLOR} = QColor(255, 0, 0)
-\item 
+\begin{DoxyCompactList}\small\item\em Gradient start color for the gauge arc. \end{DoxyCompactList}\item 
 \Hypertarget{class_gauge_widget_a5fdbccbafd5b9e10b933b5f2a0891c00}\label{class_gauge_widget_a5fdbccbafd5b9e10b933b5f2a0891c00} 
 static constexpr QColor {\bfseries END\+\_\+\+COLOR} = QColor(0, 255, 0)
-\item 
+\begin{DoxyCompactList}\small\item\em Gradient end color for the gauge arc. \end{DoxyCompactList}\item 
 \Hypertarget{class_gauge_widget_adac19bc2108a37e5c1ba42c36a9d7178}\label{class_gauge_widget_adac19bc2108a37e5c1ba42c36a9d7178} 
 static constexpr int {\bfseries TICK\+\_\+\+CNT} \{ 55 \}
-\item 
+\begin{DoxyCompactList}\small\item\em Total number of ticks on the gauge. \end{DoxyCompactList}\item 
 \Hypertarget{class_gauge_widget_ae76b23fa51810b7e0b12e85ccc6d2258}\label{class_gauge_widget_ae76b23fa51810b7e0b12e85ccc6d2258} 
 static constexpr short {\bfseries MAIN\+\_\+\+TICK\+\_\+\+WIDTH} \{ 2 \}
-\item 
+\begin{DoxyCompactList}\small\item\em Width of main ticks. \end{DoxyCompactList}\item 
 \Hypertarget{class_gauge_widget_a0625d59a9f6b07222eb88e1ff7997e79}\label{class_gauge_widget_a0625d59a9f6b07222eb88e1ff7997e79} 
 static constexpr short {\bfseries SUB\+\_\+\+TICK\+\_\+\+WIDTH} \{ 1 \}
-\item 
+\begin{DoxyCompactList}\small\item\em Width of sub ticks. \end{DoxyCompactList}\item 
 \Hypertarget{class_gauge_widget_a2e409434ea2ec707be357fc7db090436}\label{class_gauge_widget_a2e409434ea2ec707be357fc7db090436} 
 static constexpr short {\bfseries MAIN\+\_\+\+TICK\+\_\+\+LENGTH} \{ 8 \}
-\item 
+\begin{DoxyCompactList}\small\item\em Length of main ticks. \end{DoxyCompactList}\item 
 \Hypertarget{class_gauge_widget_a51a6dc4916bb8aa3fe7069505d007869}\label{class_gauge_widget_a51a6dc4916bb8aa3fe7069505d007869} 
 static constexpr short {\bfseries SUB\+\_\+\+TICK\+\_\+\+LENGTH} \{ 5 \}
-\item 
+\begin{DoxyCompactList}\small\item\em Length of sub ticks. \end{DoxyCompactList}\item 
 \Hypertarget{class_gauge_widget_a40f42cfa9170d525b1e4b4f8c065db5c}\label{class_gauge_widget_a40f42cfa9170d525b1e4b4f8c065db5c} 
 static constexpr short {\bfseries SUB\+\_\+\+MAIN\+\_\+\+RATE} \{ 5 \}
-\item 
+\begin{DoxyCompactList}\small\item\em Number of sub ticks per main tick. \end{DoxyCompactList}\item 
 \Hypertarget{class_gauge_widget_ac98523cab5b0c34196380b86d64714bb}\label{class_gauge_widget_ac98523cab5b0c34196380b86d64714bb} 
 static constexpr QColor {\bfseries TICK\+\_\+\+COLOR} = QColor(255, 255, 255)
-\item 
+\begin{DoxyCompactList}\small\item\em Color of the ticks. \end{DoxyCompactList}\item 
 \Hypertarget{class_gauge_widget_a30e3bbe3232381c7913469022e0c37f4}\label{class_gauge_widget_a30e3bbe3232381c7913469022e0c37f4} 
 static constexpr short {\bfseries LABEL\+\_\+\+FONT\+\_\+\+SZ} \{ 6 \}
-\item 
+\begin{DoxyCompactList}\small\item\em Font size for labels on ticks. \end{DoxyCompactList}\item 
 \Hypertarget{class_gauge_widget_aceffcc98a2ad7bc603d48f6a4ba247fa}\label{class_gauge_widget_aceffcc98a2ad7bc603d48f6a4ba247fa} 
 static constexpr QColor {\bfseries LABEL\+\_\+\+COLOR} = QColor(255, 255, 255)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Color for labels. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_gauge_widget_a4c4e5f95de27d1d89e796223af5cbd60}\label{class_gauge_widget_a4c4e5f95de27d1d89e796223af5cbd60} 
-void {\bfseries paint\+Event} (QPaint\+Event \texorpdfstring{$\ast$}{*}event) override
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_gauge_widget_a4c4e5f95de27d1d89e796223af5cbd60}{paint\+Event}} (QPaint\+Event \texorpdfstring{$\ast$}{*}event) override
+\begin{DoxyCompactList}\small\item\em Paint event handler to render the gauge. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
 \Hypertarget{class_gauge_widget_a49358e772127bbd3c6d1748da8dbbef5}\label{class_gauge_widget_a49358e772127bbd3c6d1748da8dbbef5} 
 double {\bfseries value}
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A customizable gauge widget for displaying numeric values. 
+
+This widget provides a circular gauge with configurable range, title, unit, and smooth animated value updates. It supports drawing ticks, labels, needle, and gradient arcs. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_gauge_widget_a465a803184afa3c090f36452d22483d3}\index{GaugeWidget@{GaugeWidget}!GaugeWidget@{GaugeWidget}}
+\index{GaugeWidget@{GaugeWidget}!GaugeWidget@{GaugeWidget}}
+\doxysubsubsection{\texorpdfstring{GaugeWidget()}{GaugeWidget()}}
+{\footnotesize\ttfamily \label{class_gauge_widget_a465a803184afa3c090f36452d22483d3} 
+Gauge\+Widget\+::\+Gauge\+Widget (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Parent widget pointer. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_gauge_widget_a4c4e5f95de27d1d89e796223af5cbd60}\index{GaugeWidget@{GaugeWidget}!paintEvent@{paintEvent}}
+\index{paintEvent@{paintEvent}!GaugeWidget@{GaugeWidget}}
+\doxysubsubsection{\texorpdfstring{paintEvent()}{paintEvent()}}
+{\footnotesize\ttfamily \label{class_gauge_widget_a4c4e5f95de27d1d89e796223af5cbd60} 
+void Gauge\+Widget\+::paint\+Event (\begin{DoxyParamCaption}\item[{QPaint\+Event \texorpdfstring{$\ast$}{*}}]{event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+
+
+Paint event handler to render the gauge. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & Paint event. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_gauge_widget_aff25912569d627ea1ccb78330c5c47e4}\index{GaugeWidget@{GaugeWidget}!setRange@{setRange}}
+\index{setRange@{setRange}!GaugeWidget@{GaugeWidget}}
+\doxysubsubsection{\texorpdfstring{setRange()}{setRange()}}
+{\footnotesize\ttfamily \label{class_gauge_widget_aff25912569d627ea1ccb78330c5c47e4} 
+void Gauge\+Widget\+::set\+Range (\begin{DoxyParamCaption}\item[{int}]{min}{, }\item[{int}]{max}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the gauge range. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em min} & Minimum value. \\
+\hline
+{\em max} & Maximum value. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_gauge_widget_a47bf448975b19e931df06afa074cc252}\index{GaugeWidget@{GaugeWidget}!setTitle@{setTitle}}
+\index{setTitle@{setTitle}!GaugeWidget@{GaugeWidget}}
+\doxysubsubsection{\texorpdfstring{setTitle()}{setTitle()}}
+{\footnotesize\ttfamily \label{class_gauge_widget_a47bf448975b19e931df06afa074cc252} 
+void Gauge\+Widget\+::set\+Title (\begin{DoxyParamCaption}\item[{const QString \&}]{title}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the title text displayed on the gauge. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & Gauge title. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_gauge_widget_a25854a94c156befbfc2850633d7c69fe}\index{GaugeWidget@{GaugeWidget}!setUnit@{setUnit}}
+\index{setUnit@{setUnit}!GaugeWidget@{GaugeWidget}}
+\doxysubsubsection{\texorpdfstring{setUnit()}{setUnit()}}
+{\footnotesize\ttfamily \label{class_gauge_widget_a25854a94c156befbfc2850633d7c69fe} 
+void Gauge\+Widget\+::set\+Unit (\begin{DoxyParamCaption}\item[{const QString \&}]{unit}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the unit text displayed with the value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unit} & Unit string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_gauge_widget_a48d06bdd0fc8b272385679dc01a3a0cc}\index{GaugeWidget@{GaugeWidget}!update\_value@{update\_value}}
+\index{update\_value@{update\_value}!GaugeWidget@{GaugeWidget}}
+\doxysubsubsection{\texorpdfstring{update\_value()}{update\_value()}}
+{\footnotesize\ttfamily \label{class_gauge_widget_a48d06bdd0fc8b272385679dc01a3a0cc} 
+void Gauge\+Widget\+::update\+\_\+value (\begin{DoxyParamCaption}\item[{const double}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Update the gauge value with optional animation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & New value to display. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_gauge_widget_a1c5e7d4bc4485033603c156f8b96af49}\index{GaugeWidget@{GaugeWidget}!value@{value}}
+\index{value@{value}!GaugeWidget@{GaugeWidget}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}}
+{\footnotesize\ttfamily \label{class_gauge_widget_a1c5e7d4bc4485033603c156f8b96af49} 
+double Gauge\+Widget\+::value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the current gauge value. 
+
+\begin{DoxyReturn}{Returns}
+Current value. 
+\end{DoxyReturn}
+\Hypertarget{class_gauge_widget_a3283ed21959a4ebb277833eee3e3fd7c}\index{GaugeWidget@{GaugeWidget}!valueChanged@{valueChanged}}
+\index{valueChanged@{valueChanged}!GaugeWidget@{GaugeWidget}}
+\doxysubsubsection{\texorpdfstring{valueChanged}{valueChanged}}
+{\footnotesize\ttfamily \label{class_gauge_widget_a3283ed21959a4ebb277833eee3e3fd7c} 
+void Gauge\+Widget\+::value\+Changed (\begin{DoxyParamCaption}\item[{double}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Signal emitted when the gauge value changes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The new value. \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

@@ -1,5 +1,14 @@
 \doxysection{App\+Weather\+Request Class Reference}
 \hypertarget{class_app_weather_request}{}\label{class_app_weather_request}\index{AppWeatherRequest@{AppWeatherRequest}}
+
+
+The \doxylink{class_app_weather_request}{App\+Weather\+Request} class The \doxylink{class_app_weather_request}{App\+Weather\+Request} class provides the weather request and implements the \doxylink{class_weather_request}{Weather\+Request} function.  
+
+
+
+
+{\ttfamily \#include $<$App\+Weather\+Request.\+h$>$}
+
 Inheritance diagram for App\+Weather\+Request\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -15,11 +24,10 @@ Inheritance diagram for App\+Weather\+Request\+:\begin{figure}[H]
 \Hypertarget{class_app_weather_request_a2a8538f869a2108344638225ce6d2ea7}\label{class_app_weather_request_a2a8538f869a2108344638225ce6d2ea7} 
 {\bfseries App\+Weather\+Request} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
 \item 
-\Hypertarget{class_app_weather_request_af546cc490a646c652c70a9ba55fd207c}\label{class_app_weather_request_af546cc490a646c652c70a9ba55fd207c} 
-void {\bfseries bind\+App\+Detailed\+Request} (const \mbox{\hyperlink{struct_app_weather_detailed_request}{App\+Weather\+Detailed\+Request}} \&request)
-\item 
+void \mbox{\hyperlink{class_app_weather_request_af546cc490a646c652c70a9ba55fd207c}{bind\+App\+Detailed\+Request}} (const \mbox{\hyperlink{struct_app_weather_detailed_request}{App\+Weather\+Detailed\+Request}} \&request)
+\begin{DoxyCompactList}\small\item\em bind\+App\+Detailed\+Request \end{DoxyCompactList}\item 
 QUrl\+Query \mbox{\hyperlink{class_app_weather_request_aa484e3ab2825abedcc5fd80b6969d8a3}{compose\+\_\+request}} () override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em compose\+\_\+request compose request required devs to complete the function of how to compose the request \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_weather_request}{Weather\+Request}}}
 \begin{DoxyCompactItemize}
 \item 
@@ -27,16 +35,16 @@ QUrl\+Query \mbox{\hyperlink{class_app_weather_request_aa484e3ab2825abedcc5fd80b
 \item 
 {\bfseries Weather\+Request} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
 \item 
-void {\bfseries async\+\_\+request} (const char \texorpdfstring{$\ast$}{*}base\+\_\+url)
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_weather_request_a536ac3f283539dd0b7d7885bb53fc7b5}{async\+\_\+request}} (const char \texorpdfstring{$\ast$}{*}base\+\_\+url)
+\begin{DoxyCompactList}\small\item\em async\+\_\+request this function is used to send the request \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Additional Inherited Members}
 \doxysubsection*{Signals inherited from \mbox{\hyperlink{class_weather_request}{Weather\+Request}}}
 \begin{DoxyCompactItemize}
 \item 
-void {\bfseries error\+Occurs} (QNetwork\+Reply \texorpdfstring{$\ast$}{*}reply)
-\item 
-void {\bfseries result\+\_\+available} (const QString json)
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_weather_request_ad6741445b3b9ed4fdb60f1a53293e720}{error\+Occurs}} (QNetwork\+Reply \texorpdfstring{$\ast$}{*}reply)
+\begin{DoxyCompactList}\small\item\em error\+Occurs when an error occurs, this signal will be emitted \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_weather_request_a182f4d1dd7b4a801eb9a9469f88dc000}{result\+\_\+available}} (const QString json)
+\begin{DoxyCompactList}\small\item\em result\+\_\+available when the result is available, this signal will be emitted \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_weather_request}{Weather\+Request}}}
 \begin{DoxyCompactItemize}
 \item 
@@ -49,7 +57,25 @@ static constexpr const char \texorpdfstring{$\ast$}{*} {\bfseries private\+\_\+k
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+The \doxylink{class_app_weather_request}{App\+Weather\+Request} class The \doxylink{class_app_weather_request}{App\+Weather\+Request} class provides the weather request and implements the \doxylink{class_weather_request}{Weather\+Request} function. 
+
 \doxysubsection{Member Function Documentation}
+\Hypertarget{class_app_weather_request_af546cc490a646c652c70a9ba55fd207c}\index{AppWeatherRequest@{AppWeatherRequest}!bindAppDetailedRequest@{bindAppDetailedRequest}}
+\index{bindAppDetailedRequest@{bindAppDetailedRequest}!AppWeatherRequest@{AppWeatherRequest}}
+\doxysubsubsection{\texorpdfstring{bindAppDetailedRequest()}{bindAppDetailedRequest()}}
+{\footnotesize\ttfamily \label{class_app_weather_request_af546cc490a646c652c70a9ba55fd207c} 
+void App\+Weather\+Request\+::bind\+App\+Detailed\+Request (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_app_weather_detailed_request}{App\+Weather\+Detailed\+Request}} \&}]{request}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+bind\+App\+Detailed\+Request 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & request we shell make \\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_app_weather_request_aa484e3ab2825abedcc5fd80b6969d8a3}\index{AppWeatherRequest@{AppWeatherRequest}!compose\_request@{compose\_request}}
 \index{compose\_request@{compose\_request}!AppWeatherRequest@{AppWeatherRequest}}
 \doxysubsubsection{\texorpdfstring{compose\_request()}{compose\_request()}}
@@ -58,7 +84,14 @@ QUrl\+Query App\+Weather\+Request\+::compose\+\_\+request (\begin{DoxyParamCapti
 
 
 
-Implements \mbox{\hyperlink{class_weather_request}{Weather\+Request}}.
+compose\+\_\+request compose request required devs to complete the function of how to compose the request 
+
+\begin{DoxyReturn}{Returns}
+the request url 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_weather_request_a2faec779862560dbe931d723025787d1}{Weather\+Request}}.
 
 
 

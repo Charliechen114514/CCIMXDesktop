@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['🚀_20tt_20extern_5fapp_20tt_0',['🚀 tt extern_app tt',['../md__components-explain-_c_n.html#autotoc_md7',1,'🚀 &lt;tt&gt;extern_app&lt;/tt&gt;'],['../md__components-explain-_e_n.html#autotoc_md19',1,'🚀 &lt;tt&gt;extern_app&lt;/tt&gt;']]]
+  ['🎨_20tt_20ui_20tt_0',['🎨 tt ui tt',['../md__components-explain-_c_n.html#autotoc_md11',1,'🎨 &lt;tt&gt;ui&lt;/tt&gt;'],['../md__components-explain-_e_n.html#autotoc_md23',1,'🎨 &lt;tt&gt;ui&lt;/tt&gt;']]]
 ];

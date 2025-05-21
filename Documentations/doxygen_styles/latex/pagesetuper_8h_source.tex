@@ -16,30 +16,29 @@
 \DoxyCodeLine{00012\ }
 \DoxyCodeLine{00013\ \textcolor{keyword}{namespace\ }PageSetuper\ \{}
 \DoxyCodeLine{00014\ }
-\DoxyCodeLine{00015\ \textcolor{comment}{/*\ sessions\ required\ */}}
-\DoxyCodeLine{00016\ }
-\DoxyCodeLine{00022\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_page_setuper_1_1_page_setup_session_request}{PageSetupSessionRequest}}\ \{}
-\DoxyCodeLine{00023\ \ \ \ \ QString\ \mbox{\hyperlink{struct_page_setuper_1_1_page_setup_session_request_a96a020059da363d9355a655237b18949}{pixmap\_addr}}\ \{\};\ }
-\DoxyCodeLine{00024\ \ \ \ \ QString\ \mbox{\hyperlink{struct_page_setuper_1_1_page_setup_session_request_a5540028f3b30b884999e41dfe56600b5}{app\_name}}\ \{\};\ }
-\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_application_wrapper}{ApplicationWrapper}}*\ \mbox{\hyperlink{struct_page_setuper_1_1_page_setup_session_request_a8522a2cfbefeb286ffacb1af7861036c}{app}}\ \{\ \textcolor{keyword}{nullptr}\ \};\ }
-\DoxyCodeLine{00026\ \};}
-\DoxyCodeLine{00027\ }
-\DoxyCodeLine{00028\ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ APP\_ICON\_SZ\ =\ 48;}
-\DoxyCodeLine{00029\ }
-\DoxyCodeLine{00037\ QList<AppWidget*>\ create\_one\_app\_only\_page\_append(}
-\DoxyCodeLine{00038\ \ \ \ \ QStackedWidget*\ widget,\ \mbox{\hyperlink{class_desktop_main_window}{DesktopMainWindow}}*\ mainWindow,}
-\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{const}\ QList<PageSetupSessionRequest>\&\ sessionRequest);}
-\DoxyCodeLine{00040\ }
-\DoxyCodeLine{00041\ QList<AppWidget*>\ create\_real\_app(\mbox{\hyperlink{class_desktop_main_window}{DesktopMainWindow}}*\ mainWindow);}
-\DoxyCodeLine{00042\ }
-\DoxyCodeLine{00043\ \textcolor{comment}{/*\ this\ create\ a\ page\ specified\ for\ user\ defined\ */}}
-\DoxyCodeLine{00044\ \textcolor{keywordtype}{void}\ create\_specified\_page(}
-\DoxyCodeLine{00045\ \ \ \ \ QStackedWidget*\ widget,\ QWidget*\ paged\_widget);}
-\DoxyCodeLine{00046\ }
-\DoxyCodeLine{00047\ \textcolor{keywordtype}{void}\ add\_to\_dock(\mbox{\hyperlink{class_down_dock_widget}{DownDockWidget}}*\ downdock,\ \mbox{\hyperlink{class_desktop_main_window}{DesktopMainWindow}}*\ mainWindow,\ \textcolor{keyword}{const}\ QList<AppWidget*>\&\ widgets);}
+\DoxyCodeLine{00018\ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{int}\ MAX\_WIDTH\ =\ 4;}
+\DoxyCodeLine{00022\ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{int}\ MAX\_HEIGHT\ =\ 4;}
+\DoxyCodeLine{00028\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_page_setuper_1_1_page_setup_session_request}{PageSetupSessionRequest}}\ \{}
+\DoxyCodeLine{00029\ \ \ \ \ QString\ \mbox{\hyperlink{struct_page_setuper_1_1_page_setup_session_request_a96a020059da363d9355a655237b18949}{pixmap\_addr}}\ \{\};\ }
+\DoxyCodeLine{00030\ \ \ \ \ QString\ \mbox{\hyperlink{struct_page_setuper_1_1_page_setup_session_request_a5540028f3b30b884999e41dfe56600b5}{app\_name}}\ \{\};\ }
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_application_wrapper}{ApplicationWrapper}}*\ \mbox{\hyperlink{struct_page_setuper_1_1_page_setup_session_request_a8522a2cfbefeb286ffacb1af7861036c}{app}}\ \{\ \textcolor{keyword}{nullptr}\ \};\ }
+\DoxyCodeLine{00032\ \};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ APP\_ICON\_SZ\ =\ 48;}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00045\ QList<AppWidget*>\ create\_one\_app\_only\_page\_append(}
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{class_desktop_main_window}{DesktopMainWindow}}*\ mainWindow,}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keyword}{const}\ QList<PageSetupSessionRequest>\&\ sessionRequest);}
 \DoxyCodeLine{00048\ }
-\DoxyCodeLine{00049\ \};}
-\DoxyCodeLine{00050\ }
-\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PAGESETUPER\_H}}
+\DoxyCodeLine{00054\ QList<AppWidget*>\ create\_real\_app(\mbox{\hyperlink{class_desktop_main_window}{DesktopMainWindow}}*\ mainWindow);}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00062\ \textcolor{keywordtype}{void}\ create\_specified\_page(}
+\DoxyCodeLine{00063\ \ \ \ \ QStackedWidget*\ widget,\ QWidget*\ paged\_widget);}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00070\ \textcolor{keywordtype}{void}\ add\_to\_dock(\mbox{\hyperlink{class_desktop_main_window}{DesktopMainWindow}}*\ mainWindow,\ \textcolor{keyword}{const}\ QList<AppWidget*>\&\ widgets);}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \};}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PAGESETUPER\_H}}
 
 \end{DoxyCode}

@@ -108,6 +108,11 @@ $(function(){initNavTree('class_c_v_image_impl.html',''); initResizable(true); }
   <div class="headertitle"><div class="title">CVImageImpl Class Reference<span class="mlabels"><span class="mlabel abstract">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The <a class="el" href="class_c_v_image_impl.html" title="The CVImageImpl class is the image interface classes, or, backend of the CVImage.">CVImageImpl</a> class is the image interface classes, or, backend of the <a class="el" href="class_c_v_image.html" title="The CVImage class is the image class that provides the image in the frameworks.">CVImage</a>.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_media_player_2base_2_c_v_image_impl_8h_source.html">CVImageImpl.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for CVImageImpl:</div>
 <div class="dyncontent">
@@ -116,39 +121,444 @@ Inheritance diagram for CVImageImpl:</div>
   <map id="CVImageImpl_map" name="CVImageImpl_map">
 <area href="class_c_v_image_opencv_impl.html" alt="CVImageOpencvImpl" shape="rect" coords="0,56,130,80"/>
 <area href="class_c_v_image_opencv_impl.html" alt="CVImageOpencvImpl" shape="rect" coords="140,56,270,80"/>
+<area href="class_c_v_image_opencv_impl.html" alt="CVImageOpencvImpl" shape="rect" coords="280,56,410,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a298e52a3d0ff911c7e2ea2fdebf70c05" id="r_a298e52a3d0ff911c7e2ea2fdebf70c05"><td class="memItemLeft" align="right" valign="top"><a id="a298e52a3d0ff911c7e2ea2fdebf70c05" name="a298e52a3d0ff911c7e2ea2fdebf70c05"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>load_from_file</b> (const char *filename)=0</td></tr>
+<tr class="memitem:a298e52a3d0ff911c7e2ea2fdebf70c05" id="r_a298e52a3d0ff911c7e2ea2fdebf70c05"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a298e52a3d0ff911c7e2ea2fdebf70c05">load_from_file</a> (const char *filename)=0</td></tr>
+<tr class="memdesc:a298e52a3d0ff911c7e2ea2fdebf70c05"><td class="mdescLeft">&#160;</td><td class="mdescRight">load the image from file  <br /></td></tr>
 <tr class="separator:a298e52a3d0ff911c7e2ea2fdebf70c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a301dc980e78028f18bfcc6e4c05761d2" id="r_a301dc980e78028f18bfcc6e4c05761d2"><td class="memItemLeft" align="right" valign="top"><a id="a301dc980e78028f18bfcc6e4c05761d2" name="a301dc980e78028f18bfcc6e4c05761d2"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>assigned</b> (const <a class="el" href="class_c_v_image_impl.html">CVImageImpl</a> *impl, bool req_copy)=0</td></tr>
+<tr class="memitem:a301dc980e78028f18bfcc6e4c05761d2" id="r_a301dc980e78028f18bfcc6e4c05761d2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a301dc980e78028f18bfcc6e4c05761d2">assigned</a> (const <a class="el" href="class_c_v_image_impl.html">CVImageImpl</a> *impl, bool req_copy)=0</td></tr>
+<tr class="memdesc:a301dc980e78028f18bfcc6e4c05761d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">assigned the image to this image  <br /></td></tr>
 <tr class="separator:a301dc980e78028f18bfcc6e4c05761d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fcb8483f22fb19df433b6a52a30ce36" id="r_a4fcb8483f22fb19df433b6a52a30ce36"><td class="memItemLeft" align="right" valign="top"><a id="a4fcb8483f22fb19df433b6a52a30ce36" name="a4fcb8483f22fb19df433b6a52a30ce36"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>pass_copy</b> (const <a class="el" href="class_c_v_image_impl.html">CVImageImpl</a> *copied)=0</td></tr>
+<tr class="memitem:a4fcb8483f22fb19df433b6a52a30ce36" id="r_a4fcb8483f22fb19df433b6a52a30ce36"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4fcb8483f22fb19df433b6a52a30ce36">pass_copy</a> (const <a class="el" href="class_c_v_image_impl.html">CVImageImpl</a> *copied)=0</td></tr>
+<tr class="memdesc:a4fcb8483f22fb19df433b6a52a30ce36"><td class="mdescLeft">&#160;</td><td class="mdescRight">pass_copy makes a passing assigned, for OpenCV like it just increase the ref count  <br /></td></tr>
 <tr class="separator:a4fcb8483f22fb19df433b6a52a30ce36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a022dad3b12fdd6bbecb96584622ebdf8" id="r_a022dad3b12fdd6bbecb96584622ebdf8"><td class="memItemLeft" align="right" valign="top"><a id="a022dad3b12fdd6bbecb96584622ebdf8" name="a022dad3b12fdd6bbecb96584622ebdf8"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>image_valid</b> ()=0</td></tr>
+<tr class="memitem:a022dad3b12fdd6bbecb96584622ebdf8" id="r_a022dad3b12fdd6bbecb96584622ebdf8"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a022dad3b12fdd6bbecb96584622ebdf8">image_valid</a> ()=0</td></tr>
+<tr class="memdesc:a022dad3b12fdd6bbecb96584622ebdf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">image_valid check if the image is valid  <br /></td></tr>
 <tr class="separator:a022dad3b12fdd6bbecb96584622ebdf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a298e52a3d0ff911c7e2ea2fdebf70c05" id="r_a298e52a3d0ff911c7e2ea2fdebf70c05"><td class="memItemLeft" align="right" valign="top"><a id="a298e52a3d0ff911c7e2ea2fdebf70c05" name="a298e52a3d0ff911c7e2ea2fdebf70c05"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>load_from_file</b> (const char *filename)=0</td></tr>
+<tr class="memitem:a298e52a3d0ff911c7e2ea2fdebf70c05" id="r_a298e52a3d0ff911c7e2ea2fdebf70c05"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a298e52a3d0ff911c7e2ea2fdebf70c05">load_from_file</a> (const char *filename)=0</td></tr>
+<tr class="memdesc:a298e52a3d0ff911c7e2ea2fdebf70c05"><td class="mdescLeft">&#160;</td><td class="mdescRight">load the image from file  <br /></td></tr>
 <tr class="separator:a298e52a3d0ff911c7e2ea2fdebf70c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a301dc980e78028f18bfcc6e4c05761d2" id="r_a301dc980e78028f18bfcc6e4c05761d2"><td class="memItemLeft" align="right" valign="top"><a id="a301dc980e78028f18bfcc6e4c05761d2" name="a301dc980e78028f18bfcc6e4c05761d2"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>assigned</b> (const <a class="el" href="class_c_v_image_impl.html">CVImageImpl</a> *impl, bool req_copy)=0</td></tr>
+<tr class="memitem:a301dc980e78028f18bfcc6e4c05761d2" id="r_a301dc980e78028f18bfcc6e4c05761d2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a301dc980e78028f18bfcc6e4c05761d2">assigned</a> (const <a class="el" href="class_c_v_image_impl.html">CVImageImpl</a> *impl, bool req_copy)=0</td></tr>
+<tr class="memdesc:a301dc980e78028f18bfcc6e4c05761d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">assigned the image to this image  <br /></td></tr>
 <tr class="separator:a301dc980e78028f18bfcc6e4c05761d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fcb8483f22fb19df433b6a52a30ce36" id="r_a4fcb8483f22fb19df433b6a52a30ce36"><td class="memItemLeft" align="right" valign="top"><a id="a4fcb8483f22fb19df433b6a52a30ce36" name="a4fcb8483f22fb19df433b6a52a30ce36"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>pass_copy</b> (const <a class="el" href="class_c_v_image_impl.html">CVImageImpl</a> *copied)=0</td></tr>
+<tr class="memitem:a4fcb8483f22fb19df433b6a52a30ce36" id="r_a4fcb8483f22fb19df433b6a52a30ce36"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4fcb8483f22fb19df433b6a52a30ce36">pass_copy</a> (const <a class="el" href="class_c_v_image_impl.html">CVImageImpl</a> *copied)=0</td></tr>
+<tr class="memdesc:a4fcb8483f22fb19df433b6a52a30ce36"><td class="mdescLeft">&#160;</td><td class="mdescRight">pass_copy makes a passing assigned, for OpenCV like it just increase the ref count  <br /></td></tr>
 <tr class="separator:a4fcb8483f22fb19df433b6a52a30ce36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a022dad3b12fdd6bbecb96584622ebdf8" id="r_a022dad3b12fdd6bbecb96584622ebdf8"><td class="memItemLeft" align="right" valign="top"><a id="a022dad3b12fdd6bbecb96584622ebdf8" name="a022dad3b12fdd6bbecb96584622ebdf8"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>image_valid</b> ()=0</td></tr>
+<tr class="memitem:a022dad3b12fdd6bbecb96584622ebdf8" id="r_a022dad3b12fdd6bbecb96584622ebdf8"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a022dad3b12fdd6bbecb96584622ebdf8">image_valid</a> ()=0</td></tr>
+<tr class="memdesc:a022dad3b12fdd6bbecb96584622ebdf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">image_valid check if the image is valid  <br /></td></tr>
+<tr class="separator:a022dad3b12fdd6bbecb96584622ebdf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a298e52a3d0ff911c7e2ea2fdebf70c05" id="r_a298e52a3d0ff911c7e2ea2fdebf70c05"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a298e52a3d0ff911c7e2ea2fdebf70c05">load_from_file</a> (const char *filename)=0</td></tr>
+<tr class="separator:a298e52a3d0ff911c7e2ea2fdebf70c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a301dc980e78028f18bfcc6e4c05761d2" id="r_a301dc980e78028f18bfcc6e4c05761d2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a301dc980e78028f18bfcc6e4c05761d2">assigned</a> (const <a class="el" href="class_c_v_image_impl.html">CVImageImpl</a> *impl, bool req_copy)=0</td></tr>
+<tr class="separator:a301dc980e78028f18bfcc6e4c05761d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fcb8483f22fb19df433b6a52a30ce36" id="r_a4fcb8483f22fb19df433b6a52a30ce36"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4fcb8483f22fb19df433b6a52a30ce36">pass_copy</a> (const <a class="el" href="class_c_v_image_impl.html">CVImageImpl</a> *copied)=0</td></tr>
+<tr class="separator:a4fcb8483f22fb19df433b6a52a30ce36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a022dad3b12fdd6bbecb96584622ebdf8" id="r_a022dad3b12fdd6bbecb96584622ebdf8"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a022dad3b12fdd6bbecb96584622ebdf8">image_valid</a> ()=0</td></tr>
 <tr class="separator:a022dad3b12fdd6bbecb96584622ebdf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="class_c_v_image_impl.html" title="The CVImageImpl class is the image interface classes, or, backend of the CVImage.">CVImageImpl</a> class is the image interface classes, or, backend of the <a class="el" href="class_c_v_image.html" title="The CVImage class is the image class that provides the image in the frameworks.">CVImage</a>. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a301dc980e78028f18bfcc6e4c05761d2" name="a301dc980e78028f18bfcc6e4c05761d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a301dc980e78028f18bfcc6e4c05761d2">&#9670;&#160;</a></span>assigned() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CVImageImpl::assigned </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_v_image_impl.html">CVImageImpl</a> *</td>          <td class="paramname"><span class="paramname"><em>impl</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>req_copy</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>assigned the image to this image </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">impl</td><td>the image to assign </td></tr>
+    <tr><td class="paramname">req_copy</td><td>if true, then copy the image </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_c_v_image_opencv_impl.html#ae9367615aab4c6af6c0090d4b3c706af">CVImageOpencvImpl</a>, <a class="el" href="class_c_v_image_opencv_impl.html#ae9367615aab4c6af6c0090d4b3c706af">CVImageOpencvImpl</a>, and <a class="el" href="class_c_v_image_opencv_impl.html#ae9367615aab4c6af6c0090d4b3c706af">CVImageOpencvImpl</a>.</p>
+
+</div>
+</div>
+<a id="a301dc980e78028f18bfcc6e4c05761d2" name="a301dc980e78028f18bfcc6e4c05761d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a301dc980e78028f18bfcc6e4c05761d2">&#9670;&#160;</a></span>assigned() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CVImageImpl::assigned </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_v_image_impl.html">CVImageImpl</a> *</td>          <td class="paramname"><span class="paramname"><em>impl</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>req_copy</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>assigned the image to this image </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">impl</td><td>the image to assign </td></tr>
+    <tr><td class="paramname">req_copy</td><td>if true, then copy the image </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_c_v_image_opencv_impl.html#ae9367615aab4c6af6c0090d4b3c706af">CVImageOpencvImpl</a>, <a class="el" href="class_c_v_image_opencv_impl.html#ae9367615aab4c6af6c0090d4b3c706af">CVImageOpencvImpl</a>, and <a class="el" href="class_c_v_image_opencv_impl.html#ae9367615aab4c6af6c0090d4b3c706af">CVImageOpencvImpl</a>.</p>
+
+</div>
+</div>
+<a id="a301dc980e78028f18bfcc6e4c05761d2" name="a301dc980e78028f18bfcc6e4c05761d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a301dc980e78028f18bfcc6e4c05761d2">&#9670;&#160;</a></span>assigned() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CVImageImpl::assigned </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_v_image_impl.html">CVImageImpl</a> *</td>          <td class="paramname"><span class="paramname"><em>impl</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>req_copy</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_c_v_image_opencv_impl.html#ae9367615aab4c6af6c0090d4b3c706af">CVImageOpencvImpl</a>, <a class="el" href="class_c_v_image_opencv_impl.html#ae9367615aab4c6af6c0090d4b3c706af">CVImageOpencvImpl</a>, and <a class="el" href="class_c_v_image_opencv_impl.html#ae9367615aab4c6af6c0090d4b3c706af">CVImageOpencvImpl</a>.</p>
+
+</div>
+</div>
+<a id="a022dad3b12fdd6bbecb96584622ebdf8" name="a022dad3b12fdd6bbecb96584622ebdf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a022dad3b12fdd6bbecb96584622ebdf8">&#9670;&#160;</a></span>image_valid() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool CVImageImpl::image_valid </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>image_valid check if the image is valid </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the image is valid </dd></dl>
+
+<p>Implemented in <a class="el" href="class_c_v_image_opencv_impl.html#a181a4ead3d48ff64268a469a033e8f2c">CVImageOpencvImpl</a>, <a class="el" href="class_c_v_image_opencv_impl.html#a181a4ead3d48ff64268a469a033e8f2c">CVImageOpencvImpl</a>, and <a class="el" href="class_c_v_image_opencv_impl.html#a181a4ead3d48ff64268a469a033e8f2c">CVImageOpencvImpl</a>.</p>
+
+</div>
+</div>
+<a id="a022dad3b12fdd6bbecb96584622ebdf8" name="a022dad3b12fdd6bbecb96584622ebdf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a022dad3b12fdd6bbecb96584622ebdf8">&#9670;&#160;</a></span>image_valid() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool CVImageImpl::image_valid </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>image_valid check if the image is valid </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the image is valid </dd></dl>
+
+<p>Implemented in <a class="el" href="class_c_v_image_opencv_impl.html#a181a4ead3d48ff64268a469a033e8f2c">CVImageOpencvImpl</a>, <a class="el" href="class_c_v_image_opencv_impl.html#a181a4ead3d48ff64268a469a033e8f2c">CVImageOpencvImpl</a>, and <a class="el" href="class_c_v_image_opencv_impl.html#a181a4ead3d48ff64268a469a033e8f2c">CVImageOpencvImpl</a>.</p>
+
+</div>
+</div>
+<a id="a022dad3b12fdd6bbecb96584622ebdf8" name="a022dad3b12fdd6bbecb96584622ebdf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a022dad3b12fdd6bbecb96584622ebdf8">&#9670;&#160;</a></span>image_valid() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool CVImageImpl::image_valid </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_c_v_image_opencv_impl.html#a181a4ead3d48ff64268a469a033e8f2c">CVImageOpencvImpl</a>, <a class="el" href="class_c_v_image_opencv_impl.html#a181a4ead3d48ff64268a469a033e8f2c">CVImageOpencvImpl</a>, and <a class="el" href="class_c_v_image_opencv_impl.html#a181a4ead3d48ff64268a469a033e8f2c">CVImageOpencvImpl</a>.</p>
+
+</div>
+</div>
+<a id="a298e52a3d0ff911c7e2ea2fdebf70c05" name="a298e52a3d0ff911c7e2ea2fdebf70c05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a298e52a3d0ff911c7e2ea2fdebf70c05">&#9670;&#160;</a></span>load_from_file() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CVImageImpl::load_from_file </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>load the image from file </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>the file name to load </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_c_v_image_opencv_impl.html#a0e106119f25f6b2218f1db8ccd4aacc5">CVImageOpencvImpl</a>, <a class="el" href="class_c_v_image_opencv_impl.html#a0e106119f25f6b2218f1db8ccd4aacc5">CVImageOpencvImpl</a>, and <a class="el" href="class_c_v_image_opencv_impl.html#a0e106119f25f6b2218f1db8ccd4aacc5">CVImageOpencvImpl</a>.</p>
+
+</div>
+</div>
+<a id="a298e52a3d0ff911c7e2ea2fdebf70c05" name="a298e52a3d0ff911c7e2ea2fdebf70c05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a298e52a3d0ff911c7e2ea2fdebf70c05">&#9670;&#160;</a></span>load_from_file() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CVImageImpl::load_from_file </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>load the image from file </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>the file name to load </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_c_v_image_opencv_impl.html#a0e106119f25f6b2218f1db8ccd4aacc5">CVImageOpencvImpl</a>, <a class="el" href="class_c_v_image_opencv_impl.html#a0e106119f25f6b2218f1db8ccd4aacc5">CVImageOpencvImpl</a>, and <a class="el" href="class_c_v_image_opencv_impl.html#a0e106119f25f6b2218f1db8ccd4aacc5">CVImageOpencvImpl</a>.</p>
+
+</div>
+</div>
+<a id="a298e52a3d0ff911c7e2ea2fdebf70c05" name="a298e52a3d0ff911c7e2ea2fdebf70c05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a298e52a3d0ff911c7e2ea2fdebf70c05">&#9670;&#160;</a></span>load_from_file() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CVImageImpl::load_from_file </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_c_v_image_opencv_impl.html#a0e106119f25f6b2218f1db8ccd4aacc5">CVImageOpencvImpl</a>, <a class="el" href="class_c_v_image_opencv_impl.html#a0e106119f25f6b2218f1db8ccd4aacc5">CVImageOpencvImpl</a>, and <a class="el" href="class_c_v_image_opencv_impl.html#a0e106119f25f6b2218f1db8ccd4aacc5">CVImageOpencvImpl</a>.</p>
+
+</div>
+</div>
+<a id="a4fcb8483f22fb19df433b6a52a30ce36" name="a4fcb8483f22fb19df433b6a52a30ce36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fcb8483f22fb19df433b6a52a30ce36">&#9670;&#160;</a></span>pass_copy() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CVImageImpl::pass_copy </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_v_image_impl.html">CVImageImpl</a> *</td>          <td class="paramname"><span class="paramname"><em>copied</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>pass_copy makes a passing assigned, for OpenCV like it just increase the ref count </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">copied</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_c_v_image_opencv_impl.html#a79ba9b0969a2b6088729ba69025518af">CVImageOpencvImpl</a>, <a class="el" href="class_c_v_image_opencv_impl.html#a79ba9b0969a2b6088729ba69025518af">CVImageOpencvImpl</a>, and <a class="el" href="class_c_v_image_opencv_impl.html#a79ba9b0969a2b6088729ba69025518af">CVImageOpencvImpl</a>.</p>
+
+</div>
+</div>
+<a id="a4fcb8483f22fb19df433b6a52a30ce36" name="a4fcb8483f22fb19df433b6a52a30ce36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fcb8483f22fb19df433b6a52a30ce36">&#9670;&#160;</a></span>pass_copy() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CVImageImpl::pass_copy </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_v_image_impl.html">CVImageImpl</a> *</td>          <td class="paramname"><span class="paramname"><em>copied</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>pass_copy makes a passing assigned, for OpenCV like it just increase the ref count </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">copied</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_c_v_image_opencv_impl.html#a79ba9b0969a2b6088729ba69025518af">CVImageOpencvImpl</a>, <a class="el" href="class_c_v_image_opencv_impl.html#a79ba9b0969a2b6088729ba69025518af">CVImageOpencvImpl</a>, and <a class="el" href="class_c_v_image_opencv_impl.html#a79ba9b0969a2b6088729ba69025518af">CVImageOpencvImpl</a>.</p>
+
+</div>
+</div>
+<a id="a4fcb8483f22fb19df433b6a52a30ce36" name="a4fcb8483f22fb19df433b6a52a30ce36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fcb8483f22fb19df433b6a52a30ce36">&#9670;&#160;</a></span>pass_copy() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CVImageImpl::pass_copy </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_v_image_impl.html">CVImageImpl</a> *</td>          <td class="paramname"><span class="paramname"><em>copied</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_c_v_image_opencv_impl.html#a79ba9b0969a2b6088729ba69025518af">CVImageOpencvImpl</a>, <a class="el" href="class_c_v_image_opencv_impl.html#a79ba9b0969a2b6088729ba69025518af">CVImageOpencvImpl</a>, and <a class="el" href="class_c_v_image_opencv_impl.html#a79ba9b0969a2b6088729ba69025518af">CVImageOpencvImpl</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>extern_app/MediaPlayer/base/<a class="el" href="_media_player_2base_2_c_v_image_impl_8h_source.html">CVImageImpl.h</a></li>
 <li>extern_app/professionals/library/OpencvQtAdapter/core_library/cvimage/<a class="el" href="professionals_2library_2_opencv_qt_adapter_2core__library_2cvimage_2_c_v_image_impl_8h_source.html">CVImageImpl.h</a></li>
+<li>extern_app/professionals/library/OpencvQtAdapter/core_library/olds/cvimage/<a class="el" href="professionals_2library_2_opencv_qt_adapter_2core__library_2olds_2cvimage_2_c_v_image_impl_8h_source.html">CVImageImpl.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

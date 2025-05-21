@@ -109,6 +109,11 @@ $(function(){initNavTree('class_c_c_pdf_chapter_creator.html',''); initResizable
   <div class="headertitle"><div class="title">CCPdfChapterCreator Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The <a class="el" href="class_c_c_pdf_chapter_creator.html" title="The CCPdfChapterCreator class The CCPdfChapterCreator class provides the pdf chapter creator.">CCPdfChapterCreator</a> class The <a class="el" href="class_c_c_pdf_chapter_creator.html" title="The CCPdfChapterCreator class The CCPdfChapterCreator class provides the pdf chapter creator.">CCPdfChapterCreator</a> class provides the pdf chapter creator.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="ccpdfchaptercreator_8h_source.html">ccpdfchaptercreator.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for CCPdfChapterCreator:</div>
 <div class="dyncontent">
@@ -118,11 +123,12 @@ Inheritance diagram for CCPdfChapterCreator:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
 Signals</h2></td></tr>
-<tr class="memitem:a81f895b1193099571057d5b917238694" id="r_a81f895b1193099571057d5b917238694"><td class="memItemLeft" align="right" valign="top"><a id="a81f895b1193099571057d5b917238694" name="a81f895b1193099571057d5b917238694"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>parse_start</b> (<a class="el" href="class_c_c_pdf_document.html">CCPdfDocument</a> *parse_document)</td></tr>
+<tr class="memitem:a81f895b1193099571057d5b917238694" id="r_a81f895b1193099571057d5b917238694"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81f895b1193099571057d5b917238694">parse_start</a> (<a class="el" href="class_c_c_pdf_document.html">CCPdfDocument</a> *parse_document)</td></tr>
+<tr class="memdesc:a81f895b1193099571057d5b917238694"><td class="mdescLeft">&#160;</td><td class="mdescRight">parse_start the signal to start parsing  <br /></td></tr>
 <tr class="separator:a81f895b1193099571057d5b917238694"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1ee3fc819281e3acea83a4fda6722d1" id="r_aa1ee3fc819281e3acea83a4fda6722d1"><td class="memItemLeft" align="right" valign="top"><a id="aa1ee3fc819281e3acea83a4fda6722d1" name="aa1ee3fc819281e3acea83a4fda6722d1"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>parse_finish</b> (QList&lt; <a class="el" href="struct_c_c_pdf_chapter_node.html">CCPdfChapterNode</a> &gt;)</td></tr>
+<tr class="memdesc:aa1ee3fc819281e3acea83a4fda6722d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">parse_finish the signal to finish parsing <br /></td></tr>
 <tr class="separator:aa1ee3fc819281e3acea83a4fda6722d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -130,13 +136,99 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a714ce56b29a0a0b2436d24059a1faa9f" id="r_a714ce56b29a0a0b2436d24059a1faa9f"><td class="memItemLeft" align="right" valign="top"><a id="a714ce56b29a0a0b2436d24059a1faa9f" name="a714ce56b29a0a0b2436d24059a1faa9f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>CCPdfChapterCreator</b> (QObject *parent=nullptr)</td></tr>
 <tr class="separator:a714ce56b29a0a0b2436d24059a1faa9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd74e20fb788bbef7d8d2cdaa0fd3e0e" id="r_afd74e20fb788bbef7d8d2cdaa0fd3e0e"><td class="memItemLeft" align="right" valign="top"><a id="afd74e20fb788bbef7d8d2cdaa0fd3e0e" name="afd74e20fb788bbef7d8d2cdaa0fd3e0e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>bindSolvedTreeWidget</b> (QTreeWidget *w)</td></tr>
+<tr class="memitem:afd74e20fb788bbef7d8d2cdaa0fd3e0e" id="r_afd74e20fb788bbef7d8d2cdaa0fd3e0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd74e20fb788bbef7d8d2cdaa0fd3e0e">bindSolvedTreeWidget</a> (QTreeWidget *w)</td></tr>
+<tr class="memdesc:afd74e20fb788bbef7d8d2cdaa0fd3e0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">bindSolvedTreeWidget bind the tree widget to the chapter creator  <br /></td></tr>
 <tr class="separator:afd74e20fb788bbef7d8d2cdaa0fd3e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64f55e80bdba072a4f9c72bdcddc8871" id="r_a64f55e80bdba072a4f9c72bdcddc8871"><td class="memItemLeft" align="right" valign="top"><a id="a64f55e80bdba072a4f9c72bdcddc8871" name="a64f55e80bdba072a4f9c72bdcddc8871"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>parse_and_set</b> (<a class="el" href="class_c_c_pdf_document.html">CCPdfDocument</a> *parse_document)</td></tr>
+<tr class="memitem:a64f55e80bdba072a4f9c72bdcddc8871" id="r_a64f55e80bdba072a4f9c72bdcddc8871"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64f55e80bdba072a4f9c72bdcddc8871">parse_and_set</a> (<a class="el" href="class_c_c_pdf_document.html">CCPdfDocument</a> *parse_document)</td></tr>
+<tr class="memdesc:a64f55e80bdba072a4f9c72bdcddc8871"><td class="mdescLeft">&#160;</td><td class="mdescRight">parse_and_set parse the document and set the tree widget  <br /></td></tr>
 <tr class="separator:a64f55e80bdba072a4f9c72bdcddc8871"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="class_c_c_pdf_chapter_creator.html" title="The CCPdfChapterCreator class The CCPdfChapterCreator class provides the pdf chapter creator.">CCPdfChapterCreator</a> class The <a class="el" href="class_c_c_pdf_chapter_creator.html" title="The CCPdfChapterCreator class The CCPdfChapterCreator class provides the pdf chapter creator.">CCPdfChapterCreator</a> class provides the pdf chapter creator. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="afd74e20fb788bbef7d8d2cdaa0fd3e0e" name="afd74e20fb788bbef7d8d2cdaa0fd3e0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd74e20fb788bbef7d8d2cdaa0fd3e0e">&#9670;&#160;</a></span>bindSolvedTreeWidget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CCPdfChapterCreator::bindSolvedTreeWidget </td>
+          <td>(</td>
+          <td class="paramtype">QTreeWidget *</td>          <td class="paramname"><span class="paramname"><em>w</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>bindSolvedTreeWidget bind the tree widget to the chapter creator </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">w</td><td>the tree widget to be bound </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a64f55e80bdba072a4f9c72bdcddc8871" name="a64f55e80bdba072a4f9c72bdcddc8871"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64f55e80bdba072a4f9c72bdcddc8871">&#9670;&#160;</a></span>parse_and_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CCPdfChapterCreator::parse_and_set </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_c_pdf_document.html">CCPdfDocument</a> *</td>          <td class="paramname"><span class="paramname"><em>parse_document</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>parse_and_set parse the document and set the tree widget </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parse_document</td><td>the document to be parsed </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a81f895b1193099571057d5b917238694" name="a81f895b1193099571057d5b917238694"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81f895b1193099571057d5b917238694">&#9670;&#160;</a></span>parse_start</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CCPdfChapterCreator::parse_start </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_c_pdf_document.html">CCPdfDocument</a> *</td>          <td class="paramname"><span class="paramname"><em>parse_document</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel signal">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>parse_start the signal to start parsing </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parse_document</td><td>the document to be parsed </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>extern_app/pdfReader/mupdf_adapter/<a class="el" href="ccpdfchaptercreator_8h_source.html">ccpdfchaptercreator.h</a></li>
 <li>extern_app/pdfReader/mupdf_adapter/<b>ccpdfchaptercreator.cpp</b></li>

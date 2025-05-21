@@ -1,3 +1,7 @@
+# set the proxy with http https if you have direct trouble in visiting githubs
+# set(ENV{http_proxy} "http://127.0.0.1:7890")
+# set(ENV{https_proxy} "http://127.0.0.1:7890")
+
 cmake_minimum_required(VERSION 3.19)
 project(CCIMX_Desktop LANGUAGES CXX)
 set(CMAKE_AUTORCC ON)
@@ -33,6 +37,11 @@ set(_DEF_RELEASE_BASE_GCC_RELEASE   "/home/charliechen/imx6ull/qt683_project/CCD
 set(MUPDF_INCLUDE_DIR "" CACHE PATH "MuPDF Include Directory")
 set(MUPDF_LIB_DIR "" CACHE PATH "MuPDF Library Directory")
 
+# Options for the Automatically generate documentations
+set(CCIMX_DOXYGEN_DOCUMENT_BASE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/Documentations/doxygen_styles CACHE PATH "Doxygen folders base")
+set(CCIMX_DOXYGEN_DOCUNENT_DOXYFILE_TEMPLATE ${CMAKE_CURRENT_SOURCE_DIR}/Doxyfile CACHE PATH "Doxygen template file path")
+
+option(CCIMX_DESKTOP_DOCGEN_REQ "Options for whether generate the document, Now Doxygen required" ON)
 # This part aims to find the Cross compile
 # If you only get the arm mupdf compiles, do notice to select the
 # correct kits with correct arch and compilers
@@ -259,6 +268,44 @@ qt_generate_deploy_app_script(
 )
 install(SCRIPT ${deploy_script})
 
+# About the Document generations sessions
+
+if(CCIMX_DESKTOP_DOCGEN_REQ)
+    find_package(Doxygen)
+
+    if(DOXYGEN_FOUND)
+        if(NOT DEFINED CCIMX_DOXYGEN_DOCUMENT_BASE_PATH)
+            message(FATAL_ERROR "CCIMX_DOXYGEN_DOCUMENT_BASE_PATH is not defined")
+        endif()
+        if(NOT DEFINED CCIMX_DOXYGEN_DOCUNENT_DOXYFILE_TEMPLATE)
+            message(FATAL_ERROR "CCIMX_DOXYGEN_DOCUNENT_DOXYFILE_TEMPLATE is not defined")
+        endif()
+
+        if(NOT EXISTS ${CCIMX_DOXYGEN_DOCUMENT_BASE_PATH})
+            message(FATAL_ERROR "CCIMX_DOXYGEN_DOCUMENT_BASE_PATH path does not exist: ${CCIMX_DOXYGEN_DOCUMENT_BASE_PATH}")
+        endif()
+        if(NOT EXISTS ${CCIMX_DOXYGEN_DOCUNENT_DOXYFILE_TEMPLATE})
+            message(FATAL_ERROR "CCIMX_DOXYGEN_DOCUNENT_DOXYFILE_TEMPLATE file does not exist: ${CCIMX_DOXYGEN_DOCUNENT_DOXYFILE_TEMPLATE}")
+        endif()
+
+        set(DOXYGEN_IN ${CCIMX_DOXYGEN_DOCUNENT_DOXYFILE_TEMPLATE})
+        set(DOXYGEN_OUT ${CCIMX_DOXYGEN_DOCUMENT_BASE_PATH})
+
+        add_custom_target(doc
+            COMMAND ${DOXYGEN_EXECUTABLE} ${DOXYGEN_IN}
+            WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
+            COMMENT "Generating API documentation with Doxygen"
+            VERBATIM
+        )
+    else()
+        message(WARNING "Doxygen not found, documentation target will not be available")
+    endif()
+else()
+    message(STATUS "We do not need to generate the documentations, "
+        "as the CCIMX_DESKTOP_DOCGEN_REQ is ${CCIMX_DESKTOP_DOCGEN_REQ}")
+endif()
+
+
 message(STATUS  "About to dump the message of the building in order to ensure the settings")
 message(STATUS  "-----------------------------------------------------")
 message(STATUS "Install Issue End: ")
@@ -280,3 +327,16 @@ message(STATUS "Environment Built status due to INCLUDE_ENV_APP:                
 message(STATUS "Sports Health Built status due to INCLUDE_SPORT_APP:            ${INCLUDE_SPORT_APP}")
 message(STATUS "OpenCV Adapters Built status due to INCLUDE_OPENCV_QT_ADAPTER:  ${INCLUDE_OPENCV_QT_ADAPTER}")
 message(STATUS "-----------------------------------------------------")
+message(STATUS "Dumping Documentations summon issues: ")
+message(STATUS "Doxygen Documentations Built status due to CCIMX_DESKTOP_DOCGEN_REQ: ${CCIMX_DESKTOP_DOCGEN_REQ}")
+if(CCIMX_DESKTOP_DOCGEN_REQ)
+    message(STATUS "Doxygen Documentations Template: ${CCIMX_DOXYGEN_DOCUNENT_DOXYFILE_TEMPLATE}")
+    message(STATUS "Doxygen Documentations Base Dirent: ${CCIMX_DOXYGEN_DOCUMENT_BASE_PATH}")
+    message(STATUS "Doxygen Documentations Output Dirent: ${DOXYGEN_OUT}")
+else()
+    message(STATUS "If you need to generate the documentations, please set the CCIMX_DESKTOP_DOCGEN_REQ to ON")
+endif()
+message(STATUS "-----------------------------------------------------")
+
+
+

@@ -108,6 +108,11 @@ $(function(){initNavTree('struct_local_weather_light_fetcher.html',''); initResi
   <div class="headertitle"><div class="title">LocalWeatherLightFetcher Struct Reference<span class="mlabels"><span class="mlabel abstract">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The <a class="el" href="struct_local_weather_light_fetcher.html" title="The LocalWeatherLightFetcher class is the interface level class if later, the projects using C++23,...">LocalWeatherLightFetcher</a> class is the interface level class if later, the projects using C++23, we shell try to use the concept to redefined the class Interface for the lower cost in performance.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="localweathercard_8h_source.html">localweathercard.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for LocalWeatherLightFetcher:</div>
 <div class="dyncontent">
@@ -115,7 +120,7 @@ Inheritance diagram for LocalWeatherLightFetcher:</div>
   <img src="struct_local_weather_light_fetcher.png" usemap="#LocalWeatherLightFetcher_map" alt=""/>
   <map id="LocalWeatherLightFetcher_map" name="LocalWeatherLightFetcher_map">
 <area href="struct_local_fetcher.html" alt="LocalFetcher" shape="rect" coords="0,56,161,80"/>
-<area href="struct_pesudo_local_fetcher.html" alt="PesudoLocalFetcher" shape="rect" coords="171,56,332,80"/>
+<area href="struct_pesudo_local_fetcher.html" title="The PesudoLocalFetcher class works in upper machines this is using in preview and test the ui behavio..." alt="PesudoLocalFetcher" shape="rect" coords="171,56,332,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -124,13 +129,76 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a20ab2ed9b5af31f5793516e9849ee252" id="r_a20ab2ed9b5af31f5793516e9849ee252"><td class="memItemLeft" align="right" valign="top"><a id="a20ab2ed9b5af31f5793516e9849ee252" name="a20ab2ed9b5af31f5793516e9849ee252"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Q_DISABLE_COPY</b> (<a class="el" href="struct_local_weather_light_fetcher.html">LocalWeatherLightFetcher</a>)</td></tr>
 <tr class="separator:a20ab2ed9b5af31f5793516e9849ee252"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7406fce33112897beff0da487ffd2440" id="r_a7406fce33112897beff0da487ffd2440"><td class="memItemLeft" align="right" valign="top"><a id="a7406fce33112897beff0da487ffd2440" name="a7406fce33112897beff0da487ffd2440"></a>
-virtual float&#160;</td><td class="memItemRight" valign="bottom"><b>fetch_local_tempature</b> ()=0</td></tr>
+<tr class="memitem:a7406fce33112897beff0da487ffd2440" id="r_a7406fce33112897beff0da487ffd2440"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7406fce33112897beff0da487ffd2440">fetch_local_tempature</a> ()=0</td></tr>
+<tr class="memdesc:a7406fce33112897beff0da487ffd2440"><td class="mdescLeft">&#160;</td><td class="mdescRight">fetch_local_tempature is the main function to fetch the local temperature  <br /></td></tr>
 <tr class="separator:a7406fce33112897beff0da487ffd2440"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0547d83e3889a740caabab87e00d2303" id="r_a0547d83e3889a740caabab87e00d2303"><td class="memItemLeft" align="right" valign="top"><a id="a0547d83e3889a740caabab87e00d2303" name="a0547d83e3889a740caabab87e00d2303"></a>
-virtual QString&#160;</td><td class="memItemRight" valign="bottom"><b>makeup_toast_message</b> ()=0</td></tr>
+<tr class="memitem:a0547d83e3889a740caabab87e00d2303" id="r_a0547d83e3889a740caabab87e00d2303"><td class="memItemLeft" align="right" valign="top">virtual QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0547d83e3889a740caabab87e00d2303">makeup_toast_message</a> ()=0</td></tr>
+<tr class="memdesc:a0547d83e3889a740caabab87e00d2303"><td class="mdescLeft">&#160;</td><td class="mdescRight">makeup_toast_message is the message that will be displayed in the toast, so this functions is using in indicating how to format the message  <br /></td></tr>
 <tr class="separator:a0547d83e3889a740caabab87e00d2303"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="struct_local_weather_light_fetcher.html" title="The LocalWeatherLightFetcher class is the interface level class if later, the projects using C++23,...">LocalWeatherLightFetcher</a> class is the interface level class if later, the projects using C++23, we shell try to use the concept to redefined the class Interface for the lower cost in performance. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a7406fce33112897beff0da487ffd2440" name="a7406fce33112897beff0da487ffd2440"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7406fce33112897beff0da487ffd2440">&#9670;&#160;</a></span>fetch_local_tempature()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual float LocalWeatherLightFetcher::fetch_local_tempature </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>fetch_local_tempature is the main function to fetch the local temperature </p>
+<dl class="section return"><dt>Returns</dt><dd>temperature value </dd></dl>
+
+<p>Implemented in <a class="el" href="struct_local_fetcher.html#a5183bc3a8c8acd1dd947691fff641093">LocalFetcher</a>, and <a class="el" href="struct_pesudo_local_fetcher.html#aa2c1524abf8e22e1695fc580d3fc47c4">PesudoLocalFetcher</a>.</p>
+
+</div>
+</div>
+<a id="a0547d83e3889a740caabab87e00d2303" name="a0547d83e3889a740caabab87e00d2303"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0547d83e3889a740caabab87e00d2303">&#9670;&#160;</a></span>makeup_toast_message()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual QString LocalWeatherLightFetcher::makeup_toast_message </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>makeup_toast_message is the message that will be displayed in the toast, so this functions is using in indicating how to format the message </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+<p>Implemented in <a class="el" href="struct_local_fetcher.html#ac19a4c78a6c0689e0b11086a069824dd">LocalFetcher</a>, and <a class="el" href="struct_pesudo_local_fetcher.html#a52559abd8c6dd2ac0aa09789559442b5">PesudoLocalFetcher</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>builtin/gadgets/<a class="el" href="localweathercard_8h_source.html">localweathercard.h</a></li>
 </ul>

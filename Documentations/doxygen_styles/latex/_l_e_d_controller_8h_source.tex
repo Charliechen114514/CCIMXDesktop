@@ -4,39 +4,41 @@
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ LEDCONTROLLER\_H}}
 \DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ LEDCONTROLLER\_H}}
-\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#ifdef\ USE\_REAL\_ADAPTER}}
-\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}led\_adapter.h"{}}}
-\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#else}}
-\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}PesudoLedController.h"{}}}
-\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#endif}}
-\DoxyCodeLine{00008\ }
-\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }LEDController\ \{}
-\DoxyCodeLine{00010\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00011\ \ \ \ \ LEDController()\ =\ \textcolor{keywordflow}{default};}
-\DoxyCodeLine{00012\ \ \ \ \ \string~LEDController()\ =\ \textcolor{keywordflow}{default};}
-\DoxyCodeLine{00013\ \ \ \ \ \textcolor{comment}{/*\ this\ means\ switching\ to\ other\ led\ */}}
-\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{void}\ redirectTo(\textcolor{keyword}{const}\ std::string\&\ ledName)\ \{}
-\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ ledAdapter.redirectTo(ledName);}
-\DoxyCodeLine{00016\ \ \ \ \ \}}
-\DoxyCodeLine{00017\ \ \ \ \ \textcolor{comment}{/*\ led\ written\ path\ */}}
-\DoxyCodeLine{00018\ \ \ \ \ std::string\ ledPath()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ ledAdapter.ledPath();\ \}}
-\DoxyCodeLine{00019\ \ \ \ \ \textcolor{comment}{/*\ modes\ are\ set\ to\ define\ how\ to\ control\ packages\ */}}
-\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ setMode(\textcolor{keyword}{const}\ Modes\ mode)\ \{\ ledAdapter.setMode(mode);\ \}}
-\DoxyCodeLine{00021\ \ \ \ \ \textcolor{comment}{/*\ get\ the\ current\ mode\ */}}
-\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{inline}\ Modes\ getMode()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ ledAdapter.getMode();\ \}}
-\DoxyCodeLine{00023\ \ \ \ \ \textcolor{comment}{/*\ bind\ the\ package\ with\ required\ parameters\ */}}
-\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{bool}\ processByPackage(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_l_e_d_params_package}{LEDParamsPackage}}*\ package)\ \{}
-\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ ledAdapter.processByPackage(package);}
-\DoxyCodeLine{00026\ \ \ \ \ \}}
-\DoxyCodeLine{00027\ }
-\DoxyCodeLine{00028\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#ifdef\ USE\_REAL\_ADAPTER}}
-\DoxyCodeLine{00030\ \ \ \ \ LEDAdapter\ ledAdapter;}
-\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#else}}
-\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{class_pesudo_led_controller}{PesudoLedController}}\ ledAdapter;}
-\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#endif}}
-\DoxyCodeLine{00034\ \};}
-\DoxyCodeLine{00035\ }
-\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ LEDCONTROLLER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#ifdef\ USE\_REAL\_ADAPTER}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}led\_adapter.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}PesudoLedController.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_l_e_d_controller_aee3bdb63c97a7c22e9065eaab8c9ab6d}{LEDController}}\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{class_l_e_d_controller_aee3bdb63c97a7c22e9065eaab8c9ab6d}{LEDController}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_l_e_d_controller_aa52566770dfa4559fc09c63acb82d5c8}{\string~LEDController}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_l_e_d_controller_a375f3956f4fbdd3911d3aa616d46f746}{redirectTo}}(\textcolor{keyword}{const}\ std::string\&\ ledName)\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ ledAdapter.redirectTo(ledName);}
+\DoxyCodeLine{00024\ \ \ \ \ \}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00028\ \ \ \ \ std::string\ \mbox{\hyperlink{class_l_e_d_controller_a90c32acd1da700863aab0faf164d76b0}{ledPath}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ ledAdapter.ledPath();\ \}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_l_e_d_controller_ab209cb9b76151dad3fd3b7080d658a99}{setMode}}(\textcolor{keyword}{const}\ Modes\ mode)\ \{\ ledAdapter.setMode(mode);\ \}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{inline}\ Modes\ \mbox{\hyperlink{class_l_e_d_controller_a6bc5dddfbe9cdc210d1066a4254ab0fa}{getMode}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ ledAdapter.getMode();\ \}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_l_e_d_controller_a096b7909d7569a92e31fdfd3c4b8bebc}{processByPackage}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_l_e_d_params_package}{LEDParamsPackage}}*\ package)\ \{}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ ledAdapter.processByPackage(package);}
+\DoxyCodeLine{00043\ \ \ \ \ \}}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#ifdef\ USE\_REAL\_ADAPTER}}
+\DoxyCodeLine{00047\ \ \ \ \ LEDAdapter\ ledAdapter;\ }
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{class_pesudo_led_controller}{PesudoLedController}}\ ledAdapter;\ }
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00051\ \};}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ LEDCONTROLLER\_H}}
 
 \end{DoxyCode}

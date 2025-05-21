@@ -110,6 +110,11 @@ $(function(){initNavTree('class_c_c_pdf_viewer.html',''); initResizable(true); }
   <div class="headertitle"><div class="title">CCPdfViewer Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Provides a widget to view PDF documents at the page level.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="ccpdfviewer_8h_source.html">ccpdfviewer.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for CCPdfViewer:</div>
 <div class="dyncontent">
@@ -119,44 +124,273 @@ Inheritance diagram for CCPdfViewer:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ac8458daf2cedd1f6118454f199401336" id="r_ac8458daf2cedd1f6118454f199401336"><td class="memItemLeft" align="right" valign="top"><a id="ac8458daf2cedd1f6118454f199401336" name="ac8458daf2cedd1f6118454f199401336"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>ZoomDirection</b> { <b>ZOOM_IN</b>
-, <b>ZOOM_OUT</b>
+<tr class="memitem:ac8458daf2cedd1f6118454f199401336" id="r_ac8458daf2cedd1f6118454f199401336"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8458daf2cedd1f6118454f199401336">ZoomDirection</a> { <a class="el" href="#ac8458daf2cedd1f6118454f199401336a9fb15123c848cda02eec2316e765134a">ZOOM_IN</a>
+, <a class="el" href="#ac8458daf2cedd1f6118454f199401336aa2ef1b00efd83e548ce99f6ead83bacd">ZOOM_OUT</a>
  }</td></tr>
+<tr class="memdesc:ac8458daf2cedd1f6118454f199401336"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the direction of zooming.  <a href="#ac8458daf2cedd1f6118454f199401336">More...</a><br /></td></tr>
 <tr class="separator:ac8458daf2cedd1f6118454f199401336"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-slots" name="pub-slots"></a>
 Public Slots</h2></td></tr>
-<tr class="memitem:a51b31290cb21bdd0dd2e77a1546d6b52" id="r_a51b31290cb21bdd0dd2e77a1546d6b52"><td class="memItemLeft" align="right" valign="top"><a id="a51b31290cb21bdd0dd2e77a1546d6b52" name="a51b31290cb21bdd0dd2e77a1546d6b52"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>zoom</b> (const ZoomDirection direction)</td></tr>
+<tr class="memitem:a51b31290cb21bdd0dd2e77a1546d6b52" id="r_a51b31290cb21bdd0dd2e77a1546d6b52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51b31290cb21bdd0dd2e77a1546d6b52">zoom</a> (const <a class="el" href="#ac8458daf2cedd1f6118454f199401336">ZoomDirection</a> direction)</td></tr>
+<tr class="memdesc:a51b31290cb21bdd0dd2e77a1546d6b52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies zoom in the specified direction.  <br /></td></tr>
 <tr class="separator:a51b31290cb21bdd0dd2e77a1546d6b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2087b6950aafc024c98aa3bc1ec2277" id="r_ad2087b6950aafc024c98aa3bc1ec2277"><td class="memItemLeft" align="right" valign="top"><a id="ad2087b6950aafc024c98aa3bc1ec2277" name="ad2087b6950aafc024c98aa3bc1ec2277"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>fresh_zoom</b> (const ZoomDirection direction)</td></tr>
+<tr class="memitem:ad2087b6950aafc024c98aa3bc1ec2277" id="r_ad2087b6950aafc024c98aa3bc1ec2277"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2087b6950aafc024c98aa3bc1ec2277">fresh_zoom</a> (const <a class="el" href="#ac8458daf2cedd1f6118454f199401336">ZoomDirection</a> direction)</td></tr>
+<tr class="memdesc:ad2087b6950aafc024c98aa3bc1ec2277"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zooms and refreshes the rendered view.  <br /></td></tr>
 <tr class="separator:ad2087b6950aafc024c98aa3bc1ec2277"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7f3f2ba436fba2eedeaf5580d4630d5" id="r_ac7f3f2ba436fba2eedeaf5580d4630d5"><td class="memItemLeft" align="right" valign="top"><a id="ac7f3f2ba436fba2eedeaf5580d4630d5" name="ac7f3f2ba436fba2eedeaf5580d4630d5"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>fresh_render</b> ()</td></tr>
+<tr class="memdesc:ac7f3f2ba436fba2eedeaf5580d4630d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refreshes the rendered page view. <br /></td></tr>
 <tr class="separator:ac7f3f2ba436fba2eedeaf5580d4630d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0285aa5887d8853873b9a166675f9471" id="r_a0285aa5887d8853873b9a166675f9471"><td class="memItemLeft" align="right" valign="top"><a id="a0285aa5887d8853873b9a166675f9471" name="a0285aa5887d8853873b9a166675f9471"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CCPdfViewer</b> (QWidget *parent=nullptr)</td></tr>
+<tr class="memitem:a0285aa5887d8853873b9a166675f9471" id="r_a0285aa5887d8853873b9a166675f9471"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0285aa5887d8853873b9a166675f9471">CCPdfViewer</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:a0285aa5887d8853873b9a166675f9471"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <a class="el" href="class_c_c_pdf_viewer.html" title="Provides a widget to view PDF documents at the page level.">CCPdfViewer</a> widget.  <br /></td></tr>
 <tr class="separator:a0285aa5887d8853873b9a166675f9471"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e1c4f5bfd54a85ea1d525bd7a75c38c" id="r_a7e1c4f5bfd54a85ea1d525bd7a75c38c"><td class="memItemLeft" align="right" valign="top"><a id="a7e1c4f5bfd54a85ea1d525bd7a75c38c" name="a7e1c4f5bfd54a85ea1d525bd7a75c38c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Q_DISABLE_COPY</b> (<a class="el" href="class_c_c_pdf_viewer.html">CCPdfViewer</a>)</td></tr>
 <tr class="separator:a7e1c4f5bfd54a85ea1d525bd7a75c38c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf622ca3df1b117bb8b1a108d51fe71c" id="r_acf622ca3df1b117bb8b1a108d51fe71c"><td class="memItemLeft" align="right" valign="top"><a id="acf622ca3df1b117bb8b1a108d51fe71c" name="acf622ca3df1b117bb8b1a108d51fe71c"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>bindDocument</b> (<a class="el" href="class_c_c_pdf_document.html">CCPdfDocument</a> *bindDocument)</td></tr>
+<tr class="memitem:a5ed18f76b1355346d6ebdd04cddc0d88" id="r_a5ed18f76b1355346d6ebdd04cddc0d88"><td class="memItemLeft" align="right" valign="top"><a id="a5ed18f76b1355346d6ebdd04cddc0d88" name="a5ed18f76b1355346d6ebdd04cddc0d88"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~CCPdfViewer</b> ()</td></tr>
+<tr class="memdesc:a5ed18f76b1355346d6ebdd04cddc0d88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
+<tr class="separator:a5ed18f76b1355346d6ebdd04cddc0d88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf622ca3df1b117bb8b1a108d51fe71c" id="r_acf622ca3df1b117bb8b1a108d51fe71c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf622ca3df1b117bb8b1a108d51fe71c">bindDocument</a> (<a class="el" href="class_c_c_pdf_document.html">CCPdfDocument</a> *bindDocument)</td></tr>
+<tr class="memdesc:acf622ca3df1b117bb8b1a108d51fe71c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a PDF document to the viewer.  <br /></td></tr>
 <tr class="separator:acf622ca3df1b117bb8b1a108d51fe71c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26ede651e15807399423cf74ea336ee4" id="r_a26ede651e15807399423cf74ea336ee4"><td class="memItemLeft" align="right" valign="top"><a id="a26ede651e15807399423cf74ea336ee4" name="a26ede651e15807399423cf74ea336ee4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>unbindDocument</b> ()</td></tr>
+<tr class="memdesc:a26ede651e15807399423cf74ea336ee4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unbinds the currently bound document. <br /></td></tr>
 <tr class="separator:a26ede651e15807399423cf74ea336ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e06c01d172da27bb83363ffc468be5c" id="r_a3e06c01d172da27bb83363ffc468be5c"><td class="memItemLeft" align="right" valign="top"><a id="a3e06c01d172da27bb83363ffc468be5c" name="a3e06c01d172da27bb83363ffc468be5c"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>current_zoom</b> () const</td></tr>
+<tr class="memitem:a3e06c01d172da27bb83363ffc468be5c" id="r_a3e06c01d172da27bb83363ffc468be5c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e06c01d172da27bb83363ffc468be5c">current_zoom</a> () const</td></tr>
+<tr class="memdesc:a3e06c01d172da27bb83363ffc468be5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current zoom level.  <br /></td></tr>
 <tr class="separator:a3e06c01d172da27bb83363ffc468be5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81c9184d13e341d3fd6e0f34c7333d1f" id="r_a81c9184d13e341d3fd6e0f34c7333d1f"><td class="memItemLeft" align="right" valign="top"><a id="a81c9184d13e341d3fd6e0f34c7333d1f" name="a81c9184d13e341d3fd6e0f34c7333d1f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_zoom_step</b> (const float zoom_step)</td></tr>
+<tr class="memitem:a81c9184d13e341d3fd6e0f34c7333d1f" id="r_a81c9184d13e341d3fd6e0f34c7333d1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81c9184d13e341d3fd6e0f34c7333d1f">set_zoom_step</a> (const float zoom_step)</td></tr>
+<tr class="memdesc:a81c9184d13e341d3fd6e0f34c7333d1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the zoom step value.  <br /></td></tr>
 <tr class="separator:a81c9184d13e341d3fd6e0f34c7333d1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Provides a widget to view PDF documents at the page level. </p>
+<p>This class interacts with ccpdf_tools::page_renderer to render PDF pages. </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="ac8458daf2cedd1f6118454f199401336" name="ac8458daf2cedd1f6118454f199401336"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8458daf2cedd1f6118454f199401336">&#9670;&#160;</a></span>ZoomDirection</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#ac8458daf2cedd1f6118454f199401336">CCPdfViewer::ZoomDirection</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel strong">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Specifies the direction of zooming. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac8458daf2cedd1f6118454f199401336a9fb15123c848cda02eec2316e765134a" name="ac8458daf2cedd1f6118454f199401336a9fb15123c848cda02eec2316e765134a"></a>ZOOM_IN&#160;</td><td class="fielddoc"><p>Zoom in </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac8458daf2cedd1f6118454f199401336aa2ef1b00efd83e548ce99f6ead83bacd" name="ac8458daf2cedd1f6118454f199401336aa2ef1b00efd83e548ce99f6ead83bacd"></a>ZOOM_OUT&#160;</td><td class="fielddoc"><p>Zoom out </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a0285aa5887d8853873b9a166675f9471" name="a0285aa5887d8853873b9a166675f9471"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0285aa5887d8853873b9a166675f9471">&#9670;&#160;</a></span>CCPdfViewer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CCPdfViewer::CCPdfViewer </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *</td>          <td class="paramname"><span class="paramname"><em>parent</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel explicit">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a new <a class="el" href="class_c_c_pdf_viewer.html" title="Provides a widget to view PDF documents at the page level.">CCPdfViewer</a> widget. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>The parent widget. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="acf622ca3df1b117bb8b1a108d51fe71c" name="acf622ca3df1b117bb8b1a108d51fe71c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf622ca3df1b117bb8b1a108d51fe71c">&#9670;&#160;</a></span>bindDocument()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CCPdfViewer::bindDocument </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_c_pdf_document.html">CCPdfDocument</a> *</td>          <td class="paramname"><span class="paramname"><em>bindDocument</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Binds a PDF document to the viewer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bindDocument</td><td>Pointer to the <a class="el" href="class_c_c_pdf_document.html" title="The CCPdfDocument class CCPdfDocument is expected to hold a resources physically in Programming level...">CCPdfDocument</a> to bind. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the document is successfully bound, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a3e06c01d172da27bb83363ffc468be5c" name="a3e06c01d172da27bb83363ffc468be5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e06c01d172da27bb83363ffc468be5c">&#9670;&#160;</a></span>current_zoom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float CCPdfViewer::current_zoom </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the current zoom level. </p>
+<dl class="section return"><dt>Returns</dt><dd>The current zoom factor. </dd></dl>
+
+</div>
+</div>
+<a id="ad2087b6950aafc024c98aa3bc1ec2277" name="ad2087b6950aafc024c98aa3bc1ec2277"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2087b6950aafc024c98aa3bc1ec2277">&#9670;&#160;</a></span>fresh_zoom</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CCPdfViewer::fresh_zoom </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#ac8458daf2cedd1f6118454f199401336">ZoomDirection</a></td>          <td class="paramname"><span class="paramname"><em>direction</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Zooms and refreshes the rendered view. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">direction</td><td>The direction to zoom. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a81c9184d13e341d3fd6e0f34c7333d1f" name="a81c9184d13e341d3fd6e0f34c7333d1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81c9184d13e341d3fd6e0f34c7333d1f">&#9670;&#160;</a></span>set_zoom_step()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CCPdfViewer::set_zoom_step </td>
+          <td>(</td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>zoom_step</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the zoom step value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">zoom_step</td><td>The zoom increment or decrement per zoom action. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a51b31290cb21bdd0dd2e77a1546d6b52" name="a51b31290cb21bdd0dd2e77a1546d6b52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51b31290cb21bdd0dd2e77a1546d6b52">&#9670;&#160;</a></span>zoom</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CCPdfViewer::zoom </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#ac8458daf2cedd1f6118454f199401336">ZoomDirection</a></td>          <td class="paramname"><span class="paramname"><em>direction</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Applies zoom in the specified direction. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">direction</td><td>The direction of zoom (in or out). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>extern_app/pdfReader/mupdf_adapter/<a class="el" href="ccpdfviewer_8h_source.html">ccpdfviewer.h</a></li>
 <li>extern_app/pdfReader/mupdf_adapter/<b>ccpdfviewer.cpp</b></li>

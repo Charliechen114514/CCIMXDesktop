@@ -107,25 +107,29 @@ $(function(){initNavTree('ap3216c_8h_source.html',''); initResizable(true); });
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef AP3216C_H</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define AP3216C_H</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#define AP3216CData_INVALID_VALUE (0)</span></div>
-<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="struct_a_p3216_c_data.html">    5</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <span class="comment">/* values */</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> ir, als, ps;</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>} <a class="code hl_struct" href="struct_a_p3216_c_data.html">AP3216CData</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#define AP3216CData_INVALID_VALUE (0)</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span></div>
+<div class="foldopen" id="foldopen00009" data-start="{" data-end="};">
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="struct_a_p3216_c_data.html">    9</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="struct_a_p3216_c_data.html#a593a72bc7abbf88fd9c2a4ebe4078a2a">   10</a></span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code hl_variable" href="struct_a_p3216_c_data.html#a593a72bc7abbf88fd9c2a4ebe4078a2a">ir</a>; </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="struct_a_p3216_c_data.html#a40669cff46ee430f2fd1e716ad24b43b">   11</a></span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code hl_variable" href="struct_a_p3216_c_data.html#a40669cff46ee430f2fd1e716ad24b43b">als</a>; </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="struct_a_p3216_c_data.html#a5a85d6a0d77844a18eda81014f239ad8">   12</a></span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code hl_variable" href="struct_a_p3216_c_data.html#a5a85d6a0d77844a18eda81014f239ad8">ps</a>; </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>} <a class="code hl_struct" href="struct_a_p3216_c_data.html">AP3216CData</a>;</div>
 </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">/* for the range of the values */</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> MIN_IR_VALUE { 0 };</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> MIN_ALS_VALUE { 0 };</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> MIN_PS_VALUE { 0 };</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> MAX_IR_VALUE { 1024 };</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> MAX_ALS_VALUE { 65535 };</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> MAX_PS_VALUE { 1024 };</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="astruct_a_p3216_c_data_html"><div class="ttname"><a href="struct_a_p3216_c_data.html">AP3216CData</a></div><div class="ttdef"><b>Definition</b> ap3216c.h:5</div></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> MIN_IR_VALUE { 0 };</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> MIN_ALS_VALUE { 0 };</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> MIN_PS_VALUE { 0 };</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> MAX_IR_VALUE { 1024 };</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> MAX_ALS_VALUE { 65535 };</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> MAX_PS_VALUE { 1024 };</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#endif </span><span class="comment">// AP3216C_H</span></div>
+<div class="ttc" id="astruct_a_p3216_c_data_html"><div class="ttname"><a href="struct_a_p3216_c_data.html">AP3216CData</a></div><div class="ttdoc">Stores the IR, ambient light, and proximity sensor data.</div><div class="ttdef"><b>Definition</b> ap3216c.h:9</div></div>
+<div class="ttc" id="astruct_a_p3216_c_data_html_a40669cff46ee430f2fd1e716ad24b43b"><div class="ttname"><a href="struct_a_p3216_c_data.html#a40669cff46ee430f2fd1e716ad24b43b">AP3216CData::als</a></div><div class="ttdeci">unsigned short als</div><div class="ttdoc">Ambient light sensor data.</div><div class="ttdef"><b>Definition</b> ap3216c.h:11</div></div>
+<div class="ttc" id="astruct_a_p3216_c_data_html_a593a72bc7abbf88fd9c2a4ebe4078a2a"><div class="ttname"><a href="struct_a_p3216_c_data.html#a593a72bc7abbf88fd9c2a4ebe4078a2a">AP3216CData::ir</a></div><div class="ttdeci">unsigned short ir</div><div class="ttdoc">Infrared data.</div><div class="ttdef"><b>Definition</b> ap3216c.h:10</div></div>
+<div class="ttc" id="astruct_a_p3216_c_data_html_a5a85d6a0d77844a18eda81014f239ad8"><div class="ttname"><a href="struct_a_p3216_c_data.html#a5a85d6a0d77844a18eda81014f239ad8">AP3216CData::ps</a></div><div class="ttdeci">unsigned short ps</div><div class="ttdoc">Proximity sensor data.</div><div class="ttdef"><b>Definition</b> ap3216c.h:12</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -20,23 +20,24 @@
 \DoxyCodeLine{00016\ }
 \DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
 \DoxyCodeLine{00018\ \ \ \ \ CameraWindow(QWidget*\ parent\ =\ \textcolor{keyword}{nullptr});}
-\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ fresh\_cameralists();}
-\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ redirect(\textcolor{keyword}{const}\ QString\ path);}
-\DoxyCodeLine{00021\ \ \ \ \ \string~CameraWindow();}
-\DoxyCodeLine{00022\ }
-\DoxyCodeLine{00023\ \textcolor{keyword}{private}\ slots:}
-\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_btn\_oppose\_camera\_clicked();}
-\DoxyCodeLine{00025\ }
-\DoxyCodeLine{00026\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ setup\_internal();}
-\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ select(\textcolor{keywordtype}{int}\ index);}
-\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ process\_oppose\_state(\textcolor{keywordtype}{bool}\ prev\_opened);}
-\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ capture\_photo\_once();}
-\DoxyCodeLine{00031\ \ \ \ \ Ui::CameraWindow*\ ui;}
-\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{class_camera_capture}{CameraCapture}}*\ camera\_capture;}
-\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{class_desktop_toast}{DesktopToast}}*\ toast;}
-\DoxyCodeLine{00034\ \ \ \ \ QString\ cached\_path;\ \textcolor{comment}{/*\ cached\ saving\ dirent\ */}}
-\DoxyCodeLine{00035\ \};}
-\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CAMERAWINDOW\_H}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_camera_window_ac02e29dd83eb88d16c429f65c77257b9}{fresh\_cameralists}}();}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_camera_window_aa6fdd1205d485d183f1b2f0a8668c33b}{redirect}}(\textcolor{keyword}{const}\ QString\ path);}
+\DoxyCodeLine{00031\ \ \ \ \ \string~CameraWindow();}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_btn\_oppose\_camera\_clicked();}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ setup\_internal();}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ select(\textcolor{keywordtype}{int}\ index);}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ process\_oppose\_state(\textcolor{keywordtype}{bool}\ prev\_opened);}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ capture\_photo\_once();}
+\DoxyCodeLine{00044\ \ \ \ \ Ui::CameraWindow*\ ui;}
+\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{class_camera_capture}{CameraCapture}}*\ camera\_capture;}
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{class_desktop_toast}{DesktopToast}}*\ toast;}
+\DoxyCodeLine{00047\ \ \ \ \ QString\ cached\_path;\ \textcolor{comment}{/*\ cached\ saving\ dirent\ */}}
+\DoxyCodeLine{00048\ \};}
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CAMERAWINDOW\_H}}
 
 \end{DoxyCode}

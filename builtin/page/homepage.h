@@ -8,19 +8,22 @@ class HomePage;
 }
 
 /* Home Pages */
-class HomePage : public QWidget
-{
-    Q_OBJECT
+class HomePage : public QWidget {
+	Q_OBJECT
 
 public:
-    explicit HomePage(QWidget *parent = nullptr);
+	explicit HomePage(QWidget* parent = nullptr);
 
-    QWidget* expected_appcards_widgets() const;
+	/**
+	 * @brief expected_appcards_widgets
+	 * @return appcards holding widgets, iterate this for all app cards
+	 */
+	QWidget* expected_appcards_widgets() const;
 
-    ~HomePage();
+	~HomePage();
 
 private:
-    Ui::HomePage *ui;
+	Ui::HomePage* ui;
 };
 
 #endif // HOMEPAGE_H

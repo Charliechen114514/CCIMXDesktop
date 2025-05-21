@@ -1,5 +1,14 @@
 \doxysection{CCPdf\+Document Class Reference}
 \hypertarget{class_c_c_pdf_document}{}\label{class_c_c_pdf_document}\index{CCPdfDocument@{CCPdfDocument}}
+
+
+The \doxylink{class_c_c_pdf_document}{CCPdf\+Document} class \doxylink{class_c_c_pdf_document}{CCPdf\+Document} is expected to hold a resources physically in Programming level, this is a heavy level of classes, for any easy and fast pdf sessions should be careful of using this class.  
+
+
+
+
+{\ttfamily \#include $<$ccpdfdocument.\+h$>$}
+
 Inheritance diagram for CCPdf\+Document\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,28 +18,24 @@ Inheritance diagram for CCPdf\+Document\+:\begin{figure}[H]
 \doxysubsubsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_c_c_pdf_document_a49387984fa059ca9904600ba7edacd39}\label{class_c_c_pdf_document_a49387984fa059ca9904600ba7edacd39} 
-enum class {\bfseries Error\+Code} \{ {\bfseries NO\+\_\+\+ERROR}
-, {\bfseries FILE\+\_\+\+NOT\+\_\+\+EXSIT}
-, {\bfseries OTHER\+\_\+\+MISTAKES}
+enum class \mbox{\hyperlink{class_c_c_pdf_document_a49387984fa059ca9904600ba7edacd39}{Error\+Code}} \{ \mbox{\hyperlink{class_c_c_pdf_document_a49387984fa059ca9904600ba7edacd39ad306b6fdee05fe87455110ddf6501e6c}{NO\+\_\+\+ERROR}}
+, \mbox{\hyperlink{class_c_c_pdf_document_a49387984fa059ca9904600ba7edacd39a1b6ff2dcc6be29b9b08d0944675d7f5c}{FILE\+\_\+\+NOT\+\_\+\+EXSIT}}
+, \mbox{\hyperlink{class_c_c_pdf_document_a49387984fa059ca9904600ba7edacd39a47cddc738bfdf4c33c7b47355c4c3799}{OTHER\+\_\+\+MISTAKES}}
  \}
-\item 
-\Hypertarget{class_c_c_pdf_document_a0272e6f6cebd68b3d59af3398c04f7e7}\label{class_c_c_pdf_document_a0272e6f6cebd68b3d59af3398c04f7e7} 
-enum class {\bfseries Page\+Navigation\+Error} \{ {\bfseries PAGE\+\_\+\+OK}
-, {\bfseries PAGE\+\_\+\+UNDERFLOW}
-, {\bfseries PAGE\+\_\+\+OVERFLOW}
-, {\bfseries PAGE\+\_\+\+UNEXSITS}
+\begin{DoxyCompactList}\small\item\em The \doxylink{class_c_c_pdf_document_a49387984fa059ca9904600ba7edacd39}{Error\+Code} enum The \doxylink{class_c_c_pdf_document_a49387984fa059ca9904600ba7edacd39}{Error\+Code} enum provides the error code. \end{DoxyCompactList}\item 
+enum class \mbox{\hyperlink{class_c_c_pdf_document_a0272e6f6cebd68b3d59af3398c04f7e7}{Page\+Navigation\+Error}} \{ \mbox{\hyperlink{class_c_c_pdf_document_a0272e6f6cebd68b3d59af3398c04f7e7a69441610846a0b4d3df2812634cad43d}{PAGE\+\_\+\+OK}}
+, \mbox{\hyperlink{class_c_c_pdf_document_a0272e6f6cebd68b3d59af3398c04f7e7aa3139ea349de14385f2d0f92277c550b}{PAGE\+\_\+\+UNDERFLOW}}
+, \mbox{\hyperlink{class_c_c_pdf_document_a0272e6f6cebd68b3d59af3398c04f7e7a01b68e8cc095ffb91250bb4dc8271a0d}{PAGE\+\_\+\+OVERFLOW}}
+, \mbox{\hyperlink{class_c_c_pdf_document_a0272e6f6cebd68b3d59af3398c04f7e7a7d71d1787b5c7553b77ad4f3a1582eb1}{PAGE\+\_\+\+UNEXSITS}}
  \}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Represents possible errors that can occur during page navigation. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Signals}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_c_c_pdf_document_ac7a27d7e7420a45635a4fd872b11587d}\label{class_c_c_pdf_document_ac7a27d7e7420a45635a4fd872b11587d} 
-void {\bfseries document\+\_\+load} (const QString document\+\_\+path)
-\item 
-\Hypertarget{class_c_c_pdf_document_aba7902cbf721d065edbed816dda6c811}\label{class_c_c_pdf_document_aba7902cbf721d065edbed816dda6c811} 
-void {\bfseries page\+Index\+Changed} ()
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_c_c_pdf_document_ac7a27d7e7420a45635a4fd872b11587d}{document\+\_\+load}} (const QString document\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Emitted when a document is loaded. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_c_pdf_document_aba7902cbf721d065edbed816dda6c811}{page\+Index\+Changed}} ()
+\begin{DoxyCompactList}\small\item\em Emitted when the current page index changes. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -43,39 +48,269 @@ void {\bfseries page\+Index\+Changed} ()
 \Hypertarget{class_c_c_pdf_document_ae9c20661def7cd3254368806dd1ecc6d}\label{class_c_c_pdf_document_ae9c20661def7cd3254368806dd1ecc6d} 
 {\bfseries Q\+\_\+\+DISABLE\+\_\+\+COPY} (\mbox{\hyperlink{class_c_c_pdf_document}{CCPdf\+Document}})
 \item 
-\Hypertarget{class_c_c_pdf_document_adbcadc5fe612d3c0dd8ccbe18094e24a}\label{class_c_c_pdf_document_adbcadc5fe612d3c0dd8ccbe18094e24a} 
-Error\+Code {\bfseries load\+\_\+document} (const QString \&document\+\_\+path)
-\item 
-\Hypertarget{class_c_c_pdf_document_a4a19d58e4c4cc536bf7aaba7586be6da}\label{class_c_c_pdf_document_a4a19d58e4c4cc536bf7aaba7586be6da} 
-bool {\bfseries close\+\_\+document} ()
-\item 
-\Hypertarget{class_c_c_pdf_document_a49341806a63155ce6222962c0b741bdf}\label{class_c_c_pdf_document_a49341806a63155ce6222962c0b741bdf} 
-bool {\bfseries document\+\_\+loaded} () const
-\item 
-\Hypertarget{class_c_c_pdf_document_abf9058577d2c7f75dd522bef8bd1ace5}\label{class_c_c_pdf_document_abf9058577d2c7f75dd522bef8bd1ace5} 
-std\+::optional$<$ uint32\+\_\+t $>$ {\bfseries document\+\_\+page} () const
-\item 
-\Hypertarget{class_c_c_pdf_document_a1820f7860fc661eb6adbd383e58d9eba}\label{class_c_c_pdf_document_a1820f7860fc661eb6adbd383e58d9eba} 
-fz\+\_\+document \texorpdfstring{$\ast$}{*} {\bfseries raw\+\_\+handle} () const
-\item 
-\Hypertarget{class_c_c_pdf_document_a340e07d237df5d81800f2a289a2f4764}\label{class_c_c_pdf_document_a340e07d237df5d81800f2a289a2f4764} 
-fz\+\_\+context \texorpdfstring{$\ast$}{*} {\bfseries raw\+\_\+context} () const
-\item 
-\Hypertarget{class_c_c_pdf_document_a7a7851e64572f8c99883f46228505aee}\label{class_c_c_pdf_document_a7a7851e64572f8c99883f46228505aee} 
-\mbox{\hyperlink{struct_c_c_pdf_meta_info}{CCPdf\+Meta\+Info}} {\bfseries meta\+\_\+info} () const
-\item 
-\Hypertarget{class_c_c_pdf_document_ab0dbbff186c5b2b6c6eb71d54062355c}\label{class_c_c_pdf_document_ab0dbbff186c5b2b6c6eb71d54062355c} 
-int {\bfseries current\+\_\+page} () const
-\item 
-\Hypertarget{class_c_c_pdf_document_acb5d93f0d8624153bf748b0867108240}\label{class_c_c_pdf_document_acb5d93f0d8624153bf748b0867108240} 
-QString {\bfseries current\+\_\+path} () const
-\item 
-\Hypertarget{class_c_c_pdf_document_a458047bbb3fae082de34dd05ac2668d7}\label{class_c_c_pdf_document_a458047bbb3fae082de34dd05ac2668d7} 
-int {\bfseries total\+\_\+pages} () const
-\item 
-\Hypertarget{class_c_c_pdf_document_a7c6467e8c92cccdfbc6571d0af3ba774}\label{class_c_c_pdf_document_a7c6467e8c92cccdfbc6571d0af3ba774} 
-Page\+Navigation\+Error {\bfseries jump} (const int page\+\_\+index)
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{class_c_c_pdf_document_a49387984fa059ca9904600ba7edacd39}{Error\+Code}} \mbox{\hyperlink{class_c_c_pdf_document_adbcadc5fe612d3c0dd8ccbe18094e24a}{load\+\_\+document}} (const QString \&document\+\_\+path)
+\begin{DoxyCompactList}\small\item\em load\+\_\+document load the document by the path given \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_c_pdf_document_a4a19d58e4c4cc536bf7aaba7586be6da}{close\+\_\+document}} ()
+\begin{DoxyCompactList}\small\item\em close\+\_\+document close the document \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_c_pdf_document_a49341806a63155ce6222962c0b741bdf}{document\+\_\+loaded}} () const
+\begin{DoxyCompactList}\small\item\em document\+\_\+loaded check if the document is loaded \end{DoxyCompactList}\item 
+std\+::optional$<$ uint32\+\_\+t $>$ \mbox{\hyperlink{class_c_c_pdf_document_abf9058577d2c7f75dd522bef8bd1ace5}{document\+\_\+page}} () const
+\begin{DoxyCompactList}\small\item\em document\+\_\+page get the page count of the document \end{DoxyCompactList}\item 
+fz\+\_\+document \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_c_c_pdf_document_a1820f7860fc661eb6adbd383e58d9eba}{raw\+\_\+handle}} () const
+\begin{DoxyCompactList}\small\item\em raw\+\_\+handle \end{DoxyCompactList}\item 
+fz\+\_\+context \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_c_c_pdf_document_a340e07d237df5d81800f2a289a2f4764}{raw\+\_\+context}} () const
+\begin{DoxyCompactList}\small\item\em raw\+\_\+context \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_c_c_pdf_meta_info}{CCPdf\+Meta\+Info}} \mbox{\hyperlink{class_c_c_pdf_document_a7a7851e64572f8c99883f46228505aee}{meta\+\_\+info}} () const
+\begin{DoxyCompactList}\small\item\em meta\+\_\+info \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_c_pdf_document_ab0dbbff186c5b2b6c6eb71d54062355c}{current\+\_\+page}} () const
+\begin{DoxyCompactList}\small\item\em current pages in documentations \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_c_c_pdf_document_acb5d93f0d8624153bf748b0867108240}{current\+\_\+path}} () const
+\begin{DoxyCompactList}\small\item\em current\+\_\+path current holding paths \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_c_pdf_document_a458047bbb3fae082de34dd05ac2668d7}{total\+\_\+pages}} () const
+\begin{DoxyCompactList}\small\item\em total\+\_\+pages total pages the doc has \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_c_pdf_document_a0272e6f6cebd68b3d59af3398c04f7e7}{Page\+Navigation\+Error}} \mbox{\hyperlink{class_c_c_pdf_document_a7c6467e8c92cccdfbc6571d0af3ba774}{jump}} (const int page\+\_\+index)
+\begin{DoxyCompactList}\small\item\em Jumps to the specified page index. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_c_c_pdf_document}{CCPdf\+Document} class \doxylink{class_c_c_pdf_document}{CCPdf\+Document} is expected to hold a resources physically in Programming level, this is a heavy level of classes, for any easy and fast pdf sessions should be careful of using this class. 
+
+\doxysubsection{Member Enumeration Documentation}
+\Hypertarget{class_c_c_pdf_document_a49387984fa059ca9904600ba7edacd39}\index{CCPdfDocument@{CCPdfDocument}!ErrorCode@{ErrorCode}}
+\index{ErrorCode@{ErrorCode}!CCPdfDocument@{CCPdfDocument}}
+\doxysubsubsection{\texorpdfstring{ErrorCode}{ErrorCode}}
+{\footnotesize\ttfamily \label{class_c_c_pdf_document_a49387984fa059ca9904600ba7edacd39} 
+enum class \mbox{\hyperlink{class_c_c_pdf_document_a49387984fa059ca9904600ba7edacd39}{CCPdf\+Document\+::\+Error\+Code}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+The \doxylink{class_c_c_pdf_document_a49387984fa059ca9904600ba7edacd39}{Error\+Code} enum The \doxylink{class_c_c_pdf_document_a49387984fa059ca9904600ba7edacd39}{Error\+Code} enum provides the error code. 
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NO\_ERROR@{NO\_ERROR}!CCPdfDocument@{CCPdfDocument}}\index{CCPdfDocument@{CCPdfDocument}!NO\_ERROR@{NO\_ERROR}}}\Hypertarget{class_c_c_pdf_document_a49387984fa059ca9904600ba7edacd39ad306b6fdee05fe87455110ddf6501e6c}\label{class_c_c_pdf_document_a49387984fa059ca9904600ba7edacd39ad306b6fdee05fe87455110ddf6501e6c} 
+NO\+\_\+\+ERROR&no error \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FILE\_NOT\_EXSIT@{FILE\_NOT\_EXSIT}!CCPdfDocument@{CCPdfDocument}}\index{CCPdfDocument@{CCPdfDocument}!FILE\_NOT\_EXSIT@{FILE\_NOT\_EXSIT}}}\Hypertarget{class_c_c_pdf_document_a49387984fa059ca9904600ba7edacd39a1b6ff2dcc6be29b9b08d0944675d7f5c}\label{class_c_c_pdf_document_a49387984fa059ca9904600ba7edacd39a1b6ff2dcc6be29b9b08d0944675d7f5c} 
+FILE\+\_\+\+NOT\+\_\+\+EXSIT&file not exists \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OTHER\_MISTAKES@{OTHER\_MISTAKES}!CCPdfDocument@{CCPdfDocument}}\index{CCPdfDocument@{CCPdfDocument}!OTHER\_MISTAKES@{OTHER\_MISTAKES}}}\Hypertarget{class_c_c_pdf_document_a49387984fa059ca9904600ba7edacd39a47cddc738bfdf4c33c7b47355c4c3799}\label{class_c_c_pdf_document_a49387984fa059ca9904600ba7edacd39a47cddc738bfdf4c33c7b47355c4c3799} 
+OTHER\+\_\+\+MISTAKES&other mistakes \\
+\hline
+
+\end{DoxyEnumFields}
+\Hypertarget{class_c_c_pdf_document_a0272e6f6cebd68b3d59af3398c04f7e7}\index{CCPdfDocument@{CCPdfDocument}!PageNavigationError@{PageNavigationError}}
+\index{PageNavigationError@{PageNavigationError}!CCPdfDocument@{CCPdfDocument}}
+\doxysubsubsection{\texorpdfstring{PageNavigationError}{PageNavigationError}}
+{\footnotesize\ttfamily \label{class_c_c_pdf_document_a0272e6f6cebd68b3d59af3398c04f7e7} 
+enum class \mbox{\hyperlink{class_c_c_pdf_document_a0272e6f6cebd68b3d59af3398c04f7e7}{CCPdf\+Document\+::\+Page\+Navigation\+Error}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Represents possible errors that can occur during page navigation. 
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PAGE\_OK@{PAGE\_OK}!CCPdfDocument@{CCPdfDocument}}\index{CCPdfDocument@{CCPdfDocument}!PAGE\_OK@{PAGE\_OK}}}\Hypertarget{class_c_c_pdf_document_a0272e6f6cebd68b3d59af3398c04f7e7a69441610846a0b4d3df2812634cad43d}\label{class_c_c_pdf_document_a0272e6f6cebd68b3d59af3398c04f7e7a69441610846a0b4d3df2812634cad43d} 
+PAGE\+\_\+\+OK&Navigation succeeded without error. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PAGE\_UNDERFLOW@{PAGE\_UNDERFLOW}!CCPdfDocument@{CCPdfDocument}}\index{CCPdfDocument@{CCPdfDocument}!PAGE\_UNDERFLOW@{PAGE\_UNDERFLOW}}}\Hypertarget{class_c_c_pdf_document_a0272e6f6cebd68b3d59af3398c04f7e7aa3139ea349de14385f2d0f92277c550b}\label{class_c_c_pdf_document_a0272e6f6cebd68b3d59af3398c04f7e7aa3139ea349de14385f2d0f92277c550b} 
+PAGE\+\_\+\+UNDERFLOW&Attempted to navigate to a page before the first page. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PAGE\_OVERFLOW@{PAGE\_OVERFLOW}!CCPdfDocument@{CCPdfDocument}}\index{CCPdfDocument@{CCPdfDocument}!PAGE\_OVERFLOW@{PAGE\_OVERFLOW}}}\Hypertarget{class_c_c_pdf_document_a0272e6f6cebd68b3d59af3398c04f7e7a01b68e8cc095ffb91250bb4dc8271a0d}\label{class_c_c_pdf_document_a0272e6f6cebd68b3d59af3398c04f7e7a01b68e8cc095ffb91250bb4dc8271a0d} 
+PAGE\+\_\+\+OVERFLOW&Attempted to navigate to a page beyond the last page. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PAGE\_UNEXSITS@{PAGE\_UNEXSITS}!CCPdfDocument@{CCPdfDocument}}\index{CCPdfDocument@{CCPdfDocument}!PAGE\_UNEXSITS@{PAGE\_UNEXSITS}}}\Hypertarget{class_c_c_pdf_document_a0272e6f6cebd68b3d59af3398c04f7e7a7d71d1787b5c7553b77ad4f3a1582eb1}\label{class_c_c_pdf_document_a0272e6f6cebd68b3d59af3398c04f7e7a7d71d1787b5c7553b77ad4f3a1582eb1} 
+PAGE\+\_\+\+UNEXSITS&The specified page does not exist. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_c_c_pdf_document_a4a19d58e4c4cc536bf7aaba7586be6da}\index{CCPdfDocument@{CCPdfDocument}!close\_document@{close\_document}}
+\index{close\_document@{close\_document}!CCPdfDocument@{CCPdfDocument}}
+\doxysubsubsection{\texorpdfstring{close\_document()}{close\_document()}}
+{\footnotesize\ttfamily \label{class_c_c_pdf_document_a4a19d58e4c4cc536bf7aaba7586be6da} 
+bool CCPdf\+Document\+::close\+\_\+document (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+close\+\_\+document close the document 
+
+\begin{DoxyReturn}{Returns}
+true if the document is closed successfully 
+\end{DoxyReturn}
+\Hypertarget{class_c_c_pdf_document_ab0dbbff186c5b2b6c6eb71d54062355c}\index{CCPdfDocument@{CCPdfDocument}!current\_page@{current\_page}}
+\index{current\_page@{current\_page}!CCPdfDocument@{CCPdfDocument}}
+\doxysubsubsection{\texorpdfstring{current\_page()}{current\_page()}}
+{\footnotesize\ttfamily \label{class_c_c_pdf_document_ab0dbbff186c5b2b6c6eb71d54062355c} 
+int CCPdf\+Document\+::current\+\_\+page (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+current pages in documentations 
+
+\begin{DoxyNote}{Note}
+For GNU C Lovers, if u worried the performace issue, considering using {\bfseries{attribute}}((always\+\_\+inline)) attributes to push compilers using inline method to reduce the cost, as this invokes frequently 
+\end{DoxyNote}
+\Hypertarget{class_c_c_pdf_document_acb5d93f0d8624153bf748b0867108240}\index{CCPdfDocument@{CCPdfDocument}!current\_path@{current\_path}}
+\index{current\_path@{current\_path}!CCPdfDocument@{CCPdfDocument}}
+\doxysubsubsection{\texorpdfstring{current\_path()}{current\_path()}}
+{\footnotesize\ttfamily \label{class_c_c_pdf_document_acb5d93f0d8624153bf748b0867108240} 
+QString CCPdf\+Document\+::current\+\_\+path (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+current\+\_\+path current holding paths 
+
+\begin{DoxyReturn}{Returns}
+current\+\_\+path handlings 
+\end{DoxyReturn}
+\Hypertarget{class_c_c_pdf_document_ac7a27d7e7420a45635a4fd872b11587d}\index{CCPdfDocument@{CCPdfDocument}!document\_load@{document\_load}}
+\index{document\_load@{document\_load}!CCPdfDocument@{CCPdfDocument}}
+\doxysubsubsection{\texorpdfstring{document\_load}{document\_load}}
+{\footnotesize\ttfamily \label{class_c_c_pdf_document_ac7a27d7e7420a45635a4fd872b11587d} 
+void CCPdf\+Document\+::document\+\_\+load (\begin{DoxyParamCaption}\item[{const QString}]{document\+\_\+path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Emitted when a document is loaded. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em document\+\_\+path} & The file path of the loaded document. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_c_c_pdf_document_a49341806a63155ce6222962c0b741bdf}\index{CCPdfDocument@{CCPdfDocument}!document\_loaded@{document\_loaded}}
+\index{document\_loaded@{document\_loaded}!CCPdfDocument@{CCPdfDocument}}
+\doxysubsubsection{\texorpdfstring{document\_loaded()}{document\_loaded()}}
+{\footnotesize\ttfamily \label{class_c_c_pdf_document_a49341806a63155ce6222962c0b741bdf} 
+bool CCPdf\+Document\+::document\+\_\+loaded (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+document\+\_\+loaded check if the document is loaded 
+
+\begin{DoxyReturn}{Returns}
+true if the document is loaded 
+\end{DoxyReturn}
+\Hypertarget{class_c_c_pdf_document_abf9058577d2c7f75dd522bef8bd1ace5}\index{CCPdfDocument@{CCPdfDocument}!document\_page@{document\_page}}
+\index{document\_page@{document\_page}!CCPdfDocument@{CCPdfDocument}}
+\doxysubsubsection{\texorpdfstring{document\_page()}{document\_page()}}
+{\footnotesize\ttfamily \label{class_c_c_pdf_document_abf9058577d2c7f75dd522bef8bd1ace5} 
+std\+::optional$<$ uint32\+\_\+t $>$ CCPdf\+Document\+::document\+\_\+page (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+document\+\_\+page get the page count of the document 
+
+\begin{DoxyReturn}{Returns}
+the page count of the document 
+\end{DoxyReturn}
+\Hypertarget{class_c_c_pdf_document_a7c6467e8c92cccdfbc6571d0af3ba774}\index{CCPdfDocument@{CCPdfDocument}!jump@{jump}}
+\index{jump@{jump}!CCPdfDocument@{CCPdfDocument}}
+\doxysubsubsection{\texorpdfstring{jump()}{jump()}}
+{\footnotesize\ttfamily \label{class_c_c_pdf_document_a7c6467e8c92cccdfbc6571d0af3ba774} 
+\mbox{\hyperlink{class_c_c_pdf_document_a0272e6f6cebd68b3d59af3398c04f7e7}{CCPdf\+Document\+::\+Page\+Navigation\+Error}} CCPdf\+Document\+::jump (\begin{DoxyParamCaption}\item[{const int}]{page\+\_\+index}{}\end{DoxyParamCaption})}
+
+
+
+Jumps to the specified page index. 
+
+This function attempts to change the current page to the given index.
+
+
+\begin{DoxyParams}{Parameters}
+{\em page\+\_\+index} & The index of the page to jump to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_c_c_pdf_document_a0272e6f6cebd68b3d59af3398c04f7e7}{Page\+Navigation\+Error} Returns the result of the navigation attempt. 
+\end{DoxyReturn}
+\Hypertarget{class_c_c_pdf_document_adbcadc5fe612d3c0dd8ccbe18094e24a}\index{CCPdfDocument@{CCPdfDocument}!load\_document@{load\_document}}
+\index{load\_document@{load\_document}!CCPdfDocument@{CCPdfDocument}}
+\doxysubsubsection{\texorpdfstring{load\_document()}{load\_document()}}
+{\footnotesize\ttfamily \label{class_c_c_pdf_document_adbcadc5fe612d3c0dd8ccbe18094e24a} 
+\mbox{\hyperlink{class_c_c_pdf_document_a49387984fa059ca9904600ba7edacd39}{CCPdf\+Document\+::\+Error\+Code}} CCPdf\+Document\+::load\+\_\+document (\begin{DoxyParamCaption}\item[{const QString \&}]{document\+\_\+path}{}\end{DoxyParamCaption})}
+
+
+
+load\+\_\+document load the document by the path given 
+
+
+\begin{DoxyParams}{Parameters}
+{\em document\+\_\+path} & the path of the document \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the error code of open sessions 
+\end{DoxyReturn}
+\Hypertarget{class_c_c_pdf_document_a7a7851e64572f8c99883f46228505aee}\index{CCPdfDocument@{CCPdfDocument}!meta\_info@{meta\_info}}
+\index{meta\_info@{meta\_info}!CCPdfDocument@{CCPdfDocument}}
+\doxysubsubsection{\texorpdfstring{meta\_info()}{meta\_info()}}
+{\footnotesize\ttfamily \label{class_c_c_pdf_document_a7a7851e64572f8c99883f46228505aee} 
+\mbox{\hyperlink{struct_c_c_pdf_meta_info}{CCPdf\+Meta\+Info}} CCPdf\+Document\+::meta\+\_\+info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+meta\+\_\+info 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_c_c_pdf_document_aba7902cbf721d065edbed816dda6c811}\index{CCPdfDocument@{CCPdfDocument}!pageIndexChanged@{pageIndexChanged}}
+\index{pageIndexChanged@{pageIndexChanged}!CCPdfDocument@{CCPdfDocument}}
+\doxysubsubsection{\texorpdfstring{pageIndexChanged}{pageIndexChanged}}
+{\footnotesize\ttfamily \label{class_c_c_pdf_document_aba7902cbf721d065edbed816dda6c811} 
+void CCPdf\+Document\+::page\+Index\+Changed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Emitted when the current page index changes. 
+
+This signal is used for lightweight notifications when the page index is updated. \Hypertarget{class_c_c_pdf_document_a340e07d237df5d81800f2a289a2f4764}\index{CCPdfDocument@{CCPdfDocument}!raw\_context@{raw\_context}}
+\index{raw\_context@{raw\_context}!CCPdfDocument@{CCPdfDocument}}
+\doxysubsubsection{\texorpdfstring{raw\_context()}{raw\_context()}}
+{\footnotesize\ttfamily \label{class_c_c_pdf_document_a340e07d237df5d81800f2a289a2f4764} 
+fz\+\_\+context \texorpdfstring{$\ast$}{*} CCPdf\+Document\+::raw\+\_\+context (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+raw\+\_\+context 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_c_c_pdf_document_a1820f7860fc661eb6adbd383e58d9eba}\index{CCPdfDocument@{CCPdfDocument}!raw\_handle@{raw\_handle}}
+\index{raw\_handle@{raw\_handle}!CCPdfDocument@{CCPdfDocument}}
+\doxysubsubsection{\texorpdfstring{raw\_handle()}{raw\_handle()}}
+{\footnotesize\ttfamily \label{class_c_c_pdf_document_a1820f7860fc661eb6adbd383e58d9eba} 
+fz\+\_\+document \texorpdfstring{$\ast$}{*} CCPdf\+Document\+::raw\+\_\+handle (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+raw\+\_\+handle 
+
+\begin{DoxyReturn}{Returns}
+fz\+\_\+document as raw handle 
+\end{DoxyReturn}
+\Hypertarget{class_c_c_pdf_document_a458047bbb3fae082de34dd05ac2668d7}\index{CCPdfDocument@{CCPdfDocument}!total\_pages@{total\_pages}}
+\index{total\_pages@{total\_pages}!CCPdfDocument@{CCPdfDocument}}
+\doxysubsubsection{\texorpdfstring{total\_pages()}{total\_pages()}}
+{\footnotesize\ttfamily \label{class_c_c_pdf_document_a458047bbb3fae082de34dd05ac2668d7} 
+int CCPdf\+Document\+::total\+\_\+pages (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+total\+\_\+pages total pages the doc has 
+
+\begin{DoxyReturn}{Returns}
+total\+\_\+pages 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

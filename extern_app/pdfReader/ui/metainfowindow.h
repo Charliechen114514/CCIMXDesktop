@@ -7,24 +7,33 @@ namespace Ui {
 class MetaInfoWindow;
 }
 
-class MetaInfoWindow : public QMainWindow
-{
-    Q_OBJECT
+class MetaInfoWindow : public QMainWindow {
+	Q_OBJECT
 
 public:
-    explicit MetaInfoWindow(QWidget *parent = nullptr);
-    /* set the metas before you gonna display */
-    void set_metas(const CCPdfMetaInfo& info);
-    /* or if you wanna direct display, this is ur choice :) */
-    void set_metas_and_display(const CCPdfMetaInfo& info);
+	explicit MetaInfoWindow(QWidget* parent = nullptr);
+	/**
+	 * @brief set_metas meta infos for the displayings
+	 * @param info infos to display
+	 * @note if you wanna sync set and display, set_metas_and_display
+	 * is your choice
+	 * @see set_metas_and_display
+	 */
+	void set_metas(const CCPdfMetaInfo& info);
+	/**
+	 * @brief set_metas_and_display meta infos for the displayings
+	 * @param info infos to display
+	 * @note this make a direct flush
+	 */
+	void set_metas_and_display(const CCPdfMetaInfo& info);
 
-    ~MetaInfoWindow();
+	~MetaInfoWindow();
 
 private slots:
-    void on_pushButton_clicked();
+	void on_pushButton_clicked();
 
 private:
-    Ui::MetaInfoWindow *ui;
+	Ui::MetaInfoWindow* ui;
 };
 
 #endif // METAINFOWINDOW_H

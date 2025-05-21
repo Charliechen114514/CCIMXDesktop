@@ -7,26 +7,24 @@
 \DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <QString>}}
 \DoxyCodeLine{00004\ \textcolor{keyword}{namespace\ }UiTools\ \{}
 \DoxyCodeLine{00005\ }
-\DoxyCodeLine{00006\ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ TYPICAL\_FORMAT\ =\ \textcolor{stringliteral}{"{}HH:mm:ss"{}};}
-\DoxyCodeLine{00007\ }
-\DoxyCodeLine{00008\ QString\ toMediaTypicalTimeStr(\textcolor{keyword}{const}\ qint64\ time);}
-\DoxyCodeLine{00009\ }
-\DoxyCodeLine{00010\ \textcolor{comment}{/*\ downcast\ to\ seconds\ level\ for\ slider\ */}}
-\DoxyCodeLine{00011\ std::pair<qint64,\ qint64>\ downcast\_to\_sliderable\_period(qint64\ min,\ qint64\ max);}
-\DoxyCodeLine{00012\ }
-\DoxyCodeLine{00013\ \textcolor{comment}{/*\ downcast\ to\ seconds\ for\ position\ issue\ */}}
-\DoxyCodeLine{00014\ \textcolor{keyword}{inline}\ qint64\ downcast\_to\_sliderable\_position(qint64\ position)\ \{}
-\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordflow}{return}\ position\ /\ 1000;}
-\DoxyCodeLine{00016\ \}}
-\DoxyCodeLine{00017\ }
-\DoxyCodeLine{00018\ \textcolor{keyword}{inline}\ qint64\ upcast\_to\_mseconds(qint64\ position)\ \{}
-\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordflow}{return}\ position\ *\ 1000;}
-\DoxyCodeLine{00020\ \}}
+\DoxyCodeLine{00010\ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ TYPICAL\_FORMAT\ =\ \textcolor{stringliteral}{"{}HH:mm:ss"{}};}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00020\ QString\ toMediaTypicalTimeStr(\textcolor{keyword}{const}\ qint64\ time);}
 \DoxyCodeLine{00021\ }
-\DoxyCodeLine{00022\ QString\ toScrollLabelText(\textcolor{keyword}{const}\ QString\&\ src\_path);}
-\DoxyCodeLine{00023\ }
-\DoxyCodeLine{00024\ \};}
-\DoxyCodeLine{00025\ }
-\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ UITOOLS\_H}}
+\DoxyCodeLine{00030\ std::pair<qint64,\ qint64>\ downcast\_to\_sliderable\_period(qint64\ min,\ qint64\ max);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00039\ \textcolor{keyword}{inline}\ qint64\ downcast\_to\_sliderable\_position(qint64\ position)\ \{}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordflow}{return}\ position\ /\ 1000;}
+\DoxyCodeLine{00041\ \}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00050\ \textcolor{keyword}{inline}\ qint64\ upcast\_to\_mseconds(qint64\ position)\ \{}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordflow}{return}\ position\ *\ 1000;}
+\DoxyCodeLine{00052\ \}}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00060\ QString\ toScrollLabelText(\textcolor{keyword}{const}\ QString\&\ src\_path);}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \};}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ UITOOLS\_H}}
 
 \end{DoxyCode}

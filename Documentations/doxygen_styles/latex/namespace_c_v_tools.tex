@@ -1,0 +1,67 @@
+\doxysection{CVTools Namespace Reference}
+\hypertarget{namespace_c_v_tools}{}\label{namespace_c_v_tools}\index{CVTools@{CVTools}}
+
+
+The \doxylink{namespace_c_v_tools}{CVTools} namespace provides the tools.  
+
+
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_c_v_tools_1_1_display_params}{Display\+Params}}
+\begin{DoxyCompactList}\small\item\em The \doxylink{struct_c_v_tools_1_1_display_params}{Display\+Params} struct provides the display parameters for the display. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespace_c_v_tools_a51a3b55ab64608c385c9d063fcd70865}{display}} (const \mbox{\hyperlink{class_c_v_image}{CVImage}} \&image, const \mbox{\hyperlink{struct_c_v_tools_1_1_display_params}{Display\+Params}} \&params)
+\begin{DoxyCompactList}\small\item\em display the image with the default parameters \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_c_v_tools_a0063503f9a8f2a5d67689640b535b44a}{display}} (const \mbox{\hyperlink{class_c_v_image}{CVImage}} \&image, const char \texorpdfstring{$\ast$}{*}name)
+\begin{DoxyCompactList}\small\item\em display the image with the default parameters \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{namespace_c_v_tools}{CVTools} namespace provides the tools. 
+
+\begin{DoxyNote}{Note}
+Most of the implementations, for management reason, are supposed to place in the impl files, instead of the current cpp file 
+\end{DoxyNote}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace_c_v_tools_a0063503f9a8f2a5d67689640b535b44a}\index{CVTools@{CVTools}!display@{display}}
+\index{display@{display}!CVTools@{CVTools}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{namespace_c_v_tools_a0063503f9a8f2a5d67689640b535b44a} 
+void CVTools\+::display (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_v_image}{CVImage}} \&}]{image}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{name}{}\end{DoxyParamCaption})}
+
+
+
+display the image with the default parameters 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & the image to display \\
+\hline
+{\em name} & the window name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+this will use the default parameters 
+\end{DoxyNote}
+\Hypertarget{namespace_c_v_tools_a51a3b55ab64608c385c9d063fcd70865}\index{CVTools@{CVTools}!display@{display}}
+\index{display@{display}!CVTools@{CVTools}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{namespace_c_v_tools_a51a3b55ab64608c385c9d063fcd70865} 
+void CVTools\+::display (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_v_image}{CVImage}} \&}]{image}{, }\item[{const \mbox{\hyperlink{struct_c_v_tools_1_1_display_params}{Display\+Params}} \&}]{params}{}\end{DoxyParamCaption})}
+
+
+
+display the image with the default parameters 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & the image to display \\
+\hline
+{\em params} & the display parameters \\
+\hline
+\end{DoxyParams}

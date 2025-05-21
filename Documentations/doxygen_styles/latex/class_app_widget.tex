@@ -1,5 +1,14 @@
 \doxysection{App\+Widget Class Reference}
 \hypertarget{class_app_widget}{}\label{class_app_widget}\index{AppWidget@{AppWidget}}
+
+
+The \doxylink{class_app_widget}{App\+Widget} class is the App\+Widgets placing in the desktop.  
+
+
+
+
+{\ttfamily \#include $<$appwidget.\+h$>$}
+
 Inheritance diagram for App\+Widget\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -38,9 +47,8 @@ void {\bfseries set\+Icon} (const QPixmap \&icon) noexcept
 \Hypertarget{class_app_widget_a654bb3fd2c1a9fca116ccf71f7660e89}\label{class_app_widget_a654bb3fd2c1a9fca116ccf71f7660e89} 
 void {\bfseries set\+App\+Name} (const QString \&name) noexcept
 \item 
-\Hypertarget{class_app_widget_a4470138f00905b26ad5534948b6ddb50}\label{class_app_widget_a4470138f00905b26ad5534948b6ddb50} 
-void {\bfseries set\+Dummy} (bool dummy)
-\item 
+void \mbox{\hyperlink{class_app_widget_a4470138f00905b26ad5534948b6ddb50}{set\+Dummy}} (bool dummy)
+\begin{DoxyCompactList}\small\item\em set\+Dummy set the app visible only, and don\textquotesingle{}t make any senses this will disable any possible real interactive of the depatchings \end{DoxyCompactList}\item 
 \Hypertarget{class_app_widget_a9321ba6e7e0567ef8787bcdead1e8d2d}\label{class_app_widget_a9321ba6e7e0567ef8787bcdead1e8d2d} 
 QPixmap {\bfseries icon} () const
 \item 
@@ -56,6 +64,27 @@ QString {\bfseries app\+\_\+name} () const
 \Hypertarget{class_app_widget_a55452cd32f958fb15d12c13f48b02f8d}\label{class_app_widget_a55452cd32f958fb15d12c13f48b02f8d} 
 bool {\bfseries event\+Filter} (QObject \texorpdfstring{$\ast$}{*}watched, QEvent \texorpdfstring{$\ast$}{*}event) override
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_app_widget}{App\+Widget} class is the App\+Widgets placing in the desktop. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_app_widget_a4470138f00905b26ad5534948b6ddb50}\index{AppWidget@{AppWidget}!setDummy@{setDummy}}
+\index{setDummy@{setDummy}!AppWidget@{AppWidget}}
+\doxysubsubsection{\texorpdfstring{setDummy()}{setDummy()}}
+{\footnotesize\ttfamily \label{class_app_widget_a4470138f00905b26ad5534948b6ddb50} 
+void App\+Widget\+::set\+Dummy (\begin{DoxyParamCaption}\item[{bool}]{dummy}{}\end{DoxyParamCaption})}
+
+
+
+set\+Dummy set the app visible only, and don\textquotesingle{}t make any senses this will disable any possible real interactive of the depatchings 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dummy} & \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

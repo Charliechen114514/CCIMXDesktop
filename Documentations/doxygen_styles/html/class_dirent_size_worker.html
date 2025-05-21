@@ -109,6 +109,11 @@ $(function(){initNavTree('class_dirent_size_worker.html',''); initResizable(true
   <div class="headertitle"><div class="title">DirentSizeWorker Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The <a class="el" href="class_dirent_size_worker.html" title="The DirentSizeWorker class really counts the dirent below size and, this is asyncronous,...">DirentSizeWorker</a> class really counts the dirent below size and, this is asyncronous, so, sizeCountFinish signals will brings everytings.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_dirent_size_counter_8h_source.html">DirentSizeCounter.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for DirentSizeWorker:</div>
 <div class="dyncontent">
@@ -118,8 +123,8 @@ Inheritance diagram for DirentSizeWorker:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
 Signals</h2></td></tr>
-<tr class="memitem:a573cb1f554d74f6c5a72d3267b9610df" id="r_a573cb1f554d74f6c5a72d3267b9610df"><td class="memItemLeft" align="right" valign="top"><a id="a573cb1f554d74f6c5a72d3267b9610df" name="a573cb1f554d74f6c5a72d3267b9610df"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>sizeCountFinish</b> (QPersistentModelIndex index, qint64 size)</td></tr>
+<tr class="memitem:a573cb1f554d74f6c5a72d3267b9610df" id="r_a573cb1f554d74f6c5a72d3267b9610df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a573cb1f554d74f6c5a72d3267b9610df">sizeCountFinish</a> (QPersistentModelIndex index, qint64 size)</td></tr>
+<tr class="memdesc:a573cb1f554d74f6c5a72d3267b9610df"><td class="mdescLeft">&#160;</td><td class="mdescRight">sizeCountFinish signals the finish of the count  <br /></td></tr>
 <tr class="separator:a573cb1f554d74f6c5a72d3267b9610df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -127,10 +132,81 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aae3f5d3fb8b86a7fb43c15c3e5ad6964" id="r_aae3f5d3fb8b86a7fb43c15c3e5ad6964"><td class="memItemLeft" align="right" valign="top"><a id="aae3f5d3fb8b86a7fb43c15c3e5ad6964" name="aae3f5d3fb8b86a7fb43c15c3e5ad6964"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>DirentSizeWorker</b> (QObject *object=nullptr)</td></tr>
 <tr class="separator:aae3f5d3fb8b86a7fb43c15c3e5ad6964"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa05d6a1c7629d8817c56a9c8d3543766" id="r_aa05d6a1c7629d8817c56a9c8d3543766"><td class="memItemLeft" align="right" valign="top"><a id="aa05d6a1c7629d8817c56a9c8d3543766" name="aa05d6a1c7629d8817c56a9c8d3543766"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>depatch_sizeCount_task</b> (const QPersistentModelIndex &amp;index, const QString &amp;path)</td></tr>
+<tr class="memitem:aa05d6a1c7629d8817c56a9c8d3543766" id="r_aa05d6a1c7629d8817c56a9c8d3543766"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa05d6a1c7629d8817c56a9c8d3543766">depatch_sizeCount_task</a> (const QPersistentModelIndex &amp;index, const QString &amp;path)</td></tr>
+<tr class="memdesc:aa05d6a1c7629d8817c56a9c8d3543766"><td class="mdescLeft">&#160;</td><td class="mdescRight">functions depatch an asyncronous count issues,  <br /></td></tr>
 <tr class="separator:aa05d6a1c7629d8817c56a9c8d3543766"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="class_dirent_size_worker.html" title="The DirentSizeWorker class really counts the dirent below size and, this is asyncronous,...">DirentSizeWorker</a> class really counts the dirent below size and, this is asyncronous, so, sizeCountFinish signals will brings everytings. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa05d6a1c7629d8817c56a9c8d3543766" name="aa05d6a1c7629d8817c56a9c8d3543766"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa05d6a1c7629d8817c56a9c8d3543766">&#9670;&#160;</a></span>depatch_sizeCount_task()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DirentSizeWorker::depatch_sizeCount_task </td>
+          <td>(</td>
+          <td class="paramtype">const QPersistentModelIndex &amp;</td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>functions depatch an asyncronous count issues, </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>the model index where we start the count </td></tr>
+    <tr><td class="paramname">path</td><td>the path to the directory </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a573cb1f554d74f6c5a72d3267b9610df" name="a573cb1f554d74f6c5a72d3267b9610df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a573cb1f554d74f6c5a72d3267b9610df">&#9670;&#160;</a></span>sizeCountFinish</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DirentSizeWorker::sizeCountFinish </td>
+          <td>(</td>
+          <td class="paramtype">QPersistentModelIndex</td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qint64</td>          <td class="paramname"><span class="paramname"><em>size</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel signal">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>sizeCountFinish signals the finish of the count </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>the model index where we start the count </td></tr>
+    <tr><td class="paramname">size</td><td>the size of the directory </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>extern_app/FileRamber/Core/<a class="el" href="_dirent_size_counter_8h_source.html">DirentSizeCounter.h</a></li>
 <li>extern_app/FileRamber/Core/<b>DirentSizeCounter.cpp</b></li>

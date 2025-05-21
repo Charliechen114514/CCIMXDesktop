@@ -108,16 +108,86 @@ $(function(){initNavTree('class_pesudo_a_p3216_c.html',''); initResizable(true);
   <div class="headertitle"><div class="title">PesudoAP3216C Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Pseudo adapter that returns random AP3216C sensor data, used for simulation or testing.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_pesudo_a_p3216_c_8h_source.html">PesudoAP3216C.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a03f61c5805f7a5e3a4f42e1d4b14d258" id="r_a03f61c5805f7a5e3a4f42e1d4b14d258"><td class="memItemLeft" align="right" valign="top"><a id="a03f61c5805f7a5e3a4f42e1d4b14d258" name="a03f61c5805f7a5e3a4f42e1d4b14d258"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>bind_file</b> (const std::string &amp;dev_file_path)</td></tr>
+<tr class="memitem:adc9fc53caee718071410c94075aab745" id="r_adc9fc53caee718071410c94075aab745"><td class="memItemLeft" align="right" valign="top"><a id="adc9fc53caee718071410c94075aab745" name="adc9fc53caee718071410c94075aab745"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>PesudoAP3216C</b> ()=default</td></tr>
+<tr class="memdesc:adc9fc53caee718071410c94075aab745"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br /></td></tr>
+<tr class="separator:adc9fc53caee718071410c94075aab745"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79ff4aff60eda7f89ab2dd687025b630" id="r_a79ff4aff60eda7f89ab2dd687025b630"><td class="memItemLeft" align="right" valign="top"><a id="a79ff4aff60eda7f89ab2dd687025b630" name="a79ff4aff60eda7f89ab2dd687025b630"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~PesudoAP3216C</b> ()=default</td></tr>
+<tr class="memdesc:a79ff4aff60eda7f89ab2dd687025b630"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor. <br /></td></tr>
+<tr class="separator:a79ff4aff60eda7f89ab2dd687025b630"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03f61c5805f7a5e3a4f42e1d4b14d258" id="r_a03f61c5805f7a5e3a4f42e1d4b14d258"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03f61c5805f7a5e3a4f42e1d4b14d258">bind_file</a> (const std::string &amp;dev_file_path)</td></tr>
+<tr class="memdesc:a03f61c5805f7a5e3a4f42e1d4b14d258"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mocks binding to a device file.  <br /></td></tr>
 <tr class="separator:a03f61c5805f7a5e3a4f42e1d4b14d258"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4f0de56d3756dc1d3ecab53479b2630" id="r_ac4f0de56d3756dc1d3ecab53479b2630"><td class="memItemLeft" align="right" valign="top"><a id="ac4f0de56d3756dc1d3ecab53479b2630" name="ac4f0de56d3756dc1d3ecab53479b2630"></a>
-std::optional&lt; <a class="el" href="struct_a_p3216_c_data.html">AP3216CData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>sync_read_once</b> (void)</td></tr>
+<tr class="memitem:ac4f0de56d3756dc1d3ecab53479b2630" id="r_ac4f0de56d3756dc1d3ecab53479b2630"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="struct_a_p3216_c_data.html">AP3216CData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4f0de56d3756dc1d3ecab53479b2630">sync_read_once</a> (void)</td></tr>
+<tr class="memdesc:ac4f0de56d3756dc1d3ecab53479b2630"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns pseudo-random sensor data.  <br /></td></tr>
 <tr class="separator:ac4f0de56d3756dc1d3ecab53479b2630"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Pseudo adapter that returns random AP3216C sensor data, used for simulation or testing. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a03f61c5805f7a5e3a4f42e1d4b14d258" name="a03f61c5805f7a5e3a4f42e1d4b14d258"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03f61c5805f7a5e3a4f42e1d4b14d258">&#9670;&#160;</a></span>bind_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PesudoAP3216C::bind_file </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>dev_file_path</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Mocks binding to a device file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dev_file_path</td><td>Device file path. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Always returns true. </dd></dl>
+
+</div>
+</div>
+<a id="ac4f0de56d3756dc1d3ecab53479b2630" name="ac4f0de56d3756dc1d3ecab53479b2630"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4f0de56d3756dc1d3ecab53479b2630">&#9670;&#160;</a></span>sync_read_once()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; <a class="el" href="struct_a_p3216_c_data.html">AP3216CData</a> &gt; PesudoAP3216C::sync_read_once </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns pseudo-random sensor data. </p>
+<dl class="section return"><dt>Returns</dt><dd>Optional simulated AP3216C data. </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>extern_app/professionals/boardlevel_application/Environment/Adapter/<a class="el" href="_pesudo_a_p3216_c_8h_source.html">PesudoAP3216C.h</a></li>
 <li>extern_app/professionals/boardlevel_application/Environment/Adapter/<b>PesudoAP3216C.cpp</b></li>

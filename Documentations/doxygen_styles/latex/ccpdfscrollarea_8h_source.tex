@@ -4,38 +4,38 @@
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CCPDFSCROLLAREA\_H}}
 \DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CCPDFSCROLLAREA\_H}}
-\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <QScrollArea>}}
-\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QTouchEvent>}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}ccpdfviewer.h"{}}}
 \DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QGestureEvent>}}
-\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}ccpdfviewer.h"{}}}
-\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }CCPdfScrollArea\ :\ \textcolor{keyword}{public}\ QScrollArea}
-\DoxyCodeLine{00008\ \{}
-\DoxyCodeLine{00009\ \ \ \ \ Q\_OBJECT}
-\DoxyCodeLine{00010\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{explicit}\ CCPdfScrollArea(QWidget*\ parent\ =\ \textcolor{keyword}{nullptr})\ :\ QScrollArea(parent)\{}
-\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ setAttribute(Qt::WA\_AcceptTouchEvents);}
-\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ grabGesture(Qt::PinchGesture);}
-\DoxyCodeLine{00014\ \ \ \ \ \}}
-\DoxyCodeLine{00015\ }
-\DoxyCodeLine{00016\ signals:}
-\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{void}\ indicate\_zoom(CCPdfViewer::ZoomDirection);}
-\DoxyCodeLine{00018\ }
-\DoxyCodeLine{00019\ \textcolor{keyword}{protected}:}
-\DoxyCodeLine{00020\ \ \ \ \ \textcolor{comment}{/*\ start\ the\ recording\ of\ the\ press\ event\ */}}
-\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ mousePressEvent(QMouseEvent*\ event)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00022\ }
-\DoxyCodeLine{00023\ \ \ \ \ \textcolor{comment}{/*\ end\ the\ recording\ of\ the\ press\ event\ */}}
-\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ mouseReleaseEvent(QMouseEvent*\ event)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00025\ }
-\DoxyCodeLine{00026\ \ \ \ \ \textcolor{comment}{/*\ process\ the\ issue\ */}}
-\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ mouseMoveEvent(QMouseEvent*\ event)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00028\ }
-\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ handleGestureEvent(QGestureEvent*\ event);}
-\DoxyCodeLine{00030\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{bool}\ \ \ \ \ \ \ \ is\_usr\_clicked\{\textcolor{keyword}{false}\};}
-\DoxyCodeLine{00032\ \ \ \ \ QPoint\ \ \ \ \ \ prev\_point;}
-\DoxyCodeLine{00033\ \};}
-\DoxyCodeLine{00034\ }
-\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CCPDFSCROLLAREA\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QScrollArea>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QTouchEvent>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_c_pdf_scroll_area_a7abde81eb52f2b6332ea7dc4217ca79a}{CCPdfScrollArea}}\ :\ \textcolor{keyword}{public}\ QScrollArea\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_c_c_pdf_scroll_area_a7abde81eb52f2b6332ea7dc4217ca79a}{CCPdfScrollArea}}(QWidget*\ parent\ =\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ :\ QScrollArea(parent)\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ setAttribute(Qt::WA\_AcceptTouchEvents);}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ grabGesture(Qt::PinchGesture);}
+\DoxyCodeLine{00025\ \ \ \ \ \}}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ signals:}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_c_pdf_scroll_area_a659bde2f5fe452c6cc90e0c8c042b18a}{indicate\_zoom}}(\mbox{\hyperlink{class_c_c_pdf_viewer_ac8458daf2cedd1f6118454f199401336}{CCPdfViewer::ZoomDirection}});}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_c_pdf_scroll_area_a89efd2947c242db9ca72649d65e40816}{mousePressEvent}}(QMouseEvent*\ event)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_c_pdf_scroll_area_ab65775e577a1ebaccb70c180ab526d98}{mouseReleaseEvent}}(QMouseEvent*\ event)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_c_pdf_scroll_area_ad413d294c74313cc39189e71018b19aa}{mouseMoveEvent}}(QMouseEvent*\ event)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_c_pdf_scroll_area_a688d7e77f99d63bbab5ca7ba24a5d452}{handleGestureEvent}}(QGestureEvent*\ event);}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{bool}\ is\_usr\_clicked\ \{\ \textcolor{keyword}{false}\ \};\ }
+\DoxyCodeLine{00058\ \ \ \ \ QPoint\ prev\_point;\ }
+\DoxyCodeLine{00059\ \};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CCPDFSCROLLAREA\_H}}
 
 \end{DoxyCode}

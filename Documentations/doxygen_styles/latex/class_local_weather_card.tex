@@ -1,5 +1,14 @@
 \doxysection{Local\+Weather\+Card Class Reference}
 \hypertarget{class_local_weather_card}{}\label{class_local_weather_card}\index{LocalWeatherCard@{LocalWeatherCard}}
+
+
+The \doxylink{class_local_weather_card}{Local\+Weather\+Card} class is the card widgets, press it to trigger the light service(current displaying by toast depatching)  
+
+
+
+
+{\ttfamily \#include $<$localweathercard.\+h$>$}
+
 Inheritance diagram for Local\+Weather\+Card\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -16,7 +25,7 @@ Inheritance diagram for Local\+Weather\+Card\+:\begin{figure}[H]
 {\bfseries Local\+Weather\+Card} (\mbox{\hyperlink{class_desktop_toast}{Desktop\+Toast}} \texorpdfstring{$\ast$}{*}toast, QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
 \item 
 void \mbox{\hyperlink{class_local_weather_card_a1bd3f52bf969c5d3747f6934da123fef}{invoke\+\_\+pre\+Launch\+\_\+work}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em concrete implementation of the \doxylink{class_app_card_widget}{App\+Card\+Widget} \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_app_card_widget}{App\+Card\+Widget}}}
 \begin{DoxyCompactItemize}
 \item 
@@ -24,20 +33,20 @@ void \mbox{\hyperlink{class_local_weather_card_a1bd3f52bf969c5d3747f6934da123fef
 \item 
 {\bfseries App\+Card\+Widget} (\mbox{\hyperlink{class_desktop_toast}{Desktop\+Toast}} \texorpdfstring{$\ast$}{*}toast, QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
 \item 
-virtual void {\bfseries set\+Current\+Icon} (const QPixmap \&icons)
-\item 
-bool {\bfseries event\+Filter} (QObject \texorpdfstring{$\ast$}{*}watched, QEvent \texorpdfstring{$\ast$}{*}event) override
-\end{DoxyCompactItemize}
+virtual void \mbox{\hyperlink{class_app_card_widget_a4a99ac0e10c319ef328cfa380ba56170}{set\+Current\+Icon}} (const QPixmap \&icons)
+\begin{DoxyCompactList}\small\item\em set\+Current\+Icon\+: for app cards, if we wanna specify the icons, we can use this function to rewrite the concrete app icons settings behaviors \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_app_card_widget_aaa303f4e4011e02c6cf0c776ca093ac3}{event\+Filter}} (QObject \texorpdfstring{$\ast$}{*}watched, QEvent \texorpdfstring{$\ast$}{*}event) override
+\begin{DoxyCompactList}\small\item\em defines how to listen to the user interactive events \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_local_weather_card_a6cac71c7f8be8719da4ee37a0c163363}{post\+App\+Card\+Widget}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em post\+App\+Card\+Widget is the concrete implementation of the \doxylink{class_app_card_widget}{App\+Card\+Widget} \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \Hypertarget{class_local_weather_card_a1eed22fb3253b6f55884578e75964a01}\label{class_local_weather_card_a1eed22fb3253b6f55884578e75964a01} 
-\mbox{\hyperlink{struct_local_weather_light_fetcher}{Local\+Weather\+Light\+Fetcher}} \texorpdfstring{$\ast$}{*} {\bfseries local\+Fetcher} \{nullptr\}
+\mbox{\hyperlink{struct_local_weather_light_fetcher}{Local\+Weather\+Light\+Fetcher}} \texorpdfstring{$\ast$}{*} {\bfseries local\+Fetcher} \{ nullptr \}
 \end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_app_card_widget}{App\+Card\+Widget}}}
 \begin{DoxyCompactItemize}
@@ -48,6 +57,9 @@ Ui\+::\+App\+Card\+Widget \texorpdfstring{$\ast$}{*} {\bfseries ui}
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+The \doxylink{class_local_weather_card}{Local\+Weather\+Card} class is the card widgets, press it to trigger the light service(current displaying by toast depatching) 
+
 \doxysubsection{Member Function Documentation}
 \Hypertarget{class_local_weather_card_a1bd3f52bf969c5d3747f6934da123fef}\index{LocalWeatherCard@{LocalWeatherCard}!invoke\_preLaunch\_work@{invoke\_preLaunch\_work}}
 \index{invoke\_preLaunch\_work@{invoke\_preLaunch\_work}!LocalWeatherCard@{LocalWeatherCard}}
@@ -57,7 +69,11 @@ void Local\+Weather\+Card\+::invoke\+\_\+pre\+Launch\+\_\+work (\begin{DoxyParam
 
 
 
-Implements \mbox{\hyperlink{class_app_card_widget}{App\+Card\+Widget}}.
+concrete implementation of the \doxylink{class_app_card_widget}{App\+Card\+Widget} 
+
+
+
+Implements \mbox{\hyperlink{class_app_card_widget_a2b27698b6de79bb3b772b4bf92e31fc3}{App\+Card\+Widget}}.
 
 \Hypertarget{class_local_weather_card_a6cac71c7f8be8719da4ee37a0c163363}\index{LocalWeatherCard@{LocalWeatherCard}!postAppCardWidget@{postAppCardWidget}}
 \index{postAppCardWidget@{postAppCardWidget}!LocalWeatherCard@{LocalWeatherCard}}
@@ -67,7 +83,14 @@ void Local\+Weather\+Card\+::post\+App\+Card\+Widget (\begin{DoxyParamCaption}{}
 
 
 
-Implements \mbox{\hyperlink{class_app_card_widget}{App\+Card\+Widget}}.
+post\+App\+Card\+Widget is the concrete implementation of the \doxylink{class_app_card_widget}{App\+Card\+Widget} 
+
+\begin{DoxyNote}{Note}
+this is the main function to post the message to the toast 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{class_app_card_widget_afabbff33f9e08d33549d0a8ff026ef30}{App\+Card\+Widget}}.
 
 
 

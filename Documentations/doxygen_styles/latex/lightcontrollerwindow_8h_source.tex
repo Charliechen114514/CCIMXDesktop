@@ -14,33 +14,43 @@
 \DoxyCodeLine{00010\ \}}
 \DoxyCodeLine{00011\ QT\_END\_NAMESPACE}
 \DoxyCodeLine{00012\ }
-\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }LightControllerWindow\ :\ \textcolor{keyword}{public}\ QMainWindow\ \{}
-\DoxyCodeLine{00014\ \ \ \ \ Q\_OBJECT}
-\DoxyCodeLine{00015\ }
-\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{enum\ class}\ Speed\ \{}
-\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ Slow,}
-\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ Normal,}
-\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ Fast}
-\DoxyCodeLine{00021\ \ \ \ \ \};}
-\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ DEV\_FILE\ =\ \textcolor{stringliteral}{"{}red-\/led"{}};}
-\DoxyCodeLine{00023\ \ \ \ \ LightControllerWindow(QWidget*\ parent\ =\ \textcolor{keyword}{nullptr});}
-\DoxyCodeLine{00024\ \ \ \ \ \string~LightControllerWindow();}
-\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{short}\ BLINK\_DEF\ =\ 500;}
-\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ process\_flip();}
-\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ process\_blink();}
-\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ process\_mode\_switching();}
-\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ process\_speed\_switching();}
-\DoxyCodeLine{00030\ }
-\DoxyCodeLine{00031\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{bool}\ init\_state\ \{\ \textcolor{keyword}{false}\ \};}
-\DoxyCodeLine{00033\ \ \ \ \ Ui::LightControllerWindow*\ ui;}
-\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{class_l_e_d_controller}{LEDController}}\ ledController;}
-\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{class_l_e_d_params_package_plain}{LEDParamsPackagePlain}}*\ plain\_package\ \{\ \textcolor{keyword}{nullptr}\ \};}
-\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{class_l_e_d_params_package_blink}{LEDParamsPackageBlink}}*\ blink\ \{\ \textcolor{keyword}{nullptr}\ \};}
-\DoxyCodeLine{00037\ \ \ \ \ Speed\ speed\ \{\ Speed::Normal\ \};}
-\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ init\_mode();}
-\DoxyCodeLine{00039\ \};}
-\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ LIGHTCONTROLLERWINDOW\_H}}
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_light_controller_window_add7241b973ac3a455955819094a71413}{LightControllerWindow}}\ :\ \textcolor{keyword}{public}\ QMainWindow\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{enum\ class}\ \mbox{\hyperlink{class_light_controller_window_ad01b4159b975884f5398071749f17593}{Speed}}\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_light_controller_window_ad01b4159b975884f5398071749f17593aefa5397985b8609a5dbeb430a4bcadd3}{Slow}},\ }
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_light_controller_window_ad01b4159b975884f5398071749f17593a960b44c579bc2f6818d2daaf9e4c16f0}{Normal}},\ }
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_light_controller_window_ad01b4159b975884f5398071749f17593ae16b5b7f26f54214445cbe38d72c2828}{Fast}}\ }
+\DoxyCodeLine{00024\ \ \ \ \ \};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{class_light_controller_window_adbec4204da0949f49c696593aa1f4a64}{DEV\_FILE}}\ =\ \textcolor{stringliteral}{"{}red-\/led"{}};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{short}\ \mbox{\hyperlink{class_light_controller_window_a2a3687f330f2ca5e1da07875f5565d60}{BLINK\_DEF}}\ =\ 500;}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{class_light_controller_window_add7241b973ac3a455955819094a71413}{LightControllerWindow}}(QWidget*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{class_light_controller_window_aa4a3ab37e5b8e3ce10c653e72700ab30}{\string~LightControllerWindow}}();}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_light_controller_window_a21b6a9dd6383816e1e1abab8fe033c92}{process\_flip}}();}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_light_controller_window_a40549df6846a9c90873b79969574ed4a}{process\_blink}}();}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_light_controller_window_a8318e6120013ebc8a85c2f94abb05a82}{process\_mode\_switching}}();}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_light_controller_window_aeb7462c0636ef7b66c52432b1b671251}{process\_speed\_switching}}();}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{bool}\ init\_state\ \{\ \textcolor{keyword}{false}\ \};\ }
+\DoxyCodeLine{00053\ \ \ \ \ Ui::LightControllerWindow*\ ui;\ }
+\DoxyCodeLine{00054\ \ \ \ \ \mbox{\hyperlink{class_l_e_d_controller}{LEDController}}\ ledController;\ }
+\DoxyCodeLine{00055\ \ \ \ \ \mbox{\hyperlink{class_l_e_d_params_package_plain}{LEDParamsPackagePlain}}*\ plain\_package\ \{\ \textcolor{keyword}{nullptr}\ \};\ }
+\DoxyCodeLine{00056\ \ \ \ \ LEDParamsPackageBlink*\ blink\ \{\ \textcolor{keyword}{nullptr}\ \};\ }
+\DoxyCodeLine{00057\ \ \ \ \ \mbox{\hyperlink{class_light_controller_window_ad01b4159b975884f5398071749f17593}{Speed}}\ speed\ \{\ \mbox{\hyperlink{class_light_controller_window_ad01b4159b975884f5398071749f17593a960b44c579bc2f6818d2daaf9e4c16f0}{Speed::Normal}}\ \};\ }
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{void}\ init\_mode();}
+\DoxyCodeLine{00061\ \};}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ LIGHTCONTROLLERWINDOW\_H}}
 
 \end{DoxyCode}

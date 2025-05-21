@@ -4,53 +4,65 @@
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ SPORTSCHART\_H}}
 \DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ SPORTSCHART\_H}}
-\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}ICM20608DataFactory.h"{}}}
-\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QWidget>}}
-\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }QLineSeries;}
-\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }QValueAxis;}
-\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }QTimer;}
-\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }QChart;}
-\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }QChartView;}
-\DoxyCodeLine{00010\ \textcolor{keyword}{namespace\ }Ui\ \{}
-\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }SportsChart;}
-\DoxyCodeLine{00012\ \}}
-\DoxyCodeLine{00013\ }
-\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }SportsChart\ :\ \textcolor{keyword}{public}\ QWidget\ \{}
-\DoxyCodeLine{00015\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}ICM20608DataFactory.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QWidget>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }QLineSeries;}
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }QValueAxis;}
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }QTimer;}
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }QChart;}
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }QChartView;}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }SportsChart;}
+\DoxyCodeLine{00015\ \}}
 \DoxyCodeLine{00016\ }
-\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{explicit}\ SportsChart(QWidget*\ parent\ =\ \textcolor{keyword}{nullptr});}
-\DoxyCodeLine{00019\ \ \ \ \ \string~SportsChart();}
-\DoxyCodeLine{00020\ }
-\DoxyCodeLine{00021\ signals:}
-\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ fetch\_once\_data(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_i_c_m20608_app_data}{ICM20608AppData}}\ data);}
-\DoxyCodeLine{00023\ }
-\DoxyCodeLine{00024\ \textcolor{keyword}{public}\ slots:}
-\DoxyCodeLine{00025\ \ \ \ \ \textcolor{comment}{/*\ Request\ To\ the\ Datas\ */}}
-\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ flush\_one\_request();}
-\DoxyCodeLine{00027\ }
-\DoxyCodeLine{00028\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00029\ \ \ \ \ Ui::SportsChart*\ ui;}
-\DoxyCodeLine{00030\ \ \ \ \ QLineSeries*\ seriesAx\ \{\ \textcolor{keyword}{nullptr}\ \};}
-\DoxyCodeLine{00031\ \ \ \ \ QLineSeries*\ seriesAy\ \{\ \textcolor{keyword}{nullptr}\ \};}
-\DoxyCodeLine{00032\ \ \ \ \ QLineSeries*\ seriesAz\ \{\ \textcolor{keyword}{nullptr}\ \};}
-\DoxyCodeLine{00033\ \ \ \ \ QLineSeries*\ seriesGx\ \{\ \textcolor{keyword}{nullptr}\ \};}
-\DoxyCodeLine{00034\ \ \ \ \ QLineSeries*\ seriesGy\ \{\ \textcolor{keyword}{nullptr}\ \};}
-\DoxyCodeLine{00035\ \ \ \ \ QLineSeries*\ seriesGz\ \{\ \textcolor{keyword}{nullptr}\ \};}
-\DoxyCodeLine{00036\ \ \ \ \ QValueAxis*\ a\_axisX\ \{\ \textcolor{keyword}{nullptr}\ \};}
-\DoxyCodeLine{00037\ \ \ \ \ QValueAxis*\ a\_axisY\ \{\ \textcolor{keyword}{nullptr}\ \};}
-\DoxyCodeLine{00038\ \ \ \ \ QValueAxis*\ g\_axisX\ \{\ \textcolor{keyword}{nullptr}\ \};}
-\DoxyCodeLine{00039\ \ \ \ \ QValueAxis*\ g\_axisY\ \{\ \textcolor{keyword}{nullptr}\ \};}
-\DoxyCodeLine{00040\ \ \ \ \ QChart*\ a\_chart\ \{\ \textcolor{keyword}{nullptr}\ \};}
-\DoxyCodeLine{00041\ \ \ \ \ QChart*\ g\_chart\ \{\ \textcolor{keyword}{nullptr}\ \};}
-\DoxyCodeLine{00042\ \ \ \ \ \mbox{\hyperlink{class_i_c_m20608_data_factory}{ICM20608DataFactory}}\ factory\ \{\};}
-\DoxyCodeLine{00043\ \ \ \ \ QChartView*\ gChartview\ \{\ \textcolor{keyword}{nullptr}\ \};}
-\DoxyCodeLine{00044\ \ \ \ \ QChartView*\ aChartview\ \{\ \textcolor{keyword}{nullptr}\ \};}
-\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{int}\ times\_cnt\ \{\ 0\ \};}
-\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ allocate\_memory();}
-\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ setup\_ui();}
-\DoxyCodeLine{00048\ \};}
-\DoxyCodeLine{00049\ }
-\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ SPORTSCHART\_H}}
+\DoxyCodeLine{00024\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_sports_chart_a5f5ac560c8ab4cf367cacb93f5ef544f}{SportsChart}}\ :\ \textcolor{keyword}{public}\ QWidget\ \{}
+\DoxyCodeLine{00025\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_sports_chart_a5f5ac560c8ab4cf367cacb93f5ef544f}{SportsChart}}(QWidget*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{class_sports_chart_a0d2390b8d696ee8bf072f0bfa2718841}{\string~SportsChart}}();}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ signals:}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sports_chart_a33c00bfec0facff1f36dde2fa0fa45c6}{fetch\_once\_data}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_i_c_m20608_app_data}{ICM20608AppData}}\ data);}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sports_chart_abdcac63e78cfe67e1926036180fc8144}{flush\_one\_request}}();}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00053\ \ \ \ \ Ui::SportsChart*\ ui;}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ QLineSeries*\ seriesAx\ \{\ \textcolor{keyword}{nullptr}\ \};\ }
+\DoxyCodeLine{00056\ \ \ \ \ QLineSeries*\ seriesAy\ \{\ \textcolor{keyword}{nullptr}\ \};\ }
+\DoxyCodeLine{00057\ \ \ \ \ QLineSeries*\ seriesAz\ \{\ \textcolor{keyword}{nullptr}\ \};\ }
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ \ \ QLineSeries*\ seriesGx\ \{\ \textcolor{keyword}{nullptr}\ \};\ }
+\DoxyCodeLine{00060\ \ \ \ \ QLineSeries*\ seriesGy\ \{\ \textcolor{keyword}{nullptr}\ \};\ }
+\DoxyCodeLine{00061\ \ \ \ \ QLineSeries*\ seriesGz\ \{\ \textcolor{keyword}{nullptr}\ \};\ }
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ \ \ QValueAxis*\ a\_axisX\ \{\ \textcolor{keyword}{nullptr}\ \};\ }
+\DoxyCodeLine{00064\ \ \ \ \ QValueAxis*\ a\_axisY\ \{\ \textcolor{keyword}{nullptr}\ \};\ }
+\DoxyCodeLine{00065\ \ \ \ \ QValueAxis*\ g\_axisX\ \{\ \textcolor{keyword}{nullptr}\ \};\ }
+\DoxyCodeLine{00066\ \ \ \ \ QValueAxis*\ g\_axisY\ \{\ \textcolor{keyword}{nullptr}\ \};\ }
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \ \ \ \ QChart*\ a\_chart\ \{\ \textcolor{keyword}{nullptr}\ \};\ }
+\DoxyCodeLine{00069\ \ \ \ \ QChart*\ g\_chart\ \{\ \textcolor{keyword}{nullptr}\ \};\ }
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \ \ \ \ ICM20608DataFactory\ factory\ \{\};\ }
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \ \ \ \ QChartView*\ gChartview\ \{\ \textcolor{keyword}{nullptr}\ \};\ }
+\DoxyCodeLine{00074\ \ \ \ \ QChartView*\ aChartview\ \{\ \textcolor{keyword}{nullptr}\ \};\ }
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{int}\ times\_cnt\ \{\ 0\ \};\ }
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{void}\ allocate\_memory();}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{void}\ setup\_ui();}
+\DoxyCodeLine{00087\ \};}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ SPORTSCHART\_H}}
 
 \end{DoxyCode}

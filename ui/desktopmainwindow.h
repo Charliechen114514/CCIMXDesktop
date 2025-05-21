@@ -15,7 +15,7 @@ class DesktopToast;
 class ApplicationWrapper;
 class QTimer;
 class QStackedWidget;
-
+class DownDockWidget;
 class AppCardWidget;
 
 /**
@@ -58,6 +58,13 @@ public:
 	 * @return DesktopToast
 	 */
 	inline DesktopToast* desktop_toast() const { return toast; }
+
+	/**
+	 * @brief downDockWidget returns the global instance of the downDockWidget
+	 * @return DownDockWidget
+	 */
+	DownDockWidget* downDockWidget() const;
+
 	/**
 	 * @brief to_next_page makes the slide to next page
 	 */

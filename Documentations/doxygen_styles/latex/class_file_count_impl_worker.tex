@@ -1,5 +1,14 @@
 \doxysection{File\+Count\+Impl\+Worker Class Reference}
 \hypertarget{class_file_count_impl_worker}{}\label{class_file_count_impl_worker}\index{FileCountImplWorker@{FileCountImplWorker}}
+
+
+The \doxylink{class_file_count_impl_worker}{File\+Count\+Impl\+Worker} class makes the file count session actually.  
+
+
+
+
+{\ttfamily \#include $<$File\+Count\+Info.\+h$>$}
+
 Inheritance diagram for File\+Count\+Impl\+Worker\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,18 +18,56 @@ Inheritance diagram for File\+Count\+Impl\+Worker\+:\begin{figure}[H]
 \doxysubsubsection*{Signals}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_file_count_impl_worker_acb45c90298bc1449d266dfb9f3885a5d}\label{class_file_count_impl_worker_acb45c90298bc1449d266dfb9f3885a5d} 
-void {\bfseries file\+Count\+Finished} (QPersistent\+Model\+Index index, int count)
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_file_count_impl_worker_acb45c90298bc1449d266dfb9f3885a5d}{file\+Count\+Finished}} (QPersistent\+Model\+Index index, int count)
+\begin{DoxyCompactList}\small\item\em file\+Count\+Finished signals the finish of the count \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \Hypertarget{class_file_count_impl_worker_ad86c9f922e9c0977e620ba10ae529714}\label{class_file_count_impl_worker_ad86c9f922e9c0977e620ba10ae529714} 
 {\bfseries File\+Count\+Impl\+Worker} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
 \item 
-\Hypertarget{class_file_count_impl_worker_a8ad1677a62be3e2de91d1372435cff6b}\label{class_file_count_impl_worker_a8ad1677a62be3e2de91d1372435cff6b} 
-void {\bfseries deptach\+\_\+count\+\_\+task} (const QPersistent\+Model\+Index \&index, const QString \&path)
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_file_count_impl_worker_a8ad1677a62be3e2de91d1372435cff6b}{deptach\+\_\+count\+\_\+task}} (const QPersistent\+Model\+Index \&index, const QString \&path)
+\begin{DoxyCompactList}\small\item\em functions depatch an asyncronous count issues, \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_file_count_impl_worker}{File\+Count\+Impl\+Worker} class makes the file count session actually. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_file_count_impl_worker_a8ad1677a62be3e2de91d1372435cff6b}\index{FileCountImplWorker@{FileCountImplWorker}!deptach\_count\_task@{deptach\_count\_task}}
+\index{deptach\_count\_task@{deptach\_count\_task}!FileCountImplWorker@{FileCountImplWorker}}
+\doxysubsubsection{\texorpdfstring{deptach\_count\_task()}{deptach\_count\_task()}}
+{\footnotesize\ttfamily \label{class_file_count_impl_worker_a8ad1677a62be3e2de91d1372435cff6b} 
+void File\+Count\+Impl\+Worker\+::deptach\+\_\+count\+\_\+task (\begin{DoxyParamCaption}\item[{const QPersistent\+Model\+Index \&}]{index}{, }\item[{const QString \&}]{path}{}\end{DoxyParamCaption})}
+
+
+
+functions depatch an asyncronous count issues, 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & the model index where we start the count \\
+\hline
+{\em path} & the path to the directory \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_file_count_impl_worker_acb45c90298bc1449d266dfb9f3885a5d}\index{FileCountImplWorker@{FileCountImplWorker}!fileCountFinished@{fileCountFinished}}
+\index{fileCountFinished@{fileCountFinished}!FileCountImplWorker@{FileCountImplWorker}}
+\doxysubsubsection{\texorpdfstring{fileCountFinished}{fileCountFinished}}
+{\footnotesize\ttfamily \label{class_file_count_impl_worker_acb45c90298bc1449d266dfb9f3885a5d} 
+void File\+Count\+Impl\+Worker\+::file\+Count\+Finished (\begin{DoxyParamCaption}\item[{QPersistent\+Model\+Index}]{index}{, }\item[{int}]{count}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+file\+Count\+Finished signals the finish of the count 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & the model index where we start the count \\
+\hline
+{\em count} & the count of the directory \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

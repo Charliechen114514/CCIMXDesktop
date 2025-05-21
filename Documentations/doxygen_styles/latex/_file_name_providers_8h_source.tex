@@ -10,25 +10,28 @@
 \DoxyCodeLine{00006\ }
 \DoxyCodeLine{00007\ \textcolor{keyword}{class\ }FileNameProviders\ :\ \textcolor{keyword}{public}\ FileInfoProvider\ \{}
 \DoxyCodeLine{00008\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00009\ \ \ \ \ FileNameProviders(\mbox{\hyperlink{class_c_c_i_m_x_file_system_model}{CCIMXFileSystemModel}}*\ models);}
+\DoxyCodeLine{00009\ \ \ \ \ FileNameProviders(\mbox{\hyperlink{class_c_c_i_m_x_file_system_model}{CCIMXFileSystemModel}}*\ \mbox{\hyperlink{class_file_info_provider_ae898e8c9bb3dc76decd869a018f9c0d9}{models}});}
 \DoxyCodeLine{00010\ \ \ \ \ Q\_DISABLE\_COPY(FileNameProviders);}
-\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{inline}\ QString\ provide\_section\_name()\textcolor{keyword}{\ override\ }\{}
-\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}FileName"{}};}
-\DoxyCodeLine{00013\ \ \ \ \ \}}
-\DoxyCodeLine{00014\ \ \ \ \ std::pair<bool,\ QVariant>\ data(\textcolor{keyword}{const}\ QModelIndex\&\ index,\ \textcolor{keywordtype}{int}\ role)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{using\ }FileExtension\ =\ QString;}
-\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{using\ }ColorPairs\ =\ std::pair<FileExtension,\ QColor>;}
-\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{void}\ registerColorPairs(\textcolor{keyword}{const}\ ColorPairs\&\ pairs);}
-\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{void}\ \textcolor{keyword}{inline}\ register\_special\_dircolor(\textcolor{keyword}{const}\ QColor\&\ t)\ \{}
-\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ dirent\_color\ =\ t;}
-\DoxyCodeLine{00020\ \ \ \ \ \}}
-\DoxyCodeLine{00021\ }
-\DoxyCodeLine{00022\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00023\ \ \ \ \ std::pair<bool,\ QVariant>\ handle\_extension\_color(\textcolor{keyword}{const}\ QModelIndex\&\ index);}
-\DoxyCodeLine{00024\ \ \ \ \ QMap<FileExtension,\ QColor>\ mappings;}
-\DoxyCodeLine{00025\ \ \ \ \ QColor\ dirent\_color\ \{\ Qt::darkMagenta\ \};}
-\DoxyCodeLine{00026\ \};}
-\DoxyCodeLine{00027\ }
-\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ FILENAMEPROVIDERS\_H}}
+\DoxyCodeLine{00011\ \ \ \ \ \string~FileNameProviders()\ \textcolor{keyword}{override}\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{inline}\ QString\ \mbox{\hyperlink{class_file_name_providers_a3fc88ac86b53656f9e75a0476004ac18}{provide\_section\_name}}()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}FileName"{}};}
+\DoxyCodeLine{00018\ \ \ \ \ \}}
+\DoxyCodeLine{00026\ \ \ \ \ std::pair<bool,\ QVariant>\ \mbox{\hyperlink{class_file_name_providers_ab7c156fc04bc7888677c266f79f15127}{data}}(\textcolor{keyword}{const}\ QModelIndex\&\ index,\ \textcolor{keywordtype}{int}\ role)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{using\ }FileExtension\ =\ QString;}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{using\ }ColorPairs\ =\ std::pair<FileExtension,\ QColor>;}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_file_name_providers_ad649d1ca2c8291733510803220b61b5d}{registerColorPairs}}(\textcolor{keyword}{const}\ ColorPairs\&\ pairs);}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{class_file_name_providers_ad419a989e778ba01fc40417dd78ec62a}{register\_special\_dircolor}}(\textcolor{keyword}{const}\ QColor\&\ t)\ \{}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ dirent\_color\ =\ t;}
+\DoxyCodeLine{00042\ \ \ \ \ \}}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00045\ \ \ \ \ std::pair<bool,\ QVariant>}
+\DoxyCodeLine{00046\ \ \ \ \ handle\_extension\_color(\textcolor{keyword}{const}\ QModelIndex\&\ index);\ }
+\DoxyCodeLine{00047\ \ \ \ \ QMap<FileExtension,\ QColor>\ mappings;\ }
+\DoxyCodeLine{00048\ \ \ \ \ QColor\ dirent\_color\ \{\ Qt::darkMagenta\ \};\ }
+\DoxyCodeLine{00049\ \};}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ FILENAMEPROVIDERS\_H}}
 
 \end{DoxyCode}

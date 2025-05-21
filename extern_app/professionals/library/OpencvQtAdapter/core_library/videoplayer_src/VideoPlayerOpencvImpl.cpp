@@ -113,7 +113,7 @@ bool VideoPlayerOpencvImpl::open(const char* filename, VideoPlayerOpenErrorCode&
 	}
 
 	if (!internal_capture->open(filename)) {
-		error_code = VideoPlayerOpenErrorCode::FileUnExsited;
+		error_code = VideoPlayerOpenErrorCode::OpenFailed;
 		return false;
 	}
 

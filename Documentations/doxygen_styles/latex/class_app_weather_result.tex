@@ -1,5 +1,14 @@
 \doxysection{App\+Weather\+Result Class Reference}
 \hypertarget{class_app_weather_result}{}\label{class_app_weather_result}\index{AppWeatherResult@{AppWeatherResult}}
+
+
+The \doxylink{class_app_weather_result}{App\+Weather\+Result} class The \doxylink{class_app_weather_result}{App\+Weather\+Result} class provides the weather result and implements the \doxylink{struct_weather_result}{Weather\+Result} function.  
+
+
+
+
+{\ttfamily \#include $<$App\+Weather\+Request.\+h$>$}
+
 Inheritance diagram for App\+Weather\+Result\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -10,7 +19,7 @@ Inheritance diagram for App\+Weather\+Result\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{struct_app_weather_result_1_1_daily_weather}{Daily\+Weather}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The \doxylink{struct_app_weather_result_1_1_daily_weather}{Daily\+Weather} class The \doxylink{struct_app_weather_result_1_1_daily_weather}{Daily\+Weather} class provides the daily weather json strings is expected to serialize into this struct. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -18,10 +27,10 @@ struct \mbox{\hyperlink{struct_app_weather_result_1_1_daily_weather}{Daily\+Weat
 {\bfseries App\+Weather\+Result} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
 \item 
 void \mbox{\hyperlink{class_app_weather_result_a29da2246f7b3941ae7f8b2d695536b33}{parse\+Json\+String}} (const QString json) override
-\item 
+\begin{DoxyCompactList}\small\item\em parse\+Json\+String parse the json from remote webs \end{DoxyCompactList}\item 
 \Hypertarget{class_app_weather_result_a8971c07da34beaefe4f964fc99839a66}\label{class_app_weather_result_a8971c07da34beaefe4f964fc99839a66} 
 void {\bfseries debug\+Print} () const
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em debug\+Print print the json object \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{struct_weather_result}{Weather\+Result}}}
 \begin{DoxyCompactItemize}
 \item 
@@ -32,19 +41,22 @@ void {\bfseries debug\+Print} () const
 \item 
 \Hypertarget{class_app_weather_result_a68c15f5dbe8e889ed2214bac7458cd8c}\label{class_app_weather_result_a68c15f5dbe8e889ed2214bac7458cd8c} 
 QString {\bfseries cached\+\_\+city}
-\item 
+\begin{DoxyCompactList}\small\item\em city required \end{DoxyCompactList}\item 
 \Hypertarget{class_app_weather_result_af8ca2efac4e7aa5ef50c2df2c606043d}\label{class_app_weather_result_af8ca2efac4e7aa5ef50c2df2c606043d} 
 QList$<$ \mbox{\hyperlink{struct_app_weather_result_1_1_daily_weather}{Daily\+Weather}} $>$ {\bfseries daily\+\_\+weather}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em daily weather \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Additional Inherited Members}
 \doxysubsection*{Signals inherited from \mbox{\hyperlink{struct_weather_result}{Weather\+Result}}}
 \begin{DoxyCompactItemize}
 \item 
 void {\bfseries finish\+\_\+parse} ()
-\item 
-void {\bfseries error\+\_\+occurs} (QString cached\+\_\+error\+\_\+string)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em finish\+\_\+parse when the parsing is finished, this signal will be emitted \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_weather_result_ac0bbf6a55fec1721e157da2d1c50b9c3}{error\+\_\+occurs}} (QString cached\+\_\+error\+\_\+string)
+\begin{DoxyCompactList}\small\item\em error\+\_\+occurs when an error occurs, this signal will be emitted \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_app_weather_result}{App\+Weather\+Result} class The \doxylink{class_app_weather_result}{App\+Weather\+Result} class provides the weather result and implements the \doxylink{struct_weather_result}{Weather\+Result} function. 
 
 \doxysubsection{Member Function Documentation}
 \Hypertarget{class_app_weather_result_a29da2246f7b3941ae7f8b2d695536b33}\index{AppWeatherResult@{AppWeatherResult}!parseJsonString@{parseJsonString}}
@@ -55,7 +67,16 @@ void App\+Weather\+Result\+::parse\+Json\+String (\begin{DoxyParamCaption}\item[
 
 
 
-Implements \mbox{\hyperlink{struct_weather_result}{Weather\+Result}}.
+parse\+Json\+String parse the json from remote webs 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json} & the json string \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{struct_weather_result_a7241825ed885decb2ebb752a1502e400}{Weather\+Result}}.
 
 
 

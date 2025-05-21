@@ -108,32 +108,36 @@ $(function(){initNavTree('_media_player_2base_2_c_v_image_impl_8h_source.html','
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef CVIMAGEIMPL_H</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define CVIMAGEIMPL_H</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">/* class interfaces */</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_c_v_image_impl.html">    5</a></span><span class="keyword">class </span><a class="code hl_class" href="class_c_v_image_impl.html">CVImageImpl</a> {</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> load_from_file(<span class="keyword">const</span> <span class="keywordtype">char</span>* filename) = 0;</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> assigned(<span class="keyword">const</span> <a class="code hl_class" href="class_c_v_image_impl.html">CVImageImpl</a>* impl, <span class="keywordtype">bool</span> req_copy) = 0;</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> pass_copy(<span class="keyword">const</span> <a class="code hl_class" href="class_c_v_image_impl.html">CVImageImpl</a>* copied) = 0;</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keyword">virtual</span> <a class="code hl_class" href="class_c_v_image_impl.html">~CVImageImpl</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> image_valid() = 0;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>};</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span></div>
+<div class="foldopen" id="foldopen00009" data-start="{" data-end="};">
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_c_v_image_impl.html">    9</a></span><span class="keyword">class </span><a class="code hl_class" href="class_c_v_image_impl.html">CVImageImpl</a> {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_c_v_image_impl.html#a298e52a3d0ff911c7e2ea2fdebf70c05">   15</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_c_v_image_impl.html#a298e52a3d0ff911c7e2ea2fdebf70c05">load_from_file</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* filename) = 0;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_c_v_image_impl.html#a301dc980e78028f18bfcc6e4c05761d2">   22</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_c_v_image_impl.html#a301dc980e78028f18bfcc6e4c05761d2">assigned</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_c_v_image_impl.html">CVImageImpl</a>* impl, <span class="keywordtype">bool</span> req_copy) = 0;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_c_v_image_impl.html#a4fcb8483f22fb19df433b6a52a30ce36">   29</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_c_v_image_impl.html#a4fcb8483f22fb19df433b6a52a30ce36">pass_copy</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_c_v_image_impl.html">CVImageImpl</a>* copied) = 0;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">virtual</span> <a class="code hl_class" href="class_c_v_image_impl.html">~CVImageImpl</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_c_v_image_impl.html#a022dad3b12fdd6bbecb96584622ebdf8">   36</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_c_v_image_impl.html#a022dad3b12fdd6bbecb96584622ebdf8">image_valid</a>() = 0;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>};</div>
 </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="foldopen" id="foldopen00014" data-start="{" data-end="};">
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_c_v_image_impl_factory.html">   14</a></span><span class="keyword">class </span><a class="code hl_class" href="class_c_v_image_impl_factory.html">CVImageImplFactory</a> {</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="comment">/*</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">     * create from here, already assigned the</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">     * correct son classes</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">static</span> <a class="code hl_class" href="class_c_v_image_impl.html">CVImageImpl</a>* target_impl();</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>};</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="foldopen" id="foldopen00039" data-start="{" data-end="};">
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="class_c_v_image_impl_factory.html">   39</a></span><span class="keyword">class </span><a class="code hl_class" href="class_c_v_image_impl_factory.html">CVImageImplFactory</a> {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">static</span> <a class="code hl_class" href="class_c_v_image_impl.html">CVImageImpl</a>* <a class="code hl_function" href="class_c_v_image_impl_factory.html#a474c58a11bc474ae63a59a4b3deea646">target_impl</a>();</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>};</div>
 </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#endif </span><span class="comment">// CVIMAGEIMPL_H</span></div>
-<div class="ttc" id="aclass_c_v_image_impl_factory_html"><div class="ttname"><a href="class_c_v_image_impl_factory.html">CVImageImplFactory</a></div><div class="ttdef"><b>Definition</b> CVImageImpl.h:14</div></div>
-<div class="ttc" id="aclass_c_v_image_impl_html"><div class="ttname"><a href="class_c_v_image_impl.html">CVImageImpl</a></div><div class="ttdef"><b>Definition</b> CVImageImpl.h:5</div></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#endif </span><span class="comment">// CVIMAGEIMPL_H</span></div>
+<div class="ttc" id="aclass_c_v_image_impl_factory_html"><div class="ttname"><a href="class_c_v_image_impl_factory.html">CVImageImplFactory</a></div><div class="ttdef"><b>Definition</b> CVImageImpl.h:39</div></div>
+<div class="ttc" id="aclass_c_v_image_impl_factory_html_a474c58a11bc474ae63a59a4b3deea646"><div class="ttname"><a href="class_c_v_image_impl_factory.html#a474c58a11bc474ae63a59a4b3deea646">CVImageImplFactory::target_impl</a></div><div class="ttdeci">static CVImageImpl * target_impl()</div><div class="ttdoc">target_impl fetch the IMPL according platform/backend framework</div><div class="ttdef"><b>Definition</b> CVImageImpl.cpp:3</div></div>
+<div class="ttc" id="aclass_c_v_image_impl_html"><div class="ttname"><a href="class_c_v_image_impl.html">CVImageImpl</a></div><div class="ttdoc">The CVImageImpl class is the image interface classes, or, backend of the CVImage.</div><div class="ttdef"><b>Definition</b> CVImageImpl.h:9</div></div>
+<div class="ttc" id="aclass_c_v_image_impl_html_a022dad3b12fdd6bbecb96584622ebdf8"><div class="ttname"><a href="class_c_v_image_impl.html#a022dad3b12fdd6bbecb96584622ebdf8">CVImageImpl::image_valid</a></div><div class="ttdeci">virtual bool image_valid()=0</div><div class="ttdoc">image_valid check if the image is valid</div></div>
+<div class="ttc" id="aclass_c_v_image_impl_html_a298e52a3d0ff911c7e2ea2fdebf70c05"><div class="ttname"><a href="class_c_v_image_impl.html#a298e52a3d0ff911c7e2ea2fdebf70c05">CVImageImpl::load_from_file</a></div><div class="ttdeci">virtual void load_from_file(const char *filename)=0</div><div class="ttdoc">load the image from file</div></div>
+<div class="ttc" id="aclass_c_v_image_impl_html_a301dc980e78028f18bfcc6e4c05761d2"><div class="ttname"><a href="class_c_v_image_impl.html#a301dc980e78028f18bfcc6e4c05761d2">CVImageImpl::assigned</a></div><div class="ttdeci">virtual void assigned(const CVImageImpl *impl, bool req_copy)=0</div><div class="ttdoc">assigned the image to this image</div></div>
+<div class="ttc" id="aclass_c_v_image_impl_html_a4fcb8483f22fb19df433b6a52a30ce36"><div class="ttname"><a href="class_c_v_image_impl.html#a4fcb8483f22fb19df433b6a52a30ce36">CVImageImpl::pass_copy</a></div><div class="ttdeci">virtual void pass_copy(const CVImageImpl *copied)=0</div><div class="ttdoc">pass_copy makes a passing assigned, for OpenCV like it just increase the ref count</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

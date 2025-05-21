@@ -9,12 +9,10 @@ Inheritance diagram for Weather\+Request\+:\begin{figure}[H]
 \doxysubsubsection*{Signals}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_weather_request_ad6741445b3b9ed4fdb60f1a53293e720}\label{class_weather_request_ad6741445b3b9ed4fdb60f1a53293e720} 
-void {\bfseries error\+Occurs} (QNetwork\+Reply \texorpdfstring{$\ast$}{*}reply)
-\item 
-\Hypertarget{class_weather_request_a182f4d1dd7b4a801eb9a9469f88dc000}\label{class_weather_request_a182f4d1dd7b4a801eb9a9469f88dc000} 
-void {\bfseries result\+\_\+available} (const QString json)
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_weather_request_ad6741445b3b9ed4fdb60f1a53293e720}{error\+Occurs}} (QNetwork\+Reply \texorpdfstring{$\ast$}{*}reply)
+\begin{DoxyCompactList}\small\item\em error\+Occurs when an error occurs, this signal will be emitted \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_weather_request_a182f4d1dd7b4a801eb9a9469f88dc000}{result\+\_\+available}} (const QString json)
+\begin{DoxyCompactList}\small\item\em result\+\_\+available when the result is available, this signal will be emitted \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -24,12 +22,10 @@ void {\bfseries result\+\_\+available} (const QString json)
 \Hypertarget{class_weather_request_a563db4f9beeca9a58267e04c0ecbe0f8}\label{class_weather_request_a563db4f9beeca9a58267e04c0ecbe0f8} 
 {\bfseries Weather\+Request} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
 \item 
-\Hypertarget{class_weather_request_a536ac3f283539dd0b7d7885bb53fc7b5}\label{class_weather_request_a536ac3f283539dd0b7d7885bb53fc7b5} 
-void {\bfseries async\+\_\+request} (const char \texorpdfstring{$\ast$}{*}base\+\_\+url)
-\item 
-\Hypertarget{class_weather_request_a2faec779862560dbe931d723025787d1}\label{class_weather_request_a2faec779862560dbe931d723025787d1} 
-virtual QUrl\+Query {\bfseries compose\+\_\+request} ()=0
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_weather_request_a536ac3f283539dd0b7d7885bb53fc7b5}{async\+\_\+request}} (const char \texorpdfstring{$\ast$}{*}base\+\_\+url)
+\begin{DoxyCompactList}\small\item\em async\+\_\+request this function is used to send the request \end{DoxyCompactList}\item 
+virtual QUrl\+Query \mbox{\hyperlink{class_weather_request_a2faec779862560dbe931d723025787d1}{compose\+\_\+request}} ()=0
+\begin{DoxyCompactList}\small\item\em compose\+\_\+request compose request required devs to complete the function of how to compose the request \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -42,6 +38,71 @@ QNetwork\+Access\+Manager {\bfseries manager}
 \Hypertarget{class_weather_request_ac40ebb371070a67f2e2f0d75af7e5036}\label{class_weather_request_ac40ebb371070a67f2e2f0d75af7e5036} 
 static constexpr const char \texorpdfstring{$\ast$}{*} {\bfseries private\+\_\+key} = \+\_\+\+DEF\+\_\+\+WEATHER\+\_\+\+PRIVATE\+\_\+\+KEY
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_weather_request_a536ac3f283539dd0b7d7885bb53fc7b5}\index{WeatherRequest@{WeatherRequest}!async\_request@{async\_request}}
+\index{async\_request@{async\_request}!WeatherRequest@{WeatherRequest}}
+\doxysubsubsection{\texorpdfstring{async\_request()}{async\_request()}}
+{\footnotesize\ttfamily \label{class_weather_request_a536ac3f283539dd0b7d7885bb53fc7b5} 
+void Weather\+Request\+::async\+\_\+request (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{base\+\_\+url}{}\end{DoxyParamCaption})}
+
+
+
+async\+\_\+request this function is used to send the request 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+\_\+url,the} & url without any request sessions only the base url is provided \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_weather_request_a2faec779862560dbe931d723025787d1}\index{WeatherRequest@{WeatherRequest}!compose\_request@{compose\_request}}
+\index{compose\_request@{compose\_request}!WeatherRequest@{WeatherRequest}}
+\doxysubsubsection{\texorpdfstring{compose\_request()}{compose\_request()}}
+{\footnotesize\ttfamily \label{class_weather_request_a2faec779862560dbe931d723025787d1} 
+virtual QUrl\+Query Weather\+Request\+::compose\+\_\+request (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+compose\+\_\+request compose request required devs to complete the function of how to compose the request 
+
+\begin{DoxyReturn}{Returns}
+the request url 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_app_weather_request_aa484e3ab2825abedcc5fd80b6969d8a3}{App\+Weather\+Request}}.
+
+\Hypertarget{class_weather_request_ad6741445b3b9ed4fdb60f1a53293e720}\index{WeatherRequest@{WeatherRequest}!errorOccurs@{errorOccurs}}
+\index{errorOccurs@{errorOccurs}!WeatherRequest@{WeatherRequest}}
+\doxysubsubsection{\texorpdfstring{errorOccurs}{errorOccurs}}
+{\footnotesize\ttfamily \label{class_weather_request_ad6741445b3b9ed4fdb60f1a53293e720} 
+void Weather\+Request\+::error\+Occurs (\begin{DoxyParamCaption}\item[{QNetwork\+Reply \texorpdfstring{$\ast$}{*}}]{reply}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+error\+Occurs when an error occurs, this signal will be emitted 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reply} & the reply from the request \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_weather_request_a182f4d1dd7b4a801eb9a9469f88dc000}\index{WeatherRequest@{WeatherRequest}!result\_available@{result\_available}}
+\index{result\_available@{result\_available}!WeatherRequest@{WeatherRequest}}
+\doxysubsubsection{\texorpdfstring{result\_available}{result\_available}}
+{\footnotesize\ttfamily \label{class_weather_request_a182f4d1dd7b4a801eb9a9469f88dc000} 
+void Weather\+Request\+::result\+\_\+available (\begin{DoxyParamCaption}\item[{const QString}]{json}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+result\+\_\+available when the result is available, this signal will be emitted 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json} & the json string from the request \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

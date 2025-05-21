@@ -110,6 +110,11 @@ $(function(){initNavTree('class_scrolling_label.html',''); initResizable(true); 
   <div class="headertitle"><div class="title">ScrollingLabel Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The <a class="el" href="class_scrolling_label.html" title="The ScrollingLabel class provides the scrolling label.">ScrollingLabel</a> class provides the scrolling label.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_scrolling_label_8h_source.html">ScrollingLabel.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ScrollingLabel:</div>
 <div class="dyncontent">
@@ -122,17 +127,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a70d87da2c1faeab3aab09e36dd4c5d07" id="r_a70d87da2c1faeab3aab09e36dd4c5d07"><td class="memItemLeft" align="right" valign="top"><a id="a70d87da2c1faeab3aab09e36dd4c5d07" name="a70d87da2c1faeab3aab09e36dd4c5d07"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>ScrollingLabel</b> (QWidget *parent=nullptr)</td></tr>
 <tr class="separator:a70d87da2c1faeab3aab09e36dd4c5d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c0296900d179a17f6266751fe82c9d5" id="r_a5c0296900d179a17f6266751fe82c9d5"><td class="memItemLeft" align="right" valign="top"><a id="a5c0296900d179a17f6266751fe82c9d5" name="a5c0296900d179a17f6266751fe82c9d5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setText</b> (const QString &amp;text)</td></tr>
+<tr class="memitem:a5c0296900d179a17f6266751fe82c9d5" id="r_a5c0296900d179a17f6266751fe82c9d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c0296900d179a17f6266751fe82c9d5">setText</a> (const QString &amp;text)</td></tr>
+<tr class="memdesc:a5c0296900d179a17f6266751fe82c9d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">setText set the text of the label  <br /></td></tr>
 <tr class="separator:a5c0296900d179a17f6266751fe82c9d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:ab6ddbf528e20f3d94f607465f879293f" id="r_ab6ddbf528e20f3d94f607465f879293f"><td class="memItemLeft" align="right" valign="top"><a id="ab6ddbf528e20f3d94f607465f879293f" name="ab6ddbf528e20f3d94f607465f879293f"></a>
 static constexpr const int&#160;</td><td class="memItemRight" valign="bottom"><b>ANIMATION_INTERVAL</b> = 100</td></tr>
+<tr class="memdesc:ab6ddbf528e20f3d94f607465f879293f"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANIMATION_INTERVAL the animation interval. <br /></td></tr>
 <tr class="separator:ab6ddbf528e20f3d94f607465f879293f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5312f2d183407cfb37ccfa160c739366" id="r_a5312f2d183407cfb37ccfa160c739366"><td class="memItemLeft" align="right" valign="top"><a id="a5312f2d183407cfb37ccfa160c739366" name="a5312f2d183407cfb37ccfa160c739366"></a>
 static constexpr const short&#160;</td><td class="memItemRight" valign="bottom"><b>STEP_SHORT</b> = 2</td></tr>
+<tr class="memdesc:a5312f2d183407cfb37ccfa160c739366"><td class="mdescLeft">&#160;</td><td class="mdescRight">STEP_SHORT the step short everytime the animations make the text scroll in pix level so, make it larger will speed up the roll process. <br /></td></tr>
 <tr class="separator:a5312f2d183407cfb37ccfa160c739366"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
@@ -141,6 +148,35 @@ Protected Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>resizeEvent</b> (QResizeEvent *) override</td></tr>
 <tr class="separator:a9f9d7abd6ca18eacb4a2eaaa018c2ded"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="class_scrolling_label.html" title="The ScrollingLabel class provides the scrolling label.">ScrollingLabel</a> class provides the scrolling label. </p>
+<dl class="section note"><dt>Note</dt><dd>this is a simple scrolling label, for text too long, it will roll the text automatically </dd></dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a5c0296900d179a17f6266751fe82c9d5" name="a5c0296900d179a17f6266751fe82c9d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c0296900d179a17f6266751fe82c9d5">&#9670;&#160;</a></span>setText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ScrollingLabel::setText </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>text</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>setText set the text of the label </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>the text to set </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>extern_app/MediaPlayer/ui/<a class="el" href="_scrolling_label_8h_source.html">ScrollingLabel.h</a></li>
 <li>extern_app/MediaPlayer/ui/<b>ScrollingLabel.cpp</b></li>

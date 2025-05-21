@@ -109,13 +109,18 @@ $(function(){initNavTree('class_file_info_provider.html',''); initResizable(true
   <div class="headertitle"><div class="title">FileInfoProvider Class Reference<span class="mlabels"><span class="mlabel abstract">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The <a class="el" href="class_file_info_provider.html" title="The FileInfoProvider class is such an abstract class that using in CCIMXFileSystemModel to provide th...">FileInfoProvider</a> class is such an abstract class that using in <a class="el" href="class_c_c_i_m_x_file_system_model.html">CCIMXFileSystemModel</a> to provide the file information, which, we can modify the file information provide easily in the model.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_file_info_provider_8h_source.html">FileInfoProvider.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FileInfoProvider:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_file_info_provider.png" usemap="#FileInfoProvider_map" alt=""/>
   <map id="FileInfoProvider_map" name="FileInfoProvider_map">
-<area href="class_dirent_size_counter.html" alt="DirentSizeCounter" shape="rect" coords="0,56,120,80"/>
+<area href="class_dirent_size_counter.html" title="The DirentSizeCounter class wrapped the worker and provides non-implement-relative interfaces to the ..." alt="DirentSizeCounter" shape="rect" coords="0,56,120,80"/>
 <area href="class_file_count_info.html" alt="FileCountInfo" shape="rect" coords="130,56,250,80"/>
 <area href="class_file_name_providers.html" alt="FileNameProviders" shape="rect" coords="260,56,380,80"/>
 <area href="class_file_type_info.html" alt="FileTypeInfo" shape="rect" coords="390,56,510,80"/>
@@ -128,27 +133,164 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Q_DISABLE_COPY</b> (<a class="el" href="class_file_info_provider.html">FileInfoProvider</a>)</td></tr>
 <tr class="separator:a1b5f15a9efc225ac0f3ce2c0420dcdf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acaff96e7f9eacb7bc0b3023fab1d685d" id="r_acaff96e7f9eacb7bc0b3023fab1d685d"><td class="memItemLeft" align="right" valign="top"><a id="acaff96e7f9eacb7bc0b3023fab1d685d" name="acaff96e7f9eacb7bc0b3023fab1d685d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>FileInfoProvider</b> (<a class="el" href="class_c_c_i_m_x_file_system_model.html">CCIMXFileSystemModel</a> *models)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>FileInfoProvider</b> (<a class="el" href="class_c_c_i_m_x_file_system_model.html">CCIMXFileSystemModel</a> *<a class="el" href="#ae898e8c9bb3dc76decd869a018f9c0d9">models</a>)</td></tr>
 <tr class="separator:acaff96e7f9eacb7bc0b3023fab1d685d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25aa7631c3aff86607cae1b412548878" id="r_a25aa7631c3aff86607cae1b412548878"><td class="memItemLeft" align="right" valign="top"><a id="a25aa7631c3aff86607cae1b412548878" name="a25aa7631c3aff86607cae1b412548878"></a>
-virtual QString&#160;</td><td class="memItemRight" valign="bottom"><b>provide_section_name</b> ()=0</td></tr>
+<tr class="memitem:a25aa7631c3aff86607cae1b412548878" id="r_a25aa7631c3aff86607cae1b412548878"><td class="memItemLeft" align="right" valign="top">virtual QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25aa7631c3aff86607cae1b412548878">provide_section_name</a> ()=0</td></tr>
+<tr class="memdesc:a25aa7631c3aff86607cae1b412548878"><td class="mdescLeft">&#160;</td><td class="mdescRight">One InfoProvider for one section header name, the function do the case :)  <br /></td></tr>
 <tr class="separator:a25aa7631c3aff86607cae1b412548878"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa13112f10f0b93ab09d2c12385b13374" id="r_aa13112f10f0b93ab09d2c12385b13374"><td class="memItemLeft" align="right" valign="top"><a id="aa13112f10f0b93ab09d2c12385b13374" name="aa13112f10f0b93ab09d2c12385b13374"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setCurrentHandlePath</b> (const QString &amp;path)</td></tr>
+<tr class="memitem:aa13112f10f0b93ab09d2c12385b13374" id="r_aa13112f10f0b93ab09d2c12385b13374"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa13112f10f0b93ab09d2c12385b13374">setCurrentHandlePath</a> (const QString &amp;path)</td></tr>
+<tr class="memdesc:aa13112f10f0b93ab09d2c12385b13374"><td class="mdescLeft">&#160;</td><td class="mdescRight">setCurrentHandlePath set the current handle path  <br /></td></tr>
 <tr class="separator:aa13112f10f0b93ab09d2c12385b13374"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4940f9f1d9930553090eb473fe8900f6" id="r_a4940f9f1d9930553090eb473fe8900f6"><td class="memItemLeft" align="right" valign="top"><a id="a4940f9f1d9930553090eb473fe8900f6" name="a4940f9f1d9930553090eb473fe8900f6"></a>
-QString&#160;</td><td class="memItemRight" valign="bottom"><b>currentHandlePath</b> ()</td></tr>
+<tr class="memitem:a4940f9f1d9930553090eb473fe8900f6" id="r_a4940f9f1d9930553090eb473fe8900f6"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4940f9f1d9930553090eb473fe8900f6">currentHandlePath</a> ()</td></tr>
+<tr class="memdesc:a4940f9f1d9930553090eb473fe8900f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">currentHandlePath get the current handle path  <br /></td></tr>
 <tr class="separator:a4940f9f1d9930553090eb473fe8900f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7eb35bc1c83233238a9a33c6d55a4124" id="r_a7eb35bc1c83233238a9a33c6d55a4124"><td class="memItemLeft" align="right" valign="top"><a id="a7eb35bc1c83233238a9a33c6d55a4124" name="a7eb35bc1c83233238a9a33c6d55a4124"></a>
-virtual std::pair&lt; bool, QVariant &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>data</b> (const QModelIndex &amp;index, int role)=0</td></tr>
+<tr class="memitem:a7eb35bc1c83233238a9a33c6d55a4124" id="r_a7eb35bc1c83233238a9a33c6d55a4124"><td class="memItemLeft" align="right" valign="top">virtual std::pair&lt; bool, QVariant &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7eb35bc1c83233238a9a33c6d55a4124">data</a> (const QModelIndex &amp;index, int role)=0</td></tr>
+<tr class="memdesc:a7eb35bc1c83233238a9a33c6d55a4124"><td class="mdescLeft">&#160;</td><td class="mdescRight">functions provide what to display  <br /></td></tr>
 <tr class="separator:a7eb35bc1c83233238a9a33c6d55a4124"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:ae898e8c9bb3dc76decd869a018f9c0d9" id="r_ae898e8c9bb3dc76decd869a018f9c0d9"><td class="memItemLeft" align="right" valign="top"><a id="ae898e8c9bb3dc76decd869a018f9c0d9" name="ae898e8c9bb3dc76decd869a018f9c0d9"></a>
 <a class="el" href="class_c_c_i_m_x_file_system_model.html">CCIMXFileSystemModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>models</b></td></tr>
+<tr class="memdesc:ae898e8c9bb3dc76decd869a018f9c0d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">binding models <br /></td></tr>
 <tr class="separator:ae898e8c9bb3dc76decd869a018f9c0d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="class_file_info_provider.html" title="The FileInfoProvider class is such an abstract class that using in CCIMXFileSystemModel to provide th...">FileInfoProvider</a> class is such an abstract class that using in <a class="el" href="class_c_c_i_m_x_file_system_model.html">CCIMXFileSystemModel</a> to provide the file information, which, we can modify the file information provide easily in the model. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4940f9f1d9930553090eb473fe8900f6" name="a4940f9f1d9930553090eb473fe8900f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4940f9f1d9930553090eb473fe8900f6">&#9670;&#160;</a></span>currentHandlePath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString FileInfoProvider::currentHandlePath </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>currentHandlePath get the current handle path </p>
+<dl class="section return"><dt>Returns</dt><dd>the current handle path </dd></dl>
+
+</div>
+</div>
+<a id="a7eb35bc1c83233238a9a33c6d55a4124" name="a7eb35bc1c83233238a9a33c6d55a4124"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7eb35bc1c83233238a9a33c6d55a4124">&#9670;&#160;</a></span>data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::pair&lt; bool, QVariant &gt; FileInfoProvider::data </td>
+          <td>(</td>
+          <td class="paramtype">const QModelIndex &amp;</td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>role</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>functions provide what to display </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>the model index </td></tr>
+    <tr><td class="paramname">role</td><td>the role of the index </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>returns the data of the index, if the data is not available, it will return with {false, {}} </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>for developers re-develop the sessions, you can modified to the implements with std::optional&lt;QVariant&gt;, QVariant itself invalid means something in model that is meaningful, so, QVariant's invalid don't mean the data itself invalid </dd></dl>
+
+<p>Implemented in <a class="el" href="class_dirent_size_counter.html#aabc9ceee5d6679e9d3f3c09265e8f554">DirentSizeCounter</a>, <a class="el" href="class_file_count_info.html#aa3a0221ae640730854e92c66e57c51de">FileCountInfo</a>, <a class="el" href="class_file_name_providers.html#ab7c156fc04bc7888677c266f79f15127">FileNameProviders</a>, and <a class="el" href="class_file_type_info.html#ad8770304cf3926d405cc7b2ec0251054">FileTypeInfo</a>.</p>
+
+</div>
+</div>
+<a id="a25aa7631c3aff86607cae1b412548878" name="a25aa7631c3aff86607cae1b412548878"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25aa7631c3aff86607cae1b412548878">&#9670;&#160;</a></span>provide_section_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual QString FileInfoProvider::provide_section_name </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>One InfoProvider for one section header name, the function do the case :) </p>
+<dl class="section return"><dt>Returns</dt><dd>the section name </dd></dl>
+
+<p>Implemented in <a class="el" href="class_dirent_size_counter.html#afb1587bf29eac1f0cf7979ba5301f708">DirentSizeCounter</a>, <a class="el" href="class_file_count_info.html#a42da804010c98ad6e95f028e0542a7f5">FileCountInfo</a>, <a class="el" href="class_file_name_providers.html#a3fc88ac86b53656f9e75a0476004ac18">FileNameProviders</a>, and <a class="el" href="class_file_type_info.html#adf07e8c01790f280a0eb81f65c6662c4">FileTypeInfo</a>.</p>
+
+</div>
+</div>
+<a id="aa13112f10f0b93ab09d2c12385b13374" name="aa13112f10f0b93ab09d2c12385b13374"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa13112f10f0b93ab09d2c12385b13374">&#9670;&#160;</a></span>setCurrentHandlePath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FileInfoProvider::setCurrentHandlePath </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>setCurrentHandlePath set the current handle path </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>the path to be set </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>extern_app/FileRamber/Core/<a class="el" href="_file_info_provider_8h_source.html">FileInfoProvider.h</a></li>
 </ul>

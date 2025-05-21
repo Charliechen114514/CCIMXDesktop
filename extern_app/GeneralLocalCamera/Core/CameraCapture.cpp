@@ -19,14 +19,6 @@ CameraCapture::~CameraCapture() {
 	delete videoCaptureHandle;
 }
 
-void CameraCapture::bind_display_widget(CameraDisplayWidget* widget) {
-	this->widget = widget;
-}
-
-void CameraCapture::set_capture_delay_time(const int gap_time) {
-	this->msleep_time = gap_time;
-}
-
 bool CameraCapture::isActivate() const {
 	return videoCaptureHandle && videoCaptureHandle->isOpened();
 }

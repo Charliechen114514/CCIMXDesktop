@@ -6,28 +6,30 @@
 \DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CVIMAGE\_H}}
 \DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}CVImageImpl.h"{}}}
 \DoxyCodeLine{00004\ }
-\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }CVImage\ \{}
-\DoxyCodeLine{00006\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00007\ \ \ \ \ \textcolor{comment}{/*\ Friend\ class\ are\ assigned\ for\ direct\ visit\ */}}
-\DoxyCodeLine{00008\ \ \ \ \ CVImage();}
-\DoxyCodeLine{00009\ \ \ \ \ CVImage(\textcolor{keyword}{const}\ CVImage\&\ image);}
-\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{const}\ CVImage\&\ operator=(\textcolor{keyword}{const}\ CVImage\&\ image);}
-\DoxyCodeLine{00011\ \ \ \ \ \string~CVImage();}
-\DoxyCodeLine{00012\ }
-\DoxyCodeLine{00013\ \ \ \ \ \textcolor{comment}{/*\ load\ as\ file\ */}}
-\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{void}\ loadFile(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ filename);}
-\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{void}\ assigned(}
-\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ CVImage\&\ image,\ \textcolor{comment}{/*\ other\ copy\ */}}
-\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ load\_as\_copy\ =\ \textcolor{keyword}{false}\ \textcolor{comment}{/*\ req\ to\ copy\ */}}
-\DoxyCodeLine{00018\ \ \ \ \ );}
-\DoxyCodeLine{00019\ }
-\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ image\_valid()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ private\_handle-\/>image\_valid();\ \}}
-\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{class_c_v_image_impl}{CVImageImpl}}*\ impl\_ptr()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ private\_handle;\ \}}
-\DoxyCodeLine{00022\ }
-\DoxyCodeLine{00023\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_c_v_image_impl}{CVImageImpl}}*\ private\_handle\ \{\ \textcolor{keyword}{nullptr}\ \};}
-\DoxyCodeLine{00025\ \};}
-\DoxyCodeLine{00026\ }
-\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CVIMAGE\_H}}
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_v_image_aff7830bea2e4d2d3e752acd22e183501}{CVImage}}\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{class_c_v_image_aff7830bea2e4d2d3e752acd22e183501}{CVImage}}();\ }
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{class_c_v_image_aff7830bea2e4d2d3e752acd22e183501}{CVImage}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_c_v_image_aff7830bea2e4d2d3e752acd22e183501}{CVImage}}\&\ image);\ }
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_c_v_image_aff7830bea2e4d2d3e752acd22e183501}{CVImage}}\&\ \mbox{\hyperlink{class_c_v_image_af3aca0a5c5d2f8fc17310bab85f445ba}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_c_v_image_aff7830bea2e4d2d3e752acd22e183501}{CVImage}}\&\ image);\ }
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{class_c_v_image_a2936f8bb73d627b0d6cd69b2eb685efa}{\string~CVImage}}();\ }
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{comment}{/*\ load\ as\ file\ */}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_v_image_abbfa8ef2239701e79812d05da44995ab}{loadFile}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ filename);}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_v_image_ae0e9b2ab183866535eac01aee161beda}{assigned}}(}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_c_v_image_aff7830bea2e4d2d3e752acd22e183501}{CVImage}}\&\ image,\ \textcolor{comment}{/*\ other\ copy\ */}}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ load\_as\_copy\ =\ \textcolor{keyword}{false}\ \textcolor{comment}{/*\ req\ to\ copy\ */}}
+\DoxyCodeLine{00032\ \ \ \ \ );}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_c_v_image_a3a7a385b2393b3ceec80788250186214}{image\_valid}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ private\_handle-\/>image\_valid();\ \}}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{class_c_v_image_impl}{CVImageImpl}}*\ \mbox{\hyperlink{class_c_v_image_ae57298a7ada682bc9f5a2baa6622e9f3}{impl\_ptr}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ private\_handle;\ \}}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{class_c_v_image_impl}{CVImageImpl}}*\ private\_handle\ \{\ \textcolor{keyword}{nullptr}\ \};\ }
+\DoxyCodeLine{00049\ \};}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CVIMAGE\_H}}
 
 \end{DoxyCode}

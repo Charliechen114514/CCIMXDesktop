@@ -107,47 +107,40 @@ $(function(){initNavTree('ccpdfnavigationpolicy_8h_source.html',''); initResizab
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef CCPDFNAVIGATIONPOLICY_H</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define CCPDFNAVIGATIONPOLICY_H</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;mupdf_adapter/ccpdfdocument.h&quot;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> *  Navigation Policy is expected, at least, provide the</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> *  page flows policy when jump in between pages and pages</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> *  At current version, it is expected to handle the exception</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> *  cases, who else know what will it be in next :)</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;mupdf_adapter/ccpdfdocument.h&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span></div>
 <div class="foldopen" id="foldopen00012" data-start="{" data-end="};">
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_c_c_pdf_navigation_policy.html">   12</a></span><span class="keyword">class </span>CCPdfNavigationPolicy</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    CCPdfNavigationPolicy();</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="struct_c_c_pdf_navigation_policy_1_1_indicator.html">   17</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct_c_c_pdf_navigation_policy_1_1_indicator.html">Indicator</a> {</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="comment">/* yeah, the indicator suggests the redirect pages */</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="keywordtype">int</span>     new_page;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <span class="comment">/*  whether the indications is a kind of must*/</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keywordtype">bool</span>    req_follow_indicator;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    };</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_c_c_pdf_navigation_policy.html">   12</a></span><span class="keyword">class </span><a class="code hl_function" href="class_c_c_pdf_navigation_policy.html#a58671e9d051c6393dc6d20bc9dc11b75">CCPdfNavigationPolicy</a> {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <a class="code hl_function" href="class_c_c_pdf_navigation_policy.html#a58671e9d051c6393dc6d20bc9dc11b75">CCPdfNavigationPolicy</a>();</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span></div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="};">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="struct_c_c_pdf_navigation_policy_1_1_indicator.html">   23</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct_c_c_pdf_navigation_policy_1_1_indicator.html">Indicator</a> {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="struct_c_c_pdf_navigation_policy_1_1_indicator.html#ab1af5f793fc5d83c230d8b3e6af200a3">   24</a></span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_c_c_pdf_navigation_policy_1_1_indicator.html#ab1af5f793fc5d83c230d8b3e6af200a3">new_page</a>; </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="struct_c_c_pdf_navigation_policy_1_1_indicator.html#a57b1edfbb713dad818ebda44ef01e03c">   25</a></span>        <span class="keywordtype">bool</span> <a class="code hl_variable" href="struct_c_c_pdf_navigation_policy_1_1_indicator.html#a57b1edfbb713dad818ebda44ef01e03c">req_follow_indicator</a>; </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    };</div>
 </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="comment">/*</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">     * you should register the indications of some exceptions</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">using </span>PdfBrowseExceptionFunctor = <a class="code hl_struct" href="struct_c_c_pdf_navigation_policy_1_1_indicator.html">Indicator</a>(*)(</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="comment">/* Who else involk the jump? */</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        QWidget* invoker,</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="comment">/* What document is involker handling? */</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <a class="code hl_class" href="class_c_c_pdf_document.html">CCPdfDocument</a>*  invokee_document,</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="comment">/* At what status should be handled? */</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="keyword">const</span> CCPdfDocument::PageNavigationError);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    PdfBrowseExceptionFunctor page_navigate_functor;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>};</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="class_c_c_pdf_navigation_policy.html#ae1d6c118ea92b2ae3a02e92ca40797cc">   39</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="class_c_c_pdf_navigation_policy.html#ae1d6c118ea92b2ae3a02e92ca40797cc">PdfBrowseExceptionFunctor</a> = <a class="code hl_struct" href="struct_c_c_pdf_navigation_policy_1_1_indicator.html">Indicator</a> (*)(</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        QWidget* invoker, </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <a class="code hl_class" href="class_c_c_pdf_document.html">CCPdfDocument</a>* invokee_document, </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keyword">const</span> <a class="code hl_enumeration" href="class_c_c_pdf_document.html#a0272e6f6cebd68b3d59af3398c04f7e7">CCPdfDocument::PageNavigationError</a> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    );</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_c_c_pdf_navigation_policy.html#a2bfe2d401eccda345a8e161b3fce51ad">   45</a></span>    <a class="code hl_typedef" href="class_c_c_pdf_navigation_policy.html#ae1d6c118ea92b2ae3a02e92ca40797cc">PdfBrowseExceptionFunctor</a> <a class="code hl_variable" href="class_c_c_pdf_navigation_policy.html#a2bfe2d401eccda345a8e161b3fce51ad">page_navigate_functor</a>; </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>};</div>
 </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#endif </span><span class="comment">// CCPDFNAVIGATIONPOLICY_H</span></div>
-<div class="ttc" id="aclass_c_c_pdf_document_html"><div class="ttname"><a href="class_c_c_pdf_document.html">CCPdfDocument</a></div><div class="ttdef"><b>Definition</b> ccpdfdocument.h:22</div></div>
-<div class="ttc" id="astruct_c_c_pdf_navigation_policy_1_1_indicator_html"><div class="ttname"><a href="struct_c_c_pdf_navigation_policy_1_1_indicator.html">CCPdfNavigationPolicy::Indicator</a></div><div class="ttdef"><b>Definition</b> ccpdfnavigationpolicy.h:17</div></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#endif </span><span class="comment">// CCPDFNAVIGATIONPOLICY_H</span></div>
+<div class="ttc" id="aclass_c_c_pdf_document_html"><div class="ttname"><a href="class_c_c_pdf_document.html">CCPdfDocument</a></div><div class="ttdoc">The CCPdfDocument class CCPdfDocument is expected to hold a resources physically in Programming level...</div><div class="ttdef"><b>Definition</b> ccpdfdocument.h:22</div></div>
+<div class="ttc" id="aclass_c_c_pdf_document_html_a0272e6f6cebd68b3d59af3398c04f7e7"><div class="ttname"><a href="class_c_c_pdf_document.html#a0272e6f6cebd68b3d59af3398c04f7e7">CCPdfDocument::PageNavigationError</a></div><div class="ttdeci">PageNavigationError</div><div class="ttdoc">Represents possible errors that can occur during page navigation.</div><div class="ttdef"><b>Definition</b> ccpdfdocument.h:108</div></div>
+<div class="ttc" id="aclass_c_c_pdf_navigation_policy_html_a2bfe2d401eccda345a8e161b3fce51ad"><div class="ttname"><a href="class_c_c_pdf_navigation_policy.html#a2bfe2d401eccda345a8e161b3fce51ad">CCPdfNavigationPolicy::page_navigate_functor</a></div><div class="ttdeci">PdfBrowseExceptionFunctor page_navigate_functor</div><div class="ttdoc">Functor to handle page navigation exceptions.</div><div class="ttdef"><b>Definition</b> ccpdfnavigationpolicy.h:45</div></div>
+<div class="ttc" id="aclass_c_c_pdf_navigation_policy_html_a58671e9d051c6393dc6d20bc9dc11b75"><div class="ttname"><a href="class_c_c_pdf_navigation_policy.html#a58671e9d051c6393dc6d20bc9dc11b75">CCPdfNavigationPolicy::CCPdfNavigationPolicy</a></div><div class="ttdeci">CCPdfNavigationPolicy()</div><div class="ttdoc">Constructs a default CCPdfNavigationPolicy.</div><div class="ttdef"><b>Definition</b> ccpdfnavigationpolicy.cpp:45</div></div>
+<div class="ttc" id="aclass_c_c_pdf_navigation_policy_html_ae1d6c118ea92b2ae3a02e92ca40797cc"><div class="ttname"><a href="class_c_c_pdf_navigation_policy.html#ae1d6c118ea92b2ae3a02e92ca40797cc">CCPdfNavigationPolicy::PdfBrowseExceptionFunctor</a></div><div class="ttdeci">Indicator(*)( QWidget *invoker, CCPdfDocument *invokee_document, const CCPdfDocument::PageNavigationError) PdfBrowseExceptionFunctor</div><div class="ttdoc">A function pointer type used to handle page navigation exceptions.</div><div class="ttdef"><b>Definition</b> ccpdfnavigationpolicy.h:39</div></div>
+<div class="ttc" id="astruct_c_c_pdf_navigation_policy_1_1_indicator_html"><div class="ttname"><a href="struct_c_c_pdf_navigation_policy_1_1_indicator.html">CCPdfNavigationPolicy::Indicator</a></div><div class="ttdoc">Provides redirection information for navigation handling.</div><div class="ttdef"><b>Definition</b> ccpdfnavigationpolicy.h:23</div></div>
+<div class="ttc" id="astruct_c_c_pdf_navigation_policy_1_1_indicator_html_a57b1edfbb713dad818ebda44ef01e03c"><div class="ttname"><a href="struct_c_c_pdf_navigation_policy_1_1_indicator.html#a57b1edfbb713dad818ebda44ef01e03c">CCPdfNavigationPolicy::Indicator::req_follow_indicator</a></div><div class="ttdeci">bool req_follow_indicator</div><div class="ttdoc">Whether the redirection must be followed.</div><div class="ttdef"><b>Definition</b> ccpdfnavigationpolicy.h:25</div></div>
+<div class="ttc" id="astruct_c_c_pdf_navigation_policy_1_1_indicator_html_ab1af5f793fc5d83c230d8b3e6af200a3"><div class="ttname"><a href="struct_c_c_pdf_navigation_policy_1_1_indicator.html#ab1af5f793fc5d83c230d8b3e6af200a3">CCPdfNavigationPolicy::Indicator::new_page</a></div><div class="ttdeci">int new_page</div><div class="ttdoc">The page index to redirect to.</div><div class="ttdef"><b>Definition</b> ccpdfnavigationpolicy.h:24</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -114,19 +114,29 @@ $(function(){initNavTree('_file_type_info_8h_source.html',''); initResizable(tru
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_file_type_info.html">    6</a></span><span class="keyword">class </span>FileTypeInfo : <span class="keyword">public</span> FileInfoProvider {</div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    FileTypeInfo(<a class="code hl_class" href="class_c_c_i_m_x_file_system_model.html">CCIMXFileSystemModel</a>* model);</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keyword">inline</span> QString provide_section_name()<span class="keyword"> override </span>{</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;File Type&quot;</span>;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    }</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    std::pair&lt;bool, QVariant&gt; data(<span class="keyword">const</span> QModelIndex&amp; index, <span class="keywordtype">int</span> role) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    QString typeInfo(<span class="keyword">const</span> QString&amp; suffix) { <span class="keywordflow">return</span> mappings.value(suffix); };</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    QMap&lt;QString, QString&gt; mappings;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>};</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    FileTypeInfo() = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    Q_DISABLE_COPY(FileTypeInfo);</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    ~FileTypeInfo() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span></div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="}">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_file_type_info.html#adf07e8c01790f280a0eb81f65c6662c4">   17</a></span>    <span class="keyword">inline</span> QString <a class="code hl_function" href="class_file_type_info.html#adf07e8c01790f280a0eb81f65c6662c4">provide_section_name</a>()<span class="keyword"> override </span>{</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;File Type&quot;</span>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    }</div>
 </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#endif </span><span class="comment">// FILETYPEINFO_H</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    std::pair&lt;bool, QVariant&gt; <a class="code hl_function" href="class_file_type_info.html#ad8770304cf3926d405cc7b2ec0251054">data</a>(<span class="keyword">const</span> QModelIndex&amp; index, <span class="keywordtype">int</span> role) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_file_type_info.html#af197f1bb0e9b8714f283133aad50eef6">   33</a></span>    QString <a class="code hl_function" href="class_file_type_info.html#af197f1bb0e9b8714f283133aad50eef6">typeInfo</a>(<span class="keyword">const</span> QString&amp; suffix) { <span class="keywordflow">return</span> mappings.value(suffix); };</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    QMap&lt;QString, QString&gt; mappings;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>};</div>
+</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#endif </span><span class="comment">// FILETYPEINFO_H</span></div>
 <div class="ttc" id="aclass_c_c_i_m_x_file_system_model_html"><div class="ttname"><a href="class_c_c_i_m_x_file_system_model.html">CCIMXFileSystemModel</a></div><div class="ttdef"><b>Definition</b> CCIMXFileSystemModel.h:5</div></div>
+<div class="ttc" id="aclass_file_type_info_html_ad8770304cf3926d405cc7b2ec0251054"><div class="ttname"><a href="class_file_type_info.html#ad8770304cf3926d405cc7b2ec0251054">FileTypeInfo::data</a></div><div class="ttdeci">std::pair&lt; bool, QVariant &gt; data(const QModelIndex &amp;index, int role) override</div><div class="ttdoc">data provide the data to the views</div><div class="ttdef"><b>Definition</b> FileTypeInfo.cpp:4</div></div>
+<div class="ttc" id="aclass_file_type_info_html_adf07e8c01790f280a0eb81f65c6662c4"><div class="ttname"><a href="class_file_type_info.html#adf07e8c01790f280a0eb81f65c6662c4">FileTypeInfo::provide_section_name</a></div><div class="ttdeci">QString provide_section_name() override</div><div class="ttdoc">provide_section_name means everything in the name lol</div><div class="ttdef"><b>Definition</b> FileTypeInfo.h:17</div></div>
+<div class="ttc" id="aclass_file_type_info_html_af197f1bb0e9b8714f283133aad50eef6"><div class="ttname"><a href="class_file_type_info.html#af197f1bb0e9b8714f283133aad50eef6">FileTypeInfo::typeInfo</a></div><div class="ttdeci">QString typeInfo(const QString &amp;suffix)</div><div class="ttdoc">registerTypeInfo register the type info</div><div class="ttdef"><b>Definition</b> FileTypeInfo.h:33</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

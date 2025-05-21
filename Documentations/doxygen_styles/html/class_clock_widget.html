@@ -110,6 +110,11 @@ $(function(){initNavTree('class_clock_widget.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">ClockWidget Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The <a class="el" href="class_clock_widget.html" title="The ClockWidget class draws the Clock Sessions.">ClockWidget</a> class draws the Clock Sessions.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="clockwidget_8h_source.html">clockwidget.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ClockWidget:</div>
 <div class="dyncontent">
@@ -119,8 +124,8 @@ Inheritance diagram for ClockWidget:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
 Signals</h2></td></tr>
-<tr class="memitem:a569a140d341c4dc532443abb3800411d" id="r_a569a140d341c4dc532443abb3800411d"><td class="memItemLeft" align="right" valign="top"><a id="a569a140d341c4dc532443abb3800411d" name="a569a140d341c4dc532443abb3800411d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>time_update</b> (QTime time)</td></tr>
+<tr class="memitem:a569a140d341c4dc532443abb3800411d" id="r_a569a140d341c4dc532443abb3800411d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a569a140d341c4dc532443abb3800411d">time_update</a> (QTime time)</td></tr>
+<tr class="memdesc:a569a140d341c4dc532443abb3800411d"><td class="mdescLeft">&#160;</td><td class="mdescRight">time_update signals for the time updates, triggered by the internal_updater  <br /></td></tr>
 <tr class="separator:a569a140d341c4dc532443abb3800411d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -131,13 +136,111 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:aa30a06d3cb0dc330989551f98a92133d" id="r_aa30a06d3cb0dc330989551f98a92133d"><td class="memItemLeft" align="right" valign="top"><a id="aa30a06d3cb0dc330989551f98a92133d" name="aa30a06d3cb0dc330989551f98a92133d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>paintEvent</b> (QPaintEvent *_paintEvent) override</td></tr>
+<tr class="memitem:aa30a06d3cb0dc330989551f98a92133d" id="r_aa30a06d3cb0dc330989551f98a92133d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa30a06d3cb0dc330989551f98a92133d">paintEvent</a> (QPaintEvent *_paintEvent) override</td></tr>
+<tr class="memdesc:aa30a06d3cb0dc330989551f98a92133d"><td class="mdescLeft">&#160;</td><td class="mdescRight">paintEvent the event everytime mainWidgets hopes to draw  <br /></td></tr>
 <tr class="separator:aa30a06d3cb0dc330989551f98a92133d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7239ed22eee2b073158a74a0ff4891ca" id="r_a7239ed22eee2b073158a74a0ff4891ca"><td class="memItemLeft" align="right" valign="top"><a id="a7239ed22eee2b073158a74a0ff4891ca" name="a7239ed22eee2b073158a74a0ff4891ca"></a>
-QSize&#160;</td><td class="memItemRight" valign="bottom"><b>sizeHint</b> () const override</td></tr>
+<tr class="memitem:a7239ed22eee2b073158a74a0ff4891ca" id="r_a7239ed22eee2b073158a74a0ff4891ca"><td class="memItemLeft" align="right" valign="top">QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7239ed22eee2b073158a74a0ff4891ca">sizeHint</a> () const override</td></tr>
+<tr class="memdesc:a7239ed22eee2b073158a74a0ff4891ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">sizeHint provides the size hint for the clock widget  <br /></td></tr>
 <tr class="separator:a7239ed22eee2b073158a74a0ff4891ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="class_clock_widget.html" title="The ClockWidget class draws the Clock Sessions.">ClockWidget</a> class draws the Clock Sessions. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa30a06d3cb0dc330989551f98a92133d" name="aa30a06d3cb0dc330989551f98a92133d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa30a06d3cb0dc330989551f98a92133d">&#9670;&#160;</a></span>paintEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ClockWidget::paintEvent </td>
+          <td>(</td>
+          <td class="paramtype">QPaintEvent *</td>          <td class="paramname"><span class="paramname"><em>_paintEvent</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>paintEvent the event everytime mainWidgets hopes to draw </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_paintEvent</td><td>the event handle posts from the parent </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7239ed22eee2b073158a74a0ff4891ca" name="a7239ed22eee2b073158a74a0ff4891ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7239ed22eee2b073158a74a0ff4891ca">&#9670;&#160;</a></span>sizeHint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSize ClockWidget::sizeHint </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>sizeHint provides the size hint for the clock widget </p>
+<dl class="section return"><dt>Returns</dt><dd>yet the size :) </dd></dl>
+
+</div>
+</div>
+<a id="a569a140d341c4dc532443abb3800411d" name="a569a140d341c4dc532443abb3800411d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a569a140d341c4dc532443abb3800411d">&#9670;&#160;</a></span>time_update</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ClockWidget::time_update </td>
+          <td>(</td>
+          <td class="paramtype">QTime</td>          <td class="paramname"><span class="paramname"><em>time</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel signal">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>time_update signals for the time updates, triggered by the internal_updater </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">time</td><td>the current time </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>: for other clock relavent widgets, should monitor the signals </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>builtin/ui/<a class="el" href="clockwidget_8h_source.html">clockwidget.h</a></li>
 <li>builtin/ui/<b>clockwidget.cpp</b></li>

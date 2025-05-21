@@ -113,32 +113,36 @@ $(function(){initNavTree('_i_c_m20608_data_factory_8h_source.html',''); initResi
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#else</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;PesudoICM20608.h&quot;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">/* Data Factory always get data with non-platform level */</span></div>
-<div class="foldopen" id="foldopen00011" data-start="{" data-end="};">
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_i_c_m20608_data_factory.html">   11</a></span><span class="keyword">class </span>ICM20608DataFactory {</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    ICM20608DataFactory() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    ICM20608DataFactory&amp; operator=(<span class="keyword">const</span> ICM20608DataFactory&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    ICM20608DataFactory(<span class="keyword">const</span> ICM20608DataFactory&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">bool</span> get_package_sync(<a class="code hl_struct" href="struct_i_c_m20608_app_data.html">ICM20608AppData</a>&amp; empty_data_pack) {</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="keywordflow">return</span> icm20608_handle.get_package_sync(empty_data_pack);</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    }</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#ifdef USE_REAL_ADAPTER</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <a class="code hl_class" href="class_i_c_m20608.html">ICM20608</a></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <a class="code hl_class" href="class_pesudo_i_c_m20608.html">PesudoICM20608</a></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    icm20608_handle;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>};</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span></div>
+<div class="foldopen" id="foldopen00012" data-start="{" data-end="};">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_i_c_m20608_data_factory.html">   12</a></span><span class="keyword">class </span>ICM20608DataFactory {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    ICM20608DataFactory() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_i_c_m20608_data_factory.html#afe9ed4a869dc91b565f45b60b645753e">   17</a></span>    ICM20608DataFactory&amp; <a class="code hl_function" href="class_i_c_m20608_data_factory.html#afe9ed4a869dc91b565f45b60b645753e">operator=</a>(<span class="keyword">const</span> ICM20608DataFactory&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    ICM20608DataFactory(<span class="keyword">const</span> ICM20608DataFactory&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span></div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="}">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_i_c_m20608_data_factory.html#a12eada95d4bd48b6cf2d000e92b48aa3">   23</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_i_c_m20608_data_factory.html#a12eada95d4bd48b6cf2d000e92b48aa3">get_package_sync</a>(<a class="code hl_struct" href="struct_i_c_m20608_app_data.html">ICM20608AppData</a>&amp; empty_data_pack) {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keywordflow">return</span> icm20608_handle.get_package_sync(empty_data_pack);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    }</div>
 </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#endif </span><span class="comment">// ICM20608DATAFACTORY_H</span></div>
-<div class="ttc" id="aclass_i_c_m20608_html"><div class="ttname"><a href="class_i_c_m20608.html">ICM20608</a></div><div class="ttdef"><b>Definition</b> icm20608_adapter.h:27</div></div>
-<div class="ttc" id="aclass_pesudo_i_c_m20608_html"><div class="ttname"><a href="class_pesudo_i_c_m20608.html">PesudoICM20608</a></div><div class="ttdef"><b>Definition</b> PesudoICM20608.h:4</div></div>
-<div class="ttc" id="astruct_i_c_m20608_app_data_html"><div class="ttname"><a href="struct_i_c_m20608_app_data.html">ICM20608AppData</a></div><div class="ttdef"><b>Definition</b> icm20608_adapter.h:9</div></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#ifdef USE_REAL_ADAPTER</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_class" href="class_i_c_m20608.html">ICM20608</a> icm20608_handle;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_class" href="class_pesudo_i_c_m20608.html">PesudoICM20608</a> icm20608_handle;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>};</div>
+</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#endif </span><span class="comment">// ICM20608DATAFACTORY_H</span></div>
+<div class="ttc" id="aclass_i_c_m20608_data_factory_html_a12eada95d4bd48b6cf2d000e92b48aa3"><div class="ttname"><a href="class_i_c_m20608_data_factory.html#a12eada95d4bd48b6cf2d000e92b48aa3">ICM20608DataFactory::get_package_sync</a></div><div class="ttdeci">bool get_package_sync(ICM20608AppData &amp;empty_data_pack)</div><div class="ttdoc">Get sensor data package synchronously.</div><div class="ttdef"><b>Definition</b> ICM20608DataFactory.h:23</div></div>
+<div class="ttc" id="aclass_i_c_m20608_data_factory_html_afe9ed4a869dc91b565f45b60b645753e"><div class="ttname"><a href="class_i_c_m20608_data_factory.html#afe9ed4a869dc91b565f45b60b645753e">ICM20608DataFactory::operator=</a></div><div class="ttdeci">ICM20608DataFactory &amp; operator=(const ICM20608DataFactory &amp;)=delete</div><div class="ttdoc">Disable copy assignment and copy constructor.</div></div>
+<div class="ttc" id="aclass_i_c_m20608_html"><div class="ttname"><a href="class_i_c_m20608.html">ICM20608</a></div><div class="ttdoc">Interface class to communicate with ICM20608 sensor device.</div><div class="ttdef"><b>Definition</b> icm20608_adapter.h:27</div></div>
+<div class="ttc" id="aclass_pesudo_i_c_m20608_html"><div class="ttname"><a href="class_pesudo_i_c_m20608.html">PesudoICM20608</a></div><div class="ttdoc">Pseudo implementation of ICM20608 for testing or non-real hardware.</div><div class="ttdef"><b>Definition</b> PesudoICM20608.h:8</div></div>
+<div class="ttc" id="astruct_i_c_m20608_app_data_html"><div class="ttname"><a href="struct_i_c_m20608_app_data.html">ICM20608AppData</a></div><div class="ttdoc">Processed sensor data with float values.</div><div class="ttdef"><b>Definition</b> icm20608_adapter.h:9</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

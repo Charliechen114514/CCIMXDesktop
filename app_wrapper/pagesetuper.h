@@ -12,8 +12,14 @@ class DownDockWidget;
 
 namespace PageSetuper {
 
-/* sessions required */
-
+/**
+ * @brief MAX_WIDTH: telling the maximum app numbers in a row of the page
+ */
+static constexpr int MAX_WIDTH = 4;
+/**
+ * @brief MAX_HEIGHT: telling the maximum app numbers in a column of the page
+ */
+static constexpr int MAX_HEIGHT = 4;
 /**
  * @brief   This is a wrapper class for page setup basic informations,
  *          it is a simple interface of creating one page with
@@ -28,23 +34,40 @@ struct PageSetupSessionRequest {
 static constexpr const unsigned int APP_ICON_SZ = 48;
 
 /**
- * @brief This functions create pure
- * @param widget
- * @param mainWindow
+ * @brief This functions create pure app pages, which is a relatively
+ * low level functions, currently,
+ * @see create_real_app is the higher level to
+ * create specified level applications
+ * @param mainWindow: the MainWindow waiting for placing
  * @param sessionRequest
- * @return
+ * @return the ui handles of the
  */
 QList<AppWidget*> create_one_app_only_page_append(
-    QStackedWidget* widget, DesktopMainWindow* mainWindow,
+    DesktopMainWindow* mainWindow,
     const QList<PageSetupSessionRequest>& sessionRequest);
 
+/**
+ * @brief create_real_app is the main function to create the real applications
+ * @param mainWindow: the window apps are created
+ * @return
+ */
 QList<AppWidget*> create_real_app(DesktopMainWindow* mainWindow);
 
-/* this create a page specified for user defined */
+/**
+ * @brief create_specified_page is the helper function to add a page
+ * into the specified stacked widget, all the QWidget details should be premapped
+ * @param widget: the stacked widget that will be added
+ * @param paged_widget: the page that will be added
+ */
 void create_specified_page(
     QStackedWidget* widget, QWidget* paged_widget);
 
-void add_to_dock(DownDockWidget* downdock, DesktopMainWindow* mainWindow, const QList<AppWidget*>& widgets);
+/**
+ * @brief add_to_dock is the helper function to add widgets into the dock widgets
+ * @param mainWindow the main window that will be added
+ * @param widgets the widgets that will be added
+ */
+void add_to_dock(DesktopMainWindow* mainWindow, const QList<AppWidget*>& widgets);
 
 };
 

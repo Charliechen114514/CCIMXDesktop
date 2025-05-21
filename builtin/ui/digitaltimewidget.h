@@ -3,19 +3,33 @@
 #include <QTime>
 #include <QWidget>
 class ClockWidget;
-class DigitalTimeWidget : public QWidget
-{
+/**
+ * @brief The DigitalTimeWidget class is a digital clock widget
+ */
+class DigitalTimeWidget : public QWidget {
     Q_OBJECT
 public:
-    explicit DigitalTimeWidget(QWidget *parent = nullptr);
-    void            bindClockWidget(ClockWidget* clock);
+	explicit DigitalTimeWidget(QWidget* parent = nullptr);
+	/**
+	 * @brief bindClockWidget, the digital displays of the clock
+	 * @param clock widgets for the bindings
+	 */
+	void bindClockWidget(ClockWidget* clock);
 public slots:
-    void            process_time_update(QTime process_time);
+	/**
+	 * @brief process_time_update: process the time update sessions from
+	 * clock widgets
+	 * @param process_time
+	 */
+	void process_time_update(QTime process_time);
+
 protected:
-    void            paintEvent(QPaintEvent *event) override;
+	/* paint sessons */
+	void paintEvent(QPaintEvent* event) override;
+
 private:
-    QTime           stored_time;
-    ClockWidget*    clk_widget;
+	QTime stored_time; ///< handle time
+	ClockWidget* clk_widget { nullptr }; ///< clk widgets holdings
 };
 
 #endif // DIGITALTIMEWIDGET_H

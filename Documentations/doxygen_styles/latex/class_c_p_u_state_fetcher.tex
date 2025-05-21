@@ -1,5 +1,14 @@
 \doxysection{CPUState\+Fetcher Class Reference}
 \hypertarget{class_c_p_u_state_fetcher}{}\label{class_c_p_u_state_fetcher}\index{CPUStateFetcher@{CPUStateFetcher}}
+
+
+The \doxylink{class_c_p_u_state_fetcher}{CPUState\+Fetcher} class provides the cpu state.  
+
+
+
+
+{\ttfamily \#include $<$CPUState\+Fetcher.\+h$>$}
+
 Inheritance diagram for CPUState\+Fetcher\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -10,28 +19,67 @@ Inheritance diagram for CPUState\+Fetcher\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{struct_c_p_u_state_fetcher_1_1_c_p_u_state}{CPUState}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The \doxylink{struct_c_p_u_state_fetcher_1_1_c_p_u_state}{CPUState} class provides the cpu state infos. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Signals}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_c_p_u_state_fetcher_aadbdb6b963c79d4c55562ab970e61c30}\label{class_c_p_u_state_fetcher_aadbdb6b963c79d4c55562ab970e61c30} 
-void {\bfseries flush\+\_\+cpustate} (const \mbox{\hyperlink{struct_c_p_u_state_fetcher_1_1_c_p_u_state}{CPUState\+Fetcher\+::\+CPUState}} \&state)
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_c_p_u_state_fetcher_aadbdb6b963c79d4c55562ab970e61c30}{flush\+\_\+cpustate}} (const \mbox{\hyperlink{struct_c_p_u_state_fetcher_1_1_c_p_u_state}{CPUState\+Fetcher\+::\+CPUState}} \&state)
+\begin{DoxyCompactList}\small\item\em flush\+\_\+cpustate the signal to flush the cpu state carried \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \Hypertarget{class_c_p_u_state_fetcher_aa33102b76c3ece9df1cc29db3b1b2f4f}\label{class_c_p_u_state_fetcher_aa33102b76c3ece9df1cc29db3b1b2f4f} 
 {\bfseries CPUState\+Fetcher} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
 \item 
-\Hypertarget{class_c_p_u_state_fetcher_a09065ec05cca98a163b284f9361a6b99}\label{class_c_p_u_state_fetcher_a09065ec05cca98a163b284f9361a6b99} 
-void {\bfseries set\+\_\+capture\+\_\+state} (bool st)
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_c_p_u_state_fetcher_a09065ec05cca98a163b284f9361a6b99}{set\+\_\+capture\+\_\+state}} (bool st)
+\begin{DoxyCompactList}\small\item\em set\+\_\+capture\+\_\+state set the capture state \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \Hypertarget{class_c_p_u_state_fetcher_a01d46281a21357f70551a8ce6bdc43d3}\label{class_c_p_u_state_fetcher_a01d46281a21357f70551a8ce6bdc43d3} 
 struct \mbox{\hyperlink{struct_c_p_u_state_fetcher_1_1_c_p_u_state}{CPUState\+Fetcher\+::\+CPUState}} {\bfseries cpustate}
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_c_p_u_state_fetcher}{CPUState\+Fetcher} class provides the cpu state. 
+
+\begin{DoxyNote}{Note}
+this is the interface for the cpu state with non platform related 
+\end{DoxyNote}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_c_p_u_state_fetcher_aadbdb6b963c79d4c55562ab970e61c30}\index{CPUStateFetcher@{CPUStateFetcher}!flush\_cpustate@{flush\_cpustate}}
+\index{flush\_cpustate@{flush\_cpustate}!CPUStateFetcher@{CPUStateFetcher}}
+\doxysubsubsection{\texorpdfstring{flush\_cpustate}{flush\_cpustate}}
+{\footnotesize\ttfamily \label{class_c_p_u_state_fetcher_aadbdb6b963c79d4c55562ab970e61c30} 
+void CPUState\+Fetcher\+::flush\+\_\+cpustate (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_c_p_u_state_fetcher_1_1_c_p_u_state}{CPUState\+Fetcher\+::\+CPUState}} \&}]{state}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+flush\+\_\+cpustate the signal to flush the cpu state carried 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & the cpu state to flush \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_c_p_u_state_fetcher_a09065ec05cca98a163b284f9361a6b99}\index{CPUStateFetcher@{CPUStateFetcher}!set\_capture\_state@{set\_capture\_state}}
+\index{set\_capture\_state@{set\_capture\_state}!CPUStateFetcher@{CPUStateFetcher}}
+\doxysubsubsection{\texorpdfstring{set\_capture\_state()}{set\_capture\_state()}}
+{\footnotesize\ttfamily \label{class_c_p_u_state_fetcher_a09065ec05cca98a163b284f9361a6b99} 
+void CPUState\+Fetcher\+::set\+\_\+capture\+\_\+state (\begin{DoxyParamCaption}\item[{bool}]{st}{}\end{DoxyParamCaption})}
+
+
+
+set\+\_\+capture\+\_\+state set the capture state 
+
+
+\begin{DoxyParams}{Parameters}
+{\em st} & the state to set, enable(true) or disable(false) \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

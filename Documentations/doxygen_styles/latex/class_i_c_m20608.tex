@@ -1,5 +1,14 @@
 \doxysection{ICM20608 Class Reference}
 \hypertarget{class_i_c_m20608}{}\label{class_i_c_m20608}\index{ICM20608@{ICM20608}}
+
+
+Interface class to communicate with \doxylink{class_i_c_m20608}{ICM20608} sensor device.  
+
+
+
+
+{\ttfamily \#include $<$icm20608\+\_\+adapter.\+h$>$}
+
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -13,19 +22,21 @@ bool \mbox{\hyperlink{class_i_c_m20608_aae4d486afa4f07805fab7b0453864744}{get\+\
 \begin{DoxyCompactList}\small\item\em front end interfaces \end{DoxyCompactList}\item 
 \Hypertarget{class_i_c_m20608_ab49c1e7e37a218f50da5395354a52388}\label{class_i_c_m20608_ab49c1e7e37a218f50da5395354a52388} 
 \mbox{\hyperlink{class_i_c_m20608}{ICM20608}} \& {\bfseries operator=} (const \mbox{\hyperlink{class_i_c_m20608}{ICM20608}} \&)=delete
-\item 
+\begin{DoxyCompactList}\small\item\em Disable copy assignment and copy constructor. \end{DoxyCompactList}\item 
 \Hypertarget{class_i_c_m20608_ac0825bb348cf98f931b85e46a28d08d9}\label{class_i_c_m20608_ac0825bb348cf98f931b85e46a28d08d9} 
 {\bfseries ICM20608} (const \mbox{\hyperlink{class_i_c_m20608}{ICM20608}} \&)=delete
 \item 
-\Hypertarget{class_i_c_m20608_aae4d486afa4f07805fab7b0453864744}\label{class_i_c_m20608_aae4d486afa4f07805fab7b0453864744} 
-bool {\bfseries get\+\_\+package\+\_\+sync} (\mbox{\hyperlink{struct_i_c_m20608_app_data}{ICM20608\+App\+Data}} \&empty\+\_\+data\+\_\+pack)
-\end{DoxyCompactItemize}
+bool \mbox{\hyperlink{class_i_c_m20608_aae4d486afa4f07805fab7b0453864744}{get\+\_\+package\+\_\+sync}} (\mbox{\hyperlink{struct_i_c_m20608_app_data}{ICM20608\+App\+Data}} \&empty\+\_\+data\+\_\+pack)
+\begin{DoxyCompactList}\small\item\em Synchronously get sensor data package. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Interface class to communicate with \doxylink{class_i_c_m20608}{ICM20608} sensor device. 
 
 \doxysubsection{Member Function Documentation}
 \Hypertarget{class_i_c_m20608_aae4d486afa4f07805fab7b0453864744}\index{ICM20608@{ICM20608}!get\_package\_sync@{get\_package\_sync}}
 \index{get\_package\_sync@{get\_package\_sync}!ICM20608@{ICM20608}}
-\doxysubsubsection{\texorpdfstring{get\_package\_sync()}{get\_package\_sync()}}
+\doxysubsubsection{\texorpdfstring{get\_package\_sync()}{get\_package\_sync()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily \label{class_i_c_m20608_aae4d486afa4f07805fab7b0453864744} 
 bool ICM20608\+::get\+\_\+package\+\_\+sync (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i_c_m20608_app_data}{ICM20608\+App\+Data}} \&}]{empty}{}\end{DoxyParamCaption})}
 
@@ -40,6 +51,24 @@ front end interfaces
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 true if the data is valid(session request success equavalent) 
+\end{DoxyReturn}
+\Hypertarget{class_i_c_m20608_aae4d486afa4f07805fab7b0453864744}\index{ICM20608@{ICM20608}!get\_package\_sync@{get\_package\_sync}}
+\index{get\_package\_sync@{get\_package\_sync}!ICM20608@{ICM20608}}
+\doxysubsubsection{\texorpdfstring{get\_package\_sync()}{get\_package\_sync()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_i_c_m20608_aae4d486afa4f07805fab7b0453864744} 
+bool ICM20608\+::get\+\_\+package\+\_\+sync (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i_c_m20608_app_data}{ICM20608\+App\+Data}} \&}]{empty\+\_\+data\+\_\+pack}{}\end{DoxyParamCaption})}
+
+
+
+Synchronously get sensor data package. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em empty\+\_\+data\+\_\+pack} & Reference to data struct to fill. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if data is valid. 
 \end{DoxyReturn}
 
 

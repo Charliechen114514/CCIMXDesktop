@@ -1,5 +1,14 @@
 \doxysection{Weather\+Result Struct Reference}
 \hypertarget{struct_weather_result}{}\label{struct_weather_result}\index{WeatherResult@{WeatherResult}}
+
+
+The \doxylink{struct_weather_result}{Weather\+Result} class The \doxylink{struct_weather_result}{Weather\+Result} class provides the weather result interfaces @notes my weather request is the virtual class trying to make a request to the web apps, including some neccesary interfaces.  
+
+
+
+
+{\ttfamily \#include $<$My\+Weather\+Request.\+h$>$}
+
 Inheritance diagram for Weather\+Result\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -11,19 +20,57 @@ Inheritance diagram for Weather\+Result\+:\begin{figure}[H]
 \item 
 \Hypertarget{struct_weather_result_ac292b0cbe62ac22d94e271949f6b7b5e}\label{struct_weather_result_ac292b0cbe62ac22d94e271949f6b7b5e} 
 void {\bfseries finish\+\_\+parse} ()
-\item 
-\Hypertarget{struct_weather_result_ac0bbf6a55fec1721e157da2d1c50b9c3}\label{struct_weather_result_ac0bbf6a55fec1721e157da2d1c50b9c3} 
-void {\bfseries error\+\_\+occurs} (QString cached\+\_\+error\+\_\+string)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em finish\+\_\+parse when the parsing is finished, this signal will be emitted \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_weather_result_ac0bbf6a55fec1721e157da2d1c50b9c3}{error\+\_\+occurs}} (QString cached\+\_\+error\+\_\+string)
+\begin{DoxyCompactList}\small\item\em error\+\_\+occurs when an error occurs, this signal will be emitted \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \Hypertarget{struct_weather_result_a05e61499944a8ccded4e5e3ceeca72b7}\label{struct_weather_result_a05e61499944a8ccded4e5e3ceeca72b7} 
 {\bfseries Weather\+Result} (QObject \texorpdfstring{$\ast$}{*}obj=nullptr)
 \item 
-\Hypertarget{struct_weather_result_a7241825ed885decb2ebb752a1502e400}\label{struct_weather_result_a7241825ed885decb2ebb752a1502e400} 
-virtual void {\bfseries parse\+Json\+String} (const QString json)=0
-\end{DoxyCompactItemize}
+virtual void \mbox{\hyperlink{struct_weather_result_a7241825ed885decb2ebb752a1502e400}{parse\+Json\+String}} (const QString json)=0
+\begin{DoxyCompactList}\small\item\em parse\+Json\+String defines how to parse json strings \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{struct_weather_result}{Weather\+Result} class The \doxylink{struct_weather_result}{Weather\+Result} class provides the weather result interfaces @notes my weather request is the virtual class trying to make a request to the web apps, including some neccesary interfaces. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{struct_weather_result_ac0bbf6a55fec1721e157da2d1c50b9c3}\index{WeatherResult@{WeatherResult}!error\_occurs@{error\_occurs}}
+\index{error\_occurs@{error\_occurs}!WeatherResult@{WeatherResult}}
+\doxysubsubsection{\texorpdfstring{error\_occurs}{error\_occurs}}
+{\footnotesize\ttfamily \label{struct_weather_result_ac0bbf6a55fec1721e157da2d1c50b9c3} 
+void Weather\+Result\+::error\+\_\+occurs (\begin{DoxyParamCaption}\item[{QString}]{cached\+\_\+error\+\_\+string}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+error\+\_\+occurs when an error occurs, this signal will be emitted 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cached\+\_\+error\+\_\+string} & the error string \\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_weather_result_a7241825ed885decb2ebb752a1502e400}\index{WeatherResult@{WeatherResult}!parseJsonString@{parseJsonString}}
+\index{parseJsonString@{parseJsonString}!WeatherResult@{WeatherResult}}
+\doxysubsubsection{\texorpdfstring{parseJsonString()}{parseJsonString()}}
+{\footnotesize\ttfamily \label{struct_weather_result_a7241825ed885decb2ebb752a1502e400} 
+virtual void Weather\+Result\+::parse\+Json\+String (\begin{DoxyParamCaption}\item[{const QString}]{json}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+parse\+Json\+String defines how to parse json strings 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json} & the json string waiting parse \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_app_weather_result_a29da2246f7b3941ae7f8b2d695536b33}{App\+Weather\+Result}}.
+
 
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}

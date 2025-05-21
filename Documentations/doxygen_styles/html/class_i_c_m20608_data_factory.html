@@ -108,19 +108,62 @@ $(function(){initNavTree('class_i_c_m20608_data_factory.html',''); initResizable
   <div class="headertitle"><div class="title">ICM20608DataFactory Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Abstracts the real or pseudo adapter to provide sensor data.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_i_c_m20608_data_factory_8h_source.html">ICM20608DataFactory.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:afe9ed4a869dc91b565f45b60b645753e" id="r_afe9ed4a869dc91b565f45b60b645753e"><td class="memItemLeft" align="right" valign="top"><a id="afe9ed4a869dc91b565f45b60b645753e" name="afe9ed4a869dc91b565f45b60b645753e"></a>
 <a class="el" href="class_i_c_m20608_data_factory.html">ICM20608DataFactory</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_i_c_m20608_data_factory.html">ICM20608DataFactory</a> &amp;)=delete</td></tr>
+<tr class="memdesc:afe9ed4a869dc91b565f45b60b645753e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable copy assignment and copy constructor. <br /></td></tr>
 <tr class="separator:afe9ed4a869dc91b565f45b60b645753e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ddc45a1875e9f9733aa07be3f26a7d6" id="r_a0ddc45a1875e9f9733aa07be3f26a7d6"><td class="memItemLeft" align="right" valign="top"><a id="a0ddc45a1875e9f9733aa07be3f26a7d6" name="a0ddc45a1875e9f9733aa07be3f26a7d6"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>ICM20608DataFactory</b> (const <a class="el" href="class_i_c_m20608_data_factory.html">ICM20608DataFactory</a> &amp;)=delete</td></tr>
 <tr class="separator:a0ddc45a1875e9f9733aa07be3f26a7d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12eada95d4bd48b6cf2d000e92b48aa3" id="r_a12eada95d4bd48b6cf2d000e92b48aa3"><td class="memItemLeft" align="right" valign="top"><a id="a12eada95d4bd48b6cf2d000e92b48aa3" name="a12eada95d4bd48b6cf2d000e92b48aa3"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>get_package_sync</b> (<a class="el" href="struct_i_c_m20608_app_data.html">ICM20608AppData</a> &amp;empty_data_pack)</td></tr>
+<tr class="memitem:a12eada95d4bd48b6cf2d000e92b48aa3" id="r_a12eada95d4bd48b6cf2d000e92b48aa3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a12eada95d4bd48b6cf2d000e92b48aa3">get_package_sync</a> (<a class="el" href="struct_i_c_m20608_app_data.html">ICM20608AppData</a> &amp;empty_data_pack)</td></tr>
+<tr class="memdesc:a12eada95d4bd48b6cf2d000e92b48aa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get sensor data package synchronously.  <br /></td></tr>
 <tr class="separator:a12eada95d4bd48b6cf2d000e92b48aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Abstracts the real or pseudo adapter to provide sensor data. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a12eada95d4bd48b6cf2d000e92b48aa3" name="a12eada95d4bd48b6cf2d000e92b48aa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12eada95d4bd48b6cf2d000e92b48aa3">&#9670;&#160;</a></span>get_package_sync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ICM20608DataFactory::get_package_sync </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_i_c_m20608_app_data.html">ICM20608AppData</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>empty_data_pack</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get sensor data package synchronously. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">empty_data_pack</td><td>Reference to data struct to fill. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if data is valid. </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>extern_app/professionals/boardlevel_application/SportsHealth/Adapter/<a class="el" href="_i_c_m20608_data_factory_8h_source.html">ICM20608DataFactory.h</a></li>
 </ul>

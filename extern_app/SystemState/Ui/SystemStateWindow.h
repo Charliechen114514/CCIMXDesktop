@@ -12,19 +12,33 @@ class SystemStateWindow;
 }
 QT_END_NAMESPACE
 
+/**
+ * @brief The SystemStateWindow class
+ * The SystemStateWindow class provides the system state window
+ */
 class SystemStateWindow : public QMainWindow {
 	Q_OBJECT
 
 public:
+	/**
+	 * @brief The PageIndex enum
+	 * The PageIndex enum provides the page index
+	 * @see switch_index to get to know where to use this
+	 */
 	enum PageIndex {
-		CPUUsage,
-		MemoryInfo,
-		ProcessBrowser,
-		PageIndexMax
+		CPUUsage, ///< CPU Usage Index
+		MemoryInfo, ///< Memory Info Index
+		ProcessBrowser, ///< Process Browser Index
+		PageIndexMax ///< Max Page Index Index
 	};
 
 	SystemStateWindow(QWidget* parent = nullptr);
 	~SystemStateWindow();
+	/**
+	 * @brief switch_index
+	 * @param index
+	 * This function is used to switch the page index
+	 */
 	void switch_index(PageIndex index);
 
 private:

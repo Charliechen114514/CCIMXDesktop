@@ -107,32 +107,30 @@ $(function(){initNavTree('_i_c_m20608_data_8h_source.html',''); initResizable(tr
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef ICM20608DATA_H</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define ICM20608DATA_H</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    <span class="comment">/* 3D Acceleration value */</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <span class="keyword">struct </span>{</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>        <span class="keywordtype">float</span> x;</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>        <span class="keywordtype">float</span> y;</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        <span class="keywordtype">float</span> z;</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    } g_acc;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="comment">/* 3D Rolations dekta */</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">struct </span>{</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="keywordtype">float</span> x;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <span class="keywordtype">float</span> y;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keywordtype">float</span> z;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    } rol;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordtype">float</span> temperature;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>} <a class="code hl_struct" href="struct_i_c_m20608_app_data.html">ICM20608AppData</a>;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> <span class="keywordtype">int</span> G_MAX_VAL = 8;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> <span class="keywordtype">int</span> G_MIN_VAL = -8;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> <span class="keywordtype">int</span> ROL_MAX_VAL = 180;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> <span class="keywordtype">int</span> ROL_MIN_VAL = -180;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#endif </span><span class="comment">// ICM20608DATA_H</span></div>
-<div class="ttc" id="astruct_i_c_m20608_app_data_html"><div class="ttname"><a href="struct_i_c_m20608_app_data.html">ICM20608AppData</a></div><div class="ttdef"><b>Definition</b> icm20608_adapter.h:9</div></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>        <span class="keywordtype">float</span> x;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        <span class="keywordtype">float</span> y;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        <span class="keywordtype">float</span> z;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="struct_i_c_m20608_app_data.html#ab50859e2db4a9ce04063cdb2451eb85e">   11</a></span>    } g_acc;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <span class="keywordtype">float</span> x;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keywordtype">float</span> y;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="keywordtype">float</span> z;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="struct_i_c_m20608_app_data.html#a519bb277d955d3f210e53730edf50740">   18</a></span>    } rol;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">float</span> temperature; </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>} <a class="code hl_struct" href="struct_i_c_m20608_app_data.html">ICM20608AppData</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> <span class="keywordtype">int</span> G_MAX_VAL = 8;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> <span class="keywordtype">int</span> G_MIN_VAL = -8;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> <span class="keywordtype">int</span> ROL_MAX_VAL = 180;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> <span class="keywordtype">int</span> ROL_MIN_VAL = -180;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#endif </span><span class="comment">// ICM20608DATA_H</span></div>
+<div class="ttc" id="astruct_i_c_m20608_app_data_html"><div class="ttname"><a href="struct_i_c_m20608_app_data.html">ICM20608AppData</a></div><div class="ttdoc">Processed sensor data with float values.</div><div class="ttdef"><b>Definition</b> icm20608_adapter.h:9</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

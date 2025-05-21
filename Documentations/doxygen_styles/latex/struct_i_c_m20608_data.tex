@@ -34,7 +34,7 @@ struct \{\\
 \end{tabbing}\item 
 \Hypertarget{struct_i_c_m20608_data_a17b5f4df0ed346c123261afd577e2b0f}\label{struct_i_c_m20608_data_a17b5f4df0ed346c123261afd577e2b0f} 
 int {\bfseries temperature}
-\item 
+\begin{DoxyCompactList}\small\item\em Temperature reading. \end{DoxyCompactList}\item 
 \Hypertarget{struct_i_c_m20608_data_a54db1294211fe8ccfa081c1b99c20ffa}\label{struct_i_c_m20608_data_a54db1294211fe8ccfa081c1b99c20ffa} 
 \begin{tabbing}
 xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
@@ -44,7 +44,7 @@ struct \{\\
 \>int {\bfseries z}\\
 \} {\bfseries g\_acc}\\
 
-\end{tabbing}\item 
+\end{tabbing}\begin{DoxyCompactList}\small\item\em 3D acceleration values \end{DoxyCompactList}\item 
 \Hypertarget{struct_i_c_m20608_data_a2f02b0533afd591a8b99752edf1b0065}\label{struct_i_c_m20608_data_a2f02b0533afd591a8b99752edf1b0065} 
 \begin{tabbing}
 xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
@@ -54,11 +54,13 @@ struct \{\\
 \>int {\bfseries z}\\
 \} {\bfseries rol}\\
 
-\end{tabbing}\end{DoxyCompactItemize}
+\end{tabbing}\begin{DoxyCompactList}\small\item\em 3D rotation delta values \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 \doxylink{struct_i_c_m20608_data}{ICM20608\+Data} is a data structure for \doxylink{class_i_c_m20608}{ICM20608} data which is supposed to be query from driver, see CCIMXBase\+: \href{https://github.com/Charliechen114514/CCIMXBase/tree/driver/drivers}{\texttt{ https\+://github.\+com/\+Charliechen114514/\+CCIMXBase/tree/driver/drivers}} for details. 
+
+Raw sensor data from \doxylink{class_i_c_m20608}{ICM20608} device. 
 
 The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

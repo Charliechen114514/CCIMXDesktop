@@ -1,5 +1,14 @@
 \doxysection{Memory\+Info\+Fetcher Class Reference}
 \hypertarget{class_memory_info_fetcher}{}\label{class_memory_info_fetcher}\index{MemoryInfoFetcher@{MemoryInfoFetcher}}
+
+
+The \doxylink{class_memory_info_fetcher}{Memory\+Info\+Fetcher} class provides the memory information.  
+
+
+
+
+{\ttfamily \#include $<$Memory\+Info\+Fetcher.\+h$>$}
+
 Inheritance diagram for Memory\+Info\+Fetcher\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -10,13 +19,12 @@ Inheritance diagram for Memory\+Info\+Fetcher\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{struct_memory_info_fetcher_1_1_memory_stat}{Memory\+Stat}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The \doxylink{struct_memory_info_fetcher_1_1_memory_stat}{Memory\+Stat} class provides the memory information. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Signals}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_memory_info_fetcher_a61738867fe7eb953fc63f7d3dde99fb5}\label{class_memory_info_fetcher_a61738867fe7eb953fc63f7d3dde99fb5} 
-void {\bfseries finish\+\_\+detect\+\_\+memory} (const \mbox{\hyperlink{struct_memory_info_fetcher_1_1_memory_stat}{Memory\+Info\+Fetcher\+::\+Memory\+Stat}} \&)
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_memory_info_fetcher_a61738867fe7eb953fc63f7d3dde99fb5}{finish\+\_\+detect\+\_\+memory}} (const \mbox{\hyperlink{struct_memory_info_fetcher_1_1_memory_stat}{Memory\+Info\+Fetcher\+::\+Memory\+Stat}} \&)
+\begin{DoxyCompactList}\small\item\em finish\+\_\+detect\+\_\+memory the signal to finish the memory detection \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -26,12 +34,10 @@ void {\bfseries finish\+\_\+detect\+\_\+memory} (const \mbox{\hyperlink{struct_m
 \Hypertarget{class_memory_info_fetcher_a036e4b8739cb19ccf88a68f05005a151}\label{class_memory_info_fetcher_a036e4b8739cb19ccf88a68f05005a151} 
 {\bfseries Q\+\_\+\+DISABLE\+\_\+\+COPY} (\mbox{\hyperlink{class_memory_info_fetcher}{Memory\+Info\+Fetcher}})
 \item 
-\Hypertarget{class_memory_info_fetcher_adda595da6b1152a673f1449989af176d}\label{class_memory_info_fetcher_adda595da6b1152a673f1449989af176d} 
-void {\bfseries set\+\_\+flush\+\_\+freq} (const int msecs)
-\item 
-\Hypertarget{class_memory_info_fetcher_ac98e348b0cf01ea8d9cf2585ca9ec591}\label{class_memory_info_fetcher_ac98e348b0cf01ea8d9cf2585ca9ec591} 
-void {\bfseries set\+\_\+capture\+\_\+state} (bool st)
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_memory_info_fetcher_adda595da6b1152a673f1449989af176d}{set\+\_\+flush\+\_\+freq}} (const int msecs)
+\begin{DoxyCompactList}\small\item\em set\+\_\+flush\+\_\+freq set the flush frequency \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_memory_info_fetcher_ac98e348b0cf01ea8d9cf2585ca9ec591}{set\+\_\+capture\+\_\+state}} (bool st)
+\begin{DoxyCompactList}\small\item\em set\+\_\+capture\+\_\+state set the capture state \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -44,6 +50,62 @@ static QString {\bfseries format\+\_\+size} (quint64 size)
 \Hypertarget{class_memory_info_fetcher_a9bffab9b014b49e72af9822509b20578}\label{class_memory_info_fetcher_a9bffab9b014b49e72af9822509b20578} 
 struct \mbox{\hyperlink{struct_memory_info_fetcher_1_1_memory_stat}{Memory\+Info\+Fetcher\+::\+Memory\+Stat}} {\bfseries mem\+\_\+stat}
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_memory_info_fetcher}{Memory\+Info\+Fetcher} class provides the memory information. 
+
+\begin{DoxyNote}{Note}
+this is the memory information fetcher 
+\end{DoxyNote}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_memory_info_fetcher_a61738867fe7eb953fc63f7d3dde99fb5}\index{MemoryInfoFetcher@{MemoryInfoFetcher}!finish\_detect\_memory@{finish\_detect\_memory}}
+\index{finish\_detect\_memory@{finish\_detect\_memory}!MemoryInfoFetcher@{MemoryInfoFetcher}}
+\doxysubsubsection{\texorpdfstring{finish\_detect\_memory}{finish\_detect\_memory}}
+{\footnotesize\ttfamily \label{class_memory_info_fetcher_a61738867fe7eb953fc63f7d3dde99fb5} 
+void Memory\+Info\+Fetcher\+::finish\+\_\+detect\+\_\+memory (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_memory_info_fetcher_1_1_memory_stat}{Memory\+Info\+Fetcher\+::\+Memory\+Stat}} \&}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+finish\+\_\+detect\+\_\+memory the signal to finish the memory detection 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mem\+\_\+stat} & the memory information carried in signals \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_memory_info_fetcher_ac98e348b0cf01ea8d9cf2585ca9ec591}\index{MemoryInfoFetcher@{MemoryInfoFetcher}!set\_capture\_state@{set\_capture\_state}}
+\index{set\_capture\_state@{set\_capture\_state}!MemoryInfoFetcher@{MemoryInfoFetcher}}
+\doxysubsubsection{\texorpdfstring{set\_capture\_state()}{set\_capture\_state()}}
+{\footnotesize\ttfamily \label{class_memory_info_fetcher_ac98e348b0cf01ea8d9cf2585ca9ec591} 
+void Memory\+Info\+Fetcher\+::set\+\_\+capture\+\_\+state (\begin{DoxyParamCaption}\item[{bool}]{st}{}\end{DoxyParamCaption})}
+
+
+
+set\+\_\+capture\+\_\+state set the capture state 
+
+
+\begin{DoxyParams}{Parameters}
+{\em st} & the state to set, true means capture, false means not \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_memory_info_fetcher_adda595da6b1152a673f1449989af176d}\index{MemoryInfoFetcher@{MemoryInfoFetcher}!set\_flush\_freq@{set\_flush\_freq}}
+\index{set\_flush\_freq@{set\_flush\_freq}!MemoryInfoFetcher@{MemoryInfoFetcher}}
+\doxysubsubsection{\texorpdfstring{set\_flush\_freq()}{set\_flush\_freq()}}
+{\footnotesize\ttfamily \label{class_memory_info_fetcher_adda595da6b1152a673f1449989af176d} 
+void Memory\+Info\+Fetcher\+::set\+\_\+flush\+\_\+freq (\begin{DoxyParamCaption}\item[{const int}]{msecs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+set\+\_\+flush\+\_\+freq set the flush frequency 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msecs} & the msecs to flush \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

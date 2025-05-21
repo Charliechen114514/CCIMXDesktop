@@ -7,24 +7,25 @@
 \DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <QObject>}}
 \DoxyCodeLine{00004\ \textcolor{keyword}{class\ }QStackedWidget;}
 \DoxyCodeLine{00005\ }
-\DoxyCodeLine{00006\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_stackpage_switcher_animation}{StackpageSwitcherAnimation}}\ :\ \textcolor{keyword}{public}\ QObject}
-\DoxyCodeLine{00007\ \{}
-\DoxyCodeLine{00008\ \ \ \ \ Q\_OBJECT}
-\DoxyCodeLine{00009\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{explicit}\ StackpageSwitcherAnimation(QObject*\ parent\ =\ \textcolor{keyword}{nullptr})\ :\ QObject(parent)\{\}}
+\DoxyCodeLine{00006\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_stackpage_switcher_animation}{StackpageSwitcherAnimation}}\ :\ \textcolor{keyword}{public}\ QObject\ \{}
+\DoxyCodeLine{00007\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00008\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{explicit}\ StackpageSwitcherAnimation(QObject*\ parent\ =\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ :\ QObject(parent)\ \{\ \}}
 \DoxyCodeLine{00011\ }
-\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_stackpage_switcher_animation_1_1_animation_info}{AnimationInfo}}\{}
-\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \ \ \ \ new\_index;}
-\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \ \ \ toLeft;}
-\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \ \ \ \ animation\_duration\{400\};}
-\DoxyCodeLine{00016\ \ \ \ \ \};}
-\DoxyCodeLine{00017\ }
-\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ process\_animations(}
-\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ QStackedWidget*\ binding\_widget,}
-\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_stackpage_switcher_animation_1_1_animation_info}{AnimationInfo}}*\ animation\_info);}
-\DoxyCodeLine{00021\ }
-\DoxyCodeLine{00022\ \};}
-\DoxyCodeLine{00023\ }
-\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ STACKPAGE\_SWITCHER\_ANIMATION\_H}}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ \mbox{\hyperlink{struct_stackpage_switcher_animation_a65662268e6a346dc793df94290a43b98}{ANIMATION\_DURATION}}\ =\ 400;\ }
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_stackpage_switcher_animation_1_1_animation_info}{AnimationInfo}}\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_stackpage_switcher_animation_1_1_animation_info_aabc8b7c8eef5a3d5c027dd3e764ef1c2}{new\_index}};\ }
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_stackpage_switcher_animation_1_1_animation_info_a40c2859da58aa9576cc843ab337bd482}{toLeft}};\ }
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_stackpage_switcher_animation_1_1_animation_info_a2be11d135f255a6ffcf93b5eb0072050}{animation\_duration}}\ \{\ \mbox{\hyperlink{struct_stackpage_switcher_animation_a65662268e6a346dc793df94290a43b98}{ANIMATION\_DURATION}}\ \};\ }
+\DoxyCodeLine{00023\ \ \ \ \ \};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_stackpage_switcher_animation_ab82cc76bae2116bbc48638163c401aea}{process\_animations}}(}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ QStackedWidget*\ binding\_widget,}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_stackpage_switcher_animation_1_1_animation_info}{AnimationInfo}}*\ animation\_info);}
+\DoxyCodeLine{00033\ \};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ STACKPAGE\_SWITCHER\_ANIMATION\_H}}
 
 \end{DoxyCode}

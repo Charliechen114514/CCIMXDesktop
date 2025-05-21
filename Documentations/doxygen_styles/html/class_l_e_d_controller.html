@@ -108,25 +108,197 @@ $(function(){initNavTree('class_l_e_d_controller.html',''); initResizable(true);
   <div class="headertitle"><div class="title">LEDController Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>High-level controller interface for controlling LEDs, abstracting real or pseudo backends.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_l_e_d_controller_8h_source.html">LEDController.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a375f3956f4fbdd3911d3aa616d46f746" id="r_a375f3956f4fbdd3911d3aa616d46f746"><td class="memItemLeft" align="right" valign="top"><a id="a375f3956f4fbdd3911d3aa616d46f746" name="a375f3956f4fbdd3911d3aa616d46f746"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>redirectTo</b> (const std::string &amp;ledName)</td></tr>
+<tr class="memitem:aee3bdb63c97a7c22e9065eaab8c9ab6d" id="r_aee3bdb63c97a7c22e9065eaab8c9ab6d"><td class="memItemLeft" align="right" valign="top"><a id="aee3bdb63c97a7c22e9065eaab8c9ab6d" name="aee3bdb63c97a7c22e9065eaab8c9ab6d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>LEDController</b> ()=default</td></tr>
+<tr class="memdesc:aee3bdb63c97a7c22e9065eaab8c9ab6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br /></td></tr>
+<tr class="separator:aee3bdb63c97a7c22e9065eaab8c9ab6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa52566770dfa4559fc09c63acb82d5c8" id="r_aa52566770dfa4559fc09c63acb82d5c8"><td class="memItemLeft" align="right" valign="top"><a id="aa52566770dfa4559fc09c63acb82d5c8" name="aa52566770dfa4559fc09c63acb82d5c8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~LEDController</b> ()=default</td></tr>
+<tr class="memdesc:aa52566770dfa4559fc09c63acb82d5c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor. <br /></td></tr>
+<tr class="separator:aa52566770dfa4559fc09c63acb82d5c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a375f3956f4fbdd3911d3aa616d46f746" id="r_a375f3956f4fbdd3911d3aa616d46f746"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a375f3956f4fbdd3911d3aa616d46f746">redirectTo</a> (const std::string &amp;ledName)</td></tr>
+<tr class="memdesc:a375f3956f4fbdd3911d3aa616d46f746"><td class="mdescLeft">&#160;</td><td class="mdescRight">Redirects the controller to another LED.  <br /></td></tr>
 <tr class="separator:a375f3956f4fbdd3911d3aa616d46f746"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90c32acd1da700863aab0faf164d76b0" id="r_a90c32acd1da700863aab0faf164d76b0"><td class="memItemLeft" align="right" valign="top"><a id="a90c32acd1da700863aab0faf164d76b0" name="a90c32acd1da700863aab0faf164d76b0"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>ledPath</b> () const</td></tr>
+<tr class="memitem:a90c32acd1da700863aab0faf164d76b0" id="r_a90c32acd1da700863aab0faf164d76b0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90c32acd1da700863aab0faf164d76b0">ledPath</a> () const</td></tr>
+<tr class="memdesc:a90c32acd1da700863aab0faf164d76b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the LED path in use.  <br /></td></tr>
 <tr class="separator:a90c32acd1da700863aab0faf164d76b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab209cb9b76151dad3fd3b7080d658a99" id="r_ab209cb9b76151dad3fd3b7080d658a99"><td class="memItemLeft" align="right" valign="top"><a id="ab209cb9b76151dad3fd3b7080d658a99" name="ab209cb9b76151dad3fd3b7080d658a99"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setMode</b> (const Modes mode)</td></tr>
+<tr class="memitem:ab209cb9b76151dad3fd3b7080d658a99" id="r_ab209cb9b76151dad3fd3b7080d658a99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab209cb9b76151dad3fd3b7080d658a99">setMode</a> (const Modes mode)</td></tr>
+<tr class="memdesc:ab209cb9b76151dad3fd3b7080d658a99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the control mode.  <br /></td></tr>
 <tr class="separator:ab209cb9b76151dad3fd3b7080d658a99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bc5dddfbe9cdc210d1066a4254ab0fa" id="r_a6bc5dddfbe9cdc210d1066a4254ab0fa"><td class="memItemLeft" align="right" valign="top"><a id="a6bc5dddfbe9cdc210d1066a4254ab0fa" name="a6bc5dddfbe9cdc210d1066a4254ab0fa"></a>
-Modes&#160;</td><td class="memItemRight" valign="bottom"><b>getMode</b> () const</td></tr>
+<tr class="memitem:a6bc5dddfbe9cdc210d1066a4254ab0fa" id="r_a6bc5dddfbe9cdc210d1066a4254ab0fa"><td class="memItemLeft" align="right" valign="top">Modes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6bc5dddfbe9cdc210d1066a4254ab0fa">getMode</a> () const</td></tr>
+<tr class="memdesc:a6bc5dddfbe9cdc210d1066a4254ab0fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current LED control mode.  <br /></td></tr>
 <tr class="separator:a6bc5dddfbe9cdc210d1066a4254ab0fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a096b7909d7569a92e31fdfd3c4b8bebc" id="r_a096b7909d7569a92e31fdfd3c4b8bebc"><td class="memItemLeft" align="right" valign="top"><a id="a096b7909d7569a92e31fdfd3c4b8bebc" name="a096b7909d7569a92e31fdfd3c4b8bebc"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>processByPackage</b> (const <a class="el" href="class_l_e_d_params_package.html">LEDParamsPackage</a> *package)</td></tr>
+<tr class="memitem:a096b7909d7569a92e31fdfd3c4b8bebc" id="r_a096b7909d7569a92e31fdfd3c4b8bebc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a096b7909d7569a92e31fdfd3c4b8bebc">processByPackage</a> (const <a class="el" href="class_l_e_d_params_package.html">LEDParamsPackage</a> *package)</td></tr>
+<tr class="memdesc:a096b7909d7569a92e31fdfd3c4b8bebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes the LED using a parameter package.  <br /></td></tr>
 <tr class="separator:a096b7909d7569a92e31fdfd3c4b8bebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>High-level controller interface for controlling LEDs, abstracting real or pseudo backends. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6bc5dddfbe9cdc210d1066a4254ab0fa" name="a6bc5dddfbe9cdc210d1066a4254ab0fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bc5dddfbe9cdc210d1066a4254ab0fa">&#9670;&#160;</a></span>getMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Modes LEDController::getMode </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the current LED control mode. </p>
+<dl class="section return"><dt>Returns</dt><dd>Current mode. </dd></dl>
+
+</div>
+</div>
+<a id="a90c32acd1da700863aab0faf164d76b0" name="a90c32acd1da700863aab0faf164d76b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90c32acd1da700863aab0faf164d76b0">&#9670;&#160;</a></span>ledPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string LEDController::ledPath </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the LED path in use. </p>
+<dl class="section return"><dt>Returns</dt><dd>Path as a string. </dd></dl>
+
+</div>
+</div>
+<a id="a096b7909d7569a92e31fdfd3c4b8bebc" name="a096b7909d7569a92e31fdfd3c4b8bebc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a096b7909d7569a92e31fdfd3c4b8bebc">&#9670;&#160;</a></span>processByPackage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool LEDController::processByPackage </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_l_e_d_params_package.html">LEDParamsPackage</a> *</td>          <td class="paramname"><span class="paramname"><em>package</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Processes the LED using a parameter package. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">package</td><td>Parameter package pointer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if operation succeeded. </dd></dl>
+
+</div>
+</div>
+<a id="a375f3956f4fbdd3911d3aa616d46f746" name="a375f3956f4fbdd3911d3aa616d46f746"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a375f3956f4fbdd3911d3aa616d46f746">&#9670;&#160;</a></span>redirectTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LEDController::redirectTo </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>ledName</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Redirects the controller to another LED. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ledName</td><td>Name of the target LED. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab209cb9b76151dad3fd3b7080d658a99" name="ab209cb9b76151dad3fd3b7080d658a99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab209cb9b76151dad3fd3b7080d658a99">&#9670;&#160;</a></span>setMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LEDController::setMode </td>
+          <td>(</td>
+          <td class="paramtype">const Modes</td>          <td class="paramname"><span class="paramname"><em>mode</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the control mode. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td>LED control mode. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>extern_app/professionals/boardlevel_application/LightController/Adapter/<a class="el" href="_l_e_d_controller_8h_source.html">LEDController.h</a></li>
 </ul>

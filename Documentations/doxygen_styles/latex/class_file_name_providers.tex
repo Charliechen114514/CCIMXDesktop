@@ -19,38 +19,36 @@ using {\bfseries Color\+Pairs} = std\+::pair$<$File\+Extension, QColor$>$
 \begin{DoxyCompactItemize}
 \item 
 \Hypertarget{class_file_name_providers_ad81f8ebbb75db0cee10db72073fbc58b}\label{class_file_name_providers_ad81f8ebbb75db0cee10db72073fbc58b} 
-{\bfseries File\+Name\+Providers} (\mbox{\hyperlink{class_c_c_i_m_x_file_system_model}{CCIMXFile\+System\+Model}} \texorpdfstring{$\ast$}{*}models)
+{\bfseries File\+Name\+Providers} (\mbox{\hyperlink{class_c_c_i_m_x_file_system_model}{CCIMXFile\+System\+Model}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_file_info_provider_ae898e8c9bb3dc76decd869a018f9c0d9}{models}})
 \item 
 \Hypertarget{class_file_name_providers_a323bf8d034d2a6c4d53705f5d38d0114}\label{class_file_name_providers_a323bf8d034d2a6c4d53705f5d38d0114} 
 {\bfseries Q\+\_\+\+DISABLE\+\_\+\+COPY} (\mbox{\hyperlink{class_file_name_providers}{File\+Name\+Providers}})
 \item 
 QString \mbox{\hyperlink{class_file_name_providers_a3fc88ac86b53656f9e75a0476004ac18}{provide\+\_\+section\+\_\+name}} () override
-\item 
+\begin{DoxyCompactList}\small\item\em provide\+\_\+section\+\_\+name means everything in the name lol \end{DoxyCompactList}\item 
 std\+::pair$<$ bool, QVariant $>$ \mbox{\hyperlink{class_file_name_providers_ab7c156fc04bc7888677c266f79f15127}{data}} (const QModel\+Index \&index, int role) override
-\item 
-\Hypertarget{class_file_name_providers_ad649d1ca2c8291733510803220b61b5d}\label{class_file_name_providers_ad649d1ca2c8291733510803220b61b5d} 
-void {\bfseries register\+Color\+Pairs} (const Color\+Pairs \&pairs)
-\item 
-\Hypertarget{class_file_name_providers_ad419a989e778ba01fc40417dd78ec62a}\label{class_file_name_providers_ad419a989e778ba01fc40417dd78ec62a} 
-void {\bfseries register\+\_\+special\+\_\+dircolor} (const QColor \&t)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em data provide the data to the views \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_file_name_providers_ad649d1ca2c8291733510803220b61b5d}{register\+Color\+Pairs}} (const Color\+Pairs \&pairs)
+\begin{DoxyCompactList}\small\item\em register\+Color\+Pairs assigned the color shows \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_file_name_providers_ad419a989e778ba01fc40417dd78ec62a}{register\+\_\+special\+\_\+dircolor}} (const QColor \&t)
+\begin{DoxyCompactList}\small\item\em register\+\_\+special\+\_\+dircolor register the special dirent color \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_file_info_provider}{File\+Info\+Provider}}}
 \begin{DoxyCompactItemize}
 \item 
 {\bfseries Q\+\_\+\+DISABLE\+\_\+\+COPY} (\mbox{\hyperlink{class_file_info_provider}{File\+Info\+Provider}})
 \item 
-{\bfseries File\+Info\+Provider} (\mbox{\hyperlink{class_c_c_i_m_x_file_system_model}{CCIMXFile\+System\+Model}} \texorpdfstring{$\ast$}{*}models)
+{\bfseries File\+Info\+Provider} (\mbox{\hyperlink{class_c_c_i_m_x_file_system_model}{CCIMXFile\+System\+Model}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_file_info_provider_ae898e8c9bb3dc76decd869a018f9c0d9}{models}})
 \item 
-void {\bfseries set\+Current\+Handle\+Path} (const QString \&path)
-\item 
-QString {\bfseries current\+Handle\+Path} ()
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_file_info_provider_aa13112f10f0b93ab09d2c12385b13374}{set\+Current\+Handle\+Path}} (const QString \&path)
+\begin{DoxyCompactList}\small\item\em set\+Current\+Handle\+Path set the current handle path \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_file_info_provider_a4940f9f1d9930553090eb473fe8900f6}{current\+Handle\+Path}} ()
+\begin{DoxyCompactList}\small\item\em current\+Handle\+Path get the current handle path \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Additional Inherited Members}
 \doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_file_info_provider}{File\+Info\+Provider}}}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_c_c_i_m_x_file_system_model}{CCIMXFile\+System\+Model}} \texorpdfstring{$\ast$}{*} {\bfseries models}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em binding models \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Member Function Documentation}
@@ -62,7 +60,21 @@ std\+::pair$<$ bool, QVariant $>$ File\+Name\+Providers\+::data (\begin{DoxyPara
 
 
 
-Implements \mbox{\hyperlink{class_file_info_provider}{File\+Info\+Provider}}.
+data provide the data to the views 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & the model index \\
+\hline
+{\em role} & the role of the index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns the file name of the index, if the data is not available, it will return with \{false, \{\}\} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_file_info_provider_a7eb35bc1c83233238a9a33c6d55a4124}{File\+Info\+Provider}}.
 
 \Hypertarget{class_file_name_providers_a3fc88ac86b53656f9e75a0476004ac18}\index{FileNameProviders@{FileNameProviders}!provide\_section\_name@{provide\_section\_name}}
 \index{provide\_section\_name@{provide\_section\_name}!FileNameProviders@{FileNameProviders}}
@@ -72,8 +84,48 @@ QString File\+Name\+Providers\+::provide\+\_\+section\+\_\+name (\begin{DoxyPara
 
 
 
-Implements \mbox{\hyperlink{class_file_info_provider}{File\+Info\+Provider}}.
+provide\+\_\+section\+\_\+name means everything in the name lol 
 
+\begin{DoxyReturn}{Returns}
+the section name 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_file_info_provider_a25aa7631c3aff86607cae1b412548878}{File\+Info\+Provider}}.
+
+\Hypertarget{class_file_name_providers_ad419a989e778ba01fc40417dd78ec62a}\index{FileNameProviders@{FileNameProviders}!register\_special\_dircolor@{register\_special\_dircolor}}
+\index{register\_special\_dircolor@{register\_special\_dircolor}!FileNameProviders@{FileNameProviders}}
+\doxysubsubsection{\texorpdfstring{register\_special\_dircolor()}{register\_special\_dircolor()}}
+{\footnotesize\ttfamily \label{class_file_name_providers_ad419a989e778ba01fc40417dd78ec62a} 
+void File\+Name\+Providers\+::register\+\_\+special\+\_\+dircolor (\begin{DoxyParamCaption}\item[{const QColor \&}]{t}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+register\+\_\+special\+\_\+dircolor register the special dirent color 
+
+\begin{DoxyNote}{Note}
+this is the default color for the dirent 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em t} & the color to be registered \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_file_name_providers_ad649d1ca2c8291733510803220b61b5d}\index{FileNameProviders@{FileNameProviders}!registerColorPairs@{registerColorPairs}}
+\index{registerColorPairs@{registerColorPairs}!FileNameProviders@{FileNameProviders}}
+\doxysubsubsection{\texorpdfstring{registerColorPairs()}{registerColorPairs()}}
+{\footnotesize\ttfamily \label{class_file_name_providers_ad649d1ca2c8291733510803220b61b5d} 
+void File\+Name\+Providers\+::register\+Color\+Pairs (\begin{DoxyParamCaption}\item[{const Color\+Pairs \&}]{pairs}{}\end{DoxyParamCaption})}
+
+
+
+register\+Color\+Pairs assigned the color shows 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pairs} & the pairs of the file extension and the color \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

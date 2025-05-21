@@ -12,18 +12,71 @@ Inheritance diagram for CCIMXFile\+System\+Model\+:\begin{figure}[H]
 \Hypertarget{class_c_c_i_m_x_file_system_model_aaeb0c17207115bb4daa9a493fac17e23}\label{class_c_c_i_m_x_file_system_model_aaeb0c17207115bb4daa9a493fac17e23} 
 {\bfseries CCIMXFile\+System\+Model} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
 \item 
-\Hypertarget{class_c_c_i_m_x_file_system_model_a6c3fcae5ed31391c9162017f0788ef1a}\label{class_c_c_i_m_x_file_system_model_a6c3fcae5ed31391c9162017f0788ef1a} 
-void {\bfseries bind\+Providers} (QList$<$ \mbox{\hyperlink{class_file_info_provider}{File\+Info\+Provider}} \texorpdfstring{$\ast$}{*} $>$ \&providers)
-\item 
-\Hypertarget{class_c_c_i_m_x_file_system_model_aaf84050a2cf034967a22e0bece1da92a}\label{class_c_c_i_m_x_file_system_model_aaf84050a2cf034967a22e0bece1da92a} 
-QVariant {\bfseries data} (const QModel\+Index \&index, int role=Qt\+::\+Display\+Role) const override
-\item 
-\Hypertarget{class_c_c_i_m_x_file_system_model_aeceaa8e6c1e18cb36f20211176b60096}\label{class_c_c_i_m_x_file_system_model_aeceaa8e6c1e18cb36f20211176b60096} 
-QVariant {\bfseries header\+Data} (int section, Qt\+::\+Orientation orientation, int role=Qt\+::\+Display\+Role) const override
-\item 
-\Hypertarget{class_c_c_i_m_x_file_system_model_ac956dd7018b41c094ff51c38f7abd68b}\label{class_c_c_i_m_x_file_system_model_ac956dd7018b41c094ff51c38f7abd68b} 
-const QList$<$ \mbox{\hyperlink{class_file_info_provider}{File\+Info\+Provider}} \texorpdfstring{$\ast$}{*} $>$ \& {\bfseries get\+\_\+providers} () const
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_c_c_i_m_x_file_system_model_a6c3fcae5ed31391c9162017f0788ef1a}{bind\+Providers}} (QList$<$ \mbox{\hyperlink{class_file_info_provider}{File\+Info\+Provider}} \texorpdfstring{$\ast$}{*} $>$ \&providers)
+\begin{DoxyCompactList}\small\item\em bind\+Providers bind the providers to the model \end{DoxyCompactList}\item 
+QVariant \mbox{\hyperlink{class_c_c_i_m_x_file_system_model_aaf84050a2cf034967a22e0bece1da92a}{data}} (const QModel\+Index \&index, int role=Qt\+::\+Display\+Role) const override
+\begin{DoxyCompactList}\small\item\em provide\+\_\+section\+\_\+name provide the section name \end{DoxyCompactList}\item 
+QVariant \mbox{\hyperlink{class_c_c_i_m_x_file_system_model_aeceaa8e6c1e18cb36f20211176b60096}{header\+Data}} (int section, Qt\+::\+Orientation orientation, int role=Qt\+::\+Display\+Role) const override
+\begin{DoxyCompactList}\small\item\em provide\+\_\+section\+\_\+name provide the section name \end{DoxyCompactList}\item 
+const QList$<$ \mbox{\hyperlink{class_file_info_provider}{File\+Info\+Provider}} \texorpdfstring{$\ast$}{*} $>$ \& \mbox{\hyperlink{class_c_c_i_m_x_file_system_model_ac956dd7018b41c094ff51c38f7abd68b}{get\+\_\+providers}} () const
+\begin{DoxyCompactList}\small\item\em get\+\_\+providers provide the providers installed in the model \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_c_c_i_m_x_file_system_model_a6c3fcae5ed31391c9162017f0788ef1a}\index{CCIMXFileSystemModel@{CCIMXFileSystemModel}!bindProviders@{bindProviders}}
+\index{bindProviders@{bindProviders}!CCIMXFileSystemModel@{CCIMXFileSystemModel}}
+\doxysubsubsection{\texorpdfstring{bindProviders()}{bindProviders()}}
+{\footnotesize\ttfamily \label{class_c_c_i_m_x_file_system_model_a6c3fcae5ed31391c9162017f0788ef1a} 
+void CCIMXFile\+System\+Model\+::bind\+Providers (\begin{DoxyParamCaption}\item[{QList$<$ \mbox{\hyperlink{class_file_info_provider}{File\+Info\+Provider}} \texorpdfstring{$\ast$}{*} $>$ \&}]{providers}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+bind\+Providers bind the providers to the model 
+
+
+\begin{DoxyParams}{Parameters}
+{\em providers} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_c_c_i_m_x_file_system_model_aaf84050a2cf034967a22e0bece1da92a}\index{CCIMXFileSystemModel@{CCIMXFileSystemModel}!data@{data}}
+\index{data@{data}!CCIMXFileSystemModel@{CCIMXFileSystemModel}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily \label{class_c_c_i_m_x_file_system_model_aaf84050a2cf034967a22e0bece1da92a} 
+QVariant CCIMXFile\+System\+Model\+::data (\begin{DoxyParamCaption}\item[{const QModel\+Index \&}]{index}{, }\item[{int}]{role}{ = {\ttfamily Qt\+:\+:DisplayRole}}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+provide\+\_\+section\+\_\+name provide the section name 
+
+\begin{DoxyReturn}{Returns}
+the section name 
+\end{DoxyReturn}
+\Hypertarget{class_c_c_i_m_x_file_system_model_ac956dd7018b41c094ff51c38f7abd68b}\index{CCIMXFileSystemModel@{CCIMXFileSystemModel}!get\_providers@{get\_providers}}
+\index{get\_providers@{get\_providers}!CCIMXFileSystemModel@{CCIMXFileSystemModel}}
+\doxysubsubsection{\texorpdfstring{get\_providers()}{get\_providers()}}
+{\footnotesize\ttfamily \label{class_c_c_i_m_x_file_system_model_ac956dd7018b41c094ff51c38f7abd68b} 
+const QList$<$ \mbox{\hyperlink{class_file_info_provider}{File\+Info\+Provider}} \texorpdfstring{$\ast$}{*} $>$ \& CCIMXFile\+System\+Model\+::get\+\_\+providers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get\+\_\+providers provide the providers installed in the model 
+
+\begin{DoxyReturn}{Returns}
+the providers 
+\end{DoxyReturn}
+\Hypertarget{class_c_c_i_m_x_file_system_model_aeceaa8e6c1e18cb36f20211176b60096}\index{CCIMXFileSystemModel@{CCIMXFileSystemModel}!headerData@{headerData}}
+\index{headerData@{headerData}!CCIMXFileSystemModel@{CCIMXFileSystemModel}}
+\doxysubsubsection{\texorpdfstring{headerData()}{headerData()}}
+{\footnotesize\ttfamily \label{class_c_c_i_m_x_file_system_model_aeceaa8e6c1e18cb36f20211176b60096} 
+QVariant CCIMXFile\+System\+Model\+::header\+Data (\begin{DoxyParamCaption}\item[{int}]{section}{, }\item[{Qt\+::\+Orientation}]{orientation}{, }\item[{int}]{role}{ = {\ttfamily Qt\+:\+:DisplayRole}}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+provide\+\_\+section\+\_\+name provide the section name 
+
+\begin{DoxyReturn}{Returns}
+the section name 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

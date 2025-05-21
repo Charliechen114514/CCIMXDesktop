@@ -4,49 +4,46 @@
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ AP3216CADAPTERFACTORY\_H}}
 \DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ AP3216CADAPTERFACTORY\_H}}
-\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}ap3216c.h"{}}}
-\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QObject>}}
-\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifdef\ USE\_REAL\_ADAPTER}}
-\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}ap3216c\_adapter.h"{}}}
-\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#else}}
-\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}PesudoAP3216C.h"{}}}
-\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#endif}}
-\DoxyCodeLine{00010\ }
-\DoxyCodeLine{00011\ \textcolor{comment}{/*}}
-\DoxyCodeLine{00012\ \textcolor{comment}{\ *\ This\ factory\ Class\ really\ handle\ the\ Data\ Factorize}}
-\DoxyCodeLine{00013\ \textcolor{comment}{\ *\ which,\ you\ should\ query\ the\ AP3216CAdapterFactory}}
-\DoxyCodeLine{00014\ \textcolor{comment}{\ *\ for\ the\ data\ instead\ of\ direct\ hook,\ which\ enabled}}
-\DoxyCodeLine{00015\ \textcolor{comment}{\ *\ no\ matter\ platformed\ fetch\ of\ datas}}
-\DoxyCodeLine{00016\ \textcolor{comment}{\ */}}
-\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }AP3216CAdapterFactory\ :\ \textcolor{keyword}{public}\ QObject\ \{}
-\DoxyCodeLine{00018\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}ap3216c.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifdef\ USE\_REAL\_ADAPTER}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}ap3216c\_adapter.h"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}PesudoAP3216C.h"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_a_p3216_c_adapter_factory_ac9d8bba508b196b8f2a499c1c28e686a}{AP3216CAdapterFactory}}\ :\ \textcolor{keyword}{public}\ QObject\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00018\ }
 \DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{explicit}\ AP3216CAdapterFactory(QObject*\ parent\ =\ \textcolor{keyword}{nullptr});}
-\DoxyCodeLine{00021\ \ \ \ \ \textcolor{comment}{/*\ default\ we\ provide\ pesudos\ */}}
-\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{bool}\ bind\_file(\textcolor{keyword}{const}\ QString\&\ file\_path);}
-\DoxyCodeLine{00023\ \ \ \ \ \textcolor{comment}{/*\ invoke\ this\ for\ the\ Data\ */}}
-\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ request\_data();}
-\DoxyCodeLine{00025\ \ \ \ \ \textcolor{comment}{/*\ or\ request\ sync\ */}}
-\DoxyCodeLine{00026\ \ \ \ \ std::optional<AP3216CData>\ sync\_request\_data();}
-\DoxyCodeLine{00027\ signals:}
-\DoxyCodeLine{00028\ \ \ \ \ \textcolor{comment}{/*\ async\ request\ */}}
-\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ request\_finish(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_a_p3216_c_data}{AP3216CData}}\ data);}
-\DoxyCodeLine{00030\ \ \ \ \ \textcolor{comment}{/*\ error\ for\ the\ request\ */}}
-\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ request\_error();}
-\DoxyCodeLine{00032\ \ \ \ \ \textcolor{comment}{/*\ internal\ async\ */}}
-\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ \_\_internal\_async\_request();}
-\DoxyCodeLine{00034\ \textcolor{keyword}{private}\ slots:}
-\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ process\_request();}
-\DoxyCodeLine{00036\ }
-\DoxyCodeLine{00037\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#ifdef\ USE\_REAL\_ADAPTER}}
-\DoxyCodeLine{00039\ \ \ \ \ AP3216CAdapter}
-\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#else}}
-\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{class_pesudo_a_p3216_c}{PesudoAP3216C}}}
-\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#endif}}
-\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ adapter;}
-\DoxyCodeLine{00044\ \};}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_a_p3216_c_adapter_factory_ac9d8bba508b196b8f2a499c1c28e686a}{AP3216CAdapterFactory}}(QObject*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_a_p3216_c_adapter_factory_a40b207a7adb5e3077049d7fca47b8274}{bind\_file}}(\textcolor{keyword}{const}\ QString\&\ file\_path);}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_p3216_c_adapter_factory_a3b62552e6224bb936913f7b56da99d71}{request\_data}}();}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00033\ \ \ \ \ std::optional<AP3216CData>\ \mbox{\hyperlink{class_a_p3216_c_adapter_factory_a13b342d2f88051d5e64195e8c20cd2ba}{sync\_request\_data}}();}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ signals:}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_p3216_c_adapter_factory_a1b32a0d216d652f5b84fd632e59d7611}{request\_finish}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_a_p3216_c_data}{AP3216CData}}\ data);}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_p3216_c_adapter_factory_a0dc4bb6e27f77d03fc781c63a70607f4}{request\_error}}();}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_a_p3216_c_adapter_factory_a309573121ab081b62633f42af8ad572d}{\_\_internal\_async\_request}}();}
 \DoxyCodeLine{00045\ }
-\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ AP3216CADAPTERFACTORY\_H}}
+\DoxyCodeLine{00046\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ process\_request();}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#ifdef\ USE\_REAL\_ADAPTER}}
+\DoxyCodeLine{00052\ \ \ \ \ AP3216CAdapter\ adapter;\ }
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00054\ \ \ \ \ \mbox{\hyperlink{class_pesudo_a_p3216_c}{PesudoAP3216C}}\ adapter;\ }
+\DoxyCodeLine{00055\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00056\ \};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ AP3216CADAPTERFACTORY\_H}}
 
 \end{DoxyCode}

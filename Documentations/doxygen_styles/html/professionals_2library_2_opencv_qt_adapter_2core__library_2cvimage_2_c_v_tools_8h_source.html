@@ -110,34 +110,30 @@ $(function(){initNavTree('professionals_2library_2_opencv_qt_adapter_2core__libr
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;CVImage.h&quot;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;utility&gt;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">/* CVTools make sense in debuging */</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">/* Most of the implementations, for management</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> * reason, are supposed to place in the impl</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> * files, instead of the current cpp file</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span>CVTools {</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> <span class="keywordtype">short</span> WAIT_FOREVER = 0;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="foldopen" id="foldopen00015" data-start="{" data-end="};">
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="struct_c_v_tools_1_1_display_params.html">   15</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_c_v_tools_1_1_display_params.html">DisplayParams</a> {</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* name { <span class="keyword">nullptr</span> };</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    std::pair&lt;int, int&gt; window_size { 640, 480 };</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">int</span> waitTime { WAIT_FOREVER }; <span class="comment">/* default we wait forever */</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>};</div>
-</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">/* using the default display issue make sense */</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keywordtype">void</span> display(<span class="keyword">const</span> <a class="code hl_class" href="class_c_v_image.html">CVImage</a>&amp; image, <span class="keyword">const</span> <span class="keywordtype">char</span>* name);</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">/* display impl should be in private impl file */</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keywordtype">void</span> display(<span class="keyword">const</span> <a class="code hl_class" href="class_c_v_image.html">CVImage</a>&amp; image, <span class="keyword">const</span> <a class="code hl_struct" href="struct_c_v_tools_1_1_display_params.html">DisplayParams</a>&amp; params);</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>};</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#endif </span><span class="comment">// CVTOOLS_H</span></div>
-<div class="ttc" id="aclass_c_v_image_html"><div class="ttname"><a href="class_c_v_image.html">CVImage</a></div><div class="ttdef"><b>Definition</b> CVImage.h:5</div></div>
-<div class="ttc" id="astruct_c_v_tools_1_1_display_params_html"><div class="ttname"><a href="struct_c_v_tools_1_1_display_params.html">CVTools::DisplayParams</a></div><div class="ttdef"><b>Definition</b> CVTools.h:15</div></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_c_v_tools.html">CVTools</a> {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> <span class="keywordtype">short</span> WAIT_FOREVER = 0;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">struct </span><a class="code hl_struct" href="struct_c_v_tools_1_1_display_params.html">DisplayParams</a> {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_variable" href="struct_c_v_tools_1_1_display_params.html#a366209da85a0c0e2fe1c4fc814c5ef8a">name</a> { <span class="keyword">nullptr</span> }; </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    std::pair&lt;int, int&gt; <a class="code hl_variable" href="struct_c_v_tools_1_1_display_params.html#aa1430ae3fd50b00f6eb573366e096795">window_size</a> { 640, 480 }; </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_c_v_tools_1_1_display_params.html#a6fcefafd5c5a2c7b38534301391e17dd">waitTime</a> { WAIT_FOREVER }; </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>};</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keywordtype">void</span> <a class="code hl_function" href="namespace_c_v_tools.html#a51a3b55ab64608c385c9d063fcd70865">display</a>(<span class="keyword">const</span> CVImage&amp; image, <span class="keyword">const</span> <span class="keywordtype">char</span>* name);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keywordtype">void</span> <a class="code hl_function" href="namespace_c_v_tools.html#a51a3b55ab64608c385c9d063fcd70865">display</a>(<span class="keyword">const</span> CVImage&amp; image, <span class="keyword">const</span> <a class="code hl_struct" href="struct_c_v_tools_1_1_display_params.html">DisplayParams</a>&amp; params);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>};</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#endif </span><span class="comment">// CVTOOLS_H</span></div>
+<div class="ttc" id="anamespace_c_v_tools_html"><div class="ttname"><a href="namespace_c_v_tools.html">CVTools</a></div><div class="ttdoc">The CVTools namespace provides the tools.</div><div class="ttdef"><b>Definition</b> CVImagePrivateOpencvImp.cpp:35</div></div>
+<div class="ttc" id="anamespace_c_v_tools_html_a51a3b55ab64608c385c9d063fcd70865"><div class="ttname"><a href="namespace_c_v_tools.html#a51a3b55ab64608c385c9d063fcd70865">CVTools::display</a></div><div class="ttdeci">void display(const CVImage &amp;image, const DisplayParams &amp;params)</div><div class="ttdoc">display the image with the default parameters</div><div class="ttdef"><b>Definition</b> CVImagePrivateOpencvImp.cpp:37</div></div>
+<div class="ttc" id="astruct_c_v_tools_1_1_display_params_html"><div class="ttname"><a href="struct_c_v_tools_1_1_display_params.html">CVTools::DisplayParams</a></div><div class="ttdoc">The DisplayParams struct provides the display parameters for the display.</div><div class="ttdef"><b>Definition</b> CVTools.h:15</div></div>
+<div class="ttc" id="astruct_c_v_tools_1_1_display_params_html_a366209da85a0c0e2fe1c4fc814c5ef8a"><div class="ttname"><a href="struct_c_v_tools_1_1_display_params.html#a366209da85a0c0e2fe1c4fc814c5ef8a">CVTools::DisplayParams::name</a></div><div class="ttdeci">const char * name</div><div class="ttdoc">the display name for window</div><div class="ttdef"><b>Definition</b> CVTools.h:25</div></div>
+<div class="ttc" id="astruct_c_v_tools_1_1_display_params_html_a6fcefafd5c5a2c7b38534301391e17dd"><div class="ttname"><a href="struct_c_v_tools_1_1_display_params.html#a6fcefafd5c5a2c7b38534301391e17dd">CVTools::DisplayParams::waitTime</a></div><div class="ttdeci">int waitTime</div><div class="ttdoc">default we wait forever</div><div class="ttdef"><b>Definition</b> CVTools.h:27</div></div>
+<div class="ttc" id="astruct_c_v_tools_1_1_display_params_html_aa1430ae3fd50b00f6eb573366e096795"><div class="ttname"><a href="struct_c_v_tools_1_1_display_params.html#aa1430ae3fd50b00f6eb573366e096795">CVTools::DisplayParams::window_size</a></div><div class="ttdeci">std::pair&lt; int, int &gt; window_size</div><div class="ttdoc">the window size</div><div class="ttdef"><b>Definition</b> CVTools.h:26</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -1,5 +1,14 @@
 \doxysection{Media\+Player Class Reference}
 \hypertarget{class_media_player}{}\label{class_media_player}\index{MediaPlayer@{MediaPlayer}}
+
+
+\doxylink{class_media_player}{Media\+Player} is the wrapper of \doxylink{class_video_player}{Video\+Player} and Audio\+Player, with the sync of video and audio basically.  
+
+
+
+
+{\ttfamily \#include $<$Media\+Player.\+h$>$}
+
 Inheritance diagram for Media\+Player\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -10,34 +19,27 @@ Inheritance diagram for Media\+Player\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{struct_media_player_1_1_media_player_status}{Media\+Player\+Status}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The \doxylink{struct_media_player_1_1_media_player_status}{Media\+Player\+Status} class measures the status of the media player. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Signals}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_media_player_a64d0a37efe32f9aafacc3c36c87d7d70}\label{class_media_player_a64d0a37efe32f9aafacc3c36c87d7d70} 
-void {\bfseries display\+\_\+frame} (QImage image)
-\item 
-\Hypertarget{class_media_player_af52939d5d44597eaac0c470afde9013a}\label{class_media_player_af52939d5d44597eaac0c470afde9013a} 
-void {\bfseries volume\+Changed} (float percentage)
-\item 
-\Hypertarget{class_media_player_a7286f125df88f8e36927a105bf28a7a3}\label{class_media_player_a7286f125df88f8e36927a105bf28a7a3} 
-void {\bfseries source\+Opened} (const QString source, \mbox{\hyperlink{struct_media_player_1_1_media_player_status}{Media\+Player\+::\+Media\+Player\+Status}} status)
-\item 
-\Hypertarget{class_media_player_a5bc16c1717d3ed80e8bd7e0f174ca3b6}\label{class_media_player_a5bc16c1717d3ed80e8bd7e0f174ca3b6} 
-void {\bfseries video\+Available} (bool source\+Available, const QImage first\+Page)
-\item 
+void \mbox{\hyperlink{class_media_player_a64d0a37efe32f9aafacc3c36c87d7d70}{display\+\_\+frame}} (QImage image)
+\begin{DoxyCompactList}\small\item\em display\+\_\+frame display the frame by hooking this signals \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_media_player_af52939d5d44597eaac0c470afde9013a}{volume\+Changed}} (float percentage)
+\begin{DoxyCompactList}\small\item\em volume\+Changed the signal indicating the volume changed \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_media_player_a7286f125df88f8e36927a105bf28a7a3}{source\+Opened}} (const QString \mbox{\hyperlink{class_media_player_a347546ae8ca73768c13a732c7af402e5}{source}}, \mbox{\hyperlink{struct_media_player_1_1_media_player_status}{Media\+Player\+::\+Media\+Player\+Status}} status)
+\begin{DoxyCompactList}\small\item\em source\+Opened the signal indicating the source opened \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_media_player_a5bc16c1717d3ed80e8bd7e0f174ca3b6}{video\+Available}} (bool source\+Available, const QImage first\+Page)
+\begin{DoxyCompactList}\small\item\em video\+Available for mp4 like video, this means we can display the medias \end{DoxyCompactList}\item 
 \Hypertarget{class_media_player_ac9e7476d72620b306e8bfa510ab23574}\label{class_media_player_ac9e7476d72620b306e8bfa510ab23574} 
 void {\bfseries media\+End} ()
-\item 
-\Hypertarget{class_media_player_a846e3dba84bab9f426810ffbd9c6d995}\label{class_media_player_a846e3dba84bab9f426810ffbd9c6d995} 
-void {\bfseries duration\+Changed} (qint64 new\+\_\+durantion)
-\item 
-\Hypertarget{class_media_player_a60d5b0f74ed17ed61624314ca668e8cd}\label{class_media_player_a60d5b0f74ed17ed61624314ca668e8cd} 
-void {\bfseries position\+Changed} (qint64 position)
-\item 
-\Hypertarget{class_media_player_a238fff7dd529efb01c3c003dea4adc7b}\label{class_media_player_a238fff7dd529efb01c3c003dea4adc7b} 
-void {\bfseries meta\+Data\+Available} (const \mbox{\hyperlink{struct_media_info}{Media\+Info}} info)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em media\+End the signal indicating the media end \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_media_player_a846e3dba84bab9f426810ffbd9c6d995}{duration\+Changed}} (qint64 new\+\_\+durantion)
+\begin{DoxyCompactList}\small\item\em duration\+Changed the signal indicating the duration changed \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_media_player_a60d5b0f74ed17ed61624314ca668e8cd}{position\+Changed}} (qint64 position)
+\begin{DoxyCompactList}\small\item\em position\+Changed the signal indicating the position changed \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_media_player_a238fff7dd529efb01c3c003dea4adc7b}{meta\+Data\+Available}} (const \mbox{\hyperlink{struct_media_info}{Media\+Info}} info)
+\begin{DoxyCompactList}\small\item\em meta\+Data\+Available the signal indicating the meta data available \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -47,42 +49,343 @@ void {\bfseries meta\+Data\+Available} (const \mbox{\hyperlink{struct_media_info
 \Hypertarget{class_media_player_a1f1dd039291aaddcbbc6547cb8d5ef65}\label{class_media_player_a1f1dd039291aaddcbbc6547cb8d5ef65} 
 {\bfseries Q\+\_\+\+DISABLE\+\_\+\+COPY} (\mbox{\hyperlink{class_media_player}{Media\+Player}})
 \item 
-\Hypertarget{class_media_player_af16ded3ecace9ebd3b5f34d8ed43bac8}\label{class_media_player_af16ded3ecace9ebd3b5f34d8ed43bac8} 
-void {\bfseries set\+Source} (const char \texorpdfstring{$\ast$}{*}local\+\_\+file)
-\item 
-\Hypertarget{class_media_player_a347546ae8ca73768c13a732c7af402e5}\label{class_media_player_a347546ae8ca73768c13a732c7af402e5} 
-QString {\bfseries source} () const
-\item 
-\Hypertarget{class_media_player_a535a93966b7fb52ad51ff93531a932c0}\label{class_media_player_a535a93966b7fb52ad51ff93531a932c0} 
-void {\bfseries set\+Volume} (const float percentage)
-\item 
-\Hypertarget{class_media_player_a76c64233d113ac5c5590f099df8c123f}\label{class_media_player_a76c64233d113ac5c5590f099df8c123f} 
-float {\bfseries volume} () const
-\item 
-\Hypertarget{class_media_player_a5f65ab0852d73d1e49b3791facb1086c}\label{class_media_player_a5f65ab0852d73d1e49b3791facb1086c} 
-qint64 {\bfseries get\+\_\+durations} () const
-\item 
-\Hypertarget{class_media_player_afb59edc9c4751c9413dafd3fe186e7dd}\label{class_media_player_afb59edc9c4751c9413dafd3fe186e7dd} 
-qint64 {\bfseries get\+\_\+position} () const
-\item 
-\Hypertarget{class_media_player_a952cbd6944653ae6fbc19632ce310cf4}\label{class_media_player_a952cbd6944653ae6fbc19632ce310cf4} 
-bool {\bfseries resume} ()
-\item 
-\Hypertarget{class_media_player_af20f090157c6f0be28027e1811e971f7}\label{class_media_player_af20f090157c6f0be28027e1811e971f7} 
-bool {\bfseries pause} ()
-\item 
-\Hypertarget{class_media_player_aa0dae769e5109e3d0ef3082c77fda490}\label{class_media_player_aa0dae769e5109e3d0ef3082c77fda490} 
-bool {\bfseries close} ()
-\item 
-\Hypertarget{class_media_player_a58820e8ef9e293799d89142ae63a1dfd}\label{class_media_player_a58820e8ef9e293799d89142ae63a1dfd} 
-bool {\bfseries is\+Playing} () const
-\item 
-\Hypertarget{class_media_player_a242904c7815deb54b9dbc0802fa21cd9}\label{class_media_player_a242904c7815deb54b9dbc0802fa21cd9} 
-void {\bfseries set\+\_\+accept\+\_\+missync\+\_\+msecond} (const unsigned int msec=Media\+Player\+Public\+Settings\+::\+DEF\+\_\+\+ACCPET\+\_\+\+DELAY)
-\item 
-\Hypertarget{class_media_player_a94f87027eb20c1403ed1d7997d0c6026}\label{class_media_player_a94f87027eb20c1403ed1d7997d0c6026} 
-void {\bfseries set\+\_\+position} (const qint64 position)
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_media_player_af16ded3ecace9ebd3b5f34d8ed43bac8}{set\+Source}} (const char \texorpdfstring{$\ast$}{*}local\+\_\+file)
+\begin{DoxyCompactList}\small\item\em set\+Source set the source of the media \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_media_player_a347546ae8ca73768c13a732c7af402e5}{source}} () const
+\begin{DoxyCompactList}\small\item\em source get the source of the media \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_media_player_a535a93966b7fb52ad51ff93531a932c0}{set\+Volume}} (const float percentage)
+\begin{DoxyCompactList}\small\item\em set\+Volume set the volume of the media \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_media_player_a76c64233d113ac5c5590f099df8c123f}{volume}} () const
+\begin{DoxyCompactList}\small\item\em volume get the volume of the media \end{DoxyCompactList}\item 
+qint64 \mbox{\hyperlink{class_media_player_a5f65ab0852d73d1e49b3791facb1086c}{get\+\_\+durations}} () const
+\begin{DoxyCompactList}\small\item\em get\+\_\+durations get the durations of the media \end{DoxyCompactList}\item 
+qint64 \mbox{\hyperlink{class_media_player_afb59edc9c4751c9413dafd3fe186e7dd}{get\+\_\+position}} () const
+\begin{DoxyCompactList}\small\item\em get\+\_\+position get the position of the media \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_media_player_a952cbd6944653ae6fbc19632ce310cf4}{resume}} ()
+\begin{DoxyCompactList}\small\item\em resume start the media player \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_media_player_af20f090157c6f0be28027e1811e971f7}{pause}} ()
+\begin{DoxyCompactList}\small\item\em pause pause the media player \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_media_player_aa0dae769e5109e3d0ef3082c77fda490}{close}} ()
+\begin{DoxyCompactList}\small\item\em close close the media player \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_media_player_a58820e8ef9e293799d89142ae63a1dfd}{is\+Playing}} () const
+\begin{DoxyCompactList}\small\item\em is\+Playing check if the media is playing \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_media_player_a242904c7815deb54b9dbc0802fa21cd9}{set\+\_\+accept\+\_\+missync\+\_\+msecond}} (const unsigned int msec=Media\+Player\+Public\+Settings\+::\+DEF\+\_\+\+ACCPET\+\_\+\+DELAY)
+\begin{DoxyCompactList}\small\item\em set\+\_\+accept\+\_\+missync\+\_\+msecond set the default mis sync tolerance \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_media_player_a94f87027eb20c1403ed1d7997d0c6026}{set\+\_\+position}} (const qint64 position)
+\begin{DoxyCompactList}\small\item\em set\+\_\+position moves to the target positions of the media \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_media_player}{Media\+Player} is the wrapper of \doxylink{class_video_player}{Video\+Player} and Audio\+Player, with the sync of video and audio basically. 
+
+\begin{DoxyNote}{Note}
+Author here in 2025.\+5.\+10 In Current Version, Only Open\+CV is supported for the video play and the audio is only supported by QMedia\+Player, with current ALSA is used for the audio play in IMX6\+ULL, so for cross compilers you must cross compile with ALSA support 
+\end{DoxyNote}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_media_player_aa0dae769e5109e3d0ef3082c77fda490}\index{MediaPlayer@{MediaPlayer}!close@{close}}
+\index{close@{close}!MediaPlayer@{MediaPlayer}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{class_media_player_aa0dae769e5109e3d0ef3082c77fda490} 
+bool Media\+Player\+::close (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+close close the media player 
+
+\begin{DoxyReturn}{Returns}
+true if the media close OK 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+close will release the media sources will pause don\textquotesingle{}t, whom, just simply hang the media 
+\end{DoxyNote}
+\Hypertarget{class_media_player_a64d0a37efe32f9aafacc3c36c87d7d70}\index{MediaPlayer@{MediaPlayer}!display\_frame@{display\_frame}}
+\index{display\_frame@{display\_frame}!MediaPlayer@{MediaPlayer}}
+\doxysubsubsection{\texorpdfstring{display\_frame}{display\_frame}}
+{\footnotesize\ttfamily \label{class_media_player_a64d0a37efe32f9aafacc3c36c87d7d70} 
+void Media\+Player\+::display\+\_\+frame (\begin{DoxyParamCaption}\item[{QImage}]{image}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+display\+\_\+frame display the frame by hooking this signals 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & the image to display \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+for those who expect to use callback shell get the image, this image is the image you should display query from media underlevel 
+\end{DoxyNote}
+\Hypertarget{class_media_player_a846e3dba84bab9f426810ffbd9c6d995}\index{MediaPlayer@{MediaPlayer}!durationChanged@{durationChanged}}
+\index{durationChanged@{durationChanged}!MediaPlayer@{MediaPlayer}}
+\doxysubsubsection{\texorpdfstring{durationChanged}{durationChanged}}
+{\footnotesize\ttfamily \label{class_media_player_a846e3dba84bab9f426810ffbd9c6d995} 
+void Media\+Player\+::duration\+Changed (\begin{DoxyParamCaption}\item[{qint64}]{new\+\_\+durantion}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+duration\+Changed the signal indicating the duration changed 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+durantion} & the new duration of the media \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_media_player_a5f65ab0852d73d1e49b3791facb1086c}\index{MediaPlayer@{MediaPlayer}!get\_durations@{get\_durations}}
+\index{get\_durations@{get\_durations}!MediaPlayer@{MediaPlayer}}
+\doxysubsubsection{\texorpdfstring{get\_durations()}{get\_durations()}}
+{\footnotesize\ttfamily \label{class_media_player_a5f65ab0852d73d1e49b3791facb1086c} 
+qint64 Media\+Player\+::get\+\_\+durations (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get\+\_\+durations get the durations of the media 
+
+\begin{DoxyReturn}{Returns}
+the durations of the media 
+\end{DoxyReturn}
+\Hypertarget{class_media_player_afb59edc9c4751c9413dafd3fe186e7dd}\index{MediaPlayer@{MediaPlayer}!get\_position@{get\_position}}
+\index{get\_position@{get\_position}!MediaPlayer@{MediaPlayer}}
+\doxysubsubsection{\texorpdfstring{get\_position()}{get\_position()}}
+{\footnotesize\ttfamily \label{class_media_player_afb59edc9c4751c9413dafd3fe186e7dd} 
+qint64 Media\+Player\+::get\+\_\+position (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get\+\_\+position get the position of the media 
+
+\begin{DoxyReturn}{Returns}
+the position of the media 
+\end{DoxyReturn}
+\Hypertarget{class_media_player_a58820e8ef9e293799d89142ae63a1dfd}\index{MediaPlayer@{MediaPlayer}!isPlaying@{isPlaying}}
+\index{isPlaying@{isPlaying}!MediaPlayer@{MediaPlayer}}
+\doxysubsubsection{\texorpdfstring{isPlaying()}{isPlaying()}}
+{\footnotesize\ttfamily \label{class_media_player_a58820e8ef9e293799d89142ae63a1dfd} 
+bool Media\+Player\+::is\+Playing (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+is\+Playing check if the media is playing 
+
+\begin{DoxyReturn}{Returns}
+true if the media is playing 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+see if the audio is playing thus for default, if one is playing, the mediaplayer is playing \+:) 
+\end{DoxyNote}
+\Hypertarget{class_media_player_a238fff7dd529efb01c3c003dea4adc7b}\index{MediaPlayer@{MediaPlayer}!metaDataAvailable@{metaDataAvailable}}
+\index{metaDataAvailable@{metaDataAvailable}!MediaPlayer@{MediaPlayer}}
+\doxysubsubsection{\texorpdfstring{metaDataAvailable}{metaDataAvailable}}
+{\footnotesize\ttfamily \label{class_media_player_a238fff7dd529efb01c3c003dea4adc7b} 
+void Media\+Player\+::meta\+Data\+Available (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_media_info}{Media\+Info}}}]{info}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+meta\+Data\+Available the signal indicating the meta data available 
+
+
+\begin{DoxyParams}{Parameters}
+{\em info} & the meta data of the media \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_media_player_af20f090157c6f0be28027e1811e971f7}\index{MediaPlayer@{MediaPlayer}!pause@{pause}}
+\index{pause@{pause}!MediaPlayer@{MediaPlayer}}
+\doxysubsubsection{\texorpdfstring{pause()}{pause()}}
+{\footnotesize\ttfamily \label{class_media_player_af20f090157c6f0be28027e1811e971f7} 
+bool Media\+Player\+::pause (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+pause pause the media player 
+
+\begin{DoxyReturn}{Returns}
+true if the media pause OK 
+\end{DoxyReturn}
+\Hypertarget{class_media_player_a60d5b0f74ed17ed61624314ca668e8cd}\index{MediaPlayer@{MediaPlayer}!positionChanged@{positionChanged}}
+\index{positionChanged@{positionChanged}!MediaPlayer@{MediaPlayer}}
+\doxysubsubsection{\texorpdfstring{positionChanged}{positionChanged}}
+{\footnotesize\ttfamily \label{class_media_player_a60d5b0f74ed17ed61624314ca668e8cd} 
+void Media\+Player\+::position\+Changed (\begin{DoxyParamCaption}\item[{qint64}]{position}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+position\+Changed the signal indicating the position changed 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & the new position of the media \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_media_player_a952cbd6944653ae6fbc19632ce310cf4}\index{MediaPlayer@{MediaPlayer}!resume@{resume}}
+\index{resume@{resume}!MediaPlayer@{MediaPlayer}}
+\doxysubsubsection{\texorpdfstring{resume()}{resume()}}
+{\footnotesize\ttfamily \label{class_media_player_a952cbd6944653ae6fbc19632ce310cf4} 
+bool Media\+Player\+::resume (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+resume start the media player 
+
+\begin{DoxyReturn}{Returns}
+true if the media resume OK 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+start the display if, the source is displayable and source is ready 
+\end{DoxyNote}
+\Hypertarget{class_media_player_a242904c7815deb54b9dbc0802fa21cd9}\index{MediaPlayer@{MediaPlayer}!set\_accept\_missync\_msecond@{set\_accept\_missync\_msecond}}
+\index{set\_accept\_missync\_msecond@{set\_accept\_missync\_msecond}!MediaPlayer@{MediaPlayer}}
+\doxysubsubsection{\texorpdfstring{set\_accept\_missync\_msecond()}{set\_accept\_missync\_msecond()}}
+{\footnotesize\ttfamily \label{class_media_player_a242904c7815deb54b9dbc0802fa21cd9} 
+void Media\+Player\+::set\+\_\+accept\+\_\+missync\+\_\+msecond (\begin{DoxyParamCaption}\item[{const unsigned int}]{msec}{ = {\ttfamily MediaPlayerPublicSettings\+:\+:DEF\+\_\+ACCPET\+\_\+DELAY}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+set\+\_\+accept\+\_\+missync\+\_\+msecond set the default mis sync tolerance 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msec} & the msecond to accept \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_media_player_a94f87027eb20c1403ed1d7997d0c6026}\index{MediaPlayer@{MediaPlayer}!set\_position@{set\_position}}
+\index{set\_position@{set\_position}!MediaPlayer@{MediaPlayer}}
+\doxysubsubsection{\texorpdfstring{set\_position()}{set\_position()}}
+{\footnotesize\ttfamily \label{class_media_player_a94f87027eb20c1403ed1d7997d0c6026} 
+void Media\+Player\+::set\+\_\+position (\begin{DoxyParamCaption}\item[{const qint64}]{position}{}\end{DoxyParamCaption})}
+
+
+
+set\+\_\+position moves to the target positions of the media 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & the position to set \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_media_player_af16ded3ecace9ebd3b5f34d8ed43bac8}\index{MediaPlayer@{MediaPlayer}!setSource@{setSource}}
+\index{setSource@{setSource}!MediaPlayer@{MediaPlayer}}
+\doxysubsubsection{\texorpdfstring{setSource()}{setSource()}}
+{\footnotesize\ttfamily \label{class_media_player_af16ded3ecace9ebd3b5f34d8ed43bac8} 
+void Media\+Player\+::set\+Source (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{local\+\_\+file}{}\end{DoxyParamCaption})}
+
+
+
+set\+Source set the source of the media 
+
+
+\begin{DoxyParams}{Parameters}
+{\em local\+\_\+file} & the local file to open \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+this actually bind the media we operate 
+\end{DoxyNote}
+\Hypertarget{class_media_player_a535a93966b7fb52ad51ff93531a932c0}\index{MediaPlayer@{MediaPlayer}!setVolume@{setVolume}}
+\index{setVolume@{setVolume}!MediaPlayer@{MediaPlayer}}
+\doxysubsubsection{\texorpdfstring{setVolume()}{setVolume()}}
+{\footnotesize\ttfamily \label{class_media_player_a535a93966b7fb52ad51ff93531a932c0} 
+void Media\+Player\+::set\+Volume (\begin{DoxyParamCaption}\item[{const float}]{percentage}{}\end{DoxyParamCaption})}
+
+
+
+set\+Volume set the volume of the media 
+
+
+\begin{DoxyParams}{Parameters}
+{\em percentage} & the percentage of the volume \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+this is the percentage of the volume, not the value that without \%, that is, the value should be between 0 and 1, not 0 and 100! 
+\end{DoxyNote}
+\Hypertarget{class_media_player_a347546ae8ca73768c13a732c7af402e5}\index{MediaPlayer@{MediaPlayer}!source@{source}}
+\index{source@{source}!MediaPlayer@{MediaPlayer}}
+\doxysubsubsection{\texorpdfstring{source()}{source()}}
+{\footnotesize\ttfamily \label{class_media_player_a347546ae8ca73768c13a732c7af402e5} 
+QString Media\+Player\+::source (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+source get the source of the media 
+
+\begin{DoxyReturn}{Returns}
+the source of the media 
+\end{DoxyReturn}
+\Hypertarget{class_media_player_a7286f125df88f8e36927a105bf28a7a3}\index{MediaPlayer@{MediaPlayer}!sourceOpened@{sourceOpened}}
+\index{sourceOpened@{sourceOpened}!MediaPlayer@{MediaPlayer}}
+\doxysubsubsection{\texorpdfstring{sourceOpened}{sourceOpened}}
+{\footnotesize\ttfamily \label{class_media_player_a7286f125df88f8e36927a105bf28a7a3} 
+void Media\+Player\+::source\+Opened (\begin{DoxyParamCaption}\item[{const QString}]{source}{, }\item[{\mbox{\hyperlink{struct_media_player_1_1_media_player_status}{Media\+Player\+::\+Media\+Player\+Status}}}]{status}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+source\+Opened the signal indicating the source opened 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & the source of the media \\
+\hline
+{\em status} & the status of the media for what errors \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyParams}{Parameters}
+{\em source} & At which sources \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_media_player_a5bc16c1717d3ed80e8bd7e0f174ca3b6}\index{MediaPlayer@{MediaPlayer}!videoAvailable@{videoAvailable}}
+\index{videoAvailable@{videoAvailable}!MediaPlayer@{MediaPlayer}}
+\doxysubsubsection{\texorpdfstring{videoAvailable}{videoAvailable}}
+{\footnotesize\ttfamily \label{class_media_player_a5bc16c1717d3ed80e8bd7e0f174ca3b6} 
+void Media\+Player\+::video\+Available (\begin{DoxyParamCaption}\item[{bool}]{source\+Available}{, }\item[{const QImage}]{first\+Page}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+video\+Available for mp4 like video, this means we can display the medias 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source\+Available} & the source is available \\
+\hline
+{\em first\+Page} & the first page of the media for display \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_media_player_a76c64233d113ac5c5590f099df8c123f}\index{MediaPlayer@{MediaPlayer}!volume@{volume}}
+\index{volume@{volume}!MediaPlayer@{MediaPlayer}}
+\doxysubsubsection{\texorpdfstring{volume()}{volume()}}
+{\footnotesize\ttfamily \label{class_media_player_a76c64233d113ac5c5590f099df8c123f} 
+float Media\+Player\+::volume (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+volume get the volume of the media 
+
+\begin{DoxyReturn}{Returns}
+the volume of the media 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+this is the percentage of the volume, not the value that without \%, that is, the value should be between 0 and 1, not 0 and 100! 
+\end{DoxyNote}
+\Hypertarget{class_media_player_af52939d5d44597eaac0c470afde9013a}\index{MediaPlayer@{MediaPlayer}!volumeChanged@{volumeChanged}}
+\index{volumeChanged@{volumeChanged}!MediaPlayer@{MediaPlayer}}
+\doxysubsubsection{\texorpdfstring{volumeChanged}{volumeChanged}}
+{\footnotesize\ttfamily \label{class_media_player_af52939d5d44597eaac0c470afde9013a} 
+void Media\+Player\+::volume\+Changed (\begin{DoxyParamCaption}\item[{float}]{percentage}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+volume\+Changed the signal indicating the volume changed 
+
+
+\begin{DoxyParams}{Parameters}
+{\em percentage} & the percentage of the volume \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+this is the percentage of the volume, not the value that without \%, that is, the value should be between 0 and 1, not 0 and 100! 
+\end{DoxyNote}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

@@ -1,13 +1,12 @@
-#include "DesktopToast.h"
-#include <QLabel>
+#include "desktoptoast.h"
 #include <QGuiApplication>
+#include <QLabel>
 #include <QPropertyAnimation>
 #include <QScreen>
 #include <QTimer>
 
-DesktopToast::DesktopToast(QWidget *parent)
-	: QWidget{parent}
-{
+DesktopToast::DesktopToast(QWidget* parent)
+	: QWidget { parent } {
 	setWindowFlags(Qt::FramelessWindowHint | Qt::Tool | Qt::WindowStaysOnTopHint);
 	setAttribute(Qt::WA_TranslucentBackground);
 	setAttribute(Qt::WA_ShowWithoutActivating);
@@ -20,17 +19,15 @@ DesktopToast::DesktopToast(QWidget *parent)
 		"stop:0 rgba(250, 250, 250, 100), "
 		"stop:1 rgba(230, 230, 230, 100));"
 		"border-radius: 10px;"
-		"}"
-		);
+		"}");
 
 	connect(this, &DesktopToast::do_show_toast,
 			this, &DesktopToast::set_message_impl);
 }
 
-void DesktopToast::start_animation()
-{
+void DesktopToast::start_animation() {
 	show();
-	if(moveAnimation){
+	if (moveAnimation) {
 		moveAnimation->stop();
 		moveAnimation->deleteLater();
 	}
@@ -43,11 +40,10 @@ void DesktopToast::start_animation()
 	moveAnimation->start(QAbstractAnimation::DeleteWhenStopped);
 }
 
-void DesktopToast::start_close_animation()
-{
+void DesktopToast::start_close_animation() {
 	show();
 
-	if(fadeAnimation){
+	if (fadeAnimation) {
 		fadeAnimation->stop();
 		fadeAnimation->deleteLater();
 	}
@@ -60,7 +56,8 @@ void DesktopToast::start_close_animation()
 		hide();
 
 		/* see if there are still some issue to be solved */
-		if(!pools.isEmpty()){
+		QMutexLocker locker(&queue_mutex);
+		if (!pools.isEmpty()) {
 			isHandling = true;
 			QString msg = pools.dequeue();
 			emit do_show_toast(msg);
@@ -70,14 +67,26 @@ void DesktopToast::start_close_animation()
 	fadeAnimation->start(QAbstractAnimation::DeleteWhenStopped);
 }
 
-void DesktopToast::adjust_place()
-{
+void DesktopToast::set_message(const QString& message) {
+	// lock to prevent the enqueue race condition
+	QMutexLocker locker(&queue_mutex);
+	pools.enqueue(message);
+	if (!isHandling) {
+		isHandling = true;
+		QString msg = pools.dequeue();
+		emit do_show_toast(msg);
+	}
+	// lock ends
+}
+
+void DesktopToast::adjust_place() {
 	QWidget* referenceWidget = parentWidget();
 	if (referenceWidget) {
 		QRect parentRect = referenceWidget->rect();
 		QPoint topCenter(parentRect.width() / 2 - width() / 2, 30);
 		endPos = referenceWidget->mapToGlobal(topCenter);
 	} else {
+/* do the stuff according Qt Versions */
 #if QT_VERSION >= QT_VERSION_CHECK(5, 10, 0)
 		QRect screenGeometry = QGuiApplication::primaryScreen()->availableGeometry();
 #else
@@ -93,21 +102,9 @@ void DesktopToast::adjust_place()
 	move(startPos);
 }
 
-void DesktopToast::set_message(const QString& message)
-{
-	pools.enqueue(message);
-	if(!isHandling){
-		isHandling = true;
-		QString msg = pools.dequeue();
-		emit do_show_toast(msg);
-	}
-}
-
-void DesktopToast::set_message_impl(const QString& message)
-{
+void DesktopToast::set_message_impl(const QString& message) {
 	label->setText(message);
-	label->adjustSize();
-	resize(label->size());
+	resize(label->sizeHint());
 	adjust_place();
 	show();
 	raise();

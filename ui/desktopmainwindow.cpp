@@ -73,7 +73,7 @@ void DesktopMainWindow::setup_apps() {
 
 	QList<AppWidget*> docks;
 	docks << app_widgets[0] << app_widgets[6];
-	PageSetuper::add_to_dock(ui->downdock, this, docks);
+	PageSetuper::add_to_dock(this, docks);
 }
 
 void DesktopMainWindow::invoke_appcards_init() {
@@ -106,6 +106,10 @@ void DesktopMainWindow::post_show() {
 
 void DesktopMainWindow::showToast(const QString& message) {
 	toast->set_message(message);
+}
+
+DownDockWidget* DesktopMainWindow::downDockWidget() const {
+	return ui->downdock;
 }
 
 void DesktopMainWindow::mousePressEvent(QMouseEvent* event) {

@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['selector_0',['selector',['../struct_wall_paper_animation_handler_1_1_image_pool_engine.html#add618f4f1160a42f5384169359212c49',1,'WallPaperAnimationHandler::ImagePoolEngine']]],
-  ['shoule_5fbe_5flower_1',['shoule_be_lower',['../struct_desktop_main_window_1_1_wall_paper_group.html#a9922ccd98f9ca1cf5848a92a07e91486',1,'DesktopMainWindow::WallPaperGroup']]]
+  ['flush_5ffreq_0',['FLUSH_FREQ',['../class_sports_health_window.html#a0ff8c28d365b3b323208f7beed7a99e9',1,'SportsHealthWindow']]],
+  ['from_5fboard_5fcolor_1',['FROM_BOARD_COLOR',['../class_gauge_widget.html#aabd88fe0ae3e43c08b63b9d4a2cbf46e',1,'GaugeWidget']]],
+  ['fullpath_2',['fullPath',['../struct_process_broswer_1_1_process_info.html#af250bfb0d7e057a9f7bf5dbe50372c26',1,'ProcessBroswer::ProcessInfo']]]
 ];

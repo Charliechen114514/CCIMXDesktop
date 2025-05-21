@@ -1,16 +1,13 @@
 var searchData=
 [
-  ['scrollinglabel_0',['ScrollingLabel',['../class_scrolling_label.html',1,'']]],
-  ['selector_1',['selector',['../struct_wall_paper_animation_handler_1_1_image_pool_engine.html#add618f4f1160a42f5384169359212c49',1,'WallPaperAnimationHandler::ImagePoolEngine']]],
-  ['shoule_5fbe_5flower_2',['shoule_be_lower',['../struct_desktop_main_window_1_1_wall_paper_group.html#a9922ccd98f9ca1cf5848a92a07e91486',1,'DesktopMainWindow::WallPaperGroup']]],
-  ['showtoast_3',['showToast',['../class_desktop_main_window.html#a5b8b69ca43a0adb247853ff9c6424c43',1,'DesktopMainWindow']]],
-  ['sidebarwidget_4',['SideBarWidget',['../class_side_bar_widget.html',1,'']]],
-  ['sources_20tt_5',['sources tt',['../md__components-explain-_c_n.html#autotoc_md9',1,'🧩 &lt;tt&gt;sources&lt;/tt&gt;'],['../md__components-explain-_e_n.html#autotoc_md21',1,'🧩 &lt;tt&gt;sources&lt;/tt&gt;']]],
-  ['sportschart_6',['SportsChart',['../class_sports_chart.html',1,'']]],
-  ['sportsdisplaywidget_7',['SportsDisplayWidget',['../class_sports_display_widget.html',1,'']]],
-  ['sportshealthwindow_8',['SportsHealthWindow',['../class_sports_health_window.html',1,'']]],
-  ['stackedwidget_9',['stackedWidget',['../class_desktop_main_window.html#a8f361d9bfc1b0745c02a8d8c4ec59beb',1,'DesktopMainWindow']]],
-  ['stackpageswitcheranimation_10',['StackpageSwitcherAnimation',['../struct_stackpage_switcher_animation.html',1,'']]],
-  ['start_20choose_20your_20language_20🌐_11',['🌐 Before you start, choose your language! 🌐',['../md__r_e_a_d_m_e___e_n.html#autotoc_md46',1,'']]],
-  ['systemstatewindow_12',['SystemStateWindow',['../class_system_state_window.html',1,'']]]
+  ['of_20technologies_0',['🛠️ Full build of technologies',['../md__r_e_a_d_m_e___e_n.html#autotoc_md50',1,'']]],
+  ['onecycle_1',['OneCycle',['../class_c_c_media_play_list.html#a22ea885ed695b9f7fcabd7b117b4e0b3aa098ec399dbdac60e3ebd955ebf3452f',1,'CCMediaPlayList']]],
+  ['oneshot_2',['OneShot',['../class_c_c_media_play_list.html#a22ea885ed695b9f7fcabd7b117b4e0b3ac7fc2ee61fad0e2bba6754efdee31481',1,'CCMediaPlayList']]],
+  ['online_3',['ONLINE',['../class_net_card_gadget.html#a0f7e947e72994b97591bb3bc9bb35268a86d1debf3f3aa9b77c0d976a4fa33862',1,'NetCardGadget']]],
+  ['open_4',['open',['../class_video_player.html#a047ca5bf54e20592edab2c4c2bfdd463',1,'VideoPlayer::open()'],['../class_video_player_impl.html#a2c00fbac2097847c8a2e38af0707b56c',1,'VideoPlayerImpl::open()'],['../class_video_player_opencv_impl.html#aa2f3f59905c31d076b49c686db5bf0a2',1,'VideoPlayerOpencvImpl::open(const char *filename, VideoPlayerOpenErrorCode &amp;error_code) override'],['../class_video_player_opencv_impl.html#aa2f3f59905c31d076b49c686db5bf0a2',1,'VideoPlayerOpencvImpl::open(const char *filename, VideoPlayerOpenErrorCode &amp;error_code) override'],['../class_video_player.html#a047ca5bf54e20592edab2c4c2bfdd463',1,'VideoPlayer::open()'],['../class_video_player_impl.html#a2c00fbac2097847c8a2e38af0707b56c',1,'VideoPlayerImpl::open()'],['../class_video_player_opencv_impl.html#aa2f3f59905c31d076b49c686db5bf0a2',1,'VideoPlayerOpencvImpl::open()']]],
+  ['open_5fdocumentfromdialog_5',['open_documentFromDialog',['../class_main_window.html#a2494bb8710504a3a17ce355577b03425',1,'MainWindow']]],
+  ['openerror_6',['openError',['../class_video_player.html#a1ae3d446db619373212f38415b459f06',1,'VideoPlayer::openError(const VideoPlayerOpenErrorCode error)'],['../class_video_player.html#a1ae3d446db619373212f38415b459f06',1,'VideoPlayer::openError(const VideoPlayerOpenErrorCode error)']]],
+  ['operator_3d_7',['operator=',['../class_c_v_image.html#af3aca0a5c5d2f8fc17310bab85f445ba',1,'CVImage::operator=()'],['../class_i_c_m20608.html#ab49c1e7e37a218f50da5395354a52388',1,'ICM20608::operator=()'],['../class_i_c_m20608_data_factory.html#afe9ed4a869dc91b565f45b60b645753e',1,'ICM20608DataFactory::operator=()'],['../class_pesudo_i_c_m20608.html#ae2249087f6916731180356f574b28380',1,'PesudoICM20608::operator=()'],['../class_c_v_image.html#af3aca0a5c5d2f8fc17310bab85f445ba',1,'CVImage::operator=()']]],
+  ['other_5fmistakes_8',['OTHER_MISTAKES',['../class_c_c_pdf_document.html#a49387984fa059ca9904600ba7edacd39a47cddc738bfdf4c33c7b47355c4c3799',1,'CCPdfDocument']]],
+  ['overview_20🌟_9',['🌟 Project Overview 🌟',['../md__r_e_a_d_m_e___e_n.html#autotoc_md47',1,'']]]
 ];

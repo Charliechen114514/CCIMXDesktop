@@ -110,6 +110,11 @@ $(function(){initNavTree('class_c_c_pdf_scroll_area.html',''); initResizable(tru
   <div class="headertitle"><div class="title">CCPdfScrollArea Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>A custom scroll area that supports gesture-based zooming for PDF viewing.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="ccpdfscrollarea_8h_source.html">ccpdfscrollarea.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for CCPdfScrollArea:</div>
 <div class="dyncontent">
@@ -120,30 +125,201 @@ Inheritance diagram for CCPdfScrollArea:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
 Signals</h2></td></tr>
 <tr class="memitem:a659bde2f5fe452c6cc90e0c8c042b18a" id="r_a659bde2f5fe452c6cc90e0c8c042b18a"><td class="memItemLeft" align="right" valign="top"><a id="a659bde2f5fe452c6cc90e0c8c042b18a" name="a659bde2f5fe452c6cc90e0c8c042b18a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>indicate_zoom</b> (CCPdfViewer::ZoomDirection)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>indicate_zoom</b> (<a class="el" href="class_c_c_pdf_viewer.html#ac8458daf2cedd1f6118454f199401336">CCPdfViewer::ZoomDirection</a>)</td></tr>
+<tr class="memdesc:a659bde2f5fe452c6cc90e0c8c042b18a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emitted when a zoom gesture is detected. <br /></td></tr>
 <tr class="separator:a659bde2f5fe452c6cc90e0c8c042b18a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7abde81eb52f2b6332ea7dc4217ca79a" id="r_a7abde81eb52f2b6332ea7dc4217ca79a"><td class="memItemLeft" align="right" valign="top"><a id="a7abde81eb52f2b6332ea7dc4217ca79a" name="a7abde81eb52f2b6332ea7dc4217ca79a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CCPdfScrollArea</b> (QWidget *parent=nullptr)</td></tr>
+<tr class="memitem:a7abde81eb52f2b6332ea7dc4217ca79a" id="r_a7abde81eb52f2b6332ea7dc4217ca79a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7abde81eb52f2b6332ea7dc4217ca79a">CCPdfScrollArea</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:a7abde81eb52f2b6332ea7dc4217ca79a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="class_c_c_pdf_scroll_area.html" title="A custom scroll area that supports gesture-based zooming for PDF viewing.">CCPdfScrollArea</a> with optional parent widget.  <br /></td></tr>
 <tr class="separator:a7abde81eb52f2b6332ea7dc4217ca79a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a89efd2947c242db9ca72649d65e40816" id="r_a89efd2947c242db9ca72649d65e40816"><td class="memItemLeft" align="right" valign="top"><a id="a89efd2947c242db9ca72649d65e40816" name="a89efd2947c242db9ca72649d65e40816"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>mousePressEvent</b> (QMouseEvent *event) override</td></tr>
+<tr class="memitem:a89efd2947c242db9ca72649d65e40816" id="r_a89efd2947c242db9ca72649d65e40816"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a89efd2947c242db9ca72649d65e40816">mousePressEvent</a> (QMouseEvent *event) override</td></tr>
+<tr class="memdesc:a89efd2947c242db9ca72649d65e40816"><td class="mdescLeft">&#160;</td><td class="mdescRight">Records initial press position when mouse is pressed.  <br /></td></tr>
 <tr class="separator:a89efd2947c242db9ca72649d65e40816"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab65775e577a1ebaccb70c180ab526d98" id="r_ab65775e577a1ebaccb70c180ab526d98"><td class="memItemLeft" align="right" valign="top"><a id="ab65775e577a1ebaccb70c180ab526d98" name="ab65775e577a1ebaccb70c180ab526d98"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseReleaseEvent</b> (QMouseEvent *event) override</td></tr>
+<tr class="memitem:ab65775e577a1ebaccb70c180ab526d98" id="r_ab65775e577a1ebaccb70c180ab526d98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab65775e577a1ebaccb70c180ab526d98">mouseReleaseEvent</a> (QMouseEvent *event) override</td></tr>
+<tr class="memdesc:ab65775e577a1ebaccb70c180ab526d98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ends click state when mouse is released.  <br /></td></tr>
 <tr class="separator:ab65775e577a1ebaccb70c180ab526d98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad413d294c74313cc39189e71018b19aa" id="r_ad413d294c74313cc39189e71018b19aa"><td class="memItemLeft" align="right" valign="top"><a id="ad413d294c74313cc39189e71018b19aa" name="ad413d294c74313cc39189e71018b19aa"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseMoveEvent</b> (QMouseEvent *event) override</td></tr>
+<tr class="memitem:ad413d294c74313cc39189e71018b19aa" id="r_ad413d294c74313cc39189e71018b19aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad413d294c74313cc39189e71018b19aa">mouseMoveEvent</a> (QMouseEvent *event) override</td></tr>
+<tr class="memdesc:ad413d294c74313cc39189e71018b19aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes dragging or scrolling when mouse is moved.  <br /></td></tr>
 <tr class="separator:ad413d294c74313cc39189e71018b19aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a688d7e77f99d63bbab5ca7ba24a5d452" id="r_a688d7e77f99d63bbab5ca7ba24a5d452"><td class="memItemLeft" align="right" valign="top"><a id="a688d7e77f99d63bbab5ca7ba24a5d452" name="a688d7e77f99d63bbab5ca7ba24a5d452"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>handleGestureEvent</b> (QGestureEvent *event)</td></tr>
+<tr class="memitem:a688d7e77f99d63bbab5ca7ba24a5d452" id="r_a688d7e77f99d63bbab5ca7ba24a5d452"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a688d7e77f99d63bbab5ca7ba24a5d452">handleGestureEvent</a> (QGestureEvent *event)</td></tr>
+<tr class="memdesc:a688d7e77f99d63bbab5ca7ba24a5d452"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles gesture events such as pinch-to-zoom.  <br /></td></tr>
 <tr class="separator:a688d7e77f99d63bbab5ca7ba24a5d452"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A custom scroll area that supports gesture-based zooming for PDF viewing. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a7abde81eb52f2b6332ea7dc4217ca79a" name="a7abde81eb52f2b6332ea7dc4217ca79a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7abde81eb52f2b6332ea7dc4217ca79a">&#9670;&#160;</a></span>CCPdfScrollArea()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CCPdfScrollArea::CCPdfScrollArea </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *</td>          <td class="paramname"><span class="paramname"><em>parent</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel explicit">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a <a class="el" href="class_c_c_pdf_scroll_area.html" title="A custom scroll area that supports gesture-based zooming for PDF viewing.">CCPdfScrollArea</a> with optional parent widget. </p>
+<p>Enables touch event handling and pinch gesture recognition.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>The parent widget. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a688d7e77f99d63bbab5ca7ba24a5d452" name="a688d7e77f99d63bbab5ca7ba24a5d452"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a688d7e77f99d63bbab5ca7ba24a5d452">&#9670;&#160;</a></span>handleGestureEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CCPdfScrollArea::handleGestureEvent </td>
+          <td>(</td>
+          <td class="paramtype">QGestureEvent *</td>          <td class="paramname"><span class="paramname"><em>event</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Handles gesture events such as pinch-to-zoom. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>Gesture event object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad413d294c74313cc39189e71018b19aa" name="ad413d294c74313cc39189e71018b19aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad413d294c74313cc39189e71018b19aa">&#9670;&#160;</a></span>mouseMoveEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CCPdfScrollArea::mouseMoveEvent </td>
+          <td>(</td>
+          <td class="paramtype">QMouseEvent *</td>          <td class="paramname"><span class="paramname"><em>event</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Processes dragging or scrolling when mouse is moved. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>Mouse move event. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a89efd2947c242db9ca72649d65e40816" name="a89efd2947c242db9ca72649d65e40816"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89efd2947c242db9ca72649d65e40816">&#9670;&#160;</a></span>mousePressEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CCPdfScrollArea::mousePressEvent </td>
+          <td>(</td>
+          <td class="paramtype">QMouseEvent *</td>          <td class="paramname"><span class="paramname"><em>event</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Records initial press position when mouse is pressed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>Mouse press event. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab65775e577a1ebaccb70c180ab526d98" name="ab65775e577a1ebaccb70c180ab526d98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab65775e577a1ebaccb70c180ab526d98">&#9670;&#160;</a></span>mouseReleaseEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CCPdfScrollArea::mouseReleaseEvent </td>
+          <td>(</td>
+          <td class="paramtype">QMouseEvent *</td>          <td class="paramname"><span class="paramname"><em>event</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ends click state when mouse is released. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>Mouse release event. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>extern_app/pdfReader/ui/<a class="el" href="ccpdfscrollarea_8h_source.html">ccpdfscrollarea.h</a></li>
 <li>extern_app/pdfReader/ui/<b>ccpdfscrollarea.cpp</b></li>

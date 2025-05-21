@@ -7,6 +7,10 @@
 #include "Core/ProcessBroswer.h"
 #include <QtClassHelperMacros>
 
+/**
+ * @brief The LinuxPlatformMemoryInfoDriver class
+ * provides the memory info driver
+ */
 class LinuxPlatformMemoryInfoDriver : public CCIMX_AbstractMemoryInfoDriver {
 public:
     LinuxPlatformMemoryInfoDriver() = default;
@@ -14,6 +18,10 @@ public:
     void factory(MemoryInfoFetcher::MemoryStat& memory_state) override;
 };
 
+/**
+ * @brief The LinuxPlatformCPUStateDriver class
+ * provides the cpu state driver
+ */
 class LinuxPlatformCPUStateDriver : public CCIMX_AbstractCPUStateDriver{
 public:
     LinuxPlatformCPUStateDriver() = default;
@@ -21,6 +29,10 @@ public:
     void factory(CPUStateFetcher::CPUState &state) override;
 };
 
+/**
+ * @brief The LinuxPlatformProcessBrowserDriver class
+ * provides the process browser driver
+ */
 class LinuxPlatformProcessBrowserDriver : public CCIMX_AbstractProcessBroswerDriver
 {
 public:

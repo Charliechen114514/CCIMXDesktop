@@ -3,21 +3,38 @@
 #include <QObject>
 #include <QTimer>
 class CCIMX_AbstractCPUStateDriver;
-/* This class is expected to fetch the cpu state */
+/**
+ * @brief The CPUStateFetcher class provides the cpu state
+ * @note this is the interface for the cpu state with non
+ * platform related
+ */
 class CPUStateFetcher : public QObject {
 	Q_OBJECT
 public:
 	explicit CPUStateFetcher(QObject* parent = nullptr);
 	~CPUStateFetcher();
 
+	/**
+	 * @brief The CPUState class provides the cpu state
+	 * infos
+	 */
 	struct CPUState {
-		double idle;
-		double user;
-		double kernel;
-        double tol;
+		double idle; ///< idle time
+		double user; ///< user time
+		double kernel; ///< kernel time
+		double tol; ///< sums above, the var is seperate as linux and windows makes different in tol time concept
 	} cpustate;
+
+	/**
+	 * @brief set_capture_state set the capture state
+	 * @param st the state to set, enable(true) or disable(false)
+	 */
 	void set_capture_state(bool st);
 signals:
+	/**
+	 * @brief flush_cpustate the signal to flush the cpu state carried
+	 * @param state the cpu state to flush
+	 */
 	void flush_cpustate(const CPUStateFetcher::CPUState& state);
 
 private:
@@ -29,6 +46,10 @@ private:
 	int flush_msecs { 1500 };
 };
 
+/**
+ * @brief The CCIMX_AbstractCPUStateDriver class
+ * factory class to provide the correct cpu state impls
+ */
 class CCIMX_AbstractCPUStateDriver {
 public:
 	CCIMX_AbstractCPUStateDriver() = default;

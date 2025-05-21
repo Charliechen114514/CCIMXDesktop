@@ -62,12 +62,14 @@
 
 ## 📚项目文档
 
-[🛠️ 如何构建本项目？（X86 gcc, ARM-linux-gnueabihf-gcc与Windows GCC都支持！）](Documentations/HOW_To_Build_The_Desktop.md)
-
 ![GCC](https://img.shields.io/badge/GCC-cross--compile-yellowgreen)
 ![ARM](https://img.shields.io/badge/ARM-linux--gnueabihf-red)
 
-如果您对项目的制作流程和开发文档感兴趣，请参考Documentations文件夹
+如果您对项目的制作流程和开发文档感兴趣，请参考Documentations文件夹。
+
+目前，本项目完全支持使用Doxygen自动化生成定制文档，您可以直接参考[`Documentations/doxygen_style`](Documentations/doxygen_styles)进行阅读，或者您打算客制化本文档的构建，需要您参考构建手册进行客制化的修改
+
+> [🛠️ 如何构建本项目？（X86 gcc, ARM-linux-gnueabihf-gcc与Windows GCC都支持！）](Documentations/HOW_To_Build_The_Desktop.md)
 
 ## 💡 未来计划
 

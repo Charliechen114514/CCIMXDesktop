@@ -1,5 +1,14 @@
 \doxysection{ICM20608\+App\+Data Struct Reference}
 \hypertarget{struct_i_c_m20608_app_data}{}\label{struct_i_c_m20608_app_data}\index{ICM20608AppData@{ICM20608AppData}}
+
+
+Processed sensor data with float values.  
+
+
+
+
+{\ttfamily \#include $<$ICM20608\+Data.\+h$>$}
+
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -25,7 +34,7 @@ struct \{\\
 \end{tabbing}\item 
 \Hypertarget{struct_i_c_m20608_app_data_a5414584517597607047a64e2e8c9baba}\label{struct_i_c_m20608_app_data_a5414584517597607047a64e2e8c9baba} 
 float {\bfseries temperature}
-\item 
+\begin{DoxyCompactList}\small\item\em Temperature value. \end{DoxyCompactList}\item 
 \Hypertarget{struct_i_c_m20608_app_data_ab50859e2db4a9ce04063cdb2451eb85e}\label{struct_i_c_m20608_app_data_ab50859e2db4a9ce04063cdb2451eb85e} 
 \begin{tabbing}
 xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
@@ -35,7 +44,7 @@ struct \{\\
 \>float {\bfseries z}\\
 \} {\bfseries g\_acc}\\
 
-\end{tabbing}\item 
+\end{tabbing}\begin{DoxyCompactList}\small\item\em 3D acceleration values in float \end{DoxyCompactList}\item 
 \Hypertarget{struct_i_c_m20608_app_data_a519bb277d955d3f210e53730edf50740}\label{struct_i_c_m20608_app_data_a519bb277d955d3f210e53730edf50740} 
 \begin{tabbing}
 xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
@@ -45,8 +54,11 @@ struct \{\\
 \>float {\bfseries z}\\
 \} {\bfseries rol}\\
 
-\end{tabbing}\end{DoxyCompactItemize}
+\end{tabbing}\begin{DoxyCompactList}\small\item\em 3D rotation delta values in float \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Processed sensor data with float values. 
 
 The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

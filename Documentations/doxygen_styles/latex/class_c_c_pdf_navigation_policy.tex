@@ -1,41 +1,77 @@
 \doxysection{CCPdf\+Navigation\+Policy Class Reference}
 \hypertarget{class_c_c_pdf_navigation_policy}{}\label{class_c_c_pdf_navigation_policy}\index{CCPdfNavigationPolicy@{CCPdfNavigationPolicy}}
+
+
+Defines navigation behavior between PDF pages, especially in exceptional cases.  
+
+
+
+
+{\ttfamily \#include $<$ccpdfnavigationpolicy.\+h$>$}
+
 \doxysubsubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{struct_c_c_pdf_navigation_policy_1_1_indicator}{Indicator}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Provides redirection information for navigation handling. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-using \mbox{\hyperlink{class_c_c_pdf_navigation_policy_a21430da7699f5865c85db253da2f8875}{Pdf\+Browse\+Exception\+Functor}}
-\end{DoxyCompactItemize}
+using \mbox{\hyperlink{class_c_c_pdf_navigation_policy_ae1d6c118ea92b2ae3a02e92ca40797cc}{Pdf\+Browse\+Exception\+Functor}}
+\begin{DoxyCompactList}\small\item\em A function pointer type used to handle page navigation exceptions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_c_c_pdf_navigation_policy_a58671e9d051c6393dc6d20bc9dc11b75}\label{class_c_c_pdf_navigation_policy_a58671e9d051c6393dc6d20bc9dc11b75} 
+{\bfseries CCPdf\+Navigation\+Policy} ()
+\begin{DoxyCompactList}\small\item\em Constructs a default \doxylink{class_c_c_pdf_navigation_policy}{CCPdf\+Navigation\+Policy}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \Hypertarget{class_c_c_pdf_navigation_policy_a2bfe2d401eccda345a8e161b3fce51ad}\label{class_c_c_pdf_navigation_policy_a2bfe2d401eccda345a8e161b3fce51ad} 
-Pdf\+Browse\+Exception\+Functor {\bfseries page\+\_\+navigate\+\_\+functor}
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{class_c_c_pdf_navigation_policy_ae1d6c118ea92b2ae3a02e92ca40797cc}{Pdf\+Browse\+Exception\+Functor}} {\bfseries page\+\_\+navigate\+\_\+functor}
+\begin{DoxyCompactList}\small\item\em Functor to handle page navigation exceptions. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Defines navigation behavior between PDF pages, especially in exceptional cases. 
+
+This policy can be extended to define custom page flow rules and handle navigation exceptions. 
 
 \doxysubsection{Member Typedef Documentation}
-\Hypertarget{class_c_c_pdf_navigation_policy_a21430da7699f5865c85db253da2f8875}\index{CCPdfNavigationPolicy@{CCPdfNavigationPolicy}!PdfBrowseExceptionFunctor@{PdfBrowseExceptionFunctor}}
+\Hypertarget{class_c_c_pdf_navigation_policy_ae1d6c118ea92b2ae3a02e92ca40797cc}\index{CCPdfNavigationPolicy@{CCPdfNavigationPolicy}!PdfBrowseExceptionFunctor@{PdfBrowseExceptionFunctor}}
 \index{PdfBrowseExceptionFunctor@{PdfBrowseExceptionFunctor}!CCPdfNavigationPolicy@{CCPdfNavigationPolicy}}
 \doxysubsubsection{\texorpdfstring{PdfBrowseExceptionFunctor}{PdfBrowseExceptionFunctor}}
-{\footnotesize\ttfamily \label{class_c_c_pdf_navigation_policy_a21430da7699f5865c85db253da2f8875} 
-using CCPdf\+Navigation\+Policy\+::\+Pdf\+Browse\+Exception\+Functor}
+{\footnotesize\ttfamily \label{class_c_c_pdf_navigation_policy_ae1d6c118ea92b2ae3a02e92ca40797cc} 
+using \mbox{\hyperlink{class_c_c_pdf_navigation_policy_ae1d6c118ea92b2ae3a02e92ca40797cc}{CCPdf\+Navigation\+Policy\+::\+Pdf\+Browse\+Exception\+Functor}}}
 
 {\bfseries Initial value\+:}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{\ \mbox{\hyperlink{struct_c_c_pdf_navigation_policy_1_1_indicator}{Indicator}}(*)(}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ }
-\DoxyCodeLine{\ \ \ \ \ \ \ \ QWidget*\ invoker,}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ }
-\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_c_pdf_document}{CCPdfDocument}}*\ \ invokee\_document,}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ }
-\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ CCPdfDocument::PageNavigationError)}
+\DoxyCodeLine{\ \mbox{\hyperlink{struct_c_c_pdf_navigation_policy_1_1_indicator}{Indicator}}\ (*)(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ QWidget*\ invoker,\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_c_pdf_document}{CCPdfDocument}}*\ invokee\_document,\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_c_c_pdf_document_a0272e6f6cebd68b3d59af3398c04f7e7}{CCPdfDocument::PageNavigationError}}\ }
+\DoxyCodeLine{\ \ \ \ )}
 
 \end{DoxyCode}
+
+
+A function pointer type used to handle page navigation exceptions. 
+
+This functor is called when an exception occurs during navigation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em invoker} & The widget that initiated the navigation. \\
+\hline
+{\em invokee\+\_\+document} & The document being navigated. \\
+\hline
+{\em error} & The specific navigation error encountered. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An \doxylink{struct_c_c_pdf_navigation_policy_1_1_indicator}{Indicator} suggesting how to handle the navigation. 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

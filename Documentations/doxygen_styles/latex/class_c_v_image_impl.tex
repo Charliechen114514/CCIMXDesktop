@@ -1,5 +1,14 @@
 \doxysection{CVImage\+Impl Class Reference}
 \hypertarget{class_c_v_image_impl}{}\label{class_c_v_image_impl}\index{CVImageImpl@{CVImageImpl}}
+
+
+The \doxylink{class_c_v_image_impl}{CVImage\+Impl} class is the image interface classes, or, backend of the \doxylink{class_c_v_image}{CVImage}.  
+
+
+
+
+{\ttfamily \#include $<$CVImage\+Impl.\+h$>$}
+
 Inheritance diagram for CVImage\+Impl\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,33 +18,232 @@ Inheritance diagram for CVImage\+Impl\+:\begin{figure}[H]
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_c_v_image_impl_a298e52a3d0ff911c7e2ea2fdebf70c05}\label{class_c_v_image_impl_a298e52a3d0ff911c7e2ea2fdebf70c05} 
-virtual void {\bfseries load\+\_\+from\+\_\+file} (const char \texorpdfstring{$\ast$}{*}filename)=0
+virtual void \mbox{\hyperlink{class_c_v_image_impl_a298e52a3d0ff911c7e2ea2fdebf70c05}{load\+\_\+from\+\_\+file}} (const char \texorpdfstring{$\ast$}{*}filename)=0
+\begin{DoxyCompactList}\small\item\em load the image from file \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_v_image_impl_a301dc980e78028f18bfcc6e4c05761d2}{assigned}} (const \mbox{\hyperlink{class_c_v_image_impl}{CVImage\+Impl}} \texorpdfstring{$\ast$}{*}impl, bool req\+\_\+copy)=0
+\begin{DoxyCompactList}\small\item\em assigned the image to this image \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_v_image_impl_a4fcb8483f22fb19df433b6a52a30ce36}{pass\+\_\+copy}} (const \mbox{\hyperlink{class_c_v_image_impl}{CVImage\+Impl}} \texorpdfstring{$\ast$}{*}copied)=0
+\begin{DoxyCompactList}\small\item\em pass\+\_\+copy makes a passing assigned, for Open\+CV like it just increase the ref count \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_c_v_image_impl_a022dad3b12fdd6bbecb96584622ebdf8}{image\+\_\+valid}} ()=0
+\begin{DoxyCompactList}\small\item\em image\+\_\+valid check if the image is valid \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_v_image_impl_a298e52a3d0ff911c7e2ea2fdebf70c05}{load\+\_\+from\+\_\+file}} (const char \texorpdfstring{$\ast$}{*}filename)=0
+\begin{DoxyCompactList}\small\item\em load the image from file \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_v_image_impl_a301dc980e78028f18bfcc6e4c05761d2}{assigned}} (const \mbox{\hyperlink{class_c_v_image_impl}{CVImage\+Impl}} \texorpdfstring{$\ast$}{*}impl, bool req\+\_\+copy)=0
+\begin{DoxyCompactList}\small\item\em assigned the image to this image \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_v_image_impl_a4fcb8483f22fb19df433b6a52a30ce36}{pass\+\_\+copy}} (const \mbox{\hyperlink{class_c_v_image_impl}{CVImage\+Impl}} \texorpdfstring{$\ast$}{*}copied)=0
+\begin{DoxyCompactList}\small\item\em pass\+\_\+copy makes a passing assigned, for Open\+CV like it just increase the ref count \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_c_v_image_impl_a022dad3b12fdd6bbecb96584622ebdf8}{image\+\_\+valid}} ()=0
+\begin{DoxyCompactList}\small\item\em image\+\_\+valid check if the image is valid \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_v_image_impl_a298e52a3d0ff911c7e2ea2fdebf70c05}{load\+\_\+from\+\_\+file}} (const char \texorpdfstring{$\ast$}{*}filename)=0
 \item 
-\Hypertarget{class_c_v_image_impl_a301dc980e78028f18bfcc6e4c05761d2}\label{class_c_v_image_impl_a301dc980e78028f18bfcc6e4c05761d2} 
-virtual void {\bfseries assigned} (const \mbox{\hyperlink{class_c_v_image_impl}{CVImage\+Impl}} \texorpdfstring{$\ast$}{*}impl, bool req\+\_\+copy)=0
+virtual void \mbox{\hyperlink{class_c_v_image_impl_a301dc980e78028f18bfcc6e4c05761d2}{assigned}} (const \mbox{\hyperlink{class_c_v_image_impl}{CVImage\+Impl}} \texorpdfstring{$\ast$}{*}impl, bool req\+\_\+copy)=0
 \item 
-\Hypertarget{class_c_v_image_impl_a4fcb8483f22fb19df433b6a52a30ce36}\label{class_c_v_image_impl_a4fcb8483f22fb19df433b6a52a30ce36} 
-virtual void {\bfseries pass\+\_\+copy} (const \mbox{\hyperlink{class_c_v_image_impl}{CVImage\+Impl}} \texorpdfstring{$\ast$}{*}copied)=0
+virtual void \mbox{\hyperlink{class_c_v_image_impl_a4fcb8483f22fb19df433b6a52a30ce36}{pass\+\_\+copy}} (const \mbox{\hyperlink{class_c_v_image_impl}{CVImage\+Impl}} \texorpdfstring{$\ast$}{*}copied)=0
 \item 
-\Hypertarget{class_c_v_image_impl_a022dad3b12fdd6bbecb96584622ebdf8}\label{class_c_v_image_impl_a022dad3b12fdd6bbecb96584622ebdf8} 
-virtual bool {\bfseries image\+\_\+valid} ()=0
-\item 
-\Hypertarget{class_c_v_image_impl_a298e52a3d0ff911c7e2ea2fdebf70c05}\label{class_c_v_image_impl_a298e52a3d0ff911c7e2ea2fdebf70c05} 
-virtual void {\bfseries load\+\_\+from\+\_\+file} (const char \texorpdfstring{$\ast$}{*}filename)=0
-\item 
-\Hypertarget{class_c_v_image_impl_a301dc980e78028f18bfcc6e4c05761d2}\label{class_c_v_image_impl_a301dc980e78028f18bfcc6e4c05761d2} 
-virtual void {\bfseries assigned} (const \mbox{\hyperlink{class_c_v_image_impl}{CVImage\+Impl}} \texorpdfstring{$\ast$}{*}impl, bool req\+\_\+copy)=0
-\item 
-\Hypertarget{class_c_v_image_impl_a4fcb8483f22fb19df433b6a52a30ce36}\label{class_c_v_image_impl_a4fcb8483f22fb19df433b6a52a30ce36} 
-virtual void {\bfseries pass\+\_\+copy} (const \mbox{\hyperlink{class_c_v_image_impl}{CVImage\+Impl}} \texorpdfstring{$\ast$}{*}copied)=0
-\item 
-\Hypertarget{class_c_v_image_impl_a022dad3b12fdd6bbecb96584622ebdf8}\label{class_c_v_image_impl_a022dad3b12fdd6bbecb96584622ebdf8} 
-virtual bool {\bfseries image\+\_\+valid} ()=0
+virtual bool \mbox{\hyperlink{class_c_v_image_impl_a022dad3b12fdd6bbecb96584622ebdf8}{image\+\_\+valid}} ()=0
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_c_v_image_impl}{CVImage\+Impl} class is the image interface classes, or, backend of the \doxylink{class_c_v_image}{CVImage}. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_c_v_image_impl_a301dc980e78028f18bfcc6e4c05761d2}\index{CVImageImpl@{CVImageImpl}!assigned@{assigned}}
+\index{assigned@{assigned}!CVImageImpl@{CVImageImpl}}
+\doxysubsubsection{\texorpdfstring{assigned()}{assigned()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_c_v_image_impl_a301dc980e78028f18bfcc6e4c05761d2} 
+virtual void CVImage\+Impl\+::assigned (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_v_image_impl}{CVImage\+Impl}} \texorpdfstring{$\ast$}{*}}]{impl}{, }\item[{bool}]{req\+\_\+copy}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+assigned the image to this image 
+
+
+\begin{DoxyParams}{Parameters}
+{\em impl} & the image to assign \\
+\hline
+{\em req\+\_\+copy} & if true, then copy the image \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_c_v_image_opencv_impl_ae9367615aab4c6af6c0090d4b3c706af}{CVImage\+Opencv\+Impl}}, \mbox{\hyperlink{class_c_v_image_opencv_impl_ae9367615aab4c6af6c0090d4b3c706af}{CVImage\+Opencv\+Impl}}, and \mbox{\hyperlink{class_c_v_image_opencv_impl_ae9367615aab4c6af6c0090d4b3c706af}{CVImage\+Opencv\+Impl}}.
+
+\Hypertarget{class_c_v_image_impl_a301dc980e78028f18bfcc6e4c05761d2}\index{CVImageImpl@{CVImageImpl}!assigned@{assigned}}
+\index{assigned@{assigned}!CVImageImpl@{CVImageImpl}}
+\doxysubsubsection{\texorpdfstring{assigned()}{assigned()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_c_v_image_impl_a301dc980e78028f18bfcc6e4c05761d2} 
+virtual void CVImage\+Impl\+::assigned (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_v_image_impl}{CVImage\+Impl}} \texorpdfstring{$\ast$}{*}}]{impl}{, }\item[{bool}]{req\+\_\+copy}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+assigned the image to this image 
+
+
+\begin{DoxyParams}{Parameters}
+{\em impl} & the image to assign \\
+\hline
+{\em req\+\_\+copy} & if true, then copy the image \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_c_v_image_opencv_impl_ae9367615aab4c6af6c0090d4b3c706af}{CVImage\+Opencv\+Impl}}, \mbox{\hyperlink{class_c_v_image_opencv_impl_ae9367615aab4c6af6c0090d4b3c706af}{CVImage\+Opencv\+Impl}}, and \mbox{\hyperlink{class_c_v_image_opencv_impl_ae9367615aab4c6af6c0090d4b3c706af}{CVImage\+Opencv\+Impl}}.
+
+\Hypertarget{class_c_v_image_impl_a301dc980e78028f18bfcc6e4c05761d2}\index{CVImageImpl@{CVImageImpl}!assigned@{assigned}}
+\index{assigned@{assigned}!CVImageImpl@{CVImageImpl}}
+\doxysubsubsection{\texorpdfstring{assigned()}{assigned()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_c_v_image_impl_a301dc980e78028f18bfcc6e4c05761d2} 
+virtual void CVImage\+Impl\+::assigned (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_v_image_impl}{CVImage\+Impl}} \texorpdfstring{$\ast$}{*}}]{impl}{, }\item[{bool}]{req\+\_\+copy}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_c_v_image_opencv_impl_ae9367615aab4c6af6c0090d4b3c706af}{CVImage\+Opencv\+Impl}}, \mbox{\hyperlink{class_c_v_image_opencv_impl_ae9367615aab4c6af6c0090d4b3c706af}{CVImage\+Opencv\+Impl}}, and \mbox{\hyperlink{class_c_v_image_opencv_impl_ae9367615aab4c6af6c0090d4b3c706af}{CVImage\+Opencv\+Impl}}.
+
+\Hypertarget{class_c_v_image_impl_a022dad3b12fdd6bbecb96584622ebdf8}\index{CVImageImpl@{CVImageImpl}!image\_valid@{image\_valid}}
+\index{image\_valid@{image\_valid}!CVImageImpl@{CVImageImpl}}
+\doxysubsubsection{\texorpdfstring{image\_valid()}{image\_valid()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_c_v_image_impl_a022dad3b12fdd6bbecb96584622ebdf8} 
+virtual bool CVImage\+Impl\+::image\+\_\+valid (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+image\+\_\+valid check if the image is valid 
+
+\begin{DoxyReturn}{Returns}
+true if the image is valid 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_c_v_image_opencv_impl_a181a4ead3d48ff64268a469a033e8f2c}{CVImage\+Opencv\+Impl}}, \mbox{\hyperlink{class_c_v_image_opencv_impl_a181a4ead3d48ff64268a469a033e8f2c}{CVImage\+Opencv\+Impl}}, and \mbox{\hyperlink{class_c_v_image_opencv_impl_a181a4ead3d48ff64268a469a033e8f2c}{CVImage\+Opencv\+Impl}}.
+
+\Hypertarget{class_c_v_image_impl_a022dad3b12fdd6bbecb96584622ebdf8}\index{CVImageImpl@{CVImageImpl}!image\_valid@{image\_valid}}
+\index{image\_valid@{image\_valid}!CVImageImpl@{CVImageImpl}}
+\doxysubsubsection{\texorpdfstring{image\_valid()}{image\_valid()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_c_v_image_impl_a022dad3b12fdd6bbecb96584622ebdf8} 
+virtual bool CVImage\+Impl\+::image\+\_\+valid (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+image\+\_\+valid check if the image is valid 
+
+\begin{DoxyReturn}{Returns}
+true if the image is valid 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_c_v_image_opencv_impl_a181a4ead3d48ff64268a469a033e8f2c}{CVImage\+Opencv\+Impl}}, \mbox{\hyperlink{class_c_v_image_opencv_impl_a181a4ead3d48ff64268a469a033e8f2c}{CVImage\+Opencv\+Impl}}, and \mbox{\hyperlink{class_c_v_image_opencv_impl_a181a4ead3d48ff64268a469a033e8f2c}{CVImage\+Opencv\+Impl}}.
+
+\Hypertarget{class_c_v_image_impl_a022dad3b12fdd6bbecb96584622ebdf8}\index{CVImageImpl@{CVImageImpl}!image\_valid@{image\_valid}}
+\index{image\_valid@{image\_valid}!CVImageImpl@{CVImageImpl}}
+\doxysubsubsection{\texorpdfstring{image\_valid()}{image\_valid()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_c_v_image_impl_a022dad3b12fdd6bbecb96584622ebdf8} 
+virtual bool CVImage\+Impl\+::image\+\_\+valid (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_c_v_image_opencv_impl_a181a4ead3d48ff64268a469a033e8f2c}{CVImage\+Opencv\+Impl}}, \mbox{\hyperlink{class_c_v_image_opencv_impl_a181a4ead3d48ff64268a469a033e8f2c}{CVImage\+Opencv\+Impl}}, and \mbox{\hyperlink{class_c_v_image_opencv_impl_a181a4ead3d48ff64268a469a033e8f2c}{CVImage\+Opencv\+Impl}}.
+
+\Hypertarget{class_c_v_image_impl_a298e52a3d0ff911c7e2ea2fdebf70c05}\index{CVImageImpl@{CVImageImpl}!load\_from\_file@{load\_from\_file}}
+\index{load\_from\_file@{load\_from\_file}!CVImageImpl@{CVImageImpl}}
+\doxysubsubsection{\texorpdfstring{load\_from\_file()}{load\_from\_file()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_c_v_image_impl_a298e52a3d0ff911c7e2ea2fdebf70c05} 
+virtual void CVImage\+Impl\+::load\+\_\+from\+\_\+file (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{filename}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+load the image from file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & the file name to load \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_c_v_image_opencv_impl_a0e106119f25f6b2218f1db8ccd4aacc5}{CVImage\+Opencv\+Impl}}, \mbox{\hyperlink{class_c_v_image_opencv_impl_a0e106119f25f6b2218f1db8ccd4aacc5}{CVImage\+Opencv\+Impl}}, and \mbox{\hyperlink{class_c_v_image_opencv_impl_a0e106119f25f6b2218f1db8ccd4aacc5}{CVImage\+Opencv\+Impl}}.
+
+\Hypertarget{class_c_v_image_impl_a298e52a3d0ff911c7e2ea2fdebf70c05}\index{CVImageImpl@{CVImageImpl}!load\_from\_file@{load\_from\_file}}
+\index{load\_from\_file@{load\_from\_file}!CVImageImpl@{CVImageImpl}}
+\doxysubsubsection{\texorpdfstring{load\_from\_file()}{load\_from\_file()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_c_v_image_impl_a298e52a3d0ff911c7e2ea2fdebf70c05} 
+virtual void CVImage\+Impl\+::load\+\_\+from\+\_\+file (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{filename}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+load the image from file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & the file name to load \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_c_v_image_opencv_impl_a0e106119f25f6b2218f1db8ccd4aacc5}{CVImage\+Opencv\+Impl}}, \mbox{\hyperlink{class_c_v_image_opencv_impl_a0e106119f25f6b2218f1db8ccd4aacc5}{CVImage\+Opencv\+Impl}}, and \mbox{\hyperlink{class_c_v_image_opencv_impl_a0e106119f25f6b2218f1db8ccd4aacc5}{CVImage\+Opencv\+Impl}}.
+
+\Hypertarget{class_c_v_image_impl_a298e52a3d0ff911c7e2ea2fdebf70c05}\index{CVImageImpl@{CVImageImpl}!load\_from\_file@{load\_from\_file}}
+\index{load\_from\_file@{load\_from\_file}!CVImageImpl@{CVImageImpl}}
+\doxysubsubsection{\texorpdfstring{load\_from\_file()}{load\_from\_file()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_c_v_image_impl_a298e52a3d0ff911c7e2ea2fdebf70c05} 
+virtual void CVImage\+Impl\+::load\+\_\+from\+\_\+file (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{filename}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_c_v_image_opencv_impl_a0e106119f25f6b2218f1db8ccd4aacc5}{CVImage\+Opencv\+Impl}}, \mbox{\hyperlink{class_c_v_image_opencv_impl_a0e106119f25f6b2218f1db8ccd4aacc5}{CVImage\+Opencv\+Impl}}, and \mbox{\hyperlink{class_c_v_image_opencv_impl_a0e106119f25f6b2218f1db8ccd4aacc5}{CVImage\+Opencv\+Impl}}.
+
+\Hypertarget{class_c_v_image_impl_a4fcb8483f22fb19df433b6a52a30ce36}\index{CVImageImpl@{CVImageImpl}!pass\_copy@{pass\_copy}}
+\index{pass\_copy@{pass\_copy}!CVImageImpl@{CVImageImpl}}
+\doxysubsubsection{\texorpdfstring{pass\_copy()}{pass\_copy()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_c_v_image_impl_a4fcb8483f22fb19df433b6a52a30ce36} 
+virtual void CVImage\+Impl\+::pass\+\_\+copy (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_v_image_impl}{CVImage\+Impl}} \texorpdfstring{$\ast$}{*}}]{copied}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+pass\+\_\+copy makes a passing assigned, for Open\+CV like it just increase the ref count 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copied} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_c_v_image_opencv_impl_a79ba9b0969a2b6088729ba69025518af}{CVImage\+Opencv\+Impl}}, \mbox{\hyperlink{class_c_v_image_opencv_impl_a79ba9b0969a2b6088729ba69025518af}{CVImage\+Opencv\+Impl}}, and \mbox{\hyperlink{class_c_v_image_opencv_impl_a79ba9b0969a2b6088729ba69025518af}{CVImage\+Opencv\+Impl}}.
+
+\Hypertarget{class_c_v_image_impl_a4fcb8483f22fb19df433b6a52a30ce36}\index{CVImageImpl@{CVImageImpl}!pass\_copy@{pass\_copy}}
+\index{pass\_copy@{pass\_copy}!CVImageImpl@{CVImageImpl}}
+\doxysubsubsection{\texorpdfstring{pass\_copy()}{pass\_copy()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_c_v_image_impl_a4fcb8483f22fb19df433b6a52a30ce36} 
+virtual void CVImage\+Impl\+::pass\+\_\+copy (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_v_image_impl}{CVImage\+Impl}} \texorpdfstring{$\ast$}{*}}]{copied}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+pass\+\_\+copy makes a passing assigned, for Open\+CV like it just increase the ref count 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copied} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_c_v_image_opencv_impl_a79ba9b0969a2b6088729ba69025518af}{CVImage\+Opencv\+Impl}}, \mbox{\hyperlink{class_c_v_image_opencv_impl_a79ba9b0969a2b6088729ba69025518af}{CVImage\+Opencv\+Impl}}, and \mbox{\hyperlink{class_c_v_image_opencv_impl_a79ba9b0969a2b6088729ba69025518af}{CVImage\+Opencv\+Impl}}.
+
+\Hypertarget{class_c_v_image_impl_a4fcb8483f22fb19df433b6a52a30ce36}\index{CVImageImpl@{CVImageImpl}!pass\_copy@{pass\_copy}}
+\index{pass\_copy@{pass\_copy}!CVImageImpl@{CVImageImpl}}
+\doxysubsubsection{\texorpdfstring{pass\_copy()}{pass\_copy()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_c_v_image_impl_a4fcb8483f22fb19df433b6a52a30ce36} 
+virtual void CVImage\+Impl\+::pass\+\_\+copy (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_v_image_impl}{CVImage\+Impl}} \texorpdfstring{$\ast$}{*}}]{copied}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_c_v_image_opencv_impl_a79ba9b0969a2b6088729ba69025518af}{CVImage\+Opencv\+Impl}}, \mbox{\hyperlink{class_c_v_image_opencv_impl_a79ba9b0969a2b6088729ba69025518af}{CVImage\+Opencv\+Impl}}, and \mbox{\hyperlink{class_c_v_image_opencv_impl_a79ba9b0969a2b6088729ba69025518af}{CVImage\+Opencv\+Impl}}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
 extern\+\_\+app/\+Media\+Player/base/CVImage\+Impl.\+h\item 
-extern\+\_\+app/professionals/library/\+Opencv\+Qt\+Adapter/core\+\_\+library/cvimage/CVImage\+Impl.\+h\end{DoxyCompactItemize}
+extern\+\_\+app/professionals/library/\+Opencv\+Qt\+Adapter/core\+\_\+library/cvimage/CVImage\+Impl.\+h\item 
+extern\+\_\+app/professionals/library/\+Opencv\+Qt\+Adapter/core\+\_\+library/olds/cvimage/CVImage\+Impl.\+h\end{DoxyCompactItemize}

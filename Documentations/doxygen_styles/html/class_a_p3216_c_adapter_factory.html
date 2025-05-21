@@ -109,6 +109,11 @@ $(function(){initNavTree('class_a_p3216_c_adapter_factory.html',''); initResizab
   <div class="headertitle"><div class="title">AP3216CAdapterFactory Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Provides an abstraction layer to request sensor data from AP3216C.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_a_p3216_c_adapter_factory_8h_source.html">AP3216CAdapterFactory.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for AP3216CAdapterFactory:</div>
 <div class="dyncontent">
@@ -118,31 +123,118 @@ Inheritance diagram for AP3216CAdapterFactory:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
 Signals</h2></td></tr>
-<tr class="memitem:a1b32a0d216d652f5b84fd632e59d7611" id="r_a1b32a0d216d652f5b84fd632e59d7611"><td class="memItemLeft" align="right" valign="top"><a id="a1b32a0d216d652f5b84fd632e59d7611" name="a1b32a0d216d652f5b84fd632e59d7611"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>request_finish</b> (const <a class="el" href="struct_a_p3216_c_data.html">AP3216CData</a> data)</td></tr>
+<tr class="memitem:a1b32a0d216d652f5b84fd632e59d7611" id="r_a1b32a0d216d652f5b84fd632e59d7611"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b32a0d216d652f5b84fd632e59d7611">request_finish</a> (const <a class="el" href="struct_a_p3216_c_data.html">AP3216CData</a> data)</td></tr>
+<tr class="memdesc:a1b32a0d216d652f5b84fd632e59d7611"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emitted when data is successfully read.  <br /></td></tr>
 <tr class="separator:a1b32a0d216d652f5b84fd632e59d7611"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0dc4bb6e27f77d03fc781c63a70607f4" id="r_a0dc4bb6e27f77d03fc781c63a70607f4"><td class="memItemLeft" align="right" valign="top"><a id="a0dc4bb6e27f77d03fc781c63a70607f4" name="a0dc4bb6e27f77d03fc781c63a70607f4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>request_error</b> ()</td></tr>
+<tr class="memdesc:a0dc4bb6e27f77d03fc781c63a70607f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emitted when there is an error reading data. <br /></td></tr>
 <tr class="separator:a0dc4bb6e27f77d03fc781c63a70607f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a309573121ab081b62633f42af8ad572d" id="r_a309573121ab081b62633f42af8ad572d"><td class="memItemLeft" align="right" valign="top"><a id="a309573121ab081b62633f42af8ad572d" name="a309573121ab081b62633f42af8ad572d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>__internal_async_request</b> ()</td></tr>
+<tr class="memdesc:a309573121ab081b62633f42af8ad572d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal signal for triggering the asynchronous request. <br /></td></tr>
 <tr class="separator:a309573121ab081b62633f42af8ad572d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac9d8bba508b196b8f2a499c1c28e686a" id="r_ac9d8bba508b196b8f2a499c1c28e686a"><td class="memItemLeft" align="right" valign="top"><a id="ac9d8bba508b196b8f2a499c1c28e686a" name="ac9d8bba508b196b8f2a499c1c28e686a"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AP3216CAdapterFactory</b> (QObject *parent=nullptr)</td></tr>
+<tr class="memdesc:ac9d8bba508b196b8f2a499c1c28e686a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br /></td></tr>
 <tr class="separator:ac9d8bba508b196b8f2a499c1c28e686a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40b207a7adb5e3077049d7fca47b8274" id="r_a40b207a7adb5e3077049d7fca47b8274"><td class="memItemLeft" align="right" valign="top"><a id="a40b207a7adb5e3077049d7fca47b8274" name="a40b207a7adb5e3077049d7fca47b8274"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>bind_file</b> (const QString &amp;file_path)</td></tr>
+<tr class="memitem:a40b207a7adb5e3077049d7fca47b8274" id="r_a40b207a7adb5e3077049d7fca47b8274"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40b207a7adb5e3077049d7fca47b8274">bind_file</a> (const QString &amp;file_path)</td></tr>
+<tr class="memdesc:a40b207a7adb5e3077049d7fca47b8274"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds to a device file path.  <br /></td></tr>
 <tr class="separator:a40b207a7adb5e3077049d7fca47b8274"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b62552e6224bb936913f7b56da99d71" id="r_a3b62552e6224bb936913f7b56da99d71"><td class="memItemLeft" align="right" valign="top"><a id="a3b62552e6224bb936913f7b56da99d71" name="a3b62552e6224bb936913f7b56da99d71"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>request_data</b> ()</td></tr>
+<tr class="memdesc:a3b62552e6224bb936913f7b56da99d71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggers an asynchronous data request. <br /></td></tr>
 <tr class="separator:a3b62552e6224bb936913f7b56da99d71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13b342d2f88051d5e64195e8c20cd2ba" id="r_a13b342d2f88051d5e64195e8c20cd2ba"><td class="memItemLeft" align="right" valign="top"><a id="a13b342d2f88051d5e64195e8c20cd2ba" name="a13b342d2f88051d5e64195e8c20cd2ba"></a>
-std::optional&lt; <a class="el" href="struct_a_p3216_c_data.html">AP3216CData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>sync_request_data</b> ()</td></tr>
+<tr class="memitem:a13b342d2f88051d5e64195e8c20cd2ba" id="r_a13b342d2f88051d5e64195e8c20cd2ba"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="struct_a_p3216_c_data.html">AP3216CData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13b342d2f88051d5e64195e8c20cd2ba">sync_request_data</a> ()</td></tr>
+<tr class="memdesc:a13b342d2f88051d5e64195e8c20cd2ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs a synchronous data request.  <br /></td></tr>
 <tr class="separator:a13b342d2f88051d5e64195e8c20cd2ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Provides an abstraction layer to request sensor data from AP3216C. </p>
+<dl class="section note"><dt>Note</dt><dd>Supports real and pseudo backends depending on the build configuration. </dd></dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a40b207a7adb5e3077049d7fca47b8274" name="a40b207a7adb5e3077049d7fca47b8274"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40b207a7adb5e3077049d7fca47b8274">&#9670;&#160;</a></span>bind_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AP3216CAdapterFactory::bind_file </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>file_path</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Binds to a device file path. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file_path</td><td>Device file path. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if successfully bound, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a1b32a0d216d652f5b84fd632e59d7611" name="a1b32a0d216d652f5b84fd632e59d7611"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b32a0d216d652f5b84fd632e59d7611">&#9670;&#160;</a></span>request_finish</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AP3216CAdapterFactory::request_finish </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_a_p3216_c_data.html">AP3216CData</a></td>          <td class="paramname"><span class="paramname"><em>data</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel signal">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Emitted when data is successfully read. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>The sensor data. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a13b342d2f88051d5e64195e8c20cd2ba" name="a13b342d2f88051d5e64195e8c20cd2ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13b342d2f88051d5e64195e8c20cd2ba">&#9670;&#160;</a></span>sync_request_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; <a class="el" href="struct_a_p3216_c_data.html">AP3216CData</a> &gt; AP3216CAdapterFactory::sync_request_data </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Performs a synchronous data request. </p>
+<dl class="section return"><dt>Returns</dt><dd>Optional sensor data, empty if reading fails. </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>extern_app/professionals/boardlevel_application/Environment/Adapter/<a class="el" href="_a_p3216_c_adapter_factory_8h_source.html">AP3216CAdapterFactory.h</a></li>
 <li>extern_app/professionals/boardlevel_application/Environment/Adapter/<b>AP3216CAdapterFactory.cpp</b></li>

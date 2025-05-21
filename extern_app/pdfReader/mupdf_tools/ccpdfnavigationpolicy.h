@@ -1,37 +1,48 @@
 #ifndef CCPDFNAVIGATIONPOLICY_H
 #define CCPDFNAVIGATIONPOLICY_H
+
 #include "mupdf_adapter/ccpdfdocument.h"
 
-
-/*
- *  Navigation Policy is expected, at least, provide the
- *  page flows policy when jump in between pages and pages
- *  At current version, it is expected to handle the exception
- *  cases, who else know what will it be in next :)
+/**
+ * @class CCPdfNavigationPolicy
+ * @brief Defines navigation behavior between PDF pages, especially in exceptional cases.
+ *
+ * This policy can be extended to define custom page flow rules and handle navigation exceptions.
  */
-class CCPdfNavigationPolicy
-{
+class CCPdfNavigationPolicy {
 public:
-    CCPdfNavigationPolicy();
+	/**
+	 * @brief Constructs a default CCPdfNavigationPolicy.
+	 */
+	CCPdfNavigationPolicy();
 
-    struct Indicator {
-        /* yeah, the indicator suggests the redirect pages */
-        int     new_page;
-        /*  whether the indications is a kind of must*/
-        bool    req_follow_indicator;
-    };
+	/**
+	 * @struct Indicator
+	 * @brief Provides redirection information for navigation handling.
+	 */
+	struct Indicator {
+		int new_page; ///< The page index to redirect to.
+		bool req_follow_indicator; ///< Whether the redirection must be followed.
+	};
 
-    /*
-     * you should register the indications of some exceptions
-     */
-    using PdfBrowseExceptionFunctor = Indicator(*)(
-        /* Who else involk the jump? */
-        QWidget* invoker,
-        /* What document is involker handling? */
-        CCPdfDocument*  invokee_document,
-        /* At what status should be handled? */
-        const CCPdfDocument::PageNavigationError);
-    PdfBrowseExceptionFunctor page_navigate_functor;
+	/**
+	 * @typedef PdfBrowseExceptionFunctor
+	 * @brief A function pointer type used to handle page navigation exceptions.
+	 *
+	 * This functor is called when an exception occurs during navigation.
+	 *
+	 * @param invoker The widget that initiated the navigation.
+	 * @param invokee_document The document being navigated.
+	 * @param error The specific navigation error encountered.
+	 * @return An Indicator suggesting how to handle the navigation.
+	 */
+	using PdfBrowseExceptionFunctor = Indicator (*)(
+		QWidget* invoker, ///< The widget that initiated the jump.
+		CCPdfDocument* invokee_document, ///< The document under navigation.
+		const CCPdfDocument::PageNavigationError ///< The navigation error encountered.
+	);
+
+	PdfBrowseExceptionFunctor page_navigate_functor; ///< Functor to handle page navigation exceptions.
 };
 
 #endif // CCPDFNAVIGATIONPOLICY_H

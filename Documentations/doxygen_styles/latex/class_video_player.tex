@@ -9,18 +9,16 @@ Inheritance diagram for Video\+Player\+:\begin{figure}[H]
 \doxysubsubsection*{Signals}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_video_player_a1ae3d446db619373212f38415b459f06}\label{class_video_player_a1ae3d446db619373212f38415b459f06} 
-void {\bfseries open\+Error} (const Video\+Player\+Open\+Error\+Code error)
-\item 
-\Hypertarget{class_video_player_add12b1dfed409832374d63a3b13c3aa0}\label{class_video_player_add12b1dfed409832374d63a3b13c3aa0} 
-void {\bfseries frame\+Ready} (const \mbox{\hyperlink{class_c_v_image}{CVImage}} image)
-\item 
+void \mbox{\hyperlink{class_video_player_a1ae3d446db619373212f38415b459f06}{open\+Error}} (const Video\+Player\+Open\+Error\+Code error)
+\begin{DoxyCompactList}\small\item\em open\+Error the signal indicating the open error \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_video_player_add12b1dfed409832374d63a3b13c3aa0}{frame\+Ready}} (const \mbox{\hyperlink{class_c_v_image}{CVImage}} image)
+\begin{DoxyCompactList}\small\item\em frame\+Ready the signal indicating the frame is ready \end{DoxyCompactList}\item 
 \Hypertarget{class_video_player_a89a61f323510f49f1948b2717c1ca483}\label{class_video_player_a89a61f323510f49f1948b2717c1ca483} 
 void {\bfseries about\+\_\+fetch\+\_\+frame} ()
-\item 
+\begin{DoxyCompactList}\small\item\em about\+\_\+fetch\+\_\+frame the signal indicating the frame is ready \end{DoxyCompactList}\item 
 \Hypertarget{class_video_player_a342b16b0ea6cb5da2f43e5f87d522a1e}\label{class_video_player_a342b16b0ea6cb5da2f43e5f87d522a1e} 
 void {\bfseries video\+End} ()
-\item 
+\begin{DoxyCompactList}\small\item\em video\+End the signal indicating the video end \end{DoxyCompactList}\item 
 \Hypertarget{class_video_player_a1ae3d446db619373212f38415b459f06}\label{class_video_player_a1ae3d446db619373212f38415b459f06} 
 void {\bfseries open\+Error} (const Video\+Player\+Open\+Error\+Code error)
 \item 
@@ -29,58 +27,53 @@ void {\bfseries frame\+Ready} (const \mbox{\hyperlink{class_c_v_image}{CVImage}}
 \item 
 \Hypertarget{class_video_player_a89a61f323510f49f1948b2717c1ca483}\label{class_video_player_a89a61f323510f49f1948b2717c1ca483} 
 void {\bfseries about\+\_\+fetch\+\_\+frame} ()
-\end{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_video_player_a1ae3d446db619373212f38415b459f06}{open\+Error}} (const Video\+Player\+Open\+Error\+Code error)
+\begin{DoxyCompactList}\small\item\em open\+Error the signal indicating the open error \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_video_player_add12b1dfed409832374d63a3b13c3aa0}{frame\+Ready}} (const \mbox{\hyperlink{class_c_v_image}{CVImage}} image)
+\begin{DoxyCompactList}\small\item\em frame\+Ready the signal indicating the frame is ready \end{DoxyCompactList}\item 
+\Hypertarget{class_video_player_a89a61f323510f49f1948b2717c1ca483}\label{class_video_player_a89a61f323510f49f1948b2717c1ca483} 
+void {\bfseries about\+\_\+fetch\+\_\+frame} ()
+\begin{DoxyCompactList}\small\item\em about\+\_\+fetch\+\_\+frame the signal indicating the frame is ready \end{DoxyCompactList}\item 
+\Hypertarget{class_video_player_a342b16b0ea6cb5da2f43e5f87d522a1e}\label{class_video_player_a342b16b0ea6cb5da2f43e5f87d522a1e} 
+void {\bfseries video\+End} ()
+\begin{DoxyCompactList}\small\item\em video\+End the signal indicating the video end \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \Hypertarget{class_video_player_ae28e4565528e91f1bcf5d1c4ff3a0fc5}\label{class_video_player_ae28e4565528e91f1bcf5d1c4ff3a0fc5} 
 {\bfseries Video\+Player} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
 \item 
-\Hypertarget{class_video_player_a047ca5bf54e20592edab2c4c2bfdd463}\label{class_video_player_a047ca5bf54e20592edab2c4c2bfdd463} 
-bool {\bfseries open} (const char \texorpdfstring{$\ast$}{*}video\+\_\+path)
-\item 
-\Hypertarget{class_video_player_a1a19a0e4cb026a28ef3ed5a1f683b859}\label{class_video_player_a1a19a0e4cb026a28ef3ed5a1f683b859} 
-QString {\bfseries current\+\_\+handle} () const
-\item 
-\Hypertarget{class_video_player_a919e25566d0330921aa737f1cdc8638b}\label{class_video_player_a919e25566d0330921aa737f1cdc8638b} 
-bool {\bfseries close} ()
-\item 
-\Hypertarget{class_video_player_af032f2fcf964f2fcb91af66d609eab1f}\label{class_video_player_af032f2fcf964f2fcb91af66d609eab1f} 
-bool {\bfseries play} ()
-\item 
-\Hypertarget{class_video_player_af56cbd256c7aa5fe597c83c8b6ea3979}\label{class_video_player_af56cbd256c7aa5fe597c83c8b6ea3979} 
-bool {\bfseries pause} ()
-\item 
-\Hypertarget{class_video_player_ae2588d7f65c777af6227f7ef987729e0}\label{class_video_player_ae2588d7f65c777af6227f7ef987729e0} 
-int {\bfseries total\+\_\+frame} () const
-\item 
-\Hypertarget{class_video_player_a31581e1357ca2d57fed70157fc070bea}\label{class_video_player_a31581e1357ca2d57fed70157fc070bea} 
-int {\bfseries total\+\_\+msecs} () const
-\item 
-\Hypertarget{class_video_player_a4d021b4f964ff9e444988d5c68941be3}\label{class_video_player_a4d021b4f964ff9e444988d5c68941be3} 
-\mbox{\hyperlink{struct_video_player_info}{Video\+Player\+Info}} {\bfseries get\+\_\+info} () const
-\item 
-\Hypertarget{class_video_player_a3ba75cfe626e25218164bafaf28b3634}\label{class_video_player_a3ba75cfe626e25218164bafaf28b3634} 
-int {\bfseries current\+\_\+frame} () const
-\item 
-\Hypertarget{class_video_player_aaaa2dbe42365452b5b06d4e8ca01d1b2}\label{class_video_player_aaaa2dbe42365452b5b06d4e8ca01d1b2} 
-bool {\bfseries valid\+\_\+video} () const
-\item 
-\Hypertarget{class_video_player_affa0feb472293724d1f2edfc96677099}\label{class_video_player_affa0feb472293724d1f2edfc96677099} 
-bool {\bfseries is\+\_\+playing} () const
-\item 
-\Hypertarget{class_video_player_aa7375d4254665af9993c4000b546d76d}\label{class_video_player_aa7375d4254665af9993c4000b546d76d} 
-qint64 {\bfseries current\+Frame\+MSec} () const
-\item 
-\Hypertarget{class_video_player_ae1d89d26fbc9972fc14c1fe469e03da3}\label{class_video_player_ae1d89d26fbc9972fc14c1fe469e03da3} 
-bool {\bfseries set\+Current\+Frame\+MSec} (const qint64 msec)
-\item 
-\Hypertarget{class_video_player_aa694b6b907f0e1935de88613608ff6aa}\label{class_video_player_aa694b6b907f0e1935de88613608ff6aa} 
-void {\bfseries escape\+Frame} ()
-\item 
-\Hypertarget{class_video_player_ac9e16dfc5003c78a56600f7bf14fe361}\label{class_video_player_ac9e16dfc5003c78a56600f7bf14fe361} 
-bool {\bfseries peek\+Frame} (\mbox{\hyperlink{class_c_v_image}{CVImage}} \&container, int frame\+\_\+request)
-\item 
+bool \mbox{\hyperlink{class_video_player_a047ca5bf54e20592edab2c4c2bfdd463}{open}} (const char \texorpdfstring{$\ast$}{*}video\+\_\+path)
+\begin{DoxyCompactList}\small\item\em open open the video file \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_video_player_a1a19a0e4cb026a28ef3ed5a1f683b859}{current\+\_\+handle}} () const
+\begin{DoxyCompactList}\small\item\em current\+\_\+handle get the current handle \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_video_player_a919e25566d0330921aa737f1cdc8638b}{close}} ()
+\begin{DoxyCompactList}\small\item\em close close the video file \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_video_player_af032f2fcf964f2fcb91af66d609eab1f}{play}} ()
+\begin{DoxyCompactList}\small\item\em play start the video play \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_video_player_af56cbd256c7aa5fe597c83c8b6ea3979}{pause}} ()
+\begin{DoxyCompactList}\small\item\em pause stop the video play \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_video_player_ae2588d7f65c777af6227f7ef987729e0}{total\+\_\+frame}} () const
+\begin{DoxyCompactList}\small\item\em total\+\_\+frame get the total frame of the video \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_video_player_a31581e1357ca2d57fed70157fc070bea}{total\+\_\+msecs}} () const
+\begin{DoxyCompactList}\small\item\em total\+\_\+msecs get the total mseconds of the video \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_video_player_info}{Video\+Player\+Info}} \mbox{\hyperlink{class_video_player_a4d021b4f964ff9e444988d5c68941be3}{get\+\_\+info}} () const
+\begin{DoxyCompactList}\small\item\em get\+\_\+info get the info of the video \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_video_player_a3ba75cfe626e25218164bafaf28b3634}{current\+\_\+frame}} () const
+\begin{DoxyCompactList}\small\item\em current\+\_\+frame get the current frame of the video \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_video_player_aaaa2dbe42365452b5b06d4e8ca01d1b2}{valid\+\_\+video}} () const
+\begin{DoxyCompactList}\small\item\em valid\+\_\+video check if the video is valid \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_video_player_affa0feb472293724d1f2edfc96677099}{is\+\_\+playing}} () const
+\begin{DoxyCompactList}\small\item\em is\+\_\+playing check if the video is playing \end{DoxyCompactList}\item 
+qint64 \mbox{\hyperlink{class_video_player_aa7375d4254665af9993c4000b546d76d}{current\+Frame\+MSec}} () const
+\begin{DoxyCompactList}\small\item\em current\+Frame\+MSec get the current frame in mseconds \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_video_player_ae1d89d26fbc9972fc14c1fe469e03da3}{set\+Current\+Frame\+MSec}} (const qint64 msec)
+\begin{DoxyCompactList}\small\item\em set\+Current\+Frame\+MSec set the current frame in mseconds \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_video_player_aa694b6b907f0e1935de88613608ff6aa}{escape\+Frame}} ()
+\begin{DoxyCompactList}\small\item\em escape\+Frame escape the current frame \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_video_player_ac9e16dfc5003c78a56600f7bf14fe361}{peek\+Frame}} (\mbox{\hyperlink{class_c_v_image}{CVImage}} \&container, int frame\+\_\+request)
+\begin{DoxyCompactList}\small\item\em peek\+Frame peek the frame of the video \end{DoxyCompactList}\item 
 \Hypertarget{class_video_player_ae28e4565528e91f1bcf5d1c4ff3a0fc5}\label{class_video_player_ae28e4565528e91f1bcf5d1c4ff3a0fc5} 
 {\bfseries Video\+Player} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
 \item 
@@ -119,12 +112,540 @@ void {\bfseries escape\+Frame} ()
 \item 
 \Hypertarget{class_video_player_ac9e16dfc5003c78a56600f7bf14fe361}\label{class_video_player_ac9e16dfc5003c78a56600f7bf14fe361} 
 bool {\bfseries peek\+Frame} (\mbox{\hyperlink{class_c_v_image}{CVImage}} \&container, int frame\+\_\+request)
-\end{DoxyCompactItemize}
+\item 
+\Hypertarget{class_video_player_ae28e4565528e91f1bcf5d1c4ff3a0fc5}\label{class_video_player_ae28e4565528e91f1bcf5d1c4ff3a0fc5} 
+{\bfseries Video\+Player} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
+\item 
+bool \mbox{\hyperlink{class_video_player_a047ca5bf54e20592edab2c4c2bfdd463}{open}} (const char \texorpdfstring{$\ast$}{*}video\+\_\+path)
+\begin{DoxyCompactList}\small\item\em open open the video file \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_video_player_a1a19a0e4cb026a28ef3ed5a1f683b859}{current\+\_\+handle}} () const
+\begin{DoxyCompactList}\small\item\em current\+\_\+handle get the current handle \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_video_player_a919e25566d0330921aa737f1cdc8638b}{close}} ()
+\begin{DoxyCompactList}\small\item\em close close the video file \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_video_player_af032f2fcf964f2fcb91af66d609eab1f}{play}} ()
+\begin{DoxyCompactList}\small\item\em play start the video play \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_video_player_af56cbd256c7aa5fe597c83c8b6ea3979}{pause}} ()
+\begin{DoxyCompactList}\small\item\em pause stop the video play \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_video_player_ae2588d7f65c777af6227f7ef987729e0}{total\+\_\+frame}} () const
+\begin{DoxyCompactList}\small\item\em total\+\_\+frame get the total frame of the video \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_video_player_a31581e1357ca2d57fed70157fc070bea}{total\+\_\+msecs}} () const
+\begin{DoxyCompactList}\small\item\em total\+\_\+msecs get the total mseconds of the video \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_video_player_info}{Video\+Player\+Info}} \mbox{\hyperlink{class_video_player_a4d021b4f964ff9e444988d5c68941be3}{get\+\_\+info}} () const
+\begin{DoxyCompactList}\small\item\em get\+\_\+info get the info of the video \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_video_player_a3ba75cfe626e25218164bafaf28b3634}{current\+\_\+frame}} () const
+\begin{DoxyCompactList}\small\item\em current\+\_\+frame get the current frame of the video \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_video_player_aaaa2dbe42365452b5b06d4e8ca01d1b2}{valid\+\_\+video}} () const
+\begin{DoxyCompactList}\small\item\em valid\+\_\+video check if the video is valid \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_video_player_affa0feb472293724d1f2edfc96677099}{is\+\_\+playing}} () const
+\begin{DoxyCompactList}\small\item\em is\+\_\+playing check if the video is playing \end{DoxyCompactList}\item 
+qint64 \mbox{\hyperlink{class_video_player_aa7375d4254665af9993c4000b546d76d}{current\+Frame\+MSec}} () const
+\begin{DoxyCompactList}\small\item\em current\+Frame\+MSec get the current frame in mseconds \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_video_player_ae1d89d26fbc9972fc14c1fe469e03da3}{set\+Current\+Frame\+MSec}} (const qint64 msec)
+\begin{DoxyCompactList}\small\item\em set\+Current\+Frame\+MSec set the current frame in mseconds \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_video_player_aa694b6b907f0e1935de88613608ff6aa}{escape\+Frame}} ()
+\begin{DoxyCompactList}\small\item\em escape\+Frame escape the current frame \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_video_player_ac9e16dfc5003c78a56600f7bf14fe361}{peek\+Frame}} (\mbox{\hyperlink{class_c_v_image}{CVImage}} \&container, int frame\+\_\+request)
+\begin{DoxyCompactList}\small\item\em peek\+Frame peek the frame of the video \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_video_player_a919e25566d0330921aa737f1cdc8638b}\index{VideoPlayer@{VideoPlayer}!close@{close}}
+\index{close@{close}!VideoPlayer@{VideoPlayer}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_video_player_a919e25566d0330921aa737f1cdc8638b} 
+bool Video\+Player\+::close (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+close close the video file 
+
+\begin{DoxyReturn}{Returns}
+true if the video is closed successfully 
+\end{DoxyReturn}
+\Hypertarget{class_video_player_a919e25566d0330921aa737f1cdc8638b}\index{VideoPlayer@{VideoPlayer}!close@{close}}
+\index{close@{close}!VideoPlayer@{VideoPlayer}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_video_player_a919e25566d0330921aa737f1cdc8638b} 
+bool Video\+Player\+::close (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+close close the video file 
+
+\begin{DoxyReturn}{Returns}
+true if the video is closed successfully 
+\end{DoxyReturn}
+\Hypertarget{class_video_player_a3ba75cfe626e25218164bafaf28b3634}\index{VideoPlayer@{VideoPlayer}!current\_frame@{current\_frame}}
+\index{current\_frame@{current\_frame}!VideoPlayer@{VideoPlayer}}
+\doxysubsubsection{\texorpdfstring{current\_frame()}{current\_frame()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_video_player_a3ba75cfe626e25218164bafaf28b3634} 
+int Video\+Player\+::current\+\_\+frame (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+current\+\_\+frame get the current frame of the video 
+
+\begin{DoxyReturn}{Returns}
+the current frame of the video 
+\end{DoxyReturn}
+\Hypertarget{class_video_player_a3ba75cfe626e25218164bafaf28b3634}\index{VideoPlayer@{VideoPlayer}!current\_frame@{current\_frame}}
+\index{current\_frame@{current\_frame}!VideoPlayer@{VideoPlayer}}
+\doxysubsubsection{\texorpdfstring{current\_frame()}{current\_frame()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_video_player_a3ba75cfe626e25218164bafaf28b3634} 
+int Video\+Player\+::current\+\_\+frame (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+current\+\_\+frame get the current frame of the video 
+
+\begin{DoxyReturn}{Returns}
+the current frame of the video 
+\end{DoxyReturn}
+\Hypertarget{class_video_player_a1a19a0e4cb026a28ef3ed5a1f683b859}\index{VideoPlayer@{VideoPlayer}!current\_handle@{current\_handle}}
+\index{current\_handle@{current\_handle}!VideoPlayer@{VideoPlayer}}
+\doxysubsubsection{\texorpdfstring{current\_handle()}{current\_handle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_video_player_a1a19a0e4cb026a28ef3ed5a1f683b859} 
+QString Video\+Player\+::current\+\_\+handle (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+current\+\_\+handle get the current handle 
+
+\begin{DoxyReturn}{Returns}
+the current handle 
+\end{DoxyReturn}
+\Hypertarget{class_video_player_a1a19a0e4cb026a28ef3ed5a1f683b859}\index{VideoPlayer@{VideoPlayer}!current\_handle@{current\_handle}}
+\index{current\_handle@{current\_handle}!VideoPlayer@{VideoPlayer}}
+\doxysubsubsection{\texorpdfstring{current\_handle()}{current\_handle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_video_player_a1a19a0e4cb026a28ef3ed5a1f683b859} 
+QString Video\+Player\+::current\+\_\+handle (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+current\+\_\+handle get the current handle 
+
+\begin{DoxyReturn}{Returns}
+the current handle 
+\end{DoxyReturn}
+\Hypertarget{class_video_player_aa7375d4254665af9993c4000b546d76d}\index{VideoPlayer@{VideoPlayer}!currentFrameMSec@{currentFrameMSec}}
+\index{currentFrameMSec@{currentFrameMSec}!VideoPlayer@{VideoPlayer}}
+\doxysubsubsection{\texorpdfstring{currentFrameMSec()}{currentFrameMSec()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_video_player_aa7375d4254665af9993c4000b546d76d} 
+qint64 Video\+Player\+::current\+Frame\+MSec (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+current\+Frame\+MSec get the current frame in mseconds 
+
+\begin{DoxyReturn}{Returns}
+the current frame in mseconds 
+\end{DoxyReturn}
+\Hypertarget{class_video_player_aa7375d4254665af9993c4000b546d76d}\index{VideoPlayer@{VideoPlayer}!currentFrameMSec@{currentFrameMSec}}
+\index{currentFrameMSec@{currentFrameMSec}!VideoPlayer@{VideoPlayer}}
+\doxysubsubsection{\texorpdfstring{currentFrameMSec()}{currentFrameMSec()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_video_player_aa7375d4254665af9993c4000b546d76d} 
+qint64 Video\+Player\+::current\+Frame\+MSec (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+current\+Frame\+MSec get the current frame in mseconds 
+
+\begin{DoxyReturn}{Returns}
+the current frame in mseconds 
+\end{DoxyReturn}
+\Hypertarget{class_video_player_aa694b6b907f0e1935de88613608ff6aa}\index{VideoPlayer@{VideoPlayer}!escapeFrame@{escapeFrame}}
+\index{escapeFrame@{escapeFrame}!VideoPlayer@{VideoPlayer}}
+\doxysubsubsection{\texorpdfstring{escapeFrame()}{escapeFrame()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_video_player_aa694b6b907f0e1935de88613608ff6aa} 
+void Video\+Player\+::escape\+Frame (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+escape\+Frame escape the current frame 
+
+\begin{DoxyNote}{Note}
+this will escape only one frame, if you wanna escape frames, use for loops 
+\end{DoxyNote}
+\Hypertarget{class_video_player_aa694b6b907f0e1935de88613608ff6aa}\index{VideoPlayer@{VideoPlayer}!escapeFrame@{escapeFrame}}
+\index{escapeFrame@{escapeFrame}!VideoPlayer@{VideoPlayer}}
+\doxysubsubsection{\texorpdfstring{escapeFrame()}{escapeFrame()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_video_player_aa694b6b907f0e1935de88613608ff6aa} 
+void Video\+Player\+::escape\+Frame (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+escape\+Frame escape the current frame 
+
+\begin{DoxyNote}{Note}
+this will escape only one frame, if you wanna escape frames, use for loops 
+\end{DoxyNote}
+\Hypertarget{class_video_player_add12b1dfed409832374d63a3b13c3aa0}\index{VideoPlayer@{VideoPlayer}!frameReady@{frameReady}}
+\index{frameReady@{frameReady}!VideoPlayer@{VideoPlayer}}
+\doxysubsubsection{\texorpdfstring{frameReady}{frameReady}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_video_player_add12b1dfed409832374d63a3b13c3aa0} 
+void Video\+Player\+::frame\+Ready (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_v_image}{CVImage}}}]{image}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+frame\+Ready the signal indicating the frame is ready 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & the image to display \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+the request will send the image waiting display 
+\end{DoxyNote}
+\Hypertarget{class_video_player_add12b1dfed409832374d63a3b13c3aa0}\index{VideoPlayer@{VideoPlayer}!frameReady@{frameReady}}
+\index{frameReady@{frameReady}!VideoPlayer@{VideoPlayer}}
+\doxysubsubsection{\texorpdfstring{frameReady}{frameReady}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_video_player_add12b1dfed409832374d63a3b13c3aa0} 
+void Video\+Player\+::frame\+Ready (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_v_image}{CVImage}}}]{image}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+frame\+Ready the signal indicating the frame is ready 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & the image to display \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+the request will send the image waiting display 
+\end{DoxyNote}
+\Hypertarget{class_video_player_a4d021b4f964ff9e444988d5c68941be3}\index{VideoPlayer@{VideoPlayer}!get\_info@{get\_info}}
+\index{get\_info@{get\_info}!VideoPlayer@{VideoPlayer}}
+\doxysubsubsection{\texorpdfstring{get\_info()}{get\_info()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_video_player_a4d021b4f964ff9e444988d5c68941be3} 
+\mbox{\hyperlink{struct_video_player_info}{Video\+Player\+Info}} Video\+Player\+::get\+\_\+info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get\+\_\+info get the info of the video 
+
+\begin{DoxyReturn}{Returns}
+the info of the video, including frame info, fps like and so on 
+\end{DoxyReturn}
+\Hypertarget{class_video_player_a4d021b4f964ff9e444988d5c68941be3}\index{VideoPlayer@{VideoPlayer}!get\_info@{get\_info}}
+\index{get\_info@{get\_info}!VideoPlayer@{VideoPlayer}}
+\doxysubsubsection{\texorpdfstring{get\_info()}{get\_info()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_video_player_a4d021b4f964ff9e444988d5c68941be3} 
+\mbox{\hyperlink{struct_video_player_info}{Video\+Player\+Info}} Video\+Player\+::get\+\_\+info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get\+\_\+info get the info of the video 
+
+\begin{DoxyReturn}{Returns}
+the info of the video, including frame info, fps like and so on 
+\end{DoxyReturn}
+\Hypertarget{class_video_player_affa0feb472293724d1f2edfc96677099}\index{VideoPlayer@{VideoPlayer}!is\_playing@{is\_playing}}
+\index{is\_playing@{is\_playing}!VideoPlayer@{VideoPlayer}}
+\doxysubsubsection{\texorpdfstring{is\_playing()}{is\_playing()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_video_player_affa0feb472293724d1f2edfc96677099} 
+bool Video\+Player\+::is\+\_\+playing (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+is\+\_\+playing check if the video is playing 
+
+\begin{DoxyReturn}{Returns}
+true if the video is playing 
+\end{DoxyReturn}
+\Hypertarget{class_video_player_affa0feb472293724d1f2edfc96677099}\index{VideoPlayer@{VideoPlayer}!is\_playing@{is\_playing}}
+\index{is\_playing@{is\_playing}!VideoPlayer@{VideoPlayer}}
+\doxysubsubsection{\texorpdfstring{is\_playing()}{is\_playing()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_video_player_affa0feb472293724d1f2edfc96677099} 
+bool Video\+Player\+::is\+\_\+playing (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+is\+\_\+playing check if the video is playing 
+
+\begin{DoxyReturn}{Returns}
+true if the video is playing 
+\end{DoxyReturn}
+\Hypertarget{class_video_player_a047ca5bf54e20592edab2c4c2bfdd463}\index{VideoPlayer@{VideoPlayer}!open@{open}}
+\index{open@{open}!VideoPlayer@{VideoPlayer}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_video_player_a047ca5bf54e20592edab2c4c2bfdd463} 
+bool Video\+Player\+::open (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{video\+\_\+path}{}\end{DoxyParamCaption})}
+
+
+
+open open the video file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em video\+\_\+path} & the video path to open \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the video is opened successfully 
+\end{DoxyReturn}
+\Hypertarget{class_video_player_a047ca5bf54e20592edab2c4c2bfdd463}\index{VideoPlayer@{VideoPlayer}!open@{open}}
+\index{open@{open}!VideoPlayer@{VideoPlayer}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_video_player_a047ca5bf54e20592edab2c4c2bfdd463} 
+bool Video\+Player\+::open (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{video\+\_\+path}{}\end{DoxyParamCaption})}
+
+
+
+open open the video file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em video\+\_\+path} & the video path to open \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the video is opened successfully 
+\end{DoxyReturn}
+\Hypertarget{class_video_player_a1ae3d446db619373212f38415b459f06}\index{VideoPlayer@{VideoPlayer}!openError@{openError}}
+\index{openError@{openError}!VideoPlayer@{VideoPlayer}}
+\doxysubsubsection{\texorpdfstring{openError}{openError}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_video_player_a1ae3d446db619373212f38415b459f06} 
+void Video\+Player\+::open\+Error (\begin{DoxyParamCaption}\item[{const Video\+Player\+Open\+Error\+Code}]{error}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+open\+Error the signal indicating the open error 
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & the error code \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_video_player_a1ae3d446db619373212f38415b459f06}\index{VideoPlayer@{VideoPlayer}!openError@{openError}}
+\index{openError@{openError}!VideoPlayer@{VideoPlayer}}
+\doxysubsubsection{\texorpdfstring{openError}{openError}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_video_player_a1ae3d446db619373212f38415b459f06} 
+void Video\+Player\+::open\+Error (\begin{DoxyParamCaption}\item[{const Video\+Player\+Open\+Error\+Code}]{error}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+open\+Error the signal indicating the open error 
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & the error code \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_video_player_af56cbd256c7aa5fe597c83c8b6ea3979}\index{VideoPlayer@{VideoPlayer}!pause@{pause}}
+\index{pause@{pause}!VideoPlayer@{VideoPlayer}}
+\doxysubsubsection{\texorpdfstring{pause()}{pause()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_video_player_af56cbd256c7aa5fe597c83c8b6ea3979} 
+bool Video\+Player\+::pause (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+pause stop the video play 
+
+\begin{DoxyReturn}{Returns}
+true if the video is paused successfully 
+\end{DoxyReturn}
+\Hypertarget{class_video_player_af56cbd256c7aa5fe597c83c8b6ea3979}\index{VideoPlayer@{VideoPlayer}!pause@{pause}}
+\index{pause@{pause}!VideoPlayer@{VideoPlayer}}
+\doxysubsubsection{\texorpdfstring{pause()}{pause()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_video_player_af56cbd256c7aa5fe597c83c8b6ea3979} 
+bool Video\+Player\+::pause (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+pause stop the video play 
+
+\begin{DoxyReturn}{Returns}
+true if the video is paused successfully 
+\end{DoxyReturn}
+\Hypertarget{class_video_player_ac9e16dfc5003c78a56600f7bf14fe361}\index{VideoPlayer@{VideoPlayer}!peekFrame@{peekFrame}}
+\index{peekFrame@{peekFrame}!VideoPlayer@{VideoPlayer}}
+\doxysubsubsection{\texorpdfstring{peekFrame()}{peekFrame()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_video_player_ac9e16dfc5003c78a56600f7bf14fe361} 
+bool Video\+Player\+::peek\+Frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_v_image}{CVImage}} \&}]{container}{, }\item[{int}]{frame\+\_\+request}{}\end{DoxyParamCaption})}
+
+
+
+peek\+Frame peek the frame of the video 
+
+
+\begin{DoxyParams}{Parameters}
+{\em container} & the container to store the frame \\
+\hline
+{\em frame\+\_\+request} & the frame requested \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the frame is peeked successfully 
+\end{DoxyReturn}
+\Hypertarget{class_video_player_ac9e16dfc5003c78a56600f7bf14fe361}\index{VideoPlayer@{VideoPlayer}!peekFrame@{peekFrame}}
+\index{peekFrame@{peekFrame}!VideoPlayer@{VideoPlayer}}
+\doxysubsubsection{\texorpdfstring{peekFrame()}{peekFrame()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_video_player_ac9e16dfc5003c78a56600f7bf14fe361} 
+bool Video\+Player\+::peek\+Frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_v_image}{CVImage}} \&}]{container}{, }\item[{int}]{frame\+\_\+request}{}\end{DoxyParamCaption})}
+
+
+
+peek\+Frame peek the frame of the video 
+
+
+\begin{DoxyParams}{Parameters}
+{\em container} & the container to store the frame \\
+\hline
+{\em frame\+\_\+request} & the frame requested \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the frame is peeked successfully 
+\end{DoxyReturn}
+\Hypertarget{class_video_player_af032f2fcf964f2fcb91af66d609eab1f}\index{VideoPlayer@{VideoPlayer}!play@{play}}
+\index{play@{play}!VideoPlayer@{VideoPlayer}}
+\doxysubsubsection{\texorpdfstring{play()}{play()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_video_player_af032f2fcf964f2fcb91af66d609eab1f} 
+bool Video\+Player\+::play (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+play start the video play 
+
+\begin{DoxyReturn}{Returns}
+true if the video is played successfully 
+\end{DoxyReturn}
+\Hypertarget{class_video_player_af032f2fcf964f2fcb91af66d609eab1f}\index{VideoPlayer@{VideoPlayer}!play@{play}}
+\index{play@{play}!VideoPlayer@{VideoPlayer}}
+\doxysubsubsection{\texorpdfstring{play()}{play()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_video_player_af032f2fcf964f2fcb91af66d609eab1f} 
+bool Video\+Player\+::play (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+play start the video play 
+
+\begin{DoxyReturn}{Returns}
+true if the video is played successfully 
+\end{DoxyReturn}
+\Hypertarget{class_video_player_ae1d89d26fbc9972fc14c1fe469e03da3}\index{VideoPlayer@{VideoPlayer}!setCurrentFrameMSec@{setCurrentFrameMSec}}
+\index{setCurrentFrameMSec@{setCurrentFrameMSec}!VideoPlayer@{VideoPlayer}}
+\doxysubsubsection{\texorpdfstring{setCurrentFrameMSec()}{setCurrentFrameMSec()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_video_player_ae1d89d26fbc9972fc14c1fe469e03da3} 
+bool Video\+Player\+::set\+Current\+Frame\+MSec (\begin{DoxyParamCaption}\item[{const qint64}]{msec}{}\end{DoxyParamCaption})}
+
+
+
+set\+Current\+Frame\+MSec set the current frame in mseconds 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msec} & the mseconds to set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the mseconds is set successfully 
+\end{DoxyReturn}
+\Hypertarget{class_video_player_ae1d89d26fbc9972fc14c1fe469e03da3}\index{VideoPlayer@{VideoPlayer}!setCurrentFrameMSec@{setCurrentFrameMSec}}
+\index{setCurrentFrameMSec@{setCurrentFrameMSec}!VideoPlayer@{VideoPlayer}}
+\doxysubsubsection{\texorpdfstring{setCurrentFrameMSec()}{setCurrentFrameMSec()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_video_player_ae1d89d26fbc9972fc14c1fe469e03da3} 
+bool Video\+Player\+::set\+Current\+Frame\+MSec (\begin{DoxyParamCaption}\item[{const qint64}]{msec}{}\end{DoxyParamCaption})}
+
+
+
+set\+Current\+Frame\+MSec set the current frame in mseconds 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msec} & the mseconds to set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the mseconds is set successfully 
+\end{DoxyReturn}
+\Hypertarget{class_video_player_ae2588d7f65c777af6227f7ef987729e0}\index{VideoPlayer@{VideoPlayer}!total\_frame@{total\_frame}}
+\index{total\_frame@{total\_frame}!VideoPlayer@{VideoPlayer}}
+\doxysubsubsection{\texorpdfstring{total\_frame()}{total\_frame()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_video_player_ae2588d7f65c777af6227f7ef987729e0} 
+int Video\+Player\+::total\+\_\+frame (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+total\+\_\+frame get the total frame of the video 
+
+\begin{DoxyReturn}{Returns}
+the total frame of the video 
+\end{DoxyReturn}
+\Hypertarget{class_video_player_ae2588d7f65c777af6227f7ef987729e0}\index{VideoPlayer@{VideoPlayer}!total\_frame@{total\_frame}}
+\index{total\_frame@{total\_frame}!VideoPlayer@{VideoPlayer}}
+\doxysubsubsection{\texorpdfstring{total\_frame()}{total\_frame()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_video_player_ae2588d7f65c777af6227f7ef987729e0} 
+int Video\+Player\+::total\+\_\+frame (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+total\+\_\+frame get the total frame of the video 
+
+\begin{DoxyReturn}{Returns}
+the total frame of the video 
+\end{DoxyReturn}
+\Hypertarget{class_video_player_a31581e1357ca2d57fed70157fc070bea}\index{VideoPlayer@{VideoPlayer}!total\_msecs@{total\_msecs}}
+\index{total\_msecs@{total\_msecs}!VideoPlayer@{VideoPlayer}}
+\doxysubsubsection{\texorpdfstring{total\_msecs()}{total\_msecs()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_video_player_a31581e1357ca2d57fed70157fc070bea} 
+int Video\+Player\+::total\+\_\+msecs (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+total\+\_\+msecs get the total mseconds of the video 
+
+\begin{DoxyReturn}{Returns}
+the total mseconds of the video 
+\end{DoxyReturn}
+\Hypertarget{class_video_player_a31581e1357ca2d57fed70157fc070bea}\index{VideoPlayer@{VideoPlayer}!total\_msecs@{total\_msecs}}
+\index{total\_msecs@{total\_msecs}!VideoPlayer@{VideoPlayer}}
+\doxysubsubsection{\texorpdfstring{total\_msecs()}{total\_msecs()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_video_player_a31581e1357ca2d57fed70157fc070bea} 
+int Video\+Player\+::total\+\_\+msecs (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+total\+\_\+msecs get the total mseconds of the video 
+
+\begin{DoxyReturn}{Returns}
+the total mseconds of the video 
+\end{DoxyReturn}
+\Hypertarget{class_video_player_aaaa2dbe42365452b5b06d4e8ca01d1b2}\index{VideoPlayer@{VideoPlayer}!valid\_video@{valid\_video}}
+\index{valid\_video@{valid\_video}!VideoPlayer@{VideoPlayer}}
+\doxysubsubsection{\texorpdfstring{valid\_video()}{valid\_video()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_video_player_aaaa2dbe42365452b5b06d4e8ca01d1b2} 
+bool Video\+Player\+::valid\+\_\+video (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+valid\+\_\+video check if the video is valid 
+
+\begin{DoxyReturn}{Returns}
+true if the video is valid 
+\end{DoxyReturn}
+\Hypertarget{class_video_player_aaaa2dbe42365452b5b06d4e8ca01d1b2}\index{VideoPlayer@{VideoPlayer}!valid\_video@{valid\_video}}
+\index{valid\_video@{valid\_video}!VideoPlayer@{VideoPlayer}}
+\doxysubsubsection{\texorpdfstring{valid\_video()}{valid\_video()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_video_player_aaaa2dbe42365452b5b06d4e8ca01d1b2} 
+bool Video\+Player\+::valid\+\_\+video (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+valid\+\_\+video check if the video is valid 
+
+\begin{DoxyReturn}{Returns}
+true if the video is valid 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
 extern\+\_\+app/\+Media\+Player/base/Video\+Player.\+h\item 
+extern\+\_\+app/professionals/library/\+Opencv\+Qt\+Adapter/core\+\_\+library/olds/videoplayer/Video\+Player.\+h\item 
 extern\+\_\+app/professionals/library/\+Opencv\+Qt\+Adapter/core\+\_\+library/videoplayer/Video\+Player.\+h\item 
 extern\+\_\+app/\+Media\+Player/base/Video\+Player.\+cpp\item 
+extern\+\_\+app/professionals/library/\+Opencv\+Qt\+Adapter/core\+\_\+library/olds/videoplayer\+\_\+src/Video\+Player.\+cpp\item 
 extern\+\_\+app/professionals/library/\+Opencv\+Qt\+Adapter/core\+\_\+library/videoplayer\+\_\+src/Video\+Player.\+cpp\end{DoxyCompactItemize}

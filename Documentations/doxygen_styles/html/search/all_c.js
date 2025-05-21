@@ -1,5 +1,29 @@
 var searchData=
 [
-  ['of_20technologies_0',['🛠️ Full build of technologies',['../md__r_e_a_d_m_e___e_n.html#autotoc_md50',1,'']]],
-  ['overview_20🌟_1',['🌟 Project Overview 🌟',['../md__r_e_a_d_m_e___e_n.html#autotoc_md47',1,'']]]
+  ['label_5fcolor_0',['LABEL_COLOR',['../class_gauge_widget.html#aceffcc98a2ad7bc603d48f6a4ba247fa',1,'GaugeWidget']]],
+  ['label_5ffont_5fsz_1',['LABEL_FONT_SZ',['../class_gauge_widget.html#a30e3bbe3232381c7913469022e0c37f4',1,'GaugeWidget']]],
+  ['language_20🌐_2',['🌐 Before you start, choose your language! 🌐',['../md__r_e_a_d_m_e___e_n.html#autotoc_md46',1,'']]],
+  ['last_5fidle_3',['last_idle',['../class_c_p_u_usage_chart.html#a40d01620757b49a86efb9ed120156624',1,'CPUUsageChart']]],
+  ['last_5ftol_4',['last_tol',['../class_c_p_u_usage_chart.html#ae3a7fad1551601477ed3ae26b199fb72',1,'CPUUsageChart']]],
+  ['ledcontroller_5',['LEDController',['../class_l_e_d_controller.html',1,'LEDController'],['../class_l_e_d_controller.html#aee3bdb63c97a7c22e9065eaab8c9ab6d',1,'LEDController::LEDController()']]],
+  ['ledparamspackage_6',['LEDParamsPackage',['../class_l_e_d_params_package.html',1,'']]],
+  ['ledparamspackageblink_7',['LEDParamsPackageBlink',['../class_l_e_d_params_package_blink.html',1,'LEDParamsPackageBlink'],['../class_l_e_d_params_package_blink.html#a470c2bbcc48870fd6ecc9022bbdfbe94',1,'LEDParamsPackageBlink::LEDParamsPackageBlink()']]],
+  ['ledparamspackageplain_8',['LEDParamsPackagePlain',['../class_l_e_d_params_package_plain.html',1,'LEDParamsPackagePlain'],['../class_l_e_d_params_package_plain.html#a9c397053d9d91e042788598ee0ddc6f0',1,'LEDParamsPackagePlain::LEDParamsPackagePlain()']]],
+  ['ledpath_9',['ledPath',['../class_l_e_d_controller.html#a90c32acd1da700863aab0faf164d76b0',1,'LEDController::ledPath()'],['../class_pesudo_led_controller.html#a5744e609b0868d31892aeee8d1265ade',1,'PesudoLedController::ledPath()']]],
+  ['license_10',['📝 License',['../md__r_e_a_d_m_e___e_n.html#autotoc_md57',1,'']]],
+  ['lightcontrollerwindow_11',['LightControllerWindow',['../class_light_controller_window.html',1,'LightControllerWindow'],['../class_light_controller_window.html#add7241b973ac3a455955819094a71413',1,'LightControllerWindow::LightControllerWindow()']]],
+  ['linuxplatformcpustatedriver_12',['LinuxPlatformCPUStateDriver',['../class_linux_platform_c_p_u_state_driver.html',1,'']]],
+  ['linuxplatformmemoryinfodriver_13',['LinuxPlatformMemoryInfoDriver',['../class_linux_platform_memory_info_driver.html',1,'']]],
+  ['linuxplatformprocessbrowserdriver_14',['LinuxPlatformProcessBrowserDriver',['../class_linux_platform_process_browser_driver.html',1,'']]],
+  ['listcycle_15',['ListCycle',['../class_c_c_media_play_list.html#a22ea885ed695b9f7fcabd7b117b4e0b3a2c62ffd47a07bdb6cb4720a0bad933cd',1,'CCMediaPlayList']]],
+  ['listplay_16',['ListPlay',['../class_c_c_media_play_list.html#a22ea885ed695b9f7fcabd7b117b4e0b3acae9881cfbdbd74078ce3d31eb060791',1,'CCMediaPlayList']]],
+  ['load_5fdocument_17',['load_document',['../class_c_c_pdf_document.html#adbcadc5fe612d3c0dd8ccbe18094e24a',1,'CCPdfDocument']]],
+  ['load_5ffrom_5ffile_18',['load_from_file',['../class_c_v_image_impl.html#a298e52a3d0ff911c7e2ea2fdebf70c05',1,'CVImageImpl::load_from_file()'],['../class_c_v_image_opencv_impl.html#a0e106119f25f6b2218f1db8ccd4aacc5',1,'CVImageOpencvImpl::load_from_file()'],['../class_c_v_image_impl.html#a298e52a3d0ff911c7e2ea2fdebf70c05',1,'CVImageImpl::load_from_file()'],['../class_c_v_image_opencv_impl.html#a0e106119f25f6b2218f1db8ccd4aacc5',1,'CVImageOpencvImpl::load_from_file(const char *filename) override'],['../class_c_v_image_opencv_impl.html#a0e106119f25f6b2218f1db8ccd4aacc5',1,'CVImageOpencvImpl::load_from_file(const char *filename) override']]],
+  ['loadfile_19',['loadFile',['../class_c_v_image.html#abbfa8ef2239701e79812d05da44995ab',1,'CVImage::loadFile(const char *filename)'],['../class_c_v_image.html#abbfa8ef2239701e79812d05da44995ab',1,'CVImage::loadFile(const char *filename)']]],
+  ['local_20',['LOCAL',['../class_net_card_gadget.html#a0f7e947e72994b97591bb3bc9bb35268a54b4c4075463b2e02cd69f5cd139b5b2',1,'NetCardGadget']]],
+  ['localfetcher_21',['LocalFetcher',['../struct_local_fetcher.html',1,'']]],
+  ['localweathercard_22',['LocalWeatherCard',['../class_local_weather_card.html',1,'']]],
+  ['localweatherlightfetcher_23',['LocalWeatherLightFetcher',['../struct_local_weather_light_fetcher.html',1,'']]],
+  ['low_24',['low',['../struct_app_weather_result_1_1_daily_weather.html#ad68dc66d4978326345538da3c16781f9',1,'AppWeatherResult::DailyWeather']]],
+  ['low_5ftemp_25',['LOW_TEMP',['../class_weather_chart_widget.html#ad917be16972dd0f90aa71df8d0e8e569ac2e65573563c7444efbfc0dd2bca593c',1,'WeatherChartWidget']]]
 ];

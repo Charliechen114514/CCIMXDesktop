@@ -3,6 +3,9 @@
 
 #ifdef _WIN32 // Windows Build
 
+/**
+ * @brief the default desktop places
+ */
 #define DEFAULT_DESKTOP_PLACES "D:/EnlistsImages/"
 
 #else

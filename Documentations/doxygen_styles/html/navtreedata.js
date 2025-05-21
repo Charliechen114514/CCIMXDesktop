@@ -62,14 +62,24 @@ var NAVTREE =
       [ "💡 Future plans", "md__r_e_a_d_m_e___e_n.html#autotoc_md55", null ],
       [ "📝 License", "md__r_e_a_d_m_e___e_n.html#autotoc_md57", null ]
     ] ],
+    [ "Namespaces", "namespaces.html", [
+      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
+      [ "Namespace Members", "namespacemembers.html", [
+        [ "All", "namespacemembers.html", null ],
+        [ "Functions", "namespacemembers_func.html", null ]
+      ] ]
+    ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
-        [ "All", "functions.html", null ],
-        [ "Functions", "functions_func.html", null ],
-        [ "Variables", "functions_vars.html", null ]
+        [ "All", "functions.html", "functions_dup" ],
+        [ "Functions", "functions_func.html", "functions_func" ],
+        [ "Variables", "functions_vars.html", null ],
+        [ "Typedefs", "functions_type.html", null ],
+        [ "Enumerations", "functions_enum.html", null ],
+        [ "Enumerator", "functions_eval.html", null ]
       ] ]
     ] ],
     [ "Files", "files.html", [
@@ -81,7 +91,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_a_p3216_c_adapter_factory_8h_source.html",
-"lightcontrollerwindow_8h_source.html"
+"class_camera_device_selector.html",
+"class_sports_display_widget.html#a4e2a61241dfc71050074bf14c4c1fb04",
+"functions_v.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

@@ -10,102 +10,93 @@
 \DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_app_widget}{AppWidget}};}
 \DoxyCodeLine{00007\ \textcolor{comment}{/*\ App\ Wrapper\ here\ */}}
 \DoxyCodeLine{00008\ \textcolor{comment}{/*\ is\ the\ Process\ Wrapper\ */}}
-\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }ApplicationWrapper\ :\ \textcolor{keyword}{public}\ QObject}
-\DoxyCodeLine{00010\ \{}
-\DoxyCodeLine{00011\ \ \ \ \ Q\_OBJECT}
-\DoxyCodeLine{00012\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{explicit}\ ApplicationWrapper(}
-\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ QObject*\ parent,\ QMainWindow*\ desktopWindow);}
-\DoxyCodeLine{00015\ \ \ \ \ \textcolor{comment}{/*\ is\ the\ only\ */}}
-\DoxyCodeLine{00016\ \ \ \ \ Q\_DISABLE\_COPY(ApplicationWrapper);}
-\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_application_wrapper_1_1_application_depatch_result}{ApplicationDepatchResult}}\ \{}
-\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{keyword}{enum\ class}\ AppDepatchResult\ \{}
-\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ APP\_RUN\_OK,}
-\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ APP\_FILE\_MISSING,}
-\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ APP\_OTHER\_ERROR}
-\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \};}
-\DoxyCodeLine{00023\ }
-\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ AppDepatchResult\ \ \ \ app\_depatch\_result;}
-\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ depatched\{\textcolor{keyword}{false}\};}
-\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ QString\ \ \ \ \ \ \ \ \ \ \ \ \ someOtherDetails\{\};}
-\DoxyCodeLine{00027\ \ \ \ \ \};}
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }ApplicationWrapper\ :\ \textcolor{keyword}{public}\ QObject\ \{}
+\DoxyCodeLine{00010\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00011\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{explicit}\ ApplicationWrapper(}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ QObject*\ parent,\ QMainWindow*\ desktopWindow);}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{comment}{/*\ is\ the\ only\ */}}
+\DoxyCodeLine{00015\ \ \ \ \ Q\_DISABLE\_COPY(ApplicationWrapper);}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_application_wrapper_1_1_application_depatch_result}{ApplicationDepatchResult}}\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keyword}{enum\ class}\ AppDepatchResult\ \{}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ APP\_RUN\_OK,}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ APP\_FILE\_MISSING,}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ APP\_OTHER\_ERROR}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \};}
 \DoxyCodeLine{00028\ }
-\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_application_wrapper_1_1_application_finish_result}{ApplicationFinishResult}}\ \{}
-\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keyword}{enum\ class}\ AppFinishResult\{}
-\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ QUIT\_NORMAL,}
-\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ QUIT\_OTHER}
-\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \};}
-\DoxyCodeLine{00034\ }
-\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ AppFinishResult\ app\_result;}
-\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \ \ \ \ \ \ \ \ \ \ \ \ exit\_code;}
-\DoxyCodeLine{00037\ \ \ \ \ \};}
-\DoxyCodeLine{00038\ }
-\DoxyCodeLine{00039\ \ \ \ \ \textcolor{comment}{/*\ bind\ AppWidget\ */}}
-\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ bindAppWidget(\mbox{\hyperlink{class_app_widget}{AppWidget}}*\ appWidget)\ \textcolor{keyword}{noexcept}\ \{this-\/>appWidget\ =\ appWidget;\}}
-\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{class_app_widget}{AppWidget}}*\ \ \ \ \ \ \ \ \ \ app\_widget(\textcolor{keywordtype}{void})\textcolor{keyword}{\ const\ }\{\textcolor{keywordflow}{return}\ this-\/>appWidget;\}}
-\DoxyCodeLine{00042\ }
-\DoxyCodeLine{00043\ \ \ \ \ \textcolor{comment}{/*\ AppCode\ is\ using\ to\ identify\ the\ app\ quickly\ */}}
-\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{using\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }AppCode\ =\ int;}
-\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ install\_app\_code(AppCode\ code)\ \textcolor{keyword}{noexcept}\ \{internal\_app\_code\ =\ code;\}}
-\DoxyCodeLine{00046\ \ \ \ \ AppCode\ \ \ \ \ \ \ \ \ \ \ \ \ app\_code()\textcolor{keyword}{\ const\ }\{\textcolor{keywordflow}{return}\ internal\_app\_code;\}}
-\DoxyCodeLine{00047\ }
-\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ set\_app\_path(\textcolor{keyword}{const}\ QString\&\ app\_path)\ \textcolor{keyword}{noexcept}\{this-\/>app\_path\ =\ app\_path;\}}
-\DoxyCodeLine{00049\ \ \ \ \ \textcolor{comment}{/*\ get\ the\ app\ path\ */}}
-\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{inline}\ QString\ \ \ \ \ \ get\_app\_path(\textcolor{keywordtype}{void})\textcolor{keyword}{\ const\ }\{\textcolor{keywordflow}{return}\ app\_path;\}}
-\DoxyCodeLine{00051\ }
-\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ install\_args(\textcolor{keyword}{const}\ QStringList\&\ l)\ \textcolor{keyword}{noexcept}\ \{app\_args\ =\ l;\}}
-\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keyword}{inline}\ QStringList\ \ args(\textcolor{keywordtype}{void})\textcolor{keyword}{\ const\ }\{\textcolor{keywordflow}{return}\ app\_args;\}}
-\DoxyCodeLine{00054\ }
-\DoxyCodeLine{00055\ \ \ \ \ \textcolor{comment}{/*\ for\ those\ who\ wanna\ see\ the\ detailed\ process,}}
-\DoxyCodeLine{00056\ \textcolor{comment}{\ \ \ \ \ *\ use\ this\ to\ fetch\ the\ handle\ */}}
-\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keyword}{inline}\ QProcess*\ \ \ \ process\_handle(\textcolor{keywordtype}{void})\textcolor{keyword}{\ const\ }\{\textcolor{keywordflow}{return}\ appProcess;\}}
-\DoxyCodeLine{00058\ }
-\DoxyCodeLine{00059\ \ \ \ \ \textcolor{comment}{/*\ Application\ Depatcher\ */}}
-\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_application_wrapper_aadc9fc2e2aa2488bc35115f387a3cda9}{depatch\_app}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{00061\ }
-\DoxyCodeLine{00062\ \ \ \ \ \textcolor{comment}{/*\ specified\ settings\ */}}
-\DoxyCodeLine{00063\ \ \ \ \ \textcolor{comment}{/*\ we\ accept\ the\ whole\ app\ wrapper\ and\ the\ prelaunch\ indicate}}
-\DoxyCodeLine{00064\ \textcolor{comment}{\ \ \ \ \ *\ whether\ we\ should\ launch\ the\ application,\ at\ default,\ only}}
-\DoxyCodeLine{00065\ \textcolor{comment}{\ \ \ \ \ *\ app\ file\ exsitance\ will\ be\ checked}}
-\DoxyCodeLine{00066\ \textcolor{comment}{\ \ \ \ \ */}}
-\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keyword}{using\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }PreLaunchIndicate\ =}
-\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_application_wrapper_1_1_application_depatch_result}{ApplicationDepatchResult}}(*)(ApplicationWrapper*\ wrapper);}
-\DoxyCodeLine{00069\ \ \ \ \ \textcolor{comment}{/*\ result\ can\ be\ handle\ for\ checking\ the\ situations\ */}}
-\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ install\_prelaunched(PreLaunchIndicate\ \ \ precheck)\{pre\_indicate\ =\ precheck;\}}
-\DoxyCodeLine{00071\ }
-\DoxyCodeLine{00072\ \ \ \ \ \textcolor{comment}{/*\ if\ you\ wanna\ do\ your\ own\ jobs,\ that\ is\ required\ to\ override\ this\ */}}
-\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keyword}{using\ \ \ \ \ \ \ }HandlingFinHook\ =\ void(*)(ApplicationWrapper*\ wrapper,\ \textcolor{keywordtype}{int}\ exit\_hook,\ QProcess::ExitStatus\ status);}
-\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ install\_finhook(HandlingFinHook\ hook)\{rawAppFinHook\ =\ hook;\}}
-\DoxyCodeLine{00075\ }
-\DoxyCodeLine{00076\ \ \ \ \ \textcolor{comment}{/*\ for\ app\ depatch\ level\ error,\ we\ have\ to\ expose\ an\ interface\ */}}
-\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keyword}{using\ \ \ \ \ \ \ }ErrorDepatchHook\ =\ void(*)(ApplicationWrapper*\ wrapper);}
-\DoxyCodeLine{00078\ \ \ \ \ \textcolor{comment}{/*\ if\ you\ wanna\ pass\ out\ the\ status,\ use\ emit\ app\_depatch\_status\ */}}
-\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ install\_error\_handler(ErrorDepatchHook\ hook)\{error\_handler\ =\ hook;\}}
-\DoxyCodeLine{00080\ signals:}
-\DoxyCodeLine{00081\ \ \ \ \ \textcolor{comment}{/*\ app\ is\ depatched\ or\ not,\ see\ the\ signals\ */}}
-\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ app\_depatch\_status(ApplicationWrapper::ApplicationDepatchResult);}
-\DoxyCodeLine{00083\ \ \ \ \ \textcolor{comment}{/*\ app\ is\ finished,\ connect\ this\ signals\ for\ the\ hook\ */}}
-\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ app\_finished(ApplicationWrapper::ApplicationFinishResult);}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ AppDepatchResult\ \mbox{\hyperlink{struct_application_wrapper_1_1_application_depatch_result_add689ef0c7f3b4ee4d63d2036c105907}{app\_depatch\_result}};\ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_application_wrapper_1_1_application_depatch_result_ac2f913f3a09fa708873e71f19af3cdf6}{depatched}}\ \{\ \textcolor{keyword}{false}\ \};\ }
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ QString\ \mbox{\hyperlink{struct_application_wrapper_1_1_application_depatch_result_aa6cd66610f46e0dd8ff14bebaeae1f2c}{someOtherDetails}}\ \{\};\ }
+\DoxyCodeLine{00032\ \ \ \ \ \};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_application_wrapper_1_1_application_finish_result}{ApplicationFinishResult}}\ \{}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keyword}{enum\ class}\ AppFinishResult\ \{}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ QUIT\_NORMAL,}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ QUIT\_OTHER}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ AppFinishResult\ \mbox{\hyperlink{struct_application_wrapper_1_1_application_finish_result_acefc460bffc37c059a773fcc2bccf79f}{app\_result}};\ }
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_application_wrapper_1_1_application_finish_result_a9bd31e7691e31b6be8aff6a0ba60a0c4}{exit\_code}};\ }
+\DoxyCodeLine{00048\ \ \ \ \ \};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_application_wrapper_a6fd8f6f029b8dba337310bb9750f49ed}{bindAppWidget}}(\mbox{\hyperlink{class_app_widget}{AppWidget}}*\ appWidget)\ \textcolor{keyword}{noexcept}\ \{\ this-\/>appWidget\ =\ appWidget;\ \}}
+\DoxyCodeLine{00059\ \ \ \ \ \mbox{\hyperlink{class_app_widget}{AppWidget}}*\ \mbox{\hyperlink{class_application_wrapper_a0b395ef8736c102556539b3fb96296cb}{app\_widget}}(\textcolor{keywordtype}{void})\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ this-\/>appWidget;\ \}}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{comment}{/*\ AppCode\ is\ using\ to\ identify\ the\ app\ quickly\ */}}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keyword}{using\ }AppCode\ =\ int;}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_application_wrapper_adf8a55aaaf2ccbfda855d75d0f4b9053}{install\_app\_code}}(AppCode\ code)\ \textcolor{keyword}{noexcept}\ \{\ internal\_app\_code\ =\ code;\ \}}
+\DoxyCodeLine{00072\ \ \ \ \ AppCode\ \mbox{\hyperlink{class_application_wrapper_aaa275174067d1949835c5f7097fccc10}{app\_code}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ internal\_app\_code;\ \}}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_application_wrapper_acf76b7e548ec203af29659ad3115b9b8}{set\_app\_path}}(\textcolor{keyword}{const}\ QString\&\ app\_path)\ \textcolor{keyword}{noexcept}\ \{\ this-\/>app\_path\ =\ app\_path;\ \}}
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keyword}{inline}\ QString\ \mbox{\hyperlink{class_application_wrapper_a645eedaf1b9540075dcab6e55e2cefe2}{get\_app\_path}}(\textcolor{keywordtype}{void})\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ app\_path;\ \}}
 \DoxyCodeLine{00085\ }
-\DoxyCodeLine{00086\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00087\ }
-\DoxyCodeLine{00088\ \ \ \ \ QMainWindow*\ \ \ \ \ \ \ \ mainWindow;}
-\DoxyCodeLine{00089\ \ \ \ \ QProcess*\ \ \ \ \ \ \ \ \ \ \ appProcess\{\textcolor{keyword}{nullptr}\};}
-\DoxyCodeLine{00090\ }
-\DoxyCodeLine{00091\ \ \ \ \ QString\ \ \ \ \ \ \ \ \ \ \ \ \ app\_path;}
-\DoxyCodeLine{00092\ \ \ \ \ QStringList\ \ \ \ \ \ \ \ \ app\_args;}
-\DoxyCodeLine{00093\ \ \ \ \ AppCode\ \ \ \ \ \ \ \ \ \ \ \ \ internal\_app\_code;}
-\DoxyCodeLine{00094\ \ \ \ \ AppWidget*\ \ \ \ \ \ \ \ \ \ appWidget;}
-\DoxyCodeLine{00095\ }
-\DoxyCodeLine{00096\ \ \ \ \ PreLaunchIndicate\ \ \ pre\_indicate;}
-\DoxyCodeLine{00097\ \ \ \ \ HandlingFinHook\ \ \ \ \ rawAppFinHook\{\textcolor{keyword}{nullptr}\};}
-\DoxyCodeLine{00098\ \ \ \ \ ErrorDepatchHook\ \ \ \ error\_handler\{\textcolor{keyword}{nullptr}\};}
-\DoxyCodeLine{00099\ }
-\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ do\_fin\_hook(\textcolor{keywordtype}{int}\ exitCode,\ QProcess::ExitStatus\ status);}
-\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ def\_error\_handler();}
-\DoxyCodeLine{00102\ }
-\DoxyCodeLine{00103\ \};}
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_application_wrapper_a157919a1894a29889b4feac5aad1151b}{install\_args}}(\textcolor{keyword}{const}\ QStringList\&\ l)\ \textcolor{keyword}{noexcept}\ \{\ app\_args\ =\ l;\ \}}
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keyword}{inline}\ QStringList\ \mbox{\hyperlink{class_application_wrapper_ae33f13768de3aefb8098302c1c77e001}{args}}(\textcolor{keywordtype}{void})\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ app\_args;\ \}}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00103\ \ \ \ \ \textcolor{keyword}{inline}\ QProcess*\ \mbox{\hyperlink{class_application_wrapper_a134b24e6aba73be486197652a6e40cb6}{process\_handle}}(\textcolor{keywordtype}{void})\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ appProcess;\ \}}
 \DoxyCodeLine{00104\ }
-\DoxyCodeLine{00105\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ APPLICATIONWRAPPER\_H}}
+\DoxyCodeLine{00109\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_application_wrapper_aadc9fc2e2aa2488bc35115f387a3cda9}{depatch\_app}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00111\ \ \ \ \ \textcolor{comment}{/*\ specified\ settings\ */}}
+\DoxyCodeLine{00112\ \ \ \ \ \textcolor{comment}{/*\ we\ accept\ the\ whole\ app\ wrapper\ and\ the\ prelaunch\ indicate}}
+\DoxyCodeLine{00113\ \textcolor{comment}{\ \ \ \ \ *\ whether\ we\ should\ launch\ the\ application,\ at\ default,\ only}}
+\DoxyCodeLine{00114\ \textcolor{comment}{\ \ \ \ \ *\ app\ file\ exsitance\ will\ be\ checked}}
+\DoxyCodeLine{00115\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{00116\ \ \ \ \ \textcolor{keyword}{using\ }PreLaunchIndicate\ =\ ApplicationDepatchResult\ (*)(\mbox{\hyperlink{class_application_wrapper}{ApplicationWrapper}}*\ wrapper);}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00124\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_application_wrapper_a895d28d5f837ea6a23cae8f5ff8682b7}{install\_prelaunched}}(PreLaunchIndicate\ precheck)\ \{\ pre\_indicate\ =\ precheck;\ \}}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00126\ \ \ \ \ \textcolor{comment}{/*\ if\ you\ wanna\ do\ your\ own\ jobs,\ that\ is\ required\ to\ override\ this\ */}}
+\DoxyCodeLine{00127\ \ \ \ \ \textcolor{keyword}{using\ }HandlingFinHook\ =\ void\ (*)(\mbox{\hyperlink{class_application_wrapper}{ApplicationWrapper}}*\ wrapper,\ \textcolor{keywordtype}{int}\ exit\_hook,\ QProcess::ExitStatus\ status);}
+\DoxyCodeLine{00128\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ install\_finhook(HandlingFinHook\ hook)\ \{\ rawAppFinHook\ =\ hook;\ \}}
+\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00130\ \ \ \ \ \textcolor{comment}{/*\ for\ app\ depatch\ level\ error,\ we\ have\ to\ expose\ an\ interface\ */}}
+\DoxyCodeLine{00131\ \ \ \ \ \textcolor{keyword}{using\ }ErrorDepatchHook\ =\ void\ (*)(ApplicationWrapper*\ wrapper);}
+\DoxyCodeLine{00132\ \ \ \ \ \textcolor{comment}{/*\ if\ you\ wanna\ pass\ out\ the\ status,\ use\ emit\ app\_depatch\_status\ */}}
+\DoxyCodeLine{00133\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ install\_error\_handler(ErrorDepatchHook\ hook)\ \{\ error\_handler\ =\ hook;\ \}}
+\DoxyCodeLine{00134\ signals:}
+\DoxyCodeLine{00135\ \ \ \ \ \textcolor{comment}{/*\ app\ is\ depatched\ or\ not,\ see\ the\ signals\ */}}
+\DoxyCodeLine{00136\ \ \ \ \ \textcolor{keywordtype}{void}\ app\_depatch\_status(ApplicationWrapper::ApplicationDepatchResult);}
+\DoxyCodeLine{00137\ \ \ \ \ \textcolor{comment}{/*\ app\ is\ finished,\ connect\ this\ signals\ for\ the\ hook\ */}}
+\DoxyCodeLine{00138\ \ \ \ \ \textcolor{keywordtype}{void}\ app\_finished(ApplicationWrapper::ApplicationFinishResult);}
+\DoxyCodeLine{00139\ }
+\DoxyCodeLine{00140\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00141\ \ \ \ \ QMainWindow*\ mainWindow;}
+\DoxyCodeLine{00142\ \ \ \ \ QProcess*\ appProcess\ \{\ \textcolor{keyword}{nullptr}\ \};}
+\DoxyCodeLine{00143\ }
+\DoxyCodeLine{00144\ \ \ \ \ QString\ app\_path;\ }
+\DoxyCodeLine{00145\ \ \ \ \ QStringList\ app\_args;\ }
+\DoxyCodeLine{00146\ \ \ \ \ AppCode\ internal\_app\_code;\ }
+\DoxyCodeLine{00147\ \ \ \ \ AppWidget*\ appWidget;\ }
+\DoxyCodeLine{00148\ }
+\DoxyCodeLine{00149\ \ \ \ \ PreLaunchIndicate\ pre\_indicate;\ }
+\DoxyCodeLine{00150\ \ \ \ \ HandlingFinHook\ rawAppFinHook\ \{\ \textcolor{keyword}{nullptr}\ \};\ }
+\DoxyCodeLine{00151\ \ \ \ \ ErrorDepatchHook\ error\_handler\ \{\ \textcolor{keyword}{nullptr}\ \};\ }
+\DoxyCodeLine{00157\ \ \ \ \ \textcolor{keywordtype}{void}\ do\_fin\_hook(\textcolor{keywordtype}{int}\ exitCode,\ QProcess::ExitStatus\ status);}
+\DoxyCodeLine{00162\ \ \ \ \ \textcolor{keywordtype}{void}\ def\_error\_handler();}
+\DoxyCodeLine{00163\ \};}
+\DoxyCodeLine{00164\ }
+\DoxyCodeLine{00165\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ APPLICATIONWRAPPER\_H}}
 
 \end{DoxyCode}

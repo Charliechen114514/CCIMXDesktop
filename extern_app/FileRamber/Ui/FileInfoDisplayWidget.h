@@ -13,7 +13,15 @@ class FileInfoDisplayWidget : public QWidget {
 public:
 	static constexpr const unsigned short ICON_SIZE = 32;
 	explicit FileInfoDisplayWidget(QWidget* parent = nullptr);
+	/**
+	 * @brief bind_models bind the models to the widget
+	 * @param models
+	 */
 	inline void bind_models(CCIMXFileSystemModel* models) { this->models = models; }
+	/**
+	 * @brief setModelIndex set the model index to be displayed
+	 * @param index the model index
+	 */
 	void setModelIndex(const QModelIndex& index);
 	~FileInfoDisplayWidget();
 

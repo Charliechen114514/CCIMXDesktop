@@ -9,49 +9,207 @@ Inheritance diagram for Camera\+Capture\+:\begin{figure}[H]
 \doxysubsubsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_camera_capture_aec7c35d14237db1faad9e83066d36358}\label{class_camera_capture_aec7c35d14237db1faad9e83066d36358} 
-enum class {\bfseries Error} \{ {\bfseries CAMERA\+\_\+\+UNEXSITED}
-, {\bfseries CAMERA\+\_\+\+UNOPENED}
-, {\bfseries CAMERA\+\_\+\+UNBIND\+\_\+\+DISPLAY}
-, {\bfseries CAMERA\+\_\+\+MULTI\+\_\+\+OPENED}
+enum class \mbox{\hyperlink{class_camera_capture_aec7c35d14237db1faad9e83066d36358}{Error}} \{ \mbox{\hyperlink{class_camera_capture_aec7c35d14237db1faad9e83066d36358a2f0794bffed77b1dcaf4a2666cb6d474}{CAMERA\+\_\+\+UNEXSITED}}
+, \mbox{\hyperlink{class_camera_capture_aec7c35d14237db1faad9e83066d36358ae59ab77888e4c47594cc7b33e672e55d}{CAMERA\+\_\+\+UNOPENED}}
+, \mbox{\hyperlink{class_camera_capture_aec7c35d14237db1faad9e83066d36358aebcf7fcb6acf28195cdba149f1ea6ea7}{CAMERA\+\_\+\+UNBIND\+\_\+\+DISPLAY}}
+, \mbox{\hyperlink{class_camera_capture_aec7c35d14237db1faad9e83066d36358acd35f170ba52dd43bd5b67fd26705333}{CAMERA\+\_\+\+MULTI\+\_\+\+OPENED}}
  \}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The \doxylink{class_camera_capture_aec7c35d14237db1faad9e83066d36358}{Error} enum provides the situations and cases of error types. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Signals}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_camera_capture_aee4055d166d239eb9656c6bf94268b31}\label{class_camera_capture_aee4055d166d239eb9656c6bf94268b31} 
-void {\bfseries camera\+Opened} (int index)
-\item 
-\Hypertarget{class_camera_capture_accff1997c75a85ff17d4123325356bf5}\label{class_camera_capture_accff1997c75a85ff17d4123325356bf5} 
-void {\bfseries camera\+Closed} (int index)
-\item 
-\Hypertarget{class_camera_capture_aaa1bba7896e9f51b7b0ff6e0d605df4d}\label{class_camera_capture_aaa1bba7896e9f51b7b0ff6e0d605df4d} 
-void {\bfseries error\+Occur} (Camera\+Capture\+::\+Error e)
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_camera_capture_aee4055d166d239eb9656c6bf94268b31}{camera\+Opened}} (int index)
+\begin{DoxyCompactList}\small\item\em camera\+Opened the signal indicating the camera is opened \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_capture_accff1997c75a85ff17d4123325356bf5}{camera\+Closed}} (int index)
+\begin{DoxyCompactList}\small\item\em camera\+Closed the signal indicating the camera is closed \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_capture_aaa1bba7896e9f51b7b0ff6e0d605df4d}{error\+Occur}} (\mbox{\hyperlink{class_camera_capture_aec7c35d14237db1faad9e83066d36358}{Camera\+Capture\+::\+Error}} e)
+\begin{DoxyCompactList}\small\item\em camera\+Error the signal indicating the error \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \Hypertarget{class_camera_capture_a9e3764a94c80ebbdfc2db9886eaf5cd7}\label{class_camera_capture_a9e3764a94c80ebbdfc2db9886eaf5cd7} 
 {\bfseries Q\+\_\+\+DISABLE\+\_\+\+COPY} (\mbox{\hyperlink{class_camera_capture}{Camera\+Capture}})
 \item 
-\Hypertarget{class_camera_capture_a6ced02cd6a7db34a9dbb234bd20d15b8}\label{class_camera_capture_a6ced02cd6a7db34a9dbb234bd20d15b8} 
-{\bfseries Camera\+Capture} (const int index, QObject \texorpdfstring{$\ast$}{*}parent)
-\item 
-\Hypertarget{class_camera_capture_adcc683f3079c0a2b45af30cdbe2425c6}\label{class_camera_capture_adcc683f3079c0a2b45af30cdbe2425c6} 
-void {\bfseries bind\+\_\+display\+\_\+widget} (\mbox{\hyperlink{class_camera_display_widget}{Camera\+Display\+Widget}} \texorpdfstring{$\ast$}{*}widget)
-\item 
-\Hypertarget{class_camera_capture_af3ceb8523ba6d8eb0f41649e3a2f3d28}\label{class_camera_capture_af3ceb8523ba6d8eb0f41649e3a2f3d28} 
-void {\bfseries set\+\_\+capture\+\_\+delay\+\_\+time} (const int gap\+\_\+time)
-\item 
-\Hypertarget{class_camera_capture_a45c11c334b0609b8af2e08c49fe221fe}\label{class_camera_capture_a45c11c334b0609b8af2e08c49fe221fe} 
-bool {\bfseries is\+Activate} () const
-\item 
-\Hypertarget{class_camera_capture_af831dcf5fda530c9b65afb49a30f5186}\label{class_camera_capture_af831dcf5fda530c9b65afb49a30f5186} 
-bool {\bfseries start} ()
-\item 
-\Hypertarget{class_camera_capture_ad15b419181c6bd196a6120fc7471ab95}\label{class_camera_capture_ad15b419181c6bd196a6120fc7471ab95} 
-bool {\bfseries close} ()
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{class_camera_capture_a6ced02cd6a7db34a9dbb234bd20d15b8}{Camera\+Capture}} (const int index, QObject \texorpdfstring{$\ast$}{*}parent)
+\begin{DoxyCompactList}\small\item\em \doxylink{class_camera_capture}{Camera\+Capture}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_capture_adcc683f3079c0a2b45af30cdbe2425c6}{bind\+\_\+display\+\_\+widget}} (\mbox{\hyperlink{class_camera_display_widget}{Camera\+Display\+Widget}} \texorpdfstring{$\ast$}{*}widget)
+\begin{DoxyCompactList}\small\item\em bind\+\_\+display\+\_\+widget bind the widgets to display \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_capture_af3ceb8523ba6d8eb0f41649e3a2f3d28}{set\+\_\+capture\+\_\+delay\+\_\+time}} (const int gap\+\_\+time)
+\begin{DoxyCompactList}\small\item\em set\+\_\+capture\+\_\+delay\+\_\+time set the delay time of capturings \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_camera_capture_a45c11c334b0609b8af2e08c49fe221fe}{is\+Activate}} () const
+\begin{DoxyCompactList}\small\item\em is\+Activate marks the camera\textquotesingle{}s activation \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_camera_capture_af831dcf5fda530c9b65afb49a30f5186}{start}} ()
+\begin{DoxyCompactList}\small\item\em start start the camera capture sessions \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_camera_capture_ad15b419181c6bd196a6120fc7471ab95}{close}} ()
+\begin{DoxyCompactList}\small\item\em close close the camera capture sessions \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\Hypertarget{class_camera_capture_aec7c35d14237db1faad9e83066d36358}\index{CameraCapture@{CameraCapture}!Error@{Error}}
+\index{Error@{Error}!CameraCapture@{CameraCapture}}
+\doxysubsubsection{\texorpdfstring{Error}{Error}}
+{\footnotesize\ttfamily \label{class_camera_capture_aec7c35d14237db1faad9e83066d36358} 
+enum class \mbox{\hyperlink{class_camera_capture_aec7c35d14237db1faad9e83066d36358}{Camera\+Capture\+::\+Error}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+The \doxylink{class_camera_capture_aec7c35d14237db1faad9e83066d36358}{Error} enum provides the situations and cases of error types. 
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAMERA\_UNEXSITED@{CAMERA\_UNEXSITED}!CameraCapture@{CameraCapture}}\index{CameraCapture@{CameraCapture}!CAMERA\_UNEXSITED@{CAMERA\_UNEXSITED}}}\Hypertarget{class_camera_capture_aec7c35d14237db1faad9e83066d36358a2f0794bffed77b1dcaf4a2666cb6d474}\label{class_camera_capture_aec7c35d14237db1faad9e83066d36358a2f0794bffed77b1dcaf4a2666cb6d474} 
+CAMERA\+\_\+\+UNEXSITED&camera is not exsited \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAMERA\_UNOPENED@{CAMERA\_UNOPENED}!CameraCapture@{CameraCapture}}\index{CameraCapture@{CameraCapture}!CAMERA\_UNOPENED@{CAMERA\_UNOPENED}}}\Hypertarget{class_camera_capture_aec7c35d14237db1faad9e83066d36358ae59ab77888e4c47594cc7b33e672e55d}\label{class_camera_capture_aec7c35d14237db1faad9e83066d36358ae59ab77888e4c47594cc7b33e672e55d} 
+CAMERA\+\_\+\+UNOPENED&camera is not opened \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAMERA\_UNBIND\_DISPLAY@{CAMERA\_UNBIND\_DISPLAY}!CameraCapture@{CameraCapture}}\index{CameraCapture@{CameraCapture}!CAMERA\_UNBIND\_DISPLAY@{CAMERA\_UNBIND\_DISPLAY}}}\Hypertarget{class_camera_capture_aec7c35d14237db1faad9e83066d36358aebcf7fcb6acf28195cdba149f1ea6ea7}\label{class_camera_capture_aec7c35d14237db1faad9e83066d36358aebcf7fcb6acf28195cdba149f1ea6ea7} 
+CAMERA\+\_\+\+UNBIND\+\_\+\+DISPLAY&camera is not bind to display \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAMERA\_MULTI\_OPENED@{CAMERA\_MULTI\_OPENED}!CameraCapture@{CameraCapture}}\index{CameraCapture@{CameraCapture}!CAMERA\_MULTI\_OPENED@{CAMERA\_MULTI\_OPENED}}}\Hypertarget{class_camera_capture_aec7c35d14237db1faad9e83066d36358acd35f170ba52dd43bd5b67fd26705333}\label{class_camera_capture_aec7c35d14237db1faad9e83066d36358acd35f170ba52dd43bd5b67fd26705333} 
+CAMERA\+\_\+\+MULTI\+\_\+\+OPENED&camera is already opened \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_camera_capture_a6ced02cd6a7db34a9dbb234bd20d15b8}\index{CameraCapture@{CameraCapture}!CameraCapture@{CameraCapture}}
+\index{CameraCapture@{CameraCapture}!CameraCapture@{CameraCapture}}
+\doxysubsubsection{\texorpdfstring{CameraCapture()}{CameraCapture()}}
+{\footnotesize\ttfamily \label{class_camera_capture_a6ced02cd6a7db34a9dbb234bd20d15b8} 
+Camera\+Capture\+::\+Camera\+Capture (\begin{DoxyParamCaption}\item[{const int}]{index}{, }\item[{QObject \texorpdfstring{$\ast$}{*}}]{parent}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\doxylink{class_camera_capture}{Camera\+Capture}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & requires a valid index of cameras \\
+\hline
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_camera_capture_adcc683f3079c0a2b45af30cdbe2425c6}\index{CameraCapture@{CameraCapture}!bind\_display\_widget@{bind\_display\_widget}}
+\index{bind\_display\_widget@{bind\_display\_widget}!CameraCapture@{CameraCapture}}
+\doxysubsubsection{\texorpdfstring{bind\_display\_widget()}{bind\_display\_widget()}}
+{\footnotesize\ttfamily \label{class_camera_capture_adcc683f3079c0a2b45af30cdbe2425c6} 
+void Camera\+Capture\+::bind\+\_\+display\+\_\+widget (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_camera_display_widget}{Camera\+Display\+Widget}} \texorpdfstring{$\ast$}{*}}]{widget}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+bind\+\_\+display\+\_\+widget bind the widgets to display 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \doxylink{class_camera_display_widget}{Camera\+Display\+Widget}} & the widget to display \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_camera_capture_accff1997c75a85ff17d4123325356bf5}\index{CameraCapture@{CameraCapture}!cameraClosed@{cameraClosed}}
+\index{cameraClosed@{cameraClosed}!CameraCapture@{CameraCapture}}
+\doxysubsubsection{\texorpdfstring{cameraClosed}{cameraClosed}}
+{\footnotesize\ttfamily \label{class_camera_capture_accff1997c75a85ff17d4123325356bf5} 
+void Camera\+Capture\+::camera\+Closed (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+camera\+Closed the signal indicating the camera is closed 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & the index of the camera \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_camera_capture_aee4055d166d239eb9656c6bf94268b31}\index{CameraCapture@{CameraCapture}!cameraOpened@{cameraOpened}}
+\index{cameraOpened@{cameraOpened}!CameraCapture@{CameraCapture}}
+\doxysubsubsection{\texorpdfstring{cameraOpened}{cameraOpened}}
+{\footnotesize\ttfamily \label{class_camera_capture_aee4055d166d239eb9656c6bf94268b31} 
+void Camera\+Capture\+::camera\+Opened (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+camera\+Opened the signal indicating the camera is opened 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & the index of the camera \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_camera_capture_ad15b419181c6bd196a6120fc7471ab95}\index{CameraCapture@{CameraCapture}!close@{close}}
+\index{close@{close}!CameraCapture@{CameraCapture}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{class_camera_capture_ad15b419181c6bd196a6120fc7471ab95} 
+bool Camera\+Capture\+::close (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+close close the camera capture sessions 
+
+\begin{DoxyReturn}{Returns}
+true if the camera is closed successfully 
+\end{DoxyReturn}
+\Hypertarget{class_camera_capture_aaa1bba7896e9f51b7b0ff6e0d605df4d}\index{CameraCapture@{CameraCapture}!errorOccur@{errorOccur}}
+\index{errorOccur@{errorOccur}!CameraCapture@{CameraCapture}}
+\doxysubsubsection{\texorpdfstring{errorOccur}{errorOccur}}
+{\footnotesize\ttfamily \label{class_camera_capture_aaa1bba7896e9f51b7b0ff6e0d605df4d} 
+void Camera\+Capture\+::error\+Occur (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_camera_capture_aec7c35d14237db1faad9e83066d36358}{Camera\+Capture\+::\+Error}}}]{e}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+camera\+Error the signal indicating the error 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & the error type \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_camera_capture_a45c11c334b0609b8af2e08c49fe221fe}\index{CameraCapture@{CameraCapture}!isActivate@{isActivate}}
+\index{isActivate@{isActivate}!CameraCapture@{CameraCapture}}
+\doxysubsubsection{\texorpdfstring{isActivate()}{isActivate()}}
+{\footnotesize\ttfamily \label{class_camera_capture_a45c11c334b0609b8af2e08c49fe221fe} 
+bool Camera\+Capture\+::is\+Activate (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+is\+Activate marks the camera\textquotesingle{}s activation 
+
+\begin{DoxyReturn}{Returns}
+true if the camera is activated 
+\end{DoxyReturn}
+\Hypertarget{class_camera_capture_af3ceb8523ba6d8eb0f41649e3a2f3d28}\index{CameraCapture@{CameraCapture}!set\_capture\_delay\_time@{set\_capture\_delay\_time}}
+\index{set\_capture\_delay\_time@{set\_capture\_delay\_time}!CameraCapture@{CameraCapture}}
+\doxysubsubsection{\texorpdfstring{set\_capture\_delay\_time()}{set\_capture\_delay\_time()}}
+{\footnotesize\ttfamily \label{class_camera_capture_af3ceb8523ba6d8eb0f41649e3a2f3d28} 
+void Camera\+Capture\+::set\+\_\+capture\+\_\+delay\+\_\+time (\begin{DoxyParamCaption}\item[{const int}]{gap\+\_\+time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+set\+\_\+capture\+\_\+delay\+\_\+time set the delay time of capturings 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gap\+\_\+time} & how long then? \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_camera_capture_af831dcf5fda530c9b65afb49a30f5186}\index{CameraCapture@{CameraCapture}!start@{start}}
+\index{start@{start}!CameraCapture@{CameraCapture}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily \label{class_camera_capture_af831dcf5fda530c9b65afb49a30f5186} 
+bool Camera\+Capture\+::start (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+start start the camera capture sessions 
+
+\begin{DoxyReturn}{Returns}
+true if the camera is started successfully 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

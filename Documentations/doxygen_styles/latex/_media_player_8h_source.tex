@@ -10,152 +10,123 @@
 \DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_video_player}{VideoPlayer}};}
 \DoxyCodeLine{00007\ \textcolor{keyword}{class\ }QLabel;}
 \DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_v_image}{CVImage}};}
-\DoxyCodeLine{00009\ \textcolor{comment}{/*}}
-\DoxyCodeLine{00010\ \textcolor{comment}{\ *\ \ MediaPlayer\ is\ the\ wrapper\ of}}
-\DoxyCodeLine{00011\ \textcolor{comment}{\ *\ \ VideoPlayer\ and\ AudioPlayer,\ with\ the}}
-\DoxyCodeLine{00012\ \textcolor{comment}{\ *\ \ sync\ of\ video\ and\ audio\ basically}}
-\DoxyCodeLine{00013\ \textcolor{comment}{\ */}}
-\DoxyCodeLine{00014\ }
-\DoxyCodeLine{00015\ \textcolor{keyword}{enum\ class}\ MediaError\ \{}
-\DoxyCodeLine{00016\ \ \ \ \ NO\_ERROR,}
-\DoxyCodeLine{00017\ \ \ \ \ UNEXSITED\_SOURCE,}
-\DoxyCodeLine{00018\ \ \ \ \ \textcolor{comment}{/*\ VEDIO\_ONLY\ and\ SOUND\_ONLY\ means\ the\ partial\ displays\ */}}
-\DoxyCodeLine{00019\ \ \ \ \ VEDIO\_ONLY,}
-\DoxyCodeLine{00020\ \ \ \ \ SOUND\_ONLY,}
-\DoxyCodeLine{00021\ \ \ \ \ UNSUPPORT\_SOURCE,}
-\DoxyCodeLine{00022\ \};}
-\DoxyCodeLine{00023\ }
-\DoxyCodeLine{00024\ \textcolor{keyword}{namespace\ }MediaPlayerPublicSettings\ \{}
-\DoxyCodeLine{00025\ \textcolor{comment}{/*\ for\ some\ cases,\ it\ is\ rather\ accpetable\ for\ the\ mismatch\ */}}
-\DoxyCodeLine{00026\ \textcolor{keyword}{using\ }MisSyncDelay\_t\ =\ \textcolor{keywordtype}{unsigned}\ int;}
-\DoxyCodeLine{00027\ \textcolor{comment}{/*\ max\ delay\ we\ can\ accept\ */}}
-\DoxyCodeLine{00028\ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ MisSyncDelay\_t\ DEF\_ACCPET\_DELAY\ =\ 500;}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{enum\ class}\ MediaError\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ NO\_ERROR,\ }
+\DoxyCodeLine{00015\ \ \ \ \ UNEXSITED\_SOURCE,\ }
+\DoxyCodeLine{00020\ \ \ \ \ VEDIO\_ONLY,}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00026\ \ \ \ \ SOUND\_ONLY,}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ UNSUPPORT\_SOURCE,\ }
 \DoxyCodeLine{00029\ \};}
 \DoxyCodeLine{00030\ }
-\DoxyCodeLine{00031\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_media_info}{MediaInfo}}\ \{}
-\DoxyCodeLine{00032\ \ \ \ \ QString\ title;}
-\DoxyCodeLine{00033\ \ \ \ \ QString\ author;}
-\DoxyCodeLine{00034\ \ \ \ \ QString\ albumTitle;}
-\DoxyCodeLine{00035\ \ \ \ \ QString\ albumArtist;}
-\DoxyCodeLine{00036\ \ \ \ \ QString\ composer;}
-\DoxyCodeLine{00037\ \ \ \ \ QString\ genre;}
-\DoxyCodeLine{00038\ \ \ \ \ qint64\ durationMs;}
-\DoxyCodeLine{00039\ \ \ \ \ QString\ date;}
-\DoxyCodeLine{00040\ }
-\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{int}\ trackNumber;}
-\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{int}\ audioBitRate;}
-\DoxyCodeLine{00043\ \ \ \ \ QString\ audioCodec;}
-\DoxyCodeLine{00044\ \ \ \ \ QString\ mediaType;}
-\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{int}\ sampleRate;}
-\DoxyCodeLine{00046\ \ \ \ \ QString\ publisher;}
-\DoxyCodeLine{00047\ \ \ \ \ QImage\ coverImage;}
-\DoxyCodeLine{00048\ \};}
-\DoxyCodeLine{00049\ }
-\DoxyCodeLine{00050\ \textcolor{comment}{/*}}
-\DoxyCodeLine{00051\ \textcolor{comment}{\ *\ Author\ here\ in\ 2025.5.10}}
-\DoxyCodeLine{00052\ \textcolor{comment}{\ *\ In\ Current\ Version,\ Only\ OpenCV\ is\ supported\ for\ the\ video\ play}}
-\DoxyCodeLine{00053\ \textcolor{comment}{\ *\ and\ the\ audio\ is\ only\ supported\ by\ QMediaPlayer,\ with\ current}}
-\DoxyCodeLine{00054\ \textcolor{comment}{\ *\ ALSA\ is\ used\ for\ the\ audio\ play\ in\ IMX6ULL,\ so\ for\ cross\ compilers}}
-\DoxyCodeLine{00055\ \textcolor{comment}{\ *\ you\ must\ cross\ compile\ with\ ALSA\ support}}
-\DoxyCodeLine{00056\ \textcolor{comment}{\ */}}
-\DoxyCodeLine{00057\ \textcolor{keyword}{class\ }MediaPlayer\ :\ \textcolor{keyword}{public}\ QObject\ \{}
-\DoxyCodeLine{00058\ \ \ \ \ Q\_OBJECT}
-\DoxyCodeLine{00059\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_media_player_1_1_media_player_status}{MediaPlayerStatus}}\ \{}
-\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ media\ status\ */}}
-\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ audio\_ready\ \{\ \textcolor{keyword}{false}\ \};}
-\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ video\_ready\ \{\ \textcolor{keyword}{false}\ \};}
-\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ What\ has\ been\ fucking\ happened\ */}}
-\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ QString\ video\_discriptions\ \{\};}
-\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ QString\ audio\_discriptions\ \{\};}
-\DoxyCodeLine{00067\ \ \ \ \ \};}
-\DoxyCodeLine{00068\ }
-\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keyword}{explicit}\ MediaPlayer(QObject*\ parent\ =\ \textcolor{keyword}{nullptr});}
-\DoxyCodeLine{00070\ \ \ \ \ Q\_DISABLE\_COPY(MediaPlayer);}
-\DoxyCodeLine{00071\ \ \ \ \ \textcolor{comment}{/*\ open\ media\ */}}
-\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{void}\ setSource(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ local\_file);}
-\DoxyCodeLine{00073\ \ \ \ \ \textcolor{comment}{/*\ sources\ */}}
-\DoxyCodeLine{00074\ \ \ \ \ QString\ source()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00075\ \ \ \ \ \textcolor{comment}{/*\ the\ percentage\ of\ the\ volumn\ */}}
-\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{void}\ setVolume(\textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ percentage);}
-\DoxyCodeLine{00077\ \ \ \ \ \textcolor{comment}{/*\ volumn\ \ */}}
-\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{float}\ volume()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00079\ \ \ \ \ \textcolor{comment}{/*\ get\ the\ all\ mseconds\ of\ the\ media\ */}}
-\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keyword}{inline}\ qint64\ get\_durations()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ durations;\ \}}
-\DoxyCodeLine{00081\ \ \ \ \ \textcolor{comment}{/*\ get\ the\ current\ position\ */}}
-\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keyword}{inline}\ qint64\ get\_position()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ position;\ \}}
-\DoxyCodeLine{00083\ }
-\DoxyCodeLine{00084\ \ \ \ \ \textcolor{comment}{/*}}
-\DoxyCodeLine{00085\ \textcolor{comment}{\ \ \ \ \ *\ start\ the\ display\ if,\ the\ source\ is\ displayable}}
-\DoxyCodeLine{00086\ \textcolor{comment}{\ \ \ \ \ *\ and\ source\ is\ ready}}
-\DoxyCodeLine{00087\ \textcolor{comment}{\ \ \ \ \ */}}
-\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordtype}{bool}\ resume();}
-\DoxyCodeLine{00089\ \ \ \ \ \textcolor{comment}{/*}}
-\DoxyCodeLine{00090\ \textcolor{comment}{\ \ \ \ \ *\ \ terminate\ for\ the\ request}}
-\DoxyCodeLine{00091\ \textcolor{comment}{\ \ \ \ \ */}}
-\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keywordtype}{bool}\ pause();}
-\DoxyCodeLine{00093\ \ \ \ \ \textcolor{comment}{/*\ close\ the\ source,\ this\ means\ a\ hard\ close\ */}}
-\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordtype}{bool}\ close();}
-\DoxyCodeLine{00095\ \ \ \ \ \textcolor{comment}{/*\ see\ if\ the\ audio\ is\ playing\ thus\ */}}
-\DoxyCodeLine{00096\ \ \ \ \ \textcolor{comment}{/*\ for\ default,\ if\ one\ is\ playing,\ the\ mediaplayer\ is\ playing\ :)\ */}}
-\DoxyCodeLine{00097\ \ \ \ \ \textcolor{keywordtype}{bool}\ isPlaying()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00098\ }
-\DoxyCodeLine{00099\ \ \ \ \ \textcolor{comment}{/*\ Yet\ set\ the\ default\ mis\ sync\ tolerance\ */}}
-\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ set\_accept\_missync\_msecond(}
-\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ msec}
-\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ =\ MediaPlayerPublicSettings::DEF\_ACCPET\_DELAY)\ \{}
-\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ mis\_sync\_seconds\ =\ msec;}
-\DoxyCodeLine{00104\ \ \ \ \ \}}
-\DoxyCodeLine{00105\ }
-\DoxyCodeLine{00106\ \ \ \ \ \textcolor{comment}{/*\ moves\ to\ the\ target\ positions\ */}}
-\DoxyCodeLine{00107\ \ \ \ \ \textcolor{keywordtype}{void}\ set\_position(\textcolor{keyword}{const}\ qint64\ position);}
-\DoxyCodeLine{00108\ signals:}
-\DoxyCodeLine{00109\ \ \ \ \ \textcolor{comment}{/*\ for\ those\ who\ expect\ to\ use\ callback\ */}}
-\DoxyCodeLine{00110\ \ \ \ \ \textcolor{keywordtype}{void}\ display\_frame(QImage\ image);}
-\DoxyCodeLine{00111\ \ \ \ \ \textcolor{comment}{/*\ volumn\ changed\ signals\ */}}
-\DoxyCodeLine{00112\ \ \ \ \ \textcolor{keywordtype}{void}\ volumeChanged(\textcolor{keywordtype}{float}\ percentage);}
-\DoxyCodeLine{00113\ \ \ \ \ \textcolor{comment}{/*\ emit\ changed\ sources\ */}}
-\DoxyCodeLine{00114\ \ \ \ \ \textcolor{keywordtype}{void}\ sourceOpened(\textcolor{keyword}{const}\ QString\ source,\ \textcolor{comment}{/*\ At\ which\ sources\ */}}
-\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MediaPlayer::MediaPlayerStatus\ status);\ \textcolor{comment}{/*\ for\ what\ errors\ */}}
-\DoxyCodeLine{00116\ \ \ \ \ \textcolor{comment}{/*\ frame\ is\ avaible\ */}}
-\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keywordtype}{void}\ videoAvailable(\textcolor{keywordtype}{bool}\ sourceAvailable,\ \textcolor{keyword}{const}\ QImage\ firstPage);}
-\DoxyCodeLine{00118\ \ \ \ \ \textcolor{comment}{/*\ media\ is\ end\ */}}
-\DoxyCodeLine{00119\ \ \ \ \ \textcolor{keywordtype}{void}\ mediaEnd();}
-\DoxyCodeLine{00120\ \ \ \ \ \textcolor{comment}{/*\ duration\ sessions\ */}}
-\DoxyCodeLine{00121\ \ \ \ \ \textcolor{keywordtype}{void}\ durationChanged(qint64\ new\_durantion);}
-\DoxyCodeLine{00122\ \ \ \ \ \textcolor{comment}{/*\ position\ accessied\ */}}
-\DoxyCodeLine{00123\ \ \ \ \ \textcolor{keywordtype}{void}\ positionChanged(qint64\ position);}
-\DoxyCodeLine{00124\ }
-\DoxyCodeLine{00125\ \ \ \ \ \textcolor{comment}{/*\ meta\ available\ */}}
-\DoxyCodeLine{00126\ \ \ \ \ \textcolor{keywordtype}{void}\ metaDataAvailable(\textcolor{keyword}{const}\ MediaInfo\ info);}
+\DoxyCodeLine{00031\ \textcolor{keyword}{namespace\ }MediaPlayerPublicSettings\ \{}
+\DoxyCodeLine{00036\ \textcolor{keyword}{using\ }MisSyncDelay\_t\ =\ \textcolor{keywordtype}{unsigned}\ int;}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00041\ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ MisSyncDelay\_t\ DEF\_ACCPET\_DELAY\ =\ 500;}
+\DoxyCodeLine{00042\ \};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00048\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_media_info}{MediaInfo}}\ \{}
+\DoxyCodeLine{00049\ \ \ \ \ QString\ \mbox{\hyperlink{struct_media_info_a843511475196e275f5e79dea5cd81409}{title}};\ }
+\DoxyCodeLine{00050\ \ \ \ \ QString\ \mbox{\hyperlink{struct_media_info_a5800390f193e62611d5e5ebe872c28b8}{author}};\ }
+\DoxyCodeLine{00051\ \ \ \ \ QString\ \mbox{\hyperlink{struct_media_info_a6609ecb62d2db45fed5e662795648269}{albumTitle}};\ }
+\DoxyCodeLine{00052\ \ \ \ \ QString\ \mbox{\hyperlink{struct_media_info_a0fe1b8a2642e8679e9e5fbd210ea01c9}{albumArtist}};\ }
+\DoxyCodeLine{00053\ \ \ \ \ QString\ \mbox{\hyperlink{struct_media_info_a3659fe88439251fcdf8d81dffae10020}{composer}};\ }
+\DoxyCodeLine{00054\ \ \ \ \ QString\ \mbox{\hyperlink{struct_media_info_a72d5f69c1b23c572b37a2b676238049f}{genre}};\ }
+\DoxyCodeLine{00055\ \ \ \ \ qint64\ \mbox{\hyperlink{struct_media_info_a62e3d432bd99c5cf1715b6fd568b8dcf}{durationMs}};\ }
+\DoxyCodeLine{00056\ \ \ \ \ QString\ \mbox{\hyperlink{struct_media_info_aff128ebc05e035ae6f6417712b2b0de0}{date}};\ }
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_media_info_afcfbcff6e7948f294733dd3b8bf83c62}{trackNumber}};\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_media_info_a32ff20787a2ffa2ab8e348204cdfaf26}{audioBitRate}};\ }
+\DoxyCodeLine{00060\ \ \ \ \ QString\ \mbox{\hyperlink{struct_media_info_a4bbf96a1fc0e354d34b4921e83a6d0ec}{audioCodec}};\ }
+\DoxyCodeLine{00061\ \ \ \ \ QString\ \mbox{\hyperlink{struct_media_info_aafcbdb24bc3d31e9605e703a71a1228b}{mediaType}};\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_media_info_adced269a0044b247726c00fb42212a86}{sampleRate}};\ }
+\DoxyCodeLine{00063\ \ \ \ \ QString\ \mbox{\hyperlink{struct_media_info_a45fc7079d4e5ac0c1e1abfa788f98a84}{publisher}};\ }
+\DoxyCodeLine{00064\ \ \ \ \ QImage\ \mbox{\hyperlink{struct_media_info_af8ce80403da81f08b927f3a75fef241f}{coverImage}};\ }
+\DoxyCodeLine{00065\ \};}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00077\ \textcolor{keyword}{class\ }MediaPlayer\ :\ \textcolor{keyword}{public}\ QObject\ \{}
+\DoxyCodeLine{00078\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00079\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_media_player_1_1_media_player_status}{MediaPlayerStatus}}\ \{}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ media\ status\ */}}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_media_player_1_1_media_player_status_a327fcaa8e0779d5670869ea5736dc36d}{audio\_ready}}\ \{\ \textcolor{keyword}{false}\ \};\ }
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_media_player_1_1_media_player_status_aa82a8cda11aff12675474cf20e346e68}{video\_ready}}\ \{\ \textcolor{keyword}{false}\ \};\ }
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ What\ has\ been\ fucking\ happened\ */}}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ QString\ \mbox{\hyperlink{struct_media_player_1_1_media_player_status_ab5f3663084085eb1f237646c0477d5a8}{video\_discriptions}}\ \{\};\ }
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ QString\ \mbox{\hyperlink{struct_media_player_1_1_media_player_status_af1454682dd061617c38b4dfe099fee2d}{audio\_discriptions}}\ \{\};\ }
+\DoxyCodeLine{00091\ \ \ \ \ \};}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_media_player}{MediaPlayer}}(QObject*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00094\ \ \ \ \ Q\_DISABLE\_COPY(\mbox{\hyperlink{class_media_player}{MediaPlayer}});}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_media_player_af16ded3ecace9ebd3b5f34d8ed43bac8}{setSource}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ local\_file);}
+\DoxyCodeLine{00106\ \ \ \ \ QString\ \mbox{\hyperlink{class_media_player_a347546ae8ca73768c13a732c7af402e5}{source}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00114\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_media_player_a535a93966b7fb52ad51ff93531a932c0}{setVolume}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ percentage);}
+\DoxyCodeLine{00121\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_media_player_a76c64233d113ac5c5590f099df8c123f}{volume}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00126\ \ \ \ \ \textcolor{keyword}{inline}\ qint64\ \mbox{\hyperlink{class_media_player_a5f65ab0852d73d1e49b3791facb1086c}{get\_durations}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ durations;\ \}}
 \DoxyCodeLine{00127\ }
-\DoxyCodeLine{00128\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00129\ \ \ \ \ \textcolor{comment}{/*\ QMediaPlayer\ is\ expected\ to\ use\ Audio\ */}}
-\DoxyCodeLine{00130\ \ \ \ \ QMediaPlayer*\ audioPlayer\ \{\ \textcolor{keyword}{nullptr}\ \};}
-\DoxyCodeLine{00131\ \ \ \ \ \textcolor{comment}{/*\ VideoPlayer\ is\ expected\ to\ display\ the\ video\ */}}
-\DoxyCodeLine{00132\ \ \ \ \ VideoPlayer*\ videoPlayer\ \{\ \textcolor{keyword}{nullptr}\ \};}
-\DoxyCodeLine{00133\ \ \ \ \ \textcolor{comment}{/*\ for\ status\ holder\ */}}
-\DoxyCodeLine{00134\ \ \ \ \ \mbox{\hyperlink{struct_media_player_1_1_media_player_status}{MediaPlayerStatus}}\ media\_status;}
-\DoxyCodeLine{00135\ \ \ \ \ MediaPlayerPublicSettings::MisSyncDelay\_t}
-\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ mis\_sync\_seconds\ \{\ MediaPlayerPublicSettings::DEF\_ACCPET\_DELAY\ \};}
-\DoxyCodeLine{00137\ \ \ \ \ qint64\ durations\ \{\};}
-\DoxyCodeLine{00138\ \ \ \ \ qint64\ position\ \{\};}
-\DoxyCodeLine{00139\ }
-\DoxyCodeLine{00140\ \ \ \ \ \textcolor{comment}{/*\ functions\ */}}
-\DoxyCodeLine{00141\ }
-\DoxyCodeLine{00142\ \ \ \ \ \textcolor{comment}{/*\ invoke\ with\ initing\ */}}
-\DoxyCodeLine{00143\ \ \ \ \ \textcolor{keywordtype}{void}\ init\_allocations();}
-\DoxyCodeLine{00144\ \ \ \ \ \textcolor{keywordtype}{void}\ init\_connections();}
-\DoxyCodeLine{00145\ \ \ \ \ \textcolor{comment}{/*\ for\ most\ cases\ in\ IMX6ULL\ Alpha\ board,}}
-\DoxyCodeLine{00146\ \textcolor{comment}{\ \ \ \ \ *\ without\ ffmpeg\ hard\ decorder\ of\ video\ flow(as\ no\ chips\ support)}}
-\DoxyCodeLine{00147\ \textcolor{comment}{\ \ \ \ \ *\ things\ got\ fucking\ stuff\ (written\ in\ 2025.5.10\ :(\ \ )}}
-\DoxyCodeLine{00148\ \textcolor{comment}{\ \ \ \ \ */}}
-\DoxyCodeLine{00149\ \ \ \ \ \textcolor{keywordtype}{void}\ process\_sync(\textcolor{keyword}{const}\ CVImage\&\ current\_frame);}
-\DoxyCodeLine{00150\ \ \ \ \ \textcolor{keywordtype}{void}\ handle\_sync\_duration(qint64\ durations);}
-\DoxyCodeLine{00151\ \ \ \ \ \textcolor{keywordtype}{void}\ handle\_sync\_position(qint64\ position);}
-\DoxyCodeLine{00152\ \ \ \ \ \textcolor{keywordtype}{void}\ extract\_metainfo();}
-\DoxyCodeLine{00153\ \};}
+\DoxyCodeLine{00132\ \ \ \ \ \textcolor{keyword}{inline}\ qint64\ \mbox{\hyperlink{class_media_player_afb59edc9c4751c9413dafd3fe186e7dd}{get\_position}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ position;\ \}}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00139\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_media_player_a952cbd6944653ae6fbc19632ce310cf4}{resume}}();}
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00145\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_media_player_af20f090157c6f0be28027e1811e971f7}{pause}}();}
+\DoxyCodeLine{00146\ }
+\DoxyCodeLine{00153\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_media_player_aa0dae769e5109e3d0ef3082c77fda490}{close}}();}
 \DoxyCodeLine{00154\ }
-\DoxyCodeLine{00155\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MEDIAPLAYER\_H}}
+\DoxyCodeLine{00161\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_media_player_a58820e8ef9e293799d89142ae63a1dfd}{isPlaying}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00162\ }
+\DoxyCodeLine{00167\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_media_player_a242904c7815deb54b9dbc0802fa21cd9}{set\_accept\_missync\_msecond}}(}
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ msec}
+\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ =\ MediaPlayerPublicSettings::DEF\_ACCPET\_DELAY)\ \{}
+\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ mis\_sync\_seconds\ =\ msec;}
+\DoxyCodeLine{00171\ \ \ \ \ \}}
+\DoxyCodeLine{00172\ }
+\DoxyCodeLine{00177\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_media_player_a94f87027eb20c1403ed1d7997d0c6026}{set\_position}}(\textcolor{keyword}{const}\ qint64\ position);}
+\DoxyCodeLine{00178\ signals:}
+\DoxyCodeLine{00186\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_media_player_a64d0a37efe32f9aafacc3c36c87d7d70}{display\_frame}}(QImage\ image);}
+\DoxyCodeLine{00187\ \ \ \ \ \textcolor{comment}{/*\ volumn\ changed\ signals\ */}}
+\DoxyCodeLine{00188\ }
+\DoxyCodeLine{00194\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_media_player_af52939d5d44597eaac0c470afde9013a}{volumeChanged}}(\textcolor{keywordtype}{float}\ percentage);}
+\DoxyCodeLine{00195\ }
+\DoxyCodeLine{00201\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_media_player_a7286f125df88f8e36927a105bf28a7a3}{sourceOpened}}(\textcolor{keyword}{const}\ QString\ \mbox{\hyperlink{class_media_player_a347546ae8ca73768c13a732c7af402e5}{source}},\ }
+\DoxyCodeLine{00202\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_media_player_1_1_media_player_status}{MediaPlayer::MediaPlayerStatus}}\ status);\ }
+\DoxyCodeLine{00203\ }
+\DoxyCodeLine{00210\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_media_player_a5bc16c1717d3ed80e8bd7e0f174ca3b6}{videoAvailable}}(\textcolor{keywordtype}{bool}\ sourceAvailable,\ \textcolor{keyword}{const}\ QImage\ firstPage);}
+\DoxyCodeLine{00211\ }
+\DoxyCodeLine{00215\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_media_player_ac9e7476d72620b306e8bfa510ab23574}{mediaEnd}}();}
+\DoxyCodeLine{00220\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_media_player_a846e3dba84bab9f426810ffbd9c6d995}{durationChanged}}(qint64\ new\_durantion);}
+\DoxyCodeLine{00221\ }
+\DoxyCodeLine{00226\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_media_player_a60d5b0f74ed17ed61624314ca668e8cd}{positionChanged}}(qint64\ position);}
+\DoxyCodeLine{00227\ }
+\DoxyCodeLine{00232\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_media_player_a238fff7dd529efb01c3c003dea4adc7b}{metaDataAvailable}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_media_info}{MediaInfo}}\ info);}
+\DoxyCodeLine{00233\ }
+\DoxyCodeLine{00234\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00235\ \ \ \ \ \textcolor{comment}{/*\ QMediaPlayer\ is\ expected\ to\ use\ Audio\ */}}
+\DoxyCodeLine{00236\ \ \ \ \ QMediaPlayer*\ audioPlayer\ \{\ \textcolor{keyword}{nullptr}\ \};}
+\DoxyCodeLine{00237\ \ \ \ \ \textcolor{comment}{/*\ VideoPlayer\ is\ expected\ to\ display\ the\ video\ */}}
+\DoxyCodeLine{00238\ \ \ \ \ \mbox{\hyperlink{class_video_player}{VideoPlayer}}*\ videoPlayer\ \{\ \textcolor{keyword}{nullptr}\ \};}
+\DoxyCodeLine{00239\ \ \ \ \ \textcolor{comment}{/*\ for\ status\ holder\ */}}
+\DoxyCodeLine{00240\ \ \ \ \ \mbox{\hyperlink{struct_media_player_1_1_media_player_status}{MediaPlayerStatus}}\ media\_status;}
+\DoxyCodeLine{00241\ \ \ \ \ MediaPlayerPublicSettings::MisSyncDelay\_t}
+\DoxyCodeLine{00242\ \ \ \ \ \ \ \ \ mis\_sync\_seconds\ \{\ MediaPlayerPublicSettings::DEF\_ACCPET\_DELAY\ \};}
+\DoxyCodeLine{00243\ \ \ \ \ qint64\ durations\ \{\};}
+\DoxyCodeLine{00244\ \ \ \ \ qint64\ position\ \{\};}
+\DoxyCodeLine{00245\ }
+\DoxyCodeLine{00246\ \ \ \ \ \textcolor{comment}{/*\ functions\ */}}
+\DoxyCodeLine{00247\ }
+\DoxyCodeLine{00248\ \ \ \ \ \textcolor{comment}{/*\ invoke\ with\ initing\ */}}
+\DoxyCodeLine{00249\ \ \ \ \ \textcolor{keywordtype}{void}\ init\_allocations();}
+\DoxyCodeLine{00250\ \ \ \ \ \textcolor{keywordtype}{void}\ init\_connections();}
+\DoxyCodeLine{00251\ }
+\DoxyCodeLine{00259\ \ \ \ \ \textcolor{keywordtype}{void}\ process\_sync(\textcolor{keyword}{const}\ CVImage\&\ current\_frame);}
+\DoxyCodeLine{00260\ \ \ \ \ \textcolor{keywordtype}{void}\ handle\_sync\_duration(qint64\ durations);}
+\DoxyCodeLine{00261\ \ \ \ \ \textcolor{keywordtype}{void}\ handle\_sync\_position(qint64\ position);}
+\DoxyCodeLine{00262\ \ \ \ \ \textcolor{keywordtype}{void}\ extract\_metainfo();}
+\DoxyCodeLine{00263\ \};}
+\DoxyCodeLine{00264\ }
+\DoxyCodeLine{00265\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MEDIAPLAYER\_H}}
 
 \end{DoxyCode}

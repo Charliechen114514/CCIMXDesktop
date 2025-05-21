@@ -1,23 +1,113 @@
 \doxysection{Pesudo\+Led\+Controller Class Reference}
 \hypertarget{class_pesudo_led_controller}{}\label{class_pesudo_led_controller}\index{PesudoLedController@{PesudoLedController}}
+
+
+Simulated LED controller used when real hardware is not available.  
+
+
+
+
+{\ttfamily \#include $<$Pesudo\+Led\+Controller.\+h$>$}
+
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_pesudo_led_controller_a1da3b54fbb3eaba82f62657efdd2ac75}\label{class_pesudo_led_controller_a1da3b54fbb3eaba82f62657efdd2ac75} 
-void {\bfseries redirect\+To} (const std\+::string \&led\+Name)
-\item 
-\Hypertarget{class_pesudo_led_controller_a5744e609b0868d31892aeee8d1265ade}\label{class_pesudo_led_controller_a5744e609b0868d31892aeee8d1265ade} 
-std\+::string {\bfseries led\+Path} () const
-\item 
-\Hypertarget{class_pesudo_led_controller_a13399b120eb0aaaacc5fee84022b1b10}\label{class_pesudo_led_controller_a13399b120eb0aaaacc5fee84022b1b10} 
-void {\bfseries set\+Mode} (const Modes mode)
-\item 
-\Hypertarget{class_pesudo_led_controller_ad882fadec26b02cd7548ff75358da18b}\label{class_pesudo_led_controller_ad882fadec26b02cd7548ff75358da18b} 
-Modes {\bfseries get\+Mode} () const
-\item 
-\Hypertarget{class_pesudo_led_controller_ab9613cb18b02d47b23705611d00b6513}\label{class_pesudo_led_controller_ab9613cb18b02d47b23705611d00b6513} 
-bool {\bfseries process\+By\+Package} (const \mbox{\hyperlink{class_l_e_d_params_package}{LEDParams\+Package}} \texorpdfstring{$\ast$}{*}package)
-\end{DoxyCompactItemize}
+\Hypertarget{class_pesudo_led_controller_a8b3f82960fcd091efe522ac3a2ee3602}\label{class_pesudo_led_controller_a8b3f82960fcd091efe522ac3a2ee3602} 
+{\bfseries Pesudo\+Led\+Controller} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\Hypertarget{class_pesudo_led_controller_a447e8a9e2516f0d57c01cb119f927af4}\label{class_pesudo_led_controller_a447e8a9e2516f0d57c01cb119f927af4} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Pesudo\+Led\+Controller} ()=default
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pesudo_led_controller_a1da3b54fbb3eaba82f62657efdd2ac75}{redirect\+To}} (const std\+::string \&led\+Name)
+\begin{DoxyCompactList}\small\item\em Redirects to another LED (no-\/op in simulation). \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_pesudo_led_controller_a5744e609b0868d31892aeee8d1265ade}{led\+Path}} () const
+\begin{DoxyCompactList}\small\item\em Returns the (simulated) LED path. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pesudo_led_controller_a13399b120eb0aaaacc5fee84022b1b10}{set\+Mode}} (const Modes mode)
+\begin{DoxyCompactList}\small\item\em Sets the control mode. \end{DoxyCompactList}\item 
+Modes \mbox{\hyperlink{class_pesudo_led_controller_ad882fadec26b02cd7548ff75358da18b}{get\+Mode}} () const
+\begin{DoxyCompactList}\small\item\em Gets the current control mode. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_pesudo_led_controller_ab9613cb18b02d47b23705611d00b6513}{process\+By\+Package}} (const \mbox{\hyperlink{class_l_e_d_params_package}{LEDParams\+Package}} \texorpdfstring{$\ast$}{*}package)
+\begin{DoxyCompactList}\small\item\em Processes the parameter package (always succeeds in simulation). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Simulated LED controller used when real hardware is not available. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_pesudo_led_controller_ad882fadec26b02cd7548ff75358da18b}\index{PesudoLedController@{PesudoLedController}!getMode@{getMode}}
+\index{getMode@{getMode}!PesudoLedController@{PesudoLedController}}
+\doxysubsubsection{\texorpdfstring{getMode()}{getMode()}}
+{\footnotesize\ttfamily \label{class_pesudo_led_controller_ad882fadec26b02cd7548ff75358da18b} 
+Modes Pesudo\+Led\+Controller\+::get\+Mode (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the current control mode. 
+
+\begin{DoxyReturn}{Returns}
+Current mode. 
+\end{DoxyReturn}
+\Hypertarget{class_pesudo_led_controller_a5744e609b0868d31892aeee8d1265ade}\index{PesudoLedController@{PesudoLedController}!ledPath@{ledPath}}
+\index{ledPath@{ledPath}!PesudoLedController@{PesudoLedController}}
+\doxysubsubsection{\texorpdfstring{ledPath()}{ledPath()}}
+{\footnotesize\ttfamily \label{class_pesudo_led_controller_a5744e609b0868d31892aeee8d1265ade} 
+std\+::string Pesudo\+Led\+Controller\+::led\+Path (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the (simulated) LED path. 
+
+\begin{DoxyReturn}{Returns}
+Fake path string. 
+\end{DoxyReturn}
+\Hypertarget{class_pesudo_led_controller_ab9613cb18b02d47b23705611d00b6513}\index{PesudoLedController@{PesudoLedController}!processByPackage@{processByPackage}}
+\index{processByPackage@{processByPackage}!PesudoLedController@{PesudoLedController}}
+\doxysubsubsection{\texorpdfstring{processByPackage()}{processByPackage()}}
+{\footnotesize\ttfamily \label{class_pesudo_led_controller_ab9613cb18b02d47b23705611d00b6513} 
+bool Pesudo\+Led\+Controller\+::process\+By\+Package (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_l_e_d_params_package}{LEDParams\+Package}} \texorpdfstring{$\ast$}{*}}]{package}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Processes the parameter package (always succeeds in simulation). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em package} & LED parameter package. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Always true. 
+\end{DoxyReturn}
+\Hypertarget{class_pesudo_led_controller_a1da3b54fbb3eaba82f62657efdd2ac75}\index{PesudoLedController@{PesudoLedController}!redirectTo@{redirectTo}}
+\index{redirectTo@{redirectTo}!PesudoLedController@{PesudoLedController}}
+\doxysubsubsection{\texorpdfstring{redirectTo()}{redirectTo()}}
+{\footnotesize\ttfamily \label{class_pesudo_led_controller_a1da3b54fbb3eaba82f62657efdd2ac75} 
+void Pesudo\+Led\+Controller\+::redirect\+To (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{led\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Redirects to another LED (no-\/op in simulation). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em led\+Name} & LED identifier. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_pesudo_led_controller_a13399b120eb0aaaacc5fee84022b1b10}\index{PesudoLedController@{PesudoLedController}!setMode@{setMode}}
+\index{setMode@{setMode}!PesudoLedController@{PesudoLedController}}
+\doxysubsubsection{\texorpdfstring{setMode()}{setMode()}}
+{\footnotesize\ttfamily \label{class_pesudo_led_controller_a13399b120eb0aaaacc5fee84022b1b10} 
+void Pesudo\+Led\+Controller\+::set\+Mode (\begin{DoxyParamCaption}\item[{const Modes}]{mode}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the control mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & Control mode. \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

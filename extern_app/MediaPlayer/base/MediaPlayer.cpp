@@ -167,6 +167,10 @@ void MediaPlayer::init_connections() {
 			this, &MediaPlayer::handle_sync_position);
 }
 
+// process the sync issue
+// notes: in imx6ull, process image sessions
+// makes great low in Alpha Boards, so, we need to
+// escape frame to catch up the audio
 void MediaPlayer::process_sync(const CVImage& current_frame) {
 	// fetch the time for current frame
 	qint64 audio_time = audioPlayer->position();

@@ -15,21 +15,17 @@ Inheritance diagram for App\+Card\+Widget\+:\begin{figure}[H]
 \Hypertarget{class_app_card_widget_aee22c9e15e0cb276d33dd51058087204}\label{class_app_card_widget_aee22c9e15e0cb276d33dd51058087204} 
 {\bfseries App\+Card\+Widget} (\mbox{\hyperlink{class_desktop_toast}{Desktop\+Toast}} \texorpdfstring{$\ast$}{*}toast, QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
 \item 
-\Hypertarget{class_app_card_widget_a4a99ac0e10c319ef328cfa380ba56170}\label{class_app_card_widget_a4a99ac0e10c319ef328cfa380ba56170} 
-virtual void {\bfseries set\+Current\+Icon} (const QPixmap \&icons)
-\item 
-\Hypertarget{class_app_card_widget_a2b27698b6de79bb3b772b4bf92e31fc3}\label{class_app_card_widget_a2b27698b6de79bb3b772b4bf92e31fc3} 
-virtual void {\bfseries invoke\+\_\+pre\+Launch\+\_\+work} (void)=0
-\item 
-\Hypertarget{class_app_card_widget_aaa303f4e4011e02c6cf0c776ca093ac3}\label{class_app_card_widget_aaa303f4e4011e02c6cf0c776ca093ac3} 
-bool {\bfseries event\+Filter} (QObject \texorpdfstring{$\ast$}{*}watched, QEvent \texorpdfstring{$\ast$}{*}event) override
-\end{DoxyCompactItemize}
+virtual void \mbox{\hyperlink{class_app_card_widget_a4a99ac0e10c319ef328cfa380ba56170}{set\+Current\+Icon}} (const QPixmap \&icons)
+\begin{DoxyCompactList}\small\item\em set\+Current\+Icon\+: for app cards, if we wanna specify the icons, we can use this function to rewrite the concrete app icons settings behaviors \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_app_card_widget_a2b27698b6de79bb3b772b4bf92e31fc3}{invoke\+\_\+pre\+Launch\+\_\+work}} (void)=0
+\begin{DoxyCompactList}\small\item\em invoke\+\_\+pre\+Launch\+\_\+work is the main function to invoke the prelaunching issue \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_app_card_widget_aaa303f4e4011e02c6cf0c776ca093ac3}{event\+Filter}} (QObject \texorpdfstring{$\ast$}{*}watched, QEvent \texorpdfstring{$\ast$}{*}event) override
+\begin{DoxyCompactList}\small\item\em defines how to listen to the user interactive events \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_app_card_widget_afabbff33f9e08d33549d0a8ff026ef30}\label{class_app_card_widget_afabbff33f9e08d33549d0a8ff026ef30} 
-virtual void {\bfseries post\+App\+Card\+Widget} ()=0
-\end{DoxyCompactItemize}
+virtual void \mbox{\hyperlink{class_app_card_widget_afabbff33f9e08d33549d0a8ff026ef30}{post\+App\+Card\+Widget}} ()=0
+\begin{DoxyCompactList}\small\item\em post\+App\+Card\+Widget, sometimes, we can use this to post the messages to the binding\+\_\+toast \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -39,6 +35,75 @@ virtual void {\bfseries post\+App\+Card\+Widget} ()=0
 \Hypertarget{class_app_card_widget_affacf5393eb2f3fcdb94b39c894c188e}\label{class_app_card_widget_affacf5393eb2f3fcdb94b39c894c188e} 
 Ui\+::\+App\+Card\+Widget \texorpdfstring{$\ast$}{*} {\bfseries ui}
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_app_card_widget_aaa303f4e4011e02c6cf0c776ca093ac3}\index{AppCardWidget@{AppCardWidget}!eventFilter@{eventFilter}}
+\index{eventFilter@{eventFilter}!AppCardWidget@{AppCardWidget}}
+\doxysubsubsection{\texorpdfstring{eventFilter()}{eventFilter()}}
+{\footnotesize\ttfamily \label{class_app_card_widget_aaa303f4e4011e02c6cf0c776ca093ac3} 
+bool App\+Card\+Widget\+::event\+Filter (\begin{DoxyParamCaption}\item[{QObject \texorpdfstring{$\ast$}{*}}]{watched}{, }\item[{QEvent \texorpdfstring{$\ast$}{*}}]{event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+defines how to listen to the user interactive events 
+
+
+\begin{DoxyParams}{Parameters}
+{\em watched} & which objects? \\
+\hline
+{\em event} & what event? \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if handles, return true 
+\end{DoxyReturn}
+\Hypertarget{class_app_card_widget_a2b27698b6de79bb3b772b4bf92e31fc3}\index{AppCardWidget@{AppCardWidget}!invoke\_preLaunch\_work@{invoke\_preLaunch\_work}}
+\index{invoke\_preLaunch\_work@{invoke\_preLaunch\_work}!AppCardWidget@{AppCardWidget}}
+\doxysubsubsection{\texorpdfstring{invoke\_preLaunch\_work()}{invoke\_preLaunch\_work()}}
+{\footnotesize\ttfamily \label{class_app_card_widget_a2b27698b6de79bb3b772b4bf92e31fc3} 
+virtual void App\+Card\+Widget\+::invoke\+\_\+pre\+Launch\+\_\+work (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+invoke\+\_\+pre\+Launch\+\_\+work is the main function to invoke the prelaunching issue 
+
+\begin{DoxyNote}{Note}
+when system starts, app cards are supposed to do their actions and if not, then do nothing 
+\end{DoxyNote}
+
+
+Implemented in \mbox{\hyperlink{class_local_weather_card_a1bd3f52bf969c5d3747f6934da123fef}{Local\+Weather\+Card}}, and \mbox{\hyperlink{class_net_card_gadget_a82d97e27218187db562c8d02bb5866d2}{Net\+Card\+Gadget}}.
+
+\Hypertarget{class_app_card_widget_afabbff33f9e08d33549d0a8ff026ef30}\index{AppCardWidget@{AppCardWidget}!postAppCardWidget@{postAppCardWidget}}
+\index{postAppCardWidget@{postAppCardWidget}!AppCardWidget@{AppCardWidget}}
+\doxysubsubsection{\texorpdfstring{postAppCardWidget()}{postAppCardWidget()}}
+{\footnotesize\ttfamily \label{class_app_card_widget_afabbff33f9e08d33549d0a8ff026ef30} 
+virtual void App\+Card\+Widget\+::post\+App\+Card\+Widget (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+post\+App\+Card\+Widget, sometimes, we can use this to post the messages to the binding\+\_\+toast 
+
+
+
+Implemented in \mbox{\hyperlink{class_local_weather_card_a6cac71c7f8be8719da4ee37a0c163363}{Local\+Weather\+Card}}, and \mbox{\hyperlink{class_net_card_gadget_a0b72db3d05b5e6bd02705428df3f0ba5}{Net\+Card\+Gadget}}.
+
+\Hypertarget{class_app_card_widget_a4a99ac0e10c319ef328cfa380ba56170}\index{AppCardWidget@{AppCardWidget}!setCurrentIcon@{setCurrentIcon}}
+\index{setCurrentIcon@{setCurrentIcon}!AppCardWidget@{AppCardWidget}}
+\doxysubsubsection{\texorpdfstring{setCurrentIcon()}{setCurrentIcon()}}
+{\footnotesize\ttfamily \label{class_app_card_widget_a4a99ac0e10c319ef328cfa380ba56170} 
+void App\+Card\+Widget\+::set\+Current\+Icon (\begin{DoxyParamCaption}\item[{const QPixmap \&}]{icons}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+set\+Current\+Icon\+: for app cards, if we wanna specify the icons, we can use this function to rewrite the concrete app icons settings behaviors 
+
+
+\begin{DoxyParams}{Parameters}
+{\em icons} & indicates the raw pixmaps we wanna using as a pixmaps \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

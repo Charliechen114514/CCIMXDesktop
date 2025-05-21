@@ -6,6 +6,10 @@
 #include <QtClassHelperMacros>
 #include <windows.h>
 
+/**
+ * @brief The Win32PlatformMemoryInfoDriver class
+ * provides the memory info driver
+ */
 class Win32PlatformMemoryInfoDriver : public CCIMX_AbstractMemoryInfoDriver {
 public:
 	Win32PlatformMemoryInfoDriver() = default;
@@ -13,6 +17,10 @@ public:
 	void factory(MemoryInfoFetcher::MemoryStat& stat) override;
 };
 
+/**
+ * @brief The Win32PlatformCPUStateDriver class
+ * provides the CPU state driver
+ */
 class Win32PlatformCPUStateDriver : public CCIMX_AbstractCPUStateDriver {
 public:
 	Win32PlatformCPUStateDriver() = default;
@@ -20,6 +28,10 @@ public:
 	void factory(CPUStateFetcher::CPUState& stat) override;
 };
 
+/**
+ * @brief The Win32PlatformProcessBroswerDriver class
+ * provides the process broswer driver
+ */
 class Win32PlatformProcessBroswerDriver : public CCIMX_AbstractProcessBroswerDriver {
 public:
 	Win32PlatformProcessBroswerDriver() = default;

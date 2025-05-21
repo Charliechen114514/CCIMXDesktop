@@ -1,5 +1,14 @@
 \doxysection{Net\+Card\+Gadget Class Reference}
 \hypertarget{class_net_card_gadget}{}\label{class_net_card_gadget}\index{NetCardGadget@{NetCardGadget}}
+
+
+The \doxylink{class_net_card_gadget}{Net\+Card\+Gadget} class is a netcards to test if the machine is connecting to the internet.  
+
+
+
+
+{\ttfamily \#include $<$netcardgadget.\+h$>$}
+
 Inheritance diagram for Net\+Card\+Gadget\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,13 +18,12 @@ Inheritance diagram for Net\+Card\+Gadget\+:\begin{figure}[H]
 \doxysubsubsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_net_card_gadget_a0f7e947e72994b97591bb3bc9bb35268}\label{class_net_card_gadget_a0f7e947e72994b97591bb3bc9bb35268} 
-enum class {\bfseries Net\+Work\+State} \{ {\bfseries UNKNOWN}
-, {\bfseries DISCONNECTED}
-, {\bfseries LOCAL}
-, {\bfseries ONLINE}
+enum class \mbox{\hyperlink{class_net_card_gadget_a0f7e947e72994b97591bb3bc9bb35268}{Net\+Work\+State}} \{ \mbox{\hyperlink{class_net_card_gadget_a0f7e947e72994b97591bb3bc9bb35268a696b031073e74bf2cb98e5ef201d4aa3}{UNKNOWN}}
+, \mbox{\hyperlink{class_net_card_gadget_a0f7e947e72994b97591bb3bc9bb35268a99c8ce56e7ab246445d3b134724428f3}{DISCONNECTED}}
+, \mbox{\hyperlink{class_net_card_gadget_a0f7e947e72994b97591bb3bc9bb35268a54b4c4075463b2e02cd69f5cd139b5b2}{LOCAL}}
+, \mbox{\hyperlink{class_net_card_gadget_a0f7e947e72994b97591bb3bc9bb35268a86d1debf3f3aa9b77c0d976a4fa33862}{ONLINE}}
  \}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The \doxylink{class_net_card_gadget_a0f7e947e72994b97591bb3bc9bb35268}{Net\+Work\+State} enum enumerate the network state. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -26,7 +34,7 @@ enum class {\bfseries Net\+Work\+State} \{ {\bfseries UNKNOWN}
 {\bfseries Net\+Card\+Gadget} (\mbox{\hyperlink{class_desktop_toast}{Desktop\+Toast}} \texorpdfstring{$\ast$}{*}toast, QWidget \texorpdfstring{$\ast$}{*}parent)
 \item 
 void \mbox{\hyperlink{class_net_card_gadget_a82d97e27218187db562c8d02bb5866d2}{invoke\+\_\+pre\+Launch\+\_\+work}} () override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em invoke\+\_\+pre\+Launch\+\_\+work is the main function to invoke the prelaunching issue \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_app_card_widget}{App\+Card\+Widget}}}
 \begin{DoxyCompactItemize}
 \item 
@@ -34,15 +42,15 @@ void \mbox{\hyperlink{class_net_card_gadget_a82d97e27218187db562c8d02bb5866d2}{i
 \item 
 {\bfseries App\+Card\+Widget} (\mbox{\hyperlink{class_desktop_toast}{Desktop\+Toast}} \texorpdfstring{$\ast$}{*}toast, QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
 \item 
-virtual void {\bfseries set\+Current\+Icon} (const QPixmap \&icons)
-\item 
-bool {\bfseries event\+Filter} (QObject \texorpdfstring{$\ast$}{*}watched, QEvent \texorpdfstring{$\ast$}{*}event) override
-\end{DoxyCompactItemize}
+virtual void \mbox{\hyperlink{class_app_card_widget_a4a99ac0e10c319ef328cfa380ba56170}{set\+Current\+Icon}} (const QPixmap \&icons)
+\begin{DoxyCompactList}\small\item\em set\+Current\+Icon\+: for app cards, if we wanna specify the icons, we can use this function to rewrite the concrete app icons settings behaviors \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_app_card_widget_aaa303f4e4011e02c6cf0c776ca093ac3}{event\+Filter}} (QObject \texorpdfstring{$\ast$}{*}watched, QEvent \texorpdfstring{$\ast$}{*}event) override
+\begin{DoxyCompactList}\small\item\em defines how to listen to the user interactive events \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_net_card_gadget_a0b72db3d05b5e6bd02705428df3f0ba5}{post\+App\+Card\+Widget}} () override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em post\+App\+Card\+Widget, sometimes, we can use this to post the messages to the binding\+\_\+toast \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Additional Inherited Members}
 \doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_app_card_widget}{App\+Card\+Widget}}}
 \begin{DoxyCompactItemize}
@@ -51,6 +59,40 @@ void \mbox{\hyperlink{class_net_card_gadget_a0b72db3d05b5e6bd02705428df3f0ba5}{p
 \item 
 Ui\+::\+App\+Card\+Widget \texorpdfstring{$\ast$}{*} {\bfseries ui}
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_net_card_gadget}{Net\+Card\+Gadget} class is a netcards to test if the machine is connecting to the internet. 
+
+\doxysubsection{Member Enumeration Documentation}
+\Hypertarget{class_net_card_gadget_a0f7e947e72994b97591bb3bc9bb35268}\index{NetCardGadget@{NetCardGadget}!NetWorkState@{NetWorkState}}
+\index{NetWorkState@{NetWorkState}!NetCardGadget@{NetCardGadget}}
+\doxysubsubsection{\texorpdfstring{NetWorkState}{NetWorkState}}
+{\footnotesize\ttfamily \label{class_net_card_gadget_a0f7e947e72994b97591bb3bc9bb35268} 
+enum class \mbox{\hyperlink{class_net_card_gadget_a0f7e947e72994b97591bb3bc9bb35268}{Net\+Card\+Gadget\+::\+Net\+Work\+State}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+The \doxylink{class_net_card_gadget_a0f7e947e72994b97591bb3bc9bb35268}{Net\+Work\+State} enum enumerate the network state. 
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UNKNOWN@{UNKNOWN}!NetCardGadget@{NetCardGadget}}\index{NetCardGadget@{NetCardGadget}!UNKNOWN@{UNKNOWN}}}\Hypertarget{class_net_card_gadget_a0f7e947e72994b97591bb3bc9bb35268a696b031073e74bf2cb98e5ef201d4aa3}\label{class_net_card_gadget_a0f7e947e72994b97591bb3bc9bb35268a696b031073e74bf2cb98e5ef201d4aa3} 
+UNKNOWN&Unknown state, impossible for... current now? \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DISCONNECTED@{DISCONNECTED}!NetCardGadget@{NetCardGadget}}\index{NetCardGadget@{NetCardGadget}!DISCONNECTED@{DISCONNECTED}}}\Hypertarget{class_net_card_gadget_a0f7e947e72994b97591bb3bc9bb35268a99c8ce56e7ab246445d3b134724428f3}\label{class_net_card_gadget_a0f7e947e72994b97591bb3bc9bb35268a99c8ce56e7ab246445d3b134724428f3} 
+DISCONNECTED&Machine is disconnected, nether locally nor internetly. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LOCAL@{LOCAL}!NetCardGadget@{NetCardGadget}}\index{NetCardGadget@{NetCardGadget}!LOCAL@{LOCAL}}}\Hypertarget{class_net_card_gadget_a0f7e947e72994b97591bb3bc9bb35268a54b4c4075463b2e02cd69f5cd139b5b2}\label{class_net_card_gadget_a0f7e947e72994b97591bb3bc9bb35268a54b4c4075463b2e02cd69f5cd139b5b2} 
+LOCAL&Machine is only available to local network, but is limited to access the internet. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ONLINE@{ONLINE}!NetCardGadget@{NetCardGadget}}\index{NetCardGadget@{NetCardGadget}!ONLINE@{ONLINE}}}\Hypertarget{class_net_card_gadget_a0f7e947e72994b97591bb3bc9bb35268a86d1debf3f3aa9b77c0d976a4fa33862}\label{class_net_card_gadget_a0f7e947e72994b97591bb3bc9bb35268a86d1debf3f3aa9b77c0d976a4fa33862} 
+ONLINE&Machine is online, available to access the internet. \\
+\hline
+
+\end{DoxyEnumFields}
 
 
 \doxysubsection{Member Function Documentation}
@@ -62,7 +104,14 @@ void Net\+Card\+Gadget\+::invoke\+\_\+pre\+Launch\+\_\+work (\begin{DoxyParamCap
 
 
 
-Implements \mbox{\hyperlink{class_app_card_widget}{App\+Card\+Widget}}.
+invoke\+\_\+pre\+Launch\+\_\+work is the main function to invoke the prelaunching issue 
+
+\begin{DoxyNote}{Note}
+when system starts, app cards are supposed to do their actions and if not, then do nothing 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{class_app_card_widget_a2b27698b6de79bb3b772b4bf92e31fc3}{App\+Card\+Widget}}.
 
 \Hypertarget{class_net_card_gadget_a0b72db3d05b5e6bd02705428df3f0ba5}\index{NetCardGadget@{NetCardGadget}!postAppCardWidget@{postAppCardWidget}}
 \index{postAppCardWidget@{postAppCardWidget}!NetCardGadget@{NetCardGadget}}
@@ -72,7 +121,11 @@ void Net\+Card\+Gadget\+::post\+App\+Card\+Widget (\begin{DoxyParamCaption}{}{}\
 
 
 
-Implements \mbox{\hyperlink{class_app_card_widget}{App\+Card\+Widget}}.
+post\+App\+Card\+Widget, sometimes, we can use this to post the messages to the binding\+\_\+toast 
+
+
+
+Implements \mbox{\hyperlink{class_app_card_widget_afabbff33f9e08d33549d0a8ff026ef30}{App\+Card\+Widget}}.
 
 
 

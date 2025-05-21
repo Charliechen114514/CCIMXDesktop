@@ -108,6 +108,11 @@ $(function(){initNavTree('class_i_c_m20608.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">ICM20608 Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Interface class to communicate with <a class="el" href="class_i_c_m20608.html" title="Interface class to communicate with ICM20608 sensor device.">ICM20608</a> sensor device.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="extern__app_2professionals_2boardlevel__application_2_sports_health_2_adapter_2icm20608__adapter_8h_source.html">icm20608_adapter.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -122,17 +127,20 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aae4d486afa4f07805fab7b0453864744"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab49c1e7e37a218f50da5395354a52388" id="r_ab49c1e7e37a218f50da5395354a52388"><td class="memItemLeft" align="right" valign="top"><a id="ab49c1e7e37a218f50da5395354a52388" name="ab49c1e7e37a218f50da5395354a52388"></a>
 <a class="el" href="class_i_c_m20608.html">ICM20608</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_i_c_m20608.html">ICM20608</a> &amp;)=delete</td></tr>
+<tr class="memdesc:ab49c1e7e37a218f50da5395354a52388"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable copy assignment and copy constructor. <br /></td></tr>
 <tr class="separator:ab49c1e7e37a218f50da5395354a52388"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0825bb348cf98f931b85e46a28d08d9" id="r_ac0825bb348cf98f931b85e46a28d08d9"><td class="memItemLeft" align="right" valign="top"><a id="ac0825bb348cf98f931b85e46a28d08d9" name="ac0825bb348cf98f931b85e46a28d08d9"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>ICM20608</b> (const <a class="el" href="class_i_c_m20608.html">ICM20608</a> &amp;)=delete</td></tr>
 <tr class="separator:ac0825bb348cf98f931b85e46a28d08d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae4d486afa4f07805fab7b0453864744" id="r_aae4d486afa4f07805fab7b0453864744"><td class="memItemLeft" align="right" valign="top"><a id="aae4d486afa4f07805fab7b0453864744" name="aae4d486afa4f07805fab7b0453864744"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>get_package_sync</b> (<a class="el" href="struct_i_c_m20608_app_data.html">ICM20608AppData</a> &amp;empty_data_pack)</td></tr>
+<tr class="memitem:aae4d486afa4f07805fab7b0453864744" id="r_aae4d486afa4f07805fab7b0453864744"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae4d486afa4f07805fab7b0453864744">get_package_sync</a> (<a class="el" href="struct_i_c_m20608_app_data.html">ICM20608AppData</a> &amp;empty_data_pack)</td></tr>
+<tr class="memdesc:aae4d486afa4f07805fab7b0453864744"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronously get sensor data package.  <br /></td></tr>
 <tr class="separator:aae4d486afa4f07805fab7b0453864744"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Interface class to communicate with <a class="el" href="class_i_c_m20608.html" title="Interface class to communicate with ICM20608 sensor device.">ICM20608</a> sensor device. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aae4d486afa4f07805fab7b0453864744" name="aae4d486afa4f07805fab7b0453864744"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae4d486afa4f07805fab7b0453864744">&#9670;&#160;</a></span>get_package_sync()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aae4d486afa4f07805fab7b0453864744">&#9670;&#160;</a></span>get_package_sync() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -154,6 +162,32 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>get_package_sync</b> 
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the data is valid(session request success equavalent) </dd></dl>
+
+</div>
+</div>
+<a id="aae4d486afa4f07805fab7b0453864744" name="aae4d486afa4f07805fab7b0453864744"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae4d486afa4f07805fab7b0453864744">&#9670;&#160;</a></span>get_package_sync() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ICM20608::get_package_sync </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_i_c_m20608_app_data.html">ICM20608AppData</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>empty_data_pack</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Synchronously get sensor data package. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">empty_data_pack</td><td>Reference to data struct to fill. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if data is valid. </dd></dl>
 
 </div>
 </div>

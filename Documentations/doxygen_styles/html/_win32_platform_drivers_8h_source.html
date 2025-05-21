@@ -112,37 +112,37 @@ $(function(){initNavTree('_win32_platform_drivers_8h_source.html',''); initResiz
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;Core/ProcessBroswer.h&quot;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;QtClassHelperMacros&gt;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;windows.h&gt;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="foldopen" id="foldopen00009" data-start="{" data-end="};">
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_win32_platform_memory_info_driver.html">    9</a></span><span class="keyword">class </span>Win32PlatformMemoryInfoDriver : <span class="keyword">public</span> CCIMX_AbstractMemoryInfoDriver {</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    Win32PlatformMemoryInfoDriver() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    Q_DISABLE_COPY(Win32PlatformMemoryInfoDriver);</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keywordtype">void</span> factory(<a class="code hl_struct" href="struct_memory_info_fetcher_1_1_memory_stat.html">MemoryInfoFetcher::MemoryStat</a>&amp; stat) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>};</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span></div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="};">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_win32_platform_memory_info_driver.html">   13</a></span><span class="keyword">class </span>Win32PlatformMemoryInfoDriver : <span class="keyword">public</span> CCIMX_AbstractMemoryInfoDriver {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    Win32PlatformMemoryInfoDriver() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    Q_DISABLE_COPY(Win32PlatformMemoryInfoDriver);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordtype">void</span> factory(<a class="code hl_struct" href="struct_memory_info_fetcher_1_1_memory_stat.html">MemoryInfoFetcher::MemoryStat</a>&amp; stat) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>};</div>
 </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="foldopen" id="foldopen00016" data-start="{" data-end="};">
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_win32_platform_c_p_u_state_driver.html">   16</a></span><span class="keyword">class </span>Win32PlatformCPUStateDriver : <span class="keyword">public</span> CCIMX_AbstractCPUStateDriver {</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    Win32PlatformCPUStateDriver() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    Q_DISABLE_COPY(Win32PlatformCPUStateDriver);</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">void</span> factory(<a class="code hl_struct" href="struct_c_p_u_state_fetcher_1_1_c_p_u_state.html">CPUStateFetcher::CPUState</a>&amp; stat) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>};</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span></div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="};">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_win32_platform_c_p_u_state_driver.html">   24</a></span><span class="keyword">class </span>Win32PlatformCPUStateDriver : <span class="keyword">public</span> CCIMX_AbstractCPUStateDriver {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    Win32PlatformCPUStateDriver() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    Q_DISABLE_COPY(Win32PlatformCPUStateDriver);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">void</span> factory(<a class="code hl_struct" href="struct_c_p_u_state_fetcher_1_1_c_p_u_state.html">CPUStateFetcher::CPUState</a>&amp; stat) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>};</div>
 </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="foldopen" id="foldopen00023" data-start="{" data-end="};">
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_win32_platform_process_broswer_driver.html">   23</a></span><span class="keyword">class </span>Win32PlatformProcessBroswerDriver : <span class="keyword">public</span> CCIMX_AbstractProcessBroswerDriver {</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    Win32PlatformProcessBroswerDriver() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    Q_DISABLE_COPY(Win32PlatformProcessBroswerDriver);</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordtype">void</span> factory(QList&lt;ProcessBroswer::ProcessInfo&gt;&amp; lists) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>};</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span></div>
+<div class="foldopen" id="foldopen00035" data-start="{" data-end="};">
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_win32_platform_process_broswer_driver.html">   35</a></span><span class="keyword">class </span>Win32PlatformProcessBroswerDriver : <span class="keyword">public</span> CCIMX_AbstractProcessBroswerDriver {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    Win32PlatformProcessBroswerDriver() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    Q_DISABLE_COPY(Win32PlatformProcessBroswerDriver);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordtype">void</span> factory(QList&lt;ProcessBroswer::ProcessInfo&gt;&amp; lists) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>};</div>
 </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#endif </span><span class="comment">// WIN32PLATFORMDRIVERS_H</span></div>
-<div class="ttc" id="astruct_c_p_u_state_fetcher_1_1_c_p_u_state_html"><div class="ttname"><a href="struct_c_p_u_state_fetcher_1_1_c_p_u_state.html">CPUStateFetcher::CPUState</a></div><div class="ttdef"><b>Definition</b> CPUStateFetcher.h:13</div></div>
-<div class="ttc" id="astruct_memory_info_fetcher_1_1_memory_stat_html"><div class="ttname"><a href="struct_memory_info_fetcher_1_1_memory_stat.html">MemoryInfoFetcher::MemoryStat</a></div><div class="ttdef"><b>Definition</b> MemoryInfoFetcher.h:18</div></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#endif </span><span class="comment">// WIN32PLATFORMDRIVERS_H</span></div>
+<div class="ttc" id="astruct_c_p_u_state_fetcher_1_1_c_p_u_state_html"><div class="ttname"><a href="struct_c_p_u_state_fetcher_1_1_c_p_u_state.html">CPUStateFetcher::CPUState</a></div><div class="ttdoc">The CPUState class provides the cpu state infos.</div><div class="ttdef"><b>Definition</b> CPUStateFetcher.h:21</div></div>
+<div class="ttc" id="astruct_memory_info_fetcher_1_1_memory_stat_html"><div class="ttname"><a href="struct_memory_info_fetcher_1_1_memory_stat.html">MemoryInfoFetcher::MemoryStat</a></div><div class="ttdoc">The MemoryStat class provides the memory information.</div><div class="ttdef"><b>Definition</b> MemoryInfoFetcher.h:24</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

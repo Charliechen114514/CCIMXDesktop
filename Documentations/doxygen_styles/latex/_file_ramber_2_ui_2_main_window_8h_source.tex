@@ -21,33 +21,33 @@
 \DoxyCodeLine{00017\ }
 \DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
 \DoxyCodeLine{00019\ \ \ \ \ MainWindow(QWidget*\ parent\ =\ \textcolor{keyword}{nullptr});}
-\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ try\_goto\_parent\_view();}
-\DoxyCodeLine{00021\ \ \ \ \ \textcolor{comment}{/*\ Fuck\ Windows\ */}}
-\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ switch\_to\_global\_root();}
-\DoxyCodeLine{00023\ \ \ \ \ \string~MainWindow();}
-\DoxyCodeLine{00024\ }
-\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{enum}\ InfoIndex\ \{}
-\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ NameProviders,}
-\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ CountProviders,}
-\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ DirSizeProviders,}
-\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ TypeInfoProviders,}
-\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ InfoIndexMax}
-\DoxyCodeLine{00031\ \ \ \ \ \};}
-\DoxyCodeLine{00032\ }
-\DoxyCodeLine{00033\ \textcolor{keyword}{private}\ slots:}
-\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ processing\_switch\_double\_click(\textcolor{keyword}{const}\ QModelIndex\&\ index);}
-\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ processing\_filecheck\_issue(\textcolor{keyword}{const}\ QModelIndex\&\ index);}
-\DoxyCodeLine{00036\ }
-\DoxyCodeLine{00037\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ setupFileModels();}
-\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ setupUi();}
-\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ setup\_connections();}
-\DoxyCodeLine{00041\ \ \ \ \ QList<FileInfoProvider*>\ providers;}
-\DoxyCodeLine{00042\ \ \ \ \ Ui::MainWindow*\ ui;}
-\DoxyCodeLine{00043\ \ \ \ \ \mbox{\hyperlink{class_c_c_i_m_x_file_system_model}{CCIMXFileSystemModel}}*\ file\_model\ \{\ \textcolor{keyword}{nullptr}\ \};}
-\DoxyCodeLine{00044\ \ \ \ \ QComboBox*\ box\ \{\ \textcolor{keyword}{nullptr}\ \};}
-\DoxyCodeLine{00045\ \ \ \ \ QLabel*\ pwd\_label\ \{\ \textcolor{keyword}{nullptr}\ \};}
-\DoxyCodeLine{00046\ \};}
-\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MAINWINDOW\_H}}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a7d4e7882ab0a7c5b5a3c4a59fb73fc21}{try\_goto\_parent\_view}}();}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_abc79266f6f099786471c01e0b8916fce}{switch\_to\_global\_root}}();}
+\DoxyCodeLine{00030\ \ \ \ \ \string~MainWindow();}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{enum}\ \mbox{\hyperlink{class_main_window_ad766a05d8996b153d8328819f3fef928}{InfoIndex}}\ \{}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_main_window_ad766a05d8996b153d8328819f3fef928a09675afd3cc4a09f7b50ba42fc455f9f}{NameProviders}},\ }
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_main_window_ad766a05d8996b153d8328819f3fef928a18b76fae0ca4ada44626178c4e0a2f23}{CountProviders}},\ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_main_window_ad766a05d8996b153d8328819f3fef928ab04f9653ea917c89c34061a3ba93d4b8}{DirSizeProviders}},\ }
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_main_window_ad766a05d8996b153d8328819f3fef928a7820a0e650c977902ca389fb734cb3ab}{TypeInfoProviders}},\ }
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_main_window_ad766a05d8996b153d8328819f3fef928aae9b08f7c72513fb6e687f24948be53c}{InfoIndexMax}}\ }
+\DoxyCodeLine{00041\ \ \ \ \ \};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ processing\_switch\_double\_click(\textcolor{keyword}{const}\ QModelIndex\&\ index);}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ processing\_filecheck\_issue(\textcolor{keyword}{const}\ QModelIndex\&\ index);}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ setupFileModels();}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{void}\ setupUi();}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{void}\ setup\_connections();}
+\DoxyCodeLine{00062\ \ \ \ \ QList<FileInfoProvider*>\ providers;}
+\DoxyCodeLine{00063\ \ \ \ \ Ui::MainWindow*\ ui;}
+\DoxyCodeLine{00064\ \ \ \ \ \mbox{\hyperlink{class_c_c_i_m_x_file_system_model}{CCIMXFileSystemModel}}*\ file\_model\ \{\ \textcolor{keyword}{nullptr}\ \};}
+\DoxyCodeLine{00065\ \ \ \ \ QComboBox*\ box\ \{\ \textcolor{keyword}{nullptr}\ \};}
+\DoxyCodeLine{00066\ \ \ \ \ QLabel*\ pwd\_label\ \{\ \textcolor{keyword}{nullptr}\ \};}
+\DoxyCodeLine{00067\ \};}
+\DoxyCodeLine{00068\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MAINWINDOW\_H}}
 
 \end{DoxyCode}

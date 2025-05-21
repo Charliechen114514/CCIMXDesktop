@@ -9,22 +9,24 @@ class DownDockWidget;
 
 class AppWidget;
 
-class DownDockWidget : public QWidget
-{
-    Q_OBJECT
+class DownDockWidget : public QWidget {
+	Q_OBJECT
 
 public:
-    explicit DownDockWidget(QWidget *parent = nullptr);
+	explicit DownDockWidget(QWidget* parent = nullptr);
+	/**
+	 * @brief set_dock_apps set the dock apps waiting for shows
+	 * @param apps
+	 */
+	void set_dock_apps(const QList<AppWidget*>& apps);
 
-    void     set_dock_apps(const QList<AppWidget*>& apps);
-
-    ~DownDockWidget();
+	~DownDockWidget();
 
 private:
-    Ui::DownDockWidget*         ui;
-    QList<AppWidget*>           dock_apps;
-    QWidget*                    internal_widget;
-    void                        replace_docks();
+	Ui::DownDockWidget* ui;
+	QList<AppWidget*> dock_apps;
+	QWidget* internal_widget;
+	void replace_docks();
 };
 
 #endif // DOWNDOCKWIDGET_H

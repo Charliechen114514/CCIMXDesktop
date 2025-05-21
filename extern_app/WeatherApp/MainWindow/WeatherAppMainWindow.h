@@ -11,6 +11,10 @@ class WeatherAppMainWindow;
 }
 QT_END_NAMESPACE
 
+/**
+ * @brief The WeatherAppMainWindow class
+ * The WeatherAppMainWindow class provides the weather app main window
+ */
 class WeatherAppMainWindow : public QMainWindow {
 	Q_OBJECT
 
@@ -19,9 +23,17 @@ public:
 	WeatherAppMainWindow(QWidget* parent = nullptr);
 	~WeatherAppMainWindow();
 
+	/**
+	 * @brief refresh_post_request
+	 * This function is used to refresh the post request
+	 */
 	void refresh_post_request();
 
 private slots:
+	/**
+	 * @brief makeup_errors make up the error from the reply
+	 * @param reply
+	 */
 	void makeup_errors(QNetworkReply* reply);
 
 private:

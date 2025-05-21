@@ -28,6 +28,7 @@ var hierarchy =
     [ "CVImage", "class_c_v_image.html", null ],
     [ "CVImageImpl", "class_c_v_image_impl.html", [
       [ "CVImageOpencvImpl", "class_c_v_image_opencv_impl.html", null ],
+      [ "CVImageOpencvImpl", "class_c_v_image_opencv_impl.html", null ],
       [ "CVImageOpencvImpl", "class_c_v_image_opencv_impl.html", null ]
     ] ],
     [ "CVImageImplFactory", "class_c_v_image_impl_factory.html", null ],
@@ -78,7 +79,6 @@ var hierarchy =
       [ "MainWindow", "class_main_window.html", null ],
       [ "MainWindow", "class_main_window.html", null ],
       [ "MainWindow", "class_main_window.html", null ],
-      [ "MainWindow", "class_main_window.html", null ],
       [ "MediaInfoWindow", "class_media_info_window.html", null ],
       [ "MediaPlayerWindow", "class_media_player_window.html", null ],
       [ "MetaInfoWindow", "class_meta_info_window.html", null ],
@@ -107,6 +107,7 @@ var hierarchy =
       [ "StackpageSwitcherAnimation", "struct_stackpage_switcher_animation.html", null ],
       [ "VideoPlayer", "class_video_player.html", null ],
       [ "VideoPlayer", "class_video_player.html", null ],
+      [ "VideoPlayer", "class_video_player.html", null ],
       [ "WallPaperAnimationHandler", "struct_wall_paper_animation_handler.html", null ],
       [ "WeatherRequest", "class_weather_request.html", [
         [ "AppWeatherRequest", "class_app_weather_request.html", null ]
@@ -131,7 +132,6 @@ var hierarchy =
       [ "DesktopToast", "class_desktop_toast.html", null ],
       [ "DesktopToast", "class_desktop_toast.html", null ],
       [ "DesktopToast", "class_desktop_toast.html", null ],
-      [ "DesktopToast", "class_desktop_toast.html", null ],
       [ "DigitalTimeWidget", "class_digital_time_widget.html", null ],
       [ "DiskMusic", "class_disk_music.html", null ],
       [ "DownDockWidget", "class_down_dock_widget.html", null ],
@@ -149,6 +149,7 @@ var hierarchy =
       [ "WeatherDailyCard", "class_weather_daily_card.html", null ]
     ] ],
     [ "VideoPlayerImpl", "class_video_player_impl.html", [
+      [ "VideoPlayerOpencvImpl", "class_video_player_opencv_impl.html", null ],
       [ "VideoPlayerOpencvImpl", "class_video_player_opencv_impl.html", null ],
       [ "VideoPlayerOpencvImpl", "class_video_player_opencv_impl.html", null ]
     ] ],

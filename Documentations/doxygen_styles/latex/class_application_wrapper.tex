@@ -10,22 +10,23 @@ Inheritance diagram for Application\+Wrapper\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{struct_application_wrapper_1_1_application_depatch_result}{Application\+Depatch\+Result}}
-\item 
+\begin{DoxyCompactList}\small\item\em The \doxylink{struct_application_wrapper_1_1_application_depatch_result}{Application\+Depatch\+Result} class indicate the app depatching result, for the desktop front end, this can be used in inform the user what is going on. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{struct_application_wrapper_1_1_application_finish_result}{Application\+Finish\+Result}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The \doxylink{struct_application_wrapper_1_1_application_finish_result}{Application\+Finish\+Result} class marks the application depatching result, a typical scene of using this is, when your app if finished(\+Main\+App\+Window Close, or anything trigger the exit functions will make a process ends, this will emit the signals of App\+Process Finish signals) \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
 \Hypertarget{class_application_wrapper_ad54d8e5509fdc415009be64f28636b82}\label{class_application_wrapper_ad54d8e5509fdc415009be64f28636b82} 
 using {\bfseries App\+Code} = int
 \item 
-using \mbox{\hyperlink{class_application_wrapper_a0ab1524d02ff915d4b467479c51a67cc}{Pre\+Launch\+Indicate}}
+\Hypertarget{class_application_wrapper_a9aba67108dbf1e09c96373a9f5139d4b}\label{class_application_wrapper_a9aba67108dbf1e09c96373a9f5139d4b} 
+using {\bfseries Pre\+Launch\+Indicate} = \mbox{\hyperlink{struct_application_wrapper_1_1_application_depatch_result}{Application\+Depatch\+Result}} (\texorpdfstring{$\ast$}{*})(\mbox{\hyperlink{class_application_wrapper}{Application\+Wrapper}}\texorpdfstring{$\ast$}{*} wrapper)
 \item 
-\Hypertarget{class_application_wrapper_a3b69c6ba55b7fe7757c1715e393e1421}\label{class_application_wrapper_a3b69c6ba55b7fe7757c1715e393e1421} 
-using {\bfseries Handling\+Fin\+Hook} = void(\texorpdfstring{$\ast$}{*})(\mbox{\hyperlink{class_application_wrapper}{Application\+Wrapper}}\texorpdfstring{$\ast$}{*} wrapper, int exit\+\_\+hook, QProcess\+::\+Exit\+Status status)
+\Hypertarget{class_application_wrapper_acaaa113a722e3e2f0625d40181b8c794}\label{class_application_wrapper_acaaa113a722e3e2f0625d40181b8c794} 
+using {\bfseries Handling\+Fin\+Hook} = void (\texorpdfstring{$\ast$}{*})(\mbox{\hyperlink{class_application_wrapper}{Application\+Wrapper}}\texorpdfstring{$\ast$}{*} wrapper, int exit\+\_\+hook, QProcess\+::\+Exit\+Status status)
 \item 
-\Hypertarget{class_application_wrapper_aa53a5673acb666829af4ad5d0c87bebf}\label{class_application_wrapper_aa53a5673acb666829af4ad5d0c87bebf} 
-using {\bfseries Error\+Depatch\+Hook} = void(\texorpdfstring{$\ast$}{*})(\mbox{\hyperlink{class_application_wrapper}{Application\+Wrapper}}\texorpdfstring{$\ast$}{*} wrapper)
+\Hypertarget{class_application_wrapper_a1efcf8d4c820fd4c962319f69ccd50fb}\label{class_application_wrapper_a1efcf8d4c820fd4c962319f69ccd50fb} 
+using {\bfseries Error\+Depatch\+Hook} = void (\texorpdfstring{$\ast$}{*})(\mbox{\hyperlink{class_application_wrapper}{Application\+Wrapper}}\texorpdfstring{$\ast$}{*} wrapper)
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Signals}
 \begin{DoxyCompactItemize}
@@ -45,39 +46,29 @@ void {\bfseries app\+\_\+finished} (\mbox{\hyperlink{struct_application_wrapper_
 \Hypertarget{class_application_wrapper_ac1e58358a4a3cdcab632cf08c4a27517}\label{class_application_wrapper_ac1e58358a4a3cdcab632cf08c4a27517} 
 {\bfseries Q\+\_\+\+DISABLE\+\_\+\+COPY} (\mbox{\hyperlink{class_application_wrapper}{Application\+Wrapper}})
 \item 
-\Hypertarget{class_application_wrapper_a6fd8f6f029b8dba337310bb9750f49ed}\label{class_application_wrapper_a6fd8f6f029b8dba337310bb9750f49ed} 
-void {\bfseries bind\+App\+Widget} (\mbox{\hyperlink{class_app_widget}{App\+Widget}} \texorpdfstring{$\ast$}{*}app\+Widget) noexcept
-\item 
-\Hypertarget{class_application_wrapper_a0b395ef8736c102556539b3fb96296cb}\label{class_application_wrapper_a0b395ef8736c102556539b3fb96296cb} 
-\mbox{\hyperlink{class_app_widget}{App\+Widget}} \texorpdfstring{$\ast$}{*} {\bfseries app\+\_\+widget} (void) const
-\item 
-\Hypertarget{class_application_wrapper_adf8a55aaaf2ccbfda855d75d0f4b9053}\label{class_application_wrapper_adf8a55aaaf2ccbfda855d75d0f4b9053} 
-void {\bfseries install\+\_\+app\+\_\+code} (App\+Code code) noexcept
-\item 
-\Hypertarget{class_application_wrapper_aaa275174067d1949835c5f7097fccc10}\label{class_application_wrapper_aaa275174067d1949835c5f7097fccc10} 
-App\+Code {\bfseries app\+\_\+code} () const
-\item 
-\Hypertarget{class_application_wrapper_acf76b7e548ec203af29659ad3115b9b8}\label{class_application_wrapper_acf76b7e548ec203af29659ad3115b9b8} 
-void {\bfseries set\+\_\+app\+\_\+path} (const QString \&app\+\_\+path) noexcept
-\item 
-\Hypertarget{class_application_wrapper_a645eedaf1b9540075dcab6e55e2cefe2}\label{class_application_wrapper_a645eedaf1b9540075dcab6e55e2cefe2} 
-QString {\bfseries get\+\_\+app\+\_\+path} (void) const
-\item 
-\Hypertarget{class_application_wrapper_a157919a1894a29889b4feac5aad1151b}\label{class_application_wrapper_a157919a1894a29889b4feac5aad1151b} 
-void {\bfseries install\+\_\+args} (const QString\+List \&l) noexcept
-\item 
-\Hypertarget{class_application_wrapper_ae33f13768de3aefb8098302c1c77e001}\label{class_application_wrapper_ae33f13768de3aefb8098302c1c77e001} 
-QString\+List {\bfseries args} (void) const
-\item 
-\Hypertarget{class_application_wrapper_a134b24e6aba73be486197652a6e40cb6}\label{class_application_wrapper_a134b24e6aba73be486197652a6e40cb6} 
-QProcess \texorpdfstring{$\ast$}{*} {\bfseries process\+\_\+handle} (void) const
-\item 
+void \mbox{\hyperlink{class_application_wrapper_a6fd8f6f029b8dba337310bb9750f49ed}{bind\+App\+Widget}} (\mbox{\hyperlink{class_app_widget}{App\+Widget}} \texorpdfstring{$\ast$}{*}app\+Widget) noexcept
+\begin{DoxyCompactList}\small\item\em App Widget mappings bindings. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_app_widget}{App\+Widget}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_application_wrapper_a0b395ef8736c102556539b3fb96296cb}{app\+\_\+widget}} (void) const
+\begin{DoxyCompactList}\small\item\em app\+\_\+widget getters of the app\+Widgets \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_application_wrapper_adf8a55aaaf2ccbfda855d75d0f4b9053}{install\+\_\+app\+\_\+code}} (App\+Code code) noexcept
+\begin{DoxyCompactList}\small\item\em install the code apps, this will be used soon or later \end{DoxyCompactList}\item 
+App\+Code \mbox{\hyperlink{class_application_wrapper_aaa275174067d1949835c5f7097fccc10}{app\+\_\+code}} () const
+\begin{DoxyCompactList}\small\item\em get the app code \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_application_wrapper_acf76b7e548ec203af29659ad3115b9b8}{set\+\_\+app\+\_\+path}} (const QString \&app\+\_\+path) noexcept
+\begin{DoxyCompactList}\small\item\em app path setter, this will indicate the ELF/\+PE Executables path in File\+System to make this launchable, it must be checkable for QFile, else, we can not fire the process \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_application_wrapper_a645eedaf1b9540075dcab6e55e2cefe2}{get\+\_\+app\+\_\+path}} (void) const
+\begin{DoxyCompactList}\small\item\em get the app path \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_application_wrapper_a157919a1894a29889b4feac5aad1151b}{install\+\_\+args}} (const QString\+List \&l) noexcept
+\begin{DoxyCompactList}\small\item\em app args setter, this will indicate the arguments that is passed to the application \end{DoxyCompactList}\item 
+QString\+List \mbox{\hyperlink{class_application_wrapper_ae33f13768de3aefb8098302c1c77e001}{args}} (void) const
+\begin{DoxyCompactList}\small\item\em get the args \end{DoxyCompactList}\item 
+QProcess \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_application_wrapper_a134b24e6aba73be486197652a6e40cb6}{process\+\_\+handle}} (void) const
+\begin{DoxyCompactList}\small\item\em process\+\_\+handle \end{DoxyCompactList}\item 
 \Hypertarget{class_application_wrapper_aadc9fc2e2aa2488bc35115f387a3cda9}\label{class_application_wrapper_aadc9fc2e2aa2488bc35115f387a3cda9} 
 void {\bfseries depatch\+\_\+app} (void)
 \begin{DoxyCompactList}\small\item\em \doxylink{class_application_wrapper_aadc9fc2e2aa2488bc35115f387a3cda9}{Application\+Wrapper\+::depatch\+\_\+app} this is the main function to depatch the application, core functions. \end{DoxyCompactList}\item 
-\Hypertarget{class_application_wrapper_a895d28d5f837ea6a23cae8f5ff8682b7}\label{class_application_wrapper_a895d28d5f837ea6a23cae8f5ff8682b7} 
-void {\bfseries install\+\_\+prelaunched} (Pre\+Launch\+Indicate precheck)
-\item 
+void \mbox{\hyperlink{class_application_wrapper_a895d28d5f837ea6a23cae8f5ff8682b7}{install\+\_\+prelaunched}} (Pre\+Launch\+Indicate precheck)
+\begin{DoxyCompactList}\small\item\em this functions installed the specified behaviours of the prelaunch \end{DoxyCompactList}\item 
 \Hypertarget{class_application_wrapper_a13662d0c499aa21f837e4f6259ae68d6}\label{class_application_wrapper_a13662d0c499aa21f837e4f6259ae68d6} 
 void {\bfseries install\+\_\+finhook} (Handling\+Fin\+Hook hook)
 \item 
@@ -86,19 +77,153 @@ void {\bfseries install\+\_\+error\+\_\+handler} (Error\+Depatch\+Hook hook)
 \end{DoxyCompactItemize}
 
 
-\doxysubsection{Member Typedef Documentation}
-\Hypertarget{class_application_wrapper_a0ab1524d02ff915d4b467479c51a67cc}\index{ApplicationWrapper@{ApplicationWrapper}!PreLaunchIndicate@{PreLaunchIndicate}}
-\index{PreLaunchIndicate@{PreLaunchIndicate}!ApplicationWrapper@{ApplicationWrapper}}
-\doxysubsubsection{\texorpdfstring{PreLaunchIndicate}{PreLaunchIndicate}}
-{\footnotesize\ttfamily \label{class_application_wrapper_a0ab1524d02ff915d4b467479c51a67cc} 
-using Application\+Wrapper\+::\+Pre\+Launch\+Indicate}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_application_wrapper_aaa275174067d1949835c5f7097fccc10}\index{ApplicationWrapper@{ApplicationWrapper}!app\_code@{app\_code}}
+\index{app\_code@{app\_code}!ApplicationWrapper@{ApplicationWrapper}}
+\doxysubsubsection{\texorpdfstring{app\_code()}{app\_code()}}
+{\footnotesize\ttfamily \label{class_application_wrapper_aaa275174067d1949835c5f7097fccc10} 
+App\+Code Application\+Wrapper\+::app\+\_\+code (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-{\bfseries Initial value\+:}
-\begin{DoxyCode}{0}
-\DoxyCodeLine{}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_application_wrapper_1_1_application_depatch_result}{ApplicationDepatchResult}}(*)(ApplicationWrapper*\ wrapper)}
 
-\end{DoxyCode}
+
+get the app code 
+
+\begin{DoxyReturn}{Returns}
+app codes 
+\end{DoxyReturn}
+\Hypertarget{class_application_wrapper_a0b395ef8736c102556539b3fb96296cb}\index{ApplicationWrapper@{ApplicationWrapper}!app\_widget@{app\_widget}}
+\index{app\_widget@{app\_widget}!ApplicationWrapper@{ApplicationWrapper}}
+\doxysubsubsection{\texorpdfstring{app\_widget()}{app\_widget()}}
+{\footnotesize\ttfamily \label{class_application_wrapper_a0b395ef8736c102556539b3fb96296cb} 
+\mbox{\hyperlink{class_app_widget}{App\+Widget}} \texorpdfstring{$\ast$}{*} Application\+Wrapper\+::app\+\_\+widget (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+app\+\_\+widget getters of the app\+Widgets 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_application_wrapper_ae33f13768de3aefb8098302c1c77e001}\index{ApplicationWrapper@{ApplicationWrapper}!args@{args}}
+\index{args@{args}!ApplicationWrapper@{ApplicationWrapper}}
+\doxysubsubsection{\texorpdfstring{args()}{args()}}
+{\footnotesize\ttfamily \label{class_application_wrapper_ae33f13768de3aefb8098302c1c77e001} 
+QString\+List Application\+Wrapper\+::args (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get the args 
+
+\begin{DoxyReturn}{Returns}
+the args 
+\end{DoxyReturn}
+\Hypertarget{class_application_wrapper_a6fd8f6f029b8dba337310bb9750f49ed}\index{ApplicationWrapper@{ApplicationWrapper}!bindAppWidget@{bindAppWidget}}
+\index{bindAppWidget@{bindAppWidget}!ApplicationWrapper@{ApplicationWrapper}}
+\doxysubsubsection{\texorpdfstring{bindAppWidget()}{bindAppWidget()}}
+{\footnotesize\ttfamily \label{class_application_wrapper_a6fd8f6f029b8dba337310bb9750f49ed} 
+void Application\+Wrapper\+::bind\+App\+Widget (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_app_widget}{App\+Widget}} \texorpdfstring{$\ast$}{*}}]{app\+Widget}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+App Widget mappings bindings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em app\+Widget} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_application_wrapper_a645eedaf1b9540075dcab6e55e2cefe2}\index{ApplicationWrapper@{ApplicationWrapper}!get\_app\_path@{get\_app\_path}}
+\index{get\_app\_path@{get\_app\_path}!ApplicationWrapper@{ApplicationWrapper}}
+\doxysubsubsection{\texorpdfstring{get\_app\_path()}{get\_app\_path()}}
+{\footnotesize\ttfamily \label{class_application_wrapper_a645eedaf1b9540075dcab6e55e2cefe2} 
+QString Application\+Wrapper\+::get\+\_\+app\+\_\+path (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get the app path 
+
+\begin{DoxyReturn}{Returns}
+the app path 
+\end{DoxyReturn}
+\Hypertarget{class_application_wrapper_adf8a55aaaf2ccbfda855d75d0f4b9053}\index{ApplicationWrapper@{ApplicationWrapper}!install\_app\_code@{install\_app\_code}}
+\index{install\_app\_code@{install\_app\_code}!ApplicationWrapper@{ApplicationWrapper}}
+\doxysubsubsection{\texorpdfstring{install\_app\_code()}{install\_app\_code()}}
+{\footnotesize\ttfamily \label{class_application_wrapper_adf8a55aaaf2ccbfda855d75d0f4b9053} 
+void Application\+Wrapper\+::install\+\_\+app\+\_\+code (\begin{DoxyParamCaption}\item[{App\+Code}]{code}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+install the code apps, this will be used soon or later 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & codes waiting install \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_application_wrapper_a157919a1894a29889b4feac5aad1151b}\index{ApplicationWrapper@{ApplicationWrapper}!install\_args@{install\_args}}
+\index{install\_args@{install\_args}!ApplicationWrapper@{ApplicationWrapper}}
+\doxysubsubsection{\texorpdfstring{install\_args()}{install\_args()}}
+{\footnotesize\ttfamily \label{class_application_wrapper_a157919a1894a29889b4feac5aad1151b} 
+void Application\+Wrapper\+::install\+\_\+args (\begin{DoxyParamCaption}\item[{const QString\+List \&}]{l}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+app args setter, this will indicate the arguments that is passed to the application 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & arguments that is passed to the application \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_application_wrapper_a895d28d5f837ea6a23cae8f5ff8682b7}\index{ApplicationWrapper@{ApplicationWrapper}!install\_prelaunched@{install\_prelaunched}}
+\index{install\_prelaunched@{install\_prelaunched}!ApplicationWrapper@{ApplicationWrapper}}
+\doxysubsubsection{\texorpdfstring{install\_prelaunched()}{install\_prelaunched()}}
+{\footnotesize\ttfamily \label{class_application_wrapper_a895d28d5f837ea6a23cae8f5ff8682b7} 
+void Application\+Wrapper\+::install\+\_\+prelaunched (\begin{DoxyParamCaption}\item[{Pre\+Launch\+Indicate}]{precheck}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+this functions installed the specified behaviours of the prelaunch 
+
+
+\begin{DoxyParams}{Parameters}
+{\em precheck} & functions is required \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+this is a hook for the prelaunch, you can use this to specify the launch result callbacks result can be handle for checking the situations 
+\end{DoxyNote}
+\Hypertarget{class_application_wrapper_a134b24e6aba73be486197652a6e40cb6}\index{ApplicationWrapper@{ApplicationWrapper}!process\_handle@{process\_handle}}
+\index{process\_handle@{process\_handle}!ApplicationWrapper@{ApplicationWrapper}}
+\doxysubsubsection{\texorpdfstring{process\_handle()}{process\_handle()}}
+{\footnotesize\ttfamily \label{class_application_wrapper_a134b24e6aba73be486197652a6e40cb6} 
+QProcess \texorpdfstring{$\ast$}{*} Application\+Wrapper\+::process\+\_\+handle (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+process\+\_\+handle 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+\+:for those who wanna see the detailed process, use this to fetch the handle 
+\end{DoxyNote}
+\Hypertarget{class_application_wrapper_acf76b7e548ec203af29659ad3115b9b8}\index{ApplicationWrapper@{ApplicationWrapper}!set\_app\_path@{set\_app\_path}}
+\index{set\_app\_path@{set\_app\_path}!ApplicationWrapper@{ApplicationWrapper}}
+\doxysubsubsection{\texorpdfstring{set\_app\_path()}{set\_app\_path()}}
+{\footnotesize\ttfamily \label{class_application_wrapper_acf76b7e548ec203af29659ad3115b9b8} 
+void Application\+Wrapper\+::set\+\_\+app\+\_\+path (\begin{DoxyParamCaption}\item[{const QString \&}]{app\+\_\+path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+app path setter, this will indicate the ELF/\+PE Executables path in File\+System to make this launchable, it must be checkable for QFile, else, we can not fire the process 
+
+
+\begin{DoxyParams}{Parameters}
+{\em app\+\_\+path} & where is the app? \+:) \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

@@ -1,5 +1,21 @@
 var searchData=
 [
-  ['app_0',['app',['../struct_page_setuper_1_1_page_setup_session_request.html#a8522a2cfbefeb286ffacb1af7861036c',1,'PageSetuper::PageSetupSessionRequest']]],
-  ['app_5fname_1',['app_name',['../struct_page_setuper_1_1_page_setup_session_request.html#a5540028f3b30b884999e41dfe56600b5',1,'PageSetuper::PageSetupSessionRequest']]]
+  ['albumartist_0',['albumArtist',['../struct_media_info.html#a0fe1b8a2642e8679e9e5fbd210ea01c9',1,'MediaInfo']]],
+  ['albumtitle_1',['albumTitle',['../struct_media_info.html#a6609ecb62d2db45fed5e662795648269',1,'MediaInfo']]],
+  ['als_2',['als',['../struct_a_p3216_c_data.html#a40669cff46ee430f2fd1e716ad24b43b',1,'AP3216CData']]],
+  ['animation_5fduration_3',['ANIMATION_DURATION',['../class_gauge_widget.html#ad5c91a6fe3e9cd49a11309f4ea5b98cf',1,'GaugeWidget::ANIMATION_DURATION'],['../struct_stackpage_switcher_animation.html#a65662268e6a346dc793df94290a43b98',1,'StackpageSwitcherAnimation::ANIMATION_DURATION']]],
+  ['animation_5fduration_4',['animation_duration',['../struct_stackpage_switcher_animation_1_1_animation_info.html#a2be11d135f255a6ffcf93b5eb0072050',1,'StackpageSwitcherAnimation::AnimationInfo']]],
+  ['animation_5finterval_5',['ANIMATION_INTERVAL',['../class_scrolling_label.html#ab6ddbf528e20f3d94f607465f879293f',1,'ScrollingLabel']]],
+  ['app_6',['app',['../struct_page_setuper_1_1_page_setup_session_request.html#a8522a2cfbefeb286ffacb1af7861036c',1,'PageSetuper::PageSetupSessionRequest']]],
+  ['app_5fdepatch_5fresult_7',['app_depatch_result',['../struct_application_wrapper_1_1_application_depatch_result.html#add689ef0c7f3b4ee4d63d2036c105907',1,'ApplicationWrapper::ApplicationDepatchResult']]],
+  ['app_5fname_8',['app_name',['../struct_page_setuper_1_1_page_setup_session_request.html#a5540028f3b30b884999e41dfe56600b5',1,'PageSetuper::PageSetupSessionRequest']]],
+  ['app_5fresult_9',['app_result',['../struct_application_wrapper_1_1_application_finish_result.html#acefc460bffc37c059a773fcc2bccf79f',1,'ApplicationWrapper::ApplicationFinishResult']]],
+  ['armpixmap_10',['armPixmap',['../class_disk_music.html#a49c67759275fee23c63253adc3831fef',1,'DiskMusic']]],
+  ['audio_5fdiscriptions_11',['audio_discriptions',['../struct_media_player_1_1_media_player_status.html#af1454682dd061617c38b4dfe099fee2d',1,'MediaPlayer::MediaPlayerStatus']]],
+  ['audio_5fready_12',['audio_ready',['../struct_media_player_1_1_media_player_status.html#a327fcaa8e0779d5670869ea5736dc36d',1,'MediaPlayer::MediaPlayerStatus']]],
+  ['audiobitrate_13',['audioBitRate',['../struct_media_info.html#a32ff20787a2ffa2ab8e348204cdfaf26',1,'MediaInfo']]],
+  ['audiocodec_14',['audioCodec',['../struct_media_info.html#a4bbf96a1fc0e354d34b4921e83a6d0ec',1,'MediaInfo']]],
+  ['author_15',['author',['../struct_media_info.html#a5800390f193e62611d5e5ebe872c28b8',1,'MediaInfo::author'],['../struct_c_c_pdf_meta_info.html#ad02f378caa4ba18913ff931c50c2fec9',1,'CCPdfMetaInfo::author']]],
+  ['avail_5fphys_5fmemory_16',['avail_phys_memory',['../struct_memory_info_fetcher_1_1_memory_stat.html#af82091061732a922014ca83542a515de',1,'MemoryInfoFetcher::MemoryStat']]],
+  ['avail_5fvirt_5fmemory_17',['avail_virt_memory',['../struct_memory_info_fetcher_1_1_memory_stat.html#a1b5ecd712fc23ca26084c0937517c6c9',1,'MemoryInfoFetcher::MemoryStat']]]
 ];

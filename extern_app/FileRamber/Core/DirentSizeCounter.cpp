@@ -68,12 +68,18 @@ void DirentSizeWorker::
 	results.append(req);
 }
 
+/* we shell on board the result */
 void DirentSizeCounter::onHandleWorkFinishJob(
 	QPersistentModelIndex index, qint64 size) {
 	cache[index] = size;
 	const auto& lists = models->get_providers();
+	/* get the col of this sessions, meaning the case: the dirent size col should be updated later */
 	int col = std::distance(lists.begin(), std::find(lists.begin(), lists.end(), this));
-	emit models->dataChanged(index.sibling(index.row(), col), index.sibling(index.row(), col));
+
+	/* only this one is changed so, it's the same */
+	emit models->dataChanged(
+		index.sibling(index.row(), col),
+		index.sibling(index.row(), col));
 }
 
 std::pair<bool, QVariant> DirentSizeCounter::data(const QModelIndex& index, int role) {
@@ -98,5 +104,6 @@ std::pair<bool, QVariant> DirentSizeCounter::data(const QModelIndex& index, int 
 		worker->depatch_sizeCount_task(pindex, path);
 	}
 
+	/* session checking is not even stops, so, continues the counting */
 	return { true, "counting..." };
 }

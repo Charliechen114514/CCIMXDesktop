@@ -1,74 +1,121 @@
 #ifndef CCPDFVIEWER_H
 #define CCPDFVIEWER_H
+
 #include <QImage>
 #include <QWidget>
-/* preannounced of the documents */
+
+/* Forward declarations */
 class CCPdfDocument;
 class QScrollArea;
 class QLabel;
+
 namespace Ui {
 class CCPdfViewer;
 }
 
-/* CCPdfViewer really helps we view pdf in page level */
-/* it actually interactive with ccpdf_tools::page_renderer */
-class CCPdfViewer : public QWidget
-{
+/**
+ * @class CCPdfViewer
+ * @brief Provides a widget to view PDF documents at the page level.
+ *
+ * This class interacts with ccpdf_tools::page_renderer to render PDF pages.
+ */
+class CCPdfViewer : public QWidget {
     Q_OBJECT
 
 public:
-    explicit CCPdfViewer(QWidget *parent = nullptr);
-    Q_DISABLE_COPY(CCPdfViewer);
-    ~CCPdfViewer();
-    /* if we can not bind the document, then returns failed */
-    bool bindDocument(CCPdfDocument* bindDocument);
-    void unbindDocument();
-    inline float current_zoom() const {
-        return view_zoom;
-    }
+	/**
+	 * @brief Constructs a new CCPdfViewer widget.
+	 * @param parent The parent widget.
+	 */
+	explicit CCPdfViewer(QWidget* parent = nullptr);
 
-    inline void set_zoom_step(const float zoom_step){
-        this->zoom_step = zoom_step;
-    }
+	Q_DISABLE_COPY(CCPdfViewer);
 
-    enum class ZoomDirection{
-        ZOOM_IN,
-        ZOOM_OUT
-    };
+	/**
+	 * @brief Destructor.
+	 */
+	~CCPdfViewer();
+
+	/**
+	 * @brief Binds a PDF document to the viewer.
+	 * @param bindDocument Pointer to the CCPdfDocument to bind.
+	 * @return true if the document is successfully bound, false otherwise.
+	 */
+	bool bindDocument(CCPdfDocument* bindDocument);
+
+	/**
+	 * @brief Unbinds the currently bound document.
+	 */
+	void unbindDocument();
+
+	/**
+	 * @brief Returns the current zoom level.
+	 * @return The current zoom factor.
+	 */
+	inline float current_zoom() const {
+		return view_zoom;
+	}
+
+	/**
+	 * @brief Sets the zoom step value.
+	 * @param zoom_step The zoom increment or decrement per zoom action.
+	 */
+	inline void set_zoom_step(const float zoom_step) {
+		this->zoom_step = zoom_step;
+	}
+
+	/**
+	 * @enum ZoomDirection
+	 * @brief Specifies the direction of zooming.
+	 */
+	enum class ZoomDirection {
+		ZOOM_IN, /**< Zoom in */
+		ZOOM_OUT /**< Zoom out */
+	};
 
 public slots:
-    inline void zoom(
-        const ZoomDirection direction
-    ){
-        switch(direction){
-        case ZoomDirection::ZOOM_IN:
-            view_zoom += zoom_step;
-        break;
-        case ZoomDirection::ZOOM_OUT:
-            view_zoom -= zoom_step;
-        break;
-        }
-    }
+	/**
+	 * @brief Applies zoom in the specified direction.
+	 * @param direction The direction of zoom (in or out).
+	 */
+	inline void zoom(const ZoomDirection direction) {
+		switch (direction) {
+		case ZoomDirection::ZOOM_IN:
+			view_zoom += zoom_step;
+			break;
+		case ZoomDirection::ZOOM_OUT:
+			view_zoom -= zoom_step;
+			break;
+		}
+	}
 
-    inline void fresh_zoom(const ZoomDirection direction){
-        zoom(direction);
-        /* make the fresh */
-        fresh_render();
-    }
+	/**
+	 * @brief Zooms and refreshes the rendered view.
+	 * @param direction The direction to zoom.
+	 */
+	inline void fresh_zoom(const ZoomDirection direction) {
+		zoom(direction);
+		fresh_render();
+	}
 
 public slots:
-    /* call the rendering page */
-    void fresh_render();
+	/**
+	 * @brief Refreshes the rendered page view.
+	 */
+	void fresh_render();
 
 private:
-    Ui::CCPdfViewer *ui;
-    /* zooms sometimes overflow the page index, let them in scrollarea */
-    CCPdfDocument*  document_for_view{nullptr};
-    float           view_zoom{1.0f};
-    float           zoom_step{0.1f};
-    QImage          cached_image;
-    QLabel*         imageLabel;
-    void init_internal(void);
+	Ui::CCPdfViewer* ui; /**< The UI interface pointer. */
+	CCPdfDocument* document_for_view { nullptr }; /**< Pointer to the document being viewed. */
+	float view_zoom { 1.0f }; /**< Current zoom level. */
+	float zoom_step { 0.1f }; /**< Zoom increment step. */
+	QImage cached_image; /**< Cached rendered image of the page. */
+	QLabel* imageLabel; /**< Label used to display the image. */
+
+	/**
+	 * @brief Initializes internal components of the viewer.
+	 */
+	void init_internal(void);
 };
 
 #endif // CCPDFVIEWER_H

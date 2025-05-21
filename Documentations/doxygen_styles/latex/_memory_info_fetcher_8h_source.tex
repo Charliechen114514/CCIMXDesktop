@@ -9,51 +9,47 @@
 \DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QTimer>}}
 \DoxyCodeLine{00006\ \textcolor{comment}{/*\ pre-\/announcement\ of\ the\ dirver\ */}}
 \DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_c_i_m_x___abstract_memory_info_driver}{CCIMX\_AbstractMemoryInfoDriver}};}
-\DoxyCodeLine{00008\ \textcolor{comment}{/*}}
-\DoxyCodeLine{00009\ \textcolor{comment}{\ *\ Memory\ Info\ fetcher\ is\ a\ class\ that}}
-\DoxyCodeLine{00010\ \textcolor{comment}{\ */}}
-\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }MemoryInfoFetcher\ :\ \textcolor{keyword}{public}\ QObject\ \{}
-\DoxyCodeLine{00012\ \ \ \ \ Q\_OBJECT}
-\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{static}\ QString\ format\_size(quint64\ size);}
-\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{explicit}\ MemoryInfoFetcher(QObject*\ parent\ =\ \textcolor{keyword}{nullptr});}
-\DoxyCodeLine{00016\ \ \ \ \ Q\_DISABLE\_COPY(MemoryInfoFetcher);}
-\DoxyCodeLine{00017\ \ \ \ \ \string~MemoryInfoFetcher();}
-\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_memory_info_fetcher_1_1_memory_stat}{MemoryStat}}\ \{}
-\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ Bytes\ level\ count\ */}}
-\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ quint64\ total\_phys\_memory;}
-\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ quint64\ avail\_phys\_memory;}
-\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ quint64\ total\_virt\_memory;}
-\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ quint64\ avail\_virt\_memory;}
-\DoxyCodeLine{00024\ \ \ \ \ \}\ mem\_stat;}
-\DoxyCodeLine{00025\ \ \ \ \ \textcolor{comment}{/*\ interface\ is\ expected\ to\ set\ the\ freq\ of\ the\ flush\ */}}
-\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ set\_flush\_freq(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ msecs)\ \{\ flush\_msecs\ =\ msecs;\ \}}
-\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ set\_capture\_state(\textcolor{keywordtype}{bool}\ st);}
-\DoxyCodeLine{00028\ signals:}
-\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ finish\_detect\_memory(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_memory_info_fetcher_1_1_memory_stat}{MemoryInfoFetcher::MemoryStat}}\&);}
-\DoxyCodeLine{00030\ \textcolor{keyword}{private}\ slots:}
-\DoxyCodeLine{00031\ \ \ \ \ \textcolor{comment}{/*\ invoke\ this\ make\ a\ interactive\ with\ driver\ */}}
-\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ flush\_once();}
-\DoxyCodeLine{00033\ }
-\DoxyCodeLine{00034\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{class_c_c_i_m_x___abstract_memory_info_driver}{CCIMX\_AbstractMemoryInfoDriver}}*\ platform\_driver\_base\ \{\ \textcolor{keyword}{nullptr}\ \};}
-\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ setup\_platform\_relative();}
-\DoxyCodeLine{00037\ \ \ \ \ QTimer\ flush\_timer;}
-\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{int}\ flush\_msecs\ \{\ 1500\ \};}
-\DoxyCodeLine{00039\ \};}
-\DoxyCodeLine{00040\ }
-\DoxyCodeLine{00041\ \textcolor{comment}{/*}}
-\DoxyCodeLine{00042\ \textcolor{comment}{\ *\ \ This\ is\ a\ abstract\ class\ that\ is\ used\ to\ being\ as\ a\ base\ class}}
-\DoxyCodeLine{00043\ \textcolor{comment}{\ *\ \ for\ the\ driver\ in\ different\ platforms}}
-\DoxyCodeLine{00044\ \textcolor{comment}{\ */}}
-\DoxyCodeLine{00045\ \textcolor{keyword}{class\ }CCIMX\_AbstractMemoryInfoDriver\ \{}
-\DoxyCodeLine{00046\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00047\ \ \ \ \ CCIMX\_AbstractMemoryInfoDriver()\ =\ \textcolor{keywordflow}{default};}
-\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keyword}{virtual}\ \string~CCIMX\_AbstractMemoryInfoDriver()\ =\ \textcolor{keywordflow}{default};}
-\DoxyCodeLine{00049\ \ \ \ \ \textcolor{comment}{/*\ driver\ is\ expected\ to\ make\ a\ stat\ back,\ locating\ in\ platforms\ */}}
-\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ factory(\mbox{\hyperlink{struct_memory_info_fetcher_1_1_memory_stat}{MemoryInfoFetcher::MemoryStat}}\&)\ =\ 0;}
-\DoxyCodeLine{00051\ \};}
-\DoxyCodeLine{00052\ }
-\DoxyCodeLine{00053\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MEMORYINFOFETCHER\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }MemoryInfoFetcher\ :\ \textcolor{keyword}{public}\ QObject\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{static}\ QString\ format\_size(quint64\ size);}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{explicit}\ MemoryInfoFetcher(QObject*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00018\ \ \ \ \ Q\_DISABLE\_COPY(MemoryInfoFetcher);}
+\DoxyCodeLine{00019\ \ \ \ \ \string~MemoryInfoFetcher();}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_memory_info_fetcher_1_1_memory_stat}{MemoryStat}}\ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ Bytes\ level\ count\ */}}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ quint64\ \mbox{\hyperlink{struct_memory_info_fetcher_1_1_memory_stat_abd79571ff4f095230284968292571c3d}{total\_phys\_memory}};\ }
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ quint64\ \mbox{\hyperlink{struct_memory_info_fetcher_1_1_memory_stat_af82091061732a922014ca83542a515de}{avail\_phys\_memory}};\ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ quint64\ \mbox{\hyperlink{struct_memory_info_fetcher_1_1_memory_stat_a6bd163ea54a2efe44d8f7b025baa238c}{total\_virt\_memory}};\ }
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ quint64\ \mbox{\hyperlink{struct_memory_info_fetcher_1_1_memory_stat_a1b5ecd712fc23ca26084c0937517c6c9}{avail\_virt\_memory}};\ }
+\DoxyCodeLine{00030\ \ \ \ \ \}\ mem\_stat;}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{comment}{/*\ interface\ is\ expected\ to\ set\ the\ freq\ of\ the\ flush\ */}}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_memory_info_fetcher_adda595da6b1152a673f1449989af176d}{set\_flush\_freq}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ msecs)\ \{\ flush\_msecs\ =\ msecs;\ \}}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_memory_info_fetcher_ac98e348b0cf01ea8d9cf2585ca9ec591}{set\_capture\_state}}(\textcolor{keywordtype}{bool}\ st);}
+\DoxyCodeLine{00044\ signals:}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_memory_info_fetcher_a61738867fe7eb953fc63f7d3dde99fb5}{finish\_detect\_memory}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_memory_info_fetcher_1_1_memory_stat}{MemoryInfoFetcher::MemoryStat}}\&);}
+\DoxyCodeLine{00050\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ flush\_once();}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00059\ \ \ \ \ \mbox{\hyperlink{class_c_c_i_m_x___abstract_memory_info_driver}{CCIMX\_AbstractMemoryInfoDriver}}*\ platform\_driver\_base\ \{\ \textcolor{keyword}{nullptr}\ \};}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{void}\ setup\_platform\_relative();}
+\DoxyCodeLine{00061\ \ \ \ \ QTimer\ flush\_timer;}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{int}\ flush\_msecs\ \{\ 1500\ \};}
+\DoxyCodeLine{00063\ \};}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00071\ \textcolor{keyword}{class\ }CCIMX\_AbstractMemoryInfoDriver\ \{}
+\DoxyCodeLine{00072\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00073\ \ \ \ \ CCIMX\_AbstractMemoryInfoDriver()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keyword}{virtual}\ \string~CCIMX\_AbstractMemoryInfoDriver()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{comment}{/*\ driver\ is\ expected\ to\ make\ a\ stat\ back,\ locating\ in\ platforms\ */}}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ factory(\mbox{\hyperlink{struct_memory_info_fetcher_1_1_memory_stat}{MemoryInfoFetcher::MemoryStat}}\&)\ =\ 0;}
+\DoxyCodeLine{00077\ \};}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MEMORYINFOFETCHER\_H}}
 
 \end{DoxyCode}

@@ -10,6 +10,10 @@ namespace Ui {
 class CPUUsageChart;
 }
 
+/**
+ * @brief The CPUUsageChart class
+ * The CPU UsageChart class provides the CPU usage chart displaying
+ */
 class CPUUsageChart : public QWidget {
 	Q_OBJECT
 
@@ -18,6 +22,11 @@ public:
 	~CPUUsageChart();
 
 public slots:
+	/**
+	 * @brief flush_from_cpudriver
+	 * @param state
+	 * This function is used to flush the CPU state from the CPU driver
+	 */
 	void flush_from_cpudriver(const CPUStateFetcher::CPUState& state);
 
 private:
@@ -31,11 +40,11 @@ private:
 	QValueAxis* axisY { nullptr };
 	QList<int> xValues;
 	QList<double> yValues;
-	int currentTime = 0; /* current boarding time */
+	int currentTime = 0; ///< current boarding time
 	struct {
-		double last_tol { 0.0 };
-		double last_idle { 0.0 };
-	} cached_data;
+		double last_tol { 0.0 }; ///< last total time
+		double last_idle { 0.0 }; ///< last idle time
+	} cached_data; ///< cached data for calculate the usage percentage
 };
 
 #endif // CPUUSAGECHART_H
