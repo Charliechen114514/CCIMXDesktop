@@ -29,7 +29,7 @@ var searchData=
   ['photosaver_26',['PhotoSaver',['../class_photo_saver.html',1,'']]],
   ['pid_27',['pid',['../struct_process_broswer_1_1_process_info.html#a0660c66075e5bff01fd18f7d89edfc20',1,'ProcessBroswer::ProcessInfo']]],
   ['pixmap_5faddr_28',['pixmap_addr',['../struct_page_setuper_1_1_page_setup_session_request.html#a96a020059da363d9355a655237b18949',1,'PageSetuper::PageSetupSessionRequest']]],
-  ['plans_29',['💡 Future plans',['../md__r_e_a_d_m_e___e_n.html#autotoc_md55',1,'']]],
+  ['plans_29',['💡 Future Plans',['../md__r_e_a_d_m_e___e_n.html#autotoc_md25',1,'']]],
   ['platformdriverfactory_30',['PlatformDriverFactory',['../class_platform_driver_factory.html',1,'']]],
   ['play_31',['play',['../class_video_player.html#af032f2fcf964f2fcb91af66d609eab1f',1,'VideoPlayer::play()'],['../class_video_player.html#af032f2fcf964f2fcb91af66d609eab1f',1,'VideoPlayer::play()']]],
   ['playlistmainwindow_32',['PlayListMainWindow',['../class_play_list_main_window.html',1,'']]],
@@ -57,9 +57,8 @@ var searchData=
   ['processinfo_54',['ProcessInfo',['../struct_process_broswer_1_1_process_info.html',1,'ProcessBroswer']]],
   ['producer_55',['Producer',['../struct_c_c_pdf_meta_info.html#a423cdbefdd1463da5d20fd464d9050a5aa6ad87aadc206f6491720e309821904a',1,'CCPdfMetaInfo']]],
   ['producer_56',['producer',['../struct_c_c_pdf_meta_info.html#a4c76d1610732ddf92630f245068bfe16',1,'CCPdfMetaInfo']]],
-  ['project_20documentation_57',['📚 Project documentation',['../md__r_e_a_d_m_e___e_n.html#autotoc_md54',1,'']]],
-  ['project_20overview_20🌟_58',['🌟 Project Overview 🌟',['../md__r_e_a_d_m_e___e_n.html#autotoc_md47',1,'']]],
-  ['provide_5fsection_5fname_59',['provide_section_name',['../class_dirent_size_counter.html#afb1587bf29eac1f0cf7979ba5301f708',1,'DirentSizeCounter::provide_section_name()'],['../class_file_count_info.html#a42da804010c98ad6e95f028e0542a7f5',1,'FileCountInfo::provide_section_name()'],['../class_file_info_provider.html#a25aa7631c3aff86607cae1b412548878',1,'FileInfoProvider::provide_section_name()'],['../class_file_name_providers.html#a3fc88ac86b53656f9e75a0476004ac18',1,'FileNameProviders::provide_section_name()'],['../class_file_type_info.html#adf07e8c01790f280a0eb81f65c6662c4',1,'FileTypeInfo::provide_section_name()']]],
-  ['ps_60',['ps',['../struct_a_p3216_c_data.html#a5a85d6a0d77844a18eda81014f239ad8',1,'AP3216CData']]],
-  ['publisher_61',['publisher',['../struct_media_info.html#a45fc7079d4e5ac0c1e1abfa788f98a84',1,'MediaInfo']]]
+  ['project_20overview_20🌟_57',['🌟 Project Overview 🌟',['../md__r_e_a_d_m_e___e_n.html#autotoc_md16',1,'']]],
+  ['provide_5fsection_5fname_58',['provide_section_name',['../class_dirent_size_counter.html#afb1587bf29eac1f0cf7979ba5301f708',1,'DirentSizeCounter::provide_section_name()'],['../class_file_count_info.html#a42da804010c98ad6e95f028e0542a7f5',1,'FileCountInfo::provide_section_name()'],['../class_file_info_provider.html#a25aa7631c3aff86607cae1b412548878',1,'FileInfoProvider::provide_section_name()'],['../class_file_name_providers.html#a3fc88ac86b53656f9e75a0476004ac18',1,'FileNameProviders::provide_section_name()'],['../class_file_type_info.html#adf07e8c01790f280a0eb81f65c6662c4',1,'FileTypeInfo::provide_section_name()']]],
+  ['ps_59',['ps',['../struct_a_p3216_c_data.html#a5a85d6a0d77844a18eda81014f239ad8',1,'AP3216CData']]],
+  ['publisher_60',['publisher',['../struct_media_info.html#a45fc7079d4e5ac0c1e1abfa788f98a84',1,'MediaInfo']]]
 ];

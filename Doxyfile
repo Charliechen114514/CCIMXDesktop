@@ -983,7 +983,8 @@ WARN_LOGFILE           =
 # spaces. See also FILE_PATTERNS and EXTENSION_MAPPING
 # Note: If this tag is empty the current directory is searched.
 
-INPUT                  =
+INPUT                  = . ./README.md ./README_EN.md ./Components-explain-CN.md \
+                         ./Components-explain-EN.md Documentations/Documentations
 
 # This tag can be used to specify the character encoding of the source files
 # that Doxygen parses. Internally Doxygen uses the UTF-8 encoding. Doxygen uses
@@ -1057,7 +1058,6 @@ FILE_PATTERNS          = *.c \
                          *.inc \
                          *.m \
                          *.markdown \
-                         *.md \
                          *.mm \
                          *.dox \
                          *.py \
@@ -1073,8 +1073,8 @@ FILE_PATTERNS          = *.c \
                          *.vhdl \
                          *.ucf \
                          *.qsf \
-                         *.ice
-
+                         *.ice \
+# *.md \
 # The RECURSIVE tag can be used to specify whether or not subdirectories should
 # be searched for input files as well.
 # The default value is: NO.

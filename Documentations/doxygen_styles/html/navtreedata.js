@@ -25,42 +25,43 @@
 var NAVTREE =
 [
   [ "CCIMXDesktop", "index.html", [
-    [ "🧩 模块描述", "md__components-explain-_c_n.html", [
-      [ "🔧 app_wrapper", "md__components-explain-_c_n.html#autotoc_md1", null ],
-      [ "🧬 builtin", "md__components-explain-_c_n.html#autotoc_md3", null ],
-      [ "⚙️ core", "md__components-explain-_c_n.html#autotoc_md5", null ],
-      [ "🚀 extern_app", "md__components-explain-_c_n.html#autotoc_md7", null ],
-      [ "🧩 sources", "md__components-explain-_c_n.html#autotoc_md9", null ],
-      [ "🎨 ui", "md__components-explain-_c_n.html#autotoc_md11", null ]
-    ] ],
-    [ "🧩 Module Descriptions", "md__components-explain-_e_n.html", [
-      [ "🔧 app_wrapper", "md__components-explain-_e_n.html#autotoc_md13", null ],
-      [ "🧬 builtin", "md__components-explain-_e_n.html#autotoc_md15", null ],
-      [ "⚙️ core", "md__components-explain-_e_n.html#autotoc_md17", null ],
-      [ "🚀 extern_app", "md__components-explain-_e_n.html#autotoc_md19", null ],
-      [ "🧩 sources", "md__components-explain-_e_n.html#autotoc_md21", null ],
-      [ "🎨 ui", "md__components-explain-_e_n.html#autotoc_md23", null ]
-    ] ],
     [ "🖥️ CCIMXDESKTOP", "md__r_e_a_d_m_e.html", [
-      [ "🌐 开始之前，选择你的语言！ 🌐", "md__r_e_a_d_m_e.html#autotoc_md32", null ],
-      [ "🌟 项目概述 🌟", "md__r_e_a_d_m_e.html#autotoc_md33", null ],
-      [ "一些运行截图", "md__r_e_a_d_m_e.html#autotoc_md35", null ],
-      [ "🛠️ 基础构建所用技术", "md__r_e_a_d_m_e.html#autotoc_md36", null ],
-      [ "🛠️ 完整构建所用技术", "md__r_e_a_d_m_e.html#autotoc_md37", null ],
-      [ "🧩开发者参考", "md__r_e_a_d_m_e.html#autotoc_md39", null ],
-      [ "📚项目文档", "md__r_e_a_d_m_e.html#autotoc_md41", null ],
-      [ "💡 未来计划", "md__r_e_a_d_m_e.html#autotoc_md42", null ],
-      [ "📝 许可证", "md__r_e_a_d_m_e.html#autotoc_md44", null ]
+      [ "🌐 开始之前，选择你的语言！ 🌐", "md__r_e_a_d_m_e.html#autotoc_md1", null ],
+      [ "🌟 项目概述 🌟", "md__r_e_a_d_m_e.html#autotoc_md2", null ],
+      [ "一些运行截图", "md__r_e_a_d_m_e.html#autotoc_md4", null ],
+      [ "🛠️ 基础构建所用技术", "md__r_e_a_d_m_e.html#autotoc_md5", null ],
+      [ "🛠️ 完整构建所用技术", "md__r_e_a_d_m_e.html#autotoc_md6", null ],
+      [ "🧩开发者参考", "md__r_e_a_d_m_e.html#autotoc_md8", null ],
+      [ "📚项目文档", "md__r_e_a_d_m_e.html#autotoc_md10", null ],
+      [ "💡 未来计划", "md__r_e_a_d_m_e.html#autotoc_md11", null ],
+      [ "📝 许可证", "md__r_e_a_d_m_e.html#autotoc_md13", null ]
     ] ],
     [ "🖥️ CCIMXDESKTOP", "md__r_e_a_d_m_e___e_n.html", [
-      [ "🌐 Before you start, choose your language! 🌐", "md__r_e_a_d_m_e___e_n.html#autotoc_md46", null ],
-      [ "🌟 Project Overview 🌟", "md__r_e_a_d_m_e___e_n.html#autotoc_md47", null ],
-      [ "🛠️ Technologies used for basic builds", "md__r_e_a_d_m_e___e_n.html#autotoc_md49", null ],
-      [ "🛠️ Full build of technologies", "md__r_e_a_d_m_e___e_n.html#autotoc_md50", null ],
-      [ "🧩 Developer reference", "md__r_e_a_d_m_e___e_n.html#autotoc_md52", null ],
-      [ "📚 Project documentation", "md__r_e_a_d_m_e___e_n.html#autotoc_md54", null ],
-      [ "💡 Future plans", "md__r_e_a_d_m_e___e_n.html#autotoc_md55", null ],
-      [ "📝 License", "md__r_e_a_d_m_e___e_n.html#autotoc_md57", null ]
+      [ "🌐 Before you start, choose your language! 🌐", "md__r_e_a_d_m_e___e_n.html#autotoc_md15", null ],
+      [ "🌟 Project Overview 🌟", "md__r_e_a_d_m_e___e_n.html#autotoc_md16", null ],
+      [ "Some running screenshots", "md__r_e_a_d_m_e___e_n.html#autotoc_md18", null ],
+      [ "🛠️ Basic build technologies", "md__r_e_a_d_m_e___e_n.html#autotoc_md19", null ],
+      [ "🛠️ Full build of technologies", "md__r_e_a_d_m_e___e_n.html#autotoc_md20", null ],
+      [ "🧩 Developer Reference", "md__r_e_a_d_m_e___e_n.html#autotoc_md22", null ],
+      [ "📚Project Documentation", "md__r_e_a_d_m_e___e_n.html#autotoc_md24", null ],
+      [ "💡 Future Plans", "md__r_e_a_d_m_e___e_n.html#autotoc_md25", null ],
+      [ "📝 License", "md__r_e_a_d_m_e___e_n.html#autotoc_md27", null ]
+    ] ],
+    [ "🧩 模块描述", "md__components-explain-_c_n.html", [
+      [ "🔧 app_wrapper", "md__components-explain-_c_n.html#autotoc_md29", null ],
+      [ "🧬 builtin", "md__components-explain-_c_n.html#autotoc_md31", null ],
+      [ "⚙️ core", "md__components-explain-_c_n.html#autotoc_md33", null ],
+      [ "🚀 extern_app", "md__components-explain-_c_n.html#autotoc_md35", null ],
+      [ "🧩 sources", "md__components-explain-_c_n.html#autotoc_md37", null ],
+      [ "🎨 ui", "md__components-explain-_c_n.html#autotoc_md39", null ]
+    ] ],
+    [ "🧩 Module Descriptions", "md__components-explain-_e_n.html", [
+      [ "🔧 app_wrapper", "md__components-explain-_e_n.html#autotoc_md41", null ],
+      [ "🧬 builtin", "md__components-explain-_e_n.html#autotoc_md43", null ],
+      [ "⚙️ core", "md__components-explain-_e_n.html#autotoc_md45", null ],
+      [ "🚀 extern_app", "md__components-explain-_e_n.html#autotoc_md47", null ],
+      [ "🧩 sources", "md__components-explain-_e_n.html#autotoc_md49", null ],
+      [ "🎨 ui", "md__components-explain-_e_n.html#autotoc_md51", null ]
     ] ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],

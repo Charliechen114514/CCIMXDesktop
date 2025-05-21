@@ -5,7 +5,7 @@ var searchData=
   ['recordpixmap_2',['recordPixmap',['../class_disk_music.html#a54a419c7b73e26dcdc632677a93f0c23',1,'DiskMusic']]],
   ['redirect_3',['redirect',['../class_camera_window.html#aa6fdd1205d485d183f1b2f0a8668c33b',1,'CameraWindow']]],
   ['redirectto_4',['redirectTo',['../class_l_e_d_controller.html#a375f3956f4fbdd3911d3aa616d46f746',1,'LEDController::redirectTo()'],['../class_pesudo_led_controller.html#a1da3b54fbb3eaba82f62657efdd2ac75',1,'PesudoLedController::redirectTo()']]],
-  ['reference_5',['🧩 Developer reference',['../md__r_e_a_d_m_e___e_n.html#autotoc_md52',1,'']]],
+  ['reference_5',['🧩 Developer Reference',['../md__r_e_a_d_m_e___e_n.html#autotoc_md22',1,'']]],
   ['refresh_5fpost_5frequest_6',['refresh_post_request',['../class_weather_app_main_window.html#af97dd260a58f30dd140641b141c83e79',1,'WeatherAppMainWindow']]],
   ['register_5fspecial_5fdircolor_7',['register_special_dircolor',['../class_file_name_providers.html#ad419a989e778ba01fc40417dd78ec62a',1,'FileNameProviders']]],
   ['registercolorpairs_8',['registerColorPairs',['../class_file_name_providers.html#ad649d1ca2c8291733510803220b61b5d',1,'FileNameProviders']]],
@@ -28,5 +28,6 @@ var searchData=
   ['resume_25',['resume',['../class_media_player.html#a952cbd6944653ae6fbc19632ce310cf4',1,'MediaPlayer']]],
   ['rol_26',['rol',['../struct_i_c_m20608_data.html#a2f02b0533afd591a8b99752edf1b0065',1,'ICM20608Data::rol'],['../struct_i_c_m20608_app_data.html#a519bb277d955d3f210e53730edf50740',1,'ICM20608AppData::rol']]],
   ['role_27',['Role',['../class_side_bar_widget.html#abc77590c7f86b906b48ac7fcfadd46b1',1,'SideBarWidget']]],
-  ['rollto_5fnextframe_28',['rollto_nextFrame',['../class_video_player_impl.html#a09925d8ec75bd409d8526991e5cfa60e',1,'VideoPlayerImpl::rollto_nextFrame()'],['../class_video_player_opencv_impl.html#ab0d491bb1ff965a4bcb1338a3f947fe9',1,'VideoPlayerOpencvImpl::rollto_nextFrame(CVImage &amp;container) override'],['../class_video_player_opencv_impl.html#ab0d491bb1ff965a4bcb1338a3f947fe9',1,'VideoPlayerOpencvImpl::rollto_nextFrame(CVImage &amp;container) override'],['../class_video_player_impl.html#a09925d8ec75bd409d8526991e5cfa60e',1,'VideoPlayerImpl::rollto_nextFrame()'],['../class_video_player_opencv_impl.html#ab0d491bb1ff965a4bcb1338a3f947fe9',1,'VideoPlayerOpencvImpl::rollto_nextFrame()']]]
+  ['rollto_5fnextframe_28',['rollto_nextFrame',['../class_video_player_impl.html#a09925d8ec75bd409d8526991e5cfa60e',1,'VideoPlayerImpl::rollto_nextFrame()'],['../class_video_player_opencv_impl.html#ab0d491bb1ff965a4bcb1338a3f947fe9',1,'VideoPlayerOpencvImpl::rollto_nextFrame(CVImage &amp;container) override'],['../class_video_player_opencv_impl.html#ab0d491bb1ff965a4bcb1338a3f947fe9',1,'VideoPlayerOpencvImpl::rollto_nextFrame(CVImage &amp;container) override'],['../class_video_player_impl.html#a09925d8ec75bd409d8526991e5cfa60e',1,'VideoPlayerImpl::rollto_nextFrame()'],['../class_video_player_opencv_impl.html#ab0d491bb1ff965a4bcb1338a3f947fe9',1,'VideoPlayerOpencvImpl::rollto_nextFrame()']]],
+  ['running_20screenshots_29',['Some running screenshots',['../md__r_e_a_d_m_e___e_n.html#autotoc_md18',1,'']]]
 ];

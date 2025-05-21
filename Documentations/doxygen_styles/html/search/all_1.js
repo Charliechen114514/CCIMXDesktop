@@ -18,7 +18,7 @@ var searchData=
   ['app_5fname_15',['app_name',['../struct_page_setuper_1_1_page_setup_session_request.html#a5540028f3b30b884999e41dfe56600b5',1,'PageSetuper::PageSetupSessionRequest']]],
   ['app_5fresult_16',['app_result',['../struct_application_wrapper_1_1_application_finish_result.html#acefc460bffc37c059a773fcc2bccf79f',1,'ApplicationWrapper::ApplicationFinishResult']]],
   ['app_5fwidget_17',['app_widget',['../class_application_wrapper.html#a0b395ef8736c102556539b3fb96296cb',1,'ApplicationWrapper']]],
-  ['app_5fwrapper_20tt_18',['app_wrapper tt',['../md__components-explain-_c_n.html#autotoc_md1',1,'🔧 &lt;tt&gt;app_wrapper&lt;/tt&gt;'],['../md__components-explain-_e_n.html#autotoc_md13',1,'🔧 &lt;tt&gt;app_wrapper&lt;/tt&gt;']]],
+  ['app_5fwrapper_20tt_18',['app_wrapper tt',['../md__components-explain-_c_n.html#autotoc_md29',1,'🔧 &lt;tt&gt;app_wrapper&lt;/tt&gt;'],['../md__components-explain-_e_n.html#autotoc_md41',1,'🔧 &lt;tt&gt;app_wrapper&lt;/tt&gt;']]],
   ['appcardwidget_19',['AppCardWidget',['../class_app_card_widget.html',1,'']]],
   ['applicationdepatchresult_20',['ApplicationDepatchResult',['../struct_application_wrapper_1_1_application_depatch_result.html',1,'ApplicationWrapper']]],
   ['applicationfinishresult_21',['ApplicationFinishResult',['../struct_application_wrapper_1_1_application_finish_result.html',1,'ApplicationWrapper']]],

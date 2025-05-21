@@ -2,7 +2,7 @@ var searchData=
 [
   ['label_5fcolor_0',['LABEL_COLOR',['../class_gauge_widget.html#aceffcc98a2ad7bc603d48f6a4ba247fa',1,'GaugeWidget']]],
   ['label_5ffont_5fsz_1',['LABEL_FONT_SZ',['../class_gauge_widget.html#a30e3bbe3232381c7913469022e0c37f4',1,'GaugeWidget']]],
-  ['language_20🌐_2',['🌐 Before you start, choose your language! 🌐',['../md__r_e_a_d_m_e___e_n.html#autotoc_md46',1,'']]],
+  ['language_20🌐_2',['🌐 Before you start, choose your language! 🌐',['../md__r_e_a_d_m_e___e_n.html#autotoc_md15',1,'']]],
   ['last_5fidle_3',['last_idle',['../class_c_p_u_usage_chart.html#a40d01620757b49a86efb9ed120156624',1,'CPUUsageChart']]],
   ['last_5ftol_4',['last_tol',['../class_c_p_u_usage_chart.html#ae3a7fad1551601477ed3ae26b199fb72',1,'CPUUsageChart']]],
   ['ledcontroller_5',['LEDController',['../class_l_e_d_controller.html',1,'LEDController'],['../class_l_e_d_controller.html#aee3bdb63c97a7c22e9065eaab8c9ab6d',1,'LEDController::LEDController()']]],
@@ -10,7 +10,7 @@ var searchData=
   ['ledparamspackageblink_7',['LEDParamsPackageBlink',['../class_l_e_d_params_package_blink.html',1,'LEDParamsPackageBlink'],['../class_l_e_d_params_package_blink.html#a470c2bbcc48870fd6ecc9022bbdfbe94',1,'LEDParamsPackageBlink::LEDParamsPackageBlink()']]],
   ['ledparamspackageplain_8',['LEDParamsPackagePlain',['../class_l_e_d_params_package_plain.html',1,'LEDParamsPackagePlain'],['../class_l_e_d_params_package_plain.html#a9c397053d9d91e042788598ee0ddc6f0',1,'LEDParamsPackagePlain::LEDParamsPackagePlain()']]],
   ['ledpath_9',['ledPath',['../class_l_e_d_controller.html#a90c32acd1da700863aab0faf164d76b0',1,'LEDController::ledPath()'],['../class_pesudo_led_controller.html#a5744e609b0868d31892aeee8d1265ade',1,'PesudoLedController::ledPath()']]],
-  ['license_10',['📝 License',['../md__r_e_a_d_m_e___e_n.html#autotoc_md57',1,'']]],
+  ['license_10',['📝 License',['../md__r_e_a_d_m_e___e_n.html#autotoc_md27',1,'']]],
   ['lightcontrollerwindow_11',['LightControllerWindow',['../class_light_controller_window.html',1,'LightControllerWindow'],['../class_light_controller_window.html#add7241b973ac3a455955819094a71413',1,'LightControllerWindow::LightControllerWindow()']]],
   ['linuxplatformcpustatedriver_12',['LinuxPlatformCPUStateDriver',['../class_linux_platform_c_p_u_state_driver.html',1,'']]],
   ['linuxplatformmemoryinfodriver_13',['LinuxPlatformMemoryInfoDriver',['../class_linux_platform_memory_info_driver.html',1,'']]],
