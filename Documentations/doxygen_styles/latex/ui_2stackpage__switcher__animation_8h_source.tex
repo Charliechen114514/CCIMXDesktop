@@ -1,0 +1,30 @@
+\doxysection{stackpage\+\_\+switcher\+\_\+animation.\+h}
+\hypertarget{ui_2stackpage__switcher__animation_8h_source}{}\label{ui_2stackpage__switcher__animation_8h_source}\index{ui/stackpage\_switcher\_animation.h@{ui/stackpage\_switcher\_animation.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ STACKPAGE\_SWITCHER\_ANIMATION\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ STACKPAGE\_SWITCHER\_ANIMATION\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00004\ \textcolor{keyword}{class\ }QStackedWidget;}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_stackpage_switcher_animation}{StackpageSwitcherAnimation}}\ :\ \textcolor{keyword}{public}\ QObject}
+\DoxyCodeLine{00007\ \{}
+\DoxyCodeLine{00008\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00009\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{explicit}\ StackpageSwitcherAnimation(QObject*\ parent\ =\ \textcolor{keyword}{nullptr})\ :\ QObject(parent)\{\}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_stackpage_switcher_animation_1_1_animation_info}{AnimationInfo}}\{}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \ \ \ \ new\_index;}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \ \ \ toLeft;}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \ \ \ \ animation\_duration\{400\};}
+\DoxyCodeLine{00016\ \ \ \ \ \};}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ process\_animations(}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ QStackedWidget*\ binding\_widget,}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_stackpage_switcher_animation_1_1_animation_info}{AnimationInfo}}*\ animation\_info);}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ STACKPAGE\_SWITCHER\_ANIMATION\_H}}
+
+\end{DoxyCode}

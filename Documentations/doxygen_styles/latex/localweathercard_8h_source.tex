@@ -1,0 +1,37 @@
+\doxysection{localweathercard.\+h}
+\hypertarget{localweathercard_8h_source}{}\label{localweathercard_8h_source}\index{builtin/gadgets/localweathercard.h@{builtin/gadgets/localweathercard.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ LOCALWEATHERCARD\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ LOCALWEATHERCARD\_H}}
+\DoxyCodeLine{00003\ \textcolor{comment}{/*\ Card\ Works\ as\ the\ base\ */}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}appcardwidget.h"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{struct\ }LocalWeatherLightFetcher\{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00008\ \ \ \ \ LocalWeatherLightFetcher()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00009\ \ \ \ \ Q\_DISABLE\_COPY(LocalWeatherLightFetcher);}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{comment}{/*\ for\ advanced\ c++,\ use\ concept\ is\ better\ */}}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{float}\ fetch\_local\_tempature()\ =\ 0;}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{virtual}\ QString\ makeup\_toast\_message()\ =\ 0;}
+\DoxyCodeLine{00013\ \};}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }LocalWeatherCard\ :\ \textcolor{keyword}{public}\ AppCardWidget}
+\DoxyCodeLine{00016\ \{}
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ \ \ LocalWeatherCard()\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00019\ \ \ \ \ Q\_DISABLE\_COPY(LocalWeatherCard);}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{explicit}\ LocalWeatherCard(}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_desktop_toast}{DesktopToast}}*\ toast,\ QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ invoke\_preLaunch\_work();}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ postAppCardWidget();}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{struct_local_weather_light_fetcher}{LocalWeatherLightFetcher}}*\ \ \ localFetcher\{\textcolor{keyword}{nullptr}\};}
+\DoxyCodeLine{00029\ \};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ LOCALWEATHERCARD\_H}}
+
+\end{DoxyCode}

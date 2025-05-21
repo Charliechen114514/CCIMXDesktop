@@ -1,0 +1,22 @@
+\doxysection{Pesudo\+AP3216\+C.\+h}
+\hypertarget{_pesudo_a_p3216_c_8h_source}{}\label{_pesudo_a_p3216_c_8h_source}\index{extern\_app/professionals/boardlevel\_application/Environment/Adapter/PesudoAP3216C.h@{extern\_app/professionals/boardlevel\_application/Environment/Adapter/PesudoAP3216C.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PESUDOAP3216C\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PESUDOAP3216C\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}ap3216c.h"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <optional>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }PesudoAP3216C\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{comment}{/*\ persudo\ means\ it\ actually\ returns\ random\ value\ */}}
+\DoxyCodeLine{00009\ \ \ \ \ PesudoAP3216C()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00010\ \ \ \ \ \string~PesudoAP3216C()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{comment}{/*\ provide\ a\ random\ file\ read\ */}}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{bool}\ bind\_file(\textcolor{keyword}{const}\ std::string\&\ dev\_file\_path)\ \{\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};\ \}}
+\DoxyCodeLine{00013\ \ \ \ \ std::optional<AP3216CData>\ sync\_read\_once(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00014\ \};}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PESUDOAP3216C\_H}}
+
+\end{DoxyCode}

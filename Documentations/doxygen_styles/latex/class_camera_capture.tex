@@ -1,0 +1,60 @@
+\doxysection{Camera\+Capture Class Reference}
+\hypertarget{class_camera_capture}{}\label{class_camera_capture}\index{CameraCapture@{CameraCapture}}
+Inheritance diagram for Camera\+Capture\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_camera_capture}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_camera_capture_aec7c35d14237db1faad9e83066d36358}\label{class_camera_capture_aec7c35d14237db1faad9e83066d36358} 
+enum class {\bfseries Error} \{ {\bfseries CAMERA\+\_\+\+UNEXSITED}
+, {\bfseries CAMERA\+\_\+\+UNOPENED}
+, {\bfseries CAMERA\+\_\+\+UNBIND\+\_\+\+DISPLAY}
+, {\bfseries CAMERA\+\_\+\+MULTI\+\_\+\+OPENED}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_camera_capture_aee4055d166d239eb9656c6bf94268b31}\label{class_camera_capture_aee4055d166d239eb9656c6bf94268b31} 
+void {\bfseries camera\+Opened} (int index)
+\item 
+\Hypertarget{class_camera_capture_accff1997c75a85ff17d4123325356bf5}\label{class_camera_capture_accff1997c75a85ff17d4123325356bf5} 
+void {\bfseries camera\+Closed} (int index)
+\item 
+\Hypertarget{class_camera_capture_aaa1bba7896e9f51b7b0ff6e0d605df4d}\label{class_camera_capture_aaa1bba7896e9f51b7b0ff6e0d605df4d} 
+void {\bfseries error\+Occur} (Camera\+Capture\+::\+Error e)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_camera_capture_a9e3764a94c80ebbdfc2db9886eaf5cd7}\label{class_camera_capture_a9e3764a94c80ebbdfc2db9886eaf5cd7} 
+{\bfseries Q\+\_\+\+DISABLE\+\_\+\+COPY} (\mbox{\hyperlink{class_camera_capture}{Camera\+Capture}})
+\item 
+\Hypertarget{class_camera_capture_a6ced02cd6a7db34a9dbb234bd20d15b8}\label{class_camera_capture_a6ced02cd6a7db34a9dbb234bd20d15b8} 
+{\bfseries Camera\+Capture} (const int index, QObject \texorpdfstring{$\ast$}{*}parent)
+\item 
+\Hypertarget{class_camera_capture_adcc683f3079c0a2b45af30cdbe2425c6}\label{class_camera_capture_adcc683f3079c0a2b45af30cdbe2425c6} 
+void {\bfseries bind\+\_\+display\+\_\+widget} (\mbox{\hyperlink{class_camera_display_widget}{Camera\+Display\+Widget}} \texorpdfstring{$\ast$}{*}widget)
+\item 
+\Hypertarget{class_camera_capture_af3ceb8523ba6d8eb0f41649e3a2f3d28}\label{class_camera_capture_af3ceb8523ba6d8eb0f41649e3a2f3d28} 
+void {\bfseries set\+\_\+capture\+\_\+delay\+\_\+time} (const int gap\+\_\+time)
+\item 
+\Hypertarget{class_camera_capture_a45c11c334b0609b8af2e08c49fe221fe}\label{class_camera_capture_a45c11c334b0609b8af2e08c49fe221fe} 
+bool {\bfseries is\+Activate} () const
+\item 
+\Hypertarget{class_camera_capture_af831dcf5fda530c9b65afb49a30f5186}\label{class_camera_capture_af831dcf5fda530c9b65afb49a30f5186} 
+bool {\bfseries start} ()
+\item 
+\Hypertarget{class_camera_capture_ad15b419181c6bd196a6120fc7471ab95}\label{class_camera_capture_ad15b419181c6bd196a6120fc7471ab95} 
+bool {\bfseries close} ()
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+extern\+\_\+app/\+General\+Local\+Camera/\+Core/Camera\+Capture.\+h\item 
+extern\+\_\+app/\+General\+Local\+Camera/\+Core/Camera\+Capture.\+cpp\end{DoxyCompactItemize}

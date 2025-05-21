@@ -1,0 +1,64 @@
+\doxysection{App\+Widget Class Reference}
+\hypertarget{class_app_widget}{}\label{class_app_widget}\index{AppWidget@{AppWidget}}
+Inheritance diagram for App\+Widget\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_app_widget}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_app_widget_a2b48543a3ce72b7c991b744da6f540df}\label{class_app_widget_a2b48543a3ce72b7c991b744da6f540df} 
+enum class {\bfseries App\+Status} \{ {\bfseries App\+Ok}
+, {\bfseries App\+Non\+Exsits}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_app_widget_a446a4098aa66694c54534df916c1ce70}\label{class_app_widget_a446a4098aa66694c54534df916c1ce70} 
+void {\bfseries post\+App\+Status} (App\+Widget\+::\+App\+Status status)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_app_widget_a3806faa4b35786c0e4129246066b215a}\label{class_app_widget_a3806faa4b35786c0e4129246066b215a} 
+{\bfseries App\+Widget} (const QPixmap \&icon, const QString \&name, QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
+\item 
+\Hypertarget{class_app_widget_af104d532bb3bd2b0889391fff0bab157}\label{class_app_widget_af104d532bb3bd2b0889391fff0bab157} 
+void {\bfseries bind\+App} (\mbox{\hyperlink{class_application_wrapper}{Application\+Wrapper}} \texorpdfstring{$\ast$}{*}wrapper)
+\item 
+\Hypertarget{class_app_widget_a2a5f6bb3602a910f09ddde871936e59e}\label{class_app_widget_a2a5f6bb3602a910f09ddde871936e59e} 
+\mbox{\hyperlink{class_application_wrapper}{Application\+Wrapper}} \texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+app} () const
+\item 
+\Hypertarget{class_app_widget_a6bf749981f674a76e979dd547ce9666c}\label{class_app_widget_a6bf749981f674a76e979dd547ce9666c} 
+void {\bfseries set\+Icon} (const QPixmap \&icon) noexcept
+\item 
+\Hypertarget{class_app_widget_a654bb3fd2c1a9fca116ccf71f7660e89}\label{class_app_widget_a654bb3fd2c1a9fca116ccf71f7660e89} 
+void {\bfseries set\+App\+Name} (const QString \&name) noexcept
+\item 
+\Hypertarget{class_app_widget_a4470138f00905b26ad5534948b6ddb50}\label{class_app_widget_a4470138f00905b26ad5534948b6ddb50} 
+void {\bfseries set\+Dummy} (bool dummy)
+\item 
+\Hypertarget{class_app_widget_a9321ba6e7e0567ef8787bcdead1e8d2d}\label{class_app_widget_a9321ba6e7e0567ef8787bcdead1e8d2d} 
+QPixmap {\bfseries icon} () const
+\item 
+\Hypertarget{class_app_widget_a8e9c25e327f90af3990cdd71d3798d98}\label{class_app_widget_a8e9c25e327f90af3990cdd71d3798d98} 
+void {\bfseries show\+Icon\+Only} (bool st)
+\item 
+\Hypertarget{class_app_widget_adfa9de7ff529fef19e235dae59768fac}\label{class_app_widget_adfa9de7ff529fef19e235dae59768fac} 
+QString {\bfseries app\+\_\+name} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_app_widget_a55452cd32f958fb15d12c13f48b02f8d}\label{class_app_widget_a55452cd32f958fb15d12c13f48b02f8d} 
+bool {\bfseries event\+Filter} (QObject \texorpdfstring{$\ast$}{*}watched, QEvent \texorpdfstring{$\ast$}{*}event) override
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+ui/appwidget.\+h\item 
+ui/appwidget.\+cpp\end{DoxyCompactItemize}

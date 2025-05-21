@@ -1,0 +1,35 @@
+\doxysection{toolssidebar.\+h}
+\hypertarget{toolssidebar_8h_source}{}\label{toolssidebar_8h_source}\index{extern\_app/pdfReader/ui\_tools/toolssidebar.h@{extern\_app/pdfReader/ui\_tools/toolssidebar.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ TOOLSSIDEBAR\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ TOOLSSIDEBAR\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}mupdf\_adapter/ccpdfchaptercreator.h"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QWidget>}}
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_c_pdf_document}{CCPdfDocument}};}
+\DoxyCodeLine{00007\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }ToolsSideBar;}
+\DoxyCodeLine{00009\ \}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }ToolsSideBar\ :\ \textcolor{keyword}{public}\ QWidget}
+\DoxyCodeLine{00012\ \{}
+\DoxyCodeLine{00013\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{explicit}\ ToolsSideBar(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{void}\ \ \ \ \ set\_document\_chapterize(\mbox{\hyperlink{class_c_c_pdf_document}{CCPdfDocument}}*\ document\_handling);}
+\DoxyCodeLine{00018\ \ \ \ \ \string~ToolsSideBar();}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ signals:}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ sig\_open\_meta\_info\_window();}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ required\_page\_jump(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ page);}
+\DoxyCodeLine{00023\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_c_c_pdf_chapter_creator}{CCPdfChapterCreator}}\ \ \ \ \ chapter\_maker;}
+\DoxyCodeLine{00025\ \ \ \ \ Ui::ToolsSideBar\ *ui;}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ setup\_connections();}
+\DoxyCodeLine{00027\ \};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ TOOLSSIDEBAR\_H}}
+
+\end{DoxyCode}

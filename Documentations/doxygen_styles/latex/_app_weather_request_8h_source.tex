@@ -1,0 +1,55 @@
+\doxysection{App\+Weather\+Request.\+h}
+\hypertarget{_app_weather_request_8h_source}{}\label{_app_weather_request_8h_source}\index{extern\_app/WeatherApp/Core/AppWeatherRequest.h@{extern\_app/WeatherApp/Core/AppWeatherRequest.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ APPWEATHERREQUEST\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ APPWEATHERREQUEST\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}MyWeatherRequest.h"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }AppWeatherResult\ :\ \textcolor{keyword}{public}\ WeatherResult\ \{}
+\DoxyCodeLine{00006\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{keyword}{explicit}\ AppWeatherResult(QObject*\ parent\ =\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ :\ WeatherResult(parent)\ \{\ \}}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keywordtype}{void}\ parseJsonString(\textcolor{keyword}{const}\ QString\ json)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{void}\ debugPrint()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_app_weather_result_1_1_daily_weather}{DailyWeather}}\ \{}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ QString\ date;}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ QString\ textDay;}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ QString\ textNight;}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ QString\ high;}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ QString\ low;}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ QString\ windDirection;}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ QString\ windScale;}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ QString\ humidity;}
+\DoxyCodeLine{00021\ \ \ \ \ \};}
+\DoxyCodeLine{00022\ \ \ \ \ QString\ cached\_city;}
+\DoxyCodeLine{00023\ \ \ \ \ QList<DailyWeather>\ daily\_weather;}
+\DoxyCodeLine{00024\ \};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{comment}{/*\ detailed\ struct\ */}}
+\DoxyCodeLine{00027\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_app_weather_detailed_request}{AppWeatherDetailedRequest}}\ \{}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ start;}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ days;}
+\DoxyCodeLine{00030\ \ \ \ \ QString\ city;}
+\DoxyCodeLine{00031\ \};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{keyword}{class\ }AppWeatherRequest\ :\ \textcolor{keyword}{public}\ WeatherRequest\ \{}
+\DoxyCodeLine{00034\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00035\ \ \ \ \ Q\_DISABLE\_COPY(AppWeatherRequest);}
+\DoxyCodeLine{00036\ \ \ \ \ AppWeatherRequest(QObject*\ parent\ =\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ :\ WeatherRequest(parent)\ \{\ \};}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ bindAppDetailedRequest(}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_app_weather_detailed_request}{AppWeatherDetailedRequest}}\&\ request)\ \{}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ this-\/>request\ =\ request;}
+\DoxyCodeLine{00041\ \ \ \ \ \}}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{comment}{/*\ add\ our\ query\ issue\ here\ */}}
+\DoxyCodeLine{00043\ \ \ \ \ QUrlQuery\ compose\_request()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{struct_app_weather_detailed_request}{AppWeatherDetailedRequest}}\ request;}
+\DoxyCodeLine{00047\ \};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ APPWEATHERREQUEST\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,52 @@
+\doxysection{Process\+Broswer.\+h}
+\hypertarget{_process_broswer_8h_source}{}\label{_process_broswer_8h_source}\index{extern\_app/SystemState/Core/ProcessBroswer.h@{extern\_app/SystemState/Core/ProcessBroswer.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PROCESSBROSWER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PROCESSBROSWER\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QTimer>}}
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_c_i_m_x___abstract_process_broswer_driver}{CCIMX\_AbstractProcessBroswerDriver}};}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }ProcessBroswer\ :\ \textcolor{keyword}{public}\ QObject\ \{}
+\DoxyCodeLine{00008\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00009\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{explicit}\ ProcessBroswer(QObject*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00011\ \ \ \ \ \string~ProcessBroswer();}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_process_broswer_1_1_process_info}{ProcessInfo}}\ \{}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ pid;}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ ppid;}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ QString\ name;}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ QString\ fullPath;}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ threadCount;}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ qint64\ memoryUsageKB;}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ cpuPercent;}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ QString\ userName;}
+\DoxyCodeLine{00021\ \ \ \ \ \};}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{comment}{/*\ interface\ is\ expected\ to\ set\ the\ freq\ of\ the\ flush\ */}}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ set\_flush\_freq(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ msecs)\ \{\ flush\_msecs\ =\ msecs;\ \}}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ set\_capture\_state(\textcolor{keywordtype}{bool}\ st);}
+\DoxyCodeLine{00025\ signals:}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ fetch\_finish(\textcolor{keyword}{const}\ QList<ProcessBroswer::ProcessInfo>\&\ infos);}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_c_c_i_m_x___abstract_process_broswer_driver}{CCIMX\_AbstractProcessBroswerDriver}}*\ platform\_driver\_base\ \{\ \textcolor{keyword}{nullptr}\ \};}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ setup\_platform\_relative();}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{comment}{/*\ this\ is\ used\ to\ flush\ the\ cpu\ state\ */}}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ flush\_once();}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{int}\ flush\_msecs\ \{\ 1500\ \};}
+\DoxyCodeLine{00034\ \ \ \ \ QList<ProcessInfo>\ process\_list;}
+\DoxyCodeLine{00035\ \ \ \ \ QTimer\ flush\_timer;}
+\DoxyCodeLine{00036\ \};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{keyword}{class\ }CCIMX\_AbstractProcessBroswerDriver\ \{}
+\DoxyCodeLine{00039\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00040\ \ \ \ \ CCIMX\_AbstractProcessBroswerDriver()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{virtual}\ \string~CCIMX\_AbstractProcessBroswerDriver()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{comment}{/*\ driver\ is\ expected\ to\ make\ a\ stat\ back,\ locating\ in\ platforms\ */}}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ factory(QList<ProcessBroswer::ProcessInfo>\&\ lists)\ =\ 0;}
+\DoxyCodeLine{00044\ \};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PROCESSBROSWER\_H}}
+
+\end{DoxyCode}

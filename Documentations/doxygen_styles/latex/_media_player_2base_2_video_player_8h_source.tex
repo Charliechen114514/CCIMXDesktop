@@ -1,0 +1,82 @@
+\doxysection{Video\+Player.\+h}
+\hypertarget{_media_player_2base_2_video_player_8h_source}{}\label{_media_player_2base_2_video_player_8h_source}\index{extern\_app/MediaPlayer/base/VideoPlayer.h@{extern\_app/MediaPlayer/base/VideoPlayer.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ VIDEOPLAYER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ VIDEOPLAYER\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}CVImage.h"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}VideoPlayerImpl.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QTimer>}}
+\DoxyCodeLine{00007\ \textcolor{comment}{/*\ Video\ Support\ is\ limited\ to\ OpenCV\ Due\ to\ the\ RealTime\ Request\ */}}
+\DoxyCodeLine{00008\ \textcolor{keyword}{namespace\ }cv\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }VideoCapture;}
+\DoxyCodeLine{00010\ \};}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{namespace\ }VideoPlayerTools\ \{}
+\DoxyCodeLine{00013\ qint64\ frame\_to\_mseconds(\textcolor{keywordtype}{int}\ frame,\ \textcolor{keywordtype}{int}\ fps);}
+\DoxyCodeLine{00014\ qint64\ mseconds\_to\_frame(qint64\ msec,\ \textcolor{keywordtype}{int}\ fps);}
+\DoxyCodeLine{00015\ \}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }VideoPlayer\ :\ \textcolor{keyword}{public}\ QObject\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{explicit}\ VideoPlayer(QObject*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00021\ \ \ \ \ \string~VideoPlayer();}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{bool}\ open(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ video\_path);}
+\DoxyCodeLine{00023\ \ \ \ \ QString\ current\_handle()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ last\_open;\ \}}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{bool}\ close();}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{comment}{/*\ for\ the\ pause\ video,\ resume\ is\ OK\ */}}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{bool}\ play();}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{comment}{/*\ hang\ the\ video\ display\ */}}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{bool}\ pause();}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{comment}{/*\ get\ the\ total\ frame\ */}}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{int}\ total\_frame()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}\ total\_msecs()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ VideoPlayerTools::frame\_to\_mseconds(}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ total\_frame(),\ info.fps);}
+\DoxyCodeLine{00034\ \ \ \ \ \}}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{comment}{/*\ infos\ */}}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{struct_video_player_info}{VideoPlayerInfo}}\ get\_info()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ info;\ \}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{comment}{/*\ frame\ left\ for\ display\ */}}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{int}\ current\_frame()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{comment}{/*\ is\ current\ video\ valid\ */}}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{bool}\ valid\_video()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{comment}{/*\ is\ current\ video\ on\ play?\ */}}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{bool}\ is\_playing()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{comment}{/*\ compound\ for\ the\ audio-\/frame\ sync\ */}}
+\DoxyCodeLine{00045\ \ \ \ \ qint64\ currentFrameMSec()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{comment}{/*\ set\ current\ frame\ as\ mseconds\ */}}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{bool}\ setCurrentFrameMSec(\textcolor{keyword}{const}\ qint64\ msec);}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{comment}{/*\ for\ the\ frame\ escape,\ then\ next\ frame\ will\ be\ abolished\ */}}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ escapeFrame();}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{comment}{/*\ request\ frame\ without\ rolling\ */}}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{bool}\ peekFrame(\mbox{\hyperlink{class_c_v_image}{CVImage}}\&\ container,\ \textcolor{keywordtype}{int}\ frame\_request);}
+\DoxyCodeLine{00052\ signals:}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{comment}{/*\ error\ occurs\ */}}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ openError(\textcolor{keyword}{const}\ VideoPlayerOpenErrorCode\ error);}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{comment}{/*\ the\ request\ will\ send\ the\ image\ waiting\ display\ */}}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ frameReady(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_c_v_image}{CVImage}}\ image);}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{comment}{/*\ frame\ is\ about\ to\ fetch\ */}}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{void}\ about\_fetch\_frame();}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{comment}{/*\ media\ end\ */}}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{void}\ videoEnd();}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ time\_to\_fetch\_next\_frame();}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00066\ \ \ \ \ \mbox{\hyperlink{class_video_player_impl}{VideoPlayerImpl}}*\ impl\ \{\ \textcolor{keyword}{nullptr}\ \};}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00068\ \textcolor{comment}{\ \ \ \ \ *\ on\_play\ handles\ the\ state\ of\ video\ play}}
+\DoxyCodeLine{00069\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{bool}\ on\_play\ \{\ \textcolor{keyword}{false}\ \};}
+\DoxyCodeLine{00071\ \ \ \ \ \mbox{\hyperlink{struct_video_player_info}{VideoPlayerInfo}}\ info;}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{int}\ play\_sleep\ \{\ 0\ \};}
+\DoxyCodeLine{00073\ \ \ \ \ QString\ last\_open\ \{\};}
+\DoxyCodeLine{00074\ \};}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ VIDEOPLAYER\_H}}
+
+\end{DoxyCode}

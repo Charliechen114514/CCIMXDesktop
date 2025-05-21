@@ -1,0 +1,22 @@
+\doxysection{Platform\+Driver\+Factory.\+h}
+\hypertarget{_platform_driver_factory_8h_source}{}\label{_platform_driver_factory_8h_source}\index{extern\_app/SystemState/platforms/PlatformDriverFactory.h@{extern\_app/SystemState/platforms/PlatformDriverFactory.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PLATFORMDRIVERFACTORY\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PLATFORMDRIVERFACTORY\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <QtClassHelperMacros>}}
+\DoxyCodeLine{00004\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_c_i_m_x___abstract_memory_info_driver}{CCIMX\_AbstractMemoryInfoDriver}};}
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_c_i_m_x___abstract_c_p_u_state_driver}{CCIMX\_AbstractCPUStateDriver}};}
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_c_i_m_x___abstract_process_broswer_driver}{CCIMX\_AbstractProcessBroswerDriver}};}
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }PlatformDriverFactory\ \{}
+\DoxyCodeLine{00008\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00009\ \ \ \ \ PlatformDriverFactory()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00010\ \ \ \ \ Q\_DISABLE\_COPY(PlatformDriverFactory);}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_c_c_i_m_x___abstract_memory_info_driver}{CCIMX\_AbstractMemoryInfoDriver}}*\ meminfo\_from\_platform();}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_c_c_i_m_x___abstract_c_p_u_state_driver}{CCIMX\_AbstractCPUStateDriver}}*\ cpustate\_from\_platform();}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_c_c_i_m_x___abstract_process_broswer_driver}{CCIMX\_AbstractProcessBroswerDriver}}*\ processdriver\_from\_platform();}
+\DoxyCodeLine{00014\ \};}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PLATFORMDRIVERFACTORY\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,47 @@
+\doxysection{CPUUsage\+Chart.\+h}
+\hypertarget{_c_p_u_usage_chart_8h_source}{}\label{_c_p_u_usage_chart_8h_source}\index{extern\_app/SystemState/Ui/CPUUsageChart.h@{extern\_app/SystemState/Ui/CPUUsageChart.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CPUUSAGECHART\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CPUUSAGECHART\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}Core/CPUStateFetcher.h"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QWidget>}}
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }QChart;}
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }QLineSeries;}
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }QValueAxis;}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }CPUUsageChart;}
+\DoxyCodeLine{00011\ \}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }CPUUsageChart\ :\ \textcolor{keyword}{public}\ QWidget\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{explicit}\ CPUUsageChart(QWidget*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00018\ \ \ \ \ \string~CPUUsageChart();}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ flush\_from\_cpudriver(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_c_p_u_state_fetcher_1_1_c_p_u_state}{CPUStateFetcher::CPUState}}\&\ state);}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ MAX\_POINT\ \{\ 30\ \};}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ setup\_chart\_ui();}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ flush\_labels(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_c_p_u_state_fetcher_1_1_c_p_u_state}{CPUStateFetcher::CPUState}}\&\ state,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ cpu\_usage\_percentage);}
+\DoxyCodeLine{00027\ \ \ \ \ Ui::CPUUsageChart*\ ui;}
+\DoxyCodeLine{00028\ \ \ \ \ QChart*\ chart\ \{\ \textcolor{keyword}{nullptr}\ \};}
+\DoxyCodeLine{00029\ \ \ \ \ QLineSeries*\ series\ \{\ \textcolor{keyword}{nullptr}\ \};}
+\DoxyCodeLine{00030\ \ \ \ \ QValueAxis*\ axisX\ \{\ \textcolor{keyword}{nullptr}\ \};}
+\DoxyCodeLine{00031\ \ \ \ \ QValueAxis*\ axisY\ \{\ \textcolor{keyword}{nullptr}\ \};}
+\DoxyCodeLine{00032\ \ \ \ \ QList<int>\ xValues;}
+\DoxyCodeLine{00033\ \ \ \ \ QList<double>\ yValues;}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{int}\ currentTime\ =\ 0;\ \textcolor{comment}{/*\ current\ boarding\ time\ */}}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ last\_tol\ \{\ 0.0\ \};}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ last\_idle\ \{\ 0.0\ \};}
+\DoxyCodeLine{00038\ \ \ \ \ \}\ cached\_data;}
+\DoxyCodeLine{00039\ \};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CPUUSAGECHART\_H}}
+
+\end{DoxyCode}

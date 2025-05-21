@@ -97,7 +97,7 @@ QStackedWidget* DesktopMainWindow::stackedWidget() const {
 	return ui->stackedWidget;
 }
 
-void DesktopMainWindow::post_inits() {
+void DesktopMainWindow::post_show() {
 	connect(this, &DesktopMainWindow::deptach_app_cards_init,
 			this, &DesktopMainWindow::invoke_appcards_init);
 

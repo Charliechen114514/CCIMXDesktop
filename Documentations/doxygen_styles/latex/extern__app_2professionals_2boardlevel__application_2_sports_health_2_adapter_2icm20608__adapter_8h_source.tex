@@ -1,0 +1,39 @@
+\doxysection{icm20608\+\_\+adapter.\+h}
+\hypertarget{extern__app_2professionals_2boardlevel__application_2_sports_health_2_adapter_2icm20608__adapter_8h_source}{}\label{extern__app_2professionals_2boardlevel__application_2_sports_health_2_adapter_2icm20608__adapter_8h_source}\index{extern\_app/professionals/boardlevel\_application/SportsHealth/Adapter/icm20608\_adapter.h@{extern\_app/professionals/boardlevel\_application/SportsHealth/Adapter/icm20608\_adapter.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}ICM20608Data.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#ifdef\ \_WIN32}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <unistd.h>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_i_c_m20608}{ICM20608}}\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00011\ \ \ \ \ ICM20608()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{comment}{/*\ disable\ all\ copies\ then\ */}}
+\DoxyCodeLine{00013\ \ \ \ \ ICM20608\&\ operator=(\textcolor{keyword}{const}\ ICM20608\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00014\ \ \ \ \ ICM20608(\textcolor{keyword}{const}\ ICM20608\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00017\ \textcolor{comment}{\ \ \ \ \ \ \ \ invoke\ this\ to\ get\ the\ data,\ True\ if\ the\ data\ is\ valid}}
+\DoxyCodeLine{00018\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_i_c_m20608_aae4d486afa4f07805fab7b0453864744}{get\_package\_sync}}(ICM20608AppData\&\ empty\_data\_pack);}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{comment}{/*\ replace\ the\ dev\ file\ with\ your\ owns\ */}}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \_dev\_file\_path\ =\ \textcolor{stringliteral}{"{}/dev/icm20608"{}};}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{comment}{/*\ dev\ file\ */}}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ bind\_dev\_file();}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#ifdef\ \_WIN32}}
+\DoxyCodeLine{00027\ \ \ \ \ std::ifstream\ dev\_stream;}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{bool}\ get\_package\_sync\_win32impl(ICM20608AppData\&\ empty);}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{int}\ private\_fd\ \{\ -\/1\ \};}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{bool}\ get\_package\_sync\_uniximpl(ICM20608AppData\&\ empty);}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00033\ \};}
+
+\end{DoxyCode}

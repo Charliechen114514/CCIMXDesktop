@@ -1,0 +1,30 @@
+\doxysection{Sports\+Display\+Widget.\+h}
+\hypertarget{_sports_display_widget_8h_source}{}\label{_sports_display_widget_8h_source}\index{extern\_app/professionals/boardlevel\_application/SportsHealth/Ui/SportsDisplayWidget.h@{extern\_app/professionals/boardlevel\_application/SportsHealth/Ui/SportsDisplayWidget.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ SPORTSDISPLAYWIDGET\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ SPORTSDISPLAYWIDGET\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}ICM20608Data.h"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QWidget>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }SportsDisplayWidget;}
+\DoxyCodeLine{00008\ \}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }SportsDisplayWidget\ :\ \textcolor{keyword}{public}\ QWidget\ \{}
+\DoxyCodeLine{00011\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{explicit}\ SportsDisplayWidget(QWidget*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00015\ \ \ \ \ \string~SportsDisplayWidget();}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{void}\ setDisplay(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_i_c_m20608_app_data}{ICM20608AppData}}\&\ data);}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00021\ \ \ \ \ Ui::SportsDisplayWidget*\ ui;}
+\DoxyCodeLine{00022\ \};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ SPORTSDISPLAYWIDGET\_H}}
+
+\end{DoxyCode}

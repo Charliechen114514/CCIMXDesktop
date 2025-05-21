@@ -1,0 +1,157 @@
+\doxysection{Desktop\+Main\+Window Class Reference}
+\hypertarget{class_desktop_main_window}{}\label{class_desktop_main_window}\index{DesktopMainWindow@{DesktopMainWindow}}
+
+
+\doxylink{class_desktop_main_window}{Desktop\+Main\+Window} Makes the total front end of everything, for beginners, you can start at here to see the details.  
+
+
+
+
+{\ttfamily \#include $<$desktopmainwindow.\+h$>$}
+
+Inheritance diagram for Desktop\+Main\+Window\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_desktop_main_window}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_desktop_main_window_1_1_wall_paper_group}{Wall\+Paper\+Group}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_desktop_main_window_a60543a4367ec2d3ae50a5dd2d8743ea7}\label{class_desktop_main_window_a60543a4367ec2d3ae50a5dd2d8743ea7} 
+void {\bfseries deptach\+\_\+app\+\_\+cards\+\_\+init} ()
+\begin{DoxyCompactList}\small\item\em Signals, that when everytime the app cards requires init, the signals is triggered. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_desktop_main_window_aaac5851bae7399538f8ba037117bfdbf}\label{class_desktop_main_window_aaac5851bae7399538f8ba037117bfdbf} 
+{\bfseries Desktop\+Main\+Window} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
+\item 
+void \mbox{\hyperlink{class_desktop_main_window_a5b8b69ca43a0adb247853ff9c6424c43}{show\+Toast}} (const QString \&message)
+\begin{DoxyCompactList}\small\item\em This is using in showing some toasts in the mainwindow. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_desktop_toast}{Desktop\+Toast}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_desktop_main_window_ad96e7341abb14b361bf76d3baff81071}{desktop\+\_\+toast}} () const
+\begin{DoxyCompactList}\small\item\em returns the \doxylink{class_desktop_toast}{Desktop\+Toast} Handle \end{DoxyCompactList}\item 
+\Hypertarget{class_desktop_main_window_aa904c77c3b7b1f00c55602a47dc7e036}\label{class_desktop_main_window_aa904c77c3b7b1f00c55602a47dc7e036} 
+void {\bfseries to\+\_\+next\+\_\+page} ()
+\begin{DoxyCompactList}\small\item\em to\+\_\+next\+\_\+page makes the slide to next page \end{DoxyCompactList}\item 
+\Hypertarget{class_desktop_main_window_a813e78d2d7102d2f5b3d9096f0118dcc}\label{class_desktop_main_window_a813e78d2d7102d2f5b3d9096f0118dcc} 
+void {\bfseries to\+\_\+prev\+\_\+page} ()
+\begin{DoxyCompactList}\small\item\em to\+\_\+prev\+\_\+page makes the slide to previous page \end{DoxyCompactList}\item 
+\Hypertarget{class_desktop_main_window_a010608971bb06a048f8af50e68ac460f}\label{class_desktop_main_window_a010608971bb06a048f8af50e68ac460f} 
+void {\bfseries invoke\+\_\+switch\+\_\+bgpage} ()
+\begin{DoxyCompactList}\small\item\em invoke this can depatch a session of page switching \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_desktop_main_window_a39fb277355a84381bf009a605bd9bc7e}{install\+\_\+remote\+\_\+appwrapper}} (\mbox{\hyperlink{class_application_wrapper}{Application\+Wrapper}} \texorpdfstring{$\ast$}{*}wrapper)
+\begin{DoxyCompactList}\small\item\em install\+\_\+remote\+\_\+appwrapper installs a remote app wrapper \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_desktop_main_window_ad72a53e56f786aa89acd04b1544d709c}{handle\+\_\+app\+\_\+status}} (App\+Widget\+::\+App\+Status status)
+\begin{DoxyCompactList}\small\item\em handle\+\_\+app\+\_\+status is the handler for app status, it will be called when the app status is changed, like the app depatching errors \end{DoxyCompactList}\item 
+QStacked\+Widget \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_desktop_main_window_a8f361d9bfc1b0745c02a8d8c4ec59beb}{stacked\+Widget}} () const
+\begin{DoxyCompactList}\small\item\em returns the stacked\+Widget the slider using \end{DoxyCompactList}\item 
+\Hypertarget{class_desktop_main_window_a3f4e883111f10e3fede7ae9818d36a4b}\label{class_desktop_main_window_a3f4e883111f10e3fede7ae9818d36a4b} 
+void {\bfseries post\+\_\+show} ()
+\begin{DoxyCompactList}\small\item\em post\+\_\+show makes the later init of the main\+Window \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_desktop_main_window_aea9d86ecbe7b54e38e8c871722054274}\label{class_desktop_main_window_aea9d86ecbe7b54e38e8c871722054274} 
+void {\bfseries mouse\+Press\+Event} (QMouse\+Event \texorpdfstring{$\ast$}{*}event) override
+\item 
+\Hypertarget{class_desktop_main_window_a4a1c72982f01def8eb97ed697849a1b6}\label{class_desktop_main_window_a4a1c72982f01def8eb97ed697849a1b6} 
+void {\bfseries mouse\+Release\+Event} (QMouse\+Event \texorpdfstring{$\ast$}{*}event) override
+\item 
+\Hypertarget{class_desktop_main_window_ab4794a1ff19ffeae8b3b971128898448}\label{class_desktop_main_window_ab4794a1ff19ffeae8b3b971128898448} 
+void {\bfseries resize\+Event} (QResize\+Event \texorpdfstring{$\ast$}{*}event) override
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_desktop_main_window_a2b2e62a9d61d5dc451ecb2c3701de63b}\label{class_desktop_main_window_a2b2e62a9d61d5dc451ecb2c3701de63b} 
+class {\bfseries Page\+Factory}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_desktop_main_window}{Desktop\+Main\+Window} Makes the total front end of everything, for beginners, you can start at here to see the details. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_desktop_main_window_ad96e7341abb14b361bf76d3baff81071}\index{DesktopMainWindow@{DesktopMainWindow}!desktop\_toast@{desktop\_toast}}
+\index{desktop\_toast@{desktop\_toast}!DesktopMainWindow@{DesktopMainWindow}}
+\doxysubsubsection{\texorpdfstring{desktop\_toast()}{desktop\_toast()}}
+{\footnotesize\ttfamily \label{class_desktop_main_window_ad96e7341abb14b361bf76d3baff81071} 
+\mbox{\hyperlink{class_desktop_toast}{Desktop\+Toast}} \texorpdfstring{$\ast$}{*} Desktop\+Main\+Window\+::desktop\+\_\+toast (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+returns the \doxylink{class_desktop_toast}{Desktop\+Toast} Handle 
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_desktop_toast}{Desktop\+Toast} 
+\end{DoxyReturn}
+\Hypertarget{class_desktop_main_window_ad72a53e56f786aa89acd04b1544d709c}\index{DesktopMainWindow@{DesktopMainWindow}!handle\_app\_status@{handle\_app\_status}}
+\index{handle\_app\_status@{handle\_app\_status}!DesktopMainWindow@{DesktopMainWindow}}
+\doxysubsubsection{\texorpdfstring{handle\_app\_status()}{handle\_app\_status()}}
+{\footnotesize\ttfamily \label{class_desktop_main_window_ad72a53e56f786aa89acd04b1544d709c} 
+void Desktop\+Main\+Window\+::handle\+\_\+app\+\_\+status (\begin{DoxyParamCaption}\item[{App\+Widget\+::\+App\+Status}]{status}{}\end{DoxyParamCaption})}
+
+
+
+handle\+\_\+app\+\_\+status is the handler for app status, it will be called when the app status is changed, like the app depatching errors 
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & the status waiting for the depatching \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_desktop_main_window_a39fb277355a84381bf009a605bd9bc7e}\index{DesktopMainWindow@{DesktopMainWindow}!install\_remote\_appwrapper@{install\_remote\_appwrapper}}
+\index{install\_remote\_appwrapper@{install\_remote\_appwrapper}!DesktopMainWindow@{DesktopMainWindow}}
+\doxysubsubsection{\texorpdfstring{install\_remote\_appwrapper()}{install\_remote\_appwrapper()}}
+{\footnotesize\ttfamily \label{class_desktop_main_window_a39fb277355a84381bf009a605bd9bc7e} 
+void Desktop\+Main\+Window\+::install\+\_\+remote\+\_\+appwrapper (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_application_wrapper}{Application\+Wrapper}} \texorpdfstring{$\ast$}{*}}]{wrapper}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+install\+\_\+remote\+\_\+appwrapper installs a remote app wrapper 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wrapper} & the wrapper to be installed \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_desktop_main_window_a5b8b69ca43a0adb247853ff9c6424c43}\index{DesktopMainWindow@{DesktopMainWindow}!showToast@{showToast}}
+\index{showToast@{showToast}!DesktopMainWindow@{DesktopMainWindow}}
+\doxysubsubsection{\texorpdfstring{showToast()}{showToast()}}
+{\footnotesize\ttfamily \label{class_desktop_main_window_a5b8b69ca43a0adb247853ff9c6424c43} 
+void Desktop\+Main\+Window\+::show\+Toast (\begin{DoxyParamCaption}\item[{const QString \&}]{message}{}\end{DoxyParamCaption})}
+
+
+
+This is using in showing some toasts in the mainwindow. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & for posting \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_desktop_main_window_a8f361d9bfc1b0745c02a8d8c4ec59beb}\index{DesktopMainWindow@{DesktopMainWindow}!stackedWidget@{stackedWidget}}
+\index{stackedWidget@{stackedWidget}!DesktopMainWindow@{DesktopMainWindow}}
+\doxysubsubsection{\texorpdfstring{stackedWidget()}{stackedWidget()}}
+{\footnotesize\ttfamily \label{class_desktop_main_window_a8f361d9bfc1b0745c02a8d8c4ec59beb} 
+QStacked\+Widget \texorpdfstring{$\ast$}{*} Desktop\+Main\+Window\+::stacked\+Widget (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+returns the stacked\+Widget the slider using 
+
+\begin{DoxyReturn}{Returns}
+QStacked\+Widget 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+ui/desktopmainwindow.\+h\item 
+ui/desktopmainwindow.\+cpp\end{DoxyCompactItemize}

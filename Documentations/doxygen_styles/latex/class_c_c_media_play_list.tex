@@ -1,0 +1,90 @@
+\doxysection{CCMedia\+Play\+List Class Reference}
+\hypertarget{class_c_c_media_play_list}{}\label{class_c_c_media_play_list}\index{CCMediaPlayList@{CCMediaPlayList}}
+Inheritance diagram for CCMedia\+Play\+List\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_c_media_play_list}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3}\label{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3} 
+enum class {\bfseries Play\+Mode} \{ {\bfseries One\+Shot}
+, {\bfseries One\+Cycle}
+, {\bfseries List\+Play}
+, {\bfseries List\+Cycle}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_c_c_media_play_list_a8cdc1504dab41103a260c634338fd6cd}\label{class_c_c_media_play_list_a8cdc1504dab41103a260c634338fd6cd} 
+void {\bfseries flush\+\_\+play\+\_\+list} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_c_c_media_play_list_addb3f2f5f4ec2b3c4df9f1cde7dc93b0}\label{class_c_c_media_play_list_addb3f2f5f4ec2b3c4df9f1cde7dc93b0} 
+void {\bfseries play\+Mode\+Changed} (const Play\+Mode mode)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_c_c_media_play_list_a32b802259d0a81fa00edd6b4a0bc46d0}\label{class_c_c_media_play_list_a32b802259d0a81fa00edd6b4a0bc46d0} 
+{\bfseries CCMedia\+Play\+List} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
+\item 
+\Hypertarget{class_c_c_media_play_list_ad51a9b2199e30a9bf4ca809ef62acd51}\label{class_c_c_media_play_list_ad51a9b2199e30a9bf4ca809ef62acd51} 
+void {\bfseries set\+\_\+play\+\_\+mode} (const Play\+Mode mode)
+\item 
+\Hypertarget{class_c_c_media_play_list_aa87872c991b4c181e065aef59570391f}\label{class_c_c_media_play_list_aa87872c991b4c181e065aef59570391f} 
+void {\bfseries flow\+\_\+mode} ()
+\item 
+\Hypertarget{class_c_c_media_play_list_ac60aeacbb183d17126bfd2867cfa9280}\label{class_c_c_media_play_list_ac60aeacbb183d17126bfd2867cfa9280} 
+Play\+Mode {\bfseries get\+\_\+play\+\_\+mode} () const
+\item 
+\Hypertarget{class_c_c_media_play_list_a7b6c8ec7d64c49707646386e74062488}\label{class_c_c_media_play_list_a7b6c8ec7d64c49707646386e74062488} 
+\mbox{\hyperlink{struct_media_list_mails}{Media\+List\+Mails}} {\bfseries fetch\+\_\+prev\+\_\+play} ()
+\item 
+\Hypertarget{class_c_c_media_play_list_a87e0329a7a3f6d5a993f562228751f9c}\label{class_c_c_media_play_list_a87e0329a7a3f6d5a993f562228751f9c} 
+\mbox{\hyperlink{struct_media_list_mails}{Media\+List\+Mails}} {\bfseries fetch\+\_\+next\+\_\+play} ()
+\item 
+\Hypertarget{class_c_c_media_play_list_a92825a1328290f7ccdc0629a002920e6}\label{class_c_c_media_play_list_a92825a1328290f7ccdc0629a002920e6} 
+\mbox{\hyperlink{struct_media_list_mails}{Media\+List\+Mails}} {\bfseries fetch\+\_\+current\+\_\+play} ()
+\item 
+\Hypertarget{class_c_c_media_play_list_acdc84b23ae1686db0269226c94d90e8c}\label{class_c_c_media_play_list_acdc84b23ae1686db0269226c94d90e8c} 
+\mbox{\hyperlink{struct_media_list_mails}{Media\+List\+Mails}} {\bfseries fetch\+\_\+from\+\_\+name} (const QString \&where)
+\item 
+\Hypertarget{class_c_c_media_play_list_aae4da67df5bc12ee8e401c594dcdd5c3}\label{class_c_c_media_play_list_aae4da67df5bc12ee8e401c594dcdd5c3} 
+\mbox{\hyperlink{struct_media_list_mails}{Media\+List\+Mails}} {\bfseries fetch\+\_\+first\+\_\+play} ()
+\item 
+\Hypertarget{class_c_c_media_play_list_a24b68f240ed39e66ad2e9286f60377a0}\label{class_c_c_media_play_list_a24b68f240ed39e66ad2e9286f60377a0} 
+\mbox{\hyperlink{struct_media_list_mails}{Media\+List\+Mails}} {\bfseries fetch\+\_\+last\+\_\+play} ()
+\item 
+\Hypertarget{class_c_c_media_play_list_a9c252087e36d48ff4b278c86f1df2330}\label{class_c_c_media_play_list_a9c252087e36d48ff4b278c86f1df2330} 
+QString\+List {\bfseries current\+Playing\+List} () const
+\item 
+\Hypertarget{class_c_c_media_play_list_a5e0b767ee157bfb31d8448da10f43e4b}\label{class_c_c_media_play_list_a5e0b767ee157bfb31d8448da10f43e4b} 
+QString\+List {\bfseries actual\+List} () const
+\item 
+\Hypertarget{class_c_c_media_play_list_aa0c86cc509a3eb75da7128a471f715ee}\label{class_c_c_media_play_list_aa0c86cc509a3eb75da7128a471f715ee} 
+int {\bfseries get\+\_\+actual\+Listlist\+\_\+size} ()
+\item 
+\Hypertarget{class_c_c_media_play_list_a4a0901d47ef75d9543ecb9d603773c74}\label{class_c_c_media_play_list_a4a0901d47ef75d9543ecb9d603773c74} 
+void {\bfseries enqueue\+\_\+play} (const QString\+List \&media\+\_\+sources)
+\item 
+\Hypertarget{class_c_c_media_play_list_a68daf8f790fd4be4389c284f2e1eb150}\label{class_c_c_media_play_list_a68daf8f790fd4be4389c284f2e1eb150} 
+void {\bfseries remove\+\_\+play\+\_\+list} (const QString\+List \&media\+\_\+sources)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_c_c_media_play_list_a02e1f3f29461356cf685f51a7873c851}\label{class_c_c_media_play_list_a02e1f3f29461356cf685f51a7873c851} 
+static constexpr const Play\+Mode {\bfseries DEF\+\_\+\+MODE} = Play\+Mode\+::\+List\+Cycle
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+extern\+\_\+app/\+Media\+Player/core/CCMedia\+Play\+List.\+h\item 
+extern\+\_\+app/\+Media\+Player/core/CCMedia\+Play\+List.\+cpp\end{DoxyCompactItemize}

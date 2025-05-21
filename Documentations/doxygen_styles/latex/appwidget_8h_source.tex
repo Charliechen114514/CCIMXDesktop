@@ -1,0 +1,50 @@
+\doxysection{appwidget.\+h}
+\hypertarget{appwidget_8h_source}{}\label{appwidget_8h_source}\index{ui/appwidget.h@{ui/appwidget.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ APPWIDGET\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ APPWIDGET\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <QIcon>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QWidget>}}
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_application_wrapper}{ApplicationWrapper}};}
+\DoxyCodeLine{00006\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }AppWidget;}
+\DoxyCodeLine{00008\ \}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }AppWidget\ :\ \textcolor{keyword}{public}\ QWidget}
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{explicit}\ AppWidget(\textcolor{keyword}{const}\ QPixmap\&\ icon,\ \textcolor{keyword}{const}\ QString\&\ name,\ QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{void}\ \ \ \ \ bindApp(\mbox{\hyperlink{class_application_wrapper}{ApplicationWrapper}}*\ wrapper)\{this-\/>app\_internal\ =\ wrapper;\}}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{class_application_wrapper}{ApplicationWrapper}}*\ get\_app()\textcolor{keyword}{\ const\ }\{\textcolor{keywordflow}{return}\ this-\/>app\_internal;\}}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{void}\ \ \ \ \ setIcon(\textcolor{keyword}{const}\ QPixmap\&\ icon)\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ \ \ \ \ setAppName(\textcolor{keyword}{const}\ QString\&\ name)\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ \ \ \ \ setDummy(\textcolor{keywordtype}{bool}\ dummy);}
+\DoxyCodeLine{00021\ \ \ \ \ QPixmap\ \ icon()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ \ \ \ \ showIconOnly(\textcolor{keywordtype}{bool}\ st);}
+\DoxyCodeLine{00023\ \ \ \ \ QString\ \ app\_name()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00024\ \ \ \ \ \string~AppWidget();}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{enum\ class}\ AppStatus\{}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ AppOk,}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ AppNonExsits}
+\DoxyCodeLine{00029\ \ \ \ \ \};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ signals:}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ \ \ \ postAppStatus(AppWidget::AppStatus\ status);}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{bool}\ \ \ \ eventFilter(QObject*\ watched,\ QEvent*\ event)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00038\ \ \ \ \ Ui::AppWidget\ *ui;}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{bool}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ dummy\_state\{\textcolor{keyword}{false}\};}
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{class_application_wrapper}{ApplicationWrapper}}*\ \ \ \ \ app\_internal\{\textcolor{keyword}{nullptr}\};}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ do\_daptch();}
+\DoxyCodeLine{00042\ \};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ APPWIDGET\_H}}
+
+\end{DoxyCode}

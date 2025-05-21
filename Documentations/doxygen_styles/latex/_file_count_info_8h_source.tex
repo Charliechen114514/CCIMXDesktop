@@ -1,0 +1,48 @@
+\doxysection{File\+Count\+Info.\+h}
+\hypertarget{_file_count_info_8h_source}{}\label{_file_count_info_8h_source}\index{extern\_app/FileRamber/Core/FileCountInfo.h@{extern\_app/FileRamber/Core/FileCountInfo.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ FILECOUNTINFO\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ FILECOUNTINFO\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <FileInfoProvider.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QFuture>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QPersistentModelIndex>}}
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }FileCountImplWorker\ :\ \textcolor{keyword}{public}\ QObject\ \{}
+\DoxyCodeLine{00009\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00010\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{explicit}\ FileCountImplWorker(QObject*\ parent\ =\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ :\ QObject(parent)\ \{\ \}}
+\DoxyCodeLine{00013\ \ \ \ \ \string~FileCountImplWorker();}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{void}\ deptach\_count\_task(\textcolor{keyword}{const}\ QPersistentModelIndex\&\ index,\ \textcolor{keyword}{const}\ QString\&\ path);}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ signals:}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{void}\ fileCountFinished(QPersistentModelIndex\ index,\ \textcolor{keywordtype}{int}\ count);}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00020\ \ \ \ \ QList<QFuture<void>>\ results;}
+\DoxyCodeLine{00021\ \};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }FileCountInfo\ :\ \textcolor{keyword}{public}\ QObject,\ \textcolor{keyword}{public}\ FileInfoProvider\ \{}
+\DoxyCodeLine{00024\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00025\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{explicit}\ FileCountInfo(\mbox{\hyperlink{class_c_c_i_m_x_file_system_model}{CCIMXFileSystemModel}}*\ model,\ QObject*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{inline}\ QString\ provide\_section\_name()\ \{}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}fileCounts"{}};}
+\DoxyCodeLine{00029\ \ \ \ \ \}}
+\DoxyCodeLine{00030\ \ \ \ \ std::pair<bool,\ QVariant>\ data(\textcolor{keyword}{const}\ QModelIndex\&\ index,\ \textcolor{keywordtype}{int}\ role);}
+\DoxyCodeLine{00031\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ onHandleWorkFinishJob(QPersistentModelIndex\ index,\ \textcolor{keywordtype}{int}\ count);}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{class_file_count_impl_worker}{FileCountImplWorker}}*\ worker;}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{comment}{/*\ Thanks\ AI,\ I\ solved\ the\ persis\ issue\ */}}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{comment}{/*\ These\ are\ using\ in\ caching\ the\ already\ in\ s\ */}}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{mutable}\ QHash<QPersistentModelIndex,\ int>\ cache;}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{mutable}\ QSet<QPersistentModelIndex>\ requested;}
+\DoxyCodeLine{00040\ \};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ FILECOUNTINFO\_H}}
+
+\end{DoxyCode}

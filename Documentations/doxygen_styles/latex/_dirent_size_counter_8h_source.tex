@@ -1,0 +1,46 @@
+\doxysection{Dirent\+Size\+Counter.\+h}
+\hypertarget{_dirent_size_counter_8h_source}{}\label{_dirent_size_counter_8h_source}\index{extern\_app/FileRamber/Core/DirentSizeCounter.h@{extern\_app/FileRamber/Core/DirentSizeCounter.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ DIRENTSIZECOUNTER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ DIRENTSIZECOUNTER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}FileInfoProvider.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QFuture>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }DirentSizeWorker\ :\ \textcolor{keyword}{public}\ QObject\ \{}
+\DoxyCodeLine{00008\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00009\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{explicit}\ DirentSizeWorker(QObject*\ \textcolor{keywordtype}{object}\ =\ \textcolor{keyword}{nullptr})\ \{\ \}}
+\DoxyCodeLine{00011\ \ \ \ \ \string~DirentSizeWorker();}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{void}\ depatch\_sizeCount\_task(\textcolor{keyword}{const}\ QPersistentModelIndex\&\ index,\ \textcolor{keyword}{const}\ QString\&\ path);}
+\DoxyCodeLine{00013\ signals:}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{void}\ sizeCountFinish(QPersistentModelIndex\ index,\ qint64\ size);}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00017\ \ \ \ \ QList<QFuture<void>>\ results;}
+\DoxyCodeLine{00018\ \};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }DirentSizeCounter\ :\ \textcolor{keyword}{public}\ QObject,\ \textcolor{keyword}{public}\ FileInfoProvider\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00022\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{explicit}\ DirentSizeCounter(\mbox{\hyperlink{class_c_c_i_m_x_file_system_model}{CCIMXFileSystemModel}}*\ model,\ QObject*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{inline}\ QString\ provide\_section\_name()\ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}File\ Size"{}};}
+\DoxyCodeLine{00026\ \ \ \ \ \}}
+\DoxyCodeLine{00027\ \ \ \ \ std::pair<bool,\ QVariant>\ data(\textcolor{keyword}{const}\ QModelIndex\&\ index,\ \textcolor{keywordtype}{int}\ role);}
+\DoxyCodeLine{00028\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ onHandleWorkFinishJob(QPersistentModelIndex\ index,\ qint64\ size);}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{class_dirent_size_worker}{DirentSizeWorker}}*\ worker;}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{comment}{/*\ Thus\ I\ must\ copy\ the\ session...\ */}}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{comment}{/*\ Thanks\ AI,\ I\ solved\ the\ persis\ issue\ */}}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{comment}{/*\ These\ are\ using\ in\ caching\ the\ already\ in\ s\ */}}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{mutable}\ QHash<QPersistentModelIndex,\ qint64>\ cache;}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{mutable}\ QSet<QPersistentModelIndex>\ requested;}
+\DoxyCodeLine{00038\ \};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ DIRENTSIZECOUNTER\_H}}
+
+\end{DoxyCode}

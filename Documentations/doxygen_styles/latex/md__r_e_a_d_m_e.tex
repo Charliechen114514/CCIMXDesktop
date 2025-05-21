@@ -1,0 +1,80 @@
+\chapter{🖥️ CCIMXDESKTOP}
+\hypertarget{md__r_e_a_d_m_e}{}\label{md__r_e_a_d_m_e}\index{🖥️ CCIMXDESKTOP@{🖥️ CCIMXDESKTOP}}
+\label{md__r_e_a_d_m_e_autotoc_md31}%
+\Hypertarget{md__r_e_a_d_m_e_autotoc_md31}%
+
+
+
+
+🔌 您好！这是一个可在多种嵌入式设备中使用的简单桌面和实用程序。对我来说，它启动了专为 i.\+MX 平台定制的套件，结合了内置系统小工具和可扩展的外部应用程序。该项目使用 Qt 设计，正在尽可能支持与各种硬件传感器和多媒体接口集成。\hypertarget{md__r_e_a_d_m_e_autotoc_md32}{}\doxysection{\texorpdfstring{🌐 开始之前，选择你的语言！ 🌐}{🌐 开始之前，选择你的语言！ 🌐}}\label{md__r_e_a_d_m_e_autotoc_md32}
+\doxysectlink{md__r_e_a_d_m_e___e_n}{🇬🇧 English Version}{0} \texorpdfstring{$\vert$}{|} \doxysectlink{md__r_e_a_d_m_e}{🇨🇳 中文}{0}\hypertarget{md__r_e_a_d_m_e_autotoc_md33}{}\doxysection{\texorpdfstring{🌟 项目概述 🌟}{🌟 项目概述 🌟}}\label{md__r_e_a_d_m_e_autotoc_md33}
+{\bfseries{CCIMXDESKTOP}} 提供了一个轻量级、可扩展的桌面环境，专为基于 NXP i.\+MX6\+ULL 平台的嵌入式系统优化。它包含一系列内置工具、设备集成层和第三方应用程序，所有这些都在一个统一的用户界面中呈现。
+
+ 
+
+现在，\+CCIMXDesktop支持的一键构建包括：
+
+
+\begin{DoxyItemize}
+\item 🏠 基础的桌面环境和应用抽象
+\item 🔧 Builtin Apps（室内气温需要已经挂载\+ICM20608驱动且可用，其他传感器需要自行修改接口内容（只需要重写如何读即可）与联网程度检测（需要\+Qt Networks Core 的基础被支持））
+\item ☀️ Weather\+APP（需要您的设备可以联网才可用）
+\item 📄 pdf\+Reader（需要您具备您平台上的mupdf的依赖静态库）
+\item 📁 File\+Ramber（文件浏览器，具备基本的文件导览，\+Windows Explorer.\+exe的\+Tiny版本）
+\item 📷 General\+Local\+Camera（这是基于\+Opencv Video\+Capture的基础相机，可以实现拍照功能）
+\item 📊 System\+State（查看运行机的\+CPU状态，内存容量状态和进程列表）
+\item 🎵 Media\+Player（需要您的\+QMedia\+Player支持\+ALSA或者是其他的音频播放，视频播放需要\+Open\+CV支持）
+\item 💡 \doxylink{class_l_e_d_controller}{LEDController} App（开关灯\+APP，需要 Platform LED 驱动使能）
+\item 🌡️ Environment App（\+AP3216\+C驱动需要被挂载）
+\item 🏃 Sport\+Health App (ICM20608驱动需要被挂载)
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md35}{}\doxysection{\texorpdfstring{一些运行截图}{一些运行截图}}\label{md__r_e_a_d_m_e_autotoc_md35}
+
+
+\hypertarget{md__r_e_a_d_m_e_autotoc_md36}{}\doxysection{\texorpdfstring{🛠️ 基础构建所用技术}{🛠️ 基础构建所用技术}}\label{md__r_e_a_d_m_e_autotoc_md36}
+ 
+
+对于映射基础桌面的初学者来说，嵌入式设备应该支持 Qt6 核心控件和核心网络。此外，用于显示的 TSLIB 和 Linux 帧缓冲后端也应该已准备就绪。\hypertarget{md__r_e_a_d_m_e_autotoc_md37}{}\doxysection{\texorpdfstring{🛠️ 完整构建所用技术}{🛠️ 完整构建所用技术}}\label{md__r_e_a_d_m_e_autotoc_md37}
+ 
+
+
+\begin{DoxyItemize}
+\item Open\+CV 用于摄像头支持
+\item Mu\+PDF（用于 PDF 渲染）（这些用于基于 mupdf 的 PDF 阅读器）
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md39}{}\doxysection{\texorpdfstring{🧩开发者参考}{🧩开发者参考}}\label{md__r_e_a_d_m_e_autotoc_md39}
+
+\begin{DoxyItemize}
+\item \doxysectlink{md__components-explain-_c_n}{📖 汉语模块说明}{0}
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md41}{}\doxysection{\texorpdfstring{📚项目文档}{📚项目文档}}\label{md__r_e_a_d_m_e_autotoc_md41}
+🛠️ 如何构建本项目？（\+X86 gcc, ARM-\/linux-\/gnueabihf-\/gcc与\+Windows GCC都支持！）
+
+ 
+
+如果您对项目的制作流程和开发文档感兴趣，请参考\+Documentations文件夹\hypertarget{md__r_e_a_d_m_e_autotoc_md42}{}\doxysection{\texorpdfstring{💡 未来计划}{💡 未来计划}}\label{md__r_e_a_d_m_e_autotoc_md42}
+
+\begin{DoxyItemize}
+\item 🚀 计划编写和提供更多的外部基础程序：
+\begin{DoxyItemize}
+\item 💬 聊天室（计划类似于\+QQ）
+\item ⏰ 闹钟\+APP
+\item 🖼️ 图像浏览器
+\item 🎨 图像处理器
+\item ✏️ 文本简单的编辑器
+\item 🔌 串口助手
+\item 🤖 图像处理器本地处理图像和做简单的推理（人脸识别）
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md44}{}\doxysection{\texorpdfstring{📝 许可证}{📝 许可证}}\label{md__r_e_a_d_m_e_autotoc_md44}
+
+
+本项目基于 MIT 许可证，欢迎随意移植、修改和使用！ 

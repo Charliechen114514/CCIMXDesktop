@@ -1,0 +1,27 @@
+\doxysection{digitaltimewidget.\+h}
+\hypertarget{digitaltimewidget_8h_source}{}\label{digitaltimewidget_8h_source}\index{builtin/ui/digitaltimewidget.h@{builtin/ui/digitaltimewidget.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ DIGITALTIMEWIDGET\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ DIGITALTIMEWIDGET\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <QTime>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QWidget>}}
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_clock_widget}{ClockWidget}};}
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }DigitalTimeWidget\ :\ \textcolor{keyword}{public}\ QWidget}
+\DoxyCodeLine{00007\ \{}
+\DoxyCodeLine{00008\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00009\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{explicit}\ DigitalTimeWidget(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ bindClockWidget(\mbox{\hyperlink{class_clock_widget}{ClockWidget}}*\ clock);}
+\DoxyCodeLine{00012\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ process\_time\_update(QTime\ process\_time);}
+\DoxyCodeLine{00014\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ paintEvent(QPaintEvent\ *event)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00016\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00017\ \ \ \ \ QTime\ \ \ \ \ \ \ \ \ \ \ stored\_time;}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_clock_widget}{ClockWidget}}*\ \ \ \ clk\_widget;}
+\DoxyCodeLine{00019\ \};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ DIGITALTIMEWIDGET\_H}}
+
+\end{DoxyCode}

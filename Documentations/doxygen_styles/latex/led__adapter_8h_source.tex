@@ -1,0 +1,38 @@
+\doxysection{led\+\_\+adapter.\+h}
+\hypertarget{led__adapter_8h_source}{}\label{led__adapter_8h_source}\index{extern\_app/professionals/boardlevel\_application/LightController/Adapter/led\_adapter.h@{extern\_app/professionals/boardlevel\_application/LightController/Adapter/led\_adapter.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ \ \ \ This\ is\ a\ led\ adapter,\ which\ is\ using\ in}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ \ \ \ drive\ the\ led\ in\ upper\ level\ way}}
+\DoxyCodeLine{00004\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ LED\_ADAPTER}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ LED\_ADAPTER}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifdef\ USE\_REAL\_ADAPTER}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}LEDParamsPackage.h"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }LEDAdapter\ \{}
+\DoxyCodeLine{00011\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{explicit}\ LEDAdapter()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00013\ \ \ \ \ \string~LEDAdapter()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{comment}{/*\ this\ means\ switching\ to\ other\ led\ */}}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{void}\ redirectTo(\textcolor{keyword}{const}\ std::string\&\ ledName);}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{comment}{/*\ led\ written\ path\ */}}
+\DoxyCodeLine{00017\ \ \ \ \ std::string\ ledPath()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ led\_path;\ \}}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{comment}{/*\ modes\ are\ set\ to\ define\ how\ to\ control\ packages\ */}}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ setMode(\textcolor{keyword}{const}\ Modes\ mode)\ \{\ this-\/>mode\ =\ mode;\ \}}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{comment}{/*\ get\ the\ current\ mode\ */}}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{inline}\ Modes\ getMode()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ this-\/>mode;\ \}}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{comment}{/*\ bind\ the\ package\ with\ required\ parameters\ */}}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{bool}\ processByPackage(\textcolor{keyword}{const}\ LEDParamsPackage*\ package);}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00026\ \ \ \ \ std::string\ led\_path;}
+\DoxyCodeLine{00027\ \ \ \ \ Modes\ mode\ \{\ Modes::Plain\ \};}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{comment}{/*\ make\ the\ real\ write\ */}}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{bool}\ write\_file(\textcolor{keyword}{const}\ std::string\&\ fileName,\ \textcolor{keyword}{const}\ std::string\&\ content);}
+\DoxyCodeLine{00030\ \};}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ Real\ Adapter}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,84 @@
+\doxysection{CCPdf\+Document Class Reference}
+\hypertarget{class_c_c_pdf_document}{}\label{class_c_c_pdf_document}\index{CCPdfDocument@{CCPdfDocument}}
+Inheritance diagram for CCPdf\+Document\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_c_pdf_document}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_c_c_pdf_document_a49387984fa059ca9904600ba7edacd39}\label{class_c_c_pdf_document_a49387984fa059ca9904600ba7edacd39} 
+enum class {\bfseries Error\+Code} \{ {\bfseries NO\+\_\+\+ERROR}
+, {\bfseries FILE\+\_\+\+NOT\+\_\+\+EXSIT}
+, {\bfseries OTHER\+\_\+\+MISTAKES}
+ \}
+\item 
+\Hypertarget{class_c_c_pdf_document_a0272e6f6cebd68b3d59af3398c04f7e7}\label{class_c_c_pdf_document_a0272e6f6cebd68b3d59af3398c04f7e7} 
+enum class {\bfseries Page\+Navigation\+Error} \{ {\bfseries PAGE\+\_\+\+OK}
+, {\bfseries PAGE\+\_\+\+UNDERFLOW}
+, {\bfseries PAGE\+\_\+\+OVERFLOW}
+, {\bfseries PAGE\+\_\+\+UNEXSITS}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_c_c_pdf_document_ac7a27d7e7420a45635a4fd872b11587d}\label{class_c_c_pdf_document_ac7a27d7e7420a45635a4fd872b11587d} 
+void {\bfseries document\+\_\+load} (const QString document\+\_\+path)
+\item 
+\Hypertarget{class_c_c_pdf_document_aba7902cbf721d065edbed816dda6c811}\label{class_c_c_pdf_document_aba7902cbf721d065edbed816dda6c811} 
+void {\bfseries page\+Index\+Changed} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_c_c_pdf_document_a0dbd14db687abf21d70d1815e893bbe9}\label{class_c_c_pdf_document_a0dbd14db687abf21d70d1815e893bbe9} 
+{\bfseries CCPdf\+Document} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
+\item 
+\Hypertarget{class_c_c_pdf_document_aa5c4cc096c08e83381fe9f71dd05ec29}\label{class_c_c_pdf_document_aa5c4cc096c08e83381fe9f71dd05ec29} 
+{\bfseries CCPdf\+Document} (const QString \&document\+\_\+path)
+\item 
+\Hypertarget{class_c_c_pdf_document_ae9c20661def7cd3254368806dd1ecc6d}\label{class_c_c_pdf_document_ae9c20661def7cd3254368806dd1ecc6d} 
+{\bfseries Q\+\_\+\+DISABLE\+\_\+\+COPY} (\mbox{\hyperlink{class_c_c_pdf_document}{CCPdf\+Document}})
+\item 
+\Hypertarget{class_c_c_pdf_document_adbcadc5fe612d3c0dd8ccbe18094e24a}\label{class_c_c_pdf_document_adbcadc5fe612d3c0dd8ccbe18094e24a} 
+Error\+Code {\bfseries load\+\_\+document} (const QString \&document\+\_\+path)
+\item 
+\Hypertarget{class_c_c_pdf_document_a4a19d58e4c4cc536bf7aaba7586be6da}\label{class_c_c_pdf_document_a4a19d58e4c4cc536bf7aaba7586be6da} 
+bool {\bfseries close\+\_\+document} ()
+\item 
+\Hypertarget{class_c_c_pdf_document_a49341806a63155ce6222962c0b741bdf}\label{class_c_c_pdf_document_a49341806a63155ce6222962c0b741bdf} 
+bool {\bfseries document\+\_\+loaded} () const
+\item 
+\Hypertarget{class_c_c_pdf_document_abf9058577d2c7f75dd522bef8bd1ace5}\label{class_c_c_pdf_document_abf9058577d2c7f75dd522bef8bd1ace5} 
+std\+::optional$<$ uint32\+\_\+t $>$ {\bfseries document\+\_\+page} () const
+\item 
+\Hypertarget{class_c_c_pdf_document_a1820f7860fc661eb6adbd383e58d9eba}\label{class_c_c_pdf_document_a1820f7860fc661eb6adbd383e58d9eba} 
+fz\+\_\+document \texorpdfstring{$\ast$}{*} {\bfseries raw\+\_\+handle} () const
+\item 
+\Hypertarget{class_c_c_pdf_document_a340e07d237df5d81800f2a289a2f4764}\label{class_c_c_pdf_document_a340e07d237df5d81800f2a289a2f4764} 
+fz\+\_\+context \texorpdfstring{$\ast$}{*} {\bfseries raw\+\_\+context} () const
+\item 
+\Hypertarget{class_c_c_pdf_document_a7a7851e64572f8c99883f46228505aee}\label{class_c_c_pdf_document_a7a7851e64572f8c99883f46228505aee} 
+\mbox{\hyperlink{struct_c_c_pdf_meta_info}{CCPdf\+Meta\+Info}} {\bfseries meta\+\_\+info} () const
+\item 
+\Hypertarget{class_c_c_pdf_document_ab0dbbff186c5b2b6c6eb71d54062355c}\label{class_c_c_pdf_document_ab0dbbff186c5b2b6c6eb71d54062355c} 
+int {\bfseries current\+\_\+page} () const
+\item 
+\Hypertarget{class_c_c_pdf_document_acb5d93f0d8624153bf748b0867108240}\label{class_c_c_pdf_document_acb5d93f0d8624153bf748b0867108240} 
+QString {\bfseries current\+\_\+path} () const
+\item 
+\Hypertarget{class_c_c_pdf_document_a458047bbb3fae082de34dd05ac2668d7}\label{class_c_c_pdf_document_a458047bbb3fae082de34dd05ac2668d7} 
+int {\bfseries total\+\_\+pages} () const
+\item 
+\Hypertarget{class_c_c_pdf_document_a7c6467e8c92cccdfbc6571d0af3ba774}\label{class_c_c_pdf_document_a7c6467e8c92cccdfbc6571d0af3ba774} 
+Page\+Navigation\+Error {\bfseries jump} (const int page\+\_\+index)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+extern\+\_\+app/pdf\+Reader/mupdf\+\_\+adapter/ccpdfdocument.\+h\item 
+extern\+\_\+app/pdf\+Reader/mupdf\+\_\+adapter/ccpdfdocument.\+cpp\end{DoxyCompactItemize}

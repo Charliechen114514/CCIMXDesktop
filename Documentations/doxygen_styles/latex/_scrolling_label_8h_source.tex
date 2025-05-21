@@ -1,0 +1,40 @@
+\doxysection{Scrolling\+Label.\+h}
+\hypertarget{_scrolling_label_8h_source}{}\label{_scrolling_label_8h_source}\index{extern\_app/MediaPlayer/ui/ScrollingLabel.h@{extern\_app/MediaPlayer/ui/ScrollingLabel.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ SCROLLINGLABEL\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ SCROLLINGLABEL\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <QTimer>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QWidget>}}
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }QPropertyAnimation;}
+\DoxyCodeLine{00006\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }ScrollingLabel;}
+\DoxyCodeLine{00008\ \}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }ScrollingLabel\ :\ \textcolor{keyword}{public}\ QWidget\ \{}
+\DoxyCodeLine{00011\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ ANIMATION\_INTERVAL\ =\ 100;}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{short}\ STEP\_SHORT\ =\ 2;}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{explicit}\ ScrollingLabel(QWidget*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{void}\ setText(\textcolor{keyword}{const}\ QString\&\ text);}
+\DoxyCodeLine{00018\ \ \ \ \ \string~ScrollingLabel();}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ resizeEvent(QResizeEvent*)\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ updateScroll();}
+\DoxyCodeLine{00023\ \ \ \ \ \}}
+\DoxyCodeLine{00024\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ scrollText();}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ updateScroll();}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00029\ \ \ \ \ Ui::ScrollingLabel*\ ui;}
+\DoxyCodeLine{00030\ \ \ \ \ QTimer\ timer;}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{int}\ offset\ \{\ 0\ \};}
+\DoxyCodeLine{00032\ \};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ SCROLLINGLABEL\_H}}
+
+\end{DoxyCode}

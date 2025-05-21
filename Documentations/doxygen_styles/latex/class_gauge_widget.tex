@@ -1,0 +1,134 @@
+\doxysection{Gauge\+Widget Class Reference}
+\hypertarget{class_gauge_widget}{}\label{class_gauge_widget}\index{GaugeWidget@{GaugeWidget}}
+Inheritance diagram for Gauge\+Widget\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_gauge_widget}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_gauge_widget_a3283ed21959a4ebb277833eee3e3fd7c}\label{class_gauge_widget_a3283ed21959a4ebb277833eee3e3fd7c} 
+void {\bfseries value\+Changed} (double value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_gauge_widget_a465a803184afa3c090f36452d22483d3}\label{class_gauge_widget_a465a803184afa3c090f36452d22483d3} 
+{\bfseries Gauge\+Widget} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
+\item 
+\Hypertarget{class_gauge_widget_aff25912569d627ea1ccb78330c5c47e4}\label{class_gauge_widget_aff25912569d627ea1ccb78330c5c47e4} 
+void {\bfseries set\+Range} (int min, int max)
+\item 
+\Hypertarget{class_gauge_widget_a47bf448975b19e931df06afa074cc252}\label{class_gauge_widget_a47bf448975b19e931df06afa074cc252} 
+void {\bfseries set\+Title} (const QString \&title)
+\item 
+\Hypertarget{class_gauge_widget_a25854a94c156befbfc2850633d7c69fe}\label{class_gauge_widget_a25854a94c156befbfc2850633d7c69fe} 
+void {\bfseries set\+Unit} (const QString \&unit)
+\item 
+\Hypertarget{class_gauge_widget_a1c5e7d4bc4485033603c156f8b96af49}\label{class_gauge_widget_a1c5e7d4bc4485033603c156f8b96af49} 
+double {\bfseries value} () const
+\item 
+\Hypertarget{class_gauge_widget_a48d06bdd0fc8b272385679dc01a3a0cc}\label{class_gauge_widget_a48d06bdd0fc8b272385679dc01a3a0cc} 
+void {\bfseries update\+\_\+value} (const double value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_gauge_widget_a667fc249edc71ec4b237136bdeeff521}\label{class_gauge_widget_a667fc249edc71ec4b237136bdeeff521} 
+static constexpr int {\bfseries DEF\+\_\+\+MIN\+\_\+\+VALUE} \{ 0 \}
+\item 
+\Hypertarget{class_gauge_widget_a8823ed29ccfe8076f29097d75ed3ce55}\label{class_gauge_widget_a8823ed29ccfe8076f29097d75ed3ce55} 
+static constexpr int {\bfseries DEF\+\_\+\+MAX\+\_\+\+VALUE} \{ 100 \}
+\item 
+\Hypertarget{class_gauge_widget_a2abad1855cfcc2fad8d63f8eff5961f1}\label{class_gauge_widget_a2abad1855cfcc2fad8d63f8eff5961f1} 
+static constexpr short {\bfseries TITLE\+\_\+\+FONT\+\_\+\+SZ} \{ 12 \}
+\item 
+\Hypertarget{class_gauge_widget_ab14c90d903be853ce7e7e15581c00c90}\label{class_gauge_widget_ab14c90d903be853ce7e7e15581c00c90} 
+static constexpr short {\bfseries CURVAL\+\_\+\+FOUT\+\_\+\+SZ} \{ 10 \}
+\item 
+\Hypertarget{class_gauge_widget_ad5c91a6fe3e9cd49a11309f4ea5b98cf}\label{class_gauge_widget_ad5c91a6fe3e9cd49a11309f4ea5b98cf} 
+static constexpr int {\bfseries ANIMATION\+\_\+\+DURATION} \{ 500 \}
+\item 
+\Hypertarget{class_gauge_widget_a35028e69117120cc4f80029e5aaa18a7}\label{class_gauge_widget_a35028e69117120cc4f80029e5aaa18a7} 
+static constexpr float {\bfseries WIDGET\+\_\+\+MIN\+\_\+\+WIDTH} \{ 200 \}
+\item 
+\Hypertarget{class_gauge_widget_a53db40e089294fe5d482686b7e5d4a36}\label{class_gauge_widget_a53db40e089294fe5d482686b7e5d4a36} 
+static constexpr float {\bfseries WIDGET\+\_\+\+MIN\+\_\+\+HEIGHT} \{ 200 \}
+\item 
+\Hypertarget{class_gauge_widget_a256d1797b5bae4205fb30c68be6c05f4}\label{class_gauge_widget_a256d1797b5bae4205fb30c68be6c05f4} 
+static constexpr QColor {\bfseries BOARD\+\_\+\+COLOR} = QColor(160, 160, 160)
+\item 
+\Hypertarget{class_gauge_widget_aabd88fe0ae3e43c08b63b9d4a2cbf46e}\label{class_gauge_widget_aabd88fe0ae3e43c08b63b9d4a2cbf46e} 
+static constexpr QColor {\bfseries FROM\+\_\+\+BOARD\+\_\+\+COLOR} = QColor(190, 190, 190)
+\item 
+\Hypertarget{class_gauge_widget_ae9e13dbb6231475b052219e055496cc1}\label{class_gauge_widget_ae9e13dbb6231475b052219e055496cc1} 
+static constexpr QColor {\bfseries TO\+\_\+\+BOARD\+\_\+\+COLOR} = QColor(110, 110, 110)
+\item 
+\Hypertarget{class_gauge_widget_aec3958da812296d68d8093558f0d15e1}\label{class_gauge_widget_aec3958da812296d68d8093558f0d15e1} 
+static constexpr short {\bfseries BOARD\+\_\+\+LEN} = 1
+\item 
+\Hypertarget{class_gauge_widget_a99d142e2cd02e445962fdaa1007fc849}\label{class_gauge_widget_a99d142e2cd02e445962fdaa1007fc849} 
+static constexpr short {\bfseries START\+\_\+\+ANGLE} \{ 225 \}
+\item 
+\Hypertarget{class_gauge_widget_a8e198184645fd35131c09536c7e58007}\label{class_gauge_widget_a8e198184645fd35131c09536c7e58007} 
+static constexpr short {\bfseries TOTAL\+\_\+\+ANGLE} \{ 270 \}
+\item 
+\Hypertarget{class_gauge_widget_ac839af0e2b627f86e9fdc43397911f54}\label{class_gauge_widget_ac839af0e2b627f86e9fdc43397911f54} 
+static constexpr short {\bfseries COLOR\+\_\+\+GRAD\+\_\+\+WIDTH} \{ 8 \}
+\item 
+\Hypertarget{class_gauge_widget_a906b102e5333288c507671010807fe3c}\label{class_gauge_widget_a906b102e5333288c507671010807fe3c} 
+static constexpr short {\bfseries COLOR\+\_\+\+RADIUS} \{ 90 \}
+\item 
+\Hypertarget{class_gauge_widget_a0fb785ba1093f3e7076d5fe4b791abc9}\label{class_gauge_widget_a0fb785ba1093f3e7076d5fe4b791abc9} 
+static constexpr QColor {\bfseries START\+\_\+\+COLOR} = QColor(255, 0, 0)
+\item 
+\Hypertarget{class_gauge_widget_a5fdbccbafd5b9e10b933b5f2a0891c00}\label{class_gauge_widget_a5fdbccbafd5b9e10b933b5f2a0891c00} 
+static constexpr QColor {\bfseries END\+\_\+\+COLOR} = QColor(0, 255, 0)
+\item 
+\Hypertarget{class_gauge_widget_adac19bc2108a37e5c1ba42c36a9d7178}\label{class_gauge_widget_adac19bc2108a37e5c1ba42c36a9d7178} 
+static constexpr int {\bfseries TICK\+\_\+\+CNT} \{ 55 \}
+\item 
+\Hypertarget{class_gauge_widget_ae76b23fa51810b7e0b12e85ccc6d2258}\label{class_gauge_widget_ae76b23fa51810b7e0b12e85ccc6d2258} 
+static constexpr short {\bfseries MAIN\+\_\+\+TICK\+\_\+\+WIDTH} \{ 2 \}
+\item 
+\Hypertarget{class_gauge_widget_a0625d59a9f6b07222eb88e1ff7997e79}\label{class_gauge_widget_a0625d59a9f6b07222eb88e1ff7997e79} 
+static constexpr short {\bfseries SUB\+\_\+\+TICK\+\_\+\+WIDTH} \{ 1 \}
+\item 
+\Hypertarget{class_gauge_widget_a2e409434ea2ec707be357fc7db090436}\label{class_gauge_widget_a2e409434ea2ec707be357fc7db090436} 
+static constexpr short {\bfseries MAIN\+\_\+\+TICK\+\_\+\+LENGTH} \{ 8 \}
+\item 
+\Hypertarget{class_gauge_widget_a51a6dc4916bb8aa3fe7069505d007869}\label{class_gauge_widget_a51a6dc4916bb8aa3fe7069505d007869} 
+static constexpr short {\bfseries SUB\+\_\+\+TICK\+\_\+\+LENGTH} \{ 5 \}
+\item 
+\Hypertarget{class_gauge_widget_a40f42cfa9170d525b1e4b4f8c065db5c}\label{class_gauge_widget_a40f42cfa9170d525b1e4b4f8c065db5c} 
+static constexpr short {\bfseries SUB\+\_\+\+MAIN\+\_\+\+RATE} \{ 5 \}
+\item 
+\Hypertarget{class_gauge_widget_ac98523cab5b0c34196380b86d64714bb}\label{class_gauge_widget_ac98523cab5b0c34196380b86d64714bb} 
+static constexpr QColor {\bfseries TICK\+\_\+\+COLOR} = QColor(255, 255, 255)
+\item 
+\Hypertarget{class_gauge_widget_a30e3bbe3232381c7913469022e0c37f4}\label{class_gauge_widget_a30e3bbe3232381c7913469022e0c37f4} 
+static constexpr short {\bfseries LABEL\+\_\+\+FONT\+\_\+\+SZ} \{ 6 \}
+\item 
+\Hypertarget{class_gauge_widget_aceffcc98a2ad7bc603d48f6a4ba247fa}\label{class_gauge_widget_aceffcc98a2ad7bc603d48f6a4ba247fa} 
+static constexpr QColor {\bfseries LABEL\+\_\+\+COLOR} = QColor(255, 255, 255)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_gauge_widget_a4c4e5f95de27d1d89e796223af5cbd60}\label{class_gauge_widget_a4c4e5f95de27d1d89e796223af5cbd60} 
+void {\bfseries paint\+Event} (QPaint\+Event \texorpdfstring{$\ast$}{*}event) override
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_gauge_widget_a49358e772127bbd3c6d1748da8dbbef5}\label{class_gauge_widget_a49358e772127bbd3c6d1748da8dbbef5} 
+double {\bfseries value}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+extern\+\_\+app/professionals/boardlevel\+\_\+application/\+Environment/\+Ui/Gauge\+Widget.\+h\item 
+extern\+\_\+app/professionals/boardlevel\+\_\+application/\+Environment/\+Ui/Gauge\+Widget.\+cpp\end{DoxyCompactItemize}

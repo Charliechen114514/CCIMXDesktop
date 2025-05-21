@@ -1,0 +1,43 @@
+\doxysection{ccpdfnavigationpolicy.\+h}
+\hypertarget{ccpdfnavigationpolicy_8h_source}{}\label{ccpdfnavigationpolicy_8h_source}\index{extern\_app/pdfReader/mupdf\_tools/ccpdfnavigationpolicy.h@{extern\_app/pdfReader/mupdf\_tools/ccpdfnavigationpolicy.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CCPDFNAVIGATIONPOLICY\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CCPDFNAVIGATIONPOLICY\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}mupdf\_adapter/ccpdfdocument.h"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *\ \ Navigation\ Policy\ is\ expected,\ at\ least,\ provide\ the}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *\ \ page\ flows\ policy\ when\ jump\ in\ between\ pages\ and\ pages}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *\ \ At\ current\ version,\ it\ is\ expected\ to\ handle\ the\ exception}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ *\ \ cases,\ who\ else\ know\ what\ will\ it\ be\ in\ next\ :)}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }CCPdfNavigationPolicy}
+\DoxyCodeLine{00013\ \{}
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ CCPdfNavigationPolicy();}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_c_c_pdf_navigation_policy_1_1_indicator}{Indicator}}\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ yeah,\ the\ indicator\ suggests\ the\ redirect\ pages\ */}}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \ \ \ \ new\_page;}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ \ whether\ the\ indications\ is\ a\ kind\ of\ must*/}}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \ \ \ req\_follow\_indicator;}
+\DoxyCodeLine{00022\ \ \ \ \ \};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00025\ \textcolor{comment}{\ \ \ \ \ *\ you\ should\ register\ the\ indications\ of\ some\ exceptions}}
+\DoxyCodeLine{00026\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{using\ }PdfBrowseExceptionFunctor\ =\ \mbox{\hyperlink{struct_c_c_pdf_navigation_policy_1_1_indicator}{Indicator}}(*)(}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ Who\ else\ involk\ the\ jump?\ */}}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ QWidget*\ invoker,}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ What\ document\ is\ involker\ handling?\ */}}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_c_pdf_document}{CCPdfDocument}}*\ \ invokee\_document,}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ At\ what\ status\ should\ be\ handled?\ */}}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ CCPdfDocument::PageNavigationError);}
+\DoxyCodeLine{00034\ \ \ \ \ PdfBrowseExceptionFunctor\ page\_navigate\_functor;}
+\DoxyCodeLine{00035\ \};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CCPDFNAVIGATIONPOLICY\_H}}
+
+\end{DoxyCode}

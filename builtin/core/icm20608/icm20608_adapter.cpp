@@ -5,6 +5,11 @@
 #include "icm20608.h"
 #include <fcntl.h>
 #include <iostream>
+/**
+ * @brief ICM20608::bind_dev_file
+ * bind dev file makes to open the dev file as
+ * expected
+ */
 void ICM20608::bind_dev_file() {
 #ifdef _WIN32
 	dev_stream.open(_dev_file_path, std::ios::binary);
@@ -15,7 +20,14 @@ void ICM20608::bind_dev_file() {
 }
 
 #ifdef _WIN32
-
+/**
+ * @brief As the name goes, invoke this make a synchronous request
+ * to the device
+ *
+ * @param   this is means the params is empty or wait be written,
+ *          or, its a output params
+ * @return  true if the data is valid(session request success equavalent)
+ */
 bool ICM20608::get_package_sync_win32impl(ICM20608AppData& empty) {
 	if (!dev_stream.is_open()) {
 		bind_dev_file();
@@ -43,6 +55,12 @@ bool ICM20608::get_package_sync_win32impl(ICM20608AppData& empty) {
 }
 
 #else
+/**
+ * @brief Unix Implementations of sync request
+ * @param this is means the params is empty or wait be written,
+ *          or, its a output params
+ * @return  true if the data is valid(session request success equavalent)
+ */
 bool ICM20608::get_package_sync_uniximpl(ICM20608AppData& empty) {
 	if (private_fd == -1) {
 		bind_dev_file();
@@ -67,8 +85,12 @@ bool ICM20608::get_package_sync_uniximpl(ICM20608AppData& empty) {
 }
 #endif
 
+/**
+ * @brief front end interfaces
+ * @param dummy blank output params
+ * @return true if the data is valid(session request success equavalent)
+ */
 bool ICM20608::get_package_sync(ICM20608AppData& empty) {
-
 #ifdef _WIN32
 	return get_package_sync_win32impl(empty);
 #else

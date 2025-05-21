@@ -1,0 +1,83 @@
+\doxysection{desktopmainwindow.\+h}
+\hypertarget{desktopmainwindow_8h_source}{}\label{desktopmainwindow_8h_source}\index{ui/desktopmainwindow.h@{ui/desktopmainwindow.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ DESKTOPMAINWINDOW\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ DESKTOPMAINWINDOW\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}ui/appwidget.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QMainWindow>}}
+\DoxyCodeLine{00006\ QT\_BEGIN\_NAMESPACE}
+\DoxyCodeLine{00007\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }DesktopMainWindow;}
+\DoxyCodeLine{00009\ \}}
+\DoxyCodeLine{00010\ QT\_END\_NAMESPACE}
+\DoxyCodeLine{00011\ \textcolor{comment}{/*\ App\ layouts\ */}}
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }QGridLayout;}
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }QLabel;}
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_desktop_toast}{DesktopToast}};}
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_application_wrapper}{ApplicationWrapper}};}
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }QTimer;}
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }QStackedWidget;}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_app_card_widget}{AppCardWidget}};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{class\ }DesktopMainWindow\ :\ \textcolor{keyword}{public}\ QMainWindow\ \{}
+\DoxyCodeLine{00026\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }PageFactory;}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_desktop_main_window_1_1_wall_paper_group}{WallPaperGroup}}\ \{}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ QWidget*\ \mbox{\hyperlink{struct_desktop_main_window_1_1_wall_paper_group_a9922ccd98f9ca1cf5848a92a07e91486}{shoule\_be\_lower}};}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ QLabel*\ \mbox{\hyperlink{struct_desktop_main_window_1_1_wall_paper_group_ac847cf761490a867157cb8a78897a6a8}{wallpaperLabel}}\ \{\ \textcolor{keyword}{nullptr}\ \};}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ QLabel*\ \mbox{\hyperlink{struct_desktop_main_window_1_1_wall_paper_group_a6b0a4714b3a310670e3a3ec5fa042c22}{bufferpaperLabel}}\ \{\ \textcolor{keyword}{nullptr}\ \};}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ QTimer*\ \mbox{\hyperlink{struct_desktop_main_window_1_1_wall_paper_group_aacc65cfda2a557369e4546f0018a0247}{invoke\_switch\_timer}};}
+\DoxyCodeLine{00048\ \ \ \ \ \};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \ \ \ \ DesktopMainWindow(QWidget*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_desktop_main_window_a5b8b69ca43a0adb247853ff9c6424c43}{showToast}}(\textcolor{keyword}{const}\ QString\&\ message);}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{class_desktop_toast}{DesktopToast}}*\ \mbox{\hyperlink{class_desktop_main_window_ad96e7341abb14b361bf76d3baff81071}{desktop\_toast}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ toast;\ \}}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_desktop_main_window_aa904c77c3b7b1f00c55602a47dc7e036}{to\_next\_page}}();}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_desktop_main_window_a813e78d2d7102d2f5b3d9096f0118dcc}{to\_prev\_page}}();}
+\DoxyCodeLine{00069\ \ \ \ \ \mbox{\hyperlink{class_desktop_main_window}{\string~DesktopMainWindow}}();}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_desktop_main_window_a010608971bb06a048f8af50e68ac460f}{invoke\_switch\_bgpage}}();}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{void}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{class_desktop_main_window_a39fb277355a84381bf009a605bd9bc7e}{install\_remote\_appwrapper}}(\mbox{\hyperlink{class_application_wrapper}{ApplicationWrapper}}*\ wrapper)\ \{\ app\_wrapper\ <<\ wrapper;\ \}}
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_desktop_main_window_ad72a53e56f786aa89acd04b1544d709c}{handle\_app\_status}}(AppWidget::AppStatus\ status);}
+\DoxyCodeLine{00089\ \ \ \ \ QStackedWidget*\ \mbox{\hyperlink{class_desktop_main_window_a8f361d9bfc1b0745c02a8d8c4ec59beb}{stackedWidget}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_desktop_main_window_a3f4e883111f10e3fede7ae9818d36a4b}{post\_show}}();}
+\DoxyCodeLine{00094\ signals:}
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_desktop_main_window_a60543a4367ec2d3ae50a5dd2d8743ea7}{deptach\_app\_cards\_init}}();}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keywordtype}{void}\ mousePressEvent(QMouseEvent*\ event)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00103\ \ \ \ \ \textcolor{keywordtype}{void}\ mouseReleaseEvent(QMouseEvent*\ event)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keywordtype}{void}\ resizeEvent(QResizeEvent*\ event)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00107\ \ \ \ \ Ui::DesktopMainWindow*\ ui;}
+\DoxyCodeLine{00108\ \ \ \ \ \mbox{\hyperlink{class_desktop_toast}{DesktopToast}}*\ toast;}
+\DoxyCodeLine{00109\ \ \ \ \ QList<ApplicationWrapper*>\ app\_wrapper;}
+\DoxyCodeLine{00110\ \ \ \ \ QList<AppWidget*>\ app\_widgets;}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00112\ \ \ \ \ \mbox{\hyperlink{struct_desktop_main_window_1_1_wall_paper_group}{WallPaperGroup}}\ wallPaperGroup;}
+\DoxyCodeLine{00113\ \ \ \ \ QStringList\ image\_lists;}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00115\ \ \ \ \ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ QPoint\ \mbox{\hyperlink{class_desktop_main_window_aeadbf1cc99b7fd1c5d7690a0ba7f4577}{press}};\ }
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ QPoint\ \mbox{\hyperlink{class_desktop_main_window_a84eecc2fcabddb1424455ccf9cc56929}{release}};\ }
+\DoxyCodeLine{00118\ \ \ \ \ \}\ records;\ }
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00120\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ switch\_bg\_time\ =\ 20000;}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00122\ \ \ \ \ \textcolor{comment}{/*\ Appcards\ */}}
+\DoxyCodeLine{00123\ \ \ \ \ QList<AppCardWidget*>\ app\_cards;}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00130\ \ \ \ \ \textcolor{keywordtype}{void}\ post\_setupui();}
+\DoxyCodeLine{00134\ \ \ \ \ \textcolor{keywordtype}{void}\ setup\_bg\_image();}
+\DoxyCodeLine{00139\ \ \ \ \ \textcolor{keywordtype}{void}\ setup\_apps();}
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00145\ \ \ \ \ \textcolor{keywordtype}{void}\ invoke\_appcards\_init();}
+\DoxyCodeLine{00146\ \};}
+\DoxyCodeLine{00147\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ DESKTOPMAINWINDOW\_H}}
+
+\end{DoxyCode}

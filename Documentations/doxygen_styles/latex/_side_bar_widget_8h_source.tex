@@ -1,0 +1,69 @@
+\doxysection{Side\+Bar\+Widget.\+h}
+\hypertarget{_side_bar_widget_8h_source}{}\label{_side_bar_widget_8h_source}\index{extern\_app/pdfReader/ui\_tools/SideBarWidget.h@{extern\_app/pdfReader/ui\_tools/SideBarWidget.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ SIDEBARWIDGET\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ SIDEBARWIDGET\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QEasingCurve>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QWidget>}}
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }QPropertyAnimation;}
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }QParallelAnimationGroup;}
+\DoxyCodeLine{00008\ \textcolor{keyword}{namespace\ }SideBarWidgetStaticConfig\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{bool}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ INIT\_STATE\ \ \ \ \ \ \ \ \ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00010\ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ANIMATION\_DURATION\ =\ 500;}
+\DoxyCodeLine{00011\ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ QEasingCurve::Type\ ANIMATION\_CURVE\ =}
+\DoxyCodeLine{00012\ \ \ \ \ QEasingCurve::InOutQuad;}
+\DoxyCodeLine{00013\ \};\ \ \textcolor{comment}{//\ namespace\ SideBarWidgetStaticConfig}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }SideBarWidget;}
+\DoxyCodeLine{00017\ \}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }SideBarWidget\ :\ \textcolor{keyword}{public}\ QWidget\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{explicit}\ SideBarWidget(QWidget*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ \textcolor{keyword}{inline}\ showSideBar()\ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ setState(\textcolor{keyword}{false});}
+\DoxyCodeLine{00026\ \ \ \ \ \}}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ \textcolor{keyword}{inline}\ hideSideBar()\ \{}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ setState(\textcolor{keyword}{true});}
+\DoxyCodeLine{00029\ \ \ \ \ \}}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{enum\ class}\ Role\ \{\ SideBar,\ MainSide\ \};}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{comment}{/*\ addWidgets\ to\ the\ two\ sides\ */}}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ addLayout(\textcolor{keyword}{const}\ QWidgetList\&\ widgetList,\ Role\ r);}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{comment}{/*\ remove\ the\ display\ widgets\ */}}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ removeLayout(Role\ r);}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{comment}{/*\ enable\ or\ disable\ the\ button\ visibilities\ */}}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ setButtonVisible(\textcolor{keywordtype}{bool}\ visible);}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{comment}{/*\ setTypes\ and\ durations\ */}}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ setAnimationDuration(\textcolor{keywordtype}{int}\ duration);}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ setAnimationCurve(QEasingCurve::Type\ curve);}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ current\_ui\_states()\{\textcolor{keywordflow}{return}\ hidden\_state;\}}
+\DoxyCodeLine{00041\ \ \ \ \ \string~SideBarWidget();}
+\DoxyCodeLine{00042\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ switch\_state();}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ switch\_button\_visible();}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00047\ \ \ \ \ QPropertyAnimation*\ \ \ \ \ \ animation\_main;}
+\DoxyCodeLine{00048\ \ \ \ \ QPropertyAnimation*\ \ \ \ \ \ animation\_side;}
+\DoxyCodeLine{00049\ \ \ \ \ QPropertyAnimation*\ \ \ \ \ \ animation\_button;}
+\DoxyCodeLine{00050\ \ \ \ \ QParallelAnimationGroup*\ group;}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ \textcolor{keyword}{inline}\ setState(\textcolor{keywordtype}{bool}\ st)\ \{}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ hidden\_state\ =\ st;}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ hidden\_state\ ?\ do\_hide\_animations()\ :\ do\_show\_animations();}
+\DoxyCodeLine{00054\ \ \ \ \ \}}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_\_initMemory();}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_\_initConnection();}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ do\_hide\_animations();}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ do\_show\_animations();}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{bool}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ hidden\_state\{SideBarWidgetStaticConfig::INIT\_STATE\};}
+\DoxyCodeLine{00060\ \ \ \ \ Ui::SideBarWidget*\ ui;}
+\DoxyCodeLine{00061\ \};}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ SIDEBARWIDGET\_H}}
+
+\end{DoxyCode}

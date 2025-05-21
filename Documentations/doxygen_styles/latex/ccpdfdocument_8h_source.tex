@@ -1,0 +1,88 @@
+\doxysection{ccpdfdocument.\+h}
+\hypertarget{ccpdfdocument_8h_source}{}\label{ccpdfdocument_8h_source}\index{extern\_app/pdfReader/mupdf\_adapter/ccpdfdocument.h@{extern\_app/pdfReader/mupdf\_adapter/ccpdfdocument.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CCPDFDOCUMENT\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CCPDFDOCUMENT\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}mupdf\_tools/mupdf\_tools.h"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{comment}{/*\ announcement\ of\ the\ mupdf\ issues\ */}}
+\DoxyCodeLine{00008\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *\ fz\_context\ helps\ holding\ a\ base\ context,\ however\ in\ C++}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ *\ I\ make\ a\ decision\ in\ using\ C++\ exception\ handler,\ so,\ this\ is}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ *\ only\ using\ in\ mark\ the\ resources\ holder}}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00013\ \textcolor{keyword}{struct\ }fz\_context;}
+\DoxyCodeLine{00014\ \textcolor{keyword}{struct\ }fz\_document;}
+\DoxyCodeLine{00015\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_c_c_pdf_document_private}{CCPdfDocumentPrivate}};}
+\DoxyCodeLine{00016\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00017\ \textcolor{comment}{\ \ \ \ CCPdfDocument\ is\ expected\ to\ hold\ a\ resources\ physically\ in}}
+\DoxyCodeLine{00018\ \textcolor{comment}{\ \ \ \ Programming\ level,\ this\ is\ a\ heavy\ level\ of\ classes,\ for\ any}}
+\DoxyCodeLine{00019\ \textcolor{comment}{\ \ \ \ easy\ and\ fast\ pdf\ sessions\ should\ be\ careful\ of\ using\ this\ class}}
+\DoxyCodeLine{00020\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }CCPdfDocument\ :\ \textcolor{keyword}{public}\ QObject}
+\DoxyCodeLine{00022\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{explicit}\ CCPdfDocument(QObject\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{comment}{/*\ direct\ open\ */}}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{explicit}\ CCPdfDocument(\textcolor{keyword}{const}\ QString\&\ document\_path);}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{comment}{/*\ move\ off\ sessions\ */}}
+\DoxyCodeLine{00029\ \ \ \ \ \string~CCPdfDocument();}
+\DoxyCodeLine{00030\ \ \ \ \ Q\_DISABLE\_COPY(CCPdfDocument);}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{comment}{/*\ error\ codes\ here\ */}}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{enum\ class}\ ErrorCode\ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ NO\_ERROR,}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ FILE\_NOT\_EXSIT,}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ OTHER\_MISTAKES}
+\DoxyCodeLine{00036\ \ \ \ \ \};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{comment}{/*\ document\ load\ */}}
+\DoxyCodeLine{00039\ \ \ \ \ ErrorCode\ load\_document(\textcolor{keyword}{const}\ QString\&\ document\_path);}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{comment}{/*\ document\ close\ */}}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{bool}\ close\_document();}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{comment}{/*\ see\ if\ the\ session\ is\ loaded\ */}}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{bool}\ document\_loaded()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{comment}{/*\ query\ interface\ of\ page\ count\ */}}
+\DoxyCodeLine{00045\ \ \ \ \ std::optional<uint32\_t>\ document\_page()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{comment}{/*\ handler\ of\ row*/}}
+\DoxyCodeLine{00048\ \ \ \ \ fz\_document*\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ raw\_handle()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00049\ \ \ \ \ fz\_context*\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ raw\_context()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{comment}{/*\ meta\ infos\ */}}
+\DoxyCodeLine{00051\ \ \ \ \ \mbox{\hyperlink{struct_c_c_pdf_meta_info}{CCPdfMetaInfo}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ meta\_info()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00053\ \textcolor{comment}{\ \ \ \ \ *\ For\ GNU\ C\ Lovers,\ if\ u\ worried\ the\ performace\ issue,}}
+\DoxyCodeLine{00054\ \textcolor{comment}{\ \ \ \ \ *\ considering\ using\ \_\_attribute\_\_((always\_inline))}}
+\DoxyCodeLine{00055\ \textcolor{comment}{\ \ \ \ \ *\ attributes\ to\ push\ compilers\ using\ inline\ method\ to}}
+\DoxyCodeLine{00056\ \textcolor{comment}{\ \ \ \ \ *\ reduce\ the\ cost,\ as\ this\ invokes\ frequently}}
+\DoxyCodeLine{00057\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ current\_page()\textcolor{keyword}{\ const}\{\textcolor{keywordflow}{return}\ current\_page\_index;\}}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keyword}{inline}\ QString\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ current\_path()\textcolor{keyword}{\ const}\{\textcolor{keywordflow}{return}\ holding\_path;\}}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ total\_pages()\textcolor{keyword}{\ const}\{\textcolor{keywordflow}{return}\ total\_page;\}}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keyword}{enum\ class}\ PageNavigationError\{}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ PAGE\_OK,}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ PAGE\_UNDERFLOW,}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ PAGE\_OVERFLOW,}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ PAGE\_UNEXSITS}
+\DoxyCodeLine{00066\ \ \ \ \ \};}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{comment}{/*\ set\ the\ page\ for\ jump\ */}}
+\DoxyCodeLine{00068\ \ \ \ \ PageNavigationError\ \ \ jump(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ page\_index);}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ signals:}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{comment}{/*\ signals\ of\ document\ loadings\ */}}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{void}\ document\_load(\textcolor{keyword}{const}\ QString\ document\_path);}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{comment}{/*\ light\ weight\ page\ index\ changed\ */}}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{void}\ pageIndexChanged();}
+\DoxyCodeLine{00075\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00076\ \ \ \ \ \mbox{\hyperlink{struct_c_c_pdf_document_private}{CCPdfDocumentPrivate}}*\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ privated;}
+\DoxyCodeLine{00077\ \ \ \ \ QString\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ holding\_path;}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{int}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ current\_page\_index\{-\/1\};}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{int}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ total\_page\{-\/1\};}
+\DoxyCodeLine{00080\ \};}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CCPDFDOCUMENT\_H}}
+
+\end{DoxyCode}

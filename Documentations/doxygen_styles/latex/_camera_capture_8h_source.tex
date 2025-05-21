@@ -1,0 +1,62 @@
+\doxysection{Camera\+Capture.\+h}
+\hypertarget{_camera_capture_8h_source}{}\label{_camera_capture_8h_source}\index{extern\_app/GeneralLocalCamera/Core/CameraCapture.h@{extern\_app/GeneralLocalCamera/Core/CameraCapture.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CAMERACAPTURE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CAMERACAPTURE\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <QImage>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QtClassHelperMacros>}}
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_camera_display_widget}{CameraDisplayWidget}};}
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }QThread;}
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }QMutex;}
+\DoxyCodeLine{00009\ \textcolor{keyword}{namespace\ }cv\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }VideoCapture;}
+\DoxyCodeLine{00011\ \};}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }CameraCapture\ :\ \textcolor{keyword}{public}\ QObject\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{enum\ class}\ Error\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ CAMERA\_UNEXSITED,\ \textcolor{comment}{/*\ camera\ is\ not\ exsited\ */}}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ CAMERA\_UNOPENED,\ \textcolor{comment}{/*\ camera\ is\ not\ opened\ */}}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ CAMERA\_UNBIND\_DISPLAY,\ \textcolor{comment}{/*\ no\ widgets\ bind\ */}}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ CAMERA\_MULTI\_OPENED\ \textcolor{comment}{/*\ duplicate\ open\ */}}
+\DoxyCodeLine{00021\ \ \ \ \ \};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ CameraCapture()\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00024\ \ \ \ \ Q\_DISABLE\_COPY(CameraCapture);}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{explicit}\ CameraCapture(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ index,\ QObject*\ parent);}
+\DoxyCodeLine{00027\ \ \ \ \ \string~CameraCapture();}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ bind\_display\_widget(\mbox{\hyperlink{class_camera_display_widget}{CameraDisplayWidget}}*\ widget);}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ set\_capture\_delay\_time(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ gap\_time);}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{bool}\ isActivate()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{bool}\ start();}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{bool}\ close();}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{comment}{/*\ signals\ */}}
+\DoxyCodeLine{00034\ signals:}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{comment}{/*\ camera\ index\ */}}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ cameraOpened(\textcolor{keywordtype}{int}\ index);}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ cameraClosed(\textcolor{keywordtype}{int}\ index);}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{comment}{/*\ the\ signal\ indicating\ errors\ */}}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ errorOccur(CameraCapture::Error\ e);}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{comment}{/*\ internal\_handle\ */}}
+\DoxyCodeLine{00043\ \ \ \ \ cv::VideoCapture*\ videoCaptureHandle\ \{\ \textcolor{keyword}{nullptr}\ \};}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{int}\ current\_index\ \{\ -\/1\ \};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{comment}{/*\ display\ issue\ */}}
+\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{class_camera_display_widget}{CameraDisplayWidget}}*\ widget\ \{\ \textcolor{keyword}{nullptr}\ \};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{comment}{/*\ para\ issues\ */}}
+\DoxyCodeLine{00050\ \ \ \ \ QMutex*\ capMutex;}
+\DoxyCodeLine{00051\ \ \ \ \ std::atomic\_bool\ internal\_running\_state\_holder\ \{\ \textcolor{keyword}{false}\ \};}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{int}\ msleep\_time\ \{\ 10\ \};}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ capture\_internal();}
+\DoxyCodeLine{00054\ \};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CAMERACAPTURE\_H}}
+
+\end{DoxyCode}

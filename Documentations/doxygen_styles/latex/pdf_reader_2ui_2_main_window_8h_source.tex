@@ -1,0 +1,62 @@
+\doxysection{mainwindow.\+h}
+\hypertarget{pdf_reader_2ui_2_main_window_8h_source}{}\label{pdf_reader_2ui_2_main_window_8h_source}\index{extern\_app/pdfReader/ui/mainwindow.h@{extern\_app/pdfReader/ui/mainwindow.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ MAINWINDOW\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ MAINWINDOW\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}mupdf\_adapter/ccpdfdocument.h"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}mupdf\_tools/ccpdfnavigationpolicy.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QMainWindow>}}
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_meta_info_window}{MetaInfoWindow}};}
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }QLabel;}
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_c_pdf_viewer}{CCPdfViewer}};}
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_tools_side_bar}{ToolsSideBar}};}
+\DoxyCodeLine{00010\ QT\_BEGIN\_NAMESPACE}
+\DoxyCodeLine{00011\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }MainWindow;}
+\DoxyCodeLine{00013\ \}}
+\DoxyCodeLine{00014\ QT\_END\_NAMESPACE}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_main_window}{MainWindow}}\ :\ \textcolor{keyword}{public}\ QMainWindow}
+\DoxyCodeLine{00017\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ MainWindow(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \string~MainWindow();}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ open\_documentFromDialog();}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ browse\_document\_metas();}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{comment}{/*\ page\ navigations\ */}}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ jump\_to\_page(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ page\_index);}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ prev\_page(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ next\_page(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ switch\_toolbox\_state(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ zoom\_in(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ zoom\_out(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00035\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{comment}{/*\ private\ Qt\ components\ */}}
+\DoxyCodeLine{00037\ \ \ \ \ Ui::MainWindow\ *ui;}
+\DoxyCodeLine{00038\ \ \ \ \ QLabel*\ \ \ \ \ \ \ \ \ page\_navigation\_indicator\_label;}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{comment}{/*\ subs\ of\ my\ components\ */}}
+\DoxyCodeLine{00040\ \ \ \ \ std::unique\_ptr<CCPdfDocument>\ \ document\_holders;}
+\DoxyCodeLine{00041\ \ \ \ \ std::shared\_ptr<MetaInfoWindow>\ metainfo\_window;}
+\DoxyCodeLine{00042\ \ \ \ \ CCPdfViewer*\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ pdfdisplay\_view;}
+\DoxyCodeLine{00043\ \ \ \ \ ToolsSideBar*\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ tools\_side\_bar;}
+\DoxyCodeLine{00044\ \ \ \ \ CCPdfNavigationPolicy\ \ \ \ \ \ \ \ \ \ \ policy;}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{comment}{/*\ yeap\ my\ funtions\ */}}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ \ \ \ setup\_connections();}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ \ \ \ post\_init\_ui();}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{comment}{/*\ \ For\ embedded\ devices,\ we\ have\ to\ think\ carefully}}
+\DoxyCodeLine{00049\ \textcolor{comment}{\ \ \ \ \ \ \ \ The\ performance\ issue\ :(,\ sadly}}
+\DoxyCodeLine{00050\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ \ \ \ update\_page\_navigations\_ui();}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{comment}{/*\ This\ is\ a\ heavy\ invoke,\ that\ is,\ fresh\ the\ all\ components\ */}}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ \ \ \ update\_ui\_globally();}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ \ \ \ init\_once\_pdfdoc(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00055\ \};}
+\DoxyCodeLine{00056\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MAINWINDOW\_H}}
+
+\end{DoxyCode}

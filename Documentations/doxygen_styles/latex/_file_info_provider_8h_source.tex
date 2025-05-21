@@ -1,0 +1,34 @@
+\doxysection{File\+Info\+Provider.\+h}
+\hypertarget{_file_info_provider_8h_source}{}\label{_file_info_provider_8h_source}\index{extern\_app/FileRamber/Core/FileInfoProvider.h@{extern\_app/FileRamber/Core/FileInfoProvider.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ FILEINFOPROVIDER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ FILEINFOPROVIDER\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <QModelIndex>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QString>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QtClassHelperMacros>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_c_i_m_x_file_system_model}{CCIMXFileSystemModel}};}
+\DoxyCodeLine{00008\ \textcolor{comment}{/*\ Interfaces\ are\ provided\ in\ virtual\ class\ */}}
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }FileInfoProvider\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00011\ \ \ \ \ Q\_DISABLE\_COPY(FileInfoProvider);}
+\DoxyCodeLine{00012\ \ \ \ \ FileInfoProvider(\mbox{\hyperlink{class_c_c_i_m_x_file_system_model}{CCIMXFileSystemModel}}*\ models)\ \{}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ this-\/>models\ =\ models;}
+\DoxyCodeLine{00014\ \ \ \ \ \};}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{virtual}\ \string~FileInfoProvider()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keyword}{inline}\ QString\ provide\_section\_name()\ =\ 0;}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ setCurrentHandlePath(\textcolor{keyword}{const}\ QString\&\ path)\ \{\ cached\_path\ =\ path;\ \}}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{inline}\ QString\ currentHandlePath()\ \{\ \textcolor{keywordflow}{return}\ cached\_path;\ \}}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{virtual}\ std::pair<bool,\ QVariant>\ data(\textcolor{keyword}{const}\ QModelIndex\&\ index,\ \textcolor{keywordtype}{int}\ role)\ =\ 0;}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{class_c_c_i_m_x_file_system_model}{CCIMXFileSystemModel}}*\ models;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00025\ \ \ \ \ QString\ cached\_path\ \{\};}
+\DoxyCodeLine{00026\ \};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ FILEINFOPROVIDER\_H}}
+
+\end{DoxyCode}

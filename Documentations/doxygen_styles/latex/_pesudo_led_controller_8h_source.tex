@@ -1,0 +1,31 @@
+\doxysection{Pesudo\+Led\+Controller.\+h}
+\hypertarget{_pesudo_led_controller_8h_source}{}\label{_pesudo_led_controller_8h_source}\index{extern\_app/professionals/boardlevel\_application/LightController/Adapter/PesudoLedController.h@{extern\_app/professionals/boardlevel\_application/LightController/Adapter/PesudoLedController.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PESUDOLEDCONTROLLER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PESUDOLEDCONTROLLER\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}LEDParamsPackage.h"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }PesudoLedController\ \{}
+\DoxyCodeLine{00006\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00007\ \ \ \ \ PesudoLedController()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00008\ \ \ \ \ \string~PesudoLedController()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{comment}{/*\ this\ means\ switching\ to\ other\ led\ */}}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{void}\ redirectTo(\textcolor{keyword}{const}\ std::string\&\ ledName)\ \{\ (void)ledName;\ \}}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{comment}{/*\ led\ written\ path\ */}}
+\DoxyCodeLine{00012\ \ \ \ \ std::string\ ledPath()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ led\_path;\ \}}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{comment}{/*\ modes\ are\ set\ to\ define\ how\ to\ control\ packages\ */}}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ setMode(\textcolor{keyword}{const}\ Modes\ mode)\ \{\ this-\/>mode\ =\ mode;\ \}}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{comment}{/*\ get\ the\ current\ mode\ */}}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{inline}\ Modes\ getMode()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ this-\/>mode;\ \}}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{comment}{/*\ bind\ the\ package\ with\ required\ parameters\ */}}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{bool}\ processByPackage(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_l_e_d_params_package}{LEDParamsPackage}}*\ package)\ \{\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};\ \}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00021\ \ \ \ \ std::string\ led\_path;}
+\DoxyCodeLine{00022\ \ \ \ \ Modes\ mode\ \{\ Modes::Plain\ \};}
+\DoxyCodeLine{00023\ \};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PESUDOLEDCONTROLLER\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,76 @@
+\doxysection{Media\+Player\+Window.\+h}
+\hypertarget{_media_player_window_8h_source}{}\label{_media_player_window_8h_source}\index{extern\_app/MediaPlayer/ui/MediaPlayerWindow.h@{extern\_app/MediaPlayer/ui/MediaPlayerWindow.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ MEDIAPLAYERWINDOW\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ MEDIAPLAYERWINDOW\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}core/CCMediaPlayList.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QMainWindow>}}
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_media_player}{MediaPlayer}};}
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_media_info_window}{MediaInfoWindow}};}
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_play_list_main_window}{PlayListMainWindow}};}
+\DoxyCodeLine{00009\ QT\_BEGIN\_NAMESPACE}
+\DoxyCodeLine{00010\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }MediaPlayerWindow;}
+\DoxyCodeLine{00012\ \}}
+\DoxyCodeLine{00013\ QT\_END\_NAMESPACE}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }MediaPlayerWindow\ :\ \textcolor{keyword}{public}\ QMainWindow\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }MediaPlayerWindowHelper;}
+\DoxyCodeLine{00019\ \ \ \ \ MediaPlayerWindow(QWidget*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{comment}{/*\ open\ media\ from\ dialog\ */}}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ open\_media();}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ open\_medias();}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ toggle\_playing\_status();}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ forward10sec();}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ backward10sec();}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ flow\_mode\_once();}
+\DoxyCodeLine{00027\ \ \ \ \ \string~MediaPlayerWindow();}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{comment}{/*\ handle\ the\ possible\ image\ */}}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ handle\_display\_src(\textcolor{keywordtype}{bool}\ available,\ \textcolor{keyword}{const}\ QImage\&\ image);}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ handle\_imageDisplay(\textcolor{keyword}{const}\ QImage\&\ image);}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{comment}{/*\ if\ user\ press\ the\ sliders\ */}}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ handle\_new\_durations(qint64\ duration);}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{comment}{/*\ handle\ the\ position\ chandged\ */}}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ handle\_position\_changed(qint64\ position);}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{comment}{/*\ handle\ the\ media\ ends\ sessions\ */}}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ handle\_media\_end();}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{comment}{/*\ slider\ postion\ change\ handling\ */}}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ handle\_slider\_position\_changed(\textcolor{keywordtype}{int}\ position);}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ handle\_slider\_pressed();}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ handle\_slider\_released();}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00046\ \ \ \ \ Ui::MediaPlayerWindow*\ ui;}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{comment}{/*\ media\ player\ */}}
+\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{class_media_player}{MediaPlayer}}*\ mediaPlayer\ \{\ \textcolor{keyword}{nullptr}\ \};}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{comment}{/*\ info\ Window\ */}}
+\DoxyCodeLine{00050\ \ \ \ \ \mbox{\hyperlink{class_media_info_window}{MediaInfoWindow}}*\ infoWindow\ \{\ \textcolor{keyword}{nullptr}\ \};}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{comment}{/*\ playlist\ handle\ */}}
+\DoxyCodeLine{00052\ \ \ \ \ \mbox{\hyperlink{class_c_c_media_play_list}{CCMediaPlayList}}*\ medialist\ \{\ \textcolor{keyword}{nullptr}\ \};}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{comment}{/*\ playlist\ window\ */}}
+\DoxyCodeLine{00054\ \ \ \ \ \mbox{\hyperlink{class_play_list_main_window}{PlayListMainWindow}}*\ playListWindow\ \{\ \textcolor{keyword}{nullptr}\ \};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{bool}\ manual\_sliding\ \{\ \textcolor{keyword}{false}\ \};}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{bool}\ is\_playing\ \{\ \textcolor{keyword}{false}\ \};}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{bool}\ video\_available\ \{\ \textcolor{keyword}{false}\ \};}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ init\_memories();}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{void}\ init\_core\_connections();}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{void}\ init\_ui\_connections();}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{void}\ init\_connections();}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{comment}{/*\ if\ the\ video\ is\ unavailable,\ thus\ we\ think\ it\ is\ music\ */}}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{void}\ post\_do\_video\_unavailable();}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ post\_init\_ui();}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{void}\ process\_playing\_status();}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{void}\ process\_playmode\_switching();}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{void}\ handle\_according\_mails(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_media_list_mails}{MediaListMails}}\ mails);}
+\DoxyCodeLine{00069\ \};}
+\DoxyCodeLine{00070\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MEDIAPLAYERWINDOW\_H}}
+
+\end{DoxyCode}

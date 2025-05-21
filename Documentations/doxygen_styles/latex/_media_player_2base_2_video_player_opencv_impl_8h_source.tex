@@ -1,0 +1,35 @@
+\doxysection{Video\+Player\+Opencv\+Impl.\+h}
+\hypertarget{_media_player_2base_2_video_player_opencv_impl_8h_source}{}\label{_media_player_2base_2_video_player_opencv_impl_8h_source}\index{extern\_app/MediaPlayer/base/VideoPlayerOpencvImpl.h@{extern\_app/MediaPlayer/base/VideoPlayerOpencvImpl.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ VIDEOPLAYEROPENCVIMPL\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ VIDEOPLAYEROPENCVIMPL\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}VideoPlayerImpl.h"{}}}
+\DoxyCodeLine{00004\ \textcolor{keyword}{namespace\ }cv\ \{}
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }VideoCapture;}
+\DoxyCodeLine{00006\ \}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }VideoPlayerOpencvImpl\ :\ \textcolor{keyword}{public}\ VideoPlayerImpl\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00010\ \ \ \ \ VideoPlayerOpencvImpl();}
+\DoxyCodeLine{00011\ \ \ \ \ \string~VideoPlayerOpencvImpl()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{int}\ total\_frame()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{int}\ current\_frame()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{bool}\ rollto\_nextFrame(\mbox{\hyperlink{class_c_v_image}{CVImage}}\&\ container)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{bool}\ peek\_frame(\mbox{\hyperlink{class_c_v_image}{CVImage}}\&\ container,\ \textcolor{keywordtype}{int}\ frame\_request)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{struct_video_player_info}{VideoPlayerInfo}}\ current\_video\_info()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{bool}\ open(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ filename,}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ VideoPlayerOpenErrorCode\&\ error\_code)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ close()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{bool}\ isOpened()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ escapeFrame()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ jumpToFrame(\textcolor{keywordtype}{int}\ frame\_request)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00025\ \ \ \ \ cv::VideoCapture*\ internal\_capture\ \{\ \textcolor{keyword}{nullptr}\ \};}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{int}\ internal\_current\_frame\ \{\ INVALID\_VIDEO\_FRAME\_N\ \};}
+\DoxyCodeLine{00027\ \};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ VIDEOPLAYEROPENCVIMPL\_H}}
+
+\end{DoxyCode}

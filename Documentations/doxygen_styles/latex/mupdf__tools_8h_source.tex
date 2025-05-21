@@ -1,0 +1,98 @@
+\doxysection{mupdf\+\_\+tools.\+h}
+\hypertarget{mupdf__tools_8h_source}{}\label{mupdf__tools_8h_source}\index{extern\_app/pdfReader/mupdf\_tools/mupdf\_tools.h@{extern\_app/pdfReader/mupdf\_tools/mupdf\_tools.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ MUPDF\_TOOLS\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ MUPDF\_TOOLS\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <QString>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QVariant>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QImage>}}
+\DoxyCodeLine{00006\ \textcolor{comment}{/*\ mupdf\ tools\ are\ expected\ to\ make\ some\ light\ wighted\ operations\ */}}
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_c_pdf_document}{CCPdfDocument}};}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ \ \ \ The\ MuPdf\ Supports\ this\ infos,\ so\ make\ this\ be}}
+\DoxyCodeLine{00012\ \textcolor{comment}{}}
+\DoxyCodeLine{00013\ \textcolor{comment}{\#define\ FZ\_META\_FORMAT\ "{}format"{}}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\#define\ FZ\_META\_ENCRYPTION\ "{}encryption"{}}}
+\DoxyCodeLine{00015\ \textcolor{comment}{}}
+\DoxyCodeLine{00016\ \textcolor{comment}{\#define\ FZ\_META\_INFO\ "{}info:"{}}}
+\DoxyCodeLine{00017\ \textcolor{comment}{\#define\ FZ\_META\_INFO\_TITLE\ "{}info:Title"{}}}
+\DoxyCodeLine{00018\ \textcolor{comment}{\#define\ FZ\_META\_INFO\_AUTHOR\ "{}info:Author"{}}}
+\DoxyCodeLine{00019\ \textcolor{comment}{\#define\ FZ\_META\_INFO\_SUBJECT\ "{}info:Subject"{}}}
+\DoxyCodeLine{00020\ \textcolor{comment}{\#define\ FZ\_META\_INFO\_KEYWORDS\ "{}info:Keywords"{}}}
+\DoxyCodeLine{00021\ \textcolor{comment}{\#define\ FZ\_META\_INFO\_CREATOR\ "{}info:Creator"{}}}
+\DoxyCodeLine{00022\ \textcolor{comment}{\#define\ FZ\_META\_INFO\_PRODUCER\ "{}info:Producer"{}}}
+\DoxyCodeLine{00023\ \textcolor{comment}{\#define\ FZ\_META\_INFO\_CREATIONDATE\ "{}info:CreationDate"{}}}
+\DoxyCodeLine{00024\ \textcolor{comment}{\#define\ FZ\_META\_INFO\_MODIFICATIONDATE\ "{}info:ModDate"{}}}
+\DoxyCodeLine{00025\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{comment}{/*\ meta\ info\ packages\ */}}
+\DoxyCodeLine{00028\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_c_c_pdf_meta_info}{CCPdfMetaInfo}}}
+\DoxyCodeLine{00029\ \{}
+\DoxyCodeLine{00030\ \ \ \ \ Q\_GADGET}
+\DoxyCodeLine{00031\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{comment}{/*\ some\ fields\ */}}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{enum\ class}\ Field}
+\DoxyCodeLine{00034\ \ \ \ \ \{}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ Author,}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ Title,}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ Subject,}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ Keywords,}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ Creator,}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ Producer,}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ CreationDateTime,}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ ModifyDateTime}
+\DoxyCodeLine{00043\ \ \ \ \ \};}
+\DoxyCodeLine{00044\ \ \ \ \ Q\_ENUM(Field);}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ QString\ \ \ \ \ \ \ \ \ author;}
+\DoxyCodeLine{00047\ \ \ \ \ QString\ \ \ \ \ \ \ \ \ title;}
+\DoxyCodeLine{00048\ \ \ \ \ QString\ \ \ \ \ \ \ \ \ subject;}
+\DoxyCodeLine{00049\ \ \ \ \ QString\ \ \ \ \ \ \ \ \ keywords;}
+\DoxyCodeLine{00050\ \ \ \ \ QString\ \ \ \ \ \ \ \ \ creator;}
+\DoxyCodeLine{00051\ \ \ \ \ QString\ \ \ \ \ \ \ \ \ producer;}
+\DoxyCodeLine{00052\ \ \ \ \ QString\ \ \ \ \ \ \ \ \ creation\_datetime;}
+\DoxyCodeLine{00053\ \ \ \ \ QString\ \ \ \ \ \ \ \ \ modify\_datetime;}
+\DoxyCodeLine{00054\ \};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_c_c_pdf_image_request}{CCPdfImageRequest}}\ \{}
+\DoxyCodeLine{00057\ \ \ \ \ \mbox{\hyperlink{class_c_c_pdf_document}{CCPdfDocument}}*\ \ \ \ \ \ request\_document;}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{int}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ request\_page;}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{float}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ zoom;}
+\DoxyCodeLine{00060\ \};}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_c_c_pdf_chapter_node}{CCPdfChapterNode}}\ \{}
+\DoxyCodeLine{00063\ \ \ \ \ QString\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ chapter\_title;}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{int}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ chapter\_page;}
+\DoxyCodeLine{00065\ \ \ \ \ QList<CCPdfChapterNode>\ childs;\ \textcolor{comment}{/*\ childs\ of\ the\ current\ session\ */}}
+\DoxyCodeLine{00066\ \};}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00069\ \textcolor{comment}{\ *\ \ at\ here,\ we\ gain\ the\ tools\ if\ one\ day\ we\ only\ query\ the\ submetas}}
+\DoxyCodeLine{00070\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00071\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00072\ \textcolor{keyword}{namespace\ }ccpdf\_tools}
+\DoxyCodeLine{00073\ \{}
+\DoxyCodeLine{00074\ \textcolor{comment}{/*\ request\ metas\ fulls*/}}
+\DoxyCodeLine{00075\ \mbox{\hyperlink{struct_c_c_pdf_meta_info}{CCPdfMetaInfo}}}
+\DoxyCodeLine{00076\ request\_meta(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_c_c_pdf_document}{CCPdfDocument}}\ *document);}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \textcolor{comment}{/*\ request\ metas\ seperates\ */}}
+\DoxyCodeLine{00079\ QVariant}
+\DoxyCodeLine{00080\ request\_target\_meta(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_c_c_pdf_document}{CCPdfDocument}}*\ document,}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ CCPdfMetaInfo::Field\ field);}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \textcolor{comment}{/*\ request\ image,\ using\ by\ pdfview\ widget\ */}}
+\DoxyCodeLine{00084\ QImage}
+\DoxyCodeLine{00085\ request\_target\_page(\mbox{\hyperlink{struct_c_c_pdf_image_request}{CCPdfImageRequest}}*\ simpleRequest);}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ QList<CCPdfChapterNode>}
+\DoxyCodeLine{00088\ request\_chapter\_tree(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_c_c_pdf_document}{CCPdfDocument}}*\ document);}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \};}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MUPDF\_TOOLS\_H}}
+
+\end{DoxyCode}

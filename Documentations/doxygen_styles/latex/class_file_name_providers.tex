@@ -1,0 +1,82 @@
+\doxysection{File\+Name\+Providers Class Reference}
+\hypertarget{class_file_name_providers}{}\label{class_file_name_providers}\index{FileNameProviders@{FileNameProviders}}
+Inheritance diagram for File\+Name\+Providers\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_file_name_providers}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_file_name_providers_a400f20700f7bcc5acead68a30e691c5e}\label{class_file_name_providers_a400f20700f7bcc5acead68a30e691c5e} 
+using {\bfseries File\+Extension} = QString
+\item 
+\Hypertarget{class_file_name_providers_ade1e3d0a691c118ff906baf51cf56b18}\label{class_file_name_providers_ade1e3d0a691c118ff906baf51cf56b18} 
+using {\bfseries Color\+Pairs} = std\+::pair$<$File\+Extension, QColor$>$
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_file_name_providers_ad81f8ebbb75db0cee10db72073fbc58b}\label{class_file_name_providers_ad81f8ebbb75db0cee10db72073fbc58b} 
+{\bfseries File\+Name\+Providers} (\mbox{\hyperlink{class_c_c_i_m_x_file_system_model}{CCIMXFile\+System\+Model}} \texorpdfstring{$\ast$}{*}models)
+\item 
+\Hypertarget{class_file_name_providers_a323bf8d034d2a6c4d53705f5d38d0114}\label{class_file_name_providers_a323bf8d034d2a6c4d53705f5d38d0114} 
+{\bfseries Q\+\_\+\+DISABLE\+\_\+\+COPY} (\mbox{\hyperlink{class_file_name_providers}{File\+Name\+Providers}})
+\item 
+QString \mbox{\hyperlink{class_file_name_providers_a3fc88ac86b53656f9e75a0476004ac18}{provide\+\_\+section\+\_\+name}} () override
+\item 
+std\+::pair$<$ bool, QVariant $>$ \mbox{\hyperlink{class_file_name_providers_ab7c156fc04bc7888677c266f79f15127}{data}} (const QModel\+Index \&index, int role) override
+\item 
+\Hypertarget{class_file_name_providers_ad649d1ca2c8291733510803220b61b5d}\label{class_file_name_providers_ad649d1ca2c8291733510803220b61b5d} 
+void {\bfseries register\+Color\+Pairs} (const Color\+Pairs \&pairs)
+\item 
+\Hypertarget{class_file_name_providers_ad419a989e778ba01fc40417dd78ec62a}\label{class_file_name_providers_ad419a989e778ba01fc40417dd78ec62a} 
+void {\bfseries register\+\_\+special\+\_\+dircolor} (const QColor \&t)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_file_info_provider}{File\+Info\+Provider}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Q\+\_\+\+DISABLE\+\_\+\+COPY} (\mbox{\hyperlink{class_file_info_provider}{File\+Info\+Provider}})
+\item 
+{\bfseries File\+Info\+Provider} (\mbox{\hyperlink{class_c_c_i_m_x_file_system_model}{CCIMXFile\+System\+Model}} \texorpdfstring{$\ast$}{*}models)
+\item 
+void {\bfseries set\+Current\+Handle\+Path} (const QString \&path)
+\item 
+QString {\bfseries current\+Handle\+Path} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_file_info_provider}{File\+Info\+Provider}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_c_i_m_x_file_system_model}{CCIMXFile\+System\+Model}} \texorpdfstring{$\ast$}{*} {\bfseries models}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_file_name_providers_ab7c156fc04bc7888677c266f79f15127}\index{FileNameProviders@{FileNameProviders}!data@{data}}
+\index{data@{data}!FileNameProviders@{FileNameProviders}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily \label{class_file_name_providers_ab7c156fc04bc7888677c266f79f15127} 
+std\+::pair$<$ bool, QVariant $>$ File\+Name\+Providers\+::data (\begin{DoxyParamCaption}\item[{const QModel\+Index \&}]{index}{, }\item[{int}]{role}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_file_info_provider}{File\+Info\+Provider}}.
+
+\Hypertarget{class_file_name_providers_a3fc88ac86b53656f9e75a0476004ac18}\index{FileNameProviders@{FileNameProviders}!provide\_section\_name@{provide\_section\_name}}
+\index{provide\_section\_name@{provide\_section\_name}!FileNameProviders@{FileNameProviders}}
+\doxysubsubsection{\texorpdfstring{provide\_section\_name()}{provide\_section\_name()}}
+{\footnotesize\ttfamily \label{class_file_name_providers_a3fc88ac86b53656f9e75a0476004ac18} 
+QString File\+Name\+Providers\+::provide\+\_\+section\+\_\+name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_file_info_provider}{File\+Info\+Provider}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+extern\+\_\+app/\+File\+Ramber/\+Core/File\+Name\+Providers.\+h\item 
+extern\+\_\+app/\+File\+Ramber/\+Core/File\+Name\+Providers.\+cpp\end{DoxyCompactItemize}

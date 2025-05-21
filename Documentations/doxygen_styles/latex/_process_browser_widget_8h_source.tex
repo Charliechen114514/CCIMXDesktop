@@ -1,0 +1,32 @@
+\doxysection{Process\+Browser\+Widget.\+h}
+\hypertarget{_process_browser_widget_8h_source}{}\label{_process_browser_widget_8h_source}\index{extern\_app/SystemState/Ui/ProcessBrowserWidget.h@{extern\_app/SystemState/Ui/ProcessBrowserWidget.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PROCESSBROWSERWIDGET\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PROCESSBROWSERWIDGET\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}Core/ProcessBroswer.h"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QWidget>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }ProcessBrowserWidget;}
+\DoxyCodeLine{00008\ \}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }ProcessBrowserWidget\ :\ \textcolor{keyword}{public}\ QWidget\ \{}
+\DoxyCodeLine{00011\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ COL\_CNT\ =\ 8;}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{explicit}\ ProcessBrowserWidget(QWidget*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00016\ \ \ \ \ \string~ProcessBrowserWidget();}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{comment}{/*\ Considering\ the\ Lists\ of\ Processes\ Then!\ */}}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ handle\_process\_issues(\textcolor{keyword}{const}\ QList<ProcessBroswer::ProcessInfo>\&\ infos);}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00023\ \ \ \ \ Ui::ProcessBrowserWidget*\ ui;}
+\DoxyCodeLine{00024\ \};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PROCESSBROWSERWIDGET\_H}}
+
+\end{DoxyCode}

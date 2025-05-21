@@ -1,0 +1,22 @@
+\doxysection{Camera\+Device\+Selector.\+h}
+\hypertarget{_camera_device_selector_8h_source}{}\label{_camera_device_selector_8h_source}\index{extern\_app/GeneralLocalCamera/Core/CameraDeviceSelector.h@{extern\_app/GeneralLocalCamera/Core/CameraDeviceSelector.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CAMERADEVICESELECTOR\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CAMERADEVICESELECTOR\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <QList>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QtClassHelperMacros>}}
+\DoxyCodeLine{00005\ \textcolor{comment}{/*\ We\ need\ to\ refer\ the\ max\ available\ devices\ */}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }CameraDeviceSelector\ \{}
+\DoxyCodeLine{00008\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ MAX\_CAMERA\_SCAN\ =\ 5;}
+\DoxyCodeLine{00010\ \ \ \ \ CameraDeviceSelector()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00011\ \ \ \ \ Q\_DISABLE\_COPY(CameraDeviceSelector);}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{static}\ QList<int>\ scan\_available\_cameras(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ start\_index\ =\ 0);}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{static}\ QList<QString>\ scan\_available\_camerasnames(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ start\_index\ =\ 0);}
+\DoxyCodeLine{00014\ \};}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CAMERADEVICESELECTOR\_H}}
+
+\end{DoxyCode}

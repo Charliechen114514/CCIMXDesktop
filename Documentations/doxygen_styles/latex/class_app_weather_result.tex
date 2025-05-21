@@ -1,0 +1,65 @@
+\doxysection{App\+Weather\+Result Class Reference}
+\hypertarget{class_app_weather_result}{}\label{class_app_weather_result}\index{AppWeatherResult@{AppWeatherResult}}
+Inheritance diagram for App\+Weather\+Result\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_app_weather_result}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_app_weather_result_1_1_daily_weather}{Daily\+Weather}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_app_weather_result_a352f052b411d28c2bb4e30d84cb81d35}\label{class_app_weather_result_a352f052b411d28c2bb4e30d84cb81d35} 
+{\bfseries App\+Weather\+Result} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
+\item 
+void \mbox{\hyperlink{class_app_weather_result_a29da2246f7b3941ae7f8b2d695536b33}{parse\+Json\+String}} (const QString json) override
+\item 
+\Hypertarget{class_app_weather_result_a8971c07da34beaefe4f964fc99839a66}\label{class_app_weather_result_a8971c07da34beaefe4f964fc99839a66} 
+void {\bfseries debug\+Print} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{struct_weather_result}{Weather\+Result}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Weather\+Result} (QObject \texorpdfstring{$\ast$}{*}obj=nullptr)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_app_weather_result_a68c15f5dbe8e889ed2214bac7458cd8c}\label{class_app_weather_result_a68c15f5dbe8e889ed2214bac7458cd8c} 
+QString {\bfseries cached\+\_\+city}
+\item 
+\Hypertarget{class_app_weather_result_af8ca2efac4e7aa5ef50c2df2c606043d}\label{class_app_weather_result_af8ca2efac4e7aa5ef50c2df2c606043d} 
+QList$<$ \mbox{\hyperlink{struct_app_weather_result_1_1_daily_weather}{Daily\+Weather}} $>$ {\bfseries daily\+\_\+weather}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Signals inherited from \mbox{\hyperlink{struct_weather_result}{Weather\+Result}}}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries finish\+\_\+parse} ()
+\item 
+void {\bfseries error\+\_\+occurs} (QString cached\+\_\+error\+\_\+string)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_app_weather_result_a29da2246f7b3941ae7f8b2d695536b33}\index{AppWeatherResult@{AppWeatherResult}!parseJsonString@{parseJsonString}}
+\index{parseJsonString@{parseJsonString}!AppWeatherResult@{AppWeatherResult}}
+\doxysubsubsection{\texorpdfstring{parseJsonString()}{parseJsonString()}}
+{\footnotesize\ttfamily \label{class_app_weather_result_a29da2246f7b3941ae7f8b2d695536b33} 
+void App\+Weather\+Result\+::parse\+Json\+String (\begin{DoxyParamCaption}\item[{const QString}]{json}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{struct_weather_result}{Weather\+Result}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+extern\+\_\+app/\+Weather\+App/\+Core/App\+Weather\+Request.\+h\item 
+extern\+\_\+app/\+Weather\+App/\+Core/App\+Weather\+Request.\+cpp\end{DoxyCompactItemize}

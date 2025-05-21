@@ -1,0 +1,69 @@
+\doxysection{clockwidget.\+h}
+\hypertarget{clockwidget_8h_source}{}\label{clockwidget_8h_source}\index{builtin/ui/clockwidget.h@{builtin/ui/clockwidget.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CLOCKWIDGET\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CLOCKWIDGET\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <QTime>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QWidget>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }ClockWidget;}
+\DoxyCodeLine{00008\ \}}
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }QTimer;}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }ClockWidget\ :\ \textcolor{keyword}{public}\ QWidget}
+\DoxyCodeLine{00012\ \{}
+\DoxyCodeLine{00013\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{explicit}\ ClockWidget(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00017\ \ \ \ \ \string~ClockWidget();}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ signals:}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{comment}{/*\ for\ other\ clock\ relavent\ widgets,\ should\ monitor\ the\ signals\ */}}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ \ \ \ time\_update(QTime\ time);}
+\DoxyCodeLine{00022\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{comment}{/*\ Yep,\ for\ the\ dynamic\ widgets,\ we\ have\ to,\ sadly,\ draw\ by\ ourselves\ */}}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{comment}{/*\ Entry\ for\ us\ to\ draw\ a\ clock\ */}}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ paintEvent(QPaintEvent*\ \_paintEvent)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00026\ \ \ \ \ QSize\ sizeHint()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00027\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{comment}{//\ Constants}}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ DefaultWidgetSize\ =\ 1000;}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ DialSize\ =\ 200;}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ OuterCircleRadius\ =\ 95;}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ HourTickLength\ =\ 10;}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ MinuteTickLength\ =\ 5;}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ HourTickWidth\ =\ 2;}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ MinuteTickWidth\ =\ 1;}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ CenterDotRadius\ =\ 4;}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ HourHandLength\ =\ 50;}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ MinuteHandLength\ =\ 70;}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ SecondHandLength\ =\ 80;}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ HandWidth\ =\ 7;}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ HourRotationPerHour\ =\ 30;\ \ \ \ \textcolor{comment}{//\ 360\ /\ 12}}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ MinuteRotationPerMinute\ =\ 6;\ \textcolor{comment}{//\ 360\ /\ 60}}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ SecondRotationPerSecond\ =\ 6;\ \textcolor{comment}{//\ 360\ /\ 60}}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{comment}{/*\ fonts\ */}}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ NumberDistanceFromCenter\ =\ 70;}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ NumberFontSize\ =\ 14;}
+\DoxyCodeLine{00049\ \ \ \ \ Ui::ClockWidget\ *ui;}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{comment}{/*\ internal\ updater\ is\ trying\ to\ update\ the\ clock\ apperance\ timely\ */}}
+\DoxyCodeLine{00051\ \ \ \ \ QTimer*\ \ \ \ \ \ \ \ \ internal\_updater;}
+\DoxyCodeLine{00052\ \ \ \ \ QTime\ \ \ \ \ \ \ \ \ \ \ cur\_time;}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{comment}{/*\ for\ internal\_updater's\ timeout,\ it's\ the\ function\ handle\ */}}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ process\_update\_invokation();}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{comment}{/*\ paintEvent\ periodly\ and\ invoke\ the\ funcList\ in\ sequence\ */}}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ drawBackground(QPainter\ *painter);}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ drawTicks(QPainter\ *painter);}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ drawHands(QPainter\ *painter);}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ drawNumbers(QPainter\ *painter);}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \ \ drawCenterDot(QPainter\ *painter);}
+\DoxyCodeLine{00061\ \};}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CLOCKWIDGET\_H}}
+
+\end{DoxyCode}

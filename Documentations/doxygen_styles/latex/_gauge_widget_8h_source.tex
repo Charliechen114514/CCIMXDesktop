@@ -1,0 +1,113 @@
+\doxysection{Gauge\+Widget.\+h}
+\hypertarget{_gauge_widget_8h_source}{}\label{_gauge_widget_8h_source}\index{extern\_app/professionals/boardlevel\_application/Environment/Ui/GaugeWidget.h@{extern\_app/professionals/boardlevel\_application/Environment/Ui/GaugeWidget.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ GaugeWidget\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ GaugeWidget\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <QWidget>}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *\ GaugeWidget\ is\ a\ base\ widget}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }GaugeWidget\ :\ \textcolor{keyword}{public}\ QWidget\ \{}
+\DoxyCodeLine{00009\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00010\ \ \ \ \ Q\_PROPERTY(\textcolor{keywordtype}{double}\ value}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ READ\ value}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ WRITE\ setValue}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ NOTIFY\ valueChanged)}
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{comment}{/*\ default\ settings\ */}}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{int}\ DEF\_MIN\_VALUE\ \{\ 0\ \};}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{int}\ DEF\_MAX\_VALUE\ \{\ 100\ \};}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{short}\ TITLE\_FONT\_SZ\ \{\ 12\ \};}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{short}\ CURVAL\_FOUT\_SZ\ \{\ 10\ \};}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{int}\ ANIMATION\_DURATION\ \{\ 500\ \};}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{float}\ WIDGET\_MIN\_WIDTH\ \{\ 200\ \};}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{float}\ WIDGET\_MIN\_HEIGHT\ \{\ 200\ \};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{comment}{/*\ board\ color\ settings\ */}}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ QColor\ BOARD\_COLOR\ =\ QColor(160,\ 160,\ 160);}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ QColor\ FROM\_BOARD\_COLOR\ =\ QColor(190,\ 190,\ 190);}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ QColor\ TO\_BOARD\_COLOR\ =\ QColor(110,\ 110,\ 110);}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{short}\ BOARD\_LEN\ =\ 1;}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{comment}{/*\ board\ draw\ angles\ */}}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{short}\ START\_ANGLE\ \{\ 225\ \};}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{short}\ TOTAL\_ANGLE\ \{\ 270\ \};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{comment}{/*\ Color\ Gradients\ */}}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{short}\ COLOR\_GRAD\_WIDTH\ \{\ 8\ \};}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{short}\ COLOR\_RADIUS\ \{\ 90\ \};}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ QColor\ START\_COLOR\ =\ QColor(255,\ 0,\ 0);}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ QColor\ END\_COLOR\ =\ QColor(0,\ 255,\ 0);}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{comment}{/*\ Ticks\ Settings\ */}}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{int}\ TICK\_CNT\ \{\ 55\ \};}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{short}\ MAIN\_TICK\_WIDTH\ \{\ 2\ \};}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{short}\ SUB\_TICK\_WIDTH\ \{\ 1\ \};}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{short}\ MAIN\_TICK\_LENGTH\ \{\ 8\ \};}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{short}\ SUB\_TICK\_LENGTH\ \{\ 5\ \};}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{short}\ SUB\_MAIN\_RATE\ \{\ 5\ \};\ \textcolor{comment}{/*\ each\ 5\ owns\ a\ main\ */}}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ QColor\ TICK\_COLOR\ =\ QColor(255,\ 255,\ 255);}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{comment}{/*\ labels\ settings\ */}}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{short}\ LABEL\_FONT\_SZ\ \{\ 6\ \};}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ QColor\ LABEL\_COLOR\ =\ QColor(255,\ 255,\ 255);}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{comment}{/*\ For\ animations,\ we\ need\ the\ property\ settings\ */}}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keyword}{explicit}\ GaugeWidget(QWidget*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{comment}{/*\ set\ the\ range\ simply\ */}}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ setRange(\textcolor{keywordtype}{int}\ min,\ \textcolor{keywordtype}{int}\ max)\ \{}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ max\_value\ =\ max;}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ min\_value\ =\ min;}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ update();}
+\DoxyCodeLine{00060\ \ \ \ \ \}}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{void}\ setTitle(\textcolor{keyword}{const}\ QString\&\ title)\ \{}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ this-\/>title\ =\ title;}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ update();}
+\DoxyCodeLine{00064\ \ \ \ \ \}}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ setUnit(\textcolor{keyword}{const}\ QString\&\ unit)\ \{}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ this-\/>unit\ =\ unit;}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ update();}
+\DoxyCodeLine{00068\ \ \ \ \ \}}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{double}\ value()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ current\_value;\ \}}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{void}\ update\_value(\textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ value);}
+\DoxyCodeLine{00071\ signals:}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{void}\ valueChanged(\textcolor{keywordtype}{double}\ value);}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{comment}{/*\ draw\ behaviour\ at\ here\ */}}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{void}\ paintEvent(QPaintEvent*\ event)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{double}\ max\_value\ \{\ DEF\_MIN\_VALUE\ \};}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{double}\ min\_value\ \{\ DEF\_MAX\_VALUE\ \};}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{double}\ current\_value;}
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{comment}{/*\ display\ property\ */}}
+\DoxyCodeLine{00084\ \ \ \ \ QFont\ title\_font\ \{\ \textcolor{stringliteral}{"{}Arial"{}},\ TITLE\_FONT\_SZ,\ QFont::Bold\ \};}
+\DoxyCodeLine{00085\ \ \ \ \ QFont\ value\_font\ \{\ \textcolor{stringliteral}{"{}Arial"{}},\ CURVAL\_FOUT\_SZ,\ QFont::Bold\ \};}
+\DoxyCodeLine{00086\ \ \ \ \ QFont\ label\_font\ \{\ \textcolor{stringliteral}{"{}Arial"{}},\ LABEL\_FONT\_SZ\ \};}
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{comment}{/*\ display\ strings\ */}}
+\DoxyCodeLine{00088\ \ \ \ \ QString\ title;}
+\DoxyCodeLine{00089\ \ \ \ \ QString\ unit;}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordtype}{void}\ setValue(\textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ val)\ \{}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (qFuzzyCompare(current\_value,\ val))}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ current\_value\ =\ val;}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ emit\ valueChanged(val);}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ update();}
+\DoxyCodeLine{00097\ \ \ \ \ \}}
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordtype}{void}\ drawBackground(QPainter\&\ p);}
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keywordtype}{void}\ drawArc(QPainter\&\ p);}
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keywordtype}{void}\ drawTicks(QPainter\&\ p);}
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordtype}{void}\ drawLabels(QPainter\&\ p);}
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keywordtype}{void}\ drawNeedle(QPainter\&\ p);}
+\DoxyCodeLine{00103\ \ \ \ \ \textcolor{keywordtype}{void}\ drawCenter(QPainter\&\ p);}
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keywordtype}{void}\ drawTexts(QPainter\&\ p);}
+\DoxyCodeLine{00105\ \};}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

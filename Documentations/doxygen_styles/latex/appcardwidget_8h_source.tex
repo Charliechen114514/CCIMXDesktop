@@ -1,0 +1,50 @@
+\doxysection{appcardwidget.\+h}
+\hypertarget{appcardwidget_8h_source}{}\label{appcardwidget_8h_source}\index{ui/appcardwidget.h@{ui/appcardwidget.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ APPCARDWIDGET\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ APPCARDWIDGET\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QWidget>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_desktop_toast}{DesktopToast}};}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }AppCardWidget;}
+\DoxyCodeLine{00010\ \}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{comment}{/*\ App\ Card\ Widgets\ is\ simple\ lighted\ widget\ that\ is}}
+\DoxyCodeLine{00013\ \textcolor{comment}{\ *\ only\ post\ messages\ to\ the\ Toast}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }AppCardWidget\ :\ \textcolor{keyword}{public}\ QWidget}
+\DoxyCodeLine{00016\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ Q\_DISABLE\_COPY(AppCardWidget);}
+\DoxyCodeLine{00021\ \ \ \ \ AppCardWidget()\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{explicit}\ AppCardWidget(\mbox{\hyperlink{class_desktop_toast}{DesktopToast}}*\ toast,\ QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{comment}{/*\ Icons\ for\ the\ current\ */}}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ setCurrentIcon(\textcolor{keyword}{const}\ QPixmap\&\ icons);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{comment}{/*\ when\ system\ starts,\ app\ cards\ are\ supposed\ to\ do\ their\ actions}}
+\DoxyCodeLine{00028\ \textcolor{comment}{\ \ \ \ \ *\ and\ if\ not,\ then\ do\ nothing}}
+\DoxyCodeLine{00029\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ invoke\_preLaunch\_work(\textcolor{keywordtype}{void})\ =\ 0;}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \string~AppCardWidget();}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{comment}{/*\ each\ concrete\ app\ is\ required\ to\ reset\ the\ app\ status\ */}}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ postAppCardWidget()\ =\ 0;}
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{class_desktop_toast}{DesktopToast}}*\ \ \ \ \ \ binding\_toast;}
+\DoxyCodeLine{00038\ \ \ \ \ Ui::AppCardWidget*\ \ ui;}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{comment}{//\ QObject\ interface}}
+\DoxyCodeLine{00040\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{bool}\ eventFilter(QObject\ *watched,\ QEvent\ *event)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00042\ \};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ APPCARDWIDGET\_H}}
+
+\end{DoxyCode}

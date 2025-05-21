@@ -1,0 +1,59 @@
+\doxysection{extern\+\_\+app/pdf\+Reader Directory Reference}
+\hypertarget{dir_cdf1d795629669e548e78bef0aa778e7}{}\label{dir_cdf1d795629669e548e78bef0aa778e7}\index{extern\_app/pdfReader Directory Reference@{extern\_app/pdfReader Directory Reference}}
+\doxysubsubsection*{Directories}
+\begin{DoxyCompactItemize}
+\item 
+directory \mbox{\hyperlink{dir_c7b39e28a3d1610cd42d650973934f9d}{mupdf\+\_\+adapter}}
+\item 
+directory \mbox{\hyperlink{dir_c41a2c1543436f0aecc231599d1a57d2}{mupdf\+\_\+tools}}
+\item 
+directory \mbox{\hyperlink{dir_e4a7133eab41b16e1a03bd9c0b178f80}{ui}}
+\item 
+directory \mbox{\hyperlink{dir_d60e1a9c911c92f2cfe22151a951fc67}{ui\+\_\+tools}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+\begin{DoxyItemize}
+\item 项目地址：总项目\href{https://github.com/Charliechen114514/CCIMXDesktop}{\texttt{ Charliechen114514/\+CCIMXDesktop\+: This is a Qt Written Desktop with base GUI Utilities}}
+\item 本子项目地址：\href{https://github.com/Charliechen114514/CCIMXDesktop/tree/main/extern_app/pdfReader}{\texttt{ CCIMXDesktop/extern\+\_\+app/pdf\+Reader at main · Charliechen114514/\+CCIMXDesktop}}
+\end{DoxyItemize}
+
+​ 子项目跟总项目无耦合关系，你可以直接拿取项目对\+CMake\+Lists进行修改，项目整体遵守\+MIT开源协议，因此，请随意。
+
+​ 首先简单介绍一下这个子项目，本子项目是为了让\+IMX6\+ULL的开发板具备阅读\+PDF的能力的项目。基本上，这里的工程路径在现在您所看到的基本构成是——
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{├───mupdf\_adapter}
+\DoxyCodeLine{├───mupdf\_tools}
+\DoxyCodeLine{├───sources}
+\DoxyCodeLine{├───ui}
+\DoxyCodeLine{└───ui\_tools}
+
+\end{DoxyCode}
+
+
+​ 说明一下这里的结构。
+
+​ mupdf\+\_\+adapter是笔者自己做的跟\+Qt6一块的桥接器，目前主要包含的是三个部分的设计
+
+
+\begin{DoxyItemize}
+\item PDF浏览控件ccpdfviewer，完全的负责了绘制\+Mu\+PDF提供的图像资源。
+\item PDF文档句柄ccpdfdocument，完全的负责和掌管了\+PDF的内存特性
+\item PDF的文档章节解析ccpdfchaptercreator，完全的掌管了\+PDF的章节解析
+\end{DoxyItemize}
+
+​ mupdf\+\_\+tools是驱动\+Mu\+PDF真正做事情的地方，换而言之，mupdf\+\_\+adapter将请求转发给了mupdf\+\_\+tools下的所有的静态工具类，他们负责跟\+Mu\+PDF底层的函数进行沟通，对于大部分想要了解如何封装\+Mu\+PDF的朋友，这里是重点关心的地方。
+
+​ sources只是一些\+Ui固化的资源文件，需要替换图标的朋友自行打开\+Qt\+Creator自己修改即可
+
+​ ui\+\_\+tools则是一些\+Ui辅助的类，实际上包含的滑动\+Slider\+Widget等只是封装了一些传递信息的操作，这里笔者不再赘述，详细的讲解文章请到笔者的\href{https://github.com/Charliechen114514/CCQtArchives}{\texttt{ Charliechen114514/\+CCQt\+Archives\+: This Repo is using in Storing the Tutorial Of Some Qt\+Widgets And QML, with portable libraries, common Applications and so on}}的\+Portable Modules部分单独拿取，那里会更新最新的控件，和修复一部分潜在的bugs
+
+​ ui就是整体demo的一个设计文件了，这里是您所看到的整体样貌的代码实现，为此，修改上层的显示逻辑在这里做修改！
+
+​ 具体的设计在总项目的\+Documentations处笔者有介绍。一些相应的技术要点笔者也会放在那里进行讲解。
+
+ 

@@ -1,0 +1,24 @@
+\doxysection{ap3216c\+\_\+adapter.\+h}
+\hypertarget{ap3216c__adapter_8h_source}{}\label{ap3216c__adapter_8h_source}\index{extern\_app/professionals/boardlevel\_application/Environment/Adapter/ap3216c\_adapter.h@{extern\_app/professionals/boardlevel\_application/Environment/Adapter/ap3216c\_adapter.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ AP3216C\_ADAPTER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ AP3216C\_ADAPTER\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#ifdef\ USE\_REAL\_ADAPTER}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}ap3216c.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <optional>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }AP3216CAdapter\ \{}
+\DoxyCodeLine{00008\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{comment}{/*\ provide\ label\ located\ in\ the\ */}}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{bool}\ bind\_file(\textcolor{keyword}{const}\ std::string\&\ dev\_file\_path);}
+\DoxyCodeLine{00011\ \ \ \ \ std::optional<AP3216CData>\ sync\_read\_once(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00014\ \ \ \ \ std::string\ dev\_file\ \{\};}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{int}\ private\_fd\ \{\ -\/1\ \};}
+\DoxyCodeLine{00016\ \};}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

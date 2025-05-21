@@ -1,0 +1,87 @@
+\doxysection{Disk\+Music.\+h}
+\hypertarget{_disk_music_8h_source}{}\label{_disk_music_8h_source}\index{extern\_app/MediaPlayer/ui/DiskMusic.h@{extern\_app/MediaPlayer/ui/DiskMusic.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ DISKMUSIC\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ DISKMUSIC\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <QTimer>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QWidget>}}
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }QPropertyAnimation;}
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }QVariantAnimation;}
+\DoxyCodeLine{00007\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }DiskMusic;}
+\DoxyCodeLine{00009\ \}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }DiskMusic\ :\ \textcolor{keyword}{public}\ QWidget\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{comment}{/*\ Animation\ use\ this\ to\ access\ how\ to\ draw\ arm\ */}}
+\DoxyCodeLine{00014\ \ \ \ \ Q\_PROPERTY(qreal\ armAngle\ READ\ armAngle\ WRITE\ setArmAngle\ NOTIFY\ armAngleChanged);}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ ANIMATION\_DURATION\ =\ 300;}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ ANIMATION\_FPS\ =\ 60;}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ qreal\ BEGIN\_ANGLE\ =\ -\/30;}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ qreal\ END\_ANGLE\ =\ -\/10;}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ SWITCH\_COLOR\_MSEC\_INTERVAL\ =\ 20000;}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ COLOR\_SWITCH\_PROCESS\_INTERVAL\ =\ 2000;}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{comment}{/*\ every\ time\ the\ default\ color\ media\ first\ open\ */}}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ QColor\ BEGIN\_COLOR\ =\ QColor(173,\ 216,\ 230);}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ QColor\ END\_COLOR\ =\ QColor(0,\ 51,\ 102);}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{explicit}\ DiskMusic(QWidget*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ setStatus(\textcolor{keywordtype}{bool}\ set\_is\_playing);}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ setPixmap(\textcolor{keyword}{const}\ QString\&\ pixmap\_path);}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{inline}\ qreal\ armAngle()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ angle;}
+\DoxyCodeLine{00032\ \ \ \ \ \}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ setArmAngle(qreal\ angle)\ \{}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ this-\/>angle\ =\ angle;}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ update();}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ emit\ armAngleChanged();}
+\DoxyCodeLine{00038\ \ \ \ \ \}}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \string~DiskMusic();}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ signals:}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ armAngleChanged();}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ paintEvent(QPaintEvent*)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00049\ \ \ \ \ Ui::DiskMusic*\ ui;}
+\DoxyCodeLine{00050\ \ \ \ \ qreal\ angle\ \{\ BEGIN\_ANGLE\ \};\ \textcolor{comment}{/*\ arm\ angle\ */}}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{float}\ current\_rotations\ \{\};}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{bool}\ is\_playing\ \{\ \textcolor{keyword}{false}\ \};}
+\DoxyCodeLine{00053\ \ \ \ \ QTimer\ animate\_timer;}
+\DoxyCodeLine{00054\ \ \ \ \ QPropertyAnimation*\ animation\ \{\ \textcolor{keyword}{nullptr}\ \};}
+\DoxyCodeLine{00055\ \ \ \ \ QVariantAnimation*\ color\_animation\ \{\ \textcolor{keyword}{nullptr}\ \};}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ QPixmap\ coverPixmap;}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ QPixmap\ armPixmap;}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ QPixmap\ recordPixmap;}
+\DoxyCodeLine{00060\ \ \ \ \ \}\ pixmaps;}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{void}\ initUi();}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{void}\ initCore();}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ process\_rotation()\ \{}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ current\_rotations\ +=\ 0.5;}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (current\_rotations\ >=\ 360.0)}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ current\_rotations\ -\/=\ 360.0;}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ update();}
+\DoxyCodeLine{00068\ \ \ \ \ \}}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{comment}{/*\ for\ current\ varient\ change\ */}}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{void}\ process\_the\_color\_change(QPainter\&\ p);}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{void}\ startColorTransition();}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \ \ \ \ QColor\ beginColor\ \{\ BEGIN\_COLOR\ \};}
+\DoxyCodeLine{00074\ \ \ \ \ QColor\ endColor\ \{\ END\_COLOR\ \};}
+\DoxyCodeLine{00075\ \ \ \ \ QColor\ targetStart;}
+\DoxyCodeLine{00076\ \ \ \ \ QColor\ targetEnd;}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \ \ \ \ QTimer\ color\_switch\_timer;}
+\DoxyCodeLine{00079\ \};}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ DISKMUSIC\_H}}
+
+\end{DoxyCode}

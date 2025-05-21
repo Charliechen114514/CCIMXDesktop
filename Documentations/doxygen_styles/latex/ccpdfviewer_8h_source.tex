@@ -1,0 +1,80 @@
+\doxysection{ccpdfviewer.\+h}
+\hypertarget{ccpdfviewer_8h_source}{}\label{ccpdfviewer_8h_source}\index{extern\_app/pdfReader/mupdf\_adapter/ccpdfviewer.h@{extern\_app/pdfReader/mupdf\_adapter/ccpdfviewer.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CCPDFVIEWER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CCPDFVIEWER\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <QImage>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QWidget>}}
+\DoxyCodeLine{00005\ \textcolor{comment}{/*\ preannounced\ of\ the\ documents\ */}}
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_c_pdf_document}{CCPdfDocument}};}
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }QScrollArea;}
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }QLabel;}
+\DoxyCodeLine{00009\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }CCPdfViewer;}
+\DoxyCodeLine{00011\ \}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{comment}{/*\ CCPdfViewer\ really\ helps\ we\ view\ pdf\ in\ page\ level\ */}}
+\DoxyCodeLine{00014\ \textcolor{comment}{/*\ it\ actually\ interactive\ with\ ccpdf\_tools::page\_renderer\ */}}
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }CCPdfViewer\ :\ \textcolor{keyword}{public}\ QWidget}
+\DoxyCodeLine{00016\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{explicit}\ CCPdfViewer(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00021\ \ \ \ \ Q\_DISABLE\_COPY(CCPdfViewer);}
+\DoxyCodeLine{00022\ \ \ \ \ \string~CCPdfViewer();}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{comment}{/*\ if\ we\ can\ not\ bind\ the\ document,\ then\ returns\ failed\ */}}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{bool}\ bindDocument(\mbox{\hyperlink{class_c_c_pdf_document}{CCPdfDocument}}*\ bindDocument);}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ unbindDocument();}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{float}\ current\_zoom()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ view\_zoom;}
+\DoxyCodeLine{00028\ \ \ \ \ \}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ set\_zoom\_step(\textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ zoom\_step)\{}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ this-\/>zoom\_step\ =\ zoom\_step;}
+\DoxyCodeLine{00032\ \ \ \ \ \}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{enum\ class}\ ZoomDirection\{}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ ZOOM\_IN,}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ ZOOM\_OUT}
+\DoxyCodeLine{00037\ \ \ \ \ \};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ zoom(}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ ZoomDirection\ direction}
+\DoxyCodeLine{00042\ \ \ \ \ )\{}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}(direction)\{}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ ZoomDirection::ZOOM\_IN:}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ view\_zoom\ +=\ zoom\_step;}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ ZoomDirection::ZOOM\_OUT:}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ view\_zoom\ -\/=\ zoom\_step;}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00051\ \ \ \ \ \}}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ fresh\_zoom(\textcolor{keyword}{const}\ ZoomDirection\ direction)\{}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ zoom(direction);}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ make\ the\ fresh\ */}}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ fresh\_render();}
+\DoxyCodeLine{00057\ \ \ \ \ \}}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{comment}{/*\ call\ the\ rendering\ page\ */}}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{void}\ fresh\_render();}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00064\ \ \ \ \ Ui::CCPdfViewer\ *ui;}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{comment}{/*\ zooms\ sometimes\ overflow\ the\ page\ index,\ let\ them\ in\ scrollarea\ */}}
+\DoxyCodeLine{00066\ \ \ \ \ \mbox{\hyperlink{class_c_c_pdf_document}{CCPdfDocument}}*\ \ document\_for\_view\{\textcolor{keyword}{nullptr}\};}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{float}\ \ \ \ \ \ \ \ \ \ \ view\_zoom\{1.0f\};}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{float}\ \ \ \ \ \ \ \ \ \ \ zoom\_step\{0.1f\};}
+\DoxyCodeLine{00069\ \ \ \ \ QImage\ \ \ \ \ \ \ \ \ \ cached\_image;}
+\DoxyCodeLine{00070\ \ \ \ \ QLabel*\ \ \ \ \ \ \ \ \ imageLabel;}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{void}\ init\_internal(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00072\ \};}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CCPDFVIEWER\_H}}
+
+\end{DoxyCode}

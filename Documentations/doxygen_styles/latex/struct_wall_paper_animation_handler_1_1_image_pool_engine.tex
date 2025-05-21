@@ -1,0 +1,28 @@
+\doxysection{Wall\+Paper\+Animation\+Handler\+::Image\+Pool\+Engine Struct Reference}
+\hypertarget{struct_wall_paper_animation_handler_1_1_image_pool_engine}{}\label{struct_wall_paper_animation_handler_1_1_image_pool_engine}\index{WallPaperAnimationHandler::ImagePoolEngine@{WallPaperAnimationHandler::ImagePoolEngine}}
+
+
+The \doxylink{struct_wall_paper_animation_handler_1_1_image_pool_engine}{Image\+Pool\+Engine} class makes a image selection as an engine, \doxylink{struct_wall_paper_animation_handler}{Wall\+Paper\+Animation\+Handler} requires the engine to make the wallpaper switch(that is, select with how to select the image for display)  
+
+
+
+
+{\ttfamily \#include $<$wallpaperanimationhandler.\+h$>$}
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{struct_wall_paper_animation_handler_1_1_image_pool_engine_a9e00dc9de5cf9ea5a75d757965f9860d}\label{struct_wall_paper_animation_handler_1_1_image_pool_engine_a9e00dc9de5cf9ea5a75d757965f9860d} 
+QString\+List \texorpdfstring{$\ast$}{*} {\bfseries image\+\_\+list} \{ nullptr \}
+\begin{DoxyCompactList}\small\item\em image list of the src \end{DoxyCompactList}\item 
+\Hypertarget{struct_wall_paper_animation_handler_1_1_image_pool_engine_add618f4f1160a42f5384169359212c49}\label{struct_wall_paper_animation_handler_1_1_image_pool_engine_add618f4f1160a42f5384169359212c49} 
+std\+::function$<$ int(QString\+List \texorpdfstring{$\ast$}{*})$>$ {\bfseries selector} \{ nullptr \}
+\begin{DoxyCompactList}\small\item\em selector make sense in deciding how to select from the image list, if not set, then it will be random as default issue \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{struct_wall_paper_animation_handler_1_1_image_pool_engine}{Image\+Pool\+Engine} class makes a image selection as an engine, \doxylink{struct_wall_paper_animation_handler}{Wall\+Paper\+Animation\+Handler} requires the engine to make the wallpaper switch(that is, select with how to select the image for display) 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ui/wallpaperanimationhandler.\+h\end{DoxyCompactItemize}

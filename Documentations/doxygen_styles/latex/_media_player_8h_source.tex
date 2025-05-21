@@ -1,0 +1,161 @@
+\doxysection{Media\+Player.\+h}
+\hypertarget{_media_player_8h_source}{}\label{_media_player_8h_source}\index{extern\_app/MediaPlayer/base/MediaPlayer.h@{extern\_app/MediaPlayer/base/MediaPlayer.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ MEDIAPLAYER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ MEDIAPLAYER\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <QImage>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }QMediaPlayer;}
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_video_player}{VideoPlayer}};}
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }QLabel;}
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_v_image}{CVImage}};}
+\DoxyCodeLine{00009\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ *\ \ MediaPlayer\ is\ the\ wrapper\ of}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ *\ \ VideoPlayer\ and\ AudioPlayer,\ with\ the}}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ *\ \ sync\ of\ video\ and\ audio\ basically}}
+\DoxyCodeLine{00013\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{enum\ class}\ MediaError\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ NO\_ERROR,}
+\DoxyCodeLine{00017\ \ \ \ \ UNEXSITED\_SOURCE,}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{comment}{/*\ VEDIO\_ONLY\ and\ SOUND\_ONLY\ means\ the\ partial\ displays\ */}}
+\DoxyCodeLine{00019\ \ \ \ \ VEDIO\_ONLY,}
+\DoxyCodeLine{00020\ \ \ \ \ SOUND\_ONLY,}
+\DoxyCodeLine{00021\ \ \ \ \ UNSUPPORT\_SOURCE,}
+\DoxyCodeLine{00022\ \};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{namespace\ }MediaPlayerPublicSettings\ \{}
+\DoxyCodeLine{00025\ \textcolor{comment}{/*\ for\ some\ cases,\ it\ is\ rather\ accpetable\ for\ the\ mismatch\ */}}
+\DoxyCodeLine{00026\ \textcolor{keyword}{using\ }MisSyncDelay\_t\ =\ \textcolor{keywordtype}{unsigned}\ int;}
+\DoxyCodeLine{00027\ \textcolor{comment}{/*\ max\ delay\ we\ can\ accept\ */}}
+\DoxyCodeLine{00028\ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ MisSyncDelay\_t\ DEF\_ACCPET\_DELAY\ =\ 500;}
+\DoxyCodeLine{00029\ \};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_media_info}{MediaInfo}}\ \{}
+\DoxyCodeLine{00032\ \ \ \ \ QString\ title;}
+\DoxyCodeLine{00033\ \ \ \ \ QString\ author;}
+\DoxyCodeLine{00034\ \ \ \ \ QString\ albumTitle;}
+\DoxyCodeLine{00035\ \ \ \ \ QString\ albumArtist;}
+\DoxyCodeLine{00036\ \ \ \ \ QString\ composer;}
+\DoxyCodeLine{00037\ \ \ \ \ QString\ genre;}
+\DoxyCodeLine{00038\ \ \ \ \ qint64\ durationMs;}
+\DoxyCodeLine{00039\ \ \ \ \ QString\ date;}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{int}\ trackNumber;}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{int}\ audioBitRate;}
+\DoxyCodeLine{00043\ \ \ \ \ QString\ audioCodec;}
+\DoxyCodeLine{00044\ \ \ \ \ QString\ mediaType;}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{int}\ sampleRate;}
+\DoxyCodeLine{00046\ \ \ \ \ QString\ publisher;}
+\DoxyCodeLine{00047\ \ \ \ \ QImage\ coverImage;}
+\DoxyCodeLine{00048\ \};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00051\ \textcolor{comment}{\ *\ Author\ here\ in\ 2025.5.10}}
+\DoxyCodeLine{00052\ \textcolor{comment}{\ *\ In\ Current\ Version,\ Only\ OpenCV\ is\ supported\ for\ the\ video\ play}}
+\DoxyCodeLine{00053\ \textcolor{comment}{\ *\ and\ the\ audio\ is\ only\ supported\ by\ QMediaPlayer,\ with\ current}}
+\DoxyCodeLine{00054\ \textcolor{comment}{\ *\ ALSA\ is\ used\ for\ the\ audio\ play\ in\ IMX6ULL,\ so\ for\ cross\ compilers}}
+\DoxyCodeLine{00055\ \textcolor{comment}{\ *\ you\ must\ cross\ compile\ with\ ALSA\ support}}
+\DoxyCodeLine{00056\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00057\ \textcolor{keyword}{class\ }MediaPlayer\ :\ \textcolor{keyword}{public}\ QObject\ \{}
+\DoxyCodeLine{00058\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00059\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_media_player_1_1_media_player_status}{MediaPlayerStatus}}\ \{}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ media\ status\ */}}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ audio\_ready\ \{\ \textcolor{keyword}{false}\ \};}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ video\_ready\ \{\ \textcolor{keyword}{false}\ \};}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ What\ has\ been\ fucking\ happened\ */}}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ QString\ video\_discriptions\ \{\};}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ QString\ audio\_discriptions\ \{\};}
+\DoxyCodeLine{00067\ \ \ \ \ \};}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keyword}{explicit}\ MediaPlayer(QObject*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00070\ \ \ \ \ Q\_DISABLE\_COPY(MediaPlayer);}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{comment}{/*\ open\ media\ */}}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{void}\ setSource(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ local\_file);}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{comment}{/*\ sources\ */}}
+\DoxyCodeLine{00074\ \ \ \ \ QString\ source()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{comment}{/*\ the\ percentage\ of\ the\ volumn\ */}}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{void}\ setVolume(\textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ percentage);}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{comment}{/*\ volumn\ \ */}}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{float}\ volume()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{comment}{/*\ get\ the\ all\ mseconds\ of\ the\ media\ */}}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keyword}{inline}\ qint64\ get\_durations()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ durations;\ \}}
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{comment}{/*\ get\ the\ current\ position\ */}}
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keyword}{inline}\ qint64\ get\_position()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ position;\ \}}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00085\ \textcolor{comment}{\ \ \ \ \ *\ start\ the\ display\ if,\ the\ source\ is\ displayable}}
+\DoxyCodeLine{00086\ \textcolor{comment}{\ \ \ \ \ *\ and\ source\ is\ ready}}
+\DoxyCodeLine{00087\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordtype}{bool}\ resume();}
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00090\ \textcolor{comment}{\ \ \ \ \ *\ \ terminate\ for\ the\ request}}
+\DoxyCodeLine{00091\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keywordtype}{bool}\ pause();}
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{comment}{/*\ close\ the\ source,\ this\ means\ a\ hard\ close\ */}}
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordtype}{bool}\ close();}
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{comment}{/*\ see\ if\ the\ audio\ is\ playing\ thus\ */}}
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{comment}{/*\ for\ default,\ if\ one\ is\ playing,\ the\ mediaplayer\ is\ playing\ :)\ */}}
+\DoxyCodeLine{00097\ \ \ \ \ \textcolor{keywordtype}{bool}\ isPlaying()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{comment}{/*\ Yet\ set\ the\ default\ mis\ sync\ tolerance\ */}}
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ set\_accept\_missync\_msecond(}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ msec}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ =\ MediaPlayerPublicSettings::DEF\_ACCPET\_DELAY)\ \{}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ mis\_sync\_seconds\ =\ msec;}
+\DoxyCodeLine{00104\ \ \ \ \ \}}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{comment}{/*\ moves\ to\ the\ target\ positions\ */}}
+\DoxyCodeLine{00107\ \ \ \ \ \textcolor{keywordtype}{void}\ set\_position(\textcolor{keyword}{const}\ qint64\ position);}
+\DoxyCodeLine{00108\ signals:}
+\DoxyCodeLine{00109\ \ \ \ \ \textcolor{comment}{/*\ for\ those\ who\ expect\ to\ use\ callback\ */}}
+\DoxyCodeLine{00110\ \ \ \ \ \textcolor{keywordtype}{void}\ display\_frame(QImage\ image);}
+\DoxyCodeLine{00111\ \ \ \ \ \textcolor{comment}{/*\ volumn\ changed\ signals\ */}}
+\DoxyCodeLine{00112\ \ \ \ \ \textcolor{keywordtype}{void}\ volumeChanged(\textcolor{keywordtype}{float}\ percentage);}
+\DoxyCodeLine{00113\ \ \ \ \ \textcolor{comment}{/*\ emit\ changed\ sources\ */}}
+\DoxyCodeLine{00114\ \ \ \ \ \textcolor{keywordtype}{void}\ sourceOpened(\textcolor{keyword}{const}\ QString\ source,\ \textcolor{comment}{/*\ At\ which\ sources\ */}}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MediaPlayer::MediaPlayerStatus\ status);\ \textcolor{comment}{/*\ for\ what\ errors\ */}}
+\DoxyCodeLine{00116\ \ \ \ \ \textcolor{comment}{/*\ frame\ is\ avaible\ */}}
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keywordtype}{void}\ videoAvailable(\textcolor{keywordtype}{bool}\ sourceAvailable,\ \textcolor{keyword}{const}\ QImage\ firstPage);}
+\DoxyCodeLine{00118\ \ \ \ \ \textcolor{comment}{/*\ media\ is\ end\ */}}
+\DoxyCodeLine{00119\ \ \ \ \ \textcolor{keywordtype}{void}\ mediaEnd();}
+\DoxyCodeLine{00120\ \ \ \ \ \textcolor{comment}{/*\ duration\ sessions\ */}}
+\DoxyCodeLine{00121\ \ \ \ \ \textcolor{keywordtype}{void}\ durationChanged(qint64\ new\_durantion);}
+\DoxyCodeLine{00122\ \ \ \ \ \textcolor{comment}{/*\ position\ accessied\ */}}
+\DoxyCodeLine{00123\ \ \ \ \ \textcolor{keywordtype}{void}\ positionChanged(qint64\ position);}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00125\ \ \ \ \ \textcolor{comment}{/*\ meta\ available\ */}}
+\DoxyCodeLine{00126\ \ \ \ \ \textcolor{keywordtype}{void}\ metaDataAvailable(\textcolor{keyword}{const}\ MediaInfo\ info);}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00128\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00129\ \ \ \ \ \textcolor{comment}{/*\ QMediaPlayer\ is\ expected\ to\ use\ Audio\ */}}
+\DoxyCodeLine{00130\ \ \ \ \ QMediaPlayer*\ audioPlayer\ \{\ \textcolor{keyword}{nullptr}\ \};}
+\DoxyCodeLine{00131\ \ \ \ \ \textcolor{comment}{/*\ VideoPlayer\ is\ expected\ to\ display\ the\ video\ */}}
+\DoxyCodeLine{00132\ \ \ \ \ VideoPlayer*\ videoPlayer\ \{\ \textcolor{keyword}{nullptr}\ \};}
+\DoxyCodeLine{00133\ \ \ \ \ \textcolor{comment}{/*\ for\ status\ holder\ */}}
+\DoxyCodeLine{00134\ \ \ \ \ \mbox{\hyperlink{struct_media_player_1_1_media_player_status}{MediaPlayerStatus}}\ media\_status;}
+\DoxyCodeLine{00135\ \ \ \ \ MediaPlayerPublicSettings::MisSyncDelay\_t}
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ mis\_sync\_seconds\ \{\ MediaPlayerPublicSettings::DEF\_ACCPET\_DELAY\ \};}
+\DoxyCodeLine{00137\ \ \ \ \ qint64\ durations\ \{\};}
+\DoxyCodeLine{00138\ \ \ \ \ qint64\ position\ \{\};}
+\DoxyCodeLine{00139\ }
+\DoxyCodeLine{00140\ \ \ \ \ \textcolor{comment}{/*\ functions\ */}}
+\DoxyCodeLine{00141\ }
+\DoxyCodeLine{00142\ \ \ \ \ \textcolor{comment}{/*\ invoke\ with\ initing\ */}}
+\DoxyCodeLine{00143\ \ \ \ \ \textcolor{keywordtype}{void}\ init\_allocations();}
+\DoxyCodeLine{00144\ \ \ \ \ \textcolor{keywordtype}{void}\ init\_connections();}
+\DoxyCodeLine{00145\ \ \ \ \ \textcolor{comment}{/*\ for\ most\ cases\ in\ IMX6ULL\ Alpha\ board,}}
+\DoxyCodeLine{00146\ \textcolor{comment}{\ \ \ \ \ *\ without\ ffmpeg\ hard\ decorder\ of\ video\ flow(as\ no\ chips\ support)}}
+\DoxyCodeLine{00147\ \textcolor{comment}{\ \ \ \ \ *\ things\ got\ fucking\ stuff\ (written\ in\ 2025.5.10\ :(\ \ )}}
+\DoxyCodeLine{00148\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{00149\ \ \ \ \ \textcolor{keywordtype}{void}\ process\_sync(\textcolor{keyword}{const}\ CVImage\&\ current\_frame);}
+\DoxyCodeLine{00150\ \ \ \ \ \textcolor{keywordtype}{void}\ handle\_sync\_duration(qint64\ durations);}
+\DoxyCodeLine{00151\ \ \ \ \ \textcolor{keywordtype}{void}\ handle\_sync\_position(qint64\ position);}
+\DoxyCodeLine{00152\ \ \ \ \ \textcolor{keywordtype}{void}\ extract\_metainfo();}
+\DoxyCodeLine{00153\ \};}
+\DoxyCodeLine{00154\ }
+\DoxyCodeLine{00155\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MEDIAPLAYER\_H}}
+
+\end{DoxyCode}

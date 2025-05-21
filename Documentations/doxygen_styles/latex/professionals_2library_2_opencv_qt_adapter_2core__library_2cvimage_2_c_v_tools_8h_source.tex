@@ -1,0 +1,35 @@
+\doxysection{CVTools.\+h}
+\hypertarget{professionals_2library_2_opencv_qt_adapter_2core__library_2cvimage_2_c_v_tools_8h_source}{}\label{professionals_2library_2_opencv_qt_adapter_2core__library_2cvimage_2_c_v_tools_8h_source}\index{extern\_app/professionals/library/OpencvQtAdapter/core\_library/cvimage/CVTools.h@{extern\_app/professionals/library/OpencvQtAdapter/core\_library/cvimage/CVTools.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CVTOOLS\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CVTOOLS\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}CVImage.h"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <utility>}}
+\DoxyCodeLine{00005\ \textcolor{comment}{/*\ CVTools\ make\ sense\ in\ debuging\ */}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{comment}{/*\ Most\ of\ the\ implementations,\ for\ management}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *\ reason,\ are\ supposed\ to\ place\ in\ the\ impl}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *\ files,\ instead\ of\ the\ current\ cpp\ file}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00011\ \textcolor{keyword}{namespace\ }CVTools\ \{}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{short}\ WAIT\_FOREVER\ =\ 0;}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_c_v_tools_1_1_display_params}{DisplayParams}}\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ name\ \{\ \textcolor{keyword}{nullptr}\ \};}
+\DoxyCodeLine{00017\ \ \ \ \ std::pair<int,\ int>\ window\_size\ \{\ 640,\ 480\ \};}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{int}\ waitTime\ \{\ WAIT\_FOREVER\ \};\ \textcolor{comment}{/*\ default\ we\ wait\ forever\ */}}
+\DoxyCodeLine{00019\ \};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{comment}{/*\ using\ the\ default\ display\ issue\ make\ sense\ */}}
+\DoxyCodeLine{00022\ \textcolor{keywordtype}{void}\ display(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_c_v_image}{CVImage}}\&\ image,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ name);}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{comment}{/*\ display\ impl\ should\ be\ in\ private\ impl\ file\ */}}
+\DoxyCodeLine{00025\ \textcolor{keywordtype}{void}\ display(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_c_v_image}{CVImage}}\&\ image,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_c_v_tools_1_1_display_params}{DisplayParams}}\&\ params);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CVTOOLS\_H}}
+
+\end{DoxyCode}

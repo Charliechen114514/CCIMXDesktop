@@ -1,0 +1,29 @@
+\doxysection{Camera\+Display\+Widget.\+h}
+\hypertarget{_camera_display_widget_8h_source}{}\label{_camera_display_widget_8h_source}\index{extern\_app/GeneralLocalCamera/Ui/CameraDisplayWidget.h@{extern\_app/GeneralLocalCamera/Ui/CameraDisplayWidget.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CAMERADISPLAYWIDGET\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CAMERADISPLAYWIDGET\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QWidget>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }CameraDisplayWidget;}
+\DoxyCodeLine{00008\ \}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }CameraDisplayWidget\ :\ \textcolor{keyword}{public}\ QWidget\ \{}
+\DoxyCodeLine{00011\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{explicit}\ CameraDisplayWidget(QWidget*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{void}\ setCurrentFrame(\textcolor{keyword}{const}\ QImage\&\ image);}
+\DoxyCodeLine{00016\ \ \ \ \ QPixmap\ current\_captures()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00017\ \ \ \ \ \string~CameraDisplayWidget();}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00020\ \ \ \ \ Ui::CameraDisplayWidget*\ ui;}
+\DoxyCodeLine{00021\ \};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CAMERADISPLAYWIDGET\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,55 @@
+\doxysection{CCPdf\+Viewer Class Reference}
+\hypertarget{class_c_c_pdf_viewer}{}\label{class_c_c_pdf_viewer}\index{CCPdfViewer@{CCPdfViewer}}
+Inheritance diagram for CCPdf\+Viewer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_c_pdf_viewer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_c_c_pdf_viewer_ac8458daf2cedd1f6118454f199401336}\label{class_c_c_pdf_viewer_ac8458daf2cedd1f6118454f199401336} 
+enum class {\bfseries Zoom\+Direction} \{ {\bfseries ZOOM\+\_\+\+IN}
+, {\bfseries ZOOM\+\_\+\+OUT}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_c_c_pdf_viewer_a51b31290cb21bdd0dd2e77a1546d6b52}\label{class_c_c_pdf_viewer_a51b31290cb21bdd0dd2e77a1546d6b52} 
+void {\bfseries zoom} (const Zoom\+Direction direction)
+\item 
+\Hypertarget{class_c_c_pdf_viewer_ad2087b6950aafc024c98aa3bc1ec2277}\label{class_c_c_pdf_viewer_ad2087b6950aafc024c98aa3bc1ec2277} 
+void {\bfseries fresh\+\_\+zoom} (const Zoom\+Direction direction)
+\item 
+\Hypertarget{class_c_c_pdf_viewer_ac7f3f2ba436fba2eedeaf5580d4630d5}\label{class_c_c_pdf_viewer_ac7f3f2ba436fba2eedeaf5580d4630d5} 
+void {\bfseries fresh\+\_\+render} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_c_c_pdf_viewer_a0285aa5887d8853873b9a166675f9471}\label{class_c_c_pdf_viewer_a0285aa5887d8853873b9a166675f9471} 
+{\bfseries CCPdf\+Viewer} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
+\item 
+\Hypertarget{class_c_c_pdf_viewer_a7e1c4f5bfd54a85ea1d525bd7a75c38c}\label{class_c_c_pdf_viewer_a7e1c4f5bfd54a85ea1d525bd7a75c38c} 
+{\bfseries Q\+\_\+\+DISABLE\+\_\+\+COPY} (\mbox{\hyperlink{class_c_c_pdf_viewer}{CCPdf\+Viewer}})
+\item 
+\Hypertarget{class_c_c_pdf_viewer_acf622ca3df1b117bb8b1a108d51fe71c}\label{class_c_c_pdf_viewer_acf622ca3df1b117bb8b1a108d51fe71c} 
+bool {\bfseries bind\+Document} (\mbox{\hyperlink{class_c_c_pdf_document}{CCPdf\+Document}} \texorpdfstring{$\ast$}{*}bind\+Document)
+\item 
+\Hypertarget{class_c_c_pdf_viewer_a26ede651e15807399423cf74ea336ee4}\label{class_c_c_pdf_viewer_a26ede651e15807399423cf74ea336ee4} 
+void {\bfseries unbind\+Document} ()
+\item 
+\Hypertarget{class_c_c_pdf_viewer_a3e06c01d172da27bb83363ffc468be5c}\label{class_c_c_pdf_viewer_a3e06c01d172da27bb83363ffc468be5c} 
+float {\bfseries current\+\_\+zoom} () const
+\item 
+\Hypertarget{class_c_c_pdf_viewer_a81c9184d13e341d3fd6e0f34c7333d1f}\label{class_c_c_pdf_viewer_a81c9184d13e341d3fd6e0f34c7333d1f} 
+void {\bfseries set\+\_\+zoom\+\_\+step} (const float zoom\+\_\+step)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+extern\+\_\+app/pdf\+Reader/mupdf\+\_\+adapter/ccpdfviewer.\+h\item 
+extern\+\_\+app/pdf\+Reader/mupdf\+\_\+adapter/ccpdfviewer.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,68 @@
+\doxysection{App\+Weather\+Request Class Reference}
+\hypertarget{class_app_weather_request}{}\label{class_app_weather_request}\index{AppWeatherRequest@{AppWeatherRequest}}
+Inheritance diagram for App\+Weather\+Request\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_app_weather_request}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_app_weather_request_a9bd4a52d3b846938b249ec0c3a71d6f5}\label{class_app_weather_request_a9bd4a52d3b846938b249ec0c3a71d6f5} 
+{\bfseries Q\+\_\+\+DISABLE\+\_\+\+COPY} (\mbox{\hyperlink{class_app_weather_request}{App\+Weather\+Request}})
+\item 
+\Hypertarget{class_app_weather_request_a2a8538f869a2108344638225ce6d2ea7}\label{class_app_weather_request_a2a8538f869a2108344638225ce6d2ea7} 
+{\bfseries App\+Weather\+Request} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
+\item 
+\Hypertarget{class_app_weather_request_af546cc490a646c652c70a9ba55fd207c}\label{class_app_weather_request_af546cc490a646c652c70a9ba55fd207c} 
+void {\bfseries bind\+App\+Detailed\+Request} (const \mbox{\hyperlink{struct_app_weather_detailed_request}{App\+Weather\+Detailed\+Request}} \&request)
+\item 
+QUrl\+Query \mbox{\hyperlink{class_app_weather_request_aa484e3ab2825abedcc5fd80b6969d8a3}{compose\+\_\+request}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_weather_request}{Weather\+Request}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Q\+\_\+\+DISABLE\+\_\+\+COPY} (\mbox{\hyperlink{class_weather_request}{Weather\+Request}})
+\item 
+{\bfseries Weather\+Request} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
+\item 
+void {\bfseries async\+\_\+request} (const char \texorpdfstring{$\ast$}{*}base\+\_\+url)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Signals inherited from \mbox{\hyperlink{class_weather_request}{Weather\+Request}}}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries error\+Occurs} (QNetwork\+Reply \texorpdfstring{$\ast$}{*}reply)
+\item 
+void {\bfseries result\+\_\+available} (const QString json)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_weather_request}{Weather\+Request}}}
+\begin{DoxyCompactItemize}
+\item 
+QNetwork\+Access\+Manager {\bfseries manager}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{class_weather_request}{Weather\+Request}}}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr const char \texorpdfstring{$\ast$}{*} {\bfseries private\+\_\+key} = \+\_\+\+DEF\+\_\+\+WEATHER\+\_\+\+PRIVATE\+\_\+\+KEY
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_app_weather_request_aa484e3ab2825abedcc5fd80b6969d8a3}\index{AppWeatherRequest@{AppWeatherRequest}!compose\_request@{compose\_request}}
+\index{compose\_request@{compose\_request}!AppWeatherRequest@{AppWeatherRequest}}
+\doxysubsubsection{\texorpdfstring{compose\_request()}{compose\_request()}}
+{\footnotesize\ttfamily \label{class_app_weather_request_aa484e3ab2825abedcc5fd80b6969d8a3} 
+QUrl\+Query App\+Weather\+Request\+::compose\+\_\+request (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_weather_request}{Weather\+Request}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+extern\+\_\+app/\+Weather\+App/\+Core/App\+Weather\+Request.\+h\item 
+extern\+\_\+app/\+Weather\+App/\+Core/App\+Weather\+Request.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,26 @@
+\doxysection{Photo\+Saver.\+h}
+\hypertarget{_photo_saver_8h_source}{}\label{_photo_saver_8h_source}\index{extern\_app/GeneralLocalCamera/Core/PhotoSaver.h@{extern\_app/GeneralLocalCamera/Core/PhotoSaver.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PHOTOSAVER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PHOTOSAVER\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <QPixmap>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QString>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QtClassHelperMacros>}}
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }PhotoSaver\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00008\ \ \ \ \ PhotoSaver()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00009\ \ \ \ \ Q\_DISABLE\_COPY(PhotoSaver);}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{enum\ class}\ Error\ \{}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ SaveSuccess,}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ NullImage,}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ DirUnsavable,}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ ImageSelfSaveFailed}
+\DoxyCodeLine{00015\ \ \ \ \ \};}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ dirSavable(\textcolor{keyword}{const}\ QString\&\ dir);}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{static}\ Error\ saveOnce(\textcolor{keyword}{const}\ QPixmap\&\ image,\ \textcolor{keyword}{const}\ QString\&\ dir,\ \textcolor{keyword}{const}\ QString\ prefix\ =\ \textcolor{stringliteral}{"{}.jpg"{}});}
+\DoxyCodeLine{00018\ \};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PHOTOSAVER\_H}}
+
+\end{DoxyCode}

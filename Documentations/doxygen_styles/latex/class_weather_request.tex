@@ -1,0 +1,50 @@
+\doxysection{Weather\+Request Class Reference}
+\hypertarget{class_weather_request}{}\label{class_weather_request}\index{WeatherRequest@{WeatherRequest}}
+Inheritance diagram for Weather\+Request\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_weather_request}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_weather_request_ad6741445b3b9ed4fdb60f1a53293e720}\label{class_weather_request_ad6741445b3b9ed4fdb60f1a53293e720} 
+void {\bfseries error\+Occurs} (QNetwork\+Reply \texorpdfstring{$\ast$}{*}reply)
+\item 
+\Hypertarget{class_weather_request_a182f4d1dd7b4a801eb9a9469f88dc000}\label{class_weather_request_a182f4d1dd7b4a801eb9a9469f88dc000} 
+void {\bfseries result\+\_\+available} (const QString json)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_weather_request_a472973ba5b01c6b681f831470c8e8ec4}\label{class_weather_request_a472973ba5b01c6b681f831470c8e8ec4} 
+{\bfseries Q\+\_\+\+DISABLE\+\_\+\+COPY} (\mbox{\hyperlink{class_weather_request}{Weather\+Request}})
+\item 
+\Hypertarget{class_weather_request_a563db4f9beeca9a58267e04c0ecbe0f8}\label{class_weather_request_a563db4f9beeca9a58267e04c0ecbe0f8} 
+{\bfseries Weather\+Request} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
+\item 
+\Hypertarget{class_weather_request_a536ac3f283539dd0b7d7885bb53fc7b5}\label{class_weather_request_a536ac3f283539dd0b7d7885bb53fc7b5} 
+void {\bfseries async\+\_\+request} (const char \texorpdfstring{$\ast$}{*}base\+\_\+url)
+\item 
+\Hypertarget{class_weather_request_a2faec779862560dbe931d723025787d1}\label{class_weather_request_a2faec779862560dbe931d723025787d1} 
+virtual QUrl\+Query {\bfseries compose\+\_\+request} ()=0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_weather_request_a409c6257cb30390f26bd3c67f295ef06}\label{class_weather_request_a409c6257cb30390f26bd3c67f295ef06} 
+QNetwork\+Access\+Manager {\bfseries manager}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_weather_request_ac40ebb371070a67f2e2f0d75af7e5036}\label{class_weather_request_ac40ebb371070a67f2e2f0d75af7e5036} 
+static constexpr const char \texorpdfstring{$\ast$}{*} {\bfseries private\+\_\+key} = \+\_\+\+DEF\+\_\+\+WEATHER\+\_\+\+PRIVATE\+\_\+\+KEY
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+extern\+\_\+app/\+Weather\+App/\+Core/My\+Weather\+Request.\+h\item 
+extern\+\_\+app/\+Weather\+App/\+Core/My\+Weather\+Request.\+cpp\end{DoxyCompactItemize}

@@ -4,8 +4,10 @@
 #include "downdockwidget.h"
 #include <QGridLayout>
 #include <QStackedWidget>
-#define MAX_WIDTH (4)
-#define MAX_HEIGHT (4)
+
+static constexpr int MAX_WIDTH = 4;
+static constexpr int MAX_HEIGHT = 4;
+
 /* create for a page append */
 QList<AppWidget*>
 PageSetuper::create_one_app_only_page_append(
@@ -126,30 +128,30 @@ QList<AppWidget*> PageSetuper::create_real_app(DesktopMainWindow* mainWindow) {
 
 /* Board Level Application */
 #ifdef INCLUDE_LED_APP
-    /* app page of the LED */
-    QString led_path = _EXTERNAPP_INSTALL_DIR "/LightController";
-    wrapper = new ApplicationWrapper(mainWindow, mainWindow);
-    wrapper->set_app_path(led_path);
-    mainWindow->install_remote_appwrapper(wrapper);
-    req.push_back({ ":/icons/sources/ledcontrol_app.png", "LED Controller", wrapper });
+	/* app page of the LED */
+	QString led_path = _EXTERNAPP_INSTALL_DIR "/LightController";
+	wrapper = new ApplicationWrapper(mainWindow, mainWindow);
+	wrapper->set_app_path(led_path);
+	mainWindow->install_remote_appwrapper(wrapper);
+	req.push_back({ ":/icons/sources/ledcontrol_app.png", "LED Controller", wrapper });
 #endif
 
 #ifdef INCLUDE_ENV_APP
-    /* app page of the LED */
-    QString env_app = _EXTERNAPP_INSTALL_DIR "/Environment";
-    wrapper = new ApplicationWrapper(mainWindow, mainWindow);
-    wrapper->set_app_path(env_app);
-    mainWindow->install_remote_appwrapper(wrapper);
-    req.push_back({ ":/icons/sources/env_app.png", "Environment", wrapper });
+	/* app page of the LED */
+	QString env_app = _EXTERNAPP_INSTALL_DIR "/Environment";
+	wrapper = new ApplicationWrapper(mainWindow, mainWindow);
+	wrapper->set_app_path(env_app);
+	mainWindow->install_remote_appwrapper(wrapper);
+	req.push_back({ ":/icons/sources/env_app.png", "Environment", wrapper });
 #endif
 
 #ifdef INCLUDE_SPORT_APP
-    /* app page of the LED */
-    QString sports_path = _EXTERNAPP_INSTALL_DIR "/SportsHealth";
-    wrapper = new ApplicationWrapper(mainWindow, mainWindow);
-    wrapper->set_app_path(sports_path);
-    mainWindow->install_remote_appwrapper(wrapper);
-    req.push_back({ ":/icons/sources/sports_health_app.png", "SportsHealth", wrapper });
+	/* app page of the LED */
+	QString sports_path = _EXTERNAPP_INSTALL_DIR "/SportsHealth";
+	wrapper = new ApplicationWrapper(mainWindow, mainWindow);
+	wrapper->set_app_path(sports_path);
+	mainWindow->install_remote_appwrapper(wrapper);
+	req.push_back({ ":/icons/sources/sports_health_app.png", "SportsHealth", wrapper });
 #endif
 
 	return PageSetuper::create_one_app_only_page_append(mainWindow->stackedWidget(), mainWindow, req);

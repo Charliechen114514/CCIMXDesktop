@@ -1,0 +1,30 @@
+\doxysection{pagefactory.\+h}
+\hypertarget{pagefactory_8h_source}{}\label{pagefactory_8h_source}\index{builtin/ui/pagefactory.h@{builtin/ui/pagefactory.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PAGEFACTORY\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PAGEFACTORY\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <QList>}}
+\DoxyCodeLine{00004\ \textcolor{keyword}{class\ }QWidget;}
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_app_card_widget}{AppCardWidget}};}
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_desktop_main_window}{DesktopMainWindow}};}
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_app_widget}{AppWidget}};}
+\DoxyCodeLine{00008\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *\ Page\ Factory\ produce\ pages\ for\ helping\ setup\ the\ pages\ :)}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_page_factory}{PageFactory}}\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{comment}{/*\ build\ a\ homepage\ to\ the\ Desktop\ */}}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{static}\ QWidget*\ build\_home\_page(\mbox{\hyperlink{class_desktop_main_window}{DesktopMainWindow}}*\ mainWindow);}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{comment}{/*\ using\ in\ build\ a\ pesudo\ pages\ */}}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{static}\ QList<AppWidget*>\ build\_pesudo\_page(}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\&\ pixpath,\ \textcolor{keywordtype}{int}\ how\_many,\ \mbox{\hyperlink{class_desktop_main_window}{DesktopMainWindow}}*\ mainWindow);}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{comment}{/*\ app\ cards\ setups,\ invoke\ only\ in\ setups*/}}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{static}\ QList<AppCardWidget*>\ place\_appcards\_in\_empty\_widgets(\mbox{\hyperlink{class_desktop_main_window}{DesktopMainWindow}}*\ mainWindow,\ QWidget*\ placed);}
+\DoxyCodeLine{00022\ \};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PAGEFACTORY\_H}}
+
+\end{DoxyCode}

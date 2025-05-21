@@ -1,0 +1,107 @@
+\doxysection{Application\+Wrapper Class Reference}
+\hypertarget{class_application_wrapper}{}\label{class_application_wrapper}\index{ApplicationWrapper@{ApplicationWrapper}}
+Inheritance diagram for Application\+Wrapper\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_application_wrapper}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_application_wrapper_1_1_application_depatch_result}{Application\+Depatch\+Result}}
+\item 
+struct \mbox{\hyperlink{struct_application_wrapper_1_1_application_finish_result}{Application\+Finish\+Result}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_application_wrapper_ad54d8e5509fdc415009be64f28636b82}\label{class_application_wrapper_ad54d8e5509fdc415009be64f28636b82} 
+using {\bfseries App\+Code} = int
+\item 
+using \mbox{\hyperlink{class_application_wrapper_a0ab1524d02ff915d4b467479c51a67cc}{Pre\+Launch\+Indicate}}
+\item 
+\Hypertarget{class_application_wrapper_a3b69c6ba55b7fe7757c1715e393e1421}\label{class_application_wrapper_a3b69c6ba55b7fe7757c1715e393e1421} 
+using {\bfseries Handling\+Fin\+Hook} = void(\texorpdfstring{$\ast$}{*})(\mbox{\hyperlink{class_application_wrapper}{Application\+Wrapper}}\texorpdfstring{$\ast$}{*} wrapper, int exit\+\_\+hook, QProcess\+::\+Exit\+Status status)
+\item 
+\Hypertarget{class_application_wrapper_aa53a5673acb666829af4ad5d0c87bebf}\label{class_application_wrapper_aa53a5673acb666829af4ad5d0c87bebf} 
+using {\bfseries Error\+Depatch\+Hook} = void(\texorpdfstring{$\ast$}{*})(\mbox{\hyperlink{class_application_wrapper}{Application\+Wrapper}}\texorpdfstring{$\ast$}{*} wrapper)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_application_wrapper_a45514528856c64c52d36765874ab0dc3}\label{class_application_wrapper_a45514528856c64c52d36765874ab0dc3} 
+void {\bfseries app\+\_\+depatch\+\_\+status} (\mbox{\hyperlink{struct_application_wrapper_1_1_application_depatch_result}{Application\+Wrapper\+::\+Application\+Depatch\+Result}})
+\item 
+\Hypertarget{class_application_wrapper_a47b46aa5e2c7ed646ad19e69b41d28d2}\label{class_application_wrapper_a47b46aa5e2c7ed646ad19e69b41d28d2} 
+void {\bfseries app\+\_\+finished} (\mbox{\hyperlink{struct_application_wrapper_1_1_application_finish_result}{Application\+Wrapper\+::\+Application\+Finish\+Result}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_application_wrapper_af8d8d2cc337fd014a1db4a637e2326a2}\label{class_application_wrapper_af8d8d2cc337fd014a1db4a637e2326a2} 
+{\bfseries Application\+Wrapper} (QObject \texorpdfstring{$\ast$}{*}parent, QMain\+Window \texorpdfstring{$\ast$}{*}desktop\+Window)
+\item 
+\Hypertarget{class_application_wrapper_ac1e58358a4a3cdcab632cf08c4a27517}\label{class_application_wrapper_ac1e58358a4a3cdcab632cf08c4a27517} 
+{\bfseries Q\+\_\+\+DISABLE\+\_\+\+COPY} (\mbox{\hyperlink{class_application_wrapper}{Application\+Wrapper}})
+\item 
+\Hypertarget{class_application_wrapper_a6fd8f6f029b8dba337310bb9750f49ed}\label{class_application_wrapper_a6fd8f6f029b8dba337310bb9750f49ed} 
+void {\bfseries bind\+App\+Widget} (\mbox{\hyperlink{class_app_widget}{App\+Widget}} \texorpdfstring{$\ast$}{*}app\+Widget) noexcept
+\item 
+\Hypertarget{class_application_wrapper_a0b395ef8736c102556539b3fb96296cb}\label{class_application_wrapper_a0b395ef8736c102556539b3fb96296cb} 
+\mbox{\hyperlink{class_app_widget}{App\+Widget}} \texorpdfstring{$\ast$}{*} {\bfseries app\+\_\+widget} (void) const
+\item 
+\Hypertarget{class_application_wrapper_adf8a55aaaf2ccbfda855d75d0f4b9053}\label{class_application_wrapper_adf8a55aaaf2ccbfda855d75d0f4b9053} 
+void {\bfseries install\+\_\+app\+\_\+code} (App\+Code code) noexcept
+\item 
+\Hypertarget{class_application_wrapper_aaa275174067d1949835c5f7097fccc10}\label{class_application_wrapper_aaa275174067d1949835c5f7097fccc10} 
+App\+Code {\bfseries app\+\_\+code} () const
+\item 
+\Hypertarget{class_application_wrapper_acf76b7e548ec203af29659ad3115b9b8}\label{class_application_wrapper_acf76b7e548ec203af29659ad3115b9b8} 
+void {\bfseries set\+\_\+app\+\_\+path} (const QString \&app\+\_\+path) noexcept
+\item 
+\Hypertarget{class_application_wrapper_a645eedaf1b9540075dcab6e55e2cefe2}\label{class_application_wrapper_a645eedaf1b9540075dcab6e55e2cefe2} 
+QString {\bfseries get\+\_\+app\+\_\+path} (void) const
+\item 
+\Hypertarget{class_application_wrapper_a157919a1894a29889b4feac5aad1151b}\label{class_application_wrapper_a157919a1894a29889b4feac5aad1151b} 
+void {\bfseries install\+\_\+args} (const QString\+List \&l) noexcept
+\item 
+\Hypertarget{class_application_wrapper_ae33f13768de3aefb8098302c1c77e001}\label{class_application_wrapper_ae33f13768de3aefb8098302c1c77e001} 
+QString\+List {\bfseries args} (void) const
+\item 
+\Hypertarget{class_application_wrapper_a134b24e6aba73be486197652a6e40cb6}\label{class_application_wrapper_a134b24e6aba73be486197652a6e40cb6} 
+QProcess \texorpdfstring{$\ast$}{*} {\bfseries process\+\_\+handle} (void) const
+\item 
+\Hypertarget{class_application_wrapper_aadc9fc2e2aa2488bc35115f387a3cda9}\label{class_application_wrapper_aadc9fc2e2aa2488bc35115f387a3cda9} 
+void {\bfseries depatch\+\_\+app} (void)
+\begin{DoxyCompactList}\small\item\em \doxylink{class_application_wrapper_aadc9fc2e2aa2488bc35115f387a3cda9}{Application\+Wrapper\+::depatch\+\_\+app} this is the main function to depatch the application, core functions. \end{DoxyCompactList}\item 
+\Hypertarget{class_application_wrapper_a895d28d5f837ea6a23cae8f5ff8682b7}\label{class_application_wrapper_a895d28d5f837ea6a23cae8f5ff8682b7} 
+void {\bfseries install\+\_\+prelaunched} (Pre\+Launch\+Indicate precheck)
+\item 
+\Hypertarget{class_application_wrapper_a13662d0c499aa21f837e4f6259ae68d6}\label{class_application_wrapper_a13662d0c499aa21f837e4f6259ae68d6} 
+void {\bfseries install\+\_\+finhook} (Handling\+Fin\+Hook hook)
+\item 
+\Hypertarget{class_application_wrapper_a6a6e6252e45edb6ffd839e319ce37a0d}\label{class_application_wrapper_a6a6e6252e45edb6ffd839e319ce37a0d} 
+void {\bfseries install\+\_\+error\+\_\+handler} (Error\+Depatch\+Hook hook)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\Hypertarget{class_application_wrapper_a0ab1524d02ff915d4b467479c51a67cc}\index{ApplicationWrapper@{ApplicationWrapper}!PreLaunchIndicate@{PreLaunchIndicate}}
+\index{PreLaunchIndicate@{PreLaunchIndicate}!ApplicationWrapper@{ApplicationWrapper}}
+\doxysubsubsection{\texorpdfstring{PreLaunchIndicate}{PreLaunchIndicate}}
+{\footnotesize\ttfamily \label{class_application_wrapper_a0ab1524d02ff915d4b467479c51a67cc} 
+using Application\+Wrapper\+::\+Pre\+Launch\+Indicate}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_application_wrapper_1_1_application_depatch_result}{ApplicationDepatchResult}}(*)(ApplicationWrapper*\ wrapper)}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+app\+\_\+wrapper/applicationwrapper.\+h\item 
+app\+\_\+wrapper/applicationwrapper.\+cpp\end{DoxyCompactItemize}

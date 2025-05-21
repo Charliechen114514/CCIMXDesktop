@@ -1,0 +1,33 @@
+\doxysection{CVImage.\+h}
+\hypertarget{professionals_2library_2_opencv_qt_adapter_2core__library_2cvimage_2_c_v_image_8h_source}{}\label{professionals_2library_2_opencv_qt_adapter_2core__library_2cvimage_2_c_v_image_8h_source}\index{extern\_app/professionals/library/OpencvQtAdapter/core\_library/cvimage/CVImage.h@{extern\_app/professionals/library/OpencvQtAdapter/core\_library/cvimage/CVImage.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CVIMAGE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CVIMAGE\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}CVImageImpl.h"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_v_image}{CVImage}}\ \{}
+\DoxyCodeLine{00006\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{comment}{/*\ Friend\ class\ are\ assigned\ for\ direct\ visit\ */}}
+\DoxyCodeLine{00008\ \ \ \ \ CVImage();}
+\DoxyCodeLine{00009\ \ \ \ \ CVImage(\textcolor{keyword}{const}\ CVImage\&\ image);}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{const}\ CVImage\&\ operator=(\textcolor{keyword}{const}\ CVImage\&\ image);}
+\DoxyCodeLine{00011\ \ \ \ \ \string~CVImage();}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{comment}{/*\ load\ as\ file\ */}}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{void}\ loadFile(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ filename);}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{void}\ assigned(}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ CVImage\&\ image,\ \textcolor{comment}{/*\ other\ copy\ */}}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ load\_as\_copy\ =\ \textcolor{keyword}{false}\ \textcolor{comment}{/*\ req\ to\ copy\ */}}
+\DoxyCodeLine{00018\ \ \ \ \ );}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ image\_valid()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ private\_handle-\/>image\_valid();\ \}}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{inline}\ CVImageImpl*\ impl\_ptr()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ private\_handle;\ \}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00024\ \ \ \ \ CVImageImpl*\ private\_handle\ \{\ \textcolor{keyword}{nullptr}\ \};}
+\DoxyCodeLine{00025\ \};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CVIMAGE\_H}}
+
+\end{DoxyCode}

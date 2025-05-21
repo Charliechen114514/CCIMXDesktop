@@ -1,0 +1,57 @@
+\doxysection{icm20608\+\_\+adapter.\+h}
+\hypertarget{builtin_2core_2icm20608_2icm20608__adapter_8h_source}{}\label{builtin_2core_2icm20608_2icm20608__adapter_8h_source}\index{builtin/core/icm20608/icm20608\_adapter.h@{builtin/core/icm20608/icm20608\_adapter.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#ifdef\ \_WIN32}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <unistd.h>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{comment}{/*\ 3D\ Acceleration\ value\ */}}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ x;}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ y;}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ z;}
+\DoxyCodeLine{00015\ \ \ \ \ \}\ g\_acc;}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{comment}{/*\ 3D\ Rolations\ dekta\ */}}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ x;}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ y;}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ z;}
+\DoxyCodeLine{00022\ \ \ \ \ \}\ rol;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{float}\ temperature;}
+\DoxyCodeLine{00025\ \}\ \mbox{\hyperlink{struct_i_c_m20608_app_data}{ICM20608AppData}};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{class\ }ICM20608\ \{}
+\DoxyCodeLine{00028\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ \ \ \ \ ICM20608()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{comment}{/*\ disable\ all\ copies\ then\ */}}
+\DoxyCodeLine{00031\ \ \ \ \ ICM20608\&\ operator=(\textcolor{keyword}{const}\ ICM20608\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00032\ \ \ \ \ ICM20608(\textcolor{keyword}{const}\ ICM20608\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00035\ \textcolor{comment}{\ \ \ \ \ \ \ \ invoke\ this\ to\ get\ the\ data,\ True\ if\ the\ data\ is\ valid}}
+\DoxyCodeLine{00036\ \textcolor{comment}{\ \ \ \ \ */}}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_i_c_m20608_aae4d486afa4f07805fab7b0453864744}{get\_package\_sync}}(\mbox{\hyperlink{struct_i_c_m20608_app_data}{ICM20608AppData}}\&\ empty\_data\_pack);}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{comment}{/*\ replace\ the\ dev\ file\ with\ your\ owns\ */}}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \_dev\_file\_path\ =\ \textcolor{stringliteral}{"{}/dev/icm20608"{}};}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{comment}{/*\ dev\ file\ */}}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ bind\_dev\_file();}
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#ifdef\ \_WIN32}}
+\DoxyCodeLine{00045\ \ \ \ \ std::ifstream\ dev\_stream;}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{bool}\ get\_package\_sync\_win32impl(\mbox{\hyperlink{struct_i_c_m20608_app_data}{ICM20608AppData}}\&\ empty);}
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{int}\ private\_fd\ \{\ -\/1\ \};}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{bool}\ get\_package\_sync\_uniximpl(\mbox{\hyperlink{struct_i_c_m20608_app_data}{ICM20608AppData}}\&\ empty);}
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00051\ \};}
+
+\end{DoxyCode}
