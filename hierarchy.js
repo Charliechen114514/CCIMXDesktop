@@ -28,7 +28,6 @@ var hierarchy =
     [ "CVImage", "classCVImage.html", null ],
     [ "CVImageImpl", "classCVImageImpl.html", [
       [ "CVImageOpencvImpl", "classCVImageOpencvImpl.html", null ],
-      [ "CVImageOpencvImpl", "classCVImageOpencvImpl.html", null ],
       [ "CVImageOpencvImpl", "classCVImageOpencvImpl.html", null ]
     ] ],
     [ "CVImageImplFactory", "classCVImageImplFactory.html", null ],
@@ -107,7 +106,6 @@ var hierarchy =
       [ "StackpageSwitcherAnimation", "structStackpageSwitcherAnimation.html", null ],
       [ "VideoPlayer", "classVideoPlayer.html", null ],
       [ "VideoPlayer", "classVideoPlayer.html", null ],
-      [ "VideoPlayer", "classVideoPlayer.html", null ],
       [ "WallPaperAnimationHandler", "structWallPaperAnimationHandler.html", null ],
       [ "WeatherRequest", "classWeatherRequest.html", [
         [ "AppWeatherRequest", "classAppWeatherRequest.html", null ]
@@ -149,7 +147,6 @@ var hierarchy =
       [ "WeatherDailyCard", "classWeatherDailyCard.html", null ]
     ] ],
     [ "VideoPlayerImpl", "classVideoPlayerImpl.html", [
-      [ "VideoPlayerOpencvImpl", "classVideoPlayerOpencvImpl.html", null ],
       [ "VideoPlayerOpencvImpl", "classVideoPlayerOpencvImpl.html", null ],
       [ "VideoPlayerOpencvImpl", "classVideoPlayerOpencvImpl.html", null ]
     ] ],

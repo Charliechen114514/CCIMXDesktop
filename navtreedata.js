@@ -92,9 +92,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AP3216CAdapterFactory_8h_source.html",
-"classCameraCapture.html#af3ceb8523ba6d8eb0f41649e3a2f3d28",
-"classSportsChart.html#abdcac63e78cfe67e1926036180fc8144",
-"functions_u.html"
+"classCameraDisplayWidget.html#a0bb3074905e6fd62c69a3fbc912652c4",
+"classSportsDisplayWidget.html#aefd387c3fa6558de559fe77e979cd220",
+"md_Components-explain-CN.html#autotoc_md35"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

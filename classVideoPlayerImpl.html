@@ -114,7 +114,6 @@ Inheritance diagram for VideoPlayerImpl:</div>
   <map id="VideoPlayerImpl_map" name="VideoPlayerImpl_map">
 <area href="classVideoPlayerOpencvImpl.html" title="The VideoPlayerOpencvImpl class provides the OpenCV implementation of the video player." alt="VideoPlayerOpencvImpl" shape="rect" coords="0,56,149,80"/>
 <area href="classVideoPlayerOpencvImpl.html" title="The VideoPlayerOpencvImpl class provides the OpenCV implementation of the video player." alt="VideoPlayerOpencvImpl" shape="rect" coords="159,56,308,80"/>
-<area href="classVideoPlayerOpencvImpl.html" title="The VideoPlayerOpencvImpl class provides the OpenCV implementation of the video player." alt="VideoPlayerOpencvImpl" shape="rect" coords="318,56,467,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -157,29 +156,6 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Q_DISABLE_COPY</b> (<a class="el" href="classVideoPlayerImpl.html">VideoPlayerImpl</a>)</td></tr>
 <tr class="separator:a1741d03d5ac669511a754bdac3107faa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8595b0bbe2ebb205c0c02b002755b0d0" id="r_a8595b0bbe2ebb205c0c02b002755b0d0"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVideoPlayerImpl.html#a8595b0bbe2ebb205c0c02b002755b0d0">total_frame</a> () const =0</td></tr>
-<tr class="separator:a8595b0bbe2ebb205c0c02b002755b0d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f5d949b11337c59522fe6a0b5e88bc9" id="r_a0f5d949b11337c59522fe6a0b5e88bc9"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVideoPlayerImpl.html#a0f5d949b11337c59522fe6a0b5e88bc9">current_frame</a> ()=0</td></tr>
-<tr class="separator:a0f5d949b11337c59522fe6a0b5e88bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09925d8ec75bd409d8526991e5cfa60e" id="r_a09925d8ec75bd409d8526991e5cfa60e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVideoPlayerImpl.html#a09925d8ec75bd409d8526991e5cfa60e">rollto_nextFrame</a> (<a class="el" href="classCVImage.html">CVImage</a> &amp;container)=0</td></tr>
-<tr class="separator:a09925d8ec75bd409d8526991e5cfa60e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38d07a450e3088c638949046067d8225" id="r_a38d07a450e3088c638949046067d8225"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVideoPlayerImpl.html#a38d07a450e3088c638949046067d8225">peek_frame</a> (<a class="el" href="classCVImage.html">CVImage</a> &amp;container, int frame_request)=0</td></tr>
-<tr class="separator:a38d07a450e3088c638949046067d8225"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed67d09d2e16570de740b0ea011af60f" id="r_aed67d09d2e16570de740b0ea011af60f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structVideoPlayerInfo.html">VideoPlayerInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVideoPlayerImpl.html#aed67d09d2e16570de740b0ea011af60f">current_video_info</a> () const =0</td></tr>
-<tr class="separator:aed67d09d2e16570de740b0ea011af60f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81ac288964b7630f2b934f30a871fbc4" id="r_a81ac288964b7630f2b934f30a871fbc4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVideoPlayerImpl.html#a81ac288964b7630f2b934f30a871fbc4">escapeFrame</a> ()=0</td></tr>
-<tr class="separator:a81ac288964b7630f2b934f30a871fbc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3287cbd611a3e497e7008eef5b345af" id="r_af3287cbd611a3e497e7008eef5b345af"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVideoPlayerImpl.html#af3287cbd611a3e497e7008eef5b345af">jumpToFrame</a> (int frame_request)=0</td></tr>
-<tr class="separator:af3287cbd611a3e497e7008eef5b345af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c00fbac2097847c8a2e38af0707b56c" id="r_a2c00fbac2097847c8a2e38af0707b56c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVideoPlayerImpl.html#a2c00fbac2097847c8a2e38af0707b56c">open</a> (const char *filename, VideoPlayerOpenErrorCode &amp;error_code)=0</td></tr>
-<tr class="separator:a2c00fbac2097847c8a2e38af0707b56c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af36e6361c5787ae5a92a483295bb11e3" id="r_af36e6361c5787ae5a92a483295bb11e3"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVideoPlayerImpl.html#af36e6361c5787ae5a92a483295bb11e3">isOpened</a> () const =0</td></tr>
-<tr class="separator:af36e6361c5787ae5a92a483295bb11e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e9332a482f1d9294742f1ca1059b592" id="r_a5e9332a482f1d9294742f1ca1059b592"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVideoPlayerImpl.html#a5e9332a482f1d9294742f1ca1059b592">close</a> ()=0</td></tr>
-<tr class="separator:a5e9332a482f1d9294742f1ca1059b592"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1741d03d5ac669511a754bdac3107faa" id="r_a1741d03d5ac669511a754bdac3107faa"><td class="memItemLeft" align="right" valign="top"><a id="a1741d03d5ac669511a754bdac3107faa" name="a1741d03d5ac669511a754bdac3107faa"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Q_DISABLE_COPY</b> (<a class="el" href="classVideoPlayerImpl.html">VideoPlayerImpl</a>)</td></tr>
-<tr class="separator:a1741d03d5ac669511a754bdac3107faa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8595b0bbe2ebb205c0c02b002755b0d0" id="r_a8595b0bbe2ebb205c0c02b002755b0d0"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVideoPlayerImpl.html#a8595b0bbe2ebb205c0c02b002755b0d0">total_frame</a> () const =0</td></tr>
 <tr class="memdesc:a8595b0bbe2ebb205c0c02b002755b0d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">total_frame get the total frame of the video  <br /></td></tr>
 <tr class="separator:a8595b0bbe2ebb205c0c02b002755b0d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f5d949b11337c59522fe6a0b5e88bc9" id="r_a0f5d949b11337c59522fe6a0b5e88bc9"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVideoPlayerImpl.html#a0f5d949b11337c59522fe6a0b5e88bc9">current_frame</a> ()=0</td></tr>
@@ -214,7 +190,7 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>The <a class="el" href="classVideoPlayerImpl.html" title="The VideoPlayerImpl class VideoPlayerImpl is the interface for video player and the impl class is sup...">VideoPlayerImpl</a> class <a class="el" href="classVideoPlayerImpl.html" title="The VideoPlayerImpl class VideoPlayerImpl is the interface for video player and the impl class is sup...">VideoPlayerImpl</a> is the interface for video player and the impl class is supposed to be used for the video player. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a5e9332a482f1d9294742f1ca1059b592" name="a5e9332a482f1d9294742f1ca1059b592"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e9332a482f1d9294742f1ca1059b592">&#9670;&#160;</a></span>close() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e9332a482f1d9294742f1ca1059b592">&#9670;&#160;</a></span>close() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -240,39 +216,12 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>true if the video is closed successfully </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>in syntax level, it means making the resources un-available (disabled the resources, shutdown this) </dd></dl>
 
-<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#a462b4f6b3463535f2bec58daa5010eaf">VideoPlayerOpencvImpl</a>, <a class="el" href="classVideoPlayerOpencvImpl.html#a462b4f6b3463535f2bec58daa5010eaf">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#a462b4f6b3463535f2bec58daa5010eaf">VideoPlayerOpencvImpl</a>.</p>
+<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#a462b4f6b3463535f2bec58daa5010eaf">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#a462b4f6b3463535f2bec58daa5010eaf">VideoPlayerOpencvImpl</a>.</p>
 
 </div>
 </div>
 <a id="a5e9332a482f1d9294742f1ca1059b592" name="a5e9332a482f1d9294742f1ca1059b592"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e9332a482f1d9294742f1ca1059b592">&#9670;&#160;</a></span>close() <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void VideoPlayerImpl::close </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#a462b4f6b3463535f2bec58daa5010eaf">VideoPlayerOpencvImpl</a>, <a class="el" href="classVideoPlayerOpencvImpl.html#a462b4f6b3463535f2bec58daa5010eaf">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#a462b4f6b3463535f2bec58daa5010eaf">VideoPlayerOpencvImpl</a>.</p>
-
-</div>
-</div>
-<a id="a5e9332a482f1d9294742f1ca1059b592" name="a5e9332a482f1d9294742f1ca1059b592"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e9332a482f1d9294742f1ca1059b592">&#9670;&#160;</a></span>close() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e9332a482f1d9294742f1ca1059b592">&#9670;&#160;</a></span>close() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -298,12 +247,12 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>true if the video is closed successfully </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>in syntax level, it means making the resources un-available (disabled the resources, shutdown this) </dd></dl>
 
-<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#a462b4f6b3463535f2bec58daa5010eaf">VideoPlayerOpencvImpl</a>, <a class="el" href="classVideoPlayerOpencvImpl.html#a462b4f6b3463535f2bec58daa5010eaf">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#a462b4f6b3463535f2bec58daa5010eaf">VideoPlayerOpencvImpl</a>.</p>
+<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#a462b4f6b3463535f2bec58daa5010eaf">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#a462b4f6b3463535f2bec58daa5010eaf">VideoPlayerOpencvImpl</a>.</p>
 
 </div>
 </div>
 <a id="a0f5d949b11337c59522fe6a0b5e88bc9" name="a0f5d949b11337c59522fe6a0b5e88bc9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f5d949b11337c59522fe6a0b5e88bc9">&#9670;&#160;</a></span>current_frame() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f5d949b11337c59522fe6a0b5e88bc9">&#9670;&#160;</a></span>current_frame() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -328,39 +277,12 @@ Public Member Functions</h2></td></tr>
 <p>current_frame get the current frame of the video </p>
 <dl class="section return"><dt>Returns</dt><dd>the current frame of the video </dd></dl>
 
-<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#aef36be3f19a38095b6df180238342e9a">VideoPlayerOpencvImpl</a>, <a class="el" href="classVideoPlayerOpencvImpl.html#aef36be3f19a38095b6df180238342e9a">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#aef36be3f19a38095b6df180238342e9a">VideoPlayerOpencvImpl</a>.</p>
+<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#aef36be3f19a38095b6df180238342e9a">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#aef36be3f19a38095b6df180238342e9a">VideoPlayerOpencvImpl</a>.</p>
 
 </div>
 </div>
 <a id="a0f5d949b11337c59522fe6a0b5e88bc9" name="a0f5d949b11337c59522fe6a0b5e88bc9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f5d949b11337c59522fe6a0b5e88bc9">&#9670;&#160;</a></span>current_frame() <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual int VideoPlayerImpl::current_frame </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#aef36be3f19a38095b6df180238342e9a">VideoPlayerOpencvImpl</a>, <a class="el" href="classVideoPlayerOpencvImpl.html#aef36be3f19a38095b6df180238342e9a">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#aef36be3f19a38095b6df180238342e9a">VideoPlayerOpencvImpl</a>.</p>
-
-</div>
-</div>
-<a id="a0f5d949b11337c59522fe6a0b5e88bc9" name="a0f5d949b11337c59522fe6a0b5e88bc9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f5d949b11337c59522fe6a0b5e88bc9">&#9670;&#160;</a></span>current_frame() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f5d949b11337c59522fe6a0b5e88bc9">&#9670;&#160;</a></span>current_frame() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -385,12 +307,12 @@ Public Member Functions</h2></td></tr>
 <p>current_frame get the current frame of the video </p>
 <dl class="section return"><dt>Returns</dt><dd>the current frame of the video </dd></dl>
 
-<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#aef36be3f19a38095b6df180238342e9a">VideoPlayerOpencvImpl</a>, <a class="el" href="classVideoPlayerOpencvImpl.html#aef36be3f19a38095b6df180238342e9a">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#aef36be3f19a38095b6df180238342e9a">VideoPlayerOpencvImpl</a>.</p>
+<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#aef36be3f19a38095b6df180238342e9a">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#aef36be3f19a38095b6df180238342e9a">VideoPlayerOpencvImpl</a>.</p>
 
 </div>
 </div>
 <a id="aed67d09d2e16570de740b0ea011af60f" name="aed67d09d2e16570de740b0ea011af60f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed67d09d2e16570de740b0ea011af60f">&#9670;&#160;</a></span>current_video_info() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aed67d09d2e16570de740b0ea011af60f">&#9670;&#160;</a></span>current_video_info() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -416,39 +338,12 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>the current video information </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>for upper level widgets, we need to get from the info </dd></dl>
 
-<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#afe9aafeb0361bb96f609072471e29d0a">VideoPlayerOpencvImpl</a>, <a class="el" href="classVideoPlayerOpencvImpl.html#afe9aafeb0361bb96f609072471e29d0a">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#afe9aafeb0361bb96f609072471e29d0a">VideoPlayerOpencvImpl</a>.</p>
+<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#afe9aafeb0361bb96f609072471e29d0a">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#afe9aafeb0361bb96f609072471e29d0a">VideoPlayerOpencvImpl</a>.</p>
 
 </div>
 </div>
 <a id="aed67d09d2e16570de740b0ea011af60f" name="aed67d09d2e16570de740b0ea011af60f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed67d09d2e16570de740b0ea011af60f">&#9670;&#160;</a></span>current_video_info() <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="structVideoPlayerInfo.html">VideoPlayerInfo</a> VideoPlayerImpl::current_video_info </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#afe9aafeb0361bb96f609072471e29d0a">VideoPlayerOpencvImpl</a>, <a class="el" href="classVideoPlayerOpencvImpl.html#afe9aafeb0361bb96f609072471e29d0a">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#afe9aafeb0361bb96f609072471e29d0a">VideoPlayerOpencvImpl</a>.</p>
-
-</div>
-</div>
-<a id="aed67d09d2e16570de740b0ea011af60f" name="aed67d09d2e16570de740b0ea011af60f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed67d09d2e16570de740b0ea011af60f">&#9670;&#160;</a></span>current_video_info() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aed67d09d2e16570de740b0ea011af60f">&#9670;&#160;</a></span>current_video_info() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -474,12 +369,12 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>the current video information </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>for upper level widgets, we need to get from the info </dd></dl>
 
-<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#afe9aafeb0361bb96f609072471e29d0a">VideoPlayerOpencvImpl</a>, <a class="el" href="classVideoPlayerOpencvImpl.html#afe9aafeb0361bb96f609072471e29d0a">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#afe9aafeb0361bb96f609072471e29d0a">VideoPlayerOpencvImpl</a>.</p>
+<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#afe9aafeb0361bb96f609072471e29d0a">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#afe9aafeb0361bb96f609072471e29d0a">VideoPlayerOpencvImpl</a>.</p>
 
 </div>
 </div>
 <a id="a81ac288964b7630f2b934f30a871fbc4" name="a81ac288964b7630f2b934f30a871fbc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a81ac288964b7630f2b934f30a871fbc4">&#9670;&#160;</a></span>escapeFrame() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a81ac288964b7630f2b934f30a871fbc4">&#9670;&#160;</a></span>escapeFrame() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -504,39 +399,12 @@ Public Member Functions</h2></td></tr>
 <p>escapeFrame escape the current frame </p>
 <dl class="section note"><dt>Note</dt><dd>frame is supposed to abolished, pointer should be moved forward </dd></dl>
 
-<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#a723cc96210168483c9cdd6a7d8715067">VideoPlayerOpencvImpl</a>, <a class="el" href="classVideoPlayerOpencvImpl.html#a723cc96210168483c9cdd6a7d8715067">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#a723cc96210168483c9cdd6a7d8715067">VideoPlayerOpencvImpl</a>.</p>
+<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#a723cc96210168483c9cdd6a7d8715067">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#a723cc96210168483c9cdd6a7d8715067">VideoPlayerOpencvImpl</a>.</p>
 
 </div>
 </div>
 <a id="a81ac288964b7630f2b934f30a871fbc4" name="a81ac288964b7630f2b934f30a871fbc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a81ac288964b7630f2b934f30a871fbc4">&#9670;&#160;</a></span>escapeFrame() <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void VideoPlayerImpl::escapeFrame </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#a723cc96210168483c9cdd6a7d8715067">VideoPlayerOpencvImpl</a>, <a class="el" href="classVideoPlayerOpencvImpl.html#a723cc96210168483c9cdd6a7d8715067">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#a723cc96210168483c9cdd6a7d8715067">VideoPlayerOpencvImpl</a>.</p>
-
-</div>
-</div>
-<a id="a81ac288964b7630f2b934f30a871fbc4" name="a81ac288964b7630f2b934f30a871fbc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a81ac288964b7630f2b934f30a871fbc4">&#9670;&#160;</a></span>escapeFrame() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a81ac288964b7630f2b934f30a871fbc4">&#9670;&#160;</a></span>escapeFrame() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -561,12 +429,12 @@ Public Member Functions</h2></td></tr>
 <p>escapeFrame escape the current frame </p>
 <dl class="section note"><dt>Note</dt><dd>frame is supposed to abolished, pointer should be moved forward </dd></dl>
 
-<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#a723cc96210168483c9cdd6a7d8715067">VideoPlayerOpencvImpl</a>, <a class="el" href="classVideoPlayerOpencvImpl.html#a723cc96210168483c9cdd6a7d8715067">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#a723cc96210168483c9cdd6a7d8715067">VideoPlayerOpencvImpl</a>.</p>
+<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#a723cc96210168483c9cdd6a7d8715067">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#a723cc96210168483c9cdd6a7d8715067">VideoPlayerOpencvImpl</a>.</p>
 
 </div>
 </div>
 <a id="af36e6361c5787ae5a92a483295bb11e3" name="af36e6361c5787ae5a92a483295bb11e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af36e6361c5787ae5a92a483295bb11e3">&#9670;&#160;</a></span>isOpened() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af36e6361c5787ae5a92a483295bb11e3">&#9670;&#160;</a></span>isOpened() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -591,39 +459,12 @@ Public Member Functions</h2></td></tr>
 <p>isOpened check if the video is opened </p>
 <dl class="section return"><dt>Returns</dt><dd>true if the video is opened </dd></dl>
 
-<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#ac6dd4e161e7086fef31b4c52729f50af">VideoPlayerOpencvImpl</a>, <a class="el" href="classVideoPlayerOpencvImpl.html#ac6dd4e161e7086fef31b4c52729f50af">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#ac6dd4e161e7086fef31b4c52729f50af">VideoPlayerOpencvImpl</a>.</p>
+<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#ac6dd4e161e7086fef31b4c52729f50af">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#ac6dd4e161e7086fef31b4c52729f50af">VideoPlayerOpencvImpl</a>.</p>
 
 </div>
 </div>
 <a id="af36e6361c5787ae5a92a483295bb11e3" name="af36e6361c5787ae5a92a483295bb11e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af36e6361c5787ae5a92a483295bb11e3">&#9670;&#160;</a></span>isOpened() <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool VideoPlayerImpl::isOpened </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#ac6dd4e161e7086fef31b4c52729f50af">VideoPlayerOpencvImpl</a>, <a class="el" href="classVideoPlayerOpencvImpl.html#ac6dd4e161e7086fef31b4c52729f50af">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#ac6dd4e161e7086fef31b4c52729f50af">VideoPlayerOpencvImpl</a>.</p>
-
-</div>
-</div>
-<a id="af36e6361c5787ae5a92a483295bb11e3" name="af36e6361c5787ae5a92a483295bb11e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af36e6361c5787ae5a92a483295bb11e3">&#9670;&#160;</a></span>isOpened() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af36e6361c5787ae5a92a483295bb11e3">&#9670;&#160;</a></span>isOpened() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -648,12 +489,12 @@ Public Member Functions</h2></td></tr>
 <p>isOpened check if the video is opened </p>
 <dl class="section return"><dt>Returns</dt><dd>true if the video is opened </dd></dl>
 
-<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#ac6dd4e161e7086fef31b4c52729f50af">VideoPlayerOpencvImpl</a>, <a class="el" href="classVideoPlayerOpencvImpl.html#ac6dd4e161e7086fef31b4c52729f50af">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#ac6dd4e161e7086fef31b4c52729f50af">VideoPlayerOpencvImpl</a>.</p>
+<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#ac6dd4e161e7086fef31b4c52729f50af">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#ac6dd4e161e7086fef31b4c52729f50af">VideoPlayerOpencvImpl</a>.</p>
 
 </div>
 </div>
 <a id="af3287cbd611a3e497e7008eef5b345af" name="af3287cbd611a3e497e7008eef5b345af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af3287cbd611a3e497e7008eef5b345af">&#9670;&#160;</a></span>jumpToFrame() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af3287cbd611a3e497e7008eef5b345af">&#9670;&#160;</a></span>jumpToFrame() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -685,40 +526,12 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>this function should jump to the frame sync, </dd></dl>
 
-<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#aac0098cdf634919d6f12937aefa0bf7f">VideoPlayerOpencvImpl</a>, <a class="el" href="classVideoPlayerOpencvImpl.html#aac0098cdf634919d6f12937aefa0bf7f">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#aac0098cdf634919d6f12937aefa0bf7f">VideoPlayerOpencvImpl</a>.</p>
+<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#aac0098cdf634919d6f12937aefa0bf7f">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#aac0098cdf634919d6f12937aefa0bf7f">VideoPlayerOpencvImpl</a>.</p>
 
 </div>
 </div>
 <a id="af3287cbd611a3e497e7008eef5b345af" name="af3287cbd611a3e497e7008eef5b345af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af3287cbd611a3e497e7008eef5b345af">&#9670;&#160;</a></span>jumpToFrame() <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void VideoPlayerImpl::jumpToFrame </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>frame_request</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#aac0098cdf634919d6f12937aefa0bf7f">VideoPlayerOpencvImpl</a>, <a class="el" href="classVideoPlayerOpencvImpl.html#aac0098cdf634919d6f12937aefa0bf7f">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#aac0098cdf634919d6f12937aefa0bf7f">VideoPlayerOpencvImpl</a>.</p>
-
-</div>
-</div>
-<a id="af3287cbd611a3e497e7008eef5b345af" name="af3287cbd611a3e497e7008eef5b345af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af3287cbd611a3e497e7008eef5b345af">&#9670;&#160;</a></span>jumpToFrame() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af3287cbd611a3e497e7008eef5b345af">&#9670;&#160;</a></span>jumpToFrame() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -750,12 +563,12 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>this function should jump to the frame sync, </dd></dl>
 
-<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#aac0098cdf634919d6f12937aefa0bf7f">VideoPlayerOpencvImpl</a>, <a class="el" href="classVideoPlayerOpencvImpl.html#aac0098cdf634919d6f12937aefa0bf7f">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#aac0098cdf634919d6f12937aefa0bf7f">VideoPlayerOpencvImpl</a>.</p>
+<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#aac0098cdf634919d6f12937aefa0bf7f">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#aac0098cdf634919d6f12937aefa0bf7f">VideoPlayerOpencvImpl</a>.</p>
 
 </div>
 </div>
 <a id="a2c00fbac2097847c8a2e38af0707b56c" name="a2c00fbac2097847c8a2e38af0707b56c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c00fbac2097847c8a2e38af0707b56c">&#9670;&#160;</a></span>open() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c00fbac2097847c8a2e38af0707b56c">&#9670;&#160;</a></span>open() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -799,50 +612,12 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>true if the video is opened successfully </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>in syntax level, it means making the resources available </dd></dl>
 
-<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#aa2f3f59905c31d076b49c686db5bf0a2">VideoPlayerOpencvImpl</a>, <a class="el" href="classVideoPlayerOpencvImpl.html#aa2f3f59905c31d076b49c686db5bf0a2">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#aa2f3f59905c31d076b49c686db5bf0a2">VideoPlayerOpencvImpl</a>.</p>
+<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#aa2f3f59905c31d076b49c686db5bf0a2">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#aa2f3f59905c31d076b49c686db5bf0a2">VideoPlayerOpencvImpl</a>.</p>
 
 </div>
 </div>
 <a id="a2c00fbac2097847c8a2e38af0707b56c" name="a2c00fbac2097847c8a2e38af0707b56c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c00fbac2097847c8a2e38af0707b56c">&#9670;&#160;</a></span>open() <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool VideoPlayerImpl::open </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">VideoPlayerOpenErrorCode &amp;&#160;</td>
-          <td class="paramname"><em>error_code</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#aa2f3f59905c31d076b49c686db5bf0a2">VideoPlayerOpencvImpl</a>, <a class="el" href="classVideoPlayerOpencvImpl.html#aa2f3f59905c31d076b49c686db5bf0a2">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#aa2f3f59905c31d076b49c686db5bf0a2">VideoPlayerOpencvImpl</a>.</p>
-
-</div>
-</div>
-<a id="a2c00fbac2097847c8a2e38af0707b56c" name="a2c00fbac2097847c8a2e38af0707b56c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c00fbac2097847c8a2e38af0707b56c">&#9670;&#160;</a></span>open() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c00fbac2097847c8a2e38af0707b56c">&#9670;&#160;</a></span>open() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -886,12 +661,12 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>true if the video is opened successfully </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>in syntax level, it means making the resources available </dd></dl>
 
-<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#aa2f3f59905c31d076b49c686db5bf0a2">VideoPlayerOpencvImpl</a>, <a class="el" href="classVideoPlayerOpencvImpl.html#aa2f3f59905c31d076b49c686db5bf0a2">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#aa2f3f59905c31d076b49c686db5bf0a2">VideoPlayerOpencvImpl</a>.</p>
+<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#aa2f3f59905c31d076b49c686db5bf0a2">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#aa2f3f59905c31d076b49c686db5bf0a2">VideoPlayerOpencvImpl</a>.</p>
 
 </div>
 </div>
 <a id="a38d07a450e3088c638949046067d8225" name="a38d07a450e3088c638949046067d8225"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38d07a450e3088c638949046067d8225">&#9670;&#160;</a></span>peek_frame() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a38d07a450e3088c638949046067d8225">&#9670;&#160;</a></span>peek_frame() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -935,50 +710,12 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>true if the frame is peeked successfully </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>the video will not be rolled, and the target frame will be request and if success, install to the container </dd></dl>
 
-<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#a484886797cbb8c0b125d817a2b08d8cc">VideoPlayerOpencvImpl</a>, <a class="el" href="classVideoPlayerOpencvImpl.html#a484886797cbb8c0b125d817a2b08d8cc">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#a484886797cbb8c0b125d817a2b08d8cc">VideoPlayerOpencvImpl</a>.</p>
+<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#a484886797cbb8c0b125d817a2b08d8cc">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#a484886797cbb8c0b125d817a2b08d8cc">VideoPlayerOpencvImpl</a>.</p>
 
 </div>
 </div>
 <a id="a38d07a450e3088c638949046067d8225" name="a38d07a450e3088c638949046067d8225"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38d07a450e3088c638949046067d8225">&#9670;&#160;</a></span>peek_frame() <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool VideoPlayerImpl::peek_frame </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classCVImage.html">CVImage</a> &amp;&#160;</td>
-          <td class="paramname"><em>container</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>frame_request</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#a484886797cbb8c0b125d817a2b08d8cc">VideoPlayerOpencvImpl</a>, <a class="el" href="classVideoPlayerOpencvImpl.html#a484886797cbb8c0b125d817a2b08d8cc">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#a484886797cbb8c0b125d817a2b08d8cc">VideoPlayerOpencvImpl</a>.</p>
-
-</div>
-</div>
-<a id="a38d07a450e3088c638949046067d8225" name="a38d07a450e3088c638949046067d8225"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38d07a450e3088c638949046067d8225">&#9670;&#160;</a></span>peek_frame() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a38d07a450e3088c638949046067d8225">&#9670;&#160;</a></span>peek_frame() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1022,12 +759,12 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>true if the frame is peeked successfully </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>the video will not be rolled, and the target frame will be request and if success, install to the container </dd></dl>
 
-<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#a484886797cbb8c0b125d817a2b08d8cc">VideoPlayerOpencvImpl</a>, <a class="el" href="classVideoPlayerOpencvImpl.html#a484886797cbb8c0b125d817a2b08d8cc">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#a484886797cbb8c0b125d817a2b08d8cc">VideoPlayerOpencvImpl</a>.</p>
+<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#a484886797cbb8c0b125d817a2b08d8cc">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#a484886797cbb8c0b125d817a2b08d8cc">VideoPlayerOpencvImpl</a>.</p>
 
 </div>
 </div>
 <a id="a09925d8ec75bd409d8526991e5cfa60e" name="a09925d8ec75bd409d8526991e5cfa60e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09925d8ec75bd409d8526991e5cfa60e">&#9670;&#160;</a></span>rollto_nextFrame() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a09925d8ec75bd409d8526991e5cfa60e">&#9670;&#160;</a></span>rollto_nextFrame() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1060,40 +797,12 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>true if the frame is rolled successfully </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>this function should peek the frame sync, with the video is supposed to roll the next level </dd></dl>
 
-<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#ab0d491bb1ff965a4bcb1338a3f947fe9">VideoPlayerOpencvImpl</a>, <a class="el" href="classVideoPlayerOpencvImpl.html#ab0d491bb1ff965a4bcb1338a3f947fe9">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#ab0d491bb1ff965a4bcb1338a3f947fe9">VideoPlayerOpencvImpl</a>.</p>
+<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#ab0d491bb1ff965a4bcb1338a3f947fe9">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#ab0d491bb1ff965a4bcb1338a3f947fe9">VideoPlayerOpencvImpl</a>.</p>
 
 </div>
 </div>
 <a id="a09925d8ec75bd409d8526991e5cfa60e" name="a09925d8ec75bd409d8526991e5cfa60e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09925d8ec75bd409d8526991e5cfa60e">&#9670;&#160;</a></span>rollto_nextFrame() <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool VideoPlayerImpl::rollto_nextFrame </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classCVImage.html">CVImage</a> &amp;&#160;</td>
-          <td class="paramname"><em>container</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#ab0d491bb1ff965a4bcb1338a3f947fe9">VideoPlayerOpencvImpl</a>, <a class="el" href="classVideoPlayerOpencvImpl.html#ab0d491bb1ff965a4bcb1338a3f947fe9">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#ab0d491bb1ff965a4bcb1338a3f947fe9">VideoPlayerOpencvImpl</a>.</p>
-
-</div>
-</div>
-<a id="a09925d8ec75bd409d8526991e5cfa60e" name="a09925d8ec75bd409d8526991e5cfa60e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09925d8ec75bd409d8526991e5cfa60e">&#9670;&#160;</a></span>rollto_nextFrame() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a09925d8ec75bd409d8526991e5cfa60e">&#9670;&#160;</a></span>rollto_nextFrame() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1126,12 +835,12 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>true if the frame is rolled successfully </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>this function should peek the frame sync, with the video is supposed to roll the next level </dd></dl>
 
-<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#ab0d491bb1ff965a4bcb1338a3f947fe9">VideoPlayerOpencvImpl</a>, <a class="el" href="classVideoPlayerOpencvImpl.html#ab0d491bb1ff965a4bcb1338a3f947fe9">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#ab0d491bb1ff965a4bcb1338a3f947fe9">VideoPlayerOpencvImpl</a>.</p>
+<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#ab0d491bb1ff965a4bcb1338a3f947fe9">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#ab0d491bb1ff965a4bcb1338a3f947fe9">VideoPlayerOpencvImpl</a>.</p>
 
 </div>
 </div>
 <a id="a8595b0bbe2ebb205c0c02b002755b0d0" name="a8595b0bbe2ebb205c0c02b002755b0d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8595b0bbe2ebb205c0c02b002755b0d0">&#9670;&#160;</a></span>total_frame() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8595b0bbe2ebb205c0c02b002755b0d0">&#9670;&#160;</a></span>total_frame() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1156,39 +865,12 @@ Public Member Functions</h2></td></tr>
 <p>total_frame get the total frame of the video </p>
 <dl class="section return"><dt>Returns</dt><dd>the total frame of the video </dd></dl>
 
-<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#a4cae59222a5def74c141cb109fe0b56e">VideoPlayerOpencvImpl</a>, <a class="el" href="classVideoPlayerOpencvImpl.html#a4cae59222a5def74c141cb109fe0b56e">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#a4cae59222a5def74c141cb109fe0b56e">VideoPlayerOpencvImpl</a>.</p>
+<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#a4cae59222a5def74c141cb109fe0b56e">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#a4cae59222a5def74c141cb109fe0b56e">VideoPlayerOpencvImpl</a>.</p>
 
 </div>
 </div>
 <a id="a8595b0bbe2ebb205c0c02b002755b0d0" name="a8595b0bbe2ebb205c0c02b002755b0d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8595b0bbe2ebb205c0c02b002755b0d0">&#9670;&#160;</a></span>total_frame() <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual int VideoPlayerImpl::total_frame </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#a4cae59222a5def74c141cb109fe0b56e">VideoPlayerOpencvImpl</a>, <a class="el" href="classVideoPlayerOpencvImpl.html#a4cae59222a5def74c141cb109fe0b56e">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#a4cae59222a5def74c141cb109fe0b56e">VideoPlayerOpencvImpl</a>.</p>
-
-</div>
-</div>
-<a id="a8595b0bbe2ebb205c0c02b002755b0d0" name="a8595b0bbe2ebb205c0c02b002755b0d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8595b0bbe2ebb205c0c02b002755b0d0">&#9670;&#160;</a></span>total_frame() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8595b0bbe2ebb205c0c02b002755b0d0">&#9670;&#160;</a></span>total_frame() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1213,13 +895,12 @@ Public Member Functions</h2></td></tr>
 <p>total_frame get the total frame of the video </p>
 <dl class="section return"><dt>Returns</dt><dd>the total frame of the video </dd></dl>
 
-<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#a4cae59222a5def74c141cb109fe0b56e">VideoPlayerOpencvImpl</a>, <a class="el" href="classVideoPlayerOpencvImpl.html#a4cae59222a5def74c141cb109fe0b56e">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#a4cae59222a5def74c141cb109fe0b56e">VideoPlayerOpencvImpl</a>.</p>
+<p>Implemented in <a class="el" href="classVideoPlayerOpencvImpl.html#a4cae59222a5def74c141cb109fe0b56e">VideoPlayerOpencvImpl</a>, and <a class="el" href="classVideoPlayerOpencvImpl.html#a4cae59222a5def74c141cb109fe0b56e">VideoPlayerOpencvImpl</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>extern_app/MediaPlayer/base/<a class="el" href="MediaPlayer_2base_2VideoPlayerImpl_8h_source.html">VideoPlayerImpl.h</a></li>
-<li>extern_app/professionals/library/OpencvQtAdapter/core_library/olds/videoplayer/<a class="el" href="professionals_2library_2OpencvQtAdapter_2core__library_2olds_2videoplayer_2VideoPlayerImpl_8h_source.html">VideoPlayerImpl.h</a></li>
 <li>extern_app/professionals/library/OpencvQtAdapter/core_library/videoplayer/<a class="el" href="professionals_2library_2OpencvQtAdapter_2core__library_2videoplayer_2VideoPlayerImpl_8h_source.html">VideoPlayerImpl.h</a></li>
 </ul>
 </div><!-- contents -->

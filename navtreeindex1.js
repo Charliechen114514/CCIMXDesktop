@@ -1,9 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"classCameraCapture.html#af3ceb8523ba6d8eb0f41649e3a2f3d28":[5,0,10,8],
-"classCameraCapture.html#af831dcf5fda530c9b65afb49a30f5186":[5,0,10,9],
-"classCameraDeviceSelector.html":[5,0,11],
-"classCameraDisplayWidget.html":[5,0,12],
 "classCameraDisplayWidget.html#a0bb3074905e6fd62c69a3fbc912652c4":[5,0,12,0],
 "classCameraDisplayWidget.html#a483855fbdae704a4f4e675c418b6e729":[5,0,12,1],
 "classCameraWindow.html":[5,0,13],
@@ -28,12 +24,12 @@ var NAVTREEINDEX1 =
 "classDesktopMainWindow.html#ad96e7341abb14b361bf76d3baff81071":[5,0,36,2],
 "classDesktopMainWindow.html#aeadbf1cc99b7fd1c5d7690a0ba7f4577":[5,0,36,12],
 "classDesktopToast.html":[5,0,37],
+"classDesktopToast.html#a3acb239f25191bd1018d90cf8601f8c7":[5,0,37,0],
 "classDesktopToast.html#a3acb239f25191bd1018d90cf8601f8c7":[5,0,37,2],
 "classDesktopToast.html#a3acb239f25191bd1018d90cf8601f8c7":[5,0,37,1],
-"classDesktopToast.html#a3acb239f25191bd1018d90cf8601f8c7":[5,0,37,0],
-"classDesktopToast.html#a57feb437e426ca176d02e0c0fb466d41":[5,0,37,3],
 "classDesktopToast.html#a57feb437e426ca176d02e0c0fb466d41":[5,0,37,5],
 "classDesktopToast.html#a57feb437e426ca176d02e0c0fb466d41":[5,0,37,4],
+"classDesktopToast.html#a57feb437e426ca176d02e0c0fb466d41":[5,0,37,3],
 "classDigitalTimeWidget.html":[5,0,38],
 "classDigitalTimeWidget.html#a5ce8fef8771f16a42f69f4d62aee1167":[5,0,38,1],
 "classDigitalTimeWidget.html#aa1633fe7d636f9be4fdce7be3b886ab7":[5,0,38,0],
@@ -94,8 +90,8 @@ var NAVTREEINDEX1 =
 "classHomePage.html":[5,0,51],
 "classHomePage.html#a760f39daccf8d87ac86d15c0983e1cfe":[5,0,51,0],
 "classICM20608.html":[5,0,52],
-"classICM20608.html#aae4d486afa4f07805fab7b0453864744":[5,0,52,0],
 "classICM20608.html#aae4d486afa4f07805fab7b0453864744":[5,0,52,1],
+"classICM20608.html#aae4d486afa4f07805fab7b0453864744":[5,0,52,0],
 "classICM20608.html#ab49c1e7e37a218f50da5395354a52388":[5,0,52,2],
 "classICM20608DataFactory.html":[5,0,55],
 "classICM20608DataFactory.html#a12eada95d4bd48b6cf2d000e92b48aa3":[5,0,55,0],
@@ -249,5 +245,9 @@ var NAVTREEINDEX1 =
 "classSportsChart.html":[5,0,90],
 "classSportsChart.html#a0d2390b8d696ee8bf072f0bfa2718841":[5,0,90,1],
 "classSportsChart.html#a33c00bfec0facff1f36dde2fa0fa45c6":[5,0,90,2],
-"classSportsChart.html#a5f5ac560c8ab4cf367cacb93f5ef544f":[5,0,90,0]
+"classSportsChart.html#a5f5ac560c8ab4cf367cacb93f5ef544f":[5,0,90,0],
+"classSportsChart.html#abdcac63e78cfe67e1926036180fc8144":[5,0,90,3],
+"classSportsDisplayWidget.html":[5,0,91],
+"classSportsDisplayWidget.html#a4e2a61241dfc71050074bf14c4c1fb04":[5,0,91,0],
+"classSportsDisplayWidget.html#a7024cf5bd4fcfff92502986b5dcbc481":[5,0,91,2]
 };
