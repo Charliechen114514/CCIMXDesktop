@@ -6,6 +6,7 @@ var annotated_dup =
     [ "PageSetuper", null, [
       [ "PageSetupSessionRequest", "structPageSetuper_1_1PageSetupSessionRequest.html", "structPageSetuper_1_1PageSetupSessionRequest" ]
     ] ],
+    [ "AboutMainWindow", "classAboutMainWindow.html", null ],
     [ "AP3216CAdapterFactory", "classAP3216CAdapterFactory.html", "classAP3216CAdapterFactory" ],
     [ "AP3216CData", "structAP3216CData.html", "structAP3216CData" ],
     [ "AppCardWidget", "classAppCardWidget.html", "classAppCardWidget" ],
@@ -40,6 +41,7 @@ var annotated_dup =
     [ "CVImageImpl", "classCVImageImpl.html", "classCVImageImpl" ],
     [ "CVImageImplFactory", "classCVImageImplFactory.html", null ],
     [ "CVImageOpencvImpl", "classCVImageOpencvImpl.html", "classCVImageOpencvImpl" ],
+    [ "DesktopAboutMainWidget", "classDesktopAboutMainWidget.html", null ],
     [ "DesktopMainWindow", "classDesktopMainWindow.html", "classDesktopMainWindow" ],
     [ "DesktopToast", "classDesktopToast.html", "classDesktopToast" ],
     [ "DigitalTimeWidget", "classDigitalTimeWidget.html", "classDigitalTimeWidget" ],
@@ -92,6 +94,7 @@ var annotated_dup =
     [ "PlayListMainWindow", "classPlayListMainWindow.html", null ],
     [ "ProcessBroswer", "classProcessBroswer.html", "classProcessBroswer" ],
     [ "ProcessBrowserWidget", "classProcessBrowserWidget.html", null ],
+    [ "ReadMeWidget", "classReadMeWidget.html", null ],
     [ "ScrollingLabel", "classScrollingLabel.html", "classScrollingLabel" ],
     [ "SideBarWidget", "classSideBarWidget.html", "classSideBarWidget" ],
     [ "SportsChart", "classSportsChart.html", "classSportsChart" ],

@@ -20,6 +20,6 @@ var searchData=
   ['build_20of_20technologies_17',['🛠️ Full build of technologies',['../md_README__EN.html#autotoc_md20',1,'']]],
   ['build_20technologies_18',['🛠️ Basic build technologies',['../md_README__EN.html#autotoc_md19',1,'']]],
   ['build_5fhome_5fpage_19',['build_home_page',['../classPageFactory.html#a7568d9fd1e31b8610b514ae09890a1e4',1,'PageFactory']]],
-  ['build_5fpesudo_5fpage_20',['build_pesudo_page',['../classPageFactory.html#a5508aad06c806082c9013e0dd3925f8a',1,'PageFactory']]],
+  ['build_5fpesudo_5fpage_20',['build_pesudo_page',['../classPageFactory.html#a0aacbea4749963dcbcb05af9c4798ccc',1,'PageFactory']]],
   ['builtin_20tt_21',['builtin tt',['../md_Components-explain-CN.html#autotoc_md31',1,'🧬 &lt;tt&gt;builtin&lt;/tt&gt;'],['../md_Components-explain-EN.html#autotoc_md43',1,'🧬 &lt;tt&gt;builtin&lt;/tt&gt;']]]
 ];

@@ -7,5 +7,5 @@ var searchData=
   ['high_4',['high',['../structAppWeatherResult_1_1DailyWeather.html#a1abf94235e3a3de48cb52b2c6c477a6d',1,'AppWeatherResult::DailyWeather']]],
   ['high_5ftemp_5',['HIGH_TEMP',['../classWeatherChartWidget.html#ad917be16972dd0f90aa71df8d0e8e569a5e3ee21d5c0a12992178c1939c4d7987',1,'WeatherChartWidget']]],
   ['homepage_6',['HomePage',['../classHomePage.html',1,'']]],
-  ['humidity_7',['humidity',['../structAppWeatherResult_1_1DailyWeather.html#a2faa8ee092e1b9a6cd8ca85fc523196f',1,'AppWeatherResult::DailyWeather::humidity'],['../classWeatherChartWidget.html#ad917be16972dd0f90aa71df8d0e8e569ad95ec1b726d7df75e5cbe026d0c1b721',1,'WeatherChartWidget::HUMIDITY']]]
+  ['humidity_7',['humidity',['../classWeatherChartWidget.html#ad917be16972dd0f90aa71df8d0e8e569ad95ec1b726d7df75e5cbe026d0c1b721',1,'WeatherChartWidget::HUMIDITY'],['../structAppWeatherResult_1_1DailyWeather.html#a2faa8ee092e1b9a6cd8ca85fc523196f',1,'AppWeatherResult::DailyWeather::humidity']]]
 ];

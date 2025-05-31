@@ -12,5 +12,5 @@ var searchData=
   ['bindsolvedtreewidget_9',['bindSolvedTreeWidget',['../classCCPdfChapterCreator.html#afd74e20fb788bbef7d8d2cdaa0fd3e0e',1,'CCPdfChapterCreator']]],
   ['browse_5fdocument_5fmetas_10',['browse_document_metas',['../classMainWindow.html#ad0d5bd0ef2a63f9fa672f284bf381c15',1,'MainWindow']]],
   ['build_5fhome_5fpage_11',['build_home_page',['../classPageFactory.html#a7568d9fd1e31b8610b514ae09890a1e4',1,'PageFactory']]],
-  ['build_5fpesudo_5fpage_12',['build_pesudo_page',['../classPageFactory.html#a5508aad06c806082c9013e0dd3925f8a',1,'PageFactory']]]
+  ['build_5fpesudo_5fpage_12',['build_pesudo_page',['../classPageFactory.html#a0aacbea4749963dcbcb05af9c4798ccc',1,'PageFactory']]]
 ];

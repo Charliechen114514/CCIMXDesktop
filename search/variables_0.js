@@ -3,7 +3,7 @@ var searchData=
   ['albumartist_0',['albumArtist',['../structMediaInfo.html#a0fe1b8a2642e8679e9e5fbd210ea01c9',1,'MediaInfo']]],
   ['albumtitle_1',['albumTitle',['../structMediaInfo.html#a6609ecb62d2db45fed5e662795648269',1,'MediaInfo']]],
   ['als_2',['als',['../structAP3216CData.html#a40669cff46ee430f2fd1e716ad24b43b',1,'AP3216CData']]],
-  ['animation_5fduration_3',['animation_duration',['../structStackpageSwitcherAnimation_1_1AnimationInfo.html#a2be11d135f255a6ffcf93b5eb0072050',1,'StackpageSwitcherAnimation::AnimationInfo::animation_duration'],['../classGaugeWidget.html#ad5c91a6fe3e9cd49a11309f4ea5b98cf',1,'GaugeWidget::ANIMATION_DURATION'],['../structStackpageSwitcherAnimation.html#a65662268e6a346dc793df94290a43b98',1,'StackpageSwitcherAnimation::ANIMATION_DURATION']]],
+  ['animation_5fduration_3',['animation_duration',['../classGaugeWidget.html#ad5c91a6fe3e9cd49a11309f4ea5b98cf',1,'GaugeWidget::ANIMATION_DURATION'],['../structStackpageSwitcherAnimation.html#a65662268e6a346dc793df94290a43b98',1,'StackpageSwitcherAnimation::ANIMATION_DURATION'],['../structStackpageSwitcherAnimation_1_1AnimationInfo.html#a2be11d135f255a6ffcf93b5eb0072050',1,'StackpageSwitcherAnimation::AnimationInfo::animation_duration']]],
   ['animation_5finterval_4',['ANIMATION_INTERVAL',['../classScrollingLabel.html#ab6ddbf528e20f3d94f607465f879293f',1,'ScrollingLabel']]],
   ['app_5',['app',['../structPageSetuper_1_1PageSetupSessionRequest.html#a8522a2cfbefeb286ffacb1af7861036c',1,'PageSetuper::PageSetupSessionRequest']]],
   ['app_5fdepatch_5fresult_6',['app_depatch_result',['../structApplicationWrapper_1_1ApplicationDepatchResult.html#add689ef0c7f3b4ee4d63d2036c105907',1,'ApplicationWrapper::ApplicationDepatchResult']]],

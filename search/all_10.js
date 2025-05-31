@@ -29,7 +29,7 @@ var searchData=
   ['photosaver_26',['PhotoSaver',['../classPhotoSaver.html',1,'']]],
   ['pid_27',['pid',['../structProcessBroswer_1_1ProcessInfo.html#a0660c66075e5bff01fd18f7d89edfc20',1,'ProcessBroswer::ProcessInfo']]],
   ['pixmap_5faddr_28',['pixmap_addr',['../structPageSetuper_1_1PageSetupSessionRequest.html#a96a020059da363d9355a655237b18949',1,'PageSetuper::PageSetupSessionRequest']]],
-  ['plans_29',['💡 Future Plans',['../md_README__EN.html#autotoc_md25',1,'']]],
+  ['plans_29',['💡 Future plans',['../md_README__EN.html#autotoc_md25',1,'']]],
   ['platformdriverfactory_30',['PlatformDriverFactory',['../classPlatformDriverFactory.html',1,'']]],
   ['play_31',['play',['../classVideoPlayer.html#af032f2fcf964f2fcb91af66d609eab1f',1,'VideoPlayer::play()'],['../classVideoPlayer.html#af032f2fcf964f2fcb91af66d609eab1f',1,'VideoPlayer::play()']]],
   ['playlistmainwindow_32',['PlayListMainWindow',['../classPlayListMainWindow.html',1,'']]],

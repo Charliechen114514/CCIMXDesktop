@@ -38,5 +38,5 @@ var searchData=
   ['from_5fboard_5fcolor_35',['FROM_BOARD_COLOR',['../classGaugeWidget.html#aabd88fe0ae3e43c08b63b9d4a2cbf46e',1,'GaugeWidget']]],
   ['full_20build_20of_20technologies_36',['🛠️ Full build of technologies',['../md_README__EN.html#autotoc_md20',1,'']]],
   ['fullpath_37',['fullPath',['../structProcessBroswer_1_1ProcessInfo.html#af250bfb0d7e057a9f7bf5dbe50372c26',1,'ProcessBroswer::ProcessInfo']]],
-  ['future_20plans_38',['💡 Future Plans',['../md_README__EN.html#autotoc_md25',1,'']]]
+  ['future_20plans_38',['💡 Future plans',['../md_README__EN.html#autotoc_md25',1,'']]]
 ];

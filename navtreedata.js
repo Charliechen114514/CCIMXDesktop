@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "CCIMXDesktop", "index.html", [
-    [ "🖥️ CCIMXDESKTOP", "md_README.html", [
+    [ "CCIMXDESKTOP 🖥️", "md_README.html", [
       [ "🌐 开始之前，选择你的语言！ 🌐", "md_README.html#autotoc_md1", null ],
       [ "🌟 项目概述 🌟", "md_README.html#autotoc_md2", null ],
       [ "一些运行截图", "md_README.html#autotoc_md4", null ],
@@ -36,7 +36,7 @@ var NAVTREE =
       [ "💡 未来计划", "md_README.html#autotoc_md11", null ],
       [ "📝 许可证", "md_README.html#autotoc_md13", null ]
     ] ],
-    [ "🖥️ CCIMXDESKTOP", "md_README__EN.html", [
+    [ "CCIMXDESKTOP🖥️", "md_README__EN.html", [
       [ "🌐 Before you start, choose your language! 🌐", "md_README__EN.html#autotoc_md15", null ],
       [ "🌟 Project Overview 🌟", "md_README__EN.html#autotoc_md16", null ],
       [ "Some running screenshots", "md_README__EN.html#autotoc_md18", null ],
@@ -44,7 +44,7 @@ var NAVTREE =
       [ "🛠️ Full build of technologies", "md_README__EN.html#autotoc_md20", null ],
       [ "🧩 Developer Reference", "md_README__EN.html#autotoc_md22", null ],
       [ "📚Project Documentation", "md_README__EN.html#autotoc_md24", null ],
-      [ "💡 Future Plans", "md_README__EN.html#autotoc_md25", null ],
+      [ "💡 Future plans", "md_README__EN.html#autotoc_md25", null ],
       [ "📝 License", "md_README__EN.html#autotoc_md27", null ]
     ] ],
     [ "🧩 模块描述", "md_Components-explain-CN.html", [
@@ -92,9 +92,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AP3216CAdapterFactory_8h_source.html",
-"classCameraDisplayWidget.html#a0bb3074905e6fd62c69a3fbc912652c4",
-"classSportsDisplayWidget.html#aefd387c3fa6558de559fe77e979cd220",
-"md_Components-explain-CN.html#autotoc_md35"
+"classCameraCapture.html#af3ceb8523ba6d8eb0f41649e3a2f3d28",
+"classSportsChart.html#a0d2390b8d696ee8bf072f0bfa2718841",
+"index.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

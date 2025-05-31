@@ -97,6 +97,7 @@ $(document).ready(function(){initNavTree('classDesktopMainWindow.html',''); init
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-slots">Public Slots</a> &#124;
 <a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
@@ -121,6 +122,12 @@ Inheritance diagram for DesktopMainWindow:</div>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDesktopMainWindow_1_1WallPaperGroup.html">WallPaperGroup</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-slots" name="pub-slots"></a>
+Public Slots</h2></td></tr>
+<tr class="memitem:ad72a53e56f786aa89acd04b1544d709c" id="r_ad72a53e56f786aa89acd04b1544d709c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDesktopMainWindow.html#ad72a53e56f786aa89acd04b1544d709c">handle_app_status</a> (AppWidget::AppStatus status)</td></tr>
+<tr class="memdesc:ad72a53e56f786aa89acd04b1544d709c"><td class="mdescLeft">&#160;</td><td class="mdescRight">handle_app_status is the handler for app status, it will be called when the app status is changed, like the app depatching errors  <br /></td></tr>
+<tr class="separator:ad72a53e56f786aa89acd04b1544d709c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
 Signals</h2></td></tr>
@@ -158,9 +165,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>invoke_switch_bgpage<
 <tr class="memitem:a39fb277355a84381bf009a605bd9bc7e" id="r_a39fb277355a84381bf009a605bd9bc7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDesktopMainWindow.html#a39fb277355a84381bf009a605bd9bc7e">install_remote_appwrapper</a> (<a class="el" href="classApplicationWrapper.html">ApplicationWrapper</a> *wrapper)</td></tr>
 <tr class="memdesc:a39fb277355a84381bf009a605bd9bc7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">install_remote_appwrapper installs a remote app wrapper  <br /></td></tr>
 <tr class="separator:a39fb277355a84381bf009a605bd9bc7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad72a53e56f786aa89acd04b1544d709c" id="r_ad72a53e56f786aa89acd04b1544d709c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDesktopMainWindow.html#ad72a53e56f786aa89acd04b1544d709c">handle_app_status</a> (AppWidget::AppStatus status)</td></tr>
-<tr class="memdesc:ad72a53e56f786aa89acd04b1544d709c"><td class="mdescLeft">&#160;</td><td class="mdescRight">handle_app_status is the handler for app status, it will be called when the app status is changed, like the app depatching errors  <br /></td></tr>
-<tr class="separator:ad72a53e56f786aa89acd04b1544d709c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f361d9bfc1b0745c02a8d8c4ec59beb" id="r_a8f361d9bfc1b0745c02a8d8c4ec59beb"><td class="memItemLeft" align="right" valign="top">QStackedWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDesktopMainWindow.html#a8f361d9bfc1b0745c02a8d8c4ec59beb">stackedWidget</a> () const</td></tr>
 <tr class="memdesc:a8f361d9bfc1b0745c02a8d8c4ec59beb"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the stackedWidget the slider using  <br /></td></tr>
 <tr class="separator:a8f361d9bfc1b0745c02a8d8c4ec59beb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -239,10 +243,13 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>PageFactory</b></td>
 </div>
 </div>
 <a id="ad72a53e56f786aa89acd04b1544d709c" name="ad72a53e56f786aa89acd04b1544d709c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad72a53e56f786aa89acd04b1544d709c">&#9670;&#160;</a></span>handle_app_status()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad72a53e56f786aa89acd04b1544d709c">&#9670;&#160;</a></span>handle_app_status</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void DesktopMainWindow::handle_app_status </td>
@@ -252,6 +259,11 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>PageFactory</b></td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>handle_app_status is the handler for app status, it will be called when the app status is changed, like the app depatching errors </p>

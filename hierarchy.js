@@ -71,6 +71,7 @@ var hierarchy =
       [ "CCIMXFileSystemModel", "classCCIMXFileSystemModel.html", null ]
     ] ],
     [ "QMainWindow", null, [
+      [ "AboutMainWindow", "classAboutMainWindow.html", null ],
       [ "CameraWindow", "classCameraWindow.html", null ],
       [ "DesktopMainWindow", "classDesktopMainWindow.html", null ],
       [ "EnvironmentWindow", "classEnvironmentWindow.html", null ],
@@ -127,6 +128,7 @@ var hierarchy =
       [ "CPUUsageChart", "classCPUUsageChart.html", null ],
       [ "CameraDisplayWidget", "classCameraDisplayWidget.html", null ],
       [ "ClockWidget", "classClockWidget.html", null ],
+      [ "DesktopAboutMainWidget", "classDesktopAboutMainWidget.html", null ],
       [ "DesktopToast", "classDesktopToast.html", null ],
       [ "DesktopToast", "classDesktopToast.html", null ],
       [ "DesktopToast", "classDesktopToast.html", null ],
@@ -138,6 +140,7 @@ var hierarchy =
       [ "HomePage", "classHomePage.html", null ],
       [ "MemoryUsageChart", "classMemoryUsageChart.html", null ],
       [ "ProcessBrowserWidget", "classProcessBrowserWidget.html", null ],
+      [ "ReadMeWidget", "classReadMeWidget.html", null ],
       [ "ScrollingLabel", "classScrollingLabel.html", null ],
       [ "SideBarWidget", "classSideBarWidget.html", null ],
       [ "SportsChart", "classSportsChart.html", null ],
