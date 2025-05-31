@@ -1,4 +1,6 @@
-# 🖥️ CCIMXDESKTOP 
+# CCIMXDESKTOP 🖥️ 
+
+![CCIMXDesktopLogo](./CCIMXDesktopLogo.png)
 
 ![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-17+-green)![Version](https://img.shields.io/badge/Version-0.9.0-red)
 
