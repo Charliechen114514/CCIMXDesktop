@@ -6,6 +6,7 @@ var class_c_c_media_play_list =
       [ "ListPlay", "class_c_c_media_play_list.html#a22ea885ed695b9f7fcabd7b117b4e0b3acae9881cfbdbd74078ce3d31eb060791", null ],
       [ "ListCycle", "class_c_c_media_play_list.html#a22ea885ed695b9f7fcabd7b117b4e0b3a2c62ffd47a07bdb6cb4720a0bad933cd", null ]
     ] ],
+    [ "CCMediaPlayList", "class_c_c_media_play_list.html#a32b802259d0a81fa00edd6b4a0bc46d0", null ],
     [ "actualList", "class_c_c_media_play_list.html#a5e0b767ee157bfb31d8448da10f43e4b", null ],
     [ "currentPlayingList", "class_c_c_media_play_list.html#a9c252087e36d48ff4b278c86f1df2330", null ],
     [ "enqueue_play", "class_c_c_media_play_list.html#a4a0901d47ef75d9543ecb9d603773c74", null ],

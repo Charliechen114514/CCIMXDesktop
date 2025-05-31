@@ -9,9 +9,8 @@ Inheritance diagram for File\+Count\+Info\+:\begin{figure}[H]
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_file_count_info_a5ff32b089dcac83617fb623d35828912}\label{class_file_count_info_a5ff32b089dcac83617fb623d35828912} 
-{\bfseries File\+Count\+Info} (\mbox{\hyperlink{class_c_c_i_m_x_file_system_model}{CCIMXFile\+System\+Model}} \texorpdfstring{$\ast$}{*}model, QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
-\item 
+\mbox{\hyperlink{class_file_count_info_a5ff32b089dcac83617fb623d35828912}{File\+Count\+Info}} (\mbox{\hyperlink{class_c_c_i_m_x_file_system_model}{CCIMXFile\+System\+Model}} \texorpdfstring{$\ast$}{*}model, QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Construct a new File Count Info object. \end{DoxyCompactList}\item 
 QString \mbox{\hyperlink{class_file_count_info_a42da804010c98ad6e95f028e0542a7f5}{provide\+\_\+section\+\_\+name}} ()
 \begin{DoxyCompactList}\small\item\em provide\+\_\+section\+\_\+name means everything in the name lol \end{DoxyCompactList}\item 
 std\+::pair$<$ bool, QVariant $>$ \mbox{\hyperlink{class_file_count_info_aa3a0221ae640730854e92c66e57c51de}{data}} (const QModel\+Index \&index, int role)
@@ -20,9 +19,13 @@ std\+::pair$<$ bool, QVariant $>$ \mbox{\hyperlink{class_file_count_info_aa3a022
 \begin{DoxyCompactItemize}
 \item 
 {\bfseries Q\+\_\+\+DISABLE\+\_\+\+COPY} (\mbox{\hyperlink{class_file_info_provider}{File\+Info\+Provider}})
-\item 
-{\bfseries File\+Info\+Provider} (\mbox{\hyperlink{class_c_c_i_m_x_file_system_model}{CCIMXFile\+System\+Model}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_file_info_provider_ae898e8c9bb3dc76decd869a018f9c0d9}{models}})
-\item 
+\begin{DoxyCompactList}\small\item\em disable copy object \end{DoxyCompactList}\item 
+{\bfseries File\+Info\+Provider} ()=delete
+\begin{DoxyCompactList}\small\item\em Construct a new File Info Provider object default is prohibited, disable this for the default constructor, prevent the non-\/model register. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_file_info_provider_acaff96e7f9eacb7bc0b3023fab1d685d}{File\+Info\+Provider}} (\mbox{\hyperlink{class_c_c_i_m_x_file_system_model}{CCIMXFile\+System\+Model}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_file_info_provider_ae898e8c9bb3dc76decd869a018f9c0d9}{models}})
+\begin{DoxyCompactList}\small\item\em Construct a new File Info Provider object, assigned models requires. \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+File\+Info\+Provider} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the File Info Provider object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_file_info_provider_aa13112f10f0b93ab09d2c12385b13374}{set\+Current\+Handle\+Path}} (const QString \&path)
 \begin{DoxyCompactList}\small\item\em set\+Current\+Handle\+Path set the current handle path \end{DoxyCompactList}\item 
 QString \mbox{\hyperlink{class_file_info_provider_a4940f9f1d9930553090eb473fe8900f6}{current\+Handle\+Path}} ()
@@ -33,6 +36,26 @@ QString \mbox{\hyperlink{class_file_info_provider_a4940f9f1d9930553090eb473fe890
 \item 
 \mbox{\hyperlink{class_c_c_i_m_x_file_system_model}{CCIMXFile\+System\+Model}} \texorpdfstring{$\ast$}{*} {\bfseries models}
 \begin{DoxyCompactList}\small\item\em binding models \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_file_count_info_a5ff32b089dcac83617fb623d35828912}\index{FileCountInfo@{FileCountInfo}!FileCountInfo@{FileCountInfo}}
+\index{FileCountInfo@{FileCountInfo}!FileCountInfo@{FileCountInfo}}
+\doxysubsubsection{\texorpdfstring{FileCountInfo()}{FileCountInfo()}}
+{\footnotesize\ttfamily \label{class_file_count_info_a5ff32b089dcac83617fb623d35828912} 
+File\+Count\+Info\+::\+File\+Count\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_c_i_m_x_file_system_model}{CCIMXFile\+System\+Model}} \texorpdfstring{$\ast$}{*}}]{model}{, }\item[{QObject \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Construct a new File Count Info object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & \\
+\hline
+{\em parent} & \\
+\hline
+\end{DoxyParams}
 
 
 \doxysubsection{Member Function Documentation}

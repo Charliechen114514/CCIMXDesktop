@@ -15,6 +15,11 @@
 struct WallPaperAnimationHandler : public QObject {
     Q_OBJECT
 public:
+	/**
+	 * @brief Construct a new Wall Paper Animation Handler object
+	 * 
+	 * @param parent 
+	 */
     explicit WallPaperAnimationHandler(QObject* parent = nullptr);
 
 	/**

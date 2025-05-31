@@ -13,6 +13,11 @@
  */
 class GaugeWidget : public QWidget {
 	Q_OBJECT
+	/**
+	 * @brief property object
+	 * 
+	 * @param valueChanged 
+	 */
 	Q_PROPERTY(double value
 				   READ value
 					   WRITE setValue

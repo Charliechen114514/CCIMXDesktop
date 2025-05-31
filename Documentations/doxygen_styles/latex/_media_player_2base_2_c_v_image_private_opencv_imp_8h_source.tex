@@ -8,21 +8,21 @@
 \DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}CVImageImpl.h"{}}}
 \DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <opencv2/opencv.hpp>}}
 \DoxyCodeLine{00006\ }
-\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_v_image_opencv_impl}{CVImageOpencvImpl}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_c_v_image_impl}{CVImageImpl}}\ \{}
-\DoxyCodeLine{00008\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00009\ \ \ \ \ cv::Mat\ raw\_image;}
-\DoxyCodeLine{00010\ }
-\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_v_image_opencv_impl_a0e106119f25f6b2218f1db8ccd4aacc5}{load\_from\_file}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ filename)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00016\ }
-\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_v_image_opencv_impl_ae9367615aab4c6af6c0090d4b3c706af}{assigned}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_c_v_image_impl}{CVImageImpl}}*\ impl,\ \textcolor{keywordtype}{bool}\ req\_copy)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00023\ }
-\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_v_image_opencv_impl_a79ba9b0969a2b6088729ba69025518af}{pass\_copy}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_c_v_image_impl}{CVImageImpl}}*\ copied)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00030\ }
-\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_c_v_image_opencv_impl_a181a4ead3d48ff64268a469a033e8f2c}{image\_valid}}()\textcolor{keyword}{\ override\ }\{}
-\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ !raw\_image.empty();}
-\DoxyCodeLine{00037\ \ \ \ \ \}}
-\DoxyCodeLine{00038\ \};}
-\DoxyCodeLine{00039\ }
-\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CVIMAGEPRIVATEOPENCVIMP\_H}}
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_v_image_opencv_impl}{CVImageOpencvImpl}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_c_v_image_impl}{CVImageImpl}}\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00013\ \ \ \ \ cv::Mat\ \mbox{\hyperlink{class_c_v_image_opencv_impl_a80cc0140c1ee9a6e0928c8e974326669}{raw\_image}};\ }
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_v_image_opencv_impl_a0e106119f25f6b2218f1db8ccd4aacc5}{load\_from\_file}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ filename)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_v_image_opencv_impl_ae9367615aab4c6af6c0090d4b3c706af}{assigned}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_c_v_image_impl}{CVImageImpl}}*\ impl,\ \textcolor{keywordtype}{bool}\ req\_copy)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_v_image_opencv_impl_a79ba9b0969a2b6088729ba69025518af}{pass\_copy}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_c_v_image_impl}{CVImageImpl}}*\ copied)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_c_v_image_opencv_impl_a181a4ead3d48ff64268a469a033e8f2c}{image\_valid}}()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ !\mbox{\hyperlink{class_c_v_image_opencv_impl_a80cc0140c1ee9a6e0928c8e974326669}{raw\_image}}.empty();}
+\DoxyCodeLine{00041\ \ \ \ \ \}}
+\DoxyCodeLine{00042\ \};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CVIMAGEPRIVATEOPENCVIMP\_H}}
 
 \end{DoxyCode}

@@ -15,6 +15,11 @@ class CameraWindow : public QMainWindow {
 	Q_OBJECT
 
 public:
+	/**
+ 	* @brief Construct a new Camera Window object
+ 	* 
+ 	* @param parent parent issue
+ 	*/
 	CameraWindow(QWidget* parent = nullptr);
 
 	/**

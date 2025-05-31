@@ -108,43 +108,48 @@ $(function(){initNavTree('linuxplatformdrivers_8h_source.html',''); initResizabl
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef LINUXPLATFORMDRIVERS_H</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define LINUXPLATFORMDRIVERS_H</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">/* hence some linux platform drivers here */</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">/* Some Linux platform drivers here */</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;Core/CPUStateFetcher.h&quot;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;Core/MemoryInfoFetcher.h&quot;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;Core/ProcessBroswer.h&quot;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;QtClassHelperMacros&gt;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span></div>
-<div class="foldopen" id="foldopen00014" data-start="{" data-end="};">
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_linux_platform_memory_info_driver.html">   14</a></span><span class="keyword">class </span>LinuxPlatformMemoryInfoDriver : <span class="keyword">public</span> CCIMX_AbstractMemoryInfoDriver {</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    LinuxPlatformMemoryInfoDriver() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    Q_DISABLE_COPY(LinuxPlatformMemoryInfoDriver);</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">void</span> factory(<a class="code hl_struct" href="struct_memory_info_fetcher_1_1_memory_stat.html">MemoryInfoFetcher::MemoryStat</a>&amp; memory_state) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>};</div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="};">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_linux_platform_memory_info_driver.html">   13</a></span><span class="keyword">class </span>LinuxPlatformMemoryInfoDriver : <span class="keyword">public</span> CCIMX_AbstractMemoryInfoDriver {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    LinuxPlatformMemoryInfoDriver() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_linux_platform_memory_info_driver.html#a52f4ebd540c8a740f8f53123fb1f6bde">   19</a></span>    <a class="code hl_function" href="class_linux_platform_memory_info_driver.html#a52f4ebd540c8a740f8f53123fb1f6bde">Q_DISABLE_COPY</a>(LinuxPlatformMemoryInfoDriver);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_linux_platform_memory_info_driver.html#aa1348cc81123078c38ee1aa6a02ea6a9">factory</a>(<a class="code hl_struct" href="struct_memory_info_fetcher_1_1_memory_stat.html">MemoryInfoFetcher::MemoryStat</a>&amp; memory_state) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>};</div>
 </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span></div>
-<div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_linux_platform_c_p_u_state_driver.html">   25</a></span><span class="keyword">class </span>LinuxPlatformCPUStateDriver : <span class="keyword">public</span> CCIMX_AbstractCPUStateDriver{</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    LinuxPlatformCPUStateDriver() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    Q_DISABLE_COPY(LinuxPlatformCPUStateDriver);</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">void</span> factory(<a class="code hl_struct" href="struct_c_p_u_state_fetcher_1_1_c_p_u_state.html">CPUStateFetcher::CPUState</a> &amp;state) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>};</div>
-</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span></div>
-<div class="foldopen" id="foldopen00036" data-start="{" data-end="};">
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_linux_platform_process_browser_driver.html">   36</a></span><span class="keyword">class </span>LinuxPlatformProcessBrowserDriver : <span class="keyword">public</span> CCIMX_AbstractProcessBroswerDriver</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>{</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    LinuxPlatformProcessBrowserDriver() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    Q_DISABLE_COPY(LinuxPlatformProcessBrowserDriver);</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordtype">void</span> factory(QList&lt;ProcessBroswer::ProcessInfo&gt; &amp;lists) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span></div>
+<div class="foldopen" id="foldopen00030" data-start="{" data-end="};">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_linux_platform_c_p_u_state_driver.html">   30</a></span><span class="keyword">class </span>LinuxPlatformCPUStateDriver : <span class="keyword">public</span> CCIMX_AbstractCPUStateDriver {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    LinuxPlatformCPUStateDriver() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_linux_platform_c_p_u_state_driver.html#a3d99944c5ed81780c366ad3f38ed6de5">   36</a></span>    <a class="code hl_function" href="class_linux_platform_c_p_u_state_driver.html#a3d99944c5ed81780c366ad3f38ed6de5">Q_DISABLE_COPY</a>(LinuxPlatformCPUStateDriver);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_linux_platform_c_p_u_state_driver.html#a1fa40efb35e698bdfb3e3b7f2071c53d">factory</a>(<a class="code hl_struct" href="struct_c_p_u_state_fetcher_1_1_c_p_u_state.html">CPUStateFetcher::CPUState</a>&amp; state) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>};</div>
 </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#endif </span><span class="comment">// LINUXPLATFORMDRIVERS_H</span></div>
-<div class="ttc" id="astruct_c_p_u_state_fetcher_1_1_c_p_u_state_html"><div class="ttname"><a href="struct_c_p_u_state_fetcher_1_1_c_p_u_state.html">CPUStateFetcher::CPUState</a></div><div class="ttdoc">The CPUState class provides the cpu state infos.</div><div class="ttdef"><b>Definition</b> CPUStateFetcher.h:21</div></div>
-<div class="ttc" id="astruct_memory_info_fetcher_1_1_memory_stat_html"><div class="ttname"><a href="struct_memory_info_fetcher_1_1_memory_stat.html">MemoryInfoFetcher::MemoryStat</a></div><div class="ttdoc">The MemoryStat class provides the memory information.</div><div class="ttdef"><b>Definition</b> MemoryInfoFetcher.h:24</div></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span></div>
+<div class="foldopen" id="foldopen00047" data-start="{" data-end="};">
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_linux_platform_process_browser_driver.html">   47</a></span><span class="keyword">class </span>LinuxPlatformProcessBrowserDriver : <span class="keyword">public</span> CCIMX_AbstractProcessBroswerDriver {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    LinuxPlatformProcessBrowserDriver() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_linux_platform_process_browser_driver.html#af4194a89bce5191112c6767d1454e53b">   53</a></span>    <a class="code hl_function" href="class_linux_platform_process_browser_driver.html#af4194a89bce5191112c6767d1454e53b">Q_DISABLE_COPY</a>(LinuxPlatformProcessBrowserDriver);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_linux_platform_process_browser_driver.html#a442d421f5898a35570e4db27f000d5ab">factory</a>(QList&lt;ProcessBroswer::ProcessInfo&gt;&amp; lists) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>};</div>
+</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#endif </span><span class="comment">// LINUXPLATFORMDRIVERS_H</span></div>
+<div class="ttc" id="aclass_linux_platform_c_p_u_state_driver_html_a1fa40efb35e698bdfb3e3b7f2071c53d"><div class="ttname"><a href="class_linux_platform_c_p_u_state_driver.html#a1fa40efb35e698bdfb3e3b7f2071c53d">LinuxPlatformCPUStateDriver::factory</a></div><div class="ttdeci">void factory(CPUStateFetcher::CPUState &amp;state) override</div><div class="ttdoc">Factory method to get CPU state.</div><div class="ttdef"><b>Definition</b> linuxplatformdrivers.cpp:163</div></div>
+<div class="ttc" id="aclass_linux_platform_c_p_u_state_driver_html_a3d99944c5ed81780c366ad3f38ed6de5"><div class="ttname"><a href="class_linux_platform_c_p_u_state_driver.html#a3d99944c5ed81780c366ad3f38ed6de5">LinuxPlatformCPUStateDriver::Q_DISABLE_COPY</a></div><div class="ttdeci">Q_DISABLE_COPY(LinuxPlatformCPUStateDriver)</div><div class="ttdoc">disable copy</div></div>
+<div class="ttc" id="aclass_linux_platform_memory_info_driver_html_a52f4ebd540c8a740f8f53123fb1f6bde"><div class="ttname"><a href="class_linux_platform_memory_info_driver.html#a52f4ebd540c8a740f8f53123fb1f6bde">LinuxPlatformMemoryInfoDriver::Q_DISABLE_COPY</a></div><div class="ttdeci">Q_DISABLE_COPY(LinuxPlatformMemoryInfoDriver)</div><div class="ttdoc">disable copy</div></div>
+<div class="ttc" id="aclass_linux_platform_memory_info_driver_html_aa1348cc81123078c38ee1aa6a02ea6a9"><div class="ttname"><a href="class_linux_platform_memory_info_driver.html#aa1348cc81123078c38ee1aa6a02ea6a9">LinuxPlatformMemoryInfoDriver::factory</a></div><div class="ttdeci">void factory(MemoryInfoFetcher::MemoryStat &amp;memory_state) override</div><div class="ttdoc">Factory method to get memory stats.</div><div class="ttdef"><b>Definition</b> linuxplatformdrivers.cpp:158</div></div>
+<div class="ttc" id="aclass_linux_platform_process_browser_driver_html_a442d421f5898a35570e4db27f000d5ab"><div class="ttname"><a href="class_linux_platform_process_browser_driver.html#a442d421f5898a35570e4db27f000d5ab">LinuxPlatformProcessBrowserDriver::factory</a></div><div class="ttdeci">void factory(QList&lt; ProcessBroswer::ProcessInfo &gt; &amp;lists) override</div><div class="ttdoc">Factory method to get process information list.</div><div class="ttdef"><b>Definition</b> linuxplatformdrivers.cpp:168</div></div>
+<div class="ttc" id="aclass_linux_platform_process_browser_driver_html_af4194a89bce5191112c6767d1454e53b"><div class="ttname"><a href="class_linux_platform_process_browser_driver.html#af4194a89bce5191112c6767d1454e53b">LinuxPlatformProcessBrowserDriver::Q_DISABLE_COPY</a></div><div class="ttdeci">Q_DISABLE_COPY(LinuxPlatformProcessBrowserDriver)</div><div class="ttdoc">disable copy</div></div>
+<div class="ttc" id="astruct_c_p_u_state_fetcher_1_1_c_p_u_state_html"><div class="ttname"><a href="struct_c_p_u_state_fetcher_1_1_c_p_u_state.html">CPUStateFetcher::CPUState</a></div><div class="ttdoc">The CPUState struct Represents CPU usage state including idle, user, kernel and total time....</div><div class="ttdef"><b>Definition</b> CPUStateFetcher.h:33</div></div>
+<div class="ttc" id="astruct_memory_info_fetcher_1_1_memory_stat_html"><div class="ttname"><a href="struct_memory_info_fetcher_1_1_memory_stat.html">MemoryInfoFetcher::MemoryStat</a></div><div class="ttdoc">The MemoryStat struct Holds memory statistics at the byte level.</div><div class="ttdef"><b>Definition</b> MemoryInfoFetcher.h:46</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

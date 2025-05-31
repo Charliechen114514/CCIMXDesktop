@@ -39,9 +39,9 @@ set(SRC_FILE sources/src.qrc)
 
 set(PROJECT_SOURCES
         main.cpp
-        AboutMainWindow.cpp
-        AboutMainWindow.h
-        AboutMainWindow.ui
+        ui/AboutMainWindow.cpp
+        ui/AboutMainWindow.h
+        ui/AboutMainWindow.ui
         ui/DesktopAboutMainWidget.h
         ui/DesktopAboutMainWidget.cpp
         ui/DesktopAboutMainWidget.ui

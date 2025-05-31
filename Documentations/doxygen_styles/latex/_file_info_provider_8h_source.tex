@@ -11,33 +11,30 @@
 \DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_c_i_m_x_file_system_model}{CCIMXFileSystemModel}};}
 \DoxyCodeLine{00008\ \textcolor{comment}{/*\ Interfaces\ are\ provided\ in\ virtual\ class\ */}}
 \DoxyCodeLine{00009\ }
-\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }FileInfoProvider\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_file_info_provider_aac708c0bbd39fe67a3e2b0129109a0f3}{FileInfoProvider}}\ \{}
 \DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00017\ \ \ \ \ Q\_DISABLE\_COPY(FileInfoProvider);}
-\DoxyCodeLine{00018\ \ \ \ \ \textcolor{comment}{//\ disable\ this\ for\ the\ default\ constructor}}
-\DoxyCodeLine{00019\ \ \ \ \ \textcolor{comment}{//\ prevent\ the\ non-\/model\ register}}
-\DoxyCodeLine{00020\ \ \ \ \ FileInfoProvider()\ =\ \textcolor{keyword}{delete};}
-\DoxyCodeLine{00021\ \ \ \ \ \textcolor{comment}{/*\ assigned\ models\ */}}
-\DoxyCodeLine{00022\ \ \ \ \ FileInfoProvider(\mbox{\hyperlink{class_c_c_i_m_x_file_system_model}{CCIMXFileSystemModel}}*\ \mbox{\hyperlink{class_file_info_provider_ae898e8c9bb3dc76decd869a018f9c0d9}{models}})\ \{}
-\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ this-\/>models\ =\ \mbox{\hyperlink{class_file_info_provider_ae898e8c9bb3dc76decd869a018f9c0d9}{models}};}
-\DoxyCodeLine{00024\ \ \ \ \ \};}
-\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{virtual}\ \string~FileInfoProvider()\ =\ \textcolor{keywordflow}{default};}
-\DoxyCodeLine{00026\ }
-\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keyword}{inline}\ QString\ \mbox{\hyperlink{class_file_info_provider_a25aa7631c3aff86607cae1b412548878}{provide\_section\_name}}()\ =\ 0;}
-\DoxyCodeLine{00033\ }
-\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_file_info_provider_aa13112f10f0b93ab09d2c12385b13374}{setCurrentHandlePath}}(\textcolor{keyword}{const}\ QString\&\ path)\ \{\ cached\_path\ =\ path;\ \}}
-\DoxyCodeLine{00039\ }
-\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{inline}\ QString\ \mbox{\hyperlink{class_file_info_provider_a4940f9f1d9930553090eb473fe8900f6}{currentHandlePath}}()\ \{\ \textcolor{keywordflow}{return}\ cached\_path;\ \}}
-\DoxyCodeLine{00045\ }
-\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keyword}{virtual}\ std::pair<bool,\ QVariant>\ \mbox{\hyperlink{class_file_info_provider_a7eb35bc1c83233238a9a33c6d55a4124}{data}}(\textcolor{keyword}{const}\ QModelIndex\&\ index,\ \textcolor{keywordtype}{int}\ role)\ =\ 0;}
-\DoxyCodeLine{00058\ }
-\DoxyCodeLine{00059\ \textcolor{keyword}{protected}:}
-\DoxyCodeLine{00060\ \ \ \ \ \mbox{\hyperlink{class_c_c_i_m_x_file_system_model}{CCIMXFileSystemModel}}*\ \mbox{\hyperlink{class_file_info_provider_ae898e8c9bb3dc76decd869a018f9c0d9}{models}};\ }
-\DoxyCodeLine{00061\ }
-\DoxyCodeLine{00062\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00063\ \ \ \ \ QString\ cached\_path\ \{\};}
-\DoxyCodeLine{00064\ \};}
-\DoxyCodeLine{00065\ }
-\DoxyCodeLine{00066\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ FILEINFOPROVIDER\_H}}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_file_info_provider_a1b5f15a9efc225ac0f3ce2c0420dcdf3}{Q\_DISABLE\_COPY}}(\mbox{\hyperlink{class_file_info_provider_aac708c0bbd39fe67a3e2b0129109a0f3}{FileInfoProvider}});}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_file_info_provider_aac708c0bbd39fe67a3e2b0129109a0f3}{FileInfoProvider}}()\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{class_file_info_provider_acaff96e7f9eacb7bc0b3023fab1d685d}{FileInfoProvider}}(\mbox{\hyperlink{class_c_c_i_m_x_file_system_model}{CCIMXFileSystemModel}}*\ \mbox{\hyperlink{class_file_info_provider_ae898e8c9bb3dc76decd869a018f9c0d9}{models}})\ \{}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ this-\/>models\ =\ \mbox{\hyperlink{class_file_info_provider_ae898e8c9bb3dc76decd869a018f9c0d9}{models}};}
+\DoxyCodeLine{00035\ \ \ \ \ \};}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_file_info_provider_aa248c464164dfb67a41bbc666d622d0b}{\string~FileInfoProvider}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keyword}{inline}\ QString\ \mbox{\hyperlink{class_file_info_provider_a25aa7631c3aff86607cae1b412548878}{provide\_section\_name}}()\ =\ 0;}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_file_info_provider_aa13112f10f0b93ab09d2c12385b13374}{setCurrentHandlePath}}(\textcolor{keyword}{const}\ QString\&\ path)\ \{\ cached\_path\ =\ path;\ \}}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keyword}{inline}\ QString\ \mbox{\hyperlink{class_file_info_provider_a4940f9f1d9930553090eb473fe8900f6}{currentHandlePath}}()\ \{\ \textcolor{keywordflow}{return}\ cached\_path;\ \}}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keyword}{virtual}\ std::pair<bool,\ QVariant>\ \mbox{\hyperlink{class_file_info_provider_a7eb35bc1c83233238a9a33c6d55a4124}{data}}(\textcolor{keyword}{const}\ QModelIndex\&\ index,\ \textcolor{keywordtype}{int}\ role)\ =\ 0;}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00075\ \ \ \ \ \mbox{\hyperlink{class_c_c_i_m_x_file_system_model}{CCIMXFileSystemModel}}*\ \mbox{\hyperlink{class_file_info_provider_ae898e8c9bb3dc76decd869a018f9c0d9}{models}};\ }
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00078\ \ \ \ \ QString\ cached\_path\ \{\};}
+\DoxyCodeLine{00079\ \};}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ FILEINFOPROVIDER\_H}}
 
 \end{DoxyCode}

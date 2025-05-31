@@ -4,20 +4,23 @@
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CAMERADEVICESELECTOR\_H}}
 \DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CAMERADEVICESELECTOR\_H}}
-\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <QList>}}
-\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QtClassHelperMacros>}}
-\DoxyCodeLine{00005\ \textcolor{comment}{/*\ We\ need\ to\ refer\ the\ max\ available\ devices\ */}}
-\DoxyCodeLine{00006\ }
-\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }CameraDeviceSelector\ \{}
-\DoxyCodeLine{00008\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ MAX\_CAMERA\_SCAN\ =\ 5;}
-\DoxyCodeLine{00010\ \ \ \ \ CameraDeviceSelector()\ =\ \textcolor{keywordflow}{default};}
-\DoxyCodeLine{00011\ \ \ \ \ Q\_DISABLE\_COPY(CameraDeviceSelector);}
-\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{static}\ QList<int>\ \mbox{\hyperlink{class_camera_device_selector_a85aef7c09cfbe6f02bfa91cbbbb03651}{scan\_available\_cameras}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ start\_index\ =\ 0);}
-\DoxyCodeLine{00018\ }
-\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{static}\ QList<QString>\ \mbox{\hyperlink{class_camera_device_selector_aa6554bdf55786ff2e926f297bfce5f41}{scan\_available\_camerasnames}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ start\_index\ =\ 0);}
-\DoxyCodeLine{00025\ \};}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QList>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QString>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QtClassHelperMacros>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_camera_device_selector_af7c05a6584bddb3ee9ef7cc816d5af8f}{CameraDeviceSelector}}\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_camera_device_selector_a6e96b1d078a7d4153559e677ff12d968}{MAX\_CAMERA\_SCAN}}\ =\ 5;}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_camera_device_selector_af7c05a6584bddb3ee9ef7cc816d5af8f}{CameraDeviceSelector}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_camera_device_selector_a59802162cbe323385d7e7427662db7c5}{Q\_DISABLE\_COPY}}(\mbox{\hyperlink{class_camera_device_selector_af7c05a6584bddb3ee9ef7cc816d5af8f}{CameraDeviceSelector}});}
 \DoxyCodeLine{00026\ }
-\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CAMERADEVICESELECTOR\_H}}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{static}\ QList<int>\ \mbox{\hyperlink{class_camera_device_selector_a011b24d541171489c3102444e9f26071}{scan\_available\_cameras}}(\textcolor{keywordtype}{int}\ start\_index\ =\ 0);}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{static}\ QList<QString>\ \mbox{\hyperlink{class_camera_device_selector_ada0bae9e8d57d2116ae1d064f4bb0d06}{scan\_available\_camerasnames}}(\textcolor{keywordtype}{int}\ start\_index\ =\ 0);}
+\DoxyCodeLine{00040\ \};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CAMERADEVICESELECTOR\_H}}
 
 \end{DoxyCode}

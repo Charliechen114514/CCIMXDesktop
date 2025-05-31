@@ -8,30 +8,30 @@
 \DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QColor>}}
 \DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QMap>}}
 \DoxyCodeLine{00006\ }
-\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }FileNameProviders\ :\ \textcolor{keyword}{public}\ FileInfoProvider\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_file_name_providers_ad81f8ebbb75db0cee10db72073fbc58b}{FileNameProviders}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_file_info_provider_aac708c0bbd39fe67a3e2b0129109a0f3}{FileInfoProvider}}\ \{}
 \DoxyCodeLine{00008\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00009\ \ \ \ \ FileNameProviders(\mbox{\hyperlink{class_c_c_i_m_x_file_system_model}{CCIMXFileSystemModel}}*\ \mbox{\hyperlink{class_file_info_provider_ae898e8c9bb3dc76decd869a018f9c0d9}{models}});}
-\DoxyCodeLine{00010\ \ \ \ \ Q\_DISABLE\_COPY(FileNameProviders);}
-\DoxyCodeLine{00011\ \ \ \ \ \string~FileNameProviders()\ \textcolor{keyword}{override}\ =\ \textcolor{keywordflow}{default};}
-\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{inline}\ QString\ \mbox{\hyperlink{class_file_name_providers_a3fc88ac86b53656f9e75a0476004ac18}{provide\_section\_name}}()\textcolor{keyword}{\ override\ }\{}
-\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}FileName"{}};}
-\DoxyCodeLine{00018\ \ \ \ \ \}}
-\DoxyCodeLine{00026\ \ \ \ \ std::pair<bool,\ QVariant>\ \mbox{\hyperlink{class_file_name_providers_ab7c156fc04bc7888677c266f79f15127}{data}}(\textcolor{keyword}{const}\ QModelIndex\&\ index,\ \textcolor{keywordtype}{int}\ role)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{using\ }FileExtension\ =\ QString;}
-\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{using\ }ColorPairs\ =\ std::pair<FileExtension,\ QColor>;}
-\DoxyCodeLine{00029\ }
-\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_file_name_providers_ad649d1ca2c8291733510803220b61b5d}{registerColorPairs}}(\textcolor{keyword}{const}\ ColorPairs\&\ pairs);}
-\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{class_file_name_providers_ad419a989e778ba01fc40417dd78ec62a}{register\_special\_dircolor}}(\textcolor{keyword}{const}\ QColor\&\ t)\ \{}
-\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ dirent\_color\ =\ t;}
-\DoxyCodeLine{00042\ \ \ \ \ \}}
-\DoxyCodeLine{00043\ }
-\DoxyCodeLine{00044\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00045\ \ \ \ \ std::pair<bool,\ QVariant>}
-\DoxyCodeLine{00046\ \ \ \ \ handle\_extension\_color(\textcolor{keyword}{const}\ QModelIndex\&\ index);\ }
-\DoxyCodeLine{00047\ \ \ \ \ QMap<FileExtension,\ QColor>\ mappings;\ }
-\DoxyCodeLine{00048\ \ \ \ \ QColor\ dirent\_color\ \{\ Qt::darkMagenta\ \};\ }
-\DoxyCodeLine{00049\ \};}
-\DoxyCodeLine{00050\ }
-\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ FILENAMEPROVIDERS\_H}}
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{class_file_name_providers_ad81f8ebbb75db0cee10db72073fbc58b}{FileNameProviders}}(\mbox{\hyperlink{class_c_c_i_m_x_file_system_model}{CCIMXFileSystemModel}}*\ \mbox{\hyperlink{class_file_info_provider_ae898e8c9bb3dc76decd869a018f9c0d9}{models}});}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{class_file_name_providers_a323bf8d034d2a6c4d53705f5d38d0114}{Q\_DISABLE\_COPY}}(\mbox{\hyperlink{class_file_name_providers_ad81f8ebbb75db0cee10db72073fbc58b}{FileNameProviders}});}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_file_name_providers_ad81f8ebbb75db0cee10db72073fbc58b}{\string~FileNameProviders}}()\ \textcolor{keyword}{override}\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{inline}\ QString\ \mbox{\hyperlink{class_file_name_providers_a3fc88ac86b53656f9e75a0476004ac18}{provide\_section\_name}}()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}FileName"{}};}
+\DoxyCodeLine{00027\ \ \ \ \ \}}
+\DoxyCodeLine{00035\ \ \ \ \ std::pair<bool,\ QVariant>\ \mbox{\hyperlink{class_file_name_providers_ab7c156fc04bc7888677c266f79f15127}{data}}(\textcolor{keyword}{const}\ QModelIndex\&\ index,\ \textcolor{keywordtype}{int}\ role)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{class_file_name_providers_a400f20700f7bcc5acead68a30e691c5e}{FileExtension}}\ =\ QString;\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{class_file_name_providers_ade1e3d0a691c118ff906baf51cf56b18}{ColorPairs}}\ =\ std::pair<FileExtension,\ QColor>;\ }
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_file_name_providers_ad649d1ca2c8291733510803220b61b5d}{registerColorPairs}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_file_name_providers_ade1e3d0a691c118ff906baf51cf56b18}{ColorPairs}}\&\ pairs);}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{class_file_name_providers_ad419a989e778ba01fc40417dd78ec62a}{register\_special\_dircolor}}(\textcolor{keyword}{const}\ QColor\&\ t)\ \{}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ dirent\_color\ =\ t;}
+\DoxyCodeLine{00051\ \ \ \ \ \}}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00054\ \ \ \ \ std::pair<bool,\ QVariant>}
+\DoxyCodeLine{00055\ \ \ \ \ handle\_extension\_color(\textcolor{keyword}{const}\ QModelIndex\&\ index);\ }
+\DoxyCodeLine{00056\ \ \ \ \ QMap<FileExtension,\ QColor>\ mappings;\ }
+\DoxyCodeLine{00057\ \ \ \ \ QColor\ dirent\_color\ \{\ Qt::darkMagenta\ \};\ }
+\DoxyCodeLine{00058\ \};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ FILENAMEPROVIDERS\_H}}
 
 \end{DoxyCode}

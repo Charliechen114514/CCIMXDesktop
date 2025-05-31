@@ -13,34 +13,32 @@
 \DoxyCodeLine{00009\ \textcolor{keyword}{class\ }AppCardWidget;}
 \DoxyCodeLine{00010\ \}}
 \DoxyCodeLine{00011\ }
-\DoxyCodeLine{00012\ \textcolor{comment}{/*\ App\ Card\ Widgets\ is\ simple\ lighted\ widget\ that\ is}}
-\DoxyCodeLine{00013\ \textcolor{comment}{\ *\ only\ post\ messages\ to\ the\ Toast}}
-\DoxyCodeLine{00014\ \textcolor{comment}{\ */}}
-\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }AppCardWidget\ :\ \textcolor{keyword}{public}\ QWidget\ \{}
-\DoxyCodeLine{00016\ \ \ \ \ Q\_OBJECT}
-\DoxyCodeLine{00017\ }
-\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00019\ \ \ \ \ Q\_DISABLE\_COPY(AppCardWidget);}
-\DoxyCodeLine{00020\ \ \ \ \ AppCardWidget()\ =\ \textcolor{keyword}{delete};}
-\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{explicit}\ AppCardWidget(\mbox{\hyperlink{class_desktop_toast}{DesktopToast}}*\ toast,\ QWidget*\ parent\ =\ \textcolor{keyword}{nullptr});}
-\DoxyCodeLine{00022\ }
-\DoxyCodeLine{00023\ \ \ \ \ \textcolor{comment}{/*\ Icons\ for\ the\ current\ */}}
-\DoxyCodeLine{00024\ }
-\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_app_card_widget_a4a99ac0e10c319ef328cfa380ba56170}{setCurrentIcon}}(\textcolor{keyword}{const}\ QPixmap\&\ icons);}
-\DoxyCodeLine{00032\ }
-\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_app_card_widget_a2b27698b6de79bb3b772b4bf92e31fc3}{invoke\_preLaunch\_work}}(\textcolor{keywordtype}{void})\ =\ 0;}
-\DoxyCodeLine{00039\ }
-\DoxyCodeLine{00040\ \ \ \ \ \string~AppCardWidget();}
-\DoxyCodeLine{00041\ }
-\DoxyCodeLine{00042\ \textcolor{keyword}{protected}:}
-\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_app_card_widget_afabbff33f9e08d33549d0a8ff026ef30}{postAppCardWidget}}()\ =\ 0;}
-\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{class_desktop_toast}{DesktopToast}}*\ binding\_toast;}
-\DoxyCodeLine{00049\ \ \ \ \ Ui::AppCardWidget*\ ui;}
-\DoxyCodeLine{00050\ }
-\DoxyCodeLine{00051\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_app_card_widget_aaa303f4e4011e02c6cf0c776ca093ac3}{eventFilter}}(QObject*\ watched,\ QEvent*\ event)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00059\ \};}
-\DoxyCodeLine{00060\ }
-\DoxyCodeLine{00061\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ APPCARDWIDGET\_H}}
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_app_card_widget_adde6adc2966e595da7ce948c7b272757}{AppCardWidget}}\ :\ \textcolor{keyword}{public}\ QWidget\ \{}
+\DoxyCodeLine{00019\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_app_card_widget_a8396063f654b18f1a739684774051f2f}{Q\_DISABLE\_COPY}}(\mbox{\hyperlink{class_app_card_widget_adde6adc2966e595da7ce948c7b272757}{AppCardWidget}});}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{class_app_card_widget_adde6adc2966e595da7ce948c7b272757}{AppCardWidget}}()\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_app_card_widget_adde6adc2966e595da7ce948c7b272757}{AppCardWidget}}(\mbox{\hyperlink{class_desktop_toast}{DesktopToast}}*\ toast,\ QWidget*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00042\ \ \ \ \ \mbox{\hyperlink{class_app_card_widget_a79c645ef1c8e4ca25610676161eeb305}{\string~AppCardWidget}}();}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_app_card_widget_a4a99ac0e10c319ef328cfa380ba56170}{setCurrentIcon}}(\textcolor{keyword}{const}\ QPixmap\&\ icons);}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_app_card_widget_a82559c4e4ddb985821a8b87076bb446b}{invoke\_preLaunch\_work}}()\ =\ 0;}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_app_card_widget_afabbff33f9e08d33549d0a8ff026ef30}{postAppCardWidget}}()\ =\ 0;}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \ \ \ \ \mbox{\hyperlink{class_desktop_toast}{DesktopToast}}*\ \mbox{\hyperlink{class_app_card_widget_af944544f55557488171821c0c5e024b7}{binding\_toast}};\ \ }
+\DoxyCodeLine{00072\ \ \ \ \ Ui::AppCardWidget*\ \mbox{\hyperlink{class_app_card_widget_affacf5393eb2f3fcdb94b39c894c188e}{ui}};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_app_card_widget_aaa303f4e4011e02c6cf0c776ca093ac3}{eventFilter}}(QObject*\ watched,\ QEvent*\ event)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00082\ \};}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ APPCARDWIDGET\_H}}
 
 \end{DoxyCode}

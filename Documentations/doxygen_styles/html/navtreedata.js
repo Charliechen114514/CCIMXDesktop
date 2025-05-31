@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "CCIMXDesktop", "index.html", [
-    [ "🖥️ CCIMXDESKTOP", "md__r_e_a_d_m_e.html", [
+    [ "CCIMXDESKTOP 🖥️", "md__r_e_a_d_m_e.html", [
       [ "🌐 开始之前，选择你的语言！ 🌐", "md__r_e_a_d_m_e.html#autotoc_md1", null ],
       [ "🌟 项目概述 🌟", "md__r_e_a_d_m_e.html#autotoc_md2", null ],
       [ "一些运行截图", "md__r_e_a_d_m_e.html#autotoc_md4", null ],
@@ -36,15 +36,15 @@ var NAVTREE =
       [ "💡 未来计划", "md__r_e_a_d_m_e.html#autotoc_md11", null ],
       [ "📝 许可证", "md__r_e_a_d_m_e.html#autotoc_md13", null ]
     ] ],
-    [ "🖥️ CCIMXDESKTOP", "md__r_e_a_d_m_e___e_n.html", [
-      [ "🌐 Before you start, choose your language! 🌐", "md__r_e_a_d_m_e___e_n.html#autotoc_md15", null ],
+    [ "CCIMXDESKTOP 🖥️", "md__r_e_a_d_m_e___e_n.html", [
+      [ "🌐 Before you get started, choose your language! 🌐", "md__r_e_a_d_m_e___e_n.html#autotoc_md15", null ],
       [ "🌟 Project Overview 🌟", "md__r_e_a_d_m_e___e_n.html#autotoc_md16", null ],
       [ "Some running screenshots", "md__r_e_a_d_m_e___e_n.html#autotoc_md18", null ],
-      [ "🛠️ Basic build technologies", "md__r_e_a_d_m_e___e_n.html#autotoc_md19", null ],
+      [ "🛠️ Technologies used for basic builds", "md__r_e_a_d_m_e___e_n.html#autotoc_md19", null ],
       [ "🛠️ Full build of technologies", "md__r_e_a_d_m_e___e_n.html#autotoc_md20", null ],
       [ "🧩 Developer Reference", "md__r_e_a_d_m_e___e_n.html#autotoc_md22", null ],
       [ "📚Project Documentation", "md__r_e_a_d_m_e___e_n.html#autotoc_md24", null ],
-      [ "💡 Future Plans", "md__r_e_a_d_m_e___e_n.html#autotoc_md25", null ],
+      [ "💡 Future plans", "md__r_e_a_d_m_e___e_n.html#autotoc_md25", null ],
       [ "📝 License", "md__r_e_a_d_m_e___e_n.html#autotoc_md27", null ]
     ] ],
     [ "🧩 模块描述", "md__components-explain-_c_n.html", [
@@ -80,11 +80,17 @@ var NAVTREE =
         [ "Variables", "functions_vars.html", null ],
         [ "Typedefs", "functions_type.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
-        [ "Enumerator", "functions_eval.html", null ]
+        [ "Enumerator", "functions_eval.html", null ],
+        [ "Properties", "functions_prop.html", null ],
+        [ "Related Symbols", "functions_rela.html", null ]
       ] ]
     ] ],
     [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ]
+      [ "File List", "files.html", "files_dup" ],
+      [ "File Members", "globals.html", [
+        [ "All", "globals.html", null ],
+        [ "Macros", "globals_defs.html", null ]
+      ] ]
     ] ]
   ] ]
 ];
@@ -92,9 +98,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_a_p3216_c_adapter_factory_8h_source.html",
-"class_camera_device_selector.html",
-"class_sports_display_widget.html#a4e2a61241dfc71050074bf14c4c1fb04",
-"functions_v.html"
+"class_c_c_pdf_viewer.html#ac7f3f2ba436fba2eedeaf5580d4630d5",
+"class_light_controller_window.html#a40549df6846a9c90873b79969574ed4a",
+"class_video_player.html#aa694b6b907f0e1935de88613608ff6aa",
+"md__components-explain-_c_n.html#autotoc_md39",
+"structrol.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>color.png</file>
+        <file>draw_mode.png</file>
+        <file>edit_mode.png</file>
+        <file>ellipse.png</file>
+        <file>line.png</file>
+        <file>penwidth.png</file>
+        <file>quit.png</file>
+        <file>rect.png</file>
+        <file>redo.png</file>
+        <file>save.png</file>
+        <file>undo.png</file>
+        <file>freehand.png</file>
+    </qresource>
+</RCC>

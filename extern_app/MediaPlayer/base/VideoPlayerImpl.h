@@ -20,9 +20,9 @@ enum class VideoPlayerOpenErrorCode {
  * @note this is the meta data of the video
  */
 struct VideoPlayerInfo {
-	int fps;
-	int width;
-	int height;
+	int fps; ///< fps
+	int width; ///< video width
+	int height; ///< video height
 };
 
 /**
@@ -32,10 +32,15 @@ struct VideoPlayerInfo {
  */
 class VideoPlayerImpl {
 public:
+	/**
+	 * @brief Construct a new Video Player Impl object
+	 * 
+	 */
 	VideoPlayerImpl() = default;
 	virtual ~VideoPlayerImpl() = default;
-	/*
-	 *	Copy is not acceptable for video
+	/**
+	 * @brief Construct a new q disable copy object
+	 * 
 	 */
 	Q_DISABLE_COPY(VideoPlayerImpl);
 
@@ -113,7 +118,6 @@ public:
 
 	/**
 	 * @brief close close the video file
-	 * @return true if the video is closed successfully
 	 * @note in syntax level, it means making the resources un-available
 	 * (disabled the resources, shutdown this)
 	 */

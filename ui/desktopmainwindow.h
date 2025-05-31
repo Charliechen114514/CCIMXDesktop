@@ -4,12 +4,13 @@
 #include "app_wrapper/applicationwrapper.h"
 #include "ui/appwidget.h"
 #include <QMainWindow>
+
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class DesktopMainWindow;
 }
 QT_END_NAMESPACE
-/* App layouts */
+
 class QGridLayout;
 class QLabel;
 class DesktopToast;
@@ -20,144 +21,162 @@ class DownDockWidget;
 class AppCardWidget;
 
 /**
- * @brief DesktopMainWindow Makes the total front end of everything,
- * for beginners, you can start at here to see the details
+ * @brief DesktopMainWindow is the main frontend window of the application.
+ * For beginners, this is the starting point to understand the UI details.
  */
 class DesktopMainWindow : public QMainWindow {
     Q_OBJECT
 
 public:
-	friend class PageFactory;
-	struct WallPaperGroup {
-		/**
-		 * @brief This means the widget should be lower in animations,
-		 * typically, this is the centralwidget of the window
-		 */
-		QWidget* shoule_be_lower;
-		/**
-		 * @brief wallpaperLabel is a wall paper label is using in display the current
-		 */
-		QLabel* wallpaperLabel { nullptr };
-		/**
-		 * @brief bufferpaperLabel helps the animations
-		 */
-		QLabel* bufferpaperLabel { nullptr };
-		/**
-		 * @brief this is using in switch, any switch interval behaviour
-		 */
-		QTimer* invoke_switch_timer;
-	};
+    friend class PageFactory;
 
-	DesktopMainWindow(QWidget* parent = nullptr);
-	/**
-	 * @brief This is using in showing some toasts in the mainwindow
-	 * @param message for posting
-	 */
-	void showToast(const QString& message);
-	/**
-	 * @brief returns the DesktopToast Handle
-	 * @return DesktopToast
-	 */
-	inline DesktopToast* desktop_toast() const { return toast; }
+    /**
+     * @brief WallPaperGroup manages wallpaper-related widgets and timers.
+     */
+    struct WallPaperGroup {
+        QWidget* shoule_be_lower; ///< Widget that should be placed behind animations, typically the central widget
+        QLabel* wallpaperLabel { nullptr }; ///< Displays current wallpaper
+        QLabel* bufferpaperLabel { nullptr }; ///< Used for animation buffering
+        QTimer* invoke_switch_timer; ///< Timer to control wallpaper switching intervals
+    };
 
 	/**
-	 * @brief downDockWidget returns the global instance of the downDockWidget
-	 * @return DownDockWidget
+	 * @brief Construct a new Desktop Main Window object
+	 * 
+	 * @param parent 
 	 */
-	DownDockWidget* downDockWidget() const;
+    explicit DesktopMainWindow(QWidget* parent = nullptr);
+	/**
+	 * @brief Destroy the Desktop Main Window object
+	 * 
+	 */
+    ~DesktopMainWindow();
 
-	/**
-	 * @brief to_next_page makes the slide to next page
-	 */
-	void to_next_page();
-	/**
-	 * @brief to_prev_page makes the slide to previous page
-	 */
-	void to_prev_page();
-	~DesktopMainWindow();
-	/**
-	 * @brief invoke this can depatch a session of page switching
-	 */
-	void invoke_switch_bgpage();
-	/**
-	 * @brief install_remote_appwrapper installs a remote app wrapper
-	 * @param wrapper the wrapper to be installed
-	 */
-	void inline install_remote_appwrapper(ApplicationWrapper* wrapper) { app_wrapper << wrapper; }
-	/**
-	 * @brief returns the stackedWidget the slider using
-	 * @return QStackedWidget
-	 */
-	QStackedWidget* stackedWidget() const;
-	/**
-	 * @brief post_show makes the later init of the mainWindow
-	 */
-	void post_show();
+    /**
+     * @brief Show a toast message on the main window
+     * @param message Message to display
+     */
+    void showToast(const QString& message);
+
+    /**
+     * @brief Get pointer to DesktopToast handler
+     * @return DesktopToast instance
+     */
+    DesktopToast* desktop_toast() const { return toast; }
+
+    /**
+     * @brief Get the global DownDockWidget instance
+     * @return DownDockWidget instance
+     */
+    DownDockWidget* downDockWidget() const;
+
+    /**
+     * @brief Slide to the next page in UI
+     */
+    void to_next_page();
+
+    /**
+     * @brief Slide to the previous page in UI
+     */
+    void to_prev_page();
+
+    /**
+     * @brief Trigger wallpaper page switch session
+     */
+    void invoke_switch_bgpage();
+
+    /**
+     * @brief Install a remote application wrapper
+     * @param wrapper Pointer to ApplicationWrapper to install
+     */
+    void install_remote_appwrapper(ApplicationWrapper* wrapper) { app_wrapper << wrapper; }
+
+    /**
+     * @brief Get the QStackedWidget used for page sliding
+     * @return QStackedWidget pointer
+     */
+    QStackedWidget* stackedWidget() const;
+
+    /**
+     * @brief Perform initialization after main window is shown
+     */
+    void post_show();
 
 public slots:
-	/**
-	 * @brief handle_app_status is the handler for app status, it will
-	 * be called when the app status is changed, like the app depatching errors
-	 * @param status: the status waiting for the depatching
-	 */
-	void handle_app_status(AppWidget::AppStatus status);
+    /**
+     * @brief Handle status changes of applications (like errors)
+     * @param status Current app status
+     */
+    void handle_app_status(AppWidget::AppStatus status);
+
 signals:
-	/**
-	 * @brief Signals, that when everytime the app cards
-	 * requires init, the signals is triggered
-	 */
-	void deptach_app_cards_init();
+    /**
+     * @brief Signal emitted when app cards require initialization
+     */
+    void deptach_app_cards_init();
 
 protected:
-	void mousePressEvent(QMouseEvent* event) override;
-	void mouseReleaseEvent(QMouseEvent* event) override;
-	void resizeEvent(QResizeEvent* event) override;
+	/**
+	 * @brief mouse press sessions
+	 * 
+	 * @param event 
+	 */
+    void mousePressEvent(QMouseEvent* event) override;
+		/**
+	 * @brief mouse release sessions
+	 * 
+	 * @param event 
+	 */
+    void mouseReleaseEvent(QMouseEvent* event) override;
+		/**
+	 * @brief resize sessions
+	 * 
+	 * @param event 
+	 */
+    void resizeEvent(QResizeEvent* event) override;
 
 private:
-	Ui::DesktopMainWindow* ui;
-	DesktopToast* toast;
-	QList<ApplicationWrapper*> app_wrapper;
-	QList<AppWidget*> app_widgets;
+    Ui::DesktopMainWindow* ui; ///< UI pointer generated by Qt Designer
+    DesktopToast* toast; ///< Toast message widget
+    QList<ApplicationWrapper*> app_wrapper; ///< List of application wrappers
+    QList<AppWidget*> app_widgets; ///< List of app widgets
 
-	WallPaperGroup wallPaperGroup;
-	QStringList image_lists;
+    WallPaperGroup wallPaperGroup; ///< Wallpaper management group
+    QStringList image_lists; ///< List of wallpaper image paths
 
-	struct {
-		QPoint press; ///< where do you press?
-		QPoint release; ///< where do you release?
-	} records; ///< using in detect the mouse pos, and shell be used in <- ->
+    struct {
+        QPoint press; ///< Mouse press position
+        QPoint release; ///< Mouse release position
+    } records; ///< Used for swipe gesture detection
 
-	static constexpr const unsigned int switch_bg_time = 20000;
+    static constexpr const unsigned int switch_bg_time = 20000; ///< Wallpaper switch interval in ms
 
-	/* Appcards */
-	QList<AppCardWidget*> app_cards;
+    QList<AppCardWidget*> app_cards; ///< List of application card widgets
 
-	/**
-	 * @brief post_setupui is the post setup UI function,
-	 *  after the ui->setupUi(), we still need to further map
-	 *  the ui elements
-	 */
-	void post_setupui();
-	/**
-	 * @brief setup_bg_image is the background setup function
-	 */
-	void setup_bg_image();
-	/**
-	 * @brief setup_apps makes the app setup internally,
-	 * including some default apps ready
-	 */
-	void setup_apps();
+    /**
+     * @brief Additional UI setup after ui->setupUi()
+     */
+    void post_setupui();
 
-	/**
-	 * @brief setup_default_dock will install some default apps
-	 * into the dockwidget
-	 */
-	void setup_default_dock();
+    /**
+     * @brief Setup wallpaper background images
+     */
+    void setup_bg_image();
 
-	/**
-	 * @brief invoke_appcards_init, defaultly, signal
-	 * deptach_app_cards_init triiger the slots
-	 */
-	void invoke_appcards_init();
+    /**
+     * @brief Setup default and internal applications
+     */
+    void setup_apps();
+
+    /**
+     * @brief Setup default dock widgets with pre-installed apps
+     */
+    void setup_default_dock();
+
+    /**
+     * @brief Trigger initialization of app cards (usually connected to signal deptach_app_cards_init)
+     */
+    void invoke_appcards_init();
 };
+
 #endif // DESKTOPMAINWINDOW_H

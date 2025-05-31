@@ -1,5 +1,14 @@
 \doxysection{Weather\+Request Class Reference}
 \hypertarget{class_weather_request}{}\label{class_weather_request}\index{WeatherRequest@{WeatherRequest}}
+
+
+The \doxylink{class_weather_request}{Weather\+Request} class provides the interface to request weather data.  
+
+
+
+
+{\ttfamily \#include $<$My\+Weather\+Request.\+h$>$}
+
 Inheritance diagram for Weather\+Request\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -10,34 +19,56 @@ Inheritance diagram for Weather\+Request\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_weather_request_ad6741445b3b9ed4fdb60f1a53293e720}{error\+Occurs}} (QNetwork\+Reply \texorpdfstring{$\ast$}{*}reply)
-\begin{DoxyCompactList}\small\item\em error\+Occurs when an error occurs, this signal will be emitted \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Emitted when an error occurs in the request. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_weather_request_a182f4d1dd7b4a801eb9a9469f88dc000}{result\+\_\+available}} (const QString json)
-\begin{DoxyCompactList}\small\item\em result\+\_\+available when the result is available, this signal will be emitted \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Emitted when the result is available. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \Hypertarget{class_weather_request_a472973ba5b01c6b681f831470c8e8ec4}\label{class_weather_request_a472973ba5b01c6b681f831470c8e8ec4} 
 {\bfseries Q\+\_\+\+DISABLE\+\_\+\+COPY} (\mbox{\hyperlink{class_weather_request}{Weather\+Request}})
-\item 
-\Hypertarget{class_weather_request_a563db4f9beeca9a58267e04c0ecbe0f8}\label{class_weather_request_a563db4f9beeca9a58267e04c0ecbe0f8} 
-{\bfseries Weather\+Request} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
-\item 
+\begin{DoxyCompactList}\small\item\em Disables copy constructor and copy assignment. This prevents copying of the \doxylink{class_weather_request}{Weather\+Request} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_weather_request_a563db4f9beeca9a58267e04c0ecbe0f8}{Weather\+Request}} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_weather_request}{Weather\+Request}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_weather_request_a536ac3f283539dd0b7d7885bb53fc7b5}{async\+\_\+request}} (const char \texorpdfstring{$\ast$}{*}base\+\_\+url)
-\begin{DoxyCompactList}\small\item\em async\+\_\+request this function is used to send the request \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Sends the request asynchronously. \end{DoxyCompactList}\item 
 virtual QUrl\+Query \mbox{\hyperlink{class_weather_request_a2faec779862560dbe931d723025787d1}{compose\+\_\+request}} ()=0
-\begin{DoxyCompactList}\small\item\em compose\+\_\+request compose request required devs to complete the function of how to compose the request \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Composes the request parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \Hypertarget{class_weather_request_a409c6257cb30390f26bd3c67f295ef06}\label{class_weather_request_a409c6257cb30390f26bd3c67f295ef06} 
 QNetwork\+Access\+Manager {\bfseries manager}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The network manager handling requests. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Static Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \Hypertarget{class_weather_request_ac40ebb371070a67f2e2f0d75af7e5036}\label{class_weather_request_ac40ebb371070a67f2e2f0d75af7e5036} 
 static constexpr const char \texorpdfstring{$\ast$}{*} {\bfseries private\+\_\+key} = \+\_\+\+DEF\+\_\+\+WEATHER\+\_\+\+PRIVATE\+\_\+\+KEY
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Private key for accessing the weather service. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_weather_request}{Weather\+Request} class provides the interface to request weather data. 
+
+This class manages the HTTP requests and handles the returned JSON. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_weather_request_a563db4f9beeca9a58267e04c0ecbe0f8}\index{WeatherRequest@{WeatherRequest}!WeatherRequest@{WeatherRequest}}
+\index{WeatherRequest@{WeatherRequest}!WeatherRequest@{WeatherRequest}}
+\doxysubsubsection{\texorpdfstring{WeatherRequest()}{WeatherRequest()}}
+{\footnotesize\ttfamily \label{class_weather_request_a563db4f9beeca9a58267e04c0ecbe0f8} 
+Weather\+Request\+::\+Weather\+Request (\begin{DoxyParamCaption}\item[{QObject \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor for \doxylink{class_weather_request}{Weather\+Request}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & The parent QObject. \\
+\hline
+\end{DoxyParams}
 
 
 \doxysubsection{Member Function Documentation}
@@ -49,11 +80,11 @@ void Weather\+Request\+::async\+\_\+request (\begin{DoxyParamCaption}\item[{cons
 
 
 
-async\+\_\+request this function is used to send the request 
+Sends the request asynchronously. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em base\+\_\+url,the} & url without any request sessions only the base url is provided \\
+{\em base\+\_\+url} & The base URL without any request parameters. \\
 \hline
 \end{DoxyParams}
 \Hypertarget{class_weather_request_a2faec779862560dbe931d723025787d1}\index{WeatherRequest@{WeatherRequest}!compose\_request@{compose\_request}}
@@ -64,10 +95,10 @@ virtual QUrl\+Query Weather\+Request\+::compose\+\_\+request (\begin{DoxyParamCa
 
 
 
-compose\+\_\+request compose request required devs to complete the function of how to compose the request 
+Composes the request parameters. 
 
 \begin{DoxyReturn}{Returns}
-the request url 
+The composed request query. 
 \end{DoxyReturn}
 
 
@@ -81,11 +112,11 @@ void Weather\+Request\+::error\+Occurs (\begin{DoxyParamCaption}\item[{QNetwork\
 
 
 
-error\+Occurs when an error occurs, this signal will be emitted 
+Emitted when an error occurs in the request. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em reply} & the reply from the request \\
+{\em reply} & The reply object that caused the error. \\
 \hline
 \end{DoxyParams}
 \Hypertarget{class_weather_request_a182f4d1dd7b4a801eb9a9469f88dc000}\index{WeatherRequest@{WeatherRequest}!result\_available@{result\_available}}
@@ -96,11 +127,11 @@ void Weather\+Request\+::result\+\_\+available (\begin{DoxyParamCaption}\item[{c
 
 
 
-result\+\_\+available when the result is available, this signal will be emitted 
+Emitted when the result is available. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em json} & the json string from the request \\
+{\em json} & The JSON string returned from the request. \\
 \hline
 \end{DoxyParams}
 

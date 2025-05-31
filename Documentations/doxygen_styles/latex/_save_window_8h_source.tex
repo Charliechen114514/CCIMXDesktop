@@ -1,0 +1,43 @@
+\doxysection{Save\+Window.\+h}
+\hypertarget{_save_window_8h_source}{}\label{_save_window_8h_source}\index{builtin/app/SimpleDrawer/ui/SaveWindow.h@{builtin/app/SimpleDrawer/ui/SaveWindow.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ SAVEWINDOW\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ SAVEWINDOW\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QMainWindow>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }SaveWindow;}
+\DoxyCodeLine{00008\ \}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_save_window_a9dda13bcce691dde5cd3520245a2424f}{SaveWindow}}\ :\ \textcolor{keyword}{public}\ QMainWindow\ \{}
+\DoxyCodeLine{00011\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_save_window_a9dda13bcce691dde5cd3520245a2424f}{SaveWindow}}(QWidget*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_save_window_a86299a1a30e6b70b118a84c24ad2b186}{bindImage}}(\textcolor{keyword}{const}\ QImage\&\ image)\ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ holdingImage\ =\ image;}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ processImageIssue();}
+\DoxyCodeLine{00027\ \ \ \ \ \}}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_save_window_a813dab0355b806882b41b40530847153}{processSave}}();}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{class_save_window}{\string~SaveWindow}}();}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_height\_spinbox\_valueChanged(\textcolor{keywordtype}{int}\ arg1);}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_width\_spinbox\_valueChanged(\textcolor{keywordtype}{int}\ arg1);}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_btn\_save\_clicked();}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_btn\_quit\_clicked();}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00060\ \ \ \ \ Ui::SaveWindow*\ ui;}
+\DoxyCodeLine{00061\ \ \ \ \ QImage\ holdingImage;}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ processImageIssue();}
+\DoxyCodeLine{00066\ \};}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ SAVEWINDOW\_H}}
+
+\end{DoxyCode}

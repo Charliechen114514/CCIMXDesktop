@@ -1,104 +1,121 @@
 #ifndef CAMERACAPTURE_H
 #define CAMERACAPTURE_H
+
 #include <QImage>
 #include <QObject>
 #include <QtClassHelperMacros>
+#include <atomic>
+
 class CameraDisplayWidget;
 class QThread;
 class QMutex;
+
 namespace cv {
 class VideoCapture;
-};
+}
 
+/**
+ * @brief The CameraCapture class handles camera video capturing.
+ */
 class CameraCapture : public QObject {
-	Q_OBJECT
+    Q_OBJECT
 public:
-	/**
-	 * @brief The Error enum provides the situations
-	 * and cases of error types
-	 */
-	enum class Error {
-		CAMERA_UNEXSITED, ///< camera is not exsited
-		CAMERA_UNOPENED, ///< camera is not opened
-		CAMERA_UNBIND_DISPLAY, ///< camera is not bind to display
-		CAMERA_MULTI_OPENED ///< camera is already opened
-	};
+    /**
+     * @brief Error enum lists possible camera error cases.
+     */
+    enum class Error {
+        CAMERA_UNEXISTED,       ///< Camera does not exist
+        CAMERA_UNOPENED,        ///< Camera not opened
+        CAMERA_UNBIND_DISPLAY,  ///< Camera not bound to display widget
+        CAMERA_MULTI_OPENED     ///< Camera already opened
+    };
 
-	CameraCapture() = delete;
-	Q_DISABLE_COPY(CameraCapture);
+    CameraCapture() = delete;
 
-	/**
-	 * @brief CameraCapture
-	 * @param index requires a valid index of cameras
-	 * @param parent
-	 */
-	explicit CameraCapture(const int index, QObject* parent);
-	~CameraCapture();
-	/**
-	 * @brief bind_display_widget bind the widgets to display
-	 * @param CameraDisplayWidget the widget to display
-	 */
-	inline void bind_display_widget(CameraDisplayWidget* widget) {
-		this->widget = widget;
-	}
-	/**
-	 * @brief set_capture_delay_time set the delay time of capturings
-	 * @param gap_time how long then?
-	 */
-	inline void set_capture_delay_time(const int gap_time) {
-		this->msleep_time = gap_time;
-	}
-	/**
-	 * @brief isActivate marks the camera's activation
-	 * @return true if the camera is activated
-	 */
-	bool isActivate() const;
+    /**
+     * @brief Q_DISABLE_COPY disables copy constructor and assignment operator.
+     */
+    Q_DISABLE_COPY(CameraCapture);
 
-	/**
-	 * @brief start start the camera capture sessions
-	 * @return true if the camera is started successfully
-	 */
-	bool start();
-	/**
-	 * @brief close close the camera capture sessions
-	 * @return true if the camera is closed successfully
-	 */
-	bool close();
+    /**
+     * @brief Constructor with camera index.
+     * @param index Valid index of the camera.
+     * @param parent Optional QObject parent.
+     */
+    explicit CameraCapture(const int index, QObject* parent = nullptr);
+
+    /**
+     * @brief Destructor.
+     */
+    ~CameraCapture();
+
+    /**
+     * @brief Bind a display widget for camera output.
+     * @param widget Pointer to CameraDisplayWidget.
+     */
+    inline void bind_display_widget(CameraDisplayWidget* widget) {
+        this->widget = widget;
+    }
+
+    /**
+     * @brief Set capture delay time in milliseconds.
+     * @param gap_time Delay time in ms.
+     */
+    inline void set_capture_delay_time(const int gap_time) {
+        this->msleep_time = gap_time;
+    }
+
+    /**
+     * @brief Check if the camera is active.
+     * @return True if active.
+     */
+    bool isActivate() const;
+
+    /**
+     * @brief Start the camera capture session.
+     * @return True if started successfully.
+     */
+    bool start();
+
+    /**
+     * @brief Close the camera capture session.
+     * @return True if closed successfully.
+     */
+    bool close();
 
 signals:
-	/**
-	 * @brief cameraOpened the signal indicating the camera is opened
-	 * @param index the index of the camera
-	 */
-	void cameraOpened(int index);
-	/**
-	 * @brief cameraClosed the signal indicating the camera is closed
-	 * @param index the index of the camera
-	 */
-	void cameraClosed(int index);
+    /**
+     * @brief Signal emitted when camera is opened.
+     * @param index Camera index.
+     */
+    void cameraOpened(int index);
 
-	/**
-	 * @brief cameraError the signal indicating the error
-	 * @param e the error type
-	 */
-	void errorOccur(CameraCapture::Error e);
+    /**
+     * @brief Signal emitted when camera is closed.
+     * @param index Camera index.
+     */
+    void cameraClosed(int index);
+
+    /**
+     * @brief Signal emitted when an error occurs.
+     * @param e Error type.
+     */
+    void errorOccur(CameraCapture::Error e);
 
 private:
-	/* internal_handle */
-	cv::VideoCapture* videoCaptureHandle { nullptr }; ///< the camera handle
-	int current_index { -1 }; ///< the current index of the camera
+    cv::VideoCapture* videoCaptureHandle { nullptr }; ///< The camera handle
+    int current_index { -1 }; ///< The current camera index
 
-	/* display issue */
-	CameraDisplayWidget* widget { nullptr }; ///< the display widget
+    CameraDisplayWidget* widget { nullptr }; ///< The display widget
 
-	/* para issues */
-	QMutex* capMutex; ///< mutex for the capture, for the async safe
-	std::atomic_bool internal_running_state_holder { false }; ///< the running state holder
-	int msleep_time { 10 };
-	/**
-	 * @brief capture_internal is the core sessions
-	 */
-	void capture_internal();
+    QMutex* capMutex; ///< Mutex for capture thread safety
+    std::atomic_bool internal_running_state_holder { false }; ///< Running state flag
+    int msleep_time { 10 }; ///< Capture delay time in milliseconds
+
+    /**
+     * @brief Internal capture processing function.
+     */
+    void capture_internal();
 };
 
 #endif // CAMERACAPTURE_H

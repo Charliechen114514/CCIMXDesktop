@@ -5,8 +5,8 @@ class QWidget;
 class AppCardWidget;
 class DesktopMainWindow;
 class AppWidget;
-/*
- * Page Factory produce pages for helping setup the pages :)
+/**
+ * @brief Page Factory produce pages for helping setup the pages :)
  */
 class PageFactory {
 public:

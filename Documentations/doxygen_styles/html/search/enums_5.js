@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['role_0',['Role',['../class_side_bar_widget.html#abc77590c7f86b906b48ac7fcfadd46b1',1,'SideBarWidget']]]
+  ['networkstate_0',['NetWorkState',['../class_net_card_gadget.html#a0f7e947e72994b97591bb3bc9bb35268',1,'NetCardGadget']]]
 ];

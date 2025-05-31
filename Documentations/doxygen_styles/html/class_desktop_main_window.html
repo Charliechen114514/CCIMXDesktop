@@ -104,6 +104,7 @@ $(function(){initNavTree('class_desktop_main_window.html',''); initResizable(tru
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-slots">Public Slots</a> &#124;
 <a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
@@ -113,7 +114,7 @@ $(function(){initNavTree('class_desktop_main_window.html',''); initResizable(tru
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="class_desktop_main_window.html" title="DesktopMainWindow Makes the total front end of everything, for beginners, you can start at here to se...">DesktopMainWindow</a> Makes the total front end of everything, for beginners, you can start at here to see the details.  
+<p><a class="el" href="class_desktop_main_window.html" title="DesktopMainWindow is the main frontend window of the application. For beginners, this is the starting...">DesktopMainWindow</a> is the main frontend window of the application. For beginners, this is the starting point to understand the UI details.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="desktopmainwindow_8h_source.html">desktopmainwindow.h</a>&gt;</code></p>
@@ -127,65 +128,73 @@ Inheritance diagram for DesktopMainWindow:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_desktop_main_window_1_1_wall_paper_group.html">WallPaperGroup</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_desktop_main_window_1_1_wall_paper_group.html" title="WallPaperGroup manages wallpaper-related widgets and timers.">WallPaperGroup</a> manages wallpaper-related widgets and timers.  <a href="struct_desktop_main_window_1_1_wall_paper_group.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-slots" name="pub-slots"></a>
+Public Slots</h2></td></tr>
+<tr class="memitem:ad72a53e56f786aa89acd04b1544d709c" id="r_ad72a53e56f786aa89acd04b1544d709c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad72a53e56f786aa89acd04b1544d709c">handle_app_status</a> (<a class="el" href="class_app_widget.html#a2b48543a3ce72b7c991b744da6f540df">AppWidget::AppStatus</a> status)</td></tr>
+<tr class="memdesc:ad72a53e56f786aa89acd04b1544d709c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle status changes of applications (like errors)  <br /></td></tr>
+<tr class="separator:ad72a53e56f786aa89acd04b1544d709c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
 Signals</h2></td></tr>
 <tr class="memitem:a60543a4367ec2d3ae50a5dd2d8743ea7" id="r_a60543a4367ec2d3ae50a5dd2d8743ea7"><td class="memItemLeft" align="right" valign="top"><a id="a60543a4367ec2d3ae50a5dd2d8743ea7" name="a60543a4367ec2d3ae50a5dd2d8743ea7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>deptach_app_cards_init</b> ()</td></tr>
-<tr class="memdesc:a60543a4367ec2d3ae50a5dd2d8743ea7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signals, that when everytime the app cards requires init, the signals is triggered. <br /></td></tr>
+<tr class="memdesc:a60543a4367ec2d3ae50a5dd2d8743ea7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal emitted when app cards require initialization. <br /></td></tr>
 <tr class="separator:a60543a4367ec2d3ae50a5dd2d8743ea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aaac5851bae7399538f8ba037117bfdbf" id="r_aaac5851bae7399538f8ba037117bfdbf"><td class="memItemLeft" align="right" valign="top"><a id="aaac5851bae7399538f8ba037117bfdbf" name="aaac5851bae7399538f8ba037117bfdbf"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DesktopMainWindow</b> (QWidget *parent=nullptr)</td></tr>
+<tr class="memitem:aaac5851bae7399538f8ba037117bfdbf" id="r_aaac5851bae7399538f8ba037117bfdbf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaac5851bae7399538f8ba037117bfdbf">DesktopMainWindow</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:aaac5851bae7399538f8ba037117bfdbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Desktop Main Window object.  <br /></td></tr>
 <tr class="separator:aaac5851bae7399538f8ba037117bfdbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43d7057668fed07e15bf4adee85b0da8" id="r_a43d7057668fed07e15bf4adee85b0da8"><td class="memItemLeft" align="right" valign="top"><a id="a43d7057668fed07e15bf4adee85b0da8" name="a43d7057668fed07e15bf4adee85b0da8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~DesktopMainWindow</b> ()</td></tr>
+<tr class="memdesc:a43d7057668fed07e15bf4adee85b0da8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the Desktop Main Window object. <br /></td></tr>
+<tr class="separator:a43d7057668fed07e15bf4adee85b0da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b8b69ca43a0adb247853ff9c6424c43" id="r_a5b8b69ca43a0adb247853ff9c6424c43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b8b69ca43a0adb247853ff9c6424c43">showToast</a> (const QString &amp;message)</td></tr>
-<tr class="memdesc:a5b8b69ca43a0adb247853ff9c6424c43"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is using in showing some toasts in the mainwindow.  <br /></td></tr>
+<tr class="memdesc:a5b8b69ca43a0adb247853ff9c6424c43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show a toast message on the main window.  <br /></td></tr>
 <tr class="separator:a5b8b69ca43a0adb247853ff9c6424c43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad96e7341abb14b361bf76d3baff81071" id="r_ad96e7341abb14b361bf76d3baff81071"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_desktop_toast.html">DesktopToast</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad96e7341abb14b361bf76d3baff81071">desktop_toast</a> () const</td></tr>
-<tr class="memdesc:ad96e7341abb14b361bf76d3baff81071"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the <a class="el" href="class_desktop_toast.html" title="The DesktopToast class is the toast handle classes using less lock messages queue to display the mess...">DesktopToast</a> Handle  <br /></td></tr>
+<tr class="memdesc:ad96e7341abb14b361bf76d3baff81071"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get pointer to <a class="el" href="class_desktop_toast.html" title="The DesktopToast class is the toast handle classes using less lock messages queue to display the mess...">DesktopToast</a> handler.  <br /></td></tr>
 <tr class="separator:ad96e7341abb14b361bf76d3baff81071"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c9d1ee127d737faa6b73e162a4c28b3" id="r_a3c9d1ee127d737faa6b73e162a4c28b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_down_dock_widget.html">DownDockWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c9d1ee127d737faa6b73e162a4c28b3">downDockWidget</a> () const</td></tr>
-<tr class="memdesc:a3c9d1ee127d737faa6b73e162a4c28b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">downDockWidget returns the global instance of the downDockWidget  <br /></td></tr>
+<tr class="memdesc:a3c9d1ee127d737faa6b73e162a4c28b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the global <a class="el" href="class_down_dock_widget.html" title="The DownDockWidget class holdings the down dock sessions it supports the dynamic sorted according fre...">DownDockWidget</a> instance.  <br /></td></tr>
 <tr class="separator:a3c9d1ee127d737faa6b73e162a4c28b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa904c77c3b7b1f00c55602a47dc7e036" id="r_aa904c77c3b7b1f00c55602a47dc7e036"><td class="memItemLeft" align="right" valign="top"><a id="aa904c77c3b7b1f00c55602a47dc7e036" name="aa904c77c3b7b1f00c55602a47dc7e036"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>to_next_page</b> ()</td></tr>
-<tr class="memdesc:aa904c77c3b7b1f00c55602a47dc7e036"><td class="mdescLeft">&#160;</td><td class="mdescRight">to_next_page makes the slide to next page <br /></td></tr>
+<tr class="memdesc:aa904c77c3b7b1f00c55602a47dc7e036"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slide to the next page in UI. <br /></td></tr>
 <tr class="separator:aa904c77c3b7b1f00c55602a47dc7e036"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a813e78d2d7102d2f5b3d9096f0118dcc" id="r_a813e78d2d7102d2f5b3d9096f0118dcc"><td class="memItemLeft" align="right" valign="top"><a id="a813e78d2d7102d2f5b3d9096f0118dcc" name="a813e78d2d7102d2f5b3d9096f0118dcc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>to_prev_page</b> ()</td></tr>
-<tr class="memdesc:a813e78d2d7102d2f5b3d9096f0118dcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">to_prev_page makes the slide to previous page <br /></td></tr>
+<tr class="memdesc:a813e78d2d7102d2f5b3d9096f0118dcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slide to the previous page in UI. <br /></td></tr>
 <tr class="separator:a813e78d2d7102d2f5b3d9096f0118dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a010608971bb06a048f8af50e68ac460f" id="r_a010608971bb06a048f8af50e68ac460f"><td class="memItemLeft" align="right" valign="top"><a id="a010608971bb06a048f8af50e68ac460f" name="a010608971bb06a048f8af50e68ac460f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>invoke_switch_bgpage</b> ()</td></tr>
-<tr class="memdesc:a010608971bb06a048f8af50e68ac460f"><td class="mdescLeft">&#160;</td><td class="mdescRight">invoke this can depatch a session of page switching <br /></td></tr>
+<tr class="memdesc:a010608971bb06a048f8af50e68ac460f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger wallpaper page switch session. <br /></td></tr>
 <tr class="separator:a010608971bb06a048f8af50e68ac460f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39fb277355a84381bf009a605bd9bc7e" id="r_a39fb277355a84381bf009a605bd9bc7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a39fb277355a84381bf009a605bd9bc7e">install_remote_appwrapper</a> (<a class="el" href="class_application_wrapper.html">ApplicationWrapper</a> *wrapper)</td></tr>
-<tr class="memdesc:a39fb277355a84381bf009a605bd9bc7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">install_remote_appwrapper installs a remote app wrapper  <br /></td></tr>
+<tr class="memdesc:a39fb277355a84381bf009a605bd9bc7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Install a remote application wrapper.  <br /></td></tr>
 <tr class="separator:a39fb277355a84381bf009a605bd9bc7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad72a53e56f786aa89acd04b1544d709c" id="r_ad72a53e56f786aa89acd04b1544d709c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad72a53e56f786aa89acd04b1544d709c">handle_app_status</a> (AppWidget::AppStatus status)</td></tr>
-<tr class="memdesc:ad72a53e56f786aa89acd04b1544d709c"><td class="mdescLeft">&#160;</td><td class="mdescRight">handle_app_status is the handler for app status, it will be called when the app status is changed, like the app depatching errors  <br /></td></tr>
-<tr class="separator:ad72a53e56f786aa89acd04b1544d709c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f361d9bfc1b0745c02a8d8c4ec59beb" id="r_a8f361d9bfc1b0745c02a8d8c4ec59beb"><td class="memItemLeft" align="right" valign="top">QStackedWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f361d9bfc1b0745c02a8d8c4ec59beb">stackedWidget</a> () const</td></tr>
-<tr class="memdesc:a8f361d9bfc1b0745c02a8d8c4ec59beb"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the stackedWidget the slider using  <br /></td></tr>
+<tr class="memdesc:a8f361d9bfc1b0745c02a8d8c4ec59beb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the QStackedWidget used for page sliding.  <br /></td></tr>
 <tr class="separator:a8f361d9bfc1b0745c02a8d8c4ec59beb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f4e883111f10e3fede7ae9818d36a4b" id="r_a3f4e883111f10e3fede7ae9818d36a4b"><td class="memItemLeft" align="right" valign="top"><a id="a3f4e883111f10e3fede7ae9818d36a4b" name="a3f4e883111f10e3fede7ae9818d36a4b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>post_show</b> ()</td></tr>
-<tr class="memdesc:a3f4e883111f10e3fede7ae9818d36a4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">post_show makes the later init of the mainWindow <br /></td></tr>
+<tr class="memdesc:a3f4e883111f10e3fede7ae9818d36a4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform initialization after main window is shown. <br /></td></tr>
 <tr class="separator:a3f4e883111f10e3fede7ae9818d36a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:aea9d86ecbe7b54e38e8c871722054274" id="r_aea9d86ecbe7b54e38e8c871722054274"><td class="memItemLeft" align="right" valign="top"><a id="aea9d86ecbe7b54e38e8c871722054274" name="aea9d86ecbe7b54e38e8c871722054274"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>mousePressEvent</b> (QMouseEvent *event) override</td></tr>
+<tr class="memitem:aea9d86ecbe7b54e38e8c871722054274" id="r_aea9d86ecbe7b54e38e8c871722054274"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea9d86ecbe7b54e38e8c871722054274">mousePressEvent</a> (QMouseEvent *event) override</td></tr>
+<tr class="memdesc:aea9d86ecbe7b54e38e8c871722054274"><td class="mdescLeft">&#160;</td><td class="mdescRight">mouse press sessions  <br /></td></tr>
 <tr class="separator:aea9d86ecbe7b54e38e8c871722054274"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a1c72982f01def8eb97ed697849a1b6" id="r_a4a1c72982f01def8eb97ed697849a1b6"><td class="memItemLeft" align="right" valign="top"><a id="a4a1c72982f01def8eb97ed697849a1b6" name="a4a1c72982f01def8eb97ed697849a1b6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseReleaseEvent</b> (QMouseEvent *event) override</td></tr>
+<tr class="memitem:a4a1c72982f01def8eb97ed697849a1b6" id="r_a4a1c72982f01def8eb97ed697849a1b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a1c72982f01def8eb97ed697849a1b6">mouseReleaseEvent</a> (QMouseEvent *event) override</td></tr>
+<tr class="memdesc:a4a1c72982f01def8eb97ed697849a1b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">mouse release sessions  <br /></td></tr>
 <tr class="separator:a4a1c72982f01def8eb97ed697849a1b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4794a1ff19ffeae8b3b971128898448" id="r_ab4794a1ff19ffeae8b3b971128898448"><td class="memItemLeft" align="right" valign="top"><a id="ab4794a1ff19ffeae8b3b971128898448" name="ab4794a1ff19ffeae8b3b971128898448"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>resizeEvent</b> (QResizeEvent *event) override</td></tr>
+<tr class="memitem:ab4794a1ff19ffeae8b3b971128898448" id="r_ab4794a1ff19ffeae8b3b971128898448"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4794a1ff19ffeae8b3b971128898448">resizeEvent</a> (QResizeEvent *event) override</td></tr>
+<tr class="memdesc:ab4794a1ff19ffeae8b3b971128898448"><td class="mdescLeft">&#160;</td><td class="mdescRight">resize sessions  <br /></td></tr>
 <tr class="separator:ab4794a1ff19ffeae8b3b971128898448"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
@@ -195,8 +204,42 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>PageFactory</b></td>
 <tr class="separator:a2b2e62a9d61d5dc451ecb2c3701de63b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="class_desktop_main_window.html" title="DesktopMainWindow Makes the total front end of everything, for beginners, you can start at here to se...">DesktopMainWindow</a> Makes the total front end of everything, for beginners, you can start at here to see the details. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<div class="textblock"><p><a class="el" href="class_desktop_main_window.html" title="DesktopMainWindow is the main frontend window of the application. For beginners, this is the starting...">DesktopMainWindow</a> is the main frontend window of the application. For beginners, this is the starting point to understand the UI details. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aaac5851bae7399538f8ba037117bfdbf" name="aaac5851bae7399538f8ba037117bfdbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaac5851bae7399538f8ba037117bfdbf">&#9670;&#160;</a></span>DesktopMainWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DesktopMainWindow::DesktopMainWindow </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *</td>          <td class="paramname"><span class="paramname"><em>parent</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel explicit">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a new Desktop Main Window object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="ad96e7341abb14b361bf76d3baff81071" name="ad96e7341abb14b361bf76d3baff81071"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad96e7341abb14b361bf76d3baff81071">&#9670;&#160;</a></span>desktop_toast()</h2>
 
@@ -220,8 +263,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>PageFactory</b></td>
 </table>
 </div><div class="memdoc">
 
-<p>returns the <a class="el" href="class_desktop_toast.html" title="The DesktopToast class is the toast handle classes using less lock messages queue to display the mess...">DesktopToast</a> Handle </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_desktop_toast.html" title="The DesktopToast class is the toast handle classes using less lock messages queue to display the mess...">DesktopToast</a> </dd></dl>
+<p>Get pointer to <a class="el" href="class_desktop_toast.html" title="The DesktopToast class is the toast handle classes using less lock messages queue to display the mess...">DesktopToast</a> handler. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_desktop_toast.html" title="The DesktopToast class is the toast handle classes using less lock messages queue to display the mess...">DesktopToast</a> instance </dd></dl>
 
 </div>
 </div>
@@ -240,30 +283,38 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>PageFactory</b></td>
       </table>
 </div><div class="memdoc">
 
-<p>downDockWidget returns the global instance of the downDockWidget </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_down_dock_widget.html">DownDockWidget</a> </dd></dl>
+<p>Get the global <a class="el" href="class_down_dock_widget.html" title="The DownDockWidget class holdings the down dock sessions it supports the dynamic sorted according fre...">DownDockWidget</a> instance. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_down_dock_widget.html" title="The DownDockWidget class holdings the down dock sessions it supports the dynamic sorted according fre...">DownDockWidget</a> instance </dd></dl>
 
 </div>
 </div>
 <a id="ad72a53e56f786aa89acd04b1544d709c" name="ad72a53e56f786aa89acd04b1544d709c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad72a53e56f786aa89acd04b1544d709c">&#9670;&#160;</a></span>handle_app_status()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad72a53e56f786aa89acd04b1544d709c">&#9670;&#160;</a></span>handle_app_status</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void DesktopMainWindow::handle_app_status </td>
           <td>(</td>
-          <td class="paramtype">AppWidget::AppStatus</td>          <td class="paramname"><span class="paramname"><em>status</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_app_widget.html#a2b48543a3ce72b7c991b744da6f540df">AppWidget::AppStatus</a></td>          <td class="paramname"><span class="paramname"><em>status</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>handle_app_status is the handler for app status, it will be called when the app status is changed, like the app depatching errors </p>
+<p>Handle status changes of applications (like errors) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">status</td><td>the status waiting for the depatching </td></tr>
+    <tr><td class="paramname">status</td><td>Current app status </td></tr>
   </table>
   </dd>
 </dl>
@@ -293,10 +344,109 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>PageFactory</b></td>
 </table>
 </div><div class="memdoc">
 
-<p>install_remote_appwrapper installs a remote app wrapper </p>
+<p>Install a remote application wrapper. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">wrapper</td><td>the wrapper to be installed </td></tr>
+    <tr><td class="paramname">wrapper</td><td>Pointer to <a class="el" href="class_application_wrapper.html" title="The ApplicationWrapper class is the process wrapper.">ApplicationWrapper</a> to install </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aea9d86ecbe7b54e38e8c871722054274" name="aea9d86ecbe7b54e38e8c871722054274"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea9d86ecbe7b54e38e8c871722054274">&#9670;&#160;</a></span>mousePressEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DesktopMainWindow::mousePressEvent </td>
+          <td>(</td>
+          <td class="paramtype">QMouseEvent *</td>          <td class="paramname"><span class="paramname"><em>event</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>mouse press sessions </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4a1c72982f01def8eb97ed697849a1b6" name="a4a1c72982f01def8eb97ed697849a1b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a1c72982f01def8eb97ed697849a1b6">&#9670;&#160;</a></span>mouseReleaseEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DesktopMainWindow::mouseReleaseEvent </td>
+          <td>(</td>
+          <td class="paramtype">QMouseEvent *</td>          <td class="paramname"><span class="paramname"><em>event</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>mouse release sessions </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab4794a1ff19ffeae8b3b971128898448" name="ab4794a1ff19ffeae8b3b971128898448"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4794a1ff19ffeae8b3b971128898448">&#9670;&#160;</a></span>resizeEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DesktopMainWindow::resizeEvent </td>
+          <td>(</td>
+          <td class="paramtype">QResizeEvent *</td>          <td class="paramname"><span class="paramname"><em>event</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>resize sessions </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -318,10 +468,10 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>PageFactory</b></td>
       </table>
 </div><div class="memdoc">
 
-<p>This is using in showing some toasts in the mainwindow. </p>
+<p>Show a toast message on the main window. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">message</td><td>for posting </td></tr>
+    <tr><td class="paramname">message</td><td>Message to display </td></tr>
   </table>
   </dd>
 </dl>
@@ -343,8 +493,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>PageFactory</b></td>
       </table>
 </div><div class="memdoc">
 
-<p>returns the stackedWidget the slider using </p>
-<dl class="section return"><dt>Returns</dt><dd>QStackedWidget </dd></dl>
+<p>Get the QStackedWidget used for page sliding. </p>
+<dl class="section return"><dt>Returns</dt><dd>QStackedWidget pointer </dd></dl>
 
 </div>
 </div>

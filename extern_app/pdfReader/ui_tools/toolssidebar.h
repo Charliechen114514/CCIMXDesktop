@@ -12,6 +12,11 @@ class ToolsSideBar : public QWidget {
 	Q_OBJECT
 
 public:
+	/**
+	 * @brief Construct a new Tools Side Bar object
+	 * 
+	 * @param parent 
+	 */
 	explicit ToolsSideBar(QWidget* parent = nullptr);
 	/**
 	 * @brief set_document_chapterize this is using for document settings

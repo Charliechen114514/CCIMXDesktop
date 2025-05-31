@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['zoom_0',['zoom',['../struct_c_c_pdf_image_request.html#a08c0791b91ea220293517dcee6295294',1,'CCPdfImageRequest']]]
+  ['x_0',['x',['../struct_i_c_m20608_data.html#a47ae549fc6ace14228bac81c10695f82',1,'ICM20608Data::x'],['../struct_i_c_m20608_app_data.html#a05214769c197a97b008cdb5a464c35a6',1,'ICM20608AppData::x']]]
 ];

@@ -14,5 +14,7 @@
         <file>sources/ledcontrol_app.png</file>
         <file>sources/sports_health_app.png</file>
         <file>sources/desktop_about.png</file>
+        <file>sources/simple_drawer.png</file>
+        <file>sources/notepad.png</file>
     </qresource>
 </RCC>

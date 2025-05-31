@@ -163,5 +163,18 @@ QList<AppWidget*> PageSetuper::create_builtin_apps(DesktopMainWindow* mainWindow
 		"DesktopAbout",
 		mainWindow));
 
+	/* simple drawer */
+	req.push_back(make_up_request(
+		_EXTERNAPP_INSTALL_DIR "/SimpleDrawer",
+		":/icons/sources/simple_drawer.png",
+		"SimpleDrawer",
+		mainWindow));
+
+	req.push_back(make_up_request(
+		_EXTERNAPP_INSTALL_DIR "/CCIMXNoter",
+		":/icons/sources/notepad.png",
+		"CCIMXNoter",
+		mainWindow));
+
 	return PageSetuper::create_one_app_only_page_append(mainWindow, req);
 }

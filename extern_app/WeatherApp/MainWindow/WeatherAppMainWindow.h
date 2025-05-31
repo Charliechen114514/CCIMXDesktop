@@ -22,8 +22,17 @@ class WeatherAppMainWindow : public QMainWindow {
 	static constexpr const char* def_indicate_label_text = "Current Searching City: ";
 
 public:
-	static constexpr const char* WEB_URL = _DEF_WEATHER_URL;
+	static constexpr const char* WEB_URL = _DEF_WEATHER_URL; ///< request base url
+	/**
+	 * @brief Construct a new Weather App Main Window object
+	 * 
+	 * @param parent 
+	 */
 	WeatherAppMainWindow(QWidget* parent = nullptr);
+	/**
+	 * @brief Destroy the Weather App Main Window object
+	 * 
+	 */
 	~WeatherAppMainWindow();
 
 	/**

@@ -9,6 +9,10 @@
  */
 struct PesudoLocalFetcher : public LocalWeatherLightFetcher {
 public:
+	/**
+	 * @brief disable copy
+	 * 
+	 */
 	Q_DISABLE_COPY(PesudoLocalFetcher);
 	PesudoLocalFetcher() = default;
 	/**
@@ -31,7 +35,15 @@ public:
 
 struct LocalFetcher : public LocalWeatherLightFetcher {
 public:
+	/**
+	 * @brief disable copy
+	 * 
+	 */
 	Q_DISABLE_COPY(LocalFetcher);
+	/**
+	 * @brief Construct a new Local Fetcher object
+	 * 
+	 */
 	LocalFetcher() = default;
 
 	float fetch_local_tempature() override {

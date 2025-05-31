@@ -28,7 +28,10 @@ public:
 	 * @param parent The parent widget.
 	 */
 	explicit CCPdfViewer(QWidget* parent = nullptr);
-
+	/**
+	 * @brief disable copy object
+	 * 
+	 */
 	Q_DISABLE_COPY(CCPdfViewer);
 
 	/**

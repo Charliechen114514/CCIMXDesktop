@@ -1,83 +1,94 @@
 #ifndef APPWEATHERREQUEST_H
 #define APPWEATHERREQUEST_H
+
 #include "MyWeatherRequest.h"
 
 /**
- * @brief The AppWeatherResult class
- * The AppWeatherResult class provides the weather result
- * and implements the WeatherResult function
+ * @brief The AppWeatherResult class provides the weather result and implements the WeatherResult functionality.
  */
 class AppWeatherResult : public WeatherResult {
 public:
-	explicit AppWeatherResult(QObject* parent = nullptr)
-		: WeatherResult(parent) { }
+    /**
+     * @brief Constructor for AppWeatherResult.
+     * @param parent The parent QObject.
+     */
+    explicit AppWeatherResult(QObject* parent = nullptr)
+        : WeatherResult(parent) { }
 
-	/**
-	 * @brief parseJsonString parse the json from remote webs
-	 * @param json the json string
-	 */
-	void parseJsonString(const QString json) override;
+    /**
+     * @brief Parses the JSON string from remote servers.
+     * @param json The JSON string to parse.
+     */
+    void parseJsonString(const QString json) override;
 
-	/**
-	 * @brief debugPrint print the json object
-	 */
-	void debugPrint() const;
+    /**
+     * @brief Prints the parsed JSON object for debugging.
+     */
+    void debugPrint() const;
 
-	/**
-	 * @brief The DailyWeather class
-	 *	The DailyWeather class provides the daily weather
-	 * json strings is expected to serialize into this struct
-	 */
-	struct DailyWeather {
-		QString date; ///< date
-		QString textDay; ///< day text
-		QString textNight; ///< night text
-		QString high; ///< high temperature
-		QString low; ///< low temperature
-		QString windDirection; ///< wind direction
-		QString windScale; ///< wind scale
-		QString humidity; ///< humidity
-	};
-	QString cached_city; ///< city required
-	QList<DailyWeather> daily_weather; ///< daily weather
+    /**
+     * @brief The DailyWeather struct provides the daily weather details.
+     * The JSON strings are expected to serialize into this struct.
+     */
+    struct DailyWeather {
+        QString date; ///< The date.
+        QString textDay; ///< Daytime weather description.
+        QString textNight; ///< Nighttime weather description.
+        QString high; ///< High temperature.
+        QString low; ///< Low temperature.
+        QString windDirection; ///< Wind direction.
+        QString windScale; ///< Wind scale.
+        QString humidity; ///< Humidity percentage.
+    };
+
+    QString cached_city; ///< The city for which weather data is requested.
+    QList<DailyWeather> daily_weather; ///< The list of daily weather data.
 };
 
 /**
- * @brief The AppWeatherDetailedRequest class
- * The AppWeatherDetailedRequest class provides the detailed request
- * for the weather, for example, the start day and the number of days
- * we shell request
+ * @brief The AppWeatherDetailedRequest struct provides the detailed request information
+ * for the weather, such as the start day and the number of days to request.
  */
 struct AppWeatherDetailedRequest {
-	unsigned short start;
-	unsigned short days;
-	QString city;
+    unsigned short start; ///< The start day offset.
+    unsigned short days; ///< The number of days to request.
+    QString city; ///< The city name.
 };
 
 /**
- * @brief The AppWeatherRequest class
- * The AppWeatherRequest class provides the weather request
- * and implements the WeatherRequest function
+ * @brief The AppWeatherRequest class provides the weather request and implements the WeatherRequest functionality.
  */
 class AppWeatherRequest : public WeatherRequest {
 public:
-	Q_DISABLE_COPY(AppWeatherRequest);
-	AppWeatherRequest(QObject* parent = nullptr)
-		: WeatherRequest(parent) { };
+    /**
+     * @brief Disables copy constructor and copy assignment.
+     * This prevents copying of the AppWeatherRequest object.
+     */
+    Q_DISABLE_COPY(AppWeatherRequest);
 
-	/**
-	 * @brief bindAppDetailedRequest
-	 * @param request request we shell make
-	 */
-	inline void bindAppDetailedRequest(
-		const AppWeatherDetailedRequest& request) {
-		this->request = request;
-	}
-	/* add our query issue here */
-	QUrlQuery compose_request() override;
+    /**
+     * @brief Constructor for AppWeatherRequest.
+     * @param parent The parent QObject.
+     */
+    AppWeatherRequest(QObject* parent = nullptr)
+        : WeatherRequest(parent) { }
+
+    /**
+     * @brief Binds a detailed request.
+     * @param request The AppWeatherDetailedRequest structure to bind.
+     */
+    inline void bindAppDetailedRequest(const AppWeatherDetailedRequest& request) {
+        this->request = request;
+    }
+
+    /**
+     * @brief Composes the URL query for the weather request.
+     * @return The composed QUrlQuery.
+     */
+    QUrlQuery compose_request() override;
 
 private:
-	AppWeatherDetailedRequest request;
+    AppWeatherDetailedRequest request; ///< The detailed weather request information.
 };
 
 #endif // APPWEATHERREQUEST_H

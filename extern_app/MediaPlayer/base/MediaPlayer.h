@@ -89,8 +89,16 @@ public:
 		QString video_discriptions {}; ///< video discriptions
 		QString audio_discriptions {}; ///< audio discriptions
 	};
-
+	/**
+	 * @brief Construct a new Media Player object
+	 * 
+	 * @param parent 
+	 */
 	explicit MediaPlayer(QObject* parent = nullptr);
+	/**
+	 * @brief disable copy
+	 * 
+	 */
 	Q_DISABLE_COPY(MediaPlayer);
 
 	/**

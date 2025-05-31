@@ -9,12 +9,14 @@ Inheritance diagram for File\+Type\+Info\+:\begin{figure}[H]
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_file_type_info_a8e68a882c88ca80ec8a1914d8a4d00d4}\label{class_file_type_info_a8e68a882c88ca80ec8a1914d8a4d00d4} 
-{\bfseries File\+Type\+Info} (\mbox{\hyperlink{class_c_c_i_m_x_file_system_model}{CCIMXFile\+System\+Model}} \texorpdfstring{$\ast$}{*}model)
-\item 
+\mbox{\hyperlink{class_file_type_info_a8e68a882c88ca80ec8a1914d8a4d00d4}{File\+Type\+Info}} (\mbox{\hyperlink{class_c_c_i_m_x_file_system_model}{CCIMXFile\+System\+Model}} \texorpdfstring{$\ast$}{*}model)
+\begin{DoxyCompactList}\small\item\em Construct a new File Type Info object. \end{DoxyCompactList}\item 
+\Hypertarget{class_file_type_info_ad42632aac0e64591594516ab73839818}\label{class_file_type_info_ad42632aac0e64591594516ab73839818} 
+{\bfseries File\+Type\+Info} ()=delete
+\begin{DoxyCompactList}\small\item\em Construct a new File delete defaulty. \end{DoxyCompactList}\item 
 \Hypertarget{class_file_type_info_a4e9fc19f18cb83aad9c5abcce6ea174c}\label{class_file_type_info_a4e9fc19f18cb83aad9c5abcce6ea174c} 
 {\bfseries Q\+\_\+\+DISABLE\+\_\+\+COPY} (\mbox{\hyperlink{class_file_type_info}{File\+Type\+Info}})
-\item 
+\begin{DoxyCompactList}\small\item\em disable copy object \end{DoxyCompactList}\item 
 QString \mbox{\hyperlink{class_file_type_info_adf07e8c01790f280a0eb81f65c6662c4}{provide\+\_\+section\+\_\+name}} () override
 \begin{DoxyCompactList}\small\item\em provide\+\_\+section\+\_\+name means everything in the name lol \end{DoxyCompactList}\item 
 std\+::pair$<$ bool, QVariant $>$ \mbox{\hyperlink{class_file_type_info_ad8770304cf3926d405cc7b2ec0251054}{data}} (const QModel\+Index \&index, int role) override
@@ -25,9 +27,13 @@ QString \mbox{\hyperlink{class_file_type_info_af197f1bb0e9b8714f283133aad50eef6}
 \begin{DoxyCompactItemize}
 \item 
 {\bfseries Q\+\_\+\+DISABLE\+\_\+\+COPY} (\mbox{\hyperlink{class_file_info_provider}{File\+Info\+Provider}})
-\item 
-{\bfseries File\+Info\+Provider} (\mbox{\hyperlink{class_c_c_i_m_x_file_system_model}{CCIMXFile\+System\+Model}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_file_info_provider_ae898e8c9bb3dc76decd869a018f9c0d9}{models}})
-\item 
+\begin{DoxyCompactList}\small\item\em disable copy object \end{DoxyCompactList}\item 
+{\bfseries File\+Info\+Provider} ()=delete
+\begin{DoxyCompactList}\small\item\em Construct a new File Info Provider object default is prohibited, disable this for the default constructor, prevent the non-\/model register. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_file_info_provider_acaff96e7f9eacb7bc0b3023fab1d685d}{File\+Info\+Provider}} (\mbox{\hyperlink{class_c_c_i_m_x_file_system_model}{CCIMXFile\+System\+Model}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_file_info_provider_ae898e8c9bb3dc76decd869a018f9c0d9}{models}})
+\begin{DoxyCompactList}\small\item\em Construct a new File Info Provider object, assigned models requires. \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+File\+Info\+Provider} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the File Info Provider object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_file_info_provider_aa13112f10f0b93ab09d2c12385b13374}{set\+Current\+Handle\+Path}} (const QString \&path)
 \begin{DoxyCompactList}\small\item\em set\+Current\+Handle\+Path set the current handle path \end{DoxyCompactList}\item 
 QString \mbox{\hyperlink{class_file_info_provider_a4940f9f1d9930553090eb473fe8900f6}{current\+Handle\+Path}} ()
@@ -38,6 +44,24 @@ QString \mbox{\hyperlink{class_file_info_provider_a4940f9f1d9930553090eb473fe890
 \item 
 \mbox{\hyperlink{class_c_c_i_m_x_file_system_model}{CCIMXFile\+System\+Model}} \texorpdfstring{$\ast$}{*} {\bfseries models}
 \begin{DoxyCompactList}\small\item\em binding models \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_file_type_info_a8e68a882c88ca80ec8a1914d8a4d00d4}\index{FileTypeInfo@{FileTypeInfo}!FileTypeInfo@{FileTypeInfo}}
+\index{FileTypeInfo@{FileTypeInfo}!FileTypeInfo@{FileTypeInfo}}
+\doxysubsubsection{\texorpdfstring{FileTypeInfo()}{FileTypeInfo()}}
+{\footnotesize\ttfamily \label{class_file_type_info_a8e68a882c88ca80ec8a1914d8a4d00d4} 
+File\+Type\+Info\+::\+File\+Type\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_c_i_m_x_file_system_model}{CCIMXFile\+System\+Model}} \texorpdfstring{$\ast$}{*}}]{model}{}\end{DoxyParamCaption})}
+
+
+
+Construct a new File Type Info object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & \\
+\hline
+\end{DoxyParams}
 
 
 \doxysubsection{Member Function Documentation}
@@ -95,8 +119,6 @@ register\+Type\+Info register the type info
 
 \begin{DoxyParams}{Parameters}
 {\em suffix} & the file suffix \\
-\hline
-{\em info} & the type info \\
 \hline
 \end{DoxyParams}
 

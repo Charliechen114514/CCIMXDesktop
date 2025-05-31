@@ -48,7 +48,7 @@ bool CameraCapture::start() {
 
 	if (!videoCaptureHandle->isOpened()) {
 		/* thus the camera is invalid */
-		emit errorOccur(Error::CAMERA_UNEXSITED);
+		emit errorOccur(Error::CAMERA_UNEXISTED);
 		return false;
 	}
 
@@ -63,7 +63,7 @@ bool CameraCapture::start() {
 bool CameraCapture::close() {
 	if (!videoCaptureHandle) /* camera is not existed yet */
 	{
-		emit errorOccur(Error::CAMERA_UNEXSITED);
+		emit errorOccur(Error::CAMERA_UNEXISTED);
 		return false;
 	}
 

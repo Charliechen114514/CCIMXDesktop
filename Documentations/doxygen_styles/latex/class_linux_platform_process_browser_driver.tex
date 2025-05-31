@@ -2,7 +2,7 @@
 \hypertarget{class_linux_platform_process_browser_driver}{}\label{class_linux_platform_process_browser_driver}\index{LinuxPlatformProcessBrowserDriver@{LinuxPlatformProcessBrowserDriver}}
 
 
-The \doxylink{class_linux_platform_process_browser_driver}{Linux\+Platform\+Process\+Browser\+Driver} class provides the process browser driver.  
+The \doxylink{class_linux_platform_process_browser_driver}{Linux\+Platform\+Process\+Browser\+Driver} class provides the process browser driver for Linux.  
 
 
 
@@ -20,13 +20,13 @@ Inheritance diagram for Linux\+Platform\+Process\+Browser\+Driver\+:\begin{figur
 \item 
 \Hypertarget{class_linux_platform_process_browser_driver_af4194a89bce5191112c6767d1454e53b}\label{class_linux_platform_process_browser_driver_af4194a89bce5191112c6767d1454e53b} 
 {\bfseries Q\+\_\+\+DISABLE\+\_\+\+COPY} (\mbox{\hyperlink{class_linux_platform_process_browser_driver}{Linux\+Platform\+Process\+Browser\+Driver}})
-\item 
+\begin{DoxyCompactList}\small\item\em disable copy \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_linux_platform_process_browser_driver_a442d421f5898a35570e4db27f000d5ab}{factory}} (QList$<$ \mbox{\hyperlink{struct_process_broswer_1_1_process_info}{Process\+Broswer\+::\+Process\+Info}} $>$ \&lists) override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Factory method to get process information list. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-The \doxylink{class_linux_platform_process_browser_driver}{Linux\+Platform\+Process\+Browser\+Driver} class provides the process browser driver. 
+The \doxylink{class_linux_platform_process_browser_driver}{Linux\+Platform\+Process\+Browser\+Driver} class provides the process browser driver for Linux. 
 
 \doxysubsection{Member Function Documentation}
 \Hypertarget{class_linux_platform_process_browser_driver_a442d421f5898a35570e4db27f000d5ab}\index{LinuxPlatformProcessBrowserDriver@{LinuxPlatformProcessBrowserDriver}!factory@{factory}}
@@ -37,7 +37,16 @@ void Linux\+Platform\+Process\+Browser\+Driver\+::factory (\begin{DoxyParamCapti
 
 
 
-Implements \mbox{\hyperlink{class_c_c_i_m_x___abstract_process_broswer_driver}{CCIMX\+\_\+\+Abstract\+Process\+Broswer\+Driver}}.
+Factory method to get process information list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lists} & Reference to QList of \doxylink{struct_process_broswer_1_1_process_info}{Process\+Broswer\+::\+Process\+Info} to store process info. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_c_c_i_m_x___abstract_process_broswer_driver_ad611b38698623bf846bf456d9fac0b3e}{CCIMX\+\_\+\+Abstract\+Process\+Broswer\+Driver}}.
 
 
 

@@ -2,7 +2,7 @@
 \hypertarget{class_app_widget}{}\label{class_app_widget}\index{AppWidget@{AppWidget}}
 
 
-The \doxylink{class_app_widget}{App\+Widget} class is the App\+Widgets placing in the desktop.  
+The \doxylink{class_app_widget}{App\+Widget} class represents an application widget placed on the desktop.  
 
 
 
@@ -18,58 +18,201 @@ Inheritance diagram for App\+Widget\+:\begin{figure}[H]
 \doxysubsubsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_app_widget_a2b48543a3ce72b7c991b744da6f540df}\label{class_app_widget_a2b48543a3ce72b7c991b744da6f540df} 
-enum class {\bfseries App\+Status} \{ {\bfseries App\+Ok}
-, {\bfseries App\+Non\+Exsits}
+enum class \mbox{\hyperlink{class_app_widget_a2b48543a3ce72b7c991b744da6f540df}{App\+Status}} \{ \mbox{\hyperlink{class_app_widget_a2b48543a3ce72b7c991b744da6f540dfad4f5004516bffc781166518260492142}{App\+Ok}}
+, \mbox{\hyperlink{class_app_widget_a2b48543a3ce72b7c991b744da6f540dfa1c65ac2f74da731d21043e757ed5b76d}{App\+Non\+Exsits}}
  \}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Enum representing the application status. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Signals}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_app_widget_a446a4098aa66694c54534df916c1ce70}\label{class_app_widget_a446a4098aa66694c54534df916c1ce70} 
-void {\bfseries post\+App\+Status} (App\+Widget\+::\+App\+Status status)
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_app_widget_a446a4098aa66694c54534df916c1ce70}{post\+App\+Status}} (\mbox{\hyperlink{class_app_widget_a2b48543a3ce72b7c991b744da6f540df}{App\+Widget\+::\+App\+Status}} status)
+\begin{DoxyCompactList}\small\item\em Signal emitted to notify about the application status. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_app_widget_a3806faa4b35786c0e4129246066b215a}\label{class_app_widget_a3806faa4b35786c0e4129246066b215a} 
-{\bfseries App\+Widget} (const QPixmap \&icon, const QString \&name, QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
-\item 
-\Hypertarget{class_app_widget_af104d532bb3bd2b0889391fff0bab157}\label{class_app_widget_af104d532bb3bd2b0889391fff0bab157} 
-void {\bfseries bind\+App} (\mbox{\hyperlink{class_application_wrapper}{Application\+Wrapper}} \texorpdfstring{$\ast$}{*}wrapper)
-\item 
-\Hypertarget{class_app_widget_a2a5f6bb3602a910f09ddde871936e59e}\label{class_app_widget_a2a5f6bb3602a910f09ddde871936e59e} 
-\mbox{\hyperlink{class_application_wrapper}{Application\+Wrapper}} \texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+app} () const
-\item 
-\Hypertarget{class_app_widget_a6bf749981f674a76e979dd547ce9666c}\label{class_app_widget_a6bf749981f674a76e979dd547ce9666c} 
-void {\bfseries set\+Icon} (const QPixmap \&icon) noexcept
-\item 
-\Hypertarget{class_app_widget_a654bb3fd2c1a9fca116ccf71f7660e89}\label{class_app_widget_a654bb3fd2c1a9fca116ccf71f7660e89} 
-void {\bfseries set\+App\+Name} (const QString \&name) noexcept
-\item 
+\mbox{\hyperlink{class_app_widget_a3806faa4b35786c0e4129246066b215a}{App\+Widget}} (const QPixmap \&\mbox{\hyperlink{class_app_widget_a9321ba6e7e0567ef8787bcdead1e8d2d}{icon}}, const QString \&name, QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructs an \doxylink{class_app_widget}{App\+Widget} with the given icon and app name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_app_widget_af104d532bb3bd2b0889391fff0bab157}{bind\+App}} (\mbox{\hyperlink{class_application_wrapper}{Application\+Wrapper}} \texorpdfstring{$\ast$}{*}wrapper)
+\begin{DoxyCompactList}\small\item\em Bind an \doxylink{class_application_wrapper}{Application\+Wrapper} instance to this widget. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_application_wrapper}{Application\+Wrapper}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_app_widget_a2a5f6bb3602a910f09ddde871936e59e}{get\+\_\+app}} () const
+\begin{DoxyCompactList}\small\item\em Get the bound \doxylink{class_application_wrapper}{Application\+Wrapper}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_app_widget_a6bf749981f674a76e979dd547ce9666c}{set\+Icon}} (const QPixmap \&\mbox{\hyperlink{class_app_widget_a9321ba6e7e0567ef8787bcdead1e8d2d}{icon}}) noexcept
+\begin{DoxyCompactList}\small\item\em Set the icon displayed by this widget. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_app_widget_a654bb3fd2c1a9fca116ccf71f7660e89}{set\+App\+Name}} (const QString \&name) noexcept
+\begin{DoxyCompactList}\small\item\em Set the application name displayed by this widget. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_app_widget_a4470138f00905b26ad5534948b6ddb50}{set\+Dummy}} (bool dummy)
-\begin{DoxyCompactList}\small\item\em set\+Dummy set the app visible only, and don\textquotesingle{}t make any senses this will disable any possible real interactive of the depatchings \end{DoxyCompactList}\item 
-\Hypertarget{class_app_widget_a9321ba6e7e0567ef8787bcdead1e8d2d}\label{class_app_widget_a9321ba6e7e0567ef8787bcdead1e8d2d} 
-QPixmap {\bfseries icon} () const
-\item 
-\Hypertarget{class_app_widget_a8e9c25e327f90af3990cdd71d3798d98}\label{class_app_widget_a8e9c25e327f90af3990cdd71d3798d98} 
-void {\bfseries show\+Icon\+Only} (bool st)
-\item 
-\Hypertarget{class_app_widget_adfa9de7ff529fef19e235dae59768fac}\label{class_app_widget_adfa9de7ff529fef19e235dae59768fac} 
-QString {\bfseries app\+\_\+name} () const
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Set this widget as dummy mode. \end{DoxyCompactList}\item 
+QPixmap \mbox{\hyperlink{class_app_widget_a9321ba6e7e0567ef8787bcdead1e8d2d}{icon}} () const
+\begin{DoxyCompactList}\small\item\em Get the current icon pixmap. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_app_widget_a8e9c25e327f90af3990cdd71d3798d98}{show\+Icon\+Only}} (bool st)
+\begin{DoxyCompactList}\small\item\em Show or hide only the icon (hides other UI elements). \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_app_widget_adfa9de7ff529fef19e235dae59768fac}{app\+\_\+name}} () const
+\begin{DoxyCompactList}\small\item\em Get the application name. \end{DoxyCompactList}\item 
+\Hypertarget{class_app_widget_a0261f448f2181b012e4eb7059faa6750}\label{class_app_widget_a0261f448f2181b012e4eb7059faa6750} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+App\+Widget} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_app_widget_a55452cd32f958fb15d12c13f48b02f8d}\label{class_app_widget_a55452cd32f958fb15d12c13f48b02f8d} 
-bool {\bfseries event\+Filter} (QObject \texorpdfstring{$\ast$}{*}watched, QEvent \texorpdfstring{$\ast$}{*}event) override
-\end{DoxyCompactItemize}
+bool \mbox{\hyperlink{class_app_widget_a55452cd32f958fb15d12c13f48b02f8d}{event\+Filter}} (QObject \texorpdfstring{$\ast$}{*}watched, QEvent \texorpdfstring{$\ast$}{*}event) override
+\begin{DoxyCompactList}\small\item\em Event filter to handle user interaction events. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-The \doxylink{class_app_widget}{App\+Widget} class is the App\+Widgets placing in the desktop. 
+The \doxylink{class_app_widget}{App\+Widget} class represents an application widget placed on the desktop. 
+
+It displays an icon and app name, manages the underlying \doxylink{class_application_wrapper}{Application\+Wrapper}, and handles launching and status updates. 
+
+\doxysubsection{Member Enumeration Documentation}
+\Hypertarget{class_app_widget_a2b48543a3ce72b7c991b744da6f540df}\index{AppWidget@{AppWidget}!AppStatus@{AppStatus}}
+\index{AppStatus@{AppStatus}!AppWidget@{AppWidget}}
+\doxysubsubsection{\texorpdfstring{AppStatus}{AppStatus}}
+{\footnotesize\ttfamily \label{class_app_widget_a2b48543a3ce72b7c991b744da6f540df} 
+enum class \mbox{\hyperlink{class_app_widget_a2b48543a3ce72b7c991b744da6f540df}{App\+Widget\+::\+App\+Status}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Enum representing the application status. 
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AppOk@{AppOk}!AppWidget@{AppWidget}}\index{AppWidget@{AppWidget}!AppOk@{AppOk}}}\Hypertarget{class_app_widget_a2b48543a3ce72b7c991b744da6f540dfad4f5004516bffc781166518260492142}\label{class_app_widget_a2b48543a3ce72b7c991b744da6f540dfad4f5004516bffc781166518260492142} 
+App\+Ok&Application is running or available. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AppNonExsits@{AppNonExsits}!AppWidget@{AppWidget}}\index{AppWidget@{AppWidget}!AppNonExsits@{AppNonExsits}}}\Hypertarget{class_app_widget_a2b48543a3ce72b7c991b744da6f540dfa1c65ac2f74da731d21043e757ed5b76d}\label{class_app_widget_a2b48543a3ce72b7c991b744da6f540dfa1c65ac2f74da731d21043e757ed5b76d} 
+App\+Non\+Exsits&Application does not exist. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_app_widget_a3806faa4b35786c0e4129246066b215a}\index{AppWidget@{AppWidget}!AppWidget@{AppWidget}}
+\index{AppWidget@{AppWidget}!AppWidget@{AppWidget}}
+\doxysubsubsection{\texorpdfstring{AppWidget()}{AppWidget()}}
+{\footnotesize\ttfamily \label{class_app_widget_a3806faa4b35786c0e4129246066b215a} 
+App\+Widget\+::\+App\+Widget (\begin{DoxyParamCaption}\item[{const QPixmap \&}]{icon}{, }\item[{const QString \&}]{name}{, }\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructs an \doxylink{class_app_widget}{App\+Widget} with the given icon and app name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em icon} & The icon to display. \\
+\hline
+{\em name} & The application name. \\
+\hline
+{\em parent} & Optional parent widget. \\
+\hline
+\end{DoxyParams}
+
 
 \doxysubsection{Member Function Documentation}
+\Hypertarget{class_app_widget_adfa9de7ff529fef19e235dae59768fac}\index{AppWidget@{AppWidget}!app\_name@{app\_name}}
+\index{app\_name@{app\_name}!AppWidget@{AppWidget}}
+\doxysubsubsection{\texorpdfstring{app\_name()}{app\_name()}}
+{\footnotesize\ttfamily \label{class_app_widget_adfa9de7ff529fef19e235dae59768fac} 
+QString App\+Widget\+::app\+\_\+name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Get the application name. 
+
+\begin{DoxyReturn}{Returns}
+The app name string. 
+\end{DoxyReturn}
+\Hypertarget{class_app_widget_af104d532bb3bd2b0889391fff0bab157}\index{AppWidget@{AppWidget}!bindApp@{bindApp}}
+\index{bindApp@{bindApp}!AppWidget@{AppWidget}}
+\doxysubsubsection{\texorpdfstring{bindApp()}{bindApp()}}
+{\footnotesize\ttfamily \label{class_app_widget_af104d532bb3bd2b0889391fff0bab157} 
+void App\+Widget\+::bind\+App (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_application_wrapper}{Application\+Wrapper}} \texorpdfstring{$\ast$}{*}}]{wrapper}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Bind an \doxylink{class_application_wrapper}{Application\+Wrapper} instance to this widget. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wrapper} & Pointer to the \doxylink{class_application_wrapper}{Application\+Wrapper}. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_app_widget_a55452cd32f958fb15d12c13f48b02f8d}\index{AppWidget@{AppWidget}!eventFilter@{eventFilter}}
+\index{eventFilter@{eventFilter}!AppWidget@{AppWidget}}
+\doxysubsubsection{\texorpdfstring{eventFilter()}{eventFilter()}}
+{\footnotesize\ttfamily \label{class_app_widget_a55452cd32f958fb15d12c13f48b02f8d} 
+bool App\+Widget\+::event\+Filter (\begin{DoxyParamCaption}\item[{QObject \texorpdfstring{$\ast$}{*}}]{watched}{, }\item[{QEvent \texorpdfstring{$\ast$}{*}}]{event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+
+
+Event filter to handle user interaction events. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em watched} & The object being watched. \\
+\hline
+{\em event} & The event being filtered. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the event was handled, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_app_widget_a2a5f6bb3602a910f09ddde871936e59e}\index{AppWidget@{AppWidget}!get\_app@{get\_app}}
+\index{get\_app@{get\_app}!AppWidget@{AppWidget}}
+\doxysubsubsection{\texorpdfstring{get\_app()}{get\_app()}}
+{\footnotesize\ttfamily \label{class_app_widget_a2a5f6bb3602a910f09ddde871936e59e} 
+\mbox{\hyperlink{class_application_wrapper}{Application\+Wrapper}} \texorpdfstring{$\ast$}{*} App\+Widget\+::get\+\_\+app (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the bound \doxylink{class_application_wrapper}{Application\+Wrapper}. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the \doxylink{class_application_wrapper}{Application\+Wrapper}. 
+\end{DoxyReturn}
+\Hypertarget{class_app_widget_a9321ba6e7e0567ef8787bcdead1e8d2d}\index{AppWidget@{AppWidget}!icon@{icon}}
+\index{icon@{icon}!AppWidget@{AppWidget}}
+\doxysubsubsection{\texorpdfstring{icon()}{icon()}}
+{\footnotesize\ttfamily \label{class_app_widget_a9321ba6e7e0567ef8787bcdead1e8d2d} 
+QPixmap App\+Widget\+::icon (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Get the current icon pixmap. 
+
+\begin{DoxyReturn}{Returns}
+The icon pixmap. 
+\end{DoxyReturn}
+\Hypertarget{class_app_widget_a446a4098aa66694c54534df916c1ce70}\index{AppWidget@{AppWidget}!postAppStatus@{postAppStatus}}
+\index{postAppStatus@{postAppStatus}!AppWidget@{AppWidget}}
+\doxysubsubsection{\texorpdfstring{postAppStatus}{postAppStatus}}
+{\footnotesize\ttfamily \label{class_app_widget_a446a4098aa66694c54534df916c1ce70} 
+void App\+Widget\+::post\+App\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_app_widget_a2b48543a3ce72b7c991b744da6f540df}{App\+Widget\+::\+App\+Status}}}]{status}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Signal emitted to notify about the application status. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The current status of the app. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_app_widget_a654bb3fd2c1a9fca116ccf71f7660e89}\index{AppWidget@{AppWidget}!setAppName@{setAppName}}
+\index{setAppName@{setAppName}!AppWidget@{AppWidget}}
+\doxysubsubsection{\texorpdfstring{setAppName()}{setAppName()}}
+{\footnotesize\ttfamily \label{class_app_widget_a654bb3fd2c1a9fca116ccf71f7660e89} 
+void App\+Widget\+::set\+App\+Name (\begin{DoxyParamCaption}\item[{const QString \&}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Set the application name displayed by this widget. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name string. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_app_widget_a4470138f00905b26ad5534948b6ddb50}\index{AppWidget@{AppWidget}!setDummy@{setDummy}}
 \index{setDummy@{setDummy}!AppWidget@{AppWidget}}
 \doxysubsubsection{\texorpdfstring{setDummy()}{setDummy()}}
@@ -78,11 +221,41 @@ void App\+Widget\+::set\+Dummy (\begin{DoxyParamCaption}\item[{bool}]{dummy}{}\e
 
 
 
-set\+Dummy set the app visible only, and don\textquotesingle{}t make any senses this will disable any possible real interactive of the depatchings 
+Set this widget as dummy mode. 
+
+When set to dummy, the widget is visible but does not respond to any real interaction or launch requests. 
+\begin{DoxyParams}{Parameters}
+{\em dummy} & True to enable dummy mode; false to disable. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_app_widget_a6bf749981f674a76e979dd547ce9666c}\index{AppWidget@{AppWidget}!setIcon@{setIcon}}
+\index{setIcon@{setIcon}!AppWidget@{AppWidget}}
+\doxysubsubsection{\texorpdfstring{setIcon()}{setIcon()}}
+{\footnotesize\ttfamily \label{class_app_widget_a6bf749981f674a76e979dd547ce9666c} 
+void App\+Widget\+::set\+Icon (\begin{DoxyParamCaption}\item[{const QPixmap \&}]{icon}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Set the icon displayed by this widget. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em dummy} & \\
+{\em icon} & The pixmap to set as icon. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_app_widget_a8e9c25e327f90af3990cdd71d3798d98}\index{AppWidget@{AppWidget}!showIconOnly@{showIconOnly}}
+\index{showIconOnly@{showIconOnly}!AppWidget@{AppWidget}}
+\doxysubsubsection{\texorpdfstring{showIconOnly()}{showIconOnly()}}
+{\footnotesize\ttfamily \label{class_app_widget_a8e9c25e327f90af3990cdd71d3798d98} 
+void App\+Widget\+::show\+Icon\+Only (\begin{DoxyParamCaption}\item[{bool}]{st}{}\end{DoxyParamCaption})}
+
+
+
+Show or hide only the icon (hides other UI elements). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em st} & True to show icon only; false to show full widget. \\
 \hline
 \end{DoxyParams}
 

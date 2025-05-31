@@ -11,7 +11,15 @@ class CCIMX_AbstractProcessBroswerDriver;
  */
 class PlatformDriverFactory {
 public:
+	/**
+	 * @brief Construct a new Platform Driver Factory object
+	 * 
+	 */
 	PlatformDriverFactory() = default;
+		/**
+	 * @brief disable copy
+	 * 
+	 */
 	Q_DISABLE_COPY(PlatformDriverFactory);
 
 	/**

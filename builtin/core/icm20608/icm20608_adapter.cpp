@@ -24,7 +24,7 @@ void ICM20608::bind_dev_file() {
  * @brief As the name goes, invoke this make a synchronous request
  * to the device
  *
- * @param   this is means the params is empty or wait be written,
+ * @param   empty is means the params is empty or wait be written,
  *          or, its a output params
  * @return  true if the data is valid(session request success equavalent)
  */
@@ -57,7 +57,7 @@ bool ICM20608::get_package_sync_win32impl(ICM20608AppData& empty) {
 #else
 /**
  * @brief Unix Implementations of sync request
- * @param this is means the params is empty or wait be written,
+ * @param empty is means the params is empty or wait be written,
  *          or, its a output params
  * @return  true if the data is valid(session request success equavalent)
  */
@@ -85,15 +85,10 @@ bool ICM20608::get_package_sync_uniximpl(ICM20608AppData& empty) {
 }
 #endif
 
-/**
- * @brief front end interfaces
- * @param dummy blank output params
- * @return true if the data is valid(session request success equavalent)
- */
-bool ICM20608::get_package_sync(ICM20608AppData& empty) {
+bool ICM20608::get_package_sync(ICM20608AppData& empty_data_pack) {
 #ifdef _WIN32
-	return get_package_sync_win32impl(empty);
+	return get_package_sync_win32impl(empty_data_pack);
 #else
-	return get_package_sync_uniximpl(empty);
+	return get_package_sync_uniximpl(empty_data_pack);
 #endif
 }

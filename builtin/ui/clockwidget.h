@@ -15,7 +15,16 @@ class ClockWidget : public QWidget {
     Q_OBJECT
 
 public:
+	/**
+ 	* @brief Construct a new Clock Widget object
+ 	* 
+ 	* @param parent 
+ 	*/
 	explicit ClockWidget(QWidget* parent = nullptr);
+	/**
+	 * @brief Destroy the Clock Widget object
+	 * 
+	 */
 	~ClockWidget();
 
 signals:

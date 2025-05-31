@@ -32,10 +32,15 @@ struct VideoPlayerInfo {
  */
 class VideoPlayerImpl {
 public:
+	/**
+	 * @brief Construct a new Video Player Impl object
+	 * 
+	 */
 	VideoPlayerImpl() = default;
 	virtual ~VideoPlayerImpl() = default;
-	/*
-	 *	Copy is not acceptable for video
+	/**
+	 * @brief Copy is not acceptable for video
+	 * 
 	 */
 	Q_DISABLE_COPY(VideoPlayerImpl);
 
@@ -113,7 +118,6 @@ public:
 
 	/**
 	 * @brief close close the video file
-	 * @return true if the video is closed successfully
 	 * @note in syntax level, it means making the resources un-available
 	 * (disabled the resources, shutdown this)
 	 */

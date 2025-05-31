@@ -1,76 +1,104 @@
 #ifndef PROCESSBROSWER_H
 #define PROCESSBROSWER_H
+
 #include <QObject>
 #include <QTimer>
+
+/* Forward declaration of platform-specific driver */
 class CCIMX_AbstractProcessBroswerDriver;
 
 /**
  * @brief The ProcessBroswer class
- * @details ProcessBroswer is the process broswer provides
- * the process information
+ * Provides an interface to retrieve and monitor system processes information.
+ * Acts as a process browser that periodically fetches process data.
  */
 class ProcessBroswer : public QObject {
-	Q_OBJECT
+    Q_OBJECT
 public:
-	explicit ProcessBroswer(QObject* parent = nullptr);
-	~ProcessBroswer();
+    /**
+     * @brief Constructor with optional parent.
+     * @param parent Pointer to the QObject parent, default nullptr.
+     */
+    explicit ProcessBroswer(QObject* parent = nullptr);
 
-	/**
-	 * @brief The ProcessInfo class
-	 * @details ProcessInfo is the process information
-	 */
-	struct ProcessInfo {
-		int pid; ///< the process id
-		int ppid; ///< the parent process id
-		QString name; ///< the process name
-		QString fullPath; ///< the full path of the process
-		int threadCount; ///< the thread count of the process
-		qint64 memoryUsageKB; ///< the memory usage of the process in KB level
-		double cpuPercent; ///< the cpu percent of the process
-		QString userName; ///< the user name of the process
-	};
-	/* interface is expected to set the freq of the flush */
+    /**
+     * @brief Destructor cleans up resources.
+     */
+    ~ProcessBroswer();
 
-	/**
-	 * @brief set_flush_freq
-	 * set the flush frequency in msec times
-	 * @param msecs the msecs to set
-	 */
-	void set_flush_freq(const int msecs) { flush_msecs = msecs; }
+    /**
+     * @brief The ProcessInfo struct
+     * Holds detailed information about a system process.
+     */
+    struct ProcessInfo {
+        int pid; ///< Process ID.
+        int ppid; ///< Parent Process ID.
+        QString name; ///< Process name.
+        QString fullPath; ///< Full executable path of the process.
+        int threadCount; ///< Number of threads in the process.
+        qint64 memoryUsageKB; ///< Memory usage in kilobytes.
+        double cpuPercent; ///< CPU usage percentage.
+        QString userName; ///< User who owns the process.
+    };
 
-	/**
-	 * @brief set_capture_state
-	 * @param st the state to set
-	 */
-	void set_capture_state(bool st);
+    /**
+     * @brief set_flush_freq
+     * Sets the frequency (in milliseconds) at which process data is refreshed.
+     * @param msecs Refresh interval in milliseconds.
+     */
+    void set_flush_freq(const int msecs) { flush_msecs = msecs; }
+
+    /**
+     * @brief set_capture_state
+     * Enables or disables process data capturing.
+     * @param st True to start capturing, false to stop.
+     */
+    void set_capture_state(bool st);
+
 signals:
-	/**
-	 * @brief about_fetch_process the signal indicating the process is ready
-	 * @param infos the process information
-	 */
-	void fetch_finish(const QList<ProcessBroswer::ProcessInfo>& infos);
+    /**
+     * @brief fetch_finish
+     * Signal emitted when process data is fetched and ready.
+     * @param infos List of ProcessInfo structures with current process data.
+     */
+    void fetch_finish(const QList<ProcessBroswer::ProcessInfo>& infos);
 
 private:
-	CCIMX_AbstractProcessBroswerDriver* platform_driver_base { nullptr };
-	void setup_platform_relative();
-	/* this is used to flush the cpu state */
-	void flush_once();
-	int flush_msecs { 1500 };
-	QList<ProcessInfo> process_list;
-	QTimer flush_timer;
+    CCIMX_AbstractProcessBroswerDriver* platform_driver_base { nullptr }; ///< Platform-specific driver instance.
+
+    /**
+     * @brief setup_platform_relative
+     * Setup the platform-specific process browser driver.
+     */
+    void setup_platform_relative();
+
+    /**
+     * @brief flush_once
+     * Called periodically to refresh process data from the driver.
+     */
+    void flush_once();
+
+    int flush_msecs { 1500 }; ///< Refresh interval in milliseconds.
+    QList<ProcessInfo> process_list; ///< Cached list of processes.
+    QTimer flush_timer; ///< Timer to schedule periodic updates.
 };
 
 /**
  * @brief The CCIMX_AbstractProcessBroswerDriver class
- * @details CCIMX_AbstractProcessBroswerDriver is the abstract class
- * for the process broswer driver
+ * Abstract base class for platform-specific process browser drivers.
+ * Implementations should populate the process list data.
  */
 class CCIMX_AbstractProcessBroswerDriver {
 public:
-	CCIMX_AbstractProcessBroswerDriver() = default;
-	virtual ~CCIMX_AbstractProcessBroswerDriver() = default;
-	/* driver is expected to make a stat back, locating in platforms */
-	virtual void factory(QList<ProcessBroswer::ProcessInfo>& lists) = 0;
+    CCIMX_AbstractProcessBroswerDriver() = default;
+    virtual ~CCIMX_AbstractProcessBroswerDriver() = default;
+
+    /**
+     * @brief factory
+     * Populate the list with current system processes information.
+     * @param lists Reference to a list to be filled with ProcessInfo data.
+     */
+    virtual void factory(QList<ProcessBroswer::ProcessInfo>& lists) = 0;
 };
 
 #endif // PROCESSBROSWER_H

@@ -1,0 +1,54 @@
+\doxysection{CCNoter\+Window.\+h}
+\hypertarget{_c_c_noter_window_8h_source}{}\label{_c_c_noter_window_8h_source}\index{builtin/app/CCIMXNoter/CCNoterWindow.h@{builtin/app/CCIMXNoter/CCNoterWindow.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CCNOTERWINDOW\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CCNOTERWINDOW\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QMainWindow>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }QTextCharFormat;}
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }QLabel;}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ QT\_BEGIN\_NAMESPACE}
+\DoxyCodeLine{00010\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }CCNoterWindow;}
+\DoxyCodeLine{00012\ \}}
+\DoxyCodeLine{00013\ QT\_END\_NAMESPACE}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_c_noter_window_adc9c298a8c5b7747c8172705ffd483b4}{CCNoterWindow}}\ :\ \textcolor{keyword}{public}\ QMainWindow\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{class_c_c_noter_window_adc9c298a8c5b7747c8172705ffd483b4}{CCNoterWindow}}(QWidget*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_c_noter_window_a740a156ccc25e9f01c7499a8be80caa6}{load\_file}}();}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_c_noter_window_a38e2591ac4705f4d96760b8a0bfbf129}{chooseFont}}();}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_c_noter_window_a16ad9d91ba7a8ffb4d7a6b4bbf185e30}{save\_file}}();}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_c_noter_window_a678dfdda5b28aa1105159901a30e8f87}{set\_font\_size}}(\textcolor{keywordtype}{int}\ size);}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00056\ \ \ \ \ \mbox{\hyperlink{class_c_c_noter_window_a163a6ccb4925e3f86475dcaec28d3a06}{\string~CCNoterWindow}}();}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_actionitalic\_triggered(\textcolor{keywordtype}{bool}\ checked);}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_actionbold\_triggered(\textcolor{keywordtype}{bool}\ checked);}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00072\ \ \ \ \ Ui::CCNoterWindow*\ ui;\ }
+\DoxyCodeLine{00073\ \ \ \ \ QLabel*\ fontsize\_label;\ }
+\DoxyCodeLine{00074\ \ \ \ \ QLabel*\ fontstyle\_label;\ }
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{void}\ init\_connections();}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordtype}{void}\ setup\_toolbars();}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keywordtype}{void}\ mergeFormatOnWordOrSelection(\textcolor{keyword}{const}\ QTextCharFormat\&\ format);}
+\DoxyCodeLine{00091\ \};}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CCNOTERWINDOW\_H}}
+
+\end{DoxyCode}

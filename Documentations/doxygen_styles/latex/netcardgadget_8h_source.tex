@@ -6,7 +6,7 @@
 \DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ NETCARDGADGET\_H}}
 \DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}appcardwidget.h"{}}}
 \DoxyCodeLine{00004\ }
-\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }NetCardGadget\ :\ \textcolor{keyword}{public}\ AppCardWidget\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }NetCardGadget\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_app_card_widget_adde6adc2966e595da7ce948c7b272757}{AppCardWidget}}\ \{}
 \DoxyCodeLine{00010\ \textcolor{keyword}{public}:}
 \DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{enum\ class}\ \mbox{\hyperlink{class_net_card_gadget_a0f7e947e72994b97591bb3bc9bb35268}{NetWorkState}}\ \{}
 \DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_net_card_gadget_a0f7e947e72994b97591bb3bc9bb35268a696b031073e74bf2cb98e5ef201d4aa3}{UNKNOWN}},\ }
@@ -16,26 +16,26 @@
 \DoxyCodeLine{00019\ \ \ \ \ \};}
 \DoxyCodeLine{00020\ }
 \DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_net_card_gadget}{NetCardGadget}}()\ =\ \textcolor{keyword}{delete};}
-\DoxyCodeLine{00022\ \ \ \ \ Q\_DISABLE\_COPY(\mbox{\hyperlink{class_net_card_gadget}{NetCardGadget}});}
-\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_net_card_gadget}{NetCardGadget}}(\mbox{\hyperlink{class_desktop_toast}{DesktopToast}}*\ toast,\ QWidget*\ parent);}
-\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_net_card_gadget_a82d97e27218187db562c8d02bb5866d2}{invoke\_preLaunch\_work}}()\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00030\ }
-\DoxyCodeLine{00031\ \textcolor{keyword}{protected}:}
-\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_net_card_gadget_a0b72db3d05b5e6bd02705428df3f0ba5}{postAppCardWidget}}()\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00037\ }
-\DoxyCodeLine{00038\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{class_net_card_gadget_a0f7e947e72994b97591bb3bc9bb35268}{NetWorkState}}\ cache\_reachability\ \{\ \mbox{\hyperlink{class_net_card_gadget_a0f7e947e72994b97591bb3bc9bb35268a696b031073e74bf2cb98e5ef201d4aa3}{NetWorkState::UNKNOWN}}\ \};}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_net_card_gadget_a8b788b3e6529ee504d2daa6d3830626c}{Q\_DISABLE\_COPY}}(NetCardGadget);}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{explicit}\ NetCardGadget(\mbox{\hyperlink{class_desktop_toast}{DesktopToast}}*\ toast,\ QWidget*\ parent);}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_net_card_gadget_a82d97e27218187db562c8d02bb5866d2}{invoke\_preLaunch\_work}}()\ \textcolor{keyword}{override};}
 \DoxyCodeLine{00040\ }
-\DoxyCodeLine{00041\ \ \ \ \ \textcolor{comment}{/*\ Followings\ are\ the\ checks\ of\ the\ network\ implementations\ */}}
-\DoxyCodeLine{00042\ }
-\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ process\_once\_fresh();}
-\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ process\_once\_local\_check();}
-\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ process\_once\_online\_check();}
-\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ online\_base\_work\ =\ \textcolor{stringliteral}{"{}http://www.baidu.com"{}};}
-\DoxyCodeLine{00071\ }
-\DoxyCodeLine{00072\ \ \ \ \ QTimer*\ scan\_timer;\ }
-\DoxyCodeLine{00073\ \};}
-\DoxyCodeLine{00074\ }
-\DoxyCodeLine{00075\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ NETCARDGADGET\_H}}
+\DoxyCodeLine{00041\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_net_card_gadget_a0b72db3d05b5e6bd02705428df3f0ba5}{postAppCardWidget}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{class_net_card_gadget_a0f7e947e72994b97591bb3bc9bb35268}{NetWorkState}}\ cache\_reachability\ \{\ \mbox{\hyperlink{class_net_card_gadget_a0f7e947e72994b97591bb3bc9bb35268a696b031073e74bf2cb98e5ef201d4aa3}{NetWorkState::UNKNOWN}}\ \};}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{comment}{/*\ Followings\ are\ the\ checks\ of\ the\ network\ implementations\ */}}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{void}\ process\_once\_fresh();}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{void}\ process\_once\_local\_check();}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{void}\ process\_once\_online\_check();}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ online\_base\_work\ =\ \textcolor{stringliteral}{"{}http://www.baidu.com"{}};}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \ \ \ \ QTimer*\ scan\_timer;\ }
+\DoxyCodeLine{00083\ \};}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ NETCARDGADGET\_H}}
 
 \end{DoxyCode}

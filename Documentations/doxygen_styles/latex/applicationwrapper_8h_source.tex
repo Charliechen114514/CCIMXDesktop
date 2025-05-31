@@ -4,99 +4,99 @@
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ APPLICATIONWRAPPER\_H}}
 \DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ APPLICATIONWRAPPER\_H}}
-\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <QObject>}}
-\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QProcess>}}
-\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }QMainWindow;}
-\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_app_widget}{AppWidget}};}
-\DoxyCodeLine{00007\ \textcolor{comment}{/*\ App\ Wrapper\ here\ */}}
-\DoxyCodeLine{00008\ \textcolor{comment}{/*\ is\ the\ Process\ Wrapper\ */}}
-\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }ApplicationWrapper\ :\ \textcolor{keyword}{public}\ QObject\ \{}
-\DoxyCodeLine{00010\ \ \ \ \ Q\_OBJECT}
-\DoxyCodeLine{00011\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{explicit}\ ApplicationWrapper(}
-\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ QObject*\ parent,\ QMainWindow*\ desktopWindow);}
-\DoxyCodeLine{00014\ \ \ \ \ \textcolor{comment}{/*\ is\ the\ only\ */}}
-\DoxyCodeLine{00015\ \ \ \ \ Q\_DISABLE\_COPY(ApplicationWrapper);}
-\DoxyCodeLine{00016\ }
-\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_application_wrapper_1_1_application_depatch_result}{ApplicationDepatchResult}}\ \{}
-\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keyword}{enum\ class}\ AppDepatchResult\ \{}
-\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ APP\_RUN\_OK,}
-\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ APP\_FILE\_MISSING,}
-\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ APP\_OTHER\_ERROR}
-\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \};}
-\DoxyCodeLine{00028\ }
-\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ AppDepatchResult\ \mbox{\hyperlink{struct_application_wrapper_1_1_application_depatch_result_add689ef0c7f3b4ee4d63d2036c105907}{app\_depatch\_result}};\ }
-\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_application_wrapper_1_1_application_depatch_result_ac2f913f3a09fa708873e71f19af3cdf6}{depatched}}\ \{\ \textcolor{keyword}{false}\ \};\ }
-\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ QString\ \mbox{\hyperlink{struct_application_wrapper_1_1_application_depatch_result_aa6cd66610f46e0dd8ff14bebaeae1f2c}{someOtherDetails}}\ \{\};\ }
-\DoxyCodeLine{00032\ \ \ \ \ \};}
-\DoxyCodeLine{00033\ }
-\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_application_wrapper_1_1_application_finish_result}{ApplicationFinishResult}}\ \{}
-\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keyword}{enum\ class}\ AppFinishResult\ \{}
-\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ QUIT\_NORMAL,}
-\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ QUIT\_OTHER}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QProcess>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_desktop_main_window}{DesktopMainWindow}};}
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_app_widget}{AppWidget}};}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_application_wrapper_a78d2891721e75aa4494a062769ede89f}{ApplicationWrapper}}\ :\ \textcolor{keyword}{public}\ QObject\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_application_wrapper_a78d2891721e75aa4494a062769ede89f}{ApplicationWrapper}}(QObject*\ parent,\ \mbox{\hyperlink{class_desktop_main_window}{DesktopMainWindow}}*\ desktopWindow);}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{class_application_wrapper_ac1e58358a4a3cdcab632cf08c4a27517}{Q\_DISABLE\_COPY}}(\mbox{\hyperlink{class_application_wrapper_a78d2891721e75aa4494a062769ede89f}{ApplicationWrapper}});}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_application_wrapper_1_1_application_depatch_result}{ApplicationDepatchResult}}\ \{}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keyword}{enum\ class}\ \mbox{\hyperlink{struct_application_wrapper_1_1_application_depatch_result_a1cde43b4ce352509446cb4cbd98a95a1}{AppDepatchResult}}\ \{}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_application_wrapper_1_1_application_depatch_result_a1cde43b4ce352509446cb4cbd98a95a1ad628bed09bb5279417d8a76f4cb6ea02}{APP\_RUN\_OK}},\ \ \ \ \ \ \ }
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_application_wrapper_1_1_application_depatch_result_a1cde43b4ce352509446cb4cbd98a95a1a59c010c7da2660ffe56691f658b14d5e}{APP\_FILE\_MISSING}},\ }
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_application_wrapper_1_1_application_depatch_result_a1cde43b4ce352509446cb4cbd98a95a1a23518dd90f8af806e3c7edce8d2319ba}{APP\_OTHER\_ERROR}}\ \ \ }
 \DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \};}
 \DoxyCodeLine{00045\ }
-\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ AppFinishResult\ \mbox{\hyperlink{struct_application_wrapper_1_1_application_finish_result_acefc460bffc37c059a773fcc2bccf79f}{app\_result}};\ }
-\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_application_wrapper_1_1_application_finish_result_a9bd31e7691e31b6be8aff6a0ba60a0c4}{exit\_code}};\ }
-\DoxyCodeLine{00048\ \ \ \ \ \};}
-\DoxyCodeLine{00049\ }
-\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_application_wrapper_a6fd8f6f029b8dba337310bb9750f49ed}{bindAppWidget}}(\mbox{\hyperlink{class_app_widget}{AppWidget}}*\ appWidget)\ \textcolor{keyword}{noexcept}\ \{\ this-\/>appWidget\ =\ appWidget;\ \}}
-\DoxyCodeLine{00059\ \ \ \ \ \mbox{\hyperlink{class_app_widget}{AppWidget}}*\ \mbox{\hyperlink{class_application_wrapper_a0b395ef8736c102556539b3fb96296cb}{app\_widget}}(\textcolor{keywordtype}{void})\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ this-\/>appWidget;\ \}}
-\DoxyCodeLine{00060\ }
-\DoxyCodeLine{00061\ \ \ \ \ \textcolor{comment}{/*\ AppCode\ is\ using\ to\ identify\ the\ app\ quickly\ */}}
-\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keyword}{using\ }AppCode\ =\ int;}
-\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_application_wrapper_adf8a55aaaf2ccbfda855d75d0f4b9053}{install\_app\_code}}(AppCode\ code)\ \textcolor{keyword}{noexcept}\ \{\ internal\_app\_code\ =\ code;\ \}}
-\DoxyCodeLine{00072\ \ \ \ \ AppCode\ \mbox{\hyperlink{class_application_wrapper_aaa275174067d1949835c5f7097fccc10}{app\_code}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ internal\_app\_code;\ \}}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_application_wrapper_1_1_application_depatch_result_a1cde43b4ce352509446cb4cbd98a95a1}{AppDepatchResult}}\ \mbox{\hyperlink{struct_application_wrapper_1_1_application_depatch_result_add689ef0c7f3b4ee4d63d2036c105907}{app\_depatch\_result}};\ }
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_application_wrapper_1_1_application_depatch_result_ac2f913f3a09fa708873e71f19af3cdf6}{depatched}}\ \{\ \textcolor{keyword}{false}\ \};\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ QString\ \mbox{\hyperlink{struct_application_wrapper_1_1_application_depatch_result_aa6cd66610f46e0dd8ff14bebaeae1f2c}{someOtherDetails}}\ \{\};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00049\ \ \ \ \ \};}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_application_wrapper_1_1_application_finish_result}{ApplicationFinishResult}}\ \{}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{keyword}{enum\ class}\ \mbox{\hyperlink{struct_application_wrapper_1_1_application_finish_result_a03886a5aca858311233b34d9fd6336ea}{AppFinishResult}}\ \{}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_application_wrapper_1_1_application_finish_result_a03886a5aca858311233b34d9fd6336eaa9ab8f4728e9d3edadcdbfa13206954a0}{QUIT\_NORMAL}},\ }
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_application_wrapper_1_1_application_finish_result_a03886a5aca858311233b34d9fd6336eaafd52c78145a9f3b73154ed36b3b7ef72}{QUIT\_OTHER}}\ \ \ }
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_application_wrapper_1_1_application_finish_result_a03886a5aca858311233b34d9fd6336ea}{AppFinishResult}}\ \mbox{\hyperlink{struct_application_wrapper_1_1_application_finish_result_acefc460bffc37c059a773fcc2bccf79f}{app\_result}};\ }
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_application_wrapper_1_1_application_finish_result_a9bd31e7691e31b6be8aff6a0ba60a0c4}{exit\_code}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00066\ \ \ \ \ \};}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_application_wrapper_a6fd8f6f029b8dba337310bb9750f49ed}{bindAppWidget}}(\mbox{\hyperlink{class_app_widget}{AppWidget}}*\ appWidget)\ \textcolor{keyword}{noexcept}\ \{\ this-\/>appWidget\ =\ appWidget;\ \}}
 \DoxyCodeLine{00073\ }
-\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_application_wrapper_acf76b7e548ec203af29659ad3115b9b8}{set\_app\_path}}(\textcolor{keyword}{const}\ QString\&\ app\_path)\ \textcolor{keyword}{noexcept}\ \{\ this-\/>app\_path\ =\ app\_path;\ \}}
-\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keyword}{inline}\ QString\ \mbox{\hyperlink{class_application_wrapper_a645eedaf1b9540075dcab6e55e2cefe2}{get\_app\_path}}(\textcolor{keywordtype}{void})\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ app\_path;\ \}}
-\DoxyCodeLine{00085\ }
-\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_application_wrapper_a157919a1894a29889b4feac5aad1151b}{install\_args}}(\textcolor{keyword}{const}\ QStringList\&\ l)\ \textcolor{keyword}{noexcept}\ \{\ app\_args\ =\ l;\ \}}
-\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keyword}{inline}\ QStringList\ \mbox{\hyperlink{class_application_wrapper_ae33f13768de3aefb8098302c1c77e001}{args}}(\textcolor{keywordtype}{void})\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ app\_args;\ \}}
-\DoxyCodeLine{00096\ }
-\DoxyCodeLine{00103\ \ \ \ \ \textcolor{keyword}{inline}\ QProcess*\ \mbox{\hyperlink{class_application_wrapper_a134b24e6aba73be486197652a6e40cb6}{process\_handle}}(\textcolor{keywordtype}{void})\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ appProcess;\ \}}
-\DoxyCodeLine{00104\ }
-\DoxyCodeLine{00109\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_application_wrapper_aadc9fc2e2aa2488bc35115f387a3cda9}{depatch\_app}}(\textcolor{keywordtype}{void});}
-\DoxyCodeLine{00110\ }
-\DoxyCodeLine{00111\ \ \ \ \ \textcolor{comment}{/*\ specified\ settings\ */}}
-\DoxyCodeLine{00112\ \ \ \ \ \textcolor{comment}{/*\ we\ accept\ the\ whole\ app\ wrapper\ and\ the\ prelaunch\ indicate}}
-\DoxyCodeLine{00113\ \textcolor{comment}{\ \ \ \ \ *\ whether\ we\ should\ launch\ the\ application,\ at\ default,\ only}}
-\DoxyCodeLine{00114\ \textcolor{comment}{\ \ \ \ \ *\ app\ file\ exsitance\ will\ be\ checked}}
-\DoxyCodeLine{00115\ \textcolor{comment}{\ \ \ \ \ */}}
-\DoxyCodeLine{00116\ \ \ \ \ \textcolor{keyword}{using\ }PreLaunchIndicate\ =\ ApplicationDepatchResult\ (*)(\mbox{\hyperlink{class_application_wrapper}{ApplicationWrapper}}*\ wrapper);}
-\DoxyCodeLine{00117\ }
-\DoxyCodeLine{00124\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_application_wrapper_a895d28d5f837ea6a23cae8f5ff8682b7}{install\_prelaunched}}(PreLaunchIndicate\ precheck)\ \{\ pre\_indicate\ =\ precheck;\ \}}
-\DoxyCodeLine{00125\ }
-\DoxyCodeLine{00126\ \ \ \ \ \textcolor{comment}{/*\ if\ you\ wanna\ do\ your\ own\ jobs,\ that\ is\ required\ to\ override\ this\ */}}
-\DoxyCodeLine{00127\ \ \ \ \ \textcolor{keyword}{using\ }HandlingFinHook\ =\ void\ (*)(\mbox{\hyperlink{class_application_wrapper}{ApplicationWrapper}}*\ wrapper,\ \textcolor{keywordtype}{int}\ exit\_hook,\ QProcess::ExitStatus\ status);}
-\DoxyCodeLine{00128\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ install\_finhook(HandlingFinHook\ hook)\ \{\ rawAppFinHook\ =\ hook;\ \}}
-\DoxyCodeLine{00129\ }
-\DoxyCodeLine{00130\ \ \ \ \ \textcolor{comment}{/*\ for\ app\ depatch\ level\ error,\ we\ have\ to\ expose\ an\ interface\ */}}
-\DoxyCodeLine{00131\ \ \ \ \ \textcolor{keyword}{using\ }ErrorDepatchHook\ =\ void\ (*)(ApplicationWrapper*\ wrapper);}
-\DoxyCodeLine{00132\ \ \ \ \ \textcolor{comment}{/*\ if\ you\ wanna\ pass\ out\ the\ status,\ use\ emit\ app\_depatch\_status\ */}}
-\DoxyCodeLine{00133\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ install\_error\_handler(ErrorDepatchHook\ hook)\ \{\ error\_handler\ =\ hook;\ \}}
-\DoxyCodeLine{00134\ signals:}
-\DoxyCodeLine{00135\ \ \ \ \ \textcolor{comment}{/*\ app\ is\ depatched\ or\ not,\ see\ the\ signals\ */}}
-\DoxyCodeLine{00136\ \ \ \ \ \textcolor{keywordtype}{void}\ app\_depatch\_status(ApplicationWrapper::ApplicationDepatchResult);}
-\DoxyCodeLine{00137\ \ \ \ \ \textcolor{comment}{/*\ app\ is\ finished,\ connect\ this\ signals\ for\ the\ hook\ */}}
-\DoxyCodeLine{00138\ \ \ \ \ \textcolor{keywordtype}{void}\ app\_finished(ApplicationWrapper::ApplicationFinishResult);}
-\DoxyCodeLine{00139\ }
-\DoxyCodeLine{00140\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00141\ \ \ \ \ QMainWindow*\ mainWindow;}
-\DoxyCodeLine{00142\ \ \ \ \ QProcess*\ appProcess\ \{\ \textcolor{keyword}{nullptr}\ \};}
-\DoxyCodeLine{00143\ }
-\DoxyCodeLine{00144\ \ \ \ \ QString\ app\_path;\ }
-\DoxyCodeLine{00145\ \ \ \ \ QStringList\ app\_args;\ }
-\DoxyCodeLine{00146\ \ \ \ \ AppCode\ internal\_app\_code;\ }
-\DoxyCodeLine{00147\ \ \ \ \ AppWidget*\ appWidget;\ }
-\DoxyCodeLine{00148\ }
-\DoxyCodeLine{00149\ \ \ \ \ PreLaunchIndicate\ pre\_indicate;\ }
-\DoxyCodeLine{00150\ \ \ \ \ HandlingFinHook\ rawAppFinHook\ \{\ \textcolor{keyword}{nullptr}\ \};\ }
-\DoxyCodeLine{00151\ \ \ \ \ ErrorDepatchHook\ error\_handler\ \{\ \textcolor{keyword}{nullptr}\ \};\ }
-\DoxyCodeLine{00157\ \ \ \ \ \textcolor{keywordtype}{void}\ do\_fin\_hook(\textcolor{keywordtype}{int}\ exitCode,\ QProcess::ExitStatus\ status);}
-\DoxyCodeLine{00162\ \ \ \ \ \textcolor{keywordtype}{void}\ def\_error\_handler();}
-\DoxyCodeLine{00163\ \};}
-\DoxyCodeLine{00164\ }
-\DoxyCodeLine{00165\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ APPLICATIONWRAPPER\_H}}
+\DoxyCodeLine{00078\ \ \ \ \ \mbox{\hyperlink{class_app_widget}{AppWidget}}*\ \mbox{\hyperlink{class_application_wrapper_aab53c89497bb397efb30627776f468fb}{app\_widget}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ this-\/>appWidget;\ \}}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{class_application_wrapper_ad54d8e5509fdc415009be64f28636b82}{AppCode}}\ =\ int;}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_application_wrapper_adf8a55aaaf2ccbfda855d75d0f4b9053}{install\_app\_code}}(\mbox{\hyperlink{class_application_wrapper_ad54d8e5509fdc415009be64f28636b82}{AppCode}}\ code)\ \textcolor{keyword}{noexcept}\ \{\ internal\_app\_code\ =\ code;\ \}}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00093\ \ \ \ \ \mbox{\hyperlink{class_application_wrapper_ad54d8e5509fdc415009be64f28636b82}{AppCode}}\ \mbox{\hyperlink{class_application_wrapper_aaa275174067d1949835c5f7097fccc10}{app\_code}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ internal\_app\_code;\ \}}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_application_wrapper_acf76b7e548ec203af29659ad3115b9b8}{set\_app\_path}}(\textcolor{keyword}{const}\ QString\&\ app\_path)\ \textcolor{keyword}{noexcept}\ \{\ this-\/>app\_path\ =\ app\_path;\ \}}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{keyword}{inline}\ QString\ \mbox{\hyperlink{class_application_wrapper_aed189da24e5c4ef44de2d6fab8d2571a}{get\_app\_path}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ app\_path;\ \}}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00114\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_application_wrapper_a53d1462666f96dc21afb656dde0d0aa8}{install\_args}}(\textcolor{keyword}{const}\ QStringList\&\ \mbox{\hyperlink{class_application_wrapper_a40ff6df8511a686c4868a4d443a9ec19}{args}})\ \textcolor{keyword}{noexcept}\ \{\ app\_args\ =\ \mbox{\hyperlink{class_application_wrapper_a40ff6df8511a686c4868a4d443a9ec19}{args}};\ \}}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00120\ \ \ \ \ \textcolor{keyword}{inline}\ QStringList\ \mbox{\hyperlink{class_application_wrapper_a40ff6df8511a686c4868a4d443a9ec19}{args}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ app\_args;\ \}}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00127\ \ \ \ \ \textcolor{keyword}{inline}\ QProcess*\ \mbox{\hyperlink{class_application_wrapper_a3618112d107e8a77caa1d8865201bbad}{process\_handle}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ appProcess;\ \}}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00134\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_application_wrapper_afe3d64c4cefd2b7e6c97fb188a6e8488}{depatch\_app}}();}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00137\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{class_application_wrapper_a9aba67108dbf1e09c96373a9f5139d4b}{PreLaunchIndicate}}\ =\ \mbox{\hyperlink{struct_application_wrapper_1_1_application_depatch_result}{ApplicationDepatchResult}}\ (*)(\mbox{\hyperlink{class_application_wrapper_a78d2891721e75aa4494a062769ede89f}{ApplicationWrapper}}*\ wrapper);}
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00146\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_application_wrapper_a895d28d5f837ea6a23cae8f5ff8682b7}{install\_prelaunched}}(\mbox{\hyperlink{class_application_wrapper_a9aba67108dbf1e09c96373a9f5139d4b}{PreLaunchIndicate}}\ precheck)\ \{\ pre\_indicate\ =\ precheck;\ \}}
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00149\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{class_application_wrapper_acaaa113a722e3e2f0625d40181b8c794}{HandlingFinHook}}\ =\ void\ (*)(\mbox{\hyperlink{class_application_wrapper_a78d2891721e75aa4494a062769ede89f}{ApplicationWrapper}}*\ wrapper,\ \textcolor{keywordtype}{int}\ exit\_hook,\ QProcess::ExitStatus\ status);}
+\DoxyCodeLine{00150\ }
+\DoxyCodeLine{00155\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_application_wrapper_a13662d0c499aa21f837e4f6259ae68d6}{install\_finhook}}(\mbox{\hyperlink{class_application_wrapper_acaaa113a722e3e2f0625d40181b8c794}{HandlingFinHook}}\ hook)\ \{\ rawAppFinHook\ =\ hook;\ \}}
+\DoxyCodeLine{00156\ }
+\DoxyCodeLine{00158\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{class_application_wrapper_a1efcf8d4c820fd4c962319f69ccd50fb}{ErrorDepatchHook}}\ =\ void\ (*)(\mbox{\hyperlink{class_application_wrapper_a78d2891721e75aa4494a062769ede89f}{ApplicationWrapper}}*\ wrapper);}
+\DoxyCodeLine{00159\ }
+\DoxyCodeLine{00164\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_application_wrapper_a6a6e6252e45edb6ffd839e319ce37a0d}{install\_error\_handler}}(\mbox{\hyperlink{class_application_wrapper_a1efcf8d4c820fd4c962319f69ccd50fb}{ErrorDepatchHook}}\ hook)\ \{\ error\_handler\ =\ hook;\ \}}
+\DoxyCodeLine{00165\ }
+\DoxyCodeLine{00166\ signals:}
+\DoxyCodeLine{00171\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_application_wrapper_ac2ee029e9a9c1e0c727347477d1e313a}{app\_depatch\_status}}(\mbox{\hyperlink{struct_application_wrapper_1_1_application_depatch_result}{ApplicationWrapper::ApplicationDepatchResult}}\ result);}
+\DoxyCodeLine{00172\ }
+\DoxyCodeLine{00177\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_application_wrapper_a278f402ec75cf679234fc4e505d4cb5e}{app\_finished}}(\mbox{\hyperlink{struct_application_wrapper_1_1_application_finish_result}{ApplicationWrapper::ApplicationFinishResult}}\ result);}
+\DoxyCodeLine{00178\ }
+\DoxyCodeLine{00179\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00180\ \ \ \ \ \mbox{\hyperlink{class_desktop_main_window}{DesktopMainWindow}}*\ mainWindow;\ }
+\DoxyCodeLine{00181\ \ \ \ \ QProcess*\ appProcess\ \{\ \textcolor{keyword}{nullptr}\ \};\ }
+\DoxyCodeLine{00182\ }
+\DoxyCodeLine{00183\ \ \ \ \ QString\ app\_path;\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00184\ \ \ \ \ QStringList\ app\_args;\ \ \ \ \ \ }
+\DoxyCodeLine{00185\ \ \ \ \ \mbox{\hyperlink{class_application_wrapper_ad54d8e5509fdc415009be64f28636b82}{AppCode}}\ internal\_app\_code;\ }
+\DoxyCodeLine{00186\ \ \ \ \ \mbox{\hyperlink{class_app_widget}{AppWidget}}*\ appWidget;\ \ \ \ \ \ }
+\DoxyCodeLine{00187\ }
+\DoxyCodeLine{00188\ \ \ \ \ \mbox{\hyperlink{class_application_wrapper_a9aba67108dbf1e09c96373a9f5139d4b}{PreLaunchIndicate}}\ pre\_indicate;\ \ \ }
+\DoxyCodeLine{00189\ \ \ \ \ \mbox{\hyperlink{class_application_wrapper_acaaa113a722e3e2f0625d40181b8c794}{HandlingFinHook}}\ rawAppFinHook\ \{\ \textcolor{keyword}{nullptr}\ \};\ }
+\DoxyCodeLine{00190\ \ \ \ \ \mbox{\hyperlink{class_application_wrapper_a1efcf8d4c820fd4c962319f69ccd50fb}{ErrorDepatchHook}}\ error\_handler\ \{\ \textcolor{keyword}{nullptr}\ \};\ }
+\DoxyCodeLine{00191\ }
+\DoxyCodeLine{00197\ \ \ \ \ \textcolor{keywordtype}{void}\ do\_fin\_hook(\textcolor{keywordtype}{int}\ exitCode,\ QProcess::ExitStatus\ status);}
+\DoxyCodeLine{00198\ }
+\DoxyCodeLine{00202\ \ \ \ \ \textcolor{keywordtype}{void}\ def\_error\_handler();}
+\DoxyCodeLine{00203\ \};}
+\DoxyCodeLine{00204\ }
+\DoxyCodeLine{00205\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ APPLICATIONWRAPPER\_H}}
 
 \end{DoxyCode}

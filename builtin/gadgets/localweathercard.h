@@ -10,7 +10,15 @@
  */
 struct LocalWeatherLightFetcher {
 public:
+	/**
+	 * @brief Construct a new Local Weather Light Fetcher object
+	 * 
+	 */
 	LocalWeatherLightFetcher() = default;
+	/**
+	 * @brief disable copy
+	 * 
+	 */
 	Q_DISABLE_COPY(LocalWeatherLightFetcher);
 	/* for advanced c++, use concept is better */
 
@@ -33,8 +41,20 @@ public:
  */
 class LocalWeatherCard : public AppCardWidget {
 public:
+	/**
+	 * @brief Construct a new Local Weather Card object default disabled
+	 * 
+	 */
 	LocalWeatherCard() = delete;
+	/**
+	 * @brief disable copy
+	 * 
+	 */
 	Q_DISABLE_COPY(LocalWeatherCard);
+	/**
+	 * @brief Construct a new Local Weather Card object
+	 * 
+	 */
 	explicit LocalWeatherCard(
 		DesktopToast* toast, QWidget* parent = nullptr);
 
@@ -50,7 +70,7 @@ protected:
 	 * @note this is the main function to post the message to the toast
 	 */
 	void postAppCardWidget();
-	LocalWeatherLightFetcher* localFetcher { nullptr };
+	LocalWeatherLightFetcher* localFetcher { nullptr }; ///< fetcher instance
 };
 
 #endif // LOCALWEATHERCARD_H

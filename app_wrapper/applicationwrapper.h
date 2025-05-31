@@ -1,165 +1,205 @@
 #ifndef APPLICATIONWRAPPER_H
 #define APPLICATIONWRAPPER_H
+
 #include <QObject>
 #include <QProcess>
+
 class DesktopMainWindow;
 class AppWidget;
-/* App Wrapper here */
-/* is the Process Wrapper */
+
+/**
+ * @brief The ApplicationWrapper class is the process wrapper.
+ *
+ * This class manages launching, monitoring, and interacting with
+ * external applications through QProcess.
+ */
 class ApplicationWrapper : public QObject {
-	Q_OBJECT
+    Q_OBJECT
 public:
-	explicit ApplicationWrapper(
-		QObject* parent, DesktopMainWindow* desktopWindow);
-	/* is the only */
-	Q_DISABLE_COPY(ApplicationWrapper);
+    /**
+     * @brief Constructs an ApplicationWrapper instance.
+     * @param parent The parent QObject.
+     * @param desktopWindow Pointer to the main desktop window.
+     */
+    explicit ApplicationWrapper(QObject* parent, DesktopMainWindow* desktopWindow);
 
-	/**
-	 * @brief The ApplicationDepatchResult class indicate the
-	 * app depatching result, for the desktop front end, this can be
-	 * used in inform the user what is going on
-	 */
-	struct ApplicationDepatchResult {
-		enum class AppDepatchResult {
-			APP_RUN_OK,
-			APP_FILE_MISSING,
-			APP_OTHER_ERROR
-		};
+    /**
+     * @brief Disable copy constructor and assignment operator.
+     * This class is not copyable.
+     */
+    Q_DISABLE_COPY(ApplicationWrapper);
 
-		AppDepatchResult app_depatch_result; ///< Application Result Code
-		bool depatched { false }; ///< application depathed resukt
-		QString someOtherDetails {}; ///< details informations
-	};
+    /**
+     * @brief The ApplicationDepatchResult struct represents the result
+     * of launching (depatching) an application.
+     */
+    struct ApplicationDepatchResult {
+        /**
+         * @brief Possible results of application depatch.
+         */
+        enum class AppDepatchResult {
+            APP_RUN_OK,       ///< Application launched successfully
+            APP_FILE_MISSING, ///< Application executable file is missing
+            APP_OTHER_ERROR   ///< Other errors during launch
+        };
 
-	/**
-	 * @brief The ApplicationFinishResult class marks the
-	 * application depatching result, a typical scene of using this is, when
-	 * your app if finished(MainAppWindow Close, or anything trigger the exit functions will make
-	 * a process ends, this will emit the signals of AppProcess Finish signals)
-	 */
-	struct ApplicationFinishResult {
-		enum class AppFinishResult {
-			QUIT_NORMAL,
-			QUIT_OTHER
-		};
+        AppDepatchResult app_depatch_result; ///< Result code of application launch
+        bool depatched { false };            ///< Whether application was launched
+        QString someOtherDetails {};         ///< Additional info or error messages
+    };
 
-		AppFinishResult app_result; ///< App Runnning result
-		int exit_code; ///< exit code of the application
-	};
+    /**
+     * @brief The ApplicationFinishResult struct represents
+     * the result when an application finishes execution.
+     */
+    struct ApplicationFinishResult {
+        /**
+         * @brief Possible application finish states.
+         */
+        enum class AppFinishResult {
+            QUIT_NORMAL, ///< Application exited normally
+            QUIT_OTHER   ///< Application exited abnormally or other reasons
+        };
 
-	/**
-	 * @brief App Widget mappings bindings
-	 * @param appWidget
-	 */
-	void bindAppWidget(AppWidget* appWidget) noexcept { this->appWidget = appWidget; }
-	/**
-	 * @brief app_widget getters of the appWidgets
-	 * @return
-	 */
-	AppWidget* app_widget(void) const { return this->appWidget; }
+        AppFinishResult app_result; ///< Application exit result
+        int exit_code;              ///< Exit code returned by the application
+    };
 
-	/* AppCode is using to identify the app quickly */
-	using AppCode = int;
-	/**
-	 * @brief install the code apps, this will be used soon or later
-	 * @param code codes waiting install
-	 */
-	void install_app_code(AppCode code) noexcept { internal_app_code = code; }
-	/**
-	 * @brief get the app code
-	 * @return app codes
-	 */
-	AppCode app_code() const { return internal_app_code; }
+    /**
+     * @brief Bind the UI widget associated with the application.
+     * @param appWidget Pointer to the AppWidget instance.
+     */
+    void bindAppWidget(AppWidget* appWidget) noexcept { this->appWidget = appWidget; }
 
-	/**
-	 * @brief app path setter, this will indicate the ELF/PE Executables path in FileSystem
-	 * to make this launchable, it must be checkable for QFile, else, we can not fire the process
-	 * @param app_path where is the app? :)
-	 */
-	inline void set_app_path(const QString& app_path) noexcept { this->app_path = app_path; }
-	/**
-	 * @brief get the app path
-	 * @return the app path
-	 */
-	inline QString get_app_path(void) const { return app_path; }
+    /**
+     * @brief Returns the bound application widget.
+     * @return Pointer to the AppWidget instance.
+     */
+    AppWidget* app_widget() const { return this->appWidget; }
 
-	/**
-	 * @brief app args setter, this will indicate the arguments that is passed to the application
-	 * @param args arguments that is passed to the application
-	 */
-	inline void install_args(const QStringList& l) noexcept { app_args = l; }
-	/**
-	 * @brief get the args
-	 * @return the args
-	 */
-	inline QStringList args(void) const { return app_args; }
+    /// AppCode is used to uniquely identify applications.
+    using AppCode = int;
 
-	/**
-	 * @brief process_handle
-	 * @return
-	 * @note:for those who wanna see the detailed process,
-	 * use this to fetch the handle
-	 */
-	inline QProcess* process_handle(void) const { return appProcess; }
+    /**
+     * @brief Sets the app code for quick identification.
+     * @param code The app code to install.
+     */
+    void install_app_code(AppCode code) noexcept { internal_app_code = code; }
 
-	/**
-	 * @brief ApplicationWrapper::depatch_app
-	 * this is the main function to depatch the application, core functions
-	 * 	 */
-	void depatch_app(void);
+    /**
+     * @brief Returns the installed app code.
+     * @return The app code.
+     */
+    AppCode app_code() const { return internal_app_code; }
 
-	/* specified settings */
-	/* we accept the whole app wrapper and the prelaunch indicate
-	 * whether we should launch the application, at default, only
-	 * app file exsitance will be checked
-	 */
-	using PreLaunchIndicate = ApplicationDepatchResult (*)(ApplicationWrapper* wrapper);
+    /**
+     * @brief Sets the file system path to the application executable.
+     *
+     * The path must be accessible and executable for launching the process.
+     *
+     * @param app_path The file path of the application executable.
+     */
+    inline void set_app_path(const QString& app_path) noexcept { this->app_path = app_path; }
 
-	/**
-	 * @brief this functions installed the specified behaviours of the prelaunch
-	 * @param precheck functions is required
-	 * @note this is a hook for the prelaunch, you can use this to specify the launch result callbacks
-	 * result can be handle for checking the situations
-	 */
-	inline void install_prelaunched(PreLaunchIndicate precheck) { pre_indicate = precheck; }
+    /**
+     * @brief Returns the application executable path.
+     * @return The application path as QString.
+     */
+    inline QString get_app_path() const { return app_path; }
 
-	/* if you wanna do your own jobs, that is required to override this */
-	using HandlingFinHook = void (*)(ApplicationWrapper* wrapper, int exit_hook, QProcess::ExitStatus status);
-	inline void install_finhook(HandlingFinHook hook) { rawAppFinHook = hook; }
+    /**
+     * @brief Sets the arguments to pass to the application on launch.
+     * @param args List of arguments.
+     */
+    inline void install_args(const QStringList& args) noexcept { app_args = args; }
 
-	/* for app depatch level error, we have to expose an interface */
-	using ErrorDepatchHook = void (*)(ApplicationWrapper* wrapper);
-	/* if you wanna pass out the status, use emit app_depatch_status */
-	inline void install_error_handler(ErrorDepatchHook hook) { error_handler = hook; }
+    /**
+     * @brief Returns the argument list for the application.
+     * @return QStringList of arguments.
+     */
+    inline QStringList args() const { return app_args; }
+
+    /**
+     * @brief Returns the internal QProcess handle.
+     * @note Use this to access detailed process control or signals.
+     * @return Pointer to QProcess managing the application.
+     */
+    inline QProcess* process_handle() const { return appProcess; }
+
+    /**
+     * @brief Launches the application (depatch).
+     *
+     * This is the core function to start the external process.
+     */
+    void depatch_app();
+
+    /// Function pointer type for pre-launch checks.
+    using PreLaunchIndicate = ApplicationDepatchResult (*)(ApplicationWrapper* wrapper);
+
+    /**
+     * @brief Installs a pre-launch indication hook.
+     *
+     * This hook can be used to check conditions or prepare before launch.
+     *
+     * @param precheck The function pointer to the pre-launch check.
+     */
+    inline void install_prelaunched(PreLaunchIndicate precheck) { pre_indicate = precheck; }
+
+    /// Function pointer type for handling application finish hooks.
+    using HandlingFinHook = void (*)(ApplicationWrapper* wrapper, int exit_hook, QProcess::ExitStatus status);
+
+    /**
+     * @brief Installs a hook called when the application finishes.
+     * @param hook The function pointer to the finish hook.
+     */
+    inline void install_finhook(HandlingFinHook hook) { rawAppFinHook = hook; }
+
+    /// Function pointer type for handling depatch errors.
+    using ErrorDepatchHook = void (*)(ApplicationWrapper* wrapper);
+
+    /**
+     * @brief Installs an error handler hook for depatch failures.
+     * @param hook The function pointer to the error handler.
+     */
+    inline void install_error_handler(ErrorDepatchHook hook) { error_handler = hook; }
+
 signals:
-	/* app is depatched or not, see the signals */
-	void app_depatch_status(ApplicationWrapper::ApplicationDepatchResult);
-	/* app is finished, connect this signals for the hook */
-	void app_finished(ApplicationWrapper::ApplicationFinishResult);
+    /**
+     * @brief Emitted when application depatch status changes.
+     * @param result The result of the depatch.
+     */
+    void app_depatch_status(ApplicationWrapper::ApplicationDepatchResult result);
+
+    /**
+     * @brief Emitted when the application finishes.
+     * @param result The application finish result.
+     */
+    void app_finished(ApplicationWrapper::ApplicationFinishResult result);
 
 private:
-	DesktopMainWindow* mainWindow;
-	QProcess* appProcess { nullptr };
+    DesktopMainWindow* mainWindow; ///< mainWindow holders for hooking
+    QProcess* appProcess { nullptr }; ///< appProcess instance in process level
 
-	QString app_path; ///< Application path that is searchable
-	QStringList app_args; ///< If an application is start with args required, this vars hold the cases
-	AppCode internal_app_code; ///< Application codes
-	AppWidget* appWidget; ///< Binding appWidgets, someTimes if we wanna get the Ui Bindings, this hold the apps
+    QString app_path;          ///< Path to the application executable.
+    QStringList app_args;      ///< Arguments passed to the application.
+    AppCode internal_app_code; ///< Internal code identifying the app.
+    AppWidget* appWidget;      ///< UI widget associated with the app.
 
-	PreLaunchIndicate pre_indicate; ///< Application prelaunch indicate
-	HandlingFinHook rawAppFinHook { nullptr }; ///< Application finish hook
-	ErrorDepatchHook error_handler { nullptr }; ///< Application error handler
-	/**
-	 * @brief Do Process Exit hooks
-	 * @param exitCode
-	 * @param status
-	 */
-	void do_fin_hook(int exitCode, QProcess::ExitStatus status);
-	/**
-	 * @brief This is the default error handler when application
-	 * depatching failed
-	 */
-	void def_error_handler();
+    PreLaunchIndicate pre_indicate;   ///< Pre-launch check hook.
+    HandlingFinHook rawAppFinHook { nullptr }; ///< Application finish hook.
+    ErrorDepatchHook error_handler { nullptr }; ///< Application depatch error handler.
+
+    /**
+     * @brief Executes the finish hook on process exit.
+     * @param exitCode The exit code returned by the process.
+     * @param status The exit status.
+     */
+    void do_fin_hook(int exitCode, QProcess::ExitStatus status);
+
+    /**
+     * @brief Default error handler when depatching fails.
+     */
+    void def_error_handler();
 };
 
 #endif // APPLICATIONWRAPPER_H

@@ -18,7 +18,16 @@ class CPUUsageChart : public QWidget {
 	Q_OBJECT
 
 public:
+	/**
+	 * @brief Construct a new CPUUsageChart object
+	 * 
+	 * @param parent 
+	 */
 	explicit CPUUsageChart(QWidget* parent = nullptr);
+	/**
+	 * @brief Destroy the CPUUsageChart object
+	 * 
+	 */
 	~CPUUsageChart();
 
 public slots:

@@ -4,46 +4,49 @@
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ MYWEATHERREQUEST\_H}}
 \DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ MYWEATHERREQUEST\_H}}
-\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <QNetworkAccessManager>}}
-\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QtClassHelperMacros>}}
-\DoxyCodeLine{00005\ }
-\DoxyCodeLine{00012\ \textcolor{keyword}{struct\ }WeatherResult\ :\ \textcolor{keyword}{public}\ QObject\ \{}
-\DoxyCodeLine{00013\ \ \ \ \ Q\_OBJECT}
-\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{explicit}\ WeatherResult(QObject*\ obj\ =\ \textcolor{keyword}{nullptr})}
-\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ :\ QObject(obj)\ \{\ \}}
-\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_weather_result_a7241825ed885decb2ebb752a1502e400}{parseJsonString}}(\textcolor{keyword}{const}\ QString\ json)\ =\ 0;}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QNetworkAccessManager>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QtClassHelperMacros>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_weather_result_a05e61499944a8ccded4e5e3ceeca72b7}{WeatherResult}}\ :\ \textcolor{keyword}{public}\ QObject\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{struct_weather_result_a05e61499944a8ccded4e5e3ceeca72b7}{WeatherResult}}(QObject*\ obj\ =\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ :\ QObject(obj)\ \{\ \}}
 \DoxyCodeLine{00022\ }
-\DoxyCodeLine{00023\ signals:}
-\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_weather_result_ac292b0cbe62ac22d94e271949f6b7b5e}{finish\_parse}}();}
-\DoxyCodeLine{00029\ }
-\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_weather_result_ac0bbf6a55fec1721e157da2d1c50b9c3}{error\_occurs}}(QString\ cached\_error\_string);}
-\DoxyCodeLine{00036\ \};}
-\DoxyCodeLine{00037\ }
-\DoxyCodeLine{00038\ \textcolor{keyword}{class\ }WeatherRequest\ :\ \textcolor{keyword}{public}\ QObject\ \{}
-\DoxyCodeLine{00039\ \ \ \ \ Q\_OBJECT}
-\DoxyCodeLine{00040\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00041\ \ \ \ \ Q\_DISABLE\_COPY(WeatherRequest);}
-\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keyword}{explicit}\ WeatherRequest(QObject*\ parent\ =\ \textcolor{keyword}{nullptr});}
-\DoxyCodeLine{00043\ }
-\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_weather_request_a536ac3f283539dd0b7d7885bb53fc7b5}{async\_request}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ base\_url);}
-\DoxyCodeLine{00051\ \ \ \ \ \textcolor{comment}{/*\ \ interfaces\ */}}
-\DoxyCodeLine{00052\ }
-\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keyword}{virtual}\ QUrlQuery\ \mbox{\hyperlink{class_weather_request_a2faec779862560dbe931d723025787d1}{compose\_request}}()\ =\ 0;}
-\DoxyCodeLine{00060\ }
-\DoxyCodeLine{00061\ \textcolor{keyword}{protected}:}
-\DoxyCodeLine{00062\ \ \ \ \ \textcolor{comment}{/*\ actually\ managing\ the\ request\ */}}
-\DoxyCodeLine{00063\ \ \ \ \ QNetworkAccessManager\ manager;}
-\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ private\_key\ =\ \_DEF\_WEATHER\_PRIVATE\_KEY;}
-\DoxyCodeLine{00065\ }
-\DoxyCodeLine{00066\ signals:}
-\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_weather_request_ad6741445b3b9ed4fdb60f1a53293e720}{errorOccurs}}(QNetworkReply*\ reply);}
-\DoxyCodeLine{00074\ }
-\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_weather_request_a182f4d1dd7b4a801eb9a9469f88dc000}{result\_available}}(\textcolor{keyword}{const}\ QString\ json);}
-\DoxyCodeLine{00082\ \textcolor{keyword}{private}\ slots:}
-\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordtype}{void}\ onReplyFinished(QNetworkReply*\ reply);}
-\DoxyCodeLine{00089\ \};}
-\DoxyCodeLine{00090\ }
-\DoxyCodeLine{00091\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MYWEATHERREQUEST\_H}}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_weather_result_a7241825ed885decb2ebb752a1502e400}{parseJsonString}}(\textcolor{keyword}{const}\ QString\ json)\ =\ 0;}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ signals:}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_weather_result_ac292b0cbe62ac22d94e271949f6b7b5e}{finish\_parse}}();}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_weather_result_ac0bbf6a55fec1721e157da2d1c50b9c3}{error\_occurs}}(QString\ cached\_error\_string);}
+\DoxyCodeLine{00040\ \};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00047\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_weather_request_a563db4f9beeca9a58267e04c0ecbe0f8}{WeatherRequest}}\ :\ \textcolor{keyword}{public}\ QObject\ \{}
+\DoxyCodeLine{00048\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00049\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00054\ \ \ \ \ \mbox{\hyperlink{class_weather_request_a472973ba5b01c6b681f831470c8e8ec4}{Q\_DISABLE\_COPY}}(\mbox{\hyperlink{class_weather_request_a563db4f9beeca9a58267e04c0ecbe0f8}{WeatherRequest}});}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_weather_request_a563db4f9beeca9a58267e04c0ecbe0f8}{WeatherRequest}}(QObject*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_weather_request_a536ac3f283539dd0b7d7885bb53fc7b5}{async\_request}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ base\_url);}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keyword}{virtual}\ QUrlQuery\ \mbox{\hyperlink{class_weather_request_a2faec779862560dbe931d723025787d1}{compose\_request}}()\ =\ 0;}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00075\ \ \ \ \ QNetworkAccessManager\ \mbox{\hyperlink{class_weather_request_a409c6257cb30390f26bd3c67f295ef06}{manager}};\ }
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{class_weather_request_ac40ebb371070a67f2e2f0d75af7e5036}{private\_key}}\ =\ \_DEF\_WEATHER\_PRIVATE\_KEY;}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ signals:}
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_weather_request_ad6741445b3b9ed4fdb60f1a53293e720}{errorOccurs}}(QNetworkReply*\ reply);}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_weather_request_a182f4d1dd7b4a801eb9a9469f88dc000}{result\_available}}(\textcolor{keyword}{const}\ QString\ json);}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keywordtype}{void}\ onReplyFinished(QNetworkReply*\ reply);}
+\DoxyCodeLine{00101\ \};}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MYWEATHERREQUEST\_H}}
 
 \end{DoxyCode}

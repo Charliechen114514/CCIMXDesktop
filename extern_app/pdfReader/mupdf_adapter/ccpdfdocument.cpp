@@ -2,8 +2,13 @@
 #include "mupdf_tools/mupdf_tools.h"
 #include <QFile>
 #include <mupdf/fitz.h>
-/* oh that is because fz_context never a C++ Style struct */
+/**
+ * @brief deleter for smart pointer
+ */
 struct CCPdfContextDeleter {
+	/**
+	 * @brief deleter for smart pointer, oh that is because fz_context never a C++ Style struct
+	 */
 	void operator()(fz_context* ctx) const {
 		if (ctx) {
 			fz_drop_context(ctx);
@@ -11,35 +16,48 @@ struct CCPdfContextDeleter {
 	}
 };
 
+/**
+ * @brief CCPdfDocumentPrivate holders
+ * 
+ */
 struct CCPdfDocumentPrivate {
-	Q_DISABLE_COPY(CCPdfDocumentPrivate);
+    // Q_DISABLE_COPY(CCPdfDocumentPrivate); ///< Copy constructor and assignment operator disabled
 
-	/* provide a base */
-	CCPdfDocumentPrivate() {
-		context = std::unique_ptr<fz_context, CCPdfContextDeleter>(
-			fz_new_context(nullptr, nullptr, FZ_STORE_UNLIMITED));
-		fz_register_document_handlers(context.get());
-	}
+    /**
+     * @brief Default constructor, initializes the PDF context and registers handlers
+     */
+    CCPdfDocumentPrivate() {
+        context = std::unique_ptr<fz_context, CCPdfContextDeleter>(
+            fz_new_context(nullptr, nullptr, FZ_STORE_UNLIMITED));
+        fz_register_document_handlers(context.get());
+    }
 
-	~CCPdfDocumentPrivate() {
-		/* reach the time of erasing */
-		if (document) {
-			fz_drop_document(context.get(), document);
-			document = nullptr;
-		}
-		/* as we have already define how to context */
-		/* we actually do nothing here */
-	}
+    /**
+     * @brief Destructor, releases the document if it exists
+     */
+    ~CCPdfDocumentPrivate() {
+        if (document) {
+            fz_drop_document(context.get(), document);
+            document = nullptr;
+        }
+        // Context cleanup is handled automatically by unique_ptr deleter
+    }
 
-	std::unique_ptr<fz_context, CCPdfContextDeleter> context;
-	/*
-	 * reason why I don't set this as unique_ptr is simple,
-	 * erase of the fz_document is time-relevant, as I also need to
-	 * design the front and back relationships of twos
-	 * and that makes me feel sicks
-	 */
-	fz_document* document { nullptr };
+    /**
+     * @brief PDF rendering context managed by unique_ptr with custom deleter
+     */
+    std::unique_ptr<fz_context, CCPdfContextDeleter> context;
+
+    /**
+     * @brief Raw pointer to the PDF document; manual lifecycle management
+     * 
+     * Reason not using unique_ptr:
+     * The document destruction timing is critical due to front/back relationships,
+     * so manual control is required.
+     */
+    fz_document* document { nullptr };
 };
+
 
 CCPdfDocument::CCPdfDocument(QObject* parent)
 	: QObject { parent } {

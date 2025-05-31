@@ -2,7 +2,7 @@
 \hypertarget{struct_weather_result}{}\label{struct_weather_result}\index{WeatherResult@{WeatherResult}}
 
 
-The \doxylink{struct_weather_result}{Weather\+Result} class The \doxylink{struct_weather_result}{Weather\+Result} class provides the weather result interfaces @notes my weather request is the virtual class trying to make a request to the web apps, including some neccesary interfaces.  
+The \doxylink{struct_weather_result}{Weather\+Result} class provides the weather result interfaces.  
 
 
 
@@ -20,21 +20,43 @@ Inheritance diagram for Weather\+Result\+:\begin{figure}[H]
 \item 
 \Hypertarget{struct_weather_result_ac292b0cbe62ac22d94e271949f6b7b5e}\label{struct_weather_result_ac292b0cbe62ac22d94e271949f6b7b5e} 
 void {\bfseries finish\+\_\+parse} ()
-\begin{DoxyCompactList}\small\item\em finish\+\_\+parse when the parsing is finished, this signal will be emitted \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Emitted when the parsing is finished. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{struct_weather_result_ac0bbf6a55fec1721e157da2d1c50b9c3}{error\+\_\+occurs}} (QString cached\+\_\+error\+\_\+string)
-\begin{DoxyCompactList}\small\item\em error\+\_\+occurs when an error occurs, this signal will be emitted \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Emitted when an error occurs. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{struct_weather_result_a05e61499944a8ccded4e5e3ceeca72b7}\label{struct_weather_result_a05e61499944a8ccded4e5e3ceeca72b7} 
-{\bfseries Weather\+Result} (QObject \texorpdfstring{$\ast$}{*}obj=nullptr)
-\item 
+\mbox{\hyperlink{struct_weather_result_a05e61499944a8ccded4e5e3ceeca72b7}{Weather\+Result}} (QObject \texorpdfstring{$\ast$}{*}obj=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{struct_weather_result}{Weather\+Result}. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{struct_weather_result_a7241825ed885decb2ebb752a1502e400}{parse\+Json\+String}} (const QString json)=0
-\begin{DoxyCompactList}\small\item\em parse\+Json\+String defines how to parse json strings \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Parses the JSON string. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-The \doxylink{struct_weather_result}{Weather\+Result} class The \doxylink{struct_weather_result}{Weather\+Result} class provides the weather result interfaces @notes my weather request is the virtual class trying to make a request to the web apps, including some neccesary interfaces. 
+The \doxylink{struct_weather_result}{Weather\+Result} class provides the weather result interfaces. 
+
+\begin{DoxyNote}{Note}
+\doxylink{struct_weather_result}{Weather\+Result} is an abstract class that defines how to parse JSON strings retrieved from the web apps. 
+\end{DoxyNote}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{struct_weather_result_a05e61499944a8ccded4e5e3ceeca72b7}\index{WeatherResult@{WeatherResult}!WeatherResult@{WeatherResult}}
+\index{WeatherResult@{WeatherResult}!WeatherResult@{WeatherResult}}
+\doxysubsubsection{\texorpdfstring{WeatherResult()}{WeatherResult()}}
+{\footnotesize\ttfamily \label{struct_weather_result_a05e61499944a8ccded4e5e3ceeca72b7} 
+Weather\+Result\+::\+Weather\+Result (\begin{DoxyParamCaption}\item[{QObject \texorpdfstring{$\ast$}{*}}]{obj}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Constructor for \doxylink{struct_weather_result}{Weather\+Result}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & The parent QObject. \\
+\hline
+\end{DoxyParams}
+
 
 \doxysubsection{Member Function Documentation}
 \Hypertarget{struct_weather_result_ac0bbf6a55fec1721e157da2d1c50b9c3}\index{WeatherResult@{WeatherResult}!error\_occurs@{error\_occurs}}
@@ -45,11 +67,11 @@ void Weather\+Result\+::error\+\_\+occurs (\begin{DoxyParamCaption}\item[{QStrin
 
 
 
-error\+\_\+occurs when an error occurs, this signal will be emitted 
+Emitted when an error occurs. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em cached\+\_\+error\+\_\+string} & the error string \\
+{\em cached\+\_\+error\+\_\+string} & The error string. \\
 \hline
 \end{DoxyParams}
 \Hypertarget{struct_weather_result_a7241825ed885decb2ebb752a1502e400}\index{WeatherResult@{WeatherResult}!parseJsonString@{parseJsonString}}
@@ -60,11 +82,11 @@ virtual void Weather\+Result\+::parse\+Json\+String (\begin{DoxyParamCaption}\it
 
 
 
-parse\+Json\+String defines how to parse json strings 
+Parses the JSON string. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em json} & the json string waiting parse \\
+{\em json} & The JSON string to parse. \\
 \hline
 \end{DoxyParams}
 

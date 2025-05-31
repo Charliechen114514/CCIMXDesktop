@@ -15,6 +15,11 @@ class QPropertyAnimation;
 class DesktopToast : public QWidget {
     Q_OBJECT
 public:
+	/**
+	 * @brief Construct a new Desktop Toast object
+	 * 
+	 * @param parent 
+	 */
 	explicit DesktopToast(QWidget* parent = nullptr);
 	/**
 	 * @brief set_message push the toast display into the

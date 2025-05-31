@@ -23,9 +23,8 @@ void \mbox{\hyperlink{class_disk_music_aec5c25ab2a0ba560c66963daddf1e585}{arm\+A
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_disk_music_a52e7e5538b7dd97800593c88dc5ff0f4}\label{class_disk_music_a52e7e5538b7dd97800593c88dc5ff0f4} 
-{\bfseries Disk\+Music} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
-\item 
+\mbox{\hyperlink{class_disk_music_a52e7e5538b7dd97800593c88dc5ff0f4}{Disk\+Music}} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Construct a new Disk Music object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_disk_music_abca29257fb38b715fc2a07f8f2483f99}{set\+Status}} (bool set\+\_\+is\+\_\+playing)
 \begin{DoxyCompactList}\small\item\em set\+Status set the status of the disk \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_disk_music_acea487230816c35a7293f0f8594fcced}{set\+Pixmap}} (const QString \&pixmap\+\_\+path)
@@ -33,22 +32,43 @@ void \mbox{\hyperlink{class_disk_music_acea487230816c35a7293f0f8594fcced}{set\+P
 qreal \mbox{\hyperlink{class_disk_music_a7776a57ac28b26e127421aa83f2898dc}{arm\+Angle}} () const
 \begin{DoxyCompactList}\small\item\em arm\+Angle get the arm angle \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_disk_music_af58dac86aadbede523ca3e225f0edb20}{set\+Arm\+Angle}} (qreal angle)
-\begin{DoxyCompactList}\small\item\em set\+Arm\+Angle set the arm angle \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em set\+Arm\+Angle set the arm angle \end{DoxyCompactList}\item 
+\Hypertarget{class_disk_music_a0b14dbf27e87e237de648d3e76c19ca5}\label{class_disk_music_a0b14dbf27e87e237de648d3e76c19ca5} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Disk\+Music} ()
+\begin{DoxyCompactList}\small\item\em Destroy the Disk Music object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{class_disk_music_a6bdfcd736a34a496a89c5cab3f81805b}{paint\+Event}} (QPaint\+Event \texorpdfstring{$\ast$}{*}) override
+void \mbox{\hyperlink{class_disk_music_acb9fdb2d842ee87dd47444b8e26b8d1c}{paint\+Event}} (QPaint\+Event \texorpdfstring{$\ast$}{*}event) override
 \begin{DoxyCompactList}\small\item\em paint\+Event the paint event for the disk \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
 \Hypertarget{class_disk_music_acb72e8a05d0295e466b8923f201adbd7}\label{class_disk_music_acb72e8a05d0295e466b8923f201adbd7} 
 qreal {\bfseries arm\+Angle}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em property announced \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 The \doxylink{class_disk_music}{Disk\+Music} class is a Widget Class(Sorry for the non-\/class label) that holding all the details of the disk eyes level interative. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_disk_music_a52e7e5538b7dd97800593c88dc5ff0f4}\index{DiskMusic@{DiskMusic}!DiskMusic@{DiskMusic}}
+\index{DiskMusic@{DiskMusic}!DiskMusic@{DiskMusic}}
+\doxysubsubsection{\texorpdfstring{DiskMusic()}{DiskMusic()}}
+{\footnotesize\ttfamily \label{class_disk_music_a52e7e5538b7dd97800593c88dc5ff0f4} 
+Disk\+Music\+::\+Disk\+Music (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Construct a new Disk Music object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+
 
 \doxysubsection{Member Function Documentation}
 \Hypertarget{class_disk_music_a7776a57ac28b26e127421aa83f2898dc}\index{DiskMusic@{DiskMusic}!armAngle@{armAngle}}
@@ -77,11 +97,11 @@ arm\+Angle\+Changed the signal indicating the arm angle changed
 \begin{DoxyNote}{Note}
 this is the signal for the animation to update 
 \end{DoxyNote}
-\Hypertarget{class_disk_music_a6bdfcd736a34a496a89c5cab3f81805b}\index{DiskMusic@{DiskMusic}!paintEvent@{paintEvent}}
+\Hypertarget{class_disk_music_acb9fdb2d842ee87dd47444b8e26b8d1c}\index{DiskMusic@{DiskMusic}!paintEvent@{paintEvent}}
 \index{paintEvent@{paintEvent}!DiskMusic@{DiskMusic}}
 \doxysubsubsection{\texorpdfstring{paintEvent()}{paintEvent()}}
-{\footnotesize\ttfamily \label{class_disk_music_a6bdfcd736a34a496a89c5cab3f81805b} 
-void Disk\+Music\+::paint\+Event (\begin{DoxyParamCaption}\item[{QPaint\+Event \texorpdfstring{$\ast$}{*}}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+{\footnotesize\ttfamily \label{class_disk_music_acb9fdb2d842ee87dd47444b8e26b8d1c} 
+void Disk\+Music\+::paint\+Event (\begin{DoxyParamCaption}\item[{QPaint\+Event \texorpdfstring{$\ast$}{*}}]{event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
 
 
 

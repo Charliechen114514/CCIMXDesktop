@@ -29,7 +29,11 @@ public:
 		WINDSCALE, ///< wind scale page
 		HUMIDITY ///< humidity page
 	};
-
+	/**
+	 * @brief Construct a new Weather Chart Widget object
+	 * 
+	 * @param parent 
+	 */
 	explicit WeatherChartWidget(QWidget* parent = nullptr);
 
 	/**

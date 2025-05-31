@@ -1,56 +1,122 @@
 #ifndef APPWIDGET_H
 #define APPWIDGET_H
+
 #include <QIcon>
 #include <QWidget>
+
 class ApplicationWrapper;
+
 namespace Ui {
 class AppWidget;
 }
 
 /**
- * @brief The AppWidget class is the AppWidgets placing in the
- * desktop.
+ * @brief The AppWidget class represents an application widget placed on the desktop.
+ *
+ * It displays an icon and app name, manages the underlying ApplicationWrapper,
+ * and handles launching and status updates.
  */
 class AppWidget : public QWidget {
     Q_OBJECT
 
 public:
-	explicit AppWidget(const QPixmap& icon, const QString& name, QWidget* parent = nullptr);
-	void bindApp(ApplicationWrapper* wrapper) { this->app_internal = wrapper; }
-	ApplicationWrapper* get_app() const { return this->app_internal; }
-	void setIcon(const QPixmap& icon) noexcept;
-	void setAppName(const QString& name) noexcept;
+    /**
+     * @brief Constructs an AppWidget with the given icon and app name.
+     * @param icon The icon to display.
+     * @param name The application name.
+     * @param parent Optional parent widget.
+     */
+    explicit AppWidget(const QPixmap& icon, const QString& name, QWidget* parent = nullptr);
 
-	/**
-	 * @brief setDummy set the app visible only, and don't make any senses
-	 * this will disable any possible real interactive of the depatchings
-	 * @param dummy
-	 */
-	void setDummy(bool dummy);
-	QPixmap icon() const;
-	void showIconOnly(bool st);
-	QString app_name() const;
-	~AppWidget();
+    /**
+     * @brief Bind an ApplicationWrapper instance to this widget.
+     * @param wrapper Pointer to the ApplicationWrapper.
+     */
+    void bindApp(ApplicationWrapper* wrapper) { this->app_internal = wrapper; }
 
-	enum class AppStatus {
-		AppOk,
-		AppNonExsits
-	};
+    /**
+     * @brief Get the bound ApplicationWrapper.
+     * @return Pointer to the ApplicationWrapper.
+     */
+    ApplicationWrapper* get_app() const { return this->app_internal; }
+
+    /**
+     * @brief Set the icon displayed by this widget.
+     * @param icon The pixmap to set as icon.
+     */
+    void setIcon(const QPixmap& icon) noexcept;
+
+    /**
+     * @brief Set the application name displayed by this widget.
+     * @param name The name string.
+     */
+    void setAppName(const QString& name) noexcept;
+
+    /**
+     * @brief Set this widget as dummy mode.
+     *
+     * When set to dummy, the widget is visible but does not respond
+     * to any real interaction or launch requests.
+     * @param dummy True to enable dummy mode; false to disable.
+     */
+    void setDummy(bool dummy);
+
+    /**
+     * @brief Get the current icon pixmap.
+     * @return The icon pixmap.
+     */
+    QPixmap icon() const;
+
+    /**
+     * @brief Show or hide only the icon (hides other UI elements).
+     * @param st True to show icon only; false to show full widget.
+     */
+    void showIconOnly(bool st);
+
+    /**
+     * @brief Get the application name.
+     * @return The app name string.
+     */
+    QString app_name() const;
+
+    /**
+     * @brief Destructor.
+     */
+    ~AppWidget();
+
+    /**
+     * @brief Enum representing the application status.
+     */
+    enum class AppStatus {
+        AppOk,          ///< Application is running or available.
+        AppNonExsits    ///< Application does not exist.
+    };
 
 signals:
-	void postAppStatus(AppWidget::AppStatus status);
+    /**
+     * @brief Signal emitted to notify about the application status.
+     * @param status The current status of the app.
+     */
+    void postAppStatus(AppWidget::AppStatus status);
 
 protected:
-	bool eventFilter(QObject* watched, QEvent* event) override;
+    /**
+     * @brief Event filter to handle user interaction events.
+     * @param watched The object being watched.
+     * @param event The event being filtered.
+     * @return true if the event was handled, false otherwise.
+     */
+    bool eventFilter(QObject* watched, QEvent* event) override;
 
 private:
-	Ui::AppWidget* ui;
-	bool dummy_state { false };
-	ApplicationWrapper* app_internal { nullptr };
-	/**
-	 * @brief do_daptch. depatch the app wrappers
-	 */
-	void do_daptch();
+    Ui::AppWidget* ui; ///< ui handling 
+    bool dummy_state { false }; ///< Whether the widget is in dummy mode (non-interactive).
+    ApplicationWrapper* app_internal { nullptr }; ///< The application wrapper bound to this widget.
+
+    /**
+     * @brief Dispatch the application via the ApplicationWrapper.
+     */
+    void do_daptch();
 };
 
 #endif // APPWIDGET_H

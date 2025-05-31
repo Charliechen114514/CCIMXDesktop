@@ -4,9 +4,13 @@
 #include "CVImageImpl.h"
 #include <opencv2/opencv.hpp>
 
+/**
+ * @brief opencv implement of the CVImage
+ * 
+ */
 class CVImageOpencvImpl : public CVImageImpl {
 public:
-	cv::Mat raw_image;
+	cv::Mat raw_image; ///< handling raw image in opencv
 
 	/**
 	 * @brief load_from_file loads the image from file

@@ -1,5 +1,14 @@
 \doxysection{Down\+Dock\+Widget Class Reference}
 \hypertarget{class_down_dock_widget}{}\label{class_down_dock_widget}\index{DownDockWidget@{DownDockWidget}}
+
+
+The \doxylink{class_down_dock_widget}{Down\+Dock\+Widget} class holdings the down dock sessions it supports the dynamic sorted according freqency of clicking times.  
+
+
+
+
+{\ttfamily \#include $<$downdockwidget.\+h$>$}
+
 Inheritance diagram for Down\+Dock\+Widget\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,14 +18,56 @@ Inheritance diagram for Down\+Dock\+Widget\+:\begin{figure}[H]
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_down_dock_widget_aece8d1a8bb339ee68244eb3e6bd749ef}\label{class_down_dock_widget_aece8d1a8bb339ee68244eb3e6bd749ef} 
-{\bfseries Down\+Dock\+Widget} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
-\item 
+\mbox{\hyperlink{class_down_dock_widget_aece8d1a8bb339ee68244eb3e6bd749ef}{Down\+Dock\+Widget}} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Construct a new Down Dock Widget object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_down_dock_widget_a5f9716b7b481d0ba516536e8b7f977f9}{set\+\_\+dock\+\_\+apps}} (const QList$<$ \mbox{\hyperlink{class_app_widget}{App\+Widget}} \texorpdfstring{$\ast$}{*} $>$ \&apps)
-\begin{DoxyCompactList}\small\item\em set\+\_\+dock\+\_\+apps set the dock apps waiting for shows \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em set\+\_\+dock\+\_\+apps set the dock apps waiting for shows \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_down_dock_widget_aa419ff5495887c25d9b9f4375a48bb64}{set\+\_\+parent\+\_\+window}} (\mbox{\hyperlink{class_desktop_main_window}{Desktop\+Main\+Window}} \texorpdfstring{$\ast$}{*}parent\+\_\+window)
+\begin{DoxyCompactList}\small\item\em Set the parent window object. \end{DoxyCompactList}\item 
+\Hypertarget{class_down_dock_widget_a598e6eac42346637e99837f43865aec3}\label{class_down_dock_widget_a598e6eac42346637e99837f43865aec3} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Down\+Dock\+Widget} ()
+\begin{DoxyCompactList}\small\item\em Destroy the Down Dock Widget object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_down_dock_widget_a71d6f1913ce2ea3fa516de9ce9d485d2}{on\+\_\+app\+\_\+dispatched}} (const \mbox{\hyperlink{class_app_widget}{App\+Widget}} \texorpdfstring{$\ast$}{*}app)
+\begin{DoxyCompactList}\small\item\em on\+\_\+app\+\_\+dispatched hooks the success app \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_down_dock_widget}{Down\+Dock\+Widget} class holdings the down dock sessions it supports the dynamic sorted according freqency of clicking times. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_down_dock_widget_aece8d1a8bb339ee68244eb3e6bd749ef}\index{DownDockWidget@{DownDockWidget}!DownDockWidget@{DownDockWidget}}
+\index{DownDockWidget@{DownDockWidget}!DownDockWidget@{DownDockWidget}}
+\doxysubsubsection{\texorpdfstring{DownDockWidget()}{DownDockWidget()}}
+{\footnotesize\ttfamily \label{class_down_dock_widget_aece8d1a8bb339ee68244eb3e6bd749ef} 
+Down\+Dock\+Widget\+::\+Down\+Dock\+Widget (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Construct a new Down Dock Widget object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
 
 
 \doxysubsection{Member Function Documentation}
+\Hypertarget{class_down_dock_widget_a71d6f1913ce2ea3fa516de9ce9d485d2}\index{DownDockWidget@{DownDockWidget}!on\_app\_dispatched@{on\_app\_dispatched}}
+\index{on\_app\_dispatched@{on\_app\_dispatched}!DownDockWidget@{DownDockWidget}}
+\doxysubsubsection{\texorpdfstring{on\_app\_dispatched()}{on\_app\_dispatched()}}
+{\footnotesize\ttfamily \label{class_down_dock_widget_a71d6f1913ce2ea3fa516de9ce9d485d2} 
+void Down\+Dock\+Widget\+::on\+\_\+app\+\_\+dispatched (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_app_widget}{App\+Widget}} \texorpdfstring{$\ast$}{*}}]{app}{}\end{DoxyParamCaption})}
+
+
+
+on\+\_\+app\+\_\+dispatched hooks the success app 
+
+
+\begin{DoxyParams}{Parameters}
+{\em app} & \\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_down_dock_widget_a5f9716b7b481d0ba516536e8b7f977f9}\index{DownDockWidget@{DownDockWidget}!set\_dock\_apps@{set\_dock\_apps}}
 \index{set\_dock\_apps@{set\_dock\_apps}!DownDockWidget@{DownDockWidget}}
 \doxysubsubsection{\texorpdfstring{set\_dock\_apps()}{set\_dock\_apps()}}
@@ -30,6 +81,21 @@ set\+\_\+dock\+\_\+apps set the dock apps waiting for shows
 
 \begin{DoxyParams}{Parameters}
 {\em apps} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_down_dock_widget_aa419ff5495887c25d9b9f4375a48bb64}\index{DownDockWidget@{DownDockWidget}!set\_parent\_window@{set\_parent\_window}}
+\index{set\_parent\_window@{set\_parent\_window}!DownDockWidget@{DownDockWidget}}
+\doxysubsubsection{\texorpdfstring{set\_parent\_window()}{set\_parent\_window()}}
+{\footnotesize\ttfamily \label{class_down_dock_widget_aa419ff5495887c25d9b9f4375a48bb64} 
+void Down\+Dock\+Widget\+::set\+\_\+parent\+\_\+window (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_desktop_main_window}{Desktop\+Main\+Window}} \texorpdfstring{$\ast$}{*}}]{parent\+\_\+window}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the parent window object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent\+\_\+window} & \\
 \hline
 \end{DoxyParams}
 

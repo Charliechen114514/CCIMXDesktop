@@ -5,8 +5,21 @@
 
 class FileTypeInfo : public FileInfoProvider {
 public:
+	/**
+	 * @brief Construct a new File Type Info object
+	 * 
+	 * @param model 
+	 */
 	FileTypeInfo(CCIMXFileSystemModel* model);
+	/**
+	 * @brief Construct a new File delete defaulty
+	 * 
+	 */
 	FileTypeInfo() = delete;
+	/**
+	 * @brief disable copy object
+	 * 
+	 */
 	Q_DISABLE_COPY(FileTypeInfo);
 	~FileTypeInfo() override = default;
 
@@ -28,7 +41,6 @@ public:
 	/**
 	 * @brief registerTypeInfo register the type info
 	 * @param suffix the file suffix
-	 * @param info the type info
 	 */
 	QString typeInfo(const QString& suffix) { return mappings.value(suffix); };
 

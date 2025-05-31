@@ -14,14 +14,29 @@ class CCIMXFileSystemModel;
  */
 class FileInfoProvider {
 public:
+	/**
+	 * @brief disable copy object
+	 * 
+	 */
 	Q_DISABLE_COPY(FileInfoProvider);
-	// disable this for the default constructor
-	// prevent the non-model register
+	/**
+	 * @brief Construct a new File Info Provider object default is prohibited,
+	 * disable this for the default constructor, prevent the non-model register
+	 * 
+	 */
 	FileInfoProvider() = delete;
-	/* assigned models */
+	/**
+	 * @brief Construct a new File Info Provider object, assigned models requires
+	 * 
+	 * @param models 
+	 */
 	FileInfoProvider(CCIMXFileSystemModel* models) {
 		this->models = models;
 	};
+	/**
+	 * @brief Destroy the File Info Provider object
+	 * 
+	 */
 	virtual ~FileInfoProvider() = default;
 
 	/**

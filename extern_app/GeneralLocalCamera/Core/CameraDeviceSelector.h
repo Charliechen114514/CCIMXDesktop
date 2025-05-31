@@ -1,27 +1,42 @@
 #ifndef CAMERADEVICESELECTOR_H
 #define CAMERADEVICESELECTOR_H
-#include <QList>
-#include <QtClassHelperMacros>
-/* We need to refer the max available devices */
 
+#include <QList>
+#include <QString>
+#include <QtClassHelperMacros>
+
+/**
+ * @brief The CameraDeviceSelector class provides camera scanning utilities.
+ */
 class CameraDeviceSelector {
 public:
-	static constexpr const int MAX_CAMERA_SCAN = 5;
-	CameraDeviceSelector() = default;
-	Q_DISABLE_COPY(CameraDeviceSelector);
 	/**
-	 * @brief scan_available_cameras scan the available cameras
-	 * @param start_index the index to start scan
-	 * @return a list of available cameras
+	 * @brief max camera enums times
 	 */
-	static QList<int> scan_available_cameras(const int& start_index = 0);
+	static constexpr int MAX_CAMERA_SCAN = 5;
+	/**
+	 * @brief def constructor
+	 */
+	CameraDeviceSelector() = default;
 
 	/**
-	 * @brief scan_available_camerasnames scan the available cameras
-	 * @param start_index the index to start scan
-	 * @return a list of available cameras names
+	 * @brief Q_DISABLE_COPY disables copy constructor and assignment operator.
 	 */
-	static QList<QString> scan_available_camerasnames(const int& start_index = 0);
+	Q_DISABLE_COPY(CameraDeviceSelector);
+
+	/**
+	 * @brief scan_available_cameras scans available camera indices.
+	 * @param start_index Starting index for scanning. Default is 0.
+	 * @return List of available camera indices.
+	 */
+	static QList<int> scan_available_cameras(int start_index = 0);
+
+	/**
+	 * @brief scan_available_camerasnames scans available camera names.
+	 * @param start_index Starting index for scanning. Default is 0.
+	 * @return List of available camera names.
+	 */
+	static QList<QString> scan_available_camerasnames(int start_index = 0);
 };
 
 #endif // CAMERADEVICESELECTOR_H

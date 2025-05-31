@@ -14,7 +14,9 @@ class DiskMusic;
  */
 class DiskMusic : public QWidget {
 	Q_OBJECT
-	/* Animation use this to access how to draw arm */
+	/**
+	 * @brief property announced
+	 */
 	Q_PROPERTY(qreal armAngle READ armAngle WRITE setArmAngle NOTIFY armAngleChanged);
 	static constexpr const unsigned int ANIMATION_DURATION = 300; ///< animation duration
 	static constexpr const unsigned int ANIMATION_FPS = 60; ///< animation fps, that means how fluent the animations is
@@ -28,6 +30,11 @@ class DiskMusic : public QWidget {
 	static constexpr const QColor END_COLOR = QColor(0, 51, 102); ///< the end color of background for linear gradient
 
 public:
+	/**
+	 * @brief Construct a new Disk Music object
+	 * 
+	 * @param parent 
+	 */
 	explicit DiskMusic(QWidget* parent = nullptr);
 
 	/**
@@ -61,6 +68,10 @@ public:
 		emit armAngleChanged();
 	}
 
+	/**
+	 * @brief Destroy the Disk Music object
+	 * 
+	 */
 	~DiskMusic();
 
 signals:
@@ -75,10 +86,10 @@ protected:
 	 * @brief paintEvent the paint event for the disk
 	 * @param event the paint event
 	 */
-	void paintEvent(QPaintEvent*) override;
+	void paintEvent(QPaintEvent* event) override;
 
 private:
-	Ui::DiskMusic* ui;
+	Ui::DiskMusic* ui; ///< ui handle
 	qreal angle { BEGIN_ANGLE }; ///< the arm angle
 	float current_rotations {}; ///< the current rotations
 	bool is_playing { false }; ///< the status of the disk

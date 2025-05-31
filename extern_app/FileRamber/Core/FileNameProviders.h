@@ -6,7 +6,16 @@
 
 class FileNameProviders : public FileInfoProvider {
 public:
+	/**
+	 * @brief Construct a new File Name Providers object
+	 * 
+	 * @param models 
+	 */
 	FileNameProviders(CCIMXFileSystemModel* models);
+	/**
+	 * @brief disable copy
+	 * 
+	 */
 	Q_DISABLE_COPY(FileNameProviders);
 	~FileNameProviders() override = default;
 	/**
@@ -24,8 +33,8 @@ public:
 	 * available, it will return with {false, {}}
 	 */
 	std::pair<bool, QVariant> data(const QModelIndex& index, int role) override;
-	using FileExtension = QString;
-	using ColorPairs = std::pair<FileExtension, QColor>;
+	using FileExtension = QString; ///< file extension defines
+	using ColorPairs = std::pair<FileExtension, QColor>; ///< color pairs
 
 	/**
 	 * @brief registerColorPairs assigned the color shows

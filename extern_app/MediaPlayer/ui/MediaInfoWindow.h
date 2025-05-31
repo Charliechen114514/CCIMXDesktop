@@ -16,6 +16,11 @@ class MediaInfoWindow : public QMainWindow {
 	Q_OBJECT
 
 public:
+	/**
+	 * @brief Construct a new Media Info Window object
+	 * 
+	 * @param parent 
+	 */
 	explicit MediaInfoWindow(QWidget* parent = nullptr);
 	~MediaInfoWindow();
 

@@ -1,5 +1,14 @@
 \doxysection{CCMedia\+Play\+List Class Reference}
 \hypertarget{class_c_c_media_play_list}{}\label{class_c_c_media_play_list}\index{CCMediaPlayList@{CCMediaPlayList}}
+
+
+The \doxylink{class_c_c_media_play_list}{CCMedia\+Play\+List} class manages a playlist with various play modes.  
+
+
+
+
+{\ttfamily \#include $<$CCMedia\+Play\+List.\+h$>$}
+
 Inheritance diagram for CCMedia\+Play\+List\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -14,60 +23,62 @@ enum class \mbox{\hyperlink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b11
 , \mbox{\hyperlink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3acae9881cfbdbd74078ce3d31eb060791}{List\+Play}}
 , \mbox{\hyperlink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3a2c62ffd47a07bdb6cb4720a0bad933cd}{List\+Cycle}}
  \}
-\begin{DoxyCompactList}\small\item\em The \doxylink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3}{Play\+Mode} enum provides the play modes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em \doxylink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3}{Play\+Mode} enum defines playback modes. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Slots}
 \begin{DoxyCompactItemize}
 \item 
 \Hypertarget{class_c_c_media_play_list_a8cdc1504dab41103a260c634338fd6cd}\label{class_c_c_media_play_list_a8cdc1504dab41103a260c634338fd6cd} 
 void {\bfseries flush\+\_\+play\+\_\+list} ()
-\begin{DoxyCompactList}\small\item\em flush\+\_\+play\+\_\+list flush the play list, moves the playlist into actual one \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Flush the editable play list into actual\+\_\+play\+\_\+list, making changes effective. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Signals}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_c_c_media_play_list_addb3f2f5f4ec2b3c4df9f1cde7dc93b0}{play\+Mode\+Changed}} (const \mbox{\hyperlink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3}{Play\+Mode}} mode)
-\begin{DoxyCompactList}\small\item\em play\+Mode\+Changed the signal indicating the play mode changed \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Signal emitted when play mode changes. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_c_c_media_play_list_a32b802259d0a81fa00edd6b4a0bc46d0}\label{class_c_c_media_play_list_a32b802259d0a81fa00edd6b4a0bc46d0} 
-{\bfseries CCMedia\+Play\+List} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
-\item 
+\mbox{\hyperlink{class_c_c_media_play_list_a32b802259d0a81fa00edd6b4a0bc46d0}{CCMedia\+Play\+List}} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{class_c_c_media_play_list}{CCMedia\+Play\+List} object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_c_c_media_play_list_ad51a9b2199e30a9bf4ca809ef62acd51}{set\+\_\+play\+\_\+mode}} (const \mbox{\hyperlink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3}{Play\+Mode}} mode)
-\begin{DoxyCompactList}\small\item\em set\+\_\+play\+\_\+mode set the play mode \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Set the play mode. \end{DoxyCompactList}\item 
 \Hypertarget{class_c_c_media_play_list_aa87872c991b4c181e065aef59570391f}\label{class_c_c_media_play_list_aa87872c991b4c181e065aef59570391f} 
 void {\bfseries flow\+\_\+mode} ()
-\begin{DoxyCompactList}\small\item\em flow\+\_\+mode flow the mode once \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Cycle the play mode to the next one. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3}{Play\+Mode}} \mbox{\hyperlink{class_c_c_media_play_list_ac60aeacbb183d17126bfd2867cfa9280}{get\+\_\+play\+\_\+mode}} () const
-\begin{DoxyCompactList}\small\item\em get\+\_\+play\+\_\+mode get the play mode \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Get current play mode. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{struct_media_list_mails}{Media\+List\+Mails}} \mbox{\hyperlink{class_c_c_media_play_list_a7b6c8ec7d64c49707646386e74062488}{fetch\+\_\+prev\+\_\+play}} ()
-\begin{DoxyCompactList}\small\item\em fetch\+\_\+prev\+\_\+play fetch the previous play \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Fetch previous media info according to play mode. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{struct_media_list_mails}{Media\+List\+Mails}} \mbox{\hyperlink{class_c_c_media_play_list_a87e0329a7a3f6d5a993f562228751f9c}{fetch\+\_\+next\+\_\+play}} ()
-\begin{DoxyCompactList}\small\item\em fetch\+\_\+next\+\_\+play fetch the next play \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Fetch next media info according to play mode. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{struct_media_list_mails}{Media\+List\+Mails}} \mbox{\hyperlink{class_c_c_media_play_list_a92825a1328290f7ccdc0629a002920e6}{fetch\+\_\+current\+\_\+play}} ()
-\begin{DoxyCompactList}\small\item\em fetch\+\_\+current\+\_\+play fetch the current play \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Fetch current media info. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{struct_media_list_mails}{Media\+List\+Mails}} \mbox{\hyperlink{class_c_c_media_play_list_acdc84b23ae1686db0269226c94d90e8c}{fetch\+\_\+from\+\_\+name}} (const QString \&where)
-\begin{DoxyCompactList}\small\item\em fetch\+\_\+from\+\_\+name fetch the play from name \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Fetch media info by name. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{struct_media_list_mails}{Media\+List\+Mails}} \mbox{\hyperlink{class_c_c_media_play_list_aae4da67df5bc12ee8e401c594dcdd5c3}{fetch\+\_\+first\+\_\+play}} ()
-\begin{DoxyCompactList}\small\item\em fetch\+\_\+first\+\_\+play fetch the first play \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Fetch first media info in the actual playlist. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{struct_media_list_mails}{Media\+List\+Mails}} \mbox{\hyperlink{class_c_c_media_play_list_a24b68f240ed39e66ad2e9286f60377a0}{fetch\+\_\+last\+\_\+play}} ()
-\begin{DoxyCompactList}\small\item\em fetch\+\_\+last\+\_\+play fetch the last play \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Fetch last media info in the actual playlist. \end{DoxyCompactList}\item 
 QString\+List \mbox{\hyperlink{class_c_c_media_play_list_a9c252087e36d48ff4b278c86f1df2330}{current\+Playing\+List}} () const
-\begin{DoxyCompactList}\small\item\em current\+Playing\+List get the actual play list \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Get the current actual playing list. \end{DoxyCompactList}\item 
 QString\+List \mbox{\hyperlink{class_c_c_media_play_list_a5e0b767ee157bfb31d8448da10f43e4b}{actual\+List}} () const
-\begin{DoxyCompactList}\small\item\em actual\+List get the current playing list \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Get the editable play list. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_c_c_media_play_list_aa0c86cc509a3eb75da7128a471f715ee}{get\+\_\+actual\+Listlist\+\_\+size}} ()
-\begin{DoxyCompactList}\small\item\em get\+\_\+actual\+Listlist\+\_\+size get the actual list size \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Get size of the editable play list. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_c_c_media_play_list_a4a0901d47ef75d9543ecb9d603773c74}{enqueue\+\_\+play}} (const QString\+List \&media\+\_\+sources)
-\begin{DoxyCompactList}\small\item\em enqueue\+\_\+play enqueue the play list \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Append media sources to the play list. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_c_c_media_play_list_a68daf8f790fd4be4389c284f2e1eb150}{remove\+\_\+play\+\_\+list}} (const QString\+List \&media\+\_\+sources)
-\begin{DoxyCompactList}\small\item\em remove\+\_\+play\+\_\+list remove the play list \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Remove media sources from the play list. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \Hypertarget{class_c_c_media_play_list_a02e1f3f29461356cf685f51a7873c851}\label{class_c_c_media_play_list_a02e1f3f29461356cf685f51a7873c851} 
 static constexpr const \mbox{\hyperlink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3}{Play\+Mode}} {\bfseries DEF\+\_\+\+MODE} = \mbox{\hyperlink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3a2c62ffd47a07bdb6cb4720a0bad933cd}{Play\+Mode\+::\+List\+Cycle}}
-\begin{DoxyCompactList}\small\item\em DEF\+\_\+\+MODE the default play mode. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Default play mode. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_c_c_media_play_list}{CCMedia\+Play\+List} class manages a playlist with various play modes. 
 
 \doxysubsection{Member Enumeration Documentation}
 \Hypertarget{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3}\index{CCMediaPlayList@{CCMediaPlayList}!PlayMode@{PlayMode}}
@@ -78,26 +89,44 @@ enum class \mbox{\hyperlink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b11
 
 
 
-The \doxylink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3}{Play\+Mode} enum provides the play modes. 
+\doxylink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3}{Play\+Mode} enum defines playback modes. 
 
 \begin{DoxyEnumFields}[2]{Enumerator}
 \raisebox{\heightof{T}}[0pt][0pt]{\index{OneShot@{OneShot}!CCMediaPlayList@{CCMediaPlayList}}\index{CCMediaPlayList@{CCMediaPlayList}!OneShot@{OneShot}}}\Hypertarget{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3ac7fc2ee61fad0e2bba6754efdee31481}\label{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3ac7fc2ee61fad0e2bba6754efdee31481} 
-One\+Shot&play one time, then stop \\
+One\+Shot&Play one media once then stop. \\
 \hline
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{OneCycle@{OneCycle}!CCMediaPlayList@{CCMediaPlayList}}\index{CCMediaPlayList@{CCMediaPlayList}!OneCycle@{OneCycle}}}\Hypertarget{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3aa098ec399dbdac60e3ebd955ebf3452f}\label{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3aa098ec399dbdac60e3ebd955ebf3452f} 
-One\+Cycle&play current again and again \texorpdfstring{$\sim$}{\string~} \\
+One\+Cycle&Repeat the current media endlessly. \\
 \hline
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{ListPlay@{ListPlay}!CCMediaPlayList@{CCMediaPlayList}}\index{CCMediaPlayList@{CCMediaPlayList}!ListPlay@{ListPlay}}}\Hypertarget{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3acae9881cfbdbd74078ce3d31eb060791}\label{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3acae9881cfbdbd74078ce3d31eb060791} 
-List\+Play&play the list once \\
+List\+Play&Play the playlist once in order. \\
 \hline
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{ListCycle@{ListCycle}!CCMediaPlayList@{CCMediaPlayList}}\index{CCMediaPlayList@{CCMediaPlayList}!ListCycle@{ListCycle}}}\Hypertarget{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3a2c62ffd47a07bdb6cb4720a0bad933cd}\label{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3a2c62ffd47a07bdb6cb4720a0bad933cd} 
-List\+Cycle&play the list again and again \texorpdfstring{$\sim$}{\string~} \\
+List\+Cycle&Play the playlist repeatedly. \\
 \hline
 
 \end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_c_c_media_play_list_a32b802259d0a81fa00edd6b4a0bc46d0}\index{CCMediaPlayList@{CCMediaPlayList}!CCMediaPlayList@{CCMediaPlayList}}
+\index{CCMediaPlayList@{CCMediaPlayList}!CCMediaPlayList@{CCMediaPlayList}}
+\doxysubsubsection{\texorpdfstring{CCMediaPlayList()}{CCMediaPlayList()}}
+{\footnotesize\ttfamily \label{class_c_c_media_play_list_a32b802259d0a81fa00edd6b4a0bc46d0} 
+CCMedia\+Play\+List\+::\+CCMedia\+Play\+List (\begin{DoxyParamCaption}\item[{QObject \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Construct a new \doxylink{class_c_c_media_play_list}{CCMedia\+Play\+List} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
 
 
 \doxysubsection{Member Function Documentation}
@@ -109,14 +138,11 @@ QString\+List CCMedia\+Play\+List\+::actual\+List (\begin{DoxyParamCaption}{}{}\
 
 
 
-actual\+List get the current playing list 
+Get the editable play list. 
 
 \begin{DoxyReturn}{Returns}
-the current playing list 
+QString\+List of media in play list (modifiable) 
 \end{DoxyReturn}
-\begin{DoxyNote}{Note}
-this means the list that holding really, for examples when we modified the list and ready check the situations, use this 
-\end{DoxyNote}
 \Hypertarget{class_c_c_media_play_list_a9c252087e36d48ff4b278c86f1df2330}\index{CCMediaPlayList@{CCMediaPlayList}!currentPlayingList@{currentPlayingList}}
 \index{currentPlayingList@{currentPlayingList}!CCMediaPlayList@{CCMediaPlayList}}
 \doxysubsubsection{\texorpdfstring{currentPlayingList()}{currentPlayingList()}}
@@ -125,13 +151,13 @@ QString\+List CCMedia\+Play\+List\+::current\+Playing\+List (\begin{DoxyParamCap
 
 
 
-current\+Playing\+List get the actual play list 
+Get the current actual playing list. 
 
 \begin{DoxyReturn}{Returns}
-the actual play list 
+QString\+List of media actually played 
 \end{DoxyReturn}
 \begin{DoxyNote}{Note}
-diffrently, this means the list really playings, that means any modifications wont do the stuff here, what we get the list we really play and operate 
+This list is the one actively used for playback (immutable until flushed) 
 \end{DoxyNote}
 \Hypertarget{class_c_c_media_play_list_a4a0901d47ef75d9543ecb9d603773c74}\index{CCMediaPlayList@{CCMediaPlayList}!enqueue\_play@{enqueue\_play}}
 \index{enqueue\_play@{enqueue\_play}!CCMediaPlayList@{CCMediaPlayList}}
@@ -141,11 +167,11 @@ void CCMedia\+Play\+List\+::enqueue\+\_\+play (\begin{DoxyParamCaption}\item[{co
 
 
 
-enqueue\+\_\+play enqueue the play list 
+Append media sources to the play list. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em media\+\_\+sources} & the media sources to enqueue \\
+{\em media\+\_\+sources} & List of media paths/names to add \\
 \hline
 \end{DoxyParams}
 \Hypertarget{class_c_c_media_play_list_a92825a1328290f7ccdc0629a002920e6}\index{CCMediaPlayList@{CCMediaPlayList}!fetch\_current\_play@{fetch\_current\_play}}
@@ -156,10 +182,10 @@ enqueue\+\_\+play enqueue the play list
 
 
 
-fetch\+\_\+current\+\_\+play fetch the current play 
+Fetch current media info. 
 
 \begin{DoxyReturn}{Returns}
-the current play 
+\doxylink{struct_media_list_mails}{Media\+List\+Mails} of currently playing media 
 \end{DoxyReturn}
 \Hypertarget{class_c_c_media_play_list_aae4da67df5bc12ee8e401c594dcdd5c3}\index{CCMediaPlayList@{CCMediaPlayList}!fetch\_first\_play@{fetch\_first\_play}}
 \index{fetch\_first\_play@{fetch\_first\_play}!CCMediaPlayList@{CCMediaPlayList}}
@@ -169,10 +195,10 @@ the current play
 
 
 
-fetch\+\_\+first\+\_\+play fetch the first play 
+Fetch first media info in the actual playlist. 
 
 \begin{DoxyReturn}{Returns}
-the first play 
+\doxylink{struct_media_list_mails}{Media\+List\+Mails} of first media 
 \end{DoxyReturn}
 \Hypertarget{class_c_c_media_play_list_acdc84b23ae1686db0269226c94d90e8c}\index{CCMediaPlayList@{CCMediaPlayList}!fetch\_from\_name@{fetch\_from\_name}}
 \index{fetch\_from\_name@{fetch\_from\_name}!CCMediaPlayList@{CCMediaPlayList}}
@@ -182,15 +208,15 @@ the first play
 
 
 
-fetch\+\_\+from\+\_\+name fetch the play from name 
+Fetch media info by name. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em where} & the name to fetch \\
+{\em where} & The media name or path to fetch \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-the play info 
+\doxylink{struct_media_list_mails}{Media\+List\+Mails} with play info for the given media 
 \end{DoxyReturn}
 \Hypertarget{class_c_c_media_play_list_a24b68f240ed39e66ad2e9286f60377a0}\index{CCMediaPlayList@{CCMediaPlayList}!fetch\_last\_play@{fetch\_last\_play}}
 \index{fetch\_last\_play@{fetch\_last\_play}!CCMediaPlayList@{CCMediaPlayList}}
@@ -200,10 +226,10 @@ the play info
 
 
 
-fetch\+\_\+last\+\_\+play fetch the last play 
+Fetch last media info in the actual playlist. 
 
 \begin{DoxyReturn}{Returns}
-the last play 
+\doxylink{struct_media_list_mails}{Media\+List\+Mails} of last media 
 \end{DoxyReturn}
 \Hypertarget{class_c_c_media_play_list_a87e0329a7a3f6d5a993f562228751f9c}\index{CCMediaPlayList@{CCMediaPlayList}!fetch\_next\_play@{fetch\_next\_play}}
 \index{fetch\_next\_play@{fetch\_next\_play}!CCMediaPlayList@{CCMediaPlayList}}
@@ -213,10 +239,10 @@ the last play
 
 
 
-fetch\+\_\+next\+\_\+play fetch the next play 
+Fetch next media info according to play mode. 
 
 \begin{DoxyReturn}{Returns}
-the next play 
+\doxylink{struct_media_list_mails}{Media\+List\+Mails} containing next enabled flag and current playing info 
 \end{DoxyReturn}
 \Hypertarget{class_c_c_media_play_list_a7b6c8ec7d64c49707646386e74062488}\index{CCMediaPlayList@{CCMediaPlayList}!fetch\_prev\_play@{fetch\_prev\_play}}
 \index{fetch\_prev\_play@{fetch\_prev\_play}!CCMediaPlayList@{CCMediaPlayList}}
@@ -226,10 +252,10 @@ the next play
 
 
 
-fetch\+\_\+prev\+\_\+play fetch the previous play 
+Fetch previous media info according to play mode. 
 
 \begin{DoxyReturn}{Returns}
-the previous play 
+\doxylink{struct_media_list_mails}{Media\+List\+Mails} containing prev enabled flag and current playing info 
 \end{DoxyReturn}
 \Hypertarget{class_c_c_media_play_list_aa0c86cc509a3eb75da7128a471f715ee}\index{CCMediaPlayList@{CCMediaPlayList}!get\_actualListlist\_size@{get\_actualListlist\_size}}
 \index{get\_actualListlist\_size@{get\_actualListlist\_size}!CCMediaPlayList@{CCMediaPlayList}}
@@ -239,14 +265,11 @@ int CCMedia\+Play\+List\+::get\+\_\+actual\+Listlist\+\_\+size (\begin{DoxyParam
 
 
 
-get\+\_\+actual\+Listlist\+\_\+size get the actual list size 
+Get size of the editable play list. 
 
 \begin{DoxyReturn}{Returns}
-the actual list size 
+int size of play\+\_\+list 
 \end{DoxyReturn}
-\begin{DoxyNote}{Note}
-this is the size of the play list, not the actual one 
-\end{DoxyNote}
 \Hypertarget{class_c_c_media_play_list_ac60aeacbb183d17126bfd2867cfa9280}\index{CCMediaPlayList@{CCMediaPlayList}!get\_play\_mode@{get\_play\_mode}}
 \index{get\_play\_mode@{get\_play\_mode}!CCMediaPlayList@{CCMediaPlayList}}
 \doxysubsubsection{\texorpdfstring{get\_play\_mode()}{get\_play\_mode()}}
@@ -255,10 +278,10 @@ this is the size of the play list, not the actual one
 
 
 
-get\+\_\+play\+\_\+mode get the play mode 
+Get current play mode. 
 
 \begin{DoxyReturn}{Returns}
-the play mode 
+current \doxylink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3}{Play\+Mode} 
 \end{DoxyReturn}
 \Hypertarget{class_c_c_media_play_list_addb3f2f5f4ec2b3c4df9f1cde7dc93b0}\index{CCMediaPlayList@{CCMediaPlayList}!playModeChanged@{playModeChanged}}
 \index{playModeChanged@{playModeChanged}!CCMediaPlayList@{CCMediaPlayList}}
@@ -268,11 +291,11 @@ void CCMedia\+Play\+List\+::play\+Mode\+Changed (\begin{DoxyParamCaption}\item[{
 
 
 
-play\+Mode\+Changed the signal indicating the play mode changed 
+Signal emitted when play mode changes. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em mode} & the play mode \\
+{\em mode} & The new \doxylink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3}{Play\+Mode} \\
 \hline
 \end{DoxyParams}
 \Hypertarget{class_c_c_media_play_list_a68daf8f790fd4be4389c284f2e1eb150}\index{CCMediaPlayList@{CCMediaPlayList}!remove\_play\_list@{remove\_play\_list}}
@@ -283,11 +306,11 @@ void CCMedia\+Play\+List\+::remove\+\_\+play\+\_\+list (\begin{DoxyParamCaption}
 
 
 
-remove\+\_\+play\+\_\+list remove the play list 
+Remove media sources from the play list. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em media\+\_\+sources} & the media sources to remove \\
+{\em media\+\_\+sources} & List of media paths/names to remove \\
 \hline
 \end{DoxyParams}
 \Hypertarget{class_c_c_media_play_list_ad51a9b2199e30a9bf4ca809ef62acd51}\index{CCMediaPlayList@{CCMediaPlayList}!set\_play\_mode@{set\_play\_mode}}
@@ -298,11 +321,11 @@ void CCMedia\+Play\+List\+::set\+\_\+play\+\_\+mode (\begin{DoxyParamCaption}\it
 
 
 
-set\+\_\+play\+\_\+mode set the play mode 
+Set the play mode. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em mode} & the play mode to set \\
+{\em mode} & \doxylink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3}{Play\+Mode} to set \\
 \hline
 \end{DoxyParams}
 

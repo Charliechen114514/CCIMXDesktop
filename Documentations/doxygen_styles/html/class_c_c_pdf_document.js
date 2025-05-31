@@ -11,6 +11,9 @@ var class_c_c_pdf_document =
       [ "PAGE_OVERFLOW", "class_c_c_pdf_document.html#a0272e6f6cebd68b3d59af3398c04f7e7a01b68e8cc095ffb91250bb4dc8271a0d", null ],
       [ "PAGE_UNEXSITS", "class_c_c_pdf_document.html#a0272e6f6cebd68b3d59af3398c04f7e7a7d71d1787b5c7553b77ad4f3a1582eb1", null ]
     ] ],
+    [ "CCPdfDocument", "class_c_c_pdf_document.html#a0dbd14db687abf21d70d1815e893bbe9", null ],
+    [ "CCPdfDocument", "class_c_c_pdf_document.html#aa5c4cc096c08e83381fe9f71dd05ec29", null ],
+    [ "~CCPdfDocument", "class_c_c_pdf_document.html#a6d633825ad0e9702d233b9e3f02e7eab", null ],
     [ "close_document", "class_c_c_pdf_document.html#a4a19d58e4c4cc536bf7aaba7586be6da", null ],
     [ "current_page", "class_c_c_pdf_document.html#ab0dbbff186c5b2b6c6eb71d54062355c", null ],
     [ "current_path", "class_c_c_pdf_document.html#acb5d93f0d8624153bf748b0867108240", null ],
@@ -21,6 +24,7 @@ var class_c_c_pdf_document =
     [ "load_document", "class_c_c_pdf_document.html#adbcadc5fe612d3c0dd8ccbe18094e24a", null ],
     [ "meta_info", "class_c_c_pdf_document.html#a7a7851e64572f8c99883f46228505aee", null ],
     [ "pageIndexChanged", "class_c_c_pdf_document.html#aba7902cbf721d065edbed816dda6c811", null ],
+    [ "Q_DISABLE_COPY", "class_c_c_pdf_document.html#ae9c20661def7cd3254368806dd1ecc6d", null ],
     [ "raw_context", "class_c_c_pdf_document.html#a340e07d237df5d81800f2a289a2f4764", null ],
     [ "raw_handle", "class_c_c_pdf_document.html#a1820f7860fc661eb6adbd383e58d9eba", null ],
     [ "total_pages", "class_c_c_pdf_document.html#a458047bbb3fae082de34dd05ac2668d7", null ]

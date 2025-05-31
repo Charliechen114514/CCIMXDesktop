@@ -2,7 +2,7 @@
 \hypertarget{struct_c_p_u_state_fetcher_1_1_c_p_u_state}{}\label{struct_c_p_u_state_fetcher_1_1_c_p_u_state}\index{CPUStateFetcher::CPUState@{CPUStateFetcher::CPUState}}
 
 
-The \doxylink{struct_c_p_u_state_fetcher_1_1_c_p_u_state}{CPUState} class provides the cpu state infos.  
+The \doxylink{struct_c_p_u_state_fetcher_1_1_c_p_u_state}{CPUState} struct Represents CPU usage state including idle, user, kernel and total time. The total time concept differs between Linux and Windows.  
 
 
 
@@ -14,20 +14,20 @@ The \doxylink{struct_c_p_u_state_fetcher_1_1_c_p_u_state}{CPUState} class provid
 \item 
 \Hypertarget{struct_c_p_u_state_fetcher_1_1_c_p_u_state_a3e6c2976b8903ed9234ff07877bce1fe}\label{struct_c_p_u_state_fetcher_1_1_c_p_u_state_a3e6c2976b8903ed9234ff07877bce1fe} 
 double {\bfseries idle}
-\begin{DoxyCompactList}\small\item\em idle time \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em CPU idle time. \end{DoxyCompactList}\item 
 \Hypertarget{struct_c_p_u_state_fetcher_1_1_c_p_u_state_aab23cf3aea621ea5b5eb81e36553280f}\label{struct_c_p_u_state_fetcher_1_1_c_p_u_state_aab23cf3aea621ea5b5eb81e36553280f} 
 double {\bfseries user}
-\begin{DoxyCompactList}\small\item\em user time \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em CPU user time. \end{DoxyCompactList}\item 
 \Hypertarget{struct_c_p_u_state_fetcher_1_1_c_p_u_state_ac98ebbd51f61f4fbfba05f414813e365}\label{struct_c_p_u_state_fetcher_1_1_c_p_u_state_ac98ebbd51f61f4fbfba05f414813e365} 
 double {\bfseries kernel}
-\begin{DoxyCompactList}\small\item\em kernel time \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em CPU kernel time. \end{DoxyCompactList}\item 
 \Hypertarget{struct_c_p_u_state_fetcher_1_1_c_p_u_state_a20f696bc5db8018c3561150623d4e856}\label{struct_c_p_u_state_fetcher_1_1_c_p_u_state_a20f696bc5db8018c3561150623d4e856} 
 double {\bfseries tol}
-\begin{DoxyCompactList}\small\item\em sums above, the var is seperate as linux and windows makes different in tol time concept \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Total time (sum of above), platform-\/dependent meaning. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-The \doxylink{struct_c_p_u_state_fetcher_1_1_c_p_u_state}{CPUState} class provides the cpu state infos. 
+The \doxylink{struct_c_p_u_state_fetcher_1_1_c_p_u_state}{CPUState} struct Represents CPU usage state including idle, user, kernel and total time. The total time concept differs between Linux and Windows. 
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

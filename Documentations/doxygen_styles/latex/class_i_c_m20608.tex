@@ -2,7 +2,7 @@
 \hypertarget{class_i_c_m20608}{}\label{class_i_c_m20608}\index{ICM20608@{ICM20608}}
 
 
-Interface class to communicate with \doxylink{class_i_c_m20608}{ICM20608} sensor device.  
+Interface for \doxylink{class_i_c_m20608}{ICM20608} inertial measurement unit (IMU) sensor.  
 
 
 
@@ -12,14 +12,16 @@ Interface class to communicate with \doxylink{class_i_c_m20608}{ICM20608} sensor
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{class_i_c_m20608_a1b6f846aebebda358aa494c1e4828e26}{ICM20608}} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
 \Hypertarget{class_i_c_m20608_ab49c1e7e37a218f50da5395354a52388}\label{class_i_c_m20608_ab49c1e7e37a218f50da5395354a52388} 
 \mbox{\hyperlink{class_i_c_m20608}{ICM20608}} \& {\bfseries operator=} (const \mbox{\hyperlink{class_i_c_m20608}{ICM20608}} \&)=delete
-\item 
+\begin{DoxyCompactList}\small\item\em Deleted copy assignment. \end{DoxyCompactList}\item 
 \Hypertarget{class_i_c_m20608_ac0825bb348cf98f931b85e46a28d08d9}\label{class_i_c_m20608_ac0825bb348cf98f931b85e46a28d08d9} 
 {\bfseries ICM20608} (const \mbox{\hyperlink{class_i_c_m20608}{ICM20608}} \&)=delete
-\item 
+\begin{DoxyCompactList}\small\item\em Deleted copy constructor. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_i_c_m20608_aae4d486afa4f07805fab7b0453864744}{get\+\_\+package\+\_\+sync}} (\mbox{\hyperlink{struct_i_c_m20608_app_data}{ICM20608\+App\+Data}} \&empty\+\_\+data\+\_\+pack)
-\begin{DoxyCompactList}\small\item\em front end interfaces \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Synchronously reads sensor data package. \end{DoxyCompactList}\item 
 \Hypertarget{class_i_c_m20608_ab49c1e7e37a218f50da5395354a52388}\label{class_i_c_m20608_ab49c1e7e37a218f50da5395354a52388} 
 \mbox{\hyperlink{class_i_c_m20608}{ICM20608}} \& {\bfseries operator=} (const \mbox{\hyperlink{class_i_c_m20608}{ICM20608}} \&)=delete
 \begin{DoxyCompactList}\small\item\em Disable copy assignment and copy constructor. \end{DoxyCompactList}\item 
@@ -31,27 +33,50 @@ bool \mbox{\hyperlink{class_i_c_m20608_aae4d486afa4f07805fab7b0453864744}{get\+\
 
 
 \doxysubsection{Detailed Description}
-Interface class to communicate with \doxylink{class_i_c_m20608}{ICM20608} sensor device. 
+Interface for \doxylink{class_i_c_m20608}{ICM20608} inertial measurement unit (IMU) sensor. 
+
+Interface class to communicate with \doxylink{class_i_c_m20608}{ICM20608} sensor device.
+
+This class provides platform-\/agnostic access to \doxylink{class_i_c_m20608}{ICM20608} sensor data, with implementations for both Windows and UNIX-\/like systems. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_i_c_m20608_a1b6f846aebebda358aa494c1e4828e26}\index{ICM20608@{ICM20608}!ICM20608@{ICM20608}}
+\index{ICM20608@{ICM20608}!ICM20608@{ICM20608}}
+\doxysubsubsection{\texorpdfstring{ICM20608()}{ICM20608()}}
+{\footnotesize\ttfamily \label{class_i_c_m20608_a1b6f846aebebda358aa494c1e4828e26} 
+ICM20608\+::\+ICM20608 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default constructor. 
+
+\begin{DoxyNote}{Note}
+Uses compiler-\/generated default implementation 
+\end{DoxyNote}
+
 
 \doxysubsection{Member Function Documentation}
 \Hypertarget{class_i_c_m20608_aae4d486afa4f07805fab7b0453864744}\index{ICM20608@{ICM20608}!get\_package\_sync@{get\_package\_sync}}
 \index{get\_package\_sync@{get\_package\_sync}!ICM20608@{ICM20608}}
 \doxysubsubsection{\texorpdfstring{get\_package\_sync()}{get\_package\_sync()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily \label{class_i_c_m20608_aae4d486afa4f07805fab7b0453864744} 
-bool ICM20608\+::get\+\_\+package\+\_\+sync (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i_c_m20608_app_data}{ICM20608\+App\+Data}} \&}]{empty}{}\end{DoxyParamCaption})}
+bool ICM20608\+::get\+\_\+package\+\_\+sync (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i_c_m20608_app_data}{ICM20608\+App\+Data}} \&}]{empty\+\_\+data\+\_\+pack}{}\end{DoxyParamCaption})}
 
 
 
-front end interfaces 
+Synchronously reads sensor data package. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em dummy} & blank output params \\
+{\em empty\+\_\+data\+\_\+pack} & Reference to data structure to be filled with sensor readings \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-true if the data is valid(session request success equavalent) 
+true if data was successfully read and is valid, false otherwise
 \end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This is the main interface method for getting sensor data 
+\end{DoxyNote}
 \Hypertarget{class_i_c_m20608_aae4d486afa4f07805fab7b0453864744}\index{ICM20608@{ICM20608}!get\_package\_sync@{get\_package\_sync}}
 \index{get\_package\_sync@{get\_package\_sync}!ICM20608@{ICM20608}}
 \doxysubsubsection{\texorpdfstring{get\_package\_sync()}{get\_package\_sync()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}

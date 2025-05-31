@@ -11,6 +11,11 @@
 class DirentSizeWorker : public QObject {
 	Q_OBJECT
 public:
+	/**
+	 * @brief Construct a new Dirent Size Worker object
+	 * 
+	 * @param object 
+	 */
 	explicit DirentSizeWorker(QObject* object = nullptr) { }
 	~DirentSizeWorker();
 	/**
@@ -38,6 +43,12 @@ private:
 class DirentSizeCounter : public QObject, public FileInfoProvider {
 	Q_OBJECT
 public:
+	/**
+	 * @brief Construct a new Dirent Size Counter object
+	 * 
+	 * @param model model bindings
+	 * @param parent 
+	 */
 	explicit DirentSizeCounter(CCIMXFileSystemModel* model, QObject* parent = nullptr);
 	/**
 	 * @brief provide_section_name means everything in the name lol

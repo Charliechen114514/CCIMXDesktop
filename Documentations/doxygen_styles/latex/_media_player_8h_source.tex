@@ -46,7 +46,7 @@
 \DoxyCodeLine{00064\ \ \ \ \ QImage\ \mbox{\hyperlink{struct_media_info_af8ce80403da81f08b927f3a75fef241f}{coverImage}};\ }
 \DoxyCodeLine{00065\ \};}
 \DoxyCodeLine{00066\ }
-\DoxyCodeLine{00077\ \textcolor{keyword}{class\ }MediaPlayer\ :\ \textcolor{keyword}{public}\ QObject\ \{}
+\DoxyCodeLine{00077\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_media_player_a0885ebafef805891fb0ee86968a183ab}{MediaPlayer}}\ :\ \textcolor{keyword}{public}\ QObject\ \{}
 \DoxyCodeLine{00078\ \ \ \ \ Q\_OBJECT}
 \DoxyCodeLine{00079\ \textcolor{keyword}{public}:}
 \DoxyCodeLine{00084\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_media_player_1_1_media_player_status}{MediaPlayerStatus}}\ \{}
@@ -57,76 +57,75 @@
 \DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ QString\ \mbox{\hyperlink{struct_media_player_1_1_media_player_status_ab5f3663084085eb1f237646c0477d5a8}{video\_discriptions}}\ \{\};\ }
 \DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ QString\ \mbox{\hyperlink{struct_media_player_1_1_media_player_status_af1454682dd061617c38b4dfe099fee2d}{audio\_discriptions}}\ \{\};\ }
 \DoxyCodeLine{00091\ \ \ \ \ \};}
-\DoxyCodeLine{00092\ }
-\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_media_player}{MediaPlayer}}(QObject*\ parent\ =\ \textcolor{keyword}{nullptr});}
-\DoxyCodeLine{00094\ \ \ \ \ Q\_DISABLE\_COPY(\mbox{\hyperlink{class_media_player}{MediaPlayer}});}
-\DoxyCodeLine{00095\ }
-\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_media_player_af16ded3ecace9ebd3b5f34d8ed43bac8}{setSource}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ local\_file);}
-\DoxyCodeLine{00106\ \ \ \ \ QString\ \mbox{\hyperlink{class_media_player_a347546ae8ca73768c13a732c7af402e5}{source}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00107\ }
-\DoxyCodeLine{00114\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_media_player_a535a93966b7fb52ad51ff93531a932c0}{setVolume}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ percentage);}
-\DoxyCodeLine{00121\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_media_player_a76c64233d113ac5c5590f099df8c123f}{volume}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00126\ \ \ \ \ \textcolor{keyword}{inline}\ qint64\ \mbox{\hyperlink{class_media_player_a5f65ab0852d73d1e49b3791facb1086c}{get\_durations}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ durations;\ \}}
-\DoxyCodeLine{00127\ }
-\DoxyCodeLine{00132\ \ \ \ \ \textcolor{keyword}{inline}\ qint64\ \mbox{\hyperlink{class_media_player_afb59edc9c4751c9413dafd3fe186e7dd}{get\_position}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ position;\ \}}
-\DoxyCodeLine{00133\ }
-\DoxyCodeLine{00139\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_media_player_a952cbd6944653ae6fbc19632ce310cf4}{resume}}();}
-\DoxyCodeLine{00140\ }
-\DoxyCodeLine{00145\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_media_player_af20f090157c6f0be28027e1811e971f7}{pause}}();}
-\DoxyCodeLine{00146\ }
-\DoxyCodeLine{00153\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_media_player_aa0dae769e5109e3d0ef3082c77fda490}{close}}();}
+\DoxyCodeLine{00097\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_media_player_a0885ebafef805891fb0ee86968a183ab}{MediaPlayer}}(QObject*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00102\ \ \ \ \ \mbox{\hyperlink{class_media_player_a1f1dd039291aaddcbbc6547cb8d5ef65}{Q\_DISABLE\_COPY}}(\mbox{\hyperlink{class_media_player_a0885ebafef805891fb0ee86968a183ab}{MediaPlayer}});}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00109\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_media_player_af16ded3ecace9ebd3b5f34d8ed43bac8}{setSource}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ local\_file);}
+\DoxyCodeLine{00114\ \ \ \ \ QString\ \mbox{\hyperlink{class_media_player_a347546ae8ca73768c13a732c7af402e5}{source}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00122\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_media_player_a535a93966b7fb52ad51ff93531a932c0}{setVolume}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ percentage);}
+\DoxyCodeLine{00129\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_media_player_a76c64233d113ac5c5590f099df8c123f}{volume}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00134\ \ \ \ \ \textcolor{keyword}{inline}\ qint64\ \mbox{\hyperlink{class_media_player_a5f65ab0852d73d1e49b3791facb1086c}{get\_durations}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ durations;\ \}}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00140\ \ \ \ \ \textcolor{keyword}{inline}\ qint64\ \mbox{\hyperlink{class_media_player_afb59edc9c4751c9413dafd3fe186e7dd}{get\_position}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ position;\ \}}
+\DoxyCodeLine{00141\ }
+\DoxyCodeLine{00147\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_media_player_a952cbd6944653ae6fbc19632ce310cf4}{resume}}();}
+\DoxyCodeLine{00148\ }
+\DoxyCodeLine{00153\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_media_player_af20f090157c6f0be28027e1811e971f7}{pause}}();}
 \DoxyCodeLine{00154\ }
-\DoxyCodeLine{00161\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_media_player_a58820e8ef9e293799d89142ae63a1dfd}{isPlaying}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00161\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_media_player_aa0dae769e5109e3d0ef3082c77fda490}{close}}();}
 \DoxyCodeLine{00162\ }
-\DoxyCodeLine{00167\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_media_player_a242904c7815deb54b9dbc0802fa21cd9}{set\_accept\_missync\_msecond}}(}
-\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ msec}
-\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ =\ MediaPlayerPublicSettings::DEF\_ACCPET\_DELAY)\ \{}
-\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ mis\_sync\_seconds\ =\ msec;}
-\DoxyCodeLine{00171\ \ \ \ \ \}}
-\DoxyCodeLine{00172\ }
-\DoxyCodeLine{00177\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_media_player_a94f87027eb20c1403ed1d7997d0c6026}{set\_position}}(\textcolor{keyword}{const}\ qint64\ position);}
-\DoxyCodeLine{00178\ signals:}
-\DoxyCodeLine{00186\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_media_player_a64d0a37efe32f9aafacc3c36c87d7d70}{display\_frame}}(QImage\ image);}
-\DoxyCodeLine{00187\ \ \ \ \ \textcolor{comment}{/*\ volumn\ changed\ signals\ */}}
-\DoxyCodeLine{00188\ }
-\DoxyCodeLine{00194\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_media_player_af52939d5d44597eaac0c470afde9013a}{volumeChanged}}(\textcolor{keywordtype}{float}\ percentage);}
-\DoxyCodeLine{00195\ }
-\DoxyCodeLine{00201\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_media_player_a7286f125df88f8e36927a105bf28a7a3}{sourceOpened}}(\textcolor{keyword}{const}\ QString\ \mbox{\hyperlink{class_media_player_a347546ae8ca73768c13a732c7af402e5}{source}},\ }
-\DoxyCodeLine{00202\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_media_player_1_1_media_player_status}{MediaPlayer::MediaPlayerStatus}}\ status);\ }
+\DoxyCodeLine{00169\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_media_player_a58820e8ef9e293799d89142ae63a1dfd}{isPlaying}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00170\ }
+\DoxyCodeLine{00175\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_media_player_a242904c7815deb54b9dbc0802fa21cd9}{set\_accept\_missync\_msecond}}(}
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ msec}
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ =\ MediaPlayerPublicSettings::DEF\_ACCPET\_DELAY)\ \{}
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ mis\_sync\_seconds\ =\ msec;}
+\DoxyCodeLine{00179\ \ \ \ \ \}}
+\DoxyCodeLine{00180\ }
+\DoxyCodeLine{00185\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_media_player_a94f87027eb20c1403ed1d7997d0c6026}{set\_position}}(\textcolor{keyword}{const}\ qint64\ position);}
+\DoxyCodeLine{00186\ signals:}
+\DoxyCodeLine{00194\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_media_player_a64d0a37efe32f9aafacc3c36c87d7d70}{display\_frame}}(QImage\ image);}
+\DoxyCodeLine{00195\ \ \ \ \ \textcolor{comment}{/*\ volumn\ changed\ signals\ */}}
+\DoxyCodeLine{00196\ }
+\DoxyCodeLine{00202\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_media_player_af52939d5d44597eaac0c470afde9013a}{volumeChanged}}(\textcolor{keywordtype}{float}\ percentage);}
 \DoxyCodeLine{00203\ }
-\DoxyCodeLine{00210\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_media_player_a5bc16c1717d3ed80e8bd7e0f174ca3b6}{videoAvailable}}(\textcolor{keywordtype}{bool}\ sourceAvailable,\ \textcolor{keyword}{const}\ QImage\ firstPage);}
+\DoxyCodeLine{00209\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_media_player_a7286f125df88f8e36927a105bf28a7a3}{sourceOpened}}(\textcolor{keyword}{const}\ QString\ \mbox{\hyperlink{class_media_player_a347546ae8ca73768c13a732c7af402e5}{source}},\ }
+\DoxyCodeLine{00210\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_media_player_1_1_media_player_status}{MediaPlayer::MediaPlayerStatus}}\ status);\ }
 \DoxyCodeLine{00211\ }
-\DoxyCodeLine{00215\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_media_player_ac9e7476d72620b306e8bfa510ab23574}{mediaEnd}}();}
-\DoxyCodeLine{00220\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_media_player_a846e3dba84bab9f426810ffbd9c6d995}{durationChanged}}(qint64\ new\_durantion);}
-\DoxyCodeLine{00221\ }
-\DoxyCodeLine{00226\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_media_player_a60d5b0f74ed17ed61624314ca668e8cd}{positionChanged}}(qint64\ position);}
-\DoxyCodeLine{00227\ }
-\DoxyCodeLine{00232\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_media_player_a238fff7dd529efb01c3c003dea4adc7b}{metaDataAvailable}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_media_info}{MediaInfo}}\ info);}
-\DoxyCodeLine{00233\ }
-\DoxyCodeLine{00234\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00235\ \ \ \ \ \textcolor{comment}{/*\ QMediaPlayer\ is\ expected\ to\ use\ Audio\ */}}
-\DoxyCodeLine{00236\ \ \ \ \ QMediaPlayer*\ audioPlayer\ \{\ \textcolor{keyword}{nullptr}\ \};}
-\DoxyCodeLine{00237\ \ \ \ \ \textcolor{comment}{/*\ VideoPlayer\ is\ expected\ to\ display\ the\ video\ */}}
-\DoxyCodeLine{00238\ \ \ \ \ \mbox{\hyperlink{class_video_player}{VideoPlayer}}*\ videoPlayer\ \{\ \textcolor{keyword}{nullptr}\ \};}
-\DoxyCodeLine{00239\ \ \ \ \ \textcolor{comment}{/*\ for\ status\ holder\ */}}
-\DoxyCodeLine{00240\ \ \ \ \ \mbox{\hyperlink{struct_media_player_1_1_media_player_status}{MediaPlayerStatus}}\ media\_status;}
-\DoxyCodeLine{00241\ \ \ \ \ MediaPlayerPublicSettings::MisSyncDelay\_t}
-\DoxyCodeLine{00242\ \ \ \ \ \ \ \ \ mis\_sync\_seconds\ \{\ MediaPlayerPublicSettings::DEF\_ACCPET\_DELAY\ \};}
-\DoxyCodeLine{00243\ \ \ \ \ qint64\ durations\ \{\};}
-\DoxyCodeLine{00244\ \ \ \ \ qint64\ position\ \{\};}
-\DoxyCodeLine{00245\ }
-\DoxyCodeLine{00246\ \ \ \ \ \textcolor{comment}{/*\ functions\ */}}
-\DoxyCodeLine{00247\ }
-\DoxyCodeLine{00248\ \ \ \ \ \textcolor{comment}{/*\ invoke\ with\ initing\ */}}
-\DoxyCodeLine{00249\ \ \ \ \ \textcolor{keywordtype}{void}\ init\_allocations();}
-\DoxyCodeLine{00250\ \ \ \ \ \textcolor{keywordtype}{void}\ init\_connections();}
-\DoxyCodeLine{00251\ }
-\DoxyCodeLine{00259\ \ \ \ \ \textcolor{keywordtype}{void}\ process\_sync(\textcolor{keyword}{const}\ CVImage\&\ current\_frame);}
-\DoxyCodeLine{00260\ \ \ \ \ \textcolor{keywordtype}{void}\ handle\_sync\_duration(qint64\ durations);}
-\DoxyCodeLine{00261\ \ \ \ \ \textcolor{keywordtype}{void}\ handle\_sync\_position(qint64\ position);}
-\DoxyCodeLine{00262\ \ \ \ \ \textcolor{keywordtype}{void}\ extract\_metainfo();}
-\DoxyCodeLine{00263\ \};}
-\DoxyCodeLine{00264\ }
-\DoxyCodeLine{00265\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MEDIAPLAYER\_H}}
+\DoxyCodeLine{00218\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_media_player_a5bc16c1717d3ed80e8bd7e0f174ca3b6}{videoAvailable}}(\textcolor{keywordtype}{bool}\ sourceAvailable,\ \textcolor{keyword}{const}\ QImage\ firstPage);}
+\DoxyCodeLine{00219\ }
+\DoxyCodeLine{00223\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_media_player_ac9e7476d72620b306e8bfa510ab23574}{mediaEnd}}();}
+\DoxyCodeLine{00228\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_media_player_a846e3dba84bab9f426810ffbd9c6d995}{durationChanged}}(qint64\ new\_durantion);}
+\DoxyCodeLine{00229\ }
+\DoxyCodeLine{00234\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_media_player_a60d5b0f74ed17ed61624314ca668e8cd}{positionChanged}}(qint64\ position);}
+\DoxyCodeLine{00235\ }
+\DoxyCodeLine{00240\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_media_player_a238fff7dd529efb01c3c003dea4adc7b}{metaDataAvailable}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_media_info}{MediaInfo}}\ info);}
+\DoxyCodeLine{00241\ }
+\DoxyCodeLine{00242\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00243\ \ \ \ \ \textcolor{comment}{/*\ QMediaPlayer\ is\ expected\ to\ use\ Audio\ */}}
+\DoxyCodeLine{00244\ \ \ \ \ QMediaPlayer*\ audioPlayer\ \{\ \textcolor{keyword}{nullptr}\ \};}
+\DoxyCodeLine{00245\ \ \ \ \ \textcolor{comment}{/*\ VideoPlayer\ is\ expected\ to\ display\ the\ video\ */}}
+\DoxyCodeLine{00246\ \ \ \ \ \mbox{\hyperlink{class_video_player}{VideoPlayer}}*\ videoPlayer\ \{\ \textcolor{keyword}{nullptr}\ \};}
+\DoxyCodeLine{00247\ \ \ \ \ \textcolor{comment}{/*\ for\ status\ holder\ */}}
+\DoxyCodeLine{00248\ \ \ \ \ \mbox{\hyperlink{struct_media_player_1_1_media_player_status}{MediaPlayerStatus}}\ media\_status;}
+\DoxyCodeLine{00249\ \ \ \ \ MediaPlayerPublicSettings::MisSyncDelay\_t}
+\DoxyCodeLine{00250\ \ \ \ \ \ \ \ \ mis\_sync\_seconds\ \{\ MediaPlayerPublicSettings::DEF\_ACCPET\_DELAY\ \};}
+\DoxyCodeLine{00251\ \ \ \ \ qint64\ durations\ \{\};}
+\DoxyCodeLine{00252\ \ \ \ \ qint64\ position\ \{\};}
+\DoxyCodeLine{00253\ }
+\DoxyCodeLine{00254\ \ \ \ \ \textcolor{comment}{/*\ functions\ */}}
+\DoxyCodeLine{00255\ }
+\DoxyCodeLine{00256\ \ \ \ \ \textcolor{comment}{/*\ invoke\ with\ initing\ */}}
+\DoxyCodeLine{00257\ \ \ \ \ \textcolor{keywordtype}{void}\ init\_allocations();}
+\DoxyCodeLine{00258\ \ \ \ \ \textcolor{keywordtype}{void}\ init\_connections();}
+\DoxyCodeLine{00259\ }
+\DoxyCodeLine{00267\ \ \ \ \ \textcolor{keywordtype}{void}\ process\_sync(\textcolor{keyword}{const}\ CVImage\&\ current\_frame);}
+\DoxyCodeLine{00268\ \ \ \ \ \textcolor{keywordtype}{void}\ handle\_sync\_duration(qint64\ durations);}
+\DoxyCodeLine{00269\ \ \ \ \ \textcolor{keywordtype}{void}\ handle\_sync\_position(qint64\ position);}
+\DoxyCodeLine{00270\ \ \ \ \ \textcolor{keywordtype}{void}\ extract\_metainfo();}
+\DoxyCodeLine{00271\ \};}
+\DoxyCodeLine{00272\ }
+\DoxyCodeLine{00273\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MEDIAPLAYER\_H}}
 
 \end{DoxyCode}

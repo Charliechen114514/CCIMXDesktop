@@ -33,8 +33,6 @@ public:
 
 	/**
 	 * @brief assigned assigns the image to this image
-	 * @param image the image to assign
-	 * @param load_as_copy if true, then copy the image
 	 */
 	inline bool image_valid() const { return private_handle->image_valid(); }
 

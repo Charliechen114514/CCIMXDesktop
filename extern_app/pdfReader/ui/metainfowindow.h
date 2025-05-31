@@ -11,6 +11,11 @@ class MetaInfoWindow : public QMainWindow {
 	Q_OBJECT
 
 public:
+	/**
+	 * @brief Construct a new Meta Info Window object
+	 * 
+	 * @param parent 
+	 */
 	explicit MetaInfoWindow(QWidget* parent = nullptr);
 	/**
 	 * @brief set_metas meta infos for the displayings

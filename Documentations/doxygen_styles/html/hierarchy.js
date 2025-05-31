@@ -28,7 +28,6 @@ var hierarchy =
     [ "CVImage", "class_c_v_image.html", null ],
     [ "CVImageImpl", "class_c_v_image_impl.html", [
       [ "CVImageOpencvImpl", "class_c_v_image_opencv_impl.html", null ],
-      [ "CVImageOpencvImpl", "class_c_v_image_opencv_impl.html", null ],
       [ "CVImageOpencvImpl", "class_c_v_image_opencv_impl.html", null ]
     ] ],
     [ "CVImageImplFactory", "class_c_v_image_impl_factory.html", null ],
@@ -40,6 +39,7 @@ var hierarchy =
       [ "FileNameProviders", "class_file_name_providers.html", null ],
       [ "FileTypeInfo", "class_file_type_info.html", null ]
     ] ],
+    [ "g_acc", "structg__acc.html", null ],
     [ "ICM20608", "class_i_c_m20608.html", null ],
     [ "ICM20608AppData", "struct_i_c_m20608_app_data.html", null ],
     [ "ICM20608Data", "struct_i_c_m20608_data.html", null ],
@@ -71,9 +71,15 @@ var hierarchy =
     [ "QFileSystemModel", null, [
       [ "CCIMXFileSystemModel", "class_c_c_i_m_x_file_system_model.html", null ]
     ] ],
+    [ "QGraphicsScene", null, [
+      [ "SimpleDrawingScene", "class_simple_drawing_scene.html", null ]
+    ] ],
     [ "QMainWindow", null, [
+      [ "AboutMainWindow", "class_about_main_window.html", null ],
+      [ "CCNoterWindow", "class_c_c_noter_window.html", null ],
       [ "CameraWindow", "class_camera_window.html", null ],
       [ "DesktopMainWindow", "class_desktop_main_window.html", null ],
+      [ "DrawerWindow", "class_drawer_window.html", null ],
       [ "EnvironmentWindow", "class_environment_window.html", null ],
       [ "LightControllerWindow", "class_light_controller_window.html", null ],
       [ "MainWindow", "class_main_window.html", null ],
@@ -83,6 +89,7 @@ var hierarchy =
       [ "MediaPlayerWindow", "class_media_player_window.html", null ],
       [ "MetaInfoWindow", "class_meta_info_window.html", null ],
       [ "PlayListMainWindow", "class_play_list_main_window.html", null ],
+      [ "SaveWindow", "class_save_window.html", null ],
       [ "SportsHealthWindow", "class_sports_health_window.html", null ],
       [ "SystemStateWindow", "class_system_state_window.html", null ],
       [ "WeatherAppMainWindow", "class_weather_app_main_window.html", null ]
@@ -107,7 +114,6 @@ var hierarchy =
       [ "StackpageSwitcherAnimation", "struct_stackpage_switcher_animation.html", null ],
       [ "VideoPlayer", "class_video_player.html", null ],
       [ "VideoPlayer", "class_video_player.html", null ],
-      [ "VideoPlayer", "class_video_player.html", null ],
       [ "WallPaperAnimationHandler", "struct_wall_paper_animation_handler.html", null ],
       [ "WeatherRequest", "class_weather_request.html", [
         [ "AppWeatherRequest", "class_app_weather_request.html", null ]
@@ -129,6 +135,7 @@ var hierarchy =
       [ "CPUUsageChart", "class_c_p_u_usage_chart.html", null ],
       [ "CameraDisplayWidget", "class_camera_display_widget.html", null ],
       [ "ClockWidget", "class_clock_widget.html", null ],
+      [ "DesktopAboutMainWidget", "class_desktop_about_main_widget.html", null ],
       [ "DesktopToast", "class_desktop_toast.html", null ],
       [ "DesktopToast", "class_desktop_toast.html", null ],
       [ "DesktopToast", "class_desktop_toast.html", null ],
@@ -140,16 +147,18 @@ var hierarchy =
       [ "HomePage", "class_home_page.html", null ],
       [ "MemoryUsageChart", "class_memory_usage_chart.html", null ],
       [ "ProcessBrowserWidget", "class_process_browser_widget.html", null ],
+      [ "ReadMeWidget", "class_read_me_widget.html", null ],
       [ "ScrollingLabel", "class_scrolling_label.html", null ],
       [ "SideBarWidget", "class_side_bar_widget.html", null ],
+      [ "SimpleDrawerWidget", "class_simple_drawer_widget.html", null ],
       [ "SportsChart", "class_sports_chart.html", null ],
       [ "SportsDisplayWidget", "class_sports_display_widget.html", null ],
       [ "ToolsSideBar", "class_tools_side_bar.html", null ],
       [ "WeatherChartWidget", "class_weather_chart_widget.html", null ],
       [ "WeatherDailyCard", "class_weather_daily_card.html", null ]
     ] ],
+    [ "rol", "structrol.html", null ],
     [ "VideoPlayerImpl", "class_video_player_impl.html", [
-      [ "VideoPlayerOpencvImpl", "class_video_player_opencv_impl.html", null ],
       [ "VideoPlayerOpencvImpl", "class_video_player_opencv_impl.html", null ],
       [ "VideoPlayerOpencvImpl", "class_video_player_opencv_impl.html", null ]
     ] ],

@@ -13,8 +13,17 @@
 class FileCountImplWorker : public QObject {
 	Q_OBJECT
 public:
+	/**
+	 * @brief Construct a new File Count Impl Worker object
+	 * 
+	 * @param parent 
+	 */
 	explicit FileCountImplWorker(QObject* parent = nullptr)
 		: QObject(parent) { }
+	/**
+	 * @brief Destroy the File Count Impl Worker object
+	 * 
+	 */
 	~FileCountImplWorker();
 	/**
 	 * @brief functions depatch an asyncronous count issues,
@@ -38,6 +47,12 @@ private:
 class FileCountInfo : public QObject, public FileInfoProvider {
 	Q_OBJECT
 public:
+	/**
+	 * @brief Construct a new File Count Info object
+	 * 
+	 * @param model 
+	 * @param parent 
+	 */
 	explicit FileCountInfo(CCIMXFileSystemModel* model, QObject* parent = nullptr);
 
 	/**

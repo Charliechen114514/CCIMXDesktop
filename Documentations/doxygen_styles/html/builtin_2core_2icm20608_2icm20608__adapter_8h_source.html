@@ -107,62 +107,72 @@ $(function(){initNavTree('builtin_2core_2icm20608_2icm20608__adapter_8h_source.h
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#ifdef _WIN32</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;fstream&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;unistd.h&gt;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="foldopen" id="foldopen00009" data-start="{" data-end="};">
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="struct_i_c_m20608_app_data.html">    9</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="comment">/* 3D Acceleration value */</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keyword">struct </span>{</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="keywordtype">float</span> x;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <span class="keywordtype">float</span> y;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="keywordtype">float</span> z;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    } g_acc;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="comment">/* 3D Rolations dekta */</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">struct </span>{</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="keywordtype">float</span> x;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <span class="keywordtype">float</span> y;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keywordtype">float</span> z;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    } rol;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="struct_i_c_m20608_app_data.html#a5414584517597607047a64e2e8c9baba">   24</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_i_c_m20608_app_data.html#a5414584517597607047a64e2e8c9baba">temperature</a>;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>} <a class="code hl_struct" href="struct_i_c_m20608_app_data.html">ICM20608AppData</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Platform-specific includes</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#ifdef _WIN32</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;fstream&gt;</span>  <span class="comment">// Windows file handling</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;unistd.h&gt;</span>  <span class="comment">// UNIX file handling</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span></div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="struct_i_c_m20608_app_data.html">   17</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="comment">/* 3D Acceleration values */</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="struct_i_c_m20608_app_data.html#a05214769c197a97b008cdb5a464c35a6">   20</a></span>        <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_i_c_m20608_app_data.html#a05214769c197a97b008cdb5a464c35a6">x</a>;  </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="struct_i_c_m20608_app_data.html#a3e06a03bc5f92347f0c4f0c2b9e362f0">   21</a></span>        <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_i_c_m20608_app_data.html#a3e06a03bc5f92347f0c4f0c2b9e362f0">y</a>;  </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="struct_i_c_m20608_app_data.html#acd42783cab9afc63fdacd4518ac8a549">   22</a></span>        <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_i_c_m20608_app_data.html#acd42783cab9afc63fdacd4518ac8a549">z</a>;  </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="struct_i_c_m20608_app_data.html#a891a17370d76825464280a8e7f0c9e3f">   23</a></span>    } <a class="code hl_struct" href="structg__acc.html">g_acc</a>; </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="comment">/* 3D Rotation delta values */</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keywordtype">float</span> x;  </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="keywordtype">float</span> y;  </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keywordtype">float</span> z;  </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="struct_i_c_m20608_app_data.html#a837d30a73e11567a17780de7275daec4">   30</a></span>    } <a class="code hl_struct" href="structrol.html">rol</a>; </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="struct_i_c_m20608_app_data.html#a5414584517597607047a64e2e8c9baba">   32</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_i_c_m20608_app_data.html#a5414584517597607047a64e2e8c9baba">temperature</a>;  </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>} <a class="code hl_struct" href="struct_i_c_m20608_app_data.html">ICM20608AppData</a>;</div>
 </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="foldopen" id="foldopen00027" data-start="{" data-end="};">
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_i_c_m20608.html">   27</a></span><span class="keyword">class </span>ICM20608 {</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    ICM20608() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="comment">/* disable all copies then */</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    ICM20608&amp; operator=(<span class="keyword">const</span> ICM20608&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    ICM20608(<span class="keyword">const</span> ICM20608&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="comment">/*</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">        invoke this to get the data, True if the data is valid</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_i_c_m20608.html#aae4d486afa4f07805fab7b0453864744">get_package_sync</a>(<a class="code hl_struct" href="struct_i_c_m20608_app_data.html">ICM20608AppData</a>&amp; empty_data_pack);</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="comment">/* replace the dev file with your owns */</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* _dev_file_path = <span class="stringliteral">&quot;/dev/icm20608&quot;</span>;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="comment">/* dev file */</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">void</span> bind_dev_file();</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#ifdef _WIN32</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    std::ifstream dev_stream;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordtype">bool</span> get_package_sync_win32impl(<a class="code hl_struct" href="struct_i_c_m20608_app_data.html">ICM20608AppData</a>&amp; empty);</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">int</span> private_fd { -1 };</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">bool</span> get_package_sync_uniximpl(<a class="code hl_struct" href="struct_i_c_m20608_app_data.html">ICM20608AppData</a>&amp; empty);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>};</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span></div>
+<div class="foldopen" id="foldopen00042" data-start="{" data-end="};">
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_i_c_m20608.html">   42</a></span><span class="keyword">class </span><a class="code hl_function" href="class_i_c_m20608.html#a1b6f846aebebda358aa494c1e4828e26">ICM20608</a> {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_i_c_m20608.html#a1b6f846aebebda358aa494c1e4828e26">   48</a></span>    <a class="code hl_function" href="class_i_c_m20608.html#a1b6f846aebebda358aa494c1e4828e26">ICM20608</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="comment">// Disable copy operations to ensure single ownership of device resource</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="class_i_c_m20608.html#ab49c1e7e37a218f50da5395354a52388">   51</a></span>    <a class="code hl_function" href="class_i_c_m20608.html#a1b6f846aebebda358aa494c1e4828e26">ICM20608</a>&amp; <a class="code hl_function" href="class_i_c_m20608.html#ab49c1e7e37a218f50da5395354a52388">operator=</a>(<span class="keyword">const</span> <a class="code hl_function" href="class_i_c_m20608.html#a1b6f846aebebda358aa494c1e4828e26">ICM20608</a>&amp;) = <span class="keyword">delete</span>;  </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_i_c_m20608.html#ac0825bb348cf98f931b85e46a28d08d9">   52</a></span>    <a class="code hl_function" href="class_i_c_m20608.html#ac0825bb348cf98f931b85e46a28d08d9">ICM20608</a>(<span class="keyword">const</span> <a class="code hl_function" href="class_i_c_m20608.html#a1b6f846aebebda358aa494c1e4828e26">ICM20608</a>&amp;) = <span class="keyword">delete</span>;             </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_i_c_m20608.html#aae4d486afa4f07805fab7b0453864744">get_package_sync</a>(<a class="code hl_struct" href="struct_i_c_m20608_app_data.html">ICM20608AppData</a>&amp; empty_data_pack);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* _dev_file_path = <span class="stringliteral">&quot;/dev/icm20608&quot;</span>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordtype">void</span> bind_dev_file();</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="comment">// Platform-specific implementations</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="preprocessor">#ifdef _WIN32</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    std::ifstream dev_stream;  </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordtype">bool</span> get_package_sync_win32impl(<a class="code hl_struct" href="struct_i_c_m20608_app_data.html">ICM20608AppData</a>&amp; empty);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keywordtype">int</span> private_fd { -1 };  </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordtype">bool</span> get_package_sync_uniximpl(<a class="code hl_struct" href="struct_i_c_m20608_app_data.html">ICM20608AppData</a>&amp; empty);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>};</div>
 </div>
-<div class="ttc" id="aclass_i_c_m20608_html_aae4d486afa4f07805fab7b0453864744"><div class="ttname"><a href="class_i_c_m20608.html#aae4d486afa4f07805fab7b0453864744">ICM20608::get_package_sync</a></div><div class="ttdeci">bool get_package_sync(ICM20608AppData &amp;empty_data_pack)</div><div class="ttdoc">front end interfaces</div><div class="ttdef"><b>Definition</b> icm20608_adapter.cpp:93</div></div>
-<div class="ttc" id="astruct_i_c_m20608_app_data_html"><div class="ttname"><a href="struct_i_c_m20608_app_data.html">ICM20608AppData</a></div><div class="ttdoc">Processed sensor data with float values.</div><div class="ttdef"><b>Definition</b> icm20608_adapter.h:9</div></div>
-<div class="ttc" id="astruct_i_c_m20608_app_data_html_a5414584517597607047a64e2e8c9baba"><div class="ttname"><a href="struct_i_c_m20608_app_data.html#a5414584517597607047a64e2e8c9baba">ICM20608AppData::temperature</a></div><div class="ttdeci">float temperature</div><div class="ttdoc">Temperature value.</div><div class="ttdef"><b>Definition</b> icm20608_adapter.h:24</div></div>
+<div class="ttc" id="aclass_i_c_m20608_html_a1b6f846aebebda358aa494c1e4828e26"><div class="ttname"><a href="class_i_c_m20608.html#a1b6f846aebebda358aa494c1e4828e26">ICM20608::ICM20608</a></div><div class="ttdeci">ICM20608()=default</div><div class="ttdoc">Default constructor.</div></div>
+<div class="ttc" id="aclass_i_c_m20608_html_aae4d486afa4f07805fab7b0453864744"><div class="ttname"><a href="class_i_c_m20608.html#aae4d486afa4f07805fab7b0453864744">ICM20608::get_package_sync</a></div><div class="ttdeci">bool get_package_sync(ICM20608AppData &amp;empty_data_pack)</div><div class="ttdoc">Synchronously reads sensor data package.</div><div class="ttdef"><b>Definition</b> icm20608_adapter.cpp:88</div></div>
+<div class="ttc" id="aclass_i_c_m20608_html_ab49c1e7e37a218f50da5395354a52388"><div class="ttname"><a href="class_i_c_m20608.html#ab49c1e7e37a218f50da5395354a52388">ICM20608::operator=</a></div><div class="ttdeci">ICM20608 &amp; operator=(const ICM20608 &amp;)=delete</div><div class="ttdoc">Deleted copy assignment.</div></div>
+<div class="ttc" id="aclass_i_c_m20608_html_ac0825bb348cf98f931b85e46a28d08d9"><div class="ttname"><a href="class_i_c_m20608.html#ac0825bb348cf98f931b85e46a28d08d9">ICM20608::ICM20608</a></div><div class="ttdeci">ICM20608(const ICM20608 &amp;)=delete</div><div class="ttdoc">Deleted copy constructor.</div></div>
+<div class="ttc" id="astruct_i_c_m20608_app_data_html"><div class="ttname"><a href="struct_i_c_m20608_app_data.html">ICM20608AppData</a></div><div class="ttdoc">Processed sensor data with float values.</div><div class="ttdef"><b>Definition</b> icm20608_adapter.h:17</div></div>
+<div class="ttc" id="astruct_i_c_m20608_app_data_html_a05214769c197a97b008cdb5a464c35a6"><div class="ttname"><a href="struct_i_c_m20608_app_data.html#a05214769c197a97b008cdb5a464c35a6">ICM20608AppData::x</a></div><div class="ttdeci">float x</div><div class="ttdoc">Acceleration along X-axis (in g units)</div><div class="ttdef"><b>Definition</b> icm20608_adapter.h:20</div></div>
+<div class="ttc" id="astruct_i_c_m20608_app_data_html_a3e06a03bc5f92347f0c4f0c2b9e362f0"><div class="ttname"><a href="struct_i_c_m20608_app_data.html#a3e06a03bc5f92347f0c4f0c2b9e362f0">ICM20608AppData::y</a></div><div class="ttdeci">float y</div><div class="ttdoc">Acceleration along Y-axis (in g units)</div><div class="ttdef"><b>Definition</b> icm20608_adapter.h:21</div></div>
+<div class="ttc" id="astruct_i_c_m20608_app_data_html_a5414584517597607047a64e2e8c9baba"><div class="ttname"><a href="struct_i_c_m20608_app_data.html#a5414584517597607047a64e2e8c9baba">ICM20608AppData::temperature</a></div><div class="ttdeci">float temperature</div><div class="ttdoc">Temperature reading from sensor (in Celsius)</div><div class="ttdef"><b>Definition</b> icm20608_adapter.h:32</div></div>
+<div class="ttc" id="astruct_i_c_m20608_app_data_html_acd42783cab9afc63fdacd4518ac8a549"><div class="ttname"><a href="struct_i_c_m20608_app_data.html#acd42783cab9afc63fdacd4518ac8a549">ICM20608AppData::z</a></div><div class="ttdeci">float z</div><div class="ttdoc">Acceleration along Z-axis (in g units)</div><div class="ttdef"><b>Definition</b> icm20608_adapter.h:22</div></div>
+<div class="ttc" id="astructg__acc_html"><div class="ttname"><a href="structg__acc.html">g_acc</a></div><div class="ttdoc">3D acceleration values in raw sensor units</div></div>
+<div class="ttc" id="astructrol_html"><div class="ttname"><a href="structrol.html">rol</a></div><div class="ttdoc">3D rotation delta values in raw sensor units</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

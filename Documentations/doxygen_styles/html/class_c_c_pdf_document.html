@@ -111,7 +111,7 @@ $(function(){initNavTree('class_c_c_pdf_document.html',''); initResizable(true);
 </div><!--header-->
 <div class="contents">
 
-<p>The <a class="el" href="class_c_c_pdf_document.html" title="The CCPdfDocument class CCPdfDocument is expected to hold a resources physically in Programming level...">CCPdfDocument</a> class <a class="el" href="class_c_c_pdf_document.html" title="The CCPdfDocument class CCPdfDocument is expected to hold a resources physically in Programming level...">CCPdfDocument</a> is expected to hold a resources physically in Programming level, this is a heavy level of classes, for any easy and fast pdf sessions should be careful of using this class.  
+<p>The <a class="el" href="class_c_c_pdf_document.html" title="The CCPdfDocument class CCPdfDocument manages the lifetime and access to a PDF document....">CCPdfDocument</a> class <a class="el" href="class_c_c_pdf_document.html" title="The CCPdfDocument class CCPdfDocument manages the lifetime and access to a PDF document....">CCPdfDocument</a> manages the lifetime and access to a PDF document. It encapsulates the underlying MuPDF C library resources. This class is considered heavy-weight and should be used carefully for performance-critical or lightweight PDF sessions.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="ccpdfdocument_8h_source.html">ccpdfdocument.h</a>&gt;</code></p>
@@ -128,72 +128,78 @@ Public Types</h2></td></tr>
 , <a class="el" href="#a49387984fa059ca9904600ba7edacd39a1b6ff2dcc6be29b9b08d0944675d7f5c">FILE_NOT_EXSIT</a>
 , <a class="el" href="#a49387984fa059ca9904600ba7edacd39a47cddc738bfdf4c33c7b47355c4c3799">OTHER_MISTAKES</a>
  }</td></tr>
-<tr class="memdesc:a49387984fa059ca9904600ba7edacd39"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="#a49387984fa059ca9904600ba7edacd39" title="The ErrorCode enum The ErrorCode enum provides the error code.">ErrorCode</a> enum The <a class="el" href="#a49387984fa059ca9904600ba7edacd39" title="The ErrorCode enum The ErrorCode enum provides the error code.">ErrorCode</a> enum provides the error code.  <a href="#a49387984fa059ca9904600ba7edacd39">More...</a><br /></td></tr>
+<tr class="memdesc:a49387984fa059ca9904600ba7edacd39"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="#a49387984fa059ca9904600ba7edacd39" title="ErrorCode Enum describing possible error codes during document operations.">ErrorCode</a> Enum describing possible error codes during document operations.  <a href="#a49387984fa059ca9904600ba7edacd39">More...</a><br /></td></tr>
 <tr class="separator:a49387984fa059ca9904600ba7edacd39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0272e6f6cebd68b3d59af3398c04f7e7" id="r_a0272e6f6cebd68b3d59af3398c04f7e7"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0272e6f6cebd68b3d59af3398c04f7e7">PageNavigationError</a> { <a class="el" href="#a0272e6f6cebd68b3d59af3398c04f7e7a69441610846a0b4d3df2812634cad43d">PAGE_OK</a>
 , <a class="el" href="#a0272e6f6cebd68b3d59af3398c04f7e7aa3139ea349de14385f2d0f92277c550b">PAGE_UNDERFLOW</a>
 , <a class="el" href="#a0272e6f6cebd68b3d59af3398c04f7e7a01b68e8cc095ffb91250bb4dc8271a0d">PAGE_OVERFLOW</a>
 , <a class="el" href="#a0272e6f6cebd68b3d59af3398c04f7e7a7d71d1787b5c7553b77ad4f3a1582eb1">PAGE_UNEXSITS</a>
  }</td></tr>
-<tr class="memdesc:a0272e6f6cebd68b3d59af3398c04f7e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents possible errors that can occur during page navigation.  <a href="#a0272e6f6cebd68b3d59af3398c04f7e7">More...</a><br /></td></tr>
+<tr class="memdesc:a0272e6f6cebd68b3d59af3398c04f7e7"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="#a0272e6f6cebd68b3d59af3398c04f7e7" title="PageNavigationError Enum representing errors when navigating pages.">PageNavigationError</a> Enum representing errors when navigating pages.  <a href="#a0272e6f6cebd68b3d59af3398c04f7e7">More...</a><br /></td></tr>
 <tr class="separator:a0272e6f6cebd68b3d59af3398c04f7e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
 Signals</h2></td></tr>
 <tr class="memitem:ac7a27d7e7420a45635a4fd872b11587d" id="r_ac7a27d7e7420a45635a4fd872b11587d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7a27d7e7420a45635a4fd872b11587d">document_load</a> (const QString document_path)</td></tr>
-<tr class="memdesc:ac7a27d7e7420a45635a4fd872b11587d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emitted when a document is loaded.  <br /></td></tr>
+<tr class="memdesc:ac7a27d7e7420a45635a4fd872b11587d"><td class="mdescLeft">&#160;</td><td class="mdescRight">document_load Signal emitted when a document is successfully loaded.  <br /></td></tr>
 <tr class="separator:ac7a27d7e7420a45635a4fd872b11587d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba7902cbf721d065edbed816dda6c811" id="r_aba7902cbf721d065edbed816dda6c811"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba7902cbf721d065edbed816dda6c811">pageIndexChanged</a> ()</td></tr>
-<tr class="memdesc:aba7902cbf721d065edbed816dda6c811"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emitted when the current page index changes.  <br /></td></tr>
+<tr class="memitem:aba7902cbf721d065edbed816dda6c811" id="r_aba7902cbf721d065edbed816dda6c811"><td class="memItemLeft" align="right" valign="top"><a id="aba7902cbf721d065edbed816dda6c811" name="aba7902cbf721d065edbed816dda6c811"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>pageIndexChanged</b> ()</td></tr>
+<tr class="memdesc:aba7902cbf721d065edbed816dda6c811"><td class="mdescLeft">&#160;</td><td class="mdescRight">pageIndexChanged Signal emitted when the current page index changes. Used for lightweight UI updates or notifications. <br /></td></tr>
 <tr class="separator:aba7902cbf721d065edbed816dda6c811"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0dbd14db687abf21d70d1815e893bbe9" id="r_a0dbd14db687abf21d70d1815e893bbe9"><td class="memItemLeft" align="right" valign="top"><a id="a0dbd14db687abf21d70d1815e893bbe9" name="a0dbd14db687abf21d70d1815e893bbe9"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CCPdfDocument</b> (QObject *parent=nullptr)</td></tr>
+<tr class="memitem:a0dbd14db687abf21d70d1815e893bbe9" id="r_a0dbd14db687abf21d70d1815e893bbe9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0dbd14db687abf21d70d1815e893bbe9">CCPdfDocument</a> (QObject *parent=nullptr)</td></tr>
+<tr class="memdesc:a0dbd14db687abf21d70d1815e893bbe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <br /></td></tr>
 <tr class="separator:a0dbd14db687abf21d70d1815e893bbe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5c4cc096c08e83381fe9f71dd05ec29" id="r_aa5c4cc096c08e83381fe9f71dd05ec29"><td class="memItemLeft" align="right" valign="top"><a id="aa5c4cc096c08e83381fe9f71dd05ec29" name="aa5c4cc096c08e83381fe9f71dd05ec29"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CCPdfDocument</b> (const QString &amp;document_path)</td></tr>
+<tr class="memitem:aa5c4cc096c08e83381fe9f71dd05ec29" id="r_aa5c4cc096c08e83381fe9f71dd05ec29"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5c4cc096c08e83381fe9f71dd05ec29">CCPdfDocument</a> (const QString &amp;document_path)</td></tr>
+<tr class="memdesc:aa5c4cc096c08e83381fe9f71dd05ec29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor that opens a document immediately.  <br /></td></tr>
 <tr class="separator:aa5c4cc096c08e83381fe9f71dd05ec29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d633825ad0e9702d233b9e3f02e7eab" id="r_a6d633825ad0e9702d233b9e3f02e7eab"><td class="memItemLeft" align="right" valign="top"><a id="a6d633825ad0e9702d233b9e3f02e7eab" name="a6d633825ad0e9702d233b9e3f02e7eab"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~CCPdfDocument</b> ()</td></tr>
+<tr class="memdesc:a6d633825ad0e9702d233b9e3f02e7eab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. Releases resources associated with the document. <br /></td></tr>
+<tr class="separator:a6d633825ad0e9702d233b9e3f02e7eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9c20661def7cd3254368806dd1ecc6d" id="r_ae9c20661def7cd3254368806dd1ecc6d"><td class="memItemLeft" align="right" valign="top"><a id="ae9c20661def7cd3254368806dd1ecc6d" name="ae9c20661def7cd3254368806dd1ecc6d"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Q_DISABLE_COPY</b> (<a class="el" href="class_c_c_pdf_document.html">CCPdfDocument</a>)</td></tr>
+<tr class="memdesc:ae9c20661def7cd3254368806dd1ecc6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">disable copy object <br /></td></tr>
 <tr class="separator:ae9c20661def7cd3254368806dd1ecc6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbcadc5fe612d3c0dd8ccbe18094e24a" id="r_adbcadc5fe612d3c0dd8ccbe18094e24a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a49387984fa059ca9904600ba7edacd39">ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adbcadc5fe612d3c0dd8ccbe18094e24a">load_document</a> (const QString &amp;document_path)</td></tr>
-<tr class="memdesc:adbcadc5fe612d3c0dd8ccbe18094e24a"><td class="mdescLeft">&#160;</td><td class="mdescRight">load_document load the document by the path given  <br /></td></tr>
+<tr class="memdesc:adbcadc5fe612d3c0dd8ccbe18094e24a"><td class="mdescLeft">&#160;</td><td class="mdescRight">load_document Loads a PDF document from the specified path.  <br /></td></tr>
 <tr class="separator:adbcadc5fe612d3c0dd8ccbe18094e24a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a19d58e4c4cc536bf7aaba7586be6da" id="r_a4a19d58e4c4cc536bf7aaba7586be6da"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a19d58e4c4cc536bf7aaba7586be6da">close_document</a> ()</td></tr>
-<tr class="memdesc:a4a19d58e4c4cc536bf7aaba7586be6da"><td class="mdescLeft">&#160;</td><td class="mdescRight">close_document close the document  <br /></td></tr>
+<tr class="memdesc:a4a19d58e4c4cc536bf7aaba7586be6da"><td class="mdescLeft">&#160;</td><td class="mdescRight">close_document Closes the currently loaded document.  <br /></td></tr>
 <tr class="separator:a4a19d58e4c4cc536bf7aaba7586be6da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49341806a63155ce6222962c0b741bdf" id="r_a49341806a63155ce6222962c0b741bdf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49341806a63155ce6222962c0b741bdf">document_loaded</a> () const</td></tr>
-<tr class="memdesc:a49341806a63155ce6222962c0b741bdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">document_loaded check if the document is loaded  <br /></td></tr>
+<tr class="memdesc:a49341806a63155ce6222962c0b741bdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">document_loaded Checks if a document is currently loaded.  <br /></td></tr>
 <tr class="separator:a49341806a63155ce6222962c0b741bdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf9058577d2c7f75dd522bef8bd1ace5" id="r_abf9058577d2c7f75dd522bef8bd1ace5"><td class="memItemLeft" align="right" valign="top">std::optional&lt; uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf9058577d2c7f75dd522bef8bd1ace5">document_page</a> () const</td></tr>
-<tr class="memdesc:abf9058577d2c7f75dd522bef8bd1ace5"><td class="mdescLeft">&#160;</td><td class="mdescRight">document_page get the page count of the document  <br /></td></tr>
+<tr class="memdesc:abf9058577d2c7f75dd522bef8bd1ace5"><td class="mdescLeft">&#160;</td><td class="mdescRight">document_page Gets the total number of pages in the loaded document.  <br /></td></tr>
 <tr class="separator:abf9058577d2c7f75dd522bef8bd1ace5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1820f7860fc661eb6adbd383e58d9eba" id="r_a1820f7860fc661eb6adbd383e58d9eba"><td class="memItemLeft" align="right" valign="top">fz_document *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1820f7860fc661eb6adbd383e58d9eba">raw_handle</a> () const</td></tr>
-<tr class="memdesc:a1820f7860fc661eb6adbd383e58d9eba"><td class="mdescLeft">&#160;</td><td class="mdescRight">raw_handle  <br /></td></tr>
+<tr class="memdesc:a1820f7860fc661eb6adbd383e58d9eba"><td class="mdescLeft">&#160;</td><td class="mdescRight">raw_handle Gets the raw pointer to the underlying MuPDF document.  <br /></td></tr>
 <tr class="separator:a1820f7860fc661eb6adbd383e58d9eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a340e07d237df5d81800f2a289a2f4764" id="r_a340e07d237df5d81800f2a289a2f4764"><td class="memItemLeft" align="right" valign="top">fz_context *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a340e07d237df5d81800f2a289a2f4764">raw_context</a> () const</td></tr>
-<tr class="memdesc:a340e07d237df5d81800f2a289a2f4764"><td class="mdescLeft">&#160;</td><td class="mdescRight">raw_context  <br /></td></tr>
+<tr class="memdesc:a340e07d237df5d81800f2a289a2f4764"><td class="mdescLeft">&#160;</td><td class="mdescRight">raw_context Gets the raw pointer to the MuPDF context.  <br /></td></tr>
 <tr class="separator:a340e07d237df5d81800f2a289a2f4764"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a7851e64572f8c99883f46228505aee" id="r_a7a7851e64572f8c99883f46228505aee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_c_c_pdf_meta_info.html">CCPdfMetaInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a7851e64572f8c99883f46228505aee">meta_info</a> () const</td></tr>
-<tr class="memdesc:a7a7851e64572f8c99883f46228505aee"><td class="mdescLeft">&#160;</td><td class="mdescRight">meta_info  <br /></td></tr>
+<tr class="memdesc:a7a7851e64572f8c99883f46228505aee"><td class="mdescLeft">&#160;</td><td class="mdescRight">meta_info Retrieves metadata information from the loaded document.  <br /></td></tr>
 <tr class="separator:a7a7851e64572f8c99883f46228505aee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0dbbff186c5b2b6c6eb71d54062355c" id="r_ab0dbbff186c5b2b6c6eb71d54062355c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0dbbff186c5b2b6c6eb71d54062355c">current_page</a> () const</td></tr>
-<tr class="memdesc:ab0dbbff186c5b2b6c6eb71d54062355c"><td class="mdescLeft">&#160;</td><td class="mdescRight">current pages in documentations  <br /></td></tr>
+<tr class="memdesc:ab0dbbff186c5b2b6c6eb71d54062355c"><td class="mdescLeft">&#160;</td><td class="mdescRight">current_page Gets the current page index.  <br /></td></tr>
 <tr class="separator:ab0dbbff186c5b2b6c6eb71d54062355c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb5d93f0d8624153bf748b0867108240" id="r_acb5d93f0d8624153bf748b0867108240"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb5d93f0d8624153bf748b0867108240">current_path</a> () const</td></tr>
-<tr class="memdesc:acb5d93f0d8624153bf748b0867108240"><td class="mdescLeft">&#160;</td><td class="mdescRight">current_path current holding paths  <br /></td></tr>
+<tr class="memdesc:acb5d93f0d8624153bf748b0867108240"><td class="mdescLeft">&#160;</td><td class="mdescRight">current_path Gets the file path of the currently loaded document.  <br /></td></tr>
 <tr class="separator:acb5d93f0d8624153bf748b0867108240"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a458047bbb3fae082de34dd05ac2668d7" id="r_a458047bbb3fae082de34dd05ac2668d7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a458047bbb3fae082de34dd05ac2668d7">total_pages</a> () const</td></tr>
-<tr class="memdesc:a458047bbb3fae082de34dd05ac2668d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">total_pages total pages the doc has  <br /></td></tr>
+<tr class="memdesc:a458047bbb3fae082de34dd05ac2668d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">total_pages Gets the total number of pages in the loaded document.  <br /></td></tr>
 <tr class="separator:a458047bbb3fae082de34dd05ac2668d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c6467e8c92cccdfbc6571d0af3ba774" id="r_a7c6467e8c92cccdfbc6571d0af3ba774"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a0272e6f6cebd68b3d59af3398c04f7e7">PageNavigationError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c6467e8c92cccdfbc6571d0af3ba774">jump</a> (const int page_index)</td></tr>
-<tr class="memdesc:a7c6467e8c92cccdfbc6571d0af3ba774"><td class="mdescLeft">&#160;</td><td class="mdescRight">Jumps to the specified page index.  <br /></td></tr>
+<tr class="memdesc:a7c6467e8c92cccdfbc6571d0af3ba774"><td class="mdescLeft">&#160;</td><td class="mdescRight">jump Attempts to jump to a specified page index.  <br /></td></tr>
 <tr class="separator:a7c6467e8c92cccdfbc6571d0af3ba774"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="class_c_c_pdf_document.html" title="The CCPdfDocument class CCPdfDocument is expected to hold a resources physically in Programming level...">CCPdfDocument</a> class <a class="el" href="class_c_c_pdf_document.html" title="The CCPdfDocument class CCPdfDocument is expected to hold a resources physically in Programming level...">CCPdfDocument</a> is expected to hold a resources physically in Programming level, this is a heavy level of classes, for any easy and fast pdf sessions should be careful of using this class. </p>
+<div class="textblock"><p>The <a class="el" href="class_c_c_pdf_document.html" title="The CCPdfDocument class CCPdfDocument manages the lifetime and access to a PDF document....">CCPdfDocument</a> class <a class="el" href="class_c_c_pdf_document.html" title="The CCPdfDocument class CCPdfDocument manages the lifetime and access to a PDF document....">CCPdfDocument</a> manages the lifetime and access to a PDF document. It encapsulates the underlying MuPDF C library resources. This class is considered heavy-weight and should be used carefully for performance-critical or lightweight PDF sessions. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a49387984fa059ca9904600ba7edacd39" name="a49387984fa059ca9904600ba7edacd39"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a49387984fa059ca9904600ba7edacd39">&#9670;&#160;</a></span>ErrorCode</h2>
@@ -215,13 +221,13 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The <a class="el" href="#a49387984fa059ca9904600ba7edacd39" title="The ErrorCode enum The ErrorCode enum provides the error code.">ErrorCode</a> enum The <a class="el" href="#a49387984fa059ca9904600ba7edacd39" title="The ErrorCode enum The ErrorCode enum provides the error code.">ErrorCode</a> enum provides the error code. </p>
+<p><a class="el" href="#a49387984fa059ca9904600ba7edacd39" title="ErrorCode Enum describing possible error codes during document operations.">ErrorCode</a> Enum describing possible error codes during document operations. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a49387984fa059ca9904600ba7edacd39ad306b6fdee05fe87455110ddf6501e6c" name="a49387984fa059ca9904600ba7edacd39ad306b6fdee05fe87455110ddf6501e6c"></a>NO_ERROR&#160;</td><td class="fielddoc"><p>no error </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a49387984fa059ca9904600ba7edacd39ad306b6fdee05fe87455110ddf6501e6c" name="a49387984fa059ca9904600ba7edacd39ad306b6fdee05fe87455110ddf6501e6c"></a>NO_ERROR&#160;</td><td class="fielddoc"><p>No error occurred. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a49387984fa059ca9904600ba7edacd39a1b6ff2dcc6be29b9b08d0944675d7f5c" name="a49387984fa059ca9904600ba7edacd39a1b6ff2dcc6be29b9b08d0944675d7f5c"></a>FILE_NOT_EXSIT&#160;</td><td class="fielddoc"><p>file not exists </p>
+<tr><td class="fieldname"><a id="a49387984fa059ca9904600ba7edacd39a1b6ff2dcc6be29b9b08d0944675d7f5c" name="a49387984fa059ca9904600ba7edacd39a1b6ff2dcc6be29b9b08d0944675d7f5c"></a>FILE_NOT_EXSIT&#160;</td><td class="fielddoc"><p>File does not exist. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a49387984fa059ca9904600ba7edacd39a47cddc738bfdf4c33c7b47355c4c3799" name="a49387984fa059ca9904600ba7edacd39a47cddc738bfdf4c33c7b47355c4c3799"></a>OTHER_MISTAKES&#160;</td><td class="fielddoc"><p>other mistakes </p>
+<tr><td class="fieldname"><a id="a49387984fa059ca9904600ba7edacd39a47cddc738bfdf4c33c7b47355c4c3799" name="a49387984fa059ca9904600ba7edacd39a47cddc738bfdf4c33c7b47355c4c3799"></a>OTHER_MISTAKES&#160;</td><td class="fielddoc"><p>Other unspecified errors. </p>
 </td></tr>
 </table>
 
@@ -247,17 +253,84 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Represents possible errors that can occur during page navigation. </p>
+<p><a class="el" href="#a0272e6f6cebd68b3d59af3398c04f7e7" title="PageNavigationError Enum representing errors when navigating pages.">PageNavigationError</a> Enum representing errors when navigating pages. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0272e6f6cebd68b3d59af3398c04f7e7a69441610846a0b4d3df2812634cad43d" name="a0272e6f6cebd68b3d59af3398c04f7e7a69441610846a0b4d3df2812634cad43d"></a>PAGE_OK&#160;</td><td class="fielddoc"><p>Navigation succeeded without error. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0272e6f6cebd68b3d59af3398c04f7e7a69441610846a0b4d3df2812634cad43d" name="a0272e6f6cebd68b3d59af3398c04f7e7a69441610846a0b4d3df2812634cad43d"></a>PAGE_OK&#160;</td><td class="fielddoc"><p>Navigation successful. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0272e6f6cebd68b3d59af3398c04f7e7aa3139ea349de14385f2d0f92277c550b" name="a0272e6f6cebd68b3d59af3398c04f7e7aa3139ea349de14385f2d0f92277c550b"></a>PAGE_UNDERFLOW&#160;</td><td class="fielddoc"><p>Attempted to navigate to a page before the first page. </p>
+<tr><td class="fieldname"><a id="a0272e6f6cebd68b3d59af3398c04f7e7aa3139ea349de14385f2d0f92277c550b" name="a0272e6f6cebd68b3d59af3398c04f7e7aa3139ea349de14385f2d0f92277c550b"></a>PAGE_UNDERFLOW&#160;</td><td class="fielddoc"><p>Page index below first page. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0272e6f6cebd68b3d59af3398c04f7e7a01b68e8cc095ffb91250bb4dc8271a0d" name="a0272e6f6cebd68b3d59af3398c04f7e7a01b68e8cc095ffb91250bb4dc8271a0d"></a>PAGE_OVERFLOW&#160;</td><td class="fielddoc"><p>Attempted to navigate to a page beyond the last page. </p>
+<tr><td class="fieldname"><a id="a0272e6f6cebd68b3d59af3398c04f7e7a01b68e8cc095ffb91250bb4dc8271a0d" name="a0272e6f6cebd68b3d59af3398c04f7e7a01b68e8cc095ffb91250bb4dc8271a0d"></a>PAGE_OVERFLOW&#160;</td><td class="fielddoc"><p>Page index beyond last page. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0272e6f6cebd68b3d59af3398c04f7e7a7d71d1787b5c7553b77ad4f3a1582eb1" name="a0272e6f6cebd68b3d59af3398c04f7e7a7d71d1787b5c7553b77ad4f3a1582eb1"></a>PAGE_UNEXSITS&#160;</td><td class="fielddoc"><p>The specified page does not exist. </p>
+<tr><td class="fieldname"><a id="a0272e6f6cebd68b3d59af3398c04f7e7a7d71d1787b5c7553b77ad4f3a1582eb1" name="a0272e6f6cebd68b3d59af3398c04f7e7a7d71d1787b5c7553b77ad4f3a1582eb1"></a>PAGE_UNEXSITS&#160;</td><td class="fielddoc"><p>Specified page does not exist. </p>
 </td></tr>
 </table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a0dbd14db687abf21d70d1815e893bbe9" name="a0dbd14db687abf21d70d1815e893bbe9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dbd14db687abf21d70d1815e893bbe9">&#9670;&#160;</a></span>CCPdfDocument() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CCPdfDocument::CCPdfDocument </td>
+          <td>(</td>
+          <td class="paramtype">QObject *</td>          <td class="paramname"><span class="paramname"><em>parent</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel explicit">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Default constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Optional QObject parent. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa5c4cc096c08e83381fe9f71dd05ec29" name="aa5c4cc096c08e83381fe9f71dd05ec29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5c4cc096c08e83381fe9f71dd05ec29">&#9670;&#160;</a></span>CCPdfDocument() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CCPdfDocument::CCPdfDocument </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>document_path</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel explicit">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor that opens a document immediately. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">document_path</td><td>File path to the PDF document. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -277,8 +350,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>close_document close the document </p>
-<dl class="section return"><dt>Returns</dt><dd>true if the document is closed successfully </dd></dl>
+<p>close_document Closes the currently loaded document. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if the document was closed successfully. </dd></dl>
 
 </div>
 </div>
@@ -305,8 +378,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>current pages in documentations </p>
-<dl class="section note"><dt>Note</dt><dd>For GNU C Lovers, if u worried the performace issue, considering using <b>attribute</b>((always_inline)) attributes to push compilers using inline method to reduce the cost, as this invokes frequently </dd></dl>
+<p>current_page Gets the current page index. </p>
+<dl class="section note"><dt>Note</dt><dd>For GCC users, consider using <b>attribute</b>((always_inline)) to force inline for performance as this may be called frequently. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Current page index. </dd></dl>
 
 </div>
 </div>
@@ -333,8 +407,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>current_path current holding paths </p>
-<dl class="section return"><dt>Returns</dt><dd>current_path handlings </dd></dl>
+<p>current_path Gets the file path of the currently loaded document. </p>
+<dl class="section return"><dt>Returns</dt><dd>Current document file path. </dd></dl>
 
 </div>
 </div>
@@ -361,7 +435,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Emitted when a document is loaded. </p>
+<p>document_load Signal emitted when a document is successfully loaded. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">document_path</td><td>The file path of the loaded document. </td></tr>
@@ -386,8 +460,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>document_loaded check if the document is loaded </p>
-<dl class="section return"><dt>Returns</dt><dd>true if the document is loaded </dd></dl>
+<p>document_loaded Checks if a document is currently loaded. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if loaded; false otherwise. </dd></dl>
 
 </div>
 </div>
@@ -406,8 +480,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>document_page get the page count of the document </p>
-<dl class="section return"><dt>Returns</dt><dd>the page count of the document </dd></dl>
+<p>document_page Gets the total number of pages in the loaded document. </p>
+<dl class="section return"><dt>Returns</dt><dd>Optional containing page count if loaded, or empty if none. </dd></dl>
 
 </div>
 </div>
@@ -426,15 +500,14 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Jumps to the specified page index. </p>
-<p>This function attempts to change the current page to the given index.</p>
+<p>jump Attempts to jump to a specified page index. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">page_index</td><td>The index of the page to jump to. </td></tr>
+    <tr><td class="paramname">page_index</td><td>Target page index. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="#a0272e6f6cebd68b3d59af3398c04f7e7" title="Represents possible errors that can occur during page navigation.">PageNavigationError</a> Returns the result of the navigation attempt. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="#a0272e6f6cebd68b3d59af3398c04f7e7" title="PageNavigationError Enum representing errors when navigating pages.">PageNavigationError</a> indicating navigation result. </dd></dl>
 
 </div>
 </div>
@@ -453,14 +526,14 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>load_document load the document by the path given </p>
+<p>load_document Loads a PDF document from the specified path. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">document_path</td><td>the path of the document </td></tr>
+    <tr><td class="paramname">document_path</td><td>File path to load. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the error code of open sessions </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="#a49387984fa059ca9904600ba7edacd39" title="ErrorCode Enum describing possible error codes during document operations.">ErrorCode</a> indicating success or failure reason. </dd></dl>
 
 </div>
 </div>
@@ -479,36 +552,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>meta_info </p>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
-
-</div>
-</div>
-<a id="aba7902cbf721d065edbed816dda6c811" name="aba7902cbf721d065edbed816dda6c811"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba7902cbf721d065edbed816dda6c811">&#9670;&#160;</a></span>pageIndexChanged</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void CCPdfDocument::pageIndexChanged </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel signal">signal</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Emitted when the current page index changes. </p>
-<p>This signal is used for lightweight notifications when the page index is updated. </p>
+<p>meta_info Retrieves metadata information from the loaded document. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="struct_c_c_pdf_meta_info.html" title="CCPdfMetaInfo Holds metadata extracted from a PDF document.">CCPdfMetaInfo</a> structure with metadata. </dd></dl>
 
 </div>
 </div>
@@ -527,8 +572,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>raw_context </p>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<p>raw_context Gets the raw pointer to the MuPDF context. </p>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to fz_context. </dd></dl>
 
 </div>
 </div>
@@ -547,8 +592,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>raw_handle </p>
-<dl class="section return"><dt>Returns</dt><dd>fz_document as raw handle </dd></dl>
+<p>raw_handle Gets the raw pointer to the underlying MuPDF document. </p>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to fz_document. </dd></dl>
 
 </div>
 </div>
@@ -575,8 +620,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>total_pages total pages the doc has </p>
-<dl class="section return"><dt>Returns</dt><dd>total_pages </dd></dl>
+<p>total_pages Gets the total number of pages in the loaded document. </p>
+<dl class="section return"><dt>Returns</dt><dd>Total page count. </dd></dl>
 
 </div>
 </div>

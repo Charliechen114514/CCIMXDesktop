@@ -9,53 +9,76 @@ namespace Ui {
 class AppCardWidget;
 }
 
-/* App Card Widgets is simple lighted widget that is
- * only post messages to the Toast
+/**
+ * @brief AppCardWidget is a lightweight widget used to post messages to a DesktopToast.
+ *
+ * This is an abstract base class representing an application card UI component.
+ * It is responsible for handling pre-launch work and posting messages via toast notifications.
  */
 class AppCardWidget : public QWidget {
     Q_OBJECT
 
 public:
-	Q_DISABLE_COPY(AppCardWidget);
-	AppCardWidget() = delete;
-	explicit AppCardWidget(DesktopToast* toast, QWidget* parent = nullptr);
+    /**
+     * @brief Disable copy constructor and assignment operator.
+     */
+    Q_DISABLE_COPY(AppCardWidget);
 
-	/* Icons for the current */
+    /**
+     * @brief Default constructor deleted to force usage of parameterized constructor.
+     */
+    AppCardWidget() = delete;
 
-	/**
-	 * @brief setCurrentIcon: for app cards, if we wanna specify the
-	 * icons, we can use this function to rewrite the concrete app icons
-	 * settings behaviors
-	 * @param icons indicates the raw pixmaps we wanna using as a pixmaps
-	 */
-	virtual void setCurrentIcon(const QPixmap& icons);
+    /**
+     * @brief Constructs an AppCardWidget.
+     * @param toast Pointer to the DesktopToast object used to show messages.
+     * @param parent Optional parent widget.
+     */
+    explicit AppCardWidget(DesktopToast* toast, QWidget* parent = nullptr);
 
-	/**
-	 * @brief invoke_preLaunch_work is the main function to invoke the prelaunching issue
-	 * @note when system starts, app cards are supposed to do their actions
-	 * and if not, then do nothing
-	 */
-	virtual void invoke_preLaunch_work(void) = 0;
+    /**
+     * @brief Virtual destructor.
+     */
+    ~AppCardWidget();
 
-	~AppCardWidget();
+    /**
+     * @brief Set the current icon for the app card.
+     *
+     * This function allows derived classes to customize the app card icon
+     * by providing a QPixmap.
+     *
+     * @param icons The pixmap to be used as the icon.
+     */
+    virtual void setCurrentIcon(const QPixmap& icons);
+
+    /**
+     * @brief Abstract method to invoke pre-launch operations.
+     *
+     * Derived classes should implement this to perform necessary
+     * preparations before the system starts or the app card becomes active.
+     */
+    virtual void invoke_preLaunch_work() = 0;
 
 protected:
-	/**
-	 * @brief postAppCardWidget, sometimes, we can use this to post the
-	 * messages to the binding_toast
-	 */
-	virtual void postAppCardWidget() = 0;
-	DesktopToast* binding_toast;
-	Ui::AppCardWidget* ui;
+    /**
+     * @brief Abstract method to post messages to the bound DesktopToast.
+     *
+     * Derived classes implement this to send notifications or status updates
+     * through the toast system.
+     */
+    virtual void postAppCardWidget() = 0;
+
+    DesktopToast* binding_toast;  ///< Pointer to the toast widget used for posting messages.
+    Ui::AppCardWidget* ui;         ///< UI object generated from the Qt Designer form.
 
 public:
-	/**
-	 * @brief defines how to listen to the user interactive events
-	 * @param watched which objects?
-	 * @param event what event?
-	 * @return if handles, return true
-	 */
-	bool eventFilter(QObject* watched, QEvent* event) override;
+    /**
+     * @brief Event filter to handle user interaction events.
+     * @param watched The QObject being watched.
+     * @param event The event being filtered.
+     * @return true if the event was handled, otherwise false.
+     */
+    bool eventFilter(QObject* watched, QEvent* event) override;
 };
 
 #endif // APPCARDWIDGET_H

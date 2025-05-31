@@ -7,31 +7,31 @@
 \DoxyCodeLine{00003\ \textcolor{comment}{/*\ Card\ Works\ as\ the\ base\ */}}
 \DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}appcardwidget.h"{}}}
 \DoxyCodeLine{00005\ }
-\DoxyCodeLine{00011\ \textcolor{keyword}{struct\ }LocalWeatherLightFetcher\ \{}
+\DoxyCodeLine{00011\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_local_weather_light_fetcher_a0b1f25b203c03a868ff62fbac5ef8904}{LocalWeatherLightFetcher}}\ \{}
 \DoxyCodeLine{00012\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00013\ \ \ \ \ LocalWeatherLightFetcher()\ =\ \textcolor{keywordflow}{default};}
-\DoxyCodeLine{00014\ \ \ \ \ Q\_DISABLE\_COPY(LocalWeatherLightFetcher);}
-\DoxyCodeLine{00015\ \ \ \ \ \textcolor{comment}{/*\ for\ advanced\ c++,\ use\ concept\ is\ better\ */}}
-\DoxyCodeLine{00016\ }
-\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_local_weather_light_fetcher_a7406fce33112897beff0da487ffd2440}{fetch\_local\_tempature}}()\ =\ 0;}
-\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{virtual}\ QString\ \mbox{\hyperlink{struct_local_weather_light_fetcher_a0547d83e3889a740caabab87e00d2303}{makeup\_toast\_message}}()\ =\ 0;}
-\DoxyCodeLine{00028\ \};}
-\DoxyCodeLine{00029\ }
-\DoxyCodeLine{00034\ \textcolor{keyword}{class\ }LocalWeatherCard\ :\ \textcolor{keyword}{public}\ AppCardWidget\ \{}
-\DoxyCodeLine{00035\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00036\ \ \ \ \ LocalWeatherCard()\ =\ \textcolor{keyword}{delete};}
-\DoxyCodeLine{00037\ \ \ \ \ Q\_DISABLE\_COPY(LocalWeatherCard);}
-\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{explicit}\ LocalWeatherCard(}
-\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_desktop_toast}{DesktopToast}}*\ toast,\ QWidget*\ parent\ =\ \textcolor{keyword}{nullptr});}
-\DoxyCodeLine{00040\ }
-\DoxyCodeLine{00041\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_local_weather_card_a1bd3f52bf969c5d3747f6934da123fef}{invoke\_preLaunch\_work}}();}
-\DoxyCodeLine{00046\ }
-\DoxyCodeLine{00047\ \textcolor{keyword}{protected}:}
-\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_local_weather_card_a6cac71c7f8be8719da4ee37a0c163363}{postAppCardWidget}}();}
-\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{struct_local_weather_light_fetcher}{LocalWeatherLightFetcher}}*\ localFetcher\ \{\ \textcolor{keyword}{nullptr}\ \};}
-\DoxyCodeLine{00054\ \};}
-\DoxyCodeLine{00055\ }
-\DoxyCodeLine{00056\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ LOCALWEATHERCARD\_H}}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{struct_local_weather_light_fetcher_a0b1f25b203c03a868ff62fbac5ef8904}{LocalWeatherLightFetcher}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{struct_local_weather_light_fetcher_a20ab2ed9b5af31f5793516e9849ee252}{Q\_DISABLE\_COPY}}(\mbox{\hyperlink{struct_local_weather_light_fetcher_a0b1f25b203c03a868ff62fbac5ef8904}{LocalWeatherLightFetcher}});}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{comment}{/*\ for\ advanced\ c++,\ use\ concept\ is\ better\ */}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_local_weather_light_fetcher_a7406fce33112897beff0da487ffd2440}{fetch\_local\_tempature}}()\ =\ 0;}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{virtual}\ QString\ \mbox{\hyperlink{struct_local_weather_light_fetcher_a0547d83e3889a740caabab87e00d2303}{makeup\_toast\_message}}()\ =\ 0;}
+\DoxyCodeLine{00036\ \};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00042\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_local_weather_card_a468f0d160123b9f78c9066bb62483e6e}{LocalWeatherCard}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_app_card_widget_adde6adc2966e595da7ce948c7b272757}{AppCardWidget}}\ \{}
+\DoxyCodeLine{00043\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{class_local_weather_card_a468f0d160123b9f78c9066bb62483e6e}{LocalWeatherCard}}()\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{class_local_weather_card_a3719f6d517c9b4b0ebbb05b404b5b924}{Q\_DISABLE\_COPY}}(\mbox{\hyperlink{class_local_weather_card_a468f0d160123b9f78c9066bb62483e6e}{LocalWeatherCard}});}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_local_weather_card_a468f0d160123b9f78c9066bb62483e6e}{LocalWeatherCard}}(}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_desktop_toast}{DesktopToast}}*\ toast,\ QWidget*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_local_weather_card_a1bd3f52bf969c5d3747f6934da123fef}{invoke\_preLaunch\_work}}();}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_local_weather_card_a6cac71c7f8be8719da4ee37a0c163363}{postAppCardWidget}}();}
+\DoxyCodeLine{00073\ \ \ \ \ \mbox{\hyperlink{struct_local_weather_light_fetcher}{LocalWeatherLightFetcher}}*\ \mbox{\hyperlink{class_local_weather_card_a1eed22fb3253b6f55884578e75964a01}{localFetcher}}\ \{\ \textcolor{keyword}{nullptr}\ \};\ }
+\DoxyCodeLine{00074\ \};}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ LOCALWEATHERCARD\_H}}
 
 \end{DoxyCode}

@@ -5,34 +5,33 @@
 \DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ LINUXPLATFORMDRIVERS\_H}}
 \DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ LINUXPLATFORMDRIVERS\_H}}
 \DoxyCodeLine{00003\ }
-\DoxyCodeLine{00004\ \textcolor{comment}{/*\ hence\ some\ linux\ platform\ drivers\ here\ */}}
+\DoxyCodeLine{00004\ \textcolor{comment}{/*\ Some\ Linux\ platform\ drivers\ here\ */}}
 \DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}Core/CPUStateFetcher.h"{}}}
 \DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}Core/MemoryInfoFetcher.h"{}}}
 \DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}Core/ProcessBroswer.h"{}}}
 \DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <QtClassHelperMacros>}}
 \DoxyCodeLine{00009\ }
-\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }LinuxPlatformMemoryInfoDriver\ :\ \textcolor{keyword}{public}\ CCIMX\_AbstractMemoryInfoDriver\ \{}
-\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00016\ \ \ \ \ LinuxPlatformMemoryInfoDriver()\ =\ \textcolor{keywordflow}{default};}
-\DoxyCodeLine{00017\ \ \ \ \ Q\_DISABLE\_COPY(LinuxPlatformMemoryInfoDriver);}
-\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{void}\ factory(\mbox{\hyperlink{struct_memory_info_fetcher_1_1_memory_stat}{MemoryInfoFetcher::MemoryStat}}\&\ memory\_state)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00019\ \};}
-\DoxyCodeLine{00020\ }
-\DoxyCodeLine{00025\ \textcolor{keyword}{class\ }LinuxPlatformCPUStateDriver\ :\ \textcolor{keyword}{public}\ CCIMX\_AbstractCPUStateDriver\{}
-\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00027\ \ \ \ \ LinuxPlatformCPUStateDriver()\ =\ \textcolor{keywordflow}{default};}
-\DoxyCodeLine{00028\ \ \ \ \ Q\_DISABLE\_COPY(LinuxPlatformCPUStateDriver);}
-\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ factory(\mbox{\hyperlink{struct_c_p_u_state_fetcher_1_1_c_p_u_state}{CPUStateFetcher::CPUState}}\ \&state)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00030\ \};}
-\DoxyCodeLine{00031\ }
-\DoxyCodeLine{00036\ \textcolor{keyword}{class\ }LinuxPlatformProcessBrowserDriver\ :\ \textcolor{keyword}{public}\ CCIMX\_AbstractProcessBroswerDriver}
-\DoxyCodeLine{00037\ \{}
-\DoxyCodeLine{00038\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00039\ \ \ \ \ LinuxPlatformProcessBrowserDriver()\ =\ \textcolor{keywordflow}{default};}
-\DoxyCodeLine{00040\ \ \ \ \ Q\_DISABLE\_COPY(LinuxPlatformProcessBrowserDriver);}
-\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ factory(QList<ProcessBroswer::ProcessInfo>\ \&lists)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }LinuxPlatformMemoryInfoDriver\ :\ \textcolor{keyword}{public}\ CCIMX\_AbstractMemoryInfoDriver\ \{}
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ LinuxPlatformMemoryInfoDriver()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{class_linux_platform_memory_info_driver_a52f4ebd540c8a740f8f53123fb1f6bde}{Q\_DISABLE\_COPY}}(LinuxPlatformMemoryInfoDriver);}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_linux_platform_memory_info_driver_aa1348cc81123078c38ee1aa6a02ea6a9}{factory}}(\mbox{\hyperlink{struct_memory_info_fetcher_1_1_memory_stat}{MemoryInfoFetcher::MemoryStat}}\&\ memory\_state)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00025\ \};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{class\ }LinuxPlatformCPUStateDriver\ :\ \textcolor{keyword}{public}\ CCIMX\_AbstractCPUStateDriver\ \{}
+\DoxyCodeLine{00031\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00032\ \ \ \ \ LinuxPlatformCPUStateDriver()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{class_linux_platform_c_p_u_state_driver_a3d99944c5ed81780c366ad3f38ed6de5}{Q\_DISABLE\_COPY}}(LinuxPlatformCPUStateDriver);}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_linux_platform_c_p_u_state_driver_a1fa40efb35e698bdfb3e3b7f2071c53d}{factory}}(\mbox{\hyperlink{struct_c_p_u_state_fetcher_1_1_c_p_u_state}{CPUStateFetcher::CPUState}}\&\ state)\ \textcolor{keyword}{override};}
 \DoxyCodeLine{00042\ \};}
 \DoxyCodeLine{00043\ }
-\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ LINUXPLATFORMDRIVERS\_H}}
+\DoxyCodeLine{00047\ \textcolor{keyword}{class\ }LinuxPlatformProcessBrowserDriver\ :\ \textcolor{keyword}{public}\ CCIMX\_AbstractProcessBroswerDriver\ \{}
+\DoxyCodeLine{00048\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00049\ \ \ \ \ LinuxPlatformProcessBrowserDriver()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{class_linux_platform_process_browser_driver_af4194a89bce5191112c6767d1454e53b}{Q\_DISABLE\_COPY}}(LinuxPlatformProcessBrowserDriver);}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_linux_platform_process_browser_driver_a442d421f5898a35570e4db27f000d5ab}{factory}}(QList<ProcessBroswer::ProcessInfo>\&\ lists)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00059\ \};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ LINUXPLATFORMDRIVERS\_H}}
 
 \end{DoxyCode}

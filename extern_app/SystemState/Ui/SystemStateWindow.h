@@ -31,7 +31,11 @@ public:
 		ProcessBrowser, ///< Process Browser Index
 		PageIndexMax ///< Max Page Index Index
 	};
-
+	/**
+	 * @brief Construct a new System State Window object
+	 * 
+	 * @param parent 
+	 */
 	SystemStateWindow(QWidget* parent = nullptr);
 	~SystemStateWindow();
 	/**

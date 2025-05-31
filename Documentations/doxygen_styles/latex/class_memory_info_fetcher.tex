@@ -2,7 +2,7 @@
 \hypertarget{class_memory_info_fetcher}{}\label{class_memory_info_fetcher}\index{MemoryInfoFetcher@{MemoryInfoFetcher}}
 
 
-The \doxylink{class_memory_info_fetcher}{Memory\+Info\+Fetcher} class provides the memory information.  
+The \doxylink{class_memory_info_fetcher}{Memory\+Info\+Fetcher} class Provides memory usage information in a platform-\/independent manner. Acts as a memory information fetcher interface.  
 
 
 
@@ -19,63 +19,95 @@ Inheritance diagram for Memory\+Info\+Fetcher\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{struct_memory_info_fetcher_1_1_memory_stat}{Memory\+Stat}}
-\begin{DoxyCompactList}\small\item\em The \doxylink{struct_memory_info_fetcher_1_1_memory_stat}{Memory\+Stat} class provides the memory information. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The \doxylink{struct_memory_info_fetcher_1_1_memory_stat}{Memory\+Stat} struct Holds memory statistics at the byte level. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Signals}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{class_memory_info_fetcher_a61738867fe7eb953fc63f7d3dde99fb5}{finish\+\_\+detect\+\_\+memory}} (const \mbox{\hyperlink{struct_memory_info_fetcher_1_1_memory_stat}{Memory\+Info\+Fetcher\+::\+Memory\+Stat}} \&)
-\begin{DoxyCompactList}\small\item\em finish\+\_\+detect\+\_\+memory the signal to finish the memory detection \end{DoxyCompactList}\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_memory_info_fetcher_a4517c8c3b528cd95160256ecf41170aa}{finish\+\_\+detect\+\_\+memory}} (const \mbox{\hyperlink{struct_memory_info_fetcher_1_1_memory_stat}{Memory\+Info\+Fetcher\+::\+Memory\+Stat}} \&\mbox{\hyperlink{class_memory_info_fetcher_a9bffab9b014b49e72af9822509b20578}{mem\+\_\+stat}})
+\begin{DoxyCompactList}\small\item\em finish\+\_\+detect\+\_\+memory Signal emitted when memory information is updated. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_memory_info_fetcher_a14ed9de319d6141d5ea9a36a49c4bf05}\label{class_memory_info_fetcher_a14ed9de319d6141d5ea9a36a49c4bf05} 
-{\bfseries Memory\+Info\+Fetcher} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
-\item 
+\mbox{\hyperlink{class_memory_info_fetcher_a14ed9de319d6141d5ea9a36a49c4bf05}{Memory\+Info\+Fetcher}} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructor with optional parent. \end{DoxyCompactList}\item 
+\Hypertarget{class_memory_info_fetcher_a42911be5572145fec518536da58c5d09}\label{class_memory_info_fetcher_a42911be5572145fec518536da58c5d09} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Memory\+Info\+Fetcher} ()
+\begin{DoxyCompactList}\small\item\em Destructor to clean up resources. \end{DoxyCompactList}\item 
 \Hypertarget{class_memory_info_fetcher_a036e4b8739cb19ccf88a68f05005a151}\label{class_memory_info_fetcher_a036e4b8739cb19ccf88a68f05005a151} 
 {\bfseries Q\+\_\+\+DISABLE\+\_\+\+COPY} (\mbox{\hyperlink{class_memory_info_fetcher}{Memory\+Info\+Fetcher}})
-\item 
+\begin{DoxyCompactList}\small\item\em disable copy \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_memory_info_fetcher_adda595da6b1152a673f1449989af176d}{set\+\_\+flush\+\_\+freq}} (const int msecs)
-\begin{DoxyCompactList}\small\item\em set\+\_\+flush\+\_\+freq set the flush frequency \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em set\+\_\+flush\+\_\+freq Sets the frequency in milliseconds at which memory info is refreshed. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_memory_info_fetcher_ac98e348b0cf01ea8d9cf2585ca9ec591}{set\+\_\+capture\+\_\+state}} (bool st)
-\begin{DoxyCompactList}\small\item\em set\+\_\+capture\+\_\+state set the capture state \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em set\+\_\+capture\+\_\+state Enables or disables memory information capturing. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_memory_info_fetcher_a35d0e4e2feb268bc805d9ad6c434de33}\label{class_memory_info_fetcher_a35d0e4e2feb268bc805d9ad6c434de33} 
-static QString {\bfseries format\+\_\+size} (quint64 size)
-\end{DoxyCompactItemize}
+static QString \mbox{\hyperlink{class_memory_info_fetcher_a35d0e4e2feb268bc805d9ad6c434de33}{format\+\_\+size}} (quint64 size)
+\begin{DoxyCompactList}\small\item\em format\+\_\+size Utility function to format byte size into human-\/readable string. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \Hypertarget{class_memory_info_fetcher_a9bffab9b014b49e72af9822509b20578}\label{class_memory_info_fetcher_a9bffab9b014b49e72af9822509b20578} 
 struct \mbox{\hyperlink{struct_memory_info_fetcher_1_1_memory_stat}{Memory\+Info\+Fetcher\+::\+Memory\+Stat}} {\bfseries mem\+\_\+stat}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em memory stat holder \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-The \doxylink{class_memory_info_fetcher}{Memory\+Info\+Fetcher} class provides the memory information. 
+The \doxylink{class_memory_info_fetcher}{Memory\+Info\+Fetcher} class Provides memory usage information in a platform-\/independent manner. Acts as a memory information fetcher interface. 
 
-\begin{DoxyNote}{Note}
-this is the memory information fetcher 
-\end{DoxyNote}
-
-
-\doxysubsection{Member Function Documentation}
-\Hypertarget{class_memory_info_fetcher_a61738867fe7eb953fc63f7d3dde99fb5}\index{MemoryInfoFetcher@{MemoryInfoFetcher}!finish\_detect\_memory@{finish\_detect\_memory}}
-\index{finish\_detect\_memory@{finish\_detect\_memory}!MemoryInfoFetcher@{MemoryInfoFetcher}}
-\doxysubsubsection{\texorpdfstring{finish\_detect\_memory}{finish\_detect\_memory}}
-{\footnotesize\ttfamily \label{class_memory_info_fetcher_a61738867fe7eb953fc63f7d3dde99fb5} 
-void Memory\+Info\+Fetcher\+::finish\+\_\+detect\+\_\+memory (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_memory_info_fetcher_1_1_memory_stat}{Memory\+Info\+Fetcher\+::\+Memory\+Stat}} \&}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_memory_info_fetcher_a14ed9de319d6141d5ea9a36a49c4bf05}\index{MemoryInfoFetcher@{MemoryInfoFetcher}!MemoryInfoFetcher@{MemoryInfoFetcher}}
+\index{MemoryInfoFetcher@{MemoryInfoFetcher}!MemoryInfoFetcher@{MemoryInfoFetcher}}
+\doxysubsubsection{\texorpdfstring{MemoryInfoFetcher()}{MemoryInfoFetcher()}}
+{\footnotesize\ttfamily \label{class_memory_info_fetcher_a14ed9de319d6141d5ea9a36a49c4bf05} 
+Memory\+Info\+Fetcher\+::\+Memory\+Info\+Fetcher (\begin{DoxyParamCaption}\item[{QObject \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
 
-finish\+\_\+detect\+\_\+memory the signal to finish the memory detection 
+Constructor with optional parent. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em mem\+\_\+stat} & the memory information carried in signals \\
+{\em parent} & Pointer to the QObject parent, default is nullptr. \\
 \hline
 \end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_memory_info_fetcher_a4517c8c3b528cd95160256ecf41170aa}\index{MemoryInfoFetcher@{MemoryInfoFetcher}!finish\_detect\_memory@{finish\_detect\_memory}}
+\index{finish\_detect\_memory@{finish\_detect\_memory}!MemoryInfoFetcher@{MemoryInfoFetcher}}
+\doxysubsubsection{\texorpdfstring{finish\_detect\_memory}{finish\_detect\_memory}}
+{\footnotesize\ttfamily \label{class_memory_info_fetcher_a4517c8c3b528cd95160256ecf41170aa} 
+void Memory\+Info\+Fetcher\+::finish\+\_\+detect\+\_\+memory (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_memory_info_fetcher_1_1_memory_stat}{Memory\+Info\+Fetcher\+::\+Memory\+Stat}} \&}]{mem\+\_\+stat}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+finish\+\_\+detect\+\_\+memory Signal emitted when memory information is updated. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mem\+\_\+stat} & Current memory statistics. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_memory_info_fetcher_a35d0e4e2feb268bc805d9ad6c434de33}\index{MemoryInfoFetcher@{MemoryInfoFetcher}!format\_size@{format\_size}}
+\index{format\_size@{format\_size}!MemoryInfoFetcher@{MemoryInfoFetcher}}
+\doxysubsubsection{\texorpdfstring{format\_size()}{format\_size()}}
+{\footnotesize\ttfamily \label{class_memory_info_fetcher_a35d0e4e2feb268bc805d9ad6c434de33} 
+QString Memory\+Info\+Fetcher\+::format\+\_\+size (\begin{DoxyParamCaption}\item[{quint64}]{size}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+format\+\_\+size Utility function to format byte size into human-\/readable string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & Size in bytes. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Formatted size string. 
+\end{DoxyReturn}
 \Hypertarget{class_memory_info_fetcher_ac98e348b0cf01ea8d9cf2585ca9ec591}\index{MemoryInfoFetcher@{MemoryInfoFetcher}!set\_capture\_state@{set\_capture\_state}}
 \index{set\_capture\_state@{set\_capture\_state}!MemoryInfoFetcher@{MemoryInfoFetcher}}
 \doxysubsubsection{\texorpdfstring{set\_capture\_state()}{set\_capture\_state()}}
@@ -84,11 +116,11 @@ void Memory\+Info\+Fetcher\+::set\+\_\+capture\+\_\+state (\begin{DoxyParamCapti
 
 
 
-set\+\_\+capture\+\_\+state set the capture state 
+set\+\_\+capture\+\_\+state Enables or disables memory information capturing. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em st} & the state to set, true means capture, false means not \\
+{\em st} & True to start capturing, false to stop. \\
 \hline
 \end{DoxyParams}
 \Hypertarget{class_memory_info_fetcher_adda595da6b1152a673f1449989af176d}\index{MemoryInfoFetcher@{MemoryInfoFetcher}!set\_flush\_freq@{set\_flush\_freq}}
@@ -99,11 +131,11 @@ void Memory\+Info\+Fetcher\+::set\+\_\+flush\+\_\+freq (\begin{DoxyParamCaption}
 
 
 
-set\+\_\+flush\+\_\+freq set the flush frequency 
+set\+\_\+flush\+\_\+freq Sets the frequency in milliseconds at which memory info is refreshed. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em msecs} & the msecs to flush \\
+{\em msecs} & Flush interval in milliseconds. \\
 \hline
 \end{DoxyParams}
 

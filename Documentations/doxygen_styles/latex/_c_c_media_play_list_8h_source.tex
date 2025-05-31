@@ -8,77 +8,77 @@
 \DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QObject>}}
 \DoxyCodeLine{00005\ }
 \DoxyCodeLine{00010\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_media_list_mails}{MediaListMails}}\ \{}
-\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{bool}\ prev\_enabled\ \{\ \textcolor{keyword}{false}\ \},\ next\_enabled\ \{\ \textcolor{keyword}{false}\ \};}
-\DoxyCodeLine{00012\ \ \ \ \ QString\ current\_playing\ \{\};}
-\DoxyCodeLine{00013\ \};}
-\DoxyCodeLine{00014\ }
-\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }CCMediaPlayList\ :\ \textcolor{keyword}{public}\ QObject\ \{}
-\DoxyCodeLine{00016\ \ \ \ \ Q\_OBJECT}
-\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{explicit}\ CCMediaPlayList(QObject*\ parent\ =\ \textcolor{keyword}{nullptr});}
-\DoxyCodeLine{00019\ }
-\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{enum\ class}\ \mbox{\hyperlink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3}{PlayMode}}\ \{}
-\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3ac7fc2ee61fad0e2bba6754efdee31481}{OneShot}},\ }
-\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3aa098ec399dbdac60e3ebd955ebf3452f}{OneCycle}},\ }
-\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3acae9881cfbdbd74078ce3d31eb060791}{ListPlay}},\ }
-\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3a2c62ffd47a07bdb6cb4720a0bad933cd}{ListCycle}},\ }
-\DoxyCodeLine{00028\ \ \ \ \ \};}
-\DoxyCodeLine{00029\ }
-\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3}{PlayMode}}\ \mbox{\hyperlink{class_c_c_media_play_list_a02e1f3f29461356cf685f51a7873c851}{DEF\_MODE}}\ =\ \mbox{\hyperlink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3a2c62ffd47a07bdb6cb4720a0bad933cd}{PlayMode::ListCycle}};}
-\DoxyCodeLine{00034\ }
-\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_c_media_play_list_ad51a9b2199e30a9bf4ca809ef62acd51}{set\_play\_mode}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3}{PlayMode}}\ mode);}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_media_list_mails_a66032034487cd9c3c945ea5673ecf104}{prev\_enabled}}\ \{\ \textcolor{keyword}{false}\ \};\ }
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_media_list_mails_a0703dba7f57b07fa6f9f2a8e21042225}{next\_enabled}}\ \{\ \textcolor{keyword}{false}\ \};\ }
+\DoxyCodeLine{00013\ \ \ \ \ QString\ \mbox{\hyperlink{struct_media_list_mails_a9ef8673f8cecb1cd5d7a12af9a2b20ec}{current\_playing}}\ \{\};\ \ }
+\DoxyCodeLine{00014\ \};}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_c_media_play_list_a32b802259d0a81fa00edd6b4a0bc46d0}{CCMediaPlayList}}\ :\ \textcolor{keyword}{public}\ QObject\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00021\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_c_c_media_play_list_a32b802259d0a81fa00edd6b4a0bc46d0}{CCMediaPlayList}}(QObject*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{enum\ class}\ \mbox{\hyperlink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3}{PlayMode}}\ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3ac7fc2ee61fad0e2bba6754efdee31481}{OneShot}},\ \ \ \ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3aa098ec399dbdac60e3ebd955ebf3452f}{OneCycle}},\ \ \ }
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3acae9881cfbdbd74078ce3d31eb060791}{ListPlay}},\ \ \ }
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3a2c62ffd47a07bdb6cb4720a0bad933cd}{ListCycle}}\ \ \ }
+\DoxyCodeLine{00037\ \ \ \ \ \};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3}{PlayMode}}\ \mbox{\hyperlink{class_c_c_media_play_list_a02e1f3f29461356cf685f51a7873c851}{DEF\_MODE}}\ =\ \mbox{\hyperlink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3a2c62ffd47a07bdb6cb4720a0bad933cd}{PlayMode::ListCycle}};\ }
 \DoxyCodeLine{00040\ }
-\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_c_media_play_list_aa87872c991b4c181e065aef59570391f}{flow\_mode}}();}
-\DoxyCodeLine{00045\ }
-\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3}{PlayMode}}\ \mbox{\hyperlink{class_c_c_media_play_list_ac60aeacbb183d17126bfd2867cfa9280}{get\_play\_mode}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ current\_mode;\ \}}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_c_media_play_list_ad51a9b2199e30a9bf4ca809ef62acd51}{set\_play\_mode}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3}{PlayMode}}\ mode);}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_c_media_play_list_aa87872c991b4c181e065aef59570391f}{flow\_mode}}();}
 \DoxyCodeLine{00051\ }
-\DoxyCodeLine{00056\ \ \ \ \ \mbox{\hyperlink{struct_media_list_mails}{MediaListMails}}\ \mbox{\hyperlink{class_c_c_media_play_list_a7b6c8ec7d64c49707646386e74062488}{fetch\_prev\_play}}();}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3}{PlayMode}}\ \mbox{\hyperlink{class_c_c_media_play_list_ac60aeacbb183d17126bfd2867cfa9280}{get\_play\_mode}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ current\_mode;\ \}}
 \DoxyCodeLine{00057\ }
-\DoxyCodeLine{00062\ \ \ \ \ \mbox{\hyperlink{struct_media_list_mails}{MediaListMails}}\ \mbox{\hyperlink{class_c_c_media_play_list_a87e0329a7a3f6d5a993f562228751f9c}{fetch\_next\_play}}();}
+\DoxyCodeLine{00062\ \ \ \ \ \mbox{\hyperlink{struct_media_list_mails}{MediaListMails}}\ \mbox{\hyperlink{class_c_c_media_play_list_a7b6c8ec7d64c49707646386e74062488}{fetch\_prev\_play}}();}
 \DoxyCodeLine{00063\ }
-\DoxyCodeLine{00068\ \ \ \ \ \mbox{\hyperlink{struct_media_list_mails}{MediaListMails}}\ \mbox{\hyperlink{class_c_c_media_play_list_a92825a1328290f7ccdc0629a002920e6}{fetch\_current\_play}}()\ \{}
-\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_c_media_play_list_acdc84b23ae1686db0269226c94d90e8c}{fetch\_from\_name}}(actual\_play\_list.at(moving\_index));}
-\DoxyCodeLine{00070\ \ \ \ \ \}}
-\DoxyCodeLine{00071\ }
-\DoxyCodeLine{00077\ \ \ \ \ \mbox{\hyperlink{struct_media_list_mails}{MediaListMails}}\ \mbox{\hyperlink{class_c_c_media_play_list_acdc84b23ae1686db0269226c94d90e8c}{fetch\_from\_name}}(\textcolor{keyword}{const}\ QString\&\ where);}
-\DoxyCodeLine{00078\ }
-\DoxyCodeLine{00083\ \ \ \ \ \mbox{\hyperlink{struct_media_list_mails}{MediaListMails}}\ \mbox{\hyperlink{class_c_c_media_play_list_aae4da67df5bc12ee8e401c594dcdd5c3}{fetch\_first\_play}}();}
+\DoxyCodeLine{00068\ \ \ \ \ \mbox{\hyperlink{struct_media_list_mails}{MediaListMails}}\ \mbox{\hyperlink{class_c_c_media_play_list_a87e0329a7a3f6d5a993f562228751f9c}{fetch\_next\_play}}();}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00074\ \ \ \ \ \mbox{\hyperlink{struct_media_list_mails}{MediaListMails}}\ \mbox{\hyperlink{class_c_c_media_play_list_a92825a1328290f7ccdc0629a002920e6}{fetch\_current\_play}}()\ \{}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_c_media_play_list_acdc84b23ae1686db0269226c94d90e8c}{fetch\_from\_name}}(actual\_play\_list.at(moving\_index));}
+\DoxyCodeLine{00076\ \ \ \ \ \}}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00083\ \ \ \ \ \mbox{\hyperlink{struct_media_list_mails}{MediaListMails}}\ \mbox{\hyperlink{class_c_c_media_play_list_acdc84b23ae1686db0269226c94d90e8c}{fetch\_from\_name}}(\textcolor{keyword}{const}\ QString\&\ where);}
 \DoxyCodeLine{00084\ }
-\DoxyCodeLine{00089\ \ \ \ \ \mbox{\hyperlink{struct_media_list_mails}{MediaListMails}}\ \mbox{\hyperlink{class_c_c_media_play_list_a24b68f240ed39e66ad2e9286f60377a0}{fetch\_last\_play}}();}
+\DoxyCodeLine{00089\ \ \ \ \ \mbox{\hyperlink{struct_media_list_mails}{MediaListMails}}\ \mbox{\hyperlink{class_c_c_media_play_list_aae4da67df5bc12ee8e401c594dcdd5c3}{fetch\_first\_play}}();}
 \DoxyCodeLine{00090\ }
-\DoxyCodeLine{00098\ \ \ \ \ QStringList\ \mbox{\hyperlink{class_c_c_media_play_list_a9c252087e36d48ff4b278c86f1df2330}{currentPlayingList}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ actual\_play\_list;\ \}}
-\DoxyCodeLine{00099\ }
-\DoxyCodeLine{00106\ \ \ \ \ QStringList\ \mbox{\hyperlink{class_c_c_media_play_list_a5e0b767ee157bfb31d8448da10f43e4b}{actualList}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ play\_list;\ \}}
-\DoxyCodeLine{00107\ }
-\DoxyCodeLine{00113\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_c_c_media_play_list_aa0c86cc509a3eb75da7128a471f715ee}{get\_actualListlist\_size}}()\ \{\ \textcolor{keywordflow}{return}\ play\_list.size();\ \}}
-\DoxyCodeLine{00114\ }
-\DoxyCodeLine{00119\ \ \ \ \ \textcolor{keywordtype}{void}}
-\DoxyCodeLine{00120\ \ \ \ \ \mbox{\hyperlink{class_c_c_media_play_list_a4a0901d47ef75d9543ecb9d603773c74}{enqueue\_play}}(\textcolor{keyword}{const}\ QStringList\&\ media\_sources);}
+\DoxyCodeLine{00095\ \ \ \ \ \mbox{\hyperlink{struct_media_list_mails}{MediaListMails}}\ \mbox{\hyperlink{class_c_c_media_play_list_a24b68f240ed39e66ad2e9286f60377a0}{fetch\_last\_play}}();}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00102\ \ \ \ \ QStringList\ \mbox{\hyperlink{class_c_c_media_play_list_a9c252087e36d48ff4b278c86f1df2330}{currentPlayingList}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ actual\_play\_list;\ \}}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00108\ \ \ \ \ QStringList\ \mbox{\hyperlink{class_c_c_media_play_list_a5e0b767ee157bfb31d8448da10f43e4b}{actualList}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ play\_list;\ \}}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00114\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_c_c_media_play_list_aa0c86cc509a3eb75da7128a471f715ee}{get\_actualListlist\_size}}()\ \{\ \textcolor{keywordflow}{return}\ play\_list.size();\ \}}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00120\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_c_media_play_list_a4a0901d47ef75d9543ecb9d603773c74}{enqueue\_play}}(\textcolor{keyword}{const}\ QStringList\&\ media\_sources);}
 \DoxyCodeLine{00121\ }
 \DoxyCodeLine{00126\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_c_media_play_list_a68daf8f790fd4be4389c284f2e1eb150}{remove\_play\_list}}(\textcolor{keyword}{const}\ QStringList\&\ media\_sources);}
-\DoxyCodeLine{00127\ signals:}
-\DoxyCodeLine{00132\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_c_media_play_list_addb3f2f5f4ec2b3c4df9f1cde7dc93b0}{playModeChanged}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3}{PlayMode}}\ mode);}
-\DoxyCodeLine{00133\ }
-\DoxyCodeLine{00134\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00128\ signals:}
+\DoxyCodeLine{00133\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_c_media_play_list_addb3f2f5f4ec2b3c4df9f1cde7dc93b0}{playModeChanged}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3}{PlayMode}}\ mode);}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00135\ \textcolor{keyword}{public}\ slots:}
 \DoxyCodeLine{00139\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_c_c_media_play_list_a8cdc1504dab41103a260c634338fd6cd}{flush\_play\_list}}();}
 \DoxyCodeLine{00140\ }
 \DoxyCodeLine{00141\ \textcolor{keyword}{private}:}
 \DoxyCodeLine{00142\ \ \ \ \ \mbox{\hyperlink{class_c_c_media_play_list_a22ea885ed695b9f7fcabd7b117b4e0b3}{PlayMode}}\ current\_mode\ \{\ \mbox{\hyperlink{class_c_c_media_play_list_a02e1f3f29461356cf685f51a7873c851}{DEF\_MODE}}\ \};\ }
 \DoxyCodeLine{00143\ \ \ \ \ QStringList\ play\_list\ \{\};\ }
-\DoxyCodeLine{00144\ }
-\DoxyCodeLine{00145\ \ \ \ \ QStringList\ actual\_play\_list\ \{\};\ }
-\DoxyCodeLine{00146\ \ \ \ \ \textcolor{keywordtype}{int}\ moving\_index\ \{\ -\/1\ \};\ }
-\DoxyCodeLine{00147\ }
-\DoxyCodeLine{00148\ \ \ \ \ \textcolor{keyword}{enum}\ Direction\ \{}
-\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ FORWARD,\ }
-\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ BACKWARD\ }
-\DoxyCodeLine{00151\ \ \ \ \ \};}
-\DoxyCodeLine{00152\ }
-\DoxyCodeLine{00157\ \ \ \ \ \textcolor{keywordtype}{void}\ flush\_info\_according\_mode(Direction\ dir);}
-\DoxyCodeLine{00158\ }
-\DoxyCodeLine{00163\ \ \ \ \ MediaListMails\ flush\_according\_index();}
-\DoxyCodeLine{00164\ \};}
-\DoxyCodeLine{00165\ }
-\DoxyCodeLine{00166\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CCMEDIAPLAYLIST\_H}}
+\DoxyCodeLine{00144\ \ \ \ \ QStringList\ actual\_play\_list\ \{\};\ }
+\DoxyCodeLine{00145\ \ \ \ \ \textcolor{keywordtype}{int}\ moving\_index\ \{\ -\/1\ \};\ }
+\DoxyCodeLine{00146\ }
+\DoxyCodeLine{00147\ \ \ \ \ \textcolor{keyword}{enum}\ Direction\ \{}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ FORWARD,\ \ }
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ BACKWARD\ \ }
+\DoxyCodeLine{00150\ \ \ \ \ \};}
+\DoxyCodeLine{00151\ }
+\DoxyCodeLine{00156\ \ \ \ \ \textcolor{keywordtype}{void}\ flush\_info\_according\_mode(Direction\ dir);}
+\DoxyCodeLine{00157\ }
+\DoxyCodeLine{00162\ \ \ \ \ MediaListMails\ flush\_according\_index();}
+\DoxyCodeLine{00163\ \};}
+\DoxyCodeLine{00164\ }
+\DoxyCodeLine{00165\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CCMEDIAPLAYLIST\_H}}
 
 \end{DoxyCode}

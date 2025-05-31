@@ -20,64 +20,64 @@
 \DoxyCodeLine{00032\ qint64\ \mbox{\hyperlink{namespace_video_player_tools_a3ed058f954d8603eaa07a2be89d72431}{mseconds\_to\_frame}}(qint64\ msec,\ \textcolor{keywordtype}{int}\ fps);}
 \DoxyCodeLine{00033\ \}}
 \DoxyCodeLine{00034\ }
-\DoxyCodeLine{00035\ \textcolor{keyword}{class\ }VideoPlayer\ :\ \textcolor{keyword}{public}\ QObject\ \{}
+\DoxyCodeLine{00035\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_video_player_ae28e4565528e91f1bcf5d1c4ff3a0fc5}{VideoPlayer}}\ :\ \textcolor{keyword}{public}\ QObject\ \{}
 \DoxyCodeLine{00036\ \ \ \ \ Q\_OBJECT}
 \DoxyCodeLine{00037\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{explicit}\ VideoPlayer(QObject*\ parent\ =\ \textcolor{keyword}{nullptr});}
-\DoxyCodeLine{00039\ \ \ \ \ \string~VideoPlayer();}
-\DoxyCodeLine{00040\ }
-\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_video_player_a047ca5bf54e20592edab2c4c2bfdd463}{open}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ video\_path);}
-\DoxyCodeLine{00047\ }
-\DoxyCodeLine{00052\ \ \ \ \ QString\ \mbox{\hyperlink{class_video_player_a1a19a0e4cb026a28ef3ed5a1f683b859}{current\_handle}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ last\_open;\ \}}
-\DoxyCodeLine{00053\ }
-\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_video_player_a919e25566d0330921aa737f1cdc8638b}{close}}();}
-\DoxyCodeLine{00059\ }
-\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_video_player_af032f2fcf964f2fcb91af66d609eab1f}{play}}();}
-\DoxyCodeLine{00065\ }
-\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_video_player_af56cbd256c7aa5fe597c83c8b6ea3979}{pause}}();}
-\DoxyCodeLine{00071\ \ \ \ \ \textcolor{comment}{/*\ get\ the\ total\ frame\ */}}
-\DoxyCodeLine{00072\ }
-\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_video_player_ae2588d7f65c777af6227f7ef987729e0}{total\_frame}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00078\ }
-\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_video_player_a31581e1357ca2d57fed70157fc070bea}{total\_msecs}}()\textcolor{keyword}{\ const\ }\{}
-\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{namespace_video_player_tools_a55fe34f01d97db614347b5af132287e1}{VideoPlayerTools::frame\_to\_mseconds}}(}
-\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_video_player_ae2588d7f65c777af6227f7ef987729e0}{total\_frame}}(),\ info.fps);}
-\DoxyCodeLine{00086\ \ \ \ \ \}}
-\DoxyCodeLine{00087\ }
-\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{struct_video_player_info}{VideoPlayerInfo}}\ \mbox{\hyperlink{class_video_player_a4d021b4f964ff9e444988d5c68941be3}{get\_info}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ info;\ \}}
-\DoxyCodeLine{00097\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_video_player_a3ba75cfe626e25218164bafaf28b3634}{current\_frame}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00098\ }
-\DoxyCodeLine{00103\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_video_player_aaaa2dbe42365452b5b06d4e8ca01d1b2}{valid\_video}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00104\ }
-\DoxyCodeLine{00109\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_video_player_affa0feb472293724d1f2edfc96677099}{is\_playing}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00110\ }
-\DoxyCodeLine{00115\ \ \ \ \ qint64\ \mbox{\hyperlink{class_video_player_aa7375d4254665af9993c4000b546d76d}{currentFrameMSec}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00116\ }
-\DoxyCodeLine{00122\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_video_player_ae1d89d26fbc9972fc14c1fe469e03da3}{setCurrentFrameMSec}}(\textcolor{keyword}{const}\ qint64\ msec);}
-\DoxyCodeLine{00123\ }
-\DoxyCodeLine{00129\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_video_player_aa694b6b907f0e1935de88613608ff6aa}{escapeFrame}}();}
-\DoxyCodeLine{00130\ }
-\DoxyCodeLine{00137\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_video_player_ac9e16dfc5003c78a56600f7bf14fe361}{peekFrame}}(\mbox{\hyperlink{class_c_v_image}{CVImage}}\&\ container,\ \textcolor{keywordtype}{int}\ frame\_request);}
-\DoxyCodeLine{00138\ signals:}
-\DoxyCodeLine{00143\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_video_player_a1ae3d446db619373212f38415b459f06}{openError}}(\textcolor{keyword}{const}\ VideoPlayerOpenErrorCode\ error);}
-\DoxyCodeLine{00144\ }
-\DoxyCodeLine{00150\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_video_player_add12b1dfed409832374d63a3b13c3aa0}{frameReady}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_c_v_image}{CVImage}}\ image);}
-\DoxyCodeLine{00151\ }
-\DoxyCodeLine{00155\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_video_player_a89a61f323510f49f1948b2717c1ca483}{about\_fetch\_frame}}();}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_video_player_ae28e4565528e91f1bcf5d1c4ff3a0fc5}{VideoPlayer}}(QObject*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{class_video_player_ae28e4565528e91f1bcf5d1c4ff3a0fc5}{\string~VideoPlayer}}();}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_video_player_a047ca5bf54e20592edab2c4c2bfdd463}{open}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ video\_path);}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00057\ \ \ \ \ QString\ \mbox{\hyperlink{class_video_player_a1a19a0e4cb026a28ef3ed5a1f683b859}{current\_handle}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ last\_open;\ \}}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_video_player_a919e25566d0330921aa737f1cdc8638b}{close}}();}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_video_player_af032f2fcf964f2fcb91af66d609eab1f}{play}}();}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_video_player_af56cbd256c7aa5fe597c83c8b6ea3979}{pause}}();}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{comment}{/*\ get\ the\ total\ frame\ */}}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_video_player_ae2588d7f65c777af6227f7ef987729e0}{total\_frame}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_video_player_a31581e1357ca2d57fed70157fc070bea}{total\_msecs}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{namespace_video_player_tools_a55fe34f01d97db614347b5af132287e1}{VideoPlayerTools::frame\_to\_mseconds}}(}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_video_player_ae2588d7f65c777af6227f7ef987729e0}{total\_frame}}(),\ info.fps);}
+\DoxyCodeLine{00091\ \ \ \ \ \}}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00097\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{struct_video_player_info}{VideoPlayerInfo}}\ \mbox{\hyperlink{class_video_player_a4d021b4f964ff9e444988d5c68941be3}{get\_info}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ info;\ \}}
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_video_player_a3ba75cfe626e25218164bafaf28b3634}{current\_frame}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_video_player_aaaa2dbe42365452b5b06d4e8ca01d1b2}{valid\_video}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00114\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_video_player_affa0feb472293724d1f2edfc96677099}{is\_playing}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00120\ \ \ \ \ qint64\ \mbox{\hyperlink{class_video_player_aa7375d4254665af9993c4000b546d76d}{currentFrameMSec}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00127\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_video_player_ae1d89d26fbc9972fc14c1fe469e03da3}{setCurrentFrameMSec}}(\textcolor{keyword}{const}\ qint64\ msec);}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00134\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_video_player_aa694b6b907f0e1935de88613608ff6aa}{escapeFrame}}();}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00142\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_video_player_ac9e16dfc5003c78a56600f7bf14fe361}{peekFrame}}(\mbox{\hyperlink{class_c_v_image}{CVImage}}\&\ container,\ \textcolor{keywordtype}{int}\ frame\_request);}
+\DoxyCodeLine{00143\ signals:}
+\DoxyCodeLine{00148\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_video_player_a1ae3d446db619373212f38415b459f06}{openError}}(\textcolor{keyword}{const}\ VideoPlayerOpenErrorCode\ error);}
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00155\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_video_player_add12b1dfed409832374d63a3b13c3aa0}{frameReady}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_c_v_image}{CVImage}}\ image);}
 \DoxyCodeLine{00156\ }
-\DoxyCodeLine{00160\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_video_player_a342b16b0ea6cb5da2f43e5f87d522a1e}{videoEnd}}();}
+\DoxyCodeLine{00160\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_video_player_a89a61f323510f49f1948b2717c1ca483}{about\_fetch\_frame}}();}
 \DoxyCodeLine{00161\ }
-\DoxyCodeLine{00162\ \textcolor{keyword}{private}\ slots:}
-\DoxyCodeLine{00166\ \ \ \ \ \textcolor{keywordtype}{void}\ time\_to\_fetch\_next\_frame();}
-\DoxyCodeLine{00167\ }
-\DoxyCodeLine{00168\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00169\ \ \ \ \ \mbox{\hyperlink{class_video_player_impl}{VideoPlayerImpl}}*\ impl\ \{\ \textcolor{keyword}{nullptr}\ \};\ }
-\DoxyCodeLine{00170\ \ \ \ \ \textcolor{keywordtype}{bool}\ on\_play\ \{\ \textcolor{keyword}{false}\ \};\ }
-\DoxyCodeLine{00171\ \ \ \ \ VideoPlayerInfo\ info;\ }
-\DoxyCodeLine{00172\ \ \ \ \ \textcolor{keywordtype}{int}\ play\_sleep\ \{\ 0\ \};\ }
-\DoxyCodeLine{00173\ \ \ \ \ QString\ last\_open\ \{\};\ }
-\DoxyCodeLine{00174\ \};}
-\DoxyCodeLine{00175\ }
-\DoxyCodeLine{00176\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ VIDEOPLAYER\_H}}
+\DoxyCodeLine{00165\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_video_player_a342b16b0ea6cb5da2f43e5f87d522a1e}{videoEnd}}();}
+\DoxyCodeLine{00166\ }
+\DoxyCodeLine{00167\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00171\ \ \ \ \ \textcolor{keywordtype}{void}\ time\_to\_fetch\_next\_frame();}
+\DoxyCodeLine{00172\ }
+\DoxyCodeLine{00173\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00174\ \ \ \ \ \mbox{\hyperlink{class_video_player_impl}{VideoPlayerImpl}}*\ impl\ \{\ \textcolor{keyword}{nullptr}\ \};\ }
+\DoxyCodeLine{00175\ \ \ \ \ \textcolor{keywordtype}{bool}\ on\_play\ \{\ \textcolor{keyword}{false}\ \};\ }
+\DoxyCodeLine{00176\ \ \ \ \ VideoPlayerInfo\ info;\ }
+\DoxyCodeLine{00177\ \ \ \ \ \textcolor{keywordtype}{int}\ play\_sleep\ \{\ 0\ \};\ }
+\DoxyCodeLine{00178\ \ \ \ \ QString\ last\_open\ \{\};\ }
+\DoxyCodeLine{00179\ \};}
+\DoxyCodeLine{00180\ }
+\DoxyCodeLine{00181\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ VIDEOPLAYER\_H}}
 
 \end{DoxyCode}

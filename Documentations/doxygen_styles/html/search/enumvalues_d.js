@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['title_0',['Title',['../struct_c_c_pdf_meta_info.html#a423cdbefdd1463da5d20fd464d9050a5ab78a3223503896721cca1303f776159b',1,'CCPdfMetaInfo']]],
-  ['typeinfoproviders_1',['TypeInfoProviders',['../class_main_window.html#ad766a05d8996b153d8328819f3fef928a7820a0e650c977902ca389fb734cb3ab',1,'MainWindow']]]
+  ['quit_5fnormal_0',['QUIT_NORMAL',['../struct_application_wrapper_1_1_application_finish_result.html#a03886a5aca858311233b34d9fd6336eaa9ab8f4728e9d3edadcdbfa13206954a0',1,'ApplicationWrapper::ApplicationFinishResult']]],
+  ['quit_5fother_1',['QUIT_OTHER',['../struct_application_wrapper_1_1_application_finish_result.html#a03886a5aca858311233b34d9fd6336eaafd52c78145a9f3b73154ed36b3b7ef72',1,'ApplicationWrapper::ApplicationFinishResult']]]
 ];

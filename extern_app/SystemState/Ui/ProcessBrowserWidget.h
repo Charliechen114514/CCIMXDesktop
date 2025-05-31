@@ -20,11 +20,20 @@ class ProcessBrowserWidget : public QWidget {
 	static constexpr const unsigned short COL_CNT = 8;
 
 public:
+	/**
+	 * @brief Construct a new Process Browser Widget object
+	 * 
+	 * @param parent 
+	 */
 	explicit ProcessBrowserWidget(QWidget* parent = nullptr);
 	~ProcessBrowserWidget();
 
 public slots:
-	/* Considering the Lists of Processes Then! */
+	/**
+	 * @brief handle the process signals for updating
+	 * 
+	 * @param infos 
+	 */
 	void handle_process_issues(const QList<ProcessBroswer::ProcessInfo>& infos);
 
 private:

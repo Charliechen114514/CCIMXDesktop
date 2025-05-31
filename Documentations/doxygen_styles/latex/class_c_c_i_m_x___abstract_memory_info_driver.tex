@@ -2,7 +2,7 @@
 \hypertarget{class_c_c_i_m_x___abstract_memory_info_driver}{}\label{class_c_c_i_m_x___abstract_memory_info_driver}\index{CCIMX\_AbstractMemoryInfoDriver@{CCIMX\_AbstractMemoryInfoDriver}}
 
 
-The \doxylink{class_c_c_i_m_x___abstract_memory_info_driver}{CCIMX\+\_\+\+Abstract\+Memory\+Info\+Driver} class provides the abstract class for the memory information driver.  
+The \doxylink{class_c_c_i_m_x___abstract_memory_info_driver}{CCIMX\+\_\+\+Abstract\+Memory\+Info\+Driver} class Abstract base class for platform-\/specific memory information drivers. Provides interface to fetch memory statistics.  
 
 
 
@@ -18,17 +18,33 @@ Inheritance diagram for CCIMX\+\_\+\+Abstract\+Memory\+Info\+Driver\+:\begin{fig
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_c_c_i_m_x___abstract_memory_info_driver_ac38466d24739fd1516ca321eb236751c}\label{class_c_c_i_m_x___abstract_memory_info_driver_ac38466d24739fd1516ca321eb236751c} 
-virtual void {\bfseries factory} (\mbox{\hyperlink{struct_memory_info_fetcher_1_1_memory_stat}{Memory\+Info\+Fetcher\+::\+Memory\+Stat}} \&)=0
-\end{DoxyCompactItemize}
+virtual void \mbox{\hyperlink{class_c_c_i_m_x___abstract_memory_info_driver_a3074fcdfdfa51ea3c315ddddd7ed881f}{factory}} (\mbox{\hyperlink{struct_memory_info_fetcher_1_1_memory_stat}{Memory\+Info\+Fetcher\+::\+Memory\+Stat}} \&stat)=0
+\begin{DoxyCompactList}\small\item\em factory Populate the Memory\+Stat structure with current memory info. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-The \doxylink{class_c_c_i_m_x___abstract_memory_info_driver}{CCIMX\+\_\+\+Abstract\+Memory\+Info\+Driver} class provides the abstract class for the memory information driver. 
+The \doxylink{class_c_c_i_m_x___abstract_memory_info_driver}{CCIMX\+\_\+\+Abstract\+Memory\+Info\+Driver} class Abstract base class for platform-\/specific memory information drivers. Provides interface to fetch memory statistics. 
 
-\begin{DoxyNote}{Note}
-This is a abstract class that is used to being as a base class for the driver in different platforms 
-\end{DoxyNote}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_c_c_i_m_x___abstract_memory_info_driver_a3074fcdfdfa51ea3c315ddddd7ed881f}\index{CCIMX\_AbstractMemoryInfoDriver@{CCIMX\_AbstractMemoryInfoDriver}!factory@{factory}}
+\index{factory@{factory}!CCIMX\_AbstractMemoryInfoDriver@{CCIMX\_AbstractMemoryInfoDriver}}
+\doxysubsubsection{\texorpdfstring{factory()}{factory()}}
+{\footnotesize\ttfamily \label{class_c_c_i_m_x___abstract_memory_info_driver_a3074fcdfdfa51ea3c315ddddd7ed881f} 
+virtual void CCIMX\+\_\+\+Abstract\+Memory\+Info\+Driver\+::factory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_memory_info_fetcher_1_1_memory_stat}{Memory\+Info\+Fetcher\+::\+Memory\+Stat}} \&}]{stat}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+factory Populate the Memory\+Stat structure with current memory info. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stat} & Reference to Memory\+Stat structure to fill. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_linux_platform_memory_info_driver_aa1348cc81123078c38ee1aa6a02ea6a9}{Linux\+Platform\+Memory\+Info\+Driver}}, and \mbox{\hyperlink{class_win32_platform_memory_info_driver_a9c96e01bdc9c521a45faf717182a9596}{Win32\+Platform\+Memory\+Info\+Driver}}.
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

@@ -3,9 +3,18 @@
 #include <QObject>
 class QStackedWidget;
 
+/**
+ * @brief The StackpageSwitcherAnimation class
+ * holdings the animations of the stack page animations
+ */
 struct StackpageSwitcherAnimation : public QObject {
 	Q_OBJECT
 public:
+	/**
+	 * @brief Construct a new Stackpage Switcher Animation object
+	 * 
+	 * @param parent 
+	 */
 	explicit StackpageSwitcherAnimation(QObject* parent = nullptr)
 		: QObject(parent) { }
 

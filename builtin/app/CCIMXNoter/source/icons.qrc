@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>quit.png</file>
+        <file>save.png</file>
+        <file>bold.png</file>
+        <file>font.png</file>
+        <file>italic.png</file>
+        <file>open.png</file>
+    </qresource>
+</RCC>

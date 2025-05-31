@@ -35,6 +35,11 @@ qint64 mseconds_to_frame(qint64 msec, int fps);
 class VideoPlayer : public QObject {
 	Q_OBJECT
 public:
+	/**
+	 * @brief Construct a new Video Player object
+	 * 
+	 * @param parent 
+	 */
 	explicit VideoPlayer(QObject* parent = nullptr);
 	~VideoPlayer();
 

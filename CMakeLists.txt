@@ -3,7 +3,7 @@
 # set(ENV{https_proxy} "http://127.0.0.1:7890")
 
 cmake_minimum_required(VERSION 3.19)
-project(CCIMX_Desktop LANGUAGES CXX VERSION 0.9.0)
+project(CCIMX_Desktop LANGUAGES CXX VERSION 0.9.2)
 message(STATUS "Dumping the message info...")
 set(CCIMXDESKTOP_VERSION_MAJOR ${PROJECT_VERSION_MAJOR} CACHE STRING "Main Version Of CCIMXDesktop")
 set(CCIMXDESKTOP_VERSION_MINOR ${PROJECT_VERSION_MINOR} CACHE STRING "Sub Version Of CCIMXDesktop")
@@ -327,6 +327,10 @@ message(STATUS "The base dirent of installations:   CCIMX_ALL_RELEASE_DIR_BASE =
 message(STATUS "current kits installations:         CCIMX_ALL_RELEASE_DIR      = ${CCIMX_ALL_RELEASE_DIR}")
 message(STATUS "Extern app install locations:       CCIMX_EXTERNAL_APP_BASE_DIR= ${CCIMX_EXTERNAL_APP_BASE_DIR}")
 message(STATUS "-----------------------------------------------------")
+message(STATUS "Dumping the built in apps")
+message(STATUS "About Application: introducing the desktop with support")
+message(STATUS "About SimpleDrawer: Simple and Free drawer to notify your imaginations")
+message(STATUS "-----------------------------------------------------")
 message(STATUS "Dumping the external apps: ")
 message(STATUS "Weather Application Built status Due to INCLUDE_WEATHER_APP:    ${INCLUDE_WEATHER_APP}")
 message(STATUS "PDF Browser Built status Due to INCLUDE_PDF_BROWSER_APP:        ${INCLUDE_PDF_BROWSER_APP}")
@@ -350,7 +354,4 @@ else()
     message(STATUS "If you need to generate the documentations, please set the CCIMX_DESKTOP_DOCGEN_REQ to ON")
 endif()
 message(STATUS "-----------------------------------------------------")
-
-
-
 

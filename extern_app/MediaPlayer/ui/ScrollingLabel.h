@@ -26,7 +26,11 @@ public:
 	 * so, make it larger will speed up the roll process
 	 */
 	static constexpr const short STEP_SHORT = 2;
-
+	/**
+	 * @brief Construct a new Scrolling Label object
+	 * 
+	 * @param parent 
+	 */
 	explicit ScrollingLabel(QWidget* parent = nullptr);
 
 	/**
@@ -37,6 +41,10 @@ public:
 	~ScrollingLabel();
 
 protected:
+	/**
+	 * @brief resize hooks
+	 * 
+	 */
 	void resizeEvent(QResizeEvent*) override {
 		updateScroll();
 	}

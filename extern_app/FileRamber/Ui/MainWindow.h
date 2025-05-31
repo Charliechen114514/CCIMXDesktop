@@ -16,6 +16,11 @@ class MainWindow : public QMainWindow {
 	Q_OBJECT
 
 public:
+	/**
+	 * @brief Construct a new Main Window object
+	 * 
+	 * @param parent 
+	 */
 	MainWindow(QWidget* parent = nullptr);
 	/**
 	 * @brief try_goto_parent_view will attempt to switch to the root,

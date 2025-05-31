@@ -9,35 +9,41 @@
 \DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_app_weather_request}{AppWeatherRequest}};}
 \DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_app_weather_result}{AppWeatherResult}};}
 \DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_desktop_toast}{DesktopToast}};}
-\DoxyCodeLine{00008\ QT\_BEGIN\_NAMESPACE}
-\DoxyCodeLine{00009\ \textcolor{keyword}{namespace\ }Ui\ \{}
-\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }WeatherAppMainWindow;}
-\DoxyCodeLine{00011\ \}}
-\DoxyCodeLine{00012\ QT\_END\_NAMESPACE}
-\DoxyCodeLine{00013\ }
-\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }WeatherAppMainWindow\ :\ \textcolor{keyword}{public}\ QMainWindow\ \{}
-\DoxyCodeLine{00019\ \ \ \ \ Q\_OBJECT}
-\DoxyCodeLine{00020\ }
-\DoxyCodeLine{00021\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ WEB\_URL\ =\ \_DEF\_WEATHER\_URL;}
-\DoxyCodeLine{00023\ \ \ \ \ WeatherAppMainWindow(QWidget*\ parent\ =\ \textcolor{keyword}{nullptr});}
-\DoxyCodeLine{00024\ \ \ \ \ \string~WeatherAppMainWindow();}
-\DoxyCodeLine{00025\ }
-\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_weather_app_main_window_af97dd260a58f30dd140641b141c83e79}{refresh\_post\_request}}();}
-\DoxyCodeLine{00031\ }
-\DoxyCodeLine{00032\ \textcolor{keyword}{private}\ slots:}
-\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ makeup\_errors(QNetworkReply*\ reply);}
-\DoxyCodeLine{00038\ }
-\DoxyCodeLine{00039\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ setup\_internal();}
-\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ setup\_connections();}
-\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ reach\_result();}
-\DoxyCodeLine{00043\ \ \ \ \ Ui::WeatherAppMainWindow*\ ui;}
-\DoxyCodeLine{00044\ \ \ \ \ \textcolor{comment}{/*\ App\ request\ and\ result\ */}}
-\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{class_app_weather_result}{AppWeatherResult}}*\ result;}
-\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{class_app_weather_request}{AppWeatherRequest}}*\ request;}
-\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{class_desktop_toast}{DesktopToast}}*\ toast;}
-\DoxyCodeLine{00048\ \};}
-\DoxyCodeLine{00049\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ WEATHERAPPMAINWINDOW\_H}}
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }QLineEdit;}
+\DoxyCodeLine{00009\ QT\_BEGIN\_NAMESPACE}
+\DoxyCodeLine{00010\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }WeatherAppMainWindow;}
+\DoxyCodeLine{00012\ \}}
+\DoxyCodeLine{00013\ QT\_END\_NAMESPACE}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_weather_app_main_window_a7c03726f5d7815cedbd863faa5b40f1b}{WeatherAppMainWindow}}\ :\ \textcolor{keyword}{public}\ QMainWindow\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ default\_city\ =\ \textcolor{stringliteral}{"{}changchun"{}};}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ def\_indicate\_label\_text\ =\ \textcolor{stringliteral}{"{}Current\ Searching\ City:\ "{}};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{class_weather_app_main_window_a9b28f5e7eea424e8ab6ec6badb0183a2}{WEB\_URL}}\ =\ \_DEF\_WEATHER\_URL;\ }
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_weather_app_main_window_a7c03726f5d7815cedbd863faa5b40f1b}{WeatherAppMainWindow}}(QWidget*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{class_weather_app_main_window_a6a447548a41958527b311c1d267be227}{\string~WeatherAppMainWindow}}();}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_weather_app_main_window_af97dd260a58f30dd140641b141c83e79}{refresh\_post\_request}}();}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ makeup\_errors(QNetworkReply*\ reply);}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ switch\_city();}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{void}\ setup\_internal();}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{void}\ setup\_connections();}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{void}\ reach\_result();}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{void}\ post\_setup\_ui();}
+\DoxyCodeLine{00071\ \ \ \ \ Ui::WeatherAppMainWindow*\ ui;}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{comment}{/*\ App\ request\ and\ result\ */}}
+\DoxyCodeLine{00073\ \ \ \ \ \mbox{\hyperlink{class_app_weather_result}{AppWeatherResult}}*\ result;}
+\DoxyCodeLine{00074\ \ \ \ \ \mbox{\hyperlink{class_app_weather_request}{AppWeatherRequest}}*\ request;}
+\DoxyCodeLine{00075\ \ \ \ \ \mbox{\hyperlink{class_desktop_toast}{DesktopToast}}*\ toast;}
+\DoxyCodeLine{00076\ \ \ \ \ QLineEdit*\ lineEdit\ \{\ \textcolor{keyword}{nullptr}\ \};}
+\DoxyCodeLine{00077\ \};}
+\DoxyCodeLine{00078\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ WEATHERAPPMAINWINDOW\_H}}
 
 \end{DoxyCode}

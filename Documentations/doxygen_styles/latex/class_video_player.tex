@@ -19,15 +19,6 @@ void {\bfseries about\+\_\+fetch\+\_\+frame} ()
 \Hypertarget{class_video_player_a342b16b0ea6cb5da2f43e5f87d522a1e}\label{class_video_player_a342b16b0ea6cb5da2f43e5f87d522a1e} 
 void {\bfseries video\+End} ()
 \begin{DoxyCompactList}\small\item\em video\+End the signal indicating the video end \end{DoxyCompactList}\item 
-\Hypertarget{class_video_player_a1ae3d446db619373212f38415b459f06}\label{class_video_player_a1ae3d446db619373212f38415b459f06} 
-void {\bfseries open\+Error} (const Video\+Player\+Open\+Error\+Code error)
-\item 
-\Hypertarget{class_video_player_add12b1dfed409832374d63a3b13c3aa0}\label{class_video_player_add12b1dfed409832374d63a3b13c3aa0} 
-void {\bfseries frame\+Ready} (const \mbox{\hyperlink{class_c_v_image}{CVImage}} image)
-\item 
-\Hypertarget{class_video_player_a89a61f323510f49f1948b2717c1ca483}\label{class_video_player_a89a61f323510f49f1948b2717c1ca483} 
-void {\bfseries about\+\_\+fetch\+\_\+frame} ()
-\item 
 void \mbox{\hyperlink{class_video_player_a1ae3d446db619373212f38415b459f06}{open\+Error}} (const Video\+Player\+Open\+Error\+Code error)
 \begin{DoxyCompactList}\small\item\em open\+Error the signal indicating the open error \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_video_player_add12b1dfed409832374d63a3b13c3aa0}{frame\+Ready}} (const \mbox{\hyperlink{class_c_v_image}{CVImage}} image)
@@ -41,9 +32,8 @@ void {\bfseries video\+End} ()
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_video_player_ae28e4565528e91f1bcf5d1c4ff3a0fc5}\label{class_video_player_ae28e4565528e91f1bcf5d1c4ff3a0fc5} 
-{\bfseries Video\+Player} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
-\item 
+\mbox{\hyperlink{class_video_player_ae28e4565528e91f1bcf5d1c4ff3a0fc5}{Video\+Player}} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Construct a new Video Player object. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_video_player_a047ca5bf54e20592edab2c4c2bfdd463}{open}} (const char \texorpdfstring{$\ast$}{*}video\+\_\+path)
 \begin{DoxyCompactList}\small\item\em open open the video file \end{DoxyCompactList}\item 
 QString \mbox{\hyperlink{class_video_player_a1a19a0e4cb026a28ef3ed5a1f683b859}{current\+\_\+handle}} () const
@@ -74,48 +64,8 @@ void \mbox{\hyperlink{class_video_player_aa694b6b907f0e1935de88613608ff6aa}{esca
 \begin{DoxyCompactList}\small\item\em escape\+Frame escape the current frame \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_video_player_ac9e16dfc5003c78a56600f7bf14fe361}{peek\+Frame}} (\mbox{\hyperlink{class_c_v_image}{CVImage}} \&container, int frame\+\_\+request)
 \begin{DoxyCompactList}\small\item\em peek\+Frame peek the frame of the video \end{DoxyCompactList}\item 
-\Hypertarget{class_video_player_ae28e4565528e91f1bcf5d1c4ff3a0fc5}\label{class_video_player_ae28e4565528e91f1bcf5d1c4ff3a0fc5} 
-{\bfseries Video\+Player} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
-\item 
-\Hypertarget{class_video_player_a047ca5bf54e20592edab2c4c2bfdd463}\label{class_video_player_a047ca5bf54e20592edab2c4c2bfdd463} 
-bool {\bfseries open} (const char \texorpdfstring{$\ast$}{*}video\+\_\+path)
-\item 
-\Hypertarget{class_video_player_a919e25566d0330921aa737f1cdc8638b}\label{class_video_player_a919e25566d0330921aa737f1cdc8638b} 
-bool {\bfseries close} ()
-\item 
-\Hypertarget{class_video_player_af032f2fcf964f2fcb91af66d609eab1f}\label{class_video_player_af032f2fcf964f2fcb91af66d609eab1f} 
-bool {\bfseries play} ()
-\item 
-\Hypertarget{class_video_player_af56cbd256c7aa5fe597c83c8b6ea3979}\label{class_video_player_af56cbd256c7aa5fe597c83c8b6ea3979} 
-bool {\bfseries pause} ()
-\item 
-\Hypertarget{class_video_player_ae2588d7f65c777af6227f7ef987729e0}\label{class_video_player_ae2588d7f65c777af6227f7ef987729e0} 
-int {\bfseries total\+\_\+frame} () const
-\item 
-\Hypertarget{class_video_player_a3ba75cfe626e25218164bafaf28b3634}\label{class_video_player_a3ba75cfe626e25218164bafaf28b3634} 
-int {\bfseries current\+\_\+frame} () const
-\item 
-\Hypertarget{class_video_player_aaaa2dbe42365452b5b06d4e8ca01d1b2}\label{class_video_player_aaaa2dbe42365452b5b06d4e8ca01d1b2} 
-bool {\bfseries valid\+\_\+video} () const
-\item 
-\Hypertarget{class_video_player_affa0feb472293724d1f2edfc96677099}\label{class_video_player_affa0feb472293724d1f2edfc96677099} 
-bool {\bfseries is\+\_\+playing} () const
-\item 
-\Hypertarget{class_video_player_aa7375d4254665af9993c4000b546d76d}\label{class_video_player_aa7375d4254665af9993c4000b546d76d} 
-qint64 {\bfseries current\+Frame\+MSec} () const
-\item 
-\Hypertarget{class_video_player_ae1d89d26fbc9972fc14c1fe469e03da3}\label{class_video_player_ae1d89d26fbc9972fc14c1fe469e03da3} 
-bool {\bfseries set\+Current\+Frame\+MSec} (const qint64 msec)
-\item 
-\Hypertarget{class_video_player_aa694b6b907f0e1935de88613608ff6aa}\label{class_video_player_aa694b6b907f0e1935de88613608ff6aa} 
-void {\bfseries escape\+Frame} ()
-\item 
-\Hypertarget{class_video_player_ac9e16dfc5003c78a56600f7bf14fe361}\label{class_video_player_ac9e16dfc5003c78a56600f7bf14fe361} 
-bool {\bfseries peek\+Frame} (\mbox{\hyperlink{class_c_v_image}{CVImage}} \&container, int frame\+\_\+request)
-\item 
-\Hypertarget{class_video_player_ae28e4565528e91f1bcf5d1c4ff3a0fc5}\label{class_video_player_ae28e4565528e91f1bcf5d1c4ff3a0fc5} 
-{\bfseries Video\+Player} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
-\item 
+\mbox{\hyperlink{class_video_player_ae28e4565528e91f1bcf5d1c4ff3a0fc5}{Video\+Player}} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Construct a new Video Player object. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_video_player_a047ca5bf54e20592edab2c4c2bfdd463}{open}} (const char \texorpdfstring{$\ast$}{*}video\+\_\+path)
 \begin{DoxyCompactList}\small\item\em open open the video file \end{DoxyCompactList}\item 
 QString \mbox{\hyperlink{class_video_player_a1a19a0e4cb026a28ef3ed5a1f683b859}{current\+\_\+handle}} () const
@@ -146,6 +96,39 @@ void \mbox{\hyperlink{class_video_player_aa694b6b907f0e1935de88613608ff6aa}{esca
 \begin{DoxyCompactList}\small\item\em escape\+Frame escape the current frame \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_video_player_ac9e16dfc5003c78a56600f7bf14fe361}{peek\+Frame}} (\mbox{\hyperlink{class_c_v_image}{CVImage}} \&container, int frame\+\_\+request)
 \begin{DoxyCompactList}\small\item\em peek\+Frame peek the frame of the video \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_video_player_ae28e4565528e91f1bcf5d1c4ff3a0fc5}\index{VideoPlayer@{VideoPlayer}!VideoPlayer@{VideoPlayer}}
+\index{VideoPlayer@{VideoPlayer}!VideoPlayer@{VideoPlayer}}
+\doxysubsubsection{\texorpdfstring{VideoPlayer()}{VideoPlayer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_video_player_ae28e4565528e91f1bcf5d1c4ff3a0fc5} 
+Video\+Player\+::\+Video\+Player (\begin{DoxyParamCaption}\item[{QObject \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Construct a new Video Player object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_video_player_ae28e4565528e91f1bcf5d1c4ff3a0fc5}\index{VideoPlayer@{VideoPlayer}!VideoPlayer@{VideoPlayer}}
+\index{VideoPlayer@{VideoPlayer}!VideoPlayer@{VideoPlayer}}
+\doxysubsubsection{\texorpdfstring{VideoPlayer()}{VideoPlayer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_video_player_ae28e4565528e91f1bcf5d1c4ff3a0fc5} 
+Video\+Player\+::\+Video\+Player (\begin{DoxyParamCaption}\item[{QObject \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Construct a new Video Player object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
 
 
 \doxysubsection{Member Function Documentation}
@@ -644,8 +627,6 @@ true if the video is valid
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
 extern\+\_\+app/\+Media\+Player/base/Video\+Player.\+h\item 
-extern\+\_\+app/professionals/library/\+Opencv\+Qt\+Adapter/core\+\_\+library/olds/videoplayer/Video\+Player.\+h\item 
 extern\+\_\+app/professionals/library/\+Opencv\+Qt\+Adapter/core\+\_\+library/videoplayer/Video\+Player.\+h\item 
 extern\+\_\+app/\+Media\+Player/base/Video\+Player.\+cpp\item 
-extern\+\_\+app/professionals/library/\+Opencv\+Qt\+Adapter/core\+\_\+library/olds/videoplayer\+\_\+src/Video\+Player.\+cpp\item 
 extern\+\_\+app/professionals/library/\+Opencv\+Qt\+Adapter/core\+\_\+library/videoplayer\+\_\+src/Video\+Player.\+cpp\end{DoxyCompactItemize}

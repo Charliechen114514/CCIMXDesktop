@@ -17,24 +17,29 @@ Processed sensor data with float values.
 xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
 struct \{\\
 \>float {\bfseries x}\\
+\>\>{\em Acceleration along X-\/axis (in g units) }\\
 \>float {\bfseries y}\\
+\>\>{\em Acceleration along Y-\/axis (in g units) }\\
 \>float {\bfseries z}\\
+\>\>{\em Acceleration along Z-\/axis (in g units) }\\
 \} {\bfseries g\_acc}\\
 
-\end{tabbing}\item 
+\end{tabbing}\begin{DoxyCompactList}\small\item\em acc \end{DoxyCompactList}\item 
 \Hypertarget{struct_i_c_m20608_app_data_a837d30a73e11567a17780de7275daec4}\label{struct_i_c_m20608_app_data_a837d30a73e11567a17780de7275daec4} 
 \begin{tabbing}
 xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
 struct \{\\
 \>float {\bfseries x}\\
+\>\>{\em Rotation delta around X-\/axis (in degrees) }\\
 \>float {\bfseries y}\\
+\>\>{\em Rotation delta around Y-\/axis (in degrees) }\\
 \>float {\bfseries z}\\
+\>\>{\em Rotation delta around Z-\/axis (in degrees) }\\
 \} {\bfseries rol}\\
 
-\end{tabbing}\item 
-\Hypertarget{struct_i_c_m20608_app_data_a5414584517597607047a64e2e8c9baba}\label{struct_i_c_m20608_app_data_a5414584517597607047a64e2e8c9baba} 
-float {\bfseries temperature}
-\begin{DoxyCompactList}\small\item\em Temperature value. \end{DoxyCompactList}\item 
+\end{tabbing}\begin{DoxyCompactList}\small\item\em rotations \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{struct_i_c_m20608_app_data_a5414584517597607047a64e2e8c9baba}{temperature}}
+\begin{DoxyCompactList}\small\item\em Temperature reading from sensor (in Celsius) \end{DoxyCompactList}\item 
 \Hypertarget{struct_i_c_m20608_app_data_ab50859e2db4a9ce04063cdb2451eb85e}\label{struct_i_c_m20608_app_data_ab50859e2db4a9ce04063cdb2451eb85e} 
 \begin{tabbing}
 xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
@@ -59,6 +64,53 @@ struct \{\\
 
 \doxysubsection{Detailed Description}
 Processed sensor data with float values. 
+
+Data structure containing sensor readings from \doxylink{class_i_c_m20608}{ICM20608} device.
+
+This structure holds 3D acceleration data, 3D rotation delta values, and temperature reading from the \doxylink{class_i_c_m20608}{ICM20608} sensor. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_i_c_m20608_app_data_a5414584517597607047a64e2e8c9baba}\index{ICM20608AppData@{ICM20608AppData}!temperature@{temperature}}
+\index{temperature@{temperature}!ICM20608AppData@{ICM20608AppData}}
+\doxysubsubsection{\texorpdfstring{temperature}{temperature}}
+{\footnotesize\ttfamily \label{struct_i_c_m20608_app_data_a5414584517597607047a64e2e8c9baba} 
+float ICM20608\+App\+Data\+::temperature}
+
+
+
+Temperature reading from sensor (in Celsius) 
+
+Temperature value. \Hypertarget{struct_i_c_m20608_app_data_a05214769c197a97b008cdb5a464c35a6}\index{ICM20608AppData@{ICM20608AppData}!x@{x}}
+\index{x@{x}!ICM20608AppData@{ICM20608AppData}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily \label{struct_i_c_m20608_app_data_a05214769c197a97b008cdb5a464c35a6} 
+float ICM20608\+App\+Data\+::x}
+
+
+
+Acceleration along X-\/axis (in g units) 
+
+Rotation delta around X-\/axis (in degrees) \Hypertarget{struct_i_c_m20608_app_data_a3e06a03bc5f92347f0c4f0c2b9e362f0}\index{ICM20608AppData@{ICM20608AppData}!y@{y}}
+\index{y@{y}!ICM20608AppData@{ICM20608AppData}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily \label{struct_i_c_m20608_app_data_a3e06a03bc5f92347f0c4f0c2b9e362f0} 
+float ICM20608\+App\+Data\+::y}
+
+
+
+Acceleration along Y-\/axis (in g units) 
+
+Rotation delta around Y-\/axis (in degrees) \Hypertarget{struct_i_c_m20608_app_data_acd42783cab9afc63fdacd4518ac8a549}\index{ICM20608AppData@{ICM20608AppData}!z@{z}}
+\index{z@{z}!ICM20608AppData@{ICM20608AppData}}
+\doxysubsubsection{\texorpdfstring{z}{z}}
+{\footnotesize\ttfamily \label{struct_i_c_m20608_app_data_acd42783cab9afc63fdacd4518ac8a549} 
+float ICM20608\+App\+Data\+::z}
+
+
+
+Acceleration along Z-\/axis (in g units) 
+
+Rotation delta around Z-\/axis (in degrees) 
 
 The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

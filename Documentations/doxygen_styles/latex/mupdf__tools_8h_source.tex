@@ -7,78 +7,77 @@
 \DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <QImage>}}
 \DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QString>}}
 \DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QVariant>}}
-\DoxyCodeLine{00006\ \textcolor{comment}{/*\ mupdf\ tools\ are\ expected\ to\ make\ some\ light\ wighted\ operations\ */}}
-\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_c_pdf_document}{CCPdfDocument}};}
-\DoxyCodeLine{00008\ }
-\DoxyCodeLine{00009\ \textcolor{comment}{/*}}
-\DoxyCodeLine{00010\ \textcolor{comment}{\ \ \ \ The\ MuPdf\ Supports\ this\ infos,\ so\ make\ this\ be}}
-\DoxyCodeLine{00011\ \textcolor{comment}{}}
-\DoxyCodeLine{00012\ \textcolor{comment}{\#define\ FZ\_META\_FORMAT\ "{}format"{}}}
-\DoxyCodeLine{00013\ \textcolor{comment}{\#define\ FZ\_META\_ENCRYPTION\ "{}encryption"{}}}
-\DoxyCodeLine{00014\ \textcolor{comment}{}}
-\DoxyCodeLine{00015\ \textcolor{comment}{\#define\ FZ\_META\_INFO\ "{}info:"{}}}
-\DoxyCodeLine{00016\ \textcolor{comment}{\#define\ FZ\_META\_INFO\_TITLE\ "{}info:Title"{}}}
-\DoxyCodeLine{00017\ \textcolor{comment}{\#define\ FZ\_META\_INFO\_AUTHOR\ "{}info:Author"{}}}
-\DoxyCodeLine{00018\ \textcolor{comment}{\#define\ FZ\_META\_INFO\_SUBJECT\ "{}info:Subject"{}}}
-\DoxyCodeLine{00019\ \textcolor{comment}{\#define\ FZ\_META\_INFO\_KEYWORDS\ "{}info:Keywords"{}}}
-\DoxyCodeLine{00020\ \textcolor{comment}{\#define\ FZ\_META\_INFO\_CREATOR\ "{}info:Creator"{}}}
-\DoxyCodeLine{00021\ \textcolor{comment}{\#define\ FZ\_META\_INFO\_PRODUCER\ "{}info:Producer"{}}}
-\DoxyCodeLine{00022\ \textcolor{comment}{\#define\ FZ\_META\_INFO\_CREATIONDATE\ "{}info:CreationDate"{}}}
-\DoxyCodeLine{00023\ \textcolor{comment}{\#define\ FZ\_META\_INFO\_MODIFICATIONDATE\ "{}info:ModDate"{}}}
-\DoxyCodeLine{00024\ \textcolor{comment}{*/}}
-\DoxyCodeLine{00025\ }
-\DoxyCodeLine{00027\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_c_c_pdf_meta_info}{CCPdfMetaInfo}}\ \{}
-\DoxyCodeLine{00028\ \ \ \ \ Q\_GADGET}
-\DoxyCodeLine{00029\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{enum\ class}\ \mbox{\hyperlink{struct_c_c_pdf_meta_info_a423cdbefdd1463da5d20fd464d9050a5}{Field}}\ \{}
-\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_c_c_pdf_meta_info_a423cdbefdd1463da5d20fd464d9050a5aa517747c3d12f99244ae598910d979c5}{Author}},\ }
-\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_c_c_pdf_meta_info_a423cdbefdd1463da5d20fd464d9050a5ab78a3223503896721cca1303f776159b}{Title}},\ }
-\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_c_c_pdf_meta_info_a423cdbefdd1463da5d20fd464d9050a5ac7892ebbb139886662c6f2fc8c450710}{Subject}},\ }
-\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_c_c_pdf_meta_info_a423cdbefdd1463da5d20fd464d9050a5a867343577fa1f33caa632a19543bd252}{Keywords}},\ }
-\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_c_c_pdf_meta_info_a423cdbefdd1463da5d20fd464d9050a5aef1d00d8a237a1bbe431e1091f5715fb}{Creator}},\ }
-\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_c_c_pdf_meta_info_a423cdbefdd1463da5d20fd464d9050a5aa6ad87aadc206f6491720e309821904a}{Producer}},\ }
-\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_c_c_pdf_meta_info_a423cdbefdd1463da5d20fd464d9050a5a78682cca3735060e91c0a11ab30a891a}{CreationDateTime}},\ }
-\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_c_c_pdf_meta_info_a423cdbefdd1463da5d20fd464d9050a5a255d50462da112fa4dbf33ff772fdd29}{ModifyDateTime}}\ }
-\DoxyCodeLine{00040\ \ \ \ \ \};}
-\DoxyCodeLine{00041\ \ \ \ \ Q\_ENUM(\mbox{\hyperlink{struct_c_c_pdf_meta_info_a423cdbefdd1463da5d20fd464d9050a5}{Field}});}
-\DoxyCodeLine{00042\ }
-\DoxyCodeLine{00043\ \ \ \ \ QString\ \mbox{\hyperlink{struct_c_c_pdf_meta_info_ad02f378caa4ba18913ff931c50c2fec9}{author}};\ }
-\DoxyCodeLine{00044\ \ \ \ \ QString\ \mbox{\hyperlink{struct_c_c_pdf_meta_info_a7332fab72592d6f8e6f9ed1d5844bfe0}{title}};\ }
-\DoxyCodeLine{00045\ \ \ \ \ QString\ \mbox{\hyperlink{struct_c_c_pdf_meta_info_a6432628cd10311d15f38f6c8dee7031d}{subject}};\ }
-\DoxyCodeLine{00046\ \ \ \ \ QString\ \mbox{\hyperlink{struct_c_c_pdf_meta_info_adeb1520aa049ca39cc794c4feb232b35}{keywords}};\ }
-\DoxyCodeLine{00047\ \ \ \ \ QString\ \mbox{\hyperlink{struct_c_c_pdf_meta_info_a1c1a3c86022af3b969977e1309a08c28}{creator}};\ }
-\DoxyCodeLine{00048\ \ \ \ \ QString\ \mbox{\hyperlink{struct_c_c_pdf_meta_info_a4c76d1610732ddf92630f245068bfe16}{producer}};\ }
-\DoxyCodeLine{00049\ \ \ \ \ QString\ \mbox{\hyperlink{struct_c_c_pdf_meta_info_a4f85c5b45e564cedb66e1b1586d397b9}{creation\_datetime}};\ }
-\DoxyCodeLine{00050\ \ \ \ \ QString\ \mbox{\hyperlink{struct_c_c_pdf_meta_info_a7a5ef458c0944b1833a882215934c4a5}{modify\_datetime}};\ }
-\DoxyCodeLine{00051\ \};}
-\DoxyCodeLine{00052\ }
-\DoxyCodeLine{00054\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_c_c_pdf_image_request}{CCPdfImageRequest}}\ \{}
-\DoxyCodeLine{00055\ \ \ \ \ \mbox{\hyperlink{class_c_c_pdf_document}{CCPdfDocument}}*\ \mbox{\hyperlink{struct_c_c_pdf_image_request_aa718f86585d96f92687e5aec1527dd12}{request\_document}};\ }
-\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_c_c_pdf_image_request_a3d5fb43822cf2a8c84399060ab727efc}{request\_page}};\ }
-\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_c_c_pdf_image_request_a08c0791b91ea220293517dcee6295294}{zoom}};\ }
-\DoxyCodeLine{00058\ \};}
-\DoxyCodeLine{00059\ }
-\DoxyCodeLine{00061\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_c_c_pdf_chapter_node}{CCPdfChapterNode}}\ \{}
-\DoxyCodeLine{00062\ \ \ \ \ QString\ \mbox{\hyperlink{struct_c_c_pdf_chapter_node_aa38e28f70d067bcd3759f32e6311b811}{chapter\_title}};\ }
-\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_c_c_pdf_chapter_node_aebccf9cdeff5bc1782743ed050f03b6b}{chapter\_page}};\ }
-\DoxyCodeLine{00064\ \ \ \ \ QList<CCPdfChapterNode>\ \mbox{\hyperlink{struct_c_c_pdf_chapter_node_aec27ffbb948af651fea64095efb35338}{childs}};\ }
-\DoxyCodeLine{00065\ \};}
-\DoxyCodeLine{00066\ }
-\DoxyCodeLine{00068\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceccpdf__tools}{ccpdf\_tools}}\ \{}
-\DoxyCodeLine{00074\ \mbox{\hyperlink{struct_c_c_pdf_meta_info}{CCPdfMetaInfo}}}
-\DoxyCodeLine{00075\ \mbox{\hyperlink{namespaceccpdf__tools_a999c0788944933e4c5eb4ba9eeaf7497}{request\_meta}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_c_c_pdf_document}{CCPdfDocument}}*\ document);}
-\DoxyCodeLine{00076\ }
-\DoxyCodeLine{00083\ QVariant}
-\DoxyCodeLine{00084\ \mbox{\hyperlink{namespaceccpdf__tools_a4b7a9e4948f407d1efbbfd4a5d7e4a07}{request\_target\_meta}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_c_c_pdf_document}{CCPdfDocument}}*\ document,}
-\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_c_c_pdf_meta_info_a423cdbefdd1463da5d20fd464d9050a5}{CCPdfMetaInfo::Field}}\ field);}
-\DoxyCodeLine{00086\ }
-\DoxyCodeLine{00092\ QImage}
-\DoxyCodeLine{00093\ \mbox{\hyperlink{namespaceccpdf__tools_a70c31d5eeb98044b0ddc6f868aaf68a4}{request\_target\_page}}(\mbox{\hyperlink{struct_c_c_pdf_image_request}{CCPdfImageRequest}}*\ simpleRequest);}
-\DoxyCodeLine{00094\ }
-\DoxyCodeLine{00100\ QList<CCPdfChapterNode>}
-\DoxyCodeLine{00101\ \mbox{\hyperlink{namespaceccpdf__tools_ab1c411f18137d7b0dd3e7cd6f3b421a7}{request\_chapter\_tree}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_c_c_pdf_document}{CCPdfDocument}}*\ document);}
-\DoxyCodeLine{00102\ \};}
-\DoxyCodeLine{00103\ }
-\DoxyCodeLine{00104\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MUPDF\_TOOLS\_H}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{comment}{/*\ }}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *\ MuPDF\ tools\ provide\ lightweight\ operations\ for\ PDF\ documents.}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *\ The\ following\ meta\ keys\ correspond\ to\ MuPDF's\ supported\ metadata:}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ *\ \#define\ FZ\_META\_FORMAT\ "{}format"{}}}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ *\ \#define\ FZ\_META\_ENCRYPTION\ "{}encryption"{}}}
+\DoxyCodeLine{00013\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ *\ \#define\ FZ\_META\_INFO\ "{}info:"{}}}
+\DoxyCodeLine{00015\ \textcolor{comment}{\ *\ \#define\ FZ\_META\_INFO\_TITLE\ "{}info:Title"{}}}
+\DoxyCodeLine{00016\ \textcolor{comment}{\ *\ \#define\ FZ\_META\_INFO\_AUTHOR\ "{}info:Author"{}}}
+\DoxyCodeLine{00017\ \textcolor{comment}{\ *\ \#define\ FZ\_META\_INFO\_SUBJECT\ "{}info:Subject"{}}}
+\DoxyCodeLine{00018\ \textcolor{comment}{\ *\ \#define\ FZ\_META\_INFO\_KEYWORDS\ "{}info:Keywords"{}}}
+\DoxyCodeLine{00019\ \textcolor{comment}{\ *\ \#define\ FZ\_META\_INFO\_CREATOR\ "{}info:Creator"{}}}
+\DoxyCodeLine{00020\ \textcolor{comment}{\ *\ \#define\ FZ\_META\_INFO\_PRODUCER\ "{}info:Producer"{}}}
+\DoxyCodeLine{00021\ \textcolor{comment}{\ *\ \#define\ FZ\_META\_INFO\_CREATIONDATE\ "{}info:CreationDate"{}}}
+\DoxyCodeLine{00022\ \textcolor{comment}{\ *\ \#define\ FZ\_META\_INFO\_MODIFICATIONDATE\ "{}info:ModDate"{}}}
+\DoxyCodeLine{00023\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_c_pdf_document}{CCPdfDocument}};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00031\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_c_c_pdf_meta_info}{CCPdfMetaInfo}}\ \{}
+\DoxyCodeLine{00032\ \ \ \ \ Q\_GADGET}
+\DoxyCodeLine{00033\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{enum\ class}\ \mbox{\hyperlink{struct_c_c_pdf_meta_info_a423cdbefdd1463da5d20fd464d9050a5}{Field}}\ \{}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_c_c_pdf_meta_info_a423cdbefdd1463da5d20fd464d9050a5aa517747c3d12f99244ae598910d979c5}{Author}},\ }
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_c_c_pdf_meta_info_a423cdbefdd1463da5d20fd464d9050a5ab78a3223503896721cca1303f776159b}{Title}},\ }
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_c_c_pdf_meta_info_a423cdbefdd1463da5d20fd464d9050a5ac7892ebbb139886662c6f2fc8c450710}{Subject}},\ }
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_c_c_pdf_meta_info_a423cdbefdd1463da5d20fd464d9050a5a867343577fa1f33caa632a19543bd252}{Keywords}},\ }
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_c_c_pdf_meta_info_a423cdbefdd1463da5d20fd464d9050a5aef1d00d8a237a1bbe431e1091f5715fb}{Creator}},\ }
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_c_c_pdf_meta_info_a423cdbefdd1463da5d20fd464d9050a5aa6ad87aadc206f6491720e309821904a}{Producer}},\ }
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_c_c_pdf_meta_info_a423cdbefdd1463da5d20fd464d9050a5a78682cca3735060e91c0a11ab30a891a}{CreationDateTime}},\ }
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_c_c_pdf_meta_info_a423cdbefdd1463da5d20fd464d9050a5a255d50462da112fa4dbf33ff772fdd29}{ModifyDateTime}}\ }
+\DoxyCodeLine{00047\ \ \ \ \ \};}
+\DoxyCodeLine{00052\ \ \ \ \ \mbox{\hyperlink{struct_c_c_pdf_meta_info_ae2a332829a2828cf9c96d1cd2cbc043c}{Q\_ENUM}}(\mbox{\hyperlink{struct_c_c_pdf_meta_info_a423cdbefdd1463da5d20fd464d9050a5}{Field}});}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ QString\ \mbox{\hyperlink{struct_c_c_pdf_meta_info_ad02f378caa4ba18913ff931c50c2fec9}{author}};\ }
+\DoxyCodeLine{00055\ \ \ \ \ QString\ \mbox{\hyperlink{struct_c_c_pdf_meta_info_a7332fab72592d6f8e6f9ed1d5844bfe0}{title}};\ }
+\DoxyCodeLine{00056\ \ \ \ \ QString\ \mbox{\hyperlink{struct_c_c_pdf_meta_info_a6432628cd10311d15f38f6c8dee7031d}{subject}};\ }
+\DoxyCodeLine{00057\ \ \ \ \ QString\ \mbox{\hyperlink{struct_c_c_pdf_meta_info_adeb1520aa049ca39cc794c4feb232b35}{keywords}};\ }
+\DoxyCodeLine{00058\ \ \ \ \ QString\ \mbox{\hyperlink{struct_c_c_pdf_meta_info_a1c1a3c86022af3b969977e1309a08c28}{creator}};\ }
+\DoxyCodeLine{00059\ \ \ \ \ QString\ \mbox{\hyperlink{struct_c_c_pdf_meta_info_a4c76d1610732ddf92630f245068bfe16}{producer}};\ }
+\DoxyCodeLine{00060\ \ \ \ \ QString\ \mbox{\hyperlink{struct_c_c_pdf_meta_info_a4f85c5b45e564cedb66e1b1586d397b9}{creation\_datetime}};\ }
+\DoxyCodeLine{00061\ \ \ \ \ QString\ \mbox{\hyperlink{struct_c_c_pdf_meta_info_a7a5ef458c0944b1833a882215934c4a5}{modify\_datetime}};\ }
+\DoxyCodeLine{00062\ \};}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00068\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_c_c_pdf_image_request}{CCPdfImageRequest}}\ \{}
+\DoxyCodeLine{00069\ \ \ \ \ \mbox{\hyperlink{class_c_c_pdf_document}{CCPdfDocument}}*\ \mbox{\hyperlink{struct_c_c_pdf_image_request_aa718f86585d96f92687e5aec1527dd12}{request\_document}};\ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_c_c_pdf_image_request_a3d5fb43822cf2a8c84399060ab727efc}{request\_page}};\ }
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_c_c_pdf_image_request_a08c0791b91ea220293517dcee6295294}{zoom}};\ }
+\DoxyCodeLine{00072\ \};}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00078\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_c_c_pdf_chapter_node}{CCPdfChapterNode}}\ \{}
+\DoxyCodeLine{00079\ \ \ \ \ QString\ \mbox{\hyperlink{struct_c_c_pdf_chapter_node_aa38e28f70d067bcd3759f32e6311b811}{chapter\_title}};\ }
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_c_c_pdf_chapter_node_aebccf9cdeff5bc1782743ed050f03b6b}{chapter\_page}};\ }
+\DoxyCodeLine{00081\ \ \ \ \ QList<CCPdfChapterNode>\ \mbox{\hyperlink{struct_c_c_pdf_chapter_node_aec27ffbb948af651fea64095efb35338}{childs}};\ }
+\DoxyCodeLine{00082\ \};}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00088\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceccpdf__tools}{ccpdf\_tools}}\ \{}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00096\ \mbox{\hyperlink{struct_c_c_pdf_meta_info}{CCPdfMetaInfo}}\ \mbox{\hyperlink{namespaceccpdf__tools_a999c0788944933e4c5eb4ba9eeaf7497}{request\_meta}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_c_c_pdf_document}{CCPdfDocument}}*\ document);}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00105\ QVariant\ \mbox{\hyperlink{namespaceccpdf__tools_a4b7a9e4948f407d1efbbfd4a5d7e4a07}{request\_target\_meta}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_c_c_pdf_document}{CCPdfDocument}}*\ document,}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_c_c_pdf_meta_info_a423cdbefdd1463da5d20fd464d9050a5}{CCPdfMetaInfo::Field}}\ field);}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00114\ QImage\ \mbox{\hyperlink{namespaceccpdf__tools_a70c31d5eeb98044b0ddc6f868aaf68a4}{request\_target\_page}}(\mbox{\hyperlink{struct_c_c_pdf_image_request}{CCPdfImageRequest}}*\ simpleRequest);}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00122\ QList<CCPdfChapterNode>\ \mbox{\hyperlink{namespaceccpdf__tools_ab1c411f18137d7b0dd3e7cd6f3b421a7}{request\_chapter\_tree}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_c_c_pdf_document}{CCPdfDocument}}*\ document);}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00124\ \}}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00126\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MUPDF\_TOOLS\_H}}
 
 \end{DoxyCode}

@@ -8,6 +8,13 @@
 #include <QFileDialog>
 class MediaPlayerWindowHelper {
 public:
+	/**
+	 * @brief handle the display error
+	 * 
+	 * @param window  at what window
+	 * @param sources what error
+	 * @param status  what status
+	 */
 	static void handle_displayError(
 		MediaPlayerWindow* window,
 		const QString& sources,

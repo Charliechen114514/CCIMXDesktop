@@ -4,47 +4,59 @@
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ APPWIDGET\_H}}
 \DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ APPWIDGET\_H}}
-\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <QIcon>}}
-\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QWidget>}}
-\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_application_wrapper}{ApplicationWrapper}};}
-\DoxyCodeLine{00006\ \textcolor{keyword}{namespace\ }Ui\ \{}
-\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }AppWidget;}
-\DoxyCodeLine{00008\ \}}
-\DoxyCodeLine{00009\ }
-\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }AppWidget\ :\ \textcolor{keyword}{public}\ QWidget\ \{}
-\DoxyCodeLine{00015\ \ \ \ \ Q\_OBJECT}
-\DoxyCodeLine{00016\ }
-\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{explicit}\ AppWidget(\textcolor{keyword}{const}\ QPixmap\&\ icon,\ \textcolor{keyword}{const}\ QString\&\ name,\ QWidget*\ parent\ =\ \textcolor{keyword}{nullptr});}
-\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ bindApp(\mbox{\hyperlink{class_application_wrapper}{ApplicationWrapper}}*\ wrapper)\ \{\ this-\/>app\_internal\ =\ wrapper;\ \}}
-\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_application_wrapper}{ApplicationWrapper}}*\ get\_app()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ this-\/>app\_internal;\ \}}
-\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ setIcon(\textcolor{keyword}{const}\ QPixmap\&\ icon)\ \textcolor{keyword}{noexcept};}
-\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ setAppName(\textcolor{keyword}{const}\ QString\&\ name)\ \textcolor{keyword}{noexcept};}
-\DoxyCodeLine{00023\ }
-\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_app_widget_a4470138f00905b26ad5534948b6ddb50}{setDummy}}(\textcolor{keywordtype}{bool}\ dummy);}
-\DoxyCodeLine{00030\ \ \ \ \ QPixmap\ icon()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ showIconOnly(\textcolor{keywordtype}{bool}\ st);}
-\DoxyCodeLine{00032\ \ \ \ \ QString\ app\_name()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00033\ \ \ \ \ \string~AppWidget();}
-\DoxyCodeLine{00034\ }
-\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{enum\ class}\ AppStatus\ \{}
-\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ AppOk,}
-\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ AppNonExsits}
-\DoxyCodeLine{00038\ \ \ \ \ \};}
-\DoxyCodeLine{00039\ }
-\DoxyCodeLine{00040\ signals:}
-\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ postAppStatus(AppWidget::AppStatus\ status);}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QIcon>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QWidget>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_application_wrapper}{ApplicationWrapper}};}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }AppWidget;}
+\DoxyCodeLine{00011\ \}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_app_widget_a3806faa4b35786c0e4129246066b215a}{AppWidget}}\ :\ \textcolor{keyword}{public}\ QWidget\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_app_widget_a3806faa4b35786c0e4129246066b215a}{AppWidget}}(\textcolor{keyword}{const}\ QPixmap\&\ \mbox{\hyperlink{class_app_widget_a9321ba6e7e0567ef8787bcdead1e8d2d}{icon}},\ \textcolor{keyword}{const}\ QString\&\ name,\ QWidget*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_app_widget_af104d532bb3bd2b0889391fff0bab157}{bindApp}}(\mbox{\hyperlink{class_application_wrapper}{ApplicationWrapper}}*\ wrapper)\ \{\ this-\/>app\_internal\ =\ wrapper;\ \}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{class_application_wrapper}{ApplicationWrapper}}*\ \mbox{\hyperlink{class_app_widget_a2a5f6bb3602a910f09ddde871936e59e}{get\_app}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ this-\/>app\_internal;\ \}}
 \DoxyCodeLine{00042\ }
-\DoxyCodeLine{00043\ \textcolor{keyword}{protected}:}
-\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{bool}\ eventFilter(QObject*\ watched,\ QEvent*\ event)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00045\ }
-\DoxyCodeLine{00046\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00047\ \ \ \ \ Ui::AppWidget*\ ui;}
-\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{bool}\ dummy\_state\ \{\ \textcolor{keyword}{false}\ \};}
-\DoxyCodeLine{00049\ \ \ \ \ ApplicationWrapper*\ app\_internal\ \{\ \textcolor{keyword}{nullptr}\ \};}
-\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ do\_daptch();}
-\DoxyCodeLine{00054\ \};}
-\DoxyCodeLine{00055\ }
-\DoxyCodeLine{00056\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ APPWIDGET\_H}}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_app_widget_a6bf749981f674a76e979dd547ce9666c}{setIcon}}(\textcolor{keyword}{const}\ QPixmap\&\ \mbox{\hyperlink{class_app_widget_a9321ba6e7e0567ef8787bcdead1e8d2d}{icon}})\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_app_widget_a654bb3fd2c1a9fca116ccf71f7660e89}{setAppName}}(\textcolor{keyword}{const}\ QString\&\ name)\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_app_widget_a4470138f00905b26ad5534948b6ddb50}{setDummy}}(\textcolor{keywordtype}{bool}\ dummy);}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00068\ \ \ \ \ QPixmap\ \mbox{\hyperlink{class_app_widget_a9321ba6e7e0567ef8787bcdead1e8d2d}{icon}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_app_widget_a8e9c25e327f90af3990cdd71d3798d98}{showIconOnly}}(\textcolor{keywordtype}{bool}\ st);}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00080\ \ \ \ \ QString\ \mbox{\hyperlink{class_app_widget_adfa9de7ff529fef19e235dae59768fac}{app\_name}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00085\ \ \ \ \ \mbox{\hyperlink{class_app_widget_a0261f448f2181b012e4eb7059faa6750}{\string~AppWidget}}();}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keyword}{enum\ class}\ \mbox{\hyperlink{class_app_widget_a2b48543a3ce72b7c991b744da6f540df}{AppStatus}}\ \{}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_app_widget_a2b48543a3ce72b7c991b744da6f540dfad4f5004516bffc781166518260492142}{AppOk}},\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_app_widget_a2b48543a3ce72b7c991b744da6f540dfa1c65ac2f74da731d21043e757ed5b76d}{AppNonExsits}}\ \ \ \ }
+\DoxyCodeLine{00093\ \ \ \ \ \};}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ signals:}
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_app_widget_a446a4098aa66694c54534df916c1ce70}{postAppStatus}}(\mbox{\hyperlink{class_app_widget_a2b48543a3ce72b7c991b744da6f540df}{AppWidget::AppStatus}}\ status);}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00109\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_app_widget_a55452cd32f958fb15d12c13f48b02f8d}{eventFilter}}(QObject*\ watched,\ QEvent*\ event)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00111\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00112\ \ \ \ \ Ui::AppWidget*\ ui;\ }
+\DoxyCodeLine{00113\ \ \ \ \ \textcolor{keywordtype}{bool}\ dummy\_state\ \{\ \textcolor{keyword}{false}\ \};\ }
+\DoxyCodeLine{00114\ \ \ \ \ \mbox{\hyperlink{class_application_wrapper}{ApplicationWrapper}}*\ app\_internal\ \{\ \textcolor{keyword}{nullptr}\ \};\ }
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00119\ \ \ \ \ \textcolor{keywordtype}{void}\ do\_daptch();}
+\DoxyCodeLine{00120\ \};}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00122\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ APPWIDGET\_H}}
 
 \end{DoxyCode}

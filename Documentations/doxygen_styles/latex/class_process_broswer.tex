@@ -2,7 +2,7 @@
 \hypertarget{class_process_broswer}{}\label{class_process_broswer}\index{ProcessBroswer@{ProcessBroswer}}
 
 
-The \doxylink{class_process_broswer}{Process\+Broswer} class.  
+The \doxylink{class_process_broswer}{Process\+Broswer} class Provides an interface to retrieve and monitor system processes information. Acts as a process browser that periodically fetches process data.  
 
 
 
@@ -19,28 +19,46 @@ Inheritance diagram for Process\+Broswer\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{struct_process_broswer_1_1_process_info}{Process\+Info}}
-\begin{DoxyCompactList}\small\item\em The \doxylink{struct_process_broswer_1_1_process_info}{Process\+Info} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The \doxylink{struct_process_broswer_1_1_process_info}{Process\+Info} struct Holds detailed information about a system process. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Signals}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_process_broswer_aa24dce0e4e4b285c349690881e9db5e7}{fetch\+\_\+finish}} (const QList$<$ \mbox{\hyperlink{struct_process_broswer_1_1_process_info}{Process\+Broswer\+::\+Process\+Info}} $>$ \&infos)
-\begin{DoxyCompactList}\small\item\em about\+\_\+fetch\+\_\+process the signal indicating the process is ready \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em fetch\+\_\+finish Signal emitted when process data is fetched and ready. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_process_broswer_a6c98f09926657816ca7c816b14f23fdb}\label{class_process_broswer_a6c98f09926657816ca7c816b14f23fdb} 
-{\bfseries Process\+Broswer} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
-\item 
+\mbox{\hyperlink{class_process_broswer_a6c98f09926657816ca7c816b14f23fdb}{Process\+Broswer}} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructor with optional parent. \end{DoxyCompactList}\item 
+\Hypertarget{class_process_broswer_a68bf5853c385369283c48b2e5e1f2ad0}\label{class_process_broswer_a68bf5853c385369283c48b2e5e1f2ad0} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Process\+Broswer} ()
+\begin{DoxyCompactList}\small\item\em Destructor cleans up resources. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_process_broswer_af5b7182bba575b4472c25aa1ea264744}{set\+\_\+flush\+\_\+freq}} (const int msecs)
-\begin{DoxyCompactList}\small\item\em set\+\_\+flush\+\_\+freq set the flush frequency in msec times \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em set\+\_\+flush\+\_\+freq Sets the frequency (in milliseconds) at which process data is refreshed. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_process_broswer_ae80a044aa7574a365eecdce5c77001da}{set\+\_\+capture\+\_\+state}} (bool st)
-\begin{DoxyCompactList}\small\item\em set\+\_\+capture\+\_\+state \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em set\+\_\+capture\+\_\+state Enables or disables process data capturing. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-The \doxylink{class_process_broswer}{Process\+Broswer} class. 
+The \doxylink{class_process_broswer}{Process\+Broswer} class Provides an interface to retrieve and monitor system processes information. Acts as a process browser that periodically fetches process data. 
 
-\doxylink{class_process_broswer}{Process\+Broswer} is the process broswer provides the process information 
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_process_broswer_a6c98f09926657816ca7c816b14f23fdb}\index{ProcessBroswer@{ProcessBroswer}!ProcessBroswer@{ProcessBroswer}}
+\index{ProcessBroswer@{ProcessBroswer}!ProcessBroswer@{ProcessBroswer}}
+\doxysubsubsection{\texorpdfstring{ProcessBroswer()}{ProcessBroswer()}}
+{\footnotesize\ttfamily \label{class_process_broswer_a6c98f09926657816ca7c816b14f23fdb} 
+Process\+Broswer\+::\+Process\+Broswer (\begin{DoxyParamCaption}\item[{QObject \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor with optional parent. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Pointer to the QObject parent, default nullptr. \\
+\hline
+\end{DoxyParams}
+
 
 \doxysubsection{Member Function Documentation}
 \Hypertarget{class_process_broswer_aa24dce0e4e4b285c349690881e9db5e7}\index{ProcessBroswer@{ProcessBroswer}!fetch\_finish@{fetch\_finish}}
@@ -51,11 +69,11 @@ void Process\+Broswer\+::fetch\+\_\+finish (\begin{DoxyParamCaption}\item[{const
 
 
 
-about\+\_\+fetch\+\_\+process the signal indicating the process is ready 
+fetch\+\_\+finish Signal emitted when process data is fetched and ready. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em infos} & the process information \\
+{\em infos} & List of \doxylink{struct_process_broswer_1_1_process_info}{Process\+Info} structures with current process data. \\
 \hline
 \end{DoxyParams}
 \Hypertarget{class_process_broswer_ae80a044aa7574a365eecdce5c77001da}\index{ProcessBroswer@{ProcessBroswer}!set\_capture\_state@{set\_capture\_state}}
@@ -66,11 +84,11 @@ void Process\+Broswer\+::set\+\_\+capture\+\_\+state (\begin{DoxyParamCaption}\i
 
 
 
-set\+\_\+capture\+\_\+state 
+set\+\_\+capture\+\_\+state Enables or disables process data capturing. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em st} & the state to set \\
+{\em st} & True to start capturing, false to stop. \\
 \hline
 \end{DoxyParams}
 \Hypertarget{class_process_broswer_af5b7182bba575b4472c25aa1ea264744}\index{ProcessBroswer@{ProcessBroswer}!set\_flush\_freq@{set\_flush\_freq}}
@@ -81,11 +99,11 @@ void Process\+Broswer\+::set\+\_\+flush\+\_\+freq (\begin{DoxyParamCaption}\item
 
 
 
-set\+\_\+flush\+\_\+freq set the flush frequency in msec times 
+set\+\_\+flush\+\_\+freq Sets the frequency (in milliseconds) at which process data is refreshed. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em msecs} & the msecs to set \\
+{\em msecs} & Refresh interval in milliseconds. \\
 \hline
 \end{DoxyParams}
 

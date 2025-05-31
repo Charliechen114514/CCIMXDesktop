@@ -1,5 +1,14 @@
 \doxysection{App\+Card\+Widget Class Reference}
 \hypertarget{class_app_card_widget}{}\label{class_app_card_widget}\index{AppCardWidget@{AppCardWidget}}
+
+
+\doxylink{class_app_card_widget}{App\+Card\+Widget} is a lightweight widget used to post messages to a \doxylink{class_desktop_toast}{Desktop\+Toast}.  
+
+
+
+
+{\ttfamily \#include $<$appcardwidget.\+h$>$}
+
 Inheritance diagram for App\+Card\+Widget\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -11,30 +20,60 @@ Inheritance diagram for App\+Card\+Widget\+:\begin{figure}[H]
 \item 
 \Hypertarget{class_app_card_widget_a8396063f654b18f1a739684774051f2f}\label{class_app_card_widget_a8396063f654b18f1a739684774051f2f} 
 {\bfseries Q\+\_\+\+DISABLE\+\_\+\+COPY} (\mbox{\hyperlink{class_app_card_widget}{App\+Card\+Widget}})
-\item 
-\Hypertarget{class_app_card_widget_aee22c9e15e0cb276d33dd51058087204}\label{class_app_card_widget_aee22c9e15e0cb276d33dd51058087204} 
-{\bfseries App\+Card\+Widget} (\mbox{\hyperlink{class_desktop_toast}{Desktop\+Toast}} \texorpdfstring{$\ast$}{*}toast, QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
-\item 
+\begin{DoxyCompactList}\small\item\em Disable copy constructor and assignment operator. \end{DoxyCompactList}\item 
+\Hypertarget{class_app_card_widget_adde6adc2966e595da7ce948c7b272757}\label{class_app_card_widget_adde6adc2966e595da7ce948c7b272757} 
+{\bfseries App\+Card\+Widget} ()=delete
+\begin{DoxyCompactList}\small\item\em Default constructor deleted to force usage of parameterized constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_app_card_widget_aee22c9e15e0cb276d33dd51058087204}{App\+Card\+Widget}} (\mbox{\hyperlink{class_desktop_toast}{Desktop\+Toast}} \texorpdfstring{$\ast$}{*}toast, QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructs an \doxylink{class_app_card_widget}{App\+Card\+Widget}. \end{DoxyCompactList}\item 
+\Hypertarget{class_app_card_widget_a79c645ef1c8e4ca25610676161eeb305}\label{class_app_card_widget_a79c645ef1c8e4ca25610676161eeb305} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+App\+Card\+Widget} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{class_app_card_widget_a4a99ac0e10c319ef328cfa380ba56170}{set\+Current\+Icon}} (const QPixmap \&icons)
-\begin{DoxyCompactList}\small\item\em set\+Current\+Icon\+: for app cards, if we wanna specify the icons, we can use this function to rewrite the concrete app icons settings behaviors \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{class_app_card_widget_a2b27698b6de79bb3b772b4bf92e31fc3}{invoke\+\_\+pre\+Launch\+\_\+work}} (void)=0
-\begin{DoxyCompactList}\small\item\em invoke\+\_\+pre\+Launch\+\_\+work is the main function to invoke the prelaunching issue \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Set the current icon for the app card. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_app_card_widget_a82559c4e4ddb985821a8b87076bb446b}{invoke\+\_\+pre\+Launch\+\_\+work}} ()=0
+\begin{DoxyCompactList}\small\item\em Abstract method to invoke pre-\/launch operations. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_app_card_widget_aaa303f4e4011e02c6cf0c776ca093ac3}{event\+Filter}} (QObject \texorpdfstring{$\ast$}{*}watched, QEvent \texorpdfstring{$\ast$}{*}event) override
-\begin{DoxyCompactList}\small\item\em defines how to listen to the user interactive events \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Event filter to handle user interaction events. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 virtual void \mbox{\hyperlink{class_app_card_widget_afabbff33f9e08d33549d0a8ff026ef30}{post\+App\+Card\+Widget}} ()=0
-\begin{DoxyCompactList}\small\item\em post\+App\+Card\+Widget, sometimes, we can use this to post the messages to the binding\+\_\+toast \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Abstract method to post messages to the bound \doxylink{class_desktop_toast}{Desktop\+Toast}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \Hypertarget{class_app_card_widget_af944544f55557488171821c0c5e024b7}\label{class_app_card_widget_af944544f55557488171821c0c5e024b7} 
 \mbox{\hyperlink{class_desktop_toast}{Desktop\+Toast}} \texorpdfstring{$\ast$}{*} {\bfseries binding\+\_\+toast}
-\item 
+\begin{DoxyCompactList}\small\item\em Pointer to the toast widget used for posting messages. \end{DoxyCompactList}\item 
 \Hypertarget{class_app_card_widget_affacf5393eb2f3fcdb94b39c894c188e}\label{class_app_card_widget_affacf5393eb2f3fcdb94b39c894c188e} 
 Ui\+::\+App\+Card\+Widget \texorpdfstring{$\ast$}{*} {\bfseries ui}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em UI object generated from the Qt Designer form. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_app_card_widget}{App\+Card\+Widget} is a lightweight widget used to post messages to a \doxylink{class_desktop_toast}{Desktop\+Toast}. 
+
+This is an abstract base class representing an application card UI component. It is responsible for handling pre-\/launch work and posting messages via toast notifications. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_app_card_widget_aee22c9e15e0cb276d33dd51058087204}\index{AppCardWidget@{AppCardWidget}!AppCardWidget@{AppCardWidget}}
+\index{AppCardWidget@{AppCardWidget}!AppCardWidget@{AppCardWidget}}
+\doxysubsubsection{\texorpdfstring{AppCardWidget()}{AppCardWidget()}}
+{\footnotesize\ttfamily \label{class_app_card_widget_aee22c9e15e0cb276d33dd51058087204} 
+App\+Card\+Widget\+::\+App\+Card\+Widget (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_desktop_toast}{Desktop\+Toast}} \texorpdfstring{$\ast$}{*}}]{toast}{, }\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructs an \doxylink{class_app_card_widget}{App\+Card\+Widget}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em toast} & Pointer to the \doxylink{class_desktop_toast}{Desktop\+Toast} object used to show messages. \\
+\hline
+{\em parent} & Optional parent widget. \\
+\hline
+\end{DoxyParams}
 
 
 \doxysubsection{Member Function Documentation}
@@ -46,32 +85,29 @@ bool App\+Card\+Widget\+::event\+Filter (\begin{DoxyParamCaption}\item[{QObject 
 
 
 
-defines how to listen to the user interactive events 
+Event filter to handle user interaction events. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em watched} & which objects? \\
+{\em watched} & The QObject being watched. \\
 \hline
-{\em event} & what event? \\
+{\em event} & The event being filtered. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-if handles, return true 
+true if the event was handled, otherwise false. 
 \end{DoxyReturn}
-\Hypertarget{class_app_card_widget_a2b27698b6de79bb3b772b4bf92e31fc3}\index{AppCardWidget@{AppCardWidget}!invoke\_preLaunch\_work@{invoke\_preLaunch\_work}}
+\Hypertarget{class_app_card_widget_a82559c4e4ddb985821a8b87076bb446b}\index{AppCardWidget@{AppCardWidget}!invoke\_preLaunch\_work@{invoke\_preLaunch\_work}}
 \index{invoke\_preLaunch\_work@{invoke\_preLaunch\_work}!AppCardWidget@{AppCardWidget}}
 \doxysubsubsection{\texorpdfstring{invoke\_preLaunch\_work()}{invoke\_preLaunch\_work()}}
-{\footnotesize\ttfamily \label{class_app_card_widget_a2b27698b6de79bb3b772b4bf92e31fc3} 
-virtual void App\+Card\+Widget\+::invoke\+\_\+pre\+Launch\+\_\+work (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily \label{class_app_card_widget_a82559c4e4ddb985821a8b87076bb446b} 
+virtual void App\+Card\+Widget\+::invoke\+\_\+pre\+Launch\+\_\+work (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
-invoke\+\_\+pre\+Launch\+\_\+work is the main function to invoke the prelaunching issue 
+Abstract method to invoke pre-\/launch operations. 
 
-\begin{DoxyNote}{Note}
-when system starts, app cards are supposed to do their actions and if not, then do nothing 
-\end{DoxyNote}
-
+Derived classes should implement this to perform necessary preparations before the system starts or the app card becomes active. 
 
 Implemented in \mbox{\hyperlink{class_local_weather_card_a1bd3f52bf969c5d3747f6934da123fef}{Local\+Weather\+Card}}, and \mbox{\hyperlink{class_net_card_gadget_a82d97e27218187db562c8d02bb5866d2}{Net\+Card\+Gadget}}.
 
@@ -83,9 +119,9 @@ virtual void App\+Card\+Widget\+::post\+App\+Card\+Widget (\begin{DoxyParamCapti
 
 
 
-post\+App\+Card\+Widget, sometimes, we can use this to post the messages to the binding\+\_\+toast 
+Abstract method to post messages to the bound \doxylink{class_desktop_toast}{Desktop\+Toast}. 
 
-
+Derived classes implement this to send notifications or status updates through the toast system. 
 
 Implemented in \mbox{\hyperlink{class_local_weather_card_a6cac71c7f8be8719da4ee37a0c163363}{Local\+Weather\+Card}}, and \mbox{\hyperlink{class_net_card_gadget_a0b72db3d05b5e6bd02705428df3f0ba5}{Net\+Card\+Gadget}}.
 
@@ -97,11 +133,13 @@ void App\+Card\+Widget\+::set\+Current\+Icon (\begin{DoxyParamCaption}\item[{con
 
 
 
-set\+Current\+Icon\+: for app cards, if we wanna specify the icons, we can use this function to rewrite the concrete app icons settings behaviors 
+Set the current icon for the app card. 
+
+This function allows derived classes to customize the app card icon by providing a QPixmap.
 
 
 \begin{DoxyParams}{Parameters}
-{\em icons} & indicates the raw pixmaps we wanna using as a pixmaps \\
+{\em icons} & The pixmap to be used as the icon. \\
 \hline
 \end{DoxyParams}
 

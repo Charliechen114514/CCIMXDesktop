@@ -11,7 +11,12 @@ class FileInfoDisplayWidget : public QWidget {
 	Q_OBJECT
 
 public:
-	static constexpr const unsigned short ICON_SIZE = 32;
+	static constexpr const unsigned short ICON_SIZE = 32; ///< default info icon size
+	/**
+	 * @brief Construct a new File Info Display Widget object
+	 * 
+	 * @param parent 
+	 */
 	explicit FileInfoDisplayWidget(QWidget* parent = nullptr);
 	/**
 	 * @brief bind_models bind the models to the widget

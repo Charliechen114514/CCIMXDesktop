@@ -19,7 +19,17 @@ public:
 	};
 
 	NetCardGadget() = delete;
+	/**
+	 * @brief disable copy
+	 * 
+	 */
 	Q_DISABLE_COPY(NetCardGadget);
+	/**
+	 * @brief Construct a new Net Card Gadget object
+	 * 
+	 * @param toast 
+	 * @param parent 
+	 */
 	explicit NetCardGadget(DesktopToast* toast, QWidget* parent);
 	/**
 	 * @brief invoke_preLaunch_work is the main function to invoke the prelaunching issue

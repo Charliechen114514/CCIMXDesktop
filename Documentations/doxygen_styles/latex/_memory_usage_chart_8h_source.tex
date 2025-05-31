@@ -14,33 +14,32 @@
 \DoxyCodeLine{00010\ \textcolor{keyword}{class\ }MemoryUsageChart;}
 \DoxyCodeLine{00011\ \}}
 \DoxyCodeLine{00012\ }
-\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }MemoryUsageChart\ :\ \textcolor{keyword}{public}\ QWidget\ \{}
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_memory_usage_chart_a4fdfc9bd704c11ab8615024c82924139}{MemoryUsageChart}}\ :\ \textcolor{keyword}{public}\ QWidget\ \{}
 \DoxyCodeLine{00018\ \ \ \ \ Q\_OBJECT}
 \DoxyCodeLine{00019\ }
 \DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{explicit}\ MemoryUsageChart(QWidget*\ parent\ =\ \textcolor{keyword}{nullptr});}
-\DoxyCodeLine{00022\ \ \ \ \ \string~MemoryUsageChart();}
-\DoxyCodeLine{00023\ }
-\DoxyCodeLine{00024\ \textcolor{keyword}{public}\ slots:}
-\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_memory_usage_chart_ad4867d7c64864d5b1b39a35c6ae51702}{flush\_ui\_once}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_memory_info_fetcher_1_1_memory_stat}{MemoryInfoFetcher::MemoryStat}}\&\ stat);}
-\DoxyCodeLine{00031\ }
-\DoxyCodeLine{00032\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00033\ \ \ \ \ Ui::MemoryUsageChart*\ ui;}
-\DoxyCodeLine{00034\ \ \ \ \ QChart*\ physChart;}
-\DoxyCodeLine{00035\ \ \ \ \ QChart*\ virtChart;}
-\DoxyCodeLine{00036\ \ \ \ \ QPieSeries*\ physSeries;}
-\DoxyCodeLine{00037\ \ \ \ \ QPieSeries*\ virtSeries;}
-\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ setup\_ui();}
-\DoxyCodeLine{00039\ }
-\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{struct\ }PackageInfo\ \{}
-\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ qreal\ used;\ }
-\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ qreal\ free;\ }
-\DoxyCodeLine{00047\ \ \ \ \ \};}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_memory_usage_chart_a4fdfc9bd704c11ab8615024c82924139}{MemoryUsageChart}}(QWidget*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_memory_usage_chart_a4fdfc9bd704c11ab8615024c82924139}{\string~MemoryUsageChart}}();}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_memory_usage_chart_ad4867d7c64864d5b1b39a35c6ae51702}{flush\_ui\_once}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_memory_info_fetcher_1_1_memory_stat}{MemoryInfoFetcher::MemoryStat}}\&\ stat);}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00038\ \ \ \ \ Ui::MemoryUsageChart*\ ui;}
+\DoxyCodeLine{00039\ \ \ \ \ QChart*\ physChart;\ }
+\DoxyCodeLine{00040\ \ \ \ \ QChart*\ virtChart;\ }
+\DoxyCodeLine{00041\ \ \ \ \ QPieSeries*\ physSeries;\ }
+\DoxyCodeLine{00042\ \ \ \ \ QPieSeries*\ virtSeries;\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ setup\_ui();}
 \DoxyCodeLine{00048\ }
-\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ update\_charts(QPieSeries*\ series,\ \textcolor{keyword}{const}\ PackageInfo\&\ stat,\ \textcolor{keyword}{const}\ QString\&\ label);}
-\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ update\_labels(\textcolor{keyword}{const}\ PackageInfo\&\ virt,\ \textcolor{keyword}{const}\ PackageInfo\&\ phy);}
-\DoxyCodeLine{00051\ \};}
-\DoxyCodeLine{00052\ }
-\DoxyCodeLine{00053\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MEMORYUSAGECHART\_H}}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keyword}{struct\ }PackageInfo\ \{}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ qreal\ used;\ }
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ qreal\ free;\ }
+\DoxyCodeLine{00056\ \ \ \ \ \};}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{void}\ update\_charts(QPieSeries*\ series,\ \textcolor{keyword}{const}\ PackageInfo\&\ stat,\ \textcolor{keyword}{const}\ QString\&\ label);}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{void}\ update\_labels(\textcolor{keyword}{const}\ PackageInfo\&\ virt,\ \textcolor{keyword}{const}\ PackageInfo\&\ phy);}
+\DoxyCodeLine{00072\ \};}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MEMORYUSAGECHART\_H}}
 
 \end{DoxyCode}

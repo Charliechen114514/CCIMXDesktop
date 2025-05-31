@@ -1,30 +1,36 @@
-\chapter{🖥️ CCIMXDESKTOP}
-\hypertarget{md__r_e_a_d_m_e___e_n}{}\label{md__r_e_a_d_m_e___e_n}\index{🖥️ CCIMXDESKTOP@{🖥️ CCIMXDESKTOP}}
+\chapter{CCIMXDESKTOP 🖥️}
+\hypertarget{md__r_e_a_d_m_e___e_n}{}\label{md__r_e_a_d_m_e___e_n}\index{CCIMXDESKTOP 🖥️@{CCIMXDESKTOP 🖥️}}
 \label{md__r_e_a_d_m_e___e_n_autotoc_md14}%
 \Hypertarget{md__r_e_a_d_m_e___e_n_autotoc_md14}%
 
 
 
 
-🔌 Hello! This is a simple desktop and utility that can be used in a variety of embedded devices. For me, it started a suite tailored for the i.\+MX platform, combining built-\/in system gadgets and extensible external applications. Designed with Qt, the project is supporting integration with various hardware sensors and multimedia interfaces as much as possible.\hypertarget{md__r_e_a_d_m_e___e_n_autotoc_md15}{}\doxysection{\texorpdfstring{🌐 Before you start, choose your language! 🌐}{🌐 Before you start, choose your language! 🌐}}\label{md__r_e_a_d_m_e___e_n_autotoc_md15}
+
+
+🔌 Hello! This is a simple desktop and utility that can be used in a variety of embedded devices. For me, it kicks off a suite tailored for the i.\+MX platform, combining built-\/in system gadgets and extensible external applications. Designed using Qt, the project is working on supporting integration with a wide range of hardware sensors and multimedia interfaces wherever possible.\hypertarget{md__r_e_a_d_m_e___e_n_autotoc_md15}{}\doxysection{\texorpdfstring{🌐 Before you get started, choose your language! 🌐}{🌐 Before you get started, choose your language! 🌐}}\label{md__r_e_a_d_m_e___e_n_autotoc_md15}
 \doxysectlink{md__r_e_a_d_m_e___e_n}{🇬🇧 English Version}{0} \texorpdfstring{$\vert$}{|} \doxysectlink{md__r_e_a_d_m_e}{🇨🇳 Chinese}{0}\hypertarget{md__r_e_a_d_m_e___e_n_autotoc_md16}{}\doxysection{\texorpdfstring{🌟 Project Overview 🌟}{🌟 Project Overview 🌟}}\label{md__r_e_a_d_m_e___e_n_autotoc_md16}
 {\bfseries{CCIMXDESKTOP}} provides a lightweight, extensible desktop environment optimized for embedded systems based on the NXP i.\+MX6\+ULL platform. It includes a range of built-\/in tools, device integration layers, and third-\/party applications, all presented in a unified user interface.
 
  
 
-Now, CCIMXDesktop supports one-\/click building including\+:
+Now, CCIMXDesktop supports one-\/click builds including\+:
 
 
 \begin{DoxyItemize}
 \item 🏠 Basic desktop environment and application abstraction
-\item 🔧 Builtin Apps (Indoor temperature requires that the \doxylink{class_i_c_m20608}{ICM20608} driver has been mounted and is available, and other sensors need to modify the interface content by themselves (just rewrite how to read) and network degree detection (requires Qt Networks Core to be supported))
-\item ☀️ Weather\+APP (requires your device to be able to connect to the Internet to be available)
+\item 🏠 Dock\+Widget that records click frequency and dynamically adjusts
+\item ℹ About App (a brief introduction to the basic situation of the desktop of this project)
+\item ✏️ CCNoter (super lightweight notepad)
+\item 🎨\+Simple\+Drawer (super lightweight drawing, similar to Windows "{}\+Paint"{})
+\item 🔧 Builtin Apps (Indoor temperature requires that the \doxylink{class_i_c_m20608}{ICM20608} driver has been mounted and is available. Other sensors need to modify the interface content by themselves (just rewrite how to read) and network degree detection (requires Qt Networks Core to be supported))
+\item ☀️ Weather\+APP (requires your device to be connected to the Internet to be available)
 \item 📄 pdf\+Reader (requires you to have the dependent static library of mupdf on your platform)
-\item 📁 File\+Ramber (file browser, with basic file navigation, Windows Tiny version of Explorer.\+exe)
-\item 📷 General\+Local\+Camera (This is a basic camera based on Opencv Video\+Capture, which can realize the photo function)
-\item 📊 System\+State (View the CPU status, memory capacity status and process list of the running machine)
-\item 🎵 \doxylink{class_media_player}{Media\+Player} (Your QMedia\+Player needs to support ALSA or other audio playback, and video playback requires Open\+CV support)
-\item 💡 \doxylink{class_l_e_d_controller}{LEDController} App (Light switch APP, requires Platform LED driver to be enabled)
+\item 📁 File\+Ramber (file browser, with basic file navigation, Tiny version of Windows Explorer.\+exe)
+\item 📷 General\+Local\+Camera (this is a basic camera based on Opencv Video\+Capture, which can realize the photo function)
+\item 📊 System\+State (view the CPU status, memory capacity status and process list of the running machine)
+\item 🎵 \doxylink{class_media_player}{Media\+Player} (requires your QMedia\+Player to support ALSA or other audio playback, video playback requires Open\+CV support)
+\item 💡 \doxylink{class_l_e_d_controller}{LEDController} App (switch light APP, requires Platform LED driver to be enabled)
 \item 🌡️ Environment App (AP3216C driver needs to be mounted)
 \item 🏃 Sport\+Health App (\doxylink{class_i_c_m20608}{ICM20608} driver needs to be mounted)
 \end{DoxyItemize}
@@ -33,18 +39,16 @@ Now, CCIMXDesktop supports one-\/click building including\+:
 \hypertarget{md__r_e_a_d_m_e___e_n_autotoc_md18}{}\doxysection{\texorpdfstring{Some running screenshots}{Some running screenshots}}\label{md__r_e_a_d_m_e___e_n_autotoc_md18}
 
 
-\hypertarget{md__r_e_a_d_m_e___e_n_autotoc_md19}{}\doxysection{\texorpdfstring{🛠️ Basic build technologies}{🛠️ Basic build technologies}}\label{md__r_e_a_d_m_e___e_n_autotoc_md19}
+\hypertarget{md__r_e_a_d_m_e___e_n_autotoc_md19}{}\doxysection{\texorpdfstring{🛠️ Technologies used for basic builds}{🛠️ Technologies used for basic builds}}\label{md__r_e_a_d_m_e___e_n_autotoc_md19}
  
 
-For beginners mapping a basic desktop, the embedded device should support Qt6 core controls and core networking. Additionally, TSLIB and Linux framebuffer backends for display should be ready.\hypertarget{md__r_e_a_d_m_e___e_n_autotoc_md20}{}\doxysection{\texorpdfstring{🛠️ Full build of technologies}{🛠️ Full build of technologies}}\label{md__r_e_a_d_m_e___e_n_autotoc_md20}
-
-
-
+For beginners mapping a basic desktop, the embedded device should support Qt6 core widgets and core networking. In addition, TSLIB and Linux framebuffer backends for display should also be ready.\hypertarget{md__r_e_a_d_m_e___e_n_autotoc_md20}{}\doxysection{\texorpdfstring{🛠️ Full build of technologies}{🛠️ Full build of technologies}}\label{md__r_e_a_d_m_e___e_n_autotoc_md20}
+ 
 
 
 \begin{DoxyItemize}
 \item Open\+CV for camera support
-\item Mu\+PDF (for PDF rendering) (these are used for mupdf-\/based PDF readers)
+\item Mu\+PDF (for PDF rendering) (these are used in mupdf-\/based PDF readers)
 \end{DoxyItemize}
 
 \DoxyHorRuler{0}
@@ -63,8 +67,10 @@ If you are interested in the project production process and development document
 Currently, this project fully supports the use of Doxygen to automatically generate customized documents. You can directly refer to \href{Documentations/doxygen_styles}{\texttt{ {\ttfamily Documentations/doxygen\+\_\+style}}} for reading, or if you plan to customize the construction of this document, you need to refer to the build manual for customized modifications
 
 \begin{quote}
-🛠️ How to build this project? (X86 gcc, ARM-\/linux-\/gnueabihf-\/gcc and Windows GCC are all supported!) \end{quote}
-\hypertarget{md__r_e_a_d_m_e___e_n_autotoc_md25}{}\doxysection{\texorpdfstring{💡 Future Plans}{💡 Future Plans}}\label{md__r_e_a_d_m_e___e_n_autotoc_md25}
+🛠️ How to build this project? (X86 gcc, ARM-\/linux-\/gnueabihf-\/gcc and Windows GCC are all supported!)
+
+The document has been automatically deployed on Gihub Actions\+: Project document address \href{https://charliechen114514.github.io/CCIMXDesktop/}{\texttt{ CCIMXDesktop\+: Main Page}} \end{quote}
+\hypertarget{md__r_e_a_d_m_e___e_n_autotoc_md25}{}\doxysection{\texorpdfstring{💡 Future plans}{💡 Future plans}}\label{md__r_e_a_d_m_e___e_n_autotoc_md25}
 
 \begin{DoxyItemize}
 \item 🚀 Plan to write and provide more external basic programs\+:
@@ -72,13 +78,17 @@ Currently, this project fully supports the use of Doxygen to automatically gener
 \item ⏰ Alarm clock APP
 \item 🖼️ Image browser
 \item 🎨 Image processor
-\item ✏️ Simple text editor
+\item ✏️ Mark\+Down reader
+\item 🛜 Network viewing assistant
+\item 🧮 Pocket calculator
 \item 🔌 Serial port assistant
-\item 🤖 Image processor local image processing and simple reasoning (face recognition)
+\item ✅ Task list
+\item 🤖 Image processor processes images locally and performs simple reasoning (face recognition)
+\item ⚙ Basic settings (similar to IOS, but many are more ornamental)
 \end{DoxyItemize}
 
 \DoxyHorRuler{0}
 \hypertarget{md__r_e_a_d_m_e___e_n_autotoc_md27}{}\doxysection{\texorpdfstring{📝 License}{📝 License}}\label{md__r_e_a_d_m_e___e_n_autotoc_md27}
 
 
-This project is based on the MIT license, welcome to port, modify and use at will! 
+This project is based on the MIT license, and you are welcome to port, modify and use it at will! 

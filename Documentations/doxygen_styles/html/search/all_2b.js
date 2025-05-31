@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['🖥️_20ccimxdesktop_0',['🖥️ CCIMXDESKTOP',['../md__r_e_a_d_m_e.html',1,'🖥️ CCIMXDESKTOP'],['../md__r_e_a_d_m_e___e_n.html',1,'🖥️ CCIMXDESKTOP']]]
+  ['🔧_20tt_20app_5fwrapper_20tt_0',['🔧 tt app_wrapper tt',['../md__components-explain-_c_n.html#autotoc_md29',1,'🔧 &lt;tt&gt;app_wrapper&lt;/tt&gt;'],['../md__components-explain-_e_n.html#autotoc_md41',1,'🔧 &lt;tt&gt;app_wrapper&lt;/tt&gt;']]]
 ];

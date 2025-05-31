@@ -2,7 +2,7 @@
 \hypertarget{class_linux_platform_c_p_u_state_driver}{}\label{class_linux_platform_c_p_u_state_driver}\index{LinuxPlatformCPUStateDriver@{LinuxPlatformCPUStateDriver}}
 
 
-The \doxylink{class_linux_platform_c_p_u_state_driver}{Linux\+Platform\+CPUState\+Driver} class provides the cpu state driver.  
+The \doxylink{class_linux_platform_c_p_u_state_driver}{Linux\+Platform\+CPUState\+Driver} class provides the CPU state driver for Linux.  
 
 
 
@@ -20,13 +20,13 @@ Inheritance diagram for Linux\+Platform\+CPUState\+Driver\+:\begin{figure}[H]
 \item 
 \Hypertarget{class_linux_platform_c_p_u_state_driver_a3d99944c5ed81780c366ad3f38ed6de5}\label{class_linux_platform_c_p_u_state_driver_a3d99944c5ed81780c366ad3f38ed6de5} 
 {\bfseries Q\+\_\+\+DISABLE\+\_\+\+COPY} (\mbox{\hyperlink{class_linux_platform_c_p_u_state_driver}{Linux\+Platform\+CPUState\+Driver}})
-\item 
+\begin{DoxyCompactList}\small\item\em disable copy \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_linux_platform_c_p_u_state_driver_a1fa40efb35e698bdfb3e3b7f2071c53d}{factory}} (\mbox{\hyperlink{struct_c_p_u_state_fetcher_1_1_c_p_u_state}{CPUState\+Fetcher\+::\+CPUState}} \&state) override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Factory method to get CPU state. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-The \doxylink{class_linux_platform_c_p_u_state_driver}{Linux\+Platform\+CPUState\+Driver} class provides the cpu state driver. 
+The \doxylink{class_linux_platform_c_p_u_state_driver}{Linux\+Platform\+CPUState\+Driver} class provides the CPU state driver for Linux. 
 
 \doxysubsection{Member Function Documentation}
 \Hypertarget{class_linux_platform_c_p_u_state_driver_a1fa40efb35e698bdfb3e3b7f2071c53d}\index{LinuxPlatformCPUStateDriver@{LinuxPlatformCPUStateDriver}!factory@{factory}}
@@ -37,7 +37,16 @@ void Linux\+Platform\+CPUState\+Driver\+::factory (\begin{DoxyParamCaption}\item
 
 
 
-Implements \mbox{\hyperlink{class_c_c_i_m_x___abstract_c_p_u_state_driver}{CCIMX\+\_\+\+Abstract\+CPUState\+Driver}}.
+Factory method to get CPU state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & Reference to \doxylink{struct_c_p_u_state_fetcher_1_1_c_p_u_state}{CPUState\+Fetcher\+::\+CPUState} to store stats. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_c_c_i_m_x___abstract_c_p_u_state_driver_ac8f502c7e421df76112a9c9f80b806cf}{CCIMX\+\_\+\+Abstract\+CPUState\+Driver}}.
 
 
 

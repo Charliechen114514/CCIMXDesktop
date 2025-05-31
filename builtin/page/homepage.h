@@ -7,11 +7,18 @@ namespace Ui {
 class HomePage;
 }
 
-/* Home Pages */
+/**
+ * @brief The HomePage class exactly, home page :)
+ */
 class HomePage : public QWidget {
 	Q_OBJECT
 
 public:
+	/**
+	 * @brief Construct a new Home Page object
+	 * 
+	 * @param parent 
+	 */
 	explicit HomePage(QWidget* parent = nullptr);
 
 	/**
@@ -19,7 +26,10 @@ public:
 	 * @return appcards holding widgets, iterate this for all app cards
 	 */
 	QWidget* expected_appcards_widgets() const;
-
+	/**
+	 * @brief Destroy the Home Page object
+	 * 
+	 */
 	~HomePage();
 
 private:
