@@ -113,8 +113,8 @@ Inheritance diagram for FileCountInfo:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5ff32b089dcac83617fb623d35828912" id="r_a5ff32b089dcac83617fb623d35828912"><td class="memItemLeft" align="right" valign="top"><a id="a5ff32b089dcac83617fb623d35828912" name="a5ff32b089dcac83617fb623d35828912"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>FileCountInfo</b> (<a class="el" href="classCCIMXFileSystemModel.html">CCIMXFileSystemModel</a> *model, QObject *parent=nullptr)</td></tr>
+<tr class="memitem:a5ff32b089dcac83617fb623d35828912" id="r_a5ff32b089dcac83617fb623d35828912"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileCountInfo.html#a5ff32b089dcac83617fb623d35828912">FileCountInfo</a> (<a class="el" href="classCCIMXFileSystemModel.html">CCIMXFileSystemModel</a> *model, QObject *parent=nullptr)</td></tr>
+<tr class="memdesc:a5ff32b089dcac83617fb623d35828912"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new File Count Info object.  <br /></td></tr>
 <tr class="separator:a5ff32b089dcac83617fb623d35828912"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42da804010c98ad6e95f028e0542a7f5" id="r_a42da804010c98ad6e95f028e0542a7f5"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileCountInfo.html#a42da804010c98ad6e95f028e0542a7f5">provide_section_name</a> ()</td></tr>
 <tr class="memdesc:a42da804010c98ad6e95f028e0542a7f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">provide_section_name means everything in the name lol  <br /></td></tr>
@@ -125,10 +125,19 @@ Public Member Functions</h2></td></tr>
 <tr class="inherit_header pub_methods_classFileInfoProvider"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classFileInfoProvider')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classFileInfoProvider.html">FileInfoProvider</a></td></tr>
 <tr class="memitem:a1b5f15a9efc225ac0f3ce2c0420dcdf3 inherit pub_methods_classFileInfoProvider" id="r_a1b5f15a9efc225ac0f3ce2c0420dcdf3"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>Q_DISABLE_COPY</b> (<a class="el" href="classFileInfoProvider.html">FileInfoProvider</a>)</td></tr>
+<tr class="memdesc:a1b5f15a9efc225ac0f3ce2c0420dcdf3 inherit pub_methods_classFileInfoProvider"><td class="mdescLeft">&#160;</td><td class="mdescRight">disable copy object <br /></td></tr>
 <tr class="separator:a1b5f15a9efc225ac0f3ce2c0420dcdf3 inherit pub_methods_classFileInfoProvider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acaff96e7f9eacb7bc0b3023fab1d685d inherit pub_methods_classFileInfoProvider" id="r_acaff96e7f9eacb7bc0b3023fab1d685d"><td class="memItemLeft" align="right" valign="top">
-&#160;</td><td class="memItemRight" valign="bottom"><b>FileInfoProvider</b> (<a class="el" href="classCCIMXFileSystemModel.html">CCIMXFileSystemModel</a> *<a class="el" href="classFileInfoProvider.html#ae898e8c9bb3dc76decd869a018f9c0d9">models</a>)</td></tr>
+<tr class="memitem:aac708c0bbd39fe67a3e2b0129109a0f3 inherit pub_methods_classFileInfoProvider" id="r_aac708c0bbd39fe67a3e2b0129109a0f3"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>FileInfoProvider</b> ()=delete</td></tr>
+<tr class="memdesc:aac708c0bbd39fe67a3e2b0129109a0f3 inherit pub_methods_classFileInfoProvider"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new File Info Provider object default is prohibited, disable this for the default constructor, prevent the non-model register. <br /></td></tr>
+<tr class="separator:aac708c0bbd39fe67a3e2b0129109a0f3 inherit pub_methods_classFileInfoProvider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaff96e7f9eacb7bc0b3023fab1d685d inherit pub_methods_classFileInfoProvider" id="r_acaff96e7f9eacb7bc0b3023fab1d685d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileInfoProvider.html#acaff96e7f9eacb7bc0b3023fab1d685d">FileInfoProvider</a> (<a class="el" href="classCCIMXFileSystemModel.html">CCIMXFileSystemModel</a> *<a class="el" href="classFileInfoProvider.html#ae898e8c9bb3dc76decd869a018f9c0d9">models</a>)</td></tr>
+<tr class="memdesc:acaff96e7f9eacb7bc0b3023fab1d685d inherit pub_methods_classFileInfoProvider"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new File Info Provider object, assigned models requires.  <br /></td></tr>
 <tr class="separator:acaff96e7f9eacb7bc0b3023fab1d685d inherit pub_methods_classFileInfoProvider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa248c464164dfb67a41bbc666d622d0b inherit pub_methods_classFileInfoProvider" id="r_aa248c464164dfb67a41bbc666d622d0b"><td class="memItemLeft" align="right" valign="top">
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~FileInfoProvider</b> ()=default</td></tr>
+<tr class="memdesc:aa248c464164dfb67a41bbc666d622d0b inherit pub_methods_classFileInfoProvider"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the File Info Provider object. <br /></td></tr>
+<tr class="separator:aa248c464164dfb67a41bbc666d622d0b inherit pub_methods_classFileInfoProvider"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa13112f10f0b93ab09d2c12385b13374 inherit pub_methods_classFileInfoProvider" id="r_aa13112f10f0b93ab09d2c12385b13374"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileInfoProvider.html#aa13112f10f0b93ab09d2c12385b13374">setCurrentHandlePath</a> (const QString &amp;path)</td></tr>
 <tr class="memdesc:aa13112f10f0b93ab09d2c12385b13374 inherit pub_methods_classFileInfoProvider"><td class="mdescLeft">&#160;</td><td class="mdescRight">setCurrentHandlePath set the current handle path  <br /></td></tr>
 <tr class="separator:aa13112f10f0b93ab09d2c12385b13374 inherit pub_methods_classFileInfoProvider"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,6 +153,52 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memdesc:ae898e8c9bb3dc76decd869a018f9c0d9 inherit pro_attribs_classFileInfoProvider"><td class="mdescLeft">&#160;</td><td class="mdescRight">binding models <br /></td></tr>
 <tr class="separator:ae898e8c9bb3dc76decd869a018f9c0d9 inherit pro_attribs_classFileInfoProvider"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a5ff32b089dcac83617fb623d35828912" name="a5ff32b089dcac83617fb623d35828912"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ff32b089dcac83617fb623d35828912">&#9670;&#160;</a></span>FileCountInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FileCountInfo::FileCountInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCCIMXFileSystemModel.html">CCIMXFileSystemModel</a> *&#160;</td>
+          <td class="paramname"><em>model</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a new File Count Info object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">model</td><td></td></tr>
+    <tr><td class="paramname">parent</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="aa3a0221ae640730854e92c66e57c51de" name="aa3a0221ae640730854e92c66e57c51de"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa3a0221ae640730854e92c66e57c51de">&#9670;&#160;</a></span>data()</h2>

@@ -1,13 +1,18 @@
 var classDesktopMainWindow =
 [
     [ "WallPaperGroup", "structDesktopMainWindow_1_1WallPaperGroup.html", "structDesktopMainWindow_1_1WallPaperGroup" ],
+    [ "DesktopMainWindow", "classDesktopMainWindow.html#aaac5851bae7399538f8ba037117bfdbf", null ],
+    [ "~DesktopMainWindow", "classDesktopMainWindow.html#a43d7057668fed07e15bf4adee85b0da8", null ],
     [ "deptach_app_cards_init", "classDesktopMainWindow.html#a60543a4367ec2d3ae50a5dd2d8743ea7", null ],
     [ "desktop_toast", "classDesktopMainWindow.html#ad96e7341abb14b361bf76d3baff81071", null ],
     [ "downDockWidget", "classDesktopMainWindow.html#a3c9d1ee127d737faa6b73e162a4c28b3", null ],
     [ "handle_app_status", "classDesktopMainWindow.html#ad72a53e56f786aa89acd04b1544d709c", null ],
     [ "install_remote_appwrapper", "classDesktopMainWindow.html#a39fb277355a84381bf009a605bd9bc7e", null ],
     [ "invoke_switch_bgpage", "classDesktopMainWindow.html#a010608971bb06a048f8af50e68ac460f", null ],
+    [ "mousePressEvent", "classDesktopMainWindow.html#aea9d86ecbe7b54e38e8c871722054274", null ],
+    [ "mouseReleaseEvent", "classDesktopMainWindow.html#a4a1c72982f01def8eb97ed697849a1b6", null ],
     [ "post_show", "classDesktopMainWindow.html#a3f4e883111f10e3fede7ae9818d36a4b", null ],
+    [ "resizeEvent", "classDesktopMainWindow.html#ab4794a1ff19ffeae8b3b971128898448", null ],
     [ "showToast", "classDesktopMainWindow.html#a5b8b69ca43a0adb247853ff9c6424c43", null ],
     [ "stackedWidget", "classDesktopMainWindow.html#a8f361d9bfc1b0745c02a8d8c4ec59beb", null ],
     [ "to_next_page", "classDesktopMainWindow.html#aa904c77c3b7b1f00c55602a47dc7e036", null ],

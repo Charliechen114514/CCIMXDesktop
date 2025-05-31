@@ -1,5 +1,7 @@
 var classVideoPlayer =
 [
+    [ "VideoPlayer", "classVideoPlayer.html#ae28e4565528e91f1bcf5d1c4ff3a0fc5", null ],
+    [ "VideoPlayer", "classVideoPlayer.html#ae28e4565528e91f1bcf5d1c4ff3a0fc5", null ],
     [ "about_fetch_frame", "classVideoPlayer.html#a89a61f323510f49f1948b2717c1ca483", null ],
     [ "about_fetch_frame", "classVideoPlayer.html#a89a61f323510f49f1948b2717c1ca483", null ],
     [ "close", "classVideoPlayer.html#a919e25566d0330921aa737f1cdc8638b", null ],

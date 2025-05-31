@@ -103,6 +103,11 @@ $(document).ready(function(){initNavTree('classPlayListMainWindow.html',''); ini
   <div class="headertitle"><div class="title">PlayListMainWindow Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Main window for playlist management functionality.  
+ <a href="classPlayListMainWindow.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="PlayListMainWindow_8h_source.html">PlayListMainWindow.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for PlayListMainWindow:</div>
 <div class="dyncontent">
@@ -112,31 +117,224 @@ Inheritance diagram for PlayListMainWindow:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-slots" name="pub-slots"></a>
 Public Slots</h2></td></tr>
-<tr class="memitem:afcb0cd77e1910e75723c05413b78256c" id="r_afcb0cd77e1910e75723c05413b78256c"><td class="memItemLeft" align="right" valign="top"><a id="afcb0cd77e1910e75723c05413b78256c" name="afcb0cd77e1910e75723c05413b78256c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>from_media_list</b> (const QStringList &amp;l)</td></tr>
+<tr class="memitem:afcb0cd77e1910e75723c05413b78256c" id="r_afcb0cd77e1910e75723c05413b78256c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayListMainWindow.html#afcb0cd77e1910e75723c05413b78256c">from_media_list</a> (const QStringList &amp;l)</td></tr>
+<tr class="memdesc:afcb0cd77e1910e75723c05413b78256c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Populate the playlist from a string list.  <br /></td></tr>
 <tr class="separator:afcb0cd77e1910e75723c05413b78256c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
 Signals</h2></td></tr>
-<tr class="memitem:aa895c0c8f3fdcec039907019baa34bab" id="r_aa895c0c8f3fdcec039907019baa34bab"><td class="memItemLeft" align="right" valign="top"><a id="aa895c0c8f3fdcec039907019baa34bab" name="aa895c0c8f3fdcec039907019baa34bab"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>refresh_media_list</b> ()</td></tr>
+<tr class="memitem:aa895c0c8f3fdcec039907019baa34bab" id="r_aa895c0c8f3fdcec039907019baa34bab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayListMainWindow.html#aa895c0c8f3fdcec039907019baa34bab">refresh_media_list</a> ()</td></tr>
+<tr class="memdesc:aa895c0c8f3fdcec039907019baa34bab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal to request refreshing the media list.  <br /></td></tr>
 <tr class="separator:aa895c0c8f3fdcec039907019baa34bab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33f2be561720710f622302bb3ed2bfe0" id="r_a33f2be561720710f622302bb3ed2bfe0"><td class="memItemLeft" align="right" valign="top"><a id="a33f2be561720710f622302bb3ed2bfe0" name="a33f2be561720710f622302bb3ed2bfe0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>play_media</b> (const QString &amp;media_src)</td></tr>
+<tr class="memitem:a33f2be561720710f622302bb3ed2bfe0" id="r_a33f2be561720710f622302bb3ed2bfe0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayListMainWindow.html#a33f2be561720710f622302bb3ed2bfe0">play_media</a> (const QString &amp;media_src)</td></tr>
+<tr class="memdesc:a33f2be561720710f622302bb3ed2bfe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal to request playing a specific media item.  <br /></td></tr>
 <tr class="separator:a33f2be561720710f622302bb3ed2bfe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3492d851d02359439a5bb9ffeb3ce6ee" id="r_a3492d851d02359439a5bb9ffeb3ce6ee"><td class="memItemLeft" align="right" valign="top"><a id="a3492d851d02359439a5bb9ffeb3ce6ee" name="a3492d851d02359439a5bb9ffeb3ce6ee"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>delete_media</b> (const QString &amp;media_src)</td></tr>
+<tr class="memitem:a3492d851d02359439a5bb9ffeb3ce6ee" id="r_a3492d851d02359439a5bb9ffeb3ce6ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayListMainWindow.html#a3492d851d02359439a5bb9ffeb3ce6ee">delete_media</a> (const QString &amp;media_src)</td></tr>
+<tr class="memdesc:a3492d851d02359439a5bb9ffeb3ce6ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal to request deleting a media item from playlist.  <br /></td></tr>
 <tr class="separator:a3492d851d02359439a5bb9ffeb3ce6ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9e86406a121c19a29226961e566f6380" id="r_a9e86406a121c19a29226961e566f6380"><td class="memItemLeft" align="right" valign="top"><a id="a9e86406a121c19a29226961e566f6380" name="a9e86406a121c19a29226961e566f6380"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>PlayListMainWindow</b> (QWidget *parent=nullptr)</td></tr>
+<tr class="memitem:a9e86406a121c19a29226961e566f6380" id="r_a9e86406a121c19a29226961e566f6380"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayListMainWindow.html#a9e86406a121c19a29226961e566f6380">PlayListMainWindow</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:a9e86406a121c19a29226961e566f6380"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
 <tr class="separator:a9e86406a121c19a29226961e566f6380"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67b89a51f64e7749c9033b42a2da50f3" id="r_a67b89a51f64e7749c9033b42a2da50f3"><td class="memItemLeft" align="right" valign="top"><a id="a67b89a51f64e7749c9033b42a2da50f3" name="a67b89a51f64e7749c9033b42a2da50f3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>flip_edit_mode</b> ()</td></tr>
+<tr class="memitem:a67b89a51f64e7749c9033b42a2da50f3" id="r_a67b89a51f64e7749c9033b42a2da50f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayListMainWindow.html#a67b89a51f64e7749c9033b42a2da50f3">flip_edit_mode</a> ()</td></tr>
+<tr class="memdesc:a67b89a51f64e7749c9033b42a2da50f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggle between edit and view modes.  <br /></td></tr>
 <tr class="separator:a67b89a51f64e7749c9033b42a2da50f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac08812b22c18986db087addd9cbeb62" id="r_aac08812b22c18986db087addd9cbeb62"><td class="memItemLeft" align="right" valign="top"><a id="aac08812b22c18986db087addd9cbeb62" name="aac08812b22c18986db087addd9cbeb62"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~PlayListMainWindow</b> ()</td></tr>
+<tr class="memdesc:aac08812b22c18986db087addd9cbeb62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
+<tr class="separator:aac08812b22c18986db087addd9cbeb62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Main window for playlist management functionality. </p>
+<p>Provides interface for viewing and managing media playlists, including playing, deleting, and editing playlist items. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a9e86406a121c19a29226961e566f6380" name="a9e86406a121c19a29226961e566f6380"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e86406a121c19a29226961e566f6380">&#9670;&#160;</a></span>PlayListMainWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">PlayListMainWindow::PlayListMainWindow </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Parent widget </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3492d851d02359439a5bb9ffeb3ce6ee" name="a3492d851d02359439a5bb9ffeb3ce6ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3492d851d02359439a5bb9ffeb3ce6ee">&#9670;&#160;</a></span>delete_media</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayListMainWindow::delete_media </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>media_src</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Signal to request deleting a media item from playlist. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">media_src</td><td>Path or identifier of the media to delete </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a67b89a51f64e7749c9033b42a2da50f3" name="a67b89a51f64e7749c9033b42a2da50f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67b89a51f64e7749c9033b42a2da50f3">&#9670;&#160;</a></span>flip_edit_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayListMainWindow::flip_edit_mode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Toggle between edit and view modes. </p>
+<p>Switches the playlist between editable and non-editable states, typically showing/hiding delete buttons and enabling/disabling item rearrangement. </p>
+
+</div>
+</div>
+<a id="afcb0cd77e1910e75723c05413b78256c" name="afcb0cd77e1910e75723c05413b78256c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcb0cd77e1910e75723c05413b78256c">&#9670;&#160;</a></span>from_media_list</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayListMainWindow::from_media_list </td>
+          <td>(</td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Populate the playlist from a string list. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">l</td><td>List of media sources (paths/URLs) to populate </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a33f2be561720710f622302bb3ed2bfe0" name="a33f2be561720710f622302bb3ed2bfe0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33f2be561720710f622302bb3ed2bfe0">&#9670;&#160;</a></span>play_media</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayListMainWindow::play_media </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>media_src</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Signal to request playing a specific media item. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">media_src</td><td>Path or identifier of the media to play </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa895c0c8f3fdcec039907019baa34bab" name="aa895c0c8f3fdcec039907019baa34bab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa895c0c8f3fdcec039907019baa34bab">&#9670;&#160;</a></span>refresh_media_list</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayListMainWindow::refresh_media_list </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Signal to request refreshing the media list. </p>
+<dl class="section note"><dt>Note</dt><dd>Emitted when playlist items are pressed or modified </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>extern_app/MediaPlayer/ui/<a class="el" href="PlayListMainWindow_8h_source.html">PlayListMainWindow.h</a></li>
 <li>extern_app/MediaPlayer/ui/<b>PlayListMainWindow.cpp</b></li>

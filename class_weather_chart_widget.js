@@ -7,6 +7,7 @@ var class_weather_chart_widget =
       [ "WINDSCALE", "class_weather_chart_widget.html#ad917be16972dd0f90aa71df8d0e8e569ad74a32bbd6239ec868d96541f20419ff", null ],
       [ "HUMIDITY", "class_weather_chart_widget.html#ad917be16972dd0f90aa71df8d0e8e569ad95ec1b726d7df75e5cbe026d0c1b721", null ]
     ] ],
+    [ "WeatherChartWidget", "class_weather_chart_widget.html#aa328fdcd0c7e3390347a34ada0b82a8f", null ],
     [ "fresh_display", "class_weather_chart_widget.html#a9a61b7bf80f2920bbe80b8871e982e9d", null ],
     [ "switch_to_page", "class_weather_chart_widget.html#a3c13c404b506f87e7486247d544ea09c", null ]
 ];

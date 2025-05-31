@@ -114,54 +114,61 @@ $(function(){initNavTree('_file_count_info_8h_source.html',''); initResizable(tr
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;QPersistentModelIndex&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span></div>
 <div class="foldopen" id="foldopen00013" data-start="{" data-end="};">
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_file_count_impl_worker.html">   13</a></span><span class="keyword">class </span>FileCountImplWorker : <span class="keyword">public</span> QObject {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_file_count_impl_worker.html">   13</a></span><span class="keyword">class </span><a class="code hl_function" href="class_file_count_impl_worker.html#ad86c9f922e9c0977e620ba10ae529714">FileCountImplWorker</a> : <span class="keyword">public</span> QObject {</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    Q_OBJECT</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">explicit</span> FileCountImplWorker(QObject* parent = <span class="keyword">nullptr</span>)</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        : QObject(parent) { }</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    ~FileCountImplWorker();</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_file_count_impl_worker.html#a8ad1677a62be3e2de91d1372435cff6b">deptach_count_task</a>(<span class="keyword">const</span> QPersistentModelIndex&amp; index, <span class="keyword">const</span> QString&amp; path);</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>signals:</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_file_count_impl_worker.html#acb45c90298bc1449d266dfb9f3885a5d">   32</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="class_file_count_impl_worker.html#acb45c90298bc1449d266dfb9f3885a5d">fileCountFinished</a>(QPersistentModelIndex index, <span class="keywordtype">int</span> count);</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    QList&lt;QFuture&lt;void&gt;&gt; results; </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>};</div>
+<div class="foldopen" id="foldopen00021" data-start="{" data-end="}">
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_file_count_impl_worker.html#ad86c9f922e9c0977e620ba10ae529714">   21</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="class_file_count_impl_worker.html#ad86c9f922e9c0977e620ba10ae529714">FileCountImplWorker</a>(QObject* parent = <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        : QObject(parent) { }</div>
 </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="foldopen" id="foldopen00038" data-start="{" data-end="};">
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="class_file_count_info.html">   38</a></span><span class="keyword">class </span>FileCountInfo : <span class="keyword">public</span> QObject, <span class="keyword">public</span> FileInfoProvider {</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    Q_OBJECT</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">explicit</span> FileCountInfo(<a class="code hl_class" href="class_c_c_i_m_x_file_system_model.html">CCIMXFileSystemModel</a>* model, QObject* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span></div>
-<div class="foldopen" id="foldopen00047" data-start="{" data-end="}">
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_file_count_info.html#a42da804010c98ad6e95f028e0542a7f5">   47</a></span>    <span class="keyword">inline</span> QString <a class="code hl_function" href="class_file_count_info.html#a42da804010c98ad6e95f028e0542a7f5">provide_section_name</a>() {</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;fileCounts&quot;</span>;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    }</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_function" href="class_file_count_impl_worker.html#a8060a4ac34031175da2d97a8bffbe7ea">~FileCountImplWorker</a>();</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_file_count_impl_worker.html#a8ad1677a62be3e2de91d1372435cff6b">deptach_count_task</a>(<span class="keyword">const</span> QPersistentModelIndex&amp; index, <span class="keyword">const</span> QString&amp; path);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>signals:</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="class_file_count_impl_worker.html#acb45c90298bc1449d266dfb9f3885a5d">   41</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="class_file_count_impl_worker.html#acb45c90298bc1449d266dfb9f3885a5d">fileCountFinished</a>(QPersistentModelIndex index, <span class="keywordtype">int</span> count);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    QList&lt;QFuture&lt;void&gt;&gt; results; </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>};</div>
 </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    std::pair&lt;bool, QVariant&gt; <a class="code hl_function" href="class_file_count_info.html#aa3a0221ae640730854e92c66e57c51de">data</a>(<span class="keyword">const</span> QModelIndex&amp; index, <span class="keywordtype">int</span> role);</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="keyword">private</span> slots:</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordtype">void</span> onHandleWorkFinishJob(QPersistentModelIndex index, <span class="keywordtype">int</span> count);</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <a class="code hl_class" href="class_file_count_impl_worker.html">FileCountImplWorker</a>* worker; </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="comment">/* Thanks AI, I solved the persis issue */</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="comment">/* These are using in caching the already in s */</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keyword">mutable</span> QHash&lt;QPersistentModelIndex, int&gt; cache; </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keyword">mutable</span> QSet&lt;QPersistentModelIndex&gt; requested; </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>};</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="foldopen" id="foldopen00047" data-start="{" data-end="};">
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_file_count_info.html">   47</a></span><span class="keyword">class </span><a class="code hl_function" href="class_file_count_info.html#a5ff32b089dcac83617fb623d35828912">FileCountInfo</a> : <span class="keyword">public</span> QObject, <span class="keyword">public</span> <a class="code hl_function" href="class_file_info_provider.html#aac708c0bbd39fe67a3e2b0129109a0f3">FileInfoProvider</a> {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    Q_OBJECT</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keyword">explicit</span> <a class="code hl_function" href="class_file_count_info.html#a5ff32b089dcac83617fb623d35828912">FileCountInfo</a>(<a class="code hl_class" href="class_c_c_i_m_x_file_system_model.html">CCIMXFileSystemModel</a>* model, QObject* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span></div>
+<div class="foldopen" id="foldopen00062" data-start="{" data-end="}">
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="class_file_count_info.html#a42da804010c98ad6e95f028e0542a7f5">   62</a></span>    <span class="keyword">inline</span> QString <a class="code hl_function" href="class_file_count_info.html#a42da804010c98ad6e95f028e0542a7f5">provide_section_name</a>() {</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;fileCounts&quot;</span>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
 </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="preprocessor">#endif </span><span class="comment">// FILECOUNTINFO_H</span></div>
-<div class="ttc" id="aclass_c_c_i_m_x_file_system_model_html"><div class="ttname"><a href="class_c_c_i_m_x_file_system_model.html">CCIMXFileSystemModel</a></div><div class="ttdef"><b>Definition</b> CCIMXFileSystemModel.h:5</div></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    std::pair&lt;bool, QVariant&gt; <a class="code hl_function" href="class_file_count_info.html#aa3a0221ae640730854e92c66e57c51de">data</a>(<span class="keyword">const</span> QModelIndex&amp; index, <span class="keywordtype">int</span> role);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="keyword">private</span> slots:</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordtype">void</span> onHandleWorkFinishJob(QPersistentModelIndex index, <span class="keywordtype">int</span> count);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <a class="code hl_class" href="class_file_count_impl_worker.html">FileCountImplWorker</a>* worker; </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="comment">/* Thanks AI, I solved the persis issue */</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="comment">/* These are using in caching the already in s */</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keyword">mutable</span> QHash&lt;QPersistentModelIndex, int&gt; cache; </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keyword">mutable</span> QSet&lt;QPersistentModelIndex&gt; requested; </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>};</div>
+</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="preprocessor">#endif </span><span class="comment">// FILECOUNTINFO_H</span></div>
+<div class="ttc" id="aclass_c_c_i_m_x_file_system_model_html"><div class="ttname"><a href="class_c_c_i_m_x_file_system_model.html">CCIMXFileSystemModel</a></div><div class="ttdoc">The CCIMXFileSystemModel class Extends QFileSystemModel to support additional information providers....</div><div class="ttdef"><b>Definition</b> CCIMXFileSystemModel.h:13</div></div>
 <div class="ttc" id="aclass_file_count_impl_worker_html"><div class="ttname"><a href="class_file_count_impl_worker.html">FileCountImplWorker</a></div><div class="ttdoc">The FileCountImplWorker class makes the file count session actually.</div><div class="ttdef"><b>Definition</b> FileCountInfo.h:13</div></div>
+<div class="ttc" id="aclass_file_count_impl_worker_html_a8060a4ac34031175da2d97a8bffbe7ea"><div class="ttname"><a href="class_file_count_impl_worker.html#a8060a4ac34031175da2d97a8bffbe7ea">FileCountImplWorker::~FileCountImplWorker</a></div><div class="ttdeci">~FileCountImplWorker()</div><div class="ttdoc">Destroy the File Count Impl Worker object.</div><div class="ttdef"><b>Definition</b> FileCountInfo.cpp:6</div></div>
 <div class="ttc" id="aclass_file_count_impl_worker_html_a8ad1677a62be3e2de91d1372435cff6b"><div class="ttname"><a href="class_file_count_impl_worker.html#a8ad1677a62be3e2de91d1372435cff6b">FileCountImplWorker::deptach_count_task</a></div><div class="ttdeci">void deptach_count_task(const QPersistentModelIndex &amp;index, const QString &amp;path)</div><div class="ttdoc">functions depatch an asyncronous count issues,</div><div class="ttdef"><b>Definition</b> FileCountInfo.cpp:14</div></div>
 <div class="ttc" id="aclass_file_count_impl_worker_html_acb45c90298bc1449d266dfb9f3885a5d"><div class="ttname"><a href="class_file_count_impl_worker.html#acb45c90298bc1449d266dfb9f3885a5d">FileCountImplWorker::fileCountFinished</a></div><div class="ttdeci">void fileCountFinished(QPersistentModelIndex index, int count)</div><div class="ttdoc">fileCountFinished signals the finish of the count</div></div>
-<div class="ttc" id="aclass_file_count_info_html_a42da804010c98ad6e95f028e0542a7f5"><div class="ttname"><a href="class_file_count_info.html#a42da804010c98ad6e95f028e0542a7f5">FileCountInfo::provide_section_name</a></div><div class="ttdeci">QString provide_section_name()</div><div class="ttdoc">provide_section_name means everything in the name lol</div><div class="ttdef"><b>Definition</b> FileCountInfo.h:47</div></div>
+<div class="ttc" id="aclass_file_count_impl_worker_html_ad86c9f922e9c0977e620ba10ae529714"><div class="ttname"><a href="class_file_count_impl_worker.html#ad86c9f922e9c0977e620ba10ae529714">FileCountImplWorker::FileCountImplWorker</a></div><div class="ttdeci">FileCountImplWorker(QObject *parent=nullptr)</div><div class="ttdoc">Construct a new File Count Impl Worker object.</div><div class="ttdef"><b>Definition</b> FileCountInfo.h:21</div></div>
+<div class="ttc" id="aclass_file_count_info_html_a42da804010c98ad6e95f028e0542a7f5"><div class="ttname"><a href="class_file_count_info.html#a42da804010c98ad6e95f028e0542a7f5">FileCountInfo::provide_section_name</a></div><div class="ttdeci">QString provide_section_name()</div><div class="ttdoc">provide_section_name means everything in the name lol</div><div class="ttdef"><b>Definition</b> FileCountInfo.h:62</div></div>
+<div class="ttc" id="aclass_file_count_info_html_a5ff32b089dcac83617fb623d35828912"><div class="ttname"><a href="class_file_count_info.html#a5ff32b089dcac83617fb623d35828912">FileCountInfo::FileCountInfo</a></div><div class="ttdeci">FileCountInfo(CCIMXFileSystemModel *model, QObject *parent=nullptr)</div><div class="ttdoc">Construct a new File Count Info object.</div><div class="ttdef"><b>Definition</b> FileCountInfo.cpp:26</div></div>
 <div class="ttc" id="aclass_file_count_info_html_aa3a0221ae640730854e92c66e57c51de"><div class="ttname"><a href="class_file_count_info.html#aa3a0221ae640730854e92c66e57c51de">FileCountInfo::data</a></div><div class="ttdeci">std::pair&lt; bool, QVariant &gt; data(const QModelIndex &amp;index, int role)</div><div class="ttdoc">data provide the data to the views</div><div class="ttdef"><b>Definition</b> FileCountInfo.cpp:35</div></div>
+<div class="ttc" id="aclass_file_info_provider_html_aac708c0bbd39fe67a3e2b0129109a0f3"><div class="ttname"><a href="class_file_info_provider.html#aac708c0bbd39fe67a3e2b0129109a0f3">FileInfoProvider::FileInfoProvider</a></div><div class="ttdeci">FileInfoProvider()=delete</div><div class="ttdoc">Construct a new File Info Provider object default is prohibited, disable this for the default constru...</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

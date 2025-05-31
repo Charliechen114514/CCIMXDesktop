@@ -109,7 +109,7 @@ $(function(){initNavTree('struct_process_broswer_1_1_process_info.html',''); ini
 </div><!--header-->
 <div class="contents">
 
-<p>The <a class="el" href="struct_process_broswer_1_1_process_info.html" title="The ProcessInfo class.">ProcessInfo</a> class.  
+<p>The <a class="el" href="struct_process_broswer_1_1_process_info.html" title="The ProcessInfo struct Holds detailed information about a system process.">ProcessInfo</a> struct Holds detailed information about a system process.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_process_broswer_8h_source.html">ProcessBroswer.h</a>&gt;</code></p>
@@ -118,40 +118,39 @@ $(function(){initNavTree('struct_process_broswer_1_1_process_info.html',''); ini
 Public Attributes</h2></td></tr>
 <tr class="memitem:a0660c66075e5bff01fd18f7d89edfc20" id="r_a0660c66075e5bff01fd18f7d89edfc20"><td class="memItemLeft" align="right" valign="top"><a id="a0660c66075e5bff01fd18f7d89edfc20" name="a0660c66075e5bff01fd18f7d89edfc20"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>pid</b></td></tr>
-<tr class="memdesc:a0660c66075e5bff01fd18f7d89edfc20"><td class="mdescLeft">&#160;</td><td class="mdescRight">the process id <br /></td></tr>
+<tr class="memdesc:a0660c66075e5bff01fd18f7d89edfc20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process ID. <br /></td></tr>
 <tr class="separator:a0660c66075e5bff01fd18f7d89edfc20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a488714f2172eb6e1fbbc22c5511e45b6" id="r_a488714f2172eb6e1fbbc22c5511e45b6"><td class="memItemLeft" align="right" valign="top"><a id="a488714f2172eb6e1fbbc22c5511e45b6" name="a488714f2172eb6e1fbbc22c5511e45b6"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>ppid</b></td></tr>
-<tr class="memdesc:a488714f2172eb6e1fbbc22c5511e45b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">the parent process id <br /></td></tr>
+<tr class="memdesc:a488714f2172eb6e1fbbc22c5511e45b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parent Process ID. <br /></td></tr>
 <tr class="separator:a488714f2172eb6e1fbbc22c5511e45b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d5662e9c3468ad2a814cfd706a40b95" id="r_a8d5662e9c3468ad2a814cfd706a40b95"><td class="memItemLeft" align="right" valign="top"><a id="a8d5662e9c3468ad2a814cfd706a40b95" name="a8d5662e9c3468ad2a814cfd706a40b95"></a>
 QString&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td></tr>
-<tr class="memdesc:a8d5662e9c3468ad2a814cfd706a40b95"><td class="mdescLeft">&#160;</td><td class="mdescRight">the process name <br /></td></tr>
+<tr class="memdesc:a8d5662e9c3468ad2a814cfd706a40b95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process name. <br /></td></tr>
 <tr class="separator:a8d5662e9c3468ad2a814cfd706a40b95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af250bfb0d7e057a9f7bf5dbe50372c26" id="r_af250bfb0d7e057a9f7bf5dbe50372c26"><td class="memItemLeft" align="right" valign="top"><a id="af250bfb0d7e057a9f7bf5dbe50372c26" name="af250bfb0d7e057a9f7bf5dbe50372c26"></a>
 QString&#160;</td><td class="memItemRight" valign="bottom"><b>fullPath</b></td></tr>
-<tr class="memdesc:af250bfb0d7e057a9f7bf5dbe50372c26"><td class="mdescLeft">&#160;</td><td class="mdescRight">the full path of the process <br /></td></tr>
+<tr class="memdesc:af250bfb0d7e057a9f7bf5dbe50372c26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Full executable path of the process. <br /></td></tr>
 <tr class="separator:af250bfb0d7e057a9f7bf5dbe50372c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62652c7aae35738ff31f4c0ae352ffab" id="r_a62652c7aae35738ff31f4c0ae352ffab"><td class="memItemLeft" align="right" valign="top"><a id="a62652c7aae35738ff31f4c0ae352ffab" name="a62652c7aae35738ff31f4c0ae352ffab"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>threadCount</b></td></tr>
-<tr class="memdesc:a62652c7aae35738ff31f4c0ae352ffab"><td class="mdescLeft">&#160;</td><td class="mdescRight">the thread count of the process <br /></td></tr>
+<tr class="memdesc:a62652c7aae35738ff31f4c0ae352ffab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of threads in the process. <br /></td></tr>
 <tr class="separator:a62652c7aae35738ff31f4c0ae352ffab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a136f632c347026200676de607dfe1d94" id="r_a136f632c347026200676de607dfe1d94"><td class="memItemLeft" align="right" valign="top"><a id="a136f632c347026200676de607dfe1d94" name="a136f632c347026200676de607dfe1d94"></a>
 qint64&#160;</td><td class="memItemRight" valign="bottom"><b>memoryUsageKB</b></td></tr>
-<tr class="memdesc:a136f632c347026200676de607dfe1d94"><td class="mdescLeft">&#160;</td><td class="mdescRight">the memory usage of the process in KB level <br /></td></tr>
+<tr class="memdesc:a136f632c347026200676de607dfe1d94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory usage in kilobytes. <br /></td></tr>
 <tr class="separator:a136f632c347026200676de607dfe1d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af238a0415cd95c955b6d03c275804626" id="r_af238a0415cd95c955b6d03c275804626"><td class="memItemLeft" align="right" valign="top"><a id="af238a0415cd95c955b6d03c275804626" name="af238a0415cd95c955b6d03c275804626"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>cpuPercent</b></td></tr>
-<tr class="memdesc:af238a0415cd95c955b6d03c275804626"><td class="mdescLeft">&#160;</td><td class="mdescRight">the cpu percent of the process <br /></td></tr>
+<tr class="memdesc:af238a0415cd95c955b6d03c275804626"><td class="mdescLeft">&#160;</td><td class="mdescRight">CPU usage percentage. <br /></td></tr>
 <tr class="separator:af238a0415cd95c955b6d03c275804626"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bc2a82c21cbfa45ce2503dbe0213efc" id="r_a3bc2a82c21cbfa45ce2503dbe0213efc"><td class="memItemLeft" align="right" valign="top"><a id="a3bc2a82c21cbfa45ce2503dbe0213efc" name="a3bc2a82c21cbfa45ce2503dbe0213efc"></a>
 QString&#160;</td><td class="memItemRight" valign="bottom"><b>userName</b></td></tr>
-<tr class="memdesc:a3bc2a82c21cbfa45ce2503dbe0213efc"><td class="mdescLeft">&#160;</td><td class="mdescRight">the user name of the process <br /></td></tr>
+<tr class="memdesc:a3bc2a82c21cbfa45ce2503dbe0213efc"><td class="mdescLeft">&#160;</td><td class="mdescRight">User who owns the process. <br /></td></tr>
 <tr class="separator:a3bc2a82c21cbfa45ce2503dbe0213efc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="struct_process_broswer_1_1_process_info.html" title="The ProcessInfo class.">ProcessInfo</a> class. </p>
-<p><a class="el" href="struct_process_broswer_1_1_process_info.html" title="The ProcessInfo class.">ProcessInfo</a> is the process information </p>
+<div class="textblock"><p>The <a class="el" href="struct_process_broswer_1_1_process_info.html" title="The ProcessInfo struct Holds detailed information about a system process.">ProcessInfo</a> struct Holds detailed information about a system process. </p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>extern_app/SystemState/Core/<a class="el" href="_process_broswer_8h_source.html">ProcessBroswer.h</a></li>
 </ul>

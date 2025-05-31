@@ -1,5 +1,7 @@
 var class_video_player_impl =
 [
+    [ "VideoPlayerImpl", "class_video_player_impl.html#a53bff5429a25cbd659aaca8292ce0cf3", null ],
+    [ "VideoPlayerImpl", "class_video_player_impl.html#a53bff5429a25cbd659aaca8292ce0cf3", null ],
     [ "close", "class_video_player_impl.html#a5e9332a482f1d9294742f1ca1059b592", null ],
     [ "close", "class_video_player_impl.html#a5e9332a482f1d9294742f1ca1059b592", null ],
     [ "current_frame", "class_video_player_impl.html#a0f5d949b11337c59522fe6a0b5e88bc9", null ],
@@ -16,6 +18,8 @@ var class_video_player_impl =
     [ "open", "class_video_player_impl.html#a2c00fbac2097847c8a2e38af0707b56c", null ],
     [ "peek_frame", "class_video_player_impl.html#a38d07a450e3088c638949046067d8225", null ],
     [ "peek_frame", "class_video_player_impl.html#a38d07a450e3088c638949046067d8225", null ],
+    [ "Q_DISABLE_COPY", "class_video_player_impl.html#a1741d03d5ac669511a754bdac3107faa", null ],
+    [ "Q_DISABLE_COPY", "class_video_player_impl.html#a1741d03d5ac669511a754bdac3107faa", null ],
     [ "rollto_nextFrame", "class_video_player_impl.html#a09925d8ec75bd409d8526991e5cfa60e", null ],
     [ "rollto_nextFrame", "class_video_player_impl.html#a09925d8ec75bd409d8526991e5cfa60e", null ],
     [ "total_frame", "class_video_player_impl.html#a8595b0bbe2ebb205c0c02b002755b0d0", null ],

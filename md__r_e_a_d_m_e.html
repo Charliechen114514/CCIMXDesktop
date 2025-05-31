@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CCIMXDesktop: 🖥️ CCIMXDESKTOP</title>
+<title>CCIMXDesktop: CCIMXDESKTOP 🖥️</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -102,11 +102,12 @@ $(function(){initNavTree('md__r_e_a_d_m_e.html',''); initResizable(true); });
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">🖥️ CCIMXDESKTOP</div></div>
+  <div class="headertitle"><div class="title">CCIMXDESKTOP 🖥️</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="autotoc_md0"></a></p>
-<p><img src="https://img.shields.io/badge/Qt-6.8.3-green" alt="Qt" class="inline"/><img src="https://img.shields.io/badge/OpenCV-4.12.0-blue" alt="OpenCV" class="inline"/><img src="https://img.shields.io/badge/MuPDF-supported-orange" alt="MuPDF" class="inline"/><img src="https://img.shields.io/badge/C++-17+-green" alt="Qt" class="inline"/></p>
+<p><img src="./CCIMXDesktopLogo.png" alt="CCIMXDesktopLogo" class="inline"/></p>
+<p><img src="https://img.shields.io/badge/Qt-6.8.3-green" alt="Qt" class="inline"/><img src="https://img.shields.io/badge/OpenCV-4.12.0-blue" alt="OpenCV" class="inline"/><img src="https://img.shields.io/badge/MuPDF-supported-orange" alt="MuPDF" class="inline"/><img src="https://img.shields.io/badge/C++-17+-green" alt="Qt" class="inline"/><img src="https://img.shields.io/badge/Version-0.9.2-red" alt="Version" class="inline"/></p>
 <p>🔌 您好！这是一个可在多种嵌入式设备中使用的简单桌面和实用程序。对我来说，它启动了专为 i.MX 平台定制的套件，结合了内置系统小工具和可扩展的外部应用程序。该项目使用 Qt 设计，正在尽可能支持与各种硬件传感器和多媒体接口集成。</p>
 <h1><a class="anchor" id="autotoc_md1"></a>
 🌐 开始之前，选择你的语言！ 🌐</h1>
@@ -118,6 +119,10 @@ $(function(){initNavTree('md__r_e_a_d_m_e.html',''); initResizable(true); });
 <p>现在，CCIMXDesktop支持的一键构建包括：</p>
 <ul>
 <li>🏠 基础的桌面环境和应用抽象</li>
+<li>🏠 记录点击频率从而动态调整的DockWidget</li>
+<li>ℹ About App（简单的介绍本项目桌面的基本情况）</li>
+<li>✏️ CCNoter（超级无敌轻量的记事本）</li>
+<li>🎨SimpleDrawer（超级无敌轻量的画图，类似Windows的“画图”）</li>
 <li>🔧 Builtin Apps（室内气温需要已经挂载ICM20608驱动且可用，其他传感器需要自行修改接口内容（只需要重写如何读即可）与联网程度检测（需要Qt Networks Core 的基础被支持））</li>
 <li>☀️ WeatherAPP（需要您的设备可以联网才可用）</li>
 <li>📄 pdfReader（需要您具备您平台上的mupdf的依赖静态库）</li>
@@ -155,11 +160,11 @@ $(function(){initNavTree('md__r_e_a_d_m_e.html',''); initResizable(true); });
 <h1><a class="anchor" id="autotoc_md10"></a>
 📚项目文档</h1>
 <p><img src="https://img.shields.io/badge/GCC-cross--compile-yellowgreen" alt="GCC" class="inline"/> <img src="https://img.shields.io/badge/ARM-linux--gnueabihf-red" alt="ARM" class="inline"/></p>
-<p>如果您对项目的制作流程和开发文档感兴趣，请参考Documentations文件夹。</p>
-<p>目前，本项目完全支持使用Doxygen自动化生成定制文档，您可以直接参考<a href="Documentations/doxygen_styles"><code>Documentations/doxygen_style</code></a>进行阅读，或者您打算客制化本文档的构建，需要您参考构建手册进行客制化的修改</p>
+<p>如果您对项目的制作流程和开发文档感兴趣，请参考Documentations文件夹。有关构建流程及定制，请查阅构建手册：</p>
 <blockquote class="doxtable">
-<p>&zwj;🛠️ 如何构建本项目？（X86 gcc, ARM-linux-gnueabihf-gcc与Windows GCC都支持！） </p>
+<p>&zwj;🛠️ 如何构建本项目？（支持 X86 gcc、ARM-linux-gnueabihf-gcc 和 Windows GCC） </p>
 </blockquote>
+<p>文档已通过 GitHub Actions 自动部署，访问：<a href="https://charliechen114514.github.io/CCIMXDesktop/">CCIMXDesktop: Main Page</a></p>
 <h1><a class="anchor" id="autotoc_md11"></a>
 💡 未来计划</h1>
 <ul>
@@ -168,9 +173,13 @@ $(function(){initNavTree('md__r_e_a_d_m_e.html',''); initResizable(true); });
 <li>⏰ 闹钟APP</li>
 <li>🖼️ 图像浏览器</li>
 <li>🎨 图像处理器</li>
-<li>✏️ 文本简单的编辑器</li>
+<li>✏️ MarkDown阅读器</li>
+<li>🛜 网络查看助手</li>
+<li>🧮 口袋计算器</li>
 <li>🔌 串口助手</li>
+<li>✅ 任务清单</li>
 <li>🤖 图像处理器本地处理图像和做简单的推理（人脸识别）</li>
+<li>⚙ 基础的设置（类似IOS，但是很多是观赏性较为强）</li>
 </ul>
 </li>
 </ul>

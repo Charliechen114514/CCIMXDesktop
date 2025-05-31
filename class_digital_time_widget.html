@@ -130,8 +130,8 @@ Public Slots</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a787dd778c825c2e6f9273c43a0996a6b" id="r_a787dd778c825c2e6f9273c43a0996a6b"><td class="memItemLeft" align="right" valign="top"><a id="a787dd778c825c2e6f9273c43a0996a6b" name="a787dd778c825c2e6f9273c43a0996a6b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DigitalTimeWidget</b> (QWidget *parent=nullptr)</td></tr>
+<tr class="memitem:a787dd778c825c2e6f9273c43a0996a6b" id="r_a787dd778c825c2e6f9273c43a0996a6b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a787dd778c825c2e6f9273c43a0996a6b">DigitalTimeWidget</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:a787dd778c825c2e6f9273c43a0996a6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Digital Time Widget object.  <br /></td></tr>
 <tr class="separator:a787dd778c825c2e6f9273c43a0996a6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1633fe7d636f9be4fdce7be3b886ab7" id="r_aa1633fe7d636f9be4fdce7be3b886ab7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1633fe7d636f9be4fdce7be3b886ab7">bindClockWidget</a> (<a class="el" href="class_clock_widget.html">ClockWidget</a> *clock)</td></tr>
 <tr class="memdesc:aa1633fe7d636f9be4fdce7be3b886ab7"><td class="mdescLeft">&#160;</td><td class="mdescRight">bindClockWidget, the digital displays of the clock  <br /></td></tr>
@@ -139,13 +139,47 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a01011ca236cf3aab580eaca6db1eef9e" id="r_a01011ca236cf3aab580eaca6db1eef9e"><td class="memItemLeft" align="right" valign="top"><a id="a01011ca236cf3aab580eaca6db1eef9e" name="a01011ca236cf3aab580eaca6db1eef9e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>paintEvent</b> (QPaintEvent *event) override</td></tr>
+<tr class="memitem:a01011ca236cf3aab580eaca6db1eef9e" id="r_a01011ca236cf3aab580eaca6db1eef9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01011ca236cf3aab580eaca6db1eef9e">paintEvent</a> (QPaintEvent *event) override</td></tr>
+<tr class="memdesc:a01011ca236cf3aab580eaca6db1eef9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">paint sessions  <br /></td></tr>
 <tr class="separator:a01011ca236cf3aab580eaca6db1eef9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="class_digital_time_widget.html" title="The DigitalTimeWidget class is a digital clock widget.">DigitalTimeWidget</a> class is a digital clock widget. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a787dd778c825c2e6f9273c43a0996a6b" name="a787dd778c825c2e6f9273c43a0996a6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a787dd778c825c2e6f9273c43a0996a6b">&#9670;&#160;</a></span>DigitalTimeWidget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DigitalTimeWidget::DigitalTimeWidget </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *</td>          <td class="paramname"><span class="paramname"><em>parent</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel explicit">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a new Digital Time Widget object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="aa1633fe7d636f9be4fdce7be3b886ab7" name="aa1633fe7d636f9be4fdce7be3b886ab7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa1633fe7d636f9be4fdce7be3b886ab7">&#9670;&#160;</a></span>bindClockWidget()</h2>
 
@@ -165,6 +199,39 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>paintEvent</b> (QPain
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">clock</td><td>widgets for the bindings </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a01011ca236cf3aab580eaca6db1eef9e" name="a01011ca236cf3aab580eaca6db1eef9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01011ca236cf3aab580eaca6db1eef9e">&#9670;&#160;</a></span>paintEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DigitalTimeWidget::paintEvent </td>
+          <td>(</td>
+          <td class="paramtype">QPaintEvent *</td>          <td class="paramname"><span class="paramname"><em>event</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>paint sessions </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td></td></tr>
   </table>
   </dd>
 </dl>

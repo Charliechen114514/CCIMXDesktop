@@ -1,5 +1,7 @@
 var classVideoPlayerImpl =
 [
+    [ "VideoPlayerImpl", "classVideoPlayerImpl.html#a53bff5429a25cbd659aaca8292ce0cf3", null ],
+    [ "VideoPlayerImpl", "classVideoPlayerImpl.html#a53bff5429a25cbd659aaca8292ce0cf3", null ],
     [ "close", "classVideoPlayerImpl.html#a5e9332a482f1d9294742f1ca1059b592", null ],
     [ "close", "classVideoPlayerImpl.html#a5e9332a482f1d9294742f1ca1059b592", null ],
     [ "current_frame", "classVideoPlayerImpl.html#a0f5d949b11337c59522fe6a0b5e88bc9", null ],
@@ -16,6 +18,8 @@ var classVideoPlayerImpl =
     [ "open", "classVideoPlayerImpl.html#a2c00fbac2097847c8a2e38af0707b56c", null ],
     [ "peek_frame", "classVideoPlayerImpl.html#a38d07a450e3088c638949046067d8225", null ],
     [ "peek_frame", "classVideoPlayerImpl.html#a38d07a450e3088c638949046067d8225", null ],
+    [ "Q_DISABLE_COPY", "classVideoPlayerImpl.html#a1741d03d5ac669511a754bdac3107faa", null ],
+    [ "Q_DISABLE_COPY", "classVideoPlayerImpl.html#a1741d03d5ac669511a754bdac3107faa", null ],
     [ "rollto_nextFrame", "classVideoPlayerImpl.html#a09925d8ec75bd409d8526991e5cfa60e", null ],
     [ "rollto_nextFrame", "classVideoPlayerImpl.html#a09925d8ec75bd409d8526991e5cfa60e", null ],
     [ "total_frame", "classVideoPlayerImpl.html#a8595b0bbe2ebb205c0c02b002755b0d0", null ],

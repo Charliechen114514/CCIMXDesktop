@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('structWeatherResult.html',''); initRes
 </div><!--header-->
 <div class="contents">
 
-<p>The <a class="el" href="structWeatherResult.html" title="The WeatherResult class The WeatherResult class provides the weather result interfaces @notes my weat...">WeatherResult</a> class The <a class="el" href="structWeatherResult.html" title="The WeatherResult class The WeatherResult class provides the weather result interfaces @notes my weat...">WeatherResult</a> class provides the weather result interfaces @notes my weather request is the virtual class trying to make a request to the web apps, including some neccesary interfaces.  
+<p>The <a class="el" href="structWeatherResult.html" title="The WeatherResult class provides the weather result interfaces.">WeatherResult</a> class provides the weather result interfaces.  
  <a href="structWeatherResult.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="MyWeatherRequest_8h_source.html">MyWeatherRequest.h</a>&gt;</code></p>
@@ -113,7 +113,7 @@ Inheritance diagram for WeatherResult:</div>
  <div class="center">
   <img src="structWeatherResult.png" usemap="#WeatherResult_map" alt=""/>
   <map id="WeatherResult_map" name="WeatherResult_map">
-<area href="classAppWeatherResult.html" title="The AppWeatherResult class The AppWeatherResult class provides the weather result and implements the ..." alt="AppWeatherResult" shape="rect" coords="0,112,116,136"/>
+<area href="classAppWeatherResult.html" title="The AppWeatherResult class provides the weather result and implements the WeatherResult functionality..." alt="AppWeatherResult" shape="rect" coords="0,112,116,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -121,24 +121,60 @@ Inheritance diagram for WeatherResult:</div>
 Signals</h2></td></tr>
 <tr class="memitem:ac292b0cbe62ac22d94e271949f6b7b5e" id="r_ac292b0cbe62ac22d94e271949f6b7b5e"><td class="memItemLeft" align="right" valign="top"><a id="ac292b0cbe62ac22d94e271949f6b7b5e" name="ac292b0cbe62ac22d94e271949f6b7b5e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>finish_parse</b> ()</td></tr>
-<tr class="memdesc:ac292b0cbe62ac22d94e271949f6b7b5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">finish_parse when the parsing is finished, this signal will be emitted <br /></td></tr>
+<tr class="memdesc:ac292b0cbe62ac22d94e271949f6b7b5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emitted when the parsing is finished. <br /></td></tr>
 <tr class="separator:ac292b0cbe62ac22d94e271949f6b7b5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0bbf6a55fec1721e157da2d1c50b9c3" id="r_ac0bbf6a55fec1721e157da2d1c50b9c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWeatherResult.html#ac0bbf6a55fec1721e157da2d1c50b9c3">error_occurs</a> (QString cached_error_string)</td></tr>
-<tr class="memdesc:ac0bbf6a55fec1721e157da2d1c50b9c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">error_occurs when an error occurs, this signal will be emitted  <br /></td></tr>
+<tr class="memdesc:ac0bbf6a55fec1721e157da2d1c50b9c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emitted when an error occurs.  <br /></td></tr>
 <tr class="separator:ac0bbf6a55fec1721e157da2d1c50b9c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a05e61499944a8ccded4e5e3ceeca72b7" id="r_a05e61499944a8ccded4e5e3ceeca72b7"><td class="memItemLeft" align="right" valign="top"><a id="a05e61499944a8ccded4e5e3ceeca72b7" name="a05e61499944a8ccded4e5e3ceeca72b7"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>WeatherResult</b> (QObject *obj=nullptr)</td></tr>
+<tr class="memitem:a05e61499944a8ccded4e5e3ceeca72b7" id="r_a05e61499944a8ccded4e5e3ceeca72b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWeatherResult.html#a05e61499944a8ccded4e5e3ceeca72b7">WeatherResult</a> (QObject *obj=nullptr)</td></tr>
+<tr class="memdesc:a05e61499944a8ccded4e5e3ceeca72b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="structWeatherResult.html" title="The WeatherResult class provides the weather result interfaces.">WeatherResult</a>.  <br /></td></tr>
 <tr class="separator:a05e61499944a8ccded4e5e3ceeca72b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7241825ed885decb2ebb752a1502e400" id="r_a7241825ed885decb2ebb752a1502e400"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWeatherResult.html#a7241825ed885decb2ebb752a1502e400">parseJsonString</a> (const QString json)=0</td></tr>
-<tr class="memdesc:a7241825ed885decb2ebb752a1502e400"><td class="mdescLeft">&#160;</td><td class="mdescRight">parseJsonString defines how to parse json strings  <br /></td></tr>
+<tr class="memdesc:a7241825ed885decb2ebb752a1502e400"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses the JSON string.  <br /></td></tr>
 <tr class="separator:a7241825ed885decb2ebb752a1502e400"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="structWeatherResult.html" title="The WeatherResult class The WeatherResult class provides the weather result interfaces @notes my weat...">WeatherResult</a> class The <a class="el" href="structWeatherResult.html" title="The WeatherResult class The WeatherResult class provides the weather result interfaces @notes my weat...">WeatherResult</a> class provides the weather result interfaces @notes my weather request is the virtual class trying to make a request to the web apps, including some neccesary interfaces. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<div class="textblock"><p>The <a class="el" href="structWeatherResult.html" title="The WeatherResult class provides the weather result interfaces.">WeatherResult</a> class provides the weather result interfaces. </p>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="structWeatherResult.html" title="The WeatherResult class provides the weather result interfaces.">WeatherResult</a> is an abstract class that defines how to parse JSON strings retrieved from the web apps. </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a05e61499944a8ccded4e5e3ceeca72b7" name="a05e61499944a8ccded4e5e3ceeca72b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05e61499944a8ccded4e5e3ceeca72b7">&#9670;&#160;</a></span>WeatherResult()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">WeatherResult::WeatherResult </td>
+          <td>(</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>obj</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor for <a class="el" href="structWeatherResult.html" title="The WeatherResult class provides the weather result interfaces.">WeatherResult</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">obj</td><td>The parent QObject. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac0bbf6a55fec1721e157da2d1c50b9c3" name="ac0bbf6a55fec1721e157da2d1c50b9c3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac0bbf6a55fec1721e157da2d1c50b9c3">&#9670;&#160;</a></span>error_occurs</h2>
 
@@ -163,10 +199,10 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>error_occurs when an error occurs, this signal will be emitted </p>
+<p>Emitted when an error occurs. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">cached_error_string</td><td>the error string </td></tr>
+    <tr><td class="paramname">cached_error_string</td><td>The error string. </td></tr>
   </table>
   </dd>
 </dl>
@@ -197,10 +233,10 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>parseJsonString defines how to parse json strings </p>
+<p>Parses the JSON string. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">json</td><td>the json string waiting parse </td></tr>
+    <tr><td class="paramname">json</td><td>The JSON string to parse. </td></tr>
   </table>
   </dd>
 </dl>

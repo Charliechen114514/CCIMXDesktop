@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('classWin32PlatformProcessBroswerDriver
 </div><!--header-->
 <div class="contents">
 
-<p>The <a class="el" href="classWin32PlatformProcessBroswerDriver.html" title="The Win32PlatformProcessBroswerDriver class provides the process broswer driver.">Win32PlatformProcessBroswerDriver</a> class provides the process broswer driver.  
+<p>The <a class="el" href="classWin32PlatformProcessBroswerDriver.html" title="The Win32PlatformProcessBroswerDriver class provides the process browser driver.">Win32PlatformProcessBroswerDriver</a> class provides the process browser driver.  
  <a href="classWin32PlatformProcessBroswerDriver.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="Win32PlatformDrivers_8h_source.html">Win32PlatformDrivers.h</a>&gt;</code></p>
@@ -112,7 +112,7 @@ Inheritance diagram for Win32PlatformProcessBroswerDriver:</div>
  <div class="center">
   <img src="classWin32PlatformProcessBroswerDriver.png" usemap="#Win32PlatformProcessBroswerDriver_map" alt=""/>
   <map id="Win32PlatformProcessBroswerDriver_map" name="Win32PlatformProcessBroswerDriver_map">
-<area href="classCCIMX__AbstractProcessBroswerDriver.html" title="The CCIMX_AbstractProcessBroswerDriver class." alt="CCIMX_AbstractProcessBroswerDriver" shape="rect" coords="0,0,236,24"/>
+<area href="classCCIMX__AbstractProcessBroswerDriver.html" title="The CCIMX_AbstractProcessBroswerDriver class Abstract base class for platform-specific process browse..." alt="CCIMX_AbstractProcessBroswerDriver" shape="rect" coords="0,0,236,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -120,12 +120,14 @@ Inheritance diagram for Win32PlatformProcessBroswerDriver:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af2892000f08f0120d31bc6f4071ad152" id="r_af2892000f08f0120d31bc6f4071ad152"><td class="memItemLeft" align="right" valign="top"><a id="af2892000f08f0120d31bc6f4071ad152" name="af2892000f08f0120d31bc6f4071ad152"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Q_DISABLE_COPY</b> (<a class="el" href="classWin32PlatformProcessBroswerDriver.html">Win32PlatformProcessBroswerDriver</a>)</td></tr>
+<tr class="memdesc:af2892000f08f0120d31bc6f4071ad152"><td class="mdescLeft">&#160;</td><td class="mdescRight">disable copy sessions <br /></td></tr>
 <tr class="separator:af2892000f08f0120d31bc6f4071ad152"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5db69464caccbf598977e8774430cfd5" id="r_a5db69464caccbf598977e8774430cfd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWin32PlatformProcessBroswerDriver.html#a5db69464caccbf598977e8774430cfd5">factory</a> (QList&lt; <a class="el" href="structProcessBroswer_1_1ProcessInfo.html">ProcessBroswer::ProcessInfo</a> &gt; &amp;lists) override</td></tr>
+<tr class="memdesc:a5db69464caccbf598977e8774430cfd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory method to get process information list.  <br /></td></tr>
 <tr class="separator:a5db69464caccbf598977e8774430cfd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="classWin32PlatformProcessBroswerDriver.html" title="The Win32PlatformProcessBroswerDriver class provides the process broswer driver.">Win32PlatformProcessBroswerDriver</a> class provides the process broswer driver. </p>
+<div class="textblock"><p>The <a class="el" href="classWin32PlatformProcessBroswerDriver.html" title="The Win32PlatformProcessBroswerDriver class provides the process browser driver.">Win32PlatformProcessBroswerDriver</a> class provides the process browser driver. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a5db69464caccbf598977e8774430cfd5" name="a5db69464caccbf598977e8774430cfd5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5db69464caccbf598977e8774430cfd5">&#9670;&#160;</a></span>factory()</h2>
@@ -151,7 +153,15 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classCCIMX__AbstractProcessBroswerDriver.html">CCIMX_AbstractProcessBroswerDriver</a>.</p>
+<p>Factory method to get process information list. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lists</td><td>Reference to QList of <a class="el" href="structProcessBroswer_1_1ProcessInfo.html" title="The ProcessInfo struct Holds detailed information about a system process.">ProcessBroswer::ProcessInfo</a> to store info </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classCCIMX__AbstractProcessBroswerDriver.html#ad611b38698623bf846bf456d9fac0b3e">CCIMX_AbstractProcessBroswerDriver</a>.</p>
 
 </div>
 </div>

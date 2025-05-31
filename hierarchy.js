@@ -39,6 +39,7 @@ var hierarchy =
       [ "FileNameProviders", "classFileNameProviders.html", null ],
       [ "FileTypeInfo", "classFileTypeInfo.html", null ]
     ] ],
+    [ "g_acc", "structg__acc.html", null ],
     [ "ICM20608", "classICM20608.html", null ],
     [ "ICM20608AppData", "structICM20608AppData.html", null ],
     [ "ICM20608Data", "structICM20608Data.html", null ],
@@ -70,10 +71,15 @@ var hierarchy =
     [ "QFileSystemModel", null, [
       [ "CCIMXFileSystemModel", "classCCIMXFileSystemModel.html", null ]
     ] ],
+    [ "QGraphicsScene", null, [
+      [ "SimpleDrawingScene", "classSimpleDrawingScene.html", null ]
+    ] ],
     [ "QMainWindow", null, [
       [ "AboutMainWindow", "classAboutMainWindow.html", null ],
+      [ "CCNoterWindow", "classCCNoterWindow.html", null ],
       [ "CameraWindow", "classCameraWindow.html", null ],
       [ "DesktopMainWindow", "classDesktopMainWindow.html", null ],
+      [ "DrawerWindow", "classDrawerWindow.html", null ],
       [ "EnvironmentWindow", "classEnvironmentWindow.html", null ],
       [ "LightControllerWindow", "classLightControllerWindow.html", null ],
       [ "MainWindow", "classMainWindow.html", null ],
@@ -83,6 +89,7 @@ var hierarchy =
       [ "MediaPlayerWindow", "classMediaPlayerWindow.html", null ],
       [ "MetaInfoWindow", "classMetaInfoWindow.html", null ],
       [ "PlayListMainWindow", "classPlayListMainWindow.html", null ],
+      [ "SaveWindow", "classSaveWindow.html", null ],
       [ "SportsHealthWindow", "classSportsHealthWindow.html", null ],
       [ "SystemStateWindow", "classSystemStateWindow.html", null ],
       [ "WeatherAppMainWindow", "classWeatherAppMainWindow.html", null ]
@@ -143,12 +150,14 @@ var hierarchy =
       [ "ReadMeWidget", "classReadMeWidget.html", null ],
       [ "ScrollingLabel", "classScrollingLabel.html", null ],
       [ "SideBarWidget", "classSideBarWidget.html", null ],
+      [ "SimpleDrawerWidget", "classSimpleDrawerWidget.html", null ],
       [ "SportsChart", "classSportsChart.html", null ],
       [ "SportsDisplayWidget", "classSportsDisplayWidget.html", null ],
       [ "ToolsSideBar", "classToolsSideBar.html", null ],
       [ "WeatherChartWidget", "classWeatherChartWidget.html", null ],
       [ "WeatherDailyCard", "classWeatherDailyCard.html", null ]
     ] ],
+    [ "rol", "structrol.html", null ],
     [ "VideoPlayerImpl", "classVideoPlayerImpl.html", [
       [ "VideoPlayerOpencvImpl", "classVideoPlayerOpencvImpl.html", null ],
       [ "VideoPlayerOpencvImpl", "classVideoPlayerOpencvImpl.html", null ]

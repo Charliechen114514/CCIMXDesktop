@@ -106,7 +106,7 @@ $(document).ready(function(){initNavTree('classMemoryInfoFetcher.html',''); init
 </div><!--header-->
 <div class="contents">
 
-<p>The <a class="el" href="classMemoryInfoFetcher.html" title="The MemoryInfoFetcher class provides the memory information.">MemoryInfoFetcher</a> class provides the memory information.  
+<p>The <a class="el" href="classMemoryInfoFetcher.html" title="The MemoryInfoFetcher class Provides memory usage information in a platform-independent manner....">MemoryInfoFetcher</a> class Provides memory usage information in a platform-independent manner. Acts as a memory information fetcher interface.  
  <a href="classMemoryInfoFetcher.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="MemoryInfoFetcher_8h_source.html">MemoryInfoFetcher.h</a>&gt;</code></p>
@@ -120,48 +120,88 @@ Inheritance diagram for MemoryInfoFetcher:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMemoryInfoFetcher_1_1MemoryStat.html">MemoryStat</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="structMemoryInfoFetcher_1_1MemoryStat.html" title="The MemoryStat class provides the memory information.">MemoryStat</a> class provides the memory information.  <a href="structMemoryInfoFetcher_1_1MemoryStat.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="structMemoryInfoFetcher_1_1MemoryStat.html" title="The MemoryStat struct Holds memory statistics at the byte level.">MemoryStat</a> struct Holds memory statistics at the byte level.  <a href="structMemoryInfoFetcher_1_1MemoryStat.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
 Signals</h2></td></tr>
-<tr class="memitem:a61738867fe7eb953fc63f7d3dde99fb5" id="r_a61738867fe7eb953fc63f7d3dde99fb5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMemoryInfoFetcher.html#a61738867fe7eb953fc63f7d3dde99fb5">finish_detect_memory</a> (const <a class="el" href="structMemoryInfoFetcher_1_1MemoryStat.html">MemoryInfoFetcher::MemoryStat</a> &amp;)</td></tr>
-<tr class="memdesc:a61738867fe7eb953fc63f7d3dde99fb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">finish_detect_memory the signal to finish the memory detection  <br /></td></tr>
-<tr class="separator:a61738867fe7eb953fc63f7d3dde99fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4517c8c3b528cd95160256ecf41170aa" id="r_a4517c8c3b528cd95160256ecf41170aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMemoryInfoFetcher.html#a4517c8c3b528cd95160256ecf41170aa">finish_detect_memory</a> (const <a class="el" href="structMemoryInfoFetcher_1_1MemoryStat.html">MemoryInfoFetcher::MemoryStat</a> &amp;<a class="el" href="classMemoryInfoFetcher.html#a9bffab9b014b49e72af9822509b20578">mem_stat</a>)</td></tr>
+<tr class="memdesc:a4517c8c3b528cd95160256ecf41170aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">finish_detect_memory Signal emitted when memory information is updated.  <br /></td></tr>
+<tr class="separator:a4517c8c3b528cd95160256ecf41170aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a14ed9de319d6141d5ea9a36a49c4bf05" id="r_a14ed9de319d6141d5ea9a36a49c4bf05"><td class="memItemLeft" align="right" valign="top"><a id="a14ed9de319d6141d5ea9a36a49c4bf05" name="a14ed9de319d6141d5ea9a36a49c4bf05"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>MemoryInfoFetcher</b> (QObject *parent=nullptr)</td></tr>
+<tr class="memitem:a14ed9de319d6141d5ea9a36a49c4bf05" id="r_a14ed9de319d6141d5ea9a36a49c4bf05"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMemoryInfoFetcher.html#a14ed9de319d6141d5ea9a36a49c4bf05">MemoryInfoFetcher</a> (QObject *parent=nullptr)</td></tr>
+<tr class="memdesc:a14ed9de319d6141d5ea9a36a49c4bf05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor with optional parent.  <br /></td></tr>
 <tr class="separator:a14ed9de319d6141d5ea9a36a49c4bf05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42911be5572145fec518536da58c5d09" id="r_a42911be5572145fec518536da58c5d09"><td class="memItemLeft" align="right" valign="top"><a id="a42911be5572145fec518536da58c5d09" name="a42911be5572145fec518536da58c5d09"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~MemoryInfoFetcher</b> ()</td></tr>
+<tr class="memdesc:a42911be5572145fec518536da58c5d09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor to clean up resources. <br /></td></tr>
+<tr class="separator:a42911be5572145fec518536da58c5d09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a036e4b8739cb19ccf88a68f05005a151" id="r_a036e4b8739cb19ccf88a68f05005a151"><td class="memItemLeft" align="right" valign="top"><a id="a036e4b8739cb19ccf88a68f05005a151" name="a036e4b8739cb19ccf88a68f05005a151"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Q_DISABLE_COPY</b> (<a class="el" href="classMemoryInfoFetcher.html">MemoryInfoFetcher</a>)</td></tr>
+<tr class="memdesc:a036e4b8739cb19ccf88a68f05005a151"><td class="mdescLeft">&#160;</td><td class="mdescRight">disable copy <br /></td></tr>
 <tr class="separator:a036e4b8739cb19ccf88a68f05005a151"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adda595da6b1152a673f1449989af176d" id="r_adda595da6b1152a673f1449989af176d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMemoryInfoFetcher.html#adda595da6b1152a673f1449989af176d">set_flush_freq</a> (const int msecs)</td></tr>
-<tr class="memdesc:adda595da6b1152a673f1449989af176d"><td class="mdescLeft">&#160;</td><td class="mdescRight">set_flush_freq set the flush frequency  <br /></td></tr>
+<tr class="memdesc:adda595da6b1152a673f1449989af176d"><td class="mdescLeft">&#160;</td><td class="mdescRight">set_flush_freq Sets the frequency in milliseconds at which memory info is refreshed.  <br /></td></tr>
 <tr class="separator:adda595da6b1152a673f1449989af176d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac98e348b0cf01ea8d9cf2585ca9ec591" id="r_ac98e348b0cf01ea8d9cf2585ca9ec591"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMemoryInfoFetcher.html#ac98e348b0cf01ea8d9cf2585ca9ec591">set_capture_state</a> (bool st)</td></tr>
-<tr class="memdesc:ac98e348b0cf01ea8d9cf2585ca9ec591"><td class="mdescLeft">&#160;</td><td class="mdescRight">set_capture_state set the capture state  <br /></td></tr>
+<tr class="memdesc:ac98e348b0cf01ea8d9cf2585ca9ec591"><td class="mdescLeft">&#160;</td><td class="mdescRight">set_capture_state Enables or disables memory information capturing.  <br /></td></tr>
 <tr class="separator:ac98e348b0cf01ea8d9cf2585ca9ec591"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a35d0e4e2feb268bc805d9ad6c434de33" id="r_a35d0e4e2feb268bc805d9ad6c434de33"><td class="memItemLeft" align="right" valign="top"><a id="a35d0e4e2feb268bc805d9ad6c434de33" name="a35d0e4e2feb268bc805d9ad6c434de33"></a>
-static QString&#160;</td><td class="memItemRight" valign="bottom"><b>format_size</b> (quint64 size)</td></tr>
+<tr class="memitem:a35d0e4e2feb268bc805d9ad6c434de33" id="r_a35d0e4e2feb268bc805d9ad6c434de33"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMemoryInfoFetcher.html#a35d0e4e2feb268bc805d9ad6c434de33">format_size</a> (quint64 size)</td></tr>
+<tr class="memdesc:a35d0e4e2feb268bc805d9ad6c434de33"><td class="mdescLeft">&#160;</td><td class="mdescRight">format_size Utility function to format byte size into human-readable string.  <br /></td></tr>
 <tr class="separator:a35d0e4e2feb268bc805d9ad6c434de33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a9bffab9b014b49e72af9822509b20578" id="r_a9bffab9b014b49e72af9822509b20578"><td class="memItemLeft" align="right" valign="top"><a id="a9bffab9b014b49e72af9822509b20578" name="a9bffab9b014b49e72af9822509b20578"></a>
 struct <a class="el" href="structMemoryInfoFetcher_1_1MemoryStat.html">MemoryInfoFetcher::MemoryStat</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mem_stat</b></td></tr>
+<tr class="memdesc:a9bffab9b014b49e72af9822509b20578"><td class="mdescLeft">&#160;</td><td class="mdescRight">memory stat holder <br /></td></tr>
 <tr class="separator:a9bffab9b014b49e72af9822509b20578"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="classMemoryInfoFetcher.html" title="The MemoryInfoFetcher class provides the memory information.">MemoryInfoFetcher</a> class provides the memory information. </p>
-<dl class="section note"><dt>Note</dt><dd>this is the memory information fetcher </dd></dl>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a61738867fe7eb953fc63f7d3dde99fb5" name="a61738867fe7eb953fc63f7d3dde99fb5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a61738867fe7eb953fc63f7d3dde99fb5">&#9670;&#160;</a></span>finish_detect_memory</h2>
+<div class="textblock"><p>The <a class="el" href="classMemoryInfoFetcher.html" title="The MemoryInfoFetcher class Provides memory usage information in a platform-independent manner....">MemoryInfoFetcher</a> class Provides memory usage information in a platform-independent manner. Acts as a memory information fetcher interface. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a14ed9de319d6141d5ea9a36a49c4bf05" name="a14ed9de319d6141d5ea9a36a49c4bf05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14ed9de319d6141d5ea9a36a49c4bf05">&#9670;&#160;</a></span>MemoryInfoFetcher()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MemoryInfoFetcher::MemoryInfoFetcher </td>
+          <td>(</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor with optional parent. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Pointer to the QObject parent, default is nullptr. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4517c8c3b528cd95160256ecf41170aa" name="a4517c8c3b528cd95160256ecf41170aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4517c8c3b528cd95160256ecf41170aa">&#9670;&#160;</a></span>finish_detect_memory</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -173,7 +213,7 @@ struct <a class="el" href="structMemoryInfoFetcher_1_1MemoryStat.html">MemoryInf
           <td class="memname">void MemoryInfoFetcher::finish_detect_memory </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structMemoryInfoFetcher_1_1MemoryStat.html">MemoryInfoFetcher::MemoryStat</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><em>mem_stat</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -184,13 +224,48 @@ struct <a class="el" href="structMemoryInfoFetcher_1_1MemoryStat.html">MemoryInf
 </table>
 </div><div class="memdoc">
 
-<p>finish_detect_memory the signal to finish the memory detection </p>
+<p>finish_detect_memory Signal emitted when memory information is updated. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">mem_stat</td><td>the memory information carried in signals </td></tr>
+    <tr><td class="paramname">mem_stat</td><td>Current memory statistics. </td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a35d0e4e2feb268bc805d9ad6c434de33" name="a35d0e4e2feb268bc805d9ad6c434de33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35d0e4e2feb268bc805d9ad6c434de33">&#9670;&#160;</a></span>format_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString MemoryInfoFetcher::format_size </td>
+          <td>(</td>
+          <td class="paramtype">quint64&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>format_size Utility function to format byte size into human-readable string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>Size in bytes. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Formatted size string. </dd></dl>
 
 </div>
 </div>
@@ -210,10 +285,10 @@ struct <a class="el" href="structMemoryInfoFetcher_1_1MemoryStat.html">MemoryInf
       </table>
 </div><div class="memdoc">
 
-<p>set_capture_state set the capture state </p>
+<p>set_capture_state Enables or disables memory information capturing. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">st</td><td>the state to set, true means capture, false means not </td></tr>
+    <tr><td class="paramname">st</td><td>True to start capturing, false to stop. </td></tr>
   </table>
   </dd>
 </dl>
@@ -244,10 +319,10 @@ struct <a class="el" href="structMemoryInfoFetcher_1_1MemoryStat.html">MemoryInf
 </table>
 </div><div class="memdoc">
 
-<p>set_flush_freq set the flush frequency </p>
+<p>set_flush_freq Sets the frequency in milliseconds at which memory info is refreshed. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">msecs</td><td>the msecs to flush </td></tr>
+    <tr><td class="paramname">msecs</td><td>Flush interval in milliseconds. </td></tr>
   </table>
   </dd>
 </dl>

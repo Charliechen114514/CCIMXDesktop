@@ -109,7 +109,7 @@ $(function(){initNavTree('class_linux_platform_memory_info_driver.html',''); ini
 </div><!--header-->
 <div class="contents">
 
-<p>The <a class="el" href="class_linux_platform_memory_info_driver.html" title="The LinuxPlatformMemoryInfoDriver class provides the memory info driver.">LinuxPlatformMemoryInfoDriver</a> class provides the memory info driver.  
+<p>The <a class="el" href="class_linux_platform_memory_info_driver.html" title="The LinuxPlatformMemoryInfoDriver class provides the memory info driver for Linux.">LinuxPlatformMemoryInfoDriver</a> class provides the memory info driver for Linux.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="linuxplatformdrivers_8h_source.html">linuxplatformdrivers.h</a>&gt;</code></p>
@@ -119,7 +119,7 @@ Inheritance diagram for LinuxPlatformMemoryInfoDriver:</div>
  <div class="center">
   <img src="class_linux_platform_memory_info_driver.png" usemap="#LinuxPlatformMemoryInfoDriver_map" alt=""/>
   <map id="LinuxPlatformMemoryInfoDriver_map" name="LinuxPlatformMemoryInfoDriver_map">
-<area href="class_c_c_i_m_x___abstract_memory_info_driver.html" title="The CCIMX_AbstractMemoryInfoDriver class provides the abstract class for the memory information drive..." alt="CCIMX_AbstractMemoryInfoDriver" shape="rect" coords="0,0,210,24"/>
+<area href="class_c_c_i_m_x___abstract_memory_info_driver.html" title="The CCIMX_AbstractMemoryInfoDriver class Abstract base class for platform-specific memory information..." alt="CCIMX_AbstractMemoryInfoDriver" shape="rect" coords="0,0,210,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -127,12 +127,14 @@ Inheritance diagram for LinuxPlatformMemoryInfoDriver:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a52f4ebd540c8a740f8f53123fb1f6bde" id="r_a52f4ebd540c8a740f8f53123fb1f6bde"><td class="memItemLeft" align="right" valign="top"><a id="a52f4ebd540c8a740f8f53123fb1f6bde" name="a52f4ebd540c8a740f8f53123fb1f6bde"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Q_DISABLE_COPY</b> (<a class="el" href="class_linux_platform_memory_info_driver.html">LinuxPlatformMemoryInfoDriver</a>)</td></tr>
+<tr class="memdesc:a52f4ebd540c8a740f8f53123fb1f6bde"><td class="mdescLeft">&#160;</td><td class="mdescRight">disable copy <br /></td></tr>
 <tr class="separator:a52f4ebd540c8a740f8f53123fb1f6bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1348cc81123078c38ee1aa6a02ea6a9" id="r_aa1348cc81123078c38ee1aa6a02ea6a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1348cc81123078c38ee1aa6a02ea6a9">factory</a> (<a class="el" href="struct_memory_info_fetcher_1_1_memory_stat.html">MemoryInfoFetcher::MemoryStat</a> &amp;memory_state) override</td></tr>
+<tr class="memdesc:aa1348cc81123078c38ee1aa6a02ea6a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory method to get memory stats.  <br /></td></tr>
 <tr class="separator:aa1348cc81123078c38ee1aa6a02ea6a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="class_linux_platform_memory_info_driver.html" title="The LinuxPlatformMemoryInfoDriver class provides the memory info driver.">LinuxPlatformMemoryInfoDriver</a> class provides the memory info driver. </p>
+<div class="textblock"><p>The <a class="el" href="class_linux_platform_memory_info_driver.html" title="The LinuxPlatformMemoryInfoDriver class provides the memory info driver for Linux.">LinuxPlatformMemoryInfoDriver</a> class provides the memory info driver for Linux. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aa1348cc81123078c38ee1aa6a02ea6a9" name="aa1348cc81123078c38ee1aa6a02ea6a9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa1348cc81123078c38ee1aa6a02ea6a9">&#9670;&#160;</a></span>factory()</h2>
@@ -157,7 +159,15 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="class_c_c_i_m_x___abstract_memory_info_driver.html">CCIMX_AbstractMemoryInfoDriver</a>.</p>
+<p>Factory method to get memory stats. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">memory_state</td><td>Reference to <a class="el" href="struct_memory_info_fetcher_1_1_memory_stat.html" title="The MemoryStat struct Holds memory statistics at the byte level.">MemoryInfoFetcher::MemoryStat</a> to store stats. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="class_c_c_i_m_x___abstract_memory_info_driver.html#a3074fcdfdfa51ea3c315ddddd7ed881f">CCIMX_AbstractMemoryInfoDriver</a>.</p>
 
 </div>
 </div>

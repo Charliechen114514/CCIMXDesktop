@@ -105,6 +105,11 @@ $(document).ready(function(){initNavTree('classCCMediaPlayList.html',''); initRe
   <div class="headertitle"><div class="title">CCMediaPlayList Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The <a class="el" href="classCCMediaPlayList.html" title="The CCMediaPlayList class manages a playlist with various play modes.">CCMediaPlayList</a> class manages a playlist with various play modes.  
+ <a href="classCCMediaPlayList.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="CCMediaPlayList_8h_source.html">CCMediaPlayList.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for CCMediaPlayList:</div>
 <div class="dyncontent">
@@ -119,79 +124,81 @@ Public Types</h2></td></tr>
 , <a class="el" href="classCCMediaPlayList.html#a22ea885ed695b9f7fcabd7b117b4e0b3acae9881cfbdbd74078ce3d31eb060791">ListPlay</a>
 , <a class="el" href="classCCMediaPlayList.html#a22ea885ed695b9f7fcabd7b117b4e0b3a2c62ffd47a07bdb6cb4720a0bad933cd">ListCycle</a>
  }</td></tr>
-<tr class="memdesc:a22ea885ed695b9f7fcabd7b117b4e0b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The PlayMode enum provides the play modes.  <a href="classCCMediaPlayList.html#a22ea885ed695b9f7fcabd7b117b4e0b3">More...</a><br /></td></tr>
+<tr class="memdesc:a22ea885ed695b9f7fcabd7b117b4e0b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">PlayMode enum defines playback modes.  <a href="classCCMediaPlayList.html#a22ea885ed695b9f7fcabd7b117b4e0b3">More...</a><br /></td></tr>
 <tr class="separator:a22ea885ed695b9f7fcabd7b117b4e0b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-slots" name="pub-slots"></a>
 Public Slots</h2></td></tr>
 <tr class="memitem:a8cdc1504dab41103a260c634338fd6cd" id="r_a8cdc1504dab41103a260c634338fd6cd"><td class="memItemLeft" align="right" valign="top"><a id="a8cdc1504dab41103a260c634338fd6cd" name="a8cdc1504dab41103a260c634338fd6cd"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>flush_play_list</b> ()</td></tr>
-<tr class="memdesc:a8cdc1504dab41103a260c634338fd6cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">flush_play_list flush the play list, moves the playlist into actual one <br /></td></tr>
+<tr class="memdesc:a8cdc1504dab41103a260c634338fd6cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flush the editable play list into actual_play_list, making changes effective. <br /></td></tr>
 <tr class="separator:a8cdc1504dab41103a260c634338fd6cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
 Signals</h2></td></tr>
 <tr class="memitem:addb3f2f5f4ec2b3c4df9f1cde7dc93b0" id="r_addb3f2f5f4ec2b3c4df9f1cde7dc93b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCMediaPlayList.html#addb3f2f5f4ec2b3c4df9f1cde7dc93b0">playModeChanged</a> (const <a class="el" href="classCCMediaPlayList.html#a22ea885ed695b9f7fcabd7b117b4e0b3">PlayMode</a> mode)</td></tr>
-<tr class="memdesc:addb3f2f5f4ec2b3c4df9f1cde7dc93b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">playModeChanged the signal indicating the play mode changed  <br /></td></tr>
+<tr class="memdesc:addb3f2f5f4ec2b3c4df9f1cde7dc93b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal emitted when play mode changes.  <br /></td></tr>
 <tr class="separator:addb3f2f5f4ec2b3c4df9f1cde7dc93b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a32b802259d0a81fa00edd6b4a0bc46d0" id="r_a32b802259d0a81fa00edd6b4a0bc46d0"><td class="memItemLeft" align="right" valign="top"><a id="a32b802259d0a81fa00edd6b4a0bc46d0" name="a32b802259d0a81fa00edd6b4a0bc46d0"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CCMediaPlayList</b> (QObject *parent=nullptr)</td></tr>
+<tr class="memitem:a32b802259d0a81fa00edd6b4a0bc46d0" id="r_a32b802259d0a81fa00edd6b4a0bc46d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCMediaPlayList.html#a32b802259d0a81fa00edd6b4a0bc46d0">CCMediaPlayList</a> (QObject *parent=nullptr)</td></tr>
+<tr class="memdesc:a32b802259d0a81fa00edd6b4a0bc46d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classCCMediaPlayList.html" title="The CCMediaPlayList class manages a playlist with various play modes.">CCMediaPlayList</a> object.  <br /></td></tr>
 <tr class="separator:a32b802259d0a81fa00edd6b4a0bc46d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad51a9b2199e30a9bf4ca809ef62acd51" id="r_ad51a9b2199e30a9bf4ca809ef62acd51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCMediaPlayList.html#ad51a9b2199e30a9bf4ca809ef62acd51">set_play_mode</a> (const <a class="el" href="classCCMediaPlayList.html#a22ea885ed695b9f7fcabd7b117b4e0b3">PlayMode</a> mode)</td></tr>
-<tr class="memdesc:ad51a9b2199e30a9bf4ca809ef62acd51"><td class="mdescLeft">&#160;</td><td class="mdescRight">set_play_mode set the play mode  <br /></td></tr>
+<tr class="memdesc:ad51a9b2199e30a9bf4ca809ef62acd51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the play mode.  <br /></td></tr>
 <tr class="separator:ad51a9b2199e30a9bf4ca809ef62acd51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa87872c991b4c181e065aef59570391f" id="r_aa87872c991b4c181e065aef59570391f"><td class="memItemLeft" align="right" valign="top"><a id="aa87872c991b4c181e065aef59570391f" name="aa87872c991b4c181e065aef59570391f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>flow_mode</b> ()</td></tr>
-<tr class="memdesc:aa87872c991b4c181e065aef59570391f"><td class="mdescLeft">&#160;</td><td class="mdescRight">flow_mode flow the mode once <br /></td></tr>
+<tr class="memdesc:aa87872c991b4c181e065aef59570391f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cycle the play mode to the next one. <br /></td></tr>
 <tr class="separator:aa87872c991b4c181e065aef59570391f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac60aeacbb183d17126bfd2867cfa9280" id="r_ac60aeacbb183d17126bfd2867cfa9280"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCCMediaPlayList.html#a22ea885ed695b9f7fcabd7b117b4e0b3">PlayMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCMediaPlayList.html#ac60aeacbb183d17126bfd2867cfa9280">get_play_mode</a> () const</td></tr>
-<tr class="memdesc:ac60aeacbb183d17126bfd2867cfa9280"><td class="mdescLeft">&#160;</td><td class="mdescRight">get_play_mode get the play mode  <br /></td></tr>
+<tr class="memdesc:ac60aeacbb183d17126bfd2867cfa9280"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current play mode.  <br /></td></tr>
 <tr class="separator:ac60aeacbb183d17126bfd2867cfa9280"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b6c8ec7d64c49707646386e74062488" id="r_a7b6c8ec7d64c49707646386e74062488"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structMediaListMails.html">MediaListMails</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCMediaPlayList.html#a7b6c8ec7d64c49707646386e74062488">fetch_prev_play</a> ()</td></tr>
-<tr class="memdesc:a7b6c8ec7d64c49707646386e74062488"><td class="mdescLeft">&#160;</td><td class="mdescRight">fetch_prev_play fetch the previous play  <br /></td></tr>
+<tr class="memdesc:a7b6c8ec7d64c49707646386e74062488"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetch previous media info according to play mode.  <br /></td></tr>
 <tr class="separator:a7b6c8ec7d64c49707646386e74062488"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87e0329a7a3f6d5a993f562228751f9c" id="r_a87e0329a7a3f6d5a993f562228751f9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structMediaListMails.html">MediaListMails</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCMediaPlayList.html#a87e0329a7a3f6d5a993f562228751f9c">fetch_next_play</a> ()</td></tr>
-<tr class="memdesc:a87e0329a7a3f6d5a993f562228751f9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">fetch_next_play fetch the next play  <br /></td></tr>
+<tr class="memdesc:a87e0329a7a3f6d5a993f562228751f9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetch next media info according to play mode.  <br /></td></tr>
 <tr class="separator:a87e0329a7a3f6d5a993f562228751f9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92825a1328290f7ccdc0629a002920e6" id="r_a92825a1328290f7ccdc0629a002920e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structMediaListMails.html">MediaListMails</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCMediaPlayList.html#a92825a1328290f7ccdc0629a002920e6">fetch_current_play</a> ()</td></tr>
-<tr class="memdesc:a92825a1328290f7ccdc0629a002920e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">fetch_current_play fetch the current play  <br /></td></tr>
+<tr class="memdesc:a92825a1328290f7ccdc0629a002920e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetch current media info.  <br /></td></tr>
 <tr class="separator:a92825a1328290f7ccdc0629a002920e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdc84b23ae1686db0269226c94d90e8c" id="r_acdc84b23ae1686db0269226c94d90e8c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structMediaListMails.html">MediaListMails</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCMediaPlayList.html#acdc84b23ae1686db0269226c94d90e8c">fetch_from_name</a> (const QString &amp;where)</td></tr>
-<tr class="memdesc:acdc84b23ae1686db0269226c94d90e8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">fetch_from_name fetch the play from name  <br /></td></tr>
+<tr class="memdesc:acdc84b23ae1686db0269226c94d90e8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetch media info by name.  <br /></td></tr>
 <tr class="separator:acdc84b23ae1686db0269226c94d90e8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae4da67df5bc12ee8e401c594dcdd5c3" id="r_aae4da67df5bc12ee8e401c594dcdd5c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structMediaListMails.html">MediaListMails</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCMediaPlayList.html#aae4da67df5bc12ee8e401c594dcdd5c3">fetch_first_play</a> ()</td></tr>
-<tr class="memdesc:aae4da67df5bc12ee8e401c594dcdd5c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">fetch_first_play fetch the first play  <br /></td></tr>
+<tr class="memdesc:aae4da67df5bc12ee8e401c594dcdd5c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetch first media info in the actual playlist.  <br /></td></tr>
 <tr class="separator:aae4da67df5bc12ee8e401c594dcdd5c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24b68f240ed39e66ad2e9286f60377a0" id="r_a24b68f240ed39e66ad2e9286f60377a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structMediaListMails.html">MediaListMails</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCMediaPlayList.html#a24b68f240ed39e66ad2e9286f60377a0">fetch_last_play</a> ()</td></tr>
-<tr class="memdesc:a24b68f240ed39e66ad2e9286f60377a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">fetch_last_play fetch the last play  <br /></td></tr>
+<tr class="memdesc:a24b68f240ed39e66ad2e9286f60377a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetch last media info in the actual playlist.  <br /></td></tr>
 <tr class="separator:a24b68f240ed39e66ad2e9286f60377a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c252087e36d48ff4b278c86f1df2330" id="r_a9c252087e36d48ff4b278c86f1df2330"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCMediaPlayList.html#a9c252087e36d48ff4b278c86f1df2330">currentPlayingList</a> () const</td></tr>
-<tr class="memdesc:a9c252087e36d48ff4b278c86f1df2330"><td class="mdescLeft">&#160;</td><td class="mdescRight">currentPlayingList get the actual play list  <br /></td></tr>
+<tr class="memdesc:a9c252087e36d48ff4b278c86f1df2330"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current actual playing list.  <br /></td></tr>
 <tr class="separator:a9c252087e36d48ff4b278c86f1df2330"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e0b767ee157bfb31d8448da10f43e4b" id="r_a5e0b767ee157bfb31d8448da10f43e4b"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCMediaPlayList.html#a5e0b767ee157bfb31d8448da10f43e4b">actualList</a> () const</td></tr>
-<tr class="memdesc:a5e0b767ee157bfb31d8448da10f43e4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">actualList get the current playing list  <br /></td></tr>
+<tr class="memdesc:a5e0b767ee157bfb31d8448da10f43e4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the editable play list.  <br /></td></tr>
 <tr class="separator:a5e0b767ee157bfb31d8448da10f43e4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0c86cc509a3eb75da7128a471f715ee" id="r_aa0c86cc509a3eb75da7128a471f715ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCMediaPlayList.html#aa0c86cc509a3eb75da7128a471f715ee">get_actualListlist_size</a> ()</td></tr>
-<tr class="memdesc:aa0c86cc509a3eb75da7128a471f715ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">get_actualListlist_size get the actual list size  <br /></td></tr>
+<tr class="memdesc:aa0c86cc509a3eb75da7128a471f715ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get size of the editable play list.  <br /></td></tr>
 <tr class="separator:aa0c86cc509a3eb75da7128a471f715ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a0901d47ef75d9543ecb9d603773c74" id="r_a4a0901d47ef75d9543ecb9d603773c74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCMediaPlayList.html#a4a0901d47ef75d9543ecb9d603773c74">enqueue_play</a> (const QStringList &amp;media_sources)</td></tr>
-<tr class="memdesc:a4a0901d47ef75d9543ecb9d603773c74"><td class="mdescLeft">&#160;</td><td class="mdescRight">enqueue_play enqueue the play list  <br /></td></tr>
+<tr class="memdesc:a4a0901d47ef75d9543ecb9d603773c74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append media sources to the play list.  <br /></td></tr>
 <tr class="separator:a4a0901d47ef75d9543ecb9d603773c74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68daf8f790fd4be4389c284f2e1eb150" id="r_a68daf8f790fd4be4389c284f2e1eb150"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCMediaPlayList.html#a68daf8f790fd4be4389c284f2e1eb150">remove_play_list</a> (const QStringList &amp;media_sources)</td></tr>
-<tr class="memdesc:a68daf8f790fd4be4389c284f2e1eb150"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove_play_list remove the play list  <br /></td></tr>
+<tr class="memdesc:a68daf8f790fd4be4389c284f2e1eb150"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove media sources from the play list.  <br /></td></tr>
 <tr class="separator:a68daf8f790fd4be4389c284f2e1eb150"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a02e1f3f29461356cf685f51a7873c851" id="r_a02e1f3f29461356cf685f51a7873c851"><td class="memItemLeft" align="right" valign="top"><a id="a02e1f3f29461356cf685f51a7873c851" name="a02e1f3f29461356cf685f51a7873c851"></a>
 static constexpr const <a class="el" href="classCCMediaPlayList.html#a22ea885ed695b9f7fcabd7b117b4e0b3">PlayMode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DEF_MODE</b> = <a class="el" href="classCCMediaPlayList.html#a22ea885ed695b9f7fcabd7b117b4e0b3a2c62ffd47a07bdb6cb4720a0bad933cd">PlayMode::ListCycle</a></td></tr>
-<tr class="memdesc:a02e1f3f29461356cf685f51a7873c851"><td class="mdescLeft">&#160;</td><td class="mdescRight">DEF_MODE the default play mode. <br /></td></tr>
+<tr class="memdesc:a02e1f3f29461356cf685f51a7873c851"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default play mode. <br /></td></tr>
 <tr class="separator:a02e1f3f29461356cf685f51a7873c851"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="classCCMediaPlayList.html" title="The CCMediaPlayList class manages a playlist with various play modes.">CCMediaPlayList</a> class manages a playlist with various play modes. </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a22ea885ed695b9f7fcabd7b117b4e0b3" name="a22ea885ed695b9f7fcabd7b117b4e0b3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a22ea885ed695b9f7fcabd7b117b4e0b3">&#9670;&#160;</a></span>PlayMode</h2>
 
@@ -212,17 +219,52 @@ static constexpr const <a class="el" href="classCCMediaPlayList.html#a22ea885ed6
 </table>
 </div><div class="memdoc">
 
-<p>The PlayMode enum provides the play modes. </p>
+<p>PlayMode enum defines playback modes. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a22ea885ed695b9f7fcabd7b117b4e0b3ac7fc2ee61fad0e2bba6754efdee31481" name="a22ea885ed695b9f7fcabd7b117b4e0b3ac7fc2ee61fad0e2bba6754efdee31481"></a>OneShot&#160;</td><td class="fielddoc"><p>play one time, then stop </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a22ea885ed695b9f7fcabd7b117b4e0b3ac7fc2ee61fad0e2bba6754efdee31481" name="a22ea885ed695b9f7fcabd7b117b4e0b3ac7fc2ee61fad0e2bba6754efdee31481"></a>OneShot&#160;</td><td class="fielddoc"><p>Play one media once then stop. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a22ea885ed695b9f7fcabd7b117b4e0b3aa098ec399dbdac60e3ebd955ebf3452f" name="a22ea885ed695b9f7fcabd7b117b4e0b3aa098ec399dbdac60e3ebd955ebf3452f"></a>OneCycle&#160;</td><td class="fielddoc"><p>play current again and again ~ </p>
+<tr><td class="fieldname"><a id="a22ea885ed695b9f7fcabd7b117b4e0b3aa098ec399dbdac60e3ebd955ebf3452f" name="a22ea885ed695b9f7fcabd7b117b4e0b3aa098ec399dbdac60e3ebd955ebf3452f"></a>OneCycle&#160;</td><td class="fielddoc"><p>Repeat the current media endlessly. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a22ea885ed695b9f7fcabd7b117b4e0b3acae9881cfbdbd74078ce3d31eb060791" name="a22ea885ed695b9f7fcabd7b117b4e0b3acae9881cfbdbd74078ce3d31eb060791"></a>ListPlay&#160;</td><td class="fielddoc"><p>play the list once </p>
+<tr><td class="fieldname"><a id="a22ea885ed695b9f7fcabd7b117b4e0b3acae9881cfbdbd74078ce3d31eb060791" name="a22ea885ed695b9f7fcabd7b117b4e0b3acae9881cfbdbd74078ce3d31eb060791"></a>ListPlay&#160;</td><td class="fielddoc"><p>Play the playlist once in order. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a22ea885ed695b9f7fcabd7b117b4e0b3a2c62ffd47a07bdb6cb4720a0bad933cd" name="a22ea885ed695b9f7fcabd7b117b4e0b3a2c62ffd47a07bdb6cb4720a0bad933cd"></a>ListCycle&#160;</td><td class="fielddoc"><p>play the list again and again ~ </p>
+<tr><td class="fieldname"><a id="a22ea885ed695b9f7fcabd7b117b4e0b3a2c62ffd47a07bdb6cb4720a0bad933cd" name="a22ea885ed695b9f7fcabd7b117b4e0b3a2c62ffd47a07bdb6cb4720a0bad933cd"></a>ListCycle&#160;</td><td class="fielddoc"><p>Play the playlist repeatedly. </p>
 </td></tr>
 </table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a32b802259d0a81fa00edd6b4a0bc46d0" name="a32b802259d0a81fa00edd6b4a0bc46d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32b802259d0a81fa00edd6b4a0bc46d0">&#9670;&#160;</a></span>CCMediaPlayList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CCMediaPlayList::CCMediaPlayList </td>
+          <td>(</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a new <a class="el" href="classCCMediaPlayList.html" title="The CCMediaPlayList class manages a playlist with various play modes.">CCMediaPlayList</a> object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -250,9 +292,8 @@ static constexpr const <a class="el" href="classCCMediaPlayList.html#a22ea885ed6
 </table>
 </div><div class="memdoc">
 
-<p>actualList get the current playing list </p>
-<dl class="section return"><dt>Returns</dt><dd>the current playing list </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>this means the list that holding really, for examples when we modified the list and ready check the situations, use this </dd></dl>
+<p>Get the editable play list. </p>
+<dl class="section return"><dt>Returns</dt><dd>QStringList of media in play list (modifiable) </dd></dl>
 
 </div>
 </div>
@@ -279,9 +320,9 @@ static constexpr const <a class="el" href="classCCMediaPlayList.html#a22ea885ed6
 </table>
 </div><div class="memdoc">
 
-<p>currentPlayingList get the actual play list </p>
-<dl class="section return"><dt>Returns</dt><dd>the actual play list </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>diffrently, this means the list really playings, that means any modifications wont do the stuff here, what we get the list we really play and operate </dd></dl>
+<p>Get the current actual playing list. </p>
+<dl class="section return"><dt>Returns</dt><dd>QStringList of media actually played </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This list is the one actively used for playback (immutable until flushed) </dd></dl>
 
 </div>
 </div>
@@ -301,10 +342,10 @@ static constexpr const <a class="el" href="classCCMediaPlayList.html#a22ea885ed6
       </table>
 </div><div class="memdoc">
 
-<p>enqueue_play enqueue the play list </p>
+<p>Append media sources to the play list. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">media_sources</td><td>the media sources to enqueue </td></tr>
+    <tr><td class="paramname">media_sources</td><td>List of media paths/names to add </td></tr>
   </table>
   </dd>
 </dl>
@@ -334,8 +375,8 @@ static constexpr const <a class="el" href="classCCMediaPlayList.html#a22ea885ed6
 </table>
 </div><div class="memdoc">
 
-<p>fetch_current_play fetch the current play </p>
-<dl class="section return"><dt>Returns</dt><dd>the current play </dd></dl>
+<p>Fetch current media info. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="structMediaListMails.html" title="The MediaListMails struct provides play status info.">MediaListMails</a> of currently playing media </dd></dl>
 
 </div>
 </div>
@@ -354,8 +395,8 @@ static constexpr const <a class="el" href="classCCMediaPlayList.html#a22ea885ed6
       </table>
 </div><div class="memdoc">
 
-<p>fetch_first_play fetch the first play </p>
-<dl class="section return"><dt>Returns</dt><dd>the first play </dd></dl>
+<p>Fetch first media info in the actual playlist. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="structMediaListMails.html" title="The MediaListMails struct provides play status info.">MediaListMails</a> of first media </dd></dl>
 
 </div>
 </div>
@@ -375,14 +416,14 @@ static constexpr const <a class="el" href="classCCMediaPlayList.html#a22ea885ed6
       </table>
 </div><div class="memdoc">
 
-<p>fetch_from_name fetch the play from name </p>
+<p>Fetch media info by name. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">where</td><td>the name to fetch </td></tr>
+    <tr><td class="paramname">where</td><td>The media name or path to fetch </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the play info </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="structMediaListMails.html" title="The MediaListMails struct provides play status info.">MediaListMails</a> with play info for the given media </dd></dl>
 
 </div>
 </div>
@@ -401,8 +442,8 @@ static constexpr const <a class="el" href="classCCMediaPlayList.html#a22ea885ed6
       </table>
 </div><div class="memdoc">
 
-<p>fetch_last_play fetch the last play </p>
-<dl class="section return"><dt>Returns</dt><dd>the last play </dd></dl>
+<p>Fetch last media info in the actual playlist. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="structMediaListMails.html" title="The MediaListMails struct provides play status info.">MediaListMails</a> of last media </dd></dl>
 
 </div>
 </div>
@@ -421,8 +462,8 @@ static constexpr const <a class="el" href="classCCMediaPlayList.html#a22ea885ed6
       </table>
 </div><div class="memdoc">
 
-<p>fetch_next_play fetch the next play </p>
-<dl class="section return"><dt>Returns</dt><dd>the next play </dd></dl>
+<p>Fetch next media info according to play mode. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="structMediaListMails.html" title="The MediaListMails struct provides play status info.">MediaListMails</a> containing next enabled flag and current playing info </dd></dl>
 
 </div>
 </div>
@@ -441,8 +482,8 @@ static constexpr const <a class="el" href="classCCMediaPlayList.html#a22ea885ed6
       </table>
 </div><div class="memdoc">
 
-<p>fetch_prev_play fetch the previous play </p>
-<dl class="section return"><dt>Returns</dt><dd>the previous play </dd></dl>
+<p>Fetch previous media info according to play mode. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="structMediaListMails.html" title="The MediaListMails struct provides play status info.">MediaListMails</a> containing prev enabled flag and current playing info </dd></dl>
 
 </div>
 </div>
@@ -469,9 +510,8 @@ static constexpr const <a class="el" href="classCCMediaPlayList.html#a22ea885ed6
 </table>
 </div><div class="memdoc">
 
-<p>get_actualListlist_size get the actual list size </p>
-<dl class="section return"><dt>Returns</dt><dd>the actual list size </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>this is the size of the play list, not the actual one </dd></dl>
+<p>Get size of the editable play list. </p>
+<dl class="section return"><dt>Returns</dt><dd>int size of play_list </dd></dl>
 
 </div>
 </div>
@@ -498,8 +538,8 @@ static constexpr const <a class="el" href="classCCMediaPlayList.html#a22ea885ed6
 </table>
 </div><div class="memdoc">
 
-<p>get_play_mode get the play mode </p>
-<dl class="section return"><dt>Returns</dt><dd>the play mode </dd></dl>
+<p>Get current play mode. </p>
+<dl class="section return"><dt>Returns</dt><dd>current PlayMode </dd></dl>
 
 </div>
 </div>
@@ -527,10 +567,10 @@ static constexpr const <a class="el" href="classCCMediaPlayList.html#a22ea885ed6
 </table>
 </div><div class="memdoc">
 
-<p>playModeChanged the signal indicating the play mode changed </p>
+<p>Signal emitted when play mode changes. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">mode</td><td>the play mode </td></tr>
+    <tr><td class="paramname">mode</td><td>The new PlayMode </td></tr>
   </table>
   </dd>
 </dl>
@@ -553,10 +593,10 @@ static constexpr const <a class="el" href="classCCMediaPlayList.html#a22ea885ed6
       </table>
 </div><div class="memdoc">
 
-<p>remove_play_list remove the play list </p>
+<p>Remove media sources from the play list. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">media_sources</td><td>the media sources to remove </td></tr>
+    <tr><td class="paramname">media_sources</td><td>List of media paths/names to remove </td></tr>
   </table>
   </dd>
 </dl>
@@ -579,10 +619,10 @@ static constexpr const <a class="el" href="classCCMediaPlayList.html#a22ea885ed6
       </table>
 </div><div class="memdoc">
 
-<p>set_play_mode set the play mode </p>
+<p>Set the play mode. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">mode</td><td>the play mode to set </td></tr>
+    <tr><td class="paramname">mode</td><td>PlayMode to set </td></tr>
   </table>
   </dd>
 </dl>

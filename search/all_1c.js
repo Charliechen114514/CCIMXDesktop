@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['一些运行截图_0',['一些运行截图',['../md_README.html#autotoc_md4',1,'']]]
+  ['⚙️_20tt_20core_20tt_0',['⚙️ tt core tt',['../md_Components-explain-CN.html#autotoc_md33',1,'⚙️ &lt;tt&gt;core&lt;/tt&gt;'],['../md_Components-explain-EN.html#autotoc_md45',1,'⚙️ &lt;tt&gt;core&lt;/tt&gt;']]]
 ];

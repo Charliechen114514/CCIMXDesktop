@@ -10,6 +10,7 @@ var classCCPdfViewer =
     [ "current_zoom", "classCCPdfViewer.html#a3e06c01d172da27bb83363ffc468be5c", null ],
     [ "fresh_render", "classCCPdfViewer.html#ac7f3f2ba436fba2eedeaf5580d4630d5", null ],
     [ "fresh_zoom", "classCCPdfViewer.html#ad2087b6950aafc024c98aa3bc1ec2277", null ],
+    [ "Q_DISABLE_COPY", "classCCPdfViewer.html#a7e1c4f5bfd54a85ea1d525bd7a75c38c", null ],
     [ "set_zoom_step", "classCCPdfViewer.html#a81c9184d13e341d3fd6e0f34c7333d1f", null ],
     [ "unbindDocument", "classCCPdfViewer.html#a26ede651e15807399423cf74ea336ee4", null ],
     [ "zoom", "classCCPdfViewer.html#a51b31290cb21bdd0dd2e77a1546d6b52", null ]

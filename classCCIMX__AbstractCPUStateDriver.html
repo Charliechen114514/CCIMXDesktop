@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('classCCIMX__AbstractCPUStateDriver.htm
 </div><!--header-->
 <div class="contents">
 
-<p>The <a class="el" href="classCCIMX__AbstractCPUStateDriver.html" title="The CCIMX_AbstractCPUStateDriver class factory class to provide the correct cpu state impls.">CCIMX_AbstractCPUStateDriver</a> class factory class to provide the correct cpu state impls.  
+<p>The <a class="el" href="classCCIMX__AbstractCPUStateDriver.html" title="The CCIMX_AbstractCPUStateDriver class Abstract base class factory to provide platform-specific CPU s...">CCIMX_AbstractCPUStateDriver</a> class Abstract base class factory to provide platform-specific CPU state implementations.  
  <a href="classCCIMX__AbstractCPUStateDriver.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="CPUStateFetcher_8h_source.html">CPUStateFetcher.h</a>&gt;</code></p>
@@ -112,20 +112,57 @@ Inheritance diagram for CCIMX_AbstractCPUStateDriver:</div>
  <div class="center">
   <img src="classCCIMX__AbstractCPUStateDriver.png" usemap="#CCIMX_5FAbstractCPUStateDriver_map" alt=""/>
   <map id="CCIMX_5FAbstractCPUStateDriver_map" name="CCIMX_5FAbstractCPUStateDriver_map">
-<area href="classLinuxPlatformCPUStateDriver.html" title="The LinuxPlatformCPUStateDriver class provides the cpu state driver." alt="LinuxPlatformCPUStateDriver" shape="rect" coords="0,56,196,80"/>
+<area href="classLinuxPlatformCPUStateDriver.html" title="The LinuxPlatformCPUStateDriver class provides the CPU state driver for Linux." alt="LinuxPlatformCPUStateDriver" shape="rect" coords="0,56,196,80"/>
 <area href="classWin32PlatformCPUStateDriver.html" title="The Win32PlatformCPUStateDriver class provides the CPU state driver." alt="Win32PlatformCPUStateDriver" shape="rect" coords="206,56,402,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac8f502c7e421df76112a9c9f80b806cf" id="r_ac8f502c7e421df76112a9c9f80b806cf"><td class="memItemLeft" align="right" valign="top"><a id="ac8f502c7e421df76112a9c9f80b806cf" name="ac8f502c7e421df76112a9c9f80b806cf"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>factory</b> (<a class="el" href="structCPUStateFetcher_1_1CPUState.html">CPUStateFetcher::CPUState</a> &amp;state)=0</td></tr>
+<tr class="memitem:ac8f502c7e421df76112a9c9f80b806cf" id="r_ac8f502c7e421df76112a9c9f80b806cf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCCIMX__AbstractCPUStateDriver.html#ac8f502c7e421df76112a9c9f80b806cf">factory</a> (<a class="el" href="structCPUStateFetcher_1_1CPUState.html">CPUStateFetcher::CPUState</a> &amp;state)=0</td></tr>
+<tr class="memdesc:ac8f502c7e421df76112a9c9f80b806cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">factory Fills the CPUState structure with current CPU usage data.  <br /></td></tr>
 <tr class="separator:ac8f502c7e421df76112a9c9f80b806cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="classCCIMX__AbstractCPUStateDriver.html" title="The CCIMX_AbstractCPUStateDriver class factory class to provide the correct cpu state impls.">CCIMX_AbstractCPUStateDriver</a> class factory class to provide the correct cpu state impls. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+<div class="textblock"><p>The <a class="el" href="classCCIMX__AbstractCPUStateDriver.html" title="The CCIMX_AbstractCPUStateDriver class Abstract base class factory to provide platform-specific CPU s...">CCIMX_AbstractCPUStateDriver</a> class Abstract base class factory to provide platform-specific CPU state implementations. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac8f502c7e421df76112a9c9f80b806cf" name="ac8f502c7e421df76112a9c9f80b806cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8f502c7e421df76112a9c9f80b806cf">&#9670;&#160;</a></span>factory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CCIMX_AbstractCPUStateDriver::factory </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structCPUStateFetcher_1_1CPUState.html">CPUStateFetcher::CPUState</a> &amp;&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>factory Fills the CPUState structure with current CPU usage data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>Reference to CPUState structure to populate. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classWin32PlatformCPUStateDriver.html#ac6606c1b63e9202277f317485eb4f7d1">Win32PlatformCPUStateDriver</a>, and <a class="el" href="classLinuxPlatformCPUStateDriver.html#a1fa40efb35e698bdfb3e3b7f2071c53d">LinuxPlatformCPUStateDriver</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>extern_app/SystemState/Core/<a class="el" href="CPUStateFetcher_8h_source.html">CPUStateFetcher.h</a></li>
 </ul>
 </div><!-- contents -->

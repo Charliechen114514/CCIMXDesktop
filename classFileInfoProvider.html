@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('classFileInfoProvider.html',''); initR
 </div><!--header-->
 <div class="contents">
 
-<p>The <a class="el" href="classFileInfoProvider.html" title="The FileInfoProvider class is such an abstract class that using in CCIMXFileSystemModel to provide th...">FileInfoProvider</a> class is such an abstract class that using in <a class="el" href="classCCIMXFileSystemModel.html">CCIMXFileSystemModel</a> to provide the file information, which, we can modify the file information provide easily in the model.  
+<p>The <a class="el" href="classFileInfoProvider.html" title="The FileInfoProvider class is such an abstract class that using in CCIMXFileSystemModel to provide th...">FileInfoProvider</a> class is such an abstract class that using in <a class="el" href="classCCIMXFileSystemModel.html" title="The CCIMXFileSystemModel class Extends QFileSystemModel to support additional information providers....">CCIMXFileSystemModel</a> to provide the file information, which, we can modify the file information provide easily in the model.  
  <a href="classFileInfoProvider.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="FileInfoProvider_8h_source.html">FileInfoProvider.h</a>&gt;</code></p>
@@ -124,10 +124,19 @@ Inheritance diagram for FileInfoProvider:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a1b5f15a9efc225ac0f3ce2c0420dcdf3" id="r_a1b5f15a9efc225ac0f3ce2c0420dcdf3"><td class="memItemLeft" align="right" valign="top"><a id="a1b5f15a9efc225ac0f3ce2c0420dcdf3" name="a1b5f15a9efc225ac0f3ce2c0420dcdf3"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Q_DISABLE_COPY</b> (<a class="el" href="classFileInfoProvider.html">FileInfoProvider</a>)</td></tr>
+<tr class="memdesc:a1b5f15a9efc225ac0f3ce2c0420dcdf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">disable copy object <br /></td></tr>
 <tr class="separator:a1b5f15a9efc225ac0f3ce2c0420dcdf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acaff96e7f9eacb7bc0b3023fab1d685d" id="r_acaff96e7f9eacb7bc0b3023fab1d685d"><td class="memItemLeft" align="right" valign="top"><a id="acaff96e7f9eacb7bc0b3023fab1d685d" name="acaff96e7f9eacb7bc0b3023fab1d685d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>FileInfoProvider</b> (<a class="el" href="classCCIMXFileSystemModel.html">CCIMXFileSystemModel</a> *<a class="el" href="classFileInfoProvider.html#ae898e8c9bb3dc76decd869a018f9c0d9">models</a>)</td></tr>
+<tr class="memitem:aac708c0bbd39fe67a3e2b0129109a0f3" id="r_aac708c0bbd39fe67a3e2b0129109a0f3"><td class="memItemLeft" align="right" valign="top"><a id="aac708c0bbd39fe67a3e2b0129109a0f3" name="aac708c0bbd39fe67a3e2b0129109a0f3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>FileInfoProvider</b> ()=delete</td></tr>
+<tr class="memdesc:aac708c0bbd39fe67a3e2b0129109a0f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new File Info Provider object default is prohibited, disable this for the default constructor, prevent the non-model register. <br /></td></tr>
+<tr class="separator:aac708c0bbd39fe67a3e2b0129109a0f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaff96e7f9eacb7bc0b3023fab1d685d" id="r_acaff96e7f9eacb7bc0b3023fab1d685d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileInfoProvider.html#acaff96e7f9eacb7bc0b3023fab1d685d">FileInfoProvider</a> (<a class="el" href="classCCIMXFileSystemModel.html">CCIMXFileSystemModel</a> *<a class="el" href="classFileInfoProvider.html#ae898e8c9bb3dc76decd869a018f9c0d9">models</a>)</td></tr>
+<tr class="memdesc:acaff96e7f9eacb7bc0b3023fab1d685d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new File Info Provider object, assigned models requires.  <br /></td></tr>
 <tr class="separator:acaff96e7f9eacb7bc0b3023fab1d685d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa248c464164dfb67a41bbc666d622d0b" id="r_aa248c464164dfb67a41bbc666d622d0b"><td class="memItemLeft" align="right" valign="top"><a id="aa248c464164dfb67a41bbc666d622d0b" name="aa248c464164dfb67a41bbc666d622d0b"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~FileInfoProvider</b> ()=default</td></tr>
+<tr class="memdesc:aa248c464164dfb67a41bbc666d622d0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the File Info Provider object. <br /></td></tr>
+<tr class="separator:aa248c464164dfb67a41bbc666d622d0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25aa7631c3aff86607cae1b412548878" id="r_a25aa7631c3aff86607cae1b412548878"><td class="memItemLeft" align="right" valign="top">virtual QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileInfoProvider.html#a25aa7631c3aff86607cae1b412548878">provide_section_name</a> ()=0</td></tr>
 <tr class="memdesc:a25aa7631c3aff86607cae1b412548878"><td class="mdescLeft">&#160;</td><td class="mdescRight">One InfoProvider for one section header name, the function do the case :)  <br /></td></tr>
 <tr class="separator:a25aa7631c3aff86607cae1b412548878"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,8 +158,43 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:ae898e8c9bb3dc76decd869a018f9c0d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="classFileInfoProvider.html" title="The FileInfoProvider class is such an abstract class that using in CCIMXFileSystemModel to provide th...">FileInfoProvider</a> class is such an abstract class that using in <a class="el" href="classCCIMXFileSystemModel.html">CCIMXFileSystemModel</a> to provide the file information, which, we can modify the file information provide easily in the model. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<div class="textblock"><p>The <a class="el" href="classFileInfoProvider.html" title="The FileInfoProvider class is such an abstract class that using in CCIMXFileSystemModel to provide th...">FileInfoProvider</a> class is such an abstract class that using in <a class="el" href="classCCIMXFileSystemModel.html" title="The CCIMXFileSystemModel class Extends QFileSystemModel to support additional information providers....">CCIMXFileSystemModel</a> to provide the file information, which, we can modify the file information provide easily in the model. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="acaff96e7f9eacb7bc0b3023fab1d685d" name="acaff96e7f9eacb7bc0b3023fab1d685d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acaff96e7f9eacb7bc0b3023fab1d685d">&#9670;&#160;</a></span>FileInfoProvider()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FileInfoProvider::FileInfoProvider </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCCIMXFileSystemModel.html">CCIMXFileSystemModel</a> *&#160;</td>
+          <td class="paramname"><em>models</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a new File Info Provider object, assigned models requires. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">models</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a4940f9f1d9930553090eb473fe8900f6" name="a4940f9f1d9930553090eb473fe8900f6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4940f9f1d9930553090eb473fe8900f6">&#9670;&#160;</a></span>currentHandlePath()</h2>
 

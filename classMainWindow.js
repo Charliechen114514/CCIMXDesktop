@@ -8,7 +8,9 @@ var classMainWindow =
       [ "InfoIndexMax", "classMainWindow.html#ad766a05d8996b153d8328819f3fef928aae9b08f7c72513fb6e687f24948be53c", null ]
     ] ],
     [ "MainWindow", "classMainWindow.html#a996c5a2b6f77944776856f08ec30858d", null ],
+    [ "MainWindow", "classMainWindow.html#a996c5a2b6f77944776856f08ec30858d", null ],
     [ "~MainWindow", "classMainWindow.html#ae98d00a93bc118200eeef9f9bba1dba7", null ],
+    [ "MainWindow", "classMainWindow.html#a996c5a2b6f77944776856f08ec30858d", null ],
     [ "browse_document_metas", "classMainWindow.html#ad0d5bd0ef2a63f9fa672f284bf381c15", null ],
     [ "jump_to_page", "classMainWindow.html#a9b63e07d932653af812367ec62ac78d2", null ],
     [ "next_page", "classMainWindow.html#abc9d84a0a8b9bea132a960fdfa06b2cd", null ],

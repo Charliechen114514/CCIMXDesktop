@@ -106,28 +106,39 @@ $(document).ready(function(){initNavTree('DesktopAboutMainWidget_8h_source.html'
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span>Ui {</div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">class </span><a class="code hl_class" href="classDesktopAboutMainWidget.html">DesktopAboutMainWidget</a>;</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>}</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="classDesktopAboutMainWidget.html">   10</a></span><span class="keyword">class </span><a class="code hl_class" href="classDesktopAboutMainWidget.html">DesktopAboutMainWidget</a> : <span class="keyword">public</span> QWidget {</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    Q_OBJECT</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> PIX_SZ = 300;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classDesktopAboutMainWidget.html">DesktopAboutMainWidget</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">void</span> setLogo(<span class="keyword">const</span> QIcon&amp; icon);</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordtype">void</span> setTitle(<span class="keyword">const</span> QString&amp; title);</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">void</span> setDescriptions(<span class="keyword">const</span> QString&amp; descriptions);</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordtype">void</span> setMoreInfo(<span class="keyword">const</span> QString&amp; info);</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">void</span> setVersionString(<span class="keyword">const</span> QString&amp; version_string);</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <a class="code hl_class" href="classDesktopAboutMainWidget.html">~DesktopAboutMainWidget</a>();</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    Ui::DesktopAboutMainWidget* ui;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>};</div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classDesktopAboutMainWidget.html">   17</a></span><span class="keyword">class </span><a class="code hl_class" href="classDesktopAboutMainWidget.html">DesktopAboutMainWidget</a> : <span class="keyword">public</span> QWidget {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    Q_OBJECT</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> PIX_SZ = 300;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classDesktopAboutMainWidget.html">DesktopAboutMainWidget</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classDesktopAboutMainWidget.html#a89201e0451500581a17848995222c0ce">setLogo</a>(<span class="keyword">const</span> QIcon&amp; icon);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classDesktopAboutMainWidget.html#a68ff4799add4055643018f750fcaa703">setTitle</a>(<span class="keyword">const</span> QString&amp; title);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classDesktopAboutMainWidget.html#a5eca11f9db1c584fced23625becc8006">setDescriptions</a>(<span class="keyword">const</span> QString&amp; descriptions);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classDesktopAboutMainWidget.html#a99a70ea845861ea1d7f73041f7f8a4e1">setMoreInfo</a>(<span class="keyword">const</span> QString&amp; info);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classDesktopAboutMainWidget.html#a6bbf9f36585cb5c71c2da9d3bf0c65aa">setVersionString</a>(<span class="keyword">const</span> QString&amp; version_string);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <a class="code hl_function" href="classDesktopAboutMainWidget.html#ae9b37994255fc618027806f6027f38fb">~DesktopAboutMainWidget</a>();</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    Ui::DesktopAboutMainWidget* ui;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>};</div>
 </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#endif </span><span class="comment">// DESKTOPABOUTMAINWIDGET_H</span></div>
-<div class="ttc" id="aclassDesktopAboutMainWidget_html"><div class="ttname"><a href="classDesktopAboutMainWidget.html">DesktopAboutMainWidget</a></div><div class="ttdef"><b>Definition</b> DesktopAboutMainWidget.h:10</div></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">#endif </span><span class="comment">// DESKTOPABOUTMAINWIDGET_H</span></div>
+<div class="ttc" id="aclassDesktopAboutMainWidget_html"><div class="ttname"><a href="classDesktopAboutMainWidget.html">DesktopAboutMainWidget</a></div><div class="ttdoc">A customizable &quot;About&quot; dialog widget for desktop applications.</div><div class="ttdef"><b>Definition</b> DesktopAboutMainWidget.h:17</div></div>
+<div class="ttc" id="aclassDesktopAboutMainWidget_html_a5eca11f9db1c584fced23625becc8006"><div class="ttname"><a href="classDesktopAboutMainWidget.html#a5eca11f9db1c584fced23625becc8006">DesktopAboutMainWidget::setDescriptions</a></div><div class="ttdeci">void setDescriptions(const QString &amp;descriptions)</div><div class="ttdoc">Sets the application description text.</div><div class="ttdef"><b>Definition</b> DesktopAboutMainWidget.cpp:32</div></div>
+<div class="ttc" id="aclassDesktopAboutMainWidget_html_a68ff4799add4055643018f750fcaa703"><div class="ttname"><a href="classDesktopAboutMainWidget.html#a68ff4799add4055643018f750fcaa703">DesktopAboutMainWidget::setTitle</a></div><div class="ttdeci">void setTitle(const QString &amp;title)</div><div class="ttdoc">Sets the application title.</div><div class="ttdef"><b>Definition</b> DesktopAboutMainWidget.cpp:28</div></div>
+<div class="ttc" id="aclassDesktopAboutMainWidget_html_a6bbf9f36585cb5c71c2da9d3bf0c65aa"><div class="ttname"><a href="classDesktopAboutMainWidget.html#a6bbf9f36585cb5c71c2da9d3bf0c65aa">DesktopAboutMainWidget::setVersionString</a></div><div class="ttdeci">void setVersionString(const QString &amp;version_string)</div><div class="ttdoc">Sets the version string.</div><div class="ttdef"><b>Definition</b> DesktopAboutMainWidget.cpp:24</div></div>
+<div class="ttc" id="aclassDesktopAboutMainWidget_html_a89201e0451500581a17848995222c0ce"><div class="ttname"><a href="classDesktopAboutMainWidget.html#a89201e0451500581a17848995222c0ce">DesktopAboutMainWidget::setLogo</a></div><div class="ttdeci">void setLogo(const QIcon &amp;icon)</div><div class="ttdoc">Sets the application logo.</div><div class="ttdef"><b>Definition</b> DesktopAboutMainWidget.cpp:20</div></div>
+<div class="ttc" id="aclassDesktopAboutMainWidget_html_a99a70ea845861ea1d7f73041f7f8a4e1"><div class="ttname"><a href="classDesktopAboutMainWidget.html#a99a70ea845861ea1d7f73041f7f8a4e1">DesktopAboutMainWidget::setMoreInfo</a></div><div class="ttdeci">void setMoreInfo(const QString &amp;info)</div><div class="ttdoc">Sets additional information text.</div><div class="ttdef"><b>Definition</b> DesktopAboutMainWidget.cpp:36</div></div>
+<div class="ttc" id="aclassDesktopAboutMainWidget_html_ae9b37994255fc618027806f6027f38fb"><div class="ttname"><a href="classDesktopAboutMainWidget.html#ae9b37994255fc618027806f6027f38fb">DesktopAboutMainWidget::~DesktopAboutMainWidget</a></div><div class="ttdeci">~DesktopAboutMainWidget()</div><div class="ttdoc">Destructor.</div><div class="ttdef"><b>Definition</b> DesktopAboutMainWidget.cpp:40</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

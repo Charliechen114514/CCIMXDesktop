@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CCIMXDesktop: builtin/app/DesktopAbout/AboutMainWindow.h Source File</title>
+<title>CCIMXDesktop: builtin/app/DesktopAbout/ui/AboutMainWindow.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -109,31 +109,41 @@ $(document).ready(function(){initNavTree('AboutMainWindow_8h_source.html',''); i
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>}</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>QT_END_NAMESPACE</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="foldopen" id="foldopen00012" data-start="{" data-end="};">
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="classAboutMainWindow.html">   12</a></span><span class="keyword">class </span><a class="code hl_class" href="classAboutMainWindow.html">AboutMainWindow</a> : <span class="keyword">public</span> QMainWindow {</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    Q_OBJECT</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <a class="code hl_class" href="classAboutMainWindow.html">AboutMainWindow</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordtype">void</span> show_mainWidget();</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">void</span> show_readme();</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <a class="code hl_class" href="classAboutMainWindow.html">~AboutMainWindow</a>();</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    Ui::AboutMainWindow* ui;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordtype">void</span> load_from_static_info();</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">void</span> hide_all();</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">void</span> init_connections();</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>};</div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classAboutMainWindow.html">   19</a></span><span class="keyword">class </span><a class="code hl_class" href="classAboutMainWindow.html">AboutMainWindow</a> : <span class="keyword">public</span> QMainWindow {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    Q_OBJECT</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_class" href="classAboutMainWindow.html">AboutMainWindow</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classAboutMainWindow.html#a7151a58a48cdb7c993fe1f8aecae9256">show_mainWidget</a>();</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classAboutMainWindow.html#a185a220e754847a191567ca7c518e823">show_readme</a>();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <a class="code hl_function" href="classAboutMainWindow.html#abb187def904c4025e74fb3e122befc4e">~AboutMainWindow</a>();</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    Ui::AboutMainWindow* ui; </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordtype">void</span> load_from_static_info();</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">void</span> hide_all();</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordtype">void</span> init_connections();</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>};</div>
 </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#endif </span><span class="comment">// ABOUTMAINWINDOW_H</span></div>
-<div class="ttc" id="aclassAboutMainWindow_html"><div class="ttname"><a href="classAboutMainWindow.html">AboutMainWindow</a></div><div class="ttdef"><b>Definition</b> AboutMainWindow.h:12</div></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">#endif </span><span class="comment">// ABOUTMAINWINDOW_H</span></div>
+<div class="ttc" id="aclassAboutMainWindow_html"><div class="ttname"><a href="classAboutMainWindow.html">AboutMainWindow</a></div><div class="ttdoc">AboutMainWindow displays information about the application and provides access to related resources.</div><div class="ttdef"><b>Definition</b> AboutMainWindow.h:19</div></div>
+<div class="ttc" id="aclassAboutMainWindow_html_a185a220e754847a191567ca7c518e823"><div class="ttname"><a href="classAboutMainWindow.html#a185a220e754847a191567ca7c518e823">AboutMainWindow::show_readme</a></div><div class="ttdeci">void show_readme()</div><div class="ttdoc">Show the readme content.</div><div class="ttdef"><b>Definition</b> AboutMainWindow.cpp:16</div></div>
+<div class="ttc" id="aclassAboutMainWindow_html_a7151a58a48cdb7c993fe1f8aecae9256"><div class="ttname"><a href="classAboutMainWindow.html#a7151a58a48cdb7c993fe1f8aecae9256">AboutMainWindow::show_mainWidget</a></div><div class="ttdeci">void show_mainWidget()</div><div class="ttdoc">Show the main widget.</div><div class="ttdef"><b>Definition</b> AboutMainWindow.cpp:21</div></div>
+<div class="ttc" id="aclassAboutMainWindow_html_abb187def904c4025e74fb3e122befc4e"><div class="ttname"><a href="classAboutMainWindow.html#abb187def904c4025e74fb3e122befc4e">AboutMainWindow::~AboutMainWindow</a></div><div class="ttdeci">~AboutMainWindow()</div><div class="ttdoc">Destructor for AboutMainWindow.</div><div class="ttdef"><b>Definition</b> AboutMainWindow.cpp:26</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_dcd6bf565d8b6008694ea35f4b77d1ca.html">builtin</a></li><li class="navelem"><a class="el" href="dir_01d5160def418af44290b17bca29ab8e.html">app</a></li><li class="navelem"><a class="el" href="dir_431146e53e6f2f716fe7bec845a1921b.html">DesktopAbout</a></li><li class="navelem"><b>AboutMainWindow.h</b></li>
+    <li class="navelem"><a class="el" href="dir_dcd6bf565d8b6008694ea35f4b77d1ca.html">builtin</a></li><li class="navelem"><a class="el" href="dir_01d5160def418af44290b17bca29ab8e.html">app</a></li><li class="navelem"><a class="el" href="dir_431146e53e6f2f716fe7bec845a1921b.html">DesktopAbout</a></li><li class="navelem"><a class="el" href="dir_c609a1251040c633f11b9a854adf3467.html">ui</a></li><li class="navelem"><b>AboutMainWindow.h</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

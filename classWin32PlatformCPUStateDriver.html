@@ -112,7 +112,7 @@ Inheritance diagram for Win32PlatformCPUStateDriver:</div>
  <div class="center">
   <img src="classWin32PlatformCPUStateDriver.png" usemap="#Win32PlatformCPUStateDriver_map" alt=""/>
   <map id="Win32PlatformCPUStateDriver_map" name="Win32PlatformCPUStateDriver_map">
-<area href="classCCIMX__AbstractCPUStateDriver.html" title="The CCIMX_AbstractCPUStateDriver class factory class to provide the correct cpu state impls." alt="CCIMX_AbstractCPUStateDriver" shape="rect" coords="0,0,196,24"/>
+<area href="classCCIMX__AbstractCPUStateDriver.html" title="The CCIMX_AbstractCPUStateDriver class Abstract base class factory to provide platform-specific CPU s..." alt="CCIMX_AbstractCPUStateDriver" shape="rect" coords="0,0,196,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -120,8 +120,10 @@ Inheritance diagram for Win32PlatformCPUStateDriver:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:afa11483533d6ba86d246d4225f542c19" id="r_afa11483533d6ba86d246d4225f542c19"><td class="memItemLeft" align="right" valign="top"><a id="afa11483533d6ba86d246d4225f542c19" name="afa11483533d6ba86d246d4225f542c19"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Q_DISABLE_COPY</b> (<a class="el" href="classWin32PlatformCPUStateDriver.html">Win32PlatformCPUStateDriver</a>)</td></tr>
+<tr class="memdesc:afa11483533d6ba86d246d4225f542c19"><td class="mdescLeft">&#160;</td><td class="mdescRight">disable copy sessions <br /></td></tr>
 <tr class="separator:afa11483533d6ba86d246d4225f542c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6606c1b63e9202277f317485eb4f7d1" id="r_ac6606c1b63e9202277f317485eb4f7d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWin32PlatformCPUStateDriver.html#ac6606c1b63e9202277f317485eb4f7d1">factory</a> (<a class="el" href="structCPUStateFetcher_1_1CPUState.html">CPUStateFetcher::CPUState</a> &amp;stat) override</td></tr>
+<tr class="memdesc:ac6606c1b63e9202277f317485eb4f7d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory method to get CPU state.  <br /></td></tr>
 <tr class="separator:ac6606c1b63e9202277f317485eb4f7d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -151,7 +153,15 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classCCIMX__AbstractCPUStateDriver.html">CCIMX_AbstractCPUStateDriver</a>.</p>
+<p>Factory method to get CPU state. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stat</td><td>Reference to <a class="el" href="structCPUStateFetcher_1_1CPUState.html" title="The CPUState struct Represents CPU usage state including idle, user, kernel and total time....">CPUStateFetcher::CPUState</a> to store stats </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classCCIMX__AbstractCPUStateDriver.html#ac8f502c7e421df76112a9c9f80b806cf">CCIMX_AbstractCPUStateDriver</a>.</p>
 
 </div>
 </div>

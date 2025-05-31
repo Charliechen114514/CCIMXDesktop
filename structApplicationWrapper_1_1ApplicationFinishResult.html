@@ -103,34 +103,64 @@ $(document).ready(function(){initNavTree('structApplicationWrapper_1_1Applicatio
 </div><!--header-->
 <div class="contents">
 
-<p>The <a class="el" href="structApplicationWrapper_1_1ApplicationFinishResult.html" title="The ApplicationFinishResult class marks the application depatching result, a typical scene of using t...">ApplicationFinishResult</a> class marks the application depatching result, a typical scene of using this is, when your app if finished(MainAppWindow Close, or anything trigger the exit functions will make
-a process ends, this will emit the signals of AppProcess Finish signals)  
+<p>The <a class="el" href="structApplicationWrapper_1_1ApplicationFinishResult.html" title="The ApplicationFinishResult struct represents the result when an application finishes execution.">ApplicationFinishResult</a> struct represents the result when an application finishes execution.  
  <a href="structApplicationWrapper_1_1ApplicationFinishResult.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="applicationwrapper_8h_source.html">applicationwrapper.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a03886a5aca858311233b34d9fd6336ea" id="r_a03886a5aca858311233b34d9fd6336ea"><td class="memItemLeft" align="right" valign="top"><a id="a03886a5aca858311233b34d9fd6336ea" name="a03886a5aca858311233b34d9fd6336ea"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>AppFinishResult</b> { <b>QUIT_NORMAL</b>
-, <b>QUIT_OTHER</b>
+<tr class="memitem:a03886a5aca858311233b34d9fd6336ea" id="r_a03886a5aca858311233b34d9fd6336ea"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structApplicationWrapper_1_1ApplicationFinishResult.html#a03886a5aca858311233b34d9fd6336ea">AppFinishResult</a> { <a class="el" href="structApplicationWrapper_1_1ApplicationFinishResult.html#a03886a5aca858311233b34d9fd6336eaa9ab8f4728e9d3edadcdbfa13206954a0">QUIT_NORMAL</a>
+, <a class="el" href="structApplicationWrapper_1_1ApplicationFinishResult.html#a03886a5aca858311233b34d9fd6336eaafd52c78145a9f3b73154ed36b3b7ef72">QUIT_OTHER</a>
  }</td></tr>
+<tr class="memdesc:a03886a5aca858311233b34d9fd6336ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Possible application finish states.  <a href="structApplicationWrapper_1_1ApplicationFinishResult.html#a03886a5aca858311233b34d9fd6336ea">More...</a><br /></td></tr>
 <tr class="separator:a03886a5aca858311233b34d9fd6336ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:acefc460bffc37c059a773fcc2bccf79f" id="r_acefc460bffc37c059a773fcc2bccf79f"><td class="memItemLeft" align="right" valign="top"><a id="acefc460bffc37c059a773fcc2bccf79f" name="acefc460bffc37c059a773fcc2bccf79f"></a>
-AppFinishResult&#160;</td><td class="memItemRight" valign="bottom"><b>app_result</b></td></tr>
-<tr class="memdesc:acefc460bffc37c059a773fcc2bccf79f"><td class="mdescLeft">&#160;</td><td class="mdescRight">App Runnning result. <br /></td></tr>
+<a class="el" href="structApplicationWrapper_1_1ApplicationFinishResult.html#a03886a5aca858311233b34d9fd6336ea">AppFinishResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>app_result</b></td></tr>
+<tr class="memdesc:acefc460bffc37c059a773fcc2bccf79f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Application exit result. <br /></td></tr>
 <tr class="separator:acefc460bffc37c059a773fcc2bccf79f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bd31e7691e31b6be8aff6a0ba60a0c4" id="r_a9bd31e7691e31b6be8aff6a0ba60a0c4"><td class="memItemLeft" align="right" valign="top"><a id="a9bd31e7691e31b6be8aff6a0ba60a0c4" name="a9bd31e7691e31b6be8aff6a0ba60a0c4"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>exit_code</b></td></tr>
-<tr class="memdesc:a9bd31e7691e31b6be8aff6a0ba60a0c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">exit code of the application <br /></td></tr>
+<tr class="memdesc:a9bd31e7691e31b6be8aff6a0ba60a0c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exit code returned by the application. <br /></td></tr>
 <tr class="separator:a9bd31e7691e31b6be8aff6a0ba60a0c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="structApplicationWrapper_1_1ApplicationFinishResult.html" title="The ApplicationFinishResult class marks the application depatching result, a typical scene of using t...">ApplicationFinishResult</a> class marks the application depatching result, a typical scene of using this is, when your app if finished(MainAppWindow Close, or anything trigger the exit functions will make
-a process ends, this will emit the signals of AppProcess Finish signals) </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<div class="textblock"><p>The <a class="el" href="structApplicationWrapper_1_1ApplicationFinishResult.html" title="The ApplicationFinishResult struct represents the result when an application finishes execution.">ApplicationFinishResult</a> struct represents the result when an application finishes execution. </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a03886a5aca858311233b34d9fd6336ea" name="a03886a5aca858311233b34d9fd6336ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03886a5aca858311233b34d9fd6336ea">&#9670;&#160;</a></span>AppFinishResult</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="structApplicationWrapper_1_1ApplicationFinishResult.html#a03886a5aca858311233b34d9fd6336ea">ApplicationWrapper::ApplicationFinishResult::AppFinishResult</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Possible application finish states. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a03886a5aca858311233b34d9fd6336eaa9ab8f4728e9d3edadcdbfa13206954a0" name="a03886a5aca858311233b34d9fd6336eaa9ab8f4728e9d3edadcdbfa13206954a0"></a>QUIT_NORMAL&#160;</td><td class="fielddoc"><p>Application exited normally. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a03886a5aca858311233b34d9fd6336eaafd52c78145a9f3b73154ed36b3b7ef72" name="a03886a5aca858311233b34d9fd6336eaafd52c78145a9f3b73154ed36b3b7ef72"></a>QUIT_OTHER&#160;</td><td class="fielddoc"><p>Application exited abnormally or other reasons. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li>app_wrapper/<a class="el" href="applicationwrapper_8h_source.html">applicationwrapper.h</a></li>
 </ul>
 </div><!-- contents -->

@@ -103,6 +103,11 @@ $(document).ready(function(){initNavTree('classAppCardWidget.html',''); initResi
   <div class="headertitle"><div class="title">AppCardWidget Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="classAppCardWidget.html" title="AppCardWidget is a lightweight widget used to post messages to a DesktopToast.">AppCardWidget</a> is a lightweight widget used to post messages to a <a class="el" href="classDesktopToast.html" title="The DesktopToast class is the toast handle classes using less lock messages queue to display the mess...">DesktopToast</a>.  
+ <a href="classAppCardWidget.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="appcardwidget_8h_source.html">appcardwidget.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for AppCardWidget:</div>
 <div class="dyncontent">
@@ -118,35 +123,95 @@ Inheritance diagram for AppCardWidget:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a8396063f654b18f1a739684774051f2f" id="r_a8396063f654b18f1a739684774051f2f"><td class="memItemLeft" align="right" valign="top"><a id="a8396063f654b18f1a739684774051f2f" name="a8396063f654b18f1a739684774051f2f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Q_DISABLE_COPY</b> (<a class="el" href="classAppCardWidget.html">AppCardWidget</a>)</td></tr>
+<tr class="memdesc:a8396063f654b18f1a739684774051f2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable copy constructor and assignment operator. <br /></td></tr>
 <tr class="separator:a8396063f654b18f1a739684774051f2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee22c9e15e0cb276d33dd51058087204" id="r_aee22c9e15e0cb276d33dd51058087204"><td class="memItemLeft" align="right" valign="top"><a id="aee22c9e15e0cb276d33dd51058087204" name="aee22c9e15e0cb276d33dd51058087204"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AppCardWidget</b> (<a class="el" href="classDesktopToast.html">DesktopToast</a> *toast, QWidget *parent=nullptr)</td></tr>
+<tr class="memitem:adde6adc2966e595da7ce948c7b272757" id="r_adde6adc2966e595da7ce948c7b272757"><td class="memItemLeft" align="right" valign="top"><a id="adde6adc2966e595da7ce948c7b272757" name="adde6adc2966e595da7ce948c7b272757"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AppCardWidget</b> ()=delete</td></tr>
+<tr class="memdesc:adde6adc2966e595da7ce948c7b272757"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor deleted to force usage of parameterized constructor. <br /></td></tr>
+<tr class="separator:adde6adc2966e595da7ce948c7b272757"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee22c9e15e0cb276d33dd51058087204" id="r_aee22c9e15e0cb276d33dd51058087204"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppCardWidget.html#aee22c9e15e0cb276d33dd51058087204">AppCardWidget</a> (<a class="el" href="classDesktopToast.html">DesktopToast</a> *toast, QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:aee22c9e15e0cb276d33dd51058087204"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an <a class="el" href="classAppCardWidget.html" title="AppCardWidget is a lightweight widget used to post messages to a DesktopToast.">AppCardWidget</a>.  <br /></td></tr>
 <tr class="separator:aee22c9e15e0cb276d33dd51058087204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79c645ef1c8e4ca25610676161eeb305" id="r_a79c645ef1c8e4ca25610676161eeb305"><td class="memItemLeft" align="right" valign="top"><a id="a79c645ef1c8e4ca25610676161eeb305" name="a79c645ef1c8e4ca25610676161eeb305"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~AppCardWidget</b> ()</td></tr>
+<tr class="memdesc:a79c645ef1c8e4ca25610676161eeb305"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor. <br /></td></tr>
+<tr class="separator:a79c645ef1c8e4ca25610676161eeb305"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a99ac0e10c319ef328cfa380ba56170" id="r_a4a99ac0e10c319ef328cfa380ba56170"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppCardWidget.html#a4a99ac0e10c319ef328cfa380ba56170">setCurrentIcon</a> (const QPixmap &amp;icons)</td></tr>
-<tr class="memdesc:a4a99ac0e10c319ef328cfa380ba56170"><td class="mdescLeft">&#160;</td><td class="mdescRight">setCurrentIcon: for app cards, if we wanna specify the icons, we can use this function to rewrite the concrete app icons settings behaviors  <br /></td></tr>
+<tr class="memdesc:a4a99ac0e10c319ef328cfa380ba56170"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current icon for the app card.  <br /></td></tr>
 <tr class="separator:a4a99ac0e10c319ef328cfa380ba56170"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b27698b6de79bb3b772b4bf92e31fc3" id="r_a2b27698b6de79bb3b772b4bf92e31fc3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppCardWidget.html#a2b27698b6de79bb3b772b4bf92e31fc3">invoke_preLaunch_work</a> (void)=0</td></tr>
-<tr class="memdesc:a2b27698b6de79bb3b772b4bf92e31fc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">invoke_preLaunch_work is the main function to invoke the prelaunching issue  <br /></td></tr>
-<tr class="separator:a2b27698b6de79bb3b772b4bf92e31fc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82559c4e4ddb985821a8b87076bb446b" id="r_a82559c4e4ddb985821a8b87076bb446b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppCardWidget.html#a82559c4e4ddb985821a8b87076bb446b">invoke_preLaunch_work</a> ()=0</td></tr>
+<tr class="memdesc:a82559c4e4ddb985821a8b87076bb446b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract method to invoke pre-launch operations.  <br /></td></tr>
+<tr class="separator:a82559c4e4ddb985821a8b87076bb446b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa303f4e4011e02c6cf0c776ca093ac3" id="r_aaa303f4e4011e02c6cf0c776ca093ac3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppCardWidget.html#aaa303f4e4011e02c6cf0c776ca093ac3">eventFilter</a> (QObject *watched, QEvent *event) override</td></tr>
-<tr class="memdesc:aaa303f4e4011e02c6cf0c776ca093ac3"><td class="mdescLeft">&#160;</td><td class="mdescRight">defines how to listen to the user interactive events  <br /></td></tr>
+<tr class="memdesc:aaa303f4e4011e02c6cf0c776ca093ac3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event filter to handle user interaction events.  <br /></td></tr>
 <tr class="separator:aaa303f4e4011e02c6cf0c776ca093ac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:afabbff33f9e08d33549d0a8ff026ef30" id="r_afabbff33f9e08d33549d0a8ff026ef30"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppCardWidget.html#afabbff33f9e08d33549d0a8ff026ef30">postAppCardWidget</a> ()=0</td></tr>
-<tr class="memdesc:afabbff33f9e08d33549d0a8ff026ef30"><td class="mdescLeft">&#160;</td><td class="mdescRight">postAppCardWidget, sometimes, we can use this to post the messages to the binding_toast  <br /></td></tr>
+<tr class="memdesc:afabbff33f9e08d33549d0a8ff026ef30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract method to post messages to the bound <a class="el" href="classDesktopToast.html" title="The DesktopToast class is the toast handle classes using less lock messages queue to display the mess...">DesktopToast</a>.  <br /></td></tr>
 <tr class="separator:afabbff33f9e08d33549d0a8ff026ef30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:af944544f55557488171821c0c5e024b7" id="r_af944544f55557488171821c0c5e024b7"><td class="memItemLeft" align="right" valign="top"><a id="af944544f55557488171821c0c5e024b7" name="af944544f55557488171821c0c5e024b7"></a>
 <a class="el" href="classDesktopToast.html">DesktopToast</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>binding_toast</b></td></tr>
+<tr class="memdesc:af944544f55557488171821c0c5e024b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the toast widget used for posting messages. <br /></td></tr>
 <tr class="separator:af944544f55557488171821c0c5e024b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affacf5393eb2f3fcdb94b39c894c188e" id="r_affacf5393eb2f3fcdb94b39c894c188e"><td class="memItemLeft" align="right" valign="top"><a id="affacf5393eb2f3fcdb94b39c894c188e" name="affacf5393eb2f3fcdb94b39c894c188e"></a>
 Ui::AppCardWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>ui</b></td></tr>
+<tr class="memdesc:affacf5393eb2f3fcdb94b39c894c188e"><td class="mdescLeft">&#160;</td><td class="mdescRight">UI object generated from the Qt Designer form. <br /></td></tr>
 <tr class="separator:affacf5393eb2f3fcdb94b39c894c188e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="classAppCardWidget.html" title="AppCardWidget is a lightweight widget used to post messages to a DesktopToast.">AppCardWidget</a> is a lightweight widget used to post messages to a <a class="el" href="classDesktopToast.html" title="The DesktopToast class is the toast handle classes using less lock messages queue to display the mess...">DesktopToast</a>. </p>
+<p>This is an abstract base class representing an application card UI component. It is responsible for handling pre-launch work and posting messages via toast notifications. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aee22c9e15e0cb276d33dd51058087204" name="aee22c9e15e0cb276d33dd51058087204"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee22c9e15e0cb276d33dd51058087204">&#9670;&#160;</a></span>AppCardWidget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AppCardWidget::AppCardWidget </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDesktopToast.html">DesktopToast</a> *&#160;</td>
+          <td class="paramname"><em>toast</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs an <a class="el" href="classAppCardWidget.html" title="AppCardWidget is a lightweight widget used to post messages to a DesktopToast.">AppCardWidget</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">toast</td><td>Pointer to the <a class="el" href="classDesktopToast.html" title="The DesktopToast class is the toast handle classes using less lock messages queue to display the mess...">DesktopToast</a> object used to show messages. </td></tr>
+    <tr><td class="paramname">parent</td><td>Optional parent widget. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="aaa303f4e4011e02c6cf0c776ca093ac3" name="aaa303f4e4011e02c6cf0c776ca093ac3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaa303f4e4011e02c6cf0c776ca093ac3">&#9670;&#160;</a></span>eventFilter()</h2>
@@ -182,20 +247,20 @@ Ui::AppCardWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>ui</b>
 </table>
 </div><div class="memdoc">
 
-<p>defines how to listen to the user interactive events </p>
+<p>Event filter to handle user interaction events. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">watched</td><td>which objects? </td></tr>
-    <tr><td class="paramname">event</td><td>what event? </td></tr>
+    <tr><td class="paramname">watched</td><td>The QObject being watched. </td></tr>
+    <tr><td class="paramname">event</td><td>The event being filtered. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>if handles, return true </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the event was handled, otherwise false. </dd></dl>
 
 </div>
 </div>
-<a id="a2b27698b6de79bb3b772b4bf92e31fc3" name="a2b27698b6de79bb3b772b4bf92e31fc3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b27698b6de79bb3b772b4bf92e31fc3">&#9670;&#160;</a></span>invoke_preLaunch_work()</h2>
+<a id="a82559c4e4ddb985821a8b87076bb446b" name="a82559c4e4ddb985821a8b87076bb446b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82559c4e4ddb985821a8b87076bb446b">&#9670;&#160;</a></span>invoke_preLaunch_work()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -206,7 +271,6 @@ Ui::AppCardWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>ui</b>
         <tr>
           <td class="memname">virtual void AppCardWidget::invoke_preLaunch_work </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -218,8 +282,8 @@ Ui::AppCardWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>ui</b>
 </table>
 </div><div class="memdoc">
 
-<p>invoke_preLaunch_work is the main function to invoke the prelaunching issue </p>
-<dl class="section note"><dt>Note</dt><dd>when system starts, app cards are supposed to do their actions and if not, then do nothing </dd></dl>
+<p>Abstract method to invoke pre-launch operations. </p>
+<p>Derived classes should implement this to perform necessary preparations before the system starts or the app card becomes active. </p>
 
 <p>Implemented in <a class="el" href="classLocalWeatherCard.html#a1bd3f52bf969c5d3747f6934da123fef">LocalWeatherCard</a>, and <a class="el" href="classNetCardGadget.html#a82d97e27218187db562c8d02bb5866d2">NetCardGadget</a>.</p>
 
@@ -248,7 +312,8 @@ Ui::AppCardWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>ui</b>
 </table>
 </div><div class="memdoc">
 
-<p>postAppCardWidget, sometimes, we can use this to post the messages to the binding_toast </p>
+<p>Abstract method to post messages to the bound <a class="el" href="classDesktopToast.html" title="The DesktopToast class is the toast handle classes using less lock messages queue to display the mess...">DesktopToast</a>. </p>
+<p>Derived classes implement this to send notifications or status updates through the toast system. </p>
 
 <p>Implemented in <a class="el" href="classLocalWeatherCard.html#a6cac71c7f8be8719da4ee37a0c163363">LocalWeatherCard</a>, and <a class="el" href="classNetCardGadget.html#a0b72db3d05b5e6bd02705428df3f0ba5">NetCardGadget</a>.</p>
 
@@ -278,10 +343,11 @@ Ui::AppCardWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>ui</b>
 </table>
 </div><div class="memdoc">
 
-<p>setCurrentIcon: for app cards, if we wanna specify the icons, we can use this function to rewrite the concrete app icons settings behaviors </p>
+<p>Set the current icon for the app card. </p>
+<p>This function allows derived classes to customize the app card icon by providing a QPixmap.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">icons</td><td>indicates the raw pixmaps we wanna using as a pixmaps </td></tr>
+    <tr><td class="paramname">icons</td><td>The pixmap to be used as the icon. </td></tr>
   </table>
   </dd>
 </dl>

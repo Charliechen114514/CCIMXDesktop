@@ -103,37 +103,71 @@ $(document).ready(function(){initNavTree('structApplicationWrapper_1_1Applicatio
 </div><!--header-->
 <div class="contents">
 
-<p>The <a class="el" href="structApplicationWrapper_1_1ApplicationDepatchResult.html" title="The ApplicationDepatchResult class indicate the app depatching result, for the desktop front end,...">ApplicationDepatchResult</a> class indicate the app depatching result, for the desktop front end, this can be used in inform the user what is going on.  
+<p>The <a class="el" href="structApplicationWrapper_1_1ApplicationDepatchResult.html" title="The ApplicationDepatchResult struct represents the result of launching (depatching) an application.">ApplicationDepatchResult</a> struct represents the result of launching (depatching) an application.  
  <a href="structApplicationWrapper_1_1ApplicationDepatchResult.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="applicationwrapper_8h_source.html">applicationwrapper.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a1cde43b4ce352509446cb4cbd98a95a1" id="r_a1cde43b4ce352509446cb4cbd98a95a1"><td class="memItemLeft" align="right" valign="top"><a id="a1cde43b4ce352509446cb4cbd98a95a1" name="a1cde43b4ce352509446cb4cbd98a95a1"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>AppDepatchResult</b> { <b>APP_RUN_OK</b>
-, <b>APP_FILE_MISSING</b>
-, <b>APP_OTHER_ERROR</b>
+<tr class="memitem:a1cde43b4ce352509446cb4cbd98a95a1" id="r_a1cde43b4ce352509446cb4cbd98a95a1"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structApplicationWrapper_1_1ApplicationDepatchResult.html#a1cde43b4ce352509446cb4cbd98a95a1">AppDepatchResult</a> { <a class="el" href="structApplicationWrapper_1_1ApplicationDepatchResult.html#a1cde43b4ce352509446cb4cbd98a95a1ad628bed09bb5279417d8a76f4cb6ea02">APP_RUN_OK</a>
+, <a class="el" href="structApplicationWrapper_1_1ApplicationDepatchResult.html#a1cde43b4ce352509446cb4cbd98a95a1a59c010c7da2660ffe56691f658b14d5e">APP_FILE_MISSING</a>
+, <a class="el" href="structApplicationWrapper_1_1ApplicationDepatchResult.html#a1cde43b4ce352509446cb4cbd98a95a1a23518dd90f8af806e3c7edce8d2319ba">APP_OTHER_ERROR</a>
  }</td></tr>
+<tr class="memdesc:a1cde43b4ce352509446cb4cbd98a95a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Possible results of application depatch.  <a href="structApplicationWrapper_1_1ApplicationDepatchResult.html#a1cde43b4ce352509446cb4cbd98a95a1">More...</a><br /></td></tr>
 <tr class="separator:a1cde43b4ce352509446cb4cbd98a95a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:add689ef0c7f3b4ee4d63d2036c105907" id="r_add689ef0c7f3b4ee4d63d2036c105907"><td class="memItemLeft" align="right" valign="top"><a id="add689ef0c7f3b4ee4d63d2036c105907" name="add689ef0c7f3b4ee4d63d2036c105907"></a>
-AppDepatchResult&#160;</td><td class="memItemRight" valign="bottom"><b>app_depatch_result</b></td></tr>
-<tr class="memdesc:add689ef0c7f3b4ee4d63d2036c105907"><td class="mdescLeft">&#160;</td><td class="mdescRight">Application Result Code. <br /></td></tr>
+<a class="el" href="structApplicationWrapper_1_1ApplicationDepatchResult.html#a1cde43b4ce352509446cb4cbd98a95a1">AppDepatchResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>app_depatch_result</b></td></tr>
+<tr class="memdesc:add689ef0c7f3b4ee4d63d2036c105907"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result code of application launch. <br /></td></tr>
 <tr class="separator:add689ef0c7f3b4ee4d63d2036c105907"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2f913f3a09fa708873e71f19af3cdf6" id="r_ac2f913f3a09fa708873e71f19af3cdf6"><td class="memItemLeft" align="right" valign="top"><a id="ac2f913f3a09fa708873e71f19af3cdf6" name="ac2f913f3a09fa708873e71f19af3cdf6"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>depatched</b> { false }</td></tr>
-<tr class="memdesc:ac2f913f3a09fa708873e71f19af3cdf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">application depathed resukt <br /></td></tr>
+<tr class="memdesc:ac2f913f3a09fa708873e71f19af3cdf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether application was launched. <br /></td></tr>
 <tr class="separator:ac2f913f3a09fa708873e71f19af3cdf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6cd66610f46e0dd8ff14bebaeae1f2c" id="r_aa6cd66610f46e0dd8ff14bebaeae1f2c"><td class="memItemLeft" align="right" valign="top"><a id="aa6cd66610f46e0dd8ff14bebaeae1f2c" name="aa6cd66610f46e0dd8ff14bebaeae1f2c"></a>
 QString&#160;</td><td class="memItemRight" valign="bottom"><b>someOtherDetails</b> {}</td></tr>
-<tr class="memdesc:aa6cd66610f46e0dd8ff14bebaeae1f2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">details informations <br /></td></tr>
+<tr class="memdesc:aa6cd66610f46e0dd8ff14bebaeae1f2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Additional info or error messages. <br /></td></tr>
 <tr class="separator:aa6cd66610f46e0dd8ff14bebaeae1f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="structApplicationWrapper_1_1ApplicationDepatchResult.html" title="The ApplicationDepatchResult class indicate the app depatching result, for the desktop front end,...">ApplicationDepatchResult</a> class indicate the app depatching result, for the desktop front end, this can be used in inform the user what is going on. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<div class="textblock"><p>The <a class="el" href="structApplicationWrapper_1_1ApplicationDepatchResult.html" title="The ApplicationDepatchResult struct represents the result of launching (depatching) an application.">ApplicationDepatchResult</a> struct represents the result of launching (depatching) an application. </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a1cde43b4ce352509446cb4cbd98a95a1" name="a1cde43b4ce352509446cb4cbd98a95a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cde43b4ce352509446cb4cbd98a95a1">&#9670;&#160;</a></span>AppDepatchResult</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="structApplicationWrapper_1_1ApplicationDepatchResult.html#a1cde43b4ce352509446cb4cbd98a95a1">ApplicationWrapper::ApplicationDepatchResult::AppDepatchResult</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Possible results of application depatch. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1cde43b4ce352509446cb4cbd98a95a1ad628bed09bb5279417d8a76f4cb6ea02" name="a1cde43b4ce352509446cb4cbd98a95a1ad628bed09bb5279417d8a76f4cb6ea02"></a>APP_RUN_OK&#160;</td><td class="fielddoc"><p>Application launched successfully. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1cde43b4ce352509446cb4cbd98a95a1a59c010c7da2660ffe56691f658b14d5e" name="a1cde43b4ce352509446cb4cbd98a95a1a59c010c7da2660ffe56691f658b14d5e"></a>APP_FILE_MISSING&#160;</td><td class="fielddoc"><p>Application executable file is missing. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1cde43b4ce352509446cb4cbd98a95a1a23518dd90f8af806e3c7edce8d2319ba" name="a1cde43b4ce352509446cb4cbd98a95a1a23518dd90f8af806e3c7edce8d2319ba"></a>APP_OTHER_ERROR&#160;</td><td class="fielddoc"><p>Other errors during launch. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li>app_wrapper/<a class="el" href="applicationwrapper_8h_source.html">applicationwrapper.h</a></li>
 </ul>
 </div><!-- contents -->

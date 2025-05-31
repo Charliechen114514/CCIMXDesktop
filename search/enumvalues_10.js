@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['zoom_5fin_0',['ZOOM_IN',['../classCCPdfViewer.html#ac8458daf2cedd1f6118454f199401336a9fb15123c848cda02eec2316e765134a',1,'CCPdfViewer']]],
-  ['zoom_5fout_1',['ZOOM_OUT',['../classCCPdfViewer.html#ac8458daf2cedd1f6118454f199401336aa2ef1b00efd83e548ce99f6ead83bacd',1,'CCPdfViewer']]]
+  ['title_0',['Title',['../structCCPdfMetaInfo.html#a423cdbefdd1463da5d20fd464d9050a5ab78a3223503896721cca1303f776159b',1,'CCPdfMetaInfo']]],
+  ['typeinfoproviders_1',['TypeInfoProviders',['../classMainWindow.html#ad766a05d8996b153d8328819f3fef928a7820a0e650c977902ca389fb734cb3ab',1,'MainWindow']]]
 ];

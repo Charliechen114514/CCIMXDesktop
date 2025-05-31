@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['🔧_20tt_20app_5fwrapper_20tt_0',['🔧 tt app_wrapper tt',['../md_Components-explain-CN.html#autotoc_md29',1,'🔧 &lt;tt&gt;app_wrapper&lt;/tt&gt;'],['../md_Components-explain-EN.html#autotoc_md41',1,'🔧 &lt;tt&gt;app_wrapper&lt;/tt&gt;']]]
+  ['📝_20许可证_0',['📝 许可证',['../md_README.html#autotoc_md13',1,'']]],
+  ['📝_20license_1',['📝 License',['../md_README__EN.html#autotoc_md27',1,'']]]
 ];

@@ -116,18 +116,21 @@ Inheritance diagram for FileNameProviders:</div>
 Public Types</h2></td></tr>
 <tr class="memitem:a400f20700f7bcc5acead68a30e691c5e" id="r_a400f20700f7bcc5acead68a30e691c5e"><td class="memItemLeft" align="right" valign="top"><a id="a400f20700f7bcc5acead68a30e691c5e" name="a400f20700f7bcc5acead68a30e691c5e"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>FileExtension</b> = QString</td></tr>
+<tr class="memdesc:a400f20700f7bcc5acead68a30e691c5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">file extension defines <br /></td></tr>
 <tr class="separator:a400f20700f7bcc5acead68a30e691c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade1e3d0a691c118ff906baf51cf56b18" id="r_ade1e3d0a691c118ff906baf51cf56b18"><td class="memItemLeft" align="right" valign="top"><a id="ade1e3d0a691c118ff906baf51cf56b18" name="ade1e3d0a691c118ff906baf51cf56b18"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>ColorPairs</b> = std::pair&lt; FileExtension, QColor &gt;</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>ColorPairs</b> = std::pair&lt; <a class="el" href="classFileNameProviders.html#a400f20700f7bcc5acead68a30e691c5e">FileExtension</a>, QColor &gt;</td></tr>
+<tr class="memdesc:ade1e3d0a691c118ff906baf51cf56b18"><td class="mdescLeft">&#160;</td><td class="mdescRight">color pairs <br /></td></tr>
 <tr class="separator:ade1e3d0a691c118ff906baf51cf56b18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad81f8ebbb75db0cee10db72073fbc58b" id="r_ad81f8ebbb75db0cee10db72073fbc58b"><td class="memItemLeft" align="right" valign="top"><a id="ad81f8ebbb75db0cee10db72073fbc58b" name="ad81f8ebbb75db0cee10db72073fbc58b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>FileNameProviders</b> (<a class="el" href="classCCIMXFileSystemModel.html">CCIMXFileSystemModel</a> *<a class="el" href="classFileInfoProvider.html#ae898e8c9bb3dc76decd869a018f9c0d9">models</a>)</td></tr>
+<tr class="memitem:ad81f8ebbb75db0cee10db72073fbc58b" id="r_ad81f8ebbb75db0cee10db72073fbc58b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileNameProviders.html#ad81f8ebbb75db0cee10db72073fbc58b">FileNameProviders</a> (<a class="el" href="classCCIMXFileSystemModel.html">CCIMXFileSystemModel</a> *<a class="el" href="classFileInfoProvider.html#ae898e8c9bb3dc76decd869a018f9c0d9">models</a>)</td></tr>
+<tr class="memdesc:ad81f8ebbb75db0cee10db72073fbc58b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new File Name Providers object.  <br /></td></tr>
 <tr class="separator:ad81f8ebbb75db0cee10db72073fbc58b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a323bf8d034d2a6c4d53705f5d38d0114" id="r_a323bf8d034d2a6c4d53705f5d38d0114"><td class="memItemLeft" align="right" valign="top"><a id="a323bf8d034d2a6c4d53705f5d38d0114" name="a323bf8d034d2a6c4d53705f5d38d0114"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Q_DISABLE_COPY</b> (<a class="el" href="classFileNameProviders.html">FileNameProviders</a>)</td></tr>
+<tr class="memdesc:a323bf8d034d2a6c4d53705f5d38d0114"><td class="mdescLeft">&#160;</td><td class="mdescRight">disable copy <br /></td></tr>
 <tr class="separator:a323bf8d034d2a6c4d53705f5d38d0114"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fc88ac86b53656f9e75a0476004ac18" id="r_a3fc88ac86b53656f9e75a0476004ac18"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileNameProviders.html#a3fc88ac86b53656f9e75a0476004ac18">provide_section_name</a> () override</td></tr>
 <tr class="memdesc:a3fc88ac86b53656f9e75a0476004ac18"><td class="mdescLeft">&#160;</td><td class="mdescRight">provide_section_name means everything in the name lol  <br /></td></tr>
@@ -135,7 +138,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab7c156fc04bc7888677c266f79f15127" id="r_ab7c156fc04bc7888677c266f79f15127"><td class="memItemLeft" align="right" valign="top">std::pair&lt; bool, QVariant &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileNameProviders.html#ab7c156fc04bc7888677c266f79f15127">data</a> (const QModelIndex &amp;index, int role) override</td></tr>
 <tr class="memdesc:ab7c156fc04bc7888677c266f79f15127"><td class="mdescLeft">&#160;</td><td class="mdescRight">data provide the data to the views  <br /></td></tr>
 <tr class="separator:ab7c156fc04bc7888677c266f79f15127"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad649d1ca2c8291733510803220b61b5d" id="r_ad649d1ca2c8291733510803220b61b5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileNameProviders.html#ad649d1ca2c8291733510803220b61b5d">registerColorPairs</a> (const ColorPairs &amp;pairs)</td></tr>
+<tr class="memitem:ad649d1ca2c8291733510803220b61b5d" id="r_ad649d1ca2c8291733510803220b61b5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileNameProviders.html#ad649d1ca2c8291733510803220b61b5d">registerColorPairs</a> (const <a class="el" href="classFileNameProviders.html#ade1e3d0a691c118ff906baf51cf56b18">ColorPairs</a> &amp;pairs)</td></tr>
 <tr class="memdesc:ad649d1ca2c8291733510803220b61b5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">registerColorPairs assigned the color shows  <br /></td></tr>
 <tr class="separator:ad649d1ca2c8291733510803220b61b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad419a989e778ba01fc40417dd78ec62a" id="r_ad419a989e778ba01fc40417dd78ec62a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileNameProviders.html#ad419a989e778ba01fc40417dd78ec62a">register_special_dircolor</a> (const QColor &amp;t)</td></tr>
@@ -144,10 +147,19 @@ Public Member Functions</h2></td></tr>
 <tr class="inherit_header pub_methods_classFileInfoProvider"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classFileInfoProvider')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classFileInfoProvider.html">FileInfoProvider</a></td></tr>
 <tr class="memitem:a1b5f15a9efc225ac0f3ce2c0420dcdf3 inherit pub_methods_classFileInfoProvider" id="r_a1b5f15a9efc225ac0f3ce2c0420dcdf3"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>Q_DISABLE_COPY</b> (<a class="el" href="classFileInfoProvider.html">FileInfoProvider</a>)</td></tr>
+<tr class="memdesc:a1b5f15a9efc225ac0f3ce2c0420dcdf3 inherit pub_methods_classFileInfoProvider"><td class="mdescLeft">&#160;</td><td class="mdescRight">disable copy object <br /></td></tr>
 <tr class="separator:a1b5f15a9efc225ac0f3ce2c0420dcdf3 inherit pub_methods_classFileInfoProvider"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acaff96e7f9eacb7bc0b3023fab1d685d inherit pub_methods_classFileInfoProvider" id="r_acaff96e7f9eacb7bc0b3023fab1d685d"><td class="memItemLeft" align="right" valign="top">
-&#160;</td><td class="memItemRight" valign="bottom"><b>FileInfoProvider</b> (<a class="el" href="classCCIMXFileSystemModel.html">CCIMXFileSystemModel</a> *<a class="el" href="classFileInfoProvider.html#ae898e8c9bb3dc76decd869a018f9c0d9">models</a>)</td></tr>
+<tr class="memitem:aac708c0bbd39fe67a3e2b0129109a0f3 inherit pub_methods_classFileInfoProvider" id="r_aac708c0bbd39fe67a3e2b0129109a0f3"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>FileInfoProvider</b> ()=delete</td></tr>
+<tr class="memdesc:aac708c0bbd39fe67a3e2b0129109a0f3 inherit pub_methods_classFileInfoProvider"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new File Info Provider object default is prohibited, disable this for the default constructor, prevent the non-model register. <br /></td></tr>
+<tr class="separator:aac708c0bbd39fe67a3e2b0129109a0f3 inherit pub_methods_classFileInfoProvider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaff96e7f9eacb7bc0b3023fab1d685d inherit pub_methods_classFileInfoProvider" id="r_acaff96e7f9eacb7bc0b3023fab1d685d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileInfoProvider.html#acaff96e7f9eacb7bc0b3023fab1d685d">FileInfoProvider</a> (<a class="el" href="classCCIMXFileSystemModel.html">CCIMXFileSystemModel</a> *<a class="el" href="classFileInfoProvider.html#ae898e8c9bb3dc76decd869a018f9c0d9">models</a>)</td></tr>
+<tr class="memdesc:acaff96e7f9eacb7bc0b3023fab1d685d inherit pub_methods_classFileInfoProvider"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new File Info Provider object, assigned models requires.  <br /></td></tr>
 <tr class="separator:acaff96e7f9eacb7bc0b3023fab1d685d inherit pub_methods_classFileInfoProvider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa248c464164dfb67a41bbc666d622d0b inherit pub_methods_classFileInfoProvider" id="r_aa248c464164dfb67a41bbc666d622d0b"><td class="memItemLeft" align="right" valign="top">
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~FileInfoProvider</b> ()=default</td></tr>
+<tr class="memdesc:aa248c464164dfb67a41bbc666d622d0b inherit pub_methods_classFileInfoProvider"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the File Info Provider object. <br /></td></tr>
+<tr class="separator:aa248c464164dfb67a41bbc666d622d0b inherit pub_methods_classFileInfoProvider"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa13112f10f0b93ab09d2c12385b13374 inherit pub_methods_classFileInfoProvider" id="r_aa13112f10f0b93ab09d2c12385b13374"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileInfoProvider.html#aa13112f10f0b93ab09d2c12385b13374">setCurrentHandlePath</a> (const QString &amp;path)</td></tr>
 <tr class="memdesc:aa13112f10f0b93ab09d2c12385b13374 inherit pub_methods_classFileInfoProvider"><td class="mdescLeft">&#160;</td><td class="mdescRight">setCurrentHandlePath set the current handle path  <br /></td></tr>
 <tr class="separator:aa13112f10f0b93ab09d2c12385b13374 inherit pub_methods_classFileInfoProvider"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,6 +175,33 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memdesc:ae898e8c9bb3dc76decd869a018f9c0d9 inherit pro_attribs_classFileInfoProvider"><td class="mdescLeft">&#160;</td><td class="mdescRight">binding models <br /></td></tr>
 <tr class="separator:ae898e8c9bb3dc76decd869a018f9c0d9 inherit pro_attribs_classFileInfoProvider"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ad81f8ebbb75db0cee10db72073fbc58b" name="ad81f8ebbb75db0cee10db72073fbc58b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad81f8ebbb75db0cee10db72073fbc58b">&#9670;&#160;</a></span>FileNameProviders()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FileNameProviders::FileNameProviders </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCCIMXFileSystemModel.html">CCIMXFileSystemModel</a> *&#160;</td>
+          <td class="paramname"><em>models</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct a new File Name Providers object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">models</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ab7c156fc04bc7888677c266f79f15127" name="ab7c156fc04bc7888677c266f79f15127"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab7c156fc04bc7888677c266f79f15127">&#9670;&#160;</a></span>data()</h2>
@@ -286,7 +325,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void FileNameProviders::registerColorPairs </td>
           <td>(</td>
-          <td class="paramtype">const ColorPairs &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classFileNameProviders.html#ade1e3d0a691c118ff906baf51cf56b18">ColorPairs</a> &amp;&#160;</td>
           <td class="paramname"><em>pairs</em></td><td>)</td>
           <td></td>
         </tr>

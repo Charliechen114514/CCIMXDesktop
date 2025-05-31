@@ -1,6 +1,7 @@
 var classAppWeatherResult =
 [
     [ "DailyWeather", "structAppWeatherResult_1_1DailyWeather.html", "structAppWeatherResult_1_1DailyWeather" ],
+    [ "AppWeatherResult", "classAppWeatherResult.html#a352f052b411d28c2bb4e30d84cb81d35", null ],
     [ "debugPrint", "classAppWeatherResult.html#a8971c07da34beaefe4f964fc99839a66", null ],
     [ "parseJsonString", "classAppWeatherResult.html#a29da2246f7b3941ae7f8b2d695536b33", null ],
     [ "cached_city", "classAppWeatherResult.html#a68c15f5dbe8e889ed2214bac7458cd8c", null ],

@@ -104,6 +104,11 @@ $(document).ready(function(){initNavTree('classApplicationWrapper.html',''); ini
   <div class="headertitle"><div class="title">ApplicationWrapper Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The <a class="el" href="classApplicationWrapper.html" title="The ApplicationWrapper class is the process wrapper.">ApplicationWrapper</a> class is the process wrapper.  
+ <a href="classApplicationWrapper.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="applicationwrapper_8h_source.html">applicationwrapper.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ApplicationWrapper:</div>
 <div class="dyncontent">
@@ -114,86 +119,138 @@ Inheritance diagram for ApplicationWrapper:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structApplicationWrapper_1_1ApplicationDepatchResult.html">ApplicationDepatchResult</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="structApplicationWrapper_1_1ApplicationDepatchResult.html" title="The ApplicationDepatchResult class indicate the app depatching result, for the desktop front end,...">ApplicationDepatchResult</a> class indicate the app depatching result, for the desktop front end, this can be used in inform the user what is going on.  <a href="structApplicationWrapper_1_1ApplicationDepatchResult.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="structApplicationWrapper_1_1ApplicationDepatchResult.html" title="The ApplicationDepatchResult struct represents the result of launching (depatching) an application.">ApplicationDepatchResult</a> struct represents the result of launching (depatching) an application.  <a href="structApplicationWrapper_1_1ApplicationDepatchResult.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structApplicationWrapper_1_1ApplicationFinishResult.html">ApplicationFinishResult</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="structApplicationWrapper_1_1ApplicationFinishResult.html" title="The ApplicationFinishResult class marks the application depatching result, a typical scene of using t...">ApplicationFinishResult</a> class marks the application depatching result, a typical scene of using this is, when your app if finished(MainAppWindow Close, or anything trigger the exit functions will make
-a process ends, this will emit the signals of AppProcess Finish signals)  <a href="structApplicationWrapper_1_1ApplicationFinishResult.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="structApplicationWrapper_1_1ApplicationFinishResult.html" title="The ApplicationFinishResult struct represents the result when an application finishes execution.">ApplicationFinishResult</a> struct represents the result when an application finishes execution.  <a href="structApplicationWrapper_1_1ApplicationFinishResult.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:ad54d8e5509fdc415009be64f28636b82" id="r_ad54d8e5509fdc415009be64f28636b82"><td class="memItemLeft" align="right" valign="top"><a id="ad54d8e5509fdc415009be64f28636b82" name="ad54d8e5509fdc415009be64f28636b82"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>AppCode</b> = int</td></tr>
+<tr class="memdesc:ad54d8e5509fdc415009be64f28636b82"><td class="mdescLeft">&#160;</td><td class="mdescRight">AppCode is used to uniquely identify applications. <br /></td></tr>
 <tr class="separator:ad54d8e5509fdc415009be64f28636b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9aba67108dbf1e09c96373a9f5139d4b" id="r_a9aba67108dbf1e09c96373a9f5139d4b"><td class="memItemLeft" align="right" valign="top"><a id="a9aba67108dbf1e09c96373a9f5139d4b" name="a9aba67108dbf1e09c96373a9f5139d4b"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>PreLaunchIndicate</b> = <a class="el" href="structApplicationWrapper_1_1ApplicationDepatchResult.html">ApplicationDepatchResult</a>(*)(<a class="el" href="classApplicationWrapper.html">ApplicationWrapper</a> *wrapper)</td></tr>
+<tr class="memdesc:a9aba67108dbf1e09c96373a9f5139d4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function pointer type for pre-launch checks. <br /></td></tr>
 <tr class="separator:a9aba67108dbf1e09c96373a9f5139d4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acaaa113a722e3e2f0625d40181b8c794" id="r_acaaa113a722e3e2f0625d40181b8c794"><td class="memItemLeft" align="right" valign="top"><a id="acaaa113a722e3e2f0625d40181b8c794" name="acaaa113a722e3e2f0625d40181b8c794"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>HandlingFinHook</b> = void(*)(<a class="el" href="classApplicationWrapper.html">ApplicationWrapper</a> *wrapper, int exit_hook, QProcess::ExitStatus status)</td></tr>
+<tr class="memdesc:acaaa113a722e3e2f0625d40181b8c794"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function pointer type for handling application finish hooks. <br /></td></tr>
 <tr class="separator:acaaa113a722e3e2f0625d40181b8c794"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1efcf8d4c820fd4c962319f69ccd50fb" id="r_a1efcf8d4c820fd4c962319f69ccd50fb"><td class="memItemLeft" align="right" valign="top"><a id="a1efcf8d4c820fd4c962319f69ccd50fb" name="a1efcf8d4c820fd4c962319f69ccd50fb"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>ErrorDepatchHook</b> = void(*)(<a class="el" href="classApplicationWrapper.html">ApplicationWrapper</a> *wrapper)</td></tr>
+<tr class="memdesc:a1efcf8d4c820fd4c962319f69ccd50fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function pointer type for handling depatch errors. <br /></td></tr>
 <tr class="separator:a1efcf8d4c820fd4c962319f69ccd50fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
 Signals</h2></td></tr>
-<tr class="memitem:a45514528856c64c52d36765874ab0dc3" id="r_a45514528856c64c52d36765874ab0dc3"><td class="memItemLeft" align="right" valign="top"><a id="a45514528856c64c52d36765874ab0dc3" name="a45514528856c64c52d36765874ab0dc3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>app_depatch_status</b> (<a class="el" href="structApplicationWrapper_1_1ApplicationDepatchResult.html">ApplicationWrapper::ApplicationDepatchResult</a>)</td></tr>
-<tr class="separator:a45514528856c64c52d36765874ab0dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47b46aa5e2c7ed646ad19e69b41d28d2" id="r_a47b46aa5e2c7ed646ad19e69b41d28d2"><td class="memItemLeft" align="right" valign="top"><a id="a47b46aa5e2c7ed646ad19e69b41d28d2" name="a47b46aa5e2c7ed646ad19e69b41d28d2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>app_finished</b> (<a class="el" href="structApplicationWrapper_1_1ApplicationFinishResult.html">ApplicationWrapper::ApplicationFinishResult</a>)</td></tr>
-<tr class="separator:a47b46aa5e2c7ed646ad19e69b41d28d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2ee029e9a9c1e0c727347477d1e313a" id="r_ac2ee029e9a9c1e0c727347477d1e313a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplicationWrapper.html#ac2ee029e9a9c1e0c727347477d1e313a">app_depatch_status</a> (<a class="el" href="structApplicationWrapper_1_1ApplicationDepatchResult.html">ApplicationWrapper::ApplicationDepatchResult</a> result)</td></tr>
+<tr class="memdesc:ac2ee029e9a9c1e0c727347477d1e313a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emitted when application depatch status changes.  <br /></td></tr>
+<tr class="separator:ac2ee029e9a9c1e0c727347477d1e313a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a278f402ec75cf679234fc4e505d4cb5e" id="r_a278f402ec75cf679234fc4e505d4cb5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplicationWrapper.html#a278f402ec75cf679234fc4e505d4cb5e">app_finished</a> (<a class="el" href="structApplicationWrapper_1_1ApplicationFinishResult.html">ApplicationWrapper::ApplicationFinishResult</a> result)</td></tr>
+<tr class="memdesc:a278f402ec75cf679234fc4e505d4cb5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emitted when the application finishes.  <br /></td></tr>
+<tr class="separator:a278f402ec75cf679234fc4e505d4cb5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a78d2891721e75aa4494a062769ede89f" id="r_a78d2891721e75aa4494a062769ede89f"><td class="memItemLeft" align="right" valign="top"><a id="a78d2891721e75aa4494a062769ede89f" name="a78d2891721e75aa4494a062769ede89f"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ApplicationWrapper</b> (QObject *parent, <a class="el" href="classDesktopMainWindow.html">DesktopMainWindow</a> *desktopWindow)</td></tr>
+<tr class="memitem:a78d2891721e75aa4494a062769ede89f" id="r_a78d2891721e75aa4494a062769ede89f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplicationWrapper.html#a78d2891721e75aa4494a062769ede89f">ApplicationWrapper</a> (QObject *parent, <a class="el" href="classDesktopMainWindow.html">DesktopMainWindow</a> *desktopWindow)</td></tr>
+<tr class="memdesc:a78d2891721e75aa4494a062769ede89f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an <a class="el" href="classApplicationWrapper.html" title="The ApplicationWrapper class is the process wrapper.">ApplicationWrapper</a> instance.  <br /></td></tr>
 <tr class="separator:a78d2891721e75aa4494a062769ede89f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1e58358a4a3cdcab632cf08c4a27517" id="r_ac1e58358a4a3cdcab632cf08c4a27517"><td class="memItemLeft" align="right" valign="top"><a id="ac1e58358a4a3cdcab632cf08c4a27517" name="ac1e58358a4a3cdcab632cf08c4a27517"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Q_DISABLE_COPY</b> (<a class="el" href="classApplicationWrapper.html">ApplicationWrapper</a>)</td></tr>
+<tr class="memdesc:ac1e58358a4a3cdcab632cf08c4a27517"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable copy constructor and assignment operator. This class is not copyable. <br /></td></tr>
 <tr class="separator:ac1e58358a4a3cdcab632cf08c4a27517"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fd8f6f029b8dba337310bb9750f49ed" id="r_a6fd8f6f029b8dba337310bb9750f49ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplicationWrapper.html#a6fd8f6f029b8dba337310bb9750f49ed">bindAppWidget</a> (<a class="el" href="classAppWidget.html">AppWidget</a> *appWidget) noexcept</td></tr>
-<tr class="memdesc:a6fd8f6f029b8dba337310bb9750f49ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">App Widget mappings bindings.  <br /></td></tr>
+<tr class="memdesc:a6fd8f6f029b8dba337310bb9750f49ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind the UI widget associated with the application.  <br /></td></tr>
 <tr class="separator:a6fd8f6f029b8dba337310bb9750f49ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b395ef8736c102556539b3fb96296cb" id="r_a0b395ef8736c102556539b3fb96296cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAppWidget.html">AppWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplicationWrapper.html#a0b395ef8736c102556539b3fb96296cb">app_widget</a> (void) const</td></tr>
-<tr class="memdesc:a0b395ef8736c102556539b3fb96296cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">app_widget getters of the appWidgets  <br /></td></tr>
-<tr class="separator:a0b395ef8736c102556539b3fb96296cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf8a55aaaf2ccbfda855d75d0f4b9053" id="r_adf8a55aaaf2ccbfda855d75d0f4b9053"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplicationWrapper.html#adf8a55aaaf2ccbfda855d75d0f4b9053">install_app_code</a> (AppCode code) noexcept</td></tr>
-<tr class="memdesc:adf8a55aaaf2ccbfda855d75d0f4b9053"><td class="mdescLeft">&#160;</td><td class="mdescRight">install the code apps, this will be used soon or later  <br /></td></tr>
+<tr class="memitem:aab53c89497bb397efb30627776f468fb" id="r_aab53c89497bb397efb30627776f468fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAppWidget.html">AppWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplicationWrapper.html#aab53c89497bb397efb30627776f468fb">app_widget</a> () const</td></tr>
+<tr class="memdesc:aab53c89497bb397efb30627776f468fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the bound application widget.  <br /></td></tr>
+<tr class="separator:aab53c89497bb397efb30627776f468fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf8a55aaaf2ccbfda855d75d0f4b9053" id="r_adf8a55aaaf2ccbfda855d75d0f4b9053"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplicationWrapper.html#adf8a55aaaf2ccbfda855d75d0f4b9053">install_app_code</a> (<a class="el" href="classApplicationWrapper.html#ad54d8e5509fdc415009be64f28636b82">AppCode</a> code) noexcept</td></tr>
+<tr class="memdesc:adf8a55aaaf2ccbfda855d75d0f4b9053"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the app code for quick identification.  <br /></td></tr>
 <tr class="separator:adf8a55aaaf2ccbfda855d75d0f4b9053"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa275174067d1949835c5f7097fccc10" id="r_aaa275174067d1949835c5f7097fccc10"><td class="memItemLeft" align="right" valign="top">AppCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplicationWrapper.html#aaa275174067d1949835c5f7097fccc10">app_code</a> () const</td></tr>
-<tr class="memdesc:aaa275174067d1949835c5f7097fccc10"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the app code  <br /></td></tr>
+<tr class="memitem:aaa275174067d1949835c5f7097fccc10" id="r_aaa275174067d1949835c5f7097fccc10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classApplicationWrapper.html#ad54d8e5509fdc415009be64f28636b82">AppCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplicationWrapper.html#aaa275174067d1949835c5f7097fccc10">app_code</a> () const</td></tr>
+<tr class="memdesc:aaa275174067d1949835c5f7097fccc10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the installed app code.  <br /></td></tr>
 <tr class="separator:aaa275174067d1949835c5f7097fccc10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf76b7e548ec203af29659ad3115b9b8" id="r_acf76b7e548ec203af29659ad3115b9b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplicationWrapper.html#acf76b7e548ec203af29659ad3115b9b8">set_app_path</a> (const QString &amp;app_path) noexcept</td></tr>
-<tr class="memdesc:acf76b7e548ec203af29659ad3115b9b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">app path setter, this will indicate the ELF/PE Executables path in FileSystem to make this launchable, it must be checkable for QFile, else, we can not fire the process  <br /></td></tr>
+<tr class="memdesc:acf76b7e548ec203af29659ad3115b9b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the file system path to the application executable.  <br /></td></tr>
 <tr class="separator:acf76b7e548ec203af29659ad3115b9b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a645eedaf1b9540075dcab6e55e2cefe2" id="r_a645eedaf1b9540075dcab6e55e2cefe2"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplicationWrapper.html#a645eedaf1b9540075dcab6e55e2cefe2">get_app_path</a> (void) const</td></tr>
-<tr class="memdesc:a645eedaf1b9540075dcab6e55e2cefe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the app path  <br /></td></tr>
-<tr class="separator:a645eedaf1b9540075dcab6e55e2cefe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a157919a1894a29889b4feac5aad1151b" id="r_a157919a1894a29889b4feac5aad1151b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplicationWrapper.html#a157919a1894a29889b4feac5aad1151b">install_args</a> (const QStringList &amp;l) noexcept</td></tr>
-<tr class="memdesc:a157919a1894a29889b4feac5aad1151b"><td class="mdescLeft">&#160;</td><td class="mdescRight">app args setter, this will indicate the arguments that is passed to the application  <br /></td></tr>
-<tr class="separator:a157919a1894a29889b4feac5aad1151b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae33f13768de3aefb8098302c1c77e001" id="r_ae33f13768de3aefb8098302c1c77e001"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplicationWrapper.html#ae33f13768de3aefb8098302c1c77e001">args</a> (void) const</td></tr>
-<tr class="memdesc:ae33f13768de3aefb8098302c1c77e001"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the args  <br /></td></tr>
-<tr class="separator:ae33f13768de3aefb8098302c1c77e001"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a134b24e6aba73be486197652a6e40cb6" id="r_a134b24e6aba73be486197652a6e40cb6"><td class="memItemLeft" align="right" valign="top">QProcess *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplicationWrapper.html#a134b24e6aba73be486197652a6e40cb6">process_handle</a> (void) const</td></tr>
-<tr class="memdesc:a134b24e6aba73be486197652a6e40cb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">process_handle  <br /></td></tr>
-<tr class="separator:a134b24e6aba73be486197652a6e40cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadc9fc2e2aa2488bc35115f387a3cda9" id="r_aadc9fc2e2aa2488bc35115f387a3cda9"><td class="memItemLeft" align="right" valign="top"><a id="aadc9fc2e2aa2488bc35115f387a3cda9" name="aadc9fc2e2aa2488bc35115f387a3cda9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>depatch_app</b> (void)</td></tr>
-<tr class="memdesc:aadc9fc2e2aa2488bc35115f387a3cda9"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classApplicationWrapper.html#aadc9fc2e2aa2488bc35115f387a3cda9" title="ApplicationWrapper::depatch_app this is the main function to depatch the application,...">ApplicationWrapper::depatch_app</a> this is the main function to depatch the application, core functions. <br /></td></tr>
-<tr class="separator:aadc9fc2e2aa2488bc35115f387a3cda9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a895d28d5f837ea6a23cae8f5ff8682b7" id="r_a895d28d5f837ea6a23cae8f5ff8682b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplicationWrapper.html#a895d28d5f837ea6a23cae8f5ff8682b7">install_prelaunched</a> (PreLaunchIndicate precheck)</td></tr>
-<tr class="memdesc:a895d28d5f837ea6a23cae8f5ff8682b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">this functions installed the specified behaviours of the prelaunch  <br /></td></tr>
+<tr class="memitem:aed189da24e5c4ef44de2d6fab8d2571a" id="r_aed189da24e5c4ef44de2d6fab8d2571a"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplicationWrapper.html#aed189da24e5c4ef44de2d6fab8d2571a">get_app_path</a> () const</td></tr>
+<tr class="memdesc:aed189da24e5c4ef44de2d6fab8d2571a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the application executable path.  <br /></td></tr>
+<tr class="separator:aed189da24e5c4ef44de2d6fab8d2571a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53d1462666f96dc21afb656dde0d0aa8" id="r_a53d1462666f96dc21afb656dde0d0aa8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplicationWrapper.html#a53d1462666f96dc21afb656dde0d0aa8">install_args</a> (const QStringList &amp;<a class="el" href="classApplicationWrapper.html#a40ff6df8511a686c4868a4d443a9ec19">args</a>) noexcept</td></tr>
+<tr class="memdesc:a53d1462666f96dc21afb656dde0d0aa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the arguments to pass to the application on launch.  <br /></td></tr>
+<tr class="separator:a53d1462666f96dc21afb656dde0d0aa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40ff6df8511a686c4868a4d443a9ec19" id="r_a40ff6df8511a686c4868a4d443a9ec19"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplicationWrapper.html#a40ff6df8511a686c4868a4d443a9ec19">args</a> () const</td></tr>
+<tr class="memdesc:a40ff6df8511a686c4868a4d443a9ec19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the argument list for the application.  <br /></td></tr>
+<tr class="separator:a40ff6df8511a686c4868a4d443a9ec19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3618112d107e8a77caa1d8865201bbad" id="r_a3618112d107e8a77caa1d8865201bbad"><td class="memItemLeft" align="right" valign="top">QProcess *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplicationWrapper.html#a3618112d107e8a77caa1d8865201bbad">process_handle</a> () const</td></tr>
+<tr class="memdesc:a3618112d107e8a77caa1d8865201bbad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the internal QProcess handle.  <br /></td></tr>
+<tr class="separator:a3618112d107e8a77caa1d8865201bbad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe3d64c4cefd2b7e6c97fb188a6e8488" id="r_afe3d64c4cefd2b7e6c97fb188a6e8488"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplicationWrapper.html#afe3d64c4cefd2b7e6c97fb188a6e8488">depatch_app</a> ()</td></tr>
+<tr class="memdesc:afe3d64c4cefd2b7e6c97fb188a6e8488"><td class="mdescLeft">&#160;</td><td class="mdescRight">Launches the application (depatch).  <br /></td></tr>
+<tr class="separator:afe3d64c4cefd2b7e6c97fb188a6e8488"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a895d28d5f837ea6a23cae8f5ff8682b7" id="r_a895d28d5f837ea6a23cae8f5ff8682b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplicationWrapper.html#a895d28d5f837ea6a23cae8f5ff8682b7">install_prelaunched</a> (<a class="el" href="classApplicationWrapper.html#a9aba67108dbf1e09c96373a9f5139d4b">PreLaunchIndicate</a> precheck)</td></tr>
+<tr class="memdesc:a895d28d5f837ea6a23cae8f5ff8682b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs a pre-launch indication hook.  <br /></td></tr>
 <tr class="separator:a895d28d5f837ea6a23cae8f5ff8682b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13662d0c499aa21f837e4f6259ae68d6" id="r_a13662d0c499aa21f837e4f6259ae68d6"><td class="memItemLeft" align="right" valign="top"><a id="a13662d0c499aa21f837e4f6259ae68d6" name="a13662d0c499aa21f837e4f6259ae68d6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>install_finhook</b> (HandlingFinHook hook)</td></tr>
+<tr class="memitem:a13662d0c499aa21f837e4f6259ae68d6" id="r_a13662d0c499aa21f837e4f6259ae68d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplicationWrapper.html#a13662d0c499aa21f837e4f6259ae68d6">install_finhook</a> (<a class="el" href="classApplicationWrapper.html#acaaa113a722e3e2f0625d40181b8c794">HandlingFinHook</a> hook)</td></tr>
+<tr class="memdesc:a13662d0c499aa21f837e4f6259ae68d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs a hook called when the application finishes.  <br /></td></tr>
 <tr class="separator:a13662d0c499aa21f837e4f6259ae68d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a6e6252e45edb6ffd839e319ce37a0d" id="r_a6a6e6252e45edb6ffd839e319ce37a0d"><td class="memItemLeft" align="right" valign="top"><a id="a6a6e6252e45edb6ffd839e319ce37a0d" name="a6a6e6252e45edb6ffd839e319ce37a0d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>install_error_handler</b> (ErrorDepatchHook hook)</td></tr>
+<tr class="memitem:a6a6e6252e45edb6ffd839e319ce37a0d" id="r_a6a6e6252e45edb6ffd839e319ce37a0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplicationWrapper.html#a6a6e6252e45edb6ffd839e319ce37a0d">install_error_handler</a> (<a class="el" href="classApplicationWrapper.html#a1efcf8d4c820fd4c962319f69ccd50fb">ErrorDepatchHook</a> hook)</td></tr>
+<tr class="memdesc:a6a6e6252e45edb6ffd839e319ce37a0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs an error handler hook for depatch failures.  <br /></td></tr>
 <tr class="separator:a6a6e6252e45edb6ffd839e319ce37a0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="classApplicationWrapper.html" title="The ApplicationWrapper class is the process wrapper.">ApplicationWrapper</a> class is the process wrapper. </p>
+<p>This class manages launching, monitoring, and interacting with external applications through QProcess. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a78d2891721e75aa4494a062769ede89f" name="a78d2891721e75aa4494a062769ede89f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78d2891721e75aa4494a062769ede89f">&#9670;&#160;</a></span>ApplicationWrapper()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ApplicationWrapper::ApplicationWrapper </td>
+          <td>(</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classDesktopMainWindow.html">DesktopMainWindow</a> *&#160;</td>
+          <td class="paramname"><em>desktopWindow</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs an <a class="el" href="classApplicationWrapper.html" title="The ApplicationWrapper class is the process wrapper.">ApplicationWrapper</a> instance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>The parent QObject. </td></tr>
+    <tr><td class="paramname">desktopWindow</td><td>Pointer to the main desktop window. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="aaa275174067d1949835c5f7097fccc10" name="aaa275174067d1949835c5f7097fccc10"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaa275174067d1949835c5f7097fccc10">&#9670;&#160;</a></span>app_code()</h2>
@@ -205,7 +262,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>install_error_handler
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">AppCode ApplicationWrapper::app_code </td>
+          <td class="memname"><a class="el" href="classApplicationWrapper.html#ad54d8e5509fdc415009be64f28636b82">AppCode</a> ApplicationWrapper::app_code </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -218,13 +275,81 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>install_error_handler
 </table>
 </div><div class="memdoc">
 
-<p>get the app code </p>
-<dl class="section return"><dt>Returns</dt><dd>app codes </dd></dl>
+<p>Returns the installed app code. </p>
+<dl class="section return"><dt>Returns</dt><dd>The app code. </dd></dl>
 
 </div>
 </div>
-<a id="a0b395ef8736c102556539b3fb96296cb" name="a0b395ef8736c102556539b3fb96296cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b395ef8736c102556539b3fb96296cb">&#9670;&#160;</a></span>app_widget()</h2>
+<a id="ac2ee029e9a9c1e0c727347477d1e313a" name="ac2ee029e9a9c1e0c727347477d1e313a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2ee029e9a9c1e0c727347477d1e313a">&#9670;&#160;</a></span>app_depatch_status</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ApplicationWrapper::app_depatch_status </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structApplicationWrapper_1_1ApplicationDepatchResult.html">ApplicationWrapper::ApplicationDepatchResult</a>&#160;</td>
+          <td class="paramname"><em>result</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Emitted when application depatch status changes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">result</td><td>The result of the depatch. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a278f402ec75cf679234fc4e505d4cb5e" name="a278f402ec75cf679234fc4e505d4cb5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a278f402ec75cf679234fc4e505d4cb5e">&#9670;&#160;</a></span>app_finished</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ApplicationWrapper::app_finished </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structApplicationWrapper_1_1ApplicationFinishResult.html">ApplicationWrapper::ApplicationFinishResult</a>&#160;</td>
+          <td class="paramname"><em>result</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Emitted when the application finishes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">result</td><td>The application finish result. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aab53c89497bb397efb30627776f468fb" name="aab53c89497bb397efb30627776f468fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab53c89497bb397efb30627776f468fb">&#9670;&#160;</a></span>app_widget()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -235,7 +360,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>install_error_handler
         <tr>
           <td class="memname"><a class="el" href="classAppWidget.html">AppWidget</a> * ApplicationWrapper::app_widget </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
@@ -247,13 +371,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>install_error_handler
 </table>
 </div><div class="memdoc">
 
-<p>app_widget getters of the appWidgets </p>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<p>Returns the bound application widget. </p>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the <a class="el" href="classAppWidget.html" title="The AppWidget class represents an application widget placed on the desktop.">AppWidget</a> instance. </dd></dl>
 
 </div>
 </div>
-<a id="ae33f13768de3aefb8098302c1c77e001" name="ae33f13768de3aefb8098302c1c77e001"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae33f13768de3aefb8098302c1c77e001">&#9670;&#160;</a></span>args()</h2>
+<a id="a40ff6df8511a686c4868a4d443a9ec19" name="a40ff6df8511a686c4868a4d443a9ec19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40ff6df8511a686c4868a4d443a9ec19">&#9670;&#160;</a></span>args()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -264,7 +388,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>install_error_handler
         <tr>
           <td class="memname">QStringList ApplicationWrapper::args </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
@@ -276,8 +399,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>install_error_handler
 </table>
 </div><div class="memdoc">
 
-<p>get the args </p>
-<dl class="section return"><dt>Returns</dt><dd>the args </dd></dl>
+<p>Returns the argument list for the application. </p>
+<dl class="section return"><dt>Returns</dt><dd>QStringList of arguments. </dd></dl>
 
 </div>
 </div>
@@ -305,18 +428,38 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>install_error_handler
 </table>
 </div><div class="memdoc">
 
-<p>App Widget mappings bindings. </p>
+<p>Bind the UI widget associated with the application. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">appWidget</td><td></td></tr>
+    <tr><td class="paramname">appWidget</td><td>Pointer to the <a class="el" href="classAppWidget.html" title="The AppWidget class represents an application widget placed on the desktop.">AppWidget</a> instance. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a645eedaf1b9540075dcab6e55e2cefe2" name="a645eedaf1b9540075dcab6e55e2cefe2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a645eedaf1b9540075dcab6e55e2cefe2">&#9670;&#160;</a></span>get_app_path()</h2>
+<a id="afe3d64c4cefd2b7e6c97fb188a6e8488" name="afe3d64c4cefd2b7e6c97fb188a6e8488"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe3d64c4cefd2b7e6c97fb188a6e8488">&#9670;&#160;</a></span>depatch_app()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ApplicationWrapper::depatch_app </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Launches the application (depatch). </p>
+<p>This is the core function to start the external process. </p>
+
+</div>
+</div>
+<a id="aed189da24e5c4ef44de2d6fab8d2571a" name="aed189da24e5c4ef44de2d6fab8d2571a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed189da24e5c4ef44de2d6fab8d2571a">&#9670;&#160;</a></span>get_app_path()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -327,7 +470,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>install_error_handler
         <tr>
           <td class="memname">QString ApplicationWrapper::get_app_path </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
@@ -339,8 +481,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>install_error_handler
 </table>
 </div><div class="memdoc">
 
-<p>get the app path </p>
-<dl class="section return"><dt>Returns</dt><dd>the app path </dd></dl>
+<p>Returns the application executable path. </p>
+<dl class="section return"><dt>Returns</dt><dd>The application path as QString. </dd></dl>
 
 </div>
 </div>
@@ -356,7 +498,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>install_error_handler
         <tr>
           <td class="memname">void ApplicationWrapper::install_app_code </td>
           <td>(</td>
-          <td class="paramtype">AppCode&#160;</td>
+          <td class="paramtype"><a class="el" href="classApplicationWrapper.html#ad54d8e5509fdc415009be64f28636b82">AppCode</a>&#160;</td>
           <td class="paramname"><em>code</em></td><td>)</td>
           <td></td>
         </tr>
@@ -368,18 +510,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>install_error_handler
 </table>
 </div><div class="memdoc">
 
-<p>install the code apps, this will be used soon or later </p>
+<p>Sets the app code for quick identification. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">code</td><td>codes waiting install </td></tr>
+    <tr><td class="paramname">code</td><td>The app code to install. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a157919a1894a29889b4feac5aad1151b" name="a157919a1894a29889b4feac5aad1151b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a157919a1894a29889b4feac5aad1151b">&#9670;&#160;</a></span>install_args()</h2>
+<a id="a53d1462666f96dc21afb656dde0d0aa8" name="a53d1462666f96dc21afb656dde0d0aa8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53d1462666f96dc21afb656dde0d0aa8">&#9670;&#160;</a></span>install_args()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -391,7 +533,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>install_error_handler
           <td class="memname">void ApplicationWrapper::install_args </td>
           <td>(</td>
           <td class="paramtype">const QStringList &amp;&#160;</td>
-          <td class="paramname"><em>l</em></td><td>)</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -402,10 +544,78 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>install_error_handler
 </table>
 </div><div class="memdoc">
 
-<p>app args setter, this will indicate the arguments that is passed to the application </p>
+<p>Sets the arguments to pass to the application on launch. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">args</td><td>arguments that is passed to the application </td></tr>
+    <tr><td class="paramname">args</td><td>List of arguments. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6a6e6252e45edb6ffd839e319ce37a0d" name="a6a6e6252e45edb6ffd839e319ce37a0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a6e6252e45edb6ffd839e319ce37a0d">&#9670;&#160;</a></span>install_error_handler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ApplicationWrapper::install_error_handler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classApplicationWrapper.html#a1efcf8d4c820fd4c962319f69ccd50fb">ErrorDepatchHook</a>&#160;</td>
+          <td class="paramname"><em>hook</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Installs an error handler hook for depatch failures. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hook</td><td>The function pointer to the error handler. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a13662d0c499aa21f837e4f6259ae68d6" name="a13662d0c499aa21f837e4f6259ae68d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13662d0c499aa21f837e4f6259ae68d6">&#9670;&#160;</a></span>install_finhook()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ApplicationWrapper::install_finhook </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classApplicationWrapper.html#acaaa113a722e3e2f0625d40181b8c794">HandlingFinHook</a>&#160;</td>
+          <td class="paramname"><em>hook</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Installs a hook called when the application finishes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hook</td><td>The function pointer to the finish hook. </td></tr>
   </table>
   </dd>
 </dl>
@@ -424,7 +634,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>install_error_handler
         <tr>
           <td class="memname">void ApplicationWrapper::install_prelaunched </td>
           <td>(</td>
-          <td class="paramtype">PreLaunchIndicate&#160;</td>
+          <td class="paramtype"><a class="el" href="classApplicationWrapper.html#a9aba67108dbf1e09c96373a9f5139d4b">PreLaunchIndicate</a>&#160;</td>
           <td class="paramname"><em>precheck</em></td><td>)</td>
           <td></td>
         </tr>
@@ -436,19 +646,19 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>install_error_handler
 </table>
 </div><div class="memdoc">
 
-<p>this functions installed the specified behaviours of the prelaunch </p>
+<p>Installs a pre-launch indication hook. </p>
+<p>This hook can be used to check conditions or prepare before launch.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">precheck</td><td>functions is required </td></tr>
+    <tr><td class="paramname">precheck</td><td>The function pointer to the pre-launch check. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>this is a hook for the prelaunch, you can use this to specify the launch result callbacks result can be handle for checking the situations </dd></dl>
 
 </div>
 </div>
-<a id="a134b24e6aba73be486197652a6e40cb6" name="a134b24e6aba73be486197652a6e40cb6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a134b24e6aba73be486197652a6e40cb6">&#9670;&#160;</a></span>process_handle()</h2>
+<a id="a3618112d107e8a77caa1d8865201bbad" name="a3618112d107e8a77caa1d8865201bbad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3618112d107e8a77caa1d8865201bbad">&#9670;&#160;</a></span>process_handle()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -459,7 +669,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>install_error_handler
         <tr>
           <td class="memname">QProcess * ApplicationWrapper::process_handle </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
@@ -471,9 +680,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>install_error_handler
 </table>
 </div><div class="memdoc">
 
-<p>process_handle </p>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
-<dl class="section note"><dt>Note</dt><dd>:for those who wanna see the detailed process, use this to fetch the handle </dd></dl>
+<p>Returns the internal QProcess handle. </p>
+<dl class="section note"><dt>Note</dt><dd>Use this to access detailed process control or signals. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to QProcess managing the application. </dd></dl>
 
 </div>
 </div>
@@ -501,10 +710,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>install_error_handler
 </table>
 </div><div class="memdoc">
 
-<p>app path setter, this will indicate the ELF/PE Executables path in FileSystem to make this launchable, it must be checkable for QFile, else, we can not fire the process </p>
+<p>Sets the file system path to the application executable. </p>
+<p>The path must be accessible and executable for launching the process.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">app_path</td><td>where is the app? :) </td></tr>
+    <tr><td class="paramname">app_path</td><td>The file path of the application executable. </td></tr>
   </table>
   </dd>
 </dl>

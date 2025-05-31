@@ -1,6 +1,7 @@
 var classMediaPlayer =
 [
     [ "MediaPlayerStatus", "structMediaPlayer_1_1MediaPlayerStatus.html", "structMediaPlayer_1_1MediaPlayerStatus" ],
+    [ "MediaPlayer", "classMediaPlayer.html#a0885ebafef805891fb0ee86968a183ab", null ],
     [ "close", "classMediaPlayer.html#aa0dae769e5109e3d0ef3082c77fda490", null ],
     [ "display_frame", "classMediaPlayer.html#a64d0a37efe32f9aafacc3c36c87d7d70", null ],
     [ "durationChanged", "classMediaPlayer.html#a846e3dba84bab9f426810ffbd9c6d995", null ],
@@ -11,6 +12,7 @@ var classMediaPlayer =
     [ "metaDataAvailable", "classMediaPlayer.html#a238fff7dd529efb01c3c003dea4adc7b", null ],
     [ "pause", "classMediaPlayer.html#af20f090157c6f0be28027e1811e971f7", null ],
     [ "positionChanged", "classMediaPlayer.html#a60d5b0f74ed17ed61624314ca668e8cd", null ],
+    [ "Q_DISABLE_COPY", "classMediaPlayer.html#a1f1dd039291aaddcbbc6547cb8d5ef65", null ],
     [ "resume", "classMediaPlayer.html#a952cbd6944653ae6fbc19632ce310cf4", null ],
     [ "set_accept_missync_msecond", "classMediaPlayer.html#a242904c7815deb54b9dbc0802fa21cd9", null ],
     [ "set_position", "classMediaPlayer.html#a94f87027eb20c1403ed1d7997d0c6026", null ],

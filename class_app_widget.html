@@ -112,7 +112,7 @@ $(function(){initNavTree('class_app_widget.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 
-<p>The <a class="el" href="class_app_widget.html" title="The AppWidget class is the AppWidgets placing in the desktop.">AppWidget</a> class is the AppWidgets placing in the desktop.  
+<p>The <a class="el" href="class_app_widget.html" title="The AppWidget class represents an application widget placed on the desktop.">AppWidget</a> class represents an application widget placed on the desktop.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="appwidget_8h_source.html">appwidget.h</a>&gt;</code></p>
@@ -125,56 +125,344 @@ Inheritance diagram for AppWidget:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a2b48543a3ce72b7c991b744da6f540df" id="r_a2b48543a3ce72b7c991b744da6f540df"><td class="memItemLeft" align="right" valign="top"><a id="a2b48543a3ce72b7c991b744da6f540df" name="a2b48543a3ce72b7c991b744da6f540df"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>AppStatus</b> { <b>AppOk</b>
-, <b>AppNonExsits</b>
+<tr class="memitem:a2b48543a3ce72b7c991b744da6f540df" id="r_a2b48543a3ce72b7c991b744da6f540df"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b48543a3ce72b7c991b744da6f540df">AppStatus</a> { <a class="el" href="#a2b48543a3ce72b7c991b744da6f540dfad4f5004516bffc781166518260492142">AppOk</a>
+, <a class="el" href="#a2b48543a3ce72b7c991b744da6f540dfa1c65ac2f74da731d21043e757ed5b76d">AppNonExsits</a>
  }</td></tr>
+<tr class="memdesc:a2b48543a3ce72b7c991b744da6f540df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum representing the application status.  <a href="#a2b48543a3ce72b7c991b744da6f540df">More...</a><br /></td></tr>
 <tr class="separator:a2b48543a3ce72b7c991b744da6f540df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
 Signals</h2></td></tr>
-<tr class="memitem:a446a4098aa66694c54534df916c1ce70" id="r_a446a4098aa66694c54534df916c1ce70"><td class="memItemLeft" align="right" valign="top"><a id="a446a4098aa66694c54534df916c1ce70" name="a446a4098aa66694c54534df916c1ce70"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>postAppStatus</b> (AppWidget::AppStatus status)</td></tr>
+<tr class="memitem:a446a4098aa66694c54534df916c1ce70" id="r_a446a4098aa66694c54534df916c1ce70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a446a4098aa66694c54534df916c1ce70">postAppStatus</a> (<a class="el" href="#a2b48543a3ce72b7c991b744da6f540df">AppWidget::AppStatus</a> status)</td></tr>
+<tr class="memdesc:a446a4098aa66694c54534df916c1ce70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal emitted to notify about the application status.  <br /></td></tr>
 <tr class="separator:a446a4098aa66694c54534df916c1ce70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3806faa4b35786c0e4129246066b215a" id="r_a3806faa4b35786c0e4129246066b215a"><td class="memItemLeft" align="right" valign="top"><a id="a3806faa4b35786c0e4129246066b215a" name="a3806faa4b35786c0e4129246066b215a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AppWidget</b> (const QPixmap &amp;icon, const QString &amp;name, QWidget *parent=nullptr)</td></tr>
+<tr class="memitem:a3806faa4b35786c0e4129246066b215a" id="r_a3806faa4b35786c0e4129246066b215a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3806faa4b35786c0e4129246066b215a">AppWidget</a> (const QPixmap &amp;<a class="el" href="#a9321ba6e7e0567ef8787bcdead1e8d2d">icon</a>, const QString &amp;name, QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:a3806faa4b35786c0e4129246066b215a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an <a class="el" href="class_app_widget.html" title="The AppWidget class represents an application widget placed on the desktop.">AppWidget</a> with the given icon and app name.  <br /></td></tr>
 <tr class="separator:a3806faa4b35786c0e4129246066b215a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af104d532bb3bd2b0889391fff0bab157" id="r_af104d532bb3bd2b0889391fff0bab157"><td class="memItemLeft" align="right" valign="top"><a id="af104d532bb3bd2b0889391fff0bab157" name="af104d532bb3bd2b0889391fff0bab157"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>bindApp</b> (<a class="el" href="class_application_wrapper.html">ApplicationWrapper</a> *wrapper)</td></tr>
+<tr class="memitem:af104d532bb3bd2b0889391fff0bab157" id="r_af104d532bb3bd2b0889391fff0bab157"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af104d532bb3bd2b0889391fff0bab157">bindApp</a> (<a class="el" href="class_application_wrapper.html">ApplicationWrapper</a> *wrapper)</td></tr>
+<tr class="memdesc:af104d532bb3bd2b0889391fff0bab157"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind an <a class="el" href="class_application_wrapper.html" title="The ApplicationWrapper class is the process wrapper.">ApplicationWrapper</a> instance to this widget.  <br /></td></tr>
 <tr class="separator:af104d532bb3bd2b0889391fff0bab157"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a5f6bb3602a910f09ddde871936e59e" id="r_a2a5f6bb3602a910f09ddde871936e59e"><td class="memItemLeft" align="right" valign="top"><a id="a2a5f6bb3602a910f09ddde871936e59e" name="a2a5f6bb3602a910f09ddde871936e59e"></a>
-<a class="el" href="class_application_wrapper.html">ApplicationWrapper</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>get_app</b> () const</td></tr>
+<tr class="memitem:a2a5f6bb3602a910f09ddde871936e59e" id="r_a2a5f6bb3602a910f09ddde871936e59e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_application_wrapper.html">ApplicationWrapper</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a5f6bb3602a910f09ddde871936e59e">get_app</a> () const</td></tr>
+<tr class="memdesc:a2a5f6bb3602a910f09ddde871936e59e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the bound <a class="el" href="class_application_wrapper.html" title="The ApplicationWrapper class is the process wrapper.">ApplicationWrapper</a>.  <br /></td></tr>
 <tr class="separator:a2a5f6bb3602a910f09ddde871936e59e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bf749981f674a76e979dd547ce9666c" id="r_a6bf749981f674a76e979dd547ce9666c"><td class="memItemLeft" align="right" valign="top"><a id="a6bf749981f674a76e979dd547ce9666c" name="a6bf749981f674a76e979dd547ce9666c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setIcon</b> (const QPixmap &amp;icon) noexcept</td></tr>
+<tr class="memitem:a6bf749981f674a76e979dd547ce9666c" id="r_a6bf749981f674a76e979dd547ce9666c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6bf749981f674a76e979dd547ce9666c">setIcon</a> (const QPixmap &amp;<a class="el" href="#a9321ba6e7e0567ef8787bcdead1e8d2d">icon</a>) noexcept</td></tr>
+<tr class="memdesc:a6bf749981f674a76e979dd547ce9666c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the icon displayed by this widget.  <br /></td></tr>
 <tr class="separator:a6bf749981f674a76e979dd547ce9666c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a654bb3fd2c1a9fca116ccf71f7660e89" id="r_a654bb3fd2c1a9fca116ccf71f7660e89"><td class="memItemLeft" align="right" valign="top"><a id="a654bb3fd2c1a9fca116ccf71f7660e89" name="a654bb3fd2c1a9fca116ccf71f7660e89"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setAppName</b> (const QString &amp;name) noexcept</td></tr>
+<tr class="memitem:a654bb3fd2c1a9fca116ccf71f7660e89" id="r_a654bb3fd2c1a9fca116ccf71f7660e89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a654bb3fd2c1a9fca116ccf71f7660e89">setAppName</a> (const QString &amp;name) noexcept</td></tr>
+<tr class="memdesc:a654bb3fd2c1a9fca116ccf71f7660e89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the application name displayed by this widget.  <br /></td></tr>
 <tr class="separator:a654bb3fd2c1a9fca116ccf71f7660e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4470138f00905b26ad5534948b6ddb50" id="r_a4470138f00905b26ad5534948b6ddb50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4470138f00905b26ad5534948b6ddb50">setDummy</a> (bool dummy)</td></tr>
-<tr class="memdesc:a4470138f00905b26ad5534948b6ddb50"><td class="mdescLeft">&#160;</td><td class="mdescRight">setDummy set the app visible only, and don't make any senses this will disable any possible real interactive of the depatchings  <br /></td></tr>
+<tr class="memdesc:a4470138f00905b26ad5534948b6ddb50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set this widget as dummy mode.  <br /></td></tr>
 <tr class="separator:a4470138f00905b26ad5534948b6ddb50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9321ba6e7e0567ef8787bcdead1e8d2d" id="r_a9321ba6e7e0567ef8787bcdead1e8d2d"><td class="memItemLeft" align="right" valign="top"><a id="a9321ba6e7e0567ef8787bcdead1e8d2d" name="a9321ba6e7e0567ef8787bcdead1e8d2d"></a>
-QPixmap&#160;</td><td class="memItemRight" valign="bottom"><b>icon</b> () const</td></tr>
+<tr class="memitem:a9321ba6e7e0567ef8787bcdead1e8d2d" id="r_a9321ba6e7e0567ef8787bcdead1e8d2d"><td class="memItemLeft" align="right" valign="top">QPixmap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9321ba6e7e0567ef8787bcdead1e8d2d">icon</a> () const</td></tr>
+<tr class="memdesc:a9321ba6e7e0567ef8787bcdead1e8d2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current icon pixmap.  <br /></td></tr>
 <tr class="separator:a9321ba6e7e0567ef8787bcdead1e8d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e9c25e327f90af3990cdd71d3798d98" id="r_a8e9c25e327f90af3990cdd71d3798d98"><td class="memItemLeft" align="right" valign="top"><a id="a8e9c25e327f90af3990cdd71d3798d98" name="a8e9c25e327f90af3990cdd71d3798d98"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>showIconOnly</b> (bool st)</td></tr>
+<tr class="memitem:a8e9c25e327f90af3990cdd71d3798d98" id="r_a8e9c25e327f90af3990cdd71d3798d98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e9c25e327f90af3990cdd71d3798d98">showIconOnly</a> (bool st)</td></tr>
+<tr class="memdesc:a8e9c25e327f90af3990cdd71d3798d98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show or hide only the icon (hides other UI elements).  <br /></td></tr>
 <tr class="separator:a8e9c25e327f90af3990cdd71d3798d98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfa9de7ff529fef19e235dae59768fac" id="r_adfa9de7ff529fef19e235dae59768fac"><td class="memItemLeft" align="right" valign="top"><a id="adfa9de7ff529fef19e235dae59768fac" name="adfa9de7ff529fef19e235dae59768fac"></a>
-QString&#160;</td><td class="memItemRight" valign="bottom"><b>app_name</b> () const</td></tr>
+<tr class="memitem:adfa9de7ff529fef19e235dae59768fac" id="r_adfa9de7ff529fef19e235dae59768fac"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adfa9de7ff529fef19e235dae59768fac">app_name</a> () const</td></tr>
+<tr class="memdesc:adfa9de7ff529fef19e235dae59768fac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the application name.  <br /></td></tr>
 <tr class="separator:adfa9de7ff529fef19e235dae59768fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0261f448f2181b012e4eb7059faa6750" id="r_a0261f448f2181b012e4eb7059faa6750"><td class="memItemLeft" align="right" valign="top"><a id="a0261f448f2181b012e4eb7059faa6750" name="a0261f448f2181b012e4eb7059faa6750"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~AppWidget</b> ()</td></tr>
+<tr class="memdesc:a0261f448f2181b012e4eb7059faa6750"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
+<tr class="separator:a0261f448f2181b012e4eb7059faa6750"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a55452cd32f958fb15d12c13f48b02f8d" id="r_a55452cd32f958fb15d12c13f48b02f8d"><td class="memItemLeft" align="right" valign="top"><a id="a55452cd32f958fb15d12c13f48b02f8d" name="a55452cd32f958fb15d12c13f48b02f8d"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>eventFilter</b> (QObject *watched, QEvent *event) override</td></tr>
+<tr class="memitem:a55452cd32f958fb15d12c13f48b02f8d" id="r_a55452cd32f958fb15d12c13f48b02f8d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55452cd32f958fb15d12c13f48b02f8d">eventFilter</a> (QObject *watched, QEvent *event) override</td></tr>
+<tr class="memdesc:a55452cd32f958fb15d12c13f48b02f8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event filter to handle user interaction events.  <br /></td></tr>
 <tr class="separator:a55452cd32f958fb15d12c13f48b02f8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="class_app_widget.html" title="The AppWidget class is the AppWidgets placing in the desktop.">AppWidget</a> class is the AppWidgets placing in the desktop. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<div class="textblock"><p>The <a class="el" href="class_app_widget.html" title="The AppWidget class represents an application widget placed on the desktop.">AppWidget</a> class represents an application widget placed on the desktop. </p>
+<p>It displays an icon and app name, manages the underlying <a class="el" href="class_application_wrapper.html" title="The ApplicationWrapper class is the process wrapper.">ApplicationWrapper</a>, and handles launching and status updates. </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a2b48543a3ce72b7c991b744da6f540df" name="a2b48543a3ce72b7c991b744da6f540df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b48543a3ce72b7c991b744da6f540df">&#9670;&#160;</a></span>AppStatus</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#a2b48543a3ce72b7c991b744da6f540df">AppWidget::AppStatus</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel strong">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Enum representing the application status. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2b48543a3ce72b7c991b744da6f540dfad4f5004516bffc781166518260492142" name="a2b48543a3ce72b7c991b744da6f540dfad4f5004516bffc781166518260492142"></a>AppOk&#160;</td><td class="fielddoc"><p>Application is running or available. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a2b48543a3ce72b7c991b744da6f540dfa1c65ac2f74da731d21043e757ed5b76d" name="a2b48543a3ce72b7c991b744da6f540dfa1c65ac2f74da731d21043e757ed5b76d"></a>AppNonExsits&#160;</td><td class="fielddoc"><p>Application does not exist. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a3806faa4b35786c0e4129246066b215a" name="a3806faa4b35786c0e4129246066b215a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3806faa4b35786c0e4129246066b215a">&#9670;&#160;</a></span>AppWidget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AppWidget::AppWidget </td>
+          <td>(</td>
+          <td class="paramtype">const QPixmap &amp;</td>          <td class="paramname"><span class="paramname"><em>icon</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *</td>          <td class="paramname"><span class="paramname"><em>parent</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel explicit">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs an <a class="el" href="class_app_widget.html" title="The AppWidget class represents an application widget placed on the desktop.">AppWidget</a> with the given icon and app name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">icon</td><td>The icon to display. </td></tr>
+    <tr><td class="paramname">name</td><td>The application name. </td></tr>
+    <tr><td class="paramname">parent</td><td>Optional parent widget. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="adfa9de7ff529fef19e235dae59768fac" name="adfa9de7ff529fef19e235dae59768fac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfa9de7ff529fef19e235dae59768fac">&#9670;&#160;</a></span>app_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString AppWidget::app_name </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the application name. </p>
+<dl class="section return"><dt>Returns</dt><dd>The app name string. </dd></dl>
+
+</div>
+</div>
+<a id="af104d532bb3bd2b0889391fff0bab157" name="af104d532bb3bd2b0889391fff0bab157"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af104d532bb3bd2b0889391fff0bab157">&#9670;&#160;</a></span>bindApp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AppWidget::bindApp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_application_wrapper.html">ApplicationWrapper</a> *</td>          <td class="paramname"><span class="paramname"><em>wrapper</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Bind an <a class="el" href="class_application_wrapper.html" title="The ApplicationWrapper class is the process wrapper.">ApplicationWrapper</a> instance to this widget. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wrapper</td><td>Pointer to the <a class="el" href="class_application_wrapper.html" title="The ApplicationWrapper class is the process wrapper.">ApplicationWrapper</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a55452cd32f958fb15d12c13f48b02f8d" name="a55452cd32f958fb15d12c13f48b02f8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55452cd32f958fb15d12c13f48b02f8d">&#9670;&#160;</a></span>eventFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AppWidget::eventFilter </td>
+          <td>(</td>
+          <td class="paramtype">QObject *</td>          <td class="paramname"><span class="paramname"><em>watched</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QEvent *</td>          <td class="paramname"><span class="paramname"><em>event</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Event filter to handle user interaction events. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">watched</td><td>The object being watched. </td></tr>
+    <tr><td class="paramname">event</td><td>The event being filtered. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the event was handled, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a2a5f6bb3602a910f09ddde871936e59e" name="a2a5f6bb3602a910f09ddde871936e59e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a5f6bb3602a910f09ddde871936e59e">&#9670;&#160;</a></span>get_app()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_application_wrapper.html">ApplicationWrapper</a> * AppWidget::get_app </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the bound <a class="el" href="class_application_wrapper.html" title="The ApplicationWrapper class is the process wrapper.">ApplicationWrapper</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the <a class="el" href="class_application_wrapper.html" title="The ApplicationWrapper class is the process wrapper.">ApplicationWrapper</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a9321ba6e7e0567ef8787bcdead1e8d2d" name="a9321ba6e7e0567ef8787bcdead1e8d2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9321ba6e7e0567ef8787bcdead1e8d2d">&#9670;&#160;</a></span>icon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QPixmap AppWidget::icon </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the current icon pixmap. </p>
+<dl class="section return"><dt>Returns</dt><dd>The icon pixmap. </dd></dl>
+
+</div>
+</div>
+<a id="a446a4098aa66694c54534df916c1ce70" name="a446a4098aa66694c54534df916c1ce70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a446a4098aa66694c54534df916c1ce70">&#9670;&#160;</a></span>postAppStatus</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AppWidget::postAppStatus </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a2b48543a3ce72b7c991b744da6f540df">AppWidget::AppStatus</a></td>          <td class="paramname"><span class="paramname"><em>status</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel signal">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Signal emitted to notify about the application status. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">status</td><td>The current status of the app. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a654bb3fd2c1a9fca116ccf71f7660e89" name="a654bb3fd2c1a9fca116ccf71f7660e89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a654bb3fd2c1a9fca116ccf71f7660e89">&#9670;&#160;</a></span>setAppName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AppWidget::setAppName </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the application name displayed by this widget. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The name string. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a4470138f00905b26ad5534948b6ddb50" name="a4470138f00905b26ad5534948b6ddb50"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4470138f00905b26ad5534948b6ddb50">&#9670;&#160;</a></span>setDummy()</h2>
 
@@ -190,10 +478,68 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>eventFilter</b> (QObj
       </table>
 </div><div class="memdoc">
 
-<p>setDummy set the app visible only, and don't make any senses this will disable any possible real interactive of the depatchings </p>
+<p>Set this widget as dummy mode. </p>
+<p>When set to dummy, the widget is visible but does not respond to any real interaction or launch requests. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dummy</td><td>True to enable dummy mode; false to disable. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6bf749981f674a76e979dd547ce9666c" name="a6bf749981f674a76e979dd547ce9666c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bf749981f674a76e979dd547ce9666c">&#9670;&#160;</a></span>setIcon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AppWidget::setIcon </td>
+          <td>(</td>
+          <td class="paramtype">const QPixmap &amp;</td>          <td class="paramname"><span class="paramname"><em>icon</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the icon displayed by this widget. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dummy</td><td></td></tr>
+    <tr><td class="paramname">icon</td><td>The pixmap to set as icon. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8e9c25e327f90af3990cdd71d3798d98" name="a8e9c25e327f90af3990cdd71d3798d98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e9c25e327f90af3990cdd71d3798d98">&#9670;&#160;</a></span>showIconOnly()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AppWidget::showIconOnly </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>st</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Show or hide only the icon (hides other UI elements). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">st</td><td>True to show icon only; false to show full widget. </td></tr>
   </table>
   </dd>
 </dl>

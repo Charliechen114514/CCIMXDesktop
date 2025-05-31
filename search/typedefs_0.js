@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pdfbrowseexceptionfunctor_0',['PdfBrowseExceptionFunctor',['../classCCPdfNavigationPolicy.html#a7ea598825fcdc49512b9c9bfb1d5ff79',1,'CCPdfNavigationPolicy']]]
+  ['appcode_0',['AppCode',['../classApplicationWrapper.html#ad54d8e5509fdc415009be64f28636b82',1,'ApplicationWrapper']]]
 ];

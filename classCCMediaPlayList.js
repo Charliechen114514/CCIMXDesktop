@@ -6,6 +6,7 @@ var classCCMediaPlayList =
       [ "ListPlay", "classCCMediaPlayList.html#a22ea885ed695b9f7fcabd7b117b4e0b3acae9881cfbdbd74078ce3d31eb060791", null ],
       [ "ListCycle", "classCCMediaPlayList.html#a22ea885ed695b9f7fcabd7b117b4e0b3a2c62ffd47a07bdb6cb4720a0bad933cd", null ]
     ] ],
+    [ "CCMediaPlayList", "classCCMediaPlayList.html#a32b802259d0a81fa00edd6b4a0bc46d0", null ],
     [ "actualList", "classCCMediaPlayList.html#a5e0b767ee157bfb31d8448da10f43e4b", null ],
     [ "currentPlayingList", "classCCMediaPlayList.html#a9c252087e36d48ff4b278c86f1df2330", null ],
     [ "enqueue_play", "classCCMediaPlayList.html#a4a0901d47ef75d9543ecb9d603773c74", null ],

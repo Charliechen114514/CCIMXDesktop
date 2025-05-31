@@ -112,7 +112,7 @@ Inheritance diagram for Win32PlatformMemoryInfoDriver:</div>
  <div class="center">
   <img src="classWin32PlatformMemoryInfoDriver.png" usemap="#Win32PlatformMemoryInfoDriver_map" alt=""/>
   <map id="Win32PlatformMemoryInfoDriver_map" name="Win32PlatformMemoryInfoDriver_map">
-<area href="classCCIMX__AbstractMemoryInfoDriver.html" title="The CCIMX_AbstractMemoryInfoDriver class provides the abstract class for the memory information drive..." alt="CCIMX_AbstractMemoryInfoDriver" shape="rect" coords="0,0,210,24"/>
+<area href="classCCIMX__AbstractMemoryInfoDriver.html" title="The CCIMX_AbstractMemoryInfoDriver class Abstract base class for platform-specific memory information..." alt="CCIMX_AbstractMemoryInfoDriver" shape="rect" coords="0,0,210,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -120,8 +120,10 @@ Inheritance diagram for Win32PlatformMemoryInfoDriver:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a04d4059c2e646ed15a35825480629fd0" id="r_a04d4059c2e646ed15a35825480629fd0"><td class="memItemLeft" align="right" valign="top"><a id="a04d4059c2e646ed15a35825480629fd0" name="a04d4059c2e646ed15a35825480629fd0"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Q_DISABLE_COPY</b> (<a class="el" href="classWin32PlatformMemoryInfoDriver.html">Win32PlatformMemoryInfoDriver</a>)</td></tr>
+<tr class="memdesc:a04d4059c2e646ed15a35825480629fd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">disable copy sessions <br /></td></tr>
 <tr class="separator:a04d4059c2e646ed15a35825480629fd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c96e01bdc9c521a45faf717182a9596" id="r_a9c96e01bdc9c521a45faf717182a9596"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWin32PlatformMemoryInfoDriver.html#a9c96e01bdc9c521a45faf717182a9596">factory</a> (<a class="el" href="structMemoryInfoFetcher_1_1MemoryStat.html">MemoryInfoFetcher::MemoryStat</a> &amp;stat) override</td></tr>
+<tr class="memdesc:a9c96e01bdc9c521a45faf717182a9596"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory method to get memory stats.  <br /></td></tr>
 <tr class="separator:a9c96e01bdc9c521a45faf717182a9596"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -151,7 +153,15 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classCCIMX__AbstractMemoryInfoDriver.html">CCIMX_AbstractMemoryInfoDriver</a>.</p>
+<p>Factory method to get memory stats. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stat</td><td>Reference to <a class="el" href="structMemoryInfoFetcher_1_1MemoryStat.html" title="The MemoryStat struct Holds memory statistics at the byte level.">MemoryInfoFetcher::MemoryStat</a> to store stats </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classCCIMX__AbstractMemoryInfoDriver.html#a3074fcdfdfa51ea3c315ddddd7ed881f">CCIMX_AbstractMemoryInfoDriver</a>.</p>
 
 </div>
 </div>

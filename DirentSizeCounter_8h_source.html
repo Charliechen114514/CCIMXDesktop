@@ -108,50 +108,51 @@ $(document).ready(function(){initNavTree('DirentSizeCounter_8h_source.html','');
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="classDirentSizeWorker.html">   11</a></span><span class="keyword">class </span><a class="code hl_class" href="classDirentSizeWorker.html">DirentSizeWorker</a> : <span class="keyword">public</span> QObject {</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    Q_OBJECT</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classDirentSizeWorker.html">DirentSizeWorker</a>(QObject* <span class="keywordtype">object</span> = <span class="keyword">nullptr</span>) { }</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <a class="code hl_class" href="classDirentSizeWorker.html">~DirentSizeWorker</a>();</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classDirentSizeWorker.html#aa05d6a1c7629d8817c56a9c8d3543766">depatch_sizeCount_task</a>(<span class="keyword">const</span> QPersistentModelIndex&amp; index, <span class="keyword">const</span> QString&amp; path);</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>signals:</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classDirentSizeWorker.html#a573cb1f554d74f6c5a72d3267b9610df">   28</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classDirentSizeWorker.html#a573cb1f554d74f6c5a72d3267b9610df">sizeCountFinish</a>(QPersistentModelIndex index, qint64 size);</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    QList&lt;QFuture&lt;void&gt;&gt; results; </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>};</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classDirentSizeWorker.html#aae3f5d3fb8b86a7fb43c15c3e5ad6964">   19</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classDirentSizeWorker.html#aae3f5d3fb8b86a7fb43c15c3e5ad6964">DirentSizeWorker</a>(QObject* <span class="keywordtype">object</span> = <span class="keyword">nullptr</span>) { }</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <a class="code hl_class" href="classDirentSizeWorker.html">~DirentSizeWorker</a>();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classDirentSizeWorker.html#aa05d6a1c7629d8817c56a9c8d3543766">depatch_sizeCount_task</a>(<span class="keyword">const</span> QPersistentModelIndex&amp; index, <span class="keyword">const</span> QString&amp; path);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>signals:</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classDirentSizeWorker.html#a573cb1f554d74f6c5a72d3267b9610df">   33</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classDirentSizeWorker.html#a573cb1f554d74f6c5a72d3267b9610df">sizeCountFinish</a>(QPersistentModelIndex index, qint64 size);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    QList&lt;QFuture&lt;void&gt;&gt; results; </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>};</div>
 </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="foldopen" id="foldopen00038" data-start="{" data-end="};">
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classDirentSizeCounter.html">   38</a></span><span class="keyword">class </span><a class="code hl_class" href="classDirentSizeCounter.html">DirentSizeCounter</a> : <span class="keyword">public</span> QObject, <span class="keyword">public</span> <a class="code hl_class" href="classFileInfoProvider.html">FileInfoProvider</a> {</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    Q_OBJECT</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classDirentSizeCounter.html">DirentSizeCounter</a>(<a class="code hl_class" href="classCCIMXFileSystemModel.html">CCIMXFileSystemModel</a>* model, QObject* parent = <span class="keyword">nullptr</span>);</div>
-<div class="foldopen" id="foldopen00046" data-start="{" data-end="}">
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classDirentSizeCounter.html#afb1587bf29eac1f0cf7979ba5301f708">   46</a></span>    <span class="keyword">inline</span> QString <a class="code hl_function" href="classDirentSizeCounter.html#afb1587bf29eac1f0cf7979ba5301f708">provide_section_name</a>() {</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;File Size&quot;</span>;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    }</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="foldopen" id="foldopen00043" data-start="{" data-end="};">
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classDirentSizeCounter.html">   43</a></span><span class="keyword">class </span><a class="code hl_class" href="classDirentSizeCounter.html">DirentSizeCounter</a> : <span class="keyword">public</span> QObject, <span class="keyword">public</span> <a class="code hl_class" href="classFileInfoProvider.html">FileInfoProvider</a> {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    Q_OBJECT</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classDirentSizeCounter.html">DirentSizeCounter</a>(<a class="code hl_class" href="classCCIMXFileSystemModel.html">CCIMXFileSystemModel</a>* model, QObject* parent = <span class="keyword">nullptr</span>);</div>
+<div class="foldopen" id="foldopen00057" data-start="{" data-end="}">
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classDirentSizeCounter.html#afb1587bf29eac1f0cf7979ba5301f708">   57</a></span>    <span class="keyword">inline</span> QString <a class="code hl_function" href="classDirentSizeCounter.html#afb1587bf29eac1f0cf7979ba5301f708">provide_section_name</a>() {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;File Size&quot;</span>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    }</div>
 </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    std::pair&lt;bool, QVariant&gt; <a class="code hl_function" href="classDirentSizeCounter.html#aabc9ceee5d6679e9d3f3c09265e8f554">data</a>(<span class="keyword">const</span> QModelIndex&amp; index, <span class="keywordtype">int</span> role);</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="keyword">private</span> slots:</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordtype">void</span> onHandleWorkFinishJob(QPersistentModelIndex index, qint64 size);</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <a class="code hl_class" href="classDirentSizeWorker.html">DirentSizeWorker</a>* worker; </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="comment">/* Thus I must copy the session... */</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="comment">/* Thanks AI, I solved the persis issue */</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="comment">/* These are using in caching the already in s */</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keyword">mutable</span> QHash&lt;QPersistentModelIndex, qint64&gt; cache; </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keyword">mutable</span> QSet&lt;QPersistentModelIndex&gt; requested; </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>};</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    std::pair&lt;bool, QVariant&gt; <a class="code hl_function" href="classDirentSizeCounter.html#aabc9ceee5d6679e9d3f3c09265e8f554">data</a>(<span class="keyword">const</span> QModelIndex&amp; index, <span class="keywordtype">int</span> role);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="keyword">private</span> slots:</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordtype">void</span> onHandleWorkFinishJob(QPersistentModelIndex index, qint64 size);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <a class="code hl_class" href="classDirentSizeWorker.html">DirentSizeWorker</a>* worker; </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="comment">/* Thus I must copy the session... */</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="comment">/* Thanks AI, I solved the persis issue */</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="comment">/* These are using in caching the already in s */</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keyword">mutable</span> QHash&lt;QPersistentModelIndex, qint64&gt; cache; </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keyword">mutable</span> QSet&lt;QPersistentModelIndex&gt; requested; </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>};</div>
 </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="preprocessor">#endif </span><span class="comment">// DIRENTSIZECOUNTER_H</span></div>
-<div class="ttc" id="aclassCCIMXFileSystemModel_html"><div class="ttname"><a href="classCCIMXFileSystemModel.html">CCIMXFileSystemModel</a></div><div class="ttdef"><b>Definition</b> CCIMXFileSystemModel.h:5</div></div>
-<div class="ttc" id="aclassDirentSizeCounter_html"><div class="ttname"><a href="classDirentSizeCounter.html">DirentSizeCounter</a></div><div class="ttdoc">The DirentSizeCounter class wrapped the worker and provides non-implement-relative interfaces to the ...</div><div class="ttdef"><b>Definition</b> DirentSizeCounter.h:38</div></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="preprocessor">#endif </span><span class="comment">// DIRENTSIZECOUNTER_H</span></div>
+<div class="ttc" id="aclassCCIMXFileSystemModel_html"><div class="ttname"><a href="classCCIMXFileSystemModel.html">CCIMXFileSystemModel</a></div><div class="ttdoc">The CCIMXFileSystemModel class Extends QFileSystemModel to support additional information providers....</div><div class="ttdef"><b>Definition</b> CCIMXFileSystemModel.h:13</div></div>
+<div class="ttc" id="aclassDirentSizeCounter_html"><div class="ttname"><a href="classDirentSizeCounter.html">DirentSizeCounter</a></div><div class="ttdoc">The DirentSizeCounter class wrapped the worker and provides non-implement-relative interfaces to the ...</div><div class="ttdef"><b>Definition</b> DirentSizeCounter.h:43</div></div>
 <div class="ttc" id="aclassDirentSizeCounter_html_aabc9ceee5d6679e9d3f3c09265e8f554"><div class="ttname"><a href="classDirentSizeCounter.html#aabc9ceee5d6679e9d3f3c09265e8f554">DirentSizeCounter::data</a></div><div class="ttdeci">std::pair&lt; bool, QVariant &gt; data(const QModelIndex &amp;index, int role)</div><div class="ttdoc">data provide the data to the views</div><div class="ttdef"><b>Definition</b> DirentSizeCounter.cpp:85</div></div>
-<div class="ttc" id="aclassDirentSizeCounter_html_afb1587bf29eac1f0cf7979ba5301f708"><div class="ttname"><a href="classDirentSizeCounter.html#afb1587bf29eac1f0cf7979ba5301f708">DirentSizeCounter::provide_section_name</a></div><div class="ttdeci">QString provide_section_name()</div><div class="ttdoc">provide_section_name means everything in the name lol</div><div class="ttdef"><b>Definition</b> DirentSizeCounter.h:46</div></div>
+<div class="ttc" id="aclassDirentSizeCounter_html_afb1587bf29eac1f0cf7979ba5301f708"><div class="ttname"><a href="classDirentSizeCounter.html#afb1587bf29eac1f0cf7979ba5301f708">DirentSizeCounter::provide_section_name</a></div><div class="ttdeci">QString provide_section_name()</div><div class="ttdoc">provide_section_name means everything in the name lol</div><div class="ttdef"><b>Definition</b> DirentSizeCounter.h:57</div></div>
 <div class="ttc" id="aclassDirentSizeWorker_html"><div class="ttname"><a href="classDirentSizeWorker.html">DirentSizeWorker</a></div><div class="ttdoc">The DirentSizeWorker class really counts the dirent below size and, this is asyncronous,...</div><div class="ttdef"><b>Definition</b> DirentSizeCounter.h:11</div></div>
 <div class="ttc" id="aclassDirentSizeWorker_html_a573cb1f554d74f6c5a72d3267b9610df"><div class="ttname"><a href="classDirentSizeWorker.html#a573cb1f554d74f6c5a72d3267b9610df">DirentSizeWorker::sizeCountFinish</a></div><div class="ttdeci">void sizeCountFinish(QPersistentModelIndex index, qint64 size)</div><div class="ttdoc">sizeCountFinish signals the finish of the count</div></div>
 <div class="ttc" id="aclassDirentSizeWorker_html_aa05d6a1c7629d8817c56a9c8d3543766"><div class="ttname"><a href="classDirentSizeWorker.html#aa05d6a1c7629d8817c56a9c8d3543766">DirentSizeWorker::depatch_sizeCount_task</a></div><div class="ttdeci">void depatch_sizeCount_task(const QPersistentModelIndex &amp;index, const QString &amp;path)</div><div class="ttdoc">functions depatch an asyncronous count issues,</div><div class="ttdef"><b>Definition</b> DirentSizeCounter.cpp:60</div></div>
+<div class="ttc" id="aclassDirentSizeWorker_html_aae3f5d3fb8b86a7fb43c15c3e5ad6964"><div class="ttname"><a href="classDirentSizeWorker.html#aae3f5d3fb8b86a7fb43c15c3e5ad6964">DirentSizeWorker::DirentSizeWorker</a></div><div class="ttdeci">DirentSizeWorker(QObject *object=nullptr)</div><div class="ttdoc">Construct a new Dirent Size Worker object.</div><div class="ttdef"><b>Definition</b> DirentSizeCounter.h:19</div></div>
 <div class="ttc" id="aclassFileInfoProvider_html"><div class="ttname"><a href="classFileInfoProvider.html">FileInfoProvider</a></div><div class="ttdoc">The FileInfoProvider class is such an abstract class that using in CCIMXFileSystemModel to provide th...</div><div class="ttdef"><b>Definition</b> FileInfoProvider.h:15</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

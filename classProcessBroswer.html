@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('classProcessBroswer.html',''); initRes
 </div><!--header-->
 <div class="contents">
 
-<p>The <a class="el" href="classProcessBroswer.html" title="The ProcessBroswer class.">ProcessBroswer</a> class.  
+<p>The <a class="el" href="classProcessBroswer.html" title="The ProcessBroswer class Provides an interface to retrieve and monitor system processes information....">ProcessBroswer</a> class Provides an interface to retrieve and monitor system processes information. Acts as a process browser that periodically fetches process data.  
  <a href="classProcessBroswer.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="ProcessBroswer_8h_source.html">ProcessBroswer.h</a>&gt;</code></p>
@@ -118,31 +118,69 @@ Inheritance diagram for ProcessBroswer:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProcessBroswer_1_1ProcessInfo.html">ProcessInfo</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="structProcessBroswer_1_1ProcessInfo.html" title="The ProcessInfo class.">ProcessInfo</a> class.  <a href="structProcessBroswer_1_1ProcessInfo.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="structProcessBroswer_1_1ProcessInfo.html" title="The ProcessInfo struct Holds detailed information about a system process.">ProcessInfo</a> struct Holds detailed information about a system process.  <a href="structProcessBroswer_1_1ProcessInfo.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
 Signals</h2></td></tr>
 <tr class="memitem:aa24dce0e4e4b285c349690881e9db5e7" id="r_aa24dce0e4e4b285c349690881e9db5e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProcessBroswer.html#aa24dce0e4e4b285c349690881e9db5e7">fetch_finish</a> (const QList&lt; <a class="el" href="structProcessBroswer_1_1ProcessInfo.html">ProcessBroswer::ProcessInfo</a> &gt; &amp;infos)</td></tr>
-<tr class="memdesc:aa24dce0e4e4b285c349690881e9db5e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">about_fetch_process the signal indicating the process is ready  <br /></td></tr>
+<tr class="memdesc:aa24dce0e4e4b285c349690881e9db5e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">fetch_finish Signal emitted when process data is fetched and ready.  <br /></td></tr>
 <tr class="separator:aa24dce0e4e4b285c349690881e9db5e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6c98f09926657816ca7c816b14f23fdb" id="r_a6c98f09926657816ca7c816b14f23fdb"><td class="memItemLeft" align="right" valign="top"><a id="a6c98f09926657816ca7c816b14f23fdb" name="a6c98f09926657816ca7c816b14f23fdb"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessBroswer</b> (QObject *parent=nullptr)</td></tr>
+<tr class="memitem:a6c98f09926657816ca7c816b14f23fdb" id="r_a6c98f09926657816ca7c816b14f23fdb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProcessBroswer.html#a6c98f09926657816ca7c816b14f23fdb">ProcessBroswer</a> (QObject *parent=nullptr)</td></tr>
+<tr class="memdesc:a6c98f09926657816ca7c816b14f23fdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor with optional parent.  <br /></td></tr>
 <tr class="separator:a6c98f09926657816ca7c816b14f23fdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68bf5853c385369283c48b2e5e1f2ad0" id="r_a68bf5853c385369283c48b2e5e1f2ad0"><td class="memItemLeft" align="right" valign="top"><a id="a68bf5853c385369283c48b2e5e1f2ad0" name="a68bf5853c385369283c48b2e5e1f2ad0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~ProcessBroswer</b> ()</td></tr>
+<tr class="memdesc:a68bf5853c385369283c48b2e5e1f2ad0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor cleans up resources. <br /></td></tr>
+<tr class="separator:a68bf5853c385369283c48b2e5e1f2ad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5b7182bba575b4472c25aa1ea264744" id="r_af5b7182bba575b4472c25aa1ea264744"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProcessBroswer.html#af5b7182bba575b4472c25aa1ea264744">set_flush_freq</a> (const int msecs)</td></tr>
-<tr class="memdesc:af5b7182bba575b4472c25aa1ea264744"><td class="mdescLeft">&#160;</td><td class="mdescRight">set_flush_freq set the flush frequency in msec times  <br /></td></tr>
+<tr class="memdesc:af5b7182bba575b4472c25aa1ea264744"><td class="mdescLeft">&#160;</td><td class="mdescRight">set_flush_freq Sets the frequency (in milliseconds) at which process data is refreshed.  <br /></td></tr>
 <tr class="separator:af5b7182bba575b4472c25aa1ea264744"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae80a044aa7574a365eecdce5c77001da" id="r_ae80a044aa7574a365eecdce5c77001da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classProcessBroswer.html#ae80a044aa7574a365eecdce5c77001da">set_capture_state</a> (bool st)</td></tr>
-<tr class="memdesc:ae80a044aa7574a365eecdce5c77001da"><td class="mdescLeft">&#160;</td><td class="mdescRight">set_capture_state  <br /></td></tr>
+<tr class="memdesc:ae80a044aa7574a365eecdce5c77001da"><td class="mdescLeft">&#160;</td><td class="mdescRight">set_capture_state Enables or disables process data capturing.  <br /></td></tr>
 <tr class="separator:ae80a044aa7574a365eecdce5c77001da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="classProcessBroswer.html" title="The ProcessBroswer class.">ProcessBroswer</a> class. </p>
-<p><a class="el" href="classProcessBroswer.html" title="The ProcessBroswer class.">ProcessBroswer</a> is the process broswer provides the process information </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<div class="textblock"><p>The <a class="el" href="classProcessBroswer.html" title="The ProcessBroswer class Provides an interface to retrieve and monitor system processes information....">ProcessBroswer</a> class Provides an interface to retrieve and monitor system processes information. Acts as a process browser that periodically fetches process data. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a6c98f09926657816ca7c816b14f23fdb" name="a6c98f09926657816ca7c816b14f23fdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c98f09926657816ca7c816b14f23fdb">&#9670;&#160;</a></span>ProcessBroswer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ProcessBroswer::ProcessBroswer </td>
+          <td>(</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor with optional parent. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Pointer to the QObject parent, default nullptr. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="aa24dce0e4e4b285c349690881e9db5e7" name="aa24dce0e4e4b285c349690881e9db5e7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa24dce0e4e4b285c349690881e9db5e7">&#9670;&#160;</a></span>fetch_finish</h2>
 
@@ -167,10 +205,10 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>about_fetch_process the signal indicating the process is ready </p>
+<p>fetch_finish Signal emitted when process data is fetched and ready. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">infos</td><td>the process information </td></tr>
+    <tr><td class="paramname">infos</td><td>List of <a class="el" href="structProcessBroswer_1_1ProcessInfo.html" title="The ProcessInfo struct Holds detailed information about a system process.">ProcessInfo</a> structures with current process data. </td></tr>
   </table>
   </dd>
 </dl>
@@ -193,10 +231,10 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>set_capture_state </p>
+<p>set_capture_state Enables or disables process data capturing. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">st</td><td>the state to set </td></tr>
+    <tr><td class="paramname">st</td><td>True to start capturing, false to stop. </td></tr>
   </table>
   </dd>
 </dl>
@@ -227,10 +265,10 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>set_flush_freq set the flush frequency in msec times </p>
+<p>set_flush_freq Sets the frequency (in milliseconds) at which process data is refreshed. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">msecs</td><td>the msecs to set </td></tr>
+    <tr><td class="paramname">msecs</td><td>Refresh interval in milliseconds. </td></tr>
   </table>
   </dd>
 </dl>

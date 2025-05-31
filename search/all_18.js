@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['you_20start_20choose_20your_20language_20🌐_0',['🌐 Before you start, choose your language! 🌐',['../md_README__EN.html#autotoc_md15',1,'']]],
-  ['your_20language_20🌐_1',['🌐 Before you start, choose your language! 🌐',['../md_README__EN.html#autotoc_md15',1,'']]]
+  ['x_0',['x',['../structICM20608Data.html#a47ae549fc6ace14228bac81c10695f82',1,'ICM20608Data::x'],['../structICM20608AppData.html#a05214769c197a97b008cdb5a464c35a6',1,'ICM20608AppData::x']]]
 ];

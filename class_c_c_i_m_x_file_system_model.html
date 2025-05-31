@@ -108,6 +108,11 @@ $(function(){initNavTree('class_c_c_i_m_x_file_system_model.html',''); initResiz
   <div class="headertitle"><div class="title">CCIMXFileSystemModel Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The <a class="el" href="class_c_c_i_m_x_file_system_model.html" title="The CCIMXFileSystemModel class Extends QFileSystemModel to support additional information providers....">CCIMXFileSystemModel</a> class Extends QFileSystemModel to support additional information providers. Providers can add custom data for files/directories.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_c_c_i_m_x_file_system_model_8h_source.html">CCIMXFileSystemModel.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for CCIMXFileSystemModel:</div>
 <div class="dyncontent">
@@ -117,22 +122,58 @@ Inheritance diagram for CCIMXFileSystemModel:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aaeb0c17207115bb4daa9a493fac17e23" id="r_aaeb0c17207115bb4daa9a493fac17e23"><td class="memItemLeft" align="right" valign="top"><a id="aaeb0c17207115bb4daa9a493fac17e23" name="aaeb0c17207115bb4daa9a493fac17e23"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CCIMXFileSystemModel</b> (QObject *parent=nullptr)</td></tr>
+<tr class="memitem:aaeb0c17207115bb4daa9a493fac17e23" id="r_aaeb0c17207115bb4daa9a493fac17e23"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaeb0c17207115bb4daa9a493fac17e23">CCIMXFileSystemModel</a> (QObject *parent=nullptr)</td></tr>
+<tr class="memdesc:aaeb0c17207115bb4daa9a493fac17e23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor with optional parent.  <br /></td></tr>
 <tr class="separator:aaeb0c17207115bb4daa9a493fac17e23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c3fcae5ed31391c9162017f0788ef1a" id="r_a6c3fcae5ed31391c9162017f0788ef1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c3fcae5ed31391c9162017f0788ef1a">bindProviders</a> (QList&lt; <a class="el" href="class_file_info_provider.html">FileInfoProvider</a> * &gt; &amp;providers)</td></tr>
-<tr class="memdesc:a6c3fcae5ed31391c9162017f0788ef1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">bindProviders bind the providers to the model  <br /></td></tr>
+<tr class="memdesc:a6c3fcae5ed31391c9162017f0788ef1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">bindProviders Binds a list of <a class="el" href="class_file_info_provider.html" title="The FileInfoProvider class is such an abstract class that using in CCIMXFileSystemModel to provide th...">FileInfoProvider</a> instances to this model.  <br /></td></tr>
 <tr class="separator:a6c3fcae5ed31391c9162017f0788ef1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf84050a2cf034967a22e0bece1da92a" id="r_aaf84050a2cf034967a22e0bece1da92a"><td class="memItemLeft" align="right" valign="top">QVariant&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf84050a2cf034967a22e0bece1da92a">data</a> (const QModelIndex &amp;index, int role=Qt::DisplayRole) const override</td></tr>
-<tr class="memdesc:aaf84050a2cf034967a22e0bece1da92a"><td class="mdescLeft">&#160;</td><td class="mdescRight">provide_section_name provide the section name  <br /></td></tr>
+<tr class="memdesc:aaf84050a2cf034967a22e0bece1da92a"><td class="mdescLeft">&#160;</td><td class="mdescRight">data Overrides QFileSystemModel::data to provide custom data from providers.  <br /></td></tr>
 <tr class="separator:aaf84050a2cf034967a22e0bece1da92a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeceaa8e6c1e18cb36f20211176b60096" id="r_aeceaa8e6c1e18cb36f20211176b60096"><td class="memItemLeft" align="right" valign="top">QVariant&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeceaa8e6c1e18cb36f20211176b60096">headerData</a> (int section, Qt::Orientation orientation, int role=Qt::DisplayRole) const override</td></tr>
-<tr class="memdesc:aeceaa8e6c1e18cb36f20211176b60096"><td class="mdescLeft">&#160;</td><td class="mdescRight">provide_section_name provide the section name  <br /></td></tr>
+<tr class="memdesc:aeceaa8e6c1e18cb36f20211176b60096"><td class="mdescLeft">&#160;</td><td class="mdescRight">headerData Overrides QFileSystemModel::headerData to provide custom header names.  <br /></td></tr>
 <tr class="separator:aeceaa8e6c1e18cb36f20211176b60096"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac956dd7018b41c094ff51c38f7abd68b" id="r_ac956dd7018b41c094ff51c38f7abd68b"><td class="memItemLeft" align="right" valign="top">const QList&lt; <a class="el" href="class_file_info_provider.html">FileInfoProvider</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac956dd7018b41c094ff51c38f7abd68b">get_providers</a> () const</td></tr>
-<tr class="memdesc:ac956dd7018b41c094ff51c38f7abd68b"><td class="mdescLeft">&#160;</td><td class="mdescRight">get_providers provide the providers installed in the model  <br /></td></tr>
+<tr class="memdesc:ac956dd7018b41c094ff51c38f7abd68b"><td class="mdescLeft">&#160;</td><td class="mdescRight">get_providers Returns the list of currently bound providers.  <br /></td></tr>
 <tr class="separator:ac956dd7018b41c094ff51c38f7abd68b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="class_c_c_i_m_x_file_system_model.html" title="The CCIMXFileSystemModel class Extends QFileSystemModel to support additional information providers....">CCIMXFileSystemModel</a> class Extends QFileSystemModel to support additional information providers. Providers can add custom data for files/directories. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aaeb0c17207115bb4daa9a493fac17e23" name="aaeb0c17207115bb4daa9a493fac17e23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaeb0c17207115bb4daa9a493fac17e23">&#9670;&#160;</a></span>CCIMXFileSystemModel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CCIMXFileSystemModel::CCIMXFileSystemModel </td>
+          <td>(</td>
+          <td class="paramtype">QObject *</td>          <td class="paramname"><span class="paramname"><em>parent</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel explicit">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor with optional parent. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Pointer to the QObject parent, default nullptr. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a6c3fcae5ed31391c9162017f0788ef1a" name="a6c3fcae5ed31391c9162017f0788ef1a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6c3fcae5ed31391c9162017f0788ef1a">&#9670;&#160;</a></span>bindProviders()</h2>
@@ -157,10 +198,10 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>bindProviders bind the providers to the model </p>
+<p>bindProviders Binds a list of <a class="el" href="class_file_info_provider.html" title="The FileInfoProvider class is such an abstract class that using in CCIMXFileSystemModel to provide th...">FileInfoProvider</a> instances to this model. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">providers</td><td></td></tr>
+    <tr><td class="paramname">providers</td><td>List of pointers to <a class="el" href="class_file_info_provider.html" title="The FileInfoProvider class is such an abstract class that using in CCIMXFileSystemModel to provide th...">FileInfoProvider</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -194,8 +235,15 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>provide_section_name provide the section name </p>
-<dl class="section return"><dt>Returns</dt><dd>the section name </dd></dl>
+<p>data Overrides QFileSystemModel::data to provide custom data from providers. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>Model index. </td></tr>
+    <tr><td class="paramname">role</td><td>Data role. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>QVariant containing the data for the given index and role. </dd></dl>
 
 </div>
 </div>
@@ -222,8 +270,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>get_providers provide the providers installed in the model </p>
-<dl class="section return"><dt>Returns</dt><dd>the providers </dd></dl>
+<p>get_providers Returns the list of currently bound providers. </p>
+<dl class="section return"><dt>Returns</dt><dd>const reference to the QList of <a class="el" href="class_file_info_provider.html" title="The FileInfoProvider class is such an abstract class that using in CCIMXFileSystemModel to provide th...">FileInfoProvider</a> pointers. </dd></dl>
 
 </div>
 </div>
@@ -259,8 +307,16 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>provide_section_name provide the section name </p>
-<dl class="section return"><dt>Returns</dt><dd>the section name </dd></dl>
+<p>headerData Overrides QFileSystemModel::headerData to provide custom header names. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">section</td><td>Section index. </td></tr>
+    <tr><td class="paramname">orientation</td><td>Horizontal or Vertical. </td></tr>
+    <tr><td class="paramname">role</td><td>Data role. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>QVariant containing header text. </dd></dl>
 
 </div>
 </div>

@@ -109,7 +109,7 @@ $(function(){initNavTree('class_app_weather_request.html',''); initResizable(tru
 </div><!--header-->
 <div class="contents">
 
-<p>The <a class="el" href="class_app_weather_request.html" title="The AppWeatherRequest class The AppWeatherRequest class provides the weather request and implements t...">AppWeatherRequest</a> class The <a class="el" href="class_app_weather_request.html" title="The AppWeatherRequest class The AppWeatherRequest class provides the weather request and implements t...">AppWeatherRequest</a> class provides the weather request and implements the <a class="el" href="class_weather_request.html">WeatherRequest</a> function.  
+<p>The <a class="el" href="class_app_weather_request.html" title="The AppWeatherRequest class provides the weather request and implements the WeatherRequest functional...">AppWeatherRequest</a> class provides the weather request and implements the <a class="el" href="class_weather_request.html" title="The WeatherRequest class provides the interface to request weather data.">WeatherRequest</a> functionality.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_app_weather_request_8h_source.html">AppWeatherRequest.h</a>&gt;</code></p>
@@ -119,7 +119,7 @@ Inheritance diagram for AppWeatherRequest:</div>
  <div class="center">
   <img src="class_app_weather_request.png" usemap="#AppWeatherRequest_map" alt=""/>
   <map id="AppWeatherRequest_map" name="AppWeatherRequest_map">
-<area href="class_weather_request.html" alt="WeatherRequest" shape="rect" coords="0,56,126,80"/>
+<area href="class_weather_request.html" title="The WeatherRequest class provides the interface to request weather data." alt="WeatherRequest" shape="rect" coords="0,56,126,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -127,48 +127,86 @@ Inheritance diagram for AppWeatherRequest:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9bd4a52d3b846938b249ec0c3a71d6f5" id="r_a9bd4a52d3b846938b249ec0c3a71d6f5"><td class="memItemLeft" align="right" valign="top"><a id="a9bd4a52d3b846938b249ec0c3a71d6f5" name="a9bd4a52d3b846938b249ec0c3a71d6f5"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Q_DISABLE_COPY</b> (<a class="el" href="class_app_weather_request.html">AppWeatherRequest</a>)</td></tr>
+<tr class="memdesc:a9bd4a52d3b846938b249ec0c3a71d6f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disables copy constructor and copy assignment. This prevents copying of the <a class="el" href="class_app_weather_request.html" title="The AppWeatherRequest class provides the weather request and implements the WeatherRequest functional...">AppWeatherRequest</a> object. <br /></td></tr>
 <tr class="separator:a9bd4a52d3b846938b249ec0c3a71d6f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a8538f869a2108344638225ce6d2ea7" id="r_a2a8538f869a2108344638225ce6d2ea7"><td class="memItemLeft" align="right" valign="top"><a id="a2a8538f869a2108344638225ce6d2ea7" name="a2a8538f869a2108344638225ce6d2ea7"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AppWeatherRequest</b> (QObject *parent=nullptr)</td></tr>
+<tr class="memitem:a2a8538f869a2108344638225ce6d2ea7" id="r_a2a8538f869a2108344638225ce6d2ea7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a8538f869a2108344638225ce6d2ea7">AppWeatherRequest</a> (QObject *parent=nullptr)</td></tr>
+<tr class="memdesc:a2a8538f869a2108344638225ce6d2ea7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="class_app_weather_request.html" title="The AppWeatherRequest class provides the weather request and implements the WeatherRequest functional...">AppWeatherRequest</a>.  <br /></td></tr>
 <tr class="separator:a2a8538f869a2108344638225ce6d2ea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af546cc490a646c652c70a9ba55fd207c" id="r_af546cc490a646c652c70a9ba55fd207c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af546cc490a646c652c70a9ba55fd207c">bindAppDetailedRequest</a> (const <a class="el" href="struct_app_weather_detailed_request.html">AppWeatherDetailedRequest</a> &amp;request)</td></tr>
-<tr class="memdesc:af546cc490a646c652c70a9ba55fd207c"><td class="mdescLeft">&#160;</td><td class="mdescRight">bindAppDetailedRequest  <br /></td></tr>
+<tr class="memdesc:af546cc490a646c652c70a9ba55fd207c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a detailed request.  <br /></td></tr>
 <tr class="separator:af546cc490a646c652c70a9ba55fd207c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa484e3ab2825abedcc5fd80b6969d8a3" id="r_aa484e3ab2825abedcc5fd80b6969d8a3"><td class="memItemLeft" align="right" valign="top">QUrlQuery&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa484e3ab2825abedcc5fd80b6969d8a3">compose_request</a> () override</td></tr>
-<tr class="memdesc:aa484e3ab2825abedcc5fd80b6969d8a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">compose_request compose request required devs to complete the function of how to compose the request  <br /></td></tr>
+<tr class="memdesc:aa484e3ab2825abedcc5fd80b6969d8a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Composes the URL query for the weather request.  <br /></td></tr>
 <tr class="separator:aa484e3ab2825abedcc5fd80b6969d8a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_weather_request"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_weather_request')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_weather_request.html">WeatherRequest</a></td></tr>
 <tr class="memitem:a472973ba5b01c6b681f831470c8e8ec4 inherit pub_methods_class_weather_request" id="r_a472973ba5b01c6b681f831470c8e8ec4"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>Q_DISABLE_COPY</b> (<a class="el" href="class_weather_request.html">WeatherRequest</a>)</td></tr>
+<tr class="memdesc:a472973ba5b01c6b681f831470c8e8ec4 inherit pub_methods_class_weather_request"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disables copy constructor and copy assignment. This prevents copying of the <a class="el" href="class_weather_request.html" title="The WeatherRequest class provides the interface to request weather data.">WeatherRequest</a> object. <br /></td></tr>
 <tr class="separator:a472973ba5b01c6b681f831470c8e8ec4 inherit pub_methods_class_weather_request"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a563db4f9beeca9a58267e04c0ecbe0f8 inherit pub_methods_class_weather_request" id="r_a563db4f9beeca9a58267e04c0ecbe0f8"><td class="memItemLeft" align="right" valign="top">
-&#160;</td><td class="memItemRight" valign="bottom"><b>WeatherRequest</b> (QObject *parent=nullptr)</td></tr>
+<tr class="memitem:a563db4f9beeca9a58267e04c0ecbe0f8 inherit pub_methods_class_weather_request" id="r_a563db4f9beeca9a58267e04c0ecbe0f8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_weather_request.html#a563db4f9beeca9a58267e04c0ecbe0f8">WeatherRequest</a> (QObject *parent=nullptr)</td></tr>
+<tr class="memdesc:a563db4f9beeca9a58267e04c0ecbe0f8 inherit pub_methods_class_weather_request"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="class_weather_request.html" title="The WeatherRequest class provides the interface to request weather data.">WeatherRequest</a>.  <br /></td></tr>
 <tr class="separator:a563db4f9beeca9a58267e04c0ecbe0f8 inherit pub_methods_class_weather_request"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a536ac3f283539dd0b7d7885bb53fc7b5 inherit pub_methods_class_weather_request" id="r_a536ac3f283539dd0b7d7885bb53fc7b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_weather_request.html#a536ac3f283539dd0b7d7885bb53fc7b5">async_request</a> (const char *base_url)</td></tr>
-<tr class="memdesc:a536ac3f283539dd0b7d7885bb53fc7b5 inherit pub_methods_class_weather_request"><td class="mdescLeft">&#160;</td><td class="mdescRight">async_request this function is used to send the request  <br /></td></tr>
+<tr class="memdesc:a536ac3f283539dd0b7d7885bb53fc7b5 inherit pub_methods_class_weather_request"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the request asynchronously.  <br /></td></tr>
 <tr class="separator:a536ac3f283539dd0b7d7885bb53fc7b5 inherit pub_methods_class_weather_request"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header signals_class_weather_request"><td colspan="2" onclick="javascript:dynsection.toggleInherit('signals_class_weather_request')"><img src="closed.png" alt="-"/>&#160;Signals inherited from <a class="el" href="class_weather_request.html">WeatherRequest</a></td></tr>
 <tr class="memitem:ad6741445b3b9ed4fdb60f1a53293e720 inherit signals_class_weather_request" id="r_ad6741445b3b9ed4fdb60f1a53293e720"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_weather_request.html#ad6741445b3b9ed4fdb60f1a53293e720">errorOccurs</a> (QNetworkReply *reply)</td></tr>
-<tr class="memdesc:ad6741445b3b9ed4fdb60f1a53293e720 inherit signals_class_weather_request"><td class="mdescLeft">&#160;</td><td class="mdescRight">errorOccurs when an error occurs, this signal will be emitted  <br /></td></tr>
+<tr class="memdesc:ad6741445b3b9ed4fdb60f1a53293e720 inherit signals_class_weather_request"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emitted when an error occurs in the request.  <br /></td></tr>
 <tr class="separator:ad6741445b3b9ed4fdb60f1a53293e720 inherit signals_class_weather_request"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a182f4d1dd7b4a801eb9a9469f88dc000 inherit signals_class_weather_request" id="r_a182f4d1dd7b4a801eb9a9469f88dc000"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_weather_request.html#a182f4d1dd7b4a801eb9a9469f88dc000">result_available</a> (const QString json)</td></tr>
-<tr class="memdesc:a182f4d1dd7b4a801eb9a9469f88dc000 inherit signals_class_weather_request"><td class="mdescLeft">&#160;</td><td class="mdescRight">result_available when the result is available, this signal will be emitted  <br /></td></tr>
+<tr class="memdesc:a182f4d1dd7b4a801eb9a9469f88dc000 inherit signals_class_weather_request"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emitted when the result is available.  <br /></td></tr>
 <tr class="separator:a182f4d1dd7b4a801eb9a9469f88dc000 inherit signals_class_weather_request"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_weather_request"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_class_weather_request')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_weather_request.html">WeatherRequest</a></td></tr>
 <tr class="memitem:a409c6257cb30390f26bd3c67f295ef06 inherit pro_attribs_class_weather_request" id="r_a409c6257cb30390f26bd3c67f295ef06"><td class="memItemLeft" align="right" valign="top">
 QNetworkAccessManager&#160;</td><td class="memItemRight" valign="bottom"><b>manager</b></td></tr>
+<tr class="memdesc:a409c6257cb30390f26bd3c67f295ef06 inherit pro_attribs_class_weather_request"><td class="mdescLeft">&#160;</td><td class="mdescRight">The network manager handling requests. <br /></td></tr>
 <tr class="separator:a409c6257cb30390f26bd3c67f295ef06 inherit pro_attribs_class_weather_request"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_static_attribs_class_weather_request"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_static_attribs_class_weather_request')"><img src="closed.png" alt="-"/>&#160;Static Protected Attributes inherited from <a class="el" href="class_weather_request.html">WeatherRequest</a></td></tr>
 <tr class="memitem:ac40ebb371070a67f2e2f0d75af7e5036 inherit pro_static_attribs_class_weather_request" id="r_ac40ebb371070a67f2e2f0d75af7e5036"><td class="memItemLeft" align="right" valign="top">
 static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><b>private_key</b> = _DEF_WEATHER_PRIVATE_KEY</td></tr>
+<tr class="memdesc:ac40ebb371070a67f2e2f0d75af7e5036 inherit pro_static_attribs_class_weather_request"><td class="mdescLeft">&#160;</td><td class="mdescRight">Private key for accessing the weather service. <br /></td></tr>
 <tr class="separator:ac40ebb371070a67f2e2f0d75af7e5036 inherit pro_static_attribs_class_weather_request"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="class_app_weather_request.html" title="The AppWeatherRequest class The AppWeatherRequest class provides the weather request and implements t...">AppWeatherRequest</a> class The <a class="el" href="class_app_weather_request.html" title="The AppWeatherRequest class The AppWeatherRequest class provides the weather request and implements t...">AppWeatherRequest</a> class provides the weather request and implements the <a class="el" href="class_weather_request.html">WeatherRequest</a> function. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<div class="textblock"><p>The <a class="el" href="class_app_weather_request.html" title="The AppWeatherRequest class provides the weather request and implements the WeatherRequest functional...">AppWeatherRequest</a> class provides the weather request and implements the <a class="el" href="class_weather_request.html" title="The WeatherRequest class provides the interface to request weather data.">WeatherRequest</a> functionality. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a2a8538f869a2108344638225ce6d2ea7" name="a2a8538f869a2108344638225ce6d2ea7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a8538f869a2108344638225ce6d2ea7">&#9670;&#160;</a></span>AppWeatherRequest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AppWeatherRequest::AppWeatherRequest </td>
+          <td>(</td>
+          <td class="paramtype">QObject *</td>          <td class="paramname"><span class="paramname"><em>parent</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor for <a class="el" href="class_app_weather_request.html" title="The AppWeatherRequest class provides the weather request and implements the WeatherRequest functional...">AppWeatherRequest</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>The parent QObject. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="af546cc490a646c652c70a9ba55fd207c" name="af546cc490a646c652c70a9ba55fd207c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af546cc490a646c652c70a9ba55fd207c">&#9670;&#160;</a></span>bindAppDetailedRequest()</h2>
 
@@ -192,10 +230,10 @@ static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"
 </table>
 </div><div class="memdoc">
 
-<p>bindAppDetailedRequest </p>
+<p>Binds a detailed request. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">request</td><td>request we shell make </td></tr>
+    <tr><td class="paramname">request</td><td>The <a class="el" href="struct_app_weather_detailed_request.html" title="The AppWeatherDetailedRequest struct provides the detailed request information for the weather,...">AppWeatherDetailedRequest</a> structure to bind. </td></tr>
   </table>
   </dd>
 </dl>
@@ -225,8 +263,8 @@ static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"
 </table>
 </div><div class="memdoc">
 
-<p>compose_request compose request required devs to complete the function of how to compose the request </p>
-<dl class="section return"><dt>Returns</dt><dd>the request url </dd></dl>
+<p>Composes the URL query for the weather request. </p>
+<dl class="section return"><dt>Returns</dt><dd>The composed QUrlQuery. </dd></dl>
 
 <p>Implements <a class="el" href="class_weather_request.html#a2faec779862560dbe931d723025787d1">WeatherRequest</a>.</p>
 

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['未来计划_0',['💡 未来计划',['../md_README.html#autotoc_md11',1,'']]]
+  ['开始之前，选择你的语言！_20🌐_0',['🌐 开始之前，选择你的语言！ 🌐',['../md_README.html#autotoc_md1',1,'']]]
 ];

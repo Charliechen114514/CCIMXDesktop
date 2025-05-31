@@ -115,36 +115,39 @@ $(function(){initNavTree('_scrolling_label_8h_source.html',''); initResizable(tr
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>}</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span></div>
 <div class="foldopen" id="foldopen00015" data-start="{" data-end="};">
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_scrolling_label.html">   15</a></span><span class="keyword">class </span>ScrollingLabel : <span class="keyword">public</span> QWidget {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_scrolling_label.html">   15</a></span><span class="keyword">class </span><a class="code hl_function" href="class_scrolling_label.html#a70d87da2c1faeab3aab09e36dd4c5d07">ScrollingLabel</a> : <span class="keyword">public</span> QWidget {</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    Q_OBJECT</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_scrolling_label.html#ab6ddbf528e20f3d94f607465f879293f">   22</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_scrolling_label.html#ab6ddbf528e20f3d94f607465f879293f">ANIMATION_INTERVAL</a> = 100;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_scrolling_label.html#a5312f2d183407cfb37ccfa160c739366">   28</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> <span class="keywordtype">short</span> <a class="code hl_variable" href="class_scrolling_label.html#a5312f2d183407cfb37ccfa160c739366">STEP_SHORT</a> = 2;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">explicit</span> ScrollingLabel(QWidget* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_scrolling_label.html#a5c0296900d179a17f6266751fe82c9d5">setText</a>(<span class="keyword">const</span> QString&amp; text);</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    ~ScrollingLabel();</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">void</span> resizeEvent(QResizeEvent*)<span class="keyword"> override </span>{</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        updateScroll();</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">private</span> slots:</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordtype">void</span> scrollText(); </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordtype">void</span> updateScroll(); </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    Ui::ScrollingLabel* ui;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    QTimer timer;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordtype">int</span> offset { 0 };</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>};</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">explicit</span> <a class="code hl_function" href="class_scrolling_label.html#a70d87da2c1faeab3aab09e36dd4c5d07">ScrollingLabel</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_scrolling_label.html#a5c0296900d179a17f6266751fe82c9d5">setText</a>(<span class="keyword">const</span> QString&amp; text);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <a class="code hl_function" href="class_scrolling_label.html#a70d87da2c1faeab3aab09e36dd4c5d07">~ScrollingLabel</a>();</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">protected</span>:</div>
+<div class="foldopen" id="foldopen00048" data-start="{" data-end="}">
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_scrolling_label.html#a9f9d7abd6ca18eacb4a2eaaa018c2ded">   48</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_scrolling_label.html#a9f9d7abd6ca18eacb4a2eaaa018c2ded">resizeEvent</a>(QResizeEvent*)<span class="keyword"> override </span>{</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        updateScroll();</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
 </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#endif </span><span class="comment">// SCROLLINGLABEL_H</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keyword">private</span> slots:</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordtype">void</span> scrollText(); </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">void</span> updateScroll(); </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    Ui::ScrollingLabel* ui;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    QTimer timer;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordtype">int</span> offset { 0 };</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>};</div>
+</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#endif </span><span class="comment">// SCROLLINGLABEL_H</span></div>
 <div class="ttc" id="aclass_scrolling_label_html_a5312f2d183407cfb37ccfa160c739366"><div class="ttname"><a href="class_scrolling_label.html#a5312f2d183407cfb37ccfa160c739366">ScrollingLabel::STEP_SHORT</a></div><div class="ttdeci">static constexpr const short STEP_SHORT</div><div class="ttdoc">STEP_SHORT the step short everytime the animations make the text scroll in pix level so,...</div><div class="ttdef"><b>Definition</b> ScrollingLabel.h:28</div></div>
 <div class="ttc" id="aclass_scrolling_label_html_a5c0296900d179a17f6266751fe82c9d5"><div class="ttname"><a href="class_scrolling_label.html#a5c0296900d179a17f6266751fe82c9d5">ScrollingLabel::setText</a></div><div class="ttdeci">void setText(const QString &amp;text)</div><div class="ttdoc">setText set the text of the label</div><div class="ttdef"><b>Definition</b> ScrollingLabel.cpp:13</div></div>
+<div class="ttc" id="aclass_scrolling_label_html_a70d87da2c1faeab3aab09e36dd4c5d07"><div class="ttname"><a href="class_scrolling_label.html#a70d87da2c1faeab3aab09e36dd4c5d07">ScrollingLabel::ScrollingLabel</a></div><div class="ttdeci">ScrollingLabel(QWidget *parent=nullptr)</div><div class="ttdoc">Construct a new Scrolling Label object.</div><div class="ttdef"><b>Definition</b> ScrollingLabel.cpp:4</div></div>
+<div class="ttc" id="aclass_scrolling_label_html_a9f9d7abd6ca18eacb4a2eaaa018c2ded"><div class="ttname"><a href="class_scrolling_label.html#a9f9d7abd6ca18eacb4a2eaaa018c2ded">ScrollingLabel::resizeEvent</a></div><div class="ttdeci">void resizeEvent(QResizeEvent *) override</div><div class="ttdoc">resize hooks</div><div class="ttdef"><b>Definition</b> ScrollingLabel.h:48</div></div>
 <div class="ttc" id="aclass_scrolling_label_html_ab6ddbf528e20f3d94f607465f879293f"><div class="ttname"><a href="class_scrolling_label.html#ab6ddbf528e20f3d94f607465f879293f">ScrollingLabel::ANIMATION_INTERVAL</a></div><div class="ttdeci">static constexpr const int ANIMATION_INTERVAL</div><div class="ttdoc">ANIMATION_INTERVAL the animation interval.</div><div class="ttdef"><b>Definition</b> ScrollingLabel.h:22</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

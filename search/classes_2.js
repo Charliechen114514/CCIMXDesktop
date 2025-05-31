@@ -9,5 +9,6 @@ var searchData=
   ['direntsizeworker_6',['DirentSizeWorker',['../classDirentSizeWorker.html',1,'']]],
   ['diskmusic_7',['DiskMusic',['../classDiskMusic.html',1,'']]],
   ['displayparams_8',['DisplayParams',['../structCVTools_1_1DisplayParams.html',1,'CVTools']]],
-  ['downdockwidget_9',['DownDockWidget',['../classDownDockWidget.html',1,'']]]
+  ['downdockwidget_9',['DownDockWidget',['../classDownDockWidget.html',1,'']]],
+  ['drawerwindow_10',['DrawerWindow',['../classDrawerWindow.html',1,'']]]
 ];

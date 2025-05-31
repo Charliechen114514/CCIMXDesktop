@@ -36,11 +36,11 @@ var NAVTREE =
       [ "💡 未来计划", "md_README.html#autotoc_md11", null ],
       [ "📝 许可证", "md_README.html#autotoc_md13", null ]
     ] ],
-    [ "CCIMXDESKTOP🖥️", "md_README__EN.html", [
-      [ "🌐 Before you start, choose your language! 🌐", "md_README__EN.html#autotoc_md15", null ],
+    [ "CCIMXDESKTOP 🖥️", "md_README__EN.html", [
+      [ "🌐 Before you get started, choose your language! 🌐", "md_README__EN.html#autotoc_md15", null ],
       [ "🌟 Project Overview 🌟", "md_README__EN.html#autotoc_md16", null ],
       [ "Some running screenshots", "md_README__EN.html#autotoc_md18", null ],
-      [ "🛠️ Basic build technologies", "md_README__EN.html#autotoc_md19", null ],
+      [ "🛠️ Technologies used for basic builds", "md_README__EN.html#autotoc_md19", null ],
       [ "🛠️ Full build of technologies", "md_README__EN.html#autotoc_md20", null ],
       [ "🧩 Developer Reference", "md_README__EN.html#autotoc_md22", null ],
       [ "📚Project Documentation", "md_README__EN.html#autotoc_md24", null ],
@@ -80,7 +80,9 @@ var NAVTREE =
         [ "Variables", "functions_vars.html", null ],
         [ "Typedefs", "functions_type.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
-        [ "Enumerator", "functions_eval.html", null ]
+        [ "Enumerator", "functions_eval.html", null ],
+        [ "Properties", "functions_prop.html", null ],
+        [ "Related Symbols", "functions_rela.html", null ]
       ] ]
     ] ],
     [ "Files", "files.html", [
@@ -92,9 +94,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AP3216CAdapterFactory_8h_source.html",
-"classCameraCapture.html#af3ceb8523ba6d8eb0f41649e3a2f3d28",
-"classSportsChart.html#a0d2390b8d696ee8bf072f0bfa2718841",
-"index.html"
+"classCCPdfViewer.html#ac7f3f2ba436fba2eedeaf5580d4630d5",
+"classLightControllerWindow.html#a40549df6846a9c90873b79969574ed4a",
+"classVideoPlayer.html#aa694b6b907f0e1935de88613608ff6aa",
+"md_Components-explain-EN.html#autotoc_md41",
+"uipagenavigationpolicy_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

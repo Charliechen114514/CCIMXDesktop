@@ -109,7 +109,7 @@ $(function(){initNavTree('class_c_c_i_m_x___abstract_memory_info_driver.html',''
 </div><!--header-->
 <div class="contents">
 
-<p>The <a class="el" href="class_c_c_i_m_x___abstract_memory_info_driver.html" title="The CCIMX_AbstractMemoryInfoDriver class provides the abstract class for the memory information drive...">CCIMX_AbstractMemoryInfoDriver</a> class provides the abstract class for the memory information driver.  
+<p>The <a class="el" href="class_c_c_i_m_x___abstract_memory_info_driver.html" title="The CCIMX_AbstractMemoryInfoDriver class Abstract base class for platform-specific memory information...">CCIMX_AbstractMemoryInfoDriver</a> class Abstract base class for platform-specific memory information drivers. Provides interface to fetch memory statistics.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_memory_info_fetcher_8h_source.html">MemoryInfoFetcher.h</a>&gt;</code></p>
@@ -119,21 +119,56 @@ Inheritance diagram for CCIMX_AbstractMemoryInfoDriver:</div>
  <div class="center">
   <img src="class_c_c_i_m_x___abstract_memory_info_driver.png" usemap="#CCIMX_5FAbstractMemoryInfoDriver_map" alt=""/>
   <map id="CCIMX_5FAbstractMemoryInfoDriver_map" name="CCIMX_5FAbstractMemoryInfoDriver_map">
-<area href="class_linux_platform_memory_info_driver.html" title="The LinuxPlatformMemoryInfoDriver class provides the memory info driver." alt="LinuxPlatformMemoryInfoDriver" shape="rect" coords="0,56,210,80"/>
+<area href="class_linux_platform_memory_info_driver.html" title="The LinuxPlatformMemoryInfoDriver class provides the memory info driver for Linux." alt="LinuxPlatformMemoryInfoDriver" shape="rect" coords="0,56,210,80"/>
 <area href="class_win32_platform_memory_info_driver.html" title="The Win32PlatformMemoryInfoDriver class provides the memory info driver." alt="Win32PlatformMemoryInfoDriver" shape="rect" coords="220,56,430,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac38466d24739fd1516ca321eb236751c" id="r_ac38466d24739fd1516ca321eb236751c"><td class="memItemLeft" align="right" valign="top"><a id="ac38466d24739fd1516ca321eb236751c" name="ac38466d24739fd1516ca321eb236751c"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>factory</b> (<a class="el" href="struct_memory_info_fetcher_1_1_memory_stat.html">MemoryInfoFetcher::MemoryStat</a> &amp;)=0</td></tr>
-<tr class="separator:ac38466d24739fd1516ca321eb236751c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3074fcdfdfa51ea3c315ddddd7ed881f" id="r_a3074fcdfdfa51ea3c315ddddd7ed881f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3074fcdfdfa51ea3c315ddddd7ed881f">factory</a> (<a class="el" href="struct_memory_info_fetcher_1_1_memory_stat.html">MemoryInfoFetcher::MemoryStat</a> &amp;stat)=0</td></tr>
+<tr class="memdesc:a3074fcdfdfa51ea3c315ddddd7ed881f"><td class="mdescLeft">&#160;</td><td class="mdescRight">factory Populate the MemoryStat structure with current memory info.  <br /></td></tr>
+<tr class="separator:a3074fcdfdfa51ea3c315ddddd7ed881f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="class_c_c_i_m_x___abstract_memory_info_driver.html" title="The CCIMX_AbstractMemoryInfoDriver class provides the abstract class for the memory information drive...">CCIMX_AbstractMemoryInfoDriver</a> class provides the abstract class for the memory information driver. </p>
-<dl class="section note"><dt>Note</dt><dd>This is a abstract class that is used to being as a base class for the driver in different platforms </dd></dl>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+<div class="textblock"><p>The <a class="el" href="class_c_c_i_m_x___abstract_memory_info_driver.html" title="The CCIMX_AbstractMemoryInfoDriver class Abstract base class for platform-specific memory information...">CCIMX_AbstractMemoryInfoDriver</a> class Abstract base class for platform-specific memory information drivers. Provides interface to fetch memory statistics. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3074fcdfdfa51ea3c315ddddd7ed881f" name="a3074fcdfdfa51ea3c315ddddd7ed881f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3074fcdfdfa51ea3c315ddddd7ed881f">&#9670;&#160;</a></span>factory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void CCIMX_AbstractMemoryInfoDriver::factory </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_memory_info_fetcher_1_1_memory_stat.html">MemoryInfoFetcher::MemoryStat</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>stat</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>factory Populate the MemoryStat structure with current memory info. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stat</td><td>Reference to MemoryStat structure to fill. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_linux_platform_memory_info_driver.html#aa1348cc81123078c38ee1aa6a02ea6a9">LinuxPlatformMemoryInfoDriver</a>, and <a class="el" href="class_win32_platform_memory_info_driver.html#a9c96e01bdc9c521a45faf717182a9596">Win32PlatformMemoryInfoDriver</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>extern_app/SystemState/Core/<a class="el" href="_memory_info_fetcher_8h_source.html">MemoryInfoFetcher.h</a></li>
 </ul>
 </div><!-- contents -->

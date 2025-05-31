@@ -103,6 +103,11 @@ $(document).ready(function(){initNavTree('classPhotoSaver.html',''); initResizab
   <div class="headertitle"><div class="title">PhotoSaver Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The <a class="el" href="classPhotoSaver.html" title="The PhotoSaver class provides static methods for saving images.">PhotoSaver</a> class provides static methods for saving images.  
+ <a href="classPhotoSaver.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="PhotoSaver_8h_source.html">PhotoSaver.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -111,25 +116,32 @@ Public Types</h2></td></tr>
 , <a class="el" href="classPhotoSaver.html#a74898c501e061db0c56ab0b7684fa979a0ee6b2f736ff8c61c56eafaabedea9a9">DirUnsavable</a>
 , <a class="el" href="classPhotoSaver.html#a74898c501e061db0c56ab0b7684fa979acaa2f3d619a191b0d0dfd1bae600841d">ImageSelfSaveFailed</a>
  }</td></tr>
-<tr class="memdesc:a74898c501e061db0c56ab0b7684fa979"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Error enum provides the situations and cases of error types.  <a href="classPhotoSaver.html#a74898c501e061db0c56ab0b7684fa979">More...</a><br /></td></tr>
+<tr class="memdesc:a74898c501e061db0c56ab0b7684fa979"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error enum describes possible error states in saving process.  <a href="classPhotoSaver.html#a74898c501e061db0c56ab0b7684fa979">More...</a><br /></td></tr>
 <tr class="separator:a74898c501e061db0c56ab0b7684fa979"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ab2cf4ecf4ca22275f4d6010dc0d7228a" id="r_ab2cf4ecf4ca22275f4d6010dc0d7228a"><td class="memItemLeft" align="right" valign="top"><a id="ab2cf4ecf4ca22275f4d6010dc0d7228a" name="ab2cf4ecf4ca22275f4d6010dc0d7228a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>PhotoSaver</b> ()=default</td></tr>
+<tr class="memdesc:ab2cf4ecf4ca22275f4d6010dc0d7228a"><td class="mdescLeft">&#160;</td><td class="mdescRight">def constructor <br /></td></tr>
+<tr class="separator:ab2cf4ecf4ca22275f4d6010dc0d7228a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86cb97396552bf08c35ec15358a7cce4" id="r_a86cb97396552bf08c35ec15358a7cce4"><td class="memItemLeft" align="right" valign="top"><a id="a86cb97396552bf08c35ec15358a7cce4" name="a86cb97396552bf08c35ec15358a7cce4"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Q_DISABLE_COPY</b> (<a class="el" href="classPhotoSaver.html">PhotoSaver</a>)</td></tr>
+<tr class="memdesc:a86cb97396552bf08c35ec15358a7cce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Q_DISABLE_COPY disables copy constructor and assignment operator. <br /></td></tr>
 <tr class="separator:a86cb97396552bf08c35ec15358a7cce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aceb47ee7501057dfe06e99d0a995d9d7" id="r_aceb47ee7501057dfe06e99d0a995d9d7"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPhotoSaver.html#aceb47ee7501057dfe06e99d0a995d9d7">dirSavable</a> (const QString &amp;dir)</td></tr>
-<tr class="memdesc:aceb47ee7501057dfe06e99d0a995d9d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">dirSavable check if the directory is savable  <br /></td></tr>
+<tr class="memdesc:aceb47ee7501057dfe06e99d0a995d9d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">dirSavable checks whether the given directory is writable/savable.  <br /></td></tr>
 <tr class="separator:aceb47ee7501057dfe06e99d0a995d9d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2c7886868fdeb9c2042fb79fb53cfd6" id="r_ae2c7886868fdeb9c2042fb79fb53cfd6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classPhotoSaver.html#a74898c501e061db0c56ab0b7684fa979">Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPhotoSaver.html#ae2c7886868fdeb9c2042fb79fb53cfd6">saveOnce</a> (const QPixmap &amp;image, const QString &amp;dir, const QString prefix=&quot;.jpg&quot;)</td></tr>
-<tr class="memdesc:ae2c7886868fdeb9c2042fb79fb53cfd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">saveOnce save the image once  <br /></td></tr>
+<tr class="memdesc:ae2c7886868fdeb9c2042fb79fb53cfd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">saveOnce saves the image once to the given directory with a filename prefix.  <br /></td></tr>
 <tr class="separator:ae2c7886868fdeb9c2042fb79fb53cfd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="classPhotoSaver.html" title="The PhotoSaver class provides static methods for saving images.">PhotoSaver</a> class provides static methods for saving images. </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a74898c501e061db0c56ab0b7684fa979" name="a74898c501e061db0c56ab0b7684fa979"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a74898c501e061db0c56ab0b7684fa979">&#9670;&#160;</a></span>Error</h2>
 
@@ -150,15 +162,15 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The Error enum provides the situations and cases of error types. </p>
+<p>Error enum describes possible error states in saving process. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a74898c501e061db0c56ab0b7684fa979a6aa0dc678e191c86decf9a1fb2bd3bc2" name="a74898c501e061db0c56ab0b7684fa979a6aa0dc678e191c86decf9a1fb2bd3bc2"></a>SaveSuccess&#160;</td><td class="fielddoc"><p>save success </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a74898c501e061db0c56ab0b7684fa979a6aa0dc678e191c86decf9a1fb2bd3bc2" name="a74898c501e061db0c56ab0b7684fa979a6aa0dc678e191c86decf9a1fb2bd3bc2"></a>SaveSuccess&#160;</td><td class="fielddoc"><p>Save was successful. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a74898c501e061db0c56ab0b7684fa979a3ed7a65c58f2f380e6a74076e62a5fad" name="a74898c501e061db0c56ab0b7684fa979a3ed7a65c58f2f380e6a74076e62a5fad"></a>NullImage&#160;</td><td class="fielddoc"><p>image is null </p>
+<tr><td class="fieldname"><a id="a74898c501e061db0c56ab0b7684fa979a3ed7a65c58f2f380e6a74076e62a5fad" name="a74898c501e061db0c56ab0b7684fa979a3ed7a65c58f2f380e6a74076e62a5fad"></a>NullImage&#160;</td><td class="fielddoc"><p>Image is null. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a74898c501e061db0c56ab0b7684fa979a0ee6b2f736ff8c61c56eafaabedea9a9" name="a74898c501e061db0c56ab0b7684fa979a0ee6b2f736ff8c61c56eafaabedea9a9"></a>DirUnsavable&#160;</td><td class="fielddoc"><p>directory is not savable </p>
+<tr><td class="fieldname"><a id="a74898c501e061db0c56ab0b7684fa979a0ee6b2f736ff8c61c56eafaabedea9a9" name="a74898c501e061db0c56ab0b7684fa979a0ee6b2f736ff8c61c56eafaabedea9a9"></a>DirUnsavable&#160;</td><td class="fielddoc"><p>Directory is not writable or savable. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a74898c501e061db0c56ab0b7684fa979acaa2f3d619a191b0d0dfd1bae600841d" name="a74898c501e061db0c56ab0b7684fa979acaa2f3d619a191b0d0dfd1bae600841d"></a>ImageSelfSaveFailed&#160;</td><td class="fielddoc"><p>image self save failed </p>
+<tr><td class="fieldname"><a id="a74898c501e061db0c56ab0b7684fa979acaa2f3d619a191b0d0dfd1bae600841d" name="a74898c501e061db0c56ab0b7684fa979acaa2f3d619a191b0d0dfd1bae600841d"></a>ImageSelfSaveFailed&#160;</td><td class="fielddoc"><p>Image saving failed internally. </p>
 </td></tr>
 </table>
 
@@ -189,8 +201,14 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>dirSavable check if the directory is savable </p>
-<dl class="section return"><dt>Returns</dt><dd>true if the directory is savable </dd></dl>
+<p>dirSavable checks whether the given directory is writable/savable. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dir</td><td>The directory path to check. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if directory is writable, otherwise false. </dd></dl>
 
 </div>
 </div>
@@ -234,16 +252,16 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>saveOnce save the image once </p>
+<p>saveOnce saves the image once to the given directory with a filename prefix. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">image</td><td>the image to save </td></tr>
-    <tr><td class="paramname">dir</td><td>the directory to save </td></tr>
-    <tr><td class="paramname">prefix</td><td>the prefix of file name </td></tr>
+    <tr><td class="paramname">image</td><td>The image to save. </td></tr>
+    <tr><td class="paramname">dir</td><td>The target directory. </td></tr>
+    <tr><td class="paramname">prefix</td><td>The filename prefix or suffix (default ".jpg"). </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the error code </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The result code of the save operation. </dd></dl>
 
 </div>
 </div>
