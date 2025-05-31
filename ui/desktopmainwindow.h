@@ -1,6 +1,7 @@
 #ifndef DESKTOPMAINWINDOW_H
 #define DESKTOPMAINWINDOW_H
 
+#include "app_wrapper/applicationwrapper.h"
 #include "ui/appwidget.h"
 #include <QMainWindow>
 QT_BEGIN_NAMESPACE
@@ -84,12 +85,6 @@ public:
 	 */
 	void inline install_remote_appwrapper(ApplicationWrapper* wrapper) { app_wrapper << wrapper; }
 	/**
-	 * @brief handle_app_status is the handler for app status, it will
-	 * be called when the app status is changed, like the app depatching errors
-	 * @param status: the status waiting for the depatching
-	 */
-	void handle_app_status(AppWidget::AppStatus status);
-	/**
 	 * @brief returns the stackedWidget the slider using
 	 * @return QStackedWidget
 	 */
@@ -98,6 +93,14 @@ public:
 	 * @brief post_show makes the later init of the mainWindow
 	 */
 	void post_show();
+
+public slots:
+	/**
+	 * @brief handle_app_status is the handler for app status, it will
+	 * be called when the app status is changed, like the app depatching errors
+	 * @param status: the status waiting for the depatching
+	 */
+	void handle_app_status(AppWidget::AppStatus status);
 signals:
 	/**
 	 * @brief Signals, that when everytime the app cards
@@ -144,6 +147,12 @@ private:
 	 * including some default apps ready
 	 */
 	void setup_apps();
+
+	/**
+	 * @brief setup_default_dock will install some default apps
+	 * into the dockwidget
+	 */
+	void setup_default_dock();
 
 	/**
 	 * @brief invoke_appcards_init, defaultly, signal

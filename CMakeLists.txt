@@ -3,7 +3,14 @@
 # set(ENV{https_proxy} "http://127.0.0.1:7890")
 
 cmake_minimum_required(VERSION 3.19)
-project(CCIMX_Desktop LANGUAGES CXX)
+project(CCIMX_Desktop LANGUAGES CXX VERSION 0.9.0)
+message(STATUS "Dumping the message info...")
+set(CCIMXDESKTOP_VERSION_MAJOR ${PROJECT_VERSION_MAJOR} CACHE STRING "Main Version Of CCIMXDesktop")
+set(CCIMXDESKTOP_VERSION_MINOR ${PROJECT_VERSION_MINOR} CACHE STRING "Sub Version Of CCIMXDesktop")
+set(CCIMXDESKTOP_VERSION_PATCH ${PROJECT_VERSION_PATCH} CACHE STRING "Patch Version Of CCIMXDesktop")
+set(CCIMXDESKTOP_VERSION_FULL ${PROJECT_VERSION} CACHE STRING "Full Version Of CCIMXDesktop")
+message(STATUS "You are building the CCIMXDestop with in the Version ${CCIMXDESKTOP_VERSION_FULL}")
+
 set(CMAKE_AUTORCC ON)
 
 # Options for support
@@ -171,6 +178,7 @@ add_compile_definitions(
     $<$<BOOL:${INCLUDE_MEDIAPLAYER_APP}>:INCLUDE_MEDIAPLAYER_APP>
 )
 
+add_subdirectory(builtin/app)
 add_subdirectory(extern_app)
 
 message(STATUS "About to check the CCIMXDesktop Main Face Dependencies...")
@@ -308,6 +316,11 @@ endif()
 
 message(STATUS  "About to dump the message of the building in order to ensure the settings")
 message(STATUS  "-----------------------------------------------------")
+message(STATUS  "CCIMXDestop Version: ${CCIMXDESKTOP_VERSION_FULL}")
+message(STATUS  "CCIMXDestop Main Version: ${CCIMXDESKTOP_VERSION_MAJOR}")
+message(STATUS  "CCIMXDestop Sub Version: ${CCIMXDESKTOP_VERSION_MINOR}")
+message(STATUS  "CCIMXDestop Patch Version: ${CCIMXDESKTOP_VERSION_PATCH}")
+message(STATUS  "-----------------------------------------------------")
 message(STATUS "Install Issue End: ")
 message(STATUS "-----------------------------------------------------")
 message(STATUS "The base dirent of installations:   CCIMX_ALL_RELEASE_DIR_BASE = ${CCIMX_ALL_RELEASE_DIR_BASE}")
@@ -337,6 +350,7 @@ else()
     message(STATUS "If you need to generate the documentations, please set the CCIMX_DESKTOP_DOCGEN_REQ to ON")
 endif()
 message(STATUS "-----------------------------------------------------")
+
 
 
 

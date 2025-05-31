@@ -43,21 +43,7 @@ PageSetuper::create_one_app_only_page_append(
 void PageSetuper::add_to_dock(
     DesktopMainWindow* mainWindow,
     const QList<AppWidget*>& widgets) {
-    QList<AppWidget*> copys;
-    for (const auto& each : widgets) {
-        AppWidget* app = new AppWidget(
-            each->icon().scaled(PageSetuper::APP_ICON_SZ,
-                                PageSetuper::APP_ICON_SZ,
-                                Qt::KeepAspectRatio,
-                                Qt::SmoothTransformation),
-            each->app_name(), mainWindow->downDockWidget());
-        app->bindApp(each->get_app());
-        app->showIconOnly(true);
-        copys << app;
-        QObject::connect(app, &AppWidget::postAppStatus, mainWindow, &DesktopMainWindow::handle_app_status);
-    }
-
-    mainWindow->downDockWidget()->set_dock_apps(copys);
+    mainWindow->downDockWidget()->set_dock_apps(widgets);
 }
 
 /* All mappings are defined, thus add directly is OK */
@@ -67,93 +53,115 @@ void PageSetuper::
 	widget->addWidget(paged_widget);
 }
 
+namespace {
+PageSetuper::PageSetupSessionRequest make_up_request(
+    const QString& app_path,
+    const QString& icon_path,
+    const QString& name, DesktopMainWindow* mainWindow) {
+    ApplicationWrapper* wrapper = new ApplicationWrapper(mainWindow, mainWindow);
+    wrapper->set_app_path(app_path);
+    mainWindow->install_remote_appwrapper(wrapper);
+    return { icon_path, name, wrapper };
+}
+}
+
+QList<AppWidget*> PageSetuper::build_pesudo_page(
+	const QString& pixpath, int how_many, DesktopMainWindow* mainWindow) {
+	QList<PageSetuper::PageSetupSessionRequest> req;
+	for (int i = 0; i < how_many; i++) {
+		req.push_back({ pixpath, QString::number(i), nullptr });
+	}
+
+	return PageSetuper::create_one_app_only_page_append(mainWindow, req);
+}
+
 QList<AppWidget*> PageSetuper::create_real_app(DesktopMainWindow* mainWindow) {
 
 	QList<PageSetuper::PageSetupSessionRequest> req;
-	ApplicationWrapper* wrapper = nullptr;
 #ifdef INCLUDE_PDF_BROWSER_APP
-	/* app page of PDF Browser */
-	QString pdf_path;
-	pdf_path = _EXTERNAPP_INSTALL_DIR "/pdfReader";
-	wrapper = new ApplicationWrapper(mainWindow, mainWindow);
-	wrapper->set_app_path(pdf_path);
-	mainWindow->install_remote_appwrapper(wrapper);
-	req.push_back({ ":/icons/sources/pdf_browser.png", "PDF Browser", wrapper });
+	req.push_back(make_up_request(
+		_EXTERNAPP_INSTALL_DIR "/pdfReader",
+		":/icons/sources/pdf_browser.png",
+		"PDF Browser",
+		mainWindow));
 #endif
 
 #ifdef INCLUDE_WEATHER_APP
-	/* app page of the Weather */
-	QString weather_app_path;
-	weather_app_path = _EXTERNAPP_INSTALL_DIR "/WeatherApp";
-	wrapper = new ApplicationWrapper(mainWindow, mainWindow);
-	wrapper->set_app_path(weather_app_path);
-	mainWindow->install_remote_appwrapper(wrapper);
-	req.push_back({ ":/icons/sources/weather_app.png", "Weather App", wrapper });
+	req.push_back(make_up_request(
+		_EXTERNAPP_INSTALL_DIR "/WeatherApp",
+		":/icons/sources/weather_app.png",
+		"Weather App",
+		mainWindow));
 #endif
 
 #ifdef INCLUDE_CAMERA_APP
-	/* app page of the GeneralLocalCamera */
-	QString camera_app_path = _EXTERNAPP_INSTALL_DIR "/GeneralLocalCamera";
-	wrapper = new ApplicationWrapper(mainWindow, mainWindow);
-	wrapper->set_app_path(camera_app_path);
-	mainWindow->install_remote_appwrapper(wrapper);
-	req.push_back({ ":/icons/sources/camera_app.png", "Camera App", wrapper });
+	req.push_back(make_up_request(
+		_EXTERNAPP_INSTALL_DIR "/GeneralLocalCamera",
+		":/icons/sources/camera_app.png",
+		"Camera App",
+		mainWindow));
 #endif
 
 #ifdef INCLUDE_SYSTEMSTATUS_APP
-	/* app page of the SystemState */
-	QString system_state_path = _EXTERNAPP_INSTALL_DIR "/SystemState";
-	wrapper = new ApplicationWrapper(mainWindow, mainWindow);
-	wrapper->set_app_path(system_state_path);
-	mainWindow->install_remote_appwrapper(wrapper);
-	req.push_back({ ":/icons/sources/system_state.png", "SystemState", wrapper });
+	req.push_back(make_up_request(
+		_EXTERNAPP_INSTALL_DIR "/SystemState",
+		":/icons/sources/system_state.png",
+		"SystemState",
+		mainWindow));
 #endif
 
 #ifdef INCLUDE_FILERAMBER_APP
-	/* app page of the FileRamber */
-	QString file_ramber_path = _EXTERNAPP_INSTALL_DIR "/FileRamber";
-	wrapper = new ApplicationWrapper(mainWindow, mainWindow);
-	wrapper->set_app_path(file_ramber_path);
-	mainWindow->install_remote_appwrapper(wrapper);
-	req.push_back({ ":/icons/sources/file_ramber.png", "FileRamber", wrapper });
+	req.push_back(make_up_request(
+		_EXTERNAPP_INSTALL_DIR "/FileRamber",
+		":/icons/sources/file_ramber.png",
+		"FileRamber",
+		mainWindow));
 #endif
 
 #ifdef INCLUDE_MEDIAPLAYER_APP
-	/* app page of the MediaPlayer */
-	QString media_player_path = _EXTERNAPP_INSTALL_DIR "/MediaPlayer";
-	wrapper = new ApplicationWrapper(mainWindow, mainWindow);
-	wrapper->set_app_path(media_player_path);
-	mainWindow->install_remote_appwrapper(wrapper);
-	req.push_back({ ":/icons/sources/mediaplayer_app.png", "MediaPlayer", wrapper });
+	req.push_back(make_up_request(
+		_EXTERNAPP_INSTALL_DIR "/MediaPlayer",
+		":/icons/sources/mediaplayer_app.png",
+		"MediaPlayer",
+		mainWindow));
 #endif
 
-/* Board Level Application */
 #ifdef INCLUDE_LED_APP
-	/* app page of the LED */
-	QString led_path = _EXTERNAPP_INSTALL_DIR "/LightController";
-	wrapper = new ApplicationWrapper(mainWindow, mainWindow);
-	wrapper->set_app_path(led_path);
-	mainWindow->install_remote_appwrapper(wrapper);
-	req.push_back({ ":/icons/sources/ledcontrol_app.png", "LED Controller", wrapper });
+	req.push_back(make_up_request(
+		_EXTERNAPP_INSTALL_DIR "/LightController",
+		":/icons/sources/ledcontrol_app.png",
+		"LED Controller",
+		mainWindow));
 #endif
 
 #ifdef INCLUDE_ENV_APP
-	/* app page of the LED */
-	QString env_app = _EXTERNAPP_INSTALL_DIR "/Environment";
-	wrapper = new ApplicationWrapper(mainWindow, mainWindow);
-	wrapper->set_app_path(env_app);
-	mainWindow->install_remote_appwrapper(wrapper);
-	req.push_back({ ":/icons/sources/env_app.png", "Environment", wrapper });
+	req.push_back(make_up_request(
+		_EXTERNAPP_INSTALL_DIR "/Environment",
+		":/icons/sources/env_app.png",
+		"Environment",
+		mainWindow));
 #endif
 
 #ifdef INCLUDE_SPORT_APP
-	/* app page of the LED */
-	QString sports_path = _EXTERNAPP_INSTALL_DIR "/SportsHealth";
-	wrapper = new ApplicationWrapper(mainWindow, mainWindow);
-	wrapper->set_app_path(sports_path);
-	mainWindow->install_remote_appwrapper(wrapper);
-	req.push_back({ ":/icons/sources/sports_health_app.png", "SportsHealth", wrapper });
+	req.push_back(make_up_request(
+		_EXTERNAPP_INSTALL_DIR "/SportsHealth",
+		":/icons/sources/sports_health_app.png",
+		"SportsHealth",
+		mainWindow));
 #endif
+
+	return PageSetuper::create_one_app_only_page_append(mainWindow, req);
+}
+
+QList<AppWidget*> PageSetuper::create_builtin_apps(DesktopMainWindow* mainWindow) {
+	QList<PageSetuper::PageSetupSessionRequest> req;
+
+	/* abouts */
+	req.push_back(make_up_request(
+		_EXTERNAPP_INSTALL_DIR "/DesktopAbout",
+		":/icons/sources/desktop_about.png",
+		"DesktopAbout",
+		mainWindow));
 
 	return PageSetuper::create_one_app_only_page_append(mainWindow, req);
 }

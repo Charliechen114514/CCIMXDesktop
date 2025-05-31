@@ -1,12 +1,36 @@
 #include "applicationwrapper.h"
+#include "desktopmainwindow.h"
+#include <QDir>
 #include <QFile>
-#include <QMainWindow>
+#include <QFileInfo>
 #include <QProcess>
-
 using ApplicationDepatchResult = ApplicationWrapper::ApplicationDepatchResult;
 using ApplicationFinishResult = ApplicationWrapper::ApplicationFinishResult;
 
 namespace {
+
+/**
+ * @brief fileExistsIgnoreSuffix fuck Microsoft, its execution requires
+ *  .exe, which, will lead a file missing check
+ * @param filePath
+ * @return if the file exsited
+ */
+bool fileExistsIgnoreSuffix(const QString& filePath) {
+	QFileInfo fi(filePath);
+	QString dirPath = fi.absolutePath();
+	QString baseName = fi.completeBaseName();
+
+	QDir dir(dirPath);
+	QStringList entryList = dir.entryList(QDir::Files | QDir::NoDotAndDotDot);
+
+	for (const QString& entry : entryList) {
+		QFileInfo entryInfo(dir, entry);
+		if (entryInfo.completeBaseName() == baseName) {
+			return true;
+		}
+	}
+	return false;
+}
 
 /**
  * @brief this is the default pre-indicate function, this is the default
@@ -19,11 +43,12 @@ ApplicationDepatchResult
 def_indicate(ApplicationWrapper* wrapper) {
 	ApplicationWrapper::ApplicationDepatchResult res;
 
-	if (!QFile::exists(wrapper->get_app_path())) {
+	if (!fileExistsIgnoreSuffix(wrapper->get_app_path())) {
 		// then the file is not existed
 		res.app_depatch_result = ApplicationDepatchResult::AppDepatchResult::APP_FILE_MISSING;
 		res.depatched = false;
 	} else {
+		res.app_depatch_result = ApplicationDepatchResult::AppDepatchResult::APP_RUN_OK;
 		res.depatched = true;
 	}
 
@@ -88,7 +113,7 @@ void ApplicationWrapper::def_error_handler() {
 }
 
 ApplicationWrapper::
-    ApplicationWrapper(QObject* parent, QMainWindow* desktopWindow)
+    ApplicationWrapper(QObject* parent, DesktopMainWindow* desktopWindow)
     : QObject(parent) {
     mainWindow = desktopWindow;
     pre_indicate = def_indicate;
@@ -98,9 +123,7 @@ void ApplicationWrapper::depatch_app() {
 	/* we need to promise the app is exsited */
 	if (pre_indicate) {
 		ApplicationDepatchResult result = pre_indicate(this);
-		if (!result.depatched) {
-			emit app_depatch_status(result);
-		}
+		emit app_depatch_status(result);
 	}
 
 	/* precheck is passed then */

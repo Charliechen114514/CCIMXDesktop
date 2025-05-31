@@ -22,6 +22,7 @@ DesktopMainWindow::DesktopMainWindow(QWidget* parent)
 }
 
 void DesktopMainWindow::post_setupui() {
+	ui->downdock->set_parent_window(this);
 	toast = new DesktopToast(this);
 	setup_bg_image();
 }
@@ -67,10 +68,15 @@ void DesktopMainWindow::setup_apps() {
 	PageSetuper::create_specified_page(ui->stackedWidget, homePage);
 
 	app_widgets << PageSetuper::create_real_app(this);
+	app_widgets << PageSetuper::create_builtin_apps(this);
 
-	app_widgets << PageFactory::build_pesudo_page(":/icons/sources/def_icon.png", 8, this);
-	app_widgets << PageFactory::build_pesudo_page(":/icons/sources/def_icon2.png", 8, this);
+	app_widgets << PageSetuper::build_pesudo_page(":/icons/sources/def_icon.png", 8, this);
+	app_widgets << PageSetuper::build_pesudo_page(":/icons/sources/def_icon2.png", 8, this);
 
+	setup_default_dock();
+}
+
+void DesktopMainWindow::setup_default_dock() {
 	QList<AppWidget*> docks;
 	docks << app_widgets[0] << app_widgets[6];
 	PageSetuper::add_to_dock(this, docks);
@@ -88,6 +94,11 @@ void DesktopMainWindow::handle_app_status(AppWidget::AppStatus status) {
 	case AppWidget::AppStatus::AppNonExsits:
 		showToast("App is Not binded! bind the app first!");
 		break;
+	case AppWidget::AppStatus::AppOk: {
+		AppWidget* w = dynamic_cast<AppWidget*>(sender());
+		ui->downdock->on_app_dispatched(w);
+		qDebug() << "hooked app to the downdock:" << w->app_name();
+	} break;
 	default:
 		break;
 	}

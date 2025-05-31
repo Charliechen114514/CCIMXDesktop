@@ -40,6 +40,7 @@ static constexpr const unsigned int APP_ICON_SZ = 48;
  * create specified level applications
  * @param mainWindow: the MainWindow waiting for placing
  * @param sessionRequest
+ * @param wrappers appwrapper for the bind
  * @return the ui handles of the
  */
 QList<AppWidget*> create_one_app_only_page_append(
@@ -52,6 +53,13 @@ QList<AppWidget*> create_one_app_only_page_append(
  * @return
  */
 QList<AppWidget*> create_real_app(DesktopMainWindow* mainWindow);
+
+/**
+ * @brief create_builtin_apps creates the must build app, which shell create a single pages
+ * @param mainWindow: the window apps created
+ * @return
+ */
+QList<AppWidget*> create_builtin_apps(DesktopMainWindow* mainWindow);
 
 /**
  * @brief create_specified_page is the helper function to add a page
@@ -69,6 +77,8 @@ void create_specified_page(
  */
 void add_to_dock(DesktopMainWindow* mainWindow, const QList<AppWidget*>& widgets);
 
+QList<AppWidget*> build_pesudo_page(
+    const QString& pixpath, int how_many, DesktopMainWindow* mainWindow);
 };
 
 #endif // PAGESETUPER_H

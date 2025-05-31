@@ -13,5 +13,6 @@
         <file>sources/env_app.png</file>
         <file>sources/ledcontrol_app.png</file>
         <file>sources/sports_health_app.png</file>
+        <file>sources/desktop_about.png</file>
     </qresource>
 </RCC>

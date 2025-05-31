@@ -13,16 +13,6 @@ QWidget* PageFactory::build_home_page(DesktopMainWindow* mainWindow) {
 	return homePage;
 }
 
-QList<AppWidget*> PageFactory::build_pesudo_page(
-	const QString& pixpath, int how_many, DesktopMainWindow* mainWindow) {
-	QList<PageSetuper::PageSetupSessionRequest> req;
-	for (int i = 0; i < how_many; i++) {
-		req.push_back({ pixpath, QString::number(i), nullptr });
-	}
-
-	return PageSetuper::create_one_app_only_page_append(mainWindow, req);
-}
-
 #include "builtin/gadgets/localweathercard.h"
 #include "builtin/gadgets/netcardgadget.h"
 #include <QGridLayout>

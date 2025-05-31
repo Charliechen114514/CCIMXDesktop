@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AboutMainWindow</class>
+ <widget class="QMainWindow" name="AboutMainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1204</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1204</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>AboutMainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* 全局背景：浅蓝色渐变 */
+QMainWindow, QWidget {
+    background-color: qlineargradient(
+        x1: 0, y1: 0,
+        x2: 0, y2: 1,
+        stop: 0 #d0ebff,
+        stop: 1 #a2d5f2
+    );
+    color: #003366;
+    font-family: &quot;Segoe UI&quot;, &quot;微软雅黑&quot;, sans-serif;
+}
+
+/* 普通按钮 */
+QPushButton {
+    background-color: #ffffff;
+    color: #003366;
+    border: 1px solid #66aacc;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #e6f2ff;
+    border: 1px solid #66aacc;
+}
+
+QPushButton:pressed {
+    background-color: #cce6ff;
+    color: #003366;
+}
+
+/* QToolBox 样式 */
+QToolBox::tab {
+    background: #e6f2ff;
+    border: 1px solid #66aacc;
+    border-radius: 4px;
+    color: #003366;
+    font-size: 14px;
+}
+
+QToolBox::tab:selected {
+    background: #66aacc;
+    color: #ffffff;
+}
+
+QToolBox::tab:hover {
+    background: #cce6ff;
+}
+
+/* 标签（文本）样式 */
+QLabel {
+    font-size: 16px;
+    color: #003366;
+}
+
+/* 特别按钮（如 README） */
+QPushButton#readmeButton {
+    font-size: 16px;
+    min-height: 40px;
+}
+
+/* 滚动条柔和样式 */
+QScrollBar:vertical {
+    background: transparent;
+    width: 8px;
+    margin: 0px;
+}
+
+QScrollBar::handle:vertical {
+    background: #66aacc;
+    border-radius: 4px;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+QScrollBar:horizontal {
+    background: transparent;
+    height: 8px;
+    margin: 0px;
+}
+
+QScrollBar::handle:horizontal {
+    background: #66aacc;
+    border-radius: 4px;
+}
+
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+    width: 0px;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Orientation::Horizontal</enum>
+      </property>
+      <widget class="QWidget" name="sidebar_widget" native="true">
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QToolBox" name="toolBox">
+          <property name="maximumSize">
+           <size>
+            <width>200</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="currentIndex">
+           <number>1</number>
+          </property>
+          <widget class="QWidget" name="page">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>188</width>
+             <height>528</height>
+            </rect>
+           </property>
+           <attribute name="label">
+            <string>MainPage</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_4">
+            <item>
+             <widget class="QPushButton" name="btn_showMainPage">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Main Page</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="page_2">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>188</width>
+             <height>528</height>
+            </rect>
+           </property>
+           <attribute name="label">
+            <string>README</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <widget class="QPushButton" name="btn_see_readme">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>README</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="MainDisplayWidget" native="true">
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="DesktopAboutMainWidget" name="mainAbout" native="true"/>
+        </item>
+        <item>
+         <widget class="ReadMeWidget" name="readme_widget" native="true"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>DesktopAboutMainWidget</class>
+   <extends>QWidget</extends>
+   <header>DesktopAboutMainWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ReadMeWidget</class>
+   <extends>QWidget</extends>
+   <header>ReadMeWidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

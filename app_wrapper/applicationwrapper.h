@@ -2,7 +2,7 @@
 #define APPLICATIONWRAPPER_H
 #include <QObject>
 #include <QProcess>
-class QMainWindow;
+class DesktopMainWindow;
 class AppWidget;
 /* App Wrapper here */
 /* is the Process Wrapper */
@@ -10,7 +10,7 @@ class ApplicationWrapper : public QObject {
 	Q_OBJECT
 public:
 	explicit ApplicationWrapper(
-		QObject* parent, QMainWindow* desktopWindow);
+		QObject* parent, DesktopMainWindow* desktopWindow);
 	/* is the only */
 	Q_DISABLE_COPY(ApplicationWrapper);
 
@@ -138,7 +138,7 @@ signals:
 	void app_finished(ApplicationWrapper::ApplicationFinishResult);
 
 private:
-	QMainWindow* mainWindow;
+	DesktopMainWindow* mainWindow;
 	QProcess* appProcess { nullptr };
 
 	QString app_path; ///< Application path that is searchable

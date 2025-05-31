@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/logo">
+        <file>logo/CCIMXDesktopLogo.png</file>
+    </qresource>
+    <qresource prefix="/readme">
+        <file>doc/README.md</file>
+    </qresource>
+</RCC>
