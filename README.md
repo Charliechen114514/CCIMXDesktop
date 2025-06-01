@@ -2,7 +2,7 @@
 
 ![CCIMXDesktopLogo](./CCIMXDesktopLogo.png)
 
-![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-17+-green)![Version](https://img.shields.io/badge/Version-0.9.2-red)
+![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-17+-green)![Version](https://img.shields.io/badge/Version-0.9.3-red)
 
 🔌 您好！这是一个可在多种嵌入式设备中使用的简单桌面和实用程序。对我来说，它启动了专为 i.MX 平台定制的套件，结合了内置系统小工具和可扩展的外部应用程序。该项目使用 Qt 设计，正在尽可能支持与各种硬件传感器和多媒体接口集成。
 

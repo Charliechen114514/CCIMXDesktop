@@ -2,7 +2,7 @@
 
 ![CCIMXDesktopLogo](./CCIMXDesktopLogo.png)
 
-![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-17+-green)![Version](https://img.shields.io/badge/Version-0.9.2-red)
+![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-17+-green)![Version](https://img.shields.io/badge/Version-0.9.3-red)
 
 🔌 Hello! This is a simple desktop and utility that can be used in a variety of embedded devices. For me, it kicks off a suite tailored for the i.MX platform, combining built-in system gadgets and extensible external applications. Designed using Qt, the project is working on supporting integration with a wide range of hardware sensors and multimedia interfaces wherever possible.
 
