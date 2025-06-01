@@ -2,7 +2,7 @@
 
 ![CCIMXDesktopLogo](./CCIMXDesktopLogo.png)
 
-![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-17+-green)![Version](https://img.shields.io/badge/Version-0.9.0-red)
+![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-17+-green)![Version](https://img.shields.io/badge/Version-0.9.2-red)
 
 🔌 您好！这是一个可在多种嵌入式设备中使用的简单桌面和实用程序。对我来说，它启动了专为 i.MX 平台定制的套件，结合了内置系统小工具和可扩展的外部应用程序。该项目使用 Qt 设计，正在尽可能支持与各种硬件传感器和多媒体接口集成。
 
@@ -21,6 +21,9 @@
 
 - 🏠 基础的桌面环境和应用抽象
 - 🏠 记录点击频率从而动态调整的DockWidget
+- ℹ About App（简单的介绍本项目桌面的基本情况）
+- ✏️ CCNoter（超级无敌轻量的记事本）
+- 🎨SimpleDrawer（超级无敌轻量的画图，类似Windows的“画图”）
 - 🔧 Builtin Apps（室内气温需要已经挂载ICM20608驱动且可用，其他传感器需要自行修改接口内容（只需要重写如何读即可）与联网程度检测（需要Qt Networks Core 的基础被支持））
 - ☀️ WeatherAPP（需要您的设备可以联网才可用）
 - 📄 pdfReader（需要您具备您平台上的mupdf的依赖静态库）
@@ -31,9 +34,6 @@
 - 💡 LEDController App（开关灯APP，需要 Platform LED 驱动使能）
 - 🌡️ Environment App（AP3216C驱动需要被挂载）
 - 🏃 SportHealth App (ICM20608驱动需要被挂载)
-- ℹ About App（简单的介绍本项目桌面的基本情况）
-- ✏️ CCNoter（超级无敌轻量的记事本）
-- 🎨SimpleDrawer（超级无敌轻量的画图，类似Windows的“画图”）
 
 ------
 
@@ -71,13 +71,11 @@
 ![GCC](https://img.shields.io/badge/GCC-cross--compile-yellowgreen)
 ![ARM](https://img.shields.io/badge/ARM-linux--gnueabihf-red)
 
-如果您对项目的制作流程和开发文档感兴趣，请参考Documentations文件夹。
+如果您对项目的制作流程和开发文档感兴趣，请参考Documentations文件夹。有关构建流程及定制，请查阅构建手册：
 
-目前，本项目完全支持使用Doxygen自动化生成定制文档，您可以直接参考[`Documentations/doxygen_style`](Documentations/doxygen_styles)进行阅读，或者您打算客制化本文档的构建，需要您参考构建手册进行客制化的修改
+> [🛠️ 如何构建本项目？（支持 X86 gcc、ARM-linux-gnueabihf-gcc 和 Windows GCC）](Documentations/HOW_To_Build_The_Desktop.md)
 
-> [🛠️ 如何构建本项目？（X86 gcc, ARM-linux-gnueabihf-gcc与Windows GCC都支持！）](Documentations/HOW_To_Build_The_Desktop.md)
->
-> 文档已在Gihub Actions上自动化部署：项目文档地址[CCIMXDesktop: Main Page](https://charliechen114514.github.io/CCIMXDesktop/)
+文档已通过 GitHub Actions 自动部署，访问：[CCIMXDesktop: Main Page](https://charliechen114514.github.io/CCIMXDesktop/)
 
 ## 💡 未来计划
 

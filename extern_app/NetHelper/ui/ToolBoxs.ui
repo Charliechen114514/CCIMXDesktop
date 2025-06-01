@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ToolBoxs</class>
+ <widget class="QWidget" name="ToolBoxs">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>200</width>
+    <height>421</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>200</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* 通用字体设置 */
+* {
+    font-family: &quot;Microsoft YaHei&quot;, sans-serif;
+    font-size: 14px;
+}
+
+/* QPushButton 样式 */
+QPushButton {
+    background-color: #e0f0ff;
+    color: #003366;
+    border: 1px solid #99ccff;
+    border-radius: 6px;
+    padding: 6px 12px;
+}
+
+QPushButton:hover {
+    background-color: #cce6ff;
+    border-color: #66b3ff;
+}
+
+QPushButton:pressed {
+    background-color: #b3d9ff;
+    border-color: #3399ff;
+    padding-left: 8px;
+    padding-top: 8px;
+}
+
+QPushButton:disabled {
+    background-color: #f2f2f2;
+    color: #a6a6a6;
+    border: 1px solid #d9d9d9;
+}
+
+/* QToolBox 样式 */
+QToolBox {
+    background-color: #f5faff;
+    border: 1px solid #cce0f5;
+}
+
+QToolBox::tab {
+    background-color: #d9ecff;
+    color: #003366;
+    border: 1px solid #b3d9ff;
+    border-bottom: none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 6px;
+}
+
+QToolBox::tab:selected {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    font-weight: bold;
+}
+
+QToolBox::tab:hover {
+    background-color: #cce6ff;
+}
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QToolBox" name="toolBox">
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="page">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>186</width>
+        <height>345</height>
+       </rect>
+      </property>
+      <attribute name="label">
+       <string>netcards</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QPushButton" name="btn_show_interfaces">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>show netcards</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>186</width>
+        <height>345</height>
+       </rect>
+      </property>
+      <attribute name="label">
+       <string>Pinger</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QPushButton" name="btn_show_pinger">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>show pinger</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_show_scanner">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>show scanner</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

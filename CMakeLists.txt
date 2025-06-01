@@ -21,6 +21,7 @@ option(INCLUDE_FILERAMBER_APP "Build the FileRamber App" ON)
 option(INCLUDE_SYSTEMSTATUS_APP "Build the System Status App" ON)
 option(INCLUDE_MEDIAPLAYER_APP "Build the MeidaPlayer App" ON)
 option(INCLUDE_PROFESSIONAL_APP "Build the professional App Enabled" ON)
+option(INCLUDE_NETHELPER_APP "Build the NetHelper Enable" ON)
 if(INCLUDE_PROFESSIONAL_APP)
     option(INCLUDE_OPENCV_QT_ADAPTER    "OpenCV Qt Convient Adapter"    ON)
     option(INCLUDE_LED_APP "Build the LEDController App" ON)
@@ -176,6 +177,7 @@ add_compile_definitions(
     $<$<BOOL:${INCLUDE_FILERAMBER_APP}>:INCLUDE_FILERAMBER_APP>
     $<$<BOOL:${INCLUDE_SYSTEMSTATUS_APP}>:INCLUDE_SYSTEMSTATUS_APP>
     $<$<BOOL:${INCLUDE_MEDIAPLAYER_APP}>:INCLUDE_MEDIAPLAYER_APP>
+    $<$<BOOL:${INCLUDE_NETHELPER_APP}>:INCLUDE_NETHELPER_APP>
 )
 
 add_subdirectory(builtin/app)
@@ -343,6 +345,7 @@ message(STATUS "LED Controller Built status due to INCLUDE_LED_APP:             
 message(STATUS "Environment Built status due to INCLUDE_ENV_APP:                ${INCLUDE_ENV_APP}")
 message(STATUS "Sports Health Built status due to INCLUDE_SPORT_APP:            ${INCLUDE_SPORT_APP}")
 message(STATUS "OpenCV Adapters Built status due to INCLUDE_OPENCV_QT_ADAPTER:  ${INCLUDE_OPENCV_QT_ADAPTER}")
+message(STATUS "Net Helper App Built status due to INCLUDE_NETHELPER_APP:       ${INCLUDE_NETHELPER_APP}")
 message(STATUS "-----------------------------------------------------")
 message(STATUS "Dumping Documentations summon issues: ")
 message(STATUS "Doxygen Documentations Built status due to CCIMX_DESKTOP_DOCGEN_REQ: ${CCIMX_DESKTOP_DOCGEN_REQ}")

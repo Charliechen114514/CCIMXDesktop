@@ -34,6 +34,7 @@ Now, CCIMXDesktop supports one-click builds including:
 - 💡 LEDController App (switch light APP, requires Platform LED driver to be enabled)
 - 🌡️ Environment App (AP3216C driver needs to be mounted)
 - 🏃 SportHealth App (ICM20608 driver needs to be mounted)
+- 🛜 Network viewing assistant (supports network card information viewing, IP port scanning and basic test IP connection capability)
 
 -------
 
@@ -87,7 +88,6 @@ Currently, this project fully supports the use of Doxygen to automatically gener
 - 🖼️ Image browser
 - 🎨 Image processor
 - ✏️ MarkDown reader
-- 🛜 Network viewing assistant
 - 🧮 Pocket calculator
 - 🔌 Serial port assistant
 - ✅ Task list

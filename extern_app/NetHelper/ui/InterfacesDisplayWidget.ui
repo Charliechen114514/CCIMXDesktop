@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>InterfacesDisplayWidget</class>
+ <widget class="QWidget" name="InterfacesDisplayWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>393</width>
+    <height>397</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* 通用字体设置 */
+* {
+    font-family: &quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif;
+    font-size: 14px;
+}
+
+/* -------------------- QPushButton 样式 -------------------- */
+QPushButton {
+    color: #ffffff;
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                      stop:0 #a6d8ff, stop:1 #5ab0f2);
+    border: 1px solid #5ab0f2;
+    border-radius: 6px;
+    padding: 6px 12px;
+    min-height: 24px;
+    min-width: 80px;
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                      stop:0 #b8e0ff, stop:1 #6bb8f5);
+    border: 1px solid #6bb8f5;
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                      stop:0 #5ab0f2, stop:1 #a6d8ff);
+    border: 1px solid #5ab0f2;
+    padding-left: 8px;
+    padding-top: 8px;
+}
+
+QPushButton:disabled {
+    background-color: #e0e0e0;
+    color: #a0a0a0;
+    border: 1px solid #c0c0c0;
+}
+
+/* -------------------- QListWidget 样式 -------------------- */
+QListWidget {
+    background-color: #f0faff;
+    border: 1px solid #a6d8ff;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+QListWidget::item {
+    padding: 6px;
+    margin: 2px 0;
+    border-radius: 4px;
+}
+
+QListWidget::item:hover {
+    background-color: #d0efff;
+    color: #003366;
+}
+
+QListWidget::item:selected {
+    background-color: #a6d8ff;
+    color: #ffffff;
+}
+
+/* -------------------- QTableWidget 样式 -------------------- */
+QTableWidget {
+    background-color: #ffffff;
+    border: 1px solid #a6d8ff;
+    gridline-color: #d0efff;
+    selection-background-color: #a6d8ff;
+    selection-color: #ffffff;
+    alternate-background-color: #f0faff;
+}
+
+QTableWidget::item {
+    padding: 4px;
+}
+
+QTableWidget::item:selected {
+    background-color: #a6d8ff;
+    color: #ffffff;
+}
+
+QHeaderView::section {
+    background-color: #d0efff;
+    padding: 4px;
+    border: 1px solid #a6d8ff;
+    border-radius: 4px;
+}
+
+QTableCornerButton::section {
+    background-color: #d0efff;
+    border: 1px solid #a6d8ff;
+}
+
+/* -------------------- QLabel 样式 -------------------- */
+QLabel {
+    color: #003366;
+    background-color: transparent;
+    font-size: 14px;
+    padding: 2px;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QWidget" name="btn_widgets" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>50</height>
+      </size>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="btn_goback">
+        <property name="minimumSize">
+         <size>
+          <width>106</width>
+          <height>38</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Go Back &lt;-</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Orientation::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>256</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QListWidget" name="interfaces_listwidget">
+     <property name="editTriggers">
+      <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="details_tableWidget">
+     <property name="editTriggers">
+      <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+     </property>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="verticalHeaderVisible">
+      <bool>false</bool>
+     </attribute>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

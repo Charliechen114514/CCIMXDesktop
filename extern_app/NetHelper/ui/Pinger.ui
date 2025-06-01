@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Pinger</class>
+ <widget class="QWidget" name="Pinger">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>477</width>
+    <height>372</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* 浅蓝色全局背景 */
+QWidget {
+    background-color: #f0f8ff;
+    color: #333333;
+    font-family: &quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif;
+    font-size: 14px;
+}
+
+/* 边框和圆角样式 */
+QWidget#centralWidget {
+    border: 2px solid #b0c4de;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+/* QPushButton 优化 */
+QPushButton {
+    background-color: #add8e6;
+    color: #003366;
+    border: 2px solid #87ceeb;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-weight: bold;
+}
+QPushButton:hover {
+    background-color: #87ceeb;
+    border-color: #4682b4;
+    color: #001f3f;
+}
+QPushButton:pressed {
+    background-color: #5f9ea0;
+    border-color: #4682b4;
+    color: #ffffff;
+}
+QPushButton:disabled {
+    background-color: #d3d3d3;
+    color: #a9a9a9;
+    border-color: #c0c0c0;
+}
+
+/* QSpinBox 样式 */
+QSpinBox {
+    background-color: #ffffff;
+    border: 2px solid #b0c4de;
+    border-radius: 4px;
+    padding: 2px 4px;
+}
+QSpinBox::up-button, QSpinBox::down-button {
+    background-color: #add8e6;
+    border: 1px solid #87ceeb;
+    width: 16px;
+}
+QSpinBox::up-button:hover, QSpinBox::down-button:hover {
+    background-color: #87ceeb;
+}
+QSpinBox::up-button:pressed, QSpinBox::down-button:pressed {
+    background-color: #5f9ea0;
+}
+QSpinBox::up-arrow, QSpinBox::down-arrow {
+    width: 10px;
+    height: 10px;
+}
+
+/* QLineEdit 样式 */
+QLineEdit {
+    background-color: #ffffff;
+    border: 2px solid #b0c4de;
+    border-radius: 4px;
+    padding: 4px;
+    selection-background-color: #87ceeb;
+    selection-color: #ffffff;
+}
+
+/* QLabel 样式 */
+QLabel {
+    color: #003366;
+    font-weight: 500;
+}
+
+/* QProgressBar 样式 (如果有的话) */
+QProgressBar {
+    border: 2px solid #87ceeb;
+    border-radius: 5px;
+    text-align: center;
+    background: #e0f7ff;
+}
+QProgressBar::chunk {
+    background-color: #5f9ea0;
+    width: 20px;
+}
+
+/* QScrollBar 样式 (如果有的话) */
+QScrollBar:vertical {
+    border: none;
+    background: #e0f7ff;
+    width: 12px;
+    margin: 0px 0px 0px 0px;
+}
+QScrollBar::handle:vertical {
+    background: #add8e6;
+    border-radius: 6px;
+    min-height: 20px;
+}
+QScrollBar::handle:vertical:hover {
+    background: #87ceeb;
+}
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+QScrollBar:horizontal {
+    border: none;
+    background: #e0f7ff;
+    height: 12px;
+    margin: 0px 0px 0px 0px;
+}
+QScrollBar::handle:horizontal {
+    background: #add8e6;
+    border-radius: 6px;
+    min-width: 20px;
+}
+QScrollBar::handle:horizontal:hover {
+    background: #87ceeb;
+}
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+    width: 0px;
+}
+
+/* QGroupBox 样式 (如果有的话) */
+QGroupBox {
+    border: 2px solid #87ceeb;
+    border-radius: 8px;
+    margin-top: 16px;
+}
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    background-color: #f0f8ff;
+    padding: 0 4px;
+}
+
+/* QTableWidget / QListWidget 优化 */
+QTableWidget, QListWidget {
+    border: 2px solid #b0c4de;
+    border-radius: 6px;
+    background-color: #ffffff;
+    alternate-background-color: #f0f8ff;
+    selection-background-color: #87ceeb;
+    selection-color: #ffffff;
+}
+
+/* QHeaderView (表头) 优化 */
+QHeaderView::section {
+    background-color: #add8e6;
+    border: 1px solid #87ceeb;
+    padding: 4px;
+    font-weight: bold;
+}
+
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QPlainTextEdit" name="ping_show">
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLineEdit" name="ip_port">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>30</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSpinBox" name="port_spinbox">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximum">
+         <number>65535</number>
+        </property>
+        <property name="value">
+         <number>80</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Orientation::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_operate">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>ping</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

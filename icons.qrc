@@ -16,5 +16,6 @@
         <file>sources/desktop_about.png</file>
         <file>sources/simple_drawer.png</file>
         <file>sources/notepad.png</file>
+        <file>sources/network-helper.png</file>
     </qresource>
 </RCC>

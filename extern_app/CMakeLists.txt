@@ -33,3 +33,7 @@ if(INCLUDE_PROFESSIONAL_APP)
     add_subdirectory(professionals)
 endif()
 
+if(INCLUDE_NETHELPER_APP)
+    message(STATUS "NetHelper App is enabled due to the INCLUDE_NETHELPER_APP")
+    add_subdirectory(NetHelper)
+endif()

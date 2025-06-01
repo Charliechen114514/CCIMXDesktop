@@ -34,6 +34,7 @@
 - 💡 LEDController App（开关灯APP，需要 Platform LED 驱动使能）
 - 🌡️ Environment App（AP3216C驱动需要被挂载）
 - 🏃 SportHealth App (ICM20608驱动需要被挂载)
+- 🛜 网络查看助手（支持网卡信息查看，IP端口扫描和基本测试IP打通能力）
 
 ------
 
@@ -85,7 +86,6 @@
   - 🖼️ 图像浏览器
   - 🎨 图像处理器
   - ✏️ MarkDown阅读器
-  - 🛜 网络查看助手
   - 🧮 口袋计算器
   - 🔌 串口助手
   - ✅ 任务清单

@@ -150,6 +150,14 @@ QList<AppWidget*> PageSetuper::create_real_app(DesktopMainWindow* mainWindow) {
 		mainWindow));
 #endif
 
+#ifdef INCLUDE_NETHELPER_APP
+	req.push_back(make_up_request(
+		_EXTERNAPP_INSTALL_DIR "/CCNetHelper",
+		":/icons/sources/network-helper.png",
+		"CCNetHelper",
+		mainWindow));
+#endif
+
 	return PageSetuper::create_one_app_only_page_append(mainWindow, req);
 }
 
