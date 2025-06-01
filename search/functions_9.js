@@ -10,14 +10,13 @@ var searchData=
   ['install_5fargs_7',['install_args',['../classApplicationWrapper.html#a53d1462666f96dc21afb656dde0d0aa8',1,'ApplicationWrapper']]],
   ['install_5ferror_5fhandler_8',['install_error_handler',['../classApplicationWrapper.html#a6a6e6252e45edb6ffd839e319ce37a0d',1,'ApplicationWrapper']]],
   ['install_5ffinhook_9',['install_finhook',['../classApplicationWrapper.html#a13662d0c499aa21f837e4f6259ae68d6',1,'ApplicationWrapper']]],
-  ['install_5fprelaunched_10',['install_prelaunched',['../classApplicationWrapper.html#a895d28d5f837ea6a23cae8f5ff8682b7',1,'ApplicationWrapper']]],
-  ['install_5fremote_5fappwrapper_11',['install_remote_appwrapper',['../classDesktopMainWindow.html#a39fb277355a84381bf009a605bd9bc7e',1,'DesktopMainWindow']]],
-  ['interfaces_5fcached_12',['interfaces_cached',['../classInterfacesQuery.html#a737af0c754c96b586cc3145ed3fdf514',1,'InterfacesQuery']]],
-  ['interfacesquery_13',['InterfacesQuery',['../classInterfacesQuery.html#ababe81a57791aae7fa1bca532074dffc',1,'InterfacesQuery']]],
-  ['invoke_5fprelaunch_5fwork_14',['invoke_prelaunch_work',['../classLocalWeatherCard.html#a1bd3f52bf969c5d3747f6934da123fef',1,'LocalWeatherCard::invoke_preLaunch_work()'],['../classNetCardGadget.html#a82d97e27218187db562c8d02bb5866d2',1,'NetCardGadget::invoke_preLaunch_work()'],['../classAppCardWidget.html#a82559c4e4ddb985821a8b87076bb446b',1,'AppCardWidget::invoke_preLaunch_work()']]],
-  ['invoke_5fswitch_5fbgpage_15',['invoke_switch_bgpage',['../classDesktopMainWindow.html#a010608971bb06a048f8af50e68ac460f',1,'DesktopMainWindow']]],
-  ['is_5fplaying_16',['is_playing',['../classVideoPlayer.html#affa0feb472293724d1f2edfc96677099',1,'VideoPlayer::is_playing() const'],['../classVideoPlayer.html#affa0feb472293724d1f2edfc96677099',1,'VideoPlayer::is_playing() const']]],
-  ['isactivate_17',['isActivate',['../classCameraCapture.html#a45c11c334b0609b8af2e08c49fe221fe',1,'CameraCapture']]],
-  ['isopened_18',['isopened',['../classVideoPlayerImpl.html#af36e6361c5787ae5a92a483295bb11e3',1,'VideoPlayerImpl::isOpened()'],['../classVideoPlayerOpencvImpl.html#ac6dd4e161e7086fef31b4c52729f50af',1,'VideoPlayerOpencvImpl::isOpened()'],['../classVideoPlayerImpl.html#af36e6361c5787ae5a92a483295bb11e3',1,'VideoPlayerImpl::isOpened()'],['../classVideoPlayerOpencvImpl.html#ac6dd4e161e7086fef31b4c52729f50af',1,'VideoPlayerOpencvImpl::isOpened()']]],
-  ['isplaying_19',['isPlaying',['../classMediaPlayer.html#a58820e8ef9e293799d89142ae63a1dfd',1,'MediaPlayer']]]
+  ['install_5fremote_5fappwrapper_10',['install_remote_appwrapper',['../classDesktopMainWindow.html#a39fb277355a84381bf009a605bd9bc7e',1,'DesktopMainWindow']]],
+  ['interfaces_5fcached_11',['interfaces_cached',['../classInterfacesQuery.html#a737af0c754c96b586cc3145ed3fdf514',1,'InterfacesQuery']]],
+  ['interfacesquery_12',['InterfacesQuery',['../classInterfacesQuery.html#ababe81a57791aae7fa1bca532074dffc',1,'InterfacesQuery']]],
+  ['invoke_5fprelaunch_5fwork_13',['invoke_prelaunch_work',['../classLocalWeatherCard.html#a1bd3f52bf969c5d3747f6934da123fef',1,'LocalWeatherCard::invoke_preLaunch_work()'],['../classNetCardGadget.html#a82d97e27218187db562c8d02bb5866d2',1,'NetCardGadget::invoke_preLaunch_work()'],['../classAppCardWidget.html#a82559c4e4ddb985821a8b87076bb446b',1,'AppCardWidget::invoke_preLaunch_work()']]],
+  ['invoke_5fswitch_5fbgpage_14',['invoke_switch_bgpage',['../classDesktopMainWindow.html#a010608971bb06a048f8af50e68ac460f',1,'DesktopMainWindow']]],
+  ['is_5fplaying_15',['is_playing',['../classVideoPlayer.html#affa0feb472293724d1f2edfc96677099',1,'VideoPlayer::is_playing() const'],['../classVideoPlayer.html#affa0feb472293724d1f2edfc96677099',1,'VideoPlayer::is_playing() const']]],
+  ['isactivate_16',['isActivate',['../classCameraCapture.html#a45c11c334b0609b8af2e08c49fe221fe',1,'CameraCapture']]],
+  ['isopened_17',['isopened',['../classVideoPlayerImpl.html#af36e6361c5787ae5a92a483295bb11e3',1,'VideoPlayerImpl::isOpened()'],['../classVideoPlayerOpencvImpl.html#ac6dd4e161e7086fef31b4c52729f50af',1,'VideoPlayerOpencvImpl::isOpened()'],['../classVideoPlayerImpl.html#af36e6361c5787ae5a92a483295bb11e3',1,'VideoPlayerImpl::isOpened()'],['../classVideoPlayerOpencvImpl.html#ac6dd4e161e7086fef31b4c52729f50af',1,'VideoPlayerOpencvImpl::isOpened()']]],
+  ['isplaying_18',['isPlaying',['../classMediaPlayer.html#a58820e8ef9e293799d89142ae63a1dfd',1,'MediaPlayer']]]
 ];

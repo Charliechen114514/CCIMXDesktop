@@ -96,9 +96,7 @@ $(document).ready(function(){initNavTree('classApplicationWrapper.html',''); ini
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
-<a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classApplicationWrapper-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ApplicationWrapper Class Reference</div></div>
@@ -116,25 +114,12 @@ Inheritance diagram for ApplicationWrapper:</div>
   <img src="classApplicationWrapper.png" alt=""/>
  </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structApplicationWrapper_1_1ApplicationDepatchResult.html">ApplicationDepatchResult</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="structApplicationWrapper_1_1ApplicationDepatchResult.html" title="The ApplicationDepatchResult struct represents the result of launching (depatching) an application.">ApplicationDepatchResult</a> struct represents the result of launching (depatching) an application.  <a href="structApplicationWrapper_1_1ApplicationDepatchResult.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structApplicationWrapper_1_1ApplicationFinishResult.html">ApplicationFinishResult</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="structApplicationWrapper_1_1ApplicationFinishResult.html" title="The ApplicationFinishResult struct represents the result when an application finishes execution.">ApplicationFinishResult</a> struct represents the result when an application finishes execution.  <a href="structApplicationWrapper_1_1ApplicationFinishResult.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:ad54d8e5509fdc415009be64f28636b82" id="r_ad54d8e5509fdc415009be64f28636b82"><td class="memItemLeft" align="right" valign="top"><a id="ad54d8e5509fdc415009be64f28636b82" name="ad54d8e5509fdc415009be64f28636b82"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>AppCode</b> = int</td></tr>
 <tr class="memdesc:ad54d8e5509fdc415009be64f28636b82"><td class="mdescLeft">&#160;</td><td class="mdescRight">AppCode is used to uniquely identify applications. <br /></td></tr>
 <tr class="separator:ad54d8e5509fdc415009be64f28636b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9aba67108dbf1e09c96373a9f5139d4b" id="r_a9aba67108dbf1e09c96373a9f5139d4b"><td class="memItemLeft" align="right" valign="top"><a id="a9aba67108dbf1e09c96373a9f5139d4b" name="a9aba67108dbf1e09c96373a9f5139d4b"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>PreLaunchIndicate</b> = <a class="el" href="structApplicationWrapper_1_1ApplicationDepatchResult.html">ApplicationDepatchResult</a>(*)(<a class="el" href="classApplicationWrapper.html">ApplicationWrapper</a> *wrapper)</td></tr>
-<tr class="memdesc:a9aba67108dbf1e09c96373a9f5139d4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function pointer type for pre-launch checks. <br /></td></tr>
-<tr class="separator:a9aba67108dbf1e09c96373a9f5139d4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acaaa113a722e3e2f0625d40181b8c794" id="r_acaaa113a722e3e2f0625d40181b8c794"><td class="memItemLeft" align="right" valign="top"><a id="acaaa113a722e3e2f0625d40181b8c794" name="acaaa113a722e3e2f0625d40181b8c794"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>HandlingFinHook</b> = void(*)(<a class="el" href="classApplicationWrapper.html">ApplicationWrapper</a> *wrapper, int exit_hook, QProcess::ExitStatus status)</td></tr>
 <tr class="memdesc:acaaa113a722e3e2f0625d40181b8c794"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function pointer type for handling application finish hooks. <br /></td></tr>
@@ -143,15 +128,6 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>HandlingFinHook</b> 
 using&#160;</td><td class="memItemRight" valign="bottom"><b>ErrorDepatchHook</b> = void(*)(<a class="el" href="classApplicationWrapper.html">ApplicationWrapper</a> *wrapper)</td></tr>
 <tr class="memdesc:a1efcf8d4c820fd4c962319f69ccd50fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function pointer type for handling depatch errors. <br /></td></tr>
 <tr class="separator:a1efcf8d4c820fd4c962319f69ccd50fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
-Signals</h2></td></tr>
-<tr class="memitem:ac2ee029e9a9c1e0c727347477d1e313a" id="r_ac2ee029e9a9c1e0c727347477d1e313a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplicationWrapper.html#ac2ee029e9a9c1e0c727347477d1e313a">app_depatch_status</a> (<a class="el" href="structApplicationWrapper_1_1ApplicationDepatchResult.html">ApplicationWrapper::ApplicationDepatchResult</a> result)</td></tr>
-<tr class="memdesc:ac2ee029e9a9c1e0c727347477d1e313a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emitted when application depatch status changes.  <br /></td></tr>
-<tr class="separator:ac2ee029e9a9c1e0c727347477d1e313a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a278f402ec75cf679234fc4e505d4cb5e" id="r_a278f402ec75cf679234fc4e505d4cb5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplicationWrapper.html#a278f402ec75cf679234fc4e505d4cb5e">app_finished</a> (<a class="el" href="structApplicationWrapper_1_1ApplicationFinishResult.html">ApplicationWrapper::ApplicationFinishResult</a> result)</td></tr>
-<tr class="memdesc:a278f402ec75cf679234fc4e505d4cb5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emitted when the application finishes.  <br /></td></tr>
-<tr class="separator:a278f402ec75cf679234fc4e505d4cb5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -192,9 +168,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afe3d64c4cefd2b7e6c97fb188a6e8488" id="r_afe3d64c4cefd2b7e6c97fb188a6e8488"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplicationWrapper.html#afe3d64c4cefd2b7e6c97fb188a6e8488">depatch_app</a> ()</td></tr>
 <tr class="memdesc:afe3d64c4cefd2b7e6c97fb188a6e8488"><td class="mdescLeft">&#160;</td><td class="mdescRight">Launches the application (depatch).  <br /></td></tr>
 <tr class="separator:afe3d64c4cefd2b7e6c97fb188a6e8488"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a895d28d5f837ea6a23cae8f5ff8682b7" id="r_a895d28d5f837ea6a23cae8f5ff8682b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplicationWrapper.html#a895d28d5f837ea6a23cae8f5ff8682b7">install_prelaunched</a> (<a class="el" href="classApplicationWrapper.html#a9aba67108dbf1e09c96373a9f5139d4b">PreLaunchIndicate</a> precheck)</td></tr>
-<tr class="memdesc:a895d28d5f837ea6a23cae8f5ff8682b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs a pre-launch indication hook.  <br /></td></tr>
-<tr class="separator:a895d28d5f837ea6a23cae8f5ff8682b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13662d0c499aa21f837e4f6259ae68d6" id="r_a13662d0c499aa21f837e4f6259ae68d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplicationWrapper.html#a13662d0c499aa21f837e4f6259ae68d6">install_finhook</a> (<a class="el" href="classApplicationWrapper.html#acaaa113a722e3e2f0625d40181b8c794">HandlingFinHook</a> hook)</td></tr>
 <tr class="memdesc:a13662d0c499aa21f837e4f6259ae68d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs a hook called when the application finishes.  <br /></td></tr>
 <tr class="separator:a13662d0c499aa21f837e4f6259ae68d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -277,74 +250,6 @@ Public Member Functions</h2></td></tr>
 
 <p>Returns the installed app code. </p>
 <dl class="section return"><dt>Returns</dt><dd>The app code. </dd></dl>
-
-</div>
-</div>
-<a id="ac2ee029e9a9c1e0c727347477d1e313a" name="ac2ee029e9a9c1e0c727347477d1e313a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2ee029e9a9c1e0c727347477d1e313a">&#9670;&#160;</a></span>app_depatch_status</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ApplicationWrapper::app_depatch_status </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structApplicationWrapper_1_1ApplicationDepatchResult.html">ApplicationWrapper::ApplicationDepatchResult</a>&#160;</td>
-          <td class="paramname"><em>result</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Emitted when application depatch status changes. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">result</td><td>The result of the depatch. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a278f402ec75cf679234fc4e505d4cb5e" name="a278f402ec75cf679234fc4e505d4cb5e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a278f402ec75cf679234fc4e505d4cb5e">&#9670;&#160;</a></span>app_finished</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ApplicationWrapper::app_finished </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structApplicationWrapper_1_1ApplicationFinishResult.html">ApplicationWrapper::ApplicationFinishResult</a>&#160;</td>
-          <td class="paramname"><em>result</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Emitted when the application finishes. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">result</td><td>The application finish result. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -616,41 +521,6 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">hook</td><td>The function pointer to the finish hook. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a895d28d5f837ea6a23cae8f5ff8682b7" name="a895d28d5f837ea6a23cae8f5ff8682b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a895d28d5f837ea6a23cae8f5ff8682b7">&#9670;&#160;</a></span>install_prelaunched()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ApplicationWrapper::install_prelaunched </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classApplicationWrapper.html#a9aba67108dbf1e09c96373a9f5139d4b">PreLaunchIndicate</a>&#160;</td>
-          <td class="paramname"><em>precheck</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Installs a pre-launch indication hook. </p>
-<p>This hook can be used to check conditions or prepare before launch.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">precheck</td><td>The function pointer to the pre-launch check. </td></tr>
   </table>
   </dd>
 </dl>

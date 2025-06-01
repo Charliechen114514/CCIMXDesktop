@@ -5,11 +5,9 @@ var searchData=
   ['ap3216cadapterfactory_2',['AP3216CAdapterFactory',['../classAP3216CAdapterFactory.html',1,'']]],
   ['ap3216cdata_3',['AP3216CData',['../structAP3216CData.html',1,'']]],
   ['appcardwidget_4',['AppCardWidget',['../classAppCardWidget.html',1,'']]],
-  ['applicationdepatchresult_5',['ApplicationDepatchResult',['../structApplicationWrapper_1_1ApplicationDepatchResult.html',1,'ApplicationWrapper']]],
-  ['applicationfinishresult_6',['ApplicationFinishResult',['../structApplicationWrapper_1_1ApplicationFinishResult.html',1,'ApplicationWrapper']]],
-  ['applicationwrapper_7',['ApplicationWrapper',['../classApplicationWrapper.html',1,'']]],
-  ['appweatherdetailedrequest_8',['AppWeatherDetailedRequest',['../structAppWeatherDetailedRequest.html',1,'']]],
-  ['appweatherrequest_9',['AppWeatherRequest',['../classAppWeatherRequest.html',1,'']]],
-  ['appweatherresult_10',['AppWeatherResult',['../classAppWeatherResult.html',1,'']]],
-  ['appwidget_11',['AppWidget',['../classAppWidget.html',1,'']]]
+  ['applicationwrapper_5',['ApplicationWrapper',['../classApplicationWrapper.html',1,'']]],
+  ['appweatherdetailedrequest_6',['AppWeatherDetailedRequest',['../structAppWeatherDetailedRequest.html',1,'']]],
+  ['appweatherrequest_7',['AppWeatherRequest',['../classAppWeatherRequest.html',1,'']]],
+  ['appweatherresult_8',['AppWeatherResult',['../classAppWeatherResult.html',1,'']]],
+  ['appwidget_9',['AppWidget',['../classAppWidget.html',1,'']]]
 ];

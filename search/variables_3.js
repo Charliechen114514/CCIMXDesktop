@@ -8,8 +8,7 @@ var searchData=
   ['def_5fmode_5',['DEF_MODE',['../classCCMediaPlayList.html#a02e1f3f29461356cf685f51a7873c851',1,'CCMediaPlayList']]],
   ['default_5foff_5ftime_6',['DEFAULT_OFF_TIME',['../classLEDParamsPackageBlink.html#a5e89d824c5d7640eec23c5d0ce366573',1,'LEDParamsPackageBlink']]],
   ['default_5fon_5ftime_7',['DEFAULT_ON_TIME',['../classLEDParamsPackageBlink.html#afb849845f29c650a62981372ddf2eefb',1,'LEDParamsPackageBlink']]],
-  ['depatched_8',['depatched',['../structApplicationWrapper_1_1ApplicationDepatchResult.html#ac2f913f3a09fa708873e71f19af3cdf6',1,'ApplicationWrapper::ApplicationDepatchResult']]],
-  ['dev_5ffile_9',['DEV_FILE',['../classLightControllerWindow.html#adbec4204da0949f49c696593aa1f4a64',1,'LightControllerWindow']]],
-  ['document_10',['document',['../structCCPdfDocumentPrivate.html#a7219d45181ac0ab5096e33a9f8b0d260',1,'CCPdfDocumentPrivate']]],
-  ['durationms_11',['durationMs',['../structMediaInfo.html#a62e3d432bd99c5cf1715b6fd568b8dcf',1,'MediaInfo']]]
+  ['dev_5ffile_8',['DEV_FILE',['../classLightControllerWindow.html#adbec4204da0949f49c696593aa1f4a64',1,'LightControllerWindow']]],
+  ['document_9',['document',['../structCCPdfDocumentPrivate.html#a7219d45181ac0ab5096e33a9f8b0d260',1,'CCPdfDocumentPrivate']]],
+  ['durationms_10',['durationMs',['../structMediaInfo.html#a62e3d432bd99c5cf1715b6fd568b8dcf',1,'MediaInfo']]]
 ];

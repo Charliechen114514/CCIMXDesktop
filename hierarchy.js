@@ -2,8 +2,6 @@ var hierarchy =
 [
     [ "StackpageSwitcherAnimation::AnimationInfo", "structStackpageSwitcherAnimation_1_1AnimationInfo.html", null ],
     [ "AP3216CData", "structAP3216CData.html", null ],
-    [ "ApplicationWrapper::ApplicationDepatchResult", "structApplicationWrapper_1_1ApplicationDepatchResult.html", null ],
-    [ "ApplicationWrapper::ApplicationFinishResult", "structApplicationWrapper_1_1ApplicationFinishResult.html", null ],
     [ "AppWeatherDetailedRequest", "structAppWeatherDetailedRequest.html", null ],
     [ "CameraDeviceSelector", "classCameraDeviceSelector.html", null ],
     [ "CCIMX_AbstractCPUStateDriver", "classCCIMX__AbstractCPUStateDriver.html", [
