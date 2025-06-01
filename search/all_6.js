@@ -20,7 +20,7 @@ var searchData=
   ['fileinfodisplaywidget_17',['fileinfodisplaywidget',['../classFileInfoDisplayWidget.html#a71aca20562e5b0928d97723e04efd5de',1,'FileInfoDisplayWidget::FileInfoDisplayWidget()'],['../classFileInfoDisplayWidget.html',1,'FileInfoDisplayWidget']]],
   ['fileinfoprovider_18',['fileinfoprovider',['../classFileInfoProvider.html#acaff96e7f9eacb7bc0b3023fab1d685d',1,'FileInfoProvider::FileInfoProvider(CCIMXFileSystemModel *models)'],['../classFileInfoProvider.html#aac708c0bbd39fe67a3e2b0129109a0f3',1,'FileInfoProvider::FileInfoProvider()=delete'],['../classFileInfoProvider.html',1,'FileInfoProvider']]],
   ['filenameproviders_19',['filenameproviders',['../classFileNameProviders.html',1,'FileNameProviders'],['../classFileNameProviders.html#ad81f8ebbb75db0cee10db72073fbc58b',1,'FileNameProviders::FileNameProviders()']]],
-  ['filetypeinfo_20',['filetypeinfo',['../classFileTypeInfo.html',1,'FileTypeInfo'],['../classFileTypeInfo.html#ad42632aac0e64591594516ab73839818',1,'FileTypeInfo::FileTypeInfo()=delete'],['../classFileTypeInfo.html#a8e68a882c88ca80ec8a1914d8a4d00d4',1,'FileTypeInfo::FileTypeInfo(CCIMXFileSystemModel *model)']]],
+  ['filetypeinfo_20',['filetypeinfo',['../classFileTypeInfo.html#a8e68a882c88ca80ec8a1914d8a4d00d4',1,'FileTypeInfo::FileTypeInfo(CCIMXFileSystemModel *model)'],['../classFileTypeInfo.html#ad42632aac0e64591594516ab73839818',1,'FileTypeInfo::FileTypeInfo()=delete'],['../classFileTypeInfo.html',1,'FileTypeInfo']]],
   ['filled_5fmetainfo_21',['filled_metainfo',['../classMediaInfoWindow.html#a0ebf8a7d0894ad2456c3862d01039d39',1,'MediaInfoWindow']]],
   ['finish_5fdetect_5fmemory_22',['finish_detect_memory',['../classMemoryInfoFetcher.html#a4517c8c3b528cd95160256ecf41170aa',1,'MemoryInfoFetcher']]],
   ['finish_5fparse_23',['finish_parse',['../structWeatherResult.html#ac292b0cbe62ac22d94e271949f6b7b5e',1,'WeatherResult']]],
@@ -46,7 +46,8 @@ var searchData=
   ['fresh_5fzoom_43',['fresh_zoom',['../classCCPdfViewer.html#ad2087b6950aafc024c98aa3bc1ec2277',1,'CCPdfViewer']]],
   ['from_5fboard_5fcolor_44',['FROM_BOARD_COLOR',['../classGaugeWidget.html#aabd88fe0ae3e43c08b63b9d4a2cbf46e',1,'GaugeWidget']]],
   ['from_5fmedia_5flist_45',['from_media_list',['../classPlayListMainWindow.html#afcb0cd77e1910e75723c05413b78256c',1,'PlayListMainWindow']]],
-  ['full_20build_20of_20technologies_46',['🛠️ Full build of technologies',['../md_README__EN.html#autotoc_md20',1,'']]],
-  ['fullpath_47',['fullPath',['../structProcessBroswer_1_1ProcessInfo.html#af250bfb0d7e057a9f7bf5dbe50372c26',1,'ProcessBroswer::ProcessInfo']]],
-  ['future_20plans_48',['💡 Future plans',['../md_README__EN.html#autotoc_md25',1,'']]]
+  ['from_5fname_5fquery_46',['from_name_query',['../classInterfacesQuery.html#a76595a4ff47f886a014ac0829d483249',1,'InterfacesQuery']]],
+  ['full_20build_20of_20technologies_47',['🛠️ Full build of technologies',['../md_README__EN.html#autotoc_md20',1,'']]],
+  ['fullpath_48',['fullPath',['../structProcessBroswer_1_1ProcessInfo.html#af250bfb0d7e057a9f7bf5dbe50372c26',1,'ProcessBroswer::ProcessInfo']]],
+  ['future_20plans_49',['💡 Future plans',['../md_README__EN.html#autotoc_md25',1,'']]]
 ];

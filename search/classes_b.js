@@ -7,9 +7,10 @@ var searchData=
   ['pesudoledcontroller_4',['PesudoLedController',['../classPesudoLedController.html',1,'']]],
   ['pesudolocalfetcher_5',['PesudoLocalFetcher',['../structPesudoLocalFetcher.html',1,'']]],
   ['photosaver_6',['PhotoSaver',['../classPhotoSaver.html',1,'']]],
-  ['platformdriverfactory_7',['PlatformDriverFactory',['../classPlatformDriverFactory.html',1,'']]],
-  ['playlistmainwindow_8',['PlayListMainWindow',['../classPlayListMainWindow.html',1,'']]],
-  ['processbroswer_9',['ProcessBroswer',['../classProcessBroswer.html',1,'']]],
-  ['processbrowserwidget_10',['ProcessBrowserWidget',['../classProcessBrowserWidget.html',1,'']]],
-  ['processinfo_11',['ProcessInfo',['../structProcessBroswer_1_1ProcessInfo.html',1,'ProcessBroswer']]]
+  ['pinger_7',['Pinger',['../classPinger.html',1,'']]],
+  ['platformdriverfactory_8',['PlatformDriverFactory',['../classPlatformDriverFactory.html',1,'']]],
+  ['playlistmainwindow_9',['PlayListMainWindow',['../classPlayListMainWindow.html',1,'']]],
+  ['processbroswer_10',['ProcessBroswer',['../classProcessBroswer.html',1,'']]],
+  ['processbrowserwidget_11',['ProcessBrowserWidget',['../classProcessBrowserWidget.html',1,'']]],
+  ['processinfo_12',['ProcessInfo',['../structProcessBroswer_1_1ProcessInfo.html',1,'ProcessBroswer']]]
 ];

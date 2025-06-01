@@ -3,7 +3,7 @@ var searchData=
   ['about_5ffetch_5fframe_0',['about_fetch_frame',['../classVideoPlayer.html#a89a61f323510f49f1948b2717c1ca483',1,'VideoPlayer::about_fetch_frame()'],['../classVideoPlayer.html#a89a61f323510f49f1948b2717c1ca483',1,'VideoPlayer::about_fetch_frame()']]],
   ['aboutmainwindow_1',['aboutmainwindow',['../classAboutMainWindow.html',1,'AboutMainWindow'],['../classAboutMainWindow.html#a95c30d3e3bd081027a788bc9e17b1a38',1,'AboutMainWindow::AboutMainWindow()']]],
   ['actuallist_2',['actualList',['../classCCMediaPlayList.html#a5e0b767ee157bfb31d8448da10f43e4b',1,'CCMediaPlayList']]],
-  ['addlayout_3',['addLayout',['../classSideBarWidget.html#a78a193ae7bab3d3f0d15affc37c88420',1,'SideBarWidget']]],
+  ['addlayout_3',['addlayout',['../classSideBarWidget.html#a78a193ae7bab3d3f0d15affc37c88420',1,'SideBarWidget::addLayout(const QWidgetList &amp;widgetList, Role r)'],['../classSideBarWidget.html#a78a193ae7bab3d3f0d15affc37c88420',1,'SideBarWidget::addLayout(const QWidgetList &amp;widgetList, Role r)']]],
   ['albumartist_4',['albumArtist',['../structMediaInfo.html#a0fe1b8a2642e8679e9e5fbd210ea01c9',1,'MediaInfo']]],
   ['albumtitle_5',['albumTitle',['../structMediaInfo.html#a6609ecb62d2db45fed5e662795648269',1,'MediaInfo']]],
   ['als_6',['als',['../structAP3216CData.html#a40669cff46ee430f2fd1e716ad24b43b',1,'AP3216CData']]],
@@ -48,7 +48,7 @@ var searchData=
   ['audio_5fready_45',['audio_ready',['../structMediaPlayer_1_1MediaPlayerStatus.html#a327fcaa8e0779d5670869ea5736dc36d',1,'MediaPlayer::MediaPlayerStatus']]],
   ['audiobitrate_46',['audioBitRate',['../structMediaInfo.html#a32ff20787a2ffa2ab8e348204cdfaf26',1,'MediaInfo']]],
   ['audiocodec_47',['audioCodec',['../structMediaInfo.html#a4bbf96a1fc0e354d34b4921e83a6d0ec',1,'MediaInfo']]],
-  ['author_48',['author',['../structCCPdfMetaInfo.html#a423cdbefdd1463da5d20fd464d9050a5aa517747c3d12f99244ae598910d979c5',1,'CCPdfMetaInfo::Author'],['../structMediaInfo.html#a5800390f193e62611d5e5ebe872c28b8',1,'MediaInfo::author'],['../structCCPdfMetaInfo.html#ad02f378caa4ba18913ff931c50c2fec9',1,'CCPdfMetaInfo::author']]],
+  ['author_48',['author',['../structMediaInfo.html#a5800390f193e62611d5e5ebe872c28b8',1,'MediaInfo::author'],['../structCCPdfMetaInfo.html#ad02f378caa4ba18913ff931c50c2fec9',1,'CCPdfMetaInfo::author'],['../structCCPdfMetaInfo.html#a423cdbefdd1463da5d20fd464d9050a5aa517747c3d12f99244ae598910d979c5',1,'CCPdfMetaInfo::Author']]],
   ['avail_5fphys_5fmemory_49',['avail_phys_memory',['../structMemoryInfoFetcher_1_1MemoryStat.html#af82091061732a922014ca83542a515de',1,'MemoryInfoFetcher::MemoryStat']]],
   ['avail_5fvirt_5fmemory_50',['avail_virt_memory',['../structMemoryInfoFetcher_1_1MemoryStat.html#a1b5ecd712fc23ca26084c0937517c6c9',1,'MemoryInfoFetcher::MemoryStat']]]
 ];

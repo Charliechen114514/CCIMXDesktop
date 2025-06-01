@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['toolssidebar_0',['ToolsSideBar',['../classToolsSideBar.html',1,'']]]
+  ['toolboxs_0',['ToolBoxs',['../classToolBoxs.html',1,'']]],
+  ['toolssidebar_1',['ToolsSideBar',['../classToolsSideBar.html',1,'']]]
 ];

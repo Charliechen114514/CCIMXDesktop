@@ -31,7 +31,7 @@ var searchData=
   ['_7epesudoledcontroller_28',['~PesudoLedController',['../classPesudoLedController.html#a447e8a9e2516f0d57c01cb119f927af4',1,'PesudoLedController']]],
   ['_7eplaylistmainwindow_29',['~PlayListMainWindow',['../classPlayListMainWindow.html#aac08812b22c18986db087addd9cbeb62',1,'PlayListMainWindow']]],
   ['_7eprocessbroswer_30',['~ProcessBroswer',['../classProcessBroswer.html#a68bf5853c385369283c48b2e5e1f2ad0',1,'ProcessBroswer']]],
-  ['_7esidebarwidget_31',['~SideBarWidget',['../classSideBarWidget.html#a03a53332691935e2f86144d2f01f7122',1,'SideBarWidget']]],
+  ['_7esidebarwidget_31',['~sidebarwidget',['../classSideBarWidget.html#a03a53332691935e2f86144d2f01f7122',1,'SideBarWidget::~SideBarWidget()'],['../classSideBarWidget.html#a03a53332691935e2f86144d2f01f7122',1,'SideBarWidget::~SideBarWidget()']]],
   ['_7esportschart_32',['~SportsChart',['../classSportsChart.html#a0d2390b8d696ee8bf072f0bfa2718841',1,'SportsChart']]],
   ['_7esportsdisplaywidget_33',['~SportsDisplayWidget',['../classSportsDisplayWidget.html#aefd387c3fa6558de559fe77e979cd220',1,'SportsDisplayWidget']]],
   ['_7esportshealthwindow_34',['~SportsHealthWindow',['../classSportsHealthWindow.html#a5e62d728f193824449d5d478ded23684',1,'SportsHealthWindow']]],
