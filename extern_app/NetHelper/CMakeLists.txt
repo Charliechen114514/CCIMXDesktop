@@ -28,6 +28,7 @@ qt_add_executable(CCNetHelper
     ${UiSrc}
     ${CoreSrc}
     main.cpp
+    sources/icons.qrc
 )
 
 target_link_libraries(CCNetHelper

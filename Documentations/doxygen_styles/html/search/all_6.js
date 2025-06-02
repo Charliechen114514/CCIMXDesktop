@@ -46,7 +46,8 @@ var searchData=
   ['fresh_5fzoom_43',['fresh_zoom',['../class_c_c_pdf_viewer.html#ad2087b6950aafc024c98aa3bc1ec2277',1,'CCPdfViewer']]],
   ['from_5fboard_5fcolor_44',['FROM_BOARD_COLOR',['../class_gauge_widget.html#aabd88fe0ae3e43c08b63b9d4a2cbf46e',1,'GaugeWidget']]],
   ['from_5fmedia_5flist_45',['from_media_list',['../class_play_list_main_window.html#afcb0cd77e1910e75723c05413b78256c',1,'PlayListMainWindow']]],
-  ['full_20build_20of_20technologies_46',['🛠️ Full build of technologies',['../md__r_e_a_d_m_e___e_n.html#autotoc_md20',1,'']]],
-  ['fullpath_47',['fullPath',['../struct_process_broswer_1_1_process_info.html#af250bfb0d7e057a9f7bf5dbe50372c26',1,'ProcessBroswer::ProcessInfo']]],
-  ['future_20plans_48',['💡 Future plans',['../md__r_e_a_d_m_e___e_n.html#autotoc_md25',1,'']]]
+  ['from_5fname_5fquery_46',['from_name_query',['../class_interfaces_query.html#a76595a4ff47f886a014ac0829d483249',1,'InterfacesQuery']]],
+  ['full_20build_20of_20technologies_47',['🛠️ Full build of technologies',['../md__r_e_a_d_m_e___e_n.html#autotoc_md20',1,'']]],
+  ['fullpath_48',['fullPath',['../struct_process_broswer_1_1_process_info.html#af250bfb0d7e057a9f7bf5dbe50372c26',1,'ProcessBroswer::ProcessInfo']]],
+  ['future_20plans_49',['💡 Future plans',['../md__r_e_a_d_m_e___e_n.html#autotoc_md25',1,'']]]
 ];

@@ -65,7 +65,7 @@ var searchData=
   ['current_5fpage_62',['current_page',['../class_c_c_pdf_document.html#ab0dbbff186c5b2b6c6eb71d54062355c',1,'CCPdfDocument']]],
   ['current_5fpath_63',['current_path',['../class_c_c_pdf_document.html#acb5d93f0d8624153bf748b0867108240',1,'CCPdfDocument']]],
   ['current_5fplaying_64',['current_playing',['../struct_media_list_mails.html#a9ef8673f8cecb1cd5d7a12af9a2b20ec',1,'MediaListMails']]],
-  ['current_5fui_5fstates_65',['current_ui_states',['../class_side_bar_widget.html#a198335bded322d74773369bb4136df14',1,'SideBarWidget']]],
+  ['current_5fui_5fstates_65',['current_ui_states',['../class_side_bar_widget.html#a198335bded322d74773369bb4136df14',1,'SideBarWidget::current_ui_states()'],['../class_side_bar_widget.html#a198335bded322d74773369bb4136df14',1,'SideBarWidget::current_ui_states()']]],
   ['current_5fvideo_5finfo_66',['current_video_info',['../class_video_player_impl.html#aed67d09d2e16570de740b0ea011af60f',1,'VideoPlayerImpl::current_video_info()'],['../class_video_player_opencv_impl.html#afe9aafeb0361bb96f609072471e29d0a',1,'VideoPlayerOpencvImpl::current_video_info()'],['../class_video_player_impl.html#aed67d09d2e16570de740b0ea011af60f',1,'VideoPlayerImpl::current_video_info()'],['../class_video_player_opencv_impl.html#afe9aafeb0361bb96f609072471e29d0a',1,'VideoPlayerOpencvImpl::current_video_info()']]],
   ['current_5fzoom_67',['current_zoom',['../class_c_c_pdf_viewer.html#a3e06c01d172da27bb83363ffc468be5c',1,'CCPdfViewer']]],
   ['currentframemsec_68',['currentFrameMSec',['../class_video_player.html#aa7375d4254665af9993c4000b546d76d',1,'VideoPlayer::currentFrameMSec() const'],['../class_video_player.html#aa7375d4254665af9993c4000b546d76d',1,'VideoPlayer::currentFrameMSec() const']]],

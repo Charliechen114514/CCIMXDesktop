@@ -16,6 +16,38 @@
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <widget class="QTabWidget" name="tabWidget">
+     <property name="styleSheet">
+      <string notr="true">QTabWidget::pane {
+    border: 2px solid #66b3ff;
+    border-radius: 6px;
+    background-color: #f2f9ff;
+}
+
+QTabBar::tab {
+    background: #cce6ff;
+    color: #003366;
+    border: 1px solid #99ccff;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 6px 12px;
+    min-width: 80px;
+}
+
+QTabBar::tab:selected {
+    background: #66b3ff;
+    color: #ffffff;
+    border-bottom-color: #f2f9ff; /* 与pane背景色匹配，视觉上合并 */
+}
+
+QTabBar::tab:hover {
+    background: #99ccff;
+}
+
+QTabBar::tab:!selected {
+    margin-top: 2px; /* 让未选中的 tab 看起来稍低，增强立体感 */
+}
+</string>
+     </property>
      <property name="currentIndex">
       <number>0</number>
      </property>

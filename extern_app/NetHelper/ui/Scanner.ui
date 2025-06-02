@@ -6,12 +6,169 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>439</width>
-    <height>333</height>
+    <width>477</width>
+    <height>347</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* 全局背景色及通用文本颜色 */
+QWidget {
+    background-color: #e6f2ff;
+    color: #003366;
+    font-family: &quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif;
+    font-size: 14px;
+}
+
+/* QLabel */
+QLabel {
+    color: #002244;
+}
+
+/* QCheckBox */
+QCheckBox {
+    spacing: 8px;
+}
+QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #6699cc;
+    border-radius: 4px;
+    background: #cce6ff;
+}
+QCheckBox::indicator:checked {
+    image: url(:/icons/checkbox_checked.svg);
+    background: #66b3ff;
+    border: 2px solid #005580;
+}
+QCheckBox::indicator:unchecked:hover {
+    background: #b3d9ff;
+}
+
+/* QPushButton */
+QPushButton {
+    background-color: #66b3ff;
+    color: white;
+    border: 2px solid #3399ff;
+    border-radius: 6px;
+    padding: 4px 10px;
+}
+QPushButton:hover {
+    background-color: #80c1ff;
+    border-color: #1a8cff;
+}
+QPushButton:pressed {
+    background-color: #3399ff;
+    border-color: #007acc;
+}
+QPushButton:disabled {
+    background-color: #a6cce6;
+    border-color: #6699cc;
+    color: #ffffff;
+}
+
+/* QSpinBox */
+QSpinBox {
+    background: #ffffff;
+    border: 2px solid #66b3ff;
+    border-radius: 4px;
+    padding: 2px 4px;
+}
+QSpinBox:hover {
+    border-color: #3399ff;
+}
+QSpinBox:focus {
+    border-color: #1a8cff;
+    background: #e6f2ff;
+}
+QSpinBox::up-button, QSpinBox::down-button {
+    subcontrol-origin: border;
+    width: 16px;
+    border-width: 1px;
+    border-color: #66b3ff;
+    border-radius: 2px;
+    background: #cce6ff;
+}
+QSpinBox::up-button:hover, QSpinBox::down-button:hover {
+    background: #99ccff;
+}
+QSpinBox::up-arrow {
+    width: 10px;
+    height: 10px;
+}
+QSpinBox::down-arrow {
+    width: 10px;
+    height: 10px;
+}
+
+/* QTableWidget */
+QTableWidget {
+    background-color: #ffffff;
+    border: 2px solid #99ccff;
+    gridline-color: #99ccff;
+    selection-background-color: #cce6ff;
+    selection-color: #003366;
+    alternate-background-color: #f2f9ff;
+}
+QHeaderView::section {
+    background-color: #66b3ff;
+    color: white;
+    padding: 4px;
+    border: 1px solid #3399ff;
+}
+QHeaderView::section:horizontal {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+QHeaderView::section:vertical {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+QTableCornerButton::section {
+    background-color: #66b3ff;
+    border: 1px solid #3399ff;
+}
+
+/* 滚动条（可选的复杂化） */
+QScrollBar:vertical {
+    border: none;
+    background: #cce6ff;
+    width: 10px;
+    margin: 0px 0px 0px 0px;
+}
+QScrollBar::handle:vertical {
+    background: #66b3ff;
+    min-height: 20px;
+    border-radius: 4px;
+}
+QScrollBar::handle:vertical:hover {
+    background: #3399ff;
+}
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+    subcontrol-origin: margin;
+}
+QScrollBar:horizontal {
+    border: none;
+    background: #cce6ff;
+    height: 10px;
+    margin: 0px 0px 0px 0px;
+}
+QScrollBar::handle:horizontal {
+    background: #66b3ff;
+    min-width: 20px;
+    border-radius: 4px;
+}
+QScrollBar::handle:horizontal:hover {
+    background: #3399ff;
+}
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+    width: 0px;
+    subcontrol-origin: margin;
+}
+</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_2">
    <item>
@@ -43,7 +200,7 @@
        <widget class="QWidget" name="widget_3" native="true">
         <layout class="QHBoxLayout" name="horizontalLayout_4">
          <property name="spacing">
-          <number>0</number>
+          <number>5</number>
          </property>
          <property name="leftMargin">
           <number>0</number>

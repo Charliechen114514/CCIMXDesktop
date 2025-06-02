@@ -17,17 +17,21 @@ class NetMainWindow : public QMainWindow {
 	Q_OBJECT
 
 public:
+	/**
+	 * @brief NetMainWindow
+	 * @param parent
+	 */
 	NetMainWindow(QWidget* parent = nullptr);
 	~NetMainWindow();
 
-protected:
-	void resizeEvent(QResizeEvent*);
-
 private:
-	Ui::NetMainWindow* ui;
-	ToolBoxs* toolbox;
-	MainShowWidget* mainWidget;
+	Ui::NetMainWindow* ui; ///< ui hanlde
+	ToolBoxs* toolbox; ///< toolbox
+	MainShowWidget* mainWidget; ///< main show widget
+	bool sideBarShow { true }; ///< sidebar show flags
+	/**
+	 * @brief flipSideBar flip the sidebar show issue
+	 */
 	void flipSideBar();
-	bool sideBarShow { true };
 };
 #endif // NETMAINWINDOW_H

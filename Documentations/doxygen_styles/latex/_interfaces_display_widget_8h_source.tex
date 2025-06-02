@@ -1,0 +1,34 @@
+\doxysection{Interfaces\+Display\+Widget.\+h}
+\hypertarget{_interfaces_display_widget_8h_source}{}\label{_interfaces_display_widget_8h_source}\index{extern\_app/NetHelper/ui/InterfacesDisplayWidget.h@{extern\_app/NetHelper/ui/InterfacesDisplayWidget.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ INTERFACESDISPLAYWIDGET\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ INTERFACESDISPLAYWIDGET\_H}}
+\DoxyCodeLine{00003\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_interfaces_query}{InterfacesQuery}};}
+\DoxyCodeLine{00004\ \textcolor{keyword}{class\ }QNetworkInterface;}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QWidget>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }InterfacesDisplayWidget;}
+\DoxyCodeLine{00009\ \}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_interfaces_display_widget_a1d59d7688f558e9ef6051d0fbfb78508}{InterfacesDisplayWidget}}\ :\ \textcolor{keyword}{public}\ QWidget\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_interfaces_display_widget_a1d59d7688f558e9ef6051d0fbfb78508}{InterfacesDisplayWidget}}(QWidget*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_interfaces_display_widget_ac9a1f20fbb9893450f6b66e15857e86c}{show\_details}}();}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_interfaces_display_widget_a8f62864dd2e410f52412f7acf2002523}{show\_lists}}();}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_interfaces_display_widget_a1d59d7688f558e9ef6051d0fbfb78508}{\string~InterfacesDisplayWidget}}();}
+\DoxyCodeLine{00032\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00035\ \ \ \ \ Ui::InterfacesDisplayWidget*\ ui;\ }
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{class_interfaces_query}{InterfacesQuery}}*\ query;\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ setup\_memory();}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ install\_interface\_details(\textcolor{keyword}{const}\ QNetworkInterface\&\ interfaces);}
+\DoxyCodeLine{00046\ \};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ INTERFACESDISPLAYWIDGET\_H}}
+
+\end{DoxyCode}

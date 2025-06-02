@@ -97,8 +97,8 @@ void Scanner::set_stop() {
 	stopped = true;
 }
 
-void Scanner::handle_ip_result(bool reachable, QString ip, QString reasonString) {
-	allResults << DisplayPackage { reachable, ip, reasonString };
+void Scanner::handle_ip_result(const DisplayPackage& pack) {
+	allResults << pack;
 	refresh_ui_issue();
 }
 
@@ -142,16 +142,20 @@ void Scanner::process_impl_scan(const InternalScanPack pack) {
 		QTcpSocket socket;
 		socket.connectToHost(ipStr, pack.port);
 		bool isReachable = false;
-		QString reason = "Connect Success";
+		QString reason;
 		if (socket.waitForConnected(TIMEOUT)) {
 			socket.disconnectFromHost();
 			isReachable = true;
+			reason = "Connect Success";
 		} else {
 			reason = socket.errorString();
 		}
+		DisplayPackage p = DisplayPackage { isReachable, ipStr, reason };
+		/*
+		 * invoke this async and enable to communicate cross objects
+		 */
 		QMetaObject::invokeMethod(
 			this, "handle_ip_result",
-			Qt::QueuedConnection, Q_ARG(bool, isReachable),
-			Q_ARG(QString, ipStr), Q_ARG(QString, reason));
+			Qt::QueuedConnection, Q_ARG(DisplayPackage, p));
 	}
 }

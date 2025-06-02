@@ -36,5 +36,6 @@ var searchData=
   ['fresh_5fdisplay_33',['fresh_display',['../class_weather_chart_widget.html#a9a61b7bf80f2920bbe80b8871e982e9d',1,'WeatherChartWidget']]],
   ['fresh_5frender_34',['fresh_render',['../class_c_c_pdf_viewer.html#ac7f3f2ba436fba2eedeaf5580d4630d5',1,'CCPdfViewer']]],
   ['fresh_5fzoom_35',['fresh_zoom',['../class_c_c_pdf_viewer.html#ad2087b6950aafc024c98aa3bc1ec2277',1,'CCPdfViewer']]],
-  ['from_5fmedia_5flist_36',['from_media_list',['../class_play_list_main_window.html#afcb0cd77e1910e75723c05413b78256c',1,'PlayListMainWindow']]]
+  ['from_5fmedia_5flist_36',['from_media_list',['../class_play_list_main_window.html#afcb0cd77e1910e75723c05413b78256c',1,'PlayListMainWindow']]],
+  ['from_5fname_5fquery_37',['from_name_query',['../class_interfaces_query.html#a76595a4ff47f886a014ac0829d483249',1,'InterfacesQuery']]]
 ];

@@ -1,0 +1,45 @@
+\doxysection{Pinger.\+h}
+\hypertarget{_pinger_8h_source}{}\label{_pinger_8h_source}\index{extern\_app/NetHelper/ui/Pinger.h@{extern\_app/NetHelper/ui/Pinger.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PINGER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PINGER\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <QHostAddress>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QWidget>}}
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }QTcpSocket;}
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }QElapsedTimer;}
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }QHostInfo;}
+\DoxyCodeLine{00008\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }Pinger;}
+\DoxyCodeLine{00010\ \}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_pinger_af98b6d917a60e24685c2b2ccbe7ce72a}{Pinger}}\ :\ \textcolor{keyword}{public}\ QWidget\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ IS\_TIMEOUT\ =\ 1000;}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ PING\_FREQ\_PERIOD\ =\ IS\_TIMEOUT;}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_pinger_af98b6d917a60e24685c2b2ccbe7ce72a}{Pinger}}(QWidget*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{class_pinger_af98b6d917a60e24685c2b2ccbe7ce72a}{\string~Pinger}}();}
+\DoxyCodeLine{00035\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ resolveHost();\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_connected();\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_connectionTimeout();\ }
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00041\ \ \ \ \ Ui::Pinger*\ ui;\ }
+\DoxyCodeLine{00042\ \ \ \ \ QTcpSocket*\ socket;\ }
+\DoxyCodeLine{00043\ \ \ \ \ QElapsedTimer*\ elapsed\_timer;\ }
+\DoxyCodeLine{00044\ \ \ \ \ QTimer*\ pingTimer;\ }
+\DoxyCodeLine{00045\ \ \ \ \ QTimer*\ timeoutTimer;\ }
+\DoxyCodeLine{00046\ \ \ \ \ QHostAddress\ targetAddress;\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{bool}\ do\_ping\ \{\ \textcolor{keyword}{false}\ \};\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ setup\_memory();\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ performPing();\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ abortPing();\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ onHostResolved(\textcolor{keyword}{const}\ QHostInfo\&\ host);\ }
+\DoxyCodeLine{00052\ \};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PINGER\_H}}
+
+\end{DoxyCode}

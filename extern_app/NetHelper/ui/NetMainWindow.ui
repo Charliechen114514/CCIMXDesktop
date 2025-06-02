@@ -39,6 +39,10 @@
    <addaction name="actionexit"/>
   </widget>
   <action name="actionexit">
+   <property name="icon">
+    <iconset resource="../sources/icons.qrc">
+     <normaloff>:/icons/exit.png</normaloff>:/icons/exit.png</iconset>
+   </property>
    <property name="text">
     <string>exit</string>
    </property>
@@ -47,6 +51,10 @@
    </property>
   </action>
   <action name="actionsidebar">
+   <property name="icon">
+    <iconset resource="../sources/icons.qrc">
+     <normaloff>:/icons/toolbox.png</normaloff>:/icons/toolbox.png</iconset>
+   </property>
    <property name="text">
     <string>sidebar</string>
    </property>
@@ -63,6 +71,8 @@
    <container>1</container>
   </customwidget>
  </customwidgets>
- <resources/>
+ <resources>
+  <include location="../sources/icons.qrc"/>
+ </resources>
  <connections/>
 </ui>

@@ -7,9 +7,10 @@ var searchData=
   ['pesudoledcontroller_4',['PesudoLedController',['../class_pesudo_led_controller.html',1,'']]],
   ['pesudolocalfetcher_5',['PesudoLocalFetcher',['../struct_pesudo_local_fetcher.html',1,'']]],
   ['photosaver_6',['PhotoSaver',['../class_photo_saver.html',1,'']]],
-  ['platformdriverfactory_7',['PlatformDriverFactory',['../class_platform_driver_factory.html',1,'']]],
-  ['playlistmainwindow_8',['PlayListMainWindow',['../class_play_list_main_window.html',1,'']]],
-  ['processbroswer_9',['ProcessBroswer',['../class_process_broswer.html',1,'']]],
-  ['processbrowserwidget_10',['ProcessBrowserWidget',['../class_process_browser_widget.html',1,'']]],
-  ['processinfo_11',['ProcessInfo',['../struct_process_broswer_1_1_process_info.html',1,'ProcessBroswer']]]
+  ['pinger_7',['Pinger',['../class_pinger.html',1,'']]],
+  ['platformdriverfactory_8',['PlatformDriverFactory',['../class_platform_driver_factory.html',1,'']]],
+  ['playlistmainwindow_9',['PlayListMainWindow',['../class_play_list_main_window.html',1,'']]],
+  ['processbroswer_10',['ProcessBroswer',['../class_process_broswer.html',1,'']]],
+  ['processbrowserwidget_11',['ProcessBrowserWidget',['../class_process_browser_widget.html',1,'']]],
+  ['processinfo_12',['ProcessInfo',['../struct_process_broswer_1_1_process_info.html',1,'ProcessBroswer']]]
 ];

@@ -15,6 +15,10 @@ class InterfacesDisplayWidget : public QWidget {
 	Q_OBJECT
 
 public:
+	/**
+	 * @brief creator
+	 * @param parent
+	 */
 	explicit InterfacesDisplayWidget(QWidget* parent = nullptr);
 	/**
 	 * @brief display the target details network card
@@ -28,7 +32,7 @@ public:
 public slots:
 
 private:
-	Ui::InterfacesDisplayWidget* ui;
+	Ui::InterfacesDisplayWidget* ui; ///< ui handle
 	InterfacesQuery* query; ///< query instance
 	/**
 	 * @brief setup_memory

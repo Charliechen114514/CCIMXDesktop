@@ -33,10 +33,6 @@ NetMainWindow::~NetMainWindow() {
 	delete ui;
 }
 
-void NetMainWindow::resizeEvent(QResizeEvent*) {
-	ui->centralwidget->resize(this->size());
-}
-
 void NetMainWindow::flipSideBar() {
 	sideBarShow = !sideBarShow;
 	sideBarShow ? ui->centralwidget->showSideBar() : ui->centralwidget->hideSideBar();

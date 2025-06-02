@@ -16,7 +16,7 @@ var searchData=
   ['registercolorpairs_13',['registerColorPairs',['../class_file_name_providers.html#ad649d1ca2c8291733510803220b61b5d',1,'FileNameProviders']]],
   ['release_14',['release',['../class_desktop_main_window.html#a84eecc2fcabddb1424455ccf9cc56929',1,'DesktopMainWindow']]],
   ['remove_5fplay_5flist_15',['remove_play_list',['../class_c_c_media_play_list.html#a68daf8f790fd4be4389c284f2e1eb150',1,'CCMediaPlayList']]],
-  ['removelayout_16',['removeLayout',['../class_side_bar_widget.html#a5304ab5e143b4078ff8203ca34a94ee5',1,'SideBarWidget']]],
+  ['removelayout_16',['removeLayout',['../class_side_bar_widget.html#a5304ab5e143b4078ff8203ca34a94ee5',1,'SideBarWidget::removeLayout(Role r)'],['../class_side_bar_widget.html#a5304ab5e143b4078ff8203ca34a94ee5',1,'SideBarWidget::removeLayout(Role r)']]],
   ['req_5ffollow_5findicator_17',['req_follow_indicator',['../struct_c_c_pdf_navigation_policy_1_1_indicator.html#a57b1edfbb713dad818ebda44ef01e03c',1,'CCPdfNavigationPolicy::Indicator']]],
   ['request_5fchapter_5ftree_18',['request_chapter_tree',['../namespaceccpdf__tools.html#ab1c411f18137d7b0dd3e7cd6f3b421a7',1,'ccpdf_tools']]],
   ['request_5fdata_19',['request_data',['../class_a_p3216_c_adapter_factory.html#a3b62552e6224bb936913f7b56da99d71',1,'AP3216CAdapterFactory']]],
@@ -29,11 +29,11 @@ var searchData=
   ['request_5ftarget_5fmeta_26',['request_target_meta',['../namespaceccpdf__tools.html#a4b7a9e4948f407d1efbbfd4a5d7e4a07',1,'ccpdf_tools']]],
   ['request_5ftarget_5fpage_27',['request_target_page',['../namespaceccpdf__tools.html#a70c31d5eeb98044b0ddc6f868aaf68a4',1,'ccpdf_tools']]],
   ['required_5fpage_5fjump_28',['required_page_jump',['../class_tools_side_bar.html#ab400cb208f31ddefdcfd275137cd7332',1,'ToolsSideBar']]],
-  ['resizeevent_29',['resizeEvent',['../class_scrolling_label.html#a9f9d7abd6ca18eacb4a2eaaa018c2ded',1,'ScrollingLabel::resizeEvent()'],['../class_desktop_main_window.html#ab4794a1ff19ffeae8b3b971128898448',1,'DesktopMainWindow::resizeEvent()']]],
+  ['resizeevent_29',['resizeEvent',['../class_scrolling_label.html#a9f9d7abd6ca18eacb4a2eaaa018c2ded',1,'ScrollingLabel::resizeEvent()'],['../class_side_bar_widget.html#ab55fe500508468594a880f9fa25c31a7',1,'SideBarWidget::resizeEvent()'],['../class_desktop_main_window.html#ab4794a1ff19ffeae8b3b971128898448',1,'DesktopMainWindow::resizeEvent()']]],
   ['result_5favailable_30',['result_available',['../class_weather_request.html#a182f4d1dd7b4a801eb9a9469f88dc000',1,'WeatherRequest']]],
   ['resume_31',['resume',['../class_media_player.html#a952cbd6944653ae6fbc19632ce310cf4',1,'MediaPlayer']]],
   ['rol_32',['rol',['../structrol.html',1,'rol'],['../struct_i_c_m20608_data.html#afd507633763e6ab1129f0e518ed78bde',1,'ICM20608Data::rol'],['../struct_i_c_m20608_app_data.html#a837d30a73e11567a17780de7275daec4',1,'ICM20608AppData::rol'],['../struct_i_c_m20608_data.html#a2f02b0533afd591a8b99752edf1b0065',1,'ICM20608Data::rol'],['../struct_i_c_m20608_app_data.html#a519bb277d955d3f210e53730edf50740',1,'ICM20608AppData::rol']]],
-  ['role_33',['Role',['../class_side_bar_widget.html#abc77590c7f86b906b48ac7fcfadd46b1',1,'SideBarWidget']]],
+  ['role_33',['Role',['../class_side_bar_widget.html#abc77590c7f86b906b48ac7fcfadd46b1',1,'SideBarWidget::Role'],['../class_side_bar_widget.html#abc77590c7f86b906b48ac7fcfadd46b1',1,'SideBarWidget::Role']]],
   ['rollto_5fnextframe_34',['rollto_nextFrame',['../class_video_player_impl.html#a09925d8ec75bd409d8526991e5cfa60e',1,'VideoPlayerImpl::rollto_nextFrame()'],['../class_video_player_opencv_impl.html#ab0d491bb1ff965a4bcb1338a3f947fe9',1,'VideoPlayerOpencvImpl::rollto_nextFrame()'],['../class_video_player_impl.html#a09925d8ec75bd409d8526991e5cfa60e',1,'VideoPlayerImpl::rollto_nextFrame()'],['../class_video_player_opencv_impl.html#ab0d491bb1ff965a4bcb1338a3f947fe9',1,'VideoPlayerOpencvImpl::rollto_nextFrame()']]],
   ['running_20screenshots_35',['Some running screenshots',['../md__r_e_a_d_m_e___e_n.html#autotoc_md18',1,'']]]
 ];

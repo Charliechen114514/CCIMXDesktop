@@ -21,11 +21,23 @@ Inheritance diagram for Side\+Bar\+Widget\+:\begin{figure}[H]
 \Hypertarget{class_side_bar_widget_abc77590c7f86b906b48ac7fcfadd46b1}\label{class_side_bar_widget_abc77590c7f86b906b48ac7fcfadd46b1} 
 enum class \mbox{\hyperlink{class_side_bar_widget_abc77590c7f86b906b48ac7fcfadd46b1}{Role}} \{ {\bfseries Side\+Bar}
 , {\bfseries Main\+Side}
+, {\bfseries Side\+Bar}
+, {\bfseries Main\+Side}
+ \}
+\begin{DoxyCompactList}\small\item\em Defines which layout role to apply widgets to. \end{DoxyCompactList}\item 
+\Hypertarget{class_side_bar_widget_abc77590c7f86b906b48ac7fcfadd46b1}\label{class_side_bar_widget_abc77590c7f86b906b48ac7fcfadd46b1} 
+enum class \mbox{\hyperlink{class_side_bar_widget_abc77590c7f86b906b48ac7fcfadd46b1}{Role}} \{ {\bfseries Side\+Bar}
+, {\bfseries Main\+Side}
+, {\bfseries Side\+Bar}
+, {\bfseries Main\+Side}
  \}
 \begin{DoxyCompactList}\small\item\em Defines which layout role to apply widgets to. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Slots}
 \begin{DoxyCompactItemize}
 \item 
+\Hypertarget{class_side_bar_widget_ad41e12eec6960deac5b3c6b1d211de64}\label{class_side_bar_widget_ad41e12eec6960deac5b3c6b1d211de64} 
+void {\bfseries switch\+\_\+state} ()
+\begin{DoxyCompactList}\small\item\em Toggles the sidebar state between visible and hidden. \end{DoxyCompactList}\item 
 \Hypertarget{class_side_bar_widget_ad41e12eec6960deac5b3c6b1d211de64}\label{class_side_bar_widget_ad41e12eec6960deac5b3c6b1d211de64} 
 void {\bfseries switch\+\_\+state} ()
 \begin{DoxyCompactList}\small\item\em Toggles the sidebar state between visible and hidden. \end{DoxyCompactList}\item 
@@ -50,6 +62,27 @@ void \mbox{\hyperlink{class_side_bar_widget_a78a193ae7bab3d3f0d15affc37c88420}{a
 \begin{DoxyCompactList}\small\item\em Adds widgets to either the sidebar or the main side layout. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_side_bar_widget_a5304ab5e143b4078ff8203ca34a94ee5}{remove\+Layout}} (\mbox{\hyperlink{class_side_bar_widget_abc77590c7f86b906b48ac7fcfadd46b1}{Role}} r)
 \begin{DoxyCompactList}\small\item\em Removes all widgets from the specified layout role. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_side_bar_widget_a564985d9c3fa8b6091ba470513da645e}{set\+Animation\+Duration}} (int duration)
+\begin{DoxyCompactList}\small\item\em Sets the animation duration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_side_bar_widget_a58ddd92c7c107388d068b9b4e7a75ce3}{set\+Animation\+Curve}} (QEasing\+Curve\+::\+Type curve)
+\begin{DoxyCompactList}\small\item\em Sets the easing curve type for the animation. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_side_bar_widget_a198335bded322d74773369bb4136df14}{current\+\_\+ui\+\_\+states}} ()
+\begin{DoxyCompactList}\small\item\em Returns the current state of sidebar visibility. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_side_bar_widget_a4bf30cbf7343e1e506267d649a0cc155}{Side\+Bar\+Widget}} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructor to initialize the sidebar widget. \end{DoxyCompactList}\item 
+\Hypertarget{class_side_bar_widget_a03a53332691935e2f86144d2f01f7122}\label{class_side_bar_widget_a03a53332691935e2f86144d2f01f7122} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Side\+Bar\+Widget} ()
+\begin{DoxyCompactList}\small\item\em Destructor to release resources. \end{DoxyCompactList}\item 
+\Hypertarget{class_side_bar_widget_a4b600ade50c9d6e76c0fcd9f878c43e0}\label{class_side_bar_widget_a4b600ade50c9d6e76c0fcd9f878c43e0} 
+void {\bfseries show\+Side\+Bar} ()
+\begin{DoxyCompactList}\small\item\em Shows the sidebar using animation. \end{DoxyCompactList}\item 
+\Hypertarget{class_side_bar_widget_a8095035fb628e68ba40c6c66ee009594}\label{class_side_bar_widget_a8095035fb628e68ba40c6c66ee009594} 
+void {\bfseries hide\+Side\+Bar} ()
+\begin{DoxyCompactList}\small\item\em Hides the sidebar using animation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_side_bar_widget_a78a193ae7bab3d3f0d15affc37c88420}{add\+Layout}} (const QWidget\+List \&widget\+List, \mbox{\hyperlink{class_side_bar_widget_abc77590c7f86b906b48ac7fcfadd46b1}{Role}} r)
+\begin{DoxyCompactList}\small\item\em Adds widgets to either the sidebar or the main side layout. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_side_bar_widget_a5304ab5e143b4078ff8203ca34a94ee5}{remove\+Layout}} (\mbox{\hyperlink{class_side_bar_widget_abc77590c7f86b906b48ac7fcfadd46b1}{Role}} r)
+\begin{DoxyCompactList}\small\item\em Removes all widgets from the specified layout role. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_side_bar_widget_a6f9868180fbfbc2e6807c2489dc7a1f4}{set\+Button\+Visible}} (bool visible)
 \begin{DoxyCompactList}\small\item\em Sets the visibility of the control button. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_side_bar_widget_a564985d9c3fa8b6091ba470513da645e}{set\+Animation\+Duration}} (int duration)
@@ -58,6 +91,12 @@ void \mbox{\hyperlink{class_side_bar_widget_a58ddd92c7c107388d068b9b4e7a75ce3}{s
 \begin{DoxyCompactList}\small\item\em Sets the easing curve type for the animation. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_side_bar_widget_a198335bded322d74773369bb4136df14}{current\+\_\+ui\+\_\+states}} ()
 \begin{DoxyCompactList}\small\item\em Returns the current state of sidebar visibility. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_side_bar_widget_ab55fe500508468594a880f9fa25c31a7}\label{class_side_bar_widget_ab55fe500508468594a880f9fa25c31a7} 
+void {\bfseries resize\+Event} (QResize\+Event \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em resize\+Event \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -66,7 +105,22 @@ A custom widget that implements a slide-\/in/slide-\/out sidebar with animation.
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{class_side_bar_widget_a4bf30cbf7343e1e506267d649a0cc155}\index{SideBarWidget@{SideBarWidget}!SideBarWidget@{SideBarWidget}}
 \index{SideBarWidget@{SideBarWidget}!SideBarWidget@{SideBarWidget}}
-\doxysubsubsection{\texorpdfstring{SideBarWidget()}{SideBarWidget()}}
+\doxysubsubsection{\texorpdfstring{SideBarWidget()}{SideBarWidget()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_side_bar_widget_a4bf30cbf7343e1e506267d649a0cc155} 
+Side\+Bar\+Widget\+::\+Side\+Bar\+Widget (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor to initialize the sidebar widget. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Optional parent widget. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_side_bar_widget_a4bf30cbf7343e1e506267d649a0cc155}\index{SideBarWidget@{SideBarWidget}!SideBarWidget@{SideBarWidget}}
+\index{SideBarWidget@{SideBarWidget}!SideBarWidget@{SideBarWidget}}
+\doxysubsubsection{\texorpdfstring{SideBarWidget()}{SideBarWidget()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \label{class_side_bar_widget_a4bf30cbf7343e1e506267d649a0cc155} 
 Side\+Bar\+Widget\+::\+Side\+Bar\+Widget (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
@@ -84,7 +138,24 @@ Constructor to initialize the sidebar widget.
 \doxysubsection{Member Function Documentation}
 \Hypertarget{class_side_bar_widget_a78a193ae7bab3d3f0d15affc37c88420}\index{SideBarWidget@{SideBarWidget}!addLayout@{addLayout}}
 \index{addLayout@{addLayout}!SideBarWidget@{SideBarWidget}}
-\doxysubsubsection{\texorpdfstring{addLayout()}{addLayout()}}
+\doxysubsubsection{\texorpdfstring{addLayout()}{addLayout()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_side_bar_widget_a78a193ae7bab3d3f0d15affc37c88420} 
+void Side\+Bar\+Widget\+::add\+Layout (\begin{DoxyParamCaption}\item[{const QWidget\+List \&}]{widget\+List}{, }\item[{\mbox{\hyperlink{class_side_bar_widget_abc77590c7f86b906b48ac7fcfadd46b1}{Role}}}]{r}{}\end{DoxyParamCaption})}
+
+
+
+Adds widgets to either the sidebar or the main side layout. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em widget\+List} & The list of widgets to add. \\
+\hline
+{\em r} & The role indicating target layout. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_side_bar_widget_a78a193ae7bab3d3f0d15affc37c88420}\index{SideBarWidget@{SideBarWidget}!addLayout@{addLayout}}
+\index{addLayout@{addLayout}!SideBarWidget@{SideBarWidget}}
+\doxysubsubsection{\texorpdfstring{addLayout()}{addLayout()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \label{class_side_bar_widget_a78a193ae7bab3d3f0d15affc37c88420} 
 void Side\+Bar\+Widget\+::add\+Layout (\begin{DoxyParamCaption}\item[{const QWidget\+List \&}]{widget\+List}{, }\item[{\mbox{\hyperlink{class_side_bar_widget_abc77590c7f86b906b48ac7fcfadd46b1}{Role}}}]{r}{}\end{DoxyParamCaption})}
 
@@ -101,7 +172,20 @@ Adds widgets to either the sidebar or the main side layout.
 \end{DoxyParams}
 \Hypertarget{class_side_bar_widget_a198335bded322d74773369bb4136df14}\index{SideBarWidget@{SideBarWidget}!current\_ui\_states@{current\_ui\_states}}
 \index{current\_ui\_states@{current\_ui\_states}!SideBarWidget@{SideBarWidget}}
-\doxysubsubsection{\texorpdfstring{current\_ui\_states()}{current\_ui\_states()}}
+\doxysubsubsection{\texorpdfstring{current\_ui\_states()}{current\_ui\_states()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_side_bar_widget_a198335bded322d74773369bb4136df14} 
+bool Side\+Bar\+Widget\+::current\+\_\+ui\+\_\+states (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the current state of sidebar visibility. 
+
+\begin{DoxyReturn}{Returns}
+True if hidden, false if visible. 
+\end{DoxyReturn}
+\Hypertarget{class_side_bar_widget_a198335bded322d74773369bb4136df14}\index{SideBarWidget@{SideBarWidget}!current\_ui\_states@{current\_ui\_states}}
+\index{current\_ui\_states@{current\_ui\_states}!SideBarWidget@{SideBarWidget}}
+\doxysubsubsection{\texorpdfstring{current\_ui\_states()}{current\_ui\_states()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \label{class_side_bar_widget_a198335bded322d74773369bb4136df14} 
 bool Side\+Bar\+Widget\+::current\+\_\+ui\+\_\+states (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
@@ -114,7 +198,22 @@ True if hidden, false if visible.
 \end{DoxyReturn}
 \Hypertarget{class_side_bar_widget_a5304ab5e143b4078ff8203ca34a94ee5}\index{SideBarWidget@{SideBarWidget}!removeLayout@{removeLayout}}
 \index{removeLayout@{removeLayout}!SideBarWidget@{SideBarWidget}}
-\doxysubsubsection{\texorpdfstring{removeLayout()}{removeLayout()}}
+\doxysubsubsection{\texorpdfstring{removeLayout()}{removeLayout()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_side_bar_widget_a5304ab5e143b4078ff8203ca34a94ee5} 
+void Side\+Bar\+Widget\+::remove\+Layout (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_side_bar_widget_abc77590c7f86b906b48ac7fcfadd46b1}{Role}}}]{r}{}\end{DoxyParamCaption})}
+
+
+
+Removes all widgets from the specified layout role. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & The role indicating which layout to clear. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_side_bar_widget_a5304ab5e143b4078ff8203ca34a94ee5}\index{SideBarWidget@{SideBarWidget}!removeLayout@{removeLayout}}
+\index{removeLayout@{removeLayout}!SideBarWidget@{SideBarWidget}}
+\doxysubsubsection{\texorpdfstring{removeLayout()}{removeLayout()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \label{class_side_bar_widget_a5304ab5e143b4078ff8203ca34a94ee5} 
 void Side\+Bar\+Widget\+::remove\+Layout (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_side_bar_widget_abc77590c7f86b906b48ac7fcfadd46b1}{Role}}}]{r}{}\end{DoxyParamCaption})}
 
@@ -129,7 +228,22 @@ Removes all widgets from the specified layout role.
 \end{DoxyParams}
 \Hypertarget{class_side_bar_widget_a58ddd92c7c107388d068b9b4e7a75ce3}\index{SideBarWidget@{SideBarWidget}!setAnimationCurve@{setAnimationCurve}}
 \index{setAnimationCurve@{setAnimationCurve}!SideBarWidget@{SideBarWidget}}
-\doxysubsubsection{\texorpdfstring{setAnimationCurve()}{setAnimationCurve()}}
+\doxysubsubsection{\texorpdfstring{setAnimationCurve()}{setAnimationCurve()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_side_bar_widget_a58ddd92c7c107388d068b9b4e7a75ce3} 
+void Side\+Bar\+Widget\+::set\+Animation\+Curve (\begin{DoxyParamCaption}\item[{QEasing\+Curve\+::\+Type}]{curve}{}\end{DoxyParamCaption})}
+
+
+
+Sets the easing curve type for the animation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em curve} & The easing curve to use. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_side_bar_widget_a58ddd92c7c107388d068b9b4e7a75ce3}\index{SideBarWidget@{SideBarWidget}!setAnimationCurve@{setAnimationCurve}}
+\index{setAnimationCurve@{setAnimationCurve}!SideBarWidget@{SideBarWidget}}
+\doxysubsubsection{\texorpdfstring{setAnimationCurve()}{setAnimationCurve()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \label{class_side_bar_widget_a58ddd92c7c107388d068b9b4e7a75ce3} 
 void Side\+Bar\+Widget\+::set\+Animation\+Curve (\begin{DoxyParamCaption}\item[{QEasing\+Curve\+::\+Type}]{curve}{}\end{DoxyParamCaption})}
 
@@ -144,7 +258,22 @@ Sets the easing curve type for the animation.
 \end{DoxyParams}
 \Hypertarget{class_side_bar_widget_a564985d9c3fa8b6091ba470513da645e}\index{SideBarWidget@{SideBarWidget}!setAnimationDuration@{setAnimationDuration}}
 \index{setAnimationDuration@{setAnimationDuration}!SideBarWidget@{SideBarWidget}}
-\doxysubsubsection{\texorpdfstring{setAnimationDuration()}{setAnimationDuration()}}
+\doxysubsubsection{\texorpdfstring{setAnimationDuration()}{setAnimationDuration()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_side_bar_widget_a564985d9c3fa8b6091ba470513da645e} 
+void Side\+Bar\+Widget\+::set\+Animation\+Duration (\begin{DoxyParamCaption}\item[{int}]{duration}{}\end{DoxyParamCaption})}
+
+
+
+Sets the animation duration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em duration} & Duration in milliseconds. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_side_bar_widget_a564985d9c3fa8b6091ba470513da645e}\index{SideBarWidget@{SideBarWidget}!setAnimationDuration@{setAnimationDuration}}
+\index{setAnimationDuration@{setAnimationDuration}!SideBarWidget@{SideBarWidget}}
+\doxysubsubsection{\texorpdfstring{setAnimationDuration()}{setAnimationDuration()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \label{class_side_bar_widget_a564985d9c3fa8b6091ba470513da645e} 
 void Side\+Bar\+Widget\+::set\+Animation\+Duration (\begin{DoxyParamCaption}\item[{int}]{duration}{}\end{DoxyParamCaption})}
 
@@ -176,5 +305,7 @@ Sets the visibility of the control button.
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
+extern\+\_\+app/\+Net\+Helper/ui/Side\+Bar\+Widget.\+h\item 
 extern\+\_\+app/pdf\+Reader/ui\+\_\+tools/Side\+Bar\+Widget.\+h\item 
+extern\+\_\+app/\+Net\+Helper/ui/Side\+Bar\+Widget.\+cpp\item 
 extern\+\_\+app/pdf\+Reader/ui\+\_\+tools/Side\+Bar\+Widget.\+cpp\end{DoxyCompactItemize}

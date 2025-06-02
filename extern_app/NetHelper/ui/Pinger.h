@@ -9,6 +9,11 @@ namespace Ui {
 class Pinger;
 }
 
+/**
+ * @brief   The Pinger class holds the ping sessions,
+ *          now it owns the display issue and processing issues
+ *          at one class
+ */
 class Pinger : public QWidget {
 	Q_OBJECT
 	/**

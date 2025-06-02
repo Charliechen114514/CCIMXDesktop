@@ -3,6 +3,10 @@
 #include <QNetworkInterface>
 #include <QObject>
 class QTimer;
+/**
+ * @brief   The InterfacesQuery class query the netcard info,
+ *          if you want to specify query way, modify the class for direct
+ */
 class InterfacesQuery : public QObject {
 	Q_OBJECT
 	static constexpr const unsigned short TIMELY_SCAN_S = 1; ///< peroid of scan

@@ -13,8 +13,7 @@ var searchData=
   ['erroroccurs_10',['errorOccurs',['../class_weather_request.html#ad6741445b3b9ed4fdb60f1a53293e720',1,'WeatherRequest']]],
   ['escapeframe_11',['escapeFrame',['../class_video_player.html#aa694b6b907f0e1935de88613608ff6aa',1,'VideoPlayer::escapeFrame()'],['../class_video_player_impl.html#a81ac288964b7630f2b934f30a871fbc4',1,'VideoPlayerImpl::escapeFrame()'],['../class_video_player_opencv_impl.html#a723cc96210168483c9cdd6a7d8715067',1,'VideoPlayerOpencvImpl::escapeFrame()'],['../class_video_player.html#aa694b6b907f0e1935de88613608ff6aa',1,'VideoPlayer::escapeFrame()'],['../class_video_player_impl.html#a81ac288964b7630f2b934f30a871fbc4',1,'VideoPlayerImpl::escapeFrame()'],['../class_video_player_opencv_impl.html#a723cc96210168483c9cdd6a7d8715067',1,'VideoPlayerOpencvImpl::escapeFrame()']]],
   ['eventfilter_12',['eventFilter',['../class_app_card_widget.html#aaa303f4e4011e02c6cf0c776ca093ac3',1,'AppCardWidget::eventFilter()'],['../class_app_widget.html#a55452cd32f958fb15d12c13f48b02f8d',1,'AppWidget::eventFilter()']]],
-  ['exit_5fcode_13',['exit_code',['../struct_application_wrapper_1_1_application_finish_result.html#a9bd31e7691e31b6be8aff6a0ba60a0c4',1,'ApplicationWrapper::ApplicationFinishResult']]],
-  ['expected_5fappcards_5fwidgets_14',['expected_appcards_widgets',['../class_home_page.html#a760f39daccf8d87ac86d15c0983e1cfe',1,'HomePage']]],
-  ['exportimage_15',['exportImage',['../class_simple_drawing_scene.html#a4789a19367863381cc8f776d33c2e91a',1,'SimpleDrawingScene']]],
-  ['extern_5fapp_20tt_16',['extern_app tt',['../md__components-explain-_c_n.html#autotoc_md35',1,'🚀 &lt;tt&gt;extern_app&lt;/tt&gt;'],['../md__components-explain-_e_n.html#autotoc_md47',1,'🚀 &lt;tt&gt;extern_app&lt;/tt&gt;']]]
+  ['expected_5fappcards_5fwidgets_13',['expected_appcards_widgets',['../class_home_page.html#a760f39daccf8d87ac86d15c0983e1cfe',1,'HomePage']]],
+  ['exportimage_14',['exportImage',['../class_simple_drawing_scene.html#a4789a19367863381cc8f776d33c2e91a',1,'SimpleDrawingScene']]],
+  ['extern_5fapp_20tt_15',['extern_app tt',['../md__components-explain-_c_n.html#autotoc_md35',1,'🚀 &lt;tt&gt;extern_app&lt;/tt&gt;'],['../md__components-explain-_e_n.html#autotoc_md47',1,'🚀 &lt;tt&gt;extern_app&lt;/tt&gt;']]]
 ];
