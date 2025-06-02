@@ -1,0 +1,33 @@
+\doxysection{Easy\+Note\+Main\+Window.\+h}
+\hypertarget{_easy_note_main_window_8h_source}{}\label{_easy_note_main_window_8h_source}\index{extern\_app/EasyNotes/ui/EasyNoteMainWindow.h@{extern\_app/EasyNotes/ui/EasyNoteMainWindow.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ EASYNOTEMAINWINDOW\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ EASYNOTEMAINWINDOW\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QMainWindow>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ QT\_BEGIN\_NAMESPACE}
+\DoxyCodeLine{00007\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }EasyNoteMainWindow;}
+\DoxyCodeLine{00009\ \}}
+\DoxyCodeLine{00010\ QT\_END\_NAMESPACE}
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_left_side_bar}{LeftSideBar}};}
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_main_side_bar}{MainSideBar}};}
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_easy_note_main_window_ae6705225b3296031ff6eee649e036a81}{EasyNoteMainWindow}}\ :\ \textcolor{keyword}{public}\ QMainWindow\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_easy_note_main_window_ae6705225b3296031ff6eee649e036a81}{EasyNoteMainWindow}}(QWidget*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_easy_note_main_window_ae6705225b3296031ff6eee649e036a81}{\string~EasyNoteMainWindow}}();}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00030\ \ \ \ \ Ui::EasyNoteMainWindow*\ ui;\ }
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_left_side_bar}{LeftSideBar}}*\ left;\ }
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{class_main_side_bar}{MainSideBar}}*\ mainSideBar;\ }
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ init\_connections();}
+\DoxyCodeLine{00035\ \};}
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ EASYNOTEMAINWINDOW\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LeftSideBar</class>
+ <widget class="QWidget" name="LeftSideBar">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>324</width>
+    <height>390</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/*--------------------------------------
+   QToolBox
+  --------------------------------------*/
+QToolBox::tab {
+    background-color: #b3e5fc;     /* 浅蓝色标签背景 */
+    color: #01579b;                /* 深蓝文字 */
+    border: 1px solid #4fc3f7;     /* 蓝色边框 */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-top: 2px;
+}
+
+QToolBox::tab:selected {
+    background-color: #81d4fa;     /* 选中更深浅蓝 */
+    font-weight: bold;             /* 加粗选中标签 */
+}
+
+QToolBox::tab:hover {
+    background-color: #b2ebf2;     /* 悬停微亮蓝色 */
+}
+
+/*--------------------------------------
+   QPushButton
+  --------------------------------------*/
+QPushButton {
+    background-color: #b3e5fc;     /* 浅蓝背景 */
+    color: #01579b;                /* 深蓝文字 */
+    border: 2px solid #4fc3f7;
+    border-radius: 6px;
+    padding: 6px 12px;
+}
+
+QPushButton:hover {
+    background-color: #81d4fa;     /* 悬停更深蓝 */
+}
+
+QPushButton:pressed {
+    background-color: #4fc3f7;     /* 按下亮蓝 */
+    color: white;
+}
+
+QPushButton:disabled {
+    background-color: #e0f7fa;     /* 禁用淡蓝 */
+    color: #9e9e9e;                /* 灰色文字 */
+    border: 2px solid #b0bec5;     /* 灰色边框 */
+}
+
+/*--------------------------------------
+   QListWidget
+  --------------------------------------*/
+QListWidget {
+    background-color: #e0f7fa;     /* 浅蓝背景 */
+    color: #01579b;                /* 深蓝文字 */
+    border: 1px solid #81d4fa;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+/* QListWidget item 普通状态 */
+QListWidget::item {
+    background-color: transparent;
+    border: none;
+    padding: 4px;
+    margin: 2px;
+}
+
+/* QListWidget item 选中状态 */
+QListWidget::item:selected {
+    background-color: #b3e5fc;     /* 选中浅蓝色 */
+    color: #004d40;                /* 选中深蓝绿色 */
+    border-radius: 4px;
+}
+
+/* QListWidget item 悬停状态 */
+QListWidget::item:hover {
+    background-color: #b2ebf2;     /* 悬停亮蓝 */
+}
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QToolBox" name="toolBox">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="page">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>312</width>
+        <height>330</height>
+       </rect>
+      </property>
+      <attribute name="label">
+       <string>History</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QListWidget" name="history_widget"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_clear">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>clear</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_3">
+      <attribute name="label">
+       <string>Temperary</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QListWidget" name="temp_list"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_delete">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>delete</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_clear_temp">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>clear</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

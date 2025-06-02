@@ -3,7 +3,7 @@ var searchData=
   ['about_5ffetch_5fframe_0',['about_fetch_frame',['../class_video_player.html#a89a61f323510f49f1948b2717c1ca483',1,'VideoPlayer::about_fetch_frame()'],['../class_video_player.html#a89a61f323510f49f1948b2717c1ca483',1,'VideoPlayer::about_fetch_frame()']]],
   ['aboutmainwindow_1',['AboutMainWindow',['../class_about_main_window.html',1,'AboutMainWindow'],['../class_about_main_window.html#a95c30d3e3bd081027a788bc9e17b1a38',1,'AboutMainWindow::AboutMainWindow()']]],
   ['actuallist_2',['actualList',['../class_c_c_media_play_list.html#a5e0b767ee157bfb31d8448da10f43e4b',1,'CCMediaPlayList']]],
-  ['addlayout_3',['addLayout',['../class_side_bar_widget.html#a78a193ae7bab3d3f0d15affc37c88420',1,'SideBarWidget::addLayout(const QWidgetList &amp;widgetList, Role r)'],['../class_side_bar_widget.html#a78a193ae7bab3d3f0d15affc37c88420',1,'SideBarWidget::addLayout(const QWidgetList &amp;widgetList, Role r)']]],
+  ['addlayout_3',['addLayout',['../class_side_bar_widget.html#a78a193ae7bab3d3f0d15affc37c88420',1,'SideBarWidget::addLayout(const QWidgetList &amp;widgetList, Role r)'],['../class_side_bar_widget.html#a78a193ae7bab3d3f0d15affc37c88420',1,'SideBarWidget::addLayout(const QWidgetList &amp;widgetList, Role r)'],['../class_side_bar_widget.html#a78a193ae7bab3d3f0d15affc37c88420',1,'SideBarWidget::addLayout(const QWidgetList &amp;widgetList, Role r)']]],
   ['albumartist_4',['albumArtist',['../struct_media_info.html#a0fe1b8a2642e8679e9e5fbd210ea01c9',1,'MediaInfo']]],
   ['albumtitle_5',['albumTitle',['../struct_media_info.html#a6609ecb62d2db45fed5e662795648269',1,'MediaInfo']]],
   ['als_6',['als',['../struct_a_p3216_c_data.html#a40669cff46ee430f2fd1e716ad24b43b',1,'AP3216CData']]],

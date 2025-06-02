@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainSideBar</class>
+ <widget class="QWidget" name="MainSideBar">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>610</width>
+    <height>363</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* QTextBrowser 浅蓝色主题 */
+QTextBrowser {
+    background-color: #e0f7fa;     /* 浅蓝色背景 */
+    color: #004d40;                /* 深色文字 */
+    border: 1px solid #81d4fa;     /* 边框 */
+    border-radius: 4px;
+    padding: 4px;
+}
+
+/* QPlainTextEdit 浅蓝色主题 */
+QPlainTextEdit {
+    background-color: #e0f7fa;     /* 浅蓝色背景 */
+    color: #004d40;                /* 深色文字 */
+    border: 1px solid #81d4fa;     /* 边框 */
+    border-radius: 4px;
+    padding: 4px;
+}
+</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QSplitter" name="splitter">
+     <property name="orientation">
+      <enum>Qt::Orientation::Horizontal</enum>
+     </property>
+     <widget class="QPlainTextEdit" name="rawTextEditor"/>
+     <widget class="QTextBrowser" name="makrdown_shower"/>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

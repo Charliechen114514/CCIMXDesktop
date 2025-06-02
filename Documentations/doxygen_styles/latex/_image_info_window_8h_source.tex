@@ -1,0 +1,32 @@
+\doxysection{Image\+Info\+Window.\+h}
+\hypertarget{_image_info_window_8h_source}{}\label{_image_info_window_8h_source}\index{builtin/app/ImageWalker/ui/ImageInfoWindow.h@{builtin/app/ImageWalker/ui/ImageInfoWindow.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ IMAGEINFOWINDOW\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ IMAGEINFOWINDOW\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QMainWindow>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }ImageInfoWindow;}
+\DoxyCodeLine{00008\ \}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_image_info_window_ac50e152297df05059e4fbf48a4f59f86}{ImageInfoWindow}}\ :\ \textcolor{keyword}{public}\ QMainWindow\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_image_info_window_ac50e152297df05059e4fbf48a4f59f86}{ImageInfoWindow}}(QWidget*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00023\ \ \ \ \ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_image_info_window_ad79a5c6aea92ba9fa11ab0dc7d20465e}{set\_image\_path}}(\textcolor{keyword}{const}\ QString\&\ path);\ }
+\DoxyCodeLine{00025\ \ \ \ \ QString\ \mbox{\hyperlink{class_image_info_window_ad480ad2442d6473c76fc06d297695537}{get\_image\_path}}()\ \{\ \textcolor{keywordflow}{return}\ image\_path;\ \}\ }
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_image_info_window}{\string~ImageInfoWindow}}();}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00029\ \ \ \ \ QString\ image\_path\ \{\};\ }
+\DoxyCodeLine{00030\ \ \ \ \ Ui::ImageInfoWindow*\ ui;\ }
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_image_info_window_ac50e152297df05059e4fbf48a4f59f86}{ImageInfoWindow}}*\ infoWindow;\ }
+\DoxyCodeLine{00032\ \};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ IMAGEINFOWINDOW\_H}}
+
+\end{DoxyCode}

@@ -18,12 +18,13 @@ var searchData=
   ['diskmusic_15',['DiskMusic',['../class_disk_music.html#a52e7e5538b7dd97800593c88dc5ff0f4',1,'DiskMusic']]],
   ['display_16',['display',['../namespace_c_v_tools.html#a51a3b55ab64608c385c9d063fcd70865',1,'CVTools::display(const CVImage &amp;image, const DisplayParams &amp;params)'],['../namespace_c_v_tools.html#a0063503f9a8f2a5d67689640b535b44a',1,'CVTools::display(const CVImage &amp;image, const char *name)']]],
   ['display_5fframe_17',['display_frame',['../class_media_player.html#a64d0a37efe32f9aafacc3c36c87d7d70',1,'MediaPlayer']]],
-  ['do_5fshow_5ftoast_18',['do_show_toast',['../class_desktop_toast.html#a3acb239f25191bd1018d90cf8601f8c7',1,'DesktopToast::do_show_toast(QString msg)'],['../class_desktop_toast.html#a3acb239f25191bd1018d90cf8601f8c7',1,'DesktopToast::do_show_toast(QString msg)'],['../class_desktop_toast.html#a3acb239f25191bd1018d90cf8601f8c7',1,'DesktopToast::do_show_toast(QString msg)']]],
-  ['document_5fload_19',['document_load',['../class_c_c_pdf_document.html#ac7a27d7e7420a45635a4fd872b11587d',1,'CCPdfDocument']]],
-  ['document_5floaded_20',['document_loaded',['../class_c_c_pdf_document.html#a49341806a63155ce6222962c0b741bdf',1,'CCPdfDocument']]],
-  ['document_5fpage_21',['document_page',['../class_c_c_pdf_document.html#abf9058577d2c7f75dd522bef8bd1ace5',1,'CCPdfDocument']]],
-  ['downdockwidget_22',['DownDockWidget',['../class_down_dock_widget.html#aece8d1a8bb339ee68244eb3e6bd749ef',1,'DownDockWidget']]],
-  ['downdockwidget_23',['downDockWidget',['../class_desktop_main_window.html#a3c9d1ee127d737faa6b73e162a4c28b3',1,'DesktopMainWindow']]],
-  ['drawerwindow_24',['DrawerWindow',['../class_drawer_window.html#a85e4595657cc69f2c1d13025db874191',1,'DrawerWindow']]],
-  ['durationchanged_25',['durationChanged',['../class_media_player.html#a846e3dba84bab9f426810ffbd9c6d995',1,'MediaPlayer']]]
+  ['display_5ftemperary_18',['display_temperary',['../class_main_side_bar.html#a5a2f33a2f598d2058c95144091fafe36',1,'MainSideBar']]],
+  ['do_5fshow_5ftoast_19',['do_show_toast',['../class_desktop_toast.html#a3acb239f25191bd1018d90cf8601f8c7',1,'DesktopToast::do_show_toast(QString msg)'],['../class_desktop_toast.html#a3acb239f25191bd1018d90cf8601f8c7',1,'DesktopToast::do_show_toast(QString msg)'],['../class_desktop_toast.html#a3acb239f25191bd1018d90cf8601f8c7',1,'DesktopToast::do_show_toast(QString msg)']]],
+  ['document_5fload_20',['document_load',['../class_c_c_pdf_document.html#ac7a27d7e7420a45635a4fd872b11587d',1,'CCPdfDocument']]],
+  ['document_5floaded_21',['document_loaded',['../class_c_c_pdf_document.html#a49341806a63155ce6222962c0b741bdf',1,'CCPdfDocument']]],
+  ['document_5fpage_22',['document_page',['../class_c_c_pdf_document.html#abf9058577d2c7f75dd522bef8bd1ace5',1,'CCPdfDocument']]],
+  ['downdockwidget_23',['DownDockWidget',['../class_down_dock_widget.html#aece8d1a8bb339ee68244eb3e6bd749ef',1,'DownDockWidget']]],
+  ['downdockwidget_24',['downDockWidget',['../class_desktop_main_window.html#a3c9d1ee127d737faa6b73e162a4c28b3',1,'DesktopMainWindow']]],
+  ['drawerwindow_25',['DrawerWindow',['../class_drawer_window.html#a85e4595657cc69f2c1d13025db874191',1,'DrawerWindow']]],
+  ['durationchanged_26',['durationChanged',['../class_media_player.html#a846e3dba84bab9f426810ffbd9c6d995',1,'MediaPlayer']]]
 ];

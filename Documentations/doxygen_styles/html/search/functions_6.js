@@ -37,5 +37,6 @@ var searchData=
   ['fresh_5frender_34',['fresh_render',['../class_c_c_pdf_viewer.html#ac7f3f2ba436fba2eedeaf5580d4630d5',1,'CCPdfViewer']]],
   ['fresh_5fzoom_35',['fresh_zoom',['../class_c_c_pdf_viewer.html#ad2087b6950aafc024c98aa3bc1ec2277',1,'CCPdfViewer']]],
   ['from_5fmedia_5flist_36',['from_media_list',['../class_play_list_main_window.html#afcb0cd77e1910e75723c05413b78256c',1,'PlayListMainWindow']]],
-  ['from_5fname_5fquery_37',['from_name_query',['../class_interfaces_query.html#a76595a4ff47f886a014ac0829d483249',1,'InterfacesQuery']]]
+  ['from_5fname_37',['from_name',['../class_image_browser.html#a2fc84c797638313ac149baf6a769693c',1,'ImageBrowser']]],
+  ['from_5fname_5fquery_38',['from_name_query',['../class_interfaces_query.html#a76595a4ff47f886a014ac0829d483249',1,'InterfacesQuery']]]
 ];

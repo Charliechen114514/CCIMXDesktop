@@ -40,11 +40,11 @@ var NAVTREE =
       [ "🌐 Before you get started, choose your language! 🌐", "md__r_e_a_d_m_e___e_n.html#autotoc_md15", null ],
       [ "🌟 Project Overview 🌟", "md__r_e_a_d_m_e___e_n.html#autotoc_md16", null ],
       [ "Some running screenshots", "md__r_e_a_d_m_e___e_n.html#autotoc_md18", null ],
-      [ "🛠️ Technologies used for basic builds", "md__r_e_a_d_m_e___e_n.html#autotoc_md19", null ],
+      [ "🛠️ Basic build technologies", "md__r_e_a_d_m_e___e_n.html#autotoc_md19", null ],
       [ "🛠️ Full build of technologies", "md__r_e_a_d_m_e___e_n.html#autotoc_md20", null ],
       [ "🧩 Developer Reference", "md__r_e_a_d_m_e___e_n.html#autotoc_md22", null ],
       [ "📚Project Documentation", "md__r_e_a_d_m_e___e_n.html#autotoc_md24", null ],
-      [ "💡 Future plans", "md__r_e_a_d_m_e___e_n.html#autotoc_md25", null ],
+      [ "💡 Future Plans", "md__r_e_a_d_m_e___e_n.html#autotoc_md25", null ],
       [ "📝 License", "md__r_e_a_d_m_e___e_n.html#autotoc_md27", null ]
     ] ],
     [ "🧩 模块描述", "md__components-explain-_c_n.html", [
@@ -98,11 +98,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_a_p3216_c_adapter_factory_8h_source.html",
-"class_c_c_pdf_viewer.html#a51b31290cb21bdd0dd2e77a1546d6b52",
-"class_l_e_d_params_package.html#a7e2b587ad66e30538a98581e1f89396f",
-"class_sports_chart.html#a5f5ac560c8ab4cf367cacb93f5ef544f",
-"functions_func_l.html",
-"struct_memory_info_fetcher_1_1_memory_stat.html#af82091061732a922014ca83542a515de"
+"class_c_c_pdf_scroll_area.html#a659bde2f5fe452c6cc90e0c8c042b18a",
+"class_image_browser.html#a4d5e821492b9205bdddba3188899d033",
+"class_process_broswer.html#a6c98f09926657816ca7c816b14f23fdb",
+"class_weather_request.html#a472973ba5b01c6b681f831470c8e8ec4",
+"struct_app_weather_result_1_1_daily_weather.html#a2faa8ee092e1b9a6cd8ca85fc523196f"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>exit.png</file>
+        <file>toolbox.png</file>
+        <file>open.png</file>
+        <file>quit.png</file>
+        <file>save.png</file>
+        <file>temp_store.png</file>
+        <file>bold.png</file>
+        <file>italic.png</file>
+        <file>underline.png</file>
+    </qresource>
+</RCC>

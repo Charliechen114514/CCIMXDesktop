@@ -1,0 +1,189 @@
+\doxysection{Image\+Core Class Reference}
+\hypertarget{class_image_core}{}\label{class_image_core}\index{ImageCore@{ImageCore}}
+
+
+\doxylink{class_image_core}{Image\+Core} indicates the basic image core utils, by providing the loadable image path.  
+
+
+
+
+{\ttfamily \#include $<$Image\+Core.\+h$>$}
+
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{class_image_core_a1d14c00e103a8bd25db2424fa87426a9}{Error\+Type}} \{ \mbox{\hyperlink{class_image_core_a1d14c00e103a8bd25db2424fa87426a9af66a586ec3c9e5838a94776b72b6672e}{NOTHING\+\_\+\+THEN}}
+, \mbox{\hyperlink{class_image_core_a1d14c00e103a8bd25db2424fa87426a9abfca37b7417b963c72551f88ce9c00b4}{IMAGEREQ\+\_\+\+OVERFLOW}}
+, \mbox{\hyperlink{class_image_core_a1d14c00e103a8bd25db2424fa87426a9a2ac31ec6893464e48666f8e4578488f6}{IMAGEREQ\+\_\+\+UNDERFLOW}}
+ \}
+\begin{DoxyCompactList}\small\item\em The \doxylink{class_image_core_a1d14c00e103a8bd25db2424fa87426a9}{Error\+Type} enum. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_image_core_a0e1b037a00c1f62c84c10f7882de828a}\label{class_image_core_a0e1b037a00c1f62c84c10f7882de828a} 
+{\bfseries Image\+Core} ()=default
+\begin{DoxyCompactList}\small\item\em \doxylink{class_image_core}{Image\+Core}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_image_core_aabe7ddd3afc80229596b1760610de664}{en\+Images}} (const QString\+List \&l)
+\begin{DoxyCompactList}\small\item\em en\+Images input images \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_image_core_a197957d29a63bd568824b2df0029559f}{remove\+Images}} (const QString\+List \&what)
+\begin{DoxyCompactList}\small\item\em remove\+Images remove images \end{DoxyCompactList}\item 
+std\+::optional$<$ QString $>$ \mbox{\hyperlink{class_image_core_a51ff054dde2b15ffdda7afd49ac2c985}{peek}} (const int \mbox{\hyperlink{class_image_core_a7e95744c1deb8e15d7470552a4f21c71}{index}})
+\begin{DoxyCompactList}\small\item\em peek get the index to and fetch result \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_image_core_a1d14c00e103a8bd25db2424fa87426a9}{Error\+Type}} \mbox{\hyperlink{class_image_core_a65aeb034be97ac992d142233fd114623}{error\+Type}} () const
+\begin{DoxyCompactList}\small\item\em error\+Type get the error\+Type \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_image_core_a95f6a101589f8bb25f069e332cefaff4}{size}} () const
+\begin{DoxyCompactList}\small\item\em size get the image size \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_image_core_a33f8b86c604efea18bc1b9cc4dc0c7fd}{empty}} () const
+\begin{DoxyCompactList}\small\item\em empty check if empty now \end{DoxyCompactList}\item 
+\Hypertarget{class_image_core_a0686cbaac49158af1565a3b7ed4076f6}\label{class_image_core_a0686cbaac49158af1565a3b7ed4076f6} 
+void {\bfseries clear} ()
+\begin{DoxyCompactList}\small\item\em clear clears up the holdings \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_image_core_a7e95744c1deb8e15d7470552a4f21c71}{index}} (const QString \&path)
+\begin{DoxyCompactList}\small\item\em fetch the index of holding path \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_image_core}{Image\+Core} indicates the basic image core utils, by providing the loadable image path. 
+
+\doxysubsection{Member Enumeration Documentation}
+\Hypertarget{class_image_core_a1d14c00e103a8bd25db2424fa87426a9}\index{ImageCore@{ImageCore}!ErrorType@{ErrorType}}
+\index{ErrorType@{ErrorType}!ImageCore@{ImageCore}}
+\doxysubsubsection{\texorpdfstring{ErrorType}{ErrorType}}
+{\footnotesize\ttfamily \label{class_image_core_a1d14c00e103a8bd25db2424fa87426a9} 
+enum class \mbox{\hyperlink{class_image_core_a1d14c00e103a8bd25db2424fa87426a9}{Image\+Core\+::\+Error\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+The \doxylink{class_image_core_a1d14c00e103a8bd25db2424fa87426a9}{Error\+Type} enum. 
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NOTHING\_THEN@{NOTHING\_THEN}!ImageCore@{ImageCore}}\index{ImageCore@{ImageCore}!NOTHING\_THEN@{NOTHING\_THEN}}}\Hypertarget{class_image_core_a1d14c00e103a8bd25db2424fa87426a9af66a586ec3c9e5838a94776b72b6672e}\label{class_image_core_a1d14c00e103a8bd25db2424fa87426a9af66a586ec3c9e5838a94776b72b6672e} 
+NOTHING\+\_\+\+THEN&OK. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IMAGEREQ\_OVERFLOW@{IMAGEREQ\_OVERFLOW}!ImageCore@{ImageCore}}\index{ImageCore@{ImageCore}!IMAGEREQ\_OVERFLOW@{IMAGEREQ\_OVERFLOW}}}\Hypertarget{class_image_core_a1d14c00e103a8bd25db2424fa87426a9abfca37b7417b963c72551f88ce9c00b4}\label{class_image_core_a1d14c00e103a8bd25db2424fa87426a9abfca37b7417b963c72551f88ce9c00b4} 
+IMAGEREQ\+\_\+\+OVERFLOW&overflow request \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IMAGEREQ\_UNDERFLOW@{IMAGEREQ\_UNDERFLOW}!ImageCore@{ImageCore}}\index{ImageCore@{ImageCore}!IMAGEREQ\_UNDERFLOW@{IMAGEREQ\_UNDERFLOW}}}\Hypertarget{class_image_core_a1d14c00e103a8bd25db2424fa87426a9a2ac31ec6893464e48666f8e4578488f6}\label{class_image_core_a1d14c00e103a8bd25db2424fa87426a9a2ac31ec6893464e48666f8e4578488f6} 
+IMAGEREQ\+\_\+\+UNDERFLOW&underflow request \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_image_core_a33f8b86c604efea18bc1b9cc4dc0c7fd}\index{ImageCore@{ImageCore}!empty@{empty}}
+\index{empty@{empty}!ImageCore@{ImageCore}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily \label{class_image_core_a33f8b86c604efea18bc1b9cc4dc0c7fd} 
+bool Image\+Core\+::empty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+empty check if empty now 
+
+\begin{DoxyReturn}{Returns}
+is empty? 
+\end{DoxyReturn}
+\Hypertarget{class_image_core_aabe7ddd3afc80229596b1760610de664}\index{ImageCore@{ImageCore}!enImages@{enImages}}
+\index{enImages@{enImages}!ImageCore@{ImageCore}}
+\doxysubsubsection{\texorpdfstring{enImages()}{enImages()}}
+{\footnotesize\ttfamily \label{class_image_core_aabe7ddd3afc80229596b1760610de664} 
+void Image\+Core\+::en\+Images (\begin{DoxyParamCaption}\item[{const QString\+List \&}]{l}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+en\+Images input images 
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & the images \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_image_core_a65aeb034be97ac992d142233fd114623}\index{ImageCore@{ImageCore}!errorType@{errorType}}
+\index{errorType@{errorType}!ImageCore@{ImageCore}}
+\doxysubsubsection{\texorpdfstring{errorType()}{errorType()}}
+{\footnotesize\ttfamily \label{class_image_core_a65aeb034be97ac992d142233fd114623} 
+\mbox{\hyperlink{class_image_core_a1d14c00e103a8bd25db2424fa87426a9}{Error\+Type}} Image\+Core\+::error\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+error\+Type get the error\+Type 
+
+\begin{DoxyReturn}{Returns}
+error\+Type 
+\end{DoxyReturn}
+\Hypertarget{class_image_core_a7e95744c1deb8e15d7470552a4f21c71}\index{ImageCore@{ImageCore}!index@{index}}
+\index{index@{index}!ImageCore@{ImageCore}}
+\doxysubsubsection{\texorpdfstring{index()}{index()}}
+{\footnotesize\ttfamily \label{class_image_core_a7e95744c1deb8e15d7470552a4f21c71} 
+int Image\+Core\+::index (\begin{DoxyParamCaption}\item[{const QString \&}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+fetch the index of holding path 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_image_core_a51ff054dde2b15ffdda7afd49ac2c985}\index{ImageCore@{ImageCore}!peek@{peek}}
+\index{peek@{peek}!ImageCore@{ImageCore}}
+\doxysubsubsection{\texorpdfstring{peek()}{peek()}}
+{\footnotesize\ttfamily \label{class_image_core_a51ff054dde2b15ffdda7afd49ac2c985} 
+std\+::optional$<$ QString $>$ Image\+Core\+::peek (\begin{DoxyParamCaption}\item[{const int}]{index}{}\end{DoxyParamCaption})}
+
+
+
+peek get the index to and fetch result 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & index query index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+possible path 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+if failed, you need to query the error\+Type to see the details 
+\end{DoxyNote}
+\Hypertarget{class_image_core_a197957d29a63bd568824b2df0029559f}\index{ImageCore@{ImageCore}!removeImages@{removeImages}}
+\index{removeImages@{removeImages}!ImageCore@{ImageCore}}
+\doxysubsubsection{\texorpdfstring{removeImages()}{removeImages()}}
+{\footnotesize\ttfamily \label{class_image_core_a197957d29a63bd568824b2df0029559f} 
+void Image\+Core\+::remove\+Images (\begin{DoxyParamCaption}\item[{const QString\+List \&}]{what}{}\end{DoxyParamCaption})}
+
+
+
+remove\+Images remove images 
+
+
+\begin{DoxyParams}{Parameters}
+{\em what} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_image_core_a95f6a101589f8bb25f069e332cefaff4}\index{ImageCore@{ImageCore}!size@{size}}
+\index{size@{size}!ImageCore@{ImageCore}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily \label{class_image_core_a95f6a101589f8bb25f069e332cefaff4} 
+int Image\+Core\+::size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+size get the image size 
+
+\begin{DoxyReturn}{Returns}
+image size 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+builtin/app/\+Image\+Walker/core/Image\+Core.\+h\item 
+builtin/app/\+Image\+Walker/core/Image\+Core.\+cpp\end{DoxyCompactItemize}

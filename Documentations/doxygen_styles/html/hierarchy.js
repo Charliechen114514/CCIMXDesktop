@@ -42,6 +42,7 @@ var hierarchy =
     [ "ICM20608AppData", "struct_i_c_m20608_app_data.html", null ],
     [ "ICM20608Data", "struct_i_c_m20608_data.html", null ],
     [ "ICM20608DataFactory", "class_i_c_m20608_data_factory.html", null ],
+    [ "ImageCore", "class_image_core.html", null ],
     [ "WallPaperAnimationHandler::ImagePoolEngine", "struct_wall_paper_animation_handler_1_1_image_pool_engine.html", null ],
     [ "CCPdfNavigationPolicy::Indicator", "struct_c_c_pdf_navigation_policy_1_1_indicator.html", null ],
     [ "LEDController", "class_l_e_d_controller.html", null ],
@@ -72,13 +73,19 @@ var hierarchy =
     [ "QGraphicsScene", null, [
       [ "SimpleDrawingScene", "class_simple_drawing_scene.html", null ]
     ] ],
+    [ "QLabel", null, [
+      [ "ImageLabel", "class_image_label.html", null ]
+    ] ],
     [ "QMainWindow", null, [
       [ "AboutMainWindow", "class_about_main_window.html", null ],
       [ "CCNoterWindow", "class_c_c_noter_window.html", null ],
       [ "CameraWindow", "class_camera_window.html", null ],
       [ "DesktopMainWindow", "class_desktop_main_window.html", null ],
       [ "DrawerWindow", "class_drawer_window.html", null ],
+      [ "EasyNoteMainWindow", "class_easy_note_main_window.html", null ],
       [ "EnvironmentWindow", "class_environment_window.html", null ],
+      [ "ImageInfoWindow", "class_image_info_window.html", null ],
+      [ "ImageWalkerWindow", "class_image_walker_window.html", null ],
       [ "LightControllerWindow", "class_light_controller_window.html", null ],
       [ "MainWindow", "class_main_window.html", null ],
       [ "MainWindow", "class_main_window.html", null ],
@@ -145,14 +152,18 @@ var hierarchy =
       [ "FileInfoDisplayWidget", "class_file_info_display_widget.html", null ],
       [ "GaugeWidget", "class_gauge_widget.html", null ],
       [ "HomePage", "class_home_page.html", null ],
+      [ "ImageBrowser", "class_image_browser.html", null ],
       [ "InterfacesDisplayWidget", "class_interfaces_display_widget.html", null ],
+      [ "LeftSideBar", "class_left_side_bar.html", null ],
       [ "MainShowWidget", "class_main_show_widget.html", null ],
+      [ "MainSideBar", "class_main_side_bar.html", null ],
       [ "MemoryUsageChart", "class_memory_usage_chart.html", null ],
       [ "Pinger", "class_pinger.html", null ],
       [ "ProcessBrowserWidget", "class_process_browser_widget.html", null ],
       [ "ReadMeWidget", "class_read_me_widget.html", null ],
       [ "Scanner", "class_scanner.html", null ],
       [ "ScrollingLabel", "class_scrolling_label.html", null ],
+      [ "SideBarWidget", "class_side_bar_widget.html", null ],
       [ "SideBarWidget", "class_side_bar_widget.html", null ],
       [ "SideBarWidget", "class_side_bar_widget.html", null ],
       [ "SimpleDrawerWidget", "class_simple_drawer_widget.html", null ],
@@ -164,6 +175,7 @@ var hierarchy =
       [ "WeatherDailyCard", "class_weather_daily_card.html", null ]
     ] ],
     [ "rol", "structrol.html", null ],
+    [ "TemperaryCacher", "class_temperary_cacher.html", null ],
     [ "VideoPlayerImpl", "class_video_player_impl.html", [
       [ "VideoPlayerOpencvImpl", "class_video_player_opencv_impl.html", null ],
       [ "VideoPlayerOpencvImpl", "class_video_player_opencv_impl.html", null ]

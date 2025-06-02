@@ -1,0 +1,30 @@
+\doxysection{Image\+Label.\+h}
+\hypertarget{_image_label_8h_source}{}\label{_image_label_8h_source}\index{builtin/app/ImageWalker/ui/ImageLabel.h@{builtin/app/ImageWalker/ui/ImageLabel.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ IMAGELABEL\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ IMAGELABEL\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QLabel>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QImage>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_image_label_ab0a101dbaf19491729fff3913c039007}{ImageLabel}}\ :\ \textcolor{keyword}{public}\ QLabel\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_image_label_ab0a101dbaf19491729fff3913c039007}{ImageLabel}}(QWidget*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_image_label_a164ec4e9572bb56e734bb88f7daf4516}{setImage}}(\textcolor{keyword}{const}\ QImage\&\ image);}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_image_label_a3a6440e60dfa2f928210c919943d7c40}{resizeEvent}}(QResizeEvent*\ event)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00039\ \ \ \ \ QImage\ currentImage;}
+\DoxyCodeLine{00040\ \};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ IMAGELABEL\_H}}
+
+\end{DoxyCode}

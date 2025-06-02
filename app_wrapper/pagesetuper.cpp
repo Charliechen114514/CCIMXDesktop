@@ -158,6 +158,14 @@ QList<AppWidget*> PageSetuper::create_real_app(DesktopMainWindow* mainWindow) {
 		mainWindow));
 #endif
 
+#ifdef INCLUDE_EASYNOTE_APP
+	req.push_back(make_up_request(
+		_EXTERNAPP_INSTALL_DIR "/EasyNotes",
+		":/icons/sources/EasyNote.png",
+		"EasyNotes",
+		mainWindow));
+#endif
+
 	return PageSetuper::create_one_app_only_page_append(mainWindow, req);
 }
 
@@ -182,6 +190,12 @@ QList<AppWidget*> PageSetuper::create_builtin_apps(DesktopMainWindow* mainWindow
 		_EXTERNAPP_INSTALL_DIR "/CCIMXNoter",
 		":/icons/sources/notepad.png",
 		"CCIMXNoter",
+		mainWindow));
+
+	req.push_back(make_up_request(
+		_EXTERNAPP_INSTALL_DIR "/ImageWalker",
+		":/icons/sources/image_walker.png",
+		"ImageWalker",
 		mainWindow));
 
 	return PageSetuper::create_one_app_only_page_append(mainWindow, req);

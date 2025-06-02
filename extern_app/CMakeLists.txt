@@ -37,3 +37,9 @@ if(INCLUDE_NETHELPER_APP)
     message(STATUS "NetHelper App is enabled due to the INCLUDE_NETHELPER_APP")
     add_subdirectory(NetHelper)
 endif()
+
+if(INCLUDE_EASYNOTE_APP)
+    message(STATUS "EasyNotes App is enabled due to the INCLUDE_EASYNOTE_APP")
+    add_subdirectory(EasyNotes)
+endif()
+

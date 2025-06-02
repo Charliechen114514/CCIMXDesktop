@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ImageInfoWindow</class>
+ <widget class="QMainWindow" name="ImageInfoWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1024</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* 基础窗口背景 */
+QMainWindow {
+    background-color: #e6f1f8; /* 浅蓝色背景 */
+    color: #333;
+    font-family: &quot;Microsoft YaHei&quot;, &quot;Helvetica&quot;, sans-serif;
+    font-size: 14px;
+}
+
+/* 工具栏样式 */
+QToolBar {
+    background-color: #d9eaf5;
+    border: 1px solid #c0d7e8;
+    spacing: 6px;
+}
+
+QToolBar QToolButton {
+    background-color: #cce4f6;
+    border: 1px solid #a9c7d9;
+    border-radius: 4px;
+    padding: 4px 8px;
+    color: #004c7f;
+}
+
+QToolBar QToolButton:hover {
+    background-color: #b5d7ec;
+}
+
+QToolBar QToolButton:pressed {
+    background-color: #9bcce2;
+    border-color: #7ab0c7;
+}
+
+QToolBar QToolButton:checked {
+    background-color: #7fbcd6;
+    color: #ffffff;
+}
+
+/* 缩略图标签美化 */
+QLabel#labelThumbnail {
+    border: 2px solid #99c2d8;
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 4px;
+    min-width: 256px;
+    min-height: 256px;
+    qproperty-alignment: AlignCenter;
+}
+
+/* 右侧详细信息表单布局 */
+QFormLayout QLabel {
+    color: #003366;
+    font-weight: bold;
+}
+
+/* 右侧每个标签信息 */
+QLabel#labelFileName, QLabel#labelFileSize, QLabel#labelFilePath,
+QLabel#labelImageSize, QLabel#labelDpi, QLabel#labelDepth,
+QLabel#labelCreated, QLabel#labelModified {
+    color: #005580;
+    background-color: #f0f9ff;
+    border: 1px solid #c0d7e8;
+    border-radius: 4px;
+    padding: 2px 6px;
+}
+
+/* 鼠标悬浮提示 */
+QLabel#labelFilePath:hover {
+    color: #ff6600;
+    text-decoration: underline;
+}
+
+/* QScrollBar 美化（如果窗口有滚动条） */
+QScrollBar:vertical {
+    background: #cce4f6;
+    width: 12px;
+    margin: 4px 0;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:vertical {
+    background: #99c2d8;
+    min-height: 20px;
+    border-radius: 6px;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    background: none;
+}
+
+QScrollBar:horizontal {
+    background: #cce4f6;
+    height: 12px;
+    margin: 0 4px;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:horizontal {
+    background: #99c2d8;
+    min-width: 20px;
+    border-radius: 6px;
+}
+
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+    background: none;
+}
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="ImageLabel" name="labelThumbnail">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget" native="true">
+      <property name="maximumSize">
+       <size>
+        <width>250</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="labelFileName">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelModified">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelFileSize">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelImageSize">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelFilePath">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelCreated">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelDpi">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelDepth">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_quit">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Go Back</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ImageLabel</class>
+   <extends>QLabel</extends>
+   <header>ImageLabel.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

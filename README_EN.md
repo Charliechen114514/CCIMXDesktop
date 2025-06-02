@@ -34,9 +34,11 @@ Now, CCIMXDesktop supports one-click builds including:
 - 💡 LEDController App (switch light APP, requires Platform LED driver to be enabled)
 - 🌡️ Environment App (AP3216C driver needs to be mounted)
 - 🏃 SportHealth App (ICM20608 driver needs to be mounted)
-- 🛜 Network viewing assistant (supports network card information viewing, IP port scanning and basic test IP connection capability)
+- 🖼️ ImageWalker (the most basic image information browser, equivalent to the Windows image browser for the beggars)
+- ✏️ MarkDown reader (the most basic Markdown editing + preview function, supports draft/load and save Markdown and basic shortcut functions)
+- 🛜 CCNetHelper (supports network card information viewing, IP port scanning and basic test IP connection capabilities)
 
--------
+------
 
 ## Some running screenshots
 
@@ -44,20 +46,21 @@ Now, CCIMXDesktop supports one-click builds including:
 
 ![image-20250518085912716](./README/image-20250518085912716.png)
 
-## 🛠️ Technologies used for basic builds
+## 🛠️ Basic build technologies
 
 ![Qt](https://img.shields.io/badge/Qt-Core%20%26%20Network-41cd52)
 ![TSLIB](https://img.shields.io/badge/TSLIB-required-green)
 
-For beginners mapping a basic desktop, the embedded device should support Qt6 core widgets and core networking. In addition, TSLIB and Linux framebuffer backends for display should also be ready.
+For beginners mapping a basic desktop, the embedded device should support Qt6 core controls and core networking. Additionally, TSLIB and Linux framebuffer backends for display should be ready.
 
 ## 🛠️ Full build of technologies
 
 ![OpenCV](https://img.shields.io/badge/OpenCV-Camera%20Support-blue)
+
 ![MuPDF](https://img.shields.io/badge/MuPDF-PDF%20Rendering-orange)
 
 - OpenCV for camera support
-- MuPDF (for PDF rendering) (these are used in mupdf-based PDF readers)
+- MuPDF (for PDF rendering) (these are used for mupdf-based PDF readers)
 
 ------
 
@@ -70,28 +73,26 @@ For beginners mapping a basic desktop, the embedded device should support Qt6 co
 ## 📚Project Documentation
 
 ![GCC](https://img.shields.io/badge/GCC-cross--compile-yellowgreen)
+
 ![ARM](https://img.shields.io/badge/ARM-linux--gnueabihf-red)
 
-If you are interested in the project production process and development documents, please refer to the Documentations folder.
+If you are interested in the project production process and development documents, please refer to the Documentations folder. For the build process and customization, please refer to the build manual:
 
-Currently, this project fully supports the use of Doxygen to automatically generate customized documents. You can directly refer to [`Documentations/doxygen_style`](Documentations/doxygen_styles) for reading, or if you plan to customize the construction of this document, you need to refer to the build manual for customized modifications
+> [🛠️ How to build this project? (Supports X86 gcc, ARM-linux-gnueabihf-gcc and Windows GCC)](Documentations/HOW_To_Build_The_Desktop.md)
 
-> [🛠️ How to build this project? (X86 gcc, ARM-linux-gnueabihf-gcc and Windows GCC are all supported!)](Documentations/HOW_To_Build_The_Desktop.md)
->
-> The document has been automatically deployed on Gihub Actions: Project document address [CCIMXDesktop: Main Page](https://charliechen114514.github.io/CCIMXDesktop/)
+The document has been automatically deployed via GitHub Actions, visit: [CCIMXDesktop: Main Page](https://charliechen114514.github.io/CCIMXDesktop/)
 
-## 💡 Future plans
+## 💡 Future Plans
 
 - 🚀 Plan to write and provide more external basic programs:
 - 💬 Chat room (planned to be similar to QQ)
 - ⏰ Alarm clock APP
-- 🖼️ Image browser
 - 🎨 Image processor
-- ✏️ MarkDown reader
 - 🧮 Pocket calculator
 - 🔌 Serial port assistant
-- ✅ Task list
-- 🤖 Image processor processes images locally and performs simple reasoning (face recognition)
+- ✅ To-do list
+- 🦖Dinasour Game!
+- 🤖 Image processor local processing of images and simple reasoning (face recognition)
 - ⚙ Basic settings (similar to IOS, but many are more ornamental)
 
 ------
@@ -100,4 +101,4 @@ Currently, this project fully supports the use of Doxygen to automatically gener
 
 ![License](https://img.shields.io/badge/License-MIT-brightgreen)
 
-This project is based on the MIT license, and you are welcome to port, modify and use it at will!
+This project is based on the MIT license, welcome to port, modify and use at will!

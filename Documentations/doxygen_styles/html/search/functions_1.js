@@ -3,7 +3,7 @@ var searchData=
   ['about_5ffetch_5fframe_0',['about_fetch_frame',['../class_video_player.html#a89a61f323510f49f1948b2717c1ca483',1,'VideoPlayer::about_fetch_frame()'],['../class_video_player.html#a89a61f323510f49f1948b2717c1ca483',1,'VideoPlayer::about_fetch_frame()']]],
   ['aboutmainwindow_1',['AboutMainWindow',['../class_about_main_window.html#a95c30d3e3bd081027a788bc9e17b1a38',1,'AboutMainWindow']]],
   ['actuallist_2',['actualList',['../class_c_c_media_play_list.html#a5e0b767ee157bfb31d8448da10f43e4b',1,'CCMediaPlayList']]],
-  ['addlayout_3',['addLayout',['../class_side_bar_widget.html#a78a193ae7bab3d3f0d15affc37c88420',1,'SideBarWidget::addLayout(const QWidgetList &amp;widgetList, Role r)'],['../class_side_bar_widget.html#a78a193ae7bab3d3f0d15affc37c88420',1,'SideBarWidget::addLayout(const QWidgetList &amp;widgetList, Role r)']]],
+  ['addlayout_3',['addLayout',['../class_side_bar_widget.html#a78a193ae7bab3d3f0d15affc37c88420',1,'SideBarWidget::addLayout(const QWidgetList &amp;widgetList, Role r)'],['../class_side_bar_widget.html#a78a193ae7bab3d3f0d15affc37c88420',1,'SideBarWidget::addLayout(const QWidgetList &amp;widgetList, Role r)'],['../class_side_bar_widget.html#a78a193ae7bab3d3f0d15affc37c88420',1,'SideBarWidget::addLayout(const QWidgetList &amp;widgetList, Role r)']]],
   ['ap3216cadapterfactory_4',['AP3216CAdapterFactory',['../class_a_p3216_c_adapter_factory.html#ac9d8bba508b196b8f2a499c1c28e686a',1,'AP3216CAdapterFactory']]],
   ['app_5fcode_5',['app_code',['../class_application_wrapper.html#aaa275174067d1949835c5f7097fccc10',1,'ApplicationWrapper']]],
   ['app_5fname_6',['app_name',['../class_app_widget.html#adfa9de7ff529fef19e235dae59768fac',1,'AppWidget']]],

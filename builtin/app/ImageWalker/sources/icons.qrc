@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>clear.png</file>
+        <file>delete.png</file>
+        <file>exit.png</file>
+        <file>fileview.png</file>
+        <file>last.png</file>
+        <file>next.png</file>
+        <file>prev.png</file>
+        <file>set_dirent.png</file>
+        <file>start.png</file>
+        <file>image_about.png</file>
+    </qresource>
+</RCC>

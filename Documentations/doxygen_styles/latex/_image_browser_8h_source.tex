@@ -1,0 +1,99 @@
+\doxysection{Image\+Browser.\+h}
+\hypertarget{_image_browser_8h_source}{}\label{_image_browser_8h_source}\index{builtin/app/ImageWalker/ui/ImageBrowser.h@{builtin/app/ImageWalker/ui/ImageBrowser.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ IMAGEBROWSER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ IMAGEBROWSER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QWidget>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QMap>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QString>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QStringList>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <QImage>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_image_core}{ImageCore}};}
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_image_info_window}{ImageInfoWindow}};}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }ImageBrowser;}
+\DoxyCodeLine{00016\ \}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_image_browser_a7f2b7bb1d3b079e33e32fa614597bb28}{ImageBrowser}}\ :\ \textcolor{keyword}{public}\ QWidget\ \{}
+\DoxyCodeLine{00024\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{enum\ class}\ \mbox{\hyperlink{class_image_browser_aea0c3a04135e3bf0be6d19d0c080f9f8}{ErrorType}}\ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_image_browser_aea0c3a04135e3bf0be6d19d0c080f9f8abfca37b7417b963c72551f88ce9c00b4}{IMAGEREQ\_OVERFLOW}},\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_image_browser_aea0c3a04135e3bf0be6d19d0c080f9f8a2ac31ec6893464e48666f8e4578488f6}{IMAGEREQ\_UNDERFLOW}},\ }
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_image_browser_aea0c3a04135e3bf0be6d19d0c080f9f8a7636a319ea8147ccb16bfdaa0f472d11}{IMAGEREQ\_LOST}},\ }
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_image_browser_aea0c3a04135e3bf0be6d19d0c080f9f8aba928fbae31c209a515e1889dc303b3f}{IMAGEREQ\_EMPTY}}\ }
+\DoxyCodeLine{00037\ \ \ \ \ \};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_image_browser_a7f2b7bb1d3b079e33e32fa614597bb28}{ImageBrowser}}(QWidget*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_image_browser_a056e21ca65c4ad3469a0fb2c5c49ab78}{enDirSupports}}(\textcolor{keyword}{const}\ QString\&\ where);}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_image_browser_a056e21ca65c4ad3469a0fb2c5c49ab78}{enDirSupports}}(\textcolor{keyword}{const}\ QString\&\ where,\ \textcolor{keyword}{const}\ QStringList\&\ prefixs);}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_image_browser_ae7566f4d448e2c3b6db6c66f6141e2b3}{remove\_from\_name}}(\textcolor{keyword}{const}\ QStringList\&\ names);}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_image_browser_a3d4f9c7382924154b2f3aba470f850e7}{is\_fileview\_visible}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_image_browser_a58d8302fc106f890a6b69ad8fb9ab7ae}{show\_from\_name}}(\textcolor{keyword}{const}\ QString\&\ name);}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_image_browser_ac70df0c3a35bcf47a7460f282ceed287}{show\_from\_index}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ index);}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00095\ \ \ \ \ QStringList\ \mbox{\hyperlink{class_image_browser_a2fc84c797638313ac149baf6a769693c}{from\_name}}(\textcolor{keyword}{const}\ QStringList\&\ names);}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00100\ \ \ \ \ \mbox{\hyperlink{class_image_browser_a4d5e821492b9205bdddba3188899d033}{\string~ImageBrowser}}();}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_image_browser_a980c9f118b28255ec99a1540be7b17a0}{oppose\_fileview\_visible}}();}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00111\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_image_browser_a200ce30fa43bc55b7d3fd26176ab391a}{show\_next}}();}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00116\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_image_browser_acdf76c5738b7cc831012d47b5e4e6e19}{show\_start}}();}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00121\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_image_browser_a8c4930211af1c766bf957ad5ce493ef9}{show\_end}}();}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00126\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_image_browser_a7c2a2c3146fedd20865899b9925b35bf}{show\_prev}}();}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00131\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_image_browser_aa7de62669857ec5c3c38bd8bbc7361c5}{show\_infoWindow}}();}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00136\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_image_browser_a745f0c79366161aa8b4b67380fdbb953}{remove\_select}}();}
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00141\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_image_browser_a5c09cb5893995a971c1cb6dda0cce6b2}{clear}}();}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00143\ signals:}
+\DoxyCodeLine{00149\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_image_browser_aa6a9ba7f22ed4a1a8aabf228c2588f8c}{errorOccur}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_image_browser_aea0c3a04135e3bf0be6d19d0c080f9f8}{ImageBrowser::ErrorType}}\ e);}
+\DoxyCodeLine{00150\ }
+\DoxyCodeLine{00151\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00155\ \ \ \ \ Ui::ImageBrowser*\ ui;}
+\DoxyCodeLine{00156\ }
+\DoxyCodeLine{00160\ \ \ \ \ std::unique\_ptr<ImageCore>\ core;}
+\DoxyCodeLine{00161\ }
+\DoxyCodeLine{00165\ \ \ \ \ QMap<QString,\ QString>\ mappings;}
+\DoxyCodeLine{00166\ }
+\DoxyCodeLine{00170\ \ \ \ \ \textcolor{keywordtype}{void}\ init\_memory();}
+\DoxyCodeLine{00171\ }
+\DoxyCodeLine{00175\ \ \ \ \ \textcolor{keywordtype}{void}\ init\_connections();}
+\DoxyCodeLine{00176\ }
+\DoxyCodeLine{00182\ \ \ \ \ \textcolor{keywordtype}{void}\ enmappings(\textcolor{keyword}{const}\ QStringList\&\ paths);}
+\DoxyCodeLine{00183\ }
+\DoxyCodeLine{00189\ \ \ \ \ \textcolor{keywordtype}{void}\ demappings(\textcolor{keyword}{const}\ QStringList\&\ removeWhat);}
+\DoxyCodeLine{00190\ }
+\DoxyCodeLine{00196\ \ \ \ \ \textcolor{keywordtype}{void}\ process\_set\_images(\textcolor{keyword}{const}\ QString\&\ images);}
+\DoxyCodeLine{00197\ }
+\DoxyCodeLine{00201\ \ \ \ \ \textcolor{keywordtype}{void}\ reset\_listwidgets();}
+\DoxyCodeLine{00202\ }
+\DoxyCodeLine{00206\ \ \ \ \ QImage\ current\_image;}
+\DoxyCodeLine{00207\ }
+\DoxyCodeLine{00211\ \ \ \ \ \textcolor{keywordtype}{int}\ current\_index\ \{\ -\/1\ \};}
+\DoxyCodeLine{00212\ }
+\DoxyCodeLine{00216\ \ \ \ \ \mbox{\hyperlink{class_image_info_window}{ImageInfoWindow}}*\ infoWindow;}
+\DoxyCodeLine{00217\ \};}
+\DoxyCodeLine{00218\ }
+\DoxyCodeLine{00219\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ IMAGEBROWSER\_H}}
+
+\end{DoxyCode}

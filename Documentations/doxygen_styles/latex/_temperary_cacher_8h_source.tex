@@ -1,0 +1,25 @@
+\doxysection{Temperary\+Cacher.\+h}
+\hypertarget{_temperary_cacher_8h_source}{}\label{_temperary_cacher_8h_source}\index{extern\_app/EasyNotes/core/TemperaryCacher.h@{extern\_app/EasyNotes/core/TemperaryCacher.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ TEMPERARYCACHER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ TEMPERARYCACHER\_H}}
+\DoxyCodeLine{00003\ \ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QMap>}}
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_temperary_cacher_acef98e3fff51f7c0e546f65c0103ee0f}{TemperaryCacher}}\ \{}
+\DoxyCodeLine{00011\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{class_temperary_cacher_acef98e3fff51f7c0e546f65c0103ee0f}{TemperaryCacher}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{class_temperary_cacher_a2adcf61bbcfd766efe238f4afbabbc39}{Q\_DISABLE\_COPY\_MOVE}}(\mbox{\hyperlink{class_temperary_cacher_acef98e3fff51f7c0e546f65c0103ee0f}{TemperaryCacher}});\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_temperary_cacher_aef42681a58fc446595255f0dc20a4b94}{ensub\_labels}}(\textcolor{keyword}{const}\ QString\&\ label,\ \textcolor{keyword}{const}\ QString\&\ text);}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_temperary_cacher_abea456ba279385daa9e8a4d24d1d8dbf}{remove\_label}}(\textcolor{keyword}{const}\ QString\&\ label);}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_temperary_cacher_ada33a9d356c2a837fd0600aa74beac70}{clear}}()\ \{\ label\_context\_map.clear();\ \}}
+\DoxyCodeLine{00041\ \ \ \ \ QStringList\ \mbox{\hyperlink{class_temperary_cacher_a04c2f8ebd9c794ec7ad4a6da51e1f570}{labels}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ label\_context\_map.keys();\ \}}
+\DoxyCodeLine{00048\ \ \ \ \ std::optional<QString>\ \mbox{\hyperlink{class_temperary_cacher_a4f8c3315e8bdcc3625743543cf45f9b2}{query}}(\textcolor{keyword}{const}\ QString\&\ label);}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00051\ \ \ \ \ QMap<QString,\ QString>\ label\_context\_map;\ }
+\DoxyCodeLine{00052\ \};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ TEMPERARYCACHER\_H}}
+
+\end{DoxyCode}
