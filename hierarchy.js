@@ -42,6 +42,7 @@ var hierarchy =
     [ "ICM20608AppData", "structICM20608AppData.html", null ],
     [ "ICM20608Data", "structICM20608Data.html", null ],
     [ "ICM20608DataFactory", "classICM20608DataFactory.html", null ],
+    [ "ImageCore", "classImageCore.html", null ],
     [ "WallPaperAnimationHandler::ImagePoolEngine", "structWallPaperAnimationHandler_1_1ImagePoolEngine.html", null ],
     [ "CCPdfNavigationPolicy::Indicator", "structCCPdfNavigationPolicy_1_1Indicator.html", null ],
     [ "LEDController", "classLEDController.html", null ],
@@ -72,13 +73,19 @@ var hierarchy =
     [ "QGraphicsScene", null, [
       [ "SimpleDrawingScene", "classSimpleDrawingScene.html", null ]
     ] ],
+    [ "QLabel", null, [
+      [ "ImageLabel", "classImageLabel.html", null ]
+    ] ],
     [ "QMainWindow", null, [
       [ "AboutMainWindow", "classAboutMainWindow.html", null ],
       [ "CCNoterWindow", "classCCNoterWindow.html", null ],
       [ "CameraWindow", "classCameraWindow.html", null ],
       [ "DesktopMainWindow", "classDesktopMainWindow.html", null ],
       [ "DrawerWindow", "classDrawerWindow.html", null ],
+      [ "EasyNoteMainWindow", "classEasyNoteMainWindow.html", null ],
       [ "EnvironmentWindow", "classEnvironmentWindow.html", null ],
+      [ "ImageInfoWindow", "classImageInfoWindow.html", null ],
+      [ "ImageWalkerWindow", "classImageWalkerWindow.html", null ],
       [ "LightControllerWindow", "classLightControllerWindow.html", null ],
       [ "MainWindow", "classMainWindow.html", null ],
       [ "MainWindow", "classMainWindow.html", null ],
@@ -145,14 +152,18 @@ var hierarchy =
       [ "FileInfoDisplayWidget", "classFileInfoDisplayWidget.html", null ],
       [ "GaugeWidget", "classGaugeWidget.html", null ],
       [ "HomePage", "classHomePage.html", null ],
+      [ "ImageBrowser", "classImageBrowser.html", null ],
       [ "InterfacesDisplayWidget", "classInterfacesDisplayWidget.html", null ],
+      [ "LeftSideBar", "classLeftSideBar.html", null ],
       [ "MainShowWidget", "classMainShowWidget.html", null ],
+      [ "MainSideBar", "classMainSideBar.html", null ],
       [ "MemoryUsageChart", "classMemoryUsageChart.html", null ],
       [ "Pinger", "classPinger.html", null ],
       [ "ProcessBrowserWidget", "classProcessBrowserWidget.html", null ],
       [ "ReadMeWidget", "classReadMeWidget.html", null ],
       [ "Scanner", "classScanner.html", null ],
       [ "ScrollingLabel", "classScrollingLabel.html", null ],
+      [ "SideBarWidget", "classSideBarWidget.html", null ],
       [ "SideBarWidget", "classSideBarWidget.html", null ],
       [ "SideBarWidget", "classSideBarWidget.html", null ],
       [ "SimpleDrawerWidget", "classSimpleDrawerWidget.html", null ],
@@ -164,6 +175,7 @@ var hierarchy =
       [ "WeatherDailyCard", "classWeatherDailyCard.html", null ]
     ] ],
     [ "rol", "structrol.html", null ],
+    [ "TemperaryCacher", "classTemperaryCacher.html", null ],
     [ "VideoPlayerImpl", "classVideoPlayerImpl.html", [
       [ "VideoPlayerOpencvImpl", "classVideoPlayerOpencvImpl.html", null ],
       [ "VideoPlayerOpencvImpl", "classVideoPlayerOpencvImpl.html", null ]

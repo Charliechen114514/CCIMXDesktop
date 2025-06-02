@@ -2,7 +2,7 @@ var searchData=
 [
   ['name_0',['name',['../structCVTools_1_1DisplayParams.html#a366209da85a0c0e2fe1c4fc814c5ef8a',1,'CVTools::DisplayParams::name'],['../structProcessBroswer_1_1ProcessInfo.html#a8d5662e9c3468ad2a814cfd706a40b95',1,'ProcessBroswer::ProcessInfo::name']]],
   ['nameproviders_1',['NameProviders',['../classMainWindow.html#ad766a05d8996b153d8328819f3fef928a09675afd3cc4a09f7b50ba42fc455f9f',1,'MainWindow']]],
-  ['netcardgadget_2',['netcardgadget',['../classNetCardGadget.html',1,'NetCardGadget'],['../classNetCardGadget.html#ae7df34d5c86e08e897248ccc1c111ee3',1,'NetCardGadget::NetCardGadget()']]],
+  ['netcardgadget_2',['netcardgadget',['../classNetCardGadget.html#ae7df34d5c86e08e897248ccc1c111ee3',1,'NetCardGadget::NetCardGadget()'],['../classNetCardGadget.html',1,'NetCardGadget']]],
   ['netmainwindow_3',['netmainwindow',['../classNetMainWindow.html',1,'NetMainWindow'],['../classNetMainWindow.html#a3ad9cbbd627ddab9a9182b96a4bcaf5e',1,'NetMainWindow::NetMainWindow()']]],
   ['network_5fquery_5fdisplay_4',['network_query_display',['../classInterfacesQuery.html#a698562491f2cb09f744bfc1344c0fff1',1,'InterfacesQuery']]],
   ['networkstate_5',['NetWorkState',['../classNetCardGadget.html#a0f7e947e72994b97591bb3bc9bb35268',1,'NetCardGadget']]],
@@ -12,5 +12,6 @@ var searchData=
   ['next_5fpage_9',['next_page',['../classMainWindow.html#abc9d84a0a8b9bea132a960fdfa06b2cd',1,'MainWindow']]],
   ['no_5ferror_10',['NO_ERROR',['../classCCPdfDocument.html#a49387984fa059ca9904600ba7edacd39ad306b6fdee05fe87455110ddf6501e6c',1,'CCPdfDocument']]],
   ['normal_11',['Normal',['../classLightControllerWindow.html#ad01b4159b975884f5398071749f17593a960b44c579bc2f6818d2daaf9e4c16f0',1,'LightControllerWindow']]],
-  ['nullimage_12',['NullImage',['../classPhotoSaver.html#a74898c501e061db0c56ab0b7684fa979a3ed7a65c58f2f380e6a74076e62a5fad',1,'PhotoSaver']]]
+  ['nothing_5fthen_12',['NOTHING_THEN',['../classImageCore.html#a1d14c00e103a8bd25db2424fa87426a9af66a586ec3c9e5838a94776b72b6672e',1,'ImageCore']]],
+  ['nullimage_13',['NullImage',['../classPhotoSaver.html#a74898c501e061db0c56ab0b7684fa979a3ed7a65c58f2f380e6a74076e62a5fad',1,'PhotoSaver']]]
 ];

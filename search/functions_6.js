@@ -6,7 +6,7 @@ var searchData=
   ['fetch_5ffirst_5fplay_3',['fetch_first_play',['../classCCMediaPlayList.html#aae4da67df5bc12ee8e401c594dcdd5c3',1,'CCMediaPlayList']]],
   ['fetch_5ffrom_5fname_4',['fetch_from_name',['../classCCMediaPlayList.html#acdc84b23ae1686db0269226c94d90e8c',1,'CCMediaPlayList']]],
   ['fetch_5flast_5fplay_5',['fetch_last_play',['../classCCMediaPlayList.html#a24b68f240ed39e66ad2e9286f60377a0',1,'CCMediaPlayList']]],
-  ['fetch_5flocal_5ftempature_6',['fetch_local_tempature',['../structLocalFetcher.html#a5183bc3a8c8acd1dd947691fff641093',1,'LocalFetcher::fetch_local_tempature()'],['../structLocalWeatherLightFetcher.html#a7406fce33112897beff0da487ffd2440',1,'LocalWeatherLightFetcher::fetch_local_tempature()'],['../structPesudoLocalFetcher.html#aa2c1524abf8e22e1695fc580d3fc47c4',1,'PesudoLocalFetcher::fetch_local_tempature()']]],
+  ['fetch_5flocal_5ftempature_6',['fetch_local_tempature',['../structLocalWeatherLightFetcher.html#a7406fce33112897beff0da487ffd2440',1,'LocalWeatherLightFetcher::fetch_local_tempature()'],['../structLocalFetcher.html#a5183bc3a8c8acd1dd947691fff641093',1,'LocalFetcher::fetch_local_tempature()'],['../structPesudoLocalFetcher.html#aa2c1524abf8e22e1695fc580d3fc47c4',1,'PesudoLocalFetcher::fetch_local_tempature()']]],
   ['fetch_5fnext_5fplay_7',['fetch_next_play',['../classCCMediaPlayList.html#a87e0329a7a3f6d5a993f562228751f9c',1,'CCMediaPlayList']]],
   ['fetch_5fonce_5fdata_8',['fetch_once_data',['../classSportsChart.html#a33c00bfec0facff1f36dde2fa0fa45c6',1,'SportsChart']]],
   ['fetch_5fprev_5fplay_9',['fetch_prev_play',['../classCCMediaPlayList.html#a7b6c8ec7d64c49707646386e74062488',1,'CCMediaPlayList']]],
@@ -14,9 +14,9 @@ var searchData=
   ['filecountimplworker_11',['FileCountImplWorker',['../classFileCountImplWorker.html#ad86c9f922e9c0977e620ba10ae529714',1,'FileCountImplWorker']]],
   ['filecountinfo_12',['FileCountInfo',['../classFileCountInfo.html#a5ff32b089dcac83617fb623d35828912',1,'FileCountInfo']]],
   ['fileinfodisplaywidget_13',['FileInfoDisplayWidget',['../classFileInfoDisplayWidget.html#a71aca20562e5b0928d97723e04efd5de',1,'FileInfoDisplayWidget']]],
-  ['fileinfoprovider_14',['fileinfoprovider',['../classFileInfoProvider.html#acaff96e7f9eacb7bc0b3023fab1d685d',1,'FileInfoProvider::FileInfoProvider(CCIMXFileSystemModel *models)'],['../classFileInfoProvider.html#aac708c0bbd39fe67a3e2b0129109a0f3',1,'FileInfoProvider::FileInfoProvider()=delete']]],
+  ['fileinfoprovider_14',['fileinfoprovider',['../classFileInfoProvider.html#aac708c0bbd39fe67a3e2b0129109a0f3',1,'FileInfoProvider::FileInfoProvider()=delete'],['../classFileInfoProvider.html#acaff96e7f9eacb7bc0b3023fab1d685d',1,'FileInfoProvider::FileInfoProvider(CCIMXFileSystemModel *models)']]],
   ['filenameproviders_15',['FileNameProviders',['../classFileNameProviders.html#ad81f8ebbb75db0cee10db72073fbc58b',1,'FileNameProviders']]],
-  ['filetypeinfo_16',['filetypeinfo',['../classFileTypeInfo.html#a8e68a882c88ca80ec8a1914d8a4d00d4',1,'FileTypeInfo::FileTypeInfo(CCIMXFileSystemModel *model)'],['../classFileTypeInfo.html#ad42632aac0e64591594516ab73839818',1,'FileTypeInfo::FileTypeInfo()=delete']]],
+  ['filetypeinfo_16',['filetypeinfo',['../classFileTypeInfo.html#ad42632aac0e64591594516ab73839818',1,'FileTypeInfo::FileTypeInfo()=delete'],['../classFileTypeInfo.html#a8e68a882c88ca80ec8a1914d8a4d00d4',1,'FileTypeInfo::FileTypeInfo(CCIMXFileSystemModel *model)']]],
   ['filled_5fmetainfo_17',['filled_metainfo',['../classMediaInfoWindow.html#a0ebf8a7d0894ad2456c3862d01039d39',1,'MediaInfoWindow']]],
   ['finish_5fdetect_5fmemory_18',['finish_detect_memory',['../classMemoryInfoFetcher.html#a4517c8c3b528cd95160256ecf41170aa',1,'MemoryInfoFetcher']]],
   ['finish_5fparse_19',['finish_parse',['../structWeatherResult.html#ac292b0cbe62ac22d94e271949f6b7b5e',1,'WeatherResult']]],
@@ -37,5 +37,6 @@ var searchData=
   ['fresh_5frender_34',['fresh_render',['../classCCPdfViewer.html#ac7f3f2ba436fba2eedeaf5580d4630d5',1,'CCPdfViewer']]],
   ['fresh_5fzoom_35',['fresh_zoom',['../classCCPdfViewer.html#ad2087b6950aafc024c98aa3bc1ec2277',1,'CCPdfViewer']]],
   ['from_5fmedia_5flist_36',['from_media_list',['../classPlayListMainWindow.html#afcb0cd77e1910e75723c05413b78256c',1,'PlayListMainWindow']]],
-  ['from_5fname_5fquery_37',['from_name_query',['../classInterfacesQuery.html#a76595a4ff47f886a014ac0829d483249',1,'InterfacesQuery']]]
+  ['from_5fname_37',['from_name',['../classImageBrowser.html#a2fc84c797638313ac149baf6a769693c',1,'ImageBrowser']]],
+  ['from_5fname_5fquery_38',['from_name_query',['../classInterfacesQuery.html#a76595a4ff47f886a014ac0829d483249',1,'InterfacesQuery']]]
 ];

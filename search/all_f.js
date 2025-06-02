@@ -12,6 +12,7 @@ var searchData=
   ['openerror_9',['openerror',['../classVideoPlayer.html#a1ae3d446db619373212f38415b459f06',1,'VideoPlayer::openError(const VideoPlayerOpenErrorCode error)'],['../classVideoPlayer.html#a1ae3d446db619373212f38415b459f06',1,'VideoPlayer::openError(const VideoPlayerOpenErrorCode error)']]],
   ['operator_28_29_10',['operator()',['../structCCPdfContextDeleter.html#a8297c17d52c3cd959b31e011e52da5e4',1,'CCPdfContextDeleter']]],
   ['operator_3d_11',['operator=',['../classICM20608.html#ab49c1e7e37a218f50da5395354a52388',1,'ICM20608::operator=()'],['../classCVImage.html#af3aca0a5c5d2f8fc17310bab85f445ba',1,'CVImage::operator=()'],['../classICM20608.html#ab49c1e7e37a218f50da5395354a52388',1,'ICM20608::operator=()'],['../classICM20608DataFactory.html#afe9ed4a869dc91b565f45b60b645753e',1,'ICM20608DataFactory::operator=()'],['../classPesudoICM20608.html#ae2249087f6916731180356f574b28380',1,'PesudoICM20608::operator=()'],['../classCVImage.html#af3aca0a5c5d2f8fc17310bab85f445ba',1,'CVImage::operator=()']]],
-  ['other_5fmistakes_12',['OTHER_MISTAKES',['../classCCPdfDocument.html#a49387984fa059ca9904600ba7edacd39a47cddc738bfdf4c33c7b47355c4c3799',1,'CCPdfDocument']]],
-  ['overview_20🌟_13',['🌟 Project Overview 🌟',['../md_README__EN.html#autotoc_md16',1,'']]]
+  ['oppose_5ffileview_5fvisible_12',['oppose_fileview_visible',['../classImageBrowser.html#a980c9f118b28255ec99a1540be7b17a0',1,'ImageBrowser']]],
+  ['other_5fmistakes_13',['OTHER_MISTAKES',['../classCCPdfDocument.html#a49387984fa059ca9904600ba7edacd39a47cddc738bfdf4c33c7b47355c4c3799',1,'CCPdfDocument']]],
+  ['overview_20🌟_14',['🌟 Project Overview 🌟',['../md_README__EN.html#autotoc_md16',1,'']]]
 ];

@@ -40,11 +40,11 @@ var NAVTREE =
       [ "🌐 Before you get started, choose your language! 🌐", "md_README__EN.html#autotoc_md15", null ],
       [ "🌟 Project Overview 🌟", "md_README__EN.html#autotoc_md16", null ],
       [ "Some running screenshots", "md_README__EN.html#autotoc_md18", null ],
-      [ "🛠️ Technologies used for basic builds", "md_README__EN.html#autotoc_md19", null ],
+      [ "🛠️ Basic build technologies", "md_README__EN.html#autotoc_md19", null ],
       [ "🛠️ Full build of technologies", "md_README__EN.html#autotoc_md20", null ],
       [ "🧩 Developer Reference", "md_README__EN.html#autotoc_md22", null ],
       [ "📚Project Documentation", "md_README__EN.html#autotoc_md24", null ],
-      [ "💡 Future plans", "md_README__EN.html#autotoc_md25", null ],
+      [ "💡 Future Plans", "md_README__EN.html#autotoc_md25", null ],
       [ "📝 License", "md_README__EN.html#autotoc_md27", null ]
     ] ],
     [ "🧩 模块描述", "md_Components-explain-CN.html", [
@@ -94,11 +94,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AP3216CAdapterFactory_8h_source.html",
-"classCCPdfViewer.html#a51b31290cb21bdd0dd2e77a1546d6b52",
-"classLEDParamsPackage.html#a7e2b587ad66e30538a98581e1f89396f",
-"classSportsChart.html#a5f5ac560c8ab4cf367cacb93f5ef544f",
-"functions_func_m.html",
-"structPageSetuper_1_1PageSetupSessionRequest.html#a8522a2cfbefeb286ffacb1af7861036c"
+"classCCPdfScrollArea.html#a659bde2f5fe452c6cc90e0c8c042b18a",
+"classImageBrowser.html#a4d5e821492b9205bdddba3188899d033",
+"classProcessBroswer.html#a6c98f09926657816ca7c816b14f23fdb",
+"classWeatherRequest.html#a472973ba5b01c6b681f831470c8e8ec4",
+"structAppWeatherResult_1_1DailyWeather.html#a911f3f114489bf64cb099b5662237bd4"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
