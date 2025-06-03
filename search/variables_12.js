@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['video_5fdiscriptions_0',['video_discriptions',['../structMediaPlayer_1_1MediaPlayerStatus.html#ab5f3663084085eb1f237646c0477d5a8',1,'MediaPlayer::MediaPlayerStatus']]],
-  ['video_5fready_1',['video_ready',['../structMediaPlayer_1_1MediaPlayerStatus.html#aa82a8cda11aff12675474cf20e346e68',1,'MediaPlayer::MediaPlayerStatus']]]
+  ['ui_0',['ui',['../classAppCardWidget.html#affacf5393eb2f3fcdb94b39c894c188e',1,'AppCardWidget']]],
+  ['user_1',['user',['../structCPUStateFetcher_1_1CPUState.html#aab23cf3aea621ea5b5eb81e36553280f',1,'CPUStateFetcher::CPUState']]],
+  ['username_2',['userName',['../structProcessBroswer_1_1ProcessInfo.html#a3bc2a82c21cbfa45ce2503dbe0213efc',1,'ProcessBroswer::ProcessInfo']]]
 ];

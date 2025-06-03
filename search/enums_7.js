@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['role_0',['role',['../classSideBarWidget.html#abc77590c7f86b906b48ac7fcfadd46b1',1,'SideBarWidget::Role'],['../classSideBarWidget.html#abc77590c7f86b906b48ac7fcfadd46b1',1,'SideBarWidget::Role'],['../classSideBarWidget.html#abc77590c7f86b906b48ac7fcfadd46b1',1,'SideBarWidget::Role']]]
+  ['networkstate_0',['NetWorkState',['../classNetCardGadget.html#a0f7e947e72994b97591bb3bc9bb35268',1,'NetCardGadget']]]
 ];

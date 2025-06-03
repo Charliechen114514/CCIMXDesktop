@@ -1,0 +1,25 @@
+var classDinasourGameMainWidget =
+[
+    [ "CurrentInfoPack", "structDinasourGameMainWidget_1_1CurrentInfoPack.html", "structDinasourGameMainWidget_1_1CurrentInfoPack" ],
+    [ "DinasourGameMainWidget", "classDinasourGameMainWidget.html#a157e6080d6fa60c09d15685b86a0af3f", null ],
+    [ "animate_lay", "classDinasourGameMainWidget.html#a60eb1c3e3554d1393accecbecc39af22", null ],
+    [ "animate_up", "classDinasourGameMainWidget.html#a11c187abdb9bba84b10afef20bc254eb", null ],
+    [ "clearAndReset", "classDinasourGameMainWidget.html#a2e1f26322a7d2a3c7ab01307864135c8", null ],
+    [ "gain_score", "classDinasourGameMainWidget.html#abdfed6b79f7cc95b52d48b6548c5c5d1", null ],
+    [ "game_overed", "classDinasourGameMainWidget.html#aa0c352ed11b0592a41cb06f3fdf12432", null ],
+    [ "game_started", "classDinasourGameMainWidget.html#a320be4cdcf2decffe1d85cdcbd839709", null ],
+    [ "get_dinasour_instance", "classDinasourGameMainWidget.html#a02d6ec64fcd908588dda138d5d7149cb", null ],
+    [ "infoPack", "classDinasourGameMainWidget.html#ad122a5db6a9223b18c19cc9dd8b6f1c3", null ],
+    [ "is_game_over", "classDinasourGameMainWidget.html#a215eca1b38e2d5dc73a1eed96c8f0bb9", null ],
+    [ "is_game_started", "classDinasourGameMainWidget.html#a11f7c0f3be7f45a639d1c842988eafb9", null ],
+    [ "keyPressEvent", "classDinasourGameMainWidget.html#acd13c8a96d3521efd859015bd7c9c007", null ],
+    [ "keyReleaseEvent", "classDinasourGameMainWidget.html#aefe106a117762d7a6226d606003b608c", null ],
+    [ "launch_game", "classDinasourGameMainWidget.html#a193ac67077ccc23215d71213b7d88eda", null ],
+    [ "mousePressEvent", "classDinasourGameMainWidget.html#a9cb411360f7181062f169cda9898bd1e", null ],
+    [ "paintEvent", "classDinasourGameMainWidget.html#a92f8a14ada9b78b21ab4a41c55868fad", null ],
+    [ "pause", "classDinasourGameMainWidget.html#ad849db5215cb5a54f760a4d773881dad", null ],
+    [ "process_die", "classDinasourGameMainWidget.html#a8dc0dc859fcfbceaa1fe822ecb6e9b31", null ],
+    [ "process_jump", "classDinasourGameMainWidget.html#a823918226a3bd3d174db90df24c61893", null ],
+    [ "process_lay", "classDinasourGameMainWidget.html#a20fc8202653a93f43abaa65fc52c050f", null ],
+    [ "resume", "classDinasourGameMainWidget.html#a039948206d4a5ba83417b5ebeb5f786f", null ]
+];

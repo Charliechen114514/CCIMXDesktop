@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['value_0',['value',['../classGaugeWidget.html#a49358e772127bbd3c6d1748da8dbbef5',1,'GaugeWidget']]]
+  ['moving_5fspeed_0',['moving_speed',['../classObsticals.html#a5bbff9dc2fbfcf1ac99b53827c5bfb0c',1,'Obsticals']]]
 ];

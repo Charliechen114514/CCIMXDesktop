@@ -23,6 +23,7 @@ var hierarchy =
     [ "CCPdfMetaInfo", "structCCPdfMetaInfo.html", null ],
     [ "CCPdfNavigationPolicy", "classCCPdfNavigationPolicy.html", null ],
     [ "CPUStateFetcher::CPUState", "structCPUStateFetcher_1_1CPUState.html", null ],
+    [ "DinasourGameMainWidget::CurrentInfoPack", "structDinasourGameMainWidget_1_1CurrentInfoPack.html", null ],
     [ "CVImage", "classCVImage.html", null ],
     [ "CVImageImpl", "classCVImageImpl.html", [
       [ "CVImageOpencvImpl", "classCVImageOpencvImpl.html", null ],
@@ -31,6 +32,7 @@ var hierarchy =
     [ "CVImageImplFactory", "classCVImageImplFactory.html", null ],
     [ "AppWeatherResult::DailyWeather", "structAppWeatherResult_1_1DailyWeather.html", null ],
     [ "CVTools::DisplayParams", "structCVTools_1_1DisplayParams.html", null ],
+    [ "EventManager", "classEventManager.html", null ],
     [ "FileInfoProvider", "classFileInfoProvider.html", [
       [ "DirentSizeCounter", "classDirentSizeCounter.html", null ],
       [ "FileCountInfo", "classFileCountInfo.html", null ],
@@ -38,6 +40,8 @@ var hierarchy =
       [ "FileTypeInfo", "classFileTypeInfo.html", null ]
     ] ],
     [ "g_acc", "structg__acc.html", null ],
+    [ "GroundLineProviders::GroundLine", "structGroundLineProviders_1_1GroundLine.html", null ],
+    [ "GroundLineProviders", "classGroundLineProviders.html", null ],
     [ "ICM20608", "classICM20608.html", null ],
     [ "ICM20608AppData", "structICM20608AppData.html", null ],
     [ "ICM20608Data", "structICM20608Data.html", null ],
@@ -81,6 +85,7 @@ var hierarchy =
       [ "CCNoterWindow", "classCCNoterWindow.html", null ],
       [ "CameraWindow", "classCameraWindow.html", null ],
       [ "DesktopMainWindow", "classDesktopMainWindow.html", null ],
+      [ "DinasourGameWindow", "classDinasourGameWindow.html", null ],
       [ "DrawerWindow", "classDrawerWindow.html", null ],
       [ "EasyNoteMainWindow", "classEasyNoteMainWindow.html", null ],
       [ "EnvironmentWindow", "classEnvironmentWindow.html", null ],
@@ -108,14 +113,33 @@ var hierarchy =
       [ "CCPdfDocument", "classCCPdfDocument.html", null ],
       [ "CPUStateFetcher", "classCPUStateFetcher.html", null ],
       [ "CameraCapture", "classCameraCapture.html", null ],
+      [ "DifficultyManager", "classDifficultyManager.html", null ],
       [ "DirentSizeCounter", "classDirentSizeCounter.html", null ],
       [ "DirentSizeWorker", "classDirentSizeWorker.html", null ],
+      [ "FigureObject", "classFigureObject.html", [
+        [ "Dinasour", "classDinasour.html", null ],
+        [ "Obsticals", "classObsticals.html", [
+          [ "BirdObsticals", "classBirdObsticals.html", null ],
+          [ "CactusObsticals", "classCactusObsticals.html", null ]
+        ] ]
+      ] ],
       [ "FileCountImplWorker", "classFileCountImplWorker.html", null ],
       [ "FileCountInfo", "classFileCountInfo.html", null ],
+      [ "FlushRequester", "classFlushRequester.html", null ],
+      [ "FrameProvider", "classFrameProvider.html", [
+        [ "DinasourFrameFetcher", "classDinasourFrameFetcher.html", null ],
+        [ "ObstacleBaseFrameFetch", "classObstacleBaseFrameFetch.html", [
+          [ "BirdFrameFetch", "classBirdFrameFetch.html", null ],
+          [ "CactusFrameFetch", "classCactusFrameFetch.html", null ]
+        ] ]
+      ] ],
       [ "InterfacesQuery", "classInterfacesQuery.html", null ],
       [ "MediaPlayer", "classMediaPlayer.html", null ],
       [ "MemoryInfoFetcher", "classMemoryInfoFetcher.html", null ],
+      [ "ObstacleListManager", "classObstacleListManager.html", null ],
       [ "ProcessBroswer", "classProcessBroswer.html", null ],
+      [ "ScoreManager", "classScoreManager.html", null ],
+      [ "SoundEffectPlayer", "classSoundEffectPlayer.html", null ],
       [ "StackpageSwitcherAnimation", "structStackpageSwitcherAnimation.html", null ],
       [ "StackpageSwitcherAnimation", "structStackpageSwitcherAnimation.html", null ],
       [ "StackpageSwitcherAnimation", "structStackpageSwitcherAnimation.html", null ],
@@ -147,6 +171,7 @@ var hierarchy =
       [ "DesktopToast", "classDesktopToast.html", null ],
       [ "DesktopToast", "classDesktopToast.html", null ],
       [ "DigitalTimeWidget", "classDigitalTimeWidget.html", null ],
+      [ "DinasourGameMainWidget", "classDinasourGameMainWidget.html", null ],
       [ "DiskMusic", "classDiskMusic.html", null ],
       [ "DownDockWidget", "classDownDockWidget.html", null ],
       [ "FileInfoDisplayWidget", "classFileInfoDisplayWidget.html", null ],
@@ -175,6 +200,8 @@ var hierarchy =
       [ "WeatherDailyCard", "classWeatherDailyCard.html", null ]
     ] ],
     [ "rol", "structrol.html", null ],
+    [ "SceneDrawer", "classSceneDrawer.html", null ],
+    [ "Settings::SZ< value >", "structSettings_1_1SZ.html", null ],
     [ "TemperaryCacher", "classTemperaryCacher.html", null ],
     [ "VideoPlayerImpl", "classVideoPlayerImpl.html", [
       [ "VideoPlayerOpencvImpl", "classVideoPlayerOpencvImpl.html", null ],
@@ -182,5 +209,6 @@ var hierarchy =
     ] ],
     [ "VideoPlayerImplFactory", "classVideoPlayerImplFactory.html", null ],
     [ "VideoPlayerInfo", "structVideoPlayerInfo.html", null ],
-    [ "DesktopMainWindow::WallPaperGroup", "structDesktopMainWindow_1_1WallPaperGroup.html", null ]
+    [ "DesktopMainWindow::WallPaperGroup", "structDesktopMainWindow_1_1WallPaperGroup.html", null ],
+    [ "Settings::XY< value >", "structSettings_1_1XY.html", null ]
 ];

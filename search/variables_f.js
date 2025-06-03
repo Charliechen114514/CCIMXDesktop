@@ -1,14 +1,10 @@
 var searchData=
 [
-  ['samplerate_0',['sampleRate',['../structMediaInfo.html#adced269a0044b247726c00fb42212a86',1,'MediaInfo']]],
-  ['selector_1',['selector',['../structWallPaperAnimationHandler_1_1ImagePoolEngine.html#add618f4f1160a42f5384169359212c49',1,'WallPaperAnimationHandler::ImagePoolEngine']]],
-  ['shoule_5fbe_5flower_2',['shoule_be_lower',['../structDesktopMainWindow_1_1WallPaperGroup.html#a9922ccd98f9ca1cf5848a92a07e91486',1,'DesktopMainWindow::WallPaperGroup']]],
-  ['start_3',['start',['../structAppWeatherDetailedRequest.html#aea957e389a8c916be928a45ee192cbc9',1,'AppWeatherDetailedRequest']]],
-  ['start_5fangle_4',['START_ANGLE',['../classGaugeWidget.html#a99d142e2cd02e445962fdaa1007fc849',1,'GaugeWidget']]],
-  ['start_5fcolor_5',['START_COLOR',['../classGaugeWidget.html#a0fb785ba1093f3e7076d5fe4b791abc9',1,'GaugeWidget']]],
-  ['step_5fshort_6',['STEP_SHORT',['../classScrollingLabel.html#a5312f2d183407cfb37ccfa160c739366',1,'ScrollingLabel']]],
-  ['sub_5fmain_5frate_7',['SUB_MAIN_RATE',['../classGaugeWidget.html#a40f42cfa9170d525b1e4b4f8c065db5c',1,'GaugeWidget']]],
-  ['sub_5ftick_5flength_8',['SUB_TICK_LENGTH',['../classGaugeWidget.html#a51a6dc4916bb8aa3fe7069505d007869',1,'GaugeWidget']]],
-  ['sub_5ftick_5fwidth_9',['SUB_TICK_WIDTH',['../classGaugeWidget.html#a0625d59a9f6b07222eb88e1ff7997e79',1,'GaugeWidget']]],
-  ['subject_10',['subject',['../structCCPdfMetaInfo.html#a6432628cd10311d15f38f6c8dee7031d',1,'CCPdfMetaInfo']]]
+  ['raw_5fimage_0',['raw_image',['../classCVImageOpencvImpl.html#a80cc0140c1ee9a6e0928c8e974326669',1,'CVImageOpencvImpl']]],
+  ['recordpixmap_1',['recordPixmap',['../classDiskMusic.html#a54a419c7b73e26dcdc632677a93f0c23',1,'DiskMusic']]],
+  ['release_2',['release',['../classDesktopMainWindow.html#a84eecc2fcabddb1424455ccf9cc56929',1,'DesktopMainWindow']]],
+  ['req_5ffollow_5findicator_3',['req_follow_indicator',['../structCCPdfNavigationPolicy_1_1Indicator.html#a57b1edfbb713dad818ebda44ef01e03c',1,'CCPdfNavigationPolicy::Indicator']]],
+  ['request_5fdocument_4',['request_document',['../structCCPdfImageRequest.html#aa718f86585d96f92687e5aec1527dd12',1,'CCPdfImageRequest']]],
+  ['request_5fpage_5',['request_page',['../structCCPdfImageRequest.html#a3d5fb43822cf2a8c84399060ab727efc',1,'CCPdfImageRequest']]],
+  ['rol_6',['rol',['../structICM20608Data.html#a30735d329a92997e1a873222c7e3ab70',1,'ICM20608Data::rol'],['../structICM20608AppData.html#ab3cc5bb5e4cf31249f9d88bce374bd55',1,'ICM20608AppData::rol'],['../structICM20608Data.html#abe4e47e854c4b3e51b33e38597d33dbd',1,'ICM20608Data::rol'],['../structICM20608AppData.html#a08af7ed167b1ae51579798001899081f',1,'ICM20608AppData::rol']]]
 ];
