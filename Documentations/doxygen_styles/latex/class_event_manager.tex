@@ -1,0 +1,205 @@
+\doxysection{Event\+Manager Class Reference}
+\hypertarget{class_event_manager}{}\label{class_event_manager}\index{EventManager@{EventManager}}
+
+
+Handles and processes user input events for the game.  
+
+
+
+
+{\ttfamily \#include $<$Event\+Manager.\+h$>$}
+
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{class_event_manager_a423683d4091e7ead0bd42058b30869ba}{Indication}} \{ \mbox{\hyperlink{class_event_manager_a423683d4091e7ead0bd42058b30869baa8697250efc73639dd2a6e7da243ac68b}{NOTHING}}
+, \mbox{\hyperlink{class_event_manager_a423683d4091e7ead0bd42058b30869baa40222410c7347ec4b6bcaba3bcb21f3b}{JUMP}}
+, \mbox{\hyperlink{class_event_manager_a423683d4091e7ead0bd42058b30869baa04c8d84fc9a3e62a03ca514d64a2f908}{LAY}}
+, \mbox{\hyperlink{class_event_manager_a423683d4091e7ead0bd42058b30869baa46750841cdc7e2c45bdab55ef1e22b1c}{LAUNCH\+\_\+\+GAME}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration of possible game actions from key presses. \end{DoxyCompactList}\item 
+enum class \mbox{\hyperlink{class_event_manager_a4d6495ae514367edefb7fdf64cd72497}{Key\+Release\+Indication}} \{ \mbox{\hyperlink{class_event_manager_a4d6495ae514367edefb7fdf64cd72497a8697250efc73639dd2a6e7da243ac68b}{NOTHING}}
+, \mbox{\hyperlink{class_event_manager_a4d6495ae514367edefb7fdf64cd72497a78e9f9db6910deab5907b24d0cf03705}{RELAX}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration of possible game actions from key releases. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_event_manager_ad7aa53874804a5411f2b6c81c1383958}{Event\+Manager}} ()=delete
+\begin{DoxyCompactList}\small\item\em Deleted default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_event_manager_a8e23d10caabe0b1ca46e113c3969903e}{Event\+Manager}} (\mbox{\hyperlink{class_dinasour_game_main_widget}{Dinasour\+Game\+Main\+Widget}} \texorpdfstring{$\ast$}{*}h)
+\begin{DoxyCompactList}\small\item\em Constructs an \doxylink{class_event_manager}{Event\+Manager} with a parent widget. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_event_manager_a523312a8d281a2ac6a863b626d233f58}{install\+\_\+key\+Press\+\_\+key\+Event}} (QKey\+Event \texorpdfstring{$\ast$}{*}key\+Event)
+\begin{DoxyCompactList}\small\item\em Processes a key press event. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_event_manager_a81fad7dcf5d0c7b4feb95b7ac280d7b6}{install\+\_\+key\+Release\+\_\+key\+Event}} (QKey\+Event \texorpdfstring{$\ast$}{*}key\+Event)
+\begin{DoxyCompactList}\small\item\em Processes a key release event. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_event_manager_af721ce404f1f54287202bc953b0d98dd}{install\+\_\+mousepress\+\_\+event}} (QMouse\+Event \texorpdfstring{$\ast$}{*}mouse\+Event)
+\begin{DoxyCompactList}\small\item\em Processes a mouse press event. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_event_manager_a423683d4091e7ead0bd42058b30869ba}{Indication}} \mbox{\hyperlink{class_event_manager_a34fbb84264f448a152b44dd06853195a}{indication}} () const
+\begin{DoxyCompactList}\small\item\em Gets the current action indication from key presses. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_event_manager_a4d6495ae514367edefb7fdf64cd72497}{Key\+Release\+Indication}} \mbox{\hyperlink{class_event_manager_afd4fad37a94dc0c5da6c7e0bbf073b21}{release\+\_\+indication}} () const
+\begin{DoxyCompactList}\small\item\em Gets the current action indication from key releases. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handles and processes user input events for the game. 
+
+The \doxylink{class_event_manager}{Event\+Manager} class processes keyboard and mouse events, translating them into game actions and indications. It acts as an intermediary between Qt\textquotesingle{}s input system and the game logic. 
+
+\doxysubsection{Member Enumeration Documentation}
+\Hypertarget{class_event_manager_a423683d4091e7ead0bd42058b30869ba}\index{EventManager@{EventManager}!Indication@{Indication}}
+\index{Indication@{Indication}!EventManager@{EventManager}}
+\doxysubsubsection{\texorpdfstring{Indication}{Indication}}
+{\footnotesize\ttfamily \label{class_event_manager_a423683d4091e7ead0bd42058b30869ba} 
+enum class \mbox{\hyperlink{class_event_manager_a423683d4091e7ead0bd42058b30869ba}{Event\+Manager\+::\+Indication}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Enumeration of possible game actions from key presses. 
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NOTHING@{NOTHING}!EventManager@{EventManager}}\index{EventManager@{EventManager}!NOTHING@{NOTHING}}}\Hypertarget{class_event_manager_a423683d4091e7ead0bd42058b30869baa8697250efc73639dd2a6e7da243ac68b}\label{class_event_manager_a423683d4091e7ead0bd42058b30869baa8697250efc73639dd2a6e7da243ac68b} 
+NOTHING&No action indicated. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{JUMP@{JUMP}!EventManager@{EventManager}}\index{EventManager@{EventManager}!JUMP@{JUMP}}}\Hypertarget{class_event_manager_a423683d4091e7ead0bd42058b30869baa40222410c7347ec4b6bcaba3bcb21f3b}\label{class_event_manager_a423683d4091e7ead0bd42058b30869baa40222410c7347ec4b6bcaba3bcb21f3b} 
+JUMP&Jump action requested. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LAY@{LAY}!EventManager@{EventManager}}\index{EventManager@{EventManager}!LAY@{LAY}}}\Hypertarget{class_event_manager_a423683d4091e7ead0bd42058b30869baa04c8d84fc9a3e62a03ca514d64a2f908}\label{class_event_manager_a423683d4091e7ead0bd42058b30869baa04c8d84fc9a3e62a03ca514d64a2f908} 
+LAY&Duck/lay down action requested. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LAUNCH\_GAME@{LAUNCH\_GAME}!EventManager@{EventManager}}\index{EventManager@{EventManager}!LAUNCH\_GAME@{LAUNCH\_GAME}}}\Hypertarget{class_event_manager_a423683d4091e7ead0bd42058b30869baa46750841cdc7e2c45bdab55ef1e22b1c}\label{class_event_manager_a423683d4091e7ead0bd42058b30869baa46750841cdc7e2c45bdab55ef1e22b1c} 
+LAUNCH\+\_\+\+GAME&Start game action requested. \\
+\hline
+
+\end{DoxyEnumFields}
+\Hypertarget{class_event_manager_a4d6495ae514367edefb7fdf64cd72497}\index{EventManager@{EventManager}!KeyReleaseIndication@{KeyReleaseIndication}}
+\index{KeyReleaseIndication@{KeyReleaseIndication}!EventManager@{EventManager}}
+\doxysubsubsection{\texorpdfstring{KeyReleaseIndication}{KeyReleaseIndication}}
+{\footnotesize\ttfamily \label{class_event_manager_a4d6495ae514367edefb7fdf64cd72497} 
+enum class \mbox{\hyperlink{class_event_manager_a4d6495ae514367edefb7fdf64cd72497}{Event\+Manager\+::\+Key\+Release\+Indication}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Enumeration of possible game actions from key releases. 
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NOTHING@{NOTHING}!EventManager@{EventManager}}\index{EventManager@{EventManager}!NOTHING@{NOTHING}}}\Hypertarget{class_event_manager_a4d6495ae514367edefb7fdf64cd72497a8697250efc73639dd2a6e7da243ac68b}\label{class_event_manager_a4d6495ae514367edefb7fdf64cd72497a8697250efc73639dd2a6e7da243ac68b} 
+NOTHING&No action indicated. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RELAX@{RELAX}!EventManager@{EventManager}}\index{EventManager@{EventManager}!RELAX@{RELAX}}}\Hypertarget{class_event_manager_a4d6495ae514367edefb7fdf64cd72497a78e9f9db6910deab5907b24d0cf03705}\label{class_event_manager_a4d6495ae514367edefb7fdf64cd72497a78e9f9db6910deab5907b24d0cf03705} 
+RELAX&Release current action (e.\+g., stand up from ducking) \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_event_manager_ad7aa53874804a5411f2b6c81c1383958}\index{EventManager@{EventManager}!EventManager@{EventManager}}
+\index{EventManager@{EventManager}!EventManager@{EventManager}}
+\doxysubsubsection{\texorpdfstring{EventManager()}{EventManager()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_event_manager_ad7aa53874804a5411f2b6c81c1383958} 
+Event\+Manager\+::\+Event\+Manager (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Deleted default constructor. 
+
+\doxylink{class_event_manager}{Event\+Manager} must be constructed with a parent widget reference \Hypertarget{class_event_manager_a8e23d10caabe0b1ca46e113c3969903e}\index{EventManager@{EventManager}!EventManager@{EventManager}}
+\index{EventManager@{EventManager}!EventManager@{EventManager}}
+\doxysubsubsection{\texorpdfstring{EventManager()}{EventManager()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_event_manager_a8e23d10caabe0b1ca46e113c3969903e} 
+Event\+Manager\+::\+Event\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_dinasour_game_main_widget}{Dinasour\+Game\+Main\+Widget}} \texorpdfstring{$\ast$}{*}}]{h}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Constructs an \doxylink{class_event_manager}{Event\+Manager} with a parent widget. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & Pointer to the main game widget that owns this manager \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_event_manager_a34fbb84264f448a152b44dd06853195a}\index{EventManager@{EventManager}!indication@{indication}}
+\index{indication@{indication}!EventManager@{EventManager}}
+\doxysubsubsection{\texorpdfstring{indication()}{indication()}}
+{\footnotesize\ttfamily \label{class_event_manager_a34fbb84264f448a152b44dd06853195a} 
+\mbox{\hyperlink{class_event_manager_a423683d4091e7ead0bd42058b30869ba}{Indication}} Event\+Manager\+::indication (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the current action indication from key presses. 
+
+\begin{DoxyReturn}{Returns}
+The current \doxylink{class_event_manager_a423683d4091e7ead0bd42058b30869ba}{Indication} value 
+\end{DoxyReturn}
+\Hypertarget{class_event_manager_a523312a8d281a2ac6a863b626d233f58}\index{EventManager@{EventManager}!install\_keyPress\_keyEvent@{install\_keyPress\_keyEvent}}
+\index{install\_keyPress\_keyEvent@{install\_keyPress\_keyEvent}!EventManager@{EventManager}}
+\doxysubsubsection{\texorpdfstring{install\_keyPress\_keyEvent()}{install\_keyPress\_keyEvent()}}
+{\footnotesize\ttfamily \label{class_event_manager_a523312a8d281a2ac6a863b626d233f58} 
+void Event\+Manager\+::install\+\_\+key\+Press\+\_\+key\+Event (\begin{DoxyParamCaption}\item[{QKey\+Event \texorpdfstring{$\ast$}{*}}]{key\+Event}{}\end{DoxyParamCaption})}
+
+
+
+Processes a key press event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Event} & The Qt key event to process\\
+\hline
+\end{DoxyParams}
+Translates key presses into game actions and updates the current indication \Hypertarget{class_event_manager_a81fad7dcf5d0c7b4feb95b7ac280d7b6}\index{EventManager@{EventManager}!install\_keyRelease\_keyEvent@{install\_keyRelease\_keyEvent}}
+\index{install\_keyRelease\_keyEvent@{install\_keyRelease\_keyEvent}!EventManager@{EventManager}}
+\doxysubsubsection{\texorpdfstring{install\_keyRelease\_keyEvent()}{install\_keyRelease\_keyEvent()}}
+{\footnotesize\ttfamily \label{class_event_manager_a81fad7dcf5d0c7b4feb95b7ac280d7b6} 
+void Event\+Manager\+::install\+\_\+key\+Release\+\_\+key\+Event (\begin{DoxyParamCaption}\item[{QKey\+Event \texorpdfstring{$\ast$}{*}}]{key\+Event}{}\end{DoxyParamCaption})}
+
+
+
+Processes a key release event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Event} & The Qt key event to process\\
+\hline
+\end{DoxyParams}
+Translates key releases into game actions and updates the release indication \Hypertarget{class_event_manager_af721ce404f1f54287202bc953b0d98dd}\index{EventManager@{EventManager}!install\_mousepress\_event@{install\_mousepress\_event}}
+\index{install\_mousepress\_event@{install\_mousepress\_event}!EventManager@{EventManager}}
+\doxysubsubsection{\texorpdfstring{install\_mousepress\_event()}{install\_mousepress\_event()}}
+{\footnotesize\ttfamily \label{class_event_manager_af721ce404f1f54287202bc953b0d98dd} 
+void Event\+Manager\+::install\+\_\+mousepress\+\_\+event (\begin{DoxyParamCaption}\item[{QMouse\+Event \texorpdfstring{$\ast$}{*}}]{mouse\+Event}{}\end{DoxyParamCaption})}
+
+
+
+Processes a mouse press event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+Event} & The Qt mouse event to process \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_event_manager_afd4fad37a94dc0c5da6c7e0bbf073b21}\index{EventManager@{EventManager}!release\_indication@{release\_indication}}
+\index{release\_indication@{release\_indication}!EventManager@{EventManager}}
+\doxysubsubsection{\texorpdfstring{release\_indication()}{release\_indication()}}
+{\footnotesize\ttfamily \label{class_event_manager_afd4fad37a94dc0c5da6c7e0bbf073b21} 
+\mbox{\hyperlink{class_event_manager_a4d6495ae514367edefb7fdf64cd72497}{Key\+Release\+Indication}} Event\+Manager\+::release\+\_\+indication (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the current action indication from key releases. 
+
+\begin{DoxyReturn}{Returns}
+The current \doxylink{class_event_manager_a4d6495ae514367edefb7fdf64cd72497}{Key\+Release\+Indication} value 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+extern\+\_\+app/games/\+CCIMX\+\_\+\+Dino\+Game/core/Event\+Manager.\+h\item 
+extern\+\_\+app/games/\+CCIMX\+\_\+\+Dino\+Game/core/Event\+Manager.\+cpp\end{DoxyCompactItemize}

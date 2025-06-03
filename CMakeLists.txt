@@ -23,6 +23,7 @@ option(INCLUDE_MEDIAPLAYER_APP "Build the MeidaPlayer App" ON)
 option(INCLUDE_PROFESSIONAL_APP "Build the professional App Enabled" ON)
 option(INCLUDE_NETHELPER_APP "Build the NetHelper Enable" ON)
 option(INCLUDE_EASYNOTE_APP "Build the Markdown Editor" ON)
+option(INCLUDE_GAME_APP "Build the Game Subpart" ON)
 if(INCLUDE_PROFESSIONAL_APP)
     option(INCLUDE_OPENCV_QT_ADAPTER    "OpenCV Qt Convient Adapter"    ON)
     option(INCLUDE_LED_APP "Build the LEDController App" ON)
@@ -34,6 +35,14 @@ if(INCLUDE_PROFESSIONAL_APP)
         $<$<BOOL:${INCLUDE_SPORT_APP}>:INCLUDE_SPORT_APP>
     )
 endif()
+if(INCLUDE_GAME_APP)
+    message(STATUS "[Warning in Information Level] Games are performance required, with a bit long build")
+    option(INCLUDE_DINO_GAME "Dinasour Game in Google Style!" ON)
+    add_compile_definitions(
+        $<$<BOOL:${INCLUDE_DINO_GAME}>:INCLUDE_DINO_GAME>
+    )
+endif()
+
 
 find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets Network)
 qt_standard_project_setup()
@@ -351,6 +360,9 @@ message(STATUS "Sports Health Built status due to INCLUDE_SPORT_APP:            
 message(STATUS "OpenCV Adapters Built status due to INCLUDE_OPENCV_QT_ADAPTER:  ${INCLUDE_OPENCV_QT_ADAPTER}")
 message(STATUS "Net Helper App Built status due to INCLUDE_NETHELPER_APP:       ${INCLUDE_NETHELPER_APP}")
 message(STATUS "EasyNote Built due to INCLUDE_EASYNOTE_APP:                     ${INCLUDE_EASYNOTE_APP}")
+message(STATUS "-----------------------------------------------------")
+message(STATUS "Dumping the game apps: ")
+message(STATUS "CCIMX_DinoGame Built status due to INCLUDE_DINO_GAME:           ${INCLUDE_DINO_GAME}")
 message(STATUS "-----------------------------------------------------")
 message(STATUS "Dumping Documentations summon issues: ")
 message(STATUS "Doxygen Documentations Built status due to CCIMX_DESKTOP_DOCGEN_REQ: ${CCIMX_DESKTOP_DOCGEN_REQ}")

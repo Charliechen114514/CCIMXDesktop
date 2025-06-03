@@ -1,0 +1,201 @@
+\doxysection{Obsticals Class Reference}
+\hypertarget{class_obsticals}{}\label{class_obsticals}\index{Obsticals@{Obsticals}}
+
+
+Base class for all obstacle objects in the game.  
+
+
+
+
+{\ttfamily \#include $<$Obsticals.\+h$>$}
+
+Inheritance diagram for Obsticals\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_obsticals}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_obsticals_a3e3be942c1c78b4d94c5e81b452e899a}{set\+\_\+moving\+\_\+speed}} (const int speed)
+\begin{DoxyCompactList}\small\item\em Sets moving speed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_obsticals_aaa00b2ed651db48054ec40b8e4f6dd46}\label{class_obsticals_aaa00b2ed651db48054ec40b8e4f6dd46} 
+void {\bfseries pass\+\_\+me\+\_\+already} ()
+\begin{DoxyCompactList}\small\item\em Emitted when obstacle passes out of view. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_obsticals_a2da8039ec5e75ce2865caa8e182277c5}{speed\+Changed}} (int new\+Speed)
+\begin{DoxyCompactList}\small\item\em Emitted when speed changes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_obsticals_a2f411fe4e0fdf19ede9e1c62077d2e93}{Obsticals}} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructs an \doxylink{class_obsticals}{Obsticals} object. \end{DoxyCompactList}\item 
+\Hypertarget{class_obsticals_a02c2edb6545d318aa189ceb22ff77999}\label{class_obsticals_a02c2edb6545d318aa189ceb22ff77999} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Obsticals} ()=default
+\begin{DoxyCompactList}\small\item\em Default virtual destructor. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_obsticals_a3b0642aa5007f93d802238079fef219e}{is\+\_\+intersect}} (\mbox{\hyperlink{class_dinasour}{Dinasour}} \texorpdfstring{$\ast$}{*}dinasour)
+\begin{DoxyCompactList}\small\item\em Checks collision with dinosaur. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_obsticals_ae70bb240dca25f67d65151fca4ec1f03}{get\+\_\+moving\+\_\+speed}} () const
+\begin{DoxyCompactList}\small\item\em Gets current moving speed. \end{DoxyCompactList}\item 
+\Hypertarget{class_obsticals_a9d983b471e3a215ad3797d87e390c00a}\label{class_obsticals_a9d983b471e3a215ad3797d87e390c00a} 
+virtual void {\bfseries update\+\_\+position} ()
+\begin{DoxyCompactList}\small\item\em Updates obstacle position. \end{DoxyCompactList}\item 
+virtual QRect \& \mbox{\hyperlink{class_obsticals_a92a08901d1411757ec5143319feb2fe2}{provide\+\_\+current\+\_\+bounding\+\_\+rect}} ()=0
+\begin{DoxyCompactList}\small\item\em Provides collision bounding rectangle (pure virtual) \end{DoxyCompactList}\item 
+virtual QPixmap \& \mbox{\hyperlink{class_obsticals_a6cb899ca0276ae560ac0372c2d590043}{provide\+\_\+drawing\+\_\+srcframe}} ()=0
+\begin{DoxyCompactList}\small\item\em Provides drawing frame (pure virtual) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_figure_object}{Figure\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_figure_object_a658082a08f758eca763d6862dcd6c88c}{Figure\+Object}} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{class_figure_object}{Figure\+Object}. \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Figure\+Object} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_obsticals_a7c3a67026bea686ee28c973ee7dbf70e}\label{class_obsticals_a7c3a67026bea686ee28c973ee7dbf70e} 
+std\+::shared\+\_\+ptr$<$ QMutex $>$ {\bfseries mutex}
+\begin{DoxyCompactList}\small\item\em Mutex for thread safety. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_obsticals_a5bbff9dc2fbfcf1ac99b53827c5bfb0c}\label{class_obsticals_a5bbff9dc2fbfcf1ac99b53827c5bfb0c} 
+int {\bfseries moving\+\_\+speed} \{ Settings\+::\+Scene\+::\+Difficulty\+::\+DEF\+\_\+\+SPEED \}
+\begin{DoxyCompactList}\small\item\em Current movement speed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base class for all obstacle objects in the game. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_obsticals_a2f411fe4e0fdf19ede9e1c62077d2e93}\index{Obsticals@{Obsticals}!Obsticals@{Obsticals}}
+\index{Obsticals@{Obsticals}!Obsticals@{Obsticals}}
+\doxysubsubsection{\texorpdfstring{Obsticals()}{Obsticals()}}
+{\footnotesize\ttfamily \label{class_obsticals_a2f411fe4e0fdf19ede9e1c62077d2e93} 
+Obsticals\+::\+Obsticals (\begin{DoxyParamCaption}\item[{QObject \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructs an \doxylink{class_obsticals}{Obsticals} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Parent QObject \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_obsticals_ae70bb240dca25f67d65151fca4ec1f03}\index{Obsticals@{Obsticals}!get\_moving\_speed@{get\_moving\_speed}}
+\index{get\_moving\_speed@{get\_moving\_speed}!Obsticals@{Obsticals}}
+\doxysubsubsection{\texorpdfstring{get\_moving\_speed()}{get\_moving\_speed()}}
+{\footnotesize\ttfamily \label{class_obsticals_ae70bb240dca25f67d65151fca4ec1f03} 
+int Obsticals\+::get\+\_\+moving\+\_\+speed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets current moving speed. 
+
+\begin{DoxyReturn}{Returns}
+Current speed value 
+\end{DoxyReturn}
+\Hypertarget{class_obsticals_a3b0642aa5007f93d802238079fef219e}\index{Obsticals@{Obsticals}!is\_intersect@{is\_intersect}}
+\index{is\_intersect@{is\_intersect}!Obsticals@{Obsticals}}
+\doxysubsubsection{\texorpdfstring{is\_intersect()}{is\_intersect()}}
+{\footnotesize\ttfamily \label{class_obsticals_a3b0642aa5007f93d802238079fef219e} 
+bool Obsticals\+::is\+\_\+intersect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_dinasour}{Dinasour}} \texorpdfstring{$\ast$}{*}}]{dinasour}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Checks collision with dinosaur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dinasour} & Pointer to dinosaur object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if collision detected 
+\end{DoxyReturn}
+\Hypertarget{class_obsticals_a92a08901d1411757ec5143319feb2fe2}\index{Obsticals@{Obsticals}!provide\_current\_bounding\_rect@{provide\_current\_bounding\_rect}}
+\index{provide\_current\_bounding\_rect@{provide\_current\_bounding\_rect}!Obsticals@{Obsticals}}
+\doxysubsubsection{\texorpdfstring{provide\_current\_bounding\_rect()}{provide\_current\_bounding\_rect()}}
+{\footnotesize\ttfamily \label{class_obsticals_a92a08901d1411757ec5143319feb2fe2} 
+virtual QRect \& Obsticals\+::provide\+\_\+current\+\_\+bounding\+\_\+rect (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Provides collision bounding rectangle (pure virtual) 
+
+\begin{DoxyReturn}{Returns}
+Reference to current QRect 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_figure_object_ab3a20305d7d978848b9032f9d0043fd8}{Figure\+Object}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_bird_obsticals_ae3e69296d719e0a99ad352cc879225c2}{Bird\+Obsticals}}, and \mbox{\hyperlink{class_cactus_obsticals_abdff64d10d681f92dc08cb42a6885bab}{Cactus\+Obsticals}}.
+
+\Hypertarget{class_obsticals_a6cb899ca0276ae560ac0372c2d590043}\index{Obsticals@{Obsticals}!provide\_drawing\_srcframe@{provide\_drawing\_srcframe}}
+\index{provide\_drawing\_srcframe@{provide\_drawing\_srcframe}!Obsticals@{Obsticals}}
+\doxysubsubsection{\texorpdfstring{provide\_drawing\_srcframe()}{provide\_drawing\_srcframe()}}
+{\footnotesize\ttfamily \label{class_obsticals_a6cb899ca0276ae560ac0372c2d590043} 
+virtual QPixmap \& Obsticals\+::provide\+\_\+drawing\+\_\+srcframe (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Provides drawing frame (pure virtual) 
+
+\begin{DoxyReturn}{Returns}
+Reference to current QPixmap 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_figure_object_aca632e21b9e2afac72a713cfb564930a}{Figure\+Object}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_bird_obsticals_a5618c8a1c3689b86b976d046f79cc5bc}{Bird\+Obsticals}}, and \mbox{\hyperlink{class_cactus_obsticals_aa712c14917b519b0588aa9018d102ff2}{Cactus\+Obsticals}}.
+
+\Hypertarget{class_obsticals_a3e3be942c1c78b4d94c5e81b452e899a}\index{Obsticals@{Obsticals}!set\_moving\_speed@{set\_moving\_speed}}
+\index{set\_moving\_speed@{set\_moving\_speed}!Obsticals@{Obsticals}}
+\doxysubsubsection{\texorpdfstring{set\_moving\_speed}{set\_moving\_speed}}
+{\footnotesize\ttfamily \label{class_obsticals_a3e3be942c1c78b4d94c5e81b452e899a} 
+void Obsticals\+::set\+\_\+moving\+\_\+speed (\begin{DoxyParamCaption}\item[{const int}]{speed}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [slot]}}
+
+
+
+Sets moving speed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em speed} & New speed value \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_obsticals_a2da8039ec5e75ce2865caa8e182277c5}\index{Obsticals@{Obsticals}!speedChanged@{speedChanged}}
+\index{speedChanged@{speedChanged}!Obsticals@{Obsticals}}
+\doxysubsubsection{\texorpdfstring{speedChanged}{speedChanged}}
+{\footnotesize\ttfamily \label{class_obsticals_a2da8039ec5e75ce2865caa8e182277c5} 
+void Obsticals\+::speed\+Changed (\begin{DoxyParamCaption}\item[{int}]{new\+Speed}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Emitted when speed changes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Speed} & New speed value \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+extern\+\_\+app/games/\+CCIMX\+\_\+\+Dino\+Game/figure/obstacle/Obsticals.\+h\item 
+extern\+\_\+app/games/\+CCIMX\+\_\+\+Dino\+Game/figure/obstacle/Obsticals.\+cpp\end{DoxyCompactItemize}

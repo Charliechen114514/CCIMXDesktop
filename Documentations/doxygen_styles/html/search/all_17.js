@@ -12,7 +12,7 @@ var searchData=
   ['web_5furl_9',['WEB_URL',['../class_weather_app_main_window.html#a9b28f5e7eea424e8ab6ec6badb0183a2',1,'WeatherAppMainWindow']]],
   ['widget_5fmin_5fheight_10',['WIDGET_MIN_HEIGHT',['../class_gauge_widget.html#a53db40e089294fe5d482686b7e5d4a36',1,'GaugeWidget']]],
   ['widget_5fmin_5fwidth_11',['WIDGET_MIN_WIDTH',['../class_gauge_widget.html#a35028e69117120cc4f80029e5aaa18a7',1,'GaugeWidget']]],
-  ['width_12',['width',['../struct_video_player_info.html#abd3ab4af8be90365f202117f437342d5',1,'VideoPlayerInfo']]],
+  ['width_12',['width',['../struct_settings_1_1_s_z.html#a91029f53d68bf130051e1854bf3dfc9f',1,'Settings::SZ::width'],['../struct_video_player_info.html#abd3ab4af8be90365f202117f437342d5',1,'VideoPlayerInfo::width']]],
   ['win32platformcpustatedriver_13',['Win32PlatformCPUStateDriver',['../class_win32_platform_c_p_u_state_driver.html',1,'']]],
   ['win32platformmemoryinfodriver_14',['Win32PlatformMemoryInfoDriver',['../class_win32_platform_memory_info_driver.html',1,'']]],
   ['win32platformprocessbroswerdriver_15',['Win32PlatformProcessBroswerDriver',['../class_win32_platform_process_broswer_driver.html',1,'']]],

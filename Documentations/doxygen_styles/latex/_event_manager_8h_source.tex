@@ -1,0 +1,50 @@
+\doxysection{Event\+Manager.\+h}
+\hypertarget{_event_manager_8h_source}{}\label{_event_manager_8h_source}\index{extern\_app/games/CCIMX\_DinoGame/core/EventManager.h@{extern\_app/games/CCIMX\_DinoGame/core/EventManager.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ EVENTMANAGER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ EVENTMANAGER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{keyword}{class\ }QKeyEvent;}
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }QMouseEvent;}
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_dinasour_game_main_widget}{DinasourGameMainWidget}};}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_event_manager_ad7aa53874804a5411f2b6c81c1383958}{EventManager}}\ \{}
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{enum\ class}\ \mbox{\hyperlink{class_event_manager_a423683d4091e7ead0bd42058b30869ba}{Indication}}\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_event_manager_a423683d4091e7ead0bd42058b30869baa8697250efc73639dd2a6e7da243ac68b}{NOTHING}},\ }
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_event_manager_a423683d4091e7ead0bd42058b30869baa40222410c7347ec4b6bcaba3bcb21f3b}{JUMP}},\ }
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_event_manager_a423683d4091e7ead0bd42058b30869baa04c8d84fc9a3e62a03ca514d64a2f908}{LAY}},\ }
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_event_manager_a423683d4091e7ead0bd42058b30869baa46750841cdc7e2c45bdab55ef1e22b1c}{LAUNCH\_GAME}}\ }
+\DoxyCodeLine{00026\ \ \ \ \ \};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{enum\ class}\ \mbox{\hyperlink{class_event_manager_a4d6495ae514367edefb7fdf64cd72497}{KeyReleaseIndication}}\ \{}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_event_manager_a423683d4091e7ead0bd42058b30869baa8697250efc73639dd2a6e7da243ac68b}{NOTHING}},\ }
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_event_manager_a4d6495ae514367edefb7fdf64cd72497a78e9f9db6910deab5907b24d0cf03705}{RELAX}}\ }
+\DoxyCodeLine{00034\ \ \ \ \ \};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{class_event_manager_ad7aa53874804a5411f2b6c81c1383958}{EventManager}}()\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_event_manager_a8e23d10caabe0b1ca46e113c3969903e}{EventManager}}(\mbox{\hyperlink{class_dinasour_game_main_widget}{DinasourGameMainWidget}}*\ h)\ \{}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ holdings\ =\ h;}
+\DoxyCodeLine{00049\ \ \ \ \ \}}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_event_manager_a523312a8d281a2ac6a863b626d233f58}{install\_keyPress\_keyEvent}}(QKeyEvent*\ keyEvent);}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_event_manager_a81fad7dcf5d0c7b4feb95b7ac280d7b6}{install\_keyRelease\_keyEvent}}(QKeyEvent*\ keyEvent);}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_event_manager_af721ce404f1f54287202bc953b0d98dd}{install\_mousepress\_event}}(QMouseEvent*\ mouseEvent);}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{class_event_manager_a423683d4091e7ead0bd42058b30869ba}{Indication}}\ \mbox{\hyperlink{class_event_manager_a34fbb84264f448a152b44dd06853195a}{indication}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ ind;\ \}}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{class_event_manager_a4d6495ae514367edefb7fdf64cd72497}{KeyReleaseIndication}}\ \mbox{\hyperlink{class_event_manager_afd4fad37a94dc0c5da6c7e0bbf073b21}{release\_indication}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ release\_ind;\ \}}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00086\ \ \ \ \ \mbox{\hyperlink{class_dinasour_game_main_widget}{DinasourGameMainWidget}}*\ holdings;\ }
+\DoxyCodeLine{00087\ \ \ \ \ \mbox{\hyperlink{class_event_manager_a423683d4091e7ead0bd42058b30869ba}{Indication}}\ ind;\ }
+\DoxyCodeLine{00088\ \ \ \ \ \mbox{\hyperlink{class_event_manager_a4d6495ae514367edefb7fdf64cd72497}{KeyReleaseIndication}}\ release\_ind;\ }
+\DoxyCodeLine{00089\ \};}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ EVENTMANAGER\_H}}
+
+\end{DoxyCode}

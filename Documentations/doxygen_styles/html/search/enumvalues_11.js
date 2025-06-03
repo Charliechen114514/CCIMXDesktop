@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['windscale_0',['WINDSCALE',['../class_weather_chart_widget.html#ad917be16972dd0f90aa71df8d0e8e569ad74a32bbd6239ec868d96541f20419ff',1,'WeatherChartWidget']]]
+  ['unknown_0',['UNKNOWN',['../class_net_card_gadget.html#a0f7e947e72994b97591bb3bc9bb35268a696b031073e74bf2cb98e5ef201d4aa3',1,'NetCardGadget']]]
 ];

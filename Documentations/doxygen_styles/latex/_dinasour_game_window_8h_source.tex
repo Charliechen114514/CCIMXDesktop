@@ -1,0 +1,44 @@
+\doxysection{Dinasour\+Game\+Window.\+h}
+\hypertarget{_dinasour_game_window_8h_source}{}\label{_dinasour_game_window_8h_source}\index{extern\_app/games/CCIMX\_DinoGame/ui/DinasourGameWindow.h@{extern\_app/games/CCIMX\_DinoGame/ui/DinasourGameWindow.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ DINASOURGAMEWINDOW\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ DINASOURGAMEWINDOW\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <QMainWindow>}}
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }QPushButton;}
+\DoxyCodeLine{00011\ QT\_BEGIN\_NAMESPACE}
+\DoxyCodeLine{00012\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }DinasourGameWindow;}
+\DoxyCodeLine{00017\ \}}
+\DoxyCodeLine{00018\ QT\_END\_NAMESPACE}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_dinasour_game_window_a46834ca4387b0c75e212d1a932929c89}{DinasourGameWindow}}\ :\ \textcolor{keyword}{public}\ QMainWindow\ \{}
+\DoxyCodeLine{00024\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_dinasour_game_window_a46834ca4387b0c75e212d1a932929c89}{DinasourGameWindow}}(QWidget*\ parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{class_dinasour_game_window_ac470ab845c1f722d7e20dc09da2210ae}{\string~DinasourGameWindow}}();}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ process\_gameend();}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ post\_game\_start();}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00053\ \ \ \ \ Ui::DinasourGameWindow*\ ui;}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{bool}\ make\_pause\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00063\ \ \ \ \ QPushButton*\ layup\_btn;}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{void}\ setup\_connections();}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{void}\ setup\_my\_ui();}
+\DoxyCodeLine{00074\ \};}
+\DoxyCodeLine{00075\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ DINASOURGAMEWINDOW\_H}}
+
+\end{DoxyCode}

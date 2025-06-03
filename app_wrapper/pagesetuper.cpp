@@ -166,6 +166,14 @@ QList<AppWidget*> PageSetuper::create_real_app(DesktopMainWindow* mainWindow) {
 		mainWindow));
 #endif
 
+#ifdef INCLUDE_DINO_GAME
+	req.push_back(make_up_request(
+		_EXTERNAPP_INSTALL_DIR "/CCIMX_DinoGame",
+		":/icons/sources/dino_frame1.png",
+		"CCIMX_DinoGame",
+		mainWindow));
+#endif
+
 	return PageSetuper::create_one_app_only_page_append(mainWindow, req);
 }
 

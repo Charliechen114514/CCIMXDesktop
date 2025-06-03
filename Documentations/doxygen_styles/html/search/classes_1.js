@@ -1,31 +1,5 @@
 var searchData=
 [
-  ['cameracapture_0',['CameraCapture',['../class_camera_capture.html',1,'']]],
-  ['cameradeviceselector_1',['CameraDeviceSelector',['../class_camera_device_selector.html',1,'']]],
-  ['cameradisplaywidget_2',['CameraDisplayWidget',['../class_camera_display_widget.html',1,'']]],
-  ['camerawindow_3',['CameraWindow',['../class_camera_window.html',1,'']]],
-  ['ccimx_5fabstractcpustatedriver_4',['CCIMX_AbstractCPUStateDriver',['../class_c_c_i_m_x___abstract_c_p_u_state_driver.html',1,'']]],
-  ['ccimx_5fabstractmemoryinfodriver_5',['CCIMX_AbstractMemoryInfoDriver',['../class_c_c_i_m_x___abstract_memory_info_driver.html',1,'']]],
-  ['ccimx_5fabstractprocessbroswerdriver_6',['CCIMX_AbstractProcessBroswerDriver',['../class_c_c_i_m_x___abstract_process_broswer_driver.html',1,'']]],
-  ['ccimxfilesystemmodel_7',['CCIMXFileSystemModel',['../class_c_c_i_m_x_file_system_model.html',1,'']]],
-  ['ccmediaplaylist_8',['CCMediaPlayList',['../class_c_c_media_play_list.html',1,'']]],
-  ['ccnoterwindow_9',['CCNoterWindow',['../class_c_c_noter_window.html',1,'']]],
-  ['ccpdfchaptercreator_10',['CCPdfChapterCreator',['../class_c_c_pdf_chapter_creator.html',1,'']]],
-  ['ccpdfchapternode_11',['CCPdfChapterNode',['../struct_c_c_pdf_chapter_node.html',1,'']]],
-  ['ccpdfcontextdeleter_12',['CCPdfContextDeleter',['../struct_c_c_pdf_context_deleter.html',1,'']]],
-  ['ccpdfdocument_13',['CCPdfDocument',['../class_c_c_pdf_document.html',1,'']]],
-  ['ccpdfdocumentprivate_14',['CCPdfDocumentPrivate',['../struct_c_c_pdf_document_private.html',1,'']]],
-  ['ccpdfimagerequest_15',['CCPdfImageRequest',['../struct_c_c_pdf_image_request.html',1,'']]],
-  ['ccpdfmetainfo_16',['CCPdfMetaInfo',['../struct_c_c_pdf_meta_info.html',1,'']]],
-  ['ccpdfnavigationpolicy_17',['CCPdfNavigationPolicy',['../class_c_c_pdf_navigation_policy.html',1,'']]],
-  ['ccpdfscrollarea_18',['CCPdfScrollArea',['../class_c_c_pdf_scroll_area.html',1,'']]],
-  ['ccpdfviewer_19',['CCPdfViewer',['../class_c_c_pdf_viewer.html',1,'']]],
-  ['clockwidget_20',['ClockWidget',['../class_clock_widget.html',1,'']]],
-  ['cpustate_21',['CPUState',['../struct_c_p_u_state_fetcher_1_1_c_p_u_state.html',1,'CPUStateFetcher']]],
-  ['cpustatefetcher_22',['CPUStateFetcher',['../class_c_p_u_state_fetcher.html',1,'']]],
-  ['cpuusagechart_23',['CPUUsageChart',['../class_c_p_u_usage_chart.html',1,'']]],
-  ['cvimage_24',['CVImage',['../class_c_v_image.html',1,'']]],
-  ['cvimageimpl_25',['CVImageImpl',['../class_c_v_image_impl.html',1,'']]],
-  ['cvimageimplfactory_26',['CVImageImplFactory',['../class_c_v_image_impl_factory.html',1,'']]],
-  ['cvimageopencvimpl_27',['CVImageOpencvImpl',['../class_c_v_image_opencv_impl.html',1,'']]]
+  ['birdframefetch_0',['BirdFrameFetch',['../class_bird_frame_fetch.html',1,'']]],
+  ['birdobsticals_1',['BirdObsticals',['../class_bird_obsticals.html',1,'']]]
 ];

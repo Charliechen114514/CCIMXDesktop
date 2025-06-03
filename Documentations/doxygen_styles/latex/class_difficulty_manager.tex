@@ -1,0 +1,164 @@
+\doxysection{Difficulty\+Manager Class Reference}
+\hypertarget{class_difficulty_manager}{}\label{class_difficulty_manager}\index{DifficultyManager@{DifficultyManager}}
+
+
+Manages game difficulty levels and their transitions.  
+
+
+
+
+{\ttfamily \#include $<$Difficulty\+Manager.\+h$>$}
+
+Inheritance diagram for Difficulty\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_difficulty_manager}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_difficulty_manager_aea2f48da0cc7d63438763300da1a5dbe}{difficulty\+\_\+changed}} (Difficulty difficulty)
+\begin{DoxyCompactList}\small\item\em Signal emitted when the difficulty level changes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_difficulty_manager_a7a6713f40557ef98a0adbf18b6d8a065}{new\+\_\+move\+\_\+speed}} (const int new\+\_\+speed)
+\begin{DoxyCompactList}\small\item\em Signal emitted when the movement speed changes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_difficulty_manager_a4b9ff3ea8ed4321a82e6e97331e24693}{new\+\_\+obstacle\+\_\+cnt\+\_\+max}} (const int new\+\_\+speed)
+\begin{DoxyCompactList}\small\item\em Signal emitted when the maximum obstacle count changes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_difficulty_manager_a07d0bcb630e69e4a2823bd1e75cdf11e}{Difficulty\+Manager}} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{class_difficulty_manager}{Difficulty\+Manager} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_difficulty_manager_a1ab2819373431622077be43ffe2bb1d9}{upgrade\+\_\+difficulty}} ()
+\begin{DoxyCompactList}\small\item\em Upgrades the game difficulty to the next level. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_difficulty_manager_aa873934cbce3e19d954078ac2aff2df9}{set\+\_\+auto\+\_\+update}} (bool st)
+\begin{DoxyCompactList}\small\item\em Enables or disables automatic difficulty updates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_difficulty_manager_a8d10b84f918aea80ba005703ebdac223}{force\+\_\+reset}} ()
+\begin{DoxyCompactList}\small\item\em Resets the difficulty to the initial level (EASY) \end{DoxyCompactList}\item 
+Difficulty \mbox{\hyperlink{class_difficulty_manager_a3d57cca35d942d2c77d607df4f7a9225}{get\+\_\+current\+\_\+difficulty}} () const
+\begin{DoxyCompactList}\small\item\em Gets the current difficulty level. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages game difficulty levels and their transitions. 
+
+The \doxylink{class_difficulty_manager}{Difficulty\+Manager} class handles the current difficulty level of the game, provides functionality to upgrade difficulty, and emits signals when difficulty parameters change. It supports both manual and automatic difficulty updates. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_difficulty_manager_a07d0bcb630e69e4a2823bd1e75cdf11e}\index{DifficultyManager@{DifficultyManager}!DifficultyManager@{DifficultyManager}}
+\index{DifficultyManager@{DifficultyManager}!DifficultyManager@{DifficultyManager}}
+\doxysubsubsection{\texorpdfstring{DifficultyManager()}{DifficultyManager()}}
+{\footnotesize\ttfamily \label{class_difficulty_manager_a07d0bcb630e69e4a2823bd1e75cdf11e} 
+Difficulty\+Manager\+::\+Difficulty\+Manager (\begin{DoxyParamCaption}\item[{QObject \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructs a \doxylink{class_difficulty_manager}{Difficulty\+Manager} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & The parent QObject (optional) \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_difficulty_manager_aea2f48da0cc7d63438763300da1a5dbe}\index{DifficultyManager@{DifficultyManager}!difficulty\_changed@{difficulty\_changed}}
+\index{difficulty\_changed@{difficulty\_changed}!DifficultyManager@{DifficultyManager}}
+\doxysubsubsection{\texorpdfstring{difficulty\_changed}{difficulty\_changed}}
+{\footnotesize\ttfamily \label{class_difficulty_manager_aea2f48da0cc7d63438763300da1a5dbe} 
+void Difficulty\+Manager\+::difficulty\+\_\+changed (\begin{DoxyParamCaption}\item[{Difficulty}]{difficulty}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Signal emitted when the difficulty level changes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em difficulty} & The new difficulty level \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_difficulty_manager_a8d10b84f918aea80ba005703ebdac223}\index{DifficultyManager@{DifficultyManager}!force\_reset@{force\_reset}}
+\index{force\_reset@{force\_reset}!DifficultyManager@{DifficultyManager}}
+\doxysubsubsection{\texorpdfstring{force\_reset()}{force\_reset()}}
+{\footnotesize\ttfamily \label{class_difficulty_manager_a8d10b84f918aea80ba005703ebdac223} 
+void Difficulty\+Manager\+::force\+\_\+reset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Resets the difficulty to the initial level (EASY) 
+
+This is a forced reset that immediately changes the difficulty regardless of any timers or auto-\/update settings. \Hypertarget{class_difficulty_manager_a3d57cca35d942d2c77d607df4f7a9225}\index{DifficultyManager@{DifficultyManager}!get\_current\_difficulty@{get\_current\_difficulty}}
+\index{get\_current\_difficulty@{get\_current\_difficulty}!DifficultyManager@{DifficultyManager}}
+\doxysubsubsection{\texorpdfstring{get\_current\_difficulty()}{get\_current\_difficulty()}}
+{\footnotesize\ttfamily \label{class_difficulty_manager_a3d57cca35d942d2c77d607df4f7a9225} 
+Difficulty Difficulty\+Manager\+::get\+\_\+current\+\_\+difficulty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the current difficulty level. 
+
+\begin{DoxyReturn}{Returns}
+The current Difficulty enum value 
+\end{DoxyReturn}
+\Hypertarget{class_difficulty_manager_a7a6713f40557ef98a0adbf18b6d8a065}\index{DifficultyManager@{DifficultyManager}!new\_move\_speed@{new\_move\_speed}}
+\index{new\_move\_speed@{new\_move\_speed}!DifficultyManager@{DifficultyManager}}
+\doxysubsubsection{\texorpdfstring{new\_move\_speed}{new\_move\_speed}}
+{\footnotesize\ttfamily \label{class_difficulty_manager_a7a6713f40557ef98a0adbf18b6d8a065} 
+void Difficulty\+Manager\+::new\+\_\+move\+\_\+speed (\begin{DoxyParamCaption}\item[{const int}]{new\+\_\+speed}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Signal emitted when the movement speed changes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+speed} & The new movement speed value \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_difficulty_manager_a4b9ff3ea8ed4321a82e6e97331e24693}\index{DifficultyManager@{DifficultyManager}!new\_obstacle\_cnt\_max@{new\_obstacle\_cnt\_max}}
+\index{new\_obstacle\_cnt\_max@{new\_obstacle\_cnt\_max}!DifficultyManager@{DifficultyManager}}
+\doxysubsubsection{\texorpdfstring{new\_obstacle\_cnt\_max}{new\_obstacle\_cnt\_max}}
+{\footnotesize\ttfamily \label{class_difficulty_manager_a4b9ff3ea8ed4321a82e6e97331e24693} 
+void Difficulty\+Manager\+::new\+\_\+obstacle\+\_\+cnt\+\_\+max (\begin{DoxyParamCaption}\item[{const int}]{new\+\_\+speed}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Signal emitted when the maximum obstacle count changes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+speed} & The new maximum obstacle count \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_difficulty_manager_aa873934cbce3e19d954078ac2aff2df9}\index{DifficultyManager@{DifficultyManager}!set\_auto\_update@{set\_auto\_update}}
+\index{set\_auto\_update@{set\_auto\_update}!DifficultyManager@{DifficultyManager}}
+\doxysubsubsection{\texorpdfstring{set\_auto\_update()}{set\_auto\_update()}}
+{\footnotesize\ttfamily \label{class_difficulty_manager_aa873934cbce3e19d954078ac2aff2df9} 
+void Difficulty\+Manager\+::set\+\_\+auto\+\_\+update (\begin{DoxyParamCaption}\item[{bool}]{st}{}\end{DoxyParamCaption})}
+
+
+
+Enables or disables automatic difficulty updates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em st} & True to enable auto-\/update, false to disable \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_difficulty_manager_a1ab2819373431622077be43ffe2bb1d9}\index{DifficultyManager@{DifficultyManager}!upgrade\_difficulty@{upgrade\_difficulty}}
+\index{upgrade\_difficulty@{upgrade\_difficulty}!DifficultyManager@{DifficultyManager}}
+\doxysubsubsection{\texorpdfstring{upgrade\_difficulty()}{upgrade\_difficulty()}}
+{\footnotesize\ttfamily \label{class_difficulty_manager_a1ab2819373431622077be43ffe2bb1d9} 
+void Difficulty\+Manager\+::upgrade\+\_\+difficulty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Upgrades the game difficulty to the next level. 
+
+If the current difficulty is already at the highest level, this function will have no effect. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+extern\+\_\+app/games/\+CCIMX\+\_\+\+Dino\+Game/core/Difficulty\+Manager.\+h\item 
+extern\+\_\+app/games/\+CCIMX\+\_\+\+Dino\+Game/core/Difficulty\+Manager.\+cpp\end{DoxyCompactItemize}

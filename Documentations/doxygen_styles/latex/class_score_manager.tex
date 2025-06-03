@@ -1,0 +1,130 @@
+\doxysection{Score\+Manager Class Reference}
+\hypertarget{class_score_manager}{}\label{class_score_manager}\index{ScoreManager@{ScoreManager}}
+Inheritance diagram for Score\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_score_manager}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_score_manager_ad90a12e8f57a175b85d30e43c81b69c9}{set\+\_\+score\+\_\+increase\+\_\+step}} (int step=Settings\+::\+Score\+::\+DEF\+\_\+\+STEP)
+\begin{DoxyCompactList}\small\item\em Sets score increment step size. \end{DoxyCompactList}\item 
+\Hypertarget{class_score_manager_a32b6d765e289d9d76d19a9e3e3424f03}\label{class_score_manager_a32b6d765e289d9d76d19a9e3e3424f03} 
+void {\bfseries increase\+\_\+once} ()
+\begin{DoxyCompactList}\small\item\em Increments score once using current step. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_score_manager_a0a882a4403a0a2f4b0f50d063d7ce768}{increase\+\_\+once}} (int score)
+\begin{DoxyCompactList}\small\item\em Increments score by specified amount. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_score_manager_a03865f6ca585210daf5e91ea3deec5a8}{set\+\_\+increase\+\_\+automatically}} (bool st)
+\begin{DoxyCompactList}\small\item\em Enables/disables automatic score increase. \end{DoxyCompactList}\item 
+\Hypertarget{class_score_manager_ab44220410553df9baae2bb8d0bdaeb6b}\label{class_score_manager_ab44220410553df9baae2bb8d0bdaeb6b} 
+void {\bfseries force\+\_\+reset} ()
+\begin{DoxyCompactList}\small\item\em Resets score to initial value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_score_manager_acf4e3c069eb0b11b37294f7bbd985e9f}{Score\+Manager}} (QObject \texorpdfstring{$\ast$}{*}parent)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{class_score_manager}{Score\+Manager}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_score_manager_a3126911196a910cae045c21cad8ab3ca}{get\+\_\+score}} () const
+\begin{DoxyCompactList}\small\item\em Gets current score. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_score_manager_a5c1c0ad9b9bf171939dcf5678c120ef1}{get\+\_\+step}} () const
+\begin{DoxyCompactList}\small\item\em Gets current score increment step. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_score_manager_acf4e3c069eb0b11b37294f7bbd985e9f}\index{ScoreManager@{ScoreManager}!ScoreManager@{ScoreManager}}
+\index{ScoreManager@{ScoreManager}!ScoreManager@{ScoreManager}}
+\doxysubsubsection{\texorpdfstring{ScoreManager()}{ScoreManager()}}
+{\footnotesize\ttfamily \label{class_score_manager_acf4e3c069eb0b11b37294f7bbd985e9f} 
+Score\+Manager\+::\+Score\+Manager (\begin{DoxyParamCaption}\item[{QObject \texorpdfstring{$\ast$}{*}}]{parent}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructs a \doxylink{class_score_manager}{Score\+Manager}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Parent QObject \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_score_manager_a3126911196a910cae045c21cad8ab3ca}\index{ScoreManager@{ScoreManager}!get\_score@{get\_score}}
+\index{get\_score@{get\_score}!ScoreManager@{ScoreManager}}
+\doxysubsubsection{\texorpdfstring{get\_score()}{get\_score()}}
+{\footnotesize\ttfamily \label{class_score_manager_a3126911196a910cae045c21cad8ab3ca} 
+int Score\+Manager\+::get\+\_\+score (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets current score. 
+
+\begin{DoxyReturn}{Returns}
+Current score value 
+\end{DoxyReturn}
+\Hypertarget{class_score_manager_a5c1c0ad9b9bf171939dcf5678c120ef1}\index{ScoreManager@{ScoreManager}!get\_step@{get\_step}}
+\index{get\_step@{get\_step}!ScoreManager@{ScoreManager}}
+\doxysubsubsection{\texorpdfstring{get\_step()}{get\_step()}}
+{\footnotesize\ttfamily \label{class_score_manager_a5c1c0ad9b9bf171939dcf5678c120ef1} 
+int Score\+Manager\+::get\+\_\+step (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets current score increment step. 
+
+\begin{DoxyReturn}{Returns}
+Current step value 
+\end{DoxyReturn}
+\Hypertarget{class_score_manager_a0a882a4403a0a2f4b0f50d063d7ce768}\index{ScoreManager@{ScoreManager}!increase\_once@{increase\_once}}
+\index{increase\_once@{increase\_once}!ScoreManager@{ScoreManager}}
+\doxysubsubsection{\texorpdfstring{increase\_once}{increase\_once}}
+{\footnotesize\ttfamily \label{class_score_manager_a0a882a4403a0a2f4b0f50d063d7ce768} 
+void Score\+Manager\+::increase\+\_\+once (\begin{DoxyParamCaption}\item[{int}]{score}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Increments score by specified amount. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em score} & Amount to increase \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_score_manager_a03865f6ca585210daf5e91ea3deec5a8}\index{ScoreManager@{ScoreManager}!set\_increase\_automatically@{set\_increase\_automatically}}
+\index{set\_increase\_automatically@{set\_increase\_automatically}!ScoreManager@{ScoreManager}}
+\doxysubsubsection{\texorpdfstring{set\_increase\_automatically}{set\_increase\_automatically}}
+{\footnotesize\ttfamily \label{class_score_manager_a03865f6ca585210daf5e91ea3deec5a8} 
+void Score\+Manager\+::set\+\_\+increase\+\_\+automatically (\begin{DoxyParamCaption}\item[{bool}]{st}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Enables/disables automatic score increase. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em st} & True to enable auto-\/increase \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_score_manager_ad90a12e8f57a175b85d30e43c81b69c9}\index{ScoreManager@{ScoreManager}!set\_score\_increase\_step@{set\_score\_increase\_step}}
+\index{set\_score\_increase\_step@{set\_score\_increase\_step}!ScoreManager@{ScoreManager}}
+\doxysubsubsection{\texorpdfstring{set\_score\_increase\_step}{set\_score\_increase\_step}}
+{\footnotesize\ttfamily \label{class_score_manager_ad90a12e8f57a175b85d30e43c81b69c9} 
+void Score\+Manager\+::set\+\_\+score\+\_\+increase\+\_\+step (\begin{DoxyParamCaption}\item[{int}]{step}{ = {\ttfamily Settings\+:\+:Score\+:\+:DEF\+\_\+STEP}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Sets score increment step size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em step} & Increment step (default\+: Settings\+::\+Score\+::\+DEF\+\_\+\+STEP) \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+extern\+\_\+app/games/\+CCIMX\+\_\+\+Dino\+Game/core/Score\+Manager.\+h\item 
+extern\+\_\+app/games/\+CCIMX\+\_\+\+Dino\+Game/core/Score\+Manager.\+cpp\end{DoxyCompactItemize}

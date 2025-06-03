@@ -1,14 +1,10 @@
 var searchData=
 [
-  ['samplerate_0',['sampleRate',['../struct_media_info.html#adced269a0044b247726c00fb42212a86',1,'MediaInfo']]],
-  ['selector_1',['selector',['../struct_wall_paper_animation_handler_1_1_image_pool_engine.html#add618f4f1160a42f5384169359212c49',1,'WallPaperAnimationHandler::ImagePoolEngine']]],
-  ['shoule_5fbe_5flower_2',['shoule_be_lower',['../struct_desktop_main_window_1_1_wall_paper_group.html#a9922ccd98f9ca1cf5848a92a07e91486',1,'DesktopMainWindow::WallPaperGroup']]],
-  ['start_3',['start',['../struct_app_weather_detailed_request.html#aea957e389a8c916be928a45ee192cbc9',1,'AppWeatherDetailedRequest']]],
-  ['start_5fangle_4',['START_ANGLE',['../class_gauge_widget.html#a99d142e2cd02e445962fdaa1007fc849',1,'GaugeWidget']]],
-  ['start_5fcolor_5',['START_COLOR',['../class_gauge_widget.html#a0fb785ba1093f3e7076d5fe4b791abc9',1,'GaugeWidget']]],
-  ['step_5fshort_6',['STEP_SHORT',['../class_scrolling_label.html#a5312f2d183407cfb37ccfa160c739366',1,'ScrollingLabel']]],
-  ['sub_5fmain_5frate_7',['SUB_MAIN_RATE',['../class_gauge_widget.html#a40f42cfa9170d525b1e4b4f8c065db5c',1,'GaugeWidget']]],
-  ['sub_5ftick_5flength_8',['SUB_TICK_LENGTH',['../class_gauge_widget.html#a51a6dc4916bb8aa3fe7069505d007869',1,'GaugeWidget']]],
-  ['sub_5ftick_5fwidth_9',['SUB_TICK_WIDTH',['../class_gauge_widget.html#a0625d59a9f6b07222eb88e1ff7997e79',1,'GaugeWidget']]],
-  ['subject_10',['subject',['../struct_c_c_pdf_meta_info.html#a6432628cd10311d15f38f6c8dee7031d',1,'CCPdfMetaInfo']]]
+  ['raw_5fimage_0',['raw_image',['../class_c_v_image_opencv_impl.html#a80cc0140c1ee9a6e0928c8e974326669',1,'CVImageOpencvImpl']]],
+  ['recordpixmap_1',['recordPixmap',['../class_disk_music.html#a54a419c7b73e26dcdc632677a93f0c23',1,'DiskMusic']]],
+  ['release_2',['release',['../class_desktop_main_window.html#a84eecc2fcabddb1424455ccf9cc56929',1,'DesktopMainWindow']]],
+  ['req_5ffollow_5findicator_3',['req_follow_indicator',['../struct_c_c_pdf_navigation_policy_1_1_indicator.html#a57b1edfbb713dad818ebda44ef01e03c',1,'CCPdfNavigationPolicy::Indicator']]],
+  ['request_5fdocument_4',['request_document',['../struct_c_c_pdf_image_request.html#aa718f86585d96f92687e5aec1527dd12',1,'CCPdfImageRequest']]],
+  ['request_5fpage_5',['request_page',['../struct_c_c_pdf_image_request.html#a3d5fb43822cf2a8c84399060ab727efc',1,'CCPdfImageRequest']]],
+  ['rol_6',['rol',['../struct_i_c_m20608_data.html#afd507633763e6ab1129f0e518ed78bde',1,'ICM20608Data::rol'],['../struct_i_c_m20608_app_data.html#a837d30a73e11567a17780de7275daec4',1,'ICM20608AppData::rol'],['../struct_i_c_m20608_data.html#a2f02b0533afd591a8b99752edf1b0065',1,'ICM20608Data::rol'],['../struct_i_c_m20608_app_data.html#a519bb277d955d3f210e53730edf50740',1,'ICM20608AppData::rol']]]
 ];

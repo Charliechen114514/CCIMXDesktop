@@ -37,6 +37,7 @@
 - 🖼️ ImageWalker（最基础的图像信息浏览查看器，相当于丐版的Windows图像浏览器）
 - ✏️ MarkDown阅读器（最基础的Markdown编辑 + 预览功能，支持草稿 / 加载保存Markdown与基础快捷功能）
 - 🛜 CCNetHelper（支持网卡信息查看，IP端口扫描和基本测试IP打通能力）
+- 🦖Dinasour Game!（是的，就是那个Google Dinasour Game，用Qt6 Widgets实现的版本 :) ）
 
 ------
 
@@ -89,7 +90,6 @@
   - 🧮 口袋计算器
   - 🔌 串口助手
   - ✅ 任务清单
-  - 🦖Dinasour Game!
   - 🤖 图像处理器本地处理图像和做简单的推理（人脸识别）
   - ⚙ 基础的设置（类似IOS，但是很多是观赏性较为强）
 

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['temperarycacher_0',['TemperaryCacher',['../class_temperary_cacher.html',1,'']]],
-  ['toolboxs_1',['ToolBoxs',['../class_tool_boxs.html',1,'']]],
-  ['toolssidebar_2',['ToolsSideBar',['../class_tools_side_bar.html',1,'']]]
+  ['readmewidget_0',['ReadMeWidget',['../class_read_me_widget.html',1,'']]],
+  ['rol_1',['rol',['../structrol.html',1,'']]]
 ];

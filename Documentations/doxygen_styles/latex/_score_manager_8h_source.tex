@@ -1,0 +1,43 @@
+\doxysection{Score\+Manager.\+h}
+\hypertarget{_score_manager_8h_source}{}\label{_score_manager_8h_source}\index{extern\_app/games/CCIMX\_DinoGame/core/ScoreManager.h@{extern\_app/games/CCIMX\_DinoGame/core/ScoreManager.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ SCOREMANAGER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ SCOREMANAGER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}settings/settings\_score.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }QTimer;}
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }QMutex;}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_score_manager_acf4e3c069eb0b11b37294f7bbd985e9f}{ScoreManager}}\ :\ \textcolor{keyword}{public}\ QObject\ \{}
+\DoxyCodeLine{00011\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00012\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_score_manager_acf4e3c069eb0b11b37294f7bbd985e9f}{ScoreManager}}(QObject*\ parent);}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_score_manager_a3126911196a910cae045c21cad8ab3ca}{get\_score}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ score;\ \}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_score_manager_a5c1c0ad9b9bf171939dcf5678c120ef1}{get\_step}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ step;\ \}}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_score_manager_ad90a12e8f57a175b85d30e43c81b69c9}{set\_score\_increase\_step}}(\textcolor{keywordtype}{int}\ step\ =\ Settings::Score::DEF\_STEP);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_score_manager_a32b6d765e289d9d76d19a9e3e3424f03}{increase\_once}}();}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_score_manager_a32b6d765e289d9d76d19a9e3e3424f03}{increase\_once}}(\textcolor{keywordtype}{int}\ score);}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_score_manager_a03865f6ca585210daf5e91ea3deec5a8}{set\_increase\_automatically}}(\textcolor{keywordtype}{bool}\ st);}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_score_manager_ab44220410553df9baae2bb8d0bdaeb6b}{force\_reset}}();}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{int}\ score\ \{\ Settings::Score::START\_SCORE\ \};\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{int}\ step\ \{\ Settings::Score::DEF\_STEP\ \};\ }
+\DoxyCodeLine{00063\ \ \ \ \ std::shared\_ptr<QMutex>\ mutex\_locker;\ }
+\DoxyCodeLine{00064\ \ \ \ \ QTimer*\ auto\_update\_timer;\ }
+\DoxyCodeLine{00065\ \};}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ SCOREMANAGER\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,141 @@
+\doxysection{Dinasour\+Frame\+Fetcher Class Reference}
+\hypertarget{class_dinasour_frame_fetcher}{}\label{class_dinasour_frame_fetcher}\index{DinasourFrameFetcher@{DinasourFrameFetcher}}
+
+
+Provides frame data for the dinosaur character based on its state.  
+
+
+
+
+{\ttfamily \#include $<$Figure\+Frame\+Fetcher.\+h$>$}
+
+Inheritance diagram for Dinasour\+Frame\+Fetcher\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_dinasour_frame_fetcher}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{class_dinasour_frame_fetcher_abd9732a2fc7ec5c1389b3308eb920182}{State}} \{ \mbox{\hyperlink{class_dinasour_frame_fetcher_abd9732a2fc7ec5c1389b3308eb920182a1e23852820b9154316c7c06e2b7ba051}{NORMAL}}
+, \mbox{\hyperlink{class_dinasour_frame_fetcher_abd9732a2fc7ec5c1389b3308eb920182a04c8d84fc9a3e62a03ca514d64a2f908}{LAY}}
+ \}
+\begin{DoxyCompactList}\small\item\em States the dinosaur character can be in. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_dinasour_frame_fetcher_a4ef92d5007f53d2ac9172a1f4fadc785}{set\+\_\+frame\+\_\+state}} (\mbox{\hyperlink{class_dinasour_frame_fetcher_abd9732a2fc7ec5c1389b3308eb920182}{State}} s)
+\begin{DoxyCompactList}\small\item\em Sets the current frame state. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_dinasour_frame_fetcher_ab26d46ece4b674739326241b03260ffa}{Dinasour\+Frame\+Fetcher}} (const QString \&valid\+\_\+base\+\_\+path, QObject \texorpdfstring{$\ast$}{*}parent)
+\begin{DoxyCompactList}\small\item\em Constructs the dinosaur frame fetcher with a valid base path. \end{DoxyCompactList}\item 
+QRect \& \mbox{\hyperlink{class_dinasour_frame_fetcher_aa33535eac63d385feb56100e0ee55eed}{src\+\_\+bounding\+\_\+rect}} () override
+\begin{DoxyCompactList}\small\item\em Returns the current source bounding rectangle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_frame_provider}{Frame\+Provider}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_frame_provider_a66c3f28e8b6b4082b617130084aa5f0c}{Frame\+Provider}} (const QString \&valid\+\_\+base\+\_\+path, QObject \texorpdfstring{$\ast$}{*}parent)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{class_frame_provider}{Frame\+Provider} with initial path. \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Frame\+Provider} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_frame_provider_a2004a8fc6bbbefc9c3c76099e8bd9a8d}{append\+\_\+src}} (const QString \&valid\+\_\+base\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Adds a single source path. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_frame_provider_a24ff802e74313603d0af7ac481a01529}{append\+\_\+srcs}} (const QString\+List \&valid\+\_\+base\+\_\+paths)
+\begin{DoxyCompactList}\small\item\em Adds multiple source paths. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_frame_provider_aba77aa9854f2acab26c5920c1bf6ab18}{lock\+\_\+src}} (const QString \&valid\+\_\+base\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Locks to a specific source path. \end{DoxyCompactList}\item 
+void {\bfseries terminate\+\_\+flow} ()
+\begin{DoxyCompactList}\small\item\em Stops frame updates. \end{DoxyCompactList}\item 
+void {\bfseries resume\+\_\+flow} ()
+\begin{DoxyCompactList}\small\item\em Resumes frame updates. \end{DoxyCompactList}\item 
+void {\bfseries manual\+\_\+shuffle\+\_\+once} ()
+\begin{DoxyCompactList}\small\item\em Manually triggers one frame shuffle. \end{DoxyCompactList}\item 
+QPixmap \& \mbox{\hyperlink{class_frame_provider_a380b7a56a181a6fe94897b8500529919}{src\+\_\+pixmap}} ()
+\begin{DoxyCompactList}\small\item\em Gets current source pixmap. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides frame data for the dinosaur character based on its state. 
+
+\doxysubsection{Member Enumeration Documentation}
+\Hypertarget{class_dinasour_frame_fetcher_abd9732a2fc7ec5c1389b3308eb920182}\index{DinasourFrameFetcher@{DinasourFrameFetcher}!State@{State}}
+\index{State@{State}!DinasourFrameFetcher@{DinasourFrameFetcher}}
+\doxysubsubsection{\texorpdfstring{State}{State}}
+{\footnotesize\ttfamily \label{class_dinasour_frame_fetcher_abd9732a2fc7ec5c1389b3308eb920182} 
+enum class \mbox{\hyperlink{class_dinasour_frame_fetcher_abd9732a2fc7ec5c1389b3308eb920182}{Dinasour\+Frame\+Fetcher\+::\+State}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+States the dinosaur character can be in. 
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NORMAL@{NORMAL}!DinasourFrameFetcher@{DinasourFrameFetcher}}\index{DinasourFrameFetcher@{DinasourFrameFetcher}!NORMAL@{NORMAL}}}\Hypertarget{class_dinasour_frame_fetcher_abd9732a2fc7ec5c1389b3308eb920182a1e23852820b9154316c7c06e2b7ba051}\label{class_dinasour_frame_fetcher_abd9732a2fc7ec5c1389b3308eb920182a1e23852820b9154316c7c06e2b7ba051} 
+NORMAL&Normal standing/running state. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LAY@{LAY}!DinasourFrameFetcher@{DinasourFrameFetcher}}\index{DinasourFrameFetcher@{DinasourFrameFetcher}!LAY@{LAY}}}\Hypertarget{class_dinasour_frame_fetcher_abd9732a2fc7ec5c1389b3308eb920182a04c8d84fc9a3e62a03ca514d64a2f908}\label{class_dinasour_frame_fetcher_abd9732a2fc7ec5c1389b3308eb920182a04c8d84fc9a3e62a03ca514d64a2f908} 
+LAY&Crouching/laying state. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_dinasour_frame_fetcher_ab26d46ece4b674739326241b03260ffa}\index{DinasourFrameFetcher@{DinasourFrameFetcher}!DinasourFrameFetcher@{DinasourFrameFetcher}}
+\index{DinasourFrameFetcher@{DinasourFrameFetcher}!DinasourFrameFetcher@{DinasourFrameFetcher}}
+\doxysubsubsection{\texorpdfstring{DinasourFrameFetcher()}{DinasourFrameFetcher()}}
+{\footnotesize\ttfamily \label{class_dinasour_frame_fetcher_ab26d46ece4b674739326241b03260ffa} 
+Dinasour\+Frame\+Fetcher\+::\+Dinasour\+Frame\+Fetcher (\begin{DoxyParamCaption}\item[{const QString \&}]{valid\+\_\+base\+\_\+path}{, }\item[{QObject \texorpdfstring{$\ast$}{*}}]{parent}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructs the dinosaur frame fetcher with a valid base path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em valid\+\_\+base\+\_\+path} & Base path to the frame resources. \\
+\hline
+{\em parent} & The parent QObject. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_dinasour_frame_fetcher_a4ef92d5007f53d2ac9172a1f4fadc785}\index{DinasourFrameFetcher@{DinasourFrameFetcher}!set\_frame\_state@{set\_frame\_state}}
+\index{set\_frame\_state@{set\_frame\_state}!DinasourFrameFetcher@{DinasourFrameFetcher}}
+\doxysubsubsection{\texorpdfstring{set\_frame\_state()}{set\_frame\_state()}}
+{\footnotesize\ttfamily \label{class_dinasour_frame_fetcher_a4ef92d5007f53d2ac9172a1f4fadc785} 
+void Dinasour\+Frame\+Fetcher\+::set\+\_\+frame\+\_\+state (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_dinasour_frame_fetcher_abd9732a2fc7ec5c1389b3308eb920182}{State}}}]{s}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the current frame state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & The new state. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dinasour_frame_fetcher_aa33535eac63d385feb56100e0ee55eed}\index{DinasourFrameFetcher@{DinasourFrameFetcher}!src\_bounding\_rect@{src\_bounding\_rect}}
+\index{src\_bounding\_rect@{src\_bounding\_rect}!DinasourFrameFetcher@{DinasourFrameFetcher}}
+\doxysubsubsection{\texorpdfstring{src\_bounding\_rect()}{src\_bounding\_rect()}}
+{\footnotesize\ttfamily \label{class_dinasour_frame_fetcher_aa33535eac63d385feb56100e0ee55eed} 
+QRect \& Dinasour\+Frame\+Fetcher\+::src\+\_\+bounding\+\_\+rect (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns the current source bounding rectangle. 
+
+\begin{DoxyReturn}{Returns}
+Reference to the QRect representing the bounding rect. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_frame_provider_a83e9736977d0dd09505bf69e35b0ed83}{Frame\+Provider}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+extern\+\_\+app/games/\+CCIMX\+\_\+\+Dino\+Game/ui/\mbox{\hyperlink{_figure_frame_fetcher_8h}{Figure\+Frame\+Fetcher.\+h}}\item 
+extern\+\_\+app/games/\+CCIMX\+\_\+\+Dino\+Game/ui/Figure\+Frame\+Fetcher.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,162 @@
+\doxysection{Sound\+Effect\+Player Class Reference}
+\hypertarget{class_sound_effect_player}{}\label{class_sound_effect_player}\index{SoundEffectPlayer@{SoundEffectPlayer}}
+
+
+Handles playback of sound effects.  
+
+
+
+
+{\ttfamily \#include $<$Sound\+Effect\+Player.\+h$>$}
+
+Inheritance diagram for Sound\+Effect\+Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_sound_effect_player}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{class_sound_effect_player_a7da42a0c3a6ce56c9235ad27dbb99690}{Effect\+Index}} \{ \mbox{\hyperlink{class_sound_effect_player_a7da42a0c3a6ce56c9235ad27dbb99690a40222410c7347ec4b6bcaba3bcb21f3b}{JUMP}}
+, \mbox{\hyperlink{class_sound_effect_player_a7da42a0c3a6ce56c9235ad27dbb99690ac9b2281fa6fd403855443e6555aa16a9}{SCORE}}
+, \mbox{\hyperlink{class_sound_effect_player_a7da42a0c3a6ce56c9235ad27dbb99690a83ebd7c89f4cc1a85396fba7d6f7e900}{DIE}}
+ \}
+\begin{DoxyCompactList}\small\item\em Indexes for different sound effects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sound_effect_player_a5be81b1aca39e68e196c9325a2454dd2}{Sound\+Effect\+Player}} (QObject \texorpdfstring{$\ast$}{*}parent)
+\begin{DoxyCompactList}\small\item\em Constructs \doxylink{class_sound_effect_player}{Sound\+Effect\+Player}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sound_effect_player_abc8f34500563824c2a96d3b236ff0af8}{play}} (\mbox{\hyperlink{class_sound_effect_player_a7da42a0c3a6ce56c9235ad27dbb99690}{Effect\+Index}} \mbox{\hyperlink{class_sound_effect_player_ae70933accefa848f9bf5923f52ff6aa4}{index}})
+\begin{DoxyCompactList}\small\item\em Plays specified sound effect. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr int \mbox{\hyperlink{class_sound_effect_player_ae70933accefa848f9bf5923f52ff6aa4}{index}} (const \mbox{\hyperlink{class_sound_effect_player_a7da42a0c3a6ce56c9235ad27dbb99690}{Effect\+Index}} \&e)
+\begin{DoxyCompactList}\small\item\em Converts \doxylink{class_sound_effect_player_a7da42a0c3a6ce56c9235ad27dbb99690}{Effect\+Index} to integer. \end{DoxyCompactList}\item 
+static constexpr \mbox{\hyperlink{class_sound_effect_player_a7da42a0c3a6ce56c9235ad27dbb99690}{Effect\+Index}} \mbox{\hyperlink{class_sound_effect_player_a945aa394eb416f037ef643b8f693fbb9}{index}} (const int e)
+\begin{DoxyCompactList}\small\item\em Converts integer to \doxylink{class_sound_effect_player_a7da42a0c3a6ce56c9235ad27dbb99690}{Effect\+Index}. \end{DoxyCompactList}\item 
+static constexpr int \mbox{\hyperlink{class_sound_effect_player_ac3bfeb7f55c9cd372952c99cfde8c925}{max\+\_\+cnt}} ()
+\begin{DoxyCompactList}\small\item\em Gets total number of sound effects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handles playback of sound effects. 
+
+\doxysubsection{Member Enumeration Documentation}
+\Hypertarget{class_sound_effect_player_a7da42a0c3a6ce56c9235ad27dbb99690}\index{SoundEffectPlayer@{SoundEffectPlayer}!EffectIndex@{EffectIndex}}
+\index{EffectIndex@{EffectIndex}!SoundEffectPlayer@{SoundEffectPlayer}}
+\doxysubsubsection{\texorpdfstring{EffectIndex}{EffectIndex}}
+{\footnotesize\ttfamily \label{class_sound_effect_player_a7da42a0c3a6ce56c9235ad27dbb99690} 
+enum class \mbox{\hyperlink{class_sound_effect_player_a7da42a0c3a6ce56c9235ad27dbb99690}{Sound\+Effect\+Player\+::\+Effect\+Index}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Indexes for different sound effects. 
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{JUMP@{JUMP}!SoundEffectPlayer@{SoundEffectPlayer}}\index{SoundEffectPlayer@{SoundEffectPlayer}!JUMP@{JUMP}}}\Hypertarget{class_sound_effect_player_a7da42a0c3a6ce56c9235ad27dbb99690a40222410c7347ec4b6bcaba3bcb21f3b}\label{class_sound_effect_player_a7da42a0c3a6ce56c9235ad27dbb99690a40222410c7347ec4b6bcaba3bcb21f3b} 
+JUMP&Jump sound effect. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SCORE@{SCORE}!SoundEffectPlayer@{SoundEffectPlayer}}\index{SoundEffectPlayer@{SoundEffectPlayer}!SCORE@{SCORE}}}\Hypertarget{class_sound_effect_player_a7da42a0c3a6ce56c9235ad27dbb99690ac9b2281fa6fd403855443e6555aa16a9}\label{class_sound_effect_player_a7da42a0c3a6ce56c9235ad27dbb99690ac9b2281fa6fd403855443e6555aa16a9} 
+SCORE&Score sound effect. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DIE@{DIE}!SoundEffectPlayer@{SoundEffectPlayer}}\index{SoundEffectPlayer@{SoundEffectPlayer}!DIE@{DIE}}}\Hypertarget{class_sound_effect_player_a7da42a0c3a6ce56c9235ad27dbb99690a83ebd7c89f4cc1a85396fba7d6f7e900}\label{class_sound_effect_player_a7da42a0c3a6ce56c9235ad27dbb99690a83ebd7c89f4cc1a85396fba7d6f7e900} 
+DIE&Death sound effect. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_sound_effect_player_a5be81b1aca39e68e196c9325a2454dd2}\index{SoundEffectPlayer@{SoundEffectPlayer}!SoundEffectPlayer@{SoundEffectPlayer}}
+\index{SoundEffectPlayer@{SoundEffectPlayer}!SoundEffectPlayer@{SoundEffectPlayer}}
+\doxysubsubsection{\texorpdfstring{SoundEffectPlayer()}{SoundEffectPlayer()}}
+{\footnotesize\ttfamily \label{class_sound_effect_player_a5be81b1aca39e68e196c9325a2454dd2} 
+Sound\+Effect\+Player\+::\+Sound\+Effect\+Player (\begin{DoxyParamCaption}\item[{QObject \texorpdfstring{$\ast$}{*}}]{parent}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructs \doxylink{class_sound_effect_player}{Sound\+Effect\+Player}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Parent QObject \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_sound_effect_player_ae70933accefa848f9bf5923f52ff6aa4}\index{SoundEffectPlayer@{SoundEffectPlayer}!index@{index}}
+\index{index@{index}!SoundEffectPlayer@{SoundEffectPlayer}}
+\doxysubsubsection{\texorpdfstring{index()}{index()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_sound_effect_player_ae70933accefa848f9bf5923f52ff6aa4} 
+static constexpr int Sound\+Effect\+Player\+::index (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sound_effect_player_a7da42a0c3a6ce56c9235ad27dbb99690}{Effect\+Index}} \&}]{e}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+
+
+Converts \doxylink{class_sound_effect_player_a7da42a0c3a6ce56c9235ad27dbb99690}{Effect\+Index} to integer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Effect index to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Integer representation 
+\end{DoxyReturn}
+\Hypertarget{class_sound_effect_player_a945aa394eb416f037ef643b8f693fbb9}\index{SoundEffectPlayer@{SoundEffectPlayer}!index@{index}}
+\index{index@{index}!SoundEffectPlayer@{SoundEffectPlayer}}
+\doxysubsubsection{\texorpdfstring{index()}{index()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_sound_effect_player_a945aa394eb416f037ef643b8f693fbb9} 
+static constexpr \mbox{\hyperlink{class_sound_effect_player_a7da42a0c3a6ce56c9235ad27dbb99690}{Effect\+Index}} Sound\+Effect\+Player\+::index (\begin{DoxyParamCaption}\item[{const int}]{e}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+
+
+Converts integer to \doxylink{class_sound_effect_player_a7da42a0c3a6ce56c9235ad27dbb99690}{Effect\+Index}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Integer to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_sound_effect_player_a7da42a0c3a6ce56c9235ad27dbb99690}{Effect\+Index} representation 
+\end{DoxyReturn}
+\Hypertarget{class_sound_effect_player_ac3bfeb7f55c9cd372952c99cfde8c925}\index{SoundEffectPlayer@{SoundEffectPlayer}!max\_cnt@{max\_cnt}}
+\index{max\_cnt@{max\_cnt}!SoundEffectPlayer@{SoundEffectPlayer}}
+\doxysubsubsection{\texorpdfstring{max\_cnt()}{max\_cnt()}}
+{\footnotesize\ttfamily \label{class_sound_effect_player_ac3bfeb7f55c9cd372952c99cfde8c925} 
+static constexpr int Sound\+Effect\+Player\+::max\+\_\+cnt (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+
+
+Gets total number of sound effects. 
+
+\begin{DoxyReturn}{Returns}
+Count of available effects 
+\end{DoxyReturn}
+\Hypertarget{class_sound_effect_player_abc8f34500563824c2a96d3b236ff0af8}\index{SoundEffectPlayer@{SoundEffectPlayer}!play@{play}}
+\index{play@{play}!SoundEffectPlayer@{SoundEffectPlayer}}
+\doxysubsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily \label{class_sound_effect_player_abc8f34500563824c2a96d3b236ff0af8} 
+void Sound\+Effect\+Player\+::play (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sound_effect_player_a7da42a0c3a6ce56c9235ad27dbb99690}{Effect\+Index}}}]{index}{}\end{DoxyParamCaption})}
+
+
+
+Plays specified sound effect. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Index of effect to play \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+extern\+\_\+app/games/\+CCIMX\+\_\+\+Dino\+Game/core/Sound\+Effect\+Player.\+h\item 
+extern\+\_\+app/games/\+CCIMX\+\_\+\+Dino\+Game/core/Sound\+Effect\+Player.\+cpp\end{DoxyCompactItemize}

@@ -37,6 +37,7 @@ Now, CCIMXDesktop supports one-click builds including:
 - 🖼️ ImageWalker (the most basic image information browser, equivalent to the Windows image browser for the beggars)
 - ✏️ MarkDown reader (the most basic Markdown editing + preview function, supports draft/load and save Markdown and basic shortcut functions)
 - 🛜 CCNetHelper (supports network card information viewing, IP port scanning and basic test IP connection capabilities)
+- 🦖Dinosaur Game! (Yes, that Google Dinosaur Game, implemented with Qt6 Widgets :) )
 
 ------
 
@@ -91,7 +92,6 @@ The document has been automatically deployed via GitHub Actions, visit: [CCIMXDe
 - 🧮 Pocket calculator
 - 🔌 Serial port assistant
 - ✅ To-do list
-- 🦖Dinasour Game!
 - 🤖 Image processor local processing of images and simple reasoning (face recognition)
 - ⚙ Basic settings (similar to IOS, but many are more ornamental)
 

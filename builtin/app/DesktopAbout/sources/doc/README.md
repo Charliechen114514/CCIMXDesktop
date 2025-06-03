@@ -34,7 +34,9 @@
 - 💡 LEDController App（开关灯APP，需要 Platform LED 驱动使能）
 - 🌡️ Environment App（AP3216C驱动需要被挂载）
 - 🏃 SportHealth App (ICM20608驱动需要被挂载)
-- 🛜 网络查看助手（支持网卡信息查看，IP端口扫描和基本测试IP打通能力）
+- 🖼️ ImageWalker（最基础的图像信息浏览查看器，相当于丐版的Windows图像浏览器）
+- ✏️ MarkDown阅读器（最基础的Markdown编辑 + 预览功能，支持草稿 / 加载保存Markdown与基础快捷功能）
+- 🛜 CCNetHelper（支持网卡信息查看，IP端口扫描和基本测试IP打通能力）
 
 ------
 
@@ -83,12 +85,11 @@
 - 🚀 计划编写和提供更多的外部基础程序：
   - 💬 聊天室（计划类似于QQ）
   - ⏰ 闹钟APP
-  - 🖼️ 图像浏览器
   - 🎨 图像处理器
-  - ✏️ MarkDown阅读器
   - 🧮 口袋计算器
   - 🔌 串口助手
   - ✅ 任务清单
+  - 🦖Dinasour Game!
   - 🤖 图像处理器本地处理图像和做简单的推理（人脸识别）
   - ⚙ 基础的设置（类似IOS，但是很多是观赏性较为强）
 

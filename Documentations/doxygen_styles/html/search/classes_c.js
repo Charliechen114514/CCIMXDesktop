@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['readmewidget_0',['ReadMeWidget',['../class_read_me_widget.html',1,'']]],
-  ['rol_1',['rol',['../structrol.html',1,'']]]
+  ['obstaclebaseframefetch_0',['ObstacleBaseFrameFetch',['../class_obstacle_base_frame_fetch.html',1,'']]],
+  ['obstaclelistmanager_1',['ObstacleListManager',['../class_obstacle_list_manager.html',1,'']]],
+  ['obsticals_2',['Obsticals',['../class_obsticals.html',1,'']]]
 ];

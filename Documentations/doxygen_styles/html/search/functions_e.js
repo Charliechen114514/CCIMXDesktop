@@ -1,12 +1,9 @@
 var searchData=
 [
-  ['on_5fapp_5fdispatched_0',['on_app_dispatched',['../class_down_dock_widget.html#a71d6f1913ce2ea3fa516de9ce9d485d2',1,'DownDockWidget']]],
-  ['open_1',['open',['../class_video_player.html#a047ca5bf54e20592edab2c4c2bfdd463',1,'VideoPlayer::open()'],['../class_video_player_impl.html#a2c00fbac2097847c8a2e38af0707b56c',1,'VideoPlayerImpl::open()'],['../class_video_player_opencv_impl.html#aa2f3f59905c31d076b49c686db5bf0a2',1,'VideoPlayerOpencvImpl::open()'],['../class_video_player.html#a047ca5bf54e20592edab2c4c2bfdd463',1,'VideoPlayer::open()'],['../class_video_player_impl.html#a2c00fbac2097847c8a2e38af0707b56c',1,'VideoPlayerImpl::open()'],['../class_video_player_opencv_impl.html#aa2f3f59905c31d076b49c686db5bf0a2',1,'VideoPlayerOpencvImpl::open()']]],
-  ['open_5fdocumentfromdialog_2',['open_documentFromDialog',['../class_main_window.html#a2494bb8710504a3a17ce355577b03425',1,'MainWindow']]],
-  ['open_5fmedia_3',['open_media',['../class_media_player_window.html#a4142b0a25125ca2528786e6d96317e6a',1,'MediaPlayerWindow']]],
-  ['open_5fmedias_4',['open_medias',['../class_media_player_window.html#a447c143b71489813d428e368747fe9ff',1,'MediaPlayerWindow']]],
-  ['openerror_5',['openError',['../class_video_player.html#a1ae3d446db619373212f38415b459f06',1,'VideoPlayer::openError(const VideoPlayerOpenErrorCode error)'],['../class_video_player.html#a1ae3d446db619373212f38415b459f06',1,'VideoPlayer::openError(const VideoPlayerOpenErrorCode error)']]],
-  ['operator_28_29_6',['operator()',['../struct_c_c_pdf_context_deleter.html#a8297c17d52c3cd959b31e011e52da5e4',1,'CCPdfContextDeleter']]],
-  ['operator_3d_7',['operator=',['../class_i_c_m20608.html#ab49c1e7e37a218f50da5395354a52388',1,'ICM20608::operator=()'],['../class_c_v_image.html#af3aca0a5c5d2f8fc17310bab85f445ba',1,'CVImage::operator=()'],['../class_i_c_m20608.html#ab49c1e7e37a218f50da5395354a52388',1,'ICM20608::operator=()'],['../class_i_c_m20608_data_factory.html#afe9ed4a869dc91b565f45b60b645753e',1,'ICM20608DataFactory::operator=()'],['../class_pesudo_i_c_m20608.html#ae2249087f6916731180356f574b28380',1,'PesudoICM20608::operator=()'],['../class_c_v_image.html#af3aca0a5c5d2f8fc17310bab85f445ba',1,'CVImage::operator=()']]],
-  ['oppose_5ffileview_5fvisible_8',['oppose_fileview_visible',['../class_image_browser.html#a980c9f118b28255ec99a1540be7b17a0',1,'ImageBrowser']]]
+  ['netcardgadget_0',['NetCardGadget',['../class_net_card_gadget.html#ae7df34d5c86e08e897248ccc1c111ee3',1,'NetCardGadget']]],
+  ['netmainwindow_1',['NetMainWindow',['../class_net_main_window.html#a3ad9cbbd627ddab9a9182b96a4bcaf5e',1,'NetMainWindow']]],
+  ['network_5fquery_5fdisplay_2',['network_query_display',['../class_interfaces_query.html#a698562491f2cb09f744bfc1344c0fff1',1,'InterfacesQuery']]],
+  ['new_5fmove_5fspeed_3',['new_move_speed',['../class_difficulty_manager.html#a7a6713f40557ef98a0adbf18b6d8a065',1,'DifficultyManager']]],
+  ['new_5fobstacle_5fcnt_5fmax_4',['new_obstacle_cnt_max',['../class_difficulty_manager.html#a4b9ff3ea8ed4321a82e6e97331e24693',1,'DifficultyManager']]],
+  ['next_5fpage_5',['next_page',['../class_main_window.html#abc9d84a0a8b9bea132a960fdfa06b2cd',1,'MainWindow']]]
 ];

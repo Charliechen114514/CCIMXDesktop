@@ -15,6 +15,7 @@ var searchData=
   ['errortype_12',['errorType',['../class_image_core.html#a65aeb034be97ac992d142233fd114623',1,'ImageCore']]],
   ['escapeframe_13',['escapeFrame',['../class_video_player.html#aa694b6b907f0e1935de88613608ff6aa',1,'VideoPlayer::escapeFrame()'],['../class_video_player_impl.html#a81ac288964b7630f2b934f30a871fbc4',1,'VideoPlayerImpl::escapeFrame()'],['../class_video_player_opencv_impl.html#a723cc96210168483c9cdd6a7d8715067',1,'VideoPlayerOpencvImpl::escapeFrame()'],['../class_video_player.html#aa694b6b907f0e1935de88613608ff6aa',1,'VideoPlayer::escapeFrame()'],['../class_video_player_impl.html#a81ac288964b7630f2b934f30a871fbc4',1,'VideoPlayerImpl::escapeFrame()'],['../class_video_player_opencv_impl.html#a723cc96210168483c9cdd6a7d8715067',1,'VideoPlayerOpencvImpl::escapeFrame()']]],
   ['eventfilter_14',['eventFilter',['../class_app_card_widget.html#aaa303f4e4011e02c6cf0c776ca093ac3',1,'AppCardWidget::eventFilter()'],['../class_app_widget.html#a55452cd32f958fb15d12c13f48b02f8d',1,'AppWidget::eventFilter()']]],
-  ['expected_5fappcards_5fwidgets_15',['expected_appcards_widgets',['../class_home_page.html#a760f39daccf8d87ac86d15c0983e1cfe',1,'HomePage']]],
-  ['exportimage_16',['exportImage',['../class_simple_drawing_scene.html#a4789a19367863381cc8f776d33c2e91a',1,'SimpleDrawingScene']]]
+  ['eventmanager_15',['EventManager',['../class_event_manager.html#ad7aa53874804a5411f2b6c81c1383958',1,'EventManager::EventManager()=delete'],['../class_event_manager.html#a8e23d10caabe0b1ca46e113c3969903e',1,'EventManager::EventManager(DinasourGameMainWidget *h)']]],
+  ['expected_5fappcards_5fwidgets_16',['expected_appcards_widgets',['../class_home_page.html#a760f39daccf8d87ac86d15c0983e1cfe',1,'HomePage']]],
+  ['exportimage_17',['exportImage',['../class_simple_drawing_scene.html#a4789a19367863381cc8f776d33c2e91a',1,'SimpleDrawingScene']]]
 ];

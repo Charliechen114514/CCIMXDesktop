@@ -23,6 +23,7 @@ var hierarchy =
     [ "CCPdfMetaInfo", "struct_c_c_pdf_meta_info.html", null ],
     [ "CCPdfNavigationPolicy", "class_c_c_pdf_navigation_policy.html", null ],
     [ "CPUStateFetcher::CPUState", "struct_c_p_u_state_fetcher_1_1_c_p_u_state.html", null ],
+    [ "DinasourGameMainWidget::CurrentInfoPack", "struct_dinasour_game_main_widget_1_1_current_info_pack.html", null ],
     [ "CVImage", "class_c_v_image.html", null ],
     [ "CVImageImpl", "class_c_v_image_impl.html", [
       [ "CVImageOpencvImpl", "class_c_v_image_opencv_impl.html", null ],
@@ -31,6 +32,7 @@ var hierarchy =
     [ "CVImageImplFactory", "class_c_v_image_impl_factory.html", null ],
     [ "AppWeatherResult::DailyWeather", "struct_app_weather_result_1_1_daily_weather.html", null ],
     [ "CVTools::DisplayParams", "struct_c_v_tools_1_1_display_params.html", null ],
+    [ "EventManager", "class_event_manager.html", null ],
     [ "FileInfoProvider", "class_file_info_provider.html", [
       [ "DirentSizeCounter", "class_dirent_size_counter.html", null ],
       [ "FileCountInfo", "class_file_count_info.html", null ],
@@ -38,6 +40,8 @@ var hierarchy =
       [ "FileTypeInfo", "class_file_type_info.html", null ]
     ] ],
     [ "g_acc", "structg__acc.html", null ],
+    [ "GroundLineProviders::GroundLine", "struct_ground_line_providers_1_1_ground_line.html", null ],
+    [ "GroundLineProviders", "class_ground_line_providers.html", null ],
     [ "ICM20608", "class_i_c_m20608.html", null ],
     [ "ICM20608AppData", "struct_i_c_m20608_app_data.html", null ],
     [ "ICM20608Data", "struct_i_c_m20608_data.html", null ],
@@ -81,6 +85,7 @@ var hierarchy =
       [ "CCNoterWindow", "class_c_c_noter_window.html", null ],
       [ "CameraWindow", "class_camera_window.html", null ],
       [ "DesktopMainWindow", "class_desktop_main_window.html", null ],
+      [ "DinasourGameWindow", "class_dinasour_game_window.html", null ],
       [ "DrawerWindow", "class_drawer_window.html", null ],
       [ "EasyNoteMainWindow", "class_easy_note_main_window.html", null ],
       [ "EnvironmentWindow", "class_environment_window.html", null ],
@@ -108,14 +113,33 @@ var hierarchy =
       [ "CCPdfDocument", "class_c_c_pdf_document.html", null ],
       [ "CPUStateFetcher", "class_c_p_u_state_fetcher.html", null ],
       [ "CameraCapture", "class_camera_capture.html", null ],
+      [ "DifficultyManager", "class_difficulty_manager.html", null ],
       [ "DirentSizeCounter", "class_dirent_size_counter.html", null ],
       [ "DirentSizeWorker", "class_dirent_size_worker.html", null ],
+      [ "FigureObject", "class_figure_object.html", [
+        [ "Dinasour", "class_dinasour.html", null ],
+        [ "Obsticals", "class_obsticals.html", [
+          [ "BirdObsticals", "class_bird_obsticals.html", null ],
+          [ "CactusObsticals", "class_cactus_obsticals.html", null ]
+        ] ]
+      ] ],
       [ "FileCountImplWorker", "class_file_count_impl_worker.html", null ],
       [ "FileCountInfo", "class_file_count_info.html", null ],
+      [ "FlushRequester", "class_flush_requester.html", null ],
+      [ "FrameProvider", "class_frame_provider.html", [
+        [ "DinasourFrameFetcher", "class_dinasour_frame_fetcher.html", null ],
+        [ "ObstacleBaseFrameFetch", "class_obstacle_base_frame_fetch.html", [
+          [ "BirdFrameFetch", "class_bird_frame_fetch.html", null ],
+          [ "CactusFrameFetch", "class_cactus_frame_fetch.html", null ]
+        ] ]
+      ] ],
       [ "InterfacesQuery", "class_interfaces_query.html", null ],
       [ "MediaPlayer", "class_media_player.html", null ],
       [ "MemoryInfoFetcher", "class_memory_info_fetcher.html", null ],
+      [ "ObstacleListManager", "class_obstacle_list_manager.html", null ],
       [ "ProcessBroswer", "class_process_broswer.html", null ],
+      [ "ScoreManager", "class_score_manager.html", null ],
+      [ "SoundEffectPlayer", "class_sound_effect_player.html", null ],
       [ "StackpageSwitcherAnimation", "struct_stackpage_switcher_animation.html", null ],
       [ "StackpageSwitcherAnimation", "struct_stackpage_switcher_animation.html", null ],
       [ "StackpageSwitcherAnimation", "struct_stackpage_switcher_animation.html", null ],
@@ -147,6 +171,7 @@ var hierarchy =
       [ "DesktopToast", "class_desktop_toast.html", null ],
       [ "DesktopToast", "class_desktop_toast.html", null ],
       [ "DigitalTimeWidget", "class_digital_time_widget.html", null ],
+      [ "DinasourGameMainWidget", "class_dinasour_game_main_widget.html", null ],
       [ "DiskMusic", "class_disk_music.html", null ],
       [ "DownDockWidget", "class_down_dock_widget.html", null ],
       [ "FileInfoDisplayWidget", "class_file_info_display_widget.html", null ],
@@ -175,6 +200,8 @@ var hierarchy =
       [ "WeatherDailyCard", "class_weather_daily_card.html", null ]
     ] ],
     [ "rol", "structrol.html", null ],
+    [ "SceneDrawer", "class_scene_drawer.html", null ],
+    [ "Settings::SZ< value >", "struct_settings_1_1_s_z.html", null ],
     [ "TemperaryCacher", "class_temperary_cacher.html", null ],
     [ "VideoPlayerImpl", "class_video_player_impl.html", [
       [ "VideoPlayerOpencvImpl", "class_video_player_opencv_impl.html", null ],
@@ -182,5 +209,6 @@ var hierarchy =
     ] ],
     [ "VideoPlayerImplFactory", "class_video_player_impl_factory.html", null ],
     [ "VideoPlayerInfo", "struct_video_player_info.html", null ],
-    [ "DesktopMainWindow::WallPaperGroup", "struct_desktop_main_window_1_1_wall_paper_group.html", null ]
+    [ "DesktopMainWindow::WallPaperGroup", "struct_desktop_main_window_1_1_wall_paper_group.html", null ],
+    [ "Settings::XY< value >", "struct_settings_1_1_x_y.html", null ]
 ];

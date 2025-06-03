@@ -43,3 +43,8 @@ if(INCLUDE_EASYNOTE_APP)
     add_subdirectory(EasyNotes)
 endif()
 
+if(INCLUDE_GAME_APP)
+    message(STATUS "Game App is enabled due to the INCLUDE_GAME_APP")
+    add_subdirectory(games)
+endif()
+

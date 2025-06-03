@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/frame">
+        <file>frames/ah_shit.png</file>
+        <file>frames/dino_frame1.png</file>
+        <file>frames/dino_frame2.png</file>
+        <file>frames/dinolay_frame1.png</file>
+        <file>frames/dinolay_frame2.png</file>
+        <file>frames/cac_frame1.png</file>
+        <file>frames/cac_frame2.png</file>
+        <file>frames/cac_frame3.png</file>
+        <file>frames/cac_frame4.png</file>
+        <file>frames/bird1.png</file>
+        <file>frames/bird2.png</file>
+    </qresource>
+    <qresource prefix="/soundtrack">
+        <file>soundeffects/die.wav</file>
+        <file>soundeffects/jump.wav</file>
+        <file>soundeffects/point.wav</file>
+    </qresource>
+</RCC>

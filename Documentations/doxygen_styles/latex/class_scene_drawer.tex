@@ -1,0 +1,159 @@
+\doxysection{Scene\+Drawer Class Reference}
+\hypertarget{class_scene_drawer}{}\label{class_scene_drawer}\index{SceneDrawer@{SceneDrawer}}
+
+
+Handles all rendering operations for the game scene.  
+
+
+
+
+{\ttfamily \#include $<$Scene\+Drawer.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_scene_drawer_af8314f94232b37c325c0a1541902321b}\label{class_scene_drawer_af8314f94232b37c325c0a1541902321b} 
+{\bfseries Q\+\_\+\+DISABLE\+\_\+\+COPY\+\_\+\+MOVE} (\mbox{\hyperlink{class_scene_drawer}{Scene\+Drawer}})
+\begin{DoxyCompactList}\small\item\em disable copy move object \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scene_drawer_a0360a1a7eb96f45b581b695283da9521}{Scene\+Drawer}} (const QRect \&scene\+Rect)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{class_scene_drawer}{Scene\+Drawer} with specified boundaries. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_drawer_a8bff566017615f55a44fd801d8554662}{bind\+\_\+painter}} (QPainter \texorpdfstring{$\ast$}{*}p)
+\begin{DoxyCompactList}\small\item\em Binds a QPainter for drawing operations. \end{DoxyCompactList}\item 
+\Hypertarget{class_scene_drawer_a048ccfd0e11bb6e1d07eb141b10a0f47}\label{class_scene_drawer_a048ccfd0e11bb6e1d07eb141b10a0f47} 
+void {\bfseries draw\+Sky} ()
+\begin{DoxyCompactList}\small\item\em Draws the sky background. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_drawer_a26df04532535c19bc6a811cbad2ee945}{draw\+Content}} (int score, Difficulty type)
+\begin{DoxyCompactList}\small\item\em Draws game content (score and difficulty) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_drawer_ad8162fd4811983517e323dee25a70c39}{draw\+Dinasore}} (\mbox{\hyperlink{class_dinasour}{Dinasour}} \texorpdfstring{$\ast$}{*}dinasour)
+\begin{DoxyCompactList}\small\item\em Draws the dinosaur character. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_drawer_a6b811c930dc3a9c52c27c9f2c1c99c3c}{draw\+Obstical}} (const QList$<$ \mbox{\hyperlink{class_obsticals}{Obsticals}} \texorpdfstring{$\ast$}{*} $>$ \&obs)
+\begin{DoxyCompactList}\small\item\em Draws all obstacles. \end{DoxyCompactList}\item 
+\Hypertarget{class_scene_drawer_a432154c170a266fb23599886085ba5dd}\label{class_scene_drawer_a432154c170a266fb23599886085ba5dd} 
+void {\bfseries draw\+Main\+Ground} ()
+\begin{DoxyCompactList}\small\item\em Draws the main ground line. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_drawer_a7491b5d5b988405a64ec151f92886c7a}{draw\+Flowy\+Ground}} (int current\+\_\+speed)
+\begin{DoxyCompactList}\small\item\em Draws the flowing ground effect. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_drawer_ae3d54709e416f5b2524f13abf7f386b5}{set\+Draw\+Hello}} (bool st)
+\begin{DoxyCompactList}\small\item\em Sets whether to draw the hello message. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handles all rendering operations for the game scene. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_scene_drawer_a0360a1a7eb96f45b581b695283da9521}\index{SceneDrawer@{SceneDrawer}!SceneDrawer@{SceneDrawer}}
+\index{SceneDrawer@{SceneDrawer}!SceneDrawer@{SceneDrawer}}
+\doxysubsubsection{\texorpdfstring{SceneDrawer()}{SceneDrawer()}}
+{\footnotesize\ttfamily \label{class_scene_drawer_a0360a1a7eb96f45b581b695283da9521} 
+Scene\+Drawer\+::\+Scene\+Drawer (\begin{DoxyParamCaption}\item[{const QRect \&}]{scene\+Rect}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructs a \doxylink{class_scene_drawer}{Scene\+Drawer} with specified boundaries. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene\+Rect} & The bounding rectangle of the scene \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scene_drawer_a8bff566017615f55a44fd801d8554662}\index{SceneDrawer@{SceneDrawer}!bind\_painter@{bind\_painter}}
+\index{bind\_painter@{bind\_painter}!SceneDrawer@{SceneDrawer}}
+\doxysubsubsection{\texorpdfstring{bind\_painter()}{bind\_painter()}}
+{\footnotesize\ttfamily \label{class_scene_drawer_a8bff566017615f55a44fd801d8554662} 
+void Scene\+Drawer\+::bind\+\_\+painter (\begin{DoxyParamCaption}\item[{QPainter \texorpdfstring{$\ast$}{*}}]{p}{}\end{DoxyParamCaption})}
+
+
+
+Binds a QPainter for drawing operations. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Pointer to the QPainter to use \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_scene_drawer_a26df04532535c19bc6a811cbad2ee945}\index{SceneDrawer@{SceneDrawer}!drawContent@{drawContent}}
+\index{drawContent@{drawContent}!SceneDrawer@{SceneDrawer}}
+\doxysubsubsection{\texorpdfstring{drawContent()}{drawContent()}}
+{\footnotesize\ttfamily \label{class_scene_drawer_a26df04532535c19bc6a811cbad2ee945} 
+void Scene\+Drawer\+::draw\+Content (\begin{DoxyParamCaption}\item[{int}]{score}{, }\item[{Difficulty}]{type}{}\end{DoxyParamCaption})}
+
+
+
+Draws game content (score and difficulty) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em score} & Current game score \\
+\hline
+{\em type} & Current difficulty level \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_scene_drawer_ad8162fd4811983517e323dee25a70c39}\index{SceneDrawer@{SceneDrawer}!drawDinasore@{drawDinasore}}
+\index{drawDinasore@{drawDinasore}!SceneDrawer@{SceneDrawer}}
+\doxysubsubsection{\texorpdfstring{drawDinasore()}{drawDinasore()}}
+{\footnotesize\ttfamily \label{class_scene_drawer_ad8162fd4811983517e323dee25a70c39} 
+void Scene\+Drawer\+::draw\+Dinasore (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_dinasour}{Dinasour}} \texorpdfstring{$\ast$}{*}}]{dinasour}{}\end{DoxyParamCaption})}
+
+
+
+Draws the dinosaur character. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dinasour} & Pointer to the dinosaur object \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_scene_drawer_a7491b5d5b988405a64ec151f92886c7a}\index{SceneDrawer@{SceneDrawer}!drawFlowyGround@{drawFlowyGround}}
+\index{drawFlowyGround@{drawFlowyGround}!SceneDrawer@{SceneDrawer}}
+\doxysubsubsection{\texorpdfstring{drawFlowyGround()}{drawFlowyGround()}}
+{\footnotesize\ttfamily \label{class_scene_drawer_a7491b5d5b988405a64ec151f92886c7a} 
+void Scene\+Drawer\+::draw\+Flowy\+Ground (\begin{DoxyParamCaption}\item[{int}]{current\+\_\+speed}{}\end{DoxyParamCaption})}
+
+
+
+Draws the flowing ground effect. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+\_\+speed} & Current game speed \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_scene_drawer_a6b811c930dc3a9c52c27c9f2c1c99c3c}\index{SceneDrawer@{SceneDrawer}!drawObstical@{drawObstical}}
+\index{drawObstical@{drawObstical}!SceneDrawer@{SceneDrawer}}
+\doxysubsubsection{\texorpdfstring{drawObstical()}{drawObstical()}}
+{\footnotesize\ttfamily \label{class_scene_drawer_a6b811c930dc3a9c52c27c9f2c1c99c3c} 
+void Scene\+Drawer\+::draw\+Obstical (\begin{DoxyParamCaption}\item[{const QList$<$ \mbox{\hyperlink{class_obsticals}{Obsticals}} \texorpdfstring{$\ast$}{*} $>$ \&}]{obs}{}\end{DoxyParamCaption})}
+
+
+
+Draws all obstacles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obs} & List of obstacles to draw \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_scene_drawer_ae3d54709e416f5b2524f13abf7f386b5}\index{SceneDrawer@{SceneDrawer}!setDrawHello@{setDrawHello}}
+\index{setDrawHello@{setDrawHello}!SceneDrawer@{SceneDrawer}}
+\doxysubsubsection{\texorpdfstring{setDrawHello()}{setDrawHello()}}
+{\footnotesize\ttfamily \label{class_scene_drawer_ae3d54709e416f5b2524f13abf7f386b5} 
+void Scene\+Drawer\+::set\+Draw\+Hello (\begin{DoxyParamCaption}\item[{bool}]{st}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets whether to draw the hello message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em st} & True to draw hello message, false otherwise \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+extern\+\_\+app/games/\+CCIMX\+\_\+\+Dino\+Game/ui/Scene\+Drawer.\+h\item 
+extern\+\_\+app/games/\+CCIMX\+\_\+\+Dino\+Game/ui/Scene\+Drawer.\+cpp\end{DoxyCompactItemize}
