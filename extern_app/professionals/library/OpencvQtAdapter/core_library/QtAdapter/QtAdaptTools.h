@@ -17,6 +17,9 @@ namespace QtAdaptTools {
  * @return the QImage
  */
 QImage toQImage(const CVImage& cvImage);
+
+QImage toDisplayableImage(const CVImage& cvImage);
+
 }
 
 #endif // QTADAPTTOOLS_H

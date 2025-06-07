@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/qss">
+        <file>styles/left_tools.qss</file>
+    </qresource>
+</RCC>

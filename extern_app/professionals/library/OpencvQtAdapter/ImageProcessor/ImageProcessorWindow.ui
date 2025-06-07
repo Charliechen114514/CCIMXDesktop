@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ImageProcessorWindow</class>
+ <widget class="QMainWindow" name="ImageProcessorWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ImageProcessorWindow</string>
+  </property>
+  <widget class="ToolsStackedWidget" name="centralwidget"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ToolsStackedWidget</class>
+   <extends>QWidget</extends>
+   <header>ToolsStackedWidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

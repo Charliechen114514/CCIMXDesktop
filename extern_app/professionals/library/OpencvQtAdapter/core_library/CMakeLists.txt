@@ -30,11 +30,18 @@ set(QtAdapter
     QtAdapter/QtAdaptTools.h
     QtAdapter/QtAdaptTools.cpp)
 
+set(ImageProcSrc
+    image_proc/image_proc_base.h
+    image_proc/GrayProcessor.h image_proc_src/GrayProcessor.cpp)
+
 
 add_library(core_library STATIC
     ${CVImageSrc}
     ${VideoPlayerSrc}
     ${QtAdapter}
+    ${ImageProcSrc}
+    image_proc_src/image_proc_opencv_impl/OpenCV_ProcessAdapter.h
+    image_proc_src/image_proc_opencv_impl/OpenCV_ProcessAdapter.cpp
 )
 
 target_include_directories(
@@ -45,6 +52,8 @@ target_include_directories(
         # as we need to include the header files
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/cvimage>
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/videoplayer>
+        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/image_proc>
+        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/QtAdapter>
 )
 
 target_link_libraries(

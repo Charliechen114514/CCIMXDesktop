@@ -9,7 +9,9 @@ qt_standard_project_setup()
 
 # Build the core library first
 add_subdirectory(core_library)
+add_subdirectory(ui_interface)
 add_subdirectory(core_library_test)
-
 add_subdirectory(examples)
 add_subdirectory(gui_example)
+add_subdirectory(ui_interface_example)
+add_subdirectory(ImageProcessor)

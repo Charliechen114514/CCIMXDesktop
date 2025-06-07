@@ -1,6 +1,6 @@
 # set the proxy with http https if you have direct trouble in visiting githubs
-# set(ENV{http_proxy} "http://127.0.0.1:7890")
-# set(ENV{https_proxy} "http://127.0.0.1:7890")
+set(ENV{http_proxy} "http://127.0.0.1:7890")
+set(ENV{https_proxy} "http://127.0.0.1:7890")
 
 cmake_minimum_required(VERSION 3.19)
 project(CCIMX_Desktop LANGUAGES CXX VERSION 0.9.3)
@@ -343,7 +343,7 @@ message(STATUS "-----------------------------------------------------")
 message(STATUS "Dumping the built in apps")
 message(STATUS "About Application: introducing the desktop with support")
 message(STATUS "About SimpleDrawer: Simple and Free drawer to notify your imaginations")
-message(STATUS "About CCIMXNoter: Must Basic Notypad in CCIMXDesktop utilities")
+message(STATUS "About CCIMXNoter: Must Basic Notepad in CCIMXDesktop utilities")
 message(STATUS "About ImageWalker: Simple and Free Image Browsing App, which is really easy lol")
 message(STATUS "-----------------------------------------------------")
 message(STATUS "Dumping the external apps: ")
@@ -375,4 +375,3 @@ else()
     message(STATUS "If you need to generate the documentations, please set the CCIMX_DESKTOP_DOCGEN_REQ to ON")
 endif()
 message(STATUS "-----------------------------------------------------")
-

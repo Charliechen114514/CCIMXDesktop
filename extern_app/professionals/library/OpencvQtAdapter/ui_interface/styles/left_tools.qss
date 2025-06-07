@@ -1,0 +1,26 @@
+QWidget {
+    background-color: #6d6d6d;
+}
+
+QToolButton {
+    color: #bbbbbb;
+    font-size: 10px;
+    padding: 12px 0;
+}
+
+QToolButton:hover {
+    background: #3c3f41;
+}
+
+QToolButton:checked {
+    background: #4b6eaf;
+    color: #ffffff;
+}
+
+QToolButton:disabled {
+    color: #555555;
+}
+
+QToolButton:disabled QIcon {
+    opacity: 0.4;
+}
