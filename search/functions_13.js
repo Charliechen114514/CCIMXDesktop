@@ -54,7 +54,7 @@ var searchData=
   ['setdummy_51',['setDummy',['../classAppWidget.html#a4470138f00905b26ad5534948b6ddb50',1,'AppWidget']]],
   ['setheight_52',['setHeight',['../classBirdObsticals.html#a5f1fec55fada3e5217d44f1519a22669',1,'BirdObsticals']]],
   ['seticon_53',['setIcon',['../classAppWidget.html#a6bf749981f674a76e979dd547ce9666c',1,'AppWidget']]],
-  ['setimage_54',['setImage',['../classImageLabel.html#a164ec4e9572bb56e734bb88f7daf4516',1,'ImageLabel']]],
+  ['setimage_54',['setimage',['../classImageLabel.html#a164ec4e9572bb56e734bb88f7daf4516',1,'ImageLabel::setImage(const QImage &amp;image)'],['../classImageLabel.html#a164ec4e9572bb56e734bb88f7daf4516',1,'ImageLabel::setImage(const QImage &amp;image)']]],
   ['setison_55',['setIsOn',['../classLEDParamsPackagePlain.html#a6d92e6ba8af9842986c701e106e94a33',1,'LEDParamsPackagePlain']]],
   ['setitemtype_56',['setItemType',['../classSimpleDrawingScene.html#aa5508ce91110c69ff182d182234ae0ed',1,'SimpleDrawingScene']]],
   ['setlogo_57',['setLogo',['../classDesktopAboutMainWidget.html#a89201e0451500581a17848995222c0ce',1,'DesktopAboutMainWidget']]],

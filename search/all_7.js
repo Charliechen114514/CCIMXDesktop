@@ -20,7 +20,7 @@ var searchData=
   ['get_5finfo_17',['get_info',['../classVideoPlayer.html#a4d021b4f964ff9e444988d5c68941be3',1,'VideoPlayer::get_info() const'],['../classVideoPlayer.html#a4d021b4f964ff9e444988d5c68941be3',1,'VideoPlayer::get_info() const']]],
   ['get_5fmoving_5fspeed_18',['get_moving_speed',['../classObsticals.html#ae70bb240dca25f67d65151fca4ec1f03',1,'Obsticals']]],
   ['get_5fobstacle_5fspeed_19',['get_obstacle_speed',['../classObstacleListManager.html#a484f933bdd44b03cb549cbc4bd49724b',1,'ObstacleListManager']]],
-  ['get_5fpackage_5fsync_20',['get_package_sync',['../classICM20608DataFactory.html#a12eada95d4bd48b6cf2d000e92b48aa3',1,'ICM20608DataFactory::get_package_sync()'],['../classPesudoICM20608.html#aaecee790c97b73893b85a763cbfe3821',1,'PesudoICM20608::get_package_sync()'],['../classICM20608.html#aae4d486afa4f07805fab7b0453864744',1,'ICM20608::get_package_sync(ICM20608AppData &amp;empty_data_pack)'],['../classICM20608.html#aae4d486afa4f07805fab7b0453864744',1,'ICM20608::get_package_sync(ICM20608AppData &amp;empty_data_pack)']]],
+  ['get_5fpackage_5fsync_20',['get_package_sync',['../classICM20608.html#aae4d486afa4f07805fab7b0453864744',1,'ICM20608::get_package_sync(ICM20608AppData &amp;empty_data_pack)'],['../classICM20608.html#aae4d486afa4f07805fab7b0453864744',1,'ICM20608::get_package_sync(ICM20608AppData &amp;empty_data_pack)'],['../classICM20608DataFactory.html#a12eada95d4bd48b6cf2d000e92b48aa3',1,'ICM20608DataFactory::get_package_sync()'],['../classPesudoICM20608.html#aaecee790c97b73893b85a763cbfe3821',1,'PesudoICM20608::get_package_sync()']]],
   ['get_5fplay_5fmode_21',['get_play_mode',['../classCCMediaPlayList.html#ac60aeacbb183d17126bfd2867cfa9280',1,'CCMediaPlayList']]],
   ['get_5fpools_22',['get_pools',['../classObstacleListManager.html#aa807b8736a985074f031d8779250ce51',1,'ObstacleListManager']]],
   ['get_5fposition_23',['get_position',['../classMediaPlayer.html#afb59edc9c4751c9413dafd3fe186e7dd',1,'MediaPlayer']]],
@@ -37,7 +37,9 @@ var searchData=
   ['getpenwidth_34',['getPenWidth',['../classSimpleDrawingScene.html#a0c3f864d21849bba344453035a4ba603',1,'SimpleDrawingScene']]],
   ['getrequestflushinterval_35',['getRequestFlushInterval',['../classFlushRequester.html#a2d1aabd696a8e718d67d7ac5bb67715e',1,'FlushRequester']]],
   ['getsize_36',['getsize',['../classBirdObsticals.html#a9874eda32e3f540afd6b3b00b2eb24db',1,'BirdObsticals::getSize()'],['../classCactusObsticals.html#a0f9df5d547b2ec1a86d90a0372c26e54',1,'CactusObsticals::getSize()']]],
-  ['groundline_37',['GroundLine',['../structGroundLineProviders_1_1GroundLine.html',1,'GroundLineProviders']]],
-  ['groundlineproviders_38',['groundlineproviders',['../classGroundLineProviders.html#a97801ba68b789837a344ad1c30b5270d',1,'GroundLineProviders::GroundLineProviders()'],['../classGroundLineProviders.html',1,'GroundLineProviders'],['../classGroundLineProviders.html#a305ca53f58e339086da441a42946f383',1,'GroundLineProviders::GroundLineProviders()']]],
-  ['groundy_39',['groundY',['../setting__scene_8h.html#a4200caad04d6a45ec93173c76bb8aa4f',1,'Settings::Scene::BackGround::RandomLine']]]
+  ['grayexample_37',['GrayExample',['../classGrayExample.html',1,'']]],
+  ['grayprocessor_38',['GrayProcessor',['../classGrayProcessor.html',1,'']]],
+  ['groundline_39',['GroundLine',['../structGroundLineProviders_1_1GroundLine.html',1,'GroundLineProviders']]],
+  ['groundlineproviders_40',['groundlineproviders',['../classGroundLineProviders.html#a97801ba68b789837a344ad1c30b5270d',1,'GroundLineProviders::GroundLineProviders(int patternLength, int h)'],['../classGroundLineProviders.html#a305ca53f58e339086da441a42946f383',1,'GroundLineProviders::GroundLineProviders()=delete'],['../classGroundLineProviders.html',1,'GroundLineProviders']]],
+  ['groundy_41',['groundY',['../setting__scene_8h.html#a4200caad04d6a45ec93173c76bb8aa4f',1,'Settings::Scene::BackGround::RandomLine']]]
 ];

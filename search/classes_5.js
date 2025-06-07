@@ -1,12 +1,14 @@
 var searchData=
 [
-  ['figureobject_0',['FigureObject',['../classFigureObject.html',1,'']]],
-  ['filecountimplworker_1',['FileCountImplWorker',['../classFileCountImplWorker.html',1,'']]],
-  ['filecountinfo_2',['FileCountInfo',['../classFileCountInfo.html',1,'']]],
-  ['fileinfodisplaywidget_3',['FileInfoDisplayWidget',['../classFileInfoDisplayWidget.html',1,'']]],
-  ['fileinfoprovider_4',['FileInfoProvider',['../classFileInfoProvider.html',1,'']]],
-  ['filenameproviders_5',['FileNameProviders',['../classFileNameProviders.html',1,'']]],
-  ['filetypeinfo_6',['FileTypeInfo',['../classFileTypeInfo.html',1,'']]],
-  ['flushrequester_7',['FlushRequester',['../classFlushRequester.html',1,'']]],
-  ['frameprovider_8',['FrameProvider',['../classFrameProvider.html',1,'']]]
+  ['failedreadfile_0',['FailedReadFile',['../classSimpleTools_1_1FailedReadFile.html',1,'SimpleTools']]],
+  ['figureobject_1',['FigureObject',['../classFigureObject.html',1,'']]],
+  ['filecountimplworker_2',['FileCountImplWorker',['../classFileCountImplWorker.html',1,'']]],
+  ['filecountinfo_3',['FileCountInfo',['../classFileCountInfo.html',1,'']]],
+  ['fileinfodisplaywidget_4',['FileInfoDisplayWidget',['../classFileInfoDisplayWidget.html',1,'']]],
+  ['fileinfoprovider_5',['FileInfoProvider',['../classFileInfoProvider.html',1,'']]],
+  ['filenameproviders_6',['FileNameProviders',['../classFileNameProviders.html',1,'']]],
+  ['filetypeinfo_7',['FileTypeInfo',['../classFileTypeInfo.html',1,'']]],
+  ['floatslider_8',['FloatSlider',['../classFloatSlider.html',1,'']]],
+  ['flushrequester_9',['FlushRequester',['../classFlushRequester.html',1,'']]],
+  ['frameprovider_10',['FrameProvider',['../classFrameProvider.html',1,'']]]
 ];

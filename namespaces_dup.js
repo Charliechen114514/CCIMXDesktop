@@ -16,6 +16,7 @@ var namespaces_dup =
       [ "toQImage", "namespaceQtAdaptTools.html#a196d95ed886168e637fa84615d53f63c", null ]
     ] ],
     [ "SideBarWidgetStaticConfig", "namespaceSideBarWidgetStaticConfig.html", null ],
+    [ "SimpleTools", "namespaceSimpleTools.html", "namespaceSimpleTools" ],
     [ "VideoPlayerTools", "namespaceVideoPlayerTools.html", [
       [ "frame_to_mseconds", "namespaceVideoPlayerTools.html#a55fe34f01d97db614347b5af132287e1", null ],
       [ "mseconds_to_frame", "namespaceVideoPlayerTools.html#a3ed058f954d8603eaa07a2be89d72431", null ]

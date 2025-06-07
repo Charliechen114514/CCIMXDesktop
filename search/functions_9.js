@@ -6,7 +6,7 @@ var searchData=
   ['imagebrowser_3',['ImageBrowser',['../classImageBrowser.html#a7f2b7bb1d3b079e33e32fa614597bb28',1,'ImageBrowser']]],
   ['imagecore_4',['ImageCore',['../classImageCore.html#a0e1b037a00c1f62c84c10f7882de828a',1,'ImageCore']]],
   ['imageinfowindow_5',['ImageInfoWindow',['../classImageInfoWindow.html#ac50e152297df05059e4fbf48a4f59f86',1,'ImageInfoWindow']]],
-  ['imagelabel_6',['ImageLabel',['../classImageLabel.html#ab0a101dbaf19491729fff3913c039007',1,'ImageLabel']]],
+  ['imagelabel_6',['imagelabel',['../classImageLabel.html#ab0a101dbaf19491729fff3913c039007',1,'ImageLabel::ImageLabel(QWidget *parent=nullptr)'],['../classImageLabel.html#ab0a101dbaf19491729fff3913c039007',1,'ImageLabel::ImageLabel(QWidget *parent=nullptr)']]],
   ['imagewalkerwindow_7',['ImageWalkerWindow',['../classImageWalkerWindow.html#af4e3f7edef1198d1f5faad5f929626fa',1,'ImageWalkerWindow']]],
   ['impl_5fptr_8',['impl_ptr',['../classCVImage.html#ae57298a7ada682bc9f5a2baa6622e9f3',1,'CVImage::impl_ptr() const'],['../classCVImage.html#ae57298a7ada682bc9f5a2baa6622e9f3',1,'CVImage::impl_ptr() const']]],
   ['increase_5fonce_9',['increase_once',['../classScoreManager.html#a32b6d765e289d9d76d19a9e3e3424f03',1,'ScoreManager::increase_once()'],['../classScoreManager.html#a0a882a4403a0a2f4b0f50d063d7ce768',1,'ScoreManager::increase_once(int score)']]],

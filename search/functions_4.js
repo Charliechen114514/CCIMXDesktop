@@ -29,7 +29,7 @@ var searchData=
   ['document_5fload_26',['document_load',['../classCCPdfDocument.html#ac7a27d7e7420a45635a4fd872b11587d',1,'CCPdfDocument']]],
   ['document_5floaded_27',['document_loaded',['../classCCPdfDocument.html#a49341806a63155ce6222962c0b741bdf',1,'CCPdfDocument']]],
   ['document_5fpage_28',['document_page',['../classCCPdfDocument.html#abf9058577d2c7f75dd522bef8bd1ace5',1,'CCPdfDocument']]],
-  ['downdockwidget_29',['downdockwidget',['../classDownDockWidget.html#aece8d1a8bb339ee68244eb3e6bd749ef',1,'DownDockWidget::DownDockWidget()'],['../classDesktopMainWindow.html#a3c9d1ee127d737faa6b73e162a4c28b3',1,'DesktopMainWindow::downDockWidget()']]],
+  ['downdockwidget_29',['downdockwidget',['../classDesktopMainWindow.html#a3c9d1ee127d737faa6b73e162a4c28b3',1,'DesktopMainWindow::downDockWidget()'],['../classDownDockWidget.html#aece8d1a8bb339ee68244eb3e6bd749ef',1,'DownDockWidget::DownDockWidget()']]],
   ['drawcontent_30',['drawContent',['../classSceneDrawer.html#a26df04532535c19bc6a811cbad2ee945',1,'SceneDrawer']]],
   ['drawdinasore_31',['drawDinasore',['../classSceneDrawer.html#ad8162fd4811983517e323dee25a70c39',1,'SceneDrawer']]],
   ['drawerwindow_32',['DrawerWindow',['../classDrawerWindow.html#a85e4595657cc69f2c1d13025db874191',1,'DrawerWindow']]],

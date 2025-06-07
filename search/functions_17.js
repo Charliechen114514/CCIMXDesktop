@@ -5,5 +5,6 @@ var searchData=
   ['weatherchartwidget_2',['WeatherChartWidget',['../classWeatherChartWidget.html#aa328fdcd0c7e3390347a34ada0b82a8f',1,'WeatherChartWidget']]],
   ['weatherdailycard_3',['WeatherDailyCard',['../classWeatherDailyCard.html#aa222dbf00100387afbcd2c2b4efa2d52',1,'WeatherDailyCard']]],
   ['weatherrequest_4',['WeatherRequest',['../classWeatherRequest.html#a563db4f9beeca9a58267e04c0ecbe0f8',1,'WeatherRequest']]],
-  ['weatherresult_5',['WeatherResult',['../structWeatherResult.html#a05e61499944a8ccded4e5e3ceeca72b7',1,'WeatherResult']]]
+  ['weatherresult_5',['WeatherResult',['../structWeatherResult.html#a05e61499944a8ccded4e5e3ceeca72b7',1,'WeatherResult']]],
+  ['what_6',['what',['../classSimpleTools_1_1FailedReadFile.html#a87e802e391c441215e0bf46c91a4b3ba',1,'SimpleTools::FailedReadFile']]]
 ];

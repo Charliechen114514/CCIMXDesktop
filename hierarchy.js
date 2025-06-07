@@ -48,6 +48,9 @@ var hierarchy =
     [ "ICM20608DataFactory", "classICM20608DataFactory.html", null ],
     [ "ImageCore", "classImageCore.html", null ],
     [ "WallPaperAnimationHandler::ImagePoolEngine", "structWallPaperAnimationHandler_1_1ImagePoolEngine.html", null ],
+    [ "ImageProc", "structImageProc.html", [
+      [ "GrayProcessor", "classGrayProcessor.html", null ]
+    ] ],
     [ "CCPdfNavigationPolicy::Indicator", "structCCPdfNavigationPolicy_1_1Indicator.html", null ],
     [ "LEDController", "classLEDController.html", null ],
     [ "LEDParamsPackage", "classLEDParamsPackage.html", [
@@ -64,6 +67,7 @@ var hierarchy =
     [ "MediaPlayerWindowHelper", "classMediaPlayerWindowHelper.html", null ],
     [ "MemoryInfoFetcher::MemoryStat", "structMemoryInfoFetcher_1_1MemoryStat.html", null ],
     [ "PageFactory", "classPageFactory.html", null ],
+    [ "ToolsStackedWidget::PagePackage", "structToolsStackedWidget_1_1PagePackage.html", null ],
     [ "PageSetuper::PageSetupSessionRequest", "structPageSetuper_1_1PageSetupSessionRequest.html", null ],
     [ "PesudoAP3216C", "classPesudoAP3216C.html", null ],
     [ "PesudoICM20608", "classPesudoICM20608.html", null ],
@@ -78,6 +82,7 @@ var hierarchy =
       [ "SimpleDrawingScene", "classSimpleDrawingScene.html", null ]
     ] ],
     [ "QLabel", null, [
+      [ "ImageLabel", "classImageLabel.html", null ],
       [ "ImageLabel", "classImageLabel.html", null ]
     ] ],
     [ "QMainWindow", null, [
@@ -90,8 +95,10 @@ var hierarchy =
       [ "EasyNoteMainWindow", "classEasyNoteMainWindow.html", null ],
       [ "EnvironmentWindow", "classEnvironmentWindow.html", null ],
       [ "ImageInfoWindow", "classImageInfoWindow.html", null ],
+      [ "ImageProcessorWindow", "classImageProcessorWindow.html", null ],
       [ "ImageWalkerWindow", "classImageWalkerWindow.html", null ],
       [ "LightControllerWindow", "classLightControllerWindow.html", null ],
+      [ "MainWindow", "classMainWindow.html", null ],
       [ "MainWindow", "classMainWindow.html", null ],
       [ "MainWindow", "classMainWindow.html", null ],
       [ "MainWindow", "classMainWindow.html", null ],
@@ -156,6 +163,9 @@ var hierarchy =
     [ "QScrollArea", null, [
       [ "CCPdfScrollArea", "classCCPdfScrollArea.html", null ]
     ] ],
+    [ "QSlider", null, [
+      [ "FloatSlider", "classFloatSlider.html", null ]
+    ] ],
     [ "QWidget", null, [
       [ "AppCardWidget", "classAppCardWidget.html", [
         [ "LocalWeatherCard", "classLocalWeatherCard.html", null ],
@@ -176,8 +186,11 @@ var hierarchy =
       [ "DownDockWidget", "classDownDockWidget.html", null ],
       [ "FileInfoDisplayWidget", "classFileInfoDisplayWidget.html", null ],
       [ "GaugeWidget", "classGaugeWidget.html", null ],
+      [ "GrayExample", "classGrayExample.html", null ],
       [ "HomePage", "classHomePage.html", null ],
       [ "ImageBrowser", "classImageBrowser.html", null ],
+      [ "ImageProcessingWidget", "classImageProcessingWidget.html", null ],
+      [ "ImageResultDisplayer", "classImageResultDisplayer.html", null ],
       [ "InterfacesDisplayWidget", "classInterfacesDisplayWidget.html", null ],
       [ "LeftSideBar", "classLeftSideBar.html", null ],
       [ "MainShowWidget", "classMainShowWidget.html", null ],
@@ -195,14 +208,20 @@ var hierarchy =
       [ "SportsChart", "classSportsChart.html", null ],
       [ "SportsDisplayWidget", "classSportsDisplayWidget.html", null ],
       [ "ToolBoxs", "classToolBoxs.html", null ],
+      [ "ToolLeftWidgets", "classToolLeftWidgets.html", null ],
       [ "ToolsSideBar", "classToolsSideBar.html", null ],
+      [ "ToolsStackedWidget", "classToolsStackedWidget.html", null ],
       [ "WeatherChartWidget", "classWeatherChartWidget.html", null ],
       [ "WeatherDailyCard", "classWeatherDailyCard.html", null ]
     ] ],
     [ "rol", "structrol.html", null ],
+    [ "std::runtime_error", null, [
+      [ "SimpleTools::FailedReadFile", "classSimpleTools_1_1FailedReadFile.html", null ]
+    ] ],
     [ "SceneDrawer", "classSceneDrawer.html", null ],
     [ "Settings::SZ< value >", "structSettings_1_1SZ.html", null ],
     [ "TemperaryCacher", "classTemperaryCacher.html", null ],
+    [ "ToolLeftWidgets::ToolButtonInstallPackage", "structToolLeftWidgets_1_1ToolButtonInstallPackage.html", null ],
     [ "VideoPlayerImpl", "classVideoPlayerImpl.html", [
       [ "VideoPlayerOpencvImpl", "classVideoPlayerOpencvImpl.html", null ],
       [ "VideoPlayerOpencvImpl", "classVideoPlayerOpencvImpl.html", null ]
