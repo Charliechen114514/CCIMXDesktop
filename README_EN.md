@@ -2,9 +2,9 @@
 
 ![CCIMXDesktopLogo](./CCIMXDesktopLogo.png)
 
-![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-17+-green)![Version](https://img.shields.io/badge/Version-0.9.3-red)
+![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-23+-green)![Version](https://img.shields.io/badge/Version-0.9.6-red)
 
-🔌 Hello! This is a simple desktop and utility that can be used in a variety of embedded devices. For me, it kicks off a suite tailored for the i.MX platform, combining built-in system gadgets and extensible external applications. Designed using Qt, the project is working on supporting integration with a wide range of hardware sensors and multimedia interfaces wherever possible.
+🔌 Hello! This is a simple desktop and utility collection that can be used in a variety of embedded devices! This project currently requires C++23 to compile (it's worth noting that you can compile with C++17, but any projects that require C++23 will need minor modifications)
 
 ## 🌐 Before you get started, choose your language! 🌐
 
@@ -12,7 +12,7 @@
 
 ## 🌟 Project Overview 🌟
 
-**CCIMXDESKTOP** provides a lightweight, extensible desktop environment optimized for embedded systems based on the NXP i.MX6ULL platform. It includes a range of built-in tools, device integration layers, and third-party applications, all presented in a unified user interface.
+**CCIMXDESKTOP** provides a lightweight, extensible desktop environment optimized for embedded systems based on the NXP i.MX6ULL platform. It includes a range of built-in tools, device integration layers, and built-in helper applications, all presented in a unified user interface.
 
 ![i.MX6ULL](https://img.shields.io/badge/NXP-i.MX6ULL-yellow)
 ![Embedded](https://img.shields.io/badge/Platform-Embedded%20Linux-lightgrey)
@@ -34,10 +34,10 @@ Now, CCIMXDesktop supports one-click builds including:
 - 💡 LEDController App (switch light APP, requires Platform LED driver to be enabled)
 - 🌡️ Environment App (AP3216C driver needs to be mounted)
 - 🏃 SportHealth App (ICM20608 driver needs to be mounted)
-- 🖼️ ImageWalker (the most basic image information browser, equivalent to the Windows image browser for the beggars)
+- 🖼️ ImageWalker (the most basic image information browser, equivalent to the Windows image browser for beggars)
 - ✏️ MarkDown reader (the most basic Markdown editing + preview function, supports draft/load and save Markdown and basic shortcut functions)
 - 🛜 CCNetHelper (supports network card information viewing, IP port scanning and basic test IP connection capabilities)
-- 🦖Dinosaur Game! (Yes, that Google Dinosaur Game, implemented with Qt6 Widgets :) )
+- 🦖Dinasour Game! (Yes, that Google Dinasour Game, implemented with Qt6 Widgets :) )
 
 ------
 
@@ -47,21 +47,21 @@ Now, CCIMXDesktop supports one-click builds including:
 
 ![image-20250518085912716](./README/image-20250518085912716.png)
 
-## 🛠️ Basic build technologies
+## 🛠️ Technologies used to build the foundation
 
 ![Qt](https://img.shields.io/badge/Qt-Core%20%26%20Network-41cd52)
-![TSLIB](https://img.shields.io/badge/TSLIB-required-green)
+![TSLIB](https://img.shields.io/badge/TSLIB-required-green)![TSLIB](https://img.shields.io/badge/QtCore-required-red)![TSLIB](https://img.shields.io/badge/QtWidget_QtGui-required-blue)![TSLIB](https://img.shields.io/badge/QtNetwork-required-purple)![TSLIB](https://img.shields.io/badge/QtMultiMedia_ALSA_Least-required-purple)
 
-For beginners mapping a basic desktop, the embedded device should support Qt6 core controls and core networking. Additionally, TSLIB and Linux framebuffer backends for display should be ready.
+Building this project requires that you have completed the porting of Qt6 (the basic necessary porting includes TSLib for interaction, QtCore QtWidget QtGui three-piece set, QtNetwork and at least QtMultiMedia component support for ALSA audio playback). Please check whether your build is sufficient to support the building of this desktop and third-party applications!
 
-## 🛠️ Full build of technologies
+## 🛠️ Technologies used for full build
 
 ![OpenCV](https://img.shields.io/badge/OpenCV-Camera%20Support-blue)
-
 ![MuPDF](https://img.shields.io/badge/MuPDF-PDF%20Rendering-orange)
 
-- OpenCV for camera support
-- MuPDF (for PDF rendering) (these are used for mupdf-based PDF readers)
+- OpenCV for camera support and image transformation processing (if you don't use OpenCV image processing and any support for video streaming, you can not provide the library, but all related apps will be set to not build!)
+
+- MuPDF (for PDF rendering) (these are used for PDF readers based on mupdf. If you don't want to build, you can ignore MuPDF dependencies and all related apps will be set to not build!)
 
 ------
 
@@ -81,19 +81,25 @@ If you are interested in the project production process and development document
 
 > [🛠️ How to build this project? (Supports X86 gcc, ARM-linux-gnueabihf-gcc and Windows GCC)](Documentations/HOW_To_Build_The_Desktop.md)
 
-The document has been automatically deployed via GitHub Actions, visit: [CCIMXDesktop: Main Page](https://charliechen114514.github.io/CCIMXDesktop/)
+The document has been automatically deployed through GitHub Actions, visit: [CCIMXDesktop: Main Page](https://charliechen114514.github.io/CCIMXDesktop/)
 
-## 💡 Future Plans
+## 💡 WIP (some WIP Third Party Apps under development)
 
-- 🚀 Plan to write and provide more external basic programs:
-- 💬 Chat room (planned to be similar to QQ)
-- ⏰ Alarm clock APP
-- 🎨 Image processor
-- 🧮 Pocket calculator
-- 🔌 Serial port assistant
-- ✅ To-do list
 - 🤖 Image processor local processing of images and simple reasoning (face recognition)
+
 - ⚙ Basic settings (similar to IOS, but many are more ornamental)
+
+- 🧮 Pocket calculator
+
+## 💡 Future plans
+
+🚀 Plan to write and provide more external basic programs:
+
+- 💬 Chat room (planned to be similar to QQ)
+
+- ⏰ Alarm clock APP
+- 🔌 Serial port assistant
+- ✅ Task List
 
 ------
 

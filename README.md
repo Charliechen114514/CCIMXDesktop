@@ -2,9 +2,9 @@
 
 ![CCIMXDesktopLogo](./CCIMXDesktopLogo.png)
 
-![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-17+-green)![Version](https://img.shields.io/badge/Version-0.9.3-red)
+![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-23+-green)![Version](https://img.shields.io/badge/Version-0.9.6-red)
 
-🔌 您好！这是一个可在多种嵌入式设备中使用的简单桌面和实用程序。对我来说，它启动了专为 i.MX 平台定制的套件，结合了内置系统小工具和可扩展的外部应用程序。该项目使用 Qt 设计，正在尽可能支持与各种硬件传感器和多媒体接口集成。
+🔌 您好！这是一个可在多种嵌入式设备中使用的简单桌面和实用程序集合！这个项目目前需要使用C++23进行编译（值得一提的是，您可以使用C++17编译，但是需要少许的修改任何要求使用C++23的项目）
 
 ## 🌐 开始之前，选择你的语言！ 🌐
 
@@ -12,7 +12,7 @@
 
 ## 🌟 项目概述 🌟
 
-**CCIMXDESKTOP** 提供了一个轻量级、可扩展的桌面环境，专为基于 NXP i.MX6ULL 平台的嵌入式系统优化。它包含一系列内置工具、设备集成层和第三方应用程序，所有这些都在一个统一的用户界面中呈现。
+**CCIMXDESKTOP** 提供了一个轻量级、可扩展的桌面环境，专为基于 NXP i.MX6ULL 平台的嵌入式系统优化。它包含一系列内置工具、设备集成层和内置的辅助应用程序，所有这些都在一个统一的用户界面中呈现。
 
 ![i.MX6ULL](https://img.shields.io/badge/NXP-i.MX6ULL-yellow)
 ![Embedded](https://img.shields.io/badge/Platform-Embedded%20Linux-lightgrey)
@@ -50,17 +50,17 @@
 ## 🛠️ 基础构建所用技术
 
 ![Qt](https://img.shields.io/badge/Qt-Core%20%26%20Network-41cd52)
-![TSLIB](https://img.shields.io/badge/TSLIB-required-green)
+![TSLIB](https://img.shields.io/badge/TSLIB-required-green)![TSLIB](https://img.shields.io/badge/QtCore-required-red)![TSLIB](https://img.shields.io/badge/QtWidget_QtGui-required-blue)![TSLIB](https://img.shields.io/badge/QtNetwork-required-purple)![TSLIB](https://img.shields.io/badge/QtMultiMedia_ALSA_Least-required-purple)
 
-对于映射基础桌面的初学者来说，嵌入式设备应该支持 Qt6 核心控件和核心网络。此外，用于显示的 TSLIB 和 Linux 帧缓冲后端也应该已准备就绪。
+构建这个项目要求您已经完成对Qt6的移植（基础的必要移植包括TSLib做交互，QtCore QtWidget QtGui三件套，QtNetwork和最小至少支持ALSA音频播放的QtMultiMedia组件的支持），请您核查自己的构建是否足够支持构建本桌面和第三方应用程序！
 
 ## 🛠️ 完整构建所用技术
 
 ![OpenCV](https://img.shields.io/badge/OpenCV-Camera%20Support-blue)
 ![MuPDF](https://img.shields.io/badge/MuPDF-PDF%20Rendering-orange)
 
-- OpenCV 用于摄像头支持
-- MuPDF（用于 PDF 渲染）（这些用于基于 mupdf 的 PDF 阅读器）
+- OpenCV 用于摄像头支持和图像变换处理（如果您不使用OpenCV图像处理和任何对视频流的支持，可以不提供库，但是所有的相关APP会全部置为不构建！）
+- MuPDF（用于 PDF 渲染）（这些用于基于 mupdf 的 PDF 阅读器，如果您不希望构建，可以不予理会MuPDF依赖，所有的相关APP会全部置为不构建！）
 
 ------
 
@@ -81,17 +81,19 @@
 
 文档已通过 GitHub Actions 自动部署，访问：[CCIMXDesktop: Main Page](https://charliechen114514.github.io/CCIMXDesktop/)
 
+## 💡 WIP（一些正在开发的WIP Third Party App）
+
+- 🤖 图像处理器本地处理图像和做简单的推理（人脸识别）
+- ⚙ 基础的设置（类似IOS，但是很多是观赏性较为强）
+- 🧮 口袋计算器
+
 ## 💡 未来计划
 
-- 🚀 计划编写和提供更多的外部基础程序：
-  - 💬 聊天室（计划类似于QQ）
-  - ⏰ 闹钟APP
-  - 🎨 图像处理器
-  - 🧮 口袋计算器
-  - 🔌 串口助手
-  - ✅ 任务清单
-  - 🤖 图像处理器本地处理图像和做简单的推理（人脸识别）
-  - ⚙ 基础的设置（类似IOS，但是很多是观赏性较为强）
+🚀 计划编写和提供更多的外部基础程序：
+- 💬 聊天室（计划类似于QQ）
+- ⏰ 闹钟APP
+- 🔌 串口助手
+- ✅ 任务清单
 
 ------
 

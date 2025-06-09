@@ -10,7 +10,10 @@ template <size_t N>
 QString make_filters(const char* const (&filter)[N]) {
     QString result;
     for (size_t i = 0; i < N; ++i) {
-        result += ("*." + QString::fromUtf8(filter[i]) + ";;");
+        result += ("*." + QString::fromUtf8(filter[i]));
+        if (i != N - 1) {
+            result += ";;";
+        }
     }
     return result;
 }
@@ -21,7 +24,7 @@ ImageProcessingWidget::ImageProcessingWidget(QWidget* parent)
     , ui(new Ui::ImageProcessingWidget) {
 	ui->setupUi(this);
     connect(ui->btn_image_loaded, &QPushButton::clicked,
-            this, &ImageProcessingWidget::process_raw_load);
+            this, static_cast<void (ImageProcessingWidget::*)(void)>(&ImageProcessingWidget::process_raw_load));
     connect(ui->btn_image_processing, &QPushButton::clicked,
             this, &ImageProcessingWidget::request_processing);
 }
@@ -38,6 +41,11 @@ void ImageProcessingWidget::displayed(QLabel* label) {
                 label->size(), Qt::KeepAspectRatio));
 }
 
+void ImageProcessingWidget::process_direct_load(const QString& path) {
+    image_handling.load(path);
+    emit image_loaded(image_handling);
+}
+
 void ImageProcessingWidget::process_raw_load() {
     QString image_path = QFileDialog::getOpenFileName(
         this, "Select a loadable file",
@@ -45,12 +53,16 @@ void ImageProcessingWidget::process_raw_load() {
     if (image_path.isEmpty()) {
         return;
     }
+    process_raw_load(image_path);
+}
+
+void ImageProcessingWidget::process_raw_load(const QString& path) {
     CVImage image;
-    image.loadFile(image_path.toStdString().c_str());
+    image.loadFile(path.toStdString().c_str());
     if (!image.image_valid()) {
-        QMessageBox::critical(this, "Error", "Can not Load image from: " + image_path);
+        QMessageBox::critical(this, "Error", "Can not Load image from: " + path);
         return;
     }
     image_handling = QtAdaptTools::toDisplayableImage(image);
-    emit image_loaded(image_handling.copy());
+    emit image_loaded(image_handling);
 }

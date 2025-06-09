@@ -41,10 +41,12 @@ QImage QtAdaptTools::toDisplayableImage(const CVImage& cvImage) {
 }
 
 CVImage QtAdaptTools::fromRGBQImage(const QImage& image) {
-    cv::Mat mat(image.height(), image.width(), CV_8UC3,
-                const_cast<uchar*>(image.bits()),
-                static_cast<size_t>(image.bytesPerLine()));
+    QImage converted = image.convertToFormat(QImage::Format_RGB888);
+    cv::Mat tmp(converted.height(), converted.width(), CV_8UC3,
+                const_cast<uchar*>(converted.bits()),
+                static_cast<size_t>(converted.bytesPerLine()));
 
+    cv::Mat mat = tmp.clone();
     cv::cvtColor(mat, mat, cv::COLOR_RGB2BGR);
 
     CVImage cvimage;

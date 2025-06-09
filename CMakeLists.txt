@@ -3,7 +3,7 @@ set(ENV{http_proxy} "http://127.0.0.1:7890")
 set(ENV{https_proxy} "http://127.0.0.1:7890")
 
 cmake_minimum_required(VERSION 3.19)
-project(CCIMX_Desktop LANGUAGES CXX VERSION 0.9.3)
+project(CCIMX_Desktop LANGUAGES CXX VERSION 0.9.6)
 message(STATUS "Dumping the message info...")
 set(CCIMXDESKTOP_VERSION_MAJOR ${PROJECT_VERSION_MAJOR} CACHE STRING "Main Version Of CCIMXDesktop")
 set(CCIMXDESKTOP_VERSION_MINOR ${PROJECT_VERSION_MINOR} CACHE STRING "Sub Version Of CCIMXDesktop")

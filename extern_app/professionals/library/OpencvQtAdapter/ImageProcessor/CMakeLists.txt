@@ -24,6 +24,7 @@ qt_add_executable(ImageProcessor
     ${PROJECT_SOURCES}
     image_processing_example/gray_image/GrayExample.h image_processing_example/gray_image/GrayExample.cpp image_processing_example/gray_image/GrayExample.ui
     sources/sources_demo.qrc
+    image_processing_example/blur_image/BlurExample.h image_processing_example/blur_image/BlurExample.cpp image_processing_example/blur_image/BlurExample.ui
 )
 target_include_directories(ImageProcessor
     PRIVATE ..

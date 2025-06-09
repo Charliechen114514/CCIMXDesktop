@@ -42,6 +42,8 @@ add_library(core_library STATIC
     ${ImageProcSrc}
     image_proc_src/image_proc_opencv_impl/OpenCV_ProcessAdapter.h
     image_proc_src/image_proc_opencv_impl/OpenCV_ProcessAdapter.cpp
+    image_proc/BlurProcessor.h
+    image_proc_src/BlurProcessor.cpp
 )
 
 target_include_directories(

@@ -1,5 +1,6 @@
 #include "ImageProcessorWindow.h"
 #include "./ui_ImageProcessorWindow.h"
+#include "ImageProcessor/image_processing_example/blur_image/BlurExample.h"
 #include "image_processing_example/gray_image/GrayExample.h"
 #include <QLabel>
 ImageProcessorWindow::ImageProcessorWindow(QWidget* parent)
@@ -18,9 +19,9 @@ void ImageProcessorWindow::setup_panel() {
         { .name = "Gray Image",
           .icon = QIcon(),
           .widget = new GrayExample(this) },
-        { .name = "cvt image",
+        { .name = "Blur Image",
           .icon = QIcon(),
-          .widget = new QLabel("World", this) }
+          .widget = new BlurExample(this) }
     };
 
     for (const auto& each : pack) {
