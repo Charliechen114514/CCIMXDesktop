@@ -10,6 +10,9 @@
 *.dll
 *.dylib
 
+# Redundent Documentations
+Documentations/doxygen_styles 
+
 # Qt-es
 private_test/
 build/
