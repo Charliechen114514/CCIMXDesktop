@@ -4,7 +4,7 @@
 class GrayProcessor : public ImageProc {
 public:
 	GrayProcessor();
-	virtual ~GrayProcessor() override;
+    virtual ~GrayProcessor() override = default;
 	bool process(CVImage& prev_image) override;
 };
 

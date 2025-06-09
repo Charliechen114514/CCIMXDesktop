@@ -20,6 +20,8 @@ QImage toQImage(const CVImage& cvImage);
 
 QImage toDisplayableImage(const CVImage& cvImage);
 
+CVImage fromRGBQImage(const QImage& image);
+
 }
 
 #endif // QTADAPTTOOLS_H

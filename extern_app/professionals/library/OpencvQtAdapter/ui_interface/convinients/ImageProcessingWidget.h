@@ -16,6 +16,7 @@ public:
     explicit ImageProcessingWidget(QWidget* parent = nullptr);
 	~ImageProcessingWidget();
     void displayed(QLabel* label);
+    QImage image() const noexcept { return image_handling; }
 signals:
     /**
      * @brief request_processing is just the signals

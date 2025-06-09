@@ -22,6 +22,8 @@ ImageProcessingWidget::ImageProcessingWidget(QWidget* parent)
 	ui->setupUi(this);
     connect(ui->btn_image_loaded, &QPushButton::clicked,
             this, &ImageProcessingWidget::process_raw_load);
+    connect(ui->btn_image_processing, &QPushButton::clicked,
+            this, &ImageProcessingWidget::request_processing);
 }
 
 ImageProcessingWidget::~ImageProcessingWidget() {
@@ -50,5 +52,5 @@ void ImageProcessingWidget::process_raw_load() {
         return;
     }
     image_handling = QtAdaptTools::toDisplayableImage(image);
-    emit image_loaded(image_handling);
+    emit image_loaded(image_handling.copy());
 }

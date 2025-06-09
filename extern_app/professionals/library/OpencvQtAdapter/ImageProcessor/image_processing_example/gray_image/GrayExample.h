@@ -12,6 +12,7 @@ class GrayExample : public QWidget {
 
 public:
     explicit GrayExample(QWidget* parent = nullptr);
+    void process_image_session();
 	~GrayExample();
 
 private:
