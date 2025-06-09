@@ -13,7 +13,7 @@ var searchData=
   ['next_5fenabled_10',['next_enabled',['../structMediaListMails.html#a0703dba7f57b07fa6f9f2a8e21042225',1,'MediaListMails']]],
   ['next_5fpage_11',['next_page',['../classMainWindow.html#abc9d84a0a8b9bea132a960fdfa06b2cd',1,'MainWindow']]],
   ['no_5ferror_12',['NO_ERROR',['../classCCPdfDocument.html#a49387984fa059ca9904600ba7edacd39ad306b6fdee05fe87455110ddf6501e6c',1,'CCPdfDocument']]],
-  ['normal_13',['normal',['../classLightControllerWindow.html#ad01b4159b975884f5398071749f17593a960b44c579bc2f6818d2daaf9e4c16f0',1,'LightControllerWindow::Normal'],['../classDinasourFrameFetcher.html#abd9732a2fc7ec5c1389b3308eb920182a1e23852820b9154316c7c06e2b7ba051',1,'DinasourFrameFetcher::NORMAL']]],
+  ['normal_13',['normal',['../classDinasourFrameFetcher.html#abd9732a2fc7ec5c1389b3308eb920182a1e23852820b9154316c7c06e2b7ba051',1,'DinasourFrameFetcher::NORMAL'],['../classLightControllerWindow.html#ad01b4159b975884f5398071749f17593a960b44c579bc2f6818d2daaf9e4c16f0',1,'LightControllerWindow::Normal']]],
   ['nothing_14',['nothing',['../classEventManager.html#a423683d4091e7ead0bd42058b30869baa8697250efc73639dd2a6e7da243ac68b',1,'EventManager::NOTHING'],['../classEventManager.html#a4d6495ae514367edefb7fdf64cd72497a8697250efc73639dd2a6e7da243ac68b',1,'EventManager::NOTHING']]],
   ['nothing_5fthen_15',['NOTHING_THEN',['../classImageCore.html#a1d14c00e103a8bd25db2424fa87426a9af66a586ec3c9e5838a94776b72b6672e',1,'ImageCore']]],
   ['nullimage_16',['NullImage',['../classPhotoSaver.html#a74898c501e061db0c56ab0b7684fa979a3ed7a65c58f2f380e6a74076e62a5fad',1,'PhotoSaver']]]
