@@ -3,7 +3,7 @@ var searchData=
   ['label_5fcolor_0',['LABEL_COLOR',['../classGaugeWidget.html#aceffcc98a2ad7bc603d48f6a4ba247fa',1,'GaugeWidget']]],
   ['label_5ffont_5fsz_1',['LABEL_FONT_SZ',['../classGaugeWidget.html#a30e3bbe3232381c7913469022e0c37f4',1,'GaugeWidget']]],
   ['labels_2',['labels',['../classTemperaryCacher.html#a04c2f8ebd9c794ec7ad4a6da51e1f570',1,'TemperaryCacher']]],
-  ['language_20🌐_3',['🌐 Before you get started, choose your language! 🌐',['../md_README__EN.html#autotoc_md15',1,'']]],
+  ['language_20🌐_3',['🌐 Before you get started, choose your language! 🌐',['../md_README__EN.html#autotoc_md16',1,'']]],
   ['large_4',['large',['../classCactusObsticals.html#a9b78c30aa699a8c7dc472ac62473ad20a71726adf0ff60cd03eaf3c515883eeb8',1,'CactusObsticals::LARGE'],['../classBirdObsticals.html#a6fa31885ff29e1c4d007ea2185fa7f0ca71726adf0ff60cd03eaf3c515883eeb8',1,'BirdObsticals::LARGE']]],
   ['last_5fidle_5',['last_idle',['../classCPUUsageChart.html#a40d01620757b49a86efb9ed120156624',1,'CPUUsageChart']]],
   ['last_5ftol_6',['last_tol',['../classCPUUsageChart.html#ae3a7fad1551601477ed3ae26b199fb72',1,'CPUUsageChart']]],
@@ -17,7 +17,7 @@ var searchData=
   ['ledpath_14',['ledpath',['../classLEDController.html#a90c32acd1da700863aab0faf164d76b0',1,'LEDController::ledPath()'],['../classPesudoLedController.html#a5744e609b0868d31892aeee8d1265ade',1,'PesudoLedController::ledPath()']]],
   ['leftsidebar_15',['leftsidebar',['../classLeftSideBar.html#aae360fe181e60011fcec88ed6347e97d',1,'LeftSideBar::LeftSideBar()'],['../classLeftSideBar.html',1,'LeftSideBar']]],
   ['length_16',['length',['../structGroundLineProviders_1_1GroundLine.html#a6e39f6a4c946e7318db810629081178f',1,'GroundLineProviders::GroundLine']]],
-  ['license_17',['📝 License',['../md_README__EN.html#autotoc_md27',1,'']]],
+  ['license_17',['📝 License',['../md_README__EN.html#autotoc_md29',1,'']]],
   ['lightcontrollerwindow_18',['lightcontrollerwindow',['../classLightControllerWindow.html#add7241b973ac3a455955819094a71413',1,'LightControllerWindow::LightControllerWindow()'],['../classLightControllerWindow.html',1,'LightControllerWindow']]],
   ['line_19',['Line',['../classSimpleDrawingScene.html#ac1c43148efeef321be72ca1a4baf338fa4803e6b9e63dabf04de980788d6a13c4',1,'SimpleDrawingScene']]],
   ['linuxplatformcpustatedriver_20',['LinuxPlatformCPUStateDriver',['../classLinuxPlatformCPUStateDriver.html',1,'']]],
@@ -35,6 +35,6 @@ var searchData=
   ['localweathercard_32',['localweathercard',['../classLocalWeatherCard.html',1,'LocalWeatherCard'],['../classLocalWeatherCard.html#ac778493f500af33789e82469c7634d1e',1,'LocalWeatherCard::LocalWeatherCard(DesktopToast *toast, QWidget *parent=nullptr)'],['../classLocalWeatherCard.html#a468f0d160123b9f78c9066bb62483e6e',1,'LocalWeatherCard::LocalWeatherCard()=delete']]],
   ['localweatherlightfetcher_33',['localweatherlightfetcher',['../structLocalWeatherLightFetcher.html#a0b1f25b203c03a868ff62fbac5ef8904',1,'LocalWeatherLightFetcher::LocalWeatherLightFetcher()'],['../structLocalWeatherLightFetcher.html',1,'LocalWeatherLightFetcher']]],
   ['lock_5fsrc_34',['lock_src',['../classFrameProvider.html#aba77aa9854f2acab26c5920c1bf6ab18',1,'FrameProvider']]],
-  ['low_35',['low',['../structAppWeatherResult_1_1DailyWeather.html#ad68dc66d4978326345538da3c16781f9',1,'AppWeatherResult::DailyWeather::low'],['../classBirdObsticals.html#a38419a3f4f5ca46c7243184bca781576a41bc94cbd8eebea13ce0491b2ac11b88',1,'BirdObsticals::LOW']]],
+  ['low_35',['low',['../classBirdObsticals.html#a38419a3f4f5ca46c7243184bca781576a41bc94cbd8eebea13ce0491b2ac11b88',1,'BirdObsticals::LOW'],['../structAppWeatherResult_1_1DailyWeather.html#ad68dc66d4978326345538da3c16781f9',1,'AppWeatherResult::DailyWeather::low']]],
   ['low_5ftemp_36',['LOW_TEMP',['../classWeatherChartWidget.html#ad917be16972dd0f90aa71df8d0e8e569ac2e65573563c7444efbfc0dd2bca593c',1,'WeatherChartWidget']]]
 ];

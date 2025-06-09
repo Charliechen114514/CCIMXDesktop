@@ -33,35 +33,37 @@ var NAVTREE =
       [ "🛠️ 完整构建所用技术", "md_README.html#autotoc_md6", null ],
       [ "🧩开发者参考", "md_README.html#autotoc_md8", null ],
       [ "📚项目文档", "md_README.html#autotoc_md10", null ],
-      [ "💡 未来计划", "md_README.html#autotoc_md11", null ],
-      [ "📝 许可证", "md_README.html#autotoc_md13", null ]
+      [ "💡 WIP（一些正在开发的WIP Third Party App）", "md_README.html#autotoc_md11", null ],
+      [ "💡 未来计划", "md_README.html#autotoc_md12", null ],
+      [ "📝 许可证", "md_README.html#autotoc_md14", null ]
     ] ],
     [ "CCIMXDESKTOP 🖥️", "md_README__EN.html", [
-      [ "🌐 Before you get started, choose your language! 🌐", "md_README__EN.html#autotoc_md15", null ],
-      [ "🌟 Project Overview 🌟", "md_README__EN.html#autotoc_md16", null ],
-      [ "Some running screenshots", "md_README__EN.html#autotoc_md18", null ],
-      [ "🛠️ Basic build technologies", "md_README__EN.html#autotoc_md19", null ],
-      [ "🛠️ Full build of technologies", "md_README__EN.html#autotoc_md20", null ],
-      [ "🧩 Developer Reference", "md_README__EN.html#autotoc_md22", null ],
-      [ "📚Project Documentation", "md_README__EN.html#autotoc_md24", null ],
-      [ "💡 Future Plans", "md_README__EN.html#autotoc_md25", null ],
-      [ "📝 License", "md_README__EN.html#autotoc_md27", null ]
+      [ "🌐 Before you get started, choose your language! 🌐", "md_README__EN.html#autotoc_md16", null ],
+      [ "🌟 Project Overview 🌟", "md_README__EN.html#autotoc_md17", null ],
+      [ "Some running screenshots", "md_README__EN.html#autotoc_md19", null ],
+      [ "🛠️ Technologies used to build the foundation", "md_README__EN.html#autotoc_md20", null ],
+      [ "🛠️ Technologies used for full build", "md_README__EN.html#autotoc_md21", null ],
+      [ "🧩 Developer Reference", "md_README__EN.html#autotoc_md23", null ],
+      [ "📚Project Documentation", "md_README__EN.html#autotoc_md25", null ],
+      [ "💡 WIP (some WIP Third Party Apps under development)", "md_README__EN.html#autotoc_md26", null ],
+      [ "💡 Future plans", "md_README__EN.html#autotoc_md27", null ],
+      [ "📝 License", "md_README__EN.html#autotoc_md29", null ]
     ] ],
     [ "🧩 模块描述", "md_Components-explain-CN.html", [
-      [ "🔧 <tt>app_wrapper</tt>", "md_Components-explain-CN.html#autotoc_md29", null ],
-      [ "🧬 <tt>builtin</tt>", "md_Components-explain-CN.html#autotoc_md31", null ],
-      [ "⚙️ <tt>core</tt>", "md_Components-explain-CN.html#autotoc_md33", null ],
-      [ "🚀 <tt>extern_app</tt>", "md_Components-explain-CN.html#autotoc_md35", null ],
-      [ "🧩 <tt>sources</tt>", "md_Components-explain-CN.html#autotoc_md37", null ],
-      [ "🎨 <tt>ui</tt>", "md_Components-explain-CN.html#autotoc_md39", null ]
+      [ "🔧 <tt>app_wrapper</tt>", "md_Components-explain-CN.html#autotoc_md31", null ],
+      [ "🧬 <tt>builtin</tt>", "md_Components-explain-CN.html#autotoc_md33", null ],
+      [ "⚙️ <tt>core</tt>", "md_Components-explain-CN.html#autotoc_md35", null ],
+      [ "🚀 <tt>extern_app</tt>", "md_Components-explain-CN.html#autotoc_md37", null ],
+      [ "🧩 <tt>sources</tt>", "md_Components-explain-CN.html#autotoc_md39", null ],
+      [ "🎨 <tt>ui</tt>", "md_Components-explain-CN.html#autotoc_md41", null ]
     ] ],
     [ "🧩 Module Descriptions", "md_Components-explain-EN.html", [
-      [ "🔧 <tt>app_wrapper</tt>", "md_Components-explain-EN.html#autotoc_md41", null ],
-      [ "🧬 <tt>builtin</tt>", "md_Components-explain-EN.html#autotoc_md43", null ],
-      [ "⚙️ <tt>core</tt>", "md_Components-explain-EN.html#autotoc_md45", null ],
-      [ "🚀 <tt>extern_app</tt>", "md_Components-explain-EN.html#autotoc_md47", null ],
-      [ "🧩 <tt>sources</tt>", "md_Components-explain-EN.html#autotoc_md49", null ],
-      [ "🎨 <tt>ui</tt>", "md_Components-explain-EN.html#autotoc_md51", null ]
+      [ "🔧 <tt>app_wrapper</tt>", "md_Components-explain-EN.html#autotoc_md43", null ],
+      [ "🧬 <tt>builtin</tt>", "md_Components-explain-EN.html#autotoc_md45", null ],
+      [ "⚙️ <tt>core</tt>", "md_Components-explain-EN.html#autotoc_md47", null ],
+      [ "🚀 <tt>extern_app</tt>", "md_Components-explain-EN.html#autotoc_md49", null ],
+      [ "🧩 <tt>sources</tt>", "md_Components-explain-EN.html#autotoc_md51", null ],
+      [ "🎨 <tt>ui</tt>", "md_Components-explain-EN.html#autotoc_md53", null ]
     ] ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
@@ -94,12 +96,12 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AP3216CAdapterFactory_8h_source.html",
-"classCCMediaPlayList.html#a92825a1328290f7ccdc0629a002920e6",
-"classDinasourGameMainWidget.html#a11c187abdb9bba84b10afef20bc254eb",
-"classLEDParamsPackagePlain.html#a6d92e6ba8af9842986c701e106e94a33",
-"classScrollingLabel.html#a70d87da2c1faeab3aab09e36dd4c5d07",
-"classWeatherRequest.html#a536ac3f283539dd0b7d7885bb53fc7b5",
-"pdfReader_2ui__tools_2SideBarWidget_8h_source.html"
+"classCCMediaPlayList.html#a68daf8f790fd4be4389c284f2e1eb150",
+"classDinasourFrameFetcher.html#abd9732a2fc7ec5c1389b3308eb920182a1e23852820b9154316c7c06e2b7ba051",
+"classLEDController.html#a6bc5dddfbe9cdc210d1066a4254ab0fa",
+"classSceneDrawer.html#a6b811c930dc3a9c52c27c9f2c1c99c3c",
+"classWeatherChartWidget.html#a3c13c404b506f87e7486247d544ea09c",
+"namespaceQtAdaptTools.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

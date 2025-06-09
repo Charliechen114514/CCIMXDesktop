@@ -11,7 +11,7 @@ var searchData=
   ['redirect_8',['redirect',['../classCameraWindow.html#aa6fdd1205d485d183f1b2f0a8668c33b',1,'CameraWindow']]],
   ['redirectto_9',['redirectto',['../classLEDController.html#a375f3956f4fbdd3911d3aa616d46f746',1,'LEDController::redirectTo()'],['../classPesudoLedController.html#a1da3b54fbb3eaba82f62657efdd2ac75',1,'PesudoLedController::redirectTo()']]],
   ['redo_10',['redo',['../classSimpleDrawingScene.html#a1a76c9d86572dafe564ac53f55cdedfb',1,'SimpleDrawingScene']]],
-  ['reference_11',['🧩 Developer Reference',['../md_README__EN.html#autotoc_md22',1,'']]],
+  ['reference_11',['🧩 Developer Reference',['../md_README__EN.html#autotoc_md23',1,'']]],
   ['refresh_5fmedia_5flist_12',['refresh_media_list',['../classPlayListMainWindow.html#aa895c0c8f3fdcec039907019baa34bab',1,'PlayListMainWindow']]],
   ['refresh_5fpost_5frequest_13',['refresh_post_request',['../classWeatherAppMainWindow.html#af97dd260a58f30dd140641b141c83e79',1,'WeatherAppMainWindow']]],
   ['register_5fspecial_5fdircolor_14',['register_special_dircolor',['../classFileNameProviders.html#ad419a989e778ba01fc40417dd78ec62a',1,'FileNameProviders']]],
@@ -49,5 +49,5 @@ var searchData=
   ['role_46',['role',['../classSideBarWidget.html#abc77590c7f86b906b48ac7fcfadd46b1',1,'SideBarWidget::Role'],['../classSideBarWidget.html#abc77590c7f86b906b48ac7fcfadd46b1',1,'SideBarWidget::Role'],['../classSideBarWidget.html#abc77590c7f86b906b48ac7fcfadd46b1',1,'SideBarWidget::Role']]],
   ['rollto_5fnextframe_47',['rollto_nextframe',['../classVideoPlayerImpl.html#a09925d8ec75bd409d8526991e5cfa60e',1,'VideoPlayerImpl::rollto_nextFrame()'],['../classVideoPlayerOpencvImpl.html#ab0d491bb1ff965a4bcb1338a3f947fe9',1,'VideoPlayerOpencvImpl::rollto_nextFrame()'],['../classVideoPlayerImpl.html#a09925d8ec75bd409d8526991e5cfa60e',1,'VideoPlayerImpl::rollto_nextFrame()'],['../classVideoPlayerOpencvImpl.html#ab0d491bb1ff965a4bcb1338a3f947fe9',1,'VideoPlayerOpencvImpl::rollto_nextFrame()']]],
   ['running_48',['RUNNING',['../classDinasour.html#a6acd086f24d8df165a14947f8c5b1ef4a43491564ebcfd38568918efbd6e840fd',1,'Dinasour']]],
-  ['running_20screenshots_49',['Some running screenshots',['../md_README__EN.html#autotoc_md18',1,'']]]
+  ['running_20screenshots_49',['Some running screenshots',['../md_README__EN.html#autotoc_md19',1,'']]]
 ];

@@ -8,7 +8,9 @@ var searchData=
   ['fileinfoprovider_5',['FileInfoProvider',['../classFileInfoProvider.html',1,'']]],
   ['filenameproviders_6',['FileNameProviders',['../classFileNameProviders.html',1,'']]],
   ['filetypeinfo_7',['FileTypeInfo',['../classFileTypeInfo.html',1,'']]],
-  ['floatslider_8',['FloatSlider',['../classFloatSlider.html',1,'']]],
-  ['flushrequester_9',['FlushRequester',['../classFlushRequester.html',1,'']]],
-  ['frameprovider_10',['FrameProvider',['../classFrameProvider.html',1,'']]]
+  ['filterblur_8',['FilterBlur',['../classFilterBlur.html',1,'']]],
+  ['filterpackage_9',['FilterPackage',['../structFilterPackage.html',1,'']]],
+  ['floatslider_10',['FloatSlider',['../classFloatSlider.html',1,'']]],
+  ['flushrequester_11',['FlushRequester',['../classFlushRequester.html',1,'']]],
+  ['frameprovider_12',['FrameProvider',['../classFrameProvider.html',1,'']]]
 ];

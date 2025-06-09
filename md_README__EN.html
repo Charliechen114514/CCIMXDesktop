@@ -98,15 +98,15 @@ $(document).ready(function(){initNavTree('md_README__EN.html',''); initResizable
   <div class="headertitle"><div class="title">CCIMXDESKTOP 🖥️</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md14"></a> <img src="./CCIMXDesktopLogo.png" alt="CCIMXDesktopLogo" class="inline"/></p>
-<p><img src="https://img.shields.io/badge/Qt-6.8.3-green" alt="Qt" class="inline"/><img src="https://img.shields.io/badge/OpenCV-4.12.0-blue" alt="OpenCV" class="inline"/><img src="https://img.shields.io/badge/MuPDF-supported-orange" alt="MuPDF" class="inline"/><img src="https://img.shields.io/badge/C++-17+-green" alt="Qt" class="inline"/><img src="https://img.shields.io/badge/Version-0.9.3-red" alt="Version" class="inline"/></p>
-<p>🔌 Hello! This is a simple desktop and utility that can be used in a variety of embedded devices. For me, it kicks off a suite tailored for the i.MX platform, combining built-in system gadgets and extensible external applications. Designed using Qt, the project is working on supporting integration with a wide range of hardware sensors and multimedia interfaces wherever possible.</p>
-<h1><a class="anchor" id="autotoc_md15"></a>
+<div class="textblock"><p><a class="anchor" id="autotoc_md15"></a> <img src="./CCIMXDesktopLogo.png" alt="CCIMXDesktopLogo" class="inline"/></p>
+<p><img src="https://img.shields.io/badge/Qt-6.8.3-green" alt="Qt" class="inline"/><img src="https://img.shields.io/badge/OpenCV-4.12.0-blue" alt="OpenCV" class="inline"/><img src="https://img.shields.io/badge/MuPDF-supported-orange" alt="MuPDF" class="inline"/><img src="https://img.shields.io/badge/C++-23+-green" alt="Qt" class="inline"/><img src="https://img.shields.io/badge/Version-0.9.6-red" alt="Version" class="inline"/></p>
+<p>🔌 Hello! This is a simple desktop and utility collection that can be used in a variety of embedded devices! This project currently requires C++23 to compile (it's worth noting that you can compile with C++17, but any projects that require C++23 will need minor modifications)</p>
+<h1><a class="anchor" id="autotoc_md16"></a>
 🌐 Before you get started, choose your language! 🌐</h1>
 <p><a class="el" href="md_README__EN.html">🇬🇧 English Version</a> | <a class="el" href="md_README.html">🇨🇳 Chinese</a></p>
-<h1><a class="anchor" id="autotoc_md16"></a>
+<h1><a class="anchor" id="autotoc_md17"></a>
 🌟 Project Overview 🌟</h1>
-<p><b>CCIMXDESKTOP</b> provides a lightweight, extensible desktop environment optimized for embedded systems based on the NXP i.MX6ULL platform. It includes a range of built-in tools, device integration layers, and third-party applications, all presented in a unified user interface.</p>
+<p><b>CCIMXDESKTOP</b> provides a lightweight, extensible desktop environment optimized for embedded systems based on the NXP i.MX6ULL platform. It includes a range of built-in tools, device integration layers, and built-in helper applications, all presented in a unified user interface.</p>
 <p><img src="https://img.shields.io/badge/NXP-i.MX6ULL-yellow" alt="i.MX6ULL" class="inline"/> <img src="https://img.shields.io/badge/Platform-Embedded%20Linux-lightgrey" alt="Embedded" class="inline"/></p>
 <p>Now, CCIMXDesktop supports one-click builds including:</p>
 <ul>
@@ -125,36 +125,35 @@ $(document).ready(function(){initNavTree('md_README__EN.html',''); initResizable
 <li>💡 <a class="el" href="classLEDController.html" title="High-level controller interface for controlling LEDs, abstracting real or pseudo backends.">LEDController</a> App (switch light APP, requires Platform LED driver to be enabled)</li>
 <li>🌡️ Environment App (AP3216C driver needs to be mounted)</li>
 <li>🏃 SportHealth App (<a class="el" href="classICM20608.html" title="Interface for ICM20608 inertial measurement unit (IMU) sensor.">ICM20608</a> driver needs to be mounted)</li>
-<li>🖼️ ImageWalker (the most basic image information browser, equivalent to the Windows image browser for the beggars)</li>
+<li>🖼️ ImageWalker (the most basic image information browser, equivalent to the Windows image browser for beggars)</li>
 <li>✏️ MarkDown reader (the most basic Markdown editing + preview function, supports draft/load and save Markdown and basic shortcut functions)</li>
 <li>🛜 CCNetHelper (supports network card information viewing, IP port scanning and basic test IP connection capabilities)</li>
-<li>🦖Dinosaur Game! (Yes, that Google Dinosaur Game, implemented with Qt6 Widgets :) )</li>
+<li>🦖Dinasour Game! (Yes, that Google <a class="el" href="classDinasour.html" title="The Dinasour Object handle.">Dinasour</a> Game, implemented with Qt6 Widgets :) )</li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md18"></a>
+<h1><a class="anchor" id="autotoc_md19"></a>
 Some running screenshots</h1>
 <p><img src="./README/image-20250518085608736.png" alt="image-20250518085608736" class="inline"/></p>
 <p><img src="./README/image-20250518085912716.png" alt="image-20250518085912716" class="inline"/></p>
-<h1><a class="anchor" id="autotoc_md19"></a>
-🛠️ Basic build technologies</h1>
-<p><img src="https://img.shields.io/badge/Qt-Core%20%26%20Network-41cd52" alt="Qt" class="inline"/> <img src="https://img.shields.io/badge/TSLIB-required-green" alt="TSLIB" class="inline"/></p>
-<p>For beginners mapping a basic desktop, the embedded device should support Qt6 core controls and core networking. Additionally, TSLIB and Linux framebuffer backends for display should be ready.</p>
 <h1><a class="anchor" id="autotoc_md20"></a>
-🛠️ Full build of technologies</h1>
-<p><img src="https://img.shields.io/badge/OpenCV-Camera%20Support-blue" alt="OpenCV" class="inline"/></p>
-<p><img src="https://img.shields.io/badge/MuPDF-PDF%20Rendering-orange" alt="MuPDF" class="inline"/></p>
+🛠️ Technologies used to build the foundation</h1>
+<p><img src="https://img.shields.io/badge/Qt-Core%20%26%20Network-41cd52" alt="Qt" class="inline"/> <img src="https://img.shields.io/badge/TSLIB-required-green" alt="TSLIB" class="inline"/><img src="https://img.shields.io/badge/QtCore-required-red" alt="TSLIB" class="inline"/><img src="https://img.shields.io/badge/QtWidget_QtGui-required-blue" alt="TSLIB" class="inline"/><img src="https://img.shields.io/badge/QtNetwork-required-purple" alt="TSLIB" class="inline"/><img src="https://img.shields.io/badge/QtMultiMedia_ALSA_Least-required-purple" alt="TSLIB" class="inline"/></p>
+<p>Building this project requires that you have completed the porting of Qt6 (the basic necessary porting includes TSLib for interaction, QtCore QtWidget QtGui three-piece set, QtNetwork and at least QtMultiMedia component support for ALSA audio playback). Please check whether your build is sufficient to support the building of this desktop and third-party applications!</p>
+<h1><a class="anchor" id="autotoc_md21"></a>
+🛠️ Technologies used for full build</h1>
+<p><img src="https://img.shields.io/badge/OpenCV-Camera%20Support-blue" alt="OpenCV" class="inline"/> <img src="https://img.shields.io/badge/MuPDF-PDF%20Rendering-orange" alt="MuPDF" class="inline"/></p>
 <ul>
-<li>OpenCV for camera support</li>
-<li>MuPDF (for PDF rendering) (these are used for mupdf-based PDF readers)</li>
+<li>OpenCV for camera support and image transformation processing (if you don't use OpenCV image processing and any support for video streaming, you can not provide the library, but all related apps will be set to not build!)</li>
+<li>MuPDF (for PDF rendering) (these are used for PDF readers based on mupdf. If you don't want to build, you can ignore MuPDF dependencies and all related apps will be set to not build!)</li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md22"></a>
+<h1><a class="anchor" id="autotoc_md23"></a>
 🧩 Developer Reference</h1>
 <ul>
 <li><a class="el" href="md_Components-explain-CN.html">📖 Chinese Module Explanation</a></li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md24"></a>
+<h1><a class="anchor" id="autotoc_md25"></a>
 📚Project Documentation</h1>
 <p><img src="https://img.shields.io/badge/GCC-cross--compile-yellowgreen" alt="GCC" class="inline"/></p>
 <p><img src="https://img.shields.io/badge/ARM-linux--gnueabihf-red" alt="ARM" class="inline"/></p>
@@ -162,22 +161,25 @@ Some running screenshots</h1>
 <blockquote class="doxtable">
 <p>&zwj;🛠️ How to build this project? (Supports X86 gcc, ARM-linux-gnueabihf-gcc and Windows GCC) </p>
 </blockquote>
-<p>The document has been automatically deployed via GitHub Actions, visit: <a href="https://charliechen114514.github.io/CCIMXDesktop/">CCIMXDesktop: Main Page</a></p>
-<h1><a class="anchor" id="autotoc_md25"></a>
-💡 Future Plans</h1>
+<p>The document has been automatically deployed through GitHub Actions, visit: <a href="https://charliechen114514.github.io/CCIMXDesktop/">CCIMXDesktop: Main Page</a></p>
+<h1><a class="anchor" id="autotoc_md26"></a>
+💡 WIP (some WIP Third Party Apps under development)</h1>
 <ul>
-<li>🚀 Plan to write and provide more external basic programs:</li>
-<li>💬 Chat room (planned to be similar to QQ)</li>
-<li>⏰ Alarm clock APP</li>
-<li>🎨 Image processor</li>
-<li>🧮 Pocket calculator</li>
-<li>🔌 Serial port assistant</li>
-<li>✅ To-do list</li>
 <li>🤖 Image processor local processing of images and simple reasoning (face recognition)</li>
 <li>⚙ Basic settings (similar to IOS, but many are more ornamental)</li>
+<li>🧮 Pocket calculator</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md27"></a>
+💡 Future plans</h1>
+<p>🚀 Plan to write and provide more external basic programs:</p>
+<ul>
+<li>💬 Chat room (planned to be similar to QQ)</li>
+<li>⏰ Alarm clock APP</li>
+<li>🔌 Serial port assistant</li>
+<li>✅ Task List</li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md27"></a>
+<h1><a class="anchor" id="autotoc_md29"></a>
 📝 License</h1>
 <p><img src="https://img.shields.io/badge/License-MIT-brightgreen" alt="License" class="inline"/></p>
 <p>This project is based on the MIT license, welcome to port, modify and use at will! </p>

@@ -1,5 +1,11 @@
 var hierarchy =
 [
+    [ "AbstractParamsPack", "structAbstractParamsPack.html", [
+      [ "FilterPackage", "structFilterPackage.html", null ],
+      [ "GaussainPackage", "structGaussainPackage.html", null ],
+      [ "MeanBlurPackage", "structMeanBlurPackage.html", null ],
+      [ "MedianBlurPackage", "structMedianBlurPackage.html", null ]
+    ] ],
     [ "StackpageSwitcherAnimation::AnimationInfo", "structStackpageSwitcherAnimation_1_1AnimationInfo.html", null ],
     [ "AP3216CData", "structAP3216CData.html", null ],
     [ "AppWeatherDetailedRequest", "structAppWeatherDetailedRequest.html", null ],
@@ -49,6 +55,12 @@ var hierarchy =
     [ "ImageCore", "classImageCore.html", null ],
     [ "WallPaperAnimationHandler::ImagePoolEngine", "structWallPaperAnimationHandler_1_1ImagePoolEngine.html", null ],
     [ "ImageProc", "structImageProc.html", [
+      [ "BlurProcessor", "classBlurProcessor.html", [
+        [ "FilterBlur", "classFilterBlur.html", null ],
+        [ "GuassainBlur", "classGuassainBlur.html", null ],
+        [ "MeanBlur", "classMeanBlur.html", null ],
+        [ "MedianBlur", "classMedianBlur.html", null ]
+      ] ],
       [ "GrayProcessor", "classGrayProcessor.html", null ]
     ] ],
     [ "CCPdfNavigationPolicy::Indicator", "structCCPdfNavigationPolicy_1_1Indicator.html", null ],
@@ -172,6 +184,7 @@ var hierarchy =
         [ "NetCardGadget", "classNetCardGadget.html", null ]
       ] ],
       [ "AppWidget", "classAppWidget.html", null ],
+      [ "BlurExample", "classBlurExample.html", null ],
       [ "CCPdfViewer", "classCCPdfViewer.html", null ],
       [ "CPUUsageChart", "classCPUUsageChart.html", null ],
       [ "CameraDisplayWidget", "classCameraDisplayWidget.html", null ],

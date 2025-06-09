@@ -34,5 +34,6 @@ var searchData=
   ['getpenwidth_31',['getPenWidth',['../classSimpleDrawingScene.html#a0c3f864d21849bba344453035a4ba603',1,'SimpleDrawingScene']]],
   ['getrequestflushinterval_32',['getRequestFlushInterval',['../classFlushRequester.html#a2d1aabd696a8e718d67d7ac5bb67715e',1,'FlushRequester']]],
   ['getsize_33',['getsize',['../classBirdObsticals.html#a9874eda32e3f540afd6b3b00b2eb24db',1,'BirdObsticals::getSize()'],['../classCactusObsticals.html#a0f9df5d547b2ec1a86d90a0372c26e54',1,'CactusObsticals::getSize()']]],
-  ['groundlineproviders_34',['groundlineproviders',['../classGroundLineProviders.html#a305ca53f58e339086da441a42946f383',1,'GroundLineProviders::GroundLineProviders()=delete'],['../classGroundLineProviders.html#a97801ba68b789837a344ad1c30b5270d',1,'GroundLineProviders::GroundLineProviders(int patternLength, int h)']]]
+  ['grayexample_34',['GrayExample',['../classGrayExample.html#a95121c0c58587142fd9beb5466f33cd5',1,'GrayExample']]],
+  ['groundlineproviders_35',['groundlineproviders',['../classGroundLineProviders.html#a305ca53f58e339086da441a42946f383',1,'GroundLineProviders::GroundLineProviders()=delete'],['../classGroundLineProviders.html#a97801ba68b789837a344ad1c30b5270d',1,'GroundLineProviders::GroundLineProviders(int patternLength, int h)']]]
 ];
