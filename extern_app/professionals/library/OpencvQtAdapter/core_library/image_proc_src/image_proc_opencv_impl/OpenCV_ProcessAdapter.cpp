@@ -36,3 +36,24 @@ void OpenCV_ProcessAdapter::processFilterBlurType(CVImageImpl* image_mat, int d,
     cv::bilateralFilter(impl->raw_image, result, d, sigma_color, sigma_space);
     impl->raw_image = result.clone();
 }
+
+void OpenCV_ProcessAdapter::processCannyDetection(CVImageImpl* image_mat, int low, int high) {
+    CVImageOpencvImpl* impl = dynamic_cast<CVImageOpencvImpl*>(image_mat);
+    cv::Mat result;
+    cv::Canny(impl->raw_image, result, low, high);
+    impl->raw_image = result.clone();
+}
+
+void OpenCV_ProcessAdapter::processContoursDrawSession(CVImageImpl* drawmap, CVImageImpl* postProcessed, int contoursMethod) {
+    CVImageOpencvImpl* post_handle = dynamic_cast<CVImageOpencvImpl*>(postProcessed);
+    CVImageOpencvImpl* drawer = dynamic_cast<CVImageOpencvImpl*>(drawmap);
+    std::vector<std::vector<cv::Point>> contours;
+    std::vector<cv::Vec4i> hierarchy;
+    cv::findContours(post_handle->raw_image, contours, hierarchy, cv::RETR_TREE, contoursMethod);
+    cv::Mat result = drawer->raw_image.clone();
+    for (size_t i = 0; i < contours.size(); i++) {
+        cv::Scalar color(rand() % 256, rand() % 256, rand() % 256);
+        cv::drawContours(result, contours, static_cast<int>(i), color, 2, cv::LINE_8, hierarchy, 0);
+    }
+    drawer->raw_image = result;
+}

@@ -32,18 +32,23 @@ set(QtAdapter
 
 set(ImageProcSrc
     image_proc/image_proc_base.h
-    image_proc/GrayProcessor.h image_proc_src/GrayProcessor.cpp)
-
+    image_proc/GrayProcessor.h image_proc_src/GrayProcessor.cpp
+    image_proc_src/image_proc_opencv_impl/OpenCV_ProcessAdapter.h
+    image_proc_src/image_proc_opencv_impl/OpenCV_ProcessAdapter.cpp
+    image_proc/BlurProcessor.h
+    image_proc_src/BlurProcessor.cpp
+    image_proc/CannyProcessor.h
+    image_proc_src/CannyProcessor.cpp
+    image_proc/ContoursQueryProc.h
+    image_proc_src/ContoursQueryProc.cpp)
 
 add_library(core_library STATIC
     ${CVImageSrc}
     ${VideoPlayerSrc}
     ${QtAdapter}
     ${ImageProcSrc}
-    image_proc_src/image_proc_opencv_impl/OpenCV_ProcessAdapter.h
-    image_proc_src/image_proc_opencv_impl/OpenCV_ProcessAdapter.cpp
-    image_proc/BlurProcessor.h
-    image_proc_src/BlurProcessor.cpp
+
+
 )
 
 target_include_directories(

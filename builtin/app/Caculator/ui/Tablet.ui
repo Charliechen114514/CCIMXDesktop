@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Tablet</class>
+ <widget class="QWidget" name="Tablet">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>504</width>
+    <height>415</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* 整体窗口背景 */
+QWidget {
+    background-color: #f0f8ff; /* AliceBlue */
+    font-family: &quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif;
+    font-size: 16px;
+}
+
+/* 输入框 */
+QLineEdit {
+    background-color: #ffffff;
+    border: 2px solid #87cefa; /* LightSkyBlue */
+    border-radius: 6px;
+    padding: 6px;
+    selection-background-color: #add8e6; /* LightBlue */
+}
+
+/* 普通按钮 */
+QPushButton {
+    background-color: #e6f2ff; /* Very light blue */
+    border: 1px solid #87cefa;
+    border-radius: 10px;
+    padding: 10px;
+    color: #000000;
+}
+
+QPushButton:hover {
+    background-color: #d0ecff; /* Slightly deeper blue on hover */
+    border: 1px solid #5dade2;
+}
+
+QPushButton:pressed {
+    background-color: #add8e6; /* LightBlue */
+    border: 1px solid #4682b4; /* SteelBlue */
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <pointsize>-1</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="simple_tablet" native="true">
+     <layout class="QGridLayout" name="gridLayout"/>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

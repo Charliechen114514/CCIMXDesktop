@@ -14,6 +14,10 @@ void processGaussainBlurType(CVImageImpl* image_mat,
 void processMedianBlurType(CVImageImpl* image_mat, int kernel_size);
 
 void processFilterBlurType(CVImageImpl* image_mat, int d, double sigma_color, double sigma_space);
+
+void processCannyDetection(CVImageImpl* image_mat, int low, int high);
+
+void processContoursDrawSession(CVImageImpl* drawmap, CVImageImpl* postProcessed, int contoursMethod);
 };
 
 #endif // OPENCV_PROCESSADAPTER_H

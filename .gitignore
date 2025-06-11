@@ -10,6 +10,9 @@
 *.dll
 *.dylib
 
+# Developers default settings
+CCIMXDesktopLocalDefaults.cmake
+
 # Redundent Documentations
 Documentations/doxygen_styles/
 

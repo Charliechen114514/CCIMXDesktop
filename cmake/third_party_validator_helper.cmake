@@ -1,0 +1,15 @@
+function(validate_path var_name out_result)
+    set(is_valid FALSE)
+    if(DEFINED ${var_name} AND NOT "${${var_name}}" STREQUAL "")
+        if(EXISTS "${${var_name}}" AND IS_DIRECTORY "${${var_name}}")
+            set(is_valid TRUE)
+        endif()
+    endif()
+    set(${out_result} ${is_valid} PARENT_SCOPE)
+endfunction()
+
+function(MuPDF_MSVC_Build_Tips)
+    message(STATUS "Hey, Here is a tips: ")
+    message(STATUS  "MSVC's library is Debug level required, so"
+                    "if you are using a debug build, you must specify to the debug library, else link failed :|")
+endfunction()

@@ -1,7 +1,4 @@
 <RCC>
-    <qresource prefix="/example_image">
-        <file>lena.jpg</file>
-    </qresource>
     <qresource prefix="/icons">
         <file>quit.png</file>
     </qresource>

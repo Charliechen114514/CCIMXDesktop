@@ -13,6 +13,72 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">/* === 通用设置 === */
+QWidget {
+    background-color: #e6f2ff;
+    font-family: &quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;;
+    font-size: 14px;
+    color: #1a1a1a;
+}
+
+/* === 标签样式 === */
+QLabel {
+    padding: 4px;
+    qproperty-alignment: AlignCenter;
+    color: #1a1a1a;
+    background-color: transparent;
+}
+
+/* 用于图像展示的 QLabel */
+ImageLabel{
+    border: 2px solid #99ccff;
+    border-radius: 8px;
+    background-color: white;
+    padding: 6px;
+}
+
+/* === 滑动条（Slider）样式 === */
+QSlider::groove:horizontal {
+    border: 1px solid #99ccff;
+    height: 6px;
+    background: #ffffff;
+    margin: 2px 0;
+    border-radius: 3px;
+}
+
+QSlider::handle:horizontal {
+    background: #66b3ff;
+    border: 1px solid #3399ff;
+    width: 14px;
+    height: 14px;
+    margin: -4px 0;
+    border-radius: 7px;
+}
+
+QSlider::handle:horizontal:hover {
+    background: #3399ff;
+}
+
+/* === 滚动条（可选）=== */
+QScrollBar:vertical, QScrollBar:horizontal {
+    background: #e6f2ff;
+    border: none;
+    width: 10px;
+    margin: 0px;
+}
+
+QScrollBar::handle:vertical, QScrollBar::handle:horizontal {
+    background: #99ccff;
+    min-height: 20px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:hover {
+    background: #66b3ff;
+}
+</string>
+  </property>
   <layout class="QGridLayout" name="gridLayout_2">
    <item row="0" column="0">
     <widget class="QWidget" name="widget" native="true">

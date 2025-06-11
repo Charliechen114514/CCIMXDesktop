@@ -25,6 +25,8 @@ qt_add_executable(ImageProcessor
     image_processing_example/gray_image/GrayExample.h image_processing_example/gray_image/GrayExample.cpp image_processing_example/gray_image/GrayExample.ui
     sources/sources_demo.qrc
     image_processing_example/blur_image/BlurExample.h image_processing_example/blur_image/BlurExample.cpp image_processing_example/blur_image/BlurExample.ui
+    image_processing_example/canny_example/CannyExample.h image_processing_example/canny_example/CannyExample.cpp image_processing_example/canny_example/CannyExample.ui
+    image_processing_example/contours_query/ContoursQueryExample.h image_processing_example/contours_query/ContoursQueryExample.cpp image_processing_example/contours_query/ContoursQueryExample.ui
 )
 target_include_directories(ImageProcessor
     PRIVATE ..

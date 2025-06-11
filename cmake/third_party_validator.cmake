@@ -1,0 +1,72 @@
+include(third_party_validator_helper)
+
+function(check_opencv_app)
+    message(STATUS  "[check_opencv_app]: About to Check the OpenCV Due to the Required of the MediaPlayer And professional apps")
+    find_package(OpenCV)
+    if(OpenCV_FOUND)
+        message(STATUS "[check_opencv_app]: OpenCV is found, accept the compile of the MediaPlayer and so on related")
+        set(INCLUDE_MEDIAPLAYER_APP ON PARENT_SCOPE)
+        set(INCLUDE_CAMERA_APP ON PARENT_SCOPE)
+    else()
+        message(WARNING "[check_opencv_app]: OpenCV is not found, If you install the opencv in a non-standard path, please specify the OpenCV_DIR")
+        set(INCLUDE_MEDIAPLAYER_APP OFF PARENT_SCOPE)
+        set(INCLUDE_CAMERA_APP OFF PARENT_SCOPE)
+    endif()
+endfunction()
+
+function(check_mupdf_session)
+    message(STATUS "[check_mupdf_session]: About to check the MuPDF paths, dumping for the user first!")
+    message(STATUS "[check_mupdf_session]: The MuPDF include dirent is: ${MUPDF_INCLUDE_DIR}")
+    message(STATUS "[check_mupdf_session]: The MuPDF library dirent is: ${MUPDF_LIB_DIR}")
+    validate_path(MUPDF_INCLUDE_DIR MUPDF_INCLUDE_VALID)
+    validate_path(MUPDF_LIB_DIR MUPDF_LIB_VALID)
+
+    if(MUPDF_INCLUDE_VALID AND MUPDF_LIB_VALID)
+        message(STATUS "[check_mupdf_session]: MuPDF is specified, and also are valid.")
+        set(INCLUDE_PDF_BROWSER_APP ON PARENT_SCOPE)
+        if(MSVC)
+            MuPDF_MSVC_Build_Tips()
+        endif()
+    else()
+        message(WARNING "[check_mupdf_session]: MuPDF paths are invalid. Skipping build PDF Browser.")
+        message(WARNING "[check_mupdf_session]: You need to specify the MuPDF_INCLUDE_DIR and MUPDF_LIB_DIR in the CMake GUI")
+        set(INCLUDE_PDF_BROWSER_APP OFF PARENT_SCOPE)
+    endif()
+endfunction()
+
+function(check_doxygen_session)
+    if(CCIMX_DESKTOP_DOCGEN_REQ)
+        find_package(Doxygen)
+
+        if(DOXYGEN_FOUND)
+            if(NOT DEFINED CCIMX_DOXYGEN_DOCUMENT_BASE_PATH)
+                message(FATAL_ERROR "[check_doxygen_session]: CCIMX_DOXYGEN_DOCUMENT_BASE_PATH is not defined")
+            endif()
+            if(NOT DEFINED CCIMX_DOXYGEN_DOCUNENT_DOXYFILE_TEMPLATE)
+                message(FATAL_ERROR "[check_doxygen_session]: CCIMX_DOXYGEN_DOCUNENT_DOXYFILE_TEMPLATE is not defined")
+            endif()
+
+            if(NOT EXISTS ${CCIMX_DOXYGEN_DOCUMENT_BASE_PATH})
+                message(FATAL_ERROR "[check_doxygen_session]: CCIMX_DOXYGEN_DOCUMENT_BASE_PATH path does not exist: ${CCIMX_DOXYGEN_DOCUMENT_BASE_PATH}")
+            endif()
+            if(NOT EXISTS ${CCIMX_DOXYGEN_DOCUNENT_DOXYFILE_TEMPLATE})
+                message(FATAL_ERROR "[check_doxygen_session]: CCIMX_DOXYGEN_DOCUNENT_DOXYFILE_TEMPLATE file does not exist: ${CCIMX_DOXYGEN_DOCUNENT_DOXYFILE_TEMPLATE}")
+            endif()
+
+            set(DOXYGEN_IN ${CCIMX_DOXYGEN_DOCUNENT_DOXYFILE_TEMPLATE} PARENT_SCOPE)
+            set(DOXYGEN_OUT ${CCIMX_DOXYGEN_DOCUMENT_BASE_PATH} PARENT_SCOPE)
+
+            add_custom_target(doc
+                COMMAND ${DOXYGEN_EXECUTABLE} ${DOXYGEN_IN}
+                WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
+                COMMENT "Generating API documentation with Doxygen"
+                VERBATIM
+            )
+        else()
+            message(WARNING "[check_doxygen_session]: Doxygen not found, documentation target will not be available")
+        endif()
+    else()
+        message(STATUS "[check_doxygen_session]: We do not need to generate the documentations, "
+            "as the CCIMX_DESKTOP_DOCGEN_REQ is ${CCIMX_DESKTOP_DOCGEN_REQ}")
+    endif()
+endfunction()

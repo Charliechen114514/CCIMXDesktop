@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BonusFunctor</class>
+ <widget class="QWidget" name="BonusFunctor">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* 整体窗口背景 */
+QWidget {
+    background-color: #f0f8ff; /* AliceBlue */
+    font-family: &quot;Segoe UI&quot;, &quot;Microsoft YaHei&quot;, sans-serif;
+    font-size: 16px;
+}
+
+/* 普通按钮 */
+QPushButton {
+    background-color: #e6f2ff; /* Very light blue */
+    border: 1px solid #87cefa;
+    border-radius: 10px;
+    padding: 10px;
+    color: #000000;
+}
+
+QPushButton:hover {
+    background-color: #d0ecff; /* Slightly deeper blue on hover */
+    border: 1px solid #5dade2;
+}
+
+QPushButton:pressed {
+    background-color: #add8e6; /* LightBlue */
+    border: 1px solid #4682b4; /* SteelBlue */
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

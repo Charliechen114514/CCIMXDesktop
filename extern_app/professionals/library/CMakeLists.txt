@@ -1,5 +1,5 @@
 message(STATUS "About to build selected library")
-
+find_package(OpenCV)
 if(OpenCV_FOUND)
     message(STATUS "Build Qt_OpenCV_Adapter Due to the INCLUDE_OPENCV_QT_ADAPTER")
     add_subdirectory(OpencvQtAdapter)
