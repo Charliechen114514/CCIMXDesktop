@@ -61,6 +61,8 @@ var hierarchy =
         [ "MeanBlur", "classMeanBlur.html", null ],
         [ "MedianBlur", "classMedianBlur.html", null ]
       ] ],
+      [ "CannyProcessor", "classCannyProcessor.html", null ],
+      [ "ContoursQueryProc", "classContoursQueryProc.html", null ],
       [ "GrayProcessor", "classGrayProcessor.html", null ]
     ] ],
     [ "CCPdfNavigationPolicy::Indicator", "structCCPdfNavigationPolicy_1_1Indicator.html", null ],
@@ -81,6 +83,7 @@ var hierarchy =
     [ "PageFactory", "classPageFactory.html", null ],
     [ "ToolsStackedWidget::PagePackage", "structToolsStackedWidget_1_1PagePackage.html", null ],
     [ "PageSetuper::PageSetupSessionRequest", "structPageSetuper_1_1PageSetupSessionRequest.html", null ],
+    [ "Parser", "classParser.html", null ],
     [ "PesudoAP3216C", "classPesudoAP3216C.html", null ],
     [ "PesudoICM20608", "classPesudoICM20608.html", null ],
     [ "PesudoLedController", "classPesudoLedController.html", null ],
@@ -100,6 +103,7 @@ var hierarchy =
     [ "QMainWindow", null, [
       [ "AboutMainWindow", "classAboutMainWindow.html", null ],
       [ "CCNoterWindow", "classCCNoterWindow.html", null ],
+      [ "CaculatorMainWindow", "classCaculatorMainWindow.html", null ],
       [ "CameraWindow", "classCameraWindow.html", null ],
       [ "DesktopMainWindow", "classDesktopMainWindow.html", null ],
       [ "DinasourGameWindow", "classDinasourGameWindow.html", null ],
@@ -185,10 +189,13 @@ var hierarchy =
       ] ],
       [ "AppWidget", "classAppWidget.html", null ],
       [ "BlurExample", "classBlurExample.html", null ],
+      [ "BonusFunctor", "classBonusFunctor.html", null ],
       [ "CCPdfViewer", "classCCPdfViewer.html", null ],
       [ "CPUUsageChart", "classCPUUsageChart.html", null ],
       [ "CameraDisplayWidget", "classCameraDisplayWidget.html", null ],
+      [ "CannyExample", "classCannyExample.html", null ],
       [ "ClockWidget", "classClockWidget.html", null ],
+      [ "ContoursQueryExample", "classContoursQueryExample.html", null ],
       [ "DesktopAboutMainWidget", "classDesktopAboutMainWidget.html", null ],
       [ "DesktopToast", "classDesktopToast.html", null ],
       [ "DesktopToast", "classDesktopToast.html", null ],
@@ -220,6 +227,7 @@ var hierarchy =
       [ "SimpleDrawerWidget", "classSimpleDrawerWidget.html", null ],
       [ "SportsChart", "classSportsChart.html", null ],
       [ "SportsDisplayWidget", "classSportsDisplayWidget.html", null ],
+      [ "Tablet", "classTablet.html", null ],
       [ "ToolBoxs", "classToolBoxs.html", null ],
       [ "ToolLeftWidgets", "classToolLeftWidgets.html", null ],
       [ "ToolsSideBar", "classToolsSideBar.html", null ],
@@ -229,12 +237,25 @@ var hierarchy =
     ] ],
     [ "rol", "structrol.html", null ],
     [ "std::runtime_error", null, [
-      [ "SimpleTools::FailedReadFile", "classSimpleTools_1_1FailedReadFile.html", null ]
+      [ "BadSqrtValue", "classBadSqrtValue.html", null ],
+      [ "DivideZeroException", "classDivideZeroException.html", null ],
+      [ "GeneralParseError", "classGeneralParseError.html", null ],
+      [ "InvalidNumber", "classInvalidNumber.html", null ],
+      [ "SimpleTools::FailedReadFile", "classSimpleTools_1_1FailedReadFile.html", null ],
+      [ "UnSupportedSymbol", "classUnSupportedSymbol.html", null ],
+      [ "UnSupportiveFunction", "classUnSupportiveFunction.html", null ],
+      [ "UnSymmetryExpression", "classUnSymmetryExpression.html", null ]
     ] ],
     [ "SceneDrawer", "classSceneDrawer.html", null ],
     [ "Settings::SZ< value >", "structSettings_1_1SZ.html", null ],
     [ "TemperaryCacher", "classTemperaryCacher.html", null ],
     [ "ToolLeftWidgets::ToolButtonInstallPackage", "structToolLeftWidgets_1_1ToolButtonInstallPackage.html", null ],
+    [ "TreeNodeBase", "structTreeNodeBase.html", [
+      [ "BinaryOpTreeNode", "structBinaryOpTreeNode.html", null ],
+      [ "FunctorTreeNode", "classFunctorTreeNode.html", null ],
+      [ "NumberNode", "structNumberNode.html", null ],
+      [ "UnaryOpTreeNode", "classUnaryOpTreeNode.html", null ]
+    ] ],
     [ "VideoPlayerImpl", "classVideoPlayerImpl.html", [
       [ "VideoPlayerOpencvImpl", "classVideoPlayerOpencvImpl.html", null ],
       [ "VideoPlayerOpencvImpl", "classVideoPlayerOpencvImpl.html", null ]

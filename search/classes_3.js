@@ -14,6 +14,7 @@ var searchData=
   ['direntsizeworker_11',['DirentSizeWorker',['../classDirentSizeWorker.html',1,'']]],
   ['diskmusic_12',['DiskMusic',['../classDiskMusic.html',1,'']]],
   ['displayparams_13',['DisplayParams',['../structCVTools_1_1DisplayParams.html',1,'CVTools']]],
-  ['downdockwidget_14',['DownDockWidget',['../classDownDockWidget.html',1,'']]],
-  ['drawerwindow_15',['DrawerWindow',['../classDrawerWindow.html',1,'']]]
+  ['dividezeroexception_14',['DivideZeroException',['../classDivideZeroException.html',1,'']]],
+  ['downdockwidget_15',['DownDockWidget',['../classDownDockWidget.html',1,'']]],
+  ['drawerwindow_16',['DrawerWindow',['../classDrawerWindow.html',1,'']]]
 ];

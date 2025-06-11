@@ -16,5 +16,6 @@ var searchData=
   ['imagewalkerwindow_13',['ImageWalkerWindow',['../classImageWalkerWindow.html',1,'']]],
   ['indicator_14',['Indicator',['../structCCPdfNavigationPolicy_1_1Indicator.html',1,'CCPdfNavigationPolicy']]],
   ['interfacesdisplaywidget_15',['InterfacesDisplayWidget',['../classInterfacesDisplayWidget.html',1,'']]],
-  ['interfacesquery_16',['InterfacesQuery',['../classInterfacesQuery.html',1,'']]]
+  ['interfacesquery_16',['InterfacesQuery',['../classInterfacesQuery.html',1,'']]],
+  ['invalidnumber_17',['InvalidNumber',['../classInvalidNumber.html',1,'']]]
 ];

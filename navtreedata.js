@@ -96,12 +96,13 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AP3216CAdapterFactory_8h_source.html",
-"classCCMediaPlayList.html#a68daf8f790fd4be4389c284f2e1eb150",
-"classDinasourFrameFetcher.html#abd9732a2fc7ec5c1389b3308eb920182a1e23852820b9154316c7c06e2b7ba051",
-"classLEDController.html#a6bc5dddfbe9cdc210d1066a4254ab0fa",
-"classSceneDrawer.html#a6b811c930dc3a9c52c27c9f2c1c99c3c",
-"classWeatherChartWidget.html#a3c13c404b506f87e7486247d544ea09c",
-"namespaceQtAdaptTools.html"
+"classCCIMXFileSystemModel.html#aeceaa8e6c1e18cb36f20211176b60096",
+"classDigitalTimeWidget.html#a787dd778c825c2e6f9273c43a0996a6b",
+"classImageLabel.html#ab0a101dbaf19491729fff3913c039007",
+"classPlayListMainWindow.html#a67b89a51f64e7749c9033b42a2da50f3",
+"classVideoPlayerImpl.html#aed67d09d2e16570de740b0ea011af60f",
+"md_Components-explain-EN.html",
+"structStackpageSwitcherAnimation.html#a4e77ef027d4c0e45e87306cd99e0afe3"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
