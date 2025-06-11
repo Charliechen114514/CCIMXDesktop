@@ -2,7 +2,7 @@
 
 ![CCIMXDesktopLogo](./CCIMXDesktopLogo.png)
 
-![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-23+-green)![Version](https://img.shields.io/badge/Version-0.9.6-red)
+![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-23+-green)![Version](https://img.shields.io/badge/Version-0.9.8-red)
 
 🔌 Hello! This is a simple desktop and utility collection that can be used in a variety of embedded devices! This project currently requires C++23 to compile (it's worth noting that you can compile with C++17, but any projects that require C++23 will need minor modifications)
 
@@ -38,6 +38,7 @@ Now, CCIMXDesktop supports one-click builds including:
 - ✏️ MarkDown reader (the most basic Markdown editing + preview function, supports draft/load and save Markdown and basic shortcut functions)
 - 🛜 CCNetHelper (supports network card information viewing, IP port scanning and basic test IP connection capabilities)
 - 🦖Dinasour Game! (Yes, that Google Dinasour Game, implemented with Qt6 Widgets :) )
+- 🧮Caculator pocket calculator (standard calculator)
 
 ------
 
@@ -50,7 +51,7 @@ Now, CCIMXDesktop supports one-click builds including:
 ## 🛠️ Technologies used to build the foundation
 
 ![Qt](https://img.shields.io/badge/Qt-Core%20%26%20Network-41cd52)
-![TSLIB](https://img.shields.io/badge/TSLIB-required-green)![TSLIB](https://img.shields.io/badge/QtCore-required-red)![TSLIB](https://img.shields.io/badge/QtWidget_QtGui-required-blue)![TSLIB](https://img.shields.io/badge/QtNetwork-required-purple)![TSLIB](https://img.shields.io/badge/QtMultiMedia_ALSA_Least-required-purple)
+![TSLIB](https://img.shields.io/badge/TSLIB-required-green)![TSLIB](https://img.shields.io/badge/QtCore-required-red)![TSLIB](https://img.shields.io /badge/QtWidget_QtGui-required-blue)![TSLIB](https://img.shields.io/badge/QtNetwork-required-purple)![TSLIB](https://img.shields.io/badge/QtMultiMedia_ALSA_Least-required-purple)
 
 Building this project requires that you have completed the porting of Qt6 (the basic necessary porting includes TSLib for interaction, QtCore QtWidget QtGui three-piece set, QtNetwork and at least QtMultiMedia component support for ALSA audio playback). Please check whether your build is sufficient to support the building of this desktop and third-party applications!
 
@@ -88,8 +89,6 @@ The document has been automatically deployed through GitHub Actions, visit: [CCI
 - 🤖 Image processor local processing of images and simple reasoning (face recognition)
 
 - ⚙ Basic settings (similar to IOS, but many are more ornamental)
-
-- 🧮 Pocket calculator
 
 ## 💡 Future plans
 

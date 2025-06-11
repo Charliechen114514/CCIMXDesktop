@@ -2,7 +2,7 @@
 
 ![CCIMXDesktopLogo](./CCIMXDesktopLogo.png)
 
-![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-23+-green)![Version](https://img.shields.io/badge/Version-0.9.6-red)
+![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-23+-green)![Version](https://img.shields.io/badge/Version-0.9.8-red)
 
 🔌 您好！这是一个可在多种嵌入式设备中使用的简单桌面和实用程序集合！这个项目目前需要使用C++23进行编译（值得一提的是，您可以使用C++17编译，但是需要少许的修改任何要求使用C++23的项目）
 
@@ -38,6 +38,7 @@
 - ✏️ MarkDown阅读器（最基础的Markdown编辑 + 预览功能，支持草稿 / 加载保存Markdown与基础快捷功能）
 - 🛜 CCNetHelper（支持网卡信息查看，IP端口扫描和基本测试IP打通能力）
 - 🦖Dinasour Game!（是的，就是那个Google Dinasour Game，用Qt6 Widgets实现的版本 :) ）
+- 🧮Caculator 口袋计算器（标准的计算器）
 
 ------
 
@@ -85,7 +86,6 @@
 
 - 🤖 图像处理器本地处理图像和做简单的推理（人脸识别）
 - ⚙ 基础的设置（类似IOS，但是很多是观赏性较为强）
-- 🧮 口袋计算器
 
 ## 💡 未来计划
 

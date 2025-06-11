@@ -20,5 +20,6 @@
         <file>sources/image_walker.png</file>
         <file>sources/EasyNote.png</file>
         <file>sources/dino_frame1.png</file>
+        <file>sources/caculator.png</file>
     </qresource>
 </RCC>

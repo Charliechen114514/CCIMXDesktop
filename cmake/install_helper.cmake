@@ -1,0 +1,43 @@
+function(ensure_base_release_dir)
+    message(STATUS "[CCIMXDesktop]: Ready to select the install path for the cross compile")
+    # if the CCIMX_ALL_RELEASE_DIR_BASE is not defined, set it to a default value
+    if(NOT DEFINED CCIMX_ALL_RELEASE_DIR_BASE OR CCIMX_ALL_RELEASE_DIR_BASE STREQUAL "")
+        message(STATUS "CCIMX_ALL_RELEASE_DIR_BASE is not defined, set to default value")
+        if(MSVC)
+            set(_default_release_base ${_DEF_RELEASE_BASE_MSVC_RELEASE})
+        else()
+            set(_default_release_base ${_DEF_RELEASE_BASE_GCC_RELEASE})
+        endif()
+        if(NOT IS_DIRECTORY "${_default_release_base}")
+            message(FATAL_ERROR
+                "Default path '${_default_release_base}' does not exist. Please manually specify CCIMX_ALL_RELEASE_DIR_BASE "
+                "in the top level CMakeLists.txt, or, "
+                "You are supposed to use cmake-gui to set the path.")
+        else()
+            message(STATUS "[CCIMXDesktop]: Pass check of the default path: '${_default_release_base}'")
+        endif()
+        set(CCIMX_ALL_RELEASE_DIR_BASE "${_default_release_base}" CACHE PATH "Base release install path for deployment")
+    else()
+        if(NOT IS_DIRECTORY "${CCIMX_ALL_RELEASE_DIR_BASE}")
+            message(FATAL_ERROR
+                "Specified CCIMX_ALL_RELEASE_DIR_BASE does not exist: ${CCIMX_ALL_RELEASE_DIR_BASE}")
+        endif()
+    endif()
+
+    get_filename_component(COMPILER_NAME ${CMAKE_CXX_COMPILER} NAME)
+    # Auto generate the CCIMX_ALL_RELEASE_DIR and base app dir
+    if(MSVC)
+        message(STATUS "[CCIMXDesktop]: MSVC compiler detected, so build release in the msvc dirent")
+        set(CCIMX_ALL_RELEASE_DIR ${CCIMX_ALL_RELEASE_DIR_BASE}/msvc CACHE PATH "Deploy the install root directory")
+        set(CCIMX_EXTERNAL_APP_BASE_DIR ${CCIMX_ALL_RELEASE_DIR} PARENT_SCOPE)
+    elseif(COMPILER_NAME MATCHES "arm.*-g\\+\\+")
+        message(STATUS "[CCIMXDesktop]: Cross compile detected, so build release in the arm dirent")
+        set(CCIMX_ALL_RELEASE_DIR ${CCIMX_ALL_RELEASE_DIR_BASE}/arm32 CACHE PATH "Deploy the install root directory")
+        set(CCIMX_EXTERNAL_APP_BASE_DIR "." PARENT_SCOPE)
+        add_compile_definitions(ARM_BUILD)
+    else()
+        message(STATUS "[CCIMXDesktop]: GCC compiler detected, so build release in the x86 dirent")
+        set(CCIMX_ALL_RELEASE_DIR ${CCIMX_ALL_RELEASE_DIR_BASE}/x86 CACHE PATH "Deploy the install root directory")
+        set(CCIMX_EXTERNAL_APP_BASE_DIR "${CCIMX_ALL_RELEASE_DIR}" PARENT_SCOPE)
+    endif()
+endfunction()

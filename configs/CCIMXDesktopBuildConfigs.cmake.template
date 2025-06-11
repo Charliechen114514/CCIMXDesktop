@@ -1,0 +1,46 @@
+# --------------------------------------------------------
+#   Template Configs of CCIMXDesktop!
+#   [1] Hello! This is a configure template
+#   [2] For some neccessary settings, you should offer 
+#       valid paths for building scripts to scan
+#   [3] after you edit the templates, you are supposed to
+#       [3.1]   moves to the edited template into PROJECT_ROOT_DIR and
+#               renames it into CCIMXDesktopLocalDefaults.cmake
+#       [3.2]   place it anywhere and with any name, but using -DLOCAL_CONFIG_FILE to
+#               points the position
+#   [4] run cmake to launch configure sessions!
+# --------------------------------------------------------
+
+# set the proxy with http https if you have direct trouble in visiting githubs
+# set(ENV{http_proxy} "http://127.0.0.1:7890")
+# set(ENV{https_proxy} "http://127.0.0.1:7890")
+
+# Options for the default use install
+set(_DEF_RELEASE_BASE_MSVC_RELEASE  "")
+set(_DEF_RELEASE_BASE_GCC_RELEASE   "")
+
+# Options for the MuPDF Path
+#     MUPDF_INCLUDE_DIR leads to the path contains mupdf includes
+#     set(MUPDF_INCLUDE_DIR "D:/stdcpp-library/mupdf")
+#     # Fuck MSVC, The Debug Level disequal makes the linkage
+#     # impossible, we have to make a seperate change
+#     MSCV's (This is an example, you must points to your own mupdf library)
+#       set(MUPDF_LIB_DIR "D:/stdcpp-library/mupdf/Debug")
+#       set(MUPDF_LIB_DIR "D:/stdcpp-library/mupdf/Release")
+#     GCC (This is an example, you must points to your own mupdf library)
+#     set(MUPDF_INCLUDE_DIR /home/charliechen/imx6ull/mupdfdebug/include)
+#     set(MUPDF_LIB_DIR /home/charliechen/imx6ull/mupdfdebug)
+set(MUPDF_INCLUDE_DIR "" CACHE PATH "MuPDF Include Directory")
+set(MUPDF_LIB_DIR "" CACHE PATH "MuPDF Library Directory")
+
+# Options for the Automatically generate documentations
+set(CCIMX_DOXYGEN_DOCUMENT_BASE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/Documentations/doxygen_styles CACHE PATH "Doxygen folders base")
+set(CCIMX_DOXYGEN_DOCUNENT_DOXYFILE_TEMPLATE ${CMAKE_CURRENT_SOURCE_DIR}/Doxyfile CACHE PATH "Doxygen template file path")
+
+# Options for OpenCV if the OpenCV is installed in non-standard path
+set(OpenCV_DIR "" CACHE PATH "OpenCV Library Directory")
+
+# For IMX6ULL ALSA can be a typical backend
+# this projects use ALSA as a template
+set(ALSA_LIBRARY_PATH   "" CACHE PATH "Media Audio backend library directectory")
+

@@ -49,7 +49,7 @@ void PageSetuper::add_to_dock(
 /* All mappings are defined, thus add directly is OK */
 #include "app_wrapper/applicationwrapper.h"
 void PageSetuper::
-	create_specified_page(QStackedWidget* widget, QWidget* paged_widget) {
+    create_specified_page(QStackedWidget* widget, QWidget* paged_widget) {
 	widget->addWidget(paged_widget);
 }
 
@@ -66,7 +66,7 @@ PageSetuper::PageSetupSessionRequest make_up_request(
 }
 
 QList<AppWidget*> PageSetuper::build_pesudo_page(
-	const QString& pixpath, int how_many, DesktopMainWindow* mainWindow) {
+    const QString& pixpath, int how_many, DesktopMainWindow* mainWindow) {
 	QList<PageSetuper::PageSetupSessionRequest> req;
 	for (int i = 0; i < how_many; i++) {
 		req.push_back({ pixpath, QString::number(i), nullptr });
@@ -80,98 +80,98 @@ QList<AppWidget*> PageSetuper::create_real_app(DesktopMainWindow* mainWindow) {
 	QList<PageSetuper::PageSetupSessionRequest> req;
 #ifdef INCLUDE_PDF_BROWSER_APP
 	req.push_back(make_up_request(
-		_EXTERNAPP_INSTALL_DIR "/pdfReader",
-		":/icons/sources/pdf_browser.png",
-		"PDF Browser",
-		mainWindow));
+        _EXTERNAPP_INSTALL_DIR "/pdfReader",
+        ":/icons/sources/pdf_browser.png",
+        "PDF Browser",
+        mainWindow));
 #endif
 
 #ifdef INCLUDE_WEATHER_APP
 	req.push_back(make_up_request(
-		_EXTERNAPP_INSTALL_DIR "/WeatherApp",
-		":/icons/sources/weather_app.png",
-		"Weather App",
-		mainWindow));
+        _EXTERNAPP_INSTALL_DIR "/WeatherApp",
+        ":/icons/sources/weather_app.png",
+        "Weather App",
+        mainWindow));
 #endif
 
 #ifdef INCLUDE_CAMERA_APP
 	req.push_back(make_up_request(
-		_EXTERNAPP_INSTALL_DIR "/GeneralLocalCamera",
-		":/icons/sources/camera_app.png",
-		"Camera App",
-		mainWindow));
+        _EXTERNAPP_INSTALL_DIR "/GeneralLocalCamera",
+        ":/icons/sources/camera_app.png",
+        "Camera App",
+        mainWindow));
 #endif
 
 #ifdef INCLUDE_SYSTEMSTATUS_APP
 	req.push_back(make_up_request(
-		_EXTERNAPP_INSTALL_DIR "/SystemState",
-		":/icons/sources/system_state.png",
-		"SystemState",
-		mainWindow));
+        _EXTERNAPP_INSTALL_DIR "/SystemState",
+        ":/icons/sources/system_state.png",
+        "SystemState",
+        mainWindow));
 #endif
 
 #ifdef INCLUDE_FILERAMBER_APP
 	req.push_back(make_up_request(
-		_EXTERNAPP_INSTALL_DIR "/FileRamber",
-		":/icons/sources/file_ramber.png",
-		"FileRamber",
-		mainWindow));
+        _EXTERNAPP_INSTALL_DIR "/FileRamber",
+        ":/icons/sources/file_ramber.png",
+        "FileRamber",
+        mainWindow));
 #endif
 
 #ifdef INCLUDE_MEDIAPLAYER_APP
 	req.push_back(make_up_request(
-		_EXTERNAPP_INSTALL_DIR "/MediaPlayer",
-		":/icons/sources/mediaplayer_app.png",
-		"MediaPlayer",
-		mainWindow));
+        _EXTERNAPP_INSTALL_DIR "/MediaPlayer",
+        ":/icons/sources/mediaplayer_app.png",
+        "MediaPlayer",
+        mainWindow));
 #endif
 
 #ifdef INCLUDE_LED_APP
 	req.push_back(make_up_request(
-		_EXTERNAPP_INSTALL_DIR "/LightController",
-		":/icons/sources/ledcontrol_app.png",
-		"LED Controller",
-		mainWindow));
+        _EXTERNAPP_INSTALL_DIR "/LightController",
+        ":/icons/sources/ledcontrol_app.png",
+        "LED Controller",
+        mainWindow));
 #endif
 
 #ifdef INCLUDE_ENV_APP
 	req.push_back(make_up_request(
-		_EXTERNAPP_INSTALL_DIR "/Environment",
-		":/icons/sources/env_app.png",
-		"Environment",
-		mainWindow));
+        _EXTERNAPP_INSTALL_DIR "/Environment",
+        ":/icons/sources/env_app.png",
+        "Environment",
+        mainWindow));
 #endif
 
 #ifdef INCLUDE_SPORT_APP
 	req.push_back(make_up_request(
-		_EXTERNAPP_INSTALL_DIR "/SportsHealth",
-		":/icons/sources/sports_health_app.png",
-		"SportsHealth",
-		mainWindow));
+        _EXTERNAPP_INSTALL_DIR "/SportsHealth",
+        ":/icons/sources/sports_health_app.png",
+        "SportsHealth",
+        mainWindow));
 #endif
 
 #ifdef INCLUDE_NETHELPER_APP
 	req.push_back(make_up_request(
-		_EXTERNAPP_INSTALL_DIR "/CCNetHelper",
-		":/icons/sources/network-helper.png",
-		"CCNetHelper",
-		mainWindow));
+        _EXTERNAPP_INSTALL_DIR "/CCNetHelper",
+        ":/icons/sources/network-helper.png",
+        "CCNetHelper",
+        mainWindow));
 #endif
 
 #ifdef INCLUDE_EASYNOTE_APP
 	req.push_back(make_up_request(
-		_EXTERNAPP_INSTALL_DIR "/EasyNotes",
-		":/icons/sources/EasyNote.png",
-		"EasyNotes",
-		mainWindow));
+        _EXTERNAPP_INSTALL_DIR "/EasyNotes",
+        ":/icons/sources/EasyNote.png",
+        "EasyNotes",
+        mainWindow));
 #endif
 
 #ifdef INCLUDE_DINO_GAME
 	req.push_back(make_up_request(
-		_EXTERNAPP_INSTALL_DIR "/CCIMX_DinoGame",
-		":/icons/sources/dino_frame1.png",
-		"CCIMX_DinoGame",
-		mainWindow));
+        _EXTERNAPP_INSTALL_DIR "/CCIMX_DinoGame",
+        ":/icons/sources/dino_frame1.png",
+        "CCIMX_DinoGame",
+        mainWindow));
 #endif
 
 	return PageSetuper::create_one_app_only_page_append(mainWindow, req);
@@ -182,29 +182,35 @@ QList<AppWidget*> PageSetuper::create_builtin_apps(DesktopMainWindow* mainWindow
 
 	/* abouts */
 	req.push_back(make_up_request(
-		_EXTERNAPP_INSTALL_DIR "/DesktopAbout",
-		":/icons/sources/desktop_about.png",
-		"DesktopAbout",
-		mainWindow));
+        _EXTERNAPP_INSTALL_DIR "/DesktopAbout",
+        ":/icons/sources/desktop_about.png",
+        "DesktopAbout",
+        mainWindow));
 
 	/* simple drawer */
 	req.push_back(make_up_request(
-		_EXTERNAPP_INSTALL_DIR "/SimpleDrawer",
-		":/icons/sources/simple_drawer.png",
-		"SimpleDrawer",
-		mainWindow));
+        _EXTERNAPP_INSTALL_DIR "/SimpleDrawer",
+        ":/icons/sources/simple_drawer.png",
+        "SimpleDrawer",
+        mainWindow));
 
 	req.push_back(make_up_request(
-		_EXTERNAPP_INSTALL_DIR "/CCIMXNoter",
-		":/icons/sources/notepad.png",
-		"CCIMXNoter",
-		mainWindow));
+        _EXTERNAPP_INSTALL_DIR "/CCIMXNoter",
+        ":/icons/sources/notepad.png",
+        "CCIMXNoter",
+        mainWindow));
 
 	req.push_back(make_up_request(
-		_EXTERNAPP_INSTALL_DIR "/ImageWalker",
-		":/icons/sources/image_walker.png",
-		"ImageWalker",
-		mainWindow));
+        _EXTERNAPP_INSTALL_DIR "/ImageWalker",
+        ":/icons/sources/image_walker.png",
+        "ImageWalker",
+        mainWindow));
+
+    req.push_back(make_up_request(
+        _EXTERNAPP_INSTALL_DIR "/Caculator",
+        ":/icons/sources/caculator.png",
+        "Caculator",
+        mainWindow));
 
 	return PageSetuper::create_one_app_only_page_append(mainWindow, req);
 }
