@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['qtadapttools_0',['QtAdaptTools',['../namespaceQtAdaptTools.html',1,'']]]
+  ['histcreator_0',['HistCreator',['../namespaceHistCreator.html',1,'']]]
 ];

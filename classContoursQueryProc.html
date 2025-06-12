@@ -102,31 +102,54 @@ $(document).ready(function(){initNavTree('classContoursQueryProc.html',''); init
   <div class="headertitle"><div class="title">ContoursQueryProc Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The <a class="el" href="classContoursQueryProc.html" title="The ContoursQueryProc class performs edge detection followed by contour detection.">ContoursQueryProc</a> class performs edge detection followed by contour detection.  
+ <a href="classContoursQueryProc.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="ContoursQueryProc_8h_source.html">ContoursQueryProc.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ContoursQueryProc:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classContoursQueryProc.png" usemap="#ContoursQueryProc_map" alt=""/>
   <map id="ContoursQueryProc_map" name="ContoursQueryProc_map">
-<area href="structImageProc.html" alt="ImageProc" shape="rect" coords="0,0,126,24"/>
+<area href="structImageProc.html" title="base of all processors" alt="ImageProc" shape="rect" coords="0,0,126,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ae3c35f19ebe4470fa525c2a9d25b1bd6" id="r_ae3c35f19ebe4470fa525c2a9d25b1bd6"><td class="memItemLeft" align="right" valign="top"><a id="ae3c35f19ebe4470fa525c2a9d25b1bd6" name="ae3c35f19ebe4470fa525c2a9d25b1bd6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ContoursQueryProc</b> ()=default</td></tr>
+<tr class="memdesc:ae3c35f19ebe4470fa525c2a9d25b1bd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classContoursQueryProc.html" title="The ContoursQueryProc class performs edge detection followed by contour detection.">ContoursQueryProc</a> with default method and Canny processor. <br /></td></tr>
+<tr class="separator:ae3c35f19ebe4470fa525c2a9d25b1bd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a871790f8e44fd142e1e62a2beec1e11a" id="r_a871790f8e44fd142e1e62a2beec1e11a"><td class="memItemLeft" align="right" valign="top"><a id="a871790f8e44fd142e1e62a2beec1e11a" name="a871790f8e44fd142e1e62a2beec1e11a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~ContoursQueryProc</b> () override=default</td></tr>
+<tr class="memdesc:a871790f8e44fd142e1e62a2beec1e11a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
+<tr class="separator:a871790f8e44fd142e1e62a2beec1e11a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad664d8001fe40a0a23ef97c6e45d5381" id="r_ad664d8001fe40a0a23ef97c6e45d5381"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classContoursQueryProc.html#ad664d8001fe40a0a23ef97c6e45d5381">process</a> (<a class="el" href="classCVImage.html">CVImage</a> &amp;prev_image) override</td></tr>
+<tr class="memdesc:ad664d8001fe40a0a23ef97c6e45d5381"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes the image using Canny edge detection followed by contour detection.  <br /></td></tr>
 <tr class="separator:ad664d8001fe40a0a23ef97c6e45d5381"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24e308bca6b864b07ca48b225d0370f2" id="r_a24e308bca6b864b07ca48b225d0370f2"><td class="memItemLeft" align="right" valign="top"><a id="a24e308bca6b864b07ca48b225d0370f2" name="a24e308bca6b864b07ca48b225d0370f2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setCannyPackage</b> (const std::pair&lt; int, int &gt; &amp;p)</td></tr>
+<tr class="memitem:a24e308bca6b864b07ca48b225d0370f2" id="r_a24e308bca6b864b07ca48b225d0370f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classContoursQueryProc.html#a24e308bca6b864b07ca48b225d0370f2">setCannyPackage</a> (const std::pair&lt; int, int &gt; &amp;p)</td></tr>
+<tr class="memdesc:a24e308bca6b864b07ca48b225d0370f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the Canny threshold pair used in edge detection.  <br /></td></tr>
 <tr class="separator:a24e308bca6b864b07ca48b225d0370f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_structImageProc"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structImageProc')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structImageProc.html">ImageProc</a></td></tr>
+<tr class="memitem:a50f88f38a237c4d707f6807559cd7bcf inherit pub_methods_structImageProc" id="r_a50f88f38a237c4d707f6807559cd7bcf"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>ImageProc</b> ()=default</td></tr>
+<tr class="memdesc:a50f88f38a237c4d707f6807559cd7bcf inherit pub_methods_structImageProc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Image Proc object. <br /></td></tr>
+<tr class="separator:a50f88f38a237c4d707f6807559cd7bcf inherit pub_methods_structImageProc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a2d6c268c3b8971be884228ce0d7287c7" id="r_a2d6c268c3b8971be884228ce0d7287c7"><td class="memItemLeft" align="right" valign="top"><a id="a2d6c268c3b8971be884228ce0d7287c7" name="a2d6c268c3b8971be884228ce0d7287c7"></a>
-Processor::ContoursQuery::Method&#160;</td><td class="memItemRight" valign="bottom"><b>method</b> { Processor::ContoursQuery::DEF }</td></tr>
+<a class="el" href="namespaceProcessor_1_1ContoursQuery.html#abfd9d45eb3a38def1b26510ace6e0d46">Processor::ContoursQuery::Method</a>&#160;</td><td class="memItemRight" valign="bottom"><b>method</b> { Processor::ContoursQuery::DEF }</td></tr>
+<tr class="memdesc:a2d6c268c3b8971be884228ce0d7287c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The contour approximation method used for this processor. <br /></td></tr>
 <tr class="separator:a2d6c268c3b8971be884228ce0d7287c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="classContoursQueryProc.html" title="The ContoursQueryProc class performs edge detection followed by contour detection.">ContoursQueryProc</a> class performs edge detection followed by contour detection. </p>
+<p>This processor uses Canny edge detection as a pre-processing step and then finds contours using the specified contour approximation method. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ad664d8001fe40a0a23ef97c6e45d5381" name="ad664d8001fe40a0a23ef97c6e45d5381"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad664d8001fe40a0a23ef97c6e45d5381">&#9670;&#160;</a></span>process()</h2>
 
@@ -151,7 +174,50 @@ Processor::ContoursQuery::Method&#160;</td><td class="memItemRight" valign="bott
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="structImageProc.html">ImageProc</a>.</p>
+<p>Processes the image using Canny edge detection followed by contour detection. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prev_image</td><td>The input/output image. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if processing succeeds. </dd></dl>
+
+<p>Implements <a class="el" href="structImageProc.html#a5979f3ab135f5e70f651a5bd5b05e146">ImageProc</a>.</p>
+
+</div>
+</div>
+<a id="a24e308bca6b864b07ca48b225d0370f2" name="a24e308bca6b864b07ca48b225d0370f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24e308bca6b864b07ca48b225d0370f2">&#9670;&#160;</a></span>setCannyPackage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ContoursQueryProc::setCannyPackage </td>
+          <td>(</td>
+          <td class="paramtype">const std::pair&lt; int, int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the Canny threshold pair used in edge detection. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>The pair of lower and upper thresholds. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

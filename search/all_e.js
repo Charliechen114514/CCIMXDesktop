@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['name_0',['name',['../structCVTools_1_1DisplayParams.html#a366209da85a0c0e2fe1c4fc814c5ef8a',1,'CVTools::DisplayParams::name'],['../structToolsStackedWidget_1_1PagePackage.html#a495d4b66e470a58dc509e92024ca74b4',1,'ToolsStackedWidget::PagePackage::name'],['../structProcessBroswer_1_1ProcessInfo.html#a8d5662e9c3468ad2a814cfd706a40b95',1,'ProcessBroswer::ProcessInfo::name']]],
+  ['name_0',['name',['../structCVTools_1_1DisplayParams.html#a366209da85a0c0e2fe1c4fc814c5ef8a',1,'CVTools::DisplayParams::name'],['../structToolLeftWidgets_1_1ToolButtonInstallPackage.html#a4b82beeaaf90facefb4c2ebbcb9d338d',1,'ToolLeftWidgets::ToolButtonInstallPackage::name'],['../structToolsStackedWidget_1_1PagePackage.html#a495d4b66e470a58dc509e92024ca74b4',1,'ToolsStackedWidget::PagePackage::name'],['../structProcessBroswer_1_1ProcessInfo.html#a8d5662e9c3468ad2a814cfd706a40b95',1,'ProcessBroswer::ProcessInfo::name']]],
   ['nameproviders_1',['NameProviders',['../classMainWindow.html#ad766a05d8996b153d8328819f3fef928a09675afd3cc4a09f7b50ba42fc455f9f',1,'MainWindow']]],
   ['netcardgadget_2',['netcardgadget',['../classNetCardGadget.html',1,'NetCardGadget'],['../classNetCardGadget.html#ae7df34d5c86e08e897248ccc1c111ee3',1,'NetCardGadget::NetCardGadget()']]],
   ['netmainwindow_3',['netmainwindow',['../classNetMainWindow.html',1,'NetMainWindow'],['../classNetMainWindow.html#a3ad9cbbd627ddab9a9182b96a4bcaf5e',1,'NetMainWindow::NetMainWindow()']]],
@@ -17,5 +17,5 @@ var searchData=
   ['nothing_14',['nothing',['../classEventManager.html#a423683d4091e7ead0bd42058b30869baa8697250efc73639dd2a6e7da243ac68b',1,'EventManager::NOTHING'],['../classEventManager.html#a4d6495ae514367edefb7fdf64cd72497a8697250efc73639dd2a6e7da243ac68b',1,'EventManager::NOTHING']]],
   ['nothing_5fthen_15',['NOTHING_THEN',['../classImageCore.html#a1d14c00e103a8bd25db2424fa87426a9af66a586ec3c9e5838a94776b72b6672e',1,'ImageCore']]],
   ['nullimage_16',['NullImage',['../classPhotoSaver.html#a74898c501e061db0c56ab0b7684fa979a3ed7a65c58f2f380e6a74076e62a5fad',1,'PhotoSaver']]],
-  ['numbernode_17',['NumberNode',['../structNumberNode.html',1,'']]]
+  ['numbernode_17',['numbernode',['../structNumberNode.html',1,'NumberNode'],['../structNumberNode.html#a8cf6c3c2c3a2092a4c3ae66aaaed88fc',1,'NumberNode::NumberNode()']]]
 ];

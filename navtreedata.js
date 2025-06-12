@@ -69,7 +69,9 @@ var NAVTREE =
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
-        [ "Functions", "namespacemembers_func.html", null ]
+        [ "Functions", "namespacemembers_func.html", null ],
+        [ "Variables", "namespacemembers_vars.html", null ],
+        [ "Enumerations", "namespacemembers_enum.html", null ]
       ] ]
     ] ],
     [ "Classes", "annotated.html", [
@@ -96,13 +98,13 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AP3216CAdapterFactory_8h_source.html",
-"classCCIMXFileSystemModel.html#aeceaa8e6c1e18cb36f20211176b60096",
-"classDigitalTimeWidget.html#a787dd778c825c2e6f9273c43a0996a6b",
-"classImageLabel.html#ab0a101dbaf19491729fff3913c039007",
-"classPlayListMainWindow.html#a67b89a51f64e7749c9033b42a2da50f3",
-"classVideoPlayerImpl.html#aed67d09d2e16570de740b0ea011af60f",
-"md_Components-explain-EN.html",
-"structStackpageSwitcherAnimation.html#a4e77ef027d4c0e45e87306cd99e0afe3"
+"classBlurExample.html#a5fffcb8e26f216b0fb791b3fc9157a52",
+"classDesktopMainWindow.html#a3f4e883111f10e3fede7ae9818d36a4b",
+"classHistDrawer.html#a42438a925963b1f090ba4be7a4f159da",
+"classMemoryUsageChart.html",
+"classSystemStateWindow.html#a560502331ef5b2ec00a659188c77d6f2ad8e38dcdefa8ce5e3b73ae11cbef4921",
+"dir_c41a2c1543436f0aecc231599d1a57d2.html",
+"structCCPdfDocumentPrivate.html#a43e0ade02b55b6ccb10ea453389adc60"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

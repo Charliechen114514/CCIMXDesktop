@@ -104,51 +104,60 @@ $(document).ready(function(){initNavTree('CannyProcessor_8h_source.html',''); in
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;GrayProcessor.h&quot;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;image_proc_base.h&quot;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;utility&gt;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span>Processor {</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span>Canny {</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> LOW = 50;</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> HIGH = 150;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> def_blurksize = 5;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">float</span> thred = 1.4;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>}</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>}</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceProcessor.html">Processor</a> {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span>Canny {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> LOW = 50; </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> HIGH = 150; </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classCannyProcessor.html">   17</a></span><span class="keyword">class </span><a class="code hl_class" href="classCannyProcessor.html">CannyProcessor</a> : <span class="keyword">public</span> <a class="code hl_struct" href="structImageProc.html">ImageProc</a> {</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <a class="code hl_class" href="classCannyProcessor.html">CannyProcessor</a>()</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        : <a class="code hl_struct" href="structImageProc.html">ImageProc</a>() {</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        blur.package.sigma_x = Processor::Canny::thred;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        blur.package.sigma_y = Processor::Canny::thred;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        blur.package.kernel_size = Processor::Canny::def_blurksize;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    }</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <a class="code hl_class" href="classCannyProcessor.html">~CannyProcessor</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordtype">bool</span> process(<a class="code hl_class" href="classCVImage.html">CVImage</a>&amp; prev_image) <span class="keyword">override</span>;</div>
-<div class="foldopen" id="foldopen00032" data-start="{" data-end="}">
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classCannyProcessor.html#ad3b31e00b29d152a045888f685155be2">   32</a></span>    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classCannyProcessor.html#ad3b31e00b29d152a045888f685155be2">setParamsPackage</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structGaussainPackage.html">GaussainPackage</a>&amp; package) {</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        blur.package = package;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    }</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> def_blurksize = 5; </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">float</span> thred = 1.4; </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>}</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>}</div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classCannyProcessor.html">   25</a></span><span class="keyword">class </span><a class="code hl_class" href="classCannyProcessor.html">CannyProcessor</a> : <span class="keyword">public</span> <a class="code hl_struct" href="structImageProc.html">ImageProc</a> {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_class" href="classCannyProcessor.html">CannyProcessor</a>()</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        : <a class="code hl_function" href="structImageProc.html#a50f88f38a237c4d707f6807559cd7bcf">ImageProc</a>() {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        blur.<a class="code hl_variable" href="classGuassainBlur.html#a55b66920481e623dafbb43db5e58a70e">package</a>.<a class="code hl_variable" href="structGaussainPackage.html#a85a32d5cac6a96690a85f69a0e84324f">sigma_x</a> = Processor::Canny::thred;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        blur.<a class="code hl_variable" href="classGuassainBlur.html#a55b66920481e623dafbb43db5e58a70e">package</a>.<a class="code hl_variable" href="structGaussainPackage.html#a1c0e035c39d60cadacd3c7c7aa3eac69">sigma_y</a> = Processor::Canny::thred;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        blur.<a class="code hl_variable" href="classGuassainBlur.html#a55b66920481e623dafbb43db5e58a70e">package</a>.<a class="code hl_variable" href="structGaussainPackage.html#a1ee1b1ab754fa1642514621993e1338f">kernel_size</a> = Processor::Canny::def_blurksize;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    }</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_class" href="classCannyProcessor.html">~CannyProcessor</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classCannyProcessor.html#aed4a473897ea15a8b93299966a34d16b">process</a>(<a class="code hl_class" href="classCVImage.html">CVImage</a>&amp; prev_image) <span class="keyword">override</span>;</div>
+<div class="foldopen" id="foldopen00040" data-start="{" data-end="}">
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classCannyProcessor.html#ad3b31e00b29d152a045888f685155be2">   40</a></span>    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classCannyProcessor.html#ad3b31e00b29d152a045888f685155be2">setParamsPackage</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structGaussainPackage.html">GaussainPackage</a>&amp; package) {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        blur.<a class="code hl_variable" href="classGuassainBlur.html#a55b66920481e623dafbb43db5e58a70e">package</a> = package;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
 </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    std::pair&lt;int, int&gt; threholds_pair = {</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        Processor::Canny::LOW,</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        Processor::Canny::HIGH</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    };</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <a class="code hl_class" href="classGrayProcessor.html">GrayProcessor</a> gray;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <a class="code hl_class" href="classGuassainBlur.html">GuassainBlur</a> blur;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>};</div>
+<div class="foldopen" id="foldopen00043" data-start="{" data-end="};">
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classCannyProcessor.html#a9628522ea3115d5613a5e381d84eaba4">   43</a></span>    std::pair&lt;int, int&gt; <a class="code hl_variable" href="classCannyProcessor.html#a9628522ea3115d5613a5e381d84eaba4">threholds_pair</a> = {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        Processor::Canny::LOW,</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        Processor::Canny::HIGH</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }; </div>
 </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#endif </span><span class="comment">// CANNYPROCESSOR_H</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <a class="code hl_class" href="classGrayProcessor.html">GrayProcessor</a> gray; </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <a class="code hl_class" href="classGuassainBlur.html">GuassainBlur</a> blur; </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>};</div>
+</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#endif </span><span class="comment">// CANNYPROCESSOR_H</span></div>
 <div class="ttc" id="aclassCVImage_html"><div class="ttname"><a href="classCVImage.html">CVImage</a></div><div class="ttdoc">The CVImage class is the image class that provides the image in the frameworks.</div><div class="ttdef"><b>Definition</b> CVImage.h:9</div></div>
-<div class="ttc" id="aclassCannyProcessor_html"><div class="ttname"><a href="classCannyProcessor.html">CannyProcessor</a></div><div class="ttdef"><b>Definition</b> CannyProcessor.h:17</div></div>
-<div class="ttc" id="aclassCannyProcessor_html_ad3b31e00b29d152a045888f685155be2"><div class="ttname"><a href="classCannyProcessor.html#ad3b31e00b29d152a045888f685155be2">CannyProcessor::setParamsPackage</a></div><div class="ttdeci">void setParamsPackage(const GaussainPackage &amp;package)</div><div class="ttdoc">setParamsPackage if you want to modified the gaussain package interfaces is ready for settings!</div><div class="ttdef"><b>Definition</b> CannyProcessor.h:32</div></div>
-<div class="ttc" id="aclassGrayProcessor_html"><div class="ttname"><a href="classGrayProcessor.html">GrayProcessor</a></div><div class="ttdef"><b>Definition</b> GrayProcessor.h:4</div></div>
-<div class="ttc" id="aclassGuassainBlur_html"><div class="ttname"><a href="classGuassainBlur.html">GuassainBlur</a></div><div class="ttdef"><b>Definition</b> BlurProcessor.h:69</div></div>
-<div class="ttc" id="astructGaussainPackage_html"><div class="ttname"><a href="structGaussainPackage.html">GaussainPackage</a></div><div class="ttdef"><b>Definition</b> BlurProcessor.h:36</div></div>
-<div class="ttc" id="astructImageProc_html"><div class="ttname"><a href="structImageProc.html">ImageProc</a></div><div class="ttdef"><b>Definition</b> image_proc_base.h:4</div></div>
+<div class="ttc" id="aclassCannyProcessor_html"><div class="ttname"><a href="classCannyProcessor.html">CannyProcessor</a></div><div class="ttdoc">CannyProcessor process Canny lol.</div><div class="ttdef"><b>Definition</b> CannyProcessor.h:25</div></div>
+<div class="ttc" id="aclassCannyProcessor_html_a9628522ea3115d5613a5e381d84eaba4"><div class="ttname"><a href="classCannyProcessor.html#a9628522ea3115d5613a5e381d84eaba4">CannyProcessor::threholds_pair</a></div><div class="ttdeci">std::pair&lt; int, int &gt; threholds_pair</div><div class="ttdoc">pair controller</div><div class="ttdef"><b>Definition</b> CannyProcessor.h:43</div></div>
+<div class="ttc" id="aclassCannyProcessor_html_ad3b31e00b29d152a045888f685155be2"><div class="ttname"><a href="classCannyProcessor.html#ad3b31e00b29d152a045888f685155be2">CannyProcessor::setParamsPackage</a></div><div class="ttdeci">void setParamsPackage(const GaussainPackage &amp;package)</div><div class="ttdoc">setParamsPackage if you want to modified the gaussain package interfaces is ready for settings!</div><div class="ttdef"><b>Definition</b> CannyProcessor.h:40</div></div>
+<div class="ttc" id="aclassCannyProcessor_html_aed4a473897ea15a8b93299966a34d16b"><div class="ttname"><a href="classCannyProcessor.html#aed4a473897ea15a8b93299966a34d16b">CannyProcessor::process</a></div><div class="ttdeci">bool process(CVImage &amp;prev_image) override</div><div class="ttdoc">process images</div><div class="ttdef"><b>Definition</b> CannyProcessor.cpp:4</div></div>
+<div class="ttc" id="aclassGrayProcessor_html"><div class="ttname"><a href="classGrayProcessor.html">GrayProcessor</a></div><div class="ttdoc">make image gray</div><div class="ttdef"><b>Definition</b> GrayProcessor.h:8</div></div>
+<div class="ttc" id="aclassGuassainBlur_html"><div class="ttname"><a href="classGuassainBlur.html">GuassainBlur</a></div><div class="ttdoc">Performs Gaussian blur on images.</div><div class="ttdef"><b>Definition</b> BlurProcessor.h:167</div></div>
+<div class="ttc" id="aclassGuassainBlur_html_a55b66920481e623dafbb43db5e58a70e"><div class="ttname"><a href="classGuassainBlur.html#a55b66920481e623dafbb43db5e58a70e">GuassainBlur::package</a></div><div class="ttdeci">GaussainPackage package</div><div class="ttdoc">Parameters used in Gaussian blur.</div><div class="ttdef"><b>Definition</b> BlurProcessor.h:194</div></div>
+<div class="ttc" id="anamespaceProcessor_html"><div class="ttname"><a href="namespaceProcessor.html">Processor</a></div><div class="ttdoc">The Processor namespace contains different image processing categories.</div></div>
+<div class="ttc" id="astructGaussainPackage_html"><div class="ttname"><a href="structGaussainPackage.html">GaussainPackage</a></div><div class="ttdoc">Parameters for Gaussian blur processing.</div><div class="ttdef"><b>Definition</b> BlurProcessor.h:69</div></div>
+<div class="ttc" id="astructGaussainPackage_html_a1c0e035c39d60cadacd3c7c7aa3eac69"><div class="ttname"><a href="structGaussainPackage.html#a1c0e035c39d60cadacd3c7c7aa3eac69">GaussainPackage::sigma_y</a></div><div class="ttdeci">double sigma_y</div><div class="ttdoc">Standard deviation in the Y direction.</div><div class="ttdef"><b>Definition</b> BlurProcessor.h:94</div></div>
+<div class="ttc" id="astructGaussainPackage_html_a1ee1b1ab754fa1642514621993e1338f"><div class="ttname"><a href="structGaussainPackage.html#a1ee1b1ab754fa1642514621993e1338f">GaussainPackage::kernel_size</a></div><div class="ttdeci">int kernel_size</div><div class="ttdoc">Size of the kernel used for convolution.</div><div class="ttdef"><b>Definition</b> BlurProcessor.h:84</div></div>
+<div class="ttc" id="astructGaussainPackage_html_a85a32d5cac6a96690a85f69a0e84324f"><div class="ttname"><a href="structGaussainPackage.html#a85a32d5cac6a96690a85f69a0e84324f">GaussainPackage::sigma_x</a></div><div class="ttdeci">double sigma_x</div><div class="ttdoc">Standard deviation in the X direction.</div><div class="ttdef"><b>Definition</b> BlurProcessor.h:89</div></div>
+<div class="ttc" id="astructImageProc_html"><div class="ttname"><a href="structImageProc.html">ImageProc</a></div><div class="ttdoc">base of all processors</div><div class="ttdef"><b>Definition</b> image_proc_base.h:8</div></div>
+<div class="ttc" id="astructImageProc_html_a50f88f38a237c4d707f6807559cd7bcf"><div class="ttname"><a href="structImageProc.html#a50f88f38a237c4d707f6807559cd7bcf">ImageProc::ImageProc</a></div><div class="ttdeci">ImageProc()=default</div><div class="ttdoc">Construct a new Image Proc object.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -103,36 +103,81 @@ $(document).ready(function(){initNavTree('classFilterBlur.html',''); initResizab
   <div class="headertitle"><div class="title">FilterBlur Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Performs bilateral filter blur on images.  
+ <a href="classFilterBlur.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="BlurProcessor_8h_source.html">BlurProcessor.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FilterBlur:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classFilterBlur.png" usemap="#FilterBlur_map" alt=""/>
   <map id="FilterBlur_map" name="FilterBlur_map">
-<area href="classBlurProcessor.html" alt="BlurProcessor" shape="rect" coords="0,0,93,24"/>
+<area href="classBlurProcessor.html" title="The BlurProcessor class is an abstract image processor base for various blur operations." alt="BlurProcessor" shape="rect" coords="0,56,93,80"/>
+<area href="structImageProc.html" title="base of all processors" alt="ImageProc" shape="rect" coords="0,0,93,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a6e4100e2290ad8c67ccca05f0046bd17" id="r_a6e4100e2290ad8c67ccca05f0046bd17"><td class="memItemLeft" align="right" valign="top"><a id="a6e4100e2290ad8c67ccca05f0046bd17" name="a6e4100e2290ad8c67ccca05f0046bd17"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>FilterBlur</b> ()</td></tr>
+<tr class="memdesc:a6e4100e2290ad8c67ccca05f0046bd17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classFilterBlur.html" title="Performs bilateral filter blur on images.">FilterBlur</a> processor. <br /></td></tr>
+<tr class="separator:a6e4100e2290ad8c67ccca05f0046bd17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b311ce4ff97eb70b958b3e0a8dafca5" id="r_a8b311ce4ff97eb70b958b3e0a8dafca5"><td class="memItemLeft" align="right" valign="top"><a id="a8b311ce4ff97eb70b958b3e0a8dafca5" name="a8b311ce4ff97eb70b958b3e0a8dafca5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~FilterBlur</b> () override=default</td></tr>
+<tr class="memdesc:a8b311ce4ff97eb70b958b3e0a8dafca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
+<tr class="separator:a8b311ce4ff97eb70b958b3e0a8dafca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef8183403feabc93ce2d2e952144d129" id="r_aef8183403feabc93ce2d2e952144d129"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFilterBlur.html#aef8183403feabc93ce2d2e952144d129">process</a> (<a class="el" href="classCVImage.html">CVImage</a> &amp;prev_image) override</td></tr>
+<tr class="memdesc:aef8183403feabc93ce2d2e952144d129"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes an image with internal parameters.  <br /></td></tr>
 <tr class="separator:aef8183403feabc93ce2d2e952144d129"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classBlurProcessor"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classBlurProcessor')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classBlurProcessor.html">BlurProcessor</a></td></tr>
+<tr class="memitem:a018e453fe56b96b4df52196831ce429d inherit pub_methods_classBlurProcessor" id="r_a018e453fe56b96b4df52196831ce429d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlurProcessor.html#a018e453fe56b96b4df52196831ce429d">BlurProcessor</a> (const <a class="el" href="classBlurProcessor.html#a3af8708008d25b115a14ebc37fecf2c0">HandleType</a> t)</td></tr>
+<tr class="memdesc:a018e453fe56b96b4df52196831ce429d inherit pub_methods_classBlurProcessor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classBlurProcessor.html" title="The BlurProcessor class is an abstract image processor base for various blur operations.">BlurProcessor</a> with the specified blur type.  <br /></td></tr>
+<tr class="separator:a018e453fe56b96b4df52196831ce429d inherit pub_methods_classBlurProcessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e0c8079c51db674153bc534a0cadbae inherit pub_methods_classBlurProcessor" id="r_a5e0c8079c51db674153bc534a0cadbae"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>~BlurProcessor</b> () override=default</td></tr>
+<tr class="memdesc:a5e0c8079c51db674153bc534a0cadbae inherit pub_methods_classBlurProcessor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor. <br /></td></tr>
+<tr class="separator:a5e0c8079c51db674153bc534a0cadbae inherit pub_methods_classBlurProcessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e237a8b492a86872c426ac55ce0e403 inherit pub_methods_classBlurProcessor" id="r_a8e237a8b492a86872c426ac55ce0e403"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBlurProcessor.html#a3af8708008d25b115a14ebc37fecf2c0">HandleType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlurProcessor.html#a8e237a8b492a86872c426ac55ce0e403">handleType</a> () const</td></tr>
+<tr class="memdesc:a8e237a8b492a86872c426ac55ce0e403 inherit pub_methods_classBlurProcessor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the blur type of this processor.  <br /></td></tr>
+<tr class="separator:a8e237a8b492a86872c426ac55ce0e403 inherit pub_methods_classBlurProcessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_structImageProc"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structImageProc')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structImageProc.html">ImageProc</a></td></tr>
+<tr class="memitem:a50f88f38a237c4d707f6807559cd7bcf inherit pub_methods_structImageProc" id="r_a50f88f38a237c4d707f6807559cd7bcf"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>ImageProc</b> ()=default</td></tr>
+<tr class="memdesc:a50f88f38a237c4d707f6807559cd7bcf inherit pub_methods_structImageProc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Image Proc object. <br /></td></tr>
+<tr class="separator:a50f88f38a237c4d707f6807559cd7bcf inherit pub_methods_structImageProc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a72f63d71801c446cafb2bccabd0fbbad" id="r_a72f63d71801c446cafb2bccabd0fbbad"><td class="memItemLeft" align="right" valign="top"><a id="a72f63d71801c446cafb2bccabd0fbbad" name="a72f63d71801c446cafb2bccabd0fbbad"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>process</b> (<a class="el" href="classCVImage.html">CVImage</a> &amp;prev_image, const <a class="el" href="structFilterPackage.html">FilterPackage</a> &amp;package)</td></tr>
+<tr class="memitem:a72f63d71801c446cafb2bccabd0fbbad" id="r_a72f63d71801c446cafb2bccabd0fbbad"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFilterBlur.html#a72f63d71801c446cafb2bccabd0fbbad">process</a> (<a class="el" href="classCVImage.html">CVImage</a> &amp;prev_image, const <a class="el" href="structFilterPackage.html">FilterPackage</a> &amp;<a class="el" href="classFilterBlur.html#a61a04c8e74f190182ca7ef178a8e408d">package</a>)</td></tr>
+<tr class="memdesc:a72f63d71801c446cafb2bccabd0fbbad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method to apply bilateral filter blur.  <br /></td></tr>
 <tr class="separator:a72f63d71801c446cafb2bccabd0fbbad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a61a04c8e74f190182ca7ef178a8e408d" id="r_a61a04c8e74f190182ca7ef178a8e408d"><td class="memItemLeft" align="right" valign="top"><a id="a61a04c8e74f190182ca7ef178a8e408d" name="a61a04c8e74f190182ca7ef178a8e408d"></a>
 <a class="el" href="structFilterPackage.html">FilterPackage</a>&#160;</td><td class="memItemRight" valign="bottom"><b>package</b></td></tr>
+<tr class="memdesc:a61a04c8e74f190182ca7ef178a8e408d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameters used in bilateral filter blur. <br /></td></tr>
 <tr class="separator:a61a04c8e74f190182ca7ef178a8e408d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_classBlurProcessor"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classBlurProcessor')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classBlurProcessor.html">BlurProcessor</a></td></tr>
+<tr class="memitem:a3af8708008d25b115a14ebc37fecf2c0 inherit pub_types_classBlurProcessor" id="r_a3af8708008d25b115a14ebc37fecf2c0"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlurProcessor.html#a3af8708008d25b115a14ebc37fecf2c0">HandleType</a> { <a class="el" href="classBlurProcessor.html#a3af8708008d25b115a14ebc37fecf2c0a710c94640ff8eb62bf69a881a22f9967">MedianBlur</a>
+, <a class="el" href="classBlurProcessor.html#a3af8708008d25b115a14ebc37fecf2c0aabc82f280031827bbed8fa2eb46c6d26">GuassainBlur</a>
+, <a class="el" href="classBlurProcessor.html#a3af8708008d25b115a14ebc37fecf2c0af12dd2cbe8eb06e1e55f08757330d986">MeanBlur</a>
+, <a class="el" href="classBlurProcessor.html#a3af8708008d25b115a14ebc37fecf2c0a9f686c7c13ddda2c54df9537980e4fc8">FilterBlur</a>
+ }</td></tr>
+<tr class="memdesc:a3af8708008d25b115a14ebc37fecf2c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The HandleType enum lists supported blur types.  <a href="classBlurProcessor.html#a3af8708008d25b115a14ebc37fecf2c0">More...</a><br /></td></tr>
+<tr class="separator:a3af8708008d25b115a14ebc37fecf2c0 inherit pub_types_classBlurProcessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Performs bilateral filter blur on images. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aef8183403feabc93ce2d2e952144d129" name="aef8183403feabc93ce2d2e952144d129"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef8183403feabc93ce2d2e952144d129">&#9670;&#160;</a></span>process()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aef8183403feabc93ce2d2e952144d129">&#9670;&#160;</a></span>process() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -155,7 +200,62 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="structImageProc.html">ImageProc</a>.</p>
+<p>Processes an image with internal parameters. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prev_image</td><td>The image to process. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if processing is successful. </dd></dl>
+
+<p>Implements <a class="el" href="structImageProc.html#a5979f3ab135f5e70f651a5bd5b05e146">ImageProc</a>.</p>
+
+</div>
+</div>
+<a id="a72f63d71801c446cafb2bccabd0fbbad" name="a72f63d71801c446cafb2bccabd0fbbad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72f63d71801c446cafb2bccabd0fbbad">&#9670;&#160;</a></span>process() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FilterBlur::process </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCVImage.html">CVImage</a> &amp;&#160;</td>
+          <td class="paramname"><em>prev_image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structFilterPackage.html">FilterPackage</a> &amp;&#160;</td>
+          <td class="paramname"><em>package</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Static method to apply bilateral filter blur. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prev_image</td><td>The image to process. </td></tr>
+    <tr><td class="paramname">package</td><td>The filter parameters. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if successful. </dd></dl>
 
 </div>
 </div>

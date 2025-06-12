@@ -102,31 +102,45 @@ $(document).ready(function(){initNavTree('classCannyProcessor.html',''); initRes
   <div class="headertitle"><div class="title">CannyProcessor Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="classCannyProcessor.html" title="CannyProcessor process Canny lol.">CannyProcessor</a> process Canny lol.  
+ <a href="classCannyProcessor.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="CannyProcessor_8h_source.html">CannyProcessor.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for CannyProcessor:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classCannyProcessor.png" usemap="#CannyProcessor_map" alt=""/>
   <map id="CannyProcessor_map" name="CannyProcessor_map">
-<area href="structImageProc.html" alt="ImageProc" shape="rect" coords="0,0,107,24"/>
+<area href="structImageProc.html" title="base of all processors" alt="ImageProc" shape="rect" coords="0,0,107,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aed4a473897ea15a8b93299966a34d16b" id="r_aed4a473897ea15a8b93299966a34d16b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCannyProcessor.html#aed4a473897ea15a8b93299966a34d16b">process</a> (<a class="el" href="classCVImage.html">CVImage</a> &amp;prev_image) override</td></tr>
+<tr class="memdesc:aed4a473897ea15a8b93299966a34d16b"><td class="mdescLeft">&#160;</td><td class="mdescRight">process images  <br /></td></tr>
 <tr class="separator:aed4a473897ea15a8b93299966a34d16b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3b31e00b29d152a045888f685155be2" id="r_ad3b31e00b29d152a045888f685155be2"><td class="memItemLeft" align="right" valign="top"><a id="ad3b31e00b29d152a045888f685155be2" name="ad3b31e00b29d152a045888f685155be2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setParamsPackage</b> (const <a class="el" href="structGaussainPackage.html">GaussainPackage</a> &amp;package)</td></tr>
 <tr class="memdesc:ad3b31e00b29d152a045888f685155be2"><td class="mdescLeft">&#160;</td><td class="mdescRight">setParamsPackage if you want to modified the gaussain package interfaces is ready for settings! <br /></td></tr>
 <tr class="separator:ad3b31e00b29d152a045888f685155be2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_structImageProc"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structImageProc')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structImageProc.html">ImageProc</a></td></tr>
+<tr class="memitem:a50f88f38a237c4d707f6807559cd7bcf inherit pub_methods_structImageProc" id="r_a50f88f38a237c4d707f6807559cd7bcf"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>ImageProc</b> ()=default</td></tr>
+<tr class="memdesc:a50f88f38a237c4d707f6807559cd7bcf inherit pub_methods_structImageProc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Image Proc object. <br /></td></tr>
+<tr class="separator:a50f88f38a237c4d707f6807559cd7bcf inherit pub_methods_structImageProc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a9628522ea3115d5613a5e381d84eaba4" id="r_a9628522ea3115d5613a5e381d84eaba4"><td class="memItemLeft" align="right" valign="top">std::pair&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCannyProcessor.html#a9628522ea3115d5613a5e381d84eaba4">threholds_pair</a></td></tr>
+<tr class="memdesc:a9628522ea3115d5613a5e381d84eaba4"><td class="mdescLeft">&#160;</td><td class="mdescRight">pair controller  <br /></td></tr>
 <tr class="separator:a9628522ea3115d5613a5e381d84eaba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="classCannyProcessor.html" title="CannyProcessor process Canny lol.">CannyProcessor</a> process Canny lol. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aed4a473897ea15a8b93299966a34d16b" name="aed4a473897ea15a8b93299966a34d16b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aed4a473897ea15a8b93299966a34d16b">&#9670;&#160;</a></span>process()</h2>
 
@@ -151,7 +165,16 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="structImageProc.html">ImageProc</a>.</p>
+<p>process images </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prev_image</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>whether success </dd></dl>
+
+<p>Implements <a class="el" href="structImageProc.html#a5979f3ab135f5e70f651a5bd5b05e146">ImageProc</a>.</p>
 
 </div>
 </div>
@@ -172,6 +195,8 @@ Public Attributes</h2></td></tr>
 <div class="line">        Processor::Canny::HIGH</div>
 <div class="line">    }</div>
 </div><!-- fragment -->
+<p>pair controller </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>

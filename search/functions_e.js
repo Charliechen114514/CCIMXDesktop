@@ -5,5 +5,6 @@ var searchData=
   ['network_5fquery_5fdisplay_2',['network_query_display',['../classInterfacesQuery.html#a698562491f2cb09f744bfc1344c0fff1',1,'InterfacesQuery']]],
   ['new_5fmove_5fspeed_3',['new_move_speed',['../classDifficultyManager.html#a7a6713f40557ef98a0adbf18b6d8a065',1,'DifficultyManager']]],
   ['new_5fobstacle_5fcnt_5fmax_4',['new_obstacle_cnt_max',['../classDifficultyManager.html#a4b9ff3ea8ed4321a82e6e97331e24693',1,'DifficultyManager']]],
-  ['next_5fpage_5',['next_page',['../classMainWindow.html#abc9d84a0a8b9bea132a960fdfa06b2cd',1,'MainWindow']]]
+  ['next_5fpage_5',['next_page',['../classMainWindow.html#abc9d84a0a8b9bea132a960fdfa06b2cd',1,'MainWindow']]],
+  ['numbernode_6',['NumberNode',['../structNumberNode.html#a8cf6c3c2c3a2092a4c3ae66aaaed88fc',1,'NumberNode']]]
 ];

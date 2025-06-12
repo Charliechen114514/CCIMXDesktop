@@ -107,32 +107,46 @@ $(document).ready(function(){initNavTree('Tablet_8h_source.html',''); initResiza
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">class </span><a class="code hl_class" href="classTablet.html">Tablet</a>;</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>}</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="classTablet.html">   10</a></span><span class="keyword">class </span><a class="code hl_class" href="classTablet.html">Tablet</a> : <span class="keyword">public</span> QWidget {</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    Q_OBJECT</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classTablet.html">Tablet</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <a class="code hl_class" href="classTablet.html">~Tablet</a>();</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">public</span> slots:</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordtype">void</span> setResult(<span class="keyword">const</span> QString&amp; v);</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">void</span> append_outlayer(<span class="keyword">const</span> QString&amp; what);</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordtype">void</span> process_clear();</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">void</span> process_chop();</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordtype">void</span> process_evaluate();</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">private</span> slots:</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="comment">// for the simple plain token</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">void</span> process_text_according();</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordtype">void</span> setup_panel();</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    Ui::Tablet* ui;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    QString string_expression;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>};</div>
-</div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classTablet.html">   17</a></span><span class="keyword">class </span><a class="code hl_class" href="classTablet.html">Tablet</a> : <span class="keyword">public</span> QWidget {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    Q_OBJECT</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classTablet.html">Tablet</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_function" href="classTablet.html#ac1708c29981f805e5fd60ebf03acb924">~Tablet</a>();</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#endif </span><span class="comment">// TABLET_H</span></div>
-<div class="ttc" id="aclassTablet_html"><div class="ttname"><a href="classTablet.html">Tablet</a></div><div class="ttdef"><b>Definition</b> Tablet.h:10</div></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">public</span> slots:</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classTablet.html#a44fb31944caa0eb6b048ca975c0d8717">setResult</a>(<span class="keyword">const</span> QString&amp; v);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classTablet.html#af2e9354d4e3433e2a4b247685d737b2f">append_outlayer</a>(<span class="keyword">const</span> QString&amp; what);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classTablet.html#a6e107012d0b66c0aa5cea19633d11d78">process_clear</a>();</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classTablet.html#ac0ec721b26648def3d07ce50cee2ee6e">process_chop</a>();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classTablet.html#a123c143dd6250b34f6223204265e8f43">process_evaluate</a>();</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keyword">private</span> slots:</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordtype">void</span> process_text_according();</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordtype">void</span> setup_panel();</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    Ui::Tablet* ui;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    QString string_expression;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>};</div>
+</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="preprocessor">#endif </span><span class="comment">// TABLET_H</span></div>
+<div class="ttc" id="aclassTablet_html"><div class="ttname"><a href="classTablet.html">Tablet</a></div><div class="ttdoc">The Tablet class provides a user interface panel for building and evaluating string-based expressions...</div><div class="ttdef"><b>Definition</b> Tablet.h:17</div></div>
+<div class="ttc" id="aclassTablet_html_a123c143dd6250b34f6223204265e8f43"><div class="ttname"><a href="classTablet.html#a123c143dd6250b34f6223204265e8f43">Tablet::process_evaluate</a></div><div class="ttdeci">void process_evaluate()</div><div class="ttdoc">Evaluates the current expression and updates the result.</div><div class="ttdef"><b>Definition</b> Tablet.cpp:37</div></div>
+<div class="ttc" id="aclassTablet_html_a44fb31944caa0eb6b048ca975c0d8717"><div class="ttname"><a href="classTablet.html#a44fb31944caa0eb6b048ca975c0d8717">Tablet::setResult</a></div><div class="ttdeci">void setResult(const QString &amp;v)</div><div class="ttdoc">Sets the result text shown in the result display area.</div><div class="ttdef"><b>Definition</b> Tablet.cpp:16</div></div>
+<div class="ttc" id="aclassTablet_html_a6e107012d0b66c0aa5cea19633d11d78"><div class="ttname"><a href="classTablet.html#a6e107012d0b66c0aa5cea19633d11d78">Tablet::process_clear</a></div><div class="ttdeci">void process_clear()</div><div class="ttdoc">Clears the internal expression and updates the UI.</div><div class="ttdef"><b>Definition</b> Tablet.cpp:26</div></div>
+<div class="ttc" id="aclassTablet_html_ac0ec721b26648def3d07ce50cee2ee6e"><div class="ttname"><a href="classTablet.html#ac0ec721b26648def3d07ce50cee2ee6e">Tablet::process_chop</a></div><div class="ttdeci">void process_chop()</div><div class="ttdoc">Removes the last character or token from the expression.</div><div class="ttdef"><b>Definition</b> Tablet.cpp:31</div></div>
+<div class="ttc" id="aclassTablet_html_ac1708c29981f805e5fd60ebf03acb924"><div class="ttname"><a href="classTablet.html#ac1708c29981f805e5fd60ebf03acb924">Tablet::~Tablet</a></div><div class="ttdeci">~Tablet()</div><div class="ttdoc">Destructor.</div><div class="ttdef"><b>Definition</b> Tablet.cpp:12</div></div>
+<div class="ttc" id="aclassTablet_html_af2e9354d4e3433e2a4b247685d737b2f"><div class="ttname"><a href="classTablet.html#af2e9354d4e3433e2a4b247685d737b2f">Tablet::append_outlayer</a></div><div class="ttdeci">void append_outlayer(const QString &amp;what)</div><div class="ttdoc">Appends an external string token to the internal expression.</div><div class="ttdef"><b>Definition</b> Tablet.cpp:21</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

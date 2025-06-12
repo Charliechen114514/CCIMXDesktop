@@ -101,19 +101,101 @@ $(document).ready(function(){initNavTree('classParser.html',''); initResizable()
   <div class="headertitle"><div class="title">Parser Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The <a class="el" href="classParser.html" title="The Parser class is responsible for parsing a mathematical expression string and converting it into a...">Parser</a> class is responsible for parsing a mathematical expression string and converting it into an abstract syntax tree (AST) of <a class="el" href="structTreeNodeBase.html" title="Tree Node is expected to be like this!">TreeNodeBase</a> nodes.  
+ <a href="classParser.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Parser_8h_source.html">Parser.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa2c547c20efefa9063ac94ca85c6d448" id="r_aa2c547c20efefa9063ac94ca85c6d448"><td class="memItemLeft" align="right" valign="top"><a id="aa2c547c20efefa9063ac94ca85c6d448" name="aa2c547c20efefa9063ac94ca85c6d448"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setParserString</b> (const QString &amp;p)</td></tr>
+<tr class="memitem:a5208129b497bfdf7c8ecceeb70e4bba8" id="r_a5208129b497bfdf7c8ecceeb70e4bba8"><td class="memItemLeft" align="right" valign="top"><a id="a5208129b497bfdf7c8ecceeb70e4bba8" name="a5208129b497bfdf7c8ecceeb70e4bba8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Parser</b> ()=default</td></tr>
+<tr class="memdesc:a5208129b497bfdf7c8ecceeb70e4bba8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br /></td></tr>
+<tr class="separator:a5208129b497bfdf7c8ecceeb70e4bba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95734193a58a199b4c6d820a6a730c42" id="r_a95734193a58a199b4c6d820a6a730c42"><td class="memItemLeft" align="right" valign="top"><a id="a95734193a58a199b4c6d820a6a730c42" name="a95734193a58a199b4c6d820a6a730c42"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~Parser</b> ()=default</td></tr>
+<tr class="memdesc:a95734193a58a199b4c6d820a6a730c42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor. <br /></td></tr>
+<tr class="separator:a95734193a58a199b4c6d820a6a730c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2c547c20efefa9063ac94ca85c6d448" id="r_aa2c547c20efefa9063ac94ca85c6d448"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParser.html#aa2c547c20efefa9063ac94ca85c6d448">setParserString</a> (const QString &amp;p)</td></tr>
+<tr class="memdesc:aa2c547c20efefa9063ac94ca85c6d448"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the string to be parsed.  <br /></td></tr>
 <tr class="separator:aa2c547c20efefa9063ac94ca85c6d448"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a474c69805be7672d8e20a1b58fb7b0a5" id="r_a474c69805be7672d8e20a1b58fb7b0a5"><td class="memItemLeft" align="right" valign="top"><a id="a474c69805be7672d8e20a1b58fb7b0a5" name="a474c69805be7672d8e20a1b58fb7b0a5"></a>
-QString&#160;</td><td class="memItemRight" valign="bottom"><b>parserString</b> () const</td></tr>
+<tr class="memitem:a474c69805be7672d8e20a1b58fb7b0a5" id="r_a474c69805be7672d8e20a1b58fb7b0a5"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParser.html#a474c69805be7672d8e20a1b58fb7b0a5">parserString</a> () const</td></tr>
+<tr class="memdesc:a474c69805be7672d8e20a1b58fb7b0a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current parser string.  <br /></td></tr>
 <tr class="separator:a474c69805be7672d8e20a1b58fb7b0a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12fd45fde9ae725ffa869aa74b98cf48" id="r_a12fd45fde9ae725ffa869aa74b98cf48"><td class="memItemLeft" align="right" valign="top"><a id="a12fd45fde9ae725ffa869aa74b98cf48" name="a12fd45fde9ae725ffa869aa74b98cf48"></a>
-<a class="el" href="structTreeNodeBase.html">TreeNodeBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>parse</b> ()</td></tr>
+<tr class="memitem:a12fd45fde9ae725ffa869aa74b98cf48" id="r_a12fd45fde9ae725ffa869aa74b98cf48"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structTreeNodeBase.html">TreeNodeBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParser.html#a12fd45fde9ae725ffa869aa74b98cf48">parse</a> ()</td></tr>
+<tr class="memdesc:a12fd45fde9ae725ffa869aa74b98cf48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses the input string and returns the root of the resulting AST.  <br /></td></tr>
 <tr class="separator:a12fd45fde9ae725ffa869aa74b98cf48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="classParser.html" title="The Parser class is responsible for parsing a mathematical expression string and converting it into a...">Parser</a> class is responsible for parsing a mathematical expression string and converting it into an abstract syntax tree (AST) of <a class="el" href="structTreeNodeBase.html" title="Tree Node is expected to be like this!">TreeNodeBase</a> nodes. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a12fd45fde9ae725ffa869aa74b98cf48" name="a12fd45fde9ae725ffa869aa74b98cf48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12fd45fde9ae725ffa869aa74b98cf48">&#9670;&#160;</a></span>parse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structTreeNodeBase.html">TreeNodeBase</a> * Parser::parse </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parses the input string and returns the root of the resulting AST. </p>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the root node of the parsed expression tree. </dd></dl>
+
+</div>
+</div>
+<a id="a474c69805be7672d8e20a1b58fb7b0a5" name="a474c69805be7672d8e20a1b58fb7b0a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a474c69805be7672d8e20a1b58fb7b0a5">&#9670;&#160;</a></span>parserString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString Parser::parserString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the current parser string. </p>
+<dl class="section return"><dt>Returns</dt><dd>The expression string currently set. </dd></dl>
+
+</div>
+</div>
+<a id="aa2c547c20efefa9063ac94ca85c6d448" name="aa2c547c20efefa9063ac94ca85c6d448"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2c547c20efefa9063ac94ca85c6d448">&#9670;&#160;</a></span>setParserString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Parser::setParserString </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the string to be parsed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>The input expression string. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>builtin/app/Caculator/core/<a class="el" href="Parser_8h_source.html">Parser.h</a></li>
 <li>builtin/app/Caculator/core/<b>Parser.cpp</b></li>

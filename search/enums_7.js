@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['networkstate_0',['NetWorkState',['../classNetCardGadget.html#a0f7e947e72994b97591bb3bc9bb35268',1,'NetCardGadget']]]
+  ['keyreleaseindication_0',['KeyReleaseIndication',['../classEventManager.html#a4d6495ae514367edefb7fdf64cd72497',1,'EventManager']]]
 ];

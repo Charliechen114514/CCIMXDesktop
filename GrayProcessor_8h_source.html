@@ -101,19 +101,21 @@ $(document).ready(function(){initNavTree('GrayProcessor_8h_source.html',''); ini
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef GRAYPROCESSOR_H</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define GRAYPROCESSOR_H</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;image_proc_base.h&quot;</span></div>
-<div class="foldopen" id="foldopen00004" data-start="{" data-end="};">
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="classGrayProcessor.html">    4</a></span><span class="keyword">class </span><a class="code hl_class" href="classGrayProcessor.html">GrayProcessor</a> : <span class="keyword">public</span> <a class="code hl_struct" href="structImageProc.html">ImageProc</a> {</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <a class="code hl_class" href="classGrayProcessor.html">GrayProcessor</a>();</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classGrayProcessor.html">~GrayProcessor</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keywordtype">bool</span> process(<a class="code hl_class" href="classCVImage.html">CVImage</a>&amp; prev_image) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>};</div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="};">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="classGrayProcessor.html">    8</a></span><span class="keyword">class </span><a class="code hl_class" href="classGrayProcessor.html">GrayProcessor</a> : <span class="keyword">public</span> <a class="code hl_struct" href="structImageProc.html">ImageProc</a> {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <a class="code hl_function" href="classGrayProcessor.html#a4b755bff614fce9fad3fa776c6eb6924">GrayProcessor</a>();</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classGrayProcessor.html">~GrayProcessor</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classGrayProcessor.html#a8ca02fc3e811c09fe30e5fcf73cbdea9">process</a>(<a class="code hl_class" href="classCVImage.html">CVImage</a>&amp; prev_image) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>};</div>
 </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#endif </span><span class="comment">// GRAYPROCESSOR_H</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#endif </span><span class="comment">// GRAYPROCESSOR_H</span></div>
 <div class="ttc" id="aclassCVImage_html"><div class="ttname"><a href="classCVImage.html">CVImage</a></div><div class="ttdoc">The CVImage class is the image class that provides the image in the frameworks.</div><div class="ttdef"><b>Definition</b> CVImage.h:9</div></div>
-<div class="ttc" id="aclassGrayProcessor_html"><div class="ttname"><a href="classGrayProcessor.html">GrayProcessor</a></div><div class="ttdef"><b>Definition</b> GrayProcessor.h:4</div></div>
-<div class="ttc" id="astructImageProc_html"><div class="ttname"><a href="structImageProc.html">ImageProc</a></div><div class="ttdef"><b>Definition</b> image_proc_base.h:4</div></div>
+<div class="ttc" id="aclassGrayProcessor_html"><div class="ttname"><a href="classGrayProcessor.html">GrayProcessor</a></div><div class="ttdoc">make image gray</div><div class="ttdef"><b>Definition</b> GrayProcessor.h:8</div></div>
+<div class="ttc" id="aclassGrayProcessor_html_a4b755bff614fce9fad3fa776c6eb6924"><div class="ttname"><a href="classGrayProcessor.html#a4b755bff614fce9fad3fa776c6eb6924">GrayProcessor::GrayProcessor</a></div><div class="ttdeci">GrayProcessor()</div><div class="ttdoc">Construct a new Gray Processor object.</div><div class="ttdef"><b>Definition</b> GrayProcessor.cpp:5</div></div>
+<div class="ttc" id="aclassGrayProcessor_html_a8ca02fc3e811c09fe30e5fcf73cbdea9"><div class="ttname"><a href="classGrayProcessor.html#a8ca02fc3e811c09fe30e5fcf73cbdea9">GrayProcessor::process</a></div><div class="ttdeci">bool process(CVImage &amp;prev_image) override</div><div class="ttdoc">process the gray session</div><div class="ttdef"><b>Definition</b> GrayProcessor.cpp:9</div></div>
+<div class="ttc" id="astructImageProc_html"><div class="ttname"><a href="structImageProc.html">ImageProc</a></div><div class="ttdoc">base of all processors</div><div class="ttdef"><b>Definition</b> image_proc_base.h:8</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

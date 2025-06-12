@@ -101,6 +101,11 @@ $(document).ready(function(){initNavTree('classUnaryOpTreeNode.html',''); initRe
   <div class="headertitle"><div class="title">UnaryOpTreeNode Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="classUnaryOpTreeNode.html" title="UnaryOpTreeNode is a derived node of TreeNodeBase, which handles the unary calc.">UnaryOpTreeNode</a> is a derived node of <a class="el" href="structTreeNodeBase.html" title="Tree Node is expected to be like this!">TreeNodeBase</a>, which handles the unary calc.  
+ <a href="classUnaryOpTreeNode.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="UnaryOpTreeNode_8h_source.html">UnaryOpTreeNode.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for UnaryOpTreeNode:</div>
 <div class="dyncontent">
@@ -113,12 +118,53 @@ Inheritance diagram for UnaryOpTreeNode:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1841c04543cac891c46990da00ce1599" id="r_a1841c04543cac891c46990da00ce1599"><td class="memItemLeft" align="right" valign="top"><a id="a1841c04543cac891c46990da00ce1599" name="a1841c04543cac891c46990da00ce1599"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>UnaryOpTreeNode</b> (QChar oper, <a class="el" href="structTreeNodeBase.html">TreeNodeBase</a> *child)</td></tr>
+<tr class="memitem:a1841c04543cac891c46990da00ce1599" id="r_a1841c04543cac891c46990da00ce1599"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUnaryOpTreeNode.html#a1841c04543cac891c46990da00ce1599">UnaryOpTreeNode</a> (QChar oper, <a class="el" href="structTreeNodeBase.html">TreeNodeBase</a> *child)</td></tr>
+<tr class="memdesc:a1841c04543cac891c46990da00ce1599"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Unary Op Tree Node object.  <br /></td></tr>
 <tr class="separator:a1841c04543cac891c46990da00ce1599"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8f8b78f36cb450c6f5a850ccfb44c2d" id="r_ac8f8b78f36cb450c6f5a850ccfb44c2d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUnaryOpTreeNode.html#ac8f8b78f36cb450c6f5a850ccfb44c2d">evaluate</a> () const override</td></tr>
+<tr class="memdesc:ac8f8b78f36cb450c6f5a850ccfb44c2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">evaluate the expressions  <br /></td></tr>
 <tr class="separator:ac8f8b78f36cb450c6f5a850ccfb44c2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="classUnaryOpTreeNode.html" title="UnaryOpTreeNode is a derived node of TreeNodeBase, which handles the unary calc.">UnaryOpTreeNode</a> is a derived node of <a class="el" href="structTreeNodeBase.html" title="Tree Node is expected to be like this!">TreeNodeBase</a>, which handles the unary calc. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a1841c04543cac891c46990da00ce1599" name="a1841c04543cac891c46990da00ce1599"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1841c04543cac891c46990da00ce1599">&#9670;&#160;</a></span>UnaryOpTreeNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UnaryOpTreeNode::UnaryOpTreeNode </td>
+          <td>(</td>
+          <td class="paramtype">QChar&#160;</td>
+          <td class="paramname"><em>oper</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structTreeNodeBase.html">TreeNodeBase</a> *&#160;</td>
+          <td class="paramname"><em>child</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct a new Unary Op Tree Node object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">oper</td><td></td></tr>
+    <tr><td class="paramname">child</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac8f8b78f36cb450c6f5a850ccfb44c2d" name="ac8f8b78f36cb450c6f5a850ccfb44c2d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac8f8b78f36cb450c6f5a850ccfb44c2d">&#9670;&#160;</a></span>evaluate()</h2>
@@ -143,7 +189,10 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="structTreeNodeBase.html">TreeNodeBase</a>.</p>
+<p>evaluate the expressions </p>
+<dl class="section return"><dt>Returns</dt><dd>double </dd></dl>
+
+<p>Implements <a class="el" href="structTreeNodeBase.html#a9f67af71a29c46fe4df9e0b05b30b2b9">TreeNodeBase</a>.</p>
 
 </div>
 </div>

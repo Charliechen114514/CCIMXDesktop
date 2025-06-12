@@ -101,6 +101,11 @@ $(document).ready(function(){initNavTree('classUnSupportiveFunction.html',''); i
   <div class="headertitle"><div class="title">UnSupportiveFunction Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Exception thrown when an unsupported function is encountered during parsing.  
+ <a href="classUnSupportiveFunction.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="ParseExceptions_8h_source.html">ParseExceptions.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for UnSupportiveFunction:</div>
 <div class="dyncontent">
@@ -110,13 +115,79 @@ Inheritance diagram for UnSupportiveFunction:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8a18cff8ffa805b8f9a167f925e3574d" id="r_a8a18cff8ffa805b8f9a167f925e3574d"><td class="memItemLeft" align="right" valign="top"><a id="a8a18cff8ffa805b8f9a167f925e3574d" name="a8a18cff8ffa805b8f9a167f925e3574d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>UnSupportiveFunction</b> (const QString symbol)</td></tr>
+<tr class="memitem:a8a18cff8ffa805b8f9a167f925e3574d" id="r_a8a18cff8ffa805b8f9a167f925e3574d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUnSupportiveFunction.html#a8a18cff8ffa805b8f9a167f925e3574d">UnSupportiveFunction</a> (const QString symbol)</td></tr>
+<tr class="memdesc:a8a18cff8ffa805b8f9a167f925e3574d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs the exception with the unsupported function name.  <br /></td></tr>
 <tr class="separator:a8a18cff8ffa805b8f9a167f925e3574d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef8a1e6892ff92a98fa0e784c3ba6afb" id="r_aef8a1e6892ff92a98fa0e784c3ba6afb"><td class="memItemLeft" align="right" valign="top"><a id="aef8a1e6892ff92a98fa0e784c3ba6afb" name="aef8a1e6892ff92a98fa0e784c3ba6afb"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>what</b> () const override</td></tr>
+<tr class="memitem:aef8a1e6892ff92a98fa0e784c3ba6afb" id="r_aef8a1e6892ff92a98fa0e784c3ba6afb"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUnSupportiveFunction.html#aef8a1e6892ff92a98fa0e784c3ba6afb">what</a> () const override</td></tr>
+<tr class="memdesc:aef8a1e6892ff92a98fa0e784c3ba6afb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the error message.  <br /></td></tr>
 <tr class="separator:aef8a1e6892ff92a98fa0e784c3ba6afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Exception thrown when an unsupported function is encountered during parsing. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a8a18cff8ffa805b8f9a167f925e3574d" name="a8a18cff8ffa805b8f9a167f925e3574d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a18cff8ffa805b8f9a167f925e3574d">&#9670;&#160;</a></span>UnSupportiveFunction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">UnSupportiveFunction::UnSupportiveFunction </td>
+          <td>(</td>
+          <td class="paramtype">const QString&#160;</td>
+          <td class="paramname"><em>symbol</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs the exception with the unsupported function name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">symbol</td><td>The unsupported function name. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aef8a1e6892ff92a98fa0e784c3ba6afb" name="aef8a1e6892ff92a98fa0e784c3ba6afb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef8a1e6892ff92a98fa0e784c3ba6afb">&#9670;&#160;</a></span>what()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * UnSupportiveFunction::what </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the error message. </p>
+<dl class="section return"><dt>Returns</dt><dd>C-style string with the error description. </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>builtin/app/Caculator/core/<a class="el" href="ParseExceptions_8h_source.html">ParseExceptions.h</a></li>
 </ul>

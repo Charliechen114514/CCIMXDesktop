@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['homepage_0',['HomePage',['../classHomePage.html',1,'']]]
+  ['histdrawer_0',['HistDrawer',['../classHistDrawer.html',1,'']]],
+  ['homepage_1',['HomePage',['../classHomePage.html',1,'']]]
 ];

@@ -101,29 +101,78 @@ $(document).ready(function(){initNavTree('structImageProc.html',''); initResizab
   <div class="headertitle"><div class="title">ImageProc Struct Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>base of all processors  
+ <a href="structImageProc.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="image__proc__base_8h_source.html">image_proc_base.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ImageProc:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="structImageProc.png" usemap="#ImageProc_map" alt=""/>
   <map id="ImageProc_map" name="ImageProc_map">
-<area href="classBlurProcessor.html" alt="BlurProcessor" shape="rect" coords="204,56,330,80"/>
-<area href="classCannyProcessor.html" alt="CannyProcessor" shape="rect" coords="340,56,466,80"/>
-<area href="classContoursQueryProc.html" alt="ContoursQueryProc" shape="rect" coords="476,56,602,80"/>
-<area href="classGrayProcessor.html" alt="GrayProcessor" shape="rect" coords="612,56,738,80"/>
-<area href="classFilterBlur.html" alt="FilterBlur" shape="rect" coords="0,112,126,136"/>
-<area href="classGuassainBlur.html" alt="GuassainBlur" shape="rect" coords="136,112,262,136"/>
-<area href="classMeanBlur.html" alt="MeanBlur" shape="rect" coords="272,112,398,136"/>
-<area href="classMedianBlur.html" alt="MedianBlur" shape="rect" coords="408,112,534,136"/>
+<area href="classBlurProcessor.html" title="The BlurProcessor class is an abstract image processor base for various blur operations." alt="BlurProcessor" shape="rect" coords="204,56,330,80"/>
+<area href="classCannyProcessor.html" title="CannyProcessor process Canny lol." alt="CannyProcessor" shape="rect" coords="340,56,466,80"/>
+<area href="classContoursQueryProc.html" title="The ContoursQueryProc class performs edge detection followed by contour detection." alt="ContoursQueryProc" shape="rect" coords="476,56,602,80"/>
+<area href="classGrayProcessor.html" title="make image gray" alt="GrayProcessor" shape="rect" coords="612,56,738,80"/>
+<area href="classFilterBlur.html" title="Performs bilateral filter blur on images." alt="FilterBlur" shape="rect" coords="0,112,126,136"/>
+<area href="classGuassainBlur.html" title="Performs Gaussian blur on images." alt="GuassainBlur" shape="rect" coords="136,112,262,136"/>
+<area href="classMeanBlur.html" title="Performs mean (average) blur on images." alt="MeanBlur" shape="rect" coords="272,112,398,136"/>
+<area href="classMedianBlur.html" title="Performs median blur on images." alt="MedianBlur" shape="rect" coords="408,112,534,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5979f3ab135f5e70f651a5bd5b05e146" id="r_a5979f3ab135f5e70f651a5bd5b05e146"><td class="memItemLeft" align="right" valign="top"><a id="a5979f3ab135f5e70f651a5bd5b05e146" name="a5979f3ab135f5e70f651a5bd5b05e146"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>process</b> (<a class="el" href="classCVImage.html">CVImage</a> &amp;prev_image)=0</td></tr>
+<tr class="memitem:a50f88f38a237c4d707f6807559cd7bcf" id="r_a50f88f38a237c4d707f6807559cd7bcf"><td class="memItemLeft" align="right" valign="top"><a id="a50f88f38a237c4d707f6807559cd7bcf" name="a50f88f38a237c4d707f6807559cd7bcf"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ImageProc</b> ()=default</td></tr>
+<tr class="memdesc:a50f88f38a237c4d707f6807559cd7bcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Image Proc object. <br /></td></tr>
+<tr class="separator:a50f88f38a237c4d707f6807559cd7bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5979f3ab135f5e70f651a5bd5b05e146" id="r_a5979f3ab135f5e70f651a5bd5b05e146"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structImageProc.html#a5979f3ab135f5e70f651a5bd5b05e146">process</a> (<a class="el" href="classCVImage.html">CVImage</a> &amp;prev_image)=0</td></tr>
+<tr class="memdesc:a5979f3ab135f5e70f651a5bd5b05e146"><td class="mdescLeft">&#160;</td><td class="mdescRight">process images  <br /></td></tr>
 <tr class="separator:a5979f3ab135f5e70f651a5bd5b05e146"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>base of all processors </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a5979f3ab135f5e70f651a5bd5b05e146" name="a5979f3ab135f5e70f651a5bd5b05e146"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5979f3ab135f5e70f651a5bd5b05e146">&#9670;&#160;</a></span>process()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool ImageProc::process </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCVImage.html">CVImage</a> &amp;&#160;</td>
+          <td class="paramname"><em>prev_image</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>process images </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prev_image</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>whether success </dd></dl>
+
+<p>Implemented in <a class="el" href="classMeanBlur.html#af5cc9106aa361a8f70f69dd4f52950e0">MeanBlur</a>, <a class="el" href="classGuassainBlur.html#a645122ab822abdc71e4b95c0e5fad61d">GuassainBlur</a>, <a class="el" href="classMedianBlur.html#af1f198ad948706d0db66c32cfbf05da8">MedianBlur</a>, <a class="el" href="classFilterBlur.html#aef8183403feabc93ce2d2e952144d129">FilterBlur</a>, <a class="el" href="classCannyProcessor.html#aed4a473897ea15a8b93299966a34d16b">CannyProcessor</a>, <a class="el" href="classContoursQueryProc.html#ad664d8001fe40a0a23ef97c6e45d5381">ContoursQueryProc</a>, and <a class="el" href="classGrayProcessor.html#a8ca02fc3e811c09fe30e5fcf73cbdea9">GrayProcessor</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>extern_app/professionals/library/OpencvQtAdapter/core_library/image_proc/<a class="el" href="image__proc__base_8h_source.html">image_proc_base.h</a></li>
 </ul>

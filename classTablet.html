@@ -102,6 +102,11 @@ $(document).ready(function(){initNavTree('classTablet.html',''); initResizable()
   <div class="headertitle"><div class="title">Tablet Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The <a class="el" href="classTablet.html" title="The Tablet class provides a user interface panel for building and evaluating string-based expressions...">Tablet</a> class provides a user interface panel for building and evaluating string-based expressions interactively.  
+ <a href="classTablet.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Tablet_8h_source.html">Tablet.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Tablet:</div>
 <div class="dyncontent">
@@ -111,28 +116,142 @@ Inheritance diagram for Tablet:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-slots" name="pub-slots"></a>
 Public Slots</h2></td></tr>
-<tr class="memitem:a44fb31944caa0eb6b048ca975c0d8717" id="r_a44fb31944caa0eb6b048ca975c0d8717"><td class="memItemLeft" align="right" valign="top"><a id="a44fb31944caa0eb6b048ca975c0d8717" name="a44fb31944caa0eb6b048ca975c0d8717"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setResult</b> (const QString &amp;v)</td></tr>
+<tr class="memitem:a44fb31944caa0eb6b048ca975c0d8717" id="r_a44fb31944caa0eb6b048ca975c0d8717"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTablet.html#a44fb31944caa0eb6b048ca975c0d8717">setResult</a> (const QString &amp;v)</td></tr>
+<tr class="memdesc:a44fb31944caa0eb6b048ca975c0d8717"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the result text shown in the result display area.  <br /></td></tr>
 <tr class="separator:a44fb31944caa0eb6b048ca975c0d8717"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2e9354d4e3433e2a4b247685d737b2f" id="r_af2e9354d4e3433e2a4b247685d737b2f"><td class="memItemLeft" align="right" valign="top"><a id="af2e9354d4e3433e2a4b247685d737b2f" name="af2e9354d4e3433e2a4b247685d737b2f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>append_outlayer</b> (const QString &amp;what)</td></tr>
+<tr class="memitem:af2e9354d4e3433e2a4b247685d737b2f" id="r_af2e9354d4e3433e2a4b247685d737b2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTablet.html#af2e9354d4e3433e2a4b247685d737b2f">append_outlayer</a> (const QString &amp;what)</td></tr>
+<tr class="memdesc:af2e9354d4e3433e2a4b247685d737b2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends an external string token to the internal expression.  <br /></td></tr>
 <tr class="separator:af2e9354d4e3433e2a4b247685d737b2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e107012d0b66c0aa5cea19633d11d78" id="r_a6e107012d0b66c0aa5cea19633d11d78"><td class="memItemLeft" align="right" valign="top"><a id="a6e107012d0b66c0aa5cea19633d11d78" name="a6e107012d0b66c0aa5cea19633d11d78"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>process_clear</b> ()</td></tr>
+<tr class="memdesc:a6e107012d0b66c0aa5cea19633d11d78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the internal expression and updates the UI. <br /></td></tr>
 <tr class="separator:a6e107012d0b66c0aa5cea19633d11d78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0ec721b26648def3d07ce50cee2ee6e" id="r_ac0ec721b26648def3d07ce50cee2ee6e"><td class="memItemLeft" align="right" valign="top"><a id="ac0ec721b26648def3d07ce50cee2ee6e" name="ac0ec721b26648def3d07ce50cee2ee6e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>process_chop</b> ()</td></tr>
+<tr class="memdesc:ac0ec721b26648def3d07ce50cee2ee6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the last character or token from the expression. <br /></td></tr>
 <tr class="separator:ac0ec721b26648def3d07ce50cee2ee6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a123c143dd6250b34f6223204265e8f43" id="r_a123c143dd6250b34f6223204265e8f43"><td class="memItemLeft" align="right" valign="top"><a id="a123c143dd6250b34f6223204265e8f43" name="a123c143dd6250b34f6223204265e8f43"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>process_evaluate</b> ()</td></tr>
+<tr class="memdesc:a123c143dd6250b34f6223204265e8f43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluates the current expression and updates the result. <br /></td></tr>
 <tr class="separator:a123c143dd6250b34f6223204265e8f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa7df707869637feee4f911f714d19180" id="r_aa7df707869637feee4f911f714d19180"><td class="memItemLeft" align="right" valign="top"><a id="aa7df707869637feee4f911f714d19180" name="aa7df707869637feee4f911f714d19180"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Tablet</b> (QWidget *parent=nullptr)</td></tr>
+<tr class="memitem:aa7df707869637feee4f911f714d19180" id="r_aa7df707869637feee4f911f714d19180"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTablet.html#aa7df707869637feee4f911f714d19180">Tablet</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:aa7df707869637feee4f911f714d19180"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs the <a class="el" href="classTablet.html" title="The Tablet class provides a user interface panel for building and evaluating string-based expressions...">Tablet</a> widget.  <br /></td></tr>
 <tr class="separator:aa7df707869637feee4f911f714d19180"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1708c29981f805e5fd60ebf03acb924" id="r_ac1708c29981f805e5fd60ebf03acb924"><td class="memItemLeft" align="right" valign="top"><a id="ac1708c29981f805e5fd60ebf03acb924" name="ac1708c29981f805e5fd60ebf03acb924"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~Tablet</b> ()</td></tr>
+<tr class="memdesc:ac1708c29981f805e5fd60ebf03acb924"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
+<tr class="separator:ac1708c29981f805e5fd60ebf03acb924"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="classTablet.html" title="The Tablet class provides a user interface panel for building and evaluating string-based expressions...">Tablet</a> class provides a user interface panel for building and evaluating string-based expressions interactively. </p>
+<p>This widget allows appending tokens, clearing input, and evaluating mathematical or textual expressions via UI interaction. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aa7df707869637feee4f911f714d19180" name="aa7df707869637feee4f911f714d19180"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7df707869637feee4f911f714d19180">&#9670;&#160;</a></span>Tablet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Tablet::Tablet </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs the <a class="el" href="classTablet.html" title="The Tablet class provides a user interface panel for building and evaluating string-based expressions...">Tablet</a> widget. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>The parent QWidget, if any. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="af2e9354d4e3433e2a4b247685d737b2f" name="af2e9354d4e3433e2a4b247685d737b2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2e9354d4e3433e2a4b247685d737b2f">&#9670;&#160;</a></span>append_outlayer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Tablet::append_outlayer </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>what</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Appends an external string token to the internal expression. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">what</td><td>The token to append. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a44fb31944caa0eb6b048ca975c0d8717" name="a44fb31944caa0eb6b048ca975c0d8717"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44fb31944caa0eb6b048ca975c0d8717">&#9670;&#160;</a></span>setResult</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Tablet::setResult </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the result text shown in the result display area. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>The result string to display. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>builtin/app/Caculator/ui/<a class="el" href="Tablet_8h_source.html">Tablet.h</a></li>
 <li>builtin/app/Caculator/ui/<b>Tablet.cpp</b></li>

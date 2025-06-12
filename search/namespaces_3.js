@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['sidebarwidgetstaticconfig_0',['SideBarWidgetStaticConfig',['../namespaceSideBarWidgetStaticConfig.html',1,'']]],
-  ['simpletools_1',['SimpleTools',['../namespaceSimpleTools.html',1,'']]]
+  ['mediaenableselectfactory_0',['MediaEnableSelectFactory',['../namespaceMediaEnableSelectFactory.html',1,'']]]
 ];

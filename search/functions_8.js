@@ -4,7 +4,9 @@ var searchData=
   ['handle_5fdisplayerror_1',['handle_displayError',['../classMediaPlayerWindowHelper.html#a5bb147ec43ec46f9f8936c15a0e7f6b0',1,'MediaPlayerWindowHelper']]],
   ['handle_5fprocess_5fissues_2',['handle_process_issues',['../classProcessBrowserWidget.html#adad0c2d2d3da160e265bf0decec95227',1,'ProcessBrowserWidget']]],
   ['handlegestureevent_3',['handleGestureEvent',['../classCCPdfScrollArea.html#a688d7e77f99d63bbab5ca7ba24a5d452',1,'CCPdfScrollArea']]],
-  ['headerdata_4',['headerData',['../classCCIMXFileSystemModel.html#aeceaa8e6c1e18cb36f20211176b60096',1,'CCIMXFileSystemModel']]],
-  ['hidesidebar_5',['hidesidebar',['../classSideBarWidget.html#a8095035fb628e68ba40c6c66ee009594',1,'SideBarWidget::hideSideBar()'],['../classSideBarWidget.html#a8095035fb628e68ba40c6c66ee009594',1,'SideBarWidget::hideSideBar()'],['../classSideBarWidget.html#a8095035fb628e68ba40c6c66ee009594',1,'SideBarWidget::hideSideBar()']]],
-  ['homepage_6',['HomePage',['../classHomePage.html#a6b43d601ca302278ee9424f71841a4aa',1,'HomePage']]]
+  ['handletype_4',['handleType',['../classBlurProcessor.html#a8e237a8b492a86872c426ac55ce0e403',1,'BlurProcessor']]],
+  ['headerdata_5',['headerData',['../classCCIMXFileSystemModel.html#aeceaa8e6c1e18cb36f20211176b60096',1,'CCIMXFileSystemModel']]],
+  ['hidesidebar_6',['hidesidebar',['../classSideBarWidget.html#a8095035fb628e68ba40c6c66ee009594',1,'SideBarWidget::hideSideBar()'],['../classSideBarWidget.html#a8095035fb628e68ba40c6c66ee009594',1,'SideBarWidget::hideSideBar()'],['../classSideBarWidget.html#a8095035fb628e68ba40c6c66ee009594',1,'SideBarWidget::hideSideBar()']]],
+  ['histdrawer_7',['HistDrawer',['../classHistDrawer.html#acac240110b587e7b3884c4a3bd7c098d',1,'HistDrawer']]],
+  ['homepage_8',['HomePage',['../classHomePage.html#a6b43d601ca302278ee9424f71841a4aa',1,'HomePage']]]
 ];

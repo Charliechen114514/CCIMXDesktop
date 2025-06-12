@@ -100,33 +100,54 @@ $(document).ready(function(){initNavTree('Parser_8h_source.html',''); initResiza
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef PARSER_H</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define PARSER_H</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;QString&gt;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">class </span><a class="code hl_struct" href="structTreeNodeBase.html">TreeNodeBase</a>;</div>
-<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="classParser.html">    5</a></span><span class="keyword">class </span><a class="code hl_class" href="classParser.html">Parser</a> {</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <a class="code hl_class" href="classParser.html">Parser</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <a class="code hl_class" href="classParser.html">~Parser</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keywordtype">void</span> setParserString(<span class="keyword">const</span> QString&amp; p);</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    QString parserString() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <a class="code hl_struct" href="structTreeNodeBase.html">TreeNodeBase</a>* parse();</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    QString handle_expression;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordtype">int</span> parse_pos { 0 };</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    QChar peekPos();</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    QChar getChar();</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">void</span> skipIgnored();</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <a class="code hl_struct" href="structTreeNodeBase.html">TreeNodeBase</a>* parseExpression();</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <a class="code hl_struct" href="structTreeNodeBase.html">TreeNodeBase</a>* parseTerm();</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <a class="code hl_struct" href="structTreeNodeBase.html">TreeNodeBase</a>* parseFactor();</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <a class="code hl_struct" href="structTreeNodeBase.html">TreeNodeBase</a>* parseNumber();</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    QString parseIdentifier();</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>};</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;QString&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">class </span><a class="code hl_struct" href="structTreeNodeBase.html">TreeNodeBase</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="foldopen" id="foldopen00012" data-start="{" data-end="};">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="classParser.html">   12</a></span><span class="keyword">class </span><a class="code hl_class" href="classParser.html">Parser</a> {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classParser.html#a5208129b497bfdf7c8ecceeb70e4bba8">   17</a></span>    <a class="code hl_function" href="classParser.html#a5208129b497bfdf7c8ecceeb70e4bba8">Parser</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classParser.html#a95734193a58a199b4c6d820a6a730c42">   22</a></span>    <a class="code hl_function" href="classParser.html#a95734193a58a199b4c6d820a6a730c42">~Parser</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classParser.html#aa2c547c20efefa9063ac94ca85c6d448">setParserString</a>(<span class="keyword">const</span> QString&amp; p);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    QString <a class="code hl_function" href="classParser.html#a474c69805be7672d8e20a1b58fb7b0a5">parserString</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <a class="code hl_struct" href="structTreeNodeBase.html">TreeNodeBase</a>* <a class="code hl_function" href="classParser.html#a12fd45fde9ae725ffa869aa74b98cf48">parse</a>();</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    QString handle_expression;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordtype">int</span> parse_pos { 0 };</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    QChar peekPos();</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    QChar getChar();</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keywordtype">void</span> skipIgnored();</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <a class="code hl_struct" href="structTreeNodeBase.html">TreeNodeBase</a>* parseExpression();</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <a class="code hl_struct" href="structTreeNodeBase.html">TreeNodeBase</a>* parseTerm();</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <a class="code hl_struct" href="structTreeNodeBase.html">TreeNodeBase</a>* parseFactor();</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <a class="code hl_struct" href="structTreeNodeBase.html">TreeNodeBase</a>* parseNumber();</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    QString parseIdentifier();</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>};</div>
 </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#endif </span><span class="comment">// PARSER_H</span></div>
-<div class="ttc" id="aclassParser_html"><div class="ttname"><a href="classParser.html">Parser</a></div><div class="ttdef"><b>Definition</b> Parser.h:5</div></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="preprocessor">#endif </span><span class="comment">// PARSER_H</span></div>
+<div class="ttc" id="aclassParser_html"><div class="ttname"><a href="classParser.html">Parser</a></div><div class="ttdoc">The Parser class is responsible for parsing a mathematical expression string and converting it into a...</div><div class="ttdef"><b>Definition</b> Parser.h:12</div></div>
+<div class="ttc" id="aclassParser_html_a12fd45fde9ae725ffa869aa74b98cf48"><div class="ttname"><a href="classParser.html#a12fd45fde9ae725ffa869aa74b98cf48">Parser::parse</a></div><div class="ttdeci">TreeNodeBase * parse()</div><div class="ttdoc">Parses the input string and returns the root of the resulting AST.</div><div class="ttdef"><b>Definition</b> Parser.cpp:15</div></div>
+<div class="ttc" id="aclassParser_html_a474c69805be7672d8e20a1b58fb7b0a5"><div class="ttname"><a href="classParser.html#a474c69805be7672d8e20a1b58fb7b0a5">Parser::parserString</a></div><div class="ttdeci">QString parserString() const</div><div class="ttdoc">Returns the current parser string.</div><div class="ttdef"><b>Definition</b> Parser.cpp:11</div></div>
+<div class="ttc" id="aclassParser_html_a5208129b497bfdf7c8ecceeb70e4bba8"><div class="ttname"><a href="classParser.html#a5208129b497bfdf7c8ecceeb70e4bba8">Parser::Parser</a></div><div class="ttdeci">Parser()=default</div><div class="ttdoc">Default constructor.</div></div>
+<div class="ttc" id="aclassParser_html_a95734193a58a199b4c6d820a6a730c42"><div class="ttname"><a href="classParser.html#a95734193a58a199b4c6d820a6a730c42">Parser::~Parser</a></div><div class="ttdeci">~Parser()=default</div><div class="ttdoc">Default destructor.</div></div>
+<div class="ttc" id="aclassParser_html_aa2c547c20efefa9063ac94ca85c6d448"><div class="ttname"><a href="classParser.html#aa2c547c20efefa9063ac94ca85c6d448">Parser::setParserString</a></div><div class="ttdeci">void setParserString(const QString &amp;p)</div><div class="ttdoc">Sets the string to be parsed.</div><div class="ttdef"><b>Definition</b> Parser.cpp:6</div></div>
 <div class="ttc" id="astructTreeNodeBase_html"><div class="ttname"><a href="structTreeNodeBase.html">TreeNodeBase</a></div><div class="ttdoc">Tree Node is expected to be like this!</div><div class="ttdef"><b>Definition</b> TreeNodeBase.h:7</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

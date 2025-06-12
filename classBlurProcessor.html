@@ -102,42 +102,158 @@ $(document).ready(function(){initNavTree('classBlurProcessor.html',''); initResi
   <div class="headertitle"><div class="title">BlurProcessor Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The <a class="el" href="classBlurProcessor.html" title="The BlurProcessor class is an abstract image processor base for various blur operations.">BlurProcessor</a> class is an abstract image processor base for various blur operations.  
+ <a href="classBlurProcessor.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="BlurProcessor_8h_source.html">BlurProcessor.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for BlurProcessor:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classBlurProcessor.png" usemap="#BlurProcessor_map" alt=""/>
   <map id="BlurProcessor_map" name="BlurProcessor_map">
-<area href="structImageProc.html" alt="ImageProc" shape="rect" coords="154,0,247,24"/>
-<area href="classFilterBlur.html" alt="FilterBlur" shape="rect" coords="0,112,93,136"/>
-<area href="classGuassainBlur.html" alt="GuassainBlur" shape="rect" coords="103,112,196,136"/>
-<area href="classMeanBlur.html" alt="MeanBlur" shape="rect" coords="206,112,299,136"/>
-<area href="classMedianBlur.html" alt="MedianBlur" shape="rect" coords="309,112,402,136"/>
+<area href="structImageProc.html" title="base of all processors" alt="ImageProc" shape="rect" coords="154,0,247,24"/>
+<area href="classFilterBlur.html" title="Performs bilateral filter blur on images." alt="FilterBlur" shape="rect" coords="0,112,93,136"/>
+<area href="classGuassainBlur.html" title="Performs Gaussian blur on images." alt="GuassainBlur" shape="rect" coords="103,112,196,136"/>
+<area href="classMeanBlur.html" title="Performs mean (average) blur on images." alt="MeanBlur" shape="rect" coords="206,112,299,136"/>
+<area href="classMedianBlur.html" title="Performs median blur on images." alt="MedianBlur" shape="rect" coords="309,112,402,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a3af8708008d25b115a14ebc37fecf2c0" id="r_a3af8708008d25b115a14ebc37fecf2c0"><td class="memItemLeft" align="right" valign="top"><a id="a3af8708008d25b115a14ebc37fecf2c0" name="a3af8708008d25b115a14ebc37fecf2c0"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>HandleType</b> { <b>MedianBlur</b>
-, <b>GuassainBlur</b>
-, <b>MeanBlur</b>
-, <b>FilterBlur</b>
+<tr class="memitem:a3af8708008d25b115a14ebc37fecf2c0" id="r_a3af8708008d25b115a14ebc37fecf2c0"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlurProcessor.html#a3af8708008d25b115a14ebc37fecf2c0">HandleType</a> { <a class="el" href="classBlurProcessor.html#a3af8708008d25b115a14ebc37fecf2c0a710c94640ff8eb62bf69a881a22f9967">MedianBlur</a>
+, <a class="el" href="classBlurProcessor.html#a3af8708008d25b115a14ebc37fecf2c0aabc82f280031827bbed8fa2eb46c6d26">GuassainBlur</a>
+, <a class="el" href="classBlurProcessor.html#a3af8708008d25b115a14ebc37fecf2c0af12dd2cbe8eb06e1e55f08757330d986">MeanBlur</a>
+, <a class="el" href="classBlurProcessor.html#a3af8708008d25b115a14ebc37fecf2c0a9f686c7c13ddda2c54df9537980e4fc8">FilterBlur</a>
  }</td></tr>
+<tr class="memdesc:a3af8708008d25b115a14ebc37fecf2c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The HandleType enum lists supported blur types.  <a href="classBlurProcessor.html#a3af8708008d25b115a14ebc37fecf2c0">More...</a><br /></td></tr>
 <tr class="separator:a3af8708008d25b115a14ebc37fecf2c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a018e453fe56b96b4df52196831ce429d" id="r_a018e453fe56b96b4df52196831ce429d"><td class="memItemLeft" align="right" valign="top"><a id="a018e453fe56b96b4df52196831ce429d" name="a018e453fe56b96b4df52196831ce429d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>BlurProcessor</b> (const HandleType t)</td></tr>
+<tr class="memitem:a018e453fe56b96b4df52196831ce429d" id="r_a018e453fe56b96b4df52196831ce429d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlurProcessor.html#a018e453fe56b96b4df52196831ce429d">BlurProcessor</a> (const <a class="el" href="classBlurProcessor.html#a3af8708008d25b115a14ebc37fecf2c0">HandleType</a> t)</td></tr>
+<tr class="memdesc:a018e453fe56b96b4df52196831ce429d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classBlurProcessor.html" title="The BlurProcessor class is an abstract image processor base for various blur operations.">BlurProcessor</a> with the specified blur type.  <br /></td></tr>
 <tr class="separator:a018e453fe56b96b4df52196831ce429d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e237a8b492a86872c426ac55ce0e403" id="r_a8e237a8b492a86872c426ac55ce0e403"><td class="memItemLeft" align="right" valign="top"><a id="a8e237a8b492a86872c426ac55ce0e403" name="a8e237a8b492a86872c426ac55ce0e403"></a>
-HandleType&#160;</td><td class="memItemRight" valign="bottom"><b>handleType</b> () const</td></tr>
+<tr class="memitem:a5e0c8079c51db674153bc534a0cadbae" id="r_a5e0c8079c51db674153bc534a0cadbae"><td class="memItemLeft" align="right" valign="top"><a id="a5e0c8079c51db674153bc534a0cadbae" name="a5e0c8079c51db674153bc534a0cadbae"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~BlurProcessor</b> () override=default</td></tr>
+<tr class="memdesc:a5e0c8079c51db674153bc534a0cadbae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor. <br /></td></tr>
+<tr class="separator:a5e0c8079c51db674153bc534a0cadbae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e237a8b492a86872c426ac55ce0e403" id="r_a8e237a8b492a86872c426ac55ce0e403"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBlurProcessor.html#a3af8708008d25b115a14ebc37fecf2c0">HandleType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlurProcessor.html#a8e237a8b492a86872c426ac55ce0e403">handleType</a> () const</td></tr>
+<tr class="memdesc:a8e237a8b492a86872c426ac55ce0e403"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the blur type of this processor.  <br /></td></tr>
 <tr class="separator:a8e237a8b492a86872c426ac55ce0e403"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structImageProc"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structImageProc')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structImageProc.html">ImageProc</a></td></tr>
-<tr class="memitem:a5979f3ab135f5e70f651a5bd5b05e146 inherit pub_methods_structImageProc" id="r_a5979f3ab135f5e70f651a5bd5b05e146"><td class="memItemLeft" align="right" valign="top">
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>process</b> (<a class="el" href="classCVImage.html">CVImage</a> &amp;prev_image)=0</td></tr>
+<tr class="memitem:a50f88f38a237c4d707f6807559cd7bcf inherit pub_methods_structImageProc" id="r_a50f88f38a237c4d707f6807559cd7bcf"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>ImageProc</b> ()=default</td></tr>
+<tr class="memdesc:a50f88f38a237c4d707f6807559cd7bcf inherit pub_methods_structImageProc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Image Proc object. <br /></td></tr>
+<tr class="separator:a50f88f38a237c4d707f6807559cd7bcf inherit pub_methods_structImageProc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5979f3ab135f5e70f651a5bd5b05e146 inherit pub_methods_structImageProc" id="r_a5979f3ab135f5e70f651a5bd5b05e146"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structImageProc.html#a5979f3ab135f5e70f651a5bd5b05e146">process</a> (<a class="el" href="classCVImage.html">CVImage</a> &amp;prev_image)=0</td></tr>
+<tr class="memdesc:a5979f3ab135f5e70f651a5bd5b05e146 inherit pub_methods_structImageProc"><td class="mdescLeft">&#160;</td><td class="mdescRight">process images  <br /></td></tr>
 <tr class="separator:a5979f3ab135f5e70f651a5bd5b05e146 inherit pub_methods_structImageProc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="classBlurProcessor.html" title="The BlurProcessor class is an abstract image processor base for various blur operations.">BlurProcessor</a> class is an abstract image processor base for various blur operations. </p>
+<p>It defines the blur type and provides a base for concrete blur processors like mean, Gaussian, etc. </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a3af8708008d25b115a14ebc37fecf2c0" name="a3af8708008d25b115a14ebc37fecf2c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3af8708008d25b115a14ebc37fecf2c0">&#9670;&#160;</a></span>HandleType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="classBlurProcessor.html#a3af8708008d25b115a14ebc37fecf2c0">BlurProcessor::HandleType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The HandleType enum lists supported blur types. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a3af8708008d25b115a14ebc37fecf2c0a710c94640ff8eb62bf69a881a22f9967" name="a3af8708008d25b115a14ebc37fecf2c0a710c94640ff8eb62bf69a881a22f9967"></a>MedianBlur&#160;</td><td class="fielddoc"><p>Median filter blur. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3af8708008d25b115a14ebc37fecf2c0aabc82f280031827bbed8fa2eb46c6d26" name="a3af8708008d25b115a14ebc37fecf2c0aabc82f280031827bbed8fa2eb46c6d26"></a>GuassainBlur&#160;</td><td class="fielddoc"><p>Gaussian blur. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3af8708008d25b115a14ebc37fecf2c0af12dd2cbe8eb06e1e55f08757330d986" name="a3af8708008d25b115a14ebc37fecf2c0af12dd2cbe8eb06e1e55f08757330d986"></a>MeanBlur&#160;</td><td class="fielddoc"><p>Mean (average) blur. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3af8708008d25b115a14ebc37fecf2c0a9f686c7c13ddda2c54df9537980e4fc8" name="a3af8708008d25b115a14ebc37fecf2c0a9f686c7c13ddda2c54df9537980e4fc8"></a>FilterBlur&#160;</td><td class="fielddoc"><p>Bilateral filter blur. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a018e453fe56b96b4df52196831ce429d" name="a018e453fe56b96b4df52196831ce429d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a018e453fe56b96b4df52196831ce429d">&#9670;&#160;</a></span>BlurProcessor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BlurProcessor::BlurProcessor </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classBlurProcessor.html#a3af8708008d25b115a14ebc37fecf2c0">HandleType</a>&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a <a class="el" href="classBlurProcessor.html" title="The BlurProcessor class is an abstract image processor base for various blur operations.">BlurProcessor</a> with the specified blur type. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>The type of blur operation. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a8e237a8b492a86872c426ac55ce0e403" name="a8e237a8b492a86872c426ac55ce0e403"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e237a8b492a86872c426ac55ce0e403">&#9670;&#160;</a></span>handleType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classBlurProcessor.html#a3af8708008d25b115a14ebc37fecf2c0">HandleType</a> BlurProcessor::handleType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the blur type of this processor. </p>
+<dl class="section return"><dt>Returns</dt><dd>The HandleType of the processor. </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>extern_app/professionals/library/OpencvQtAdapter/core_library/image_proc/<a class="el" href="BlurProcessor_8h_source.html">BlurProcessor.h</a></li>
 </ul>
