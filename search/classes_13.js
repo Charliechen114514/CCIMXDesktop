@@ -1,7 +1,7 @@
 var searchData=
 [
   ['wallpaperanimationhandler_0',['WallPaperAnimationHandler',['../structWallPaperAnimationHandler.html',1,'']]],
-  ['wallpapergroup_1',['WallPaperGroup',['../structDesktopMainWindow_1_1WallPaperGroup.html',1,'DesktopMainWindow']]],
+  ['wallpaperengine_1',['WallPaperEngine',['../classWallPaperEngine.html',1,'']]],
   ['weatherappmainwindow_2',['WeatherAppMainWindow',['../classWeatherAppMainWindow.html',1,'']]],
   ['weatherchartwidget_3',['WeatherChartWidget',['../classWeatherChartWidget.html',1,'']]],
   ['weatherdailycard_4',['WeatherDailyCard',['../classWeatherDailyCard.html',1,'']]],

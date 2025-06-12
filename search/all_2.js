@@ -29,10 +29,9 @@ var searchData=
   ['board_5flen_26',['BOARD_LEN',['../classGaugeWidget.html#aec3958da812296d68d8093558f0d15e1',1,'GaugeWidget']]],
   ['bonusfunctor_27',['bonusfunctor',['../classBonusFunctor.html#a9a07fb47a802b6c4edb025b71d6dee61',1,'BonusFunctor::BonusFunctor()'],['../classBonusFunctor.html',1,'BonusFunctor']]],
   ['browse_5fdocument_5fmetas_28',['browse_document_metas',['../classMainWindow.html#ad0d5bd0ef2a63f9fa672f284bf381c15',1,'MainWindow']]],
-  ['bufferpaperlabel_29',['bufferpaperLabel',['../structDesktopMainWindow_1_1WallPaperGroup.html#a6b0a4714b3a310670e3a3ec5fa042c22',1,'DesktopMainWindow::WallPaperGroup']]],
-  ['build_30',['🛠️ Technologies used for full build',['../md_README__EN.html#autotoc_md21',1,'']]],
-  ['build_20the_20foundation_31',['🛠️ Technologies used to build the foundation',['../md_README__EN.html#autotoc_md20',1,'']]],
-  ['build_5fhome_5fpage_32',['build_home_page',['../classPageFactory.html#a7568d9fd1e31b8610b514ae09890a1e4',1,'PageFactory']]],
-  ['build_5fpesudo_5fpage_33',['build_pesudo_page',['../classPageFactory.html#a0aacbea4749963dcbcb05af9c4798ccc',1,'PageFactory']]],
-  ['builtin_20tt_34',['builtin tt',['../md_Components-explain-CN.html#autotoc_md33',1,'🧬 &lt;tt&gt;builtin&lt;/tt&gt;'],['../md_Components-explain-EN.html#autotoc_md45',1,'🧬 &lt;tt&gt;builtin&lt;/tt&gt;']]]
+  ['build_29',['🛠️ Technologies used for full build',['../md_README__EN.html#autotoc_md21',1,'']]],
+  ['build_20the_20foundation_30',['🛠️ Technologies used to build the foundation',['../md_README__EN.html#autotoc_md20',1,'']]],
+  ['build_5fhome_5fpage_31',['build_home_page',['../classPageFactory.html#a7568d9fd1e31b8610b514ae09890a1e4',1,'PageFactory']]],
+  ['build_5fpesudo_5fpage_32',['build_pesudo_page',['../classPageFactory.html#a0aacbea4749963dcbcb05af9c4798ccc',1,'PageFactory']]],
+  ['builtin_20tt_33',['builtin tt',['../md_Components-explain-CN.html#autotoc_md33',1,'🧬 &lt;tt&gt;builtin&lt;/tt&gt;'],['../md_Components-explain-EN.html#autotoc_md45',1,'🧬 &lt;tt&gt;builtin&lt;/tt&gt;']]]
 ];

@@ -22,7 +22,7 @@ var searchData=
   ['tick_5fcolor_19',['TICK_COLOR',['../classGaugeWidget.html#ac98523cab5b0c34196380b86d64714bb',1,'GaugeWidget']]],
   ['time_5fupdate_20',['time_update',['../classClockWidget.html#a569a140d341c4dc532443abb3800411d',1,'ClockWidget']]],
   ['timefrequency_21',['timeFrequency',['../setting__scene_8h.html#a91d424faf1636780c377ac628f98e784',1,'Settings::Scene::BackGround::RandomLine']]],
-  ['title_22',['title',['../structCCPdfMetaInfo.html#a7332fab72592d6f8e6f9ed1d5844bfe0',1,'CCPdfMetaInfo::title'],['../structCCPdfMetaInfo.html#a423cdbefdd1463da5d20fd464d9050a5ab78a3223503896721cca1303f776159b',1,'CCPdfMetaInfo::Title'],['../structMediaInfo.html#a843511475196e275f5e79dea5cd81409',1,'MediaInfo::title']]],
+  ['title_22',['title',['../structMediaInfo.html#a843511475196e275f5e79dea5cd81409',1,'MediaInfo::title'],['../structCCPdfMetaInfo.html#a7332fab72592d6f8e6f9ed1d5844bfe0',1,'CCPdfMetaInfo::title'],['../structCCPdfMetaInfo.html#a423cdbefdd1463da5d20fd464d9050a5ab78a3223503896721cca1303f776159b',1,'CCPdfMetaInfo::Title']]],
   ['title_5ffont_5fsz_23',['TITLE_FONT_SZ',['../classGaugeWidget.html#a2abad1855cfcc2fad8d63f8eff5961f1',1,'GaugeWidget']]],
   ['to_20build_20the_20foundation_24',['🛠️ Technologies used to build the foundation',['../md_README__EN.html#autotoc_md20',1,'']]],
   ['to_5fboard_5fcolor_25',['TO_BOARD_COLOR',['../classGaugeWidget.html#ae9e13dbb6231475b052219e055496cc1',1,'GaugeWidget']]],

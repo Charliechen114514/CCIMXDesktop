@@ -96,7 +96,6 @@ $(document).ready(function(){initNavTree('classDesktopMainWindow.html',''); init
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-slots">Public Slots</a> &#124;
 <a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -118,17 +117,18 @@ Inheritance diagram for DesktopMainWindow:</div>
   <img src="classDesktopMainWindow.png" alt=""/>
  </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDesktopMainWindow_1_1WallPaperGroup.html">WallPaperGroup</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structDesktopMainWindow_1_1WallPaperGroup.html" title="WallPaperGroup manages wallpaper-related widgets and timers.">WallPaperGroup</a> manages wallpaper-related widgets and timers.  <a href="structDesktopMainWindow_1_1WallPaperGroup.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-slots" name="pub-slots"></a>
 Public Slots</h2></td></tr>
 <tr class="memitem:ad72a53e56f786aa89acd04b1544d709c" id="r_ad72a53e56f786aa89acd04b1544d709c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDesktopMainWindow.html#ad72a53e56f786aa89acd04b1544d709c">handle_app_status</a> (<a class="el" href="classAppWidget.html#a2b48543a3ce72b7c991b744da6f540df">AppWidget::AppStatus</a> status)</td></tr>
 <tr class="memdesc:ad72a53e56f786aa89acd04b1544d709c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle status changes of applications (like errors)  <br /></td></tr>
 <tr class="separator:ad72a53e56f786aa89acd04b1544d709c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeecac01378d6863ee55953f2ef830532" id="r_aeecac01378d6863ee55953f2ef830532"><td class="memItemLeft" align="right" valign="top"><a id="aeecac01378d6863ee55953f2ef830532" name="aeecac01378d6863ee55953f2ef830532"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>open_settings_window</b> ()</td></tr>
+<tr class="memdesc:aeecac01378d6863ee55953f2ef830532"><td class="mdescLeft">&#160;</td><td class="mdescRight">open_settings_window catches the signals of open_settings <br /></td></tr>
+<tr class="separator:aeecac01378d6863ee55953f2ef830532"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe4ebfa069c332284ebcba2f72ae1f1b" id="r_abe4ebfa069c332284ebcba2f72ae1f1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDesktopMainWindow.html#abe4ebfa069c332284ebcba2f72ae1f1b">process_set_appwidgets_config</a> (const <a class="el" href="structAppWidgetsSettingsInfoPack.html">AppWidgetsSettingsInfoPack</a> &amp;info)</td></tr>
+<tr class="memdesc:abe4ebfa069c332284ebcba2f72ae1f1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">process_set_appwidgets_config  <br /></td></tr>
+<tr class="separator:abe4ebfa069c332284ebcba2f72ae1f1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
 Signals</h2></td></tr>
@@ -163,10 +163,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>to_next_page</b> ()</
 void&#160;</td><td class="memItemRight" valign="bottom"><b>to_prev_page</b> ()</td></tr>
 <tr class="memdesc:a813e78d2d7102d2f5b3d9096f0118dcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slide to the previous page in UI. <br /></td></tr>
 <tr class="separator:a813e78d2d7102d2f5b3d9096f0118dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a010608971bb06a048f8af50e68ac460f" id="r_a010608971bb06a048f8af50e68ac460f"><td class="memItemLeft" align="right" valign="top"><a id="a010608971bb06a048f8af50e68ac460f" name="a010608971bb06a048f8af50e68ac460f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>invoke_switch_bgpage</b> ()</td></tr>
-<tr class="memdesc:a010608971bb06a048f8af50e68ac460f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger wallpaper page switch session. <br /></td></tr>
-<tr class="separator:a010608971bb06a048f8af50e68ac460f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39fb277355a84381bf009a605bd9bc7e" id="r_a39fb277355a84381bf009a605bd9bc7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDesktopMainWindow.html#a39fb277355a84381bf009a605bd9bc7e">install_remote_appwrapper</a> (<a class="el" href="classApplicationWrapper.html">ApplicationWrapper</a> *wrapper)</td></tr>
 <tr class="memdesc:a39fb277355a84381bf009a605bd9bc7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Install a remote application wrapper.  <br /></td></tr>
 <tr class="separator:a39fb277355a84381bf009a605bd9bc7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,6 +191,9 @@ Friends</h2></td></tr>
 <tr class="memitem:a2b2e62a9d61d5dc451ecb2c3701de63b" id="r_a2b2e62a9d61d5dc451ecb2c3701de63b"><td class="memItemLeft" align="right" valign="top"><a id="a2b2e62a9d61d5dc451ecb2c3701de63b" name="a2b2e62a9d61d5dc451ecb2c3701de63b"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>PageFactory</b></td></tr>
 <tr class="separator:a2b2e62a9d61d5dc451ecb2c3701de63b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a8d8f83a0fa7440f63c5aaf574c1399" id="r_a9a8d8f83a0fa7440f63c5aaf574c1399"><td class="memItemLeft" align="right" valign="top"><a id="a9a8d8f83a0fa7440f63c5aaf574c1399" name="a9a8d8f83a0fa7440f63c5aaf574c1399"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>WallPaperEngine</b></td></tr>
+<tr class="separator:a9a8d8f83a0fa7440f63c5aaf574c1399"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classDesktopMainWindow.html" title="DesktopMainWindow is the main frontend window of the application. For beginners, this is the starting...">DesktopMainWindow</a> is the main frontend window of the application. For beginners, this is the starting point to understand the UI details. </p>
@@ -412,6 +411,40 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>PageFactory</b></td>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">event</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abe4ebfa069c332284ebcba2f72ae1f1b" name="abe4ebfa069c332284ebcba2f72ae1f1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe4ebfa069c332284ebcba2f72ae1f1b">&#9670;&#160;</a></span>process_set_appwidgets_config</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DesktopMainWindow::process_set_appwidgets_config </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structAppWidgetsSettingsInfoPack.html">AppWidgetsSettingsInfoPack</a> &amp;&#160;</td>
+          <td class="paramname"><em>info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>process_set_appwidgets_config </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">info</td><td>infos </td></tr>
   </table>
   </dd>
 </dl>

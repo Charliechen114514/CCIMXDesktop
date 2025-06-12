@@ -10,5 +10,7 @@ var searchData=
   ['appweatherdetailedrequest_7',['AppWeatherDetailedRequest',['../structAppWeatherDetailedRequest.html',1,'']]],
   ['appweatherrequest_8',['AppWeatherRequest',['../classAppWeatherRequest.html',1,'']]],
   ['appweatherresult_9',['AppWeatherResult',['../classAppWeatherResult.html',1,'']]],
-  ['appwidget_10',['AppWidget',['../classAppWidget.html',1,'']]]
+  ['appwidget_10',['AppWidget',['../classAppWidget.html',1,'']]],
+  ['appwidgetconfigures_11',['AppWidgetConfigures',['../classAppWidgetConfigures.html',1,'']]],
+  ['appwidgetssettingsinfopack_12',['AppWidgetsSettingsInfoPack',['../structAppWidgetsSettingsInfoPack.html',1,'']]]
 ];

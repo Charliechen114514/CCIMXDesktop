@@ -2,8 +2,8 @@ var searchData=
 [
   ['waittime_0',['waitTime',['../structCVTools_1_1DisplayParams.html#a6fcefafd5c5a2c7b38534301391e17dd',1,'CVTools::DisplayParams']]],
   ['wallpaperanimationhandler_1',['wallpaperanimationhandler',['../structWallPaperAnimationHandler.html',1,'WallPaperAnimationHandler'],['../structWallPaperAnimationHandler.html#a526955b904dce38fac82681142b0f8c9',1,'WallPaperAnimationHandler::WallPaperAnimationHandler()']]],
-  ['wallpapergroup_2',['WallPaperGroup',['../structDesktopMainWindow_1_1WallPaperGroup.html',1,'DesktopMainWindow']]],
-  ['wallpaperlabel_3',['wallpaperLabel',['../structDesktopMainWindow_1_1WallPaperGroup.html#ac847cf761490a867157cb8a78897a6a8',1,'DesktopMainWindow::WallPaperGroup']]],
+  ['wallpaperengine_2',['WallPaperEngine',['../classWallPaperEngine.html',1,'']]],
+  ['wallpaperutilscolliections_3',['WallPaperUtilsColliections',['../namespaceWallPaperUtilsColliections.html',1,'']]],
   ['weatherappmainwindow_4',['weatherappmainwindow',['../classWeatherAppMainWindow.html#a7c03726f5d7815cedbd863faa5b40f1b',1,'WeatherAppMainWindow::WeatherAppMainWindow()'],['../classWeatherAppMainWindow.html',1,'WeatherAppMainWindow']]],
   ['weatherchartwidget_5',['weatherchartwidget',['../classWeatherChartWidget.html#aa328fdcd0c7e3390347a34ada0b82a8f',1,'WeatherChartWidget::WeatherChartWidget()'],['../classWeatherChartWidget.html',1,'WeatherChartWidget']]],
   ['weatherdailycard_6',['weatherdailycard',['../classWeatherDailyCard.html',1,'WeatherDailyCard'],['../classWeatherDailyCard.html#aa222dbf00100387afbcd2c2b4efa2d52',1,'WeatherDailyCard::WeatherDailyCard()']]],
@@ -20,7 +20,7 @@ var searchData=
   ['win32platformprocessbroswerdriver_17',['Win32PlatformProcessBroswerDriver',['../classWin32PlatformProcessBroswerDriver.html',1,'']]],
   ['winddirection_18',['windDirection',['../structAppWeatherResult_1_1DailyWeather.html#a5be22399236c7e8590fea089e49a1026',1,'AppWeatherResult::DailyWeather']]],
   ['window_5fsize_19',['window_size',['../structCVTools_1_1DisplayParams.html#aa1430ae3fd50b00f6eb573366e096795',1,'CVTools::DisplayParams']]],
-  ['windscale_20',['windscale',['../classWeatherChartWidget.html#ad917be16972dd0f90aa71df8d0e8e569ad74a32bbd6239ec868d96541f20419ff',1,'WeatherChartWidget::WINDSCALE'],['../structAppWeatherResult_1_1DailyWeather.html#a17265f6cc56388bf07f7bc433bd14d5e',1,'AppWeatherResult::DailyWeather::windScale']]],
+  ['windscale_20',['windscale',['../structAppWeatherResult_1_1DailyWeather.html#a17265f6cc56388bf07f7bc433bd14d5e',1,'AppWeatherResult::DailyWeather::windScale'],['../classWeatherChartWidget.html#ad917be16972dd0f90aa71df8d0e8e569ad74a32bbd6239ec868d96541f20419ff',1,'WeatherChartWidget::WINDSCALE']]],
   ['wip（一些正在开发的wip_20third_20party_20app）_21',['💡 WIP（一些正在开发的WIP Third Party App）',['../md_README.html#autotoc_md11',1,'']]],
   ['wip_20some_20wip_20third_20party_20apps_20under_20development_22',['💡 WIP (some WIP Third Party Apps under development)',['../md_README__EN.html#autotoc_md26',1,'']]]
 ];

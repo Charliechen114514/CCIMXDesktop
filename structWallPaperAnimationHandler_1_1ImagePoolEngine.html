@@ -96,6 +96,7 @@ $(document).ready(function(){initNavTree('structWallPaperAnimationHandler_1_1Ima
 
 <div class="header">
   <div class="summary">
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structWallPaperAnimationHandler_1_1ImagePoolEngine-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">WallPaperAnimationHandler::ImagePoolEngine Struct Reference</div></div>
@@ -108,6 +109,15 @@ image for display)
 
 <p><code>#include &lt;<a class="el" href="wallpaperanimationhandler_8h_source.html">wallpaperanimationhandler.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a7233d0ff5ccec82090638a64cd6a49ff" id="r_a7233d0ff5ccec82090638a64cd6a49ff"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWallPaperAnimationHandler_1_1ImagePoolEngine.html#a7233d0ff5ccec82090638a64cd6a49ff">default_selections</a> (const QStringList &amp;list)</td></tr>
+<tr class="memdesc:a7233d0ff5ccec82090638a64cd6a49ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">default_selections makes the default random selections  <br /></td></tr>
+<tr class="separator:a7233d0ff5ccec82090638a64cd6a49ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4dd91ff6a9e1a682212f6a3a2a17414" id="r_ad4dd91ff6a9e1a682212f6a3a2a17414"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWallPaperAnimationHandler_1_1ImagePoolEngine.html#ad4dd91ff6a9e1a682212f6a3a2a17414">default_index</a> (const QStringList &amp;list)</td></tr>
+<tr class="memdesc:ad4dd91ff6a9e1a682212f6a3a2a17414"><td class="mdescLeft">&#160;</td><td class="mdescRight">default_index makes the default random selections  <br /></td></tr>
+<tr class="separator:ad4dd91ff6a9e1a682212f6a3a2a17414"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a9e00dc9de5cf9ea5a75d757965f9860d" id="r_a9e00dc9de5cf9ea5a75d757965f9860d"><td class="memItemLeft" align="right" valign="top"><a id="a9e00dc9de5cf9ea5a75d757965f9860d" name="a9e00dc9de5cf9ea5a75d757965f9860d"></a>
@@ -122,8 +132,80 @@ std::function&lt; int(QStringList *)&gt;&#160;</td><td class="memItemRight" vali
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="structWallPaperAnimationHandler_1_1ImagePoolEngine.html" title="The ImagePoolEngine class makes a image selection as an engine, WallPaperAnimationHandler requires th...">ImagePoolEngine</a> class makes a image selection as an engine, <a class="el" href="structWallPaperAnimationHandler.html" title="The WallPaperAnimationHandler class is the animation holder for the wallpaper, it is used to animate ...">WallPaperAnimationHandler</a> requires the engine to make the wallpaper switch(that is, select with how to select the
 image for display) </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad4dd91ff6a9e1a682212f6a3a2a17414" name="ad4dd91ff6a9e1a682212f6a3a2a17414"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4dd91ff6a9e1a682212f6a3a2a17414">&#9670;&#160;</a></span>default_index()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int WallPaperAnimationHandler::ImagePoolEngine::default_index </td>
+          <td>(</td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>list</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>default_index makes the default random selections </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list</td><td>the list pool of selectings </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the index offset of the list </dd></dl>
+
+</div>
+</div>
+<a id="a7233d0ff5ccec82090638a64cd6a49ff" name="a7233d0ff5ccec82090638a64cd6a49ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7233d0ff5ccec82090638a64cd6a49ff">&#9670;&#160;</a></span>default_selections()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString WallPaperAnimationHandler::ImagePoolEngine::default_selections </td>
+          <td>(</td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>list</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>default_selections makes the default random selections </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list</td><td>the list pool of selectings </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the selected images </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following files:<ul>
 <li>ui/<a class="el" href="wallpaperanimationhandler_8h_source.html">wallpaperanimationhandler.h</a></li>
+<li>ui/<b>wallpaperanimationhandler.cpp</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

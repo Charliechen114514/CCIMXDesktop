@@ -1,6 +1,6 @@
 var classApplicationWrapper =
 [
-    [ "AppCode", "classApplicationWrapper.html#ad54d8e5509fdc415009be64f28636b82", null ],
+    [ "AppCode", "classApplicationWrapper.html#a4a446d7ea507cc65cf2b259a5918a941", null ],
     [ "ErrorDepatchHook", "classApplicationWrapper.html#a1efcf8d4c820fd4c962319f69ccd50fb", null ],
     [ "HandlingFinHook", "classApplicationWrapper.html#acaaa113a722e3e2f0625d40181b8c794", null ],
     [ "ApplicationWrapper", "classApplicationWrapper.html#a78d2891721e75aa4494a062769ede89f", null ],
@@ -9,8 +9,8 @@ var classApplicationWrapper =
     [ "args", "classApplicationWrapper.html#a40ff6df8511a686c4868a4d443a9ec19", null ],
     [ "bindAppWidget", "classApplicationWrapper.html#a6fd8f6f029b8dba337310bb9750f49ed", null ],
     [ "depatch_app", "classApplicationWrapper.html#afe3d64c4cefd2b7e6c97fb188a6e8488", null ],
+    [ "depatchable", "classApplicationWrapper.html#a62f39c82f208e69452d5edc9c255d816", null ],
     [ "get_app_path", "classApplicationWrapper.html#aed189da24e5c4ef44de2d6fab8d2571a", null ],
-    [ "install_app_code", "classApplicationWrapper.html#adf8a55aaaf2ccbfda855d75d0f4b9053", null ],
     [ "install_args", "classApplicationWrapper.html#a53d1462666f96dc21afb656dde0d0aa8", null ],
     [ "install_error_handler", "classApplicationWrapper.html#a6a6e6252e45edb6ffd839e319ce37a0d", null ],
     [ "install_finhook", "classApplicationWrapper.html#a13662d0c499aa21f837e4f6259ae68d6", null ],

@@ -9,6 +9,7 @@ var hierarchy =
     [ "StackpageSwitcherAnimation::AnimationInfo", "structStackpageSwitcherAnimation_1_1AnimationInfo.html", null ],
     [ "AP3216CData", "structAP3216CData.html", null ],
     [ "AppWeatherDetailedRequest", "structAppWeatherDetailedRequest.html", null ],
+    [ "AppWidgetsSettingsInfoPack", "structAppWidgetsSettingsInfoPack.html", null ],
     [ "CameraDeviceSelector", "classCameraDeviceSelector.html", null ],
     [ "CCIMX_AbstractCPUStateDriver", "classCCIMX__AbstractCPUStateDriver.html", [
       [ "LinuxPlatformCPUStateDriver", "classLinuxPlatformCPUStateDriver.html", null ],
@@ -124,18 +125,22 @@ var hierarchy =
       [ "NetMainWindow", "classNetMainWindow.html", null ],
       [ "PlayListMainWindow", "classPlayListMainWindow.html", null ],
       [ "SaveWindow", "classSaveWindow.html", null ],
+      [ "SettingsWindow", "classSettingsWindow.html", null ],
       [ "SportsHealthWindow", "classSportsHealthWindow.html", null ],
       [ "SystemStateWindow", "classSystemStateWindow.html", null ],
       [ "WeatherAppMainWindow", "classWeatherAppMainWindow.html", null ]
     ] ],
     [ "QObject", null, [
       [ "AP3216CAdapterFactory", "classAP3216CAdapterFactory.html", null ],
-      [ "ApplicationWrapper", "classApplicationWrapper.html", null ],
+      [ "ApplicationWrapper", "classApplicationWrapper.html", [
+        [ "SettingsLaunch", "classSettingsLaunch.html", null ]
+      ] ],
       [ "CCMediaPlayList", "classCCMediaPlayList.html", null ],
       [ "CCPdfChapterCreator", "classCCPdfChapterCreator.html", null ],
       [ "CCPdfDocument", "classCCPdfDocument.html", null ],
       [ "CPUStateFetcher", "classCPUStateFetcher.html", null ],
       [ "CameraCapture", "classCameraCapture.html", null ],
+      [ "ConfigureUiPairs", "structConfigureUiPairs.html", null ],
       [ "DifficultyManager", "classDifficultyManager.html", null ],
       [ "DirentSizeCounter", "classDirentSizeCounter.html", null ],
       [ "DirentSizeWorker", "classDirentSizeWorker.html", null ],
@@ -169,6 +174,7 @@ var hierarchy =
       [ "VideoPlayer", "classVideoPlayer.html", null ],
       [ "VideoPlayer", "classVideoPlayer.html", null ],
       [ "WallPaperAnimationHandler", "structWallPaperAnimationHandler.html", null ],
+      [ "WallPaperEngine", "classWallPaperEngine.html", null ],
       [ "WeatherRequest", "classWeatherRequest.html", [
         [ "AppWeatherRequest", "classAppWeatherRequest.html", null ]
       ] ],
@@ -187,7 +193,10 @@ var hierarchy =
         [ "LocalWeatherCard", "classLocalWeatherCard.html", null ],
         [ "NetCardGadget", "classNetCardGadget.html", null ]
       ] ],
-      [ "AppWidget", "classAppWidget.html", null ],
+      [ "AppWidget", "classAppWidget.html", [
+        [ "SettingsApp", "classSettingsApp.html", null ]
+      ] ],
+      [ "AppWidgetConfigures", "classAppWidgetConfigures.html", null ],
       [ "BlurExample", "classBlurExample.html", null ],
       [ "BonusFunctor", "classBonusFunctor.html", null ],
       [ "CCPdfViewer", "classCCPdfViewer.html", null ],
@@ -264,6 +273,5 @@ var hierarchy =
     ] ],
     [ "VideoPlayerImplFactory", "classVideoPlayerImplFactory.html", null ],
     [ "VideoPlayerInfo", "structVideoPlayerInfo.html", null ],
-    [ "DesktopMainWindow::WallPaperGroup", "structDesktopMainWindow_1_1WallPaperGroup.html", null ],
     [ "Settings::XY< value >", "structSettings_1_1XY.html", null ]
 ];
