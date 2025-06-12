@@ -17,16 +17,28 @@ set(PROJECT_SOURCES
         ImageProcessorWindow.cpp
         ImageProcessorWindow.h
         ImageProcessorWindow.ui
+        image_processing_example/blur_image/BlurExample.h
+        image_processing_example/blur_image/BlurExample.cpp
+        image_processing_example/blur_image/BlurExample.ui
+        image_processing_example/canny_example/CannyExample.h
+        image_processing_example/canny_example/CannyExample.cpp image_processing_example/canny_example/CannyExample.ui
+        image_processing_example/contours_query/ContoursQueryExample.h
+        image_processing_example/contours_query/ContoursQueryExample.cpp
+        image_processing_example/contours_query/ContoursQueryExample.ui
+        image_processing_example/hist_drawer/HistDrawer.h
+        image_processing_example/hist_drawer/HistDrawer.cpp image_processing_example/hist_drawer/HistDrawer.ui
+        image_processing_example/gray_image/GrayExample.h
+        image_processing_example/gray_image/GrayExample.cpp image_processing_example/gray_image/GrayExample.ui
+        image_processing_example/face_detection/FaceDetectionExample.h
+        image_processing_example/face_detection/FaceDetectionExample.cpp
+        image_processing_example/face_detection/FaceDetectionExample.ui
 )
 
 qt_add_executable(ImageProcessor
     MANUAL_FINALIZATION
     ${PROJECT_SOURCES}
-    image_processing_example/gray_image/GrayExample.h image_processing_example/gray_image/GrayExample.cpp image_processing_example/gray_image/GrayExample.ui
     sources/sources_demo.qrc
-    image_processing_example/blur_image/BlurExample.h image_processing_example/blur_image/BlurExample.cpp image_processing_example/blur_image/BlurExample.ui
-    image_processing_example/canny_example/CannyExample.h image_processing_example/canny_example/CannyExample.cpp image_processing_example/canny_example/CannyExample.ui
-    image_processing_example/contours_query/ContoursQueryExample.h image_processing_example/contours_query/ContoursQueryExample.cpp image_processing_example/contours_query/ContoursQueryExample.ui
+
 )
 target_include_directories(ImageProcessor
     PRIVATE ..
@@ -36,6 +48,11 @@ target_link_libraries(ImageProcessor
   PRIVATE Qt${QT_VERSION_MAJOR}::Widgets
   core_library
   ui_interface)
+
+add_custom_command(TARGET ImageProcessor POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E make_directory ${CCIMX_ALL_RELEASE_DIR}
+    COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:ImageProcessor> ${CCIMX_ALL_RELEASE_DIR}
+)
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an

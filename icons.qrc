@@ -21,5 +21,6 @@
         <file>sources/EasyNote.png</file>
         <file>sources/dino_frame1.png</file>
         <file>sources/caculator.png</file>
+        <file>sources/image_processor.png</file>
     </qresource>
 </RCC>

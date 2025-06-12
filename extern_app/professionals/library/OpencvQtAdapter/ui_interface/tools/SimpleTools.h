@@ -29,7 +29,7 @@ public:
         return error.c_str();
     }
 
-    const std::string error;
+    const std::string error; ///< error 
 };
 
 /**

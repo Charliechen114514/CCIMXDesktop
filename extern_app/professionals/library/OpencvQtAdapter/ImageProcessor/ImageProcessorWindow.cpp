@@ -1,6 +1,8 @@
 #include "ImageProcessorWindow.h"
 #include "./ui_ImageProcessorWindow.h"
 #include "ImageProcessor/image_processing_example/contours_query/ContoursQueryExample.h"
+#include "ImageProcessor/image_processing_example/face_detection/FaceDetectionExample.h"
+#include "ImageProcessor/image_processing_example/hist_drawer/HistDrawer.h"
 #include "image_processing_example/blur_image/BlurExample.h"
 #include "image_processing_example/canny_example/CannyExample.h"
 #include "image_processing_example/gray_image/GrayExample.h"
@@ -20,17 +22,23 @@ ImageProcessorWindow::~ImageProcessorWindow() {
 void ImageProcessorWindow::setup_panel() {
     ToolsStackedWidget::PagePackage pack[] = {
         { .name = "Gray Image",
-          .icon = QIcon(),
+          .icon = QIcon(":/icons/greyscale.png"),
           .widget = new GrayExample(this) },
         { .name = "Blur Image",
-          .icon = QIcon(),
+          .icon = QIcon(":/icons/blur.png"),
           .widget = new BlurExample(this) },
         { .name = "Canny Image",
-          .icon = QIcon(),
+          .icon = QIcon(":/icons/canny.png"),
           .widget = new CannyExample(this) },
         { .name = "Find Contours",
-          .icon = QIcon(),
-          .widget = new ContoursQueryExample(this) }
+          .icon = QIcon(":/icons/contours.png"),
+          .widget = new ContoursQueryExample(this) },
+        { .name = "Hist Creator",
+          .icon = QIcon(":/icons/histquery.png"),
+          .widget = new HistDrawer(this) },
+        { .name = "Face Detector",
+          .icon = QIcon(":/icons/face_detection.png"),
+          .widget = new FaceDetectionExample(this) }
     };
 
     for (const auto& each : pack) {

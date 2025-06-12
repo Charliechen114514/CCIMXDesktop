@@ -6,6 +6,11 @@
 struct TreeNodeBase
 {
     virtual ~TreeNodeBase() = default;
+        /**
+     * @brief evaluate the expressions
+     * 
+     * @return double 
+     */
     virtual double evaluate() const = 0;
 };
 

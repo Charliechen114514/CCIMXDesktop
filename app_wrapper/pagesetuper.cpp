@@ -174,6 +174,13 @@ QList<AppWidget*> PageSetuper::create_real_app(DesktopMainWindow* mainWindow) {
         mainWindow));
 #endif
 
+#ifdef INCLUDE_IMAGE_PROCESSOR
+    req.push_back(make_up_request(
+        _EXTERNAPP_INSTALL_DIR "/ImageProcessor",
+        ":/icons/sources/image_processor.png",
+        "ImageProcessor",
+        mainWindow));
+#endif
 	return PageSetuper::create_one_app_only_page_append(mainWindow, req);
 }
 

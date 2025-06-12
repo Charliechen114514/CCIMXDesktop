@@ -39,6 +39,7 @@ Now, CCIMXDesktop supports one-click builds including:
 - 🛜 CCNetHelper (supports network card information viewing, IP port scanning and basic test IP connection capabilities)
 - 🦖Dinasour Game! (Yes, that Google Dinasour Game, implemented with Qt6 Widgets :) )
 - 🧮Caculator pocket calculator (standard calculator)
+- 🤖ImageProcessor (image processor local processing of images and simple reasoning (face recognition))
 
 ------
 
@@ -86,9 +87,9 @@ The document has been automatically deployed through GitHub Actions, visit: [CCI
 
 ## 💡 WIP (some WIP Third Party Apps under development)
 
-- 🤖 Image processor local processing of images and simple reasoning (face recognition)
-
 - ⚙ Basic settings (similar to IOS, but many are more ornamental)
+
+- ⚙ Improve Desktop to move towards a truly usable Desktop
 
 ## 💡 Future plans
 
@@ -98,7 +99,7 @@ The document has been automatically deployed through GitHub Actions, visit: [CCI
 
 - ⏰ Alarm clock APP
 - 🔌 Serial port assistant
-- ✅ Task List
+- ✅ Task list
 
 ------
 
@@ -106,4 +107,4 @@ The document has been automatically deployed through GitHub Actions, visit: [CCI
 
 ![License](https://img.shields.io/badge/License-MIT-brightgreen)
 
-This project is based on the MIT license, welcome to port, modify and use at will!
+This project is based on the MIT license, and you are welcome to port, modify and use it at will!

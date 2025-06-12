@@ -9,10 +9,19 @@ class MainWindow;
 }
 QT_END_NAMESPACE
 
+/**
+ * @brief MainWindow for example show
+ * 
+ */
 class MainWindow : public QMainWindow {
 	Q_OBJECT
 
 public:
+	/**
+	 * @brief Construct a new Main Window object
+	 * 
+	 * @param parent 
+	 */
 	MainWindow(QWidget* parent = nullptr);
 	~MainWindow();
 

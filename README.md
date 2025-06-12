@@ -39,6 +39,7 @@
 - 🛜 CCNetHelper（支持网卡信息查看，IP端口扫描和基本测试IP打通能力）
 - 🦖Dinasour Game!（是的，就是那个Google Dinasour Game，用Qt6 Widgets实现的版本 :) ）
 - 🧮Caculator 口袋计算器（标准的计算器）
+- 🤖ImageProcessor（图像处理器本地处理图像和做简单的推理（人脸识别））
 
 ------
 
@@ -84,8 +85,8 @@
 
 ## 💡 WIP（一些正在开发的WIP Third Party App）
 
-- 🤖 图像处理器本地处理图像和做简单的推理（人脸识别）
 - ⚙ 基础的设置（类似IOS，但是很多是观赏性较为强）
+- ⚙ 完善Desktop向真正可用的Desktop推进
 
 ## 💡 未来计划
 

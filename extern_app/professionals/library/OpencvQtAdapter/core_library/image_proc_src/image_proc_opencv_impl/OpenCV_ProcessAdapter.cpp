@@ -57,3 +57,76 @@ void OpenCV_ProcessAdapter::processContoursDrawSession(CVImageImpl* drawmap, CVI
     }
     drawer->raw_image = result;
 }
+
+void OpenCV_ProcessAdapter::generate_hist(CVImageImpl* drawmap, const CVImageImpl* src) {
+    const CVImageOpencvImpl* src_handle = dynamic_cast<const CVImageOpencvImpl*>(src);
+    CVImageOpencvImpl* drawer = dynamic_cast<CVImageOpencvImpl*>(drawmap);
+
+    constexpr int histSize = 256;
+    float range[] = { 0, histSize };
+    const float* histRange = { range };
+    cv::Mat hist;
+    cv::Mat cloner = src_handle->raw_image.clone();
+    cv::cvtColor(cloner, cloner, cv::COLOR_BGR2GRAY);
+    cv::calcHist(&cloner, 1, 0, cv::Mat(), hist, 1, &histSize, &histRange);
+
+    constexpr int histW = 512;
+    constexpr int histH = 400;
+    int binW = cvRound((double)histW / histSize);
+    cv::Mat histImage(histH, histW, CV_8UC3, cv::Scalar(0, 0, 0));
+
+    cv::normalize(hist, hist, 0, histImage.rows, cv::NORM_MINMAX);
+    for (int i = 1; i < histSize; i++) {
+        cv::line(histImage,
+                 cv::Point(binW * (i - 1), histH - cvRound(hist.at<float>(i - 1))),
+                 cv::Point(binW * i, histH - cvRound(hist.at<float>(i))),
+                 cv::Scalar(255, 255, 255), 2);
+    }
+    drawer->raw_image = histImage.clone();
+}
+
+#include <QString>
+#include <QTemporaryFile>
+#include <stdexcept>
+bool loadCascadeFromQrc(cv::CascadeClassifier& classifier, const QString& qrcPath) {
+    Q_INIT_RESOURCE(sources);
+    QFile file(qrcPath);
+
+    if (!file.open(QIODevice::ReadOnly)) {
+        return false;
+    }
+
+    QTemporaryFile tempFile;
+    if (!tempFile.open()) {
+        return false;
+    }
+
+    tempFile.write(file.readAll());
+    tempFile.flush();
+
+    return classifier.load(tempFile.fileName().toStdString());
+}
+
+void OpenCV_ProcessAdapter::draw_faces(CVImageImpl* drawmap, const CVImageImpl* src) {
+    const CVImageOpencvImpl* src_handle = dynamic_cast<const CVImageOpencvImpl*>(src);
+    CVImageOpencvImpl* drawer = dynamic_cast<CVImageOpencvImpl*>(drawmap);
+
+    cv::CascadeClassifier face_cascade;
+    if (!loadCascadeFromQrc(face_cascade, ":/models/haarcascade_frontalface_default.xml")) {
+        throw std::runtime_error("Failed to load the model file");
+    }
+
+    cv::Mat gray;
+    cv::Mat cloner = src_handle->raw_image.clone();
+    cv::cvtColor(cloner, gray, cv::COLOR_BGR2GRAY);
+    cv::equalizeHist(gray, gray);
+
+    std::vector<cv::Rect> faces;
+    face_cascade.detectMultiScale(gray, faces, 1.1, 4, 0, cv::Size(30, 30));
+
+    for (size_t i = 0; i < faces.size(); ++i) {
+        cv::rectangle(cloner, faces[i], cv::Scalar(0, 255, 0), 2);
+    }
+
+    drawer->raw_image = cloner;
+}

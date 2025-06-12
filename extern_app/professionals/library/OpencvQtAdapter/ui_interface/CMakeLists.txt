@@ -18,15 +18,15 @@ set(PROJECT_SOURCES
     tool_left_widgets/ToolLeftWidgets.h
     tool_left_widgets/ToolLeftWidgets.cpp
     tools/SimpleTools.h tools/SimpleTools.cpp
-)
-
-add_library(ui_interface
-    ${PROJECT_SOURCES}
-    sources.qrc
     tools_stacked_widget/ToolsStackedWidget.h tools_stacked_widget/ToolsStackedWidget.cpp tools_stacked_widget/ToolsStackedWidget.ui
     convinients/ImageProcessingWidget.h convinients/ImageProcessingWidget.cpp convinients/ImageProcessingWidget.ui
     convinients/ImageResultDisplayer.h convinients/ImageResultDisplayer.cpp convinients/ImageResultDisplayer.ui
     convinients/ImageLabel.cpp convinients/ImageLabel.h
+    ui_sources.qrc
+)
+
+add_library(ui_interface
+    ${PROJECT_SOURCES}
 )
 
 target_include_directories(ui_interface PRIVATE

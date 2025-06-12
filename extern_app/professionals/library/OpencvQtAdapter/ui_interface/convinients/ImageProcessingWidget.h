@@ -6,6 +6,10 @@ namespace Ui {
 class ImageProcessingWidget;
 }
 
+/**
+ * @brief ImageProcessingWidget
+ * 
+ */
 class ImageProcessingWidget : public QWidget {
 	Q_OBJECT
     /**
@@ -53,6 +57,11 @@ signals:
      * request processing
      */
     void request_processing();
+    /**
+     * @brief image load signals and carry the image for loading
+     * 
+     * @param image 
+     */
     void image_loaded(const QImage& image);
 
 private:

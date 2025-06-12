@@ -4,16 +4,24 @@
 #include "GrayProcessor.h"
 #include "image_proc_base.h"
 #include <utility>
+/**
+ * @namespace Processor::Canny
+ * @brief settings
+ * 
+ */
 namespace Processor {
 namespace Canny {
-    static constexpr unsigned int LOW = 50;
-    static constexpr unsigned int HIGH = 150;
+    static constexpr unsigned int LOW = 50; ///< LOW Thredholds
+    static constexpr unsigned int HIGH = 150; ///< HIGH Thredholds
 
-    static constexpr unsigned int def_blurksize = 5;
-    static constexpr float thred = 1.4;
+    static constexpr unsigned int def_blurksize = 5; ///< ksize
+    static constexpr float thred = 1.4; ///< floaty thred
 }
 }
-
+/**
+ * @brief CannyProcessor process Canny lol
+ * 
+ */
 class CannyProcessor : public ImageProc {
 public:
     CannyProcessor()
@@ -35,11 +43,11 @@ public:
     std::pair<int, int> threholds_pair = {
         Processor::Canny::LOW,
         Processor::Canny::HIGH
-    };
+    }; ///< pair controller
 
 private:
-    GrayProcessor gray;
-    GuassainBlur blur;
+    GrayProcessor gray; ///< gray processor
+    GuassainBlur blur; ///< blur processor
 };
 
 #endif // CANNYPROCESSOR_H

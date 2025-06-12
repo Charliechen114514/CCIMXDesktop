@@ -4,5 +4,11 @@
     </qresource>
     <qresource prefix="/icons">
         <file>quit.png</file>
+        <file>blur.png</file>
+        <file>canny.png</file>
+        <file>contours.png</file>
+        <file>face_detection.png</file>
+        <file>greyscale.png</file>
+        <file>histquery.png</file>
     </qresource>
 </RCC>

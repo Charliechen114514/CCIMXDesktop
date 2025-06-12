@@ -31,6 +31,7 @@ message(STATUS "LED Controller Built status due to INCLUDE_LED_APP:             
 message(STATUS "Environment Built status due to INCLUDE_ENV_APP:                ${INCLUDE_ENV_APP}")
 message(STATUS "Sports Health Built status due to INCLUDE_SPORT_APP:            ${INCLUDE_SPORT_APP}")
 message(STATUS "OpenCV Adapters Built status due to INCLUDE_OPENCV_QT_ADAPTER:  ${INCLUDE_OPENCV_QT_ADAPTER}")
+message(STATUS "Image Processor Built status due to INCLUDE_IMAGE_PROCESSOR:    ${INCLUDE_IMAGE_PROCESSOR}")
 message(STATUS "Net Helper App Built status due to INCLUDE_NETHELPER_APP:       ${INCLUDE_NETHELPER_APP}")
 message(STATUS "EasyNote Built due to INCLUDE_EASYNOTE_APP:                     ${INCLUDE_EASYNOTE_APP}")
 message(STATUS "-----------------------------------------------------")

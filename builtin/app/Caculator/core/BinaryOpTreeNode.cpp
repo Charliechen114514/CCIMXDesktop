@@ -1,6 +1,10 @@
 #include "BinaryOpTreeNode.h"
 #include <QMap>
 
+/**
+ * @brief this is a binary operator mappings
+ * 
+ */
 static const QMap<QString, std::function<double(double, double)>> mappings = {
     { "+", [](double a, double b) -> double { return a + b; } },
     { "-", [](double a, double b) -> double { return a - b; } },

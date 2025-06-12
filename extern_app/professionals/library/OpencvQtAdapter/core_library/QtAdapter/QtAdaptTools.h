@@ -18,8 +18,20 @@ namespace QtAdaptTools {
  */
 QImage toQImage(const CVImage& cvImage);
 
+/**
+ * @brief toDisplayableImage converts to the direct displayable
+ * 
+ * @param cvImage the CVImage to convert
+ * @return QImage 
+ */
 QImage toDisplayableImage(const CVImage& cvImage);
 
+/**
+ * @brief fromRGBQImage trans image from QImage to CVImage
+ * 
+ * @param image 
+ * @return CVImage 
+ */
 CVImage fromRGBQImage(const QImage& image);
 
 }

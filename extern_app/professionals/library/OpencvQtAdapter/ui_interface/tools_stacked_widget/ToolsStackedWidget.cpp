@@ -5,7 +5,7 @@ ToolsStackedWidget::ToolsStackedWidget(QWidget* parent)
     : QWidget(parent)
     , ui(new Ui::ToolsStackedWidget) {
 	ui->setupUi(this);
-    Q_INIT_RESOURCE(sources);
+    Q_INIT_RESOURCE(ui_sources);
 }
 
 ToolsStackedWidget::~ToolsStackedWidget() {

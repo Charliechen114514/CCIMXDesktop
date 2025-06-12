@@ -40,15 +40,17 @@ set(ImageProcSrc
     image_proc/CannyProcessor.h
     image_proc_src/CannyProcessor.cpp
     image_proc/ContoursQueryProc.h
-    image_proc_src/ContoursQueryProc.cpp)
+    image_proc_src/ContoursQueryProc.cpp
+    image_proc/HistCreator.h
+    image_proc_src/HistCreator.cpp
+    image_proc/FaceDetector.h image_proc_src/FaceDetector.cpp)
 
 add_library(core_library STATIC
     ${CVImageSrc}
     ${VideoPlayerSrc}
     ${QtAdapter}
     ${ImageProcSrc}
-
-
+    sources/sources.qrc
 )
 
 target_include_directories(
