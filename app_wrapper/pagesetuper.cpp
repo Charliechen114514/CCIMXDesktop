@@ -1,17 +1,19 @@
 #include "pagesetuper.h"
 #include "appwidget.h"
+#include "desktop_settings.h"
 #include "desktopmainwindow.h"
 #include "downdockwidget.h"
 #include <QGridLayout>
 #include <QStackedWidget>
-
 /* create for a page append */
 QList<AppWidget*>
 PageSetuper::create_one_app_only_page_append(
     DesktopMainWindow* mainWindow,
-    const QList<PageSetupSessionRequest>& sessionRequest) {
+    const QList<PageSetupSessionRequest>& sessionRequest,
+    const QString& pageName) {
     QList<AppWidget*> appsWidgets;
     QWidget* page = new QWidget(mainWindow);
+    page->setObjectName(pageName);
     QGridLayout* gridLayout = new QGridLayout(page);
     gridLayout->setSpacing(20);
     gridLayout->setContentsMargins(30, 30, 30, 30);
@@ -67,12 +69,15 @@ PageSetuper::PageSetupSessionRequest make_up_request(
 
 QList<AppWidget*> PageSetuper::build_pesudo_page(
     const QString& pixpath, int how_many, DesktopMainWindow* mainWindow) {
-	QList<PageSetuper::PageSetupSessionRequest> req;
+    static int pesudo_page_index = 0;
+
+    QList<PageSetuper::PageSetupSessionRequest> req;
 	for (int i = 0; i < how_many; i++) {
 		req.push_back({ pixpath, QString::number(i), nullptr });
 	}
 
-	return PageSetuper::create_one_app_only_page_append(mainWindow, req);
+    return PageSetuper::create_one_app_only_page_append(
+        mainWindow, req, "pesudo_page" + QString::number(pesudo_page_index));
 }
 
 QList<AppWidget*> PageSetuper::create_real_app(DesktopMainWindow* mainWindow) {
@@ -181,7 +186,7 @@ QList<AppWidget*> PageSetuper::create_real_app(DesktopMainWindow* mainWindow) {
         "ImageProcessor",
         mainWindow));
 #endif
-	return PageSetuper::create_one_app_only_page_append(mainWindow, req);
+    return PageSetuper::create_one_app_only_page_append(mainWindow, req, "realapp_page");
 }
 
 QList<AppWidget*> PageSetuper::create_builtin_apps(DesktopMainWindow* mainWindow) {
@@ -201,7 +206,7 @@ QList<AppWidget*> PageSetuper::create_builtin_apps(DesktopMainWindow* mainWindow
         "SimpleDrawer",
         mainWindow));
 
-	req.push_back(make_up_request(
+    req.push_back(make_up_request(
         _EXTERNAPP_INSTALL_DIR "/CCIMXNoter",
         ":/icons/sources/notepad.png",
         "CCIMXNoter",
@@ -213,11 +218,44 @@ QList<AppWidget*> PageSetuper::create_builtin_apps(DesktopMainWindow* mainWindow
         "ImageWalker",
         mainWindow));
 
-    req.push_back(make_up_request(
+	req.push_back(make_up_request(
         _EXTERNAPP_INSTALL_DIR "/Caculator",
         ":/icons/sources/caculator.png",
         "Caculator",
         mainWindow));
 
-	return PageSetuper::create_one_app_only_page_append(mainWindow, req);
+    return PageSetuper::create_one_app_only_page_append(
+        mainWindow, req, "builtin_page");
+}
+
+namespace {
+QWidget* query_target(const QString& name, QStackedWidget* stacked_widget) {
+    QWidget* target = nullptr;
+    const int count = stacked_widget->count();
+    for (int i = 0; i < count; i++) {
+        QWidget* iterate = stacked_widget->widget(i);
+        if (iterate->objectName() == name) {
+            target = iterate;
+            break;
+        }
+    }
+    return target;
+}
+}
+
+#include "builtin/window/settings_window/fake_app_entry/SettingsApp.h"
+QList<AppWidget*> PageSetuper::create_internal_apps(DesktopMainWindow* mainWindow) {
+    /* append to the page of builtins */
+    QWidget* builtin_page = query_target("builtin_page", mainWindow->stackedWidget());
+    if (!builtin_page) {
+        qCritical() << "Can not find the builtin page! Settings will not be created!";
+        return {};
+    }
+    SettingsApp* settings_app = new SettingsApp(mainWindow);
+    QObject::connect(settings_app, &SettingsApp::indicate_open_settings_window,
+                     mainWindow, &DesktopMainWindow::open_settings_window);
+    QObject::connect(settings_app, &AppWidget::postAppStatus,
+                     mainWindow, &DesktopMainWindow::handle_app_status);
+    builtin_page->layout()->addWidget(settings_app);
+    return { settings_app };
 }

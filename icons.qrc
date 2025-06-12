@@ -2,9 +2,7 @@
     <qresource prefix="/icons">
         <file>sources/def_icon.png</file>
         <file>sources/def_icon2.png</file>
-        <file>sources/bg.png</file>
         <file>sources/pdf_browser.png</file>
-        <file>sources/bg2.png</file>
         <file>sources/weather_app.png</file>
         <file>sources/camera_app.png</file>
         <file>sources/file_ramber.png</file>
@@ -22,5 +20,6 @@
         <file>sources/dino_frame1.png</file>
         <file>sources/caculator.png</file>
         <file>sources/image_processor.png</file>
+        <file>sources/settings.png</file>
     </qresource>
 </RCC>

@@ -4,6 +4,7 @@
 #include <QFile>
 #include <QFileInfo>
 #include <QProcess>
+#include <QUuid>
 void ApplicationWrapper::do_fin_hook(int exitCode, QProcess::ExitStatus status) {
 	/* no matter what, process should be delete */
 	appProcess->deleteLater();
@@ -28,13 +29,14 @@ ApplicationWrapper::
     ApplicationWrapper(QObject* parent, DesktopMainWindow* desktopWindow)
     : QObject(parent) {
     mainWindow = desktopWindow;
+    internal_app_code = QUuid::createUuid().toString(QUuid::WithoutBraces);
 }
 
 void ApplicationWrapper::depatch_app() {
 	/* precheck is passed then */
 	appProcess = new QProcess(this);
 	connect(appProcess, &QProcess::finished,
-			this, &ApplicationWrapper::do_fin_hook);
+            this, &ApplicationWrapper::do_fin_hook);
 
 	/* hide the window for the new process start */
 	mainWindow->hide();

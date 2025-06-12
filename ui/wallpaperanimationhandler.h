@@ -17,8 +17,8 @@ struct WallPaperAnimationHandler : public QObject {
 public:
 	/**
 	 * @brief Construct a new Wall Paper Animation Handler object
-	 * 
-	 * @param parent 
+     *
+     * @param parent
 	 */
     explicit WallPaperAnimationHandler(QObject* parent = nullptr);
 
@@ -35,7 +35,19 @@ public:
 		 * image list, if not set, then it will be random as default issue
 		 */
 		std::function<int(QStringList*)> selector { nullptr };
-	};
+        /**
+         * @brief default_selections makes the default random selections
+         * @param list the list pool of selectings
+         * @return the selected images
+         */
+        static QString default_selections(const QStringList& list);
+        /**
+         * @brief default_index makes the default random selections
+         * @param list the list pool of selectings
+         * @return the index offset of the list
+         */
+        static int default_index(const QStringList& list);
+    };
 
 	/**
 	 * @brief process_switch makes the real switch async, invoke this
@@ -44,8 +56,8 @@ public:
 	 * @param engine the engine switching requires
 	 */
 	static void process_switch(
-		const DesktopMainWindow::WallPaperGroup& group,
-		ImagePoolEngine& engine);
+        const WallPaperEngine* group,
+        ImagePoolEngine& engine);
 };
 
 #endif // WALLPAPERANIMATIONHANDLER_H

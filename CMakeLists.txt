@@ -65,12 +65,13 @@ add_compile_definitions(
 add_subdirectory(builtin/app)
 add_subdirectory(extern_app)
 
+# As the configuration cmake included, configure the template desktop_settings_sessions
+configure_file(
+    ${CMAKE_CURRENT_SOURCE_DIR}/configs/desktop_settings.h.in
+    ${CMAKE_CURRENT_BINARY_DIR}/generated/desktop_settings.h)
+
+
 message(STATUS "[CCIMXDesktop]: About to check the CCIMXDesktop Main Face Dependencies...")
-include_directories(
-    .
-    ./ui
-    ./builtin/ui
-)
 
 set(DesktopMain
     ui/desktopmainwindow.cpp
@@ -94,6 +95,11 @@ set(UiSubs
 set(CoreSubs
     core/coretools.h core/coretools.cpp)
 
+set(WallPaperSrc
+    core/wallpaper/WallPaperEngine.h core/wallpaper/WallPaperEngine.cpp
+    core/wallpaper/WallPaperUtilsColliections.h core/wallpaper/WallPaperUtilsColliections.cpp
+    sources/default_backgrounds/defaule_background_sources.qrc)
+
 set(BuiltInPackage
     builtin/page/homepage.h builtin/page/homepage.cpp builtin/page/homepage.ui
     builtin/ui/pagefactory.h builtin/ui/pagefactory.cpp
@@ -112,6 +118,15 @@ set(BUILT_IN_ICM20608_Support
     builtin/core/icm20608/icm20608_adapter.cpp
     builtin/core/icm20608/icm20608.h)
 
+set(BuiltInWindow_SettingsSrc
+    builtin/window/settings_window/SettingsWindow.h
+    builtin/window/settings_window/SettingsWindow.cpp
+    builtin/window/settings_window/SettingsWindow.ui
+    builtin/window/settings_window/cores/ConfigureUiPairs.h
+    builtin/window/settings_window/cores/ConfigureUiPairs.cpp
+    builtin/window/settings_window/config_items/appwidgets_globalconfig/AppWidgetConfigures.h
+    builtin/window/settings_window/config_items/appwidgets_globalconfig/AppWidgetConfigures.cpp
+    builtin/window/settings_window/config_items/appwidgets_globalconfig/AppWidgetConfigures.ui)
 
 qt_add_executable(CCIMX_Desktop
     WIN32 MACOSX_BUNDLE
@@ -120,12 +135,17 @@ qt_add_executable(CCIMX_Desktop
     ${AppWrapper}
     ${UiSubs}
     ${CoreSubs}
+    ${WallPaperSrc}
     ${BuiltInPackage}
     ${BONUS_APPCARD}
+    ${BuiltInWindow_SettingsSrc}
     ${BUILT_IN_ICM20608_Support}
     icons.qrc
     builtin/sources/localweather/localweather.qrc
-    desktop_settings.h
+    builtin/sources/other_icons.qrc
+    builtin/window/settings_window/fake_app_entry/SettingsApp.h builtin/window/settings_window/fake_app_entry/SettingsApp.cpp
+    builtin/window/settings_window/cores/SettingsPack.h
+
 )
 
 add_custom_command(TARGET CCIMX_Desktop POST_BUILD
@@ -139,11 +159,12 @@ target_link_libraries(CCIMX_Desktop
         Qt::Widgets
         Qt6::Network
 )
-
-target_compile_definitions(
-    CCIMX_Desktop PRIVATE
-    _EXTERNAPP_INSTALL_DIR=\"${CCIMX_EXTERNAL_APP_BASE_DIR}\"
-)
+target_include_directories(CCIMX_Desktop
+    PRIVATE
+    .
+    ./ui
+    ./builtin/ui
+    ${CMAKE_CURRENT_BINARY_DIR}/generated)
 
 include(GNUInstallDirs)
 

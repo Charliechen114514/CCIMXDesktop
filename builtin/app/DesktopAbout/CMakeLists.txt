@@ -16,6 +16,7 @@ fast_project_message("we will setup application for the desktop version: ${CCIMX
 file(COPY ${CMAKE_SOURCE_DIR}/README.md
      DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}/sources/doc)
 
+# Configuring About sessions
 configure_file(
     ${CMAKE_CURRENT_SOURCE_DIR}/template/version.h.in
     ${CMAKE_CURRENT_BINARY_DIR}/generated/version.h
@@ -43,33 +44,16 @@ set(PROJECT_SOURCES
         ui/DesktopAboutMainWidget.h
         ui/DesktopAboutMainWidget.cpp
         ui/DesktopAboutMainWidget.ui
+        ui/ReadMeWidget.h
+        ui/ReadMeWidget.cpp
+        ui/ReadMeWidget.ui
 )
-
-if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
 
 qt_add_executable(DesktopAbout
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
         ${SRC_FILE}
-        ui/ReadMeWidget.h ui/ReadMeWidget.cpp ui/ReadMeWidget.ui
-    )
-# Define target properties for Android with Qt 6 as:
-#    set_property(TARGET DesktopAbout APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
-#                 ${CMAKE_CURRENT_SOURCE_DIR}/android)
-# For more information, see https://doc.qt.io/qt-6/qt-add-executable.html#target-creation
-else()
-    if(ANDROID)
-        add_library(DesktopAbout SHARED
-            ${PROJECT_SOURCES}
-        )
-# Define properties for Android with Qt 5 after find_package() calls as:
-#    set(ANDROID_PACKAGE_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/android")
-    else()
-        add_executable(DesktopAbout
-            ${PROJECT_SOURCES}
-        )
-    endif()
-endif()
+)
 
 target_link_libraries(DesktopAbout PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
 # includ the generating version files

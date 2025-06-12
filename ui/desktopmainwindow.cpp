@@ -2,12 +2,11 @@
 #include "app_wrapper/applicationwrapper.h"
 #include "app_wrapper/pagesetuper.h"
 #include "builtin/ui/pagefactory.h"
-#include "core/coretools.h"
-#include "desktop_settings.h"
+#include "builtin/window/settings_window/SettingsWindow.h"
+#include "core/wallpaper/WallPaperEngine.h"
 #include "ui/appcardwidget.h"
 #include "ui/desktoptoast.h"
 #include "ui/stackpage_switcher_animation.h"
-#include "ui/wallpaperanimationhandler.h"
 #include "ui_desktopmainwindow.h"
 #include <QGridLayout>
 #include <QLabel>
@@ -24,42 +23,12 @@ DesktopMainWindow::DesktopMainWindow(QWidget* parent)
 void DesktopMainWindow::post_setupui() {
 	ui->downdock->set_parent_window(this);
 	toast = new DesktopToast(this);
-	setup_bg_image();
-}
-
-void DesktopMainWindow::setup_bg_image() {
-	wallPaperGroup.wallpaperLabel = new QLabel(this);
-	wallPaperGroup.wallpaperLabel->setScaledContents(true);
-	wallPaperGroup.wallpaperLabel->lower();
-	wallPaperGroup.wallpaperLabel->setGeometry(0, 0, width(), height());
-
-	wallPaperGroup.bufferpaperLabel = new QLabel(this);
-	wallPaperGroup.bufferpaperLabel->setScaledContents(true);
-	wallPaperGroup.bufferpaperLabel->lower();
-	wallPaperGroup.bufferpaperLabel->setGeometry(0, 0, width(), height());
-	wallPaperGroup.bufferpaperLabel->hide();
-	wallPaperGroup.shoule_be_lower = centralWidget();
-	/* now collect all the images */
-	image_lists << CoreTools::enumeratefiles(DEFAULT_DESKTOP_PLACES, { "*.png" });
-	if (!image_lists.isEmpty()) {
-		wallPaperGroup.wallpaperLabel->setPixmap(QPixmap(image_lists[0]));
-	}
-	wallPaperGroup.invoke_switch_timer = new QTimer(this);
-	wallPaperGroup.invoke_switch_timer->setInterval(switch_bg_time);
-	connect(wallPaperGroup.invoke_switch_timer, &QTimer::timeout,
-			this, &DesktopMainWindow::invoke_switch_bgpage);
-	wallPaperGroup.invoke_switch_timer->start();
+    wallpaper_engine = new WallPaperEngine(this);
+    settingsWindow = new SettingsWindow(this);
 }
 
 DesktopMainWindow::~DesktopMainWindow() {
 	delete ui;
-}
-
-void DesktopMainWindow::invoke_switch_bgpage() {
-	/* switch the background page */
-	WallPaperAnimationHandler::ImagePoolEngine engine;
-	engine.image_list = &this->image_lists;
-	WallPaperAnimationHandler::process_switch(this->wallPaperGroup, engine);
 }
 
 void DesktopMainWindow::setup_apps() {
@@ -67,12 +36,9 @@ void DesktopMainWindow::setup_apps() {
 	QWidget* homePage = PageFactory::build_home_page(this);
 	PageSetuper::create_specified_page(ui->stackedWidget, homePage);
 
+    app_widgets << PageSetuper::create_builtin_apps(this);
+    app_widgets << PageSetuper::create_internal_apps(this);
 	app_widgets << PageSetuper::create_real_app(this);
-	app_widgets << PageSetuper::create_builtin_apps(this);
-
-	app_widgets << PageSetuper::build_pesudo_page(":/icons/sources/def_icon.png", 8, this);
-	app_widgets << PageSetuper::build_pesudo_page(":/icons/sources/def_icon2.png", 8, this);
-
 	setup_default_dock();
 }
 
@@ -87,6 +53,10 @@ void DesktopMainWindow::invoke_appcards_init() {
 	for (const auto& each_app_cards : std::as_const(this->app_cards)) {
 		each_app_cards->invoke_preLaunch_work();
 	}
+}
+
+QWidget* DesktopMainWindow::centralWidget() {
+    return ui->centralwidget;
 }
 
 void DesktopMainWindow::handle_app_status(AppWidget::AppStatus status) {
@@ -104,13 +74,30 @@ void DesktopMainWindow::handle_app_status(AppWidget::AppStatus status) {
 	}
 }
 
+void DesktopMainWindow::open_settings_window() {
+    if (settingsWindow->isVisible()) {
+        qDebug() << "settings window is already visible";
+        return;
+    }
+
+    settingsWindow->show();
+}
+
+void DesktopMainWindow::process_set_appwidgets_config(const AppWidgetsSettingsInfoPack& info) {
+    for (const auto& each : app_widgets) {
+        each->setFontColor(info.fontColor);
+        each->setFont(info.font);
+        each->setIconSize(info.iconSize);
+    }
+}
+
 QStackedWidget* DesktopMainWindow::stackedWidget() const {
 	return ui->stackedWidget;
 }
 
 void DesktopMainWindow::post_show() {
 	connect(this, &DesktopMainWindow::deptach_app_cards_init,
-			this, &DesktopMainWindow::invoke_appcards_init);
+            this, &DesktopMainWindow::invoke_appcards_init);
 
 	emit deptach_app_cards_init();
 }
@@ -163,11 +150,5 @@ void DesktopMainWindow::to_prev_page() {
 void DesktopMainWindow::resizeEvent(QResizeEvent* event) {
 	QMainWindow::resizeEvent(event);
 	/* makeups the full screen */
-	if (wallPaperGroup.wallpaperLabel) {
-		wallPaperGroup.wallpaperLabel->setGeometry(0, 0, width(), height());
-	}
-
-	if (wallPaperGroup.bufferpaperLabel) {
-		wallPaperGroup.bufferpaperLabel->setGeometry(0, 0, width(), height());
-	}
+    wallpaper_engine->process_resize(this);
 }

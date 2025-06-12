@@ -41,11 +41,13 @@ static constexpr const unsigned int APP_ICON_SZ = 48;
  * @param mainWindow: the MainWindow waiting for placing
  * @param sessionRequest
  * @param wrappers appwrapper for the bind
+ * @param pageName indicate the page
  * @return the ui handles of the
  */
 QList<AppWidget*> create_one_app_only_page_append(
     DesktopMainWindow* mainWindow,
-    const QList<PageSetupSessionRequest>& sessionRequest);
+    const QList<PageSetupSessionRequest>& sessionRequest,
+    const QString& pageName);
 
 /**
  * @brief create_real_app is the main function to create the real applications
@@ -60,6 +62,13 @@ QList<AppWidget*> create_real_app(DesktopMainWindow* mainWindow);
  * @return
  */
 QList<AppWidget*> create_builtin_apps(DesktopMainWindow* mainWindow);
+
+/**
+ * @brief create_internal_apps creates the internal apps like Settings, which do not launch apps
+ * @param mainWindow the window apps created
+ * @return
+ */
+QList<AppWidget*> create_internal_apps(DesktopMainWindow* mainWindow);
 
 /**
  * @brief create_specified_page is the helper function to add a page

@@ -1,19 +1,19 @@
 #include "downdockwidget.h"
+#include "app_wrapper/applicationwrapper.h"
 #include "app_wrapper/pagesetuper.h"
 #include "appwidget.h"
 #include "ui/desktopmainwindow.h"
 #include "ui_downdockwidget.h"
 #include <QGraphicsDropShadowEffect>
 #include <QHBoxLayout>
-
 namespace {
 AppWidget* mirror_app(const AppWidget* app, DesktopMainWindow* w) {
 	AppWidget* copy = new AppWidget(
-		app->icon().scaled(PageSetuper::APP_ICON_SZ,
-						   PageSetuper::APP_ICON_SZ,
-						   Qt::KeepAspectRatio,
-						   Qt::SmoothTransformation),
-		app->app_name(), w->downDockWidget());
+        app->icon().scaled(PageSetuper::APP_ICON_SZ,
+                           PageSetuper::APP_ICON_SZ,
+                           Qt::KeepAspectRatio,
+                           Qt::SmoothTransformation),
+        app->app_name(), w->downDockWidget());
 	copy->bindApp(app->get_app());
 	copy->showIconOnly(true);
 	QObject::connect(copy, &AppWidget::postAppStatus, w, &DesktopMainWindow::handle_app_status);
@@ -67,9 +67,9 @@ DownDockWidget::~DownDockWidget() {
 void DownDockWidget::on_app_dispatched(const AppWidget* app) {
 	AppWidget* internal_mirror = nullptr;
 	auto it = std::find_if(dock_apps.cbegin(), dock_apps.cend(),
-						   [&](AppWidget* each) {
-							   return each->get_app()->get_app_path() == app->get_app()->get_app_path();
-						   });
+                           [&](AppWidget* each) {
+                               return each->get_app()->app_code() == app->get_app()->app_code();
+                           });
 
 	if (it != dock_apps.cend()) {
 		internal_mirror = *it;

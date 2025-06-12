@@ -1,5 +1,6 @@
 #include "wallpaperanimationhandler.h"
 #include "core/coretools.h"
+#include "core/wallpaper/WallPaperEngine.h"
 #include <QGraphicsOpacityEffect>
 #include <QLabel>
 #include <QPropertyAnimation>
@@ -7,9 +8,17 @@
 WallPaperAnimationHandler::WallPaperAnimationHandler(QObject* parent)
     : QObject { parent } { }
 
+QString WallPaperAnimationHandler::ImagePoolEngine::default_selections(const QStringList& list) {
+    return list.at(default_index(list));
+}
+
+int WallPaperAnimationHandler::ImagePoolEngine::default_index(const QStringList& list) {
+    return CoreTools::random_int(0, list.size() - 1);
+}
+
 void WallPaperAnimationHandler::
     process_switch(
-        const DesktopMainWindow::WallPaperGroup& group,
+        const WallPaperEngine* group,
         ImagePoolEngine& engine) {
     /* Engines precheck */
     if (!engine.image_list)
@@ -17,8 +26,8 @@ void WallPaperAnimationHandler::
     if (engine.image_list->size() <= 1)
         return; /* no need to switch */
     /* don't set the invalid */
-    QLabel* wallpaperlabel = group.wallpaperLabel;
-    QLabel* bufferpaperlabel = group.bufferpaperLabel;
+    QLabel* wallpaperlabel = group->wallpaperLabel;
+    QLabel* bufferpaperlabel = group->bufferpaperLabel;
     if (!wallpaperlabel || !bufferpaperlabel)
         return;
 
@@ -26,21 +35,21 @@ void WallPaperAnimationHandler::
 	if (!engine.selector) {
 		engine.selector = [](QStringList* list) -> int {
 			/* return randomly */
-			return CoreTools::random_int(0, list->size() - 1);
+            return ImagePoolEngine::default_index(*list);
 		};
 	}
 
 	/* set the auxi label for help */
 	bufferpaperlabel->setPixmap(
-		wallpaperlabel->pixmap(Qt::ReturnByValue));
+        wallpaperlabel->pixmap(Qt::ReturnByValue));
 
 	/* thus show the things */
-	bufferpaperlabel->stackUnder(group.shoule_be_lower);
+    bufferpaperlabel->stackUnder(group->shoule_be_lower);
 	bufferpaperlabel->show();
 
 	/* then switch the true one */
 	QPixmap next_one(engine.image_list->at(
-		engine.selector(engine.image_list)));
+        engine.selector(engine.image_list)));
 
 	wallpaperlabel->setPixmap(next_one);
 	QGraphicsOpacityEffect* opacityEffect = new QGraphicsOpacityEffect(bufferpaperlabel);

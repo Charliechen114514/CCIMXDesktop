@@ -32,13 +32,13 @@ public:
      * @brief Bind an ApplicationWrapper instance to this widget.
      * @param wrapper Pointer to the ApplicationWrapper.
      */
-    void bindApp(ApplicationWrapper* wrapper) { this->app_internal = wrapper; }
+    void bindApp(ApplicationWrapper* wrapper);
 
     /**
      * @brief Get the bound ApplicationWrapper.
      * @return Pointer to the ApplicationWrapper.
      */
-    ApplicationWrapper* get_app() const { return this->app_internal; }
+    ApplicationWrapper* get_app() const;
 
     /**
      * @brief Set the icon displayed by this widget.
@@ -67,6 +67,14 @@ public:
      */
     QPixmap icon() const;
 
+    void setIconSize(int iconSize);
+
+    /**
+     * @brief iconSize
+     * @return icon size
+     */
+    int iconSize() const;
+
     /**
      * @brief Show or hide only the icon (hides other UI elements).
      * @param st True to show icon only; false to show full widget.
@@ -80,6 +88,24 @@ public:
     QString app_name() const;
 
     /**
+     * @brief set_displayed_font setFonts of displayed label
+     * @param f
+     */
+    void set_displayed_font(const QFont& f);
+
+    /**
+     * @brief currentFont get the current displaying font
+     * @return displaying font
+     */
+    QFont currentFont() const;
+
+    /**
+     * @brief setFontColor set the font color
+     * @param color
+     */
+    void setFontColor(const QColor& color);
+
+    /**
      * @brief Destructor.
      */
     ~AppWidget();
@@ -88,8 +114,8 @@ public:
      * @brief Enum representing the application status.
      */
     enum class AppStatus {
-        AppOk,          ///< Application is running or available.
-        AppNonExsits    ///< Application does not exist.
+        AppOk, ///< Application is running or available.
+        AppNonExsits ///< Application does not exist.
     };
 
 signals:
@@ -108,15 +134,16 @@ protected:
      */
     bool eventFilter(QObject* watched, QEvent* event) override;
 
-private:
-    Ui::AppWidget* ui; ///< ui handling 
-    bool dummy_state { false }; ///< Whether the widget is in dummy mode (non-interactive).
-    ApplicationWrapper* app_internal { nullptr }; ///< The application wrapper bound to this widget.
-
     /**
      * @brief Dispatch the application via the ApplicationWrapper.
      */
-    void do_daptch();
+    virtual void do_daptch();
+
+private:
+    Ui::AppWidget* ui; ///< ui handling
+    bool dummy_state { false }; ///< Whether the widget is in dummy mode (non-interactive).
+    ApplicationWrapper* app_internal { nullptr }; ///< The application wrapper bound to this widget.
+    int icon_size;
 };
 
 #endif // APPWIDGET_H

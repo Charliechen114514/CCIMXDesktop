@@ -16,6 +16,10 @@ class AppWidget;
 class ApplicationWrapper : public QObject {
     Q_OBJECT
 public:
+    friend bool operator==(const ApplicationWrapper& application_wrapper_a, const ApplicationWrapper& application_wrapper_b) {
+        return application_wrapper_a.internal_app_code == application_wrapper_b.internal_app_code;
+    }
+
 	/**
 	 * @brief Constructs an ApplicationWrapper instance.
 	 * @param parent The parent QObject.
@@ -42,13 +46,7 @@ public:
 	AppWidget* app_widget() const { return this->appWidget; }
 
 	/// AppCode is used to uniquely identify applications.
-	using AppCode = int;
-
-	/**
-	 * @brief Sets the app code for quick identification.
-	 * @param code The app code to install.
-	 */
-	void install_app_code(AppCode code) noexcept { internal_app_code = code; }
+    using AppCode = QString;
 
 	/**
 	 * @brief Returns the installed app code.
@@ -95,7 +93,13 @@ public:
 	 *
 	 * This is the core function to start the external process.
 	 */
-	void depatch_app();
+    virtual void depatch_app();
+
+    /**
+     * @brief depatchable
+     * @return if the app is actually internal depatchable;
+     */
+    virtual bool depatchable() { return mainWindow; }
 
 	/// Function pointer type for handling application finish hooks.
 	using HandlingFinHook = void (*)(ApplicationWrapper* wrapper, int exit_hook, QProcess::ExitStatus status);

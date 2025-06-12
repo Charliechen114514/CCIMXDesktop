@@ -1,10 +1,9 @@
 #ifndef DESKTOPMAINWINDOW_H
 #define DESKTOPMAINWINDOW_H
 
-#include "app_wrapper/applicationwrapper.h"
+#include "builtin/window/settings_window/cores/SettingsPack.h"
 #include "ui/appwidget.h"
 #include <QMainWindow>
-
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class DesktopMainWindow;
@@ -19,6 +18,9 @@ class QTimer;
 class QStackedWidget;
 class DownDockWidget;
 class AppCardWidget;
+class WallPaperEngine;
+class SettingsWindow;
+class AppWidgetsSettingsInfoPack;
 
 /**
  * @brief DesktopMainWindow is the main frontend window of the application.
@@ -29,26 +31,16 @@ class DesktopMainWindow : public QMainWindow {
 
 public:
     friend class PageFactory;
-
-    /**
-     * @brief WallPaperGroup manages wallpaper-related widgets and timers.
-     */
-    struct WallPaperGroup {
-        QWidget* shoule_be_lower; ///< Widget that should be placed behind animations, typically the central widget
-        QLabel* wallpaperLabel { nullptr }; ///< Displays current wallpaper
-        QLabel* bufferpaperLabel { nullptr }; ///< Used for animation buffering
-        QTimer* invoke_switch_timer; ///< Timer to control wallpaper switching intervals
-    };
-
+    friend class WallPaperEngine;
 	/**
 	 * @brief Construct a new Desktop Main Window object
-	 * 
-	 * @param parent 
+     *
+     * @param parent
 	 */
     explicit DesktopMainWindow(QWidget* parent = nullptr);
 	/**
 	 * @brief Destroy the Desktop Main Window object
-	 * 
+     *
 	 */
     ~DesktopMainWindow();
 
@@ -81,11 +73,6 @@ public:
     void to_prev_page();
 
     /**
-     * @brief Trigger wallpaper page switch session
-     */
-    void invoke_switch_bgpage();
-
-    /**
      * @brief Install a remote application wrapper
      * @param wrapper Pointer to ApplicationWrapper to install
      */
@@ -109,6 +96,17 @@ public slots:
      */
     void handle_app_status(AppWidget::AppStatus status);
 
+    /**
+     * @brief open_settings_window catches the signals of open_settings
+     */
+    void open_settings_window();
+
+    /**
+     * @brief process_set_appwidgets_config
+     * @param info infos
+     */
+    void process_set_appwidgets_config(const AppWidgetsSettingsInfoPack& info);
+
 signals:
     /**
      * @brief Signal emitted when app cards require initialization
@@ -118,20 +116,20 @@ signals:
 protected:
 	/**
 	 * @brief mouse press sessions
-	 * 
-	 * @param event 
+     *
+     * @param event
 	 */
     void mousePressEvent(QMouseEvent* event) override;
-		/**
+    /**
 	 * @brief mouse release sessions
-	 * 
-	 * @param event 
+     *
+     * @param event
 	 */
     void mouseReleaseEvent(QMouseEvent* event) override;
-		/**
+    /**
 	 * @brief resize sessions
-	 * 
-	 * @param event 
+     *
+     * @param event
 	 */
     void resizeEvent(QResizeEvent* event) override;
 
@@ -141,27 +139,19 @@ private:
     QList<ApplicationWrapper*> app_wrapper; ///< List of application wrappers
     QList<AppWidget*> app_widgets; ///< List of app widgets
 
-    WallPaperGroup wallPaperGroup; ///< Wallpaper management group
-    QStringList image_lists; ///< List of wallpaper image paths
-
     struct {
         QPoint press; ///< Mouse press position
         QPoint release; ///< Mouse release position
     } records; ///< Used for swipe gesture detection
 
-    static constexpr const unsigned int switch_bg_time = 20000; ///< Wallpaper switch interval in ms
-
     QList<AppCardWidget*> app_cards; ///< List of application card widgets
+    WallPaperEngine* wallpaper_engine; ///< wallpaper handler
 
+    SettingsWindow* settingsWindow; ///< windows contains settings
     /**
      * @brief Additional UI setup after ui->setupUi()
      */
     void post_setupui();
-
-    /**
-     * @brief Setup wallpaper background images
-     */
-    void setup_bg_image();
 
     /**
      * @brief Setup default and internal applications
@@ -177,6 +167,10 @@ private:
      * @brief Trigger initialization of app cards (usually connected to signal deptach_app_cards_init)
      */
     void invoke_appcards_init();
+    /**
+     * @brief centralWidget get the centralWidget for WallPaperEngine
+     */
+    QWidget* centralWidget();
 };
 
 #endif // DESKTOPMAINWINDOW_H

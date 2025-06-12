@@ -11,11 +11,20 @@
 #   [4] run cmake to launch configure sessions!
 # --------------------------------------------------------
 
+# -------------------------------------------------------------
+#   PART:   This is a Build Global Settings
+# -------------------------------------------------------------
+
 # set the proxy with http https if you have direct trouble in visiting githubs
 # set(ENV{http_proxy} "http://127.0.0.1:7890")
 # set(ENV{https_proxy} "http://127.0.0.1:7890")
 
+# -------------------------------------------------------------
+#   PART:   This is Build Global Configurations
+# -------------------------------------------------------------
+
 # Options for the default use install
+# Path here must be exsited already
 set(_DEF_RELEASE_BASE_MSVC_RELEASE  "")
 set(_DEF_RELEASE_BASE_GCC_RELEASE   "")
 
@@ -44,3 +53,15 @@ set(OpenCV_DIR "" CACHE PATH "OpenCV Library Directory")
 # this projects use ALSA as a template
 set(ALSA_LIBRARY_PATH   "" CACHE PATH "Media Audio backend library directectory")
 
+# -------------------------------------------------------------
+#   This is using in configuring the Desktop itself settings
+# -------------------------------------------------------------
+
+# Wallpaper sessions
+# Places should be non-""-included
+set(DEFAULT_DESKTOP_NONARM_PLACES
+    # Set the Path with locatable dirents contains images 
+    )
+set(DEFAULT_DESKTOP_ARM_PLACES 
+    # Set the Path with locatable dirents contains images 
+    )
