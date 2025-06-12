@@ -50,7 +50,7 @@ void MainWindow::setupFileModels() {
 	file_model->bindProviders(providers);
 	/* set RootPath property */
 	file_model->setFilter(
-		QDir::AllDirs | QDir::NoDotAndDotDot | QDir::Files);
+        QDir::AllDirs | QDir::NoDotAndDotDot | QDir::Files);
 	file_model->setReadOnly(true);
 	file_model->setRootPath(QDir::rootPath());
 	file_model->setOption(QFileSystemModel::DontWatchForChanges);
@@ -77,19 +77,22 @@ void MainWindow::setupUi() {
 void MainWindow::setup_connections() {
 	/* go back parent */
 	connect(ui->actionbackto_parent, &QAction::triggered,
-			this, &MainWindow::try_goto_parent_view);
+            this, &MainWindow::try_goto_parent_view);
 	/* double clicked to switch root dirent */
 	connect(ui->fileTreeView, &QAbstractItemView::doubleClicked,
-			this, &MainWindow::processing_switch_double_click);
+            this, &MainWindow::processing_switch_double_click);
 
 	/* back to root */
 	connect(ui->actionbackto_root, &QAction::triggered,
-			this, &MainWindow::switch_to_global_root);
+            this, &MainWindow::switch_to_global_root);
 	connect(ui->fileTreeView, &QTreeView::clicked,
-			this, &MainWindow::processing_filecheck_issue);
+            this, &MainWindow::processing_filecheck_issue);
 
 	connect(box, &QComboBox::textActivated,
-			this, &MainWindow::switch_to_global_root);
+            this, &MainWindow::switch_to_global_root);
+
+    connect(ui->actionQuit, &QAction::triggered,
+            this, &MainWindow::close);
 }
 
 MainWindow::~MainWindow() {
@@ -114,6 +117,6 @@ void MainWindow::processing_switch_double_click(const QModelIndex& index) {
 }
 
 void MainWindow::
-	processing_filecheck_issue(const QModelIndex& index) {
+    processing_filecheck_issue(const QModelIndex& index) {
 	ui->show_widget->setModelIndex(index);
 }

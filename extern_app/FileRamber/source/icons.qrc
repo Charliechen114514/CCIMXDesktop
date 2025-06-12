@@ -4,5 +4,6 @@
         <file>back_to_root.png</file>
         <file>arrow_down.png</file>
         <file>arrow_right.png</file>
+        <file>exit.png</file>
     </qresource>
 </RCC>
