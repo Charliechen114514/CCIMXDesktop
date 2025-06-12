@@ -103,8 +103,8 @@ var NAVTREEINDEX =
 "classHistDrawer.html#a42438a925963b1f090ba4be7a4f159da",
 "classMemoryUsageChart.html",
 "classSystemStateWindow.html#a560502331ef5b2ec00a659188c77d6f2ad8e38dcdefa8ce5e3b73ae11cbef4921",
-"dir_c41a2c1543436f0aecc231599d1a57d2.html",
-"structCCPdfDocumentPrivate.html#a43e0ade02b55b6ccb10ea453389adc60"
+"dir_c609a1251040c633f11b9a854adf3467.html",
+"structCCPdfDocumentPrivate.html#a7219d45181ac0ab5096e33a9f8b0d260"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
