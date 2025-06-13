@@ -6,8 +6,18 @@
  * @brief handle the utils collections of WallPaper relative
  */
 namespace WallPaperUtilsColliections {
-// this is using for the
+/**
+ * @brief collect_from_qrcs collect from qrc files
+ * @return
+ */
 QStringList collect_from_qrcs();
+
+/**
+ * @brief prefix for searchings
+ * 
+ */
+static constexpr const char* PREFIX[] = { "*.png" };
+
 };
 
 #endif // WALLPAPERUTILSCOLLIECTIONS_H

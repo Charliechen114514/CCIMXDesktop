@@ -57,6 +57,12 @@ public:
     DesktopToast* desktop_toast() const { return toast; }
 
     /**
+     * @brief queryWallpaperEngine
+     * @return WallPaperEngine instances
+     */
+    WallPaperEngine* queryWallpaperEngine() { return wallpaper_engine; }
+
+    /**
      * @brief Get the global DownDockWidget instance
      * @return DownDockWidget instance
      */
@@ -106,6 +112,12 @@ public slots:
      * @param info infos
      */
     void process_set_appwidgets_config(const AppWidgetsSettingsInfoPack& info);
+
+    /**
+     * @brief process_wallpaper_settings
+     * @param settings packages
+     */
+    void process_wallpaper_settings(BaseWallPaperSettings* settings);
 
 signals:
     /**

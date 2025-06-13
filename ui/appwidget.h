@@ -67,6 +67,11 @@ public:
      */
     QPixmap icon() const;
 
+    /**
+     * @brief Set the Icon size 
+     * 
+     * @param iconSize 
+     */
     void setIconSize(int iconSize);
 
     /**
@@ -143,7 +148,7 @@ private:
     Ui::AppWidget* ui; ///< ui handling
     bool dummy_state { false }; ///< Whether the widget is in dummy mode (non-interactive).
     ApplicationWrapper* app_internal { nullptr }; ///< The application wrapper bound to this widget.
-    int icon_size;
+    int icon_size; ///< handling icon size
 };
 
 #endif // APPWIDGET_H

@@ -62,11 +62,6 @@ QPushButton:hover {
 QPushButton:pressed {
     background-color: #a3cfff;
 }
-
-/* 排除特定按钮 btn_show_color，不设置任何样式 */
-QPushButton#btn_show_color {
-    all: unset;
-}
 </string>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout">

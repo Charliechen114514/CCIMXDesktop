@@ -32,6 +32,14 @@ float random_float(const float min, const float max);
  */
 int random_int(const int min, const int max);
 
+/**
+ * @brief fromFiltersToFilterString
+ * transfer to the filters string
+ * @param l
+ * @return result
+ */
+QString fromFiltersToFilterString(const QStringList& l);
+
 }
 
 #endif // CORETOOLS_H

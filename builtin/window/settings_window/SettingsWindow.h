@@ -6,29 +6,45 @@
 namespace Ui {
 class SettingsWindow;
 }
+
 class DesktopMainWindow;
 class ConfigureUiPairs;
+
 /**
- * @brief The SettingsWindow class
- * settings window is here
+ * @brief Main window class for the settings interface.
+ * 
+ * Provides the user interface and logic for configuring application settings.
  */
 class SettingsWindow : public QMainWindow {
-	Q_OBJECT
+    Q_OBJECT
 
 public:
     /**
-     * @brief SettingsWindow
-     * @param parent
+     * @brief Constructs the settings window.
+     * @param window Pointer to the main desktop window.
+     * @param parent Optional parent widget.
      */
     explicit SettingsWindow(DesktopMainWindow* window, QWidget* parent = nullptr);
-	~SettingsWindow();
+
+    /**
+     * @brief Destructor for SettingsWindow.
+     */
+    ~SettingsWindow();
 
 private:
+    /**
+     * @brief Sets up signal-slot connections for UI elements.
+     */
     void setup_connections();
+
+    /**
+     * @brief Initializes and configures UI panels and widgets.
+     */
     void setup_panel();
-    Ui::SettingsWindow* ui;
-    ConfigureUiPairs* pairs;
-    DesktopMainWindow* handling_window;
+
+    Ui::SettingsWindow* ui;                 ///< Pointer to the UI form.
+    ConfigureUiPairs* pairs;                ///< Object managing UI configuration pairs.
+    DesktopMainWindow* handling_window;    ///< Pointer to the main desktop window being handled.
 };
 
 #endif // SETTINGSWINDOW_H

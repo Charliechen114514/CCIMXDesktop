@@ -49,15 +49,36 @@ public:
         static int default_index(const QStringList& list);
     };
 
+    /**
+     * @brief AnimationSettingsPackage settings
+     * 
+     */
+    struct AnimationSettingsPackage {
+        int durations; ///< animation durations 
+    };
+
 	/**
-	 * @brief process_switch makes the real switch async, invoke this
+     * @brief process_opacity_switch makes the real switch async, invoke this
 	 * for the real switching.
 	 * @param group WallPaperGroup from MainWindow
 	 * @param engine the engine switching requires
-	 */
-	static void process_switch(
+	 * @param packages for the animations
+     */
+    static void process_opacity_switch(
         const WallPaperEngine* group,
-        ImagePoolEngine& engine);
+        ImagePoolEngine& engine,
+        const AnimationSettingsPackage& packages);
+	/**
+     * @brief process_movement_switch makes the real switch async, invoke this
+	 * for the real switching.
+	 * @param group WallPaperGroup from MainWindow
+	 * @param engine the engine switching requires
+     * @param packages for the animations
+	 */
+    static void process_movement_switch(
+        const WallPaperEngine* group,
+        ImagePoolEngine& engine,
+        const AnimationSettingsPackage& packages);
 };
 
 #endif // WALLPAPERANIMATIONHANDLER_H

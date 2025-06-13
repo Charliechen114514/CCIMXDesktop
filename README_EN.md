@@ -2,7 +2,7 @@
 
 ![CCIMXDesktopLogo](./CCIMXDesktopLogo.png)
 
-![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-23+-green)![Version](https://img.shields.io/badge/Version-0.9.8-red)
+![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-23+-green)![Version](https://img.shields.io/badge/Version-0.9.9-red)
 
 🔌 Hello! This is a simple desktop and utility collection that can be used in a variety of embedded devices! This project currently requires C++23 to compile (it's worth noting that you can compile with C++17, but any projects that require C++23 will need minor modifications)
 
@@ -39,7 +39,8 @@ Now, CCIMXDesktop supports one-click builds including:
 - 🛜 CCNetHelper (supports network card information viewing, IP port scanning and basic test IP connection capabilities)
 - 🦖Dinasour Game! (Yes, that Google Dinasour Game, implemented with Qt6 Widgets :) )
 - 🧮Caculator pocket calculator (standard calculator)
-- 🤖ImageProcessor (image processor local processing of images and simple reasoning (face recognition))
+- 🤖ImageProcessor (image processor local processing image and simple reasoning (face recognition))
+- ⚙ Settings (provides desktop wallpaper, brightness settings (not yet implemented on ARM platform) and AppWidget style settings)
 
 ------
 
@@ -87,9 +88,7 @@ The document has been automatically deployed through GitHub Actions, visit: [CCI
 
 ## 💡 WIP (some WIP Third Party Apps under development)
 
-- ⚙ Basic settings (similar to IOS, but many are more ornamental)
-
-- ⚙ Improve Desktop to move towards a truly usable Desktop
+- Dynamic APP loader (Dynamic Application Launcher)
 
 ## 💡 Future plans
 

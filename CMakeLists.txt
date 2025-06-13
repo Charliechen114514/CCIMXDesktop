@@ -145,6 +145,13 @@ qt_add_executable(CCIMX_Desktop
     builtin/sources/other_icons.qrc
     builtin/window/settings_window/fake_app_entry/SettingsApp.h builtin/window/settings_window/fake_app_entry/SettingsApp.cpp
     builtin/window/settings_window/cores/SettingsPack.h
+    builtin/core/backlight/BacklightController.h builtin/core/backlight/BacklightController.cpp
+    builtin/core/backlight/BacklightControllerImpl.h builtin/core/backlight/BacklightControllerImpl.cpp
+    builtin/window/settings_window/config_items/light_controller/LightConfigures.h builtin/window/settings_window/config_items/light_controller/LightConfigures.cpp builtin/window/settings_window/config_items/light_controller/LightConfigures.ui
+    builtin/window/settings_window/config_items/wallpaper_settings/WallpaperConfigures.h builtin/window/settings_window/config_items/wallpaper_settings/WallpaperConfigures.cpp builtin/window/settings_window/config_items/wallpaper_settings/WallpaperConfigures.ui
+    builtin/window/settings_window/config_items/wallpaper_settings/option_widgets/FixedOptionWidget.h builtin/window/settings_window/config_items/wallpaper_settings/option_widgets/FixedOptionWidget.cpp builtin/window/settings_window/config_items/wallpaper_settings/option_widgets/FixedOptionWidget.ui
+    builtin/window/settings_window/config_items/wallpaper_settings/utils/ImageListViewWidget.h builtin/window/settings_window/config_items/wallpaper_settings/utils/ImageListViewWidget.cpp
+    builtin/window/settings_window/config_items/wallpaper_settings/option_widgets/SequenciedSettingsWidget.h builtin/window/settings_window/config_items/wallpaper_settings/option_widgets/SequenciedSettingsWidget.cpp builtin/window/settings_window/config_items/wallpaper_settings/option_widgets/SequenciedSettingsWidget.ui
 
 )
 

@@ -51,11 +51,32 @@ void WallPaperEngine::set_mode(const SwitchingMode mode) {
     case SwitchingMode::Fixed:
         invoke_switch_timer->stop();
         break;
+    case SwitchingMode::Movement:
+        invoke_switch_timer->start();
+        break;
     }
 }
 
-void WallPaperEngine::set_showing_pictures(const QString& path) {
-    wallpaperLabel->setPixmap(QPixmap(path));
+QPixmap WallPaperEngine::get_current_pixmap() const {
+    switch (this->mode) {
+    case SwitchingMode::Movement:
+        return bufferpaperLabel->pixmap();
+    default:
+        return wallpaperLabel->pixmap();
+    }
+}
+
+void WallPaperEngine::set_showing_pictures(const QPixmap& map) {
+    wallpaperLabel->setPixmap(map);
+    emit wallpaperChanged(map);
+}
+
+void WallPaperEngine::set_animation_duration_second(int secs) {
+    animation_durations = secs;
+}
+
+int WallPaperEngine::duration_seconds() const {
+    return animation_durations;
 }
 
 QStringList& WallPaperEngine::get_image_list() {
@@ -70,7 +91,11 @@ void WallPaperEngine::set_image_list(const QStringList& l) {
 
 void WallPaperEngine::reset_defaults() {
     /* Collect from the Image Lists */
-    image_lists << CoreTools::enumeratefiles(WALLPAPER_DEFAULT_DIRENT, { "*.png" });
+    QStringList prefix;
+    for (const auto& each : WallPaperUtilsColliections::PREFIX) {
+        prefix << each;
+    }
+    image_lists << CoreTools::enumeratefiles(WALLPAPER_DEFAULT_DIRENT, prefix);
     default_behaviour_of_flush();
     emit imagelist_changed(image_lists);
 }
@@ -88,10 +113,17 @@ void WallPaperEngine::process_internal_timer_hook() {
         /* switch the background page */
         WallPaperAnimationHandler::ImagePoolEngine engine;
         engine.image_list = &this->image_lists;
-        WallPaperAnimationHandler::process_switch(this, engine);
+        WallPaperAnimationHandler::process_opacity_switch(this, engine, { animation_durations });
+        emit wallpaperChanged(this->wallpaperLabel->pixmap());
     } break;
     case SwitchingMode::Fixed:
         /* can not get here */
+        break;
+    case SwitchingMode::Movement:
+        WallPaperAnimationHandler::ImagePoolEngine engine;
+        engine.image_list = &this->image_lists;
+        WallPaperAnimationHandler::process_movement_switch(this, engine, { animation_durations });
+        emit wallpaperChanged(this->bufferpaperLabel->pixmap());
         break;
     }
 }

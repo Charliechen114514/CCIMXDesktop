@@ -16,6 +16,13 @@ class AppWidget;
 class ApplicationWrapper : public QObject {
     Q_OBJECT
 public:
+	/**
+	 * @brief provide a function for compares
+	 * 
+	 * @param application_wrapper_a 
+	 * @param application_wrapper_b 
+	 * @return results
+	 */
     friend bool operator==(const ApplicationWrapper& application_wrapper_a, const ApplicationWrapper& application_wrapper_b) {
         return application_wrapper_a.internal_app_code == application_wrapper_b.internal_app_code;
     }

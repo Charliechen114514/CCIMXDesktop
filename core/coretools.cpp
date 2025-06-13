@@ -7,8 +7,8 @@ QStringList CoreTools::
     QDir dir(path);
 
 	QFileInfoList fileInfoList = dir.entryInfoList(
-		nameFilters,
-		QDir::Files | QDir::NoSymLinks | QDir::Readable);
+        nameFilters,
+        QDir::Files | QDir::NoSymLinks | QDir::Readable);
 
 	QStringList filePaths;
 	for (const QFileInfo& fileInfo : std::as_const(fileInfoList)) {
@@ -31,4 +31,8 @@ int CoreTools::random_int(const int min, const int max) {
 	static std::mt19937 gen(rd());
 	std::uniform_int_distribution<int> dis(min, max);
 	return dis(gen);
+}
+
+QString CoreTools::fromFiltersToFilterString(const QStringList& l) {
+    return l.join(";;");
 }

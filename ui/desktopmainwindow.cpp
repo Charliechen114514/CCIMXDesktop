@@ -84,10 +84,27 @@ void DesktopMainWindow::open_settings_window() {
 }
 
 void DesktopMainWindow::process_set_appwidgets_config(const AppWidgetsSettingsInfoPack& info) {
-    for (const auto& each : app_widgets) {
+    for (const auto& each : std::as_const(app_widgets)) {
         each->setFontColor(info.fontColor);
         each->setFont(info.font);
         each->setIconSize(info.iconSize);
+    }
+}
+
+void DesktopMainWindow::process_wallpaper_settings(BaseWallPaperSettings* settings) {
+    switch (settings->get_type()) {
+    case BaseWallPaperSettings::Type::FIXED: {
+        FixedTypeWallPaperSettings* fixed = dynamic_cast<FixedTypeWallPaperSettings*>(settings);
+        wallpaper_engine->set_mode(fixed->mode);
+        wallpaper_engine->set_showing_pictures(fixed->map);
+    } break;
+    case BaseWallPaperSettings::Type::FLOW_LIKE: {
+        FlowTypeTypeWallPaperSettings* flow = dynamic_cast<FlowTypeTypeWallPaperSettings*>(settings);
+        wallpaper_engine->set_animation_duration_second(flow->animation_speed);
+        wallpaper_engine->set_image_list(flow->images);
+        wallpaper_engine->set_switch_interval(flow->switch_interval);
+        wallpaper_engine->set_mode(flow->mode);
+    } break;
     }
 }
 

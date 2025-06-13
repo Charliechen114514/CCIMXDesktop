@@ -1,5 +1,7 @@
 #include "SettingsWindow.h"
+#include "builtin/window/settings_window/config_items/wallpaper_settings/WallpaperConfigures.h"
 #include "config_items/appwidgets_globalconfig/AppWidgetConfigures.h"
+#include "config_items/light_controller/LightConfigures.h"
 #include "cores/ConfigureUiPairs.h"
 #include "ui/desktopmainwindow.h"
 #include "ui_SettingsWindow.h"
@@ -26,4 +28,7 @@ void SettingsWindow::setup_panel() {
     QTreeWidgetItem* appwidgets_config_items = pairs->install_mappings("AppWidget", nullptr, app_widgets_configs);
     pairs->install_mappings("Fonts", appwidgets_config_items, app_widgets_configs);
     pairs->install_mappings("Icons", appwidgets_config_items, app_widgets_configs);
+
+    pairs->install_mappings("Backlights", nullptr, new LightConfigures(this));
+    pairs->install_mappings("WallPaper", nullptr, new WallpaperConfigures(handling_window));
 }
