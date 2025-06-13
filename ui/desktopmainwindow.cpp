@@ -2,8 +2,10 @@
 #include "app_wrapper/applicationwrapper.h"
 #include "app_wrapper/pagesetuper.h"
 #include "builtin/ui/pagefactory.h"
+#include "builtin/window/applauncher/ApplicationLauncherMainWindow.h"
 #include "builtin/window/settings_window/SettingsWindow.h"
 #include "core/wallpaper/WallPaperEngine.h"
+#include "ui/UiTools.h"
 #include "ui/appcardwidget.h"
 #include "ui/desktoptoast.h"
 #include "ui/stackpage_switcher_animation.h"
@@ -25,6 +27,7 @@ void DesktopMainWindow::post_setupui() {
 	toast = new DesktopToast(this);
     wallpaper_engine = new WallPaperEngine(this);
     settingsWindow = new SettingsWindow(this);
+    appLauncherWindow = new ApplicationLauncherMainWindow(this);
 }
 
 DesktopMainWindow::~DesktopMainWindow() {
@@ -44,7 +47,7 @@ void DesktopMainWindow::setup_apps() {
 
 void DesktopMainWindow::setup_default_dock() {
 	QList<AppWidget*> docks;
-	docks << app_widgets[0] << app_widgets[6];
+    docks << app_widgets[0];
 	PageSetuper::add_to_dock(this, docks);
 }
 
@@ -83,8 +86,37 @@ void DesktopMainWindow::open_settings_window() {
     settingsWindow->show();
 }
 
+void DesktopMainWindow::open_launch_window() {
+    if (appLauncherWindow->isVisible()) {
+        qDebug() << "settings window is already visible";
+        return;
+    }
+
+    appLauncherWindow->show();
+}
+
+void DesktopMainWindow::install_for_new_dynamicpage(AppWidget* appWidgets) {
+
+    const int cnt = ui->stackedWidget->count();
+    QWidget* dynamic_page = nullptr;
+    for (int i = 0; i < cnt; i++) {
+        QWidget* page = ui->stackedWidget->widget(i);
+        if (page->objectName() == "dynamic_page_for_launch") {
+            dynamic_page = page;
+        }
+    }
+
+    if (!dynamic_page) {
+        // create one page
+        PageSetuper::create_new_page_with_appWidget({ appWidgets }, this, "dynamic_page_for_launch");
+    } else {
+        QGridLayout* layout = dynamic_cast<QGridLayout*>(dynamic_page->layout());
+        UiTools::addWidgetToGridTail(layout, appWidgets, PageSetuper::MAX_HEIGHT);
+    }
+}
+
 void DesktopMainWindow::process_set_appwidgets_config(const AppWidgetsSettingsInfoPack& info) {
-    for (const auto& each : std::as_const(app_widgets)) {
+    for (auto each : std::as_const(app_widgets)) {
         each->setFontColor(info.fontColor);
         each->setFont(info.font);
         each->setIconSize(info.iconSize);

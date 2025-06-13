@@ -20,6 +20,7 @@ class DownDockWidget;
 class AppCardWidget;
 class WallPaperEngine;
 class SettingsWindow;
+class ApplicationLauncherMainWindow;
 class AppWidgetsSettingsInfoPack;
 
 /**
@@ -108,6 +109,17 @@ public slots:
     void open_settings_window();
 
     /**
+     * @brief open_launch_window
+     */
+    void open_launch_window();
+
+    /**
+     * @brief install_for_new_dynamicpage
+     * for the persistance apps of new
+     */
+    void install_for_new_dynamicpage(AppWidget *appWidgets);
+
+    /**
      * @brief process_set_appwidgets_config
      * @param info infos
      */
@@ -158,7 +170,7 @@ private:
 
     QList<AppCardWidget*> app_cards; ///< List of application card widgets
     WallPaperEngine* wallpaper_engine; ///< wallpaper handler
-
+    ApplicationLauncherMainWindow* appLauncherWindow; ///< windows for the application launch!
     SettingsWindow* settingsWindow; ///< windows contains settings
     /**
      * @brief Additional UI setup after ui->setupUi()

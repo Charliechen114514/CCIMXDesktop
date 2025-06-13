@@ -14,9 +14,15 @@ QStringList collect_from_qrcs();
 
 /**
  * @brief prefix for searchings
- * 
+ *
  */
 static constexpr const char* PREFIX[] = { "*.png" };
+
+/**
+ * @brief prefixs get to StringList
+ * @return
+ */
+QStringList prefixs();
 
 };
 

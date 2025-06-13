@@ -13,6 +13,64 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">/* QWidget 基础背景色和字体 */
+QWidget {
+    background-color: #e6f2ff;  /* 浅蓝色背景 */
+    color: #002b36;             /* 深色文字 */
+    font-family: &quot;Segoe UI&quot;, sans-serif;
+    font-size: 14px;
+}
+
+/* QLabel 简洁文字色 */
+QLabel {
+    color: #003366;
+    font-weight: bold;
+}
+
+/* QPushButton 普通样式 */
+QPushButton {
+    background-color: #cce6ff;
+    border: 1px solid #99ccff;
+    padding: 6px 12px;
+    border-radius: 4px;
+    color: #003366;
+}
+
+QPushButton:hover {
+    background-color: #b3daff;
+}
+
+QPushButton:pressed {
+    background-color: #99ccff;
+}
+
+/* QComboBox 样式 */
+QComboBox {
+    background-color: #ffffff;
+    border: 1px solid #99ccff;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+QComboBox::drop-down {
+    border-left: 1px solid #99ccff;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #f0faff;
+    selection-background-color: #b3daff;
+    selection-color: #003366;
+}
+
+/* QStackedWidget 可选样式（通常只需要其子控件有样式） */
+QStackedWidget {
+    background-color: transparent;
+}
+
+/* Spacer 不需样式，自动忽略 */
+</string>
+  </property>
   <layout class="QVBoxLayout" name="verticalLayout_2">
    <property name="spacing">
     <number>0</number>

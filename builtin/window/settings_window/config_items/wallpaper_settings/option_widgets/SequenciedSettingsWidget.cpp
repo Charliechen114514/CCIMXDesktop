@@ -1,6 +1,7 @@
 #include "SequenciedSettingsWidget.h"
 #include "../utils/ImageListViewWidget.h"
 #include "core/coretools.h"
+#include "core/wallpaper/WallPaperUtilsColliections.h"
 #include "ui_SequenciedSettingsWidget.h"
 SequenciedSettingsWidget::SequenciedSettingsWidget(QWidget* parent)
     : QWidget(parent)
@@ -29,7 +30,7 @@ void SequenciedSettingsWidget::flush_with_non_path(const QStringList& image_path
 
 void SequenciedSettingsWidget::flush_images(const QString& list) {
     this->image_lists_folders = list;
-    QStringList tempLists = CoreTools::enumeratefiles(list, { "*.png" });
+    QStringList tempLists = CoreTools::enumeratefiles(list, WallPaperUtilsColliections::prefixs());
     flush_with_non_path(tempLists);
 }
 

@@ -18,9 +18,9 @@ class ApplicationWrapper : public QObject {
 public:
 	/**
 	 * @brief provide a function for compares
-	 * 
-	 * @param application_wrapper_a 
-	 * @param application_wrapper_b 
+     *
+     * @param application_wrapper_a
+     * @param application_wrapper_b
 	 * @return results
 	 */
     friend bool operator==(const ApplicationWrapper& application_wrapper_a, const ApplicationWrapper& application_wrapper_b) {
@@ -125,6 +125,16 @@ public:
 	 * @param hook The function pointer to the error handler.
 	 */
 	inline void install_error_handler(ErrorDepatchHook hook) { error_handler = hook; }
+signals:
+    /**
+     * @brief self_depatched_success signals is using for
+     * depatch time success
+     */
+    void self_depatched_success();
+    /**
+     * @brief self_mission_finished mission finished
+     */
+    void self_mission_finished();
 
 private:
 	DesktopMainWindow* mainWindow; ///< mainWindow holders for hooking

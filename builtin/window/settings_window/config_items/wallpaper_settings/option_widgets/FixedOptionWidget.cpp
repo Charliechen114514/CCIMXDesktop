@@ -22,10 +22,8 @@ FixedOptionWidget::~FixedOptionWidget() {
 }
 
 void FixedOptionWidget::handle_new_selections() {
-    QStringList prefix;
-    for (const auto& each : WallPaperUtilsColliections::PREFIX) {
-        prefix << each;
-    }
-    QString path = QFileDialog::getOpenFileName(this, "Select a fixed pixmap", ".", CoreTools::fromFiltersToFilterString(prefix));
+    QString path = QFileDialog::getOpenFileName(
+        this, "Select a fixed pixmap", ".",
+        CoreTools::fromFiltersToFilterString(WallPaperUtilsColliections::prefixs()));
     setPixmap(QPixmap(path));
 }

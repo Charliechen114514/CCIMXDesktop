@@ -14,7 +14,9 @@ void ApplicationWrapper::do_fin_hook(int exitCode, QProcess::ExitStatus status) 
 		rawAppFinHook(this, exitCode, status);
 	} else {
 		/* do the default then */
-		mainWindow->show();
+        if (mainWindow)
+            mainWindow->show();
+        emit self_mission_finished();
 	}
 }
 
@@ -22,7 +24,8 @@ void ApplicationWrapper::def_error_handler() {
 	/* clean up everythings */
 	appProcess->deleteLater();
 	/* and went back the window */
-	mainWindow->show();
+    if (mainWindow)
+        mainWindow->show();
 }
 
 ApplicationWrapper::
@@ -39,7 +42,8 @@ void ApplicationWrapper::depatch_app() {
             this, &ApplicationWrapper::do_fin_hook);
 
 	/* hide the window for the new process start */
-	mainWindow->hide();
+    if (mainWindow)
+        mainWindow->hide();
 
 	appProcess->start(app_path, app_args);
 	/* slow spin */
@@ -50,4 +54,5 @@ void ApplicationWrapper::depatch_app() {
 			def_error_handler();
 		}
 	}
+    emit self_depatched_success();
 }

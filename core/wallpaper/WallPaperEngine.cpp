@@ -91,11 +91,7 @@ void WallPaperEngine::set_image_list(const QStringList& l) {
 
 void WallPaperEngine::reset_defaults() {
     /* Collect from the Image Lists */
-    QStringList prefix;
-    for (const auto& each : WallPaperUtilsColliections::PREFIX) {
-        prefix << each;
-    }
-    image_lists << CoreTools::enumeratefiles(WALLPAPER_DEFAULT_DIRENT, prefix);
+    image_lists << CoreTools::enumeratefiles(WALLPAPER_DEFAULT_DIRENT, WallPaperUtilsColliections::prefixs());
     default_behaviour_of_flush();
     emit imagelist_changed(image_lists);
 }

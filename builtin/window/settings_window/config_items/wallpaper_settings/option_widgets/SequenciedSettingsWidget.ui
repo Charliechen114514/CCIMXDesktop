@@ -13,6 +13,83 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">/* QWidget 背景与全局字体 */
+QWidget {
+    background-color: #e6f2ff; /* 浅蓝色背景 */
+    color: #002b36;
+    font-family: &quot;Segoe UI&quot;, sans-serif;
+    font-size: 14px;
+}
+
+/* QLabel 标题文字 */
+QLabel {
+    color: #003366;
+    font-weight: bold;
+}
+
+/* QPushButton 样式 */
+QPushButton {
+    background-color: #cce6ff;
+    border: 1px solid #99ccff;
+    border-radius: 4px;
+    color: #003366;
+}
+
+QPushButton:hover {
+    background-color: #b3daff;
+}
+
+QPushButton:pressed {
+    background-color: #99ccff;
+}
+
+/* QSlider 样式 */
+QSlider::groove:horizontal {
+    border: 1px solid #99ccff;
+    height: 6px;
+    background: #ffffff;
+    border-radius: 3px;
+}
+
+QSlider::handle:horizontal {
+    background: #66ccff;
+    border: 1px solid #3399ff;
+    width: 14px;
+    height: 14px;
+    margin: -4px 0;
+    border-radius: 7px;
+}
+
+QSlider::add-page:horizontal {
+    background: #e6f2ff;
+}
+
+QSlider::sub-page:horizontal {
+    background: #99ccff;
+}
+
+/* QSpinBox 样式 */
+QSpinBox {
+    background-color: #ffffff;
+    border: 1px solid #99ccff;
+    border-radius: 4px;
+    padding: 2px 4px;
+    color: #003366;
+}
+
+QSpinBox::up-button, QSpinBox::down-button {
+    subcontrol-origin: border;
+    width: 16px;
+    background-color: #cce6ff;
+    border-left: 1px solid #99ccff;
+}
+
+QSpinBox::up-button:hover, QSpinBox::down-button:hover {
+    background-color: #b3daff;
+}
+</string>
+  </property>
   <layout class="QHBoxLayout" name="horizontalLayout">
    <property name="spacing">
     <number>0</number>
@@ -63,7 +140,7 @@
         <property name="maximumSize">
          <size>
           <width>16777215</width>
-          <height>20</height>
+          <height>40</height>
          </size>
         </property>
         <property name="text">

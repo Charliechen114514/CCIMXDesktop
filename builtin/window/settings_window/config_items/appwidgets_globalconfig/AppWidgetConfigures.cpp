@@ -34,6 +34,9 @@ QString describeFont(const QFont& font) {
 void AppWidgetConfigures::process_default_init_load() {
     appWidget = new AppWidget(QPixmap(":/icons/sources/def_icon.png"), "Demo", this);
     appWidget->setDummy(true);
+    info.font = appWidget->font();
+    info.fontColor = Qt::black;
+    info.iconSize = appWidget->iconSize();
     ui->display_sessions->layout()->addWidget(appWidget);
     ui->font_label->setPlainText(describeFont(appWidget->currentFont()));
     ui->icon_size_spinbox->setValue(appWidget->iconSize());
@@ -51,8 +54,8 @@ AppWidgetConfigures::AppWidgetConfigures(DesktopMainWindow* window, QWidget* par
     process_default_init_load();
     connect(ui->icon_size_spinbox, &QSpinBox::valueChanged,
             this, &AppWidgetConfigures::process_spinbox_change);
-    connect(ui->pushButton, &QPushButton::clicked, this, [&, this]() {
-        window->process_set_appwidgets_config(info);
+    connect(ui->pushButton, &QPushButton::clicked, this, [this]() {
+        this->window->process_set_appwidgets_config(info);
     });
 }
 

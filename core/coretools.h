@@ -1,7 +1,7 @@
 #ifndef CORETOOLS_H
 #define CORETOOLS_H
 #include <QStringList>
-
+class QWidget;
 namespace CoreTools {
 
 /**
@@ -39,6 +39,13 @@ int random_int(const int min, const int max);
  * @return result
  */
 QString fromFiltersToFilterString(const QStringList& l);
+
+/**
+ * @brief getExecutableFile sync query executables
+ * @param parent
+ * @return
+ */
+QString getExecutableFile(QWidget* parent = nullptr);
 
 }
 

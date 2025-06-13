@@ -87,8 +87,18 @@ void create_specified_page(
 void add_to_dock(DesktopMainWindow* mainWindow, const QList<AppWidget*>& widgets);
 
 /**
+ * @brief create_new_page_with_appWidget
+ * @param appWidgets widgets
+ * @param mainWindow mainWindows
+ * @param name name of page
+ */
+void create_new_page_with_appWidget(
+    QList<AppWidget*> appWidgets,
+    DesktopMainWindow* mainWindow, const QString& name);
+
+/**
  * @brief setup a pesudo page, now in debug usage
- * 
+ *
  * @param pixpath the pix
  * @param how_many how many
  * @param mainWindow binding windows

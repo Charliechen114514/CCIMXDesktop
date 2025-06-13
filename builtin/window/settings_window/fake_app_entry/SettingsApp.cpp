@@ -1,5 +1,4 @@
 #include "SettingsApp.h"
-#include "app_wrapper/applicationwrapper.h"
 #include "desktopmainwindow.h"
 SettingsLaunch::SettingsLaunch(DesktopMainWindow* parent)
     : ApplicationWrapper(parent, parent) {

@@ -3,6 +3,7 @@
 #include "desktop_settings.h"
 #include "desktopmainwindow.h"
 #include "downdockwidget.h"
+#include "ui/UiTools.h"
 #include <QGridLayout>
 #include <QStackedWidget>
 /* create for a page append */
@@ -30,16 +31,27 @@ PageSetuper::create_one_app_only_page_append(
 		j++;
 	}
 
-	while (j < MAX_WIDTH + MAX_HEIGHT) {
-		/* this is a temp dummy apps */
-		gridLayout->addWidget(new QWidget(mainWindow), j / MAX_WIDTH, j % MAX_HEIGHT);
-		j++;
-	}
-
 	page->setLayout(gridLayout);
 	mainWindow->stackedWidget()->addWidget(page);
 
 	return appsWidgets;
+}
+
+void PageSetuper::create_new_page_with_appWidget(
+    QList<AppWidget*> appWidgets,
+    DesktopMainWindow* mainWindow, const QString& name) {
+    QWidget* page = new QWidget(mainWindow);
+    page->setObjectName(name);
+    QGridLayout* gridLayout = new QGridLayout(page);
+    gridLayout->setSpacing(20);
+    gridLayout->setContentsMargins(30, 30, 30, 30);
+    int j = 0;
+    for (const auto& session : appWidgets) {
+        gridLayout->addWidget(session, j / MAX_WIDTH, j % MAX_HEIGHT);
+        j++;
+    }
+    page->setLayout(gridLayout);
+    mainWindow->stackedWidget()->addWidget(page);
 }
 
 void PageSetuper::add_to_dock(
@@ -243,6 +255,7 @@ QWidget* query_target(const QString& name, QStackedWidget* stacked_widget) {
 }
 }
 
+#include "builtin/window/applauncher/fakeapps/AppLauncherApp.h"
 #include "builtin/window/settings_window/fake_app_entry/SettingsApp.h"
 QList<AppWidget*> PageSetuper::create_internal_apps(DesktopMainWindow* mainWindow) {
     /* append to the page of builtins */
@@ -256,6 +269,14 @@ QList<AppWidget*> PageSetuper::create_internal_apps(DesktopMainWindow* mainWindo
                      mainWindow, &DesktopMainWindow::open_settings_window);
     QObject::connect(settings_app, &AppWidget::postAppStatus,
                      mainWindow, &DesktopMainWindow::handle_app_status);
-    builtin_page->layout()->addWidget(settings_app);
-    return { settings_app };
+    QGridLayout* layout = dynamic_cast<QGridLayout*>(builtin_page->layout());
+    UiTools::addWidgetToGridTail(layout, settings_app, MAX_HEIGHT);
+
+    AppLauncherApp* launch_app = new AppLauncherApp(mainWindow);
+    QObject::connect(launch_app, &AppLauncherApp::indicate_open_launch_window,
+                     mainWindow, &DesktopMainWindow::open_launch_window);
+    QObject::connect(launch_app, &AppWidget::postAppStatus,
+                     mainWindow, &DesktopMainWindow::handle_app_status);
+    UiTools::addWidgetToGridTail(layout, launch_app, MAX_HEIGHT);
+    return { launch_app, settings_app };
 }
