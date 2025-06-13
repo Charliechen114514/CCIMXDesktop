@@ -42,9 +42,9 @@ var NAVTREE =
       [ "🌟 Project Overview 🌟", "md_README__EN.html#autotoc_md17", null ],
       [ "Some running screenshots", "md_README__EN.html#autotoc_md19", null ],
       [ "🛠️ Technologies used to build the foundation", "md_README__EN.html#autotoc_md20", null ],
-      [ "🛠️ Technologies used for full build", "md_README__EN.html#autotoc_md21", null ],
+      [ "🛠️ Full build of technologies", "md_README__EN.html#autotoc_md21", null ],
       [ "🧩 Developer Reference", "md_README__EN.html#autotoc_md23", null ],
-      [ "📚Project Documentation", "md_README__EN.html#autotoc_md25", null ],
+      [ "📚 Project Documentation", "md_README__EN.html#autotoc_md25", null ],
       [ "💡 WIP (some WIP Third Party Apps under development)", "md_README__EN.html#autotoc_md26", null ],
       [ "💡 Future plans", "md_README__EN.html#autotoc_md27", null ],
       [ "📝 License", "md_README__EN.html#autotoc_md29", null ]
@@ -98,14 +98,14 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AP3216CAdapterFactory_8h_source.html",
-"classBacklightController.html#abd4cc6f7f7d3eea65d7bade64fd050b0",
-"classCameraWindow.html#ab3924459cef64b774c7a9c386e735671",
-"classFrameProvider.html",
-"classMeanBlur.html#ac281b96d5244cd7c3845ddd13c577b85",
-"classSideBarWidget.html#ab55fe500508468594a880f9fa25c31a7",
-"classWeatherAppMainWindow.html",
-"mainwindow_8h_source.html",
-"structImageProc.html#a50f88f38a237c4d707f6807559cd7bcf"
+"classApplicationWrapper.html#a78d2891721e75aa4494a062769ede89f",
+"classCameraCapture.html#aec7c35d14237db1faad9e83066d36358aebcf7fcb6acf28195cdba149f1ea6ea7",
+"classFixedOptionWidget.html",
+"classMainWindow.html#a996c5a2b6f77944776856f08ec30858d",
+"classSideBarWidget.html#a5304ab5e143b4078ff8203ca34a94ee5",
+"classWallPaperEngine.html#a7b93e03a270978ba1b76067d395e6b54",
+"functions_vars_t.html",
+"structGaussainPackage.html#a1c0e035c39d60cadacd3c7c7aa3eac69"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

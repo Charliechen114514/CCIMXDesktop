@@ -97,6 +97,7 @@ $(document).ready(function(){initNavTree('classApplicationWrapper.html',''); ini
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
+<a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classApplicationWrapper-members.html">List of all members</a>  </div>
@@ -114,7 +115,8 @@ Inheritance diagram for ApplicationWrapper:</div>
  <div class="center">
   <img src="classApplicationWrapper.png" usemap="#ApplicationWrapper_map" alt=""/>
   <map id="ApplicationWrapper_map" name="ApplicationWrapper_map">
-<area href="classSettingsLaunch.html" title="Wrapper class to launch the settings application." alt="SettingsLaunch" shape="rect" coords="0,112,124,136"/>
+<area href="classAppLaunchLauncher.html" title="Wrapper class to launch the settings application." alt="AppLaunchLauncher" shape="rect" coords="0,112,131,136"/>
+<area href="classSettingsLaunch.html" title="Wrapper class to launch the settings application." alt="SettingsLaunch" shape="rect" coords="141,112,272,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -132,6 +134,17 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>HandlingFinHook</b> 
 using&#160;</td><td class="memItemRight" valign="bottom"><b>ErrorDepatchHook</b> = void(*)(<a class="el" href="classApplicationWrapper.html">ApplicationWrapper</a> *wrapper)</td></tr>
 <tr class="memdesc:a1efcf8d4c820fd4c962319f69ccd50fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function pointer type for handling depatch errors. <br /></td></tr>
 <tr class="separator:a1efcf8d4c820fd4c962319f69ccd50fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
+Signals</h2></td></tr>
+<tr class="memitem:a04a9cdfdf932656383fd37e4428a6a33" id="r_a04a9cdfdf932656383fd37e4428a6a33"><td class="memItemLeft" align="right" valign="top"><a id="a04a9cdfdf932656383fd37e4428a6a33" name="a04a9cdfdf932656383fd37e4428a6a33"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>self_depatched_success</b> ()</td></tr>
+<tr class="memdesc:a04a9cdfdf932656383fd37e4428a6a33"><td class="mdescLeft">&#160;</td><td class="mdescRight">self_depatched_success signals is using for depatch time success <br /></td></tr>
+<tr class="separator:a04a9cdfdf932656383fd37e4428a6a33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6aad3fa0a0b3d5a1e2f06a417bf69e5" id="r_aa6aad3fa0a0b3d5a1e2f06a417bf69e5"><td class="memItemLeft" align="right" valign="top"><a id="aa6aad3fa0a0b3d5a1e2f06a417bf69e5" name="aa6aad3fa0a0b3d5a1e2f06a417bf69e5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>self_mission_finished</b> ()</td></tr>
+<tr class="memdesc:aa6aad3fa0a0b3d5a1e2f06a417bf69e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">self_mission_finished mission finished <br /></td></tr>
+<tr class="separator:aa6aad3fa0a0b3d5a1e2f06a417bf69e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -379,7 +392,7 @@ Friends</h2></td></tr>
 <p>Launches the application (depatch). </p>
 <p>This is the core function to start the external process. </p>
 
-<p>Reimplemented in <a class="el" href="classSettingsLaunch.html#a38316977e9cb0cebb7225d83b4be0389">SettingsLaunch</a>.</p>
+<p>Reimplemented in <a class="el" href="classAppLaunchLauncher.html#adff6f6e20eea25bbb2d96449019048e8">AppLaunchLauncher</a>, and <a class="el" href="classSettingsLaunch.html#a38316977e9cb0cebb7225d83b4be0389">SettingsLaunch</a>.</p>
 
 </div>
 </div>

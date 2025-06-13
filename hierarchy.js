@@ -113,6 +113,7 @@ var hierarchy =
     ] ],
     [ "QMainWindow", null, [
       [ "AboutMainWindow", "classAboutMainWindow.html", null ],
+      [ "ApplicationLauncherMainWindow", "classApplicationLauncherMainWindow.html", null ],
       [ "CCNoterWindow", "classCCNoterWindow.html", null ],
       [ "CaculatorMainWindow", "classCaculatorMainWindow.html", null ],
       [ "CameraWindow", "classCameraWindow.html", null ],
@@ -143,6 +144,7 @@ var hierarchy =
     [ "QObject", null, [
       [ "AP3216CAdapterFactory", "classAP3216CAdapterFactory.html", null ],
       [ "ApplicationWrapper", "classApplicationWrapper.html", [
+        [ "AppLaunchLauncher", "classAppLaunchLauncher.html", null ],
         [ "SettingsLaunch", "classSettingsLaunch.html", null ]
       ] ],
       [ "CCMediaPlayList", "classCCMediaPlayList.html", null ],
@@ -204,6 +206,7 @@ var hierarchy =
         [ "NetCardGadget", "classNetCardGadget.html", null ]
       ] ],
       [ "AppWidget", "classAppWidget.html", [
+        [ "AppLauncherApp", "classAppLauncherApp.html", null ],
         [ "SettingsApp", "classSettingsApp.html", null ]
       ] ],
       [ "AppWidgetConfigures", "classAppWidgetConfigures.html", null ],

@@ -32,7 +32,7 @@ var searchData=
   ['board_5flen_29',['BOARD_LEN',['../classGaugeWidget.html#aec3958da812296d68d8093558f0d15e1',1,'GaugeWidget']]],
   ['bonusfunctor_30',['bonusfunctor',['../classBonusFunctor.html#a9a07fb47a802b6c4edb025b71d6dee61',1,'BonusFunctor::BonusFunctor()'],['../classBonusFunctor.html',1,'BonusFunctor']]],
   ['browse_5fdocument_5fmetas_31',['browse_document_metas',['../classMainWindow.html#ad0d5bd0ef2a63f9fa672f284bf381c15',1,'MainWindow']]],
-  ['build_32',['🛠️ Technologies used for full build',['../md_README__EN.html#autotoc_md21',1,'']]],
+  ['build_20of_20technologies_32',['🛠️ Full build of technologies',['../md_README__EN.html#autotoc_md21',1,'']]],
   ['build_20the_20foundation_33',['🛠️ Technologies used to build the foundation',['../md_README__EN.html#autotoc_md20',1,'']]],
   ['build_5fhome_5fpage_34',['build_home_page',['../classPageFactory.html#a7568d9fd1e31b8610b514ae09890a1e4',1,'PageFactory']]],
   ['build_5fpesudo_5fpage_35',['build_pesudo_page',['../classPageFactory.html#a0aacbea4749963dcbcb05af9c4798ccc',1,'PageFactory']]],

@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('md_README.html',''); initResizable(); 
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="autotoc_md0"></a> <img src="./CCIMXDesktopLogo.png" alt="CCIMXDesktopLogo" class="inline"/></p>
-<p><img src="https://img.shields.io/badge/Qt-6.8.3-green" alt="Qt" class="inline"/><img src="https://img.shields.io/badge/OpenCV-4.12.0-blue" alt="OpenCV" class="inline"/><img src="https://img.shields.io/badge/MuPDF-supported-orange" alt="MuPDF" class="inline"/><img src="https://img.shields.io/badge/C++-23+-green" alt="Qt" class="inline"/><img src="https://img.shields.io/badge/Version-0.9.9-red" alt="Version" class="inline"/></p>
+<p><img src="https://img.shields.io/badge/Qt-6.8.3-green" alt="Qt" class="inline"/><img src="https://img.shields.io/badge/OpenCV-4.12.0-blue" alt="OpenCV" class="inline"/><img src="https://img.shields.io/badge/MuPDF-supported-orange" alt="MuPDF" class="inline"/><img src="https://img.shields.io/badge/C++-23+-green" alt="Qt" class="inline"/><img src="https://img.shields.io/badge/Version-preReleased_1.0.0-red" alt="Version" class="inline"/></p>
 <p>🔌 您好！这是一个可在多种嵌入式设备中使用的简单桌面和实用程序集合！这个项目目前需要使用C++23进行编译（值得一提的是，您可以使用C++17编译，但是需要少许的修改任何要求使用C++23的项目）</p>
 <h1><a class="anchor" id="autotoc_md1"></a>
 🌐 开始之前，选择你的语言！ 🌐</h1>
@@ -110,8 +110,8 @@ $(document).ready(function(){initNavTree('md_README.html',''); initResizable(); 
 <p><img src="https://img.shields.io/badge/NXP-i.MX6ULL-yellow" alt="i.MX6ULL" class="inline"/> <img src="https://img.shields.io/badge/Platform-Embedded%20Linux-lightgrey" alt="Embedded" class="inline"/></p>
 <p>现在，CCIMXDesktop支持的一键构建包括：</p>
 <ul>
-<li>🏠 基础的桌面环境和应用抽象</li>
-<li>🏠 记录点击频率从而动态调整的DockWidget</li>
+<li>🏠 支持可动态加载内建或者外部应用程序（单次启动或者持久化至桌面）与最基本的桌面可配置接口（设置应用程序支持调整亮度（非arm平台是伪接口，不提供实际效果），静态壁纸多样切换（PPT平移风格，渐变风格和固定显示风格））</li>
+<li>🏠 支持记录点击频率从而动态调整的DockWidget底部侧栏</li>
 <li>ℹ About App（简单的介绍本项目桌面的基本情况）</li>
 <li>✏️ CCNoter（超级无敌轻量的记事本）</li>
 <li>🎨SimpleDrawer（超级无敌轻量的画图，类似Windows的“画图”）</li>
@@ -132,16 +132,27 @@ $(document).ready(function(){initNavTree('md_README.html',''); initResizable(); 
 <li>🧮Caculator 口袋计算器（标准的计算器）</li>
 <li>🤖ImageProcessor（图像处理器本地处理图像和做简单的推理（人脸识别））</li>
 <li>⚙ Settings（提供对桌面壁纸，亮度设置（ARM平台尚未实现）和AppWidget风格设置）</li>
+<li>🚀Dynamic Application Launcher（支持运行第三方且可持久化进入桌面！）</li>
 </ul>
 <hr  />
 <h1><a class="anchor" id="autotoc_md4"></a>
 一些运行截图</h1>
-<p><img src="./README/image-20250518085608736.png" alt="image-20250518085608736" class="inline"/></p>
-<p><img src="./README/image-20250518085912716.png" alt="image-20250518085912716" class="inline"/></p>
+<p>1）主界面：HOME界面（截图版本：PreRelease1.0.0）</p>
+<p><img src="./README/image-20250613225001667.png" alt="image-20250613225001667" class="inline"/></p>
+<p>2）BuiltinAPP展示界面</p>
+<p><img src="./README/image-20250613225142493.png" alt="image-20250613225142493" class="inline"/></p>
+<p>3）ExternAPP第三方可选构建配置</p>
+<p><img src="./README/image-20250613225155327.png" alt="image-20250613225155327" class="inline"/></p>
+<p>4）APP设置桌面界面</p>
+<p><img src="./README/image-20250613224911141.png" alt="image-20250613224911141" class="inline"/></p>
 <h1><a class="anchor" id="autotoc_md5"></a>
 🛠️ 基础构建所用技术</h1>
 <p><img src="https://img.shields.io/badge/Qt-Core%20%26%20Network-41cd52" alt="Qt" class="inline"/> <img src="https://img.shields.io/badge/TSLIB-required-green" alt="TSLIB" class="inline"/><img src="https://img.shields.io/badge/QtCore-required-red" alt="TSLIB" class="inline"/><img src="https://img.shields.io/badge/QtWidget_QtGui-required-blue" alt="TSLIB" class="inline"/><img src="https://img.shields.io/badge/QtNetwork-required-purple" alt="TSLIB" class="inline"/><img src="https://img.shields.io/badge/QtMultiMedia_ALSA_Least-required-purple" alt="TSLIB" class="inline"/></p>
 <p>构建这个项目要求您已经完成对Qt6的移植（基础的必要移植包括TSLib做交互，QtCore QtWidget QtGui三件套，QtNetwork和最小至少支持ALSA音频播放的QtMultiMedia组件的支持），请您核查自己的构建是否足够支持构建本桌面和第三方应用程序！</p>
+<p>提示：全量构建需要大约近10分钟（16线程），您可以根据需求动态调整，详细请参考构建文档</p>
+<blockquote class="doxtable">
+<p>&zwj;🛠️ 如何构建本项目？（支持 X86 gcc、ARM-linux-gnueabihf-gcc 和 Windows GCC） </p>
+</blockquote>
 <h1><a class="anchor" id="autotoc_md6"></a>
 🛠️ 完整构建所用技术</h1>
 <p><img src="https://img.shields.io/badge/OpenCV-Camera%20Support-blue" alt="OpenCV" class="inline"/> <img src="https://img.shields.io/badge/MuPDF-PDF%20Rendering-orange" alt="MuPDF" class="inline"/></p>
@@ -167,12 +178,13 @@ $(document).ready(function(){initNavTree('md_README.html',''); initResizable(); 
 <h1><a class="anchor" id="autotoc_md11"></a>
 💡 WIP（一些正在开发的WIP Third Party App）</h1>
 <ul>
-<li>动态的APP加载器（Dynamic Application Launcher）</li>
+<li>💬 聊天室（计划类似于QQ）</li>
+<li>支持顶部状态栏显示基本信息</li>
+<li>可配置的HOME界面</li>
 </ul>
 <h1><a class="anchor" id="autotoc_md12"></a>
 💡 未来计划</h1>
 <p>🚀 计划编写和提供更多的外部基础程序：</p><ul>
-<li>💬 聊天室（计划类似于QQ）</li>
 <li>⏰ 闹钟APP</li>
 <li>🔌 串口助手</li>
 <li>✅ 任务清单</li>

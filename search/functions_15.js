@@ -6,8 +6,9 @@ var searchData=
   ['unsupportedsymbol_3',['UnSupportedSymbol',['../classUnSupportedSymbol.html#a7d853488c90ed5b61db2f50fa4bd478e',1,'UnSupportedSymbol']]],
   ['unsupportivefunction_4',['UnSupportiveFunction',['../classUnSupportiveFunction.html#a8a18cff8ffa805b8f9a167f925e3574d',1,'UnSupportiveFunction']]],
   ['unsymmetryexpression_5',['UnSymmetryExpression',['../classUnSymmetryExpression.html#a9bfccbe6da8ad05d95f7e01ba9034615',1,'UnSymmetryExpression']]],
-  ['update_5fparams_6',['update_params',['../classGroundLineProviders.html#a1593b85a09b6c9c261295bd29444e826',1,'GroundLineProviders']]],
-  ['update_5fposition_7',['update_position',['../classObsticals.html#a9d983b471e3a215ad3797d87e390c00a',1,'Obsticals']]],
-  ['update_5fvalue_8',['update_value',['../classGaugeWidget.html#a48d06bdd0fc8b272385679dc01a3a0cc',1,'GaugeWidget']]],
-  ['upgrade_5fdifficulty_9',['upgrade_difficulty',['../classDifficultyManager.html#a1ab2819373431622077be43ffe2bb1d9',1,'DifficultyManager']]]
+  ['upcast_5fto_5fmseconds_6',['upcast_to_mseconds',['../namespaceUiTools.html#a0851222151caa014bef526893f1995aa',1,'UiTools']]],
+  ['update_5fparams_7',['update_params',['../classGroundLineProviders.html#a1593b85a09b6c9c261295bd29444e826',1,'GroundLineProviders']]],
+  ['update_5fposition_8',['update_position',['../classObsticals.html#a9d983b471e3a215ad3797d87e390c00a',1,'Obsticals']]],
+  ['update_5fvalue_9',['update_value',['../classGaugeWidget.html#a48d06bdd0fc8b272385679dc01a3a0cc',1,'GaugeWidget']]],
+  ['upgrade_5fdifficulty_10',['upgrade_difficulty',['../classDifficultyManager.html#a1ab2819373431622077be43ffe2bb1d9',1,'DifficultyManager']]]
 ];

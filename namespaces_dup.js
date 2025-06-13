@@ -37,11 +37,20 @@ var namespaces_dup =
     ] ],
     [ "SideBarWidgetStaticConfig", "namespaceSideBarWidgetStaticConfig.html", null ],
     [ "SimpleTools", "namespaceSimpleTools.html", "namespaceSimpleTools" ],
+    [ "UiTools", "namespaceUiTools.html", [
+      [ "addWidgetToGridTail", "namespaceUiTools.html#a9f60353610b781acba2a6f6040aaeaf5", null ],
+      [ "downcast_to_sliderable_period", "namespaceUiTools.html#a999dd6eb96eca168befed930c63f5d6f", null ],
+      [ "downcast_to_sliderable_position", "namespaceUiTools.html#a1bf04de71297f008b989b18fba3bea44", null ],
+      [ "toMediaTypicalTimeStr", "namespaceUiTools.html#aff01fcf1564c6a685754aac0343877d5", null ],
+      [ "toScrollLabelText", "namespaceUiTools.html#aa0ceeeec7f42af270fcac8c916f7ff8e", null ],
+      [ "upcast_to_mseconds", "namespaceUiTools.html#a0851222151caa014bef526893f1995aa", null ]
+    ] ],
     [ "VideoPlayerTools", "namespaceVideoPlayerTools.html", [
       [ "frame_to_mseconds", "namespaceVideoPlayerTools.html#a55fe34f01d97db614347b5af132287e1", null ],
       [ "mseconds_to_frame", "namespaceVideoPlayerTools.html#a3ed058f954d8603eaa07a2be89d72431", null ]
     ] ],
     [ "WallPaperUtilsColliections", "namespaceWallPaperUtilsColliections.html", [
-      [ "collect_from_qrcs", "namespaceWallPaperUtilsColliections.html#a09cb5c172a1ec03ce71c416f31dd8ac7", null ]
+      [ "collect_from_qrcs", "namespaceWallPaperUtilsColliections.html#a09cb5c172a1ec03ce71c416f31dd8ac7", null ],
+      [ "prefixs", "namespaceWallPaperUtilsColliections.html#a6ddb356d3b40cce9605fae9e930d825f", null ]
     ] ]
 ];

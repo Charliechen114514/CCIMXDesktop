@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('md_README__EN.html',''); initResizable
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="autotoc_md15"></a> <img src="./CCIMXDesktopLogo.png" alt="CCIMXDesktopLogo" class="inline"/></p>
-<p><img src="https://img.shields.io/badge/Qt-6.8.3-green" alt="Qt" class="inline"/><img src="https://img.shields.io/badge/OpenCV-4.12.0-blue" alt="OpenCV" class="inline"/><img src="https://img.shields.io/badge/MuPDF-supported-orange" alt="MuPDF" class="inline"/><img src="https://img.shields.io/badge/C++-23+-green" alt="Qt" class="inline"/><img src="https://img.shields.io/badge/Version-0.9.9-red" alt="Version" class="inline"/></p>
+<p><img src="https://img.shields.io/badge/Qt-6.8.3-green" alt="Qt" class="inline"/><img src="https://img.shields.io/badge/OpenCV-4.12.0-blue" alt="OpenCV" class="inline"/><img src="https://img.shields.io/badge/MuPDF-supported-orange" alt="MuPDF" class="inline"/><img src="https://img.shields.io/badge/C++-23+-green" alt="Qt" class="inline"/><img src="https://img.shields.io/badge/Version-preReleased_1.0.0-red" alt="Version" class="inline"/></p>
 <p>🔌 Hello! This is a simple desktop and utility collection that can be used in a variety of embedded devices! This project currently requires C++23 to compile (it's worth noting that you can compile with C++17, but any projects that require C++23 will need minor modifications)</p>
 <h1><a class="anchor" id="autotoc_md16"></a>
 🌐 Before you get started, choose your language! 🌐</h1>
@@ -110,44 +110,56 @@ $(document).ready(function(){initNavTree('md_README__EN.html',''); initResizable
 <p><img src="https://img.shields.io/badge/NXP-i.MX6ULL-yellow" alt="i.MX6ULL" class="inline"/> <img src="https://img.shields.io/badge/Platform-Embedded%20Linux-lightgrey" alt="Embedded" class="inline"/></p>
 <p>Now, CCIMXDesktop supports one-click builds including:</p>
 <ul>
-<li>🏠 Basic desktop environment and application abstraction</li>
-<li>🏠 DockWidget that records click frequency and dynamically adjusts</li>
+<li>🏠 Supports dynamic loading of built-in or external applications (single launch or persistence to the desktop) and the most basic desktop configurable interface (setting application supports brightness adjustment (non-arm platform is a pseudo interface, no actual effect is provided), static wallpaper switching (PPT translation style, gradient style and fixed display style))</li>
+<li>🏠 Supports recording click frequency and dynamically adjusting the DockWidget bottom sidebar</li>
 <li>ℹ About App (a brief introduction to the basic situation of the desktop of this project)</li>
 <li>✏️ CCNoter (super lightweight notepad)</li>
 <li>🎨SimpleDrawer (super lightweight drawing, similar to Windows "Paint")</li>
-<li>🔧 Builtin Apps (Indoor temperature requires that the <a class="el" href="classICM20608.html" title="Interface for ICM20608 inertial measurement unit (IMU) sensor.">ICM20608</a> driver has been mounted and is available. Other sensors need to modify the interface content by themselves (just rewrite how to read) and network degree detection (requires Qt Networks Core to be supported))</li>
-<li>☀️ WeatherAPP (requires your device to be connected to the Internet to be available)</li>
+<li>🔧 Builtin Apps (Indoor temperature requires that the <a class="el" href="classICM20608.html" title="Interface for ICM20608 inertial measurement unit (IMU) sensor.">ICM20608</a> driver has been mounted and is available, other sensors need to modify the interface content by themselves (just rewrite how to read) and network degree detection (requires Qt Networks Core to be supported))</li>
+<li>☀️ WeatherAPP (requires your device to be able to connect to the Internet to be available)</li>
 <li>📄 pdfReader (requires you to have the dependent static library of mupdf on your platform)</li>
 <li>📁 FileRamber (file browser, with basic file navigation, Tiny version of Windows Explorer.exe)</li>
 <li>📷 GeneralLocalCamera (this is a basic camera based on Opencv VideoCapture, which can realize the photo function)</li>
 <li>📊 SystemState (view the CPU status, memory capacity status and process list of the running machine)</li>
-<li>🎵 <a class="el" href="classMediaPlayer.html" title="MediaPlayer is the wrapper of VideoPlayer and AudioPlayer, with the sync of video and audio basically...">MediaPlayer</a> (requires your QMediaPlayer to support ALSA or other audio playback, video playback requires OpenCV support)</li>
-<li>💡 <a class="el" href="classLEDController.html" title="High-level controller interface for controlling LEDs, abstracting real or pseudo backends.">LEDController</a> App (switch light APP, requires Platform LED driver to be enabled)</li>
+<li>🎵 <a class="el" href="classMediaPlayer.html" title="MediaPlayer is the wrapper of VideoPlayer and AudioPlayer, with the sync of video and audio basically...">MediaPlayer</a> (requires your QMediaPlayer to support ALSA or other audio playback, and OpenCV support is required for video playback)</li>
+<li>💡 <a class="el" href="classLEDController.html" title="High-level controller interface for controlling LEDs, abstracting real or pseudo backends.">LEDController</a> App (Light switch APP, requires Platform LED driver to be enabled)</li>
 <li>🌡️ Environment App (AP3216C driver needs to be mounted)</li>
 <li>🏃 SportHealth App (<a class="el" href="classICM20608.html" title="Interface for ICM20608 inertial measurement unit (IMU) sensor.">ICM20608</a> driver needs to be mounted)</li>
 <li>🖼️ ImageWalker (the most basic image information browser, equivalent to the Windows image browser for beggars)</li>
 <li>✏️ MarkDown reader (the most basic Markdown editing + preview function, supports draft/load and save Markdown and basic shortcut functions)</li>
 <li>🛜 CCNetHelper (supports network card information viewing, IP port scanning and basic test IP connection capabilities)</li>
 <li>🦖Dinasour Game! (Yes, that Google <a class="el" href="classDinasour.html" title="The Dinasour Object handle.">Dinasour</a> Game, implemented with Qt6 Widgets :) )</li>
-<li>🧮Caculator pocket calculator (standard calculator)</li>
-<li>🤖ImageProcessor (image processor local processing image and simple reasoning (face recognition))</li>
+<li>🧮Caculator Pocket calculator (standard calculator)</li>
+<li>🤖ImageProcessor (image processor processes images locally and does simple reasoning (face recognition))</li>
 <li>⚙ Settings (provides desktop wallpaper, brightness settings (not yet implemented on ARM platform) and <a class="el" href="classAppWidget.html" title="The AppWidget class represents an application widget placed on the desktop.">AppWidget</a> style settings)</li>
+<li>🚀Dynamic Application Launcher (supports running third-party and can persist into the desktop!)</li>
 </ul>
 <hr  />
 <h1><a class="anchor" id="autotoc_md19"></a>
 Some running screenshots</h1>
-<p><img src="./README/image-20250518085608736.png" alt="image-20250518085608736" class="inline"/></p>
-<p><img src="./README/image-20250518085912716.png" alt="image-20250518085912716" class="inline"/></p>
+<p>1) Main interface: HOME interface (screenshot version: PreRelease1.0.0)</p>
+<p><img src="./README/image-20250613225001667.png" alt="image-20250613225001667" class="inline"/></p>
+<p>2) BuiltinAPP display interface</p>
+<p><img src="./README/image-20250613225142493.png" alt="image-20250613225142493" class="inline"/></p>
+<p>3) ExternAPP third-party optional build configuration</p>
+<p><img src="./README/image-20250613225155327.png" alt="image-20250613225155327" class="inline"/></p>
+<p>4) APP settings desktop interface</p>
+<p><img src="./README/image-20250613224911141.png" alt="image-20250613224911141" class="inline"/></p>
 <h1><a class="anchor" id="autotoc_md20"></a>
 🛠️ Technologies used to build the foundation</h1>
-<p><img src="https://img.shields.io/badge/Qt-Core%20%26%20Network-41cd52" alt="Qt" class="inline"/> <img src="https://img.shields.io/badge/TSLIB-required-green" alt="TSLIB" class="inline"/><img src="https://img.shields.io/badge/QtCore-required-red" alt="TSLIB" class="inline"/><img src="https://img.shields.io /badge/QtWidget_QtGui-required-blue" alt="TSLIB" class="inline"/><img src="https://img.shields.io/badge/QtNetwork-required-purple" alt="TSLIB" class="inline"/><img src="https://img.shields.io/badge/QtMultiMedia_ALSA_Least-required-purple" alt="TSLIB" class="inline"/></p>
+<p><img src="https://img.shields.io/badge/Qt-Core%20%26%20Network-41cd52" alt="Qt" class="inline"/> <img src="https://img.shields.io/badge/TSLIB-required-green" alt="TSLIB" class="inline"/><img src="https://img.shields.io/badge/QtCore-required-red" alt="TSLIB" class="inline"/><img src="https://img.shields.io/badge/QtWidget_QtGui-required-blue" alt="TSLIB" class="inline"/><img src="https://img.shields.io/badge/QtNetwork-required-purple" alt="TSLIB" class="inline"/><img src="https://img.shields.io/badge/QtMultiMedia_ALSA_Least-required-purple" alt="TSLIB" class="inline"/></p>
 <p>Building this project requires that you have completed the porting of Qt6 (the basic necessary porting includes TSLib for interaction, QtCore QtWidget QtGui three-piece set, QtNetwork and at least QtMultiMedia component support for ALSA audio playback). Please check whether your build is sufficient to support the building of this desktop and third-party applications!</p>
+<p>Tip: The full build takes about 10 minutes (16 threads), you can adjust it dynamically according to your needs, please refer to the build document for details</p>
+<blockquote class="doxtable">
+<p>&zwj;🛠️ How to build this project? (Supports X86 gcc, ARM-linux-gnueabihf-gcc and Windows GCC) </p>
+</blockquote>
 <h1><a class="anchor" id="autotoc_md21"></a>
-🛠️ Technologies used for full build</h1>
-<p><img src="https://img.shields.io/badge/OpenCV-Camera%20Support-blue" alt="OpenCV" class="inline"/> <img src="https://img.shields.io/badge/MuPDF-PDF%20Rendering-orange" alt="MuPDF" class="inline"/></p>
+🛠️ Full build of technologies</h1>
+<p><img src="https://img.shields.io/badge/OpenCV-Camera%20Support-blue" alt="OpenCV" class="inline"/></p>
+<p><img src="https://img.shields.io/badge/MuPDF-PDF%20Rendering-orange" alt="MuPDF" class="inline"/></p>
 <ul>
-<li>OpenCV for camera support and image transformation processing (if you don't use OpenCV image processing and any support for video streaming, you can not provide the library, but all related apps will be set to not build!)</li>
-<li>MuPDF (for PDF rendering) (these are used for PDF readers based on mupdf. If you don't want to build, you can ignore MuPDF dependencies and all related apps will be set to not build!)</li>
+<li>OpenCV for camera support and image transform processing (if you don't use OpenCV image processing and any support for video streaming, you can leave out the library, but all related apps will be set to not build!)</li>
+<li>MuPDF (for PDF rendering) (These are used for PDF readers based on mupdf. If you don't want to build, you can ignore MuPDF dependencies and all related apps will be set to not build!)</li>
 </ul>
 <hr  />
 <h1><a class="anchor" id="autotoc_md23"></a>
@@ -157,9 +169,8 @@ Some running screenshots</h1>
 </ul>
 <hr  />
 <h1><a class="anchor" id="autotoc_md25"></a>
-📚Project Documentation</h1>
-<p><img src="https://img.shields.io/badge/GCC-cross--compile-yellowgreen" alt="GCC" class="inline"/></p>
-<p><img src="https://img.shields.io/badge/ARM-linux--gnueabihf-red" alt="ARM" class="inline"/></p>
+📚 Project Documentation</h1>
+<p><img src="https://img.shields.io/badge/GCC-cross--compile-yellowgreen" alt="GCC" class="inline"/> <img src="https://img.shields.io/badge/ARM-linux--gnueabihf-red" alt="ARM" class="inline"/></p>
 <p>If you are interested in the project production process and development documents, please refer to the Documentations folder. For the build process and customization, please refer to the build manual:</p>
 <blockquote class="doxtable">
 <p>&zwj;🛠️ How to build this project? (Supports X86 gcc, ARM-linux-gnueabihf-gcc and Windows GCC) </p>
@@ -168,13 +179,14 @@ Some running screenshots</h1>
 <h1><a class="anchor" id="autotoc_md26"></a>
 💡 WIP (some WIP Third Party Apps under development)</h1>
 <ul>
-<li>Dynamic APP loader (Dynamic Application Launcher)</li>
+<li>💬 Chat room (planned to be similar to QQ)</li>
+<li>Support the top status bar to display basic information</li>
+<li>Configurable HOME interface</li>
 </ul>
 <h1><a class="anchor" id="autotoc_md27"></a>
 💡 Future plans</h1>
 <p>🚀 Plan to write and provide more external basic programs:</p>
 <ul>
-<li>💬 Chat room (planned to be similar to QQ)</li>
 <li>⏰ Alarm clock APP</li>
 <li>🔌 Serial port assistant</li>
 <li>✅ Task list</li>

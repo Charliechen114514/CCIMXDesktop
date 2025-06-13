@@ -7,11 +7,14 @@ var searchData=
   ['ap3216cadapterfactory_4',['AP3216CAdapterFactory',['../classAP3216CAdapterFactory.html',1,'']]],
   ['ap3216cdata_5',['AP3216CData',['../structAP3216CData.html',1,'']]],
   ['appcardwidget_6',['AppCardWidget',['../classAppCardWidget.html',1,'']]],
-  ['applicationwrapper_7',['ApplicationWrapper',['../classApplicationWrapper.html',1,'']]],
-  ['appweatherdetailedrequest_8',['AppWeatherDetailedRequest',['../structAppWeatherDetailedRequest.html',1,'']]],
-  ['appweatherrequest_9',['AppWeatherRequest',['../classAppWeatherRequest.html',1,'']]],
-  ['appweatherresult_10',['AppWeatherResult',['../classAppWeatherResult.html',1,'']]],
-  ['appwidget_11',['AppWidget',['../classAppWidget.html',1,'']]],
-  ['appwidgetconfigures_12',['AppWidgetConfigures',['../classAppWidgetConfigures.html',1,'']]],
-  ['appwidgetssettingsinfopack_13',['AppWidgetsSettingsInfoPack',['../structAppWidgetsSettingsInfoPack.html',1,'']]]
+  ['applauncherapp_7',['AppLauncherApp',['../classAppLauncherApp.html',1,'']]],
+  ['applaunchlauncher_8',['AppLaunchLauncher',['../classAppLaunchLauncher.html',1,'']]],
+  ['applicationlaunchermainwindow_9',['ApplicationLauncherMainWindow',['../classApplicationLauncherMainWindow.html',1,'']]],
+  ['applicationwrapper_10',['ApplicationWrapper',['../classApplicationWrapper.html',1,'']]],
+  ['appweatherdetailedrequest_11',['AppWeatherDetailedRequest',['../structAppWeatherDetailedRequest.html',1,'']]],
+  ['appweatherrequest_12',['AppWeatherRequest',['../classAppWeatherRequest.html',1,'']]],
+  ['appweatherresult_13',['AppWeatherResult',['../classAppWeatherResult.html',1,'']]],
+  ['appwidget_14',['AppWidget',['../classAppWidget.html',1,'']]],
+  ['appwidgetconfigures_15',['AppWidgetConfigures',['../classAppWidgetConfigures.html',1,'']]],
+  ['appwidgetssettingsinfopack_16',['AppWidgetsSettingsInfoPack',['../structAppWidgetsSettingsInfoPack.html',1,'']]]
 ];

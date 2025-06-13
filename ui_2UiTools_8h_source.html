@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CCIMXDesktop: extern_app/MediaPlayer/core/UiTools.h Source File</title>
+<title>CCIMXDesktop: ui/UiTools.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -69,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search/",'.html');
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('UiTools_8h_source.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('ui_2UiTools_8h_source.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -100,34 +100,23 @@ $(document).ready(function(){initNavTree('UiTools_8h_source.html',''); initResiz
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef UITOOLS_H</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define UITOOLS_H</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;QString&gt;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span>UiTools {</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* TYPICAL_FORMAT = <span class="stringliteral">&quot;HH:mm:ss&quot;</span>;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>QString toMediaTypicalTimeStr(<span class="keyword">const</span> qint64 time);</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">class </span>QGridLayout;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">class </span>QWidget;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceUiTools.html">UiTools</a> {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keywordtype">void</span> <a class="code hl_function" href="namespaceUiTools.html#a9f60353610b781acba2a6f6040aaeaf5">addWidgetToGridTail</a>(QGridLayout* layout, QWidget* newWidget, <span class="keywordtype">int</span> columnCount);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>};</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>std::pair&lt;qint64, qint64&gt; downcast_to_sliderable_period(qint64 min, qint64 max);</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">inline</span> qint64 downcast_to_sliderable_position(qint64 position) {</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordflow">return</span> position / 1000;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>}</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">inline</span> qint64 upcast_to_mseconds(qint64 position) {</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordflow">return</span> position * 1000;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>QString toScrollLabelText(<span class="keyword">const</span> QString&amp; src_path);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>};</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#endif </span><span class="comment">// UITOOLS_H</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#endif </span><span class="comment">// UITOOLS_H</span></div>
+<div class="ttc" id="anamespaceUiTools_html"><div class="ttname"><a href="namespaceUiTools.html">UiTools</a></div><div class="ttdoc">Tools for Ui Sessions.</div><div class="ttdef"><b>Definition</b> UiTools.h:4</div></div>
+<div class="ttc" id="anamespaceUiTools_html_a9f60353610b781acba2a6f6040aaeaf5"><div class="ttname"><a href="namespaceUiTools.html#a9f60353610b781acba2a6f6040aaeaf5">UiTools::addWidgetToGridTail</a></div><div class="ttdeci">void addWidgetToGridTail(QGridLayout *layout, QWidget *newWidget, int columnCount)</div><div class="ttdoc">append to a gridlayout</div><div class="ttdef"><b>Definition</b> UiTools.cpp:17</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_ad8b7d45398b398de9a760bf1216f866.html">extern_app</a></li><li class="navelem"><a class="el" href="dir_0ba559f380a3610271d548d7d45cc87e.html">MediaPlayer</a></li><li class="navelem"><a class="el" href="dir_af5b4b54b336e03278ca0fc4dcb4fb07.html">core</a></li><li class="navelem"><b>UiTools.h</b></li>
+    <li class="navelem"><a class="el" href="dir_1788f8309b1a812dcb800a185471cf6c.html">ui</a></li><li class="navelem"><b>UiTools.h</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
