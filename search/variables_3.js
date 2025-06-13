@@ -11,5 +11,6 @@ var searchData=
   ['default_5fon_5ftime_8',['DEFAULT_ON_TIME',['../classLEDParamsPackageBlink.html#afb849845f29c650a62981372ddf2eefb',1,'LEDParamsPackageBlink']]],
   ['dev_5ffile_9',['DEV_FILE',['../classLightControllerWindow.html#adbec4204da0949f49c696593aa1f4a64',1,'LightControllerWindow']]],
   ['document_10',['document',['../structCCPdfDocumentPrivate.html#a7219d45181ac0ab5096e33a9f8b0d260',1,'CCPdfDocumentPrivate']]],
-  ['durationms_11',['durationMs',['../structMediaInfo.html#a62e3d432bd99c5cf1715b6fd568b8dcf',1,'MediaInfo']]]
+  ['durationms_11',['durationMs',['../structMediaInfo.html#a62e3d432bd99c5cf1715b6fd568b8dcf',1,'MediaInfo']]],
+  ['durations_12',['durations',['../structWallPaperAnimationHandler_1_1AnimationSettingsPackage.html#a80b7dbe034046d158808eb08f310b031',1,'WallPaperAnimationHandler::AnimationSettingsPackage']]]
 ];

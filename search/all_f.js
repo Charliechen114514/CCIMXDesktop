@@ -15,9 +15,10 @@ var searchData=
   ['opencv_5fprocessadapter_12',['OpenCV_ProcessAdapter',['../namespaceOpenCV__ProcessAdapter.html',1,'']]],
   ['openerror_13',['openerror',['../classVideoPlayer.html#a1ae3d446db619373212f38415b459f06',1,'VideoPlayer::openError(const VideoPlayerOpenErrorCode error)'],['../classVideoPlayer.html#a1ae3d446db619373212f38415b459f06',1,'VideoPlayer::openError(const VideoPlayerOpenErrorCode error)']]],
   ['operator_28_29_14',['operator()',['../structCCPdfContextDeleter.html#a8297c17d52c3cd959b31e011e52da5e4',1,'CCPdfContextDeleter']]],
-  ['operator_3d_15',['operator=',['../classCVImage.html#af3aca0a5c5d2f8fc17310bab85f445ba',1,'CVImage::operator=(const CVImage &amp;image)'],['../classCVImage.html#af3aca0a5c5d2f8fc17310bab85f445ba',1,'CVImage::operator=(const CVImage &amp;image)'],['../classPesudoICM20608.html#ae2249087f6916731180356f574b28380',1,'PesudoICM20608::operator=()'],['../classICM20608DataFactory.html#afe9ed4a869dc91b565f45b60b645753e',1,'ICM20608DataFactory::operator=()'],['../classICM20608.html#ab49c1e7e37a218f50da5395354a52388',1,'ICM20608::operator=(const ICM20608 &amp;)=delete'],['../classICM20608.html#ab49c1e7e37a218f50da5395354a52388',1,'ICM20608::operator=(const ICM20608 &amp;)=delete']]],
-  ['oppose_5ffileview_5fvisible_16',['oppose_fileview_visible',['../classImageBrowser.html#a980c9f118b28255ec99a1540be7b17a0',1,'ImageBrowser']]],
-  ['oscillationamplitude_17',['oscillationAmplitude',['../setting__scene_8h.html#adba34ff2e3f3ec0cf6f3eb6951d1853e',1,'Settings::Scene::BackGround::RandomLine']]],
-  ['other_5fmistakes_18',['OTHER_MISTAKES',['../classCCPdfDocument.html#a49387984fa059ca9904600ba7edacd39a47cddc738bfdf4c33c7b47355c4c3799',1,'CCPdfDocument']]],
-  ['overview_20🌟_19',['🌟 Project Overview 🌟',['../md_README__EN.html#autotoc_md17',1,'']]]
+  ['operator_3d_15',['operator=',['../classICM20608.html#ab49c1e7e37a218f50da5395354a52388',1,'ICM20608::operator=()'],['../classCVImage.html#af3aca0a5c5d2f8fc17310bab85f445ba',1,'CVImage::operator=()'],['../classPesudoICM20608.html#ae2249087f6916731180356f574b28380',1,'PesudoICM20608::operator=()'],['../classICM20608DataFactory.html#afe9ed4a869dc91b565f45b60b645753e',1,'ICM20608DataFactory::operator=()'],['../classCVImage.html#af3aca0a5c5d2f8fc17310bab85f445ba',1,'CVImage::operator=()'],['../classICM20608.html#ab49c1e7e37a218f50da5395354a52388',1,'ICM20608::operator=()']]],
+  ['operator_3d_3d_16',['operator==',['../classApplicationWrapper.html#af75654ef1cebfcf8d5c1fdec80e7b955',1,'ApplicationWrapper']]],
+  ['oppose_5ffileview_5fvisible_17',['oppose_fileview_visible',['../classImageBrowser.html#a980c9f118b28255ec99a1540be7b17a0',1,'ImageBrowser']]],
+  ['oscillationamplitude_18',['oscillationAmplitude',['../setting__scene_8h.html#adba34ff2e3f3ec0cf6f3eb6951d1853e',1,'Settings::Scene::BackGround::RandomLine']]],
+  ['other_5fmistakes_19',['OTHER_MISTAKES',['../classCCPdfDocument.html#a49387984fa059ca9904600ba7edacd39a47cddc738bfdf4c33c7b47355c4c3799',1,'CCPdfDocument']]],
+  ['overview_20🌟_20',['🌟 Project Overview 🌟',['../md_README__EN.html#autotoc_md17',1,'']]]
 ];

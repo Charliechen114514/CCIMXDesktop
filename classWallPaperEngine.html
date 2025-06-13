@@ -96,14 +96,21 @@ $(document).ready(function(){initNavTree('classWallPaperEngine.html',''); initRe
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classWallPaperEngine-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">WallPaperEngine Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Engine managing desktop wallpaper switching and animations.  
+ <a href="classWallPaperEngine.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="WallPaperEngine_8h_source.html">WallPaperEngine.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for WallPaperEngine:</div>
 <div class="dyncontent">
@@ -111,51 +118,93 @@ Inheritance diagram for WallPaperEngine:</div>
   <img src="classWallPaperEngine.png" alt=""/>
  </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWallPaperEngine_1_1ModeMapping.html">ModeMapping</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper struct for mapping between mode names and enum values.  <a href="structWallPaperEngine_1_1ModeMapping.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a9b95acff5a7e40cf01b799c2b30995d1" id="r_a9b95acff5a7e40cf01b799c2b30995d1"><td class="memItemLeft" align="right" valign="top"><a id="a9b95acff5a7e40cf01b799c2b30995d1" name="a9b95acff5a7e40cf01b799c2b30995d1"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>SwitchingMode</b> { <b>Gradient</b>
-, <b>Fixed</b>
+<tr class="memitem:a9b95acff5a7e40cf01b799c2b30995d1" id="r_a9b95acff5a7e40cf01b799c2b30995d1"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWallPaperEngine.html#a9b95acff5a7e40cf01b799c2b30995d1">SwitchingMode</a> { <a class="el" href="classWallPaperEngine.html#a9b95acff5a7e40cf01b799c2b30995d1a5e59525cb7d1d1cd93be0b9f36e9d09a">Gradient</a>
+, <a class="el" href="classWallPaperEngine.html#a9b95acff5a7e40cf01b799c2b30995d1a4457d440870ad6d42bab9082d9bf9b61">Fixed</a>
+, <a class="el" href="classWallPaperEngine.html#a9b95acff5a7e40cf01b799c2b30995d1a4642e767f9251fa40afadbc963f80b7a">Movement</a>
  }</td></tr>
+<tr class="memdesc:a9b95acff5a7e40cf01b799c2b30995d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum for wallpaper switching modes.  <a href="classWallPaperEngine.html#a9b95acff5a7e40cf01b799c2b30995d1">More...</a><br /></td></tr>
 <tr class="separator:a9b95acff5a7e40cf01b799c2b30995d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
 Signals</h2></td></tr>
-<tr class="memitem:a3f8ef715e1de8cebc4637bc8065e2d8f" id="r_a3f8ef715e1de8cebc4637bc8065e2d8f"><td class="memItemLeft" align="right" valign="top"><a id="a3f8ef715e1de8cebc4637bc8065e2d8f" name="a3f8ef715e1de8cebc4637bc8065e2d8f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>imagelist_changed</b> (const QStringList &amp;l)</td></tr>
+<tr class="memitem:a3f8ef715e1de8cebc4637bc8065e2d8f" id="r_a3f8ef715e1de8cebc4637bc8065e2d8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWallPaperEngine.html#a3f8ef715e1de8cebc4637bc8065e2d8f">imagelist_changed</a> (const QStringList &amp;l)</td></tr>
+<tr class="memdesc:a3f8ef715e1de8cebc4637bc8065e2d8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal emitted when the wallpaper image list changes.  <br /></td></tr>
 <tr class="separator:a3f8ef715e1de8cebc4637bc8065e2d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a494e61ce221728c80d59f9d830b459c4" id="r_a494e61ce221728c80d59f9d830b459c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWallPaperEngine.html#a494e61ce221728c80d59f9d830b459c4">wallpaperChanged</a> (const QPixmap &amp;pixmap)</td></tr>
+<tr class="memdesc:a494e61ce221728c80d59f9d830b459c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal emitted when the wallpaper pixmap changes.  <br /></td></tr>
+<tr class="separator:a494e61ce221728c80d59f9d830b459c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a99a4ef1bc6cc1cb93aedbb0e9484119b" id="r_a99a4ef1bc6cc1cb93aedbb0e9484119b"><td class="memItemLeft" align="right" valign="top"><a id="a99a4ef1bc6cc1cb93aedbb0e9484119b" name="a99a4ef1bc6cc1cb93aedbb0e9484119b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>WallPaperEngine</b> (<a class="el" href="classDesktopMainWindow.html">DesktopMainWindow</a> *window)</td></tr>
+<tr class="memitem:ada155a6019442694c6f7c3f4adeabfd5" id="r_ada155a6019442694c6f7c3f4adeabfd5"><td class="memItemLeft" align="right" valign="top"><a id="ada155a6019442694c6f7c3f4adeabfd5" name="ada155a6019442694c6f7c3f4adeabfd5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>WallPaperEngine</b> ()=delete</td></tr>
+<tr class="memdesc:ada155a6019442694c6f7c3f4adeabfd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deleted default constructor. <br /></td></tr>
+<tr class="separator:ada155a6019442694c6f7c3f4adeabfd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99a4ef1bc6cc1cb93aedbb0e9484119b" id="r_a99a4ef1bc6cc1cb93aedbb0e9484119b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWallPaperEngine.html#a99a4ef1bc6cc1cb93aedbb0e9484119b">WallPaperEngine</a> (<a class="el" href="classDesktopMainWindow.html">DesktopMainWindow</a> *window)</td></tr>
+<tr class="memdesc:a99a4ef1bc6cc1cb93aedbb0e9484119b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs the wallpaper engine associated with a main window.  <br /></td></tr>
 <tr class="separator:a99a4ef1bc6cc1cb93aedbb0e9484119b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45ffac22a09e7f7232f6b2562f0e171b" id="r_a45ffac22a09e7f7232f6b2562f0e171b"><td class="memItemLeft" align="right" valign="top"><a id="a45ffac22a09e7f7232f6b2562f0e171b" name="a45ffac22a09e7f7232f6b2562f0e171b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>process_resize</b> (<a class="el" href="classDesktopMainWindow.html">DesktopMainWindow</a> *window)</td></tr>
+<tr class="memitem:a45ffac22a09e7f7232f6b2562f0e171b" id="r_a45ffac22a09e7f7232f6b2562f0e171b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWallPaperEngine.html#a45ffac22a09e7f7232f6b2562f0e171b">process_resize</a> (<a class="el" href="classDesktopMainWindow.html">DesktopMainWindow</a> *window)</td></tr>
+<tr class="memdesc:a45ffac22a09e7f7232f6b2562f0e171b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles resizing events, adjusting wallpaper display accordingly.  <br /></td></tr>
 <tr class="separator:a45ffac22a09e7f7232f6b2562f0e171b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b293ee6aa28b4fb2beb7f1eb615eb39" id="r_a6b293ee6aa28b4fb2beb7f1eb615eb39"><td class="memItemLeft" align="right" valign="top"><a id="a6b293ee6aa28b4fb2beb7f1eb615eb39" name="a6b293ee6aa28b4fb2beb7f1eb615eb39"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_switch_interval</b> (int new_interval)</td></tr>
+<tr class="memitem:a6b293ee6aa28b4fb2beb7f1eb615eb39" id="r_a6b293ee6aa28b4fb2beb7f1eb615eb39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWallPaperEngine.html#a6b293ee6aa28b4fb2beb7f1eb615eb39">set_switch_interval</a> (int new_interval)</td></tr>
+<tr class="memdesc:a6b293ee6aa28b4fb2beb7f1eb615eb39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the interval between wallpaper switches.  <br /></td></tr>
 <tr class="separator:a6b293ee6aa28b4fb2beb7f1eb615eb39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a47ac836ea3078fd59fb047471a1ca4" id="r_a3a47ac836ea3078fd59fb047471a1ca4"><td class="memItemLeft" align="right" valign="top"><a id="a3a47ac836ea3078fd59fb047471a1ca4" name="a3a47ac836ea3078fd59fb047471a1ca4"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>switch_interval</b> () const</td></tr>
+<tr class="memitem:a3a47ac836ea3078fd59fb047471a1ca4" id="r_a3a47ac836ea3078fd59fb047471a1ca4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWallPaperEngine.html#a3a47ac836ea3078fd59fb047471a1ca4">switch_interval</a> () const</td></tr>
+<tr class="memdesc:a3a47ac836ea3078fd59fb047471a1ca4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current wallpaper switch interval.  <br /></td></tr>
 <tr class="separator:a3a47ac836ea3078fd59fb047471a1ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8b76824ab70bc5d4bbc5e6caf5efbd2" id="r_ae8b76824ab70bc5d4bbc5e6caf5efbd2"><td class="memItemLeft" align="right" valign="top"><a id="ae8b76824ab70bc5d4bbc5e6caf5efbd2" name="ae8b76824ab70bc5d4bbc5e6caf5efbd2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_mode</b> (const SwitchingMode mode)</td></tr>
+<tr class="memitem:a5ad24a66709bb8015b4cb01d3f2b2acb" id="r_a5ad24a66709bb8015b4cb01d3f2b2acb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWallPaperEngine.html#a5ad24a66709bb8015b4cb01d3f2b2acb">set_animation_speed</a> (int msspeed)</td></tr>
+<tr class="memdesc:a5ad24a66709bb8015b4cb01d3f2b2acb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the animation speed duration in milliseconds.  <br /></td></tr>
+<tr class="separator:a5ad24a66709bb8015b4cb01d3f2b2acb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a192aa3a7337f336792c8085a3eb5cf79" id="r_a192aa3a7337f336792c8085a3eb5cf79"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWallPaperEngine.html#a192aa3a7337f336792c8085a3eb5cf79">animation_speed</a> () const</td></tr>
+<tr class="memdesc:a192aa3a7337f336792c8085a3eb5cf79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current animation speed duration.  <br /></td></tr>
+<tr class="separator:a192aa3a7337f336792c8085a3eb5cf79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8b76824ab70bc5d4bbc5e6caf5efbd2" id="r_ae8b76824ab70bc5d4bbc5e6caf5efbd2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWallPaperEngine.html#ae8b76824ab70bc5d4bbc5e6caf5efbd2">set_mode</a> (const <a class="el" href="classWallPaperEngine.html#a9b95acff5a7e40cf01b799c2b30995d1">SwitchingMode</a> mode)</td></tr>
+<tr class="memdesc:ae8b76824ab70bc5d4bbc5e6caf5efbd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the wallpaper switching mode.  <br /></td></tr>
 <tr class="separator:ae8b76824ab70bc5d4bbc5e6caf5efbd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a436837fc0b72b1e30e45f8b3c250a2b2" id="r_a436837fc0b72b1e30e45f8b3c250a2b2"><td class="memItemLeft" align="right" valign="top"><a id="a436837fc0b72b1e30e45f8b3c250a2b2" name="a436837fc0b72b1e30e45f8b3c250a2b2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_showing_pictures</b> (const QString &amp;path)</td></tr>
-<tr class="separator:a436837fc0b72b1e30e45f8b3c250a2b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0b9323fd50495b5f8cc7edd3c1b8bc9" id="r_af0b9323fd50495b5f8cc7edd3c1b8bc9"><td class="memItemLeft" align="right" valign="top"><a id="af0b9323fd50495b5f8cc7edd3c1b8bc9" name="af0b9323fd50495b5f8cc7edd3c1b8bc9"></a>
-QStringList &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_image_list</b> ()</td></tr>
+<tr class="memitem:aada4c2a21cf25bb6f584c9034abbaae3" id="r_aada4c2a21cf25bb6f584c9034abbaae3"><td class="memItemLeft" align="right" valign="top">QPixmap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWallPaperEngine.html#aada4c2a21cf25bb6f584c9034abbaae3">get_current_pixmap</a> () const</td></tr>
+<tr class="memdesc:aada4c2a21cf25bb6f584c9034abbaae3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the currently displayed wallpaper pixmap.  <br /></td></tr>
+<tr class="separator:aada4c2a21cf25bb6f584c9034abbaae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b93e03a270978ba1b76067d395e6b54" id="r_a7b93e03a270978ba1b76067d395e6b54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classWallPaperEngine.html#a9b95acff5a7e40cf01b799c2b30995d1">SwitchingMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWallPaperEngine.html#a7b93e03a270978ba1b76067d395e6b54">current_mode</a> () const</td></tr>
+<tr class="memdesc:a7b93e03a270978ba1b76067d395e6b54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current switching mode.  <br /></td></tr>
+<tr class="separator:a7b93e03a270978ba1b76067d395e6b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae100ca0466a473e2279ba3a0f680c887" id="r_ae100ca0466a473e2279ba3a0f680c887"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWallPaperEngine.html#ae100ca0466a473e2279ba3a0f680c887">set_showing_pictures</a> (const QPixmap &amp;map)</td></tr>
+<tr class="memdesc:ae100ca0466a473e2279ba3a0f680c887"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the pixmap currently showing as wallpaper.  <br /></td></tr>
+<tr class="separator:ae100ca0466a473e2279ba3a0f680c887"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47021c0e3c612eddfb62bf5f9070c895" id="r_a47021c0e3c612eddfb62bf5f9070c895"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWallPaperEngine.html#a47021c0e3c612eddfb62bf5f9070c895">set_animation_duration_second</a> (int secs)</td></tr>
+<tr class="memdesc:a47021c0e3c612eddfb62bf5f9070c895"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the animation duration in seconds.  <br /></td></tr>
+<tr class="separator:a47021c0e3c612eddfb62bf5f9070c895"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab02ac40f904d616e3dd91178225549fb" id="r_ab02ac40f904d616e3dd91178225549fb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWallPaperEngine.html#ab02ac40f904d616e3dd91178225549fb">duration_seconds</a> () const</td></tr>
+<tr class="memdesc:ab02ac40f904d616e3dd91178225549fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the animation duration in seconds.  <br /></td></tr>
+<tr class="separator:ab02ac40f904d616e3dd91178225549fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0b9323fd50495b5f8cc7edd3c1b8bc9" id="r_af0b9323fd50495b5f8cc7edd3c1b8bc9"><td class="memItemLeft" align="right" valign="top">QStringList &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWallPaperEngine.html#af0b9323fd50495b5f8cc7edd3c1b8bc9">get_image_list</a> ()</td></tr>
+<tr class="memdesc:af0b9323fd50495b5f8cc7edd3c1b8bc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the wallpaper image file path list.  <br /></td></tr>
 <tr class="separator:af0b9323fd50495b5f8cc7edd3c1b8bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a6a12b110cbd188ee48156af3d977d1" id="r_a7a6a12b110cbd188ee48156af3d977d1"><td class="memItemLeft" align="right" valign="top"><a id="a7a6a12b110cbd188ee48156af3d977d1" name="a7a6a12b110cbd188ee48156af3d977d1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_image_list</b> (const QStringList &amp;l)</td></tr>
+<tr class="memitem:a7a6a12b110cbd188ee48156af3d977d1" id="r_a7a6a12b110cbd188ee48156af3d977d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWallPaperEngine.html#a7a6a12b110cbd188ee48156af3d977d1">set_image_list</a> (const QStringList &amp;l)</td></tr>
+<tr class="memdesc:a7a6a12b110cbd188ee48156af3d977d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the list of wallpaper image file paths.  <br /></td></tr>
 <tr class="separator:a7a6a12b110cbd188ee48156af3d977d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d8aa6095be2a578159bafbaacd3f011" id="r_a3d8aa6095be2a578159bafbaacd3f011"><td class="memItemLeft" align="right" valign="top"><a id="a3d8aa6095be2a578159bafbaacd3f011" name="a3d8aa6095be2a578159bafbaacd3f011"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>reset_defaults</b> ()</td></tr>
+<tr class="memdesc:a3d8aa6095be2a578159bafbaacd3f011"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets all settings to default values. <br /></td></tr>
 <tr class="separator:a3d8aa6095be2a578159bafbaacd3f011"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d22ff1b520dcbeffe20e68124973522" id="r_a0d22ff1b520dcbeffe20e68124973522"><td class="memItemLeft" align="right" valign="top"><a id="a0d22ff1b520dcbeffe20e68124973522" name="a0d22ff1b520dcbeffe20e68124973522"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>fallback_empty_session</b> ()</td></tr>
+<tr class="memdesc:a0d22ff1b520dcbeffe20e68124973522"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles fallback behavior when no wallpaper images are available. <br /></td></tr>
 <tr class="separator:a0d22ff1b520dcbeffe20e68124973522"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a8dbbec77b2eaf0acfa2bf21f5c07b432" id="r_a8dbbec77b2eaf0acfa2bf21f5c07b432"><td class="memItemLeft" align="right" valign="top"><a id="a8dbbec77b2eaf0acfa2bf21f5c07b432" name="a8dbbec77b2eaf0acfa2bf21f5c07b432"></a>
+struct <a class="el" href="structWallPaperEngine_1_1ModeMapping.html">WallPaperEngine::ModeMapping</a>&#160;</td><td class="memItemRight" valign="bottom"><b>modeMappings</b></td></tr>
+<tr class="memdesc:a8dbbec77b2eaf0acfa2bf21f5c07b432"><td class="mdescLeft">&#160;</td><td class="mdescRight">mode mappings for the string &lt;=&gt; mode transfer <br /></td></tr>
+<tr class="separator:a8dbbec77b2eaf0acfa2bf21f5c07b432"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -163,6 +212,472 @@ Friends</h2></td></tr>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>WallPaperAnimationHandler</b></td></tr>
 <tr class="separator:a66cf368661cce4b809cfdd590fb36634"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Engine managing desktop wallpaper switching and animations. </p>
+<p>Supports multiple switching modes such as gradient, fixed, and movement, handles wallpaper image lists, animation timing, and wallpaper display. </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a9b95acff5a7e40cf01b799c2b30995d1" name="a9b95acff5a7e40cf01b799c2b30995d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b95acff5a7e40cf01b799c2b30995d1">&#9670;&#160;</a></span>SwitchingMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="classWallPaperEngine.html#a9b95acff5a7e40cf01b799c2b30995d1">WallPaperEngine::SwitchingMode</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Enum for wallpaper switching modes. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a9b95acff5a7e40cf01b799c2b30995d1a5e59525cb7d1d1cd93be0b9f36e9d09a" name="a9b95acff5a7e40cf01b799c2b30995d1a5e59525cb7d1d1cd93be0b9f36e9d09a"></a>Gradient&#160;</td><td class="fielddoc"><p>Wallpaper switches with gradient effect. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9b95acff5a7e40cf01b799c2b30995d1a4457d440870ad6d42bab9082d9bf9b61" name="a9b95acff5a7e40cf01b799c2b30995d1a4457d440870ad6d42bab9082d9bf9b61"></a>Fixed&#160;</td><td class="fielddoc"><p>Fixed wallpaper without switching. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9b95acff5a7e40cf01b799c2b30995d1a4642e767f9251fa40afadbc963f80b7a" name="a9b95acff5a7e40cf01b799c2b30995d1a4642e767f9251fa40afadbc963f80b7a"></a>Movement&#160;</td><td class="fielddoc"><p>Wallpaper switches with movement animation. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a99a4ef1bc6cc1cb93aedbb0e9484119b" name="a99a4ef1bc6cc1cb93aedbb0e9484119b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99a4ef1bc6cc1cb93aedbb0e9484119b">&#9670;&#160;</a></span>WallPaperEngine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">WallPaperEngine::WallPaperEngine </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDesktopMainWindow.html">DesktopMainWindow</a> *&#160;</td>
+          <td class="paramname"><em>window</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs the wallpaper engine associated with a main window. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>Pointer to the main desktop window. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a192aa3a7337f336792c8085a3eb5cf79" name="a192aa3a7337f336792c8085a3eb5cf79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a192aa3a7337f336792c8085a3eb5cf79">&#9670;&#160;</a></span>animation_speed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int WallPaperEngine::animation_speed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the current animation speed duration. </p>
+<dl class="section return"><dt>Returns</dt><dd>Animation duration in milliseconds. </dd></dl>
+
+</div>
+</div>
+<a id="a7b93e03a270978ba1b76067d395e6b54" name="a7b93e03a270978ba1b76067d395e6b54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b93e03a270978ba1b76067d395e6b54">&#9670;&#160;</a></span>current_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classWallPaperEngine.html#a9b95acff5a7e40cf01b799c2b30995d1">SwitchingMode</a> WallPaperEngine::current_mode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the current switching mode. </p>
+<dl class="section return"><dt>Returns</dt><dd>Current mode. </dd></dl>
+
+</div>
+</div>
+<a id="ab02ac40f904d616e3dd91178225549fb" name="ab02ac40f904d616e3dd91178225549fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab02ac40f904d616e3dd91178225549fb">&#9670;&#160;</a></span>duration_seconds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int WallPaperEngine::duration_seconds </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the animation duration in seconds. </p>
+<dl class="section return"><dt>Returns</dt><dd>Duration in seconds. </dd></dl>
+
+</div>
+</div>
+<a id="aada4c2a21cf25bb6f584c9034abbaae3" name="aada4c2a21cf25bb6f584c9034abbaae3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aada4c2a21cf25bb6f584c9034abbaae3">&#9670;&#160;</a></span>get_current_pixmap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QPixmap WallPaperEngine::get_current_pixmap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves the currently displayed wallpaper pixmap. </p>
+<dl class="section return"><dt>Returns</dt><dd>Current wallpaper pixmap. </dd></dl>
+
+</div>
+</div>
+<a id="af0b9323fd50495b5f8cc7edd3c1b8bc9" name="af0b9323fd50495b5f8cc7edd3c1b8bc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0b9323fd50495b5f8cc7edd3c1b8bc9">&#9670;&#160;</a></span>get_image_list()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList &amp; WallPaperEngine::get_image_list </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a reference to the wallpaper image file path list. </p>
+<dl class="section return"><dt>Returns</dt><dd>Reference to image list. </dd></dl>
+
+</div>
+</div>
+<a id="a3f8ef715e1de8cebc4637bc8065e2d8f" name="a3f8ef715e1de8cebc4637bc8065e2d8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f8ef715e1de8cebc4637bc8065e2d8f">&#9670;&#160;</a></span>imagelist_changed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WallPaperEngine::imagelist_changed </td>
+          <td>(</td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Signal emitted when the wallpaper image list changes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">l</td><td>New image list. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a45ffac22a09e7f7232f6b2562f0e171b" name="a45ffac22a09e7f7232f6b2562f0e171b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45ffac22a09e7f7232f6b2562f0e171b">&#9670;&#160;</a></span>process_resize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WallPaperEngine::process_resize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDesktopMainWindow.html">DesktopMainWindow</a> *&#160;</td>
+          <td class="paramname"><em>window</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Handles resizing events, adjusting wallpaper display accordingly. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>Pointer to the main desktop window. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a47021c0e3c612eddfb62bf5f9070c895" name="a47021c0e3c612eddfb62bf5f9070c895"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47021c0e3c612eddfb62bf5f9070c895">&#9670;&#160;</a></span>set_animation_duration_second()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WallPaperEngine::set_animation_duration_second </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>secs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the animation duration in seconds. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">secs</td><td>Duration in seconds. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5ad24a66709bb8015b4cb01d3f2b2acb" name="a5ad24a66709bb8015b4cb01d3f2b2acb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ad24a66709bb8015b4cb01d3f2b2acb">&#9670;&#160;</a></span>set_animation_speed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WallPaperEngine::set_animation_speed </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>msspeed</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the animation speed duration in milliseconds. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msspeed</td><td>Duration in milliseconds. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7a6a12b110cbd188ee48156af3d977d1" name="a7a6a12b110cbd188ee48156af3d977d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a6a12b110cbd188ee48156af3d977d1">&#9670;&#160;</a></span>set_image_list()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WallPaperEngine::set_image_list </td>
+          <td>(</td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>l</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the list of wallpaper image file paths. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">l</td><td>New image list. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae8b76824ab70bc5d4bbc5e6caf5efbd2" name="ae8b76824ab70bc5d4bbc5e6caf5efbd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8b76824ab70bc5d4bbc5e6caf5efbd2">&#9670;&#160;</a></span>set_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WallPaperEngine::set_mode </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classWallPaperEngine.html#a9b95acff5a7e40cf01b799c2b30995d1">SwitchingMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the wallpaper switching mode. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td>New switching mode. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae100ca0466a473e2279ba3a0f680c887" name="ae100ca0466a473e2279ba3a0f680c887"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae100ca0466a473e2279ba3a0f680c887">&#9670;&#160;</a></span>set_showing_pictures()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WallPaperEngine::set_showing_pictures </td>
+          <td>(</td>
+          <td class="paramtype">const QPixmap &amp;&#160;</td>
+          <td class="paramname"><em>map</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the pixmap currently showing as wallpaper. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">map</td><td>Pixmap to display. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6b293ee6aa28b4fb2beb7f1eb615eb39" name="a6b293ee6aa28b4fb2beb7f1eb615eb39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b293ee6aa28b4fb2beb7f1eb615eb39">&#9670;&#160;</a></span>set_switch_interval()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WallPaperEngine::set_switch_interval </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>new_interval</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the interval between wallpaper switches. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">new_interval</td><td>Interval in milliseconds. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3a47ac836ea3078fd59fb047471a1ca4" name="a3a47ac836ea3078fd59fb047471a1ca4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a47ac836ea3078fd59fb047471a1ca4">&#9670;&#160;</a></span>switch_interval()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int WallPaperEngine::switch_interval </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the current wallpaper switch interval. </p>
+<dl class="section return"><dt>Returns</dt><dd>Interval in milliseconds. </dd></dl>
+
+</div>
+</div>
+<a id="a494e61ce221728c80d59f9d830b459c4" name="a494e61ce221728c80d59f9d830b459c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a494e61ce221728c80d59f9d830b459c4">&#9670;&#160;</a></span>wallpaperChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WallPaperEngine::wallpaperChanged </td>
+          <td>(</td>
+          <td class="paramtype">const QPixmap &amp;&#160;</td>
+          <td class="paramname"><em>pixmap</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Signal emitted when the wallpaper pixmap changes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pixmap</td><td>New wallpaper pixmap. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>core/wallpaper/<a class="el" href="WallPaperEngine_8h_source.html">WallPaperEngine.h</a></li>
 <li>core/wallpaper/<b>WallPaperEngine.cpp</b></li>

@@ -16,5 +16,6 @@ var classApplicationWrapper =
     [ "install_finhook", "classApplicationWrapper.html#a13662d0c499aa21f837e4f6259ae68d6", null ],
     [ "process_handle", "classApplicationWrapper.html#a3618112d107e8a77caa1d8865201bbad", null ],
     [ "Q_DISABLE_COPY", "classApplicationWrapper.html#ac1e58358a4a3cdcab632cf08c4a27517", null ],
-    [ "set_app_path", "classApplicationWrapper.html#acf76b7e548ec203af29659ad3115b9b8", null ]
+    [ "set_app_path", "classApplicationWrapper.html#acf76b7e548ec203af29659ad3115b9b8", null ],
+    [ "operator==", "classApplicationWrapper.html#af75654ef1cebfcf8d5c1fdec80e7b955", null ]
 ];

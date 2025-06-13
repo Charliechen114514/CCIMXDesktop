@@ -20,5 +20,6 @@ var classAppWidget =
     [ "setDummy", "classAppWidget.html#a4470138f00905b26ad5534948b6ddb50", null ],
     [ "setFontColor", "classAppWidget.html#a9a278fc846a27afd8c4fa2ca7bc1112d", null ],
     [ "setIcon", "classAppWidget.html#a6bf749981f674a76e979dd547ce9666c", null ],
+    [ "setIconSize", "classAppWidget.html#a4731f40f3875c482958afc96f065f7c4", null ],
     [ "showIconOnly", "classAppWidget.html#a8e9c25e327f90af3990cdd71d3798d98", null ]
 ];

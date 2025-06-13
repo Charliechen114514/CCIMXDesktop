@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['zoomdirection_0',['ZoomDirection',['../classCCPdfViewer.html#ac8458daf2cedd1f6118454f199401336',1,'CCPdfViewer']]]
+  ['type_0',['Type',['../structBaseWallPaperSettings.html#af69e90a43d61793099be959dc2563787',1,'BaseWallPaperSettings']]]
 ];

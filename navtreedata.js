@@ -81,7 +81,7 @@ var NAVTREE =
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
-        [ "Variables", "functions_vars.html", null ],
+        [ "Variables", "functions_vars.html", "functions_vars" ],
         [ "Typedefs", "functions_type.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
         [ "Enumerator", "functions_eval.html", null ],
@@ -98,13 +98,14 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AP3216CAdapterFactory_8h_source.html",
-"classBirdObsticals.html#a5f1fec55fada3e5217d44f1519a22669",
-"classContoursQueryProc.html#ae3c35f19ebe4470fa525c2a9d25b1bd6",
-"classGrayProcessor.html#a8ca02fc3e811c09fe30e5fcf73cbdea9",
-"classMediaPlayerWindowHelper.html",
-"classSoundEffectPlayer.html#a7da42a0c3a6ce56c9235ad27dbb99690ac9b2281fa6fd403855443e6555aa16a9",
-"dir_7a49c8e695cd50ed81db97cc41c68f33.html",
-"structAP3216CData.html"
+"classBacklightController.html#abd4cc6f7f7d3eea65d7bade64fd050b0",
+"classCameraWindow.html#ab3924459cef64b774c7a9c386e735671",
+"classFrameProvider.html",
+"classMeanBlur.html#ac281b96d5244cd7c3845ddd13c577b85",
+"classSideBarWidget.html#ab55fe500508468594a880f9fa25c31a7",
+"classWeatherAppMainWindow.html",
+"mainwindow_8h_source.html",
+"structImageProc.html#a50f88f38a237c4d707f6807559cd7bcf"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

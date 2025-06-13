@@ -16,5 +16,6 @@ var searchData=
   ['sub_5ftick_5flength_13',['SUB_TICK_LENGTH',['../classGaugeWidget.html#a51a6dc4916bb8aa3fe7069505d007869',1,'GaugeWidget']]],
   ['sub_5ftick_5fwidth_14',['SUB_TICK_WIDTH',['../classGaugeWidget.html#a0625d59a9f6b07222eb88e1ff7997e79',1,'GaugeWidget']]],
   ['subject_15',['subject',['../structCCPdfMetaInfo.html#a6432628cd10311d15f38f6c8dee7031d',1,'CCPdfMetaInfo']]],
-  ['sz_5fsize_5ftype_5fmax_16',['SZ_SIZE_TYPE_MAX',['../classBirdObsticals.html#a4734aaf039acd43be43b2518439b14b2',1,'BirdObsticals']]]
+  ['switch_5finterval_16',['switch_interval',['../structFlowTypeTypeWallPaperSettings.html#ad866f6e5b6cb9fc0ed8d2ee12b0febcf',1,'FlowTypeTypeWallPaperSettings']]],
+  ['sz_5fsize_5ftype_5fmax_17',['SZ_SIZE_TYPE_MAX',['../classBirdObsticals.html#a4734aaf039acd43be43b2518439b14b2',1,'BirdObsticals']]]
 ];

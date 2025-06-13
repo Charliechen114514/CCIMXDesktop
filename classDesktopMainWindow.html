@@ -129,6 +129,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>open_settings_window<
 <tr class="memitem:abe4ebfa069c332284ebcba2f72ae1f1b" id="r_abe4ebfa069c332284ebcba2f72ae1f1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDesktopMainWindow.html#abe4ebfa069c332284ebcba2f72ae1f1b">process_set_appwidgets_config</a> (const <a class="el" href="structAppWidgetsSettingsInfoPack.html">AppWidgetsSettingsInfoPack</a> &amp;info)</td></tr>
 <tr class="memdesc:abe4ebfa069c332284ebcba2f72ae1f1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">process_set_appwidgets_config  <br /></td></tr>
 <tr class="separator:abe4ebfa069c332284ebcba2f72ae1f1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89f878864c8fb626657dc5cf12e1a185" id="r_a89f878864c8fb626657dc5cf12e1a185"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDesktopMainWindow.html#a89f878864c8fb626657dc5cf12e1a185">process_wallpaper_settings</a> (<a class="el" href="structBaseWallPaperSettings.html">BaseWallPaperSettings</a> *settings)</td></tr>
+<tr class="memdesc:a89f878864c8fb626657dc5cf12e1a185"><td class="mdescLeft">&#160;</td><td class="mdescRight">process_wallpaper_settings  <br /></td></tr>
+<tr class="separator:a89f878864c8fb626657dc5cf12e1a185"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
 Signals</h2></td></tr>
@@ -152,6 +155,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad96e7341abb14b361bf76d3baff81071" id="r_ad96e7341abb14b361bf76d3baff81071"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDesktopToast.html">DesktopToast</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDesktopMainWindow.html#ad96e7341abb14b361bf76d3baff81071">desktop_toast</a> () const</td></tr>
 <tr class="memdesc:ad96e7341abb14b361bf76d3baff81071"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get pointer to <a class="el" href="classDesktopToast.html" title="The DesktopToast class is the toast handle classes using less lock messages queue to display the mess...">DesktopToast</a> handler.  <br /></td></tr>
 <tr class="separator:ad96e7341abb14b361bf76d3baff81071"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48451e347e3759fdb746355c0a8c8d49" id="r_a48451e347e3759fdb746355c0a8c8d49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classWallPaperEngine.html">WallPaperEngine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDesktopMainWindow.html#a48451e347e3759fdb746355c0a8c8d49">queryWallpaperEngine</a> ()</td></tr>
+<tr class="memdesc:a48451e347e3759fdb746355c0a8c8d49"><td class="mdescLeft">&#160;</td><td class="mdescRight">queryWallpaperEngine  <br /></td></tr>
+<tr class="separator:a48451e347e3759fdb746355c0a8c8d49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c9d1ee127d737faa6b73e162a4c28b3" id="r_a3c9d1ee127d737faa6b73e162a4c28b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDownDockWidget.html">DownDockWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDesktopMainWindow.html#a3c9d1ee127d737faa6b73e162a4c28b3">downDockWidget</a> () const</td></tr>
 <tr class="memdesc:a3c9d1ee127d737faa6b73e162a4c28b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the global <a class="el" href="classDownDockWidget.html" title="The DownDockWidget class holdings the down dock sessions it supports the dynamic sorted according fre...">DownDockWidget</a> instance.  <br /></td></tr>
 <tr class="separator:a3c9d1ee127d737faa6b73e162a4c28b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -448,6 +454,68 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>WallPaperEngine</b><
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a89f878864c8fb626657dc5cf12e1a185" name="a89f878864c8fb626657dc5cf12e1a185"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89f878864c8fb626657dc5cf12e1a185">&#9670;&#160;</a></span>process_wallpaper_settings</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DesktopMainWindow::process_wallpaper_settings </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structBaseWallPaperSettings.html">BaseWallPaperSettings</a> *&#160;</td>
+          <td class="paramname"><em>settings</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>process_wallpaper_settings </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">settings</td><td>packages </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a48451e347e3759fdb746355c0a8c8d49" name="a48451e347e3759fdb746355c0a8c8d49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48451e347e3759fdb746355c0a8c8d49">&#9670;&#160;</a></span>queryWallpaperEngine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classWallPaperEngine.html">WallPaperEngine</a> * DesktopMainWindow::queryWallpaperEngine </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>queryWallpaperEngine </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classWallPaperEngine.html" title="Engine managing desktop wallpaper switching and animations.">WallPaperEngine</a> instances </dd></dl>
 
 </div>
 </div>

@@ -49,7 +49,7 @@ var searchData=
   ['displayed_46',['displayed',['../classImageProcessingWidget.html#ade261ae7076bde246320f191921ebc99',1,'ImageProcessingWidget']]],
   ['displayparams_47',['DisplayParams',['../structCVTools_1_1DisplayParams.html',1,'CVTools']]],
   ['dividezeroexception_48',['dividezeroexception',['../classDivideZeroException.html#a7c023ce94c41584e4c9e1b30eef5f76c',1,'DivideZeroException::DivideZeroException()'],['../classDivideZeroException.html',1,'DivideZeroException']]],
-  ['do_5fdaptch_49',['do_daptch',['../classSettingsApp.html#a548a9588aad899a07a229c4501b4bce5',1,'SettingsApp::do_daptch()'],['../classAppWidget.html#ac73a23e531d3973d20fc887ec6bdd988',1,'AppWidget::do_daptch()']]],
+  ['do_5fdaptch_49',['do_daptch',['../classAppWidget.html#ac73a23e531d3973d20fc887ec6bdd988',1,'AppWidget::do_daptch()'],['../classSettingsApp.html#a548a9588aad899a07a229c4501b4bce5',1,'SettingsApp::do_daptch()']]],
   ['do_5fshow_5ftoast_50',['do_show_toast',['../classDesktopToast.html#a3acb239f25191bd1018d90cf8601f8c7',1,'DesktopToast::do_show_toast(QString msg)'],['../classDesktopToast.html#a3acb239f25191bd1018d90cf8601f8c7',1,'DesktopToast::do_show_toast(QString msg)'],['../classDesktopToast.html#a3acb239f25191bd1018d90cf8601f8c7',1,'DesktopToast::do_show_toast(QString msg)']]],
   ['document_51',['document',['../structCCPdfDocumentPrivate.html#a7219d45181ac0ab5096e33a9f8b0d260',1,'CCPdfDocumentPrivate']]],
   ['document_5fload_52',['document_load',['../classCCPdfDocument.html#ac7a27d7e7420a45635a4fd872b11587d',1,'CCPdfDocument']]],
@@ -60,13 +60,15 @@ var searchData=
   ['draw_5ffaces_57',['draw_faces',['../namespaceOpenCV__ProcessAdapter.html#a04498311974f084a887305d8d5b504e9',1,'OpenCV_ProcessAdapter']]],
   ['drawcontent_58',['drawContent',['../classSceneDrawer.html#a26df04532535c19bc6a811cbad2ee945',1,'SceneDrawer']]],
   ['drawdinasore_59',['drawDinasore',['../classSceneDrawer.html#ad8162fd4811983517e323dee25a70c39',1,'SceneDrawer']]],
-  ['drawerwindow_60',['drawerwindow',['../classDrawerWindow.html#a85e4595657cc69f2c1d13025db874191',1,'DrawerWindow::DrawerWindow()'],['../classDrawerWindow.html',1,'DrawerWindow']]],
+  ['drawerwindow_60',['drawerwindow',['../classDrawerWindow.html',1,'DrawerWindow'],['../classDrawerWindow.html#a85e4595657cc69f2c1d13025db874191',1,'DrawerWindow::DrawerWindow()']]],
   ['drawflowyground_61',['drawFlowyGround',['../classSceneDrawer.html#a7491b5d5b988405a64ec151f92886c7a',1,'SceneDrawer']]],
   ['drawingmode_62',['drawingmode',['../classSimpleDrawingScene.html#a6db374d8ce718ce634f33c19eca0f142',1,'SimpleDrawingScene::DrawingMode'],['../classSimpleDrawingScene.html#a6db374d8ce718ce634f33c19eca0f142a52d19c15cddf6b4fda9652dbf52ea57d',1,'SimpleDrawingScene::DrawingMode']]],
   ['drawlines_63',['drawLines',['../classGroundLineProviders.html#acc5fb9987e531364b4f791105d61f362',1,'GroundLineProviders']]],
   ['drawmainground_64',['drawMainGround',['../classSceneDrawer.html#a432154c170a266fb23599886085ba5dd',1,'SceneDrawer']]],
   ['drawobstical_65',['drawObstical',['../classSceneDrawer.html#a6b811c930dc3a9c52c27c9f2c1c99c3c',1,'SceneDrawer']]],
   ['drawsky_66',['drawSky',['../classSceneDrawer.html#a048ccfd0e11bb6e1d07eb141b10a0f47',1,'SceneDrawer']]],
-  ['durationchanged_67',['durationChanged',['../classMediaPlayer.html#a846e3dba84bab9f426810ffbd9c6d995',1,'MediaPlayer']]],
-  ['durationms_68',['durationMs',['../structMediaInfo.html#a62e3d432bd99c5cf1715b6fd568b8dcf',1,'MediaInfo']]]
+  ['duration_5fseconds_67',['duration_seconds',['../classWallPaperEngine.html#ab02ac40f904d616e3dd91178225549fb',1,'WallPaperEngine']]],
+  ['durationchanged_68',['durationChanged',['../classMediaPlayer.html#a846e3dba84bab9f426810ffbd9c6d995',1,'MediaPlayer']]],
+  ['durationms_69',['durationMs',['../structMediaInfo.html#a62e3d432bd99c5cf1715b6fd568b8dcf',1,'MediaInfo']]],
+  ['durations_70',['durations',['../structWallPaperAnimationHandler_1_1AnimationSettingsPackage.html#a80b7dbe034046d158808eb08f310b031',1,'WallPaperAnimationHandler::AnimationSettingsPackage']]]
 ];

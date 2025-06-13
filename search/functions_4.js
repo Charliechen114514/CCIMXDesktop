@@ -45,5 +45,6 @@ var searchData=
   ['drawmainground_42',['drawMainGround',['../classSceneDrawer.html#a432154c170a266fb23599886085ba5dd',1,'SceneDrawer']]],
   ['drawobstical_43',['drawObstical',['../classSceneDrawer.html#a6b811c930dc3a9c52c27c9f2c1c99c3c',1,'SceneDrawer']]],
   ['drawsky_44',['drawSky',['../classSceneDrawer.html#a048ccfd0e11bb6e1d07eb141b10a0f47',1,'SceneDrawer']]],
-  ['durationchanged_45',['durationChanged',['../classMediaPlayer.html#a846e3dba84bab9f426810ffbd9c6d995',1,'MediaPlayer']]]
+  ['duration_5fseconds_45',['duration_seconds',['../classWallPaperEngine.html#ab02ac40f904d616e3dd91178225549fb',1,'WallPaperEngine']]],
+  ['durationchanged_46',['durationChanged',['../classMediaPlayer.html#a846e3dba84bab9f426810ffbd9c6d995',1,'MediaPlayer']]]
 ];

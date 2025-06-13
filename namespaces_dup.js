@@ -41,5 +41,7 @@ var namespaces_dup =
       [ "frame_to_mseconds", "namespaceVideoPlayerTools.html#a55fe34f01d97db614347b5af132287e1", null ],
       [ "mseconds_to_frame", "namespaceVideoPlayerTools.html#a3ed058f954d8603eaa07a2be89d72431", null ]
     ] ],
-    [ "WallPaperUtilsColliections", "namespaceWallPaperUtilsColliections.html", null ]
+    [ "WallPaperUtilsColliections", "namespaceWallPaperUtilsColliections.html", [
+      [ "collect_from_qrcs", "namespaceWallPaperUtilsColliections.html#a09cb5c172a1ec03ce71c416f31dd8ac7", null ]
+    ] ]
 ];

@@ -117,6 +117,9 @@ Inheritance diagram for WallPaperAnimationHandler:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWallPaperAnimationHandler_1_1AnimationSettingsPackage.html">AnimationSettingsPackage</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structWallPaperAnimationHandler_1_1AnimationSettingsPackage.html" title="AnimationSettingsPackage settings.">AnimationSettingsPackage</a> settings.  <a href="structWallPaperAnimationHandler_1_1AnimationSettingsPackage.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWallPaperAnimationHandler_1_1ImagePoolEngine.html">ImagePoolEngine</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="structWallPaperAnimationHandler_1_1ImagePoolEngine.html" title="The ImagePoolEngine class makes a image selection as an engine, WallPaperAnimationHandler requires th...">ImagePoolEngine</a> class makes a image selection as an engine, <a class="el" href="structWallPaperAnimationHandler.html" title="The WallPaperAnimationHandler class is the animation holder for the wallpaper, it is used to animate ...">WallPaperAnimationHandler</a> requires the engine to make the wallpaper switch(that is, select with how to select the
 image for display)  <a href="structWallPaperAnimationHandler_1_1ImagePoolEngine.html#details">More...</a><br /></td></tr>
@@ -130,9 +133,12 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a47467590ff5f01d3059427694f96ebad" id="r_a47467590ff5f01d3059427694f96ebad"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWallPaperAnimationHandler.html#a47467590ff5f01d3059427694f96ebad">process_switch</a> (const <a class="el" href="classWallPaperEngine.html">WallPaperEngine</a> *group, <a class="el" href="structWallPaperAnimationHandler_1_1ImagePoolEngine.html">ImagePoolEngine</a> &amp;engine)</td></tr>
-<tr class="memdesc:a47467590ff5f01d3059427694f96ebad"><td class="mdescLeft">&#160;</td><td class="mdescRight">process_switch makes the real switch async, invoke this for the real switching.  <br /></td></tr>
-<tr class="separator:a47467590ff5f01d3059427694f96ebad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09b13cbc1cbb4d8be6da6e868fad0ac1" id="r_a09b13cbc1cbb4d8be6da6e868fad0ac1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWallPaperAnimationHandler.html#a09b13cbc1cbb4d8be6da6e868fad0ac1">process_opacity_switch</a> (const <a class="el" href="classWallPaperEngine.html">WallPaperEngine</a> *group, <a class="el" href="structWallPaperAnimationHandler_1_1ImagePoolEngine.html">ImagePoolEngine</a> &amp;engine, const <a class="el" href="structWallPaperAnimationHandler_1_1AnimationSettingsPackage.html">AnimationSettingsPackage</a> &amp;packages)</td></tr>
+<tr class="memdesc:a09b13cbc1cbb4d8be6da6e868fad0ac1"><td class="mdescLeft">&#160;</td><td class="mdescRight">process_opacity_switch makes the real switch async, invoke this for the real switching.  <br /></td></tr>
+<tr class="separator:a09b13cbc1cbb4d8be6da6e868fad0ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab78f0c0f6cfed5fbd13f3f35265d4da5" id="r_ab78f0c0f6cfed5fbd13f3f35265d4da5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWallPaperAnimationHandler.html#ab78f0c0f6cfed5fbd13f3f35265d4da5">process_movement_switch</a> (const <a class="el" href="classWallPaperEngine.html">WallPaperEngine</a> *group, <a class="el" href="structWallPaperAnimationHandler_1_1ImagePoolEngine.html">ImagePoolEngine</a> &amp;engine, const <a class="el" href="structWallPaperAnimationHandler_1_1AnimationSettingsPackage.html">AnimationSettingsPackage</a> &amp;packages)</td></tr>
+<tr class="memdesc:ab78f0c0f6cfed5fbd13f3f35265d4da5"><td class="mdescLeft">&#160;</td><td class="mdescRight">process_movement_switch makes the real switch async, invoke this for the real switching.  <br /></td></tr>
+<tr class="separator:ab78f0c0f6cfed5fbd13f3f35265d4da5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="structWallPaperAnimationHandler.html" title="The WallPaperAnimationHandler class is the animation holder for the wallpaper, it is used to animate ...">WallPaperAnimationHandler</a> class is the animation holder for the wallpaper, it is used to animate the wallpaper switching. </p>
@@ -172,8 +178,8 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a47467590ff5f01d3059427694f96ebad" name="a47467590ff5f01d3059427694f96ebad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47467590ff5f01d3059427694f96ebad">&#9670;&#160;</a></span>process_switch()</h2>
+<a id="ab78f0c0f6cfed5fbd13f3f35265d4da5" name="ab78f0c0f6cfed5fbd13f3f35265d4da5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab78f0c0f6cfed5fbd13f3f35265d4da5">&#9670;&#160;</a></span>process_movement_switch()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -182,7 +188,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void WallPaperAnimationHandler::process_switch </td>
+          <td class="memname">void WallPaperAnimationHandler::process_movement_switch </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classWallPaperEngine.html">WallPaperEngine</a> *&#160;</td>
           <td class="paramname"><em>group</em>, </td>
@@ -191,7 +197,13 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structWallPaperAnimationHandler_1_1ImagePoolEngine.html">ImagePoolEngine</a> &amp;&#160;</td>
-          <td class="paramname"><em>engine</em>&#160;</td>
+          <td class="paramname"><em>engine</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structWallPaperAnimationHandler_1_1AnimationSettingsPackage.html">AnimationSettingsPackage</a> &amp;&#160;</td>
+          <td class="paramname"><em>packages</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -206,11 +218,64 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>process_switch makes the real switch async, invoke this for the real switching. </p>
+<p>process_movement_switch makes the real switch async, invoke this for the real switching. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">group</td><td>WallPaperGroup from <a class="el" href="classMainWindow.html" title="MainWindow for example show.">MainWindow</a> </td></tr>
     <tr><td class="paramname">engine</td><td>the engine switching requires </td></tr>
+    <tr><td class="paramname">packages</td><td>for the animations </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a09b13cbc1cbb4d8be6da6e868fad0ac1" name="a09b13cbc1cbb4d8be6da6e868fad0ac1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09b13cbc1cbb4d8be6da6e868fad0ac1">&#9670;&#160;</a></span>process_opacity_switch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WallPaperAnimationHandler::process_opacity_switch </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classWallPaperEngine.html">WallPaperEngine</a> *&#160;</td>
+          <td class="paramname"><em>group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structWallPaperAnimationHandler_1_1ImagePoolEngine.html">ImagePoolEngine</a> &amp;&#160;</td>
+          <td class="paramname"><em>engine</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structWallPaperAnimationHandler_1_1AnimationSettingsPackage.html">AnimationSettingsPackage</a> &amp;&#160;</td>
+          <td class="paramname"><em>packages</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>process_opacity_switch makes the real switch async, invoke this for the real switching. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">group</td><td>WallPaperGroup from <a class="el" href="classMainWindow.html" title="MainWindow for example show.">MainWindow</a> </td></tr>
+    <tr><td class="paramname">engine</td><td>the engine switching requires </td></tr>
+    <tr><td class="paramname">packages</td><td>for the animations </td></tr>
   </table>
   </dd>
 </dl>

@@ -101,6 +101,11 @@ $(document).ready(function(){initNavTree('structConfigureUiPairs.html',''); init
   <div class="headertitle"><div class="title">ConfigureUiPairs Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The <a class="el" href="structConfigureUiPairs.html" title="The ConfigureUiPairs struct Manages the mapping between tree items and UI panels for configuration vi...">ConfigureUiPairs</a> struct Manages the mapping between tree items and UI panels for configuration views.  
+ <a href="structConfigureUiPairs.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="ConfigureUiPairs_8h_source.html">ConfigureUiPairs.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ConfigureUiPairs:</div>
 <div class="dyncontent">
@@ -112,14 +117,102 @@ Inheritance diagram for ConfigureUiPairs:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a824068b1020806fd88ab6268f64b18b6" id="r_a824068b1020806fd88ab6268f64b18b6"><td class="memItemLeft" align="right" valign="top"><a id="a824068b1020806fd88ab6268f64b18b6" name="a824068b1020806fd88ab6268f64b18b6"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Q_DISABLE_COPY_MOVE</b> (<a class="el" href="structConfigureUiPairs.html">ConfigureUiPairs</a>)</td></tr>
+<tr class="memdesc:a824068b1020806fd88ab6268f64b18b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable copy move. <br /></td></tr>
 <tr class="separator:a824068b1020806fd88ab6268f64b18b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fd113b4529cc4a349a2b81c1b7294da" id="r_a2fd113b4529cc4a349a2b81c1b7294da"><td class="memItemLeft" align="right" valign="top"><a id="a2fd113b4529cc4a349a2b81c1b7294da" name="a2fd113b4529cc4a349a2b81c1b7294da"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ConfigureUiPairs</b> (QTreeWidget *treeWidget, QStackedWidget *stackedWidget)</td></tr>
+<tr class="memitem:a2fd113b4529cc4a349a2b81c1b7294da" id="r_a2fd113b4529cc4a349a2b81c1b7294da"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structConfigureUiPairs.html#a2fd113b4529cc4a349a2b81c1b7294da">ConfigureUiPairs</a> (QTreeWidget *treeWidget, QStackedWidget *stackedWidget)</td></tr>
+<tr class="memdesc:a2fd113b4529cc4a349a2b81c1b7294da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs the <a class="el" href="structConfigureUiPairs.html" title="The ConfigureUiPairs struct Manages the mapping between tree items and UI panels for configuration vi...">ConfigureUiPairs</a> manager.  <br /></td></tr>
 <tr class="separator:a2fd113b4529cc4a349a2b81c1b7294da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a328f0adbd65b8c023441bbf6b340b088" id="r_a328f0adbd65b8c023441bbf6b340b088"><td class="memItemLeft" align="right" valign="top"><a id="a328f0adbd65b8c023441bbf6b340b088" name="a328f0adbd65b8c023441bbf6b340b088"></a>
-QTreeWidgetItem *&#160;</td><td class="memItemRight" valign="bottom"><b>install_mappings</b> (const QString &amp;itemName, QTreeWidgetItem *parent, QWidget *installed_widgets)</td></tr>
+<tr class="memitem:a328f0adbd65b8c023441bbf6b340b088" id="r_a328f0adbd65b8c023441bbf6b340b088"><td class="memItemLeft" align="right" valign="top">QTreeWidgetItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structConfigureUiPairs.html#a328f0adbd65b8c023441bbf6b340b088">install_mappings</a> (const QString &amp;itemName, QTreeWidgetItem *parent, QWidget *installed_widgets)</td></tr>
+<tr class="memdesc:a328f0adbd65b8c023441bbf6b340b088"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs a new tree item and associates it with a UI widget.  <br /></td></tr>
 <tr class="separator:a328f0adbd65b8c023441bbf6b340b088"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="structConfigureUiPairs.html" title="The ConfigureUiPairs struct Manages the mapping between tree items and UI panels for configuration vi...">ConfigureUiPairs</a> struct Manages the mapping between tree items and UI panels for configuration views. </p>
+<p>Allows installing mapping relationships between navigation tree items and associated QWidget panels, and handles automatic switching. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a2fd113b4529cc4a349a2b81c1b7294da" name="a2fd113b4529cc4a349a2b81c1b7294da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fd113b4529cc4a349a2b81c1b7294da">&#9670;&#160;</a></span>ConfigureUiPairs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ConfigureUiPairs::ConfigureUiPairs </td>
+          <td>(</td>
+          <td class="paramtype">QTreeWidget *&#160;</td>
+          <td class="paramname"><em>treeWidget</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QStackedWidget *&#160;</td>
+          <td class="paramname"><em>stackedWidget</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs the <a class="el" href="structConfigureUiPairs.html" title="The ConfigureUiPairs struct Manages the mapping between tree items and UI panels for configuration vi...">ConfigureUiPairs</a> manager. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">treeWidget</td><td>The tree widget to act as navigation. </td></tr>
+    <tr><td class="paramname">stackedWidget</td><td>The stacked widget holding configuration panels. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a328f0adbd65b8c023441bbf6b340b088" name="a328f0adbd65b8c023441bbf6b340b088"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a328f0adbd65b8c023441bbf6b340b088">&#9670;&#160;</a></span>install_mappings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QTreeWidgetItem * ConfigureUiPairs::install_mappings </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>itemName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QTreeWidgetItem *&#160;</td>
+          <td class="paramname"><em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>installed_widgets</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Installs a new tree item and associates it with a UI widget. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">itemName</td><td>Name of the tree item. </td></tr>
+    <tr><td class="paramname">parent</td><td>Parent tree item (optional). </td></tr>
+    <tr><td class="paramname">installed_widgets</td><td>The associated widget. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The created QTreeWidgetItem. </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li>builtin/window/settings_window/cores/<a class="el" href="ConfigureUiPairs_8h_source.html">ConfigureUiPairs.h</a></li>
 <li>builtin/window/settings_window/cores/<b>ConfigureUiPairs.cpp</b></li>

@@ -7,9 +7,18 @@ var hierarchy =
       [ "MedianBlurPackage", "structMedianBlurPackage.html", null ]
     ] ],
     [ "StackpageSwitcherAnimation::AnimationInfo", "structStackpageSwitcherAnimation_1_1AnimationInfo.html", null ],
+    [ "WallPaperAnimationHandler::AnimationSettingsPackage", "structWallPaperAnimationHandler_1_1AnimationSettingsPackage.html", null ],
     [ "AP3216CData", "structAP3216CData.html", null ],
     [ "AppWeatherDetailedRequest", "structAppWeatherDetailedRequest.html", null ],
     [ "AppWidgetsSettingsInfoPack", "structAppWidgetsSettingsInfoPack.html", null ],
+    [ "BacklightController", "classBacklightController.html", null ],
+    [ "BacklightControllerImpl", "classBacklightControllerImpl.html", [
+      [ "PesudoLightController", "classPesudoLightController.html", null ]
+    ] ],
+    [ "BaseWallPaperSettings", "structBaseWallPaperSettings.html", [
+      [ "FixedTypeWallPaperSettings", "structFixedTypeWallPaperSettings.html", null ],
+      [ "FlowTypeTypeWallPaperSettings", "structFlowTypeTypeWallPaperSettings.html", null ]
+    ] ],
     [ "CameraDeviceSelector", "classCameraDeviceSelector.html", null ],
     [ "CCIMX_AbstractCPUStateDriver", "classCCIMX__AbstractCPUStateDriver.html", [
       [ "LinuxPlatformCPUStateDriver", "classLinuxPlatformCPUStateDriver.html", null ],
@@ -81,6 +90,7 @@ var hierarchy =
     [ "MediaPlayer::MediaPlayerStatus", "structMediaPlayer_1_1MediaPlayerStatus.html", null ],
     [ "MediaPlayerWindowHelper", "classMediaPlayerWindowHelper.html", null ],
     [ "MemoryInfoFetcher::MemoryStat", "structMemoryInfoFetcher_1_1MemoryStat.html", null ],
+    [ "WallPaperEngine::ModeMapping", "structWallPaperEngine_1_1ModeMapping.html", null ],
     [ "PageFactory", "classPageFactory.html", null ],
     [ "ToolsStackedWidget::PagePackage", "structToolsStackedWidget_1_1PagePackage.html", null ],
     [ "PageSetuper::PageSetupSessionRequest", "structPageSetuper_1_1PageSetupSessionRequest.html", null ],
@@ -215,15 +225,18 @@ var hierarchy =
       [ "DownDockWidget", "classDownDockWidget.html", null ],
       [ "FaceDetectionExample", "classFaceDetectionExample.html", null ],
       [ "FileInfoDisplayWidget", "classFileInfoDisplayWidget.html", null ],
+      [ "FixedOptionWidget", "classFixedOptionWidget.html", null ],
       [ "GaugeWidget", "classGaugeWidget.html", null ],
       [ "GrayExample", "classGrayExample.html", null ],
       [ "HistDrawer", "classHistDrawer.html", null ],
       [ "HomePage", "classHomePage.html", null ],
       [ "ImageBrowser", "classImageBrowser.html", null ],
+      [ "ImageListViewer", "classImageListViewer.html", null ],
       [ "ImageProcessingWidget", "classImageProcessingWidget.html", null ],
       [ "ImageResultDisplayer", "classImageResultDisplayer.html", null ],
       [ "InterfacesDisplayWidget", "classInterfacesDisplayWidget.html", null ],
       [ "LeftSideBar", "classLeftSideBar.html", null ],
+      [ "LightConfigures", "classLightConfigures.html", null ],
       [ "MainShowWidget", "classMainShowWidget.html", null ],
       [ "MainSideBar", "classMainSideBar.html", null ],
       [ "MemoryUsageChart", "classMemoryUsageChart.html", null ],
@@ -232,6 +245,7 @@ var hierarchy =
       [ "ReadMeWidget", "classReadMeWidget.html", null ],
       [ "Scanner", "classScanner.html", null ],
       [ "ScrollingLabel", "classScrollingLabel.html", null ],
+      [ "SequenciedSettingsWidget", "classSequenciedSettingsWidget.html", null ],
       [ "SideBarWidget", "classSideBarWidget.html", null ],
       [ "SideBarWidget", "classSideBarWidget.html", null ],
       [ "SideBarWidget", "classSideBarWidget.html", null ],
@@ -243,6 +257,7 @@ var hierarchy =
       [ "ToolLeftWidgets", "classToolLeftWidgets.html", null ],
       [ "ToolsSideBar", "classToolsSideBar.html", null ],
       [ "ToolsStackedWidget", "classToolsStackedWidget.html", null ],
+      [ "WallpaperConfigures", "classWallpaperConfigures.html", null ],
       [ "WeatherChartWidget", "classWeatherChartWidget.html", null ],
       [ "WeatherDailyCard", "classWeatherDailyCard.html", null ]
     ] ],

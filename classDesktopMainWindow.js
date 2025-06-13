@@ -12,6 +12,8 @@ var classDesktopMainWindow =
     [ "open_settings_window", "classDesktopMainWindow.html#aeecac01378d6863ee55953f2ef830532", null ],
     [ "post_show", "classDesktopMainWindow.html#a3f4e883111f10e3fede7ae9818d36a4b", null ],
     [ "process_set_appwidgets_config", "classDesktopMainWindow.html#abe4ebfa069c332284ebcba2f72ae1f1b", null ],
+    [ "process_wallpaper_settings", "classDesktopMainWindow.html#a89f878864c8fb626657dc5cf12e1a185", null ],
+    [ "queryWallpaperEngine", "classDesktopMainWindow.html#a48451e347e3759fdb746355c0a8c8d49", null ],
     [ "resizeEvent", "classDesktopMainWindow.html#ab4794a1ff19ffeae8b3b971128898448", null ],
     [ "showToast", "classDesktopMainWindow.html#a5b8b69ca43a0adb247853ff9c6424c43", null ],
     [ "stackedWidget", "classDesktopMainWindow.html#a8f361d9bfc1b0745c02a8d8c4ec59beb", null ],

@@ -100,30 +100,41 @@ $(document).ready(function(){initNavTree('ConfigureUiPairs_8h_source.html',''); 
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef CONFIGUREUIPAIRS_H</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define CONFIGUREUIPAIRS_H</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;QMap&gt;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;QObject&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">class </span>QTreeWidget;</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">class </span>QStackedWidget;</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">class </span>QTreeWidgetItem;</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">class </span>QWidget;</div>
-<div class="foldopen" id="foldopen00009" data-start="{" data-end="};">
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="structConfigureUiPairs.html">    9</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structConfigureUiPairs.html">ConfigureUiPairs</a> : <span class="keyword">public</span> QObject {</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <a class="code hl_struct" href="structConfigureUiPairs.html">ConfigureUiPairs</a>() = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    Q_DISABLE_COPY_MOVE(<a class="code hl_struct" href="structConfigureUiPairs.html">ConfigureUiPairs</a>);</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <a class="code hl_struct" href="structConfigureUiPairs.html">ConfigureUiPairs</a>(QTreeWidget* treeWidget, QStackedWidget* stackedWidget);</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    QTreeWidgetItem* install_mappings(<span class="keyword">const</span> QString&amp; itemName, QTreeWidgetItem* parent, QWidget* installed_widgets);</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">private</span> slots:</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordtype">void</span> process_switch_sessions(QTreeWidgetItem* item);</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    QMap&lt;QTreeWidgetItem*, QWidget*&gt; mappings;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    QTreeWidget* treeWidget;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    QStackedWidget* stackedWidget;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>};</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;QMap&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;QObject&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">class </span>QTreeWidget;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">class </span>QStackedWidget;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">class </span>QTreeWidgetItem;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">class </span>QWidget;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="structConfigureUiPairs.html">   19</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structConfigureUiPairs.html">ConfigureUiPairs</a> : <span class="keyword">public</span> QObject {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    Q_OBJECT</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_struct" href="structConfigureUiPairs.html">ConfigureUiPairs</a>() = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="structConfigureUiPairs.html#a824068b1020806fd88ab6268f64b18b6">   28</a></span>    <a class="code hl_function" href="structConfigureUiPairs.html#a824068b1020806fd88ab6268f64b18b6">Q_DISABLE_COPY_MOVE</a>(<a class="code hl_struct" href="structConfigureUiPairs.html">ConfigureUiPairs</a>);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <a class="code hl_struct" href="structConfigureUiPairs.html">ConfigureUiPairs</a>(QTreeWidget* treeWidget, QStackedWidget* stackedWidget);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    QTreeWidgetItem* <a class="code hl_function" href="structConfigureUiPairs.html#a328f0adbd65b8c023441bbf6b340b088">install_mappings</a>(<span class="keyword">const</span> QString&amp; itemName, QTreeWidgetItem* parent, QWidget* installed_widgets);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">private</span> slots:</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordtype">void</span> process_switch_sessions(QTreeWidgetItem* item);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    QMap&lt;QTreeWidgetItem*, QWidget*&gt; mappings; </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    QTreeWidget* treeWidget;                   </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    QStackedWidget* stackedWidget;             </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>};</div>
 </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#endif </span><span class="comment">// CONFIGUREUIPAIRS_H</span></div>
-<div class="ttc" id="astructConfigureUiPairs_html"><div class="ttname"><a href="structConfigureUiPairs.html">ConfigureUiPairs</a></div><div class="ttdef"><b>Definition</b> ConfigureUiPairs.h:9</div></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#endif </span><span class="comment">// CONFIGUREUIPAIRS_H</span></div>
+<div class="ttc" id="astructConfigureUiPairs_html"><div class="ttname"><a href="structConfigureUiPairs.html">ConfigureUiPairs</a></div><div class="ttdoc">The ConfigureUiPairs struct Manages the mapping between tree items and UI panels for configuration vi...</div><div class="ttdef"><b>Definition</b> ConfigureUiPairs.h:19</div></div>
+<div class="ttc" id="astructConfigureUiPairs_html_a328f0adbd65b8c023441bbf6b340b088"><div class="ttname"><a href="structConfigureUiPairs.html#a328f0adbd65b8c023441bbf6b340b088">ConfigureUiPairs::install_mappings</a></div><div class="ttdeci">QTreeWidgetItem * install_mappings(const QString &amp;itemName, QTreeWidgetItem *parent, QWidget *installed_widgets)</div><div class="ttdoc">Installs a new tree item and associates it with a UI widget.</div><div class="ttdef"><b>Definition</b> ConfigureUiPairs.cpp:14</div></div>
+<div class="ttc" id="astructConfigureUiPairs_html_a824068b1020806fd88ab6268f64b18b6"><div class="ttname"><a href="structConfigureUiPairs.html#a824068b1020806fd88ab6268f64b18b6">ConfigureUiPairs::Q_DISABLE_COPY_MOVE</a></div><div class="ttdeci">Q_DISABLE_COPY_MOVE(ConfigureUiPairs)</div><div class="ttdoc">Disable copy move.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

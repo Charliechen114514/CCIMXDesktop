@@ -11,8 +11,11 @@ var searchData=
   ['filetypeinfo_8',['FileTypeInfo',['../classFileTypeInfo.html',1,'']]],
   ['filterblur_9',['FilterBlur',['../classFilterBlur.html',1,'']]],
   ['filterpackage_10',['FilterPackage',['../structFilterPackage.html',1,'']]],
-  ['floatslider_11',['FloatSlider',['../classFloatSlider.html',1,'']]],
-  ['flushrequester_12',['FlushRequester',['../classFlushRequester.html',1,'']]],
-  ['frameprovider_13',['FrameProvider',['../classFrameProvider.html',1,'']]],
-  ['functortreenode_14',['FunctorTreeNode',['../classFunctorTreeNode.html',1,'']]]
+  ['fixedoptionwidget_11',['FixedOptionWidget',['../classFixedOptionWidget.html',1,'']]],
+  ['fixedtypewallpapersettings_12',['FixedTypeWallPaperSettings',['../structFixedTypeWallPaperSettings.html',1,'']]],
+  ['floatslider_13',['FloatSlider',['../classFloatSlider.html',1,'']]],
+  ['flowtypetypewallpapersettings_14',['FlowTypeTypeWallPaperSettings',['../structFlowTypeTypeWallPaperSettings.html',1,'']]],
+  ['flushrequester_15',['FlushRequester',['../classFlushRequester.html',1,'']]],
+  ['frameprovider_16',['FrameProvider',['../classFrameProvider.html',1,'']]],
+  ['functortreenode_17',['FunctorTreeNode',['../classFunctorTreeNode.html',1,'']]]
 ];

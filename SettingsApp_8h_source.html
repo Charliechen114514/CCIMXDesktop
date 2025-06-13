@@ -100,39 +100,49 @@ $(document).ready(function(){initNavTree('SettingsApp_8h_source.html',''); initR
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef SETTINGSAPP_H</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define SETTINGSAPP_H</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;app_wrapper/applicationwrapper.h&quot;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;appwidget.h&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">class </span><a class="code hl_class" href="classDesktopMainWindow.html">DesktopMainWindow</a>;</div>
-<div class="foldopen" id="foldopen00006" data-start="{" data-end="};">
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="classSettingsLaunch.html">    6</a></span><span class="keyword">class </span><a class="code hl_class" href="classSettingsLaunch.html">SettingsLaunch</a> : <span class="keyword">public</span> <a class="code hl_class" href="classApplicationWrapper.html">ApplicationWrapper</a> {</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    Q_OBJECT</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <a class="code hl_class" href="classSettingsLaunch.html">SettingsLaunch</a>(<a class="code hl_class" href="classDesktopMainWindow.html">DesktopMainWindow</a>* parent);</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classSettingsLaunch.html#a38316977e9cb0cebb7225d83b4be0389">depatch_app</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>signals:</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keywordtype">void</span> indicate_open_settings_window();</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>};</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;app_wrapper/applicationwrapper.h&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;appwidget.h&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">class </span><a class="code hl_class" href="classDesktopMainWindow.html">DesktopMainWindow</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="foldopen" id="foldopen00014" data-start="{" data-end="};">
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="classSettingsLaunch.html">   14</a></span><span class="keyword">class </span><a class="code hl_class" href="classSettingsLaunch.html">SettingsLaunch</a> : <span class="keyword">public</span> <a class="code hl_class" href="classApplicationWrapper.html">ApplicationWrapper</a> {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    Q_OBJECT</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classSettingsLaunch.html">SettingsLaunch</a>(<a class="code hl_class" href="classDesktopMainWindow.html">DesktopMainWindow</a>* parent);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classSettingsLaunch.html#a38316977e9cb0cebb7225d83b4be0389">depatch_app</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>signals:</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classSettingsLaunch.html#a52540d6599ce4c7bf6b4688e4bc72748">   34</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classSettingsLaunch.html#a52540d6599ce4c7bf6b4688e4bc72748">indicate_open_settings_window</a>();</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>};</div>
 </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="foldopen" id="foldopen00015" data-start="{" data-end="};">
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="classSettingsApp.html">   15</a></span><span class="keyword">class </span><a class="code hl_class" href="classSettingsApp.html">SettingsApp</a> : <span class="keyword">public</span> <a class="code hl_class" href="classAppWidget.html">AppWidget</a> {</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    Q_OBJECT</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classSettingsApp.html">SettingsApp</a>(<a class="code hl_class" href="classDesktopMainWindow.html">DesktopMainWindow</a>* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classSettingsApp.html#a548a9588aad899a07a229c4501b4bce5">do_daptch</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>signals:</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordtype">void</span> indicate_open_settings_window();</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>};</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="foldopen" id="foldopen00040" data-start="{" data-end="};">
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classSettingsApp.html">   40</a></span><span class="keyword">class </span><a class="code hl_class" href="classSettingsApp.html">SettingsApp</a> : <span class="keyword">public</span> <a class="code hl_class" href="classAppWidget.html">AppWidget</a> {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    Q_OBJECT</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classSettingsApp.html">SettingsApp</a>(<a class="code hl_class" href="classDesktopMainWindow.html">DesktopMainWindow</a>* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classSettingsApp.html#a548a9588aad899a07a229c4501b4bce5">do_daptch</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>signals:</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="classSettingsApp.html#a6b3bdb5a49fd5453fe4a950f3579f1c7">   60</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classSettingsApp.html#a6b3bdb5a49fd5453fe4a950f3579f1c7">indicate_open_settings_window</a>();</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>};</div>
 </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#endif </span><span class="comment">// SETTINGSAPP_H</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">#endif </span><span class="comment">// SETTINGSAPP_H</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
 <div class="ttc" id="aclassAppWidget_html"><div class="ttname"><a href="classAppWidget.html">AppWidget</a></div><div class="ttdoc">The AppWidget class represents an application widget placed on the desktop.</div><div class="ttdef"><b>Definition</b> appwidget.h:19</div></div>
 <div class="ttc" id="aclassApplicationWrapper_html"><div class="ttname"><a href="classApplicationWrapper.html">ApplicationWrapper</a></div><div class="ttdoc">The ApplicationWrapper class is the process wrapper.</div><div class="ttdef"><b>Definition</b> applicationwrapper.h:16</div></div>
 <div class="ttc" id="aclassDesktopMainWindow_html"><div class="ttname"><a href="classDesktopMainWindow.html">DesktopMainWindow</a></div><div class="ttdoc">DesktopMainWindow is the main frontend window of the application. For beginners, this is the starting...</div><div class="ttdef"><b>Definition</b> desktopmainwindow.h:29</div></div>
-<div class="ttc" id="aclassSettingsApp_html"><div class="ttname"><a href="classSettingsApp.html">SettingsApp</a></div><div class="ttdef"><b>Definition</b> SettingsApp.h:15</div></div>
-<div class="ttc" id="aclassSettingsApp_html_a548a9588aad899a07a229c4501b4bce5"><div class="ttname"><a href="classSettingsApp.html#a548a9588aad899a07a229c4501b4bce5">SettingsApp::do_daptch</a></div><div class="ttdeci">void do_daptch() override</div><div class="ttdoc">Dispatch the application via the ApplicationWrapper.</div><div class="ttdef"><b>Definition</b> SettingsApp.cpp:16</div></div>
-<div class="ttc" id="aclassSettingsLaunch_html"><div class="ttname"><a href="classSettingsLaunch.html">SettingsLaunch</a></div><div class="ttdef"><b>Definition</b> SettingsApp.h:6</div></div>
-<div class="ttc" id="aclassSettingsLaunch_html_a38316977e9cb0cebb7225d83b4be0389"><div class="ttname"><a href="classSettingsLaunch.html#a38316977e9cb0cebb7225d83b4be0389">SettingsLaunch::depatch_app</a></div><div class="ttdeci">void depatch_app() override</div><div class="ttdoc">Launches the application (depatch).</div><div class="ttdef"><b>Definition</b> SettingsApp.cpp:21</div></div>
+<div class="ttc" id="aclassSettingsApp_html"><div class="ttname"><a href="classSettingsApp.html">SettingsApp</a></div><div class="ttdoc">Widget class representing the settings application UI.</div><div class="ttdef"><b>Definition</b> SettingsApp.h:40</div></div>
+<div class="ttc" id="aclassSettingsApp_html_a548a9588aad899a07a229c4501b4bce5"><div class="ttname"><a href="classSettingsApp.html#a548a9588aad899a07a229c4501b4bce5">SettingsApp::do_daptch</a></div><div class="ttdeci">void do_daptch() override</div><div class="ttdoc">Executes the dispatch operation for the settings app.</div><div class="ttdef"><b>Definition</b> SettingsApp.cpp:16</div></div>
+<div class="ttc" id="aclassSettingsApp_html_a6b3bdb5a49fd5453fe4a950f3579f1c7"><div class="ttname"><a href="classSettingsApp.html#a6b3bdb5a49fd5453fe4a950f3579f1c7">SettingsApp::indicate_open_settings_window</a></div><div class="ttdeci">void indicate_open_settings_window()</div><div class="ttdoc">Signal emitted to indicate that the settings window should be opened.</div></div>
+<div class="ttc" id="aclassSettingsLaunch_html"><div class="ttname"><a href="classSettingsLaunch.html">SettingsLaunch</a></div><div class="ttdoc">Wrapper class to launch the settings application.</div><div class="ttdef"><b>Definition</b> SettingsApp.h:14</div></div>
+<div class="ttc" id="aclassSettingsLaunch_html_a38316977e9cb0cebb7225d83b4be0389"><div class="ttname"><a href="classSettingsLaunch.html#a38316977e9cb0cebb7225d83b4be0389">SettingsLaunch::depatch_app</a></div><div class="ttdeci">void depatch_app() override</div><div class="ttdoc">Dispatches the settings application.</div><div class="ttdef"><b>Definition</b> SettingsApp.cpp:21</div></div>
+<div class="ttc" id="aclassSettingsLaunch_html_a52540d6599ce4c7bf6b4688e4bc72748"><div class="ttname"><a href="classSettingsLaunch.html#a52540d6599ce4c7bf6b4688e4bc72748">SettingsLaunch::indicate_open_settings_window</a></div><div class="ttdeci">void indicate_open_settings_window()</div><div class="ttdoc">Signal emitted to indicate that the settings window should be opened.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

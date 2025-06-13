@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('classSettingsWindow.html',''); initRes
 </div><!--header-->
 <div class="contents">
 
-<p>The <a class="el" href="classSettingsWindow.html" title="The SettingsWindow class settings window is here.">SettingsWindow</a> class settings window is here.  
+<p>Main window class for the settings interface.  
  <a href="classSettingsWindow.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="SettingsWindow_8h_source.html">SettingsWindow.h</a>&gt;</code></p>
@@ -116,11 +116,16 @@ Inheritance diagram for SettingsWindow:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab1a017fdb789e8e14cf8eaa9bac15d10" id="r_ab1a017fdb789e8e14cf8eaa9bac15d10"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSettingsWindow.html#ab1a017fdb789e8e14cf8eaa9bac15d10">SettingsWindow</a> (<a class="el" href="classDesktopMainWindow.html">DesktopMainWindow</a> *window, QWidget *parent=nullptr)</td></tr>
-<tr class="memdesc:ab1a017fdb789e8e14cf8eaa9bac15d10"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classSettingsWindow.html" title="The SettingsWindow class settings window is here.">SettingsWindow</a>.  <br /></td></tr>
+<tr class="memdesc:ab1a017fdb789e8e14cf8eaa9bac15d10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs the settings window.  <br /></td></tr>
 <tr class="separator:ab1a017fdb789e8e14cf8eaa9bac15d10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a380a4a1227c28e0b3499175b10cea230" id="r_a380a4a1227c28e0b3499175b10cea230"><td class="memItemLeft" align="right" valign="top"><a id="a380a4a1227c28e0b3499175b10cea230" name="a380a4a1227c28e0b3499175b10cea230"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~SettingsWindow</b> ()</td></tr>
+<tr class="memdesc:a380a4a1227c28e0b3499175b10cea230"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for <a class="el" href="classSettingsWindow.html" title="Main window class for the settings interface.">SettingsWindow</a>. <br /></td></tr>
+<tr class="separator:a380a4a1227c28e0b3499175b10cea230"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="classSettingsWindow.html" title="The SettingsWindow class settings window is here.">SettingsWindow</a> class settings window is here. </p>
+<div class="textblock"><p>Main window class for the settings interface. </p>
+<p>Provides the user interface and logic for configuring application settings. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab1a017fdb789e8e14cf8eaa9bac15d10" name="ab1a017fdb789e8e14cf8eaa9bac15d10"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab1a017fdb789e8e14cf8eaa9bac15d10">&#9670;&#160;</a></span>SettingsWindow()</h2>
@@ -156,10 +161,11 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="classSettingsWindow.html" title="The SettingsWindow class settings window is here.">SettingsWindow</a>. </p>
+<p>Constructs the settings window. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parent</td><td></td></tr>
+    <tr><td class="paramname">window</td><td>Pointer to the main desktop window. </td></tr>
+    <tr><td class="paramname">parent</td><td>Optional parent widget. </td></tr>
   </table>
   </dd>
 </dl>
