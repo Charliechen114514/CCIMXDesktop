@@ -128,9 +128,9 @@ $(document).ready(function(){initNavTree('BacklightControllerImpl_8h_source.html
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
 <div class="foldopen" id="foldopen00063" data-start="{" data-end="};">
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classPesudoLightController.html">   63</a></span>class <a class="code hl_class" href="classPesudoLightController.html">PesudoLightController</a> : public <a class="code hl_class" href="classBacklightControllerImpl.html">BacklightControllerImpl</a> {</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">int</span> MAX = 100;       </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">int</span> MIN = 0;         </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordtype">int</span> current_light = 50;               </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">int</span> MAX = 100; </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">int</span> MIN = 0; </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordtype">int</span> current_light = 50; </div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="classPesudoLightController.html#ac40f47e90cbf8da72570629006dd9854">   72</a></span>    <a class="code hl_function" href="classPesudoLightController.html#ac40f47e90cbf8da72570629006dd9854">PesudoLightController</a>() = <span class="keywordflow">default</span>;</div>
@@ -149,29 +149,30 @@ $(document).ready(function(){initNavTree('BacklightControllerImpl_8h_source.html
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="classBacklightControllerImpl.html#a497689c731fb24688b0ba9e1e40eb551">lightLevel</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>};</div>
 </div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="preprocessor">#include &quot;desktop_settings.h&quot;</span></div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="preprocessor">#ifdef ARM_BUILD</span></div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="preprocessor">#include &lt;QString&gt;</span></div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="keyword">class </span>ArmPlatformBacklightController : <span class="keyword">public</span> <a class="code hl_class" href="classBacklightControllerImpl.html">BacklightControllerImpl</a> {</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">int</span> MIN = 1; </div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="keywordtype">int</span> current_light = 50;       </div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keyword">const</span> QString backlight_path = <span class="stringliteral">&quot;/sys/class/backlight/backlight-display/&quot;</span>;</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="keyword">const</span> QString brightness_file = backlight_path + <span class="stringliteral">&quot;brightness&quot;</span>;</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keyword">const</span> QString max_brightness_file = backlight_path + <span class="stringliteral">&quot;max_brightness&quot;</span>;</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="keywordtype">int</span> MAX_LIGHT_VAL() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keywordtype">int</span> MIN_LIGHT_VAL() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <span class="keywordtype">void</span> setLightLevel(<span class="keywordtype">int</span> lightLevel) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <span class="keywordtype">int</span> lightLevel() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>};</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="preprocessor">#endif </span><span class="comment">// BACKLIGHTCONTROLLERIMPL_H</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="preprocessor">#include &lt;QString&gt;</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="keyword">class </span>ArmPlatformBacklightController : <span class="keyword">public</span> <a class="code hl_class" href="classBacklightControllerImpl.html">BacklightControllerImpl</a> {</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">int</span> MIN = 1; </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keywordtype">int</span> current_light = 50; </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="keyword">const</span> QString backlight_path = BACKLIGHT_BASE_PATH; </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keyword">const</span> QString brightness_file = backlight_path + <span class="stringliteral">&quot;brightness&quot;</span>; </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="keyword">const</span> QString max_brightness_file = backlight_path + <span class="stringliteral">&quot;max_brightness&quot;</span>; </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    <span class="keywordtype">int</span> MAX_LIGHT_VAL() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <span class="keywordtype">int</span> MIN_LIGHT_VAL() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    <span class="keywordtype">void</span> setLightLevel(<span class="keywordtype">int</span> lightLevel) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    <span class="keywordtype">int</span> lightLevel() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>};</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="preprocessor">#endif </span><span class="comment">// BACKLIGHTCONTROLLERIMPL_H</span></div>
 <div class="ttc" id="aclassBacklightControllerImpl_html"><div class="ttname"><a href="classBacklightControllerImpl.html">BacklightControllerImpl</a></div><div class="ttdoc">The BacklightControllerImpl class Abstract base class for platform-specific backlight control impleme...</div><div class="ttdef"><b>Definition</b> BacklightControllerImpl.h:13</div></div>
 <div class="ttc" id="aclassBacklightControllerImpl_html_a497689c731fb24688b0ba9e1e40eb551"><div class="ttname"><a href="classBacklightControllerImpl.html#a497689c731fb24688b0ba9e1e40eb551">BacklightControllerImpl::lightLevel</a></div><div class="ttdeci">virtual int lightLevel()=0</div><div class="ttdoc">Gets the current light level.</div></div>
 <div class="ttc" id="aclassBacklightControllerImpl_html_ab8219ab0dcb4e372ec8ecef7bf9b000f"><div class="ttname"><a href="classBacklightControllerImpl.html#ab8219ab0dcb4e372ec8ecef7bf9b000f">BacklightControllerImpl::creator</a></div><div class="ttdeci">static BacklightControllerImpl * creator()</div><div class="ttdoc">Creates a platform-specific implementation of BacklightControllerImpl.</div><div class="ttdef"><b>Definition</b> BacklightControllerImpl.cpp:3</div></div>
