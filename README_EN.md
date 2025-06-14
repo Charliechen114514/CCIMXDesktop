@@ -1,3 +1,4 @@
+
 # CCIMXDESKTOP 🖥️
 
 ![CCIMXDesktopLogo](./CCIMXDesktopLogo.png)
@@ -19,29 +20,29 @@
 
 Now, CCIMXDesktop supports one-click builds including:
 
-- 🏠 Supports dynamic loading of built-in or external applications (single launch or persistence to the desktop) and the most basic desktop configurable interface (setting application supports brightness adjustment (non-arm platform is a pseudo interface, no actual effect is provided), static wallpaper switching (PPT translation style, gradient style and fixed display style))
-- 🏠 Supports recording click frequency and dynamically adjusting the DockWidget bottom sidebar
-- ℹ About App (a brief introduction to the basic situation of the desktop of this project)
-- ✏️ CCNoter (super lightweight notepad)
-- 🎨SimpleDrawer (super lightweight drawing, similar to Windows "Paint")
-- 🔧 Builtin Apps (Indoor temperature requires that the ICM20608 driver has been mounted and is available, other sensors need to modify the interface content by themselves (just rewrite how to read) and network degree detection (requires Qt Networks Core to be supported))
-- ☀️ WeatherAPP (requires your device to be able to connect to the Internet to be available)
-- 📄 pdfReader (requires you to have the dependent static library of mupdf on your platform)
-- 📁 FileRamber (file browser, with basic file navigation, Tiny version of Windows Explorer.exe)
-- 📷 GeneralLocalCamera (this is a basic camera based on Opencv VideoCapture, which can realize the photo function)
-- 📊 SystemState (view the CPU status, memory capacity status and process list of the running machine)
-- 🎵 MediaPlayer (requires your QMediaPlayer to support ALSA or other audio playback, and OpenCV support is required for video playback)
-- 💡 LEDController App (Light switch APP, requires Platform LED driver to be enabled)
-- 🌡️ Environment App (AP3216C driver needs to be mounted)
-- 🏃 SportHealth App (ICM20608 driver needs to be mounted)
-- 🖼️ ImageWalker (the most basic image information browser, equivalent to the Windows image browser for beggars)
-- ✏️ MarkDown reader (the most basic Markdown editing + preview function, supports draft/load and save Markdown and basic shortcut functions)
-- 🛜 CCNetHelper (supports network card information viewing, IP port scanning and basic test IP connection capabilities)
-- 🦖Dinasour Game! (Yes, that Google Dinasour Game, implemented with Qt6 Widgets :) )
-- 🧮Caculator Pocket calculator (standard calculator)
-- 🤖ImageProcessor (image processor processes images locally and does simple reasoning (face recognition))
-- ⚙ Settings (provides desktop wallpaper, brightness settings (not yet implemented on ARM platform) and AppWidget style settings)
-- 🚀Dynamic Application Launcher (supports running third-party and can persist into the desktop!)
+| Function / Application Name | Dependency or Remarks | Is it a built-in program | Description | Interface Display |
+| ------------------------------------------------ | -------------------------------------------------- | -------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 🏠 CCIMX_Desktop Ontology | Standard Minimum Dependency | Yes | Core Framework, Ontology | ![image-20250613225001667](./README/image-20250613225001667.png) |
+| ℹ About App | Standard minimum dependencies | Yes | A brief introduction to the basic situation of the desktop of this project | ![image-20250614231912157](./README/image-20250614231912157.png) |
+| ✏️ CCNoter (Notepad) | Standard minimum dependencies | Yes | Super lightweight notepad | ![image-20250614231754881](./README/image-20250614231754881.png) |
+| 🎨 SimpleDrawer (Painting) | Standard minimum dependencies | Yes | Super lightweight drawing, similar to Windows' "Paint" | ![image-20250614232836661](./README/image-20250614232836661.png) |
+| ☀️ WeatherAPP (weather application) | The device needs to have Internet access (network connection) | Optional | Get the weather forecast for the city. The API currently used is Mind Weather's | ![image-20250614232722896](./README/image-20250614232722896.png) |
+| 📄 pdfReader (PDF reader) | MuPDF dependency library | Optional | The most basic PDF browser, supporting chapter jump and viewing functions | ![image-20250614232706288](./README/image-20250614232706288.png) |
+| 📁 FileRamber (file browser) | Standard minimum dependency | Yes | File management basics (file browser, with basic file navigation, Tiny version of Windows Explorer.exe) | ![image-20250614232241212](./README/image-20250614232241212.png) |
+| 📷 GeneralLocalCamera (camera) | Requires OpenCV support | Optional | Can take pictures | ![image-20250614232213554](./README/image-20250614232213554.png) |
+| 📊 SystemState (system status view) | Standard minimum dependency | Yes | View the CPU status, memory capacity status and process list of the running machine | ![image-20250614232050420](./README/image-20250614232050420.png) |
+| 🎵 MediaPlayer (audio and video player) | QMediaPlayer supports ALSA or other audio, and video requires OpenCV support | Optional | NetEase Cloud style audio and video player, which can play both audio and video, and displays the NetEase Cloud style interface when playing audio! | ![image-20250614232017544](./README/image-20250614232017544.png) |
+| 💡 LEDController App (light control) | Platform LED driver | Optional | Hardware support required (light switch APP, Platform LED driver needs to be enabled) | ![image-20250614231942332](./README/image-20250614231942332.png) |
+| 🌡️ Environment App (environmental monitoring) | AP3216C sensor driver | Optional | Hardware support required (AP3216C driver needs to be mounted and driven normally) | ![image-20250614232559945](./README/image-20250614232559945.png) |
+| 🏃 SportHealth App (Sports Health) | ICM20608 driver | Optional | Hardware support required (ICM20608 driver needs to be mounted and driven normally) | ![image-20250614232631305](./README/image-20250614232631305.png) |
+| 🖼️ ImageWalker (Image Browser) | Standard minimum dependency | Yes | The most basic image information browser, equivalent to the Windows image browser for the poor version | ![image-20250614232520438](./README/image-20250614232520438.png) |
+| ✏️ Markdown Reader | Standard minimum dependency | Yes | Lightweight Markdown editing and preview (the most basic Markdown editing + preview function, supporting drafts / Load and save Markdown and basic shortcut functions) | ![image-20250614232450028](./README/image-20250614232450028.png) |
+| 🛜 CCNetHelper (network tool) | Requires the network card to have network connection capabilities (network card driver is normal) | Optional | Supports network card information viewing, IP port scanning and basic test IP connection capabilities | ![image-20250614231832285](./README/image-20250614231832285.png) |
+| 🦖 Dinasour Game (mini game) | Standard minimum dependencies| Optional | Yes, that Google Dinasour Game, implemented with Qt6 Widgets :) | ![image-20250614231727977](./README/image-20250614231727977.png) |
+| 🧮 Calculator (Calculator) | Standard minimum dependency | Yes | Basic tools (standard calculator) | ![image-20250614231703148](./README/image-20250614231703148.png) |
+| 🤖 ImageProcessor (Image processing and reasoning) | OpenCV, reasoning library (if any) | Optional | OpenCV support and reasoning support required | ![image-20250614232427874](./README/image-20250614232427874.png) |
+| ⚙ Settings (settings interface) | Standard minimum dependencies | Yes | Desktop wallpaper, brightness and desktop application style settings | ![image-20250614232323164](./README/image-20250614232323164.png) |
+| 🚀 Dynamic Application Launcher (dynamic application launcher) | Standard minimum dependencies | Yes | Third-party application operation and management | ![image-20250614232401883](./README/image-20250614232401883.png) |
 
 ------
 
@@ -103,19 +104,17 @@ If you are interested in the project production process and development document
 
 The document has been automatically deployed through GitHub Actions, visit: [CCIMXDesktop: Main Page](https://charliechen114514.github.io/CCIMXDesktop/)
 
-## 💡 WIP (some WIP Third Party Apps under development)
-
-- 💬 Chat room (planned to be similar to QQ)
-- Support the top status bar to display basic information
-- Configurable HOME interface
-
-## 💡 Future plans
+## 💡 WIP (some WIP Third Party App under development)
 
 🚀 Plan to write and provide more external basic programs:
+
+- 💬 Chat room (planned to be similar to QQ)
 
 - ⏰ Alarm clock APP
 - 🔌 Serial port assistant
 - ✅ Task list
+- Support the top status bar to display basic information
+- Configurable HOME interface
 
 ------
 

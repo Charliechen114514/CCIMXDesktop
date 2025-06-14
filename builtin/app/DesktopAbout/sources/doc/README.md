@@ -19,29 +19,29 @@
 
 现在，CCIMXDesktop支持的一键构建包括：
 
-- 🏠 支持可动态加载内建或者外部应用程序（单次启动或者持久化至桌面）与最基本的桌面可配置接口（设置应用程序支持调整亮度（非arm平台是伪接口，不提供实际效果），静态壁纸多样切换（PPT平移风格，渐变风格和固定显示风格））
-- 🏠 支持记录点击频率从而动态调整的DockWidget底部侧栏
-- ℹ About App（简单的介绍本项目桌面的基本情况）
-- ✏️ CCNoter（超级无敌轻量的记事本）
-- 🎨SimpleDrawer（超级无敌轻量的画图，类似Windows的“画图”）
-- 🔧 Builtin Apps（室内气温需要已经挂载ICM20608驱动且可用，其他传感器需要自行修改接口内容（只需要重写如何读即可）与联网程度检测（需要Qt Networks Core 的基础被支持））
-- ☀️ WeatherAPP（需要您的设备可以联网才可用）
-- 📄 pdfReader（需要您具备您平台上的mupdf的依赖静态库）
-- 📁 FileRamber（文件浏览器，具备基本的文件导览，Windows Explorer.exe的Tiny版本）
-- 📷 GeneralLocalCamera（这是基于Opencv VideoCapture的基础相机，可以实现拍照功能）
-- 📊 SystemState（查看运行机的CPU状态，内存容量状态和进程列表）
-- 🎵 MediaPlayer（需要您的QMediaPlayer支持ALSA或者是其他的音频播放，视频播放需要OpenCV支持）
-- 💡 LEDController App（开关灯APP，需要 Platform LED 驱动使能）
-- 🌡️ Environment App（AP3216C驱动需要被挂载）
-- 🏃 SportHealth App (ICM20608驱动需要被挂载)
-- 🖼️ ImageWalker（最基础的图像信息浏览查看器，相当于丐版的Windows图像浏览器）
-- ✏️ MarkDown阅读器（最基础的Markdown编辑 + 预览功能，支持草稿 / 加载保存Markdown与基础快捷功能）
-- 🛜 CCNetHelper（支持网卡信息查看，IP端口扫描和基本测试IP打通能力）
-- 🦖Dinasour Game!（是的，就是那个Google Dinasour Game，用Qt6 Widgets实现的版本 :) ）
-- 🧮Caculator 口袋计算器（标准的计算器）
-- 🤖ImageProcessor（图像处理器本地处理图像和做简单的推理（人脸识别））
-- ⚙ Settings（提供对桌面壁纸，亮度设置（ARM平台尚未实现）和AppWidget风格设置）
-- 🚀Dynamic Application Launcher（支持运行第三方且可持久化进入桌面！）
+| 功能 / 应用名称                                  | 依赖条件或备注                                     | 是否为内建程序 | 说明                                                         | 界面展示                                                     |
+| ------------------------------------------------ | -------------------------------------------------- | -------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 🏠 CCIMX_Desktop本体                              | 标准最小依赖                                       | 是             | 核心框架，本体                                               | ![image-20250613225001667](./README/image-20250613225001667.png) |
+| ℹ About App                                      | 标准最小依赖                                       | 是             | 简单的介绍本项目桌面的基本情况                               |                                                              |
+| ✏️ CCNoter（记事本）                              | 标准最小依赖                                       | 是             | 超级无敌轻量的记事本                                         |                                                              |
+| 🎨 SimpleDrawer（画图）                           | 标准最小依赖                                       | 是             | 超级无敌轻量的画图，类似Windows的“画图”                      |                                                              |
+| ☀️ WeatherAPP（天气应用）                         | 需设备具备联网能力（网络连接）                     | 可选           | 获取城市所在的天气预报，目前使用的API是心智天气的            |                                                              |
+| 📄 pdfReader（PDF阅读器）                         | MuPDF依赖库                                        | 可选           | 最基础的PDF浏览器，支持章节跳转和查看功能                    |                                                              |
+| 📁 FileRamber（文件浏览器）                       | 标准最小依赖                                       | 是             | 文件管理基础（文件浏览器，具备基本的文件导览，Windows Explorer.exe的Tiny版本） |                                                              |
+| 📷 GeneralLocalCamera（摄像头）                   | 需要OpenCV支持                                     | 可选           | 可以进行拍照                                                 |                                                              |
+| 📊 SystemState（系统状态查看）                    | 标准最小依赖                                       | 是             | 查看运行机的CPU状态，内存容量状态和进程列表                  |                                                              |
+| 🎵 MediaPlayer（音视频播放器）                    | QMediaPlayer支持ALSA或其他音频，视频需要OpenCV支持 | 可选           | 网易云风格的音视频播放器，既可以播放音频也可以播放视频，音频时展示网易云风格的界面！ |                                                              |
+| 💡 LEDController App（灯控制）                    | Platform LED驱动                                   | 可选           | 需硬件支持（开关灯APP，需要 Platform LED 驱动使能）          |                                                              |
+| 🌡️ Environment App（环境监测）                    | AP3216C传感器驱动                                  | 可选           | 需硬件支持（AP3216C驱动需要被挂载且正常驱动）                |                                                              |
+| 🏃 SportHealth App（运动健康）                    | ICM20608驱动                                       | 可选           | 需硬件支持（ICM20608驱动需要被挂载且正常驱动）               |                                                              |
+| 🖼️ ImageWalker（图像浏览器）                      | 标准最小依赖                                       | 是             | 最基础的图像信息浏览查看器，相当于丐版的Windows图像浏览器    |                                                              |
+| ✏️ Markdown阅读器                                 | 标准最小依赖                                       | 是             | 轻量级Markdown编辑预览（最基础的Markdown编辑 + 预览功能，支持草稿 / 加载保存Markdown与基础快捷功能） |                                                              |
+| 🛜 CCNetHelper（网络工具）                        | 需要网卡具备网络连接能力（网卡驱动正常）           | 可选           | 支持网卡信息查看，IP端口扫描和基本测试IP打通能力             |                                                              |
+| 🦖 Dinasour Game（小游戏）                        | 标准最小依赖                                       | 可选           | 是的，就是那个Google Dinasour Game，用Qt6 Widgets实现的版本 :) |                                                              |
+| 🧮 Calculator（计算器）                           | 标准最小依赖                                       | 是             | 基础工具（标准计算器）                                       |                                                              |
+| 🤖 ImageProcessor（图像处理和推理）               | OpenCV，推理库（如有）                             | 可选           | 需OpenCV支持及推理支持                                       |                                                              |
+| ⚙ Settings（设置界面）                           | 标准最小依赖                                       | 是             | 桌面壁纸、亮度和桌面应用风格设置                             |                                                              |
+| 🚀 Dynamic Application Launcher（动态应用启动器） | 标准最小依赖                                       | 是             | 第三方应用运行和管理                                         |                                                              |
 
 ------
 
@@ -106,15 +106,16 @@
 ## 💡 WIP（一些正在开发的WIP Third Party App）
 
 - 💬 聊天室（计划类似于QQ）
+- ⏰ 闹钟APP
+- 🔌 串口助手
+- ✅ 任务清单
 - 支持顶部状态栏显示基本信息
 - 可配置的HOME界面
 
 ## 💡 未来计划
 
 🚀 计划编写和提供更多的外部基础程序：
-- ⏰ 闹钟APP
-- 🔌 串口助手
-- ✅ 任务清单
+- 
 
 ------
 
