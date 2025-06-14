@@ -6,7 +6,7 @@
 /**
  * @brief The BacklightControllerImpl class
  * Abstract base class for platform-specific backlight control implementations.
- * 
+ *
  * This class defines the interface for querying and setting backlight levels.
  * Derived classes should provide platform-specific implementations.
  */
@@ -61,9 +61,9 @@ protected:
  * A dummy light controller used for testing or non-hardware platforms.
  */
 class PesudoLightController : public BacklightControllerImpl {
-    static constexpr int MAX = 100;       ///< Maximum dummy brightness value
-    static constexpr int MIN = 0;         ///< Minimum dummy brightness value
-    int current_light = 50;               ///< Current dummy brightness value
+    static constexpr int MAX = 100; ///< Maximum dummy brightness value
+    static constexpr int MIN = 0; ///< Minimum dummy brightness value
+    int current_light = 50; ///< Current dummy brightness value
 
 public:
     /**
@@ -102,29 +102,46 @@ public:
      */
     int lightLevel() override;
 };
-
+#include "desktop_settings.h"
 #ifdef ARM_BUILD
+
 #include <QString>
 /**
  * @brief The ArmPlatformBacklightController class
  * A stub for platform-specific backlight controller on ARM systems.
- * 
+ *
  */
 class ArmPlatformBacklightController : public BacklightControllerImpl {
     static constexpr int MIN = 1; ///< Minimum brightness
-    int current_light = 50;       ///< Cache the last set brightness
+    int current_light = 50; ///< Cache the last set brightness
 
-    const QString backlight_path = "/sys/class/backlight/backlight-display/";
-    const QString brightness_file = backlight_path + "brightness";
-    const QString max_brightness_file = backlight_path + "max_brightness";
+    const QString backlight_path = BACKLIGHT_BASE_PATH; ///< backlights
+    const QString brightness_file = backlight_path + "brightness"; ///< brightness sessions
+    const QString max_brightness_file = backlight_path + "max_brightness"; ///< max brightness
 
 public:
+    /**
+     * @brief Gets the dummy maximum brightness value.
+     * @return The value.
+     */
     int MAX_LIGHT_VAL() override;
 
+    /**
+     * @brief Gets the dummy minimum brightness value.
+     * @return The value 1.
+     */
     int MIN_LIGHT_VAL() override;
 
+    /**
+     * @brief Sets the dummy current brightness value.
+     * @param lightLevel New value to set.
+     */
     void setLightLevel(int lightLevel) override;
 
+    /**
+     * @brief Gets the current dummy brightness value.
+     * @return Current dummy brightness.
+     */
     int lightLevel() override;
 };
 #endif
