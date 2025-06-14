@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['📚项目文档_0',['📚项目文档',['../md_README.html#autotoc_md10',1,'']]],
-  ['📚_20project_20documentation_1',['📚 Project Documentation',['../md_README__EN.html#autotoc_md25',1,'']]]
+  ['📝_20许可证_0',['📝 许可证',['../md_README.html#autotoc_md13',1,'']]],
+  ['📝_20license_1',['📝 License',['../md_README__EN.html#autotoc_md27',1,'']]]
 ];

@@ -5,7 +5,7 @@ var searchData=
   ['backward10sec_2',['backward10sec',['../classMediaPlayerWindow.html#a8f600b71fc44c85e4d43e4325676cfe4',1,'MediaPlayerWindow']]],
   ['badsqrtvalue_3',['badsqrtvalue',['../classBadSqrtValue.html#a51e3bd601bff5978cfdee35ce2ed6e6b',1,'BadSqrtValue::BadSqrtValue()'],['../classBadSqrtValue.html',1,'BadSqrtValue']]],
   ['basewallpapersettings_4',['basewallpapersettings',['../structBaseWallPaperSettings.html#a5c82df13ac1f3539568e71d775edeb1f',1,'BaseWallPaperSettings::BaseWallPaperSettings()'],['../structBaseWallPaperSettings.html',1,'BaseWallPaperSettings']]],
-  ['before_20you_20get_20started_20choose_20your_20language_20🌐_5',['🌐 Before you get started, choose your language! 🌐',['../md_README__EN.html#autotoc_md16',1,'']]],
+  ['before_20you_20get_20started_20choose_20your_20language_20🌐_5',['🌐 Before you get started, choose your language! 🌐',['../md_README__EN.html#autotoc_md15',1,'']]],
   ['binaryoptreenode_6',['binaryoptreenode',['../structBinaryOpTreeNode.html',1,'BinaryOpTreeNode'],['../structBinaryOpTreeNode.html#a9570d816c09da5958d0418bd0713197c',1,'BinaryOpTreeNode::BinaryOpTreeNode()']]],
   ['bind_5fdaily_5finfo_7',['bind_daily_info',['../classWeatherDailyCard.html#a5e8b000f9a09fd2d39bee8edb410a7d3',1,'WeatherDailyCard']]],
   ['bind_5fdisplay_5fwidget_8',['bind_display_widget',['../classCameraCapture.html#adcc683f3079c0a2b45af30cdbe2425c6',1,'CameraCapture']]],
@@ -32,9 +32,9 @@ var searchData=
   ['board_5flen_29',['BOARD_LEN',['../classGaugeWidget.html#aec3958da812296d68d8093558f0d15e1',1,'GaugeWidget']]],
   ['bonusfunctor_30',['bonusfunctor',['../classBonusFunctor.html#a9a07fb47a802b6c4edb025b71d6dee61',1,'BonusFunctor::BonusFunctor()'],['../classBonusFunctor.html',1,'BonusFunctor']]],
   ['browse_5fdocument_5fmetas_31',['browse_document_metas',['../classMainWindow.html#ad0d5bd0ef2a63f9fa672f284bf381c15',1,'MainWindow']]],
-  ['build_20of_20technologies_32',['🛠️ Full build of technologies',['../md_README__EN.html#autotoc_md21',1,'']]],
-  ['build_20the_20foundation_33',['🛠️ Technologies used to build the foundation',['../md_README__EN.html#autotoc_md20',1,'']]],
+  ['build_20of_20technologies_32',['🛠️ Full build of technologies',['../md_README__EN.html#autotoc_md20',1,'']]],
+  ['build_20the_20foundation_33',['🛠️ Technologies used to build the foundation',['../md_README__EN.html#autotoc_md19',1,'']]],
   ['build_5fhome_5fpage_34',['build_home_page',['../classPageFactory.html#a7568d9fd1e31b8610b514ae09890a1e4',1,'PageFactory']]],
   ['build_5fpesudo_5fpage_35',['build_pesudo_page',['../classPageFactory.html#a0aacbea4749963dcbcb05af9c4798ccc',1,'PageFactory']]],
-  ['builtin_20tt_36',['builtin tt',['../md_Components-explain-CN.html#autotoc_md33',1,'🧬 &lt;tt&gt;builtin&lt;/tt&gt;'],['../md_Components-explain-EN.html#autotoc_md45',1,'🧬 &lt;tt&gt;builtin&lt;/tt&gt;']]]
+  ['builtin_20tt_36',['builtin tt',['../md_Components-explain-CN.html#autotoc_md31',1,'🧬 &lt;tt&gt;builtin&lt;/tt&gt;'],['../md_Components-explain-EN.html#autotoc_md43',1,'🧬 &lt;tt&gt;builtin&lt;/tt&gt;']]]
 ];

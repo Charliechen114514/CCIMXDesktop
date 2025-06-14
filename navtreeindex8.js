@@ -1,7 +1,5 @@
 var NAVTREEINDEX8 =
 {
-"structGaussainPackage.html#a1c0e035c39d60cadacd3c7c7aa3eac69":[5,0,101,3],
-"structGaussainPackage.html#a1ee1b1ab754fa1642514621993e1338f":[5,0,101,1],
 "structGaussainPackage.html#a85a32d5cac6a96690a85f69a0e84324f":[5,0,101,2],
 "structGaussainPackage.html#adfd6099611f308e992b8a9f692e9d217":[5,0,101,0],
 "structGroundLineProviders_1_1GroundLine.html":[5,0,105,0],
@@ -98,8 +96,8 @@ var NAVTREEINDEX8 =
 "structSettings_1_1SZ.html":[5,0,2,0],
 "structSettings_1_1XY.html":[5,0,2,1],
 "structStackpageSwitcherAnimation.html":[5,0,192],
-"structStackpageSwitcherAnimation.html#a4e77ef027d4c0e45e87306cd99e0afe3":[5,0,192,2],
 "structStackpageSwitcherAnimation.html#a4e77ef027d4c0e45e87306cd99e0afe3":[5,0,192,1],
+"structStackpageSwitcherAnimation.html#a4e77ef027d4c0e45e87306cd99e0afe3":[5,0,192,2],
 "structStackpageSwitcherAnimation.html#a4e77ef027d4c0e45e87306cd99e0afe3":[5,0,192,3],
 "structStackpageSwitcherAnimation_1_1AnimationInfo.html":[5,0,192,0],
 "structStackpageSwitcherAnimation_1_1AnimationInfo.html#a2be11d135f255a6ffcf93b5eb0072050":[5,0,192,0,0],

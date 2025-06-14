@@ -10,7 +10,7 @@ var searchData=
   ['generate_5fhist_7',['generate_hist',['../namespaceOpenCV__ProcessAdapter.html#ad679ea0481d2a45441339cd99d4213e2',1,'OpenCV_ProcessAdapter']]],
   ['generatemediaenablefilter_8',['generateMediaEnableFilter',['../namespaceMediaEnableSelectFactory.html#aa989d9dfc4abdbea420b7a3a6f44f73d',1,'MediaEnableSelectFactory']]],
   ['genre_9',['genre',['../structMediaInfo.html#a72d5f69c1b23c572b37a2b676238049f',1,'MediaInfo']]],
-  ['get_20started_20choose_20your_20language_20🌐_10',['🌐 Before you get started, choose your language! 🌐',['../md_README__EN.html#autotoc_md16',1,'']]],
+  ['get_20started_20choose_20your_20language_20🌐_10',['🌐 Before you get started, choose your language! 🌐',['../md_README__EN.html#autotoc_md15',1,'']]],
   ['get_5factuallistlist_5fsize_11',['get_actualListlist_size',['../classCCMediaPlayList.html#aa0c86cc509a3eb75da7128a471f715ee',1,'CCMediaPlayList']]],
   ['get_5fall_5fenabled_5fselect_5fmedias_5ffromdialog_12',['get_all_enabled_select_medias_fromdialog',['../namespaceMediaEnableSelectFactory.html#a09e859d150be9f4494c372c4a907d557',1,'MediaEnableSelectFactory']]],
   ['get_5fapp_13',['get_app',['../classAppWidget.html#a2a5f6bb3602a910f09ddde871936e59e',1,'AppWidget']]],

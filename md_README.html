@@ -109,31 +109,52 @@ $(document).ready(function(){initNavTree('md_README.html',''); initResizable(); 
 <p><b>CCIMXDESKTOP</b> 提供了一个轻量级、可扩展的桌面环境，专为基于 NXP i.MX6ULL 平台的嵌入式系统优化。它包含一系列内置工具、设备集成层和内置的辅助应用程序，所有这些都在一个统一的用户界面中呈现。</p>
 <p><img src="https://img.shields.io/badge/NXP-i.MX6ULL-yellow" alt="i.MX6ULL" class="inline"/> <img src="https://img.shields.io/badge/Platform-Embedded%20Linux-lightgrey" alt="Embedded" class="inline"/></p>
 <p>现在，CCIMXDesktop支持的一键构建包括：</p>
-<ul>
-<li>🏠 支持可动态加载内建或者外部应用程序（单次启动或者持久化至桌面）与最基本的桌面可配置接口（设置应用程序支持调整亮度（非arm平台是伪接口，不提供实际效果），静态壁纸多样切换（PPT平移风格，渐变风格和固定显示风格））</li>
-<li>🏠 支持记录点击频率从而动态调整的DockWidget底部侧栏</li>
-<li>ℹ About App（简单的介绍本项目桌面的基本情况）</li>
-<li>✏️ CCNoter（超级无敌轻量的记事本）</li>
-<li>🎨SimpleDrawer（超级无敌轻量的画图，类似Windows的“画图”）</li>
-<li>🔧 Builtin Apps（室内气温需要已经挂载ICM20608驱动且可用，其他传感器需要自行修改接口内容（只需要重写如何读即可）与联网程度检测（需要Qt Networks Core 的基础被支持））</li>
-<li>☀️ WeatherAPP（需要您的设备可以联网才可用）</li>
-<li>📄 pdfReader（需要您具备您平台上的mupdf的依赖静态库）</li>
-<li>📁 FileRamber（文件浏览器，具备基本的文件导览，Windows Explorer.exe的Tiny版本）</li>
-<li>📷 GeneralLocalCamera（这是基于Opencv VideoCapture的基础相机，可以实现拍照功能）</li>
-<li>📊 SystemState（查看运行机的CPU状态，内存容量状态和进程列表）</li>
-<li>🎵 MediaPlayer（需要您的QMediaPlayer支持ALSA或者是其他的音频播放，视频播放需要OpenCV支持）</li>
-<li>💡 <a class="el" href="classLEDController.html" title="High-level controller interface for controlling LEDs, abstracting real or pseudo backends.">LEDController</a> App（开关灯APP，需要 Platform LED 驱动使能）</li>
-<li>🌡️ Environment App（AP3216C驱动需要被挂载）</li>
-<li>🏃 SportHealth App (ICM20608驱动需要被挂载)</li>
-<li>🖼️ ImageWalker（最基础的图像信息浏览查看器，相当于丐版的Windows图像浏览器）</li>
-<li>✏️ MarkDown阅读器（最基础的Markdown编辑 + 预览功能，支持草稿 / 加载保存Markdown与基础快捷功能）</li>
-<li>🛜 CCNetHelper（支持网卡信息查看，IP端口扫描和基本测试IP打通能力）</li>
-<li>🦖Dinasour Game!（是的，就是那个Google <a class="el" href="classDinasour.html" title="The Dinasour Object handle.">Dinasour</a> Game，用Qt6 Widgets实现的版本 :) ）</li>
-<li>🧮Caculator 口袋计算器（标准的计算器）</li>
-<li>🤖ImageProcessor（图像处理器本地处理图像和做简单的推理（人脸识别））</li>
-<li>⚙ Settings（提供对桌面壁纸，亮度设置（ARM平台尚未实现）和AppWidget风格设置）</li>
-<li>🚀Dynamic Application Launcher（支持运行第三方且可持久化进入桌面！）</li>
-</ul>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">功能 / 应用名称   </th><th class="markdownTableHeadNone">依赖条件或备注   </th><th class="markdownTableHeadNone">是否为内建程序   </th><th class="markdownTableHeadNone">说明   </th><th class="markdownTableHeadNone">界面展示    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">🏠 CCIMX_Desktop本体   </td><td class="markdownTableBodyNone">标准最小依赖   </td><td class="markdownTableBodyNone">是   </td><td class="markdownTableBodyNone">核心框架，本体   </td><td class="markdownTableBodyNone"><img src="./README/image-20250613225001667.png" alt="image-20250613225001667" class="inline"/>    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">ℹ About App   </td><td class="markdownTableBodyNone">标准最小依赖   </td><td class="markdownTableBodyNone">是   </td><td class="markdownTableBodyNone">简单的介绍本项目桌面的基本情况   </td><td class="markdownTableBodyNone"><img src="./README/image-20250614231912157.png" alt="image-20250614231912157" class="inline"/>    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">✏️ CCNoter（记事本）   </td><td class="markdownTableBodyNone">标准最小依赖   </td><td class="markdownTableBodyNone">是   </td><td class="markdownTableBodyNone">超级无敌轻量的记事本   </td><td class="markdownTableBodyNone"><img src="./README/image-20250614231754881.png" alt="image-20250614231754881" class="inline"/>    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">🎨 SimpleDrawer（画图）   </td><td class="markdownTableBodyNone">标准最小依赖   </td><td class="markdownTableBodyNone">是   </td><td class="markdownTableBodyNone">超级无敌轻量的画图，类似Windows的“画图”   </td><td class="markdownTableBodyNone"><img src="./README/image-20250614232836661.png" alt="image-20250614232836661" class="inline"/>    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">☀️ WeatherAPP（天气应用）   </td><td class="markdownTableBodyNone">需设备具备联网能力（网络连接）   </td><td class="markdownTableBodyNone">可选   </td><td class="markdownTableBodyNone">获取城市所在的天气预报，目前使用的API是心智天气的   </td><td class="markdownTableBodyNone"><img src="./README/image-20250614232722896.png" alt="image-20250614232722896" class="inline"/>    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">📄 pdfReader（PDF阅读器）   </td><td class="markdownTableBodyNone">MuPDF依赖库   </td><td class="markdownTableBodyNone">可选   </td><td class="markdownTableBodyNone">最基础的PDF浏览器，支持章节跳转和查看功能   </td><td class="markdownTableBodyNone"><img src="./README/image-20250614232706288.png" alt="image-20250614232706288" class="inline"/>    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">📁 FileRamber（文件浏览器）   </td><td class="markdownTableBodyNone">标准最小依赖   </td><td class="markdownTableBodyNone">是   </td><td class="markdownTableBodyNone">文件管理基础（文件浏览器，具备基本的文件导览，Windows Explorer.exe的Tiny版本）   </td><td class="markdownTableBodyNone"><img src="./README/image-20250614232241212.png" alt="image-20250614232241212" class="inline"/>    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">📷 GeneralLocalCamera（摄像头）   </td><td class="markdownTableBodyNone">需要OpenCV支持   </td><td class="markdownTableBodyNone">可选   </td><td class="markdownTableBodyNone">可以进行拍照   </td><td class="markdownTableBodyNone"><img src="./README/image-20250614232213554.png" alt="image-20250614232213554" class="inline"/>    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">📊 SystemState（系统状态查看）   </td><td class="markdownTableBodyNone">标准最小依赖   </td><td class="markdownTableBodyNone">是   </td><td class="markdownTableBodyNone">查看运行机的CPU状态，内存容量状态和进程列表   </td><td class="markdownTableBodyNone"><img src="./README/image-20250614232050420.png" alt="image-20250614232050420" class="inline"/>    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">🎵 MediaPlayer（音视频播放器）   </td><td class="markdownTableBodyNone">QMediaPlayer支持ALSA或其他音频，视频需要OpenCV支持   </td><td class="markdownTableBodyNone">可选   </td><td class="markdownTableBodyNone">网易云风格的音视频播放器，既可以播放音频也可以播放视频，音频时展示网易云风格的界面！   </td><td class="markdownTableBodyNone"><img src="./README/image-20250614232017544.png" alt="image-20250614232017544" class="inline"/>    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">💡 <a class="el" href="classLEDController.html" title="High-level controller interface for controlling LEDs, abstracting real or pseudo backends.">LEDController</a> App（灯控制）   </td><td class="markdownTableBodyNone">Platform LED驱动   </td><td class="markdownTableBodyNone">可选   </td><td class="markdownTableBodyNone">需硬件支持（开关灯APP，需要 Platform LED 驱动使能）   </td><td class="markdownTableBodyNone"><img src="./README/image-20250614231942332.png" alt="image-20250614231942332" class="inline"/>    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">🌡️ Environment App（环境监测）   </td><td class="markdownTableBodyNone">AP3216C传感器驱动   </td><td class="markdownTableBodyNone">可选   </td><td class="markdownTableBodyNone">需硬件支持（AP3216C驱动需要被挂载且正常驱动）   </td><td class="markdownTableBodyNone"><img src="./README/image-20250614232559945.png" alt="image-20250614232559945" class="inline"/>    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">🏃 SportHealth App（运动健康）   </td><td class="markdownTableBodyNone">ICM20608驱动   </td><td class="markdownTableBodyNone">可选   </td><td class="markdownTableBodyNone">需硬件支持（ICM20608驱动需要被挂载且正常驱动）   </td><td class="markdownTableBodyNone"><img src="./README/image-20250614232631305.png" alt="image-20250614232631305" class="inline"/>    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">🖼️ ImageWalker（图像浏览器）   </td><td class="markdownTableBodyNone">标准最小依赖   </td><td class="markdownTableBodyNone">是   </td><td class="markdownTableBodyNone">最基础的图像信息浏览查看器，相当于丐版的Windows图像浏览器   </td><td class="markdownTableBodyNone"><img src="./README/image-20250614232520438.png" alt="image-20250614232520438" class="inline"/>    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">✏️ Markdown阅读器   </td><td class="markdownTableBodyNone">标准最小依赖   </td><td class="markdownTableBodyNone">是   </td><td class="markdownTableBodyNone">轻量级Markdown编辑预览（最基础的Markdown编辑 + 预览功能，支持草稿 / 加载保存Markdown与基础快捷功能）   </td><td class="markdownTableBodyNone"><img src="./README/image-20250614232450028.png" alt="image-20250614232450028" class="inline"/>    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">🛜 CCNetHelper（网络工具）   </td><td class="markdownTableBodyNone">需要网卡具备网络连接能力（网卡驱动正常）   </td><td class="markdownTableBodyNone">可选   </td><td class="markdownTableBodyNone">支持网卡信息查看，IP端口扫描和基本测试IP打通能力   </td><td class="markdownTableBodyNone"><img src="./README/image-20250614231832285.png" alt="image-20250614231832285" class="inline"/>    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">🦖 <a class="el" href="classDinasour.html" title="The Dinasour Object handle.">Dinasour</a> Game（小游戏）   </td><td class="markdownTableBodyNone">标准最小依赖   </td><td class="markdownTableBodyNone">可选   </td><td class="markdownTableBodyNone">是的，就是那个Google <a class="el" href="classDinasour.html" title="The Dinasour Object handle.">Dinasour</a> Game，用Qt6 Widgets实现的版本 :)   </td><td class="markdownTableBodyNone"><img src="./README/image-20250614231727977.png" alt="image-20250614231727977" class="inline"/>    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">🧮 Calculator（计算器）   </td><td class="markdownTableBodyNone">标准最小依赖   </td><td class="markdownTableBodyNone">是   </td><td class="markdownTableBodyNone">基础工具（标准计算器）   </td><td class="markdownTableBodyNone"><img src="./README/image-20250614231703148.png" alt="image-20250614231703148" class="inline"/>    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">🤖 ImageProcessor（图像处理和推理）   </td><td class="markdownTableBodyNone">OpenCV，推理库（如有）   </td><td class="markdownTableBodyNone">可选   </td><td class="markdownTableBodyNone">需OpenCV支持及推理支持   </td><td class="markdownTableBodyNone"><img src="./README/image-20250614232427874.png" alt="image-20250614232427874" class="inline"/>    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">⚙ Settings（设置界面）   </td><td class="markdownTableBodyNone">标准最小依赖   </td><td class="markdownTableBodyNone">是   </td><td class="markdownTableBodyNone">桌面壁纸、亮度和桌面应用风格设置   </td><td class="markdownTableBodyNone"><img src="./README/image-20250614232323164.png" alt="image-20250614232323164" class="inline"/>    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">🚀 Dynamic Application Launcher（动态应用启动器）   </td><td class="markdownTableBodyNone">标准最小依赖   </td><td class="markdownTableBodyNone">是   </td><td class="markdownTableBodyNone">第三方应用运行和管理   </td><td class="markdownTableBodyNone"><img src="./README/image-20250614232401883.png" alt="image-20250614232401883" class="inline"/>   </td></tr>
+</table>
 <hr  />
 <h1><a class="anchor" id="autotoc_md4"></a>
 一些运行截图</h1>
@@ -147,7 +168,7 @@ $(document).ready(function(){initNavTree('md_README.html',''); initResizable(); 
 <p><img src="./README/image-20250613224911141.png" alt="image-20250613224911141" class="inline"/></p>
 <h1><a class="anchor" id="autotoc_md5"></a>
 🛠️ 基础构建所用技术</h1>
-<p><img src="https://img.shields.io/badge/Qt-Core%20%26%20Network-41cd52" alt="Qt" class="inline"/> <img src="https://img.shields.io/badge/TSLIB-required-green" alt="TSLIB" class="inline"/><img src="https://img.shields.io/badge/QtCore-required-red" alt="TSLIB" class="inline"/><img src="https://img.shields.io/badge/QtWidget_QtGui-required-blue" alt="TSLIB" class="inline"/><img src="https://img.shields.io/badge/QtNetwork-required-purple" alt="TSLIB" class="inline"/><img src="https://img.shields.io/badge/QtMultiMedia_ALSA_Least-required-purple" alt="TSLIB" class="inline"/></p>
+<p><img src="https://img.shields.io/badge/Qt-Core%20%26%20Network-41cd52" alt="Qt" class="inline"/> <img src="https://img.shields.io/badge/TSLIB-required-green" alt="TSLIB" class="inline"/><img src="https://img.shields.io/badge/QtCore-required-red" alt="TSLIB" class="inline"/><img src="https://img.shields.io/badge/QtWidget_QtGui-required-blue" alt="TSLIB" class="inline"/><img src="https://img.shields.io/badge/QtNetwork-required-purple" alt="TSLIB" class="inline"/><img src="https://img.shields.io/badge/QtMultiMedia_ALSA_Least-required-purple" alt="TSLIB" class="inline"/><img src="https://img.shields.io/badge/QtCharts-required-blue" alt="TSLIB" class="inline"/></p>
 <p>构建这个项目要求您已经完成对Qt6的移植（基础的必要移植包括TSLib做交互，QtCore QtWidget QtGui三件套，QtNetwork和最小至少支持ALSA音频播放的QtMultiMedia组件的支持），请您核查自己的构建是否足够支持构建本桌面和第三方应用程序！</p>
 <p>提示：全量构建需要大约近10分钟（16线程），您可以根据需求动态调整，详细请参考构建文档</p>
 <blockquote class="doxtable">
@@ -177,20 +198,17 @@ $(document).ready(function(){initNavTree('md_README.html',''); initResizable(); 
 <p>文档已通过 GitHub Actions 自动部署，访问：<a href="https://charliechen114514.github.io/CCIMXDesktop/">CCIMXDesktop: Main Page</a></p>
 <h1><a class="anchor" id="autotoc_md11"></a>
 💡 WIP（一些正在开发的WIP Third Party App）</h1>
+<p>🚀 计划编写和提供更多的外部基础程序：</p>
 <ul>
 <li>💬 聊天室（计划类似于QQ）</li>
-<li>支持顶部状态栏显示基本信息</li>
-<li>可配置的HOME界面</li>
-</ul>
-<h1><a class="anchor" id="autotoc_md12"></a>
-💡 未来计划</h1>
-<p>🚀 计划编写和提供更多的外部基础程序：</p><ul>
 <li>⏰ 闹钟APP</li>
 <li>🔌 串口助手</li>
 <li>✅ 任务清单</li>
+<li>支持顶部状态栏显示基本信息</li>
+<li>可配置的HOME界面</li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md14"></a>
+<h1><a class="anchor" id="autotoc_md13"></a>
 📝 许可证</h1>
 <p><img src="https://img.shields.io/badge/License-MIT-brightgreen" alt="License" class="inline"/></p>
 <p>本项目基于 MIT 许可证，欢迎随意移植、修改和使用！ </p>

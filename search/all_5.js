@@ -28,5 +28,5 @@ var searchData=
   ['expected_5fappcards_5fwidgets_25',['expected_appcards_widgets',['../classHomePage.html#a760f39daccf8d87ac86d15c0983e1cfe',1,'HomePage']]],
   ['exportimage_26',['exportImage',['../classSimpleDrawingScene.html#a4789a19367863381cc8f776d33c2e91a',1,'SimpleDrawingScene']]],
   ['expressionevaluator_27',['ExpressionEvaluator',['../namespaceExpressionEvaluator.html',1,'']]],
-  ['extern_5fapp_20tt_28',['extern_app tt',['../md_Components-explain-CN.html#autotoc_md37',1,'🚀 &lt;tt&gt;extern_app&lt;/tt&gt;'],['../md_Components-explain-EN.html#autotoc_md49',1,'🚀 &lt;tt&gt;extern_app&lt;/tt&gt;']]]
+  ['extern_5fapp_20tt_28',['extern_app tt',['../md_Components-explain-CN.html#autotoc_md35',1,'🚀 &lt;tt&gt;extern_app&lt;/tt&gt;'],['../md_Components-explain-EN.html#autotoc_md47',1,'🚀 &lt;tt&gt;extern_app&lt;/tt&gt;']]]
 ];
