@@ -166,7 +166,7 @@ var NAVTREEINDEX2 =
 "classDiskMusic.html#aec5c25ab2a0ba560c66963daddf1e585":[5,0,75,3],
 "classDiskMusic.html#af58dac86aadbede523ca3e225f0edb20":[5,0,75,5],
 "classDivideZeroException.html":[5,0,76],
-"classDivideZeroException.html#a6ca91b0c16a9101b037305c24ce1dc0a":[5,0,76,1],
+"classDivideZeroException.html#a146a8ecd1af0cdef08b6bdc944d2a80b":[5,0,76,1],
 "classDivideZeroException.html#a7c023ce94c41584e4c9e1b30eef5f76c":[5,0,76,0],
 "classDownDockWidget.html":[5,0,77],
 "classDownDockWidget.html#a598e6eac42346637e99837f43865aec3":[5,0,77,1],

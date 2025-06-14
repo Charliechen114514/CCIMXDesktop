@@ -26,7 +26,7 @@ var NAVTREEINDEX1 =
 "classBacklightControllerImpl.html#aec39b776be8b9947bb7ef841e0d21c57":[5,0,20,3],
 "classBadSqrtValue.html":[5,0,21],
 "classBadSqrtValue.html#a51e3bd601bff5978cfdee35ce2ed6e6b":[5,0,21,0],
-"classBadSqrtValue.html#a8a6238c501ce4ea403a7f4328c96c6a5":[5,0,21,1],
+"classBadSqrtValue.html#ae66f9384ca539e2ebea10e26c162bd68":[5,0,21,1],
 "classBirdFrameFetch.html":[5,0,24],
 "classBirdFrameFetch.html#a392f4e8b04db4c1bc7376334da5e7434":[5,0,24,0],
 "classBirdFrameFetch.html#ae2bda21a7988cb019472ab75dbdb430a":[5,0,24,1],
