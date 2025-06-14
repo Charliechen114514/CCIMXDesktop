@@ -6,7 +6,7 @@ ImageInfoWindow::ImageInfoWindow(QWidget* parent)
     : QMainWindow(parent)
     , ui(new Ui::ImageInfoWindow) {
 	ui->setupUi(this);
-	connect(ui->btn_quit, &QPushButton::clicked, this, &ImageInfoWindow::close);
+    connect(ui->btn_quit, &QPushButton::clicked, this, &ImageInfoWindow::hide);
 }
 
 void ImageInfoWindow::set_image_path(const QString& path) {

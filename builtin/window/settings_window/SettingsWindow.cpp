@@ -19,7 +19,7 @@ SettingsWindow::~SettingsWindow() {
 }
 
 void SettingsWindow::setup_connections() {
-    connect(ui->actionquit, &QAction::triggered, this, &SettingsWindow::close);
+    connect(ui->actionquit, &QAction::triggered, this, &SettingsWindow::hide);
 }
 
 void SettingsWindow::setup_panel() {

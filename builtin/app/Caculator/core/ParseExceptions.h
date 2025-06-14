@@ -20,7 +20,7 @@ public:
      * @brief Returns the error message.
      * @return C-style string with the error description.
      */
-    const char* what() const override {
+    const char* what() const noexcept override {
         return "Divide Zero is not permitted!";
     }
 };
@@ -43,7 +43,7 @@ public:
      * @brief Returns the error message.
      * @return C-style string with the error description.
      */
-    const char* what() const override {
+    const char* what() const noexcept override {
         return std::runtime_error::what();
     }
 };
@@ -65,7 +65,7 @@ public:
      * @brief Returns the error message.
      * @return C-style string with the error description.
      */
-    const char* what() const override {
+    const char* what() const noexcept override {
         return std::runtime_error::what();
     }
 };
@@ -87,7 +87,7 @@ public:
      * @brief Returns the error message.
      * @return C-style string with the error description.
      */
-    const char* what() const override {
+    const char* what() const noexcept override {
         return std::runtime_error::what();
     }
 };
@@ -109,7 +109,7 @@ public:
      * @brief Returns the error message.
      * @return C-style string with the error description.
      */
-    const char* what() const override {
+    const char* what() const noexcept override {
         return std::runtime_error::what();
     }
 };
@@ -132,7 +132,7 @@ public:
      * @brief Returns the error message.
      * @return C-style string with the error description.
      */
-    const char* what() const override {
+    const char* what() const noexcept override {
         return std::runtime_error::what();
     }
 };
@@ -154,7 +154,7 @@ public:
      * @brief Returns the error message.
      * @return C-style string with the error description.
      */
-    const char* what() const override {
+    const char* what() const noexcept override{
         return std::runtime_error::what();
     }
 };

@@ -145,8 +145,8 @@ QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>188</width>
-             <height>528</height>
+             <width>182</width>
+             <height>477</height>
             </rect>
            </property>
            <attribute name="label">
@@ -173,8 +173,8 @@ QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>188</width>
-             <height>528</height>
+             <width>182</width>
+             <height>477</height>
             </rect>
            </property>
            <attribute name="label">
@@ -214,6 +214,25 @@ QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
     </item>
    </layout>
   </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="actionquit">
+   <property name="text">
+    <string>quit</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
  </widget>
  <customwidgets>
   <customwidget>

@@ -104,13 +104,28 @@ public:
 };
 
 #ifdef ARM_BUILD
+#include <QString>
 /**
  * @brief The ArmPlatformBacklightController class
  * A stub for platform-specific backlight controller on ARM systems.
  * 
  */
 class ArmPlatformBacklightController : public BacklightControllerImpl {
-    
+    static constexpr int MIN = 1; ///< Minimum brightness
+    int current_light = 50;       ///< Cache the last set brightness
+
+    const QString backlight_path = "/sys/class/backlight/backlight-display/";
+    const QString brightness_file = backlight_path + "brightness";
+    const QString max_brightness_file = backlight_path + "max_brightness";
+
+public:
+    int MAX_LIGHT_VAL() override;
+
+    int MIN_LIGHT_VAL() override;
+
+    void setLightLevel(int lightLevel) override;
+
+    int lightLevel() override;
 };
 #endif
 

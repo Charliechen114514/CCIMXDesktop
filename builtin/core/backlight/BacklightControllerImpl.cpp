@@ -3,7 +3,7 @@
 BacklightControllerImpl* BacklightControllerImpl::creator() {
     return new
 #ifdef ARM_BUILD
-        ArmPlatformBacklightController()
+        ArmPlatformBacklightController();
 #else
         PesudoLightController();
 #endif
@@ -26,5 +26,56 @@ int PesudoLightController::lightLevel() {
 }
 
 #ifdef ARM_BUILD
-// TODO: Waiting for ARM Releases
+#include <QFile>
+#include <QTextStream>
+#include <QDebug>
+
+int ArmPlatformBacklightController::MAX_LIGHT_VAL() {
+    QFile file(max_brightness_file);
+    if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        qWarning() << "Failed to read max_brightness";
+        return 100; // fallback
+    }
+    QTextStream in(&file);
+    int max_val;
+    in >> max_val;
+    return max_val;
+}
+
+int ArmPlatformBacklightController::MIN_LIGHT_VAL() {
+    return MIN;
+}
+
+void ArmPlatformBacklightController::setLightLevel(int lightLevel) {
+    int max_val = MAX_LIGHT_VAL();
+    if (lightLevel < MIN) lightLevel = MIN;
+    if (lightLevel > max_val) lightLevel = max_val;
+
+    QFile file(brightness_file);
+    if (!file.open(QIODevice::WriteOnly | QIODevice::Text)) {
+        qWarning() << "Failed to write brightness";
+        return;
+    }
+
+    QTextStream out(&file);
+    out << QString::number(lightLevel);
+    file.close();
+
+    current_light = lightLevel;
+}
+
+int ArmPlatformBacklightController::lightLevel() {
+    QFile file(brightness_file);
+    if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        qWarning() << "Failed to read current brightness";
+        return current_light; // fallback to cache
+    }
+
+    QTextStream in(&file);
+    int current_val;
+    in >> current_val;
+    current_light = current_val;
+    return current_val;
+}
+
 #endif

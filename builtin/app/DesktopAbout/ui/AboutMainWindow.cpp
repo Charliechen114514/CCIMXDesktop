@@ -47,6 +47,9 @@ void AboutMainWindow::hide_all() {
 }
 
 void AboutMainWindow::init_connections() {
+    ui->toolBar->addAction(ui->actionquit);
+    connect(ui->actionquit, &QAction::triggered,
+            this, &AboutMainWindow::close);
 	connect(ui->btn_see_readme, &QPushButton::clicked,
 			this, &AboutMainWindow::show_readme);
 	connect(ui->btn_showMainPage, &QPushButton::clicked,

@@ -3,7 +3,7 @@
 
 #include "core/DifficultyType.h"
 #include <QObject>
-
+class QTimer;
 /**
  * @class DifficultyManager
  * @brief Manages game difficulty levels and their transitions

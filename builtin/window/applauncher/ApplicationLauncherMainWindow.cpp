@@ -45,7 +45,7 @@ ApplicationLauncherMainWindow::ApplicationLauncherMainWindow(DesktopMainWindow* 
     connect(ui->name_edit, &QLineEdit::textEdited, this, [this](const QString& buffer) {
         appWidget->setAppName(buffer);
     });
-    connect(ui->actionquit, &QAction::triggered, this, &ApplicationLauncherMainWindow::close);
+    connect(ui->actionquit, &QAction::triggered, this, &ApplicationLauncherMainWindow::hide);
 }
 
 ApplicationLauncherMainWindow::~ApplicationLauncherMainWindow() {
