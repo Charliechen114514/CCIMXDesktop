@@ -23,6 +23,8 @@ class SettingsWindow;
 class ApplicationLauncherMainWindow;
 class AppWidgetsSettingsInfoPack;
 class NetAbilityScanner;
+class GlobalClockSources;
+
 /**
  * @brief DesktopMainWindow is the main frontend window of the application.
  * For beginners, this is the starting point to understand the UI details.
@@ -91,7 +93,17 @@ public:
      */
     QStackedWidget* stackedWidget() const;
 
+    /**
+     * @brief netAbilityScanner get the netScanner
+     * @return
+     */
     NetAbilityScanner* netAbilityScanner() const { return scanner; }
+
+    /**
+     * @brief clock_src clock src fetcher
+     * @return
+     */
+    GlobalClockSources* clock_src() const { return clock; }
 
     /**
      * @brief Perform initialization after main window is shown
@@ -174,7 +186,8 @@ private:
     WallPaperEngine* wallpaper_engine; ///< wallpaper handler
     ApplicationLauncherMainWindow* appLauncherWindow; ///< windows for the application launch!
     SettingsWindow* settingsWindow; ///< windows contains settings
-    NetAbilityScanner* scanner;
+    NetAbilityScanner* scanner; ///< scanner for the network sessions
+    GlobalClockSources* clock;
     /**
      * @brief Additional UI setup after ui->setupUi()
      */

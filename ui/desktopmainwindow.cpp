@@ -1,6 +1,7 @@
 #include "desktopmainwindow.h"
 #include "app_wrapper/applicationwrapper.h"
 #include "app_wrapper/pagesetuper.h"
+#include "builtin/core/global_clock_src/GlobalClockSources.h"
 #include "builtin/core/netability_scanner/NetAbilityScanner.h"
 #include "builtin/ui/pagefactory.h"
 #include "builtin/window/applauncher/ApplicationLauncherMainWindow.h"
@@ -28,6 +29,7 @@ void DesktopMainWindow::post_setupui() {
     settingsWindow = new SettingsWindow(this);
     appLauncherWindow = new ApplicationLauncherMainWindow(this);
     scanner = new NetAbilityScanner(this);
+    clock = new GlobalClockSources(this);
     ui->topsidewidgetbar->installHookedWindow(this);
 }
 

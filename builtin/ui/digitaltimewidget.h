@@ -11,15 +11,10 @@ class DigitalTimeWidget : public QWidget {
 public:
 	/**
 	 * @brief Construct a new Digital Time Widget object
-	 * 
-	 * @param parent 
+     *
+     * @param parent
 	 */
 	explicit DigitalTimeWidget(QWidget* parent = nullptr);
-	/**
-	 * @brief bindClockWidget, the digital displays of the clock
-	 * @param clock widgets for the bindings
-	 */
-	void bindClockWidget(ClockWidget* clock);
 public slots:
 	/**
 	 * @brief process_time_update: process the time update sessions from
@@ -31,8 +26,8 @@ public slots:
 protected:
 	/**
 	 * @brief paint sessions
-	 * 
-	 * @param event 
+     *
+     * @param event
 	 */
 	void paintEvent(QPaintEvent* event) override;
 

@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.19)
-project(CCIMX_Desktop LANGUAGES CXX VERSION 1.1.0)
+project(CCIMX_Desktop LANGUAGES CXX VERSION 1.2.0)
 
 message(STATUS "Importing cmake modules...")
 set(CCDESKTOPABOUT_CMAKE_DIR "${CMAKE_SOURCE_DIR}/cmake")
@@ -19,6 +19,7 @@ set(TEMPLATE_FILE_NAME "CCIMXDesktopBuildConfigs")
 include(app_building_options)
 
 find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets Network)
+find_package(Qt6 REQUIRED COMPONENTS Core)
 qt_standard_project_setup()
 
 if(DEFINED LOCAL_CONFIG_FILE AND EXISTS "${LOCAL_CONFIG_FILE}")
@@ -142,17 +143,24 @@ set(BuiltInWindow_SettingsSrc
 )
 
 set(UPPER_TOOLBAR_SRC
-    builtin/sources/localweather/localweather.qrc
-    builtin/sources/other_icons.qrc
     ui/topstatusbar/TopSideBarWidget.h ui/topstatusbar/TopSideBarWidget.cpp ui/topstatusbar/TopSideBarWidget.ui
     ui/topstatusbar/StatusBarIconWidget.h ui/topstatusbar/StatusBarIconWidget.cpp
     ui/topstatusbar/StaticStatusBarIconWidget.h ui/topstatusbar/StaticStatusBarIconWidget.cpp ui/topstatusbar/StaticStatusBarIconWidget.ui
     ui/topstatusbar/netstat/NetStatusStatusBarIconWidget.h ui/topstatusbar/netstat/NetStatusStatusBarIconWidget.cpp
     ui/topstatusbar/DefaultLabelName.h
-    ui/topstatusbar/topstatusbar_icons.qrc
     ui/topstatusbar/netstat/NetStatusChangedEvent.h
     builtin/core/netability_scanner/NetAbilityScanner.h builtin/core/netability_scanner/NetAbilityScanner.cpp
-    builtin/core/netability_scanner/NetAbilityScanEnum.h)
+    builtin/core/netability_scanner/NetAbilityScanEnum.h
+    builtin/core/global_clock_src/GlobalClockSources.h builtin/core/global_clock_src/GlobalClockSources.cpp
+    ui/topstatusbar/time_display/TimeDisplayIconWidget.h ui/topstatusbar/time_display/TimeDisplayIconWidget.cpp ui/topstatusbar/time_display/TimeDisplayIconWidget.ui
+)
+
+set(ICONQRC_SRC
+    builtin/sources/localweather/localweather.qrc
+    builtin/sources/other_icons.qrc
+    ui/topstatusbar/topstatusbar_icons.qrc
+    icons.qrc)
+
 
 qt_add_executable(CCIMX_Desktop
     WIN32 MACOSX_BUNDLE
@@ -167,7 +175,10 @@ qt_add_executable(CCIMX_Desktop
     ${BuiltInWindow_SettingsSrc}
     ${BUILT_IN_ICM20608_Support}
     ${UPPER_TOOLBAR_SRC}
-    icons.qrc
+    ${ICONQRC_SRC}
+    core/labelStyler/LabelStyler.h
+    core/labelStyler/LabelStyler.cpp
+    ui/topstatusbar/battery/BatteryStatusbarIcon.h ui/topstatusbar/battery/BatteryStatusbarIcon.cpp
 )
 
 add_custom_command(TARGET CCIMX_Desktop POST_BUILD
@@ -181,6 +192,7 @@ target_link_libraries(CCIMX_Desktop
         Qt::Widgets
         Qt6::Network
 )
+target_link_libraries(CCIMX_Desktop PRIVATE Qt6::Core)
 target_include_directories(CCIMX_Desktop
     PRIVATE
     .

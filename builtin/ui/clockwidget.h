@@ -16,25 +16,21 @@ class ClockWidget : public QWidget {
 
 public:
 	/**
- 	* @brief Construct a new Clock Widget object
- 	* 
- 	* @param parent 
- 	*/
+     * @brief Construct a new Clock Widget object
+     *
+     * @param parent
+     */
 	explicit ClockWidget(QWidget* parent = nullptr);
 	/**
 	 * @brief Destroy the Clock Widget object
-	 * 
+     *
 	 */
 	~ClockWidget();
-
-signals:
-	/**
-	 * @brief time_update signals for the time updates, triggered by the
-	 * internal_updater
-	 * @param time: the current time
-	 * @note: for other clock relavent widgets, should monitor the signals
-	 */
-	void time_update(QTime time);
+public slots:
+    /**
+     * @brief timeout hooks of the internal_updater
+     */
+    void process_update_invokation(QTime clockTime);
 
 protected:
 	/* Yep, for the dynamic widgets, we have to, sadly, draw by ourselves */
@@ -73,13 +69,7 @@ private:
 	static constexpr const int NumberDistanceFromCenter = 70;
 	static constexpr const int NumberFontSize = 14;
 	Ui::ClockWidget* ui;
-	/* internal updater is trying to update the clock apperance timely */
-	QTimer* internal_updater; ///< the internal drives of time update requests
-	QTime cur_time; ///< current widgets holding times
-	/**
-	 * @brief timeout hooks of the internal_updater
-	 */
-	void process_update_invokation();
+    QTime cur_time;
 	/* paintEvent periodly and invoke the funcList in sequence */
 	void drawBackground(QPainter* painter);
 	void drawTicks(QPainter* painter);

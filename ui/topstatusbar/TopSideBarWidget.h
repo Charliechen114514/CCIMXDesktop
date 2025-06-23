@@ -10,6 +10,10 @@ namespace Ui {
 class TopSideBarWidget;
 }
 
+/**
+ * @brief The TopSideBarWidget class
+ * holds the top sidebar widgets
+ */
 class TopSideBarWidget : public QWidget {
 	Q_OBJECT
 
@@ -37,6 +41,13 @@ public:
      * @param events
      */
     void handle_possibleEvent(IconEvent* events);
+
+    /**
+     * @brief queryFromName query the status icon bar widgets
+     * @param name label name
+     * @return if the nullptr, means the widgets is non-exsited
+     */
+    StatusBarIconWidget* queryFromName(const QString& name);
 
 private:
     Ui::TopSideBarWidget* ui;

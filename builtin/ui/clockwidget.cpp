@@ -8,13 +8,6 @@ ClockWidget::ClockWidget(QWidget* parent)
     : QWidget(parent)
     , ui(new Ui::ClockWidget) {
     ui->setupUi(this);
-    internal_updater = new QTimer(this);
-
-	connect(internal_updater, &QTimer::timeout,
-			this, &ClockWidget::process_update_invokation);
-	this->cur_time = QTime::currentTime();
-	internal_updater->setInterval(1000);
-	internal_updater->start();
 }
 
 ClockWidget::~ClockWidget() {
@@ -40,9 +33,8 @@ QSize ClockWidget::sizeHint() const {
 	return QSize(DefaultWidgetSize, DefaultWidgetSize);
 }
 
-void ClockWidget::process_update_invokation() {
-	/* shell also process other things */
-	emit time_update(cur_time);
+void ClockWidget::process_update_invokation(QTime clockTime) {
+    cur_time = clockTime;
 	/* invoke this to pushing the draw sessions into the message queues */
 	update();
 }
@@ -55,8 +47,8 @@ void ClockWidget::drawBackground(QPainter* painter) {
 	painter->setPen(QPen(QColor(0, 0, 0), ThickBorderWidth));
 	painter->setBrush(Qt::NoBrush);
 	painter->drawEllipse(
-		QPoint(0, 0), OuterCircleRadius - ThickBorderWidth / 2,
-		OuterCircleRadius - ThickBorderWidth / 2);
+        QPoint(0, 0), OuterCircleRadius - ThickBorderWidth / 2,
+        OuterCircleRadius - ThickBorderWidth / 2);
 
 	QRadialGradient gradient(0, 0, OuterCircleRadius);
 	gradient.setColorAt(0.0, QColor(255, 255, 255));
@@ -121,7 +113,7 @@ void ClockWidget::drawTicks(QPainter* painter) {
 }
 
 void ClockWidget::drawHands(QPainter* painter) {
-	this->cur_time = QTime::currentTime();
+    cur_time = QTime::currentTime();
 
 	// Draw hour hand
 	painter->save();

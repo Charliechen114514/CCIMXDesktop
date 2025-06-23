@@ -1,26 +1,20 @@
 #include "digitaltimewidget.h"
-#include "clockwidget.h"
 #include <QPainter>
 DigitalTimeWidget::DigitalTimeWidget(QWidget* parent)
-	: QWidget { parent } {
-	this->stored_time = QTime::currentTime();
-}
-
-void DigitalTimeWidget::bindClockWidget(ClockWidget* clock) {
-	clk_widget = clock;
-	connect(clk_widget, &ClockWidget::time_update,
-			this, &DigitalTimeWidget::process_time_update);
+    : QWidget { parent } {
+    stored_time = QTime::currentTime();
 }
 
 void DigitalTimeWidget::process_time_update(QTime process_time) {
-	update();
+    stored_time = process_time;
+    update();
 }
 
 void DigitalTimeWidget::paintEvent(QPaintEvent* event) {
 	QPainter painter(this);
 	painter.setRenderHint(QPainter::Antialiasing);
 
-	QTime time = QTime::currentTime();
+    QTime time = stored_time;
 	QString timeText = time.toString("hh:mm:ss");
 
 	QDate date = QDate::currentDate();
