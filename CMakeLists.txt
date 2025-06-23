@@ -92,10 +92,16 @@ set(UiSubs
     ui/downdockwidget.h ui/downdockwidget.cpp
     ui/downdockwidget.ui
     ui/desktoptoast.h ui/desktoptoast.cpp
-    ui/wallpaperanimationhandler.h ui/wallpaperanimationhandler.cpp)
+    ui/wallpaperanimationhandler.h ui/wallpaperanimationhandler.cpp
+    ui/UiTools/font_info_formater/FontInfoFormarter.cpp
+    ui/UiTools/font_info_formater/FontInfoFormarter.h)
 
 set(CoreSubs
-    core/coretools.h core/coretools.cpp)
+    core/coretools.h core/coretools.cpp
+    core/labelStyler/LabelStyler.h
+    core/labelStyler/LabelStyler.cpp
+    core/labelStyler/LabelStyleReader.h
+    core/labelStyler/LabelStyleReader.cpp)
 
 set(WallPaperSrc
     core/wallpaper/WallPaperEngine.h core/wallpaper/WallPaperEngine.cpp
@@ -121,6 +127,9 @@ set(BUILT_IN_ICM20608_Support
     builtin/core/icm20608/icm20608.h)
 
 set(BuiltInWindow_SettingsSrc
+    builtin/window/settings_window/config_items/topsidebar/TopSideBarWidgetConfigures.h builtin/window/settings_window/config_items/topsidebar/TopSideBarWidgetConfigures.cpp builtin/window/settings_window/config_items/topsidebar/TopSideBarWidgetConfigures.ui
+    builtin/window/settings_window/config_items/topsidebar/timesettings/TimeLabelSettings.h builtin/window/settings_window/config_items/topsidebar/timesettings/TimeLabelSettings.cpp builtin/window/settings_window/config_items/topsidebar/timesettings/TimeLabelSettings.ui
+    builtin/ui/ColorSelectWidget.h builtin/ui/ColorSelectWidget.cpp builtin/ui/ColorSelectWidget.ui
     builtin/window/settings_window/SettingsWindow.h
     builtin/window/settings_window/SettingsWindow.cpp
     builtin/window/settings_window/SettingsWindow.ui
@@ -143,6 +152,7 @@ set(BuiltInWindow_SettingsSrc
 )
 
 set(UPPER_TOOLBAR_SRC
+    ui/topstatusbar/battery/BatteryStatusbarIcon.h ui/topstatusbar/battery/BatteryStatusbarIcon.cpp
     ui/topstatusbar/TopSideBarWidget.h ui/topstatusbar/TopSideBarWidget.cpp ui/topstatusbar/TopSideBarWidget.ui
     ui/topstatusbar/StatusBarIconWidget.h ui/topstatusbar/StatusBarIconWidget.cpp
     ui/topstatusbar/StaticStatusBarIconWidget.h ui/topstatusbar/StaticStatusBarIconWidget.cpp ui/topstatusbar/StaticStatusBarIconWidget.ui
@@ -176,9 +186,6 @@ qt_add_executable(CCIMX_Desktop
     ${BUILT_IN_ICM20608_Support}
     ${UPPER_TOOLBAR_SRC}
     ${ICONQRC_SRC}
-    core/labelStyler/LabelStyler.h
-    core/labelStyler/LabelStyler.cpp
-    ui/topstatusbar/battery/BatteryStatusbarIcon.h ui/topstatusbar/battery/BatteryStatusbarIcon.cpp
 )
 
 add_custom_command(TARGET CCIMX_Desktop POST_BUILD

@@ -1,37 +1,13 @@
 #include "AppWidgetConfigures.h"
 #include "appwidget.h"
 #include "desktopmainwindow.h"
+#include "ui/UiTools/font_info_formater/FontInfoFormarter.h"
 #include "ui_AppWidgetConfigures.h"
 #include <QColorDialog>
 #include <QFontDialog>
-namespace {
-QString describeFont(const QFont& font) {
-    QString info;
-    info += QString("Family: %1\n").arg(font.family());
-    info += QString("Point size: %1\n").arg(font.pointSizeF());
-
-    if (font.weight() > QFont::Normal)
-        info += "Bold\n";
-    if (font.italic())
-        info += "Italic\n";
-    if (font.underline())
-        info += "Underline\n";
-    if (font.strikeOut())
-        info += "Strikeout\n";
-    if (font.fixedPitch())
-        info += "Monospaced\n";
-
-    if (font.letterSpacing() != 0.0)
-        info += QString("Letter spacing: %1\n").arg(font.letterSpacing());
-    if (font.wordSpacing() != 0.0)
-        info += QString("Word spacing: %1\n").arg(font.wordSpacing());
-
-    return info;
-}
-
-}
 
 void AppWidgetConfigures::process_default_init_load() {
+    using namespace UiTools::FontFormater;
     appWidget = new AppWidget(QPixmap(":/icons/sources/def_icon.png"), "Demo", this);
     appWidget->setDummy(true);
     info.font = appWidget->font();
@@ -69,6 +45,7 @@ void AppWidgetConfigures::process_spinbox_change(int size) {
 }
 
 void AppWidgetConfigures::on_btn_select_font_clicked() {
+    using namespace UiTools::FontFormater;
     bool ok;
     QFont font = QFontDialog::getFont(&ok, this);
     if (!ok) {

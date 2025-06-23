@@ -26,11 +26,11 @@ void DesktopMainWindow::post_setupui() {
 	ui->downdock->set_parent_window(this);
 	toast = new DesktopToast(this);
     wallpaper_engine = new WallPaperEngine(this);
-    settingsWindow = new SettingsWindow(this);
     appLauncherWindow = new ApplicationLauncherMainWindow(this);
     scanner = new NetAbilityScanner(this);
     clock = new GlobalClockSources(this);
     ui->topsidewidgetbar->installHookedWindow(this);
+    settingsWindow = new SettingsWindow(this);
 }
 
 DesktopMainWindow::~DesktopMainWindow() {
@@ -145,6 +145,10 @@ void DesktopMainWindow::process_wallpaper_settings(BaseWallPaperSettings* settin
 
 QStackedWidget* DesktopMainWindow::stackedWidget() const {
 	return ui->stackedWidget;
+}
+
+TopSideBarWidget* DesktopMainWindow::topSideBar() const {
+    return ui->topsidewidgetbar;
 }
 
 void DesktopMainWindow::post_show() {

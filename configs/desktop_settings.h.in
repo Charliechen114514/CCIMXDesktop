@@ -19,3 +19,7 @@
 
 // defines the topsidebar widget
 #define TOPSIDEBAR_HEIGHT   @TOPSIDEBAR_HEIGHT@
+
+// defines the topsidebar limits
+#define TOPSIDEBAR_HEIGHT_MAX   60
+#define TOPSIDEBAR_HEIGHT_MIN   30

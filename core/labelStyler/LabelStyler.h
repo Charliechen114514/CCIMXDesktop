@@ -3,8 +3,8 @@
 class QLabel;
 class QColor;
 class QFont;
-template <typename WidgetType>
-class LabelStyler : public WidgetType {
+
+class LabelStyler {
 public:
     QLabel* label = nullptr;
     void setFontSize(int pointSize);

@@ -1,9 +1,8 @@
-
 # CCIMXDESKTOP 🖥️
 
 ![CCIMXDesktopLogo](./CCIMXDesktopLogo.png)
 
-![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-23+-green)![Version](https://img.shields.io/badge/Version-Released_1.2.0-red)
+![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-23+-green)![Version](https://img.shields.io/badge/Version-Released_1.3.0-red)
 
 🔌 Hello! This is a simple desktop and utility collection that can be used in a variety of embedded devices! This project currently requires C++23 to compile (it's worth noting that you can compile with C++17, but any projects that require C++23 will need minor modifications)
 
@@ -48,30 +47,30 @@ Now, CCIMXDesktop supports one-click builds including:
 
 ## Some running screenshots
 
-1) Main interface: HOME interface (screenshot version: PreRelease1.0.0)
+1) Main interface: HOME interface (screenshot version: Release1.3.0)
 
-![image-20250613225001667](./README/image-20250613225001667.png)
+![image-20250623214759448](./README/image-20250623214759448.png)
 
 2) BuiltinAPP display interface
 
-![image-20250613225142493](./README/image-20250613225142493.png)
+![image-20250623214743004](./README/image-20250623214743004.png)
 
 3) ExternAPP third-party optional build configuration
 
-![image-20250613225155327](./README/image-20250613225155327.png)
+![image-20250623214716793](./README/image-20250623214716793.png)
 
 4) APP settings desktop interface
 
-![image-20250613224911141](./README/image-20250613224911141.png)
+![image-20250623214833847](./README/image-20250623214833847.png)
 
 ## 🛠️ Technologies used to build the foundation
 
 ![Qt](https://img.shields.io/badge/Qt-Core%20%26%20Network-41cd52)
-![TSLIB](https://img.shields.io/badge/TSLIB-required-green)![TSLIB](https://img.shields.io/badge/QtCore-required-red)![TSLIB](https://img.shields.io/badge/QtWidget_QtGui-required-blue)![TSLIB](https://img.shields.io/badge/QtNetwork-required-purple)![TSLIB](https://img.shields.io/badge/QtMultiMedia_ALSA_Least-required-purple)
+![TSLIB](https://img.shields.io/badge/TSLIB-required-green)![TSLIB](https://img.shields.io/badge/QtCore-required-red)![TSLIB](https://img.shields.io/badge/QtWidget_QtGui-required -blue)![TSLIB](https://img.shields.io/badge/QtNetwork-required-purple)![TSLIB](https://img.shields.io/badge/QtMultiMedia_ALSA_Least-required-purple)![TSLIB](https://img.shields.io/badge/QtCharts-required-blue)
 
 Building this project requires that you have completed the porting of Qt6 (the basic necessary porting includes TSLib for interaction, QtCore QtWidget QtGui three-piece set, QtNetwork and at least QtMultiMedia component support for ALSA audio playback). Please check whether your build is sufficient to support the building of this desktop and third-party applications!
 
-Tip: The full build takes about 10 minutes (16 threads), you can adjust it dynamically according to your needs, please refer to the build document for details
+Tip: The full build takes about 10 minutes (16 threads). You can adjust it dynamically according to your needs. Please refer to the build document for details
 
 > [🛠️ How to build this project? (Supports X86 gcc, ARM-linux-gnueabihf-gcc and Windows GCC)](Documentations/HOW_To_Build_The_Desktop.md)
 
@@ -104,16 +103,16 @@ If you are interested in the project production process and development document
 
 The document has been automatically deployed through GitHub Actions, visit: [CCIMXDesktop: Main Page](https://charliechen114514.github.io/CCIMXDesktop/)
 
-## 💡 WIP (some WIP Third Party App under development)
+## 💡 WIP (some WIP Third Party Apps under development)
 
-🚀 Plan to optimize the desktop itself:
+🚀 Plan to optimize the desktop body work:
 
-- Support the top status bar to display basic information(Basic Framework is set up)
-- Configurable HOME interface
+- None
 
 🚀 Plan to write and provide more external basic programs:
 
 - 💬 Chat room (planned to be similar to QQ)
+
 - ⏰ Alarm clock APP
 - 🔌 Serial port assistant
 - ✅ Task list

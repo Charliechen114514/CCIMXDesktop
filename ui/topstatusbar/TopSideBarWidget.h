@@ -1,6 +1,6 @@
 #ifndef TOPSIDEBARWIDGET_H
 #define TOPSIDEBARWIDGET_H
-#include "desktop_settings.h"
+
 #include <QWidget>
 class IconEvent;
 class StatusBarIconWidget;
@@ -49,11 +49,23 @@ public:
      */
     StatusBarIconWidget* queryFromName(const QString& name);
 
+    /**
+     * @brief setHeight set the height for the sessions
+     * @param height
+     */
+    void setHeight(const int height);
+
+    int height_min() const;
+    int height_max() const;
+    int height() const {
+        return selfHeight;
+    }
+
 private:
     Ui::TopSideBarWidget* ui;
     void initLeftHandside(); ///< this is using for the create the left hand side
     void initRightHandside(); ///< this is using for the create the right hand side
-    int selfHeight { TOPSIDEBAR_HEIGHT }; ///< the topSideBarHeight, initing from the desktop settings
+    int selfHeight; ///< the topSideBarHeight, initing from the desktop settings
     QList<StatusBarIconWidget*> iconsWidgets;
     DesktopMainWindow* mainWindow;
 };

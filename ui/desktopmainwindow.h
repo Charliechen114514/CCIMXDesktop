@@ -24,7 +24,7 @@ class ApplicationLauncherMainWindow;
 class AppWidgetsSettingsInfoPack;
 class NetAbilityScanner;
 class GlobalClockSources;
-
+class TopSideBarWidget;
 /**
  * @brief DesktopMainWindow is the main frontend window of the application.
  * For beginners, this is the starting point to understand the UI details.
@@ -104,6 +104,12 @@ public:
      * @return
      */
     GlobalClockSources* clock_src() const { return clock; }
+
+    /**
+     * @brief topSideBar fetcher
+     * @return
+     */
+    TopSideBarWidget* topSideBar() const;
 
     /**
      * @brief Perform initialization after main window is shown

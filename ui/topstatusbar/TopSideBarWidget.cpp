@@ -1,6 +1,6 @@
 #include "TopSideBarWidget.h"
 #include "StatusBarIconWidget.h"
-
+#include "desktop_settings.h"
 #include "desktopmainwindow.h"
 #include "netstat/NetStatusChangedEvent.h"
 #include "ui_TopSideBarWidget.h"
@@ -8,7 +8,7 @@ TopSideBarWidget::TopSideBarWidget(QWidget* parent)
     : QWidget(parent)
     , ui(new Ui::TopSideBarWidget) {
 	ui->setupUi(this);
-    setFixedHeight(this->selfHeight);
+    setHeight(TOPSIDEBAR_HEIGHT);
 }
 
 TopSideBarWidget::~TopSideBarWidget() {
@@ -49,6 +49,19 @@ StatusBarIconWidget* TopSideBarWidget::queryFromName(const QString& name) {
 
     return (it != iconsWidgets.end()) ? *it : // yes we find it!
         nullptr; // no, we returns nullptr
+}
+
+void TopSideBarWidget::setHeight(const int height) {
+    this->selfHeight = qBound(TOPSIDEBAR_HEIGHT_MIN, height, TOPSIDEBAR_HEIGHT_MAX);
+    setFixedHeight(this->selfHeight);
+}
+
+int TopSideBarWidget::height_min() const {
+    return TOPSIDEBAR_HEIGHT_MIN;
+}
+
+int TopSideBarWidget::height_max() const {
+    return TOPSIDEBAR_HEIGHT_MAX;
 }
 
 #include "battery/BatteryStatusbarIcon.h"
