@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/netstat">
+        <file>icons/connected_wifi.png</file>
+        <file>icons/disconnected_wifi.png</file>
+        <file>icons/local_only.png</file>
+        <file>icons/wait_connecting.png</file>
+    </qresource>
+</RCC>

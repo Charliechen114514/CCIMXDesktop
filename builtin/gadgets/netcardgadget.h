@@ -2,7 +2,7 @@
 #define NETCARDGADGET_H
 #include "appcardwidget.h"
 #include "builtin/core/netability_scanner/NetAbilityScanEnum.h"
-class NetAbilityScanner;
+
 /**
  * @brief The NetCardGadget class is a netcards to test if the
  * machine is connecting to the internet
@@ -28,6 +28,11 @@ public:
 	 * and if not, then do nothing
 	 */
 	void invoke_preLaunch_work() override;
+    /**
+     * @brief process_once_fresh flush the status for once
+     * @param status
+     */
+    void process_once_fresh(NetWorkState status);
 
 protected:
 	/**
@@ -37,9 +42,7 @@ protected:
 	void postAppCardWidget() override;
 
 private:
-    void process_once_fresh(NetWorkState status);
     NetWorkState cache_reachability;
-    NetAbilityScanner* scanner;
 };
 
 #endif // NETCARDGADGET_H

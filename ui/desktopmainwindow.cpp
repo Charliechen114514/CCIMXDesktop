@@ -1,6 +1,7 @@
 #include "desktopmainwindow.h"
 #include "app_wrapper/applicationwrapper.h"
 #include "app_wrapper/pagesetuper.h"
+#include "builtin/core/netability_scanner/NetAbilityScanner.h"
 #include "builtin/ui/pagefactory.h"
 #include "builtin/window/applauncher/ApplicationLauncherMainWindow.h"
 #include "builtin/window/settings_window/SettingsWindow.h"
@@ -10,10 +11,8 @@
 #include "ui/desktoptoast.h"
 #include "ui/stackpage_switcher_animation.h"
 #include "ui_desktopmainwindow.h"
-#include <QGridLayout>
-#include <QLabel>
 #include <QMouseEvent>
-#include <QTimer>
+
 DesktopMainWindow::DesktopMainWindow(QWidget* parent)
     : QMainWindow(parent)
     , ui(new Ui::DesktopMainWindow) {
@@ -28,6 +27,8 @@ void DesktopMainWindow::post_setupui() {
     wallpaper_engine = new WallPaperEngine(this);
     settingsWindow = new SettingsWindow(this);
     appLauncherWindow = new ApplicationLauncherMainWindow(this);
+    scanner = new NetAbilityScanner(this);
+    ui->topsidewidgetbar->installHookedWindow(this);
 }
 
 DesktopMainWindow::~DesktopMainWindow() {

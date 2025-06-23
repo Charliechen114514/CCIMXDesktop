@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.19)
-project(CCIMX_Desktop LANGUAGES CXX VERSION 1.0.0)
+project(CCIMX_Desktop LANGUAGES CXX VERSION 1.1.0)
 
 message(STATUS "Importing cmake modules...")
 set(CCDESKTOPABOUT_CMAKE_DIR "${CMAKE_SOURCE_DIR}/cmake")
@@ -141,6 +141,19 @@ set(BuiltInWindow_SettingsSrc
     builtin/window/applauncher/fakeapps/AppLauncherApp.h builtin/window/applauncher/fakeapps/AppLauncherApp.cpp
 )
 
+set(UPPER_TOOLBAR_SRC
+    builtin/sources/localweather/localweather.qrc
+    builtin/sources/other_icons.qrc
+    ui/topstatusbar/TopSideBarWidget.h ui/topstatusbar/TopSideBarWidget.cpp ui/topstatusbar/TopSideBarWidget.ui
+    ui/topstatusbar/StatusBarIconWidget.h ui/topstatusbar/StatusBarIconWidget.cpp
+    ui/topstatusbar/StaticStatusBarIconWidget.h ui/topstatusbar/StaticStatusBarIconWidget.cpp ui/topstatusbar/StaticStatusBarIconWidget.ui
+    ui/topstatusbar/netstat/NetStatusStatusBarIconWidget.h ui/topstatusbar/netstat/NetStatusStatusBarIconWidget.cpp
+    ui/topstatusbar/DefaultLabelName.h
+    ui/topstatusbar/topstatusbar_icons.qrc
+    ui/topstatusbar/netstat/NetStatusChangedEvent.h
+    builtin/core/netability_scanner/NetAbilityScanner.h builtin/core/netability_scanner/NetAbilityScanner.cpp
+    builtin/core/netability_scanner/NetAbilityScanEnum.h)
+
 qt_add_executable(CCIMX_Desktop
     WIN32 MACOSX_BUNDLE
     main.cpp
@@ -153,9 +166,8 @@ qt_add_executable(CCIMX_Desktop
     ${BONUS_APPCARD}
     ${BuiltInWindow_SettingsSrc}
     ${BUILT_IN_ICM20608_Support}
+    ${UPPER_TOOLBAR_SRC}
     icons.qrc
-    builtin/sources/localweather/localweather.qrc
-    builtin/sources/other_icons.qrc
 )
 
 add_custom_command(TARGET CCIMX_Desktop POST_BUILD
@@ -174,6 +186,7 @@ target_include_directories(CCIMX_Desktop
     .
     ./ui
     ./builtin/ui
+    ./ui/topstatusbar
     ${CMAKE_CURRENT_BINARY_DIR}/generated)
 
 include(GNUInstallDirs)

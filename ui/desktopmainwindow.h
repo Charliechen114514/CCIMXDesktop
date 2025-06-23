@@ -22,7 +22,7 @@ class WallPaperEngine;
 class SettingsWindow;
 class ApplicationLauncherMainWindow;
 class AppWidgetsSettingsInfoPack;
-
+class NetAbilityScanner;
 /**
  * @brief DesktopMainWindow is the main frontend window of the application.
  * For beginners, this is the starting point to understand the UI details.
@@ -42,13 +42,13 @@ public:
 	/**
 	 * @brief Destroy the Desktop Main Window object
      *
-	 */
+     */
     ~DesktopMainWindow();
 
     /**
      * @brief Show a toast message on the main window
      * @param message Message to display
-     */
+	 */
     void showToast(const QString& message);
 
     /**
@@ -91,6 +91,8 @@ public:
      */
     QStackedWidget* stackedWidget() const;
 
+    NetAbilityScanner* netAbilityScanner() const { return scanner; }
+
     /**
      * @brief Perform initialization after main window is shown
      */
@@ -117,7 +119,7 @@ public slots:
      * @brief install_for_new_dynamicpage
      * for the persistance apps of new
      */
-    void install_for_new_dynamicpage(AppWidget *appWidgets);
+    void install_for_new_dynamicpage(AppWidget* appWidgets);
 
     /**
      * @brief process_set_appwidgets_config
@@ -172,6 +174,7 @@ private:
     WallPaperEngine* wallpaper_engine; ///< wallpaper handler
     ApplicationLauncherMainWindow* appLauncherWindow; ///< windows for the application launch!
     SettingsWindow* settingsWindow; ///< windows contains settings
+    NetAbilityScanner* scanner;
     /**
      * @brief Additional UI setup after ui->setupUi()
      */

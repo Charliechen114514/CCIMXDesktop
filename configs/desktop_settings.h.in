@@ -16,3 +16,6 @@
 // defines the backligh files
 // should be specified in template files
 #define BACKLIGHT_BASE_PATH "@BACKLIGHT_BASE_PATH@"
+
+// defines the topsidebar widget
+#define TOPSIDEBAR_HEIGHT   @TOPSIDEBAR_HEIGHT@

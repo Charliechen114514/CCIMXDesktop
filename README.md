@@ -2,7 +2,7 @@
 
 ![CCIMXDesktopLogo](./CCIMXDesktopLogo.png)
 
-![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-23+-green)![Version](https://img.shields.io/badge/Version-Released_1.0.0-red)
+![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-23+-green)![Version](https://img.shields.io/badge/Version-Released_1.1.0-red)
 
 🔌 您好！这是一个可在多种嵌入式设备中使用的简单桌面和实用程序集合！这个项目目前需要使用C++23进行编译（值得一提的是，您可以使用C++17编译，但是需要少许的修改任何要求使用C++23的项目）
 
@@ -105,14 +105,17 @@
 
 ## 💡 WIP（一些正在开发的WIP Third Party App）
 
+🚀 计划优化的桌面本体工作：
+
+- 支持顶部状态栏显示基本信息（已搭建基本的框架）
+- 可配置的HOME界面
+
 🚀 计划编写和提供更多的外部基础程序：
 
 - 💬 聊天室（计划类似于QQ）
 - ⏰ 闹钟APP
 - 🔌 串口助手
 - ✅ 任务清单
-- 支持顶部状态栏显示基本信息
-- 可配置的HOME界面
 
 ------
 

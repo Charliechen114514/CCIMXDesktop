@@ -1,5 +1,4 @@
 #include "netcardgadget.h"
-#include "builtin/core/netability_scanner/NetAbilityScanner.h"
 #include "desktoptoast.h"
 
 NetCardGadget::
@@ -7,14 +6,11 @@ NetCardGadget::
     : AppCardWidget(toast, parent) {
     /* actually do nothing in the init status */
     setCurrentIcon(QPixmap(":/icons/wait_connecting.png"));
-    scanner = new NetAbilityScanner(this);
-    connect(scanner, &NetAbilityScanner::postStatus,
-            this, &NetCardGadget::process_once_fresh);
 }
 
 /* apps are about to invoke his work */
 void NetCardGadget::invoke_preLaunch_work() {
-    scanner->process_once_fresh();
+    // do nothing here
 }
 
 void NetCardGadget::postAppCardWidget() {

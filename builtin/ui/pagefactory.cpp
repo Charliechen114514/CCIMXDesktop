@@ -8,11 +8,12 @@ QWidget* PageFactory::build_home_page(DesktopMainWindow* mainWindow) {
 	HomePage* homePage = new HomePage(mainWindow);
 	/* build homepage app cards here */
 	mainWindow->app_cards << PageFactory::place_appcards_in_empty_widgets(
-		mainWindow,
-		homePage->expected_appcards_widgets());
+        mainWindow,
+        homePage->expected_appcards_widgets());
 	return homePage;
 }
 
+#include "builtin/core/netability_scanner/NetAbilityScanner.h"
 #include "builtin/gadgets/localweathercard.h"
 #include "builtin/gadgets/netcardgadget.h"
 #include <QGridLayout>
@@ -34,7 +35,9 @@ QList<AppCardWidget*> PageFactory::
 
 	/* netcards build */
 	NetCardGadget* netcard = new NetCardGadget(mainWindow->desktop_toast(), placed);
-	gridLayout->addWidget(netcard, row, col);
+    QObject::connect(mainWindow->netAbilityScanner(), &NetAbilityScanner::postStatus,
+                     netcard, &NetCardGadget::process_once_fresh);
+    gridLayout->addWidget(netcard, row, col);
 	col++;
 	app_cards << netcard;
 
