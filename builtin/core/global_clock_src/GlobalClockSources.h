@@ -14,6 +14,10 @@ class GlobalClockSources : public QObject {
     static constexpr const unsigned short SEC_PERIOD = 1000;
 
 public:
+    /**
+     * @brief GlobalClockSources
+     * @param parent
+     */
     explicit GlobalClockSources(QObject* parent = nullptr);
 
 signals:

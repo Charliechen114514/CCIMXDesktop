@@ -11,6 +11,12 @@ namespace UiTools {
  * @namespace FontFormater supports the Font Info display sessions
  */
 namespace FontFormater {
+    /**
+     * @brief get the string tells the fonts
+     * 
+     * @param font 
+     * @return QString 
+     */
     QString describeFont(const QFont& font);
 }
 }

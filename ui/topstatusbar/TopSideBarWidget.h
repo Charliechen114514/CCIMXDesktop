@@ -11,63 +11,97 @@ class TopSideBarWidget;
 }
 
 /**
- * @brief The TopSideBarWidget class
- * holds the top sidebar widgets
+ * @brief Top sidebar container widget.
+ * 
+ * Holds and manages status bar icon widgets in the top sidebar area.
  */
 class TopSideBarWidget : public QWidget {
 	Q_OBJECT
 
 public:
-    explicit TopSideBarWidget(QWidget* parent = nullptr);
-	~TopSideBarWidget();
-    void installHookedWindow(DesktopMainWindow* mainWindow);
     /**
-     * @brief The AcceptPosition enum
-     * tells the accept append positions
+     * @brief Constructs the top sidebar widget.
+     * @param parent Parent widget (optional)
+     */
+    explicit TopSideBarWidget(QWidget* parent = nullptr);
+    
+    /**
+     * @brief Destroys the top sidebar widget.
+     */
+    ~TopSideBarWidget();
+    
+    /**
+     * @brief Installs the main window reference for event handling.
+     * @param mainWindow Pointer to the main window
+     */
+    void installHookedWindow(DesktopMainWindow* mainWindow);
+    
+    /**
+     * @brief Append position specifier.
      */
     enum class AcceptPosition {
-        LeftSide,
-        RightSide
+        LeftSide,  ///< Left side of the sidebar
+        RightSide  ///< Right side of the sidebar
     };
+    
     /**
-     * @brief append_to_toolside
-     * @param src the src positions
-     * @param position append the sessions directly
+     * @brief Appends a status bar widget to the sidebar.
+     * @param src Widget to append
+     * @param position Target side (left/right)
      */
     void append_to_toolside(StatusBarIconWidget* src, AcceptPosition position);
 
     /**
-     * @brief handle_possibleEvent makes it handle the possible events
-     * @param events
+     * @brief Processes icon events.
+     * @param events Event to handle
      */
     void handle_possibleEvent(IconEvent* events);
 
     /**
-     * @brief queryFromName query the status icon bar widgets
-     * @param name label name
-     * @return if the nullptr, means the widgets is non-exsited
+     * @brief Queries status icon widget by name.
+     * @param name Name of the widget to find
+     * @return Pointer to widget if found, nullptr otherwise
      */
     StatusBarIconWidget* queryFromName(const QString& name);
 
     /**
-     * @brief setHeight set the height for the sessions
-     * @param height
+     * @brief Sets the sidebar height.
+     * @param height New height value
      */
     void setHeight(const int height);
 
+    /**
+     * @brief Gets the minimum allowed height.
+     * @return Minimum height value
+     */
     int height_min() const;
+    
+    /**
+     * @brief Gets the maximum allowed height.
+     * @return Maximum height value
+     */
     int height_max() const;
+    
+    /**
+     * @brief Gets the current height.
+     * @return Current height value
+     */
     int height() const {
         return selfHeight;
     }
 
 private:
     Ui::TopSideBarWidget* ui;
-    void initLeftHandside(); ///< this is using for the create the left hand side
-    void initRightHandside(); ///< this is using for the create the right hand side
-    int selfHeight; ///< the topSideBarHeight, initing from the desktop settings
-    QList<StatusBarIconWidget*> iconsWidgets;
-    DesktopMainWindow* mainWindow;
+    
+    /// Initializes left-hand side widgets
+    void initLeftHandside();
+    
+    /// Initializes right-hand side widgets
+    void initRightHandside();
+    
+    int selfHeight;  ///< Current sidebar height
+    QList<StatusBarIconWidget*> iconsWidgets;  ///< List of managed icon widgets
+    DesktopMainWindow* mainWindow;  ///< Reference to main application window
 };
 
 #endif // TOPSIDEBARWIDGET_H
