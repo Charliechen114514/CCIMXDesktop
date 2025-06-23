@@ -96,7 +96,6 @@ $(document).ready(function(){initNavTree('classNetCardGadget.html',''); initResi
 
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="classNetCardGadget-members.html">List of all members</a>  </div>
@@ -118,16 +117,6 @@ Inheritance diagram for NetCardGadget:</div>
   </map>
 </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a0f7e947e72994b97591bb3bc9bb35268" id="r_a0f7e947e72994b97591bb3bc9bb35268"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNetCardGadget.html#a0f7e947e72994b97591bb3bc9bb35268">NetWorkState</a> { <a class="el" href="classNetCardGadget.html#a0f7e947e72994b97591bb3bc9bb35268a696b031073e74bf2cb98e5ef201d4aa3">UNKNOWN</a>
-, <a class="el" href="classNetCardGadget.html#a0f7e947e72994b97591bb3bc9bb35268a99c8ce56e7ab246445d3b134724428f3">DISCONNECTED</a>
-, <a class="el" href="classNetCardGadget.html#a0f7e947e72994b97591bb3bc9bb35268a54b4c4075463b2e02cd69f5cd139b5b2">LOCAL</a>
-, <a class="el" href="classNetCardGadget.html#a0f7e947e72994b97591bb3bc9bb35268a86d1debf3f3aa9b77c0d976a4fa33862">ONLINE</a>
- }</td></tr>
-<tr class="memdesc:a0f7e947e72994b97591bb3bc9bb35268"><td class="mdescLeft">&#160;</td><td class="mdescRight">The NetWorkState enum enumerate the network state.  <a href="classNetCardGadget.html#a0f7e947e72994b97591bb3bc9bb35268">More...</a><br /></td></tr>
-<tr class="separator:a0f7e947e72994b97591bb3bc9bb35268"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a8b788b3e6529ee504d2daa6d3830626c" id="r_a8b788b3e6529ee504d2daa6d3830626c"><td class="memItemLeft" align="right" valign="top"><a id="a8b788b3e6529ee504d2daa6d3830626c" name="a8b788b3e6529ee504d2daa6d3830626c"></a>
@@ -140,6 +129,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a82d97e27218187db562c8d02bb5866d2" id="r_a82d97e27218187db562c8d02bb5866d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNetCardGadget.html#a82d97e27218187db562c8d02bb5866d2">invoke_preLaunch_work</a> () override</td></tr>
 <tr class="memdesc:a82d97e27218187db562c8d02bb5866d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">invoke_preLaunch_work is the main function to invoke the prelaunching issue  <br /></td></tr>
 <tr class="separator:a82d97e27218187db562c8d02bb5866d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9c5c47a2649c35f79395fda5c421835" id="r_af9c5c47a2649c35f79395fda5c421835"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNetCardGadget.html#af9c5c47a2649c35f79395fda5c421835">process_once_fresh</a> (NetWorkState status)</td></tr>
+<tr class="memdesc:af9c5c47a2649c35f79395fda5c421835"><td class="mdescLeft">&#160;</td><td class="mdescRight">process_once_fresh flush the status for once  <br /></td></tr>
+<tr class="separator:af9c5c47a2649c35f79395fda5c421835"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classAppCardWidget"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classAppCardWidget')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classAppCardWidget.html">AppCardWidget</a></td></tr>
 <tr class="memitem:a8396063f654b18f1a739684774051f2f inherit pub_methods_classAppCardWidget" id="r_a8396063f654b18f1a739684774051f2f"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>Q_DISABLE_COPY</b> (<a class="el" href="classAppCardWidget.html">AppCardWidget</a>)</td></tr>
@@ -183,42 +175,7 @@ Ui::AppCardWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>ui</b>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classNetCardGadget.html" title="The NetCardGadget class is a netcards to test if the machine is connecting to the internet.">NetCardGadget</a> class is a netcards to test if the machine is connecting to the internet. </p>
-</div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="a0f7e947e72994b97591bb3bc9bb35268" name="a0f7e947e72994b97591bb3bc9bb35268"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f7e947e72994b97591bb3bc9bb35268">&#9670;&#160;</a></span>NetWorkState</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum class <a class="el" href="classNetCardGadget.html#a0f7e947e72994b97591bb3bc9bb35268">NetCardGadget::NetWorkState</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The NetWorkState enum enumerate the network state. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0f7e947e72994b97591bb3bc9bb35268a696b031073e74bf2cb98e5ef201d4aa3" name="a0f7e947e72994b97591bb3bc9bb35268a696b031073e74bf2cb98e5ef201d4aa3"></a>UNKNOWN&#160;</td><td class="fielddoc"><p>Unknown state, impossible for... current now? </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a0f7e947e72994b97591bb3bc9bb35268a99c8ce56e7ab246445d3b134724428f3" name="a0f7e947e72994b97591bb3bc9bb35268a99c8ce56e7ab246445d3b134724428f3"></a>DISCONNECTED&#160;</td><td class="fielddoc"><p>Machine is disconnected, nether locally nor internetly. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a0f7e947e72994b97591bb3bc9bb35268a54b4c4075463b2e02cd69f5cd139b5b2" name="a0f7e947e72994b97591bb3bc9bb35268a54b4c4075463b2e02cd69f5cd139b5b2"></a>LOCAL&#160;</td><td class="fielddoc"><p>Machine is only available to local network, but is limited to access the internet. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a0f7e947e72994b97591bb3bc9bb35268a86d1debf3f3aa9b77c0d976a4fa33862" name="a0f7e947e72994b97591bb3bc9bb35268a86d1debf3f3aa9b77c0d976a4fa33862"></a>ONLINE&#160;</td><td class="fielddoc"><p>Machine is online, available to access the internet. </p>
-</td></tr>
-</table>
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae7df34d5c86e08e897248ccc1c111ee3" name="ae7df34d5c86e08e897248ccc1c111ee3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae7df34d5c86e08e897248ccc1c111ee3">&#9670;&#160;</a></span>NetCardGadget()</h2>
 
@@ -321,6 +278,32 @@ Ui::AppCardWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>ui</b>
 <p>postAppCardWidget, sometimes, we can use this to post the messages to the binding_toast </p>
 
 <p>Implements <a class="el" href="classAppCardWidget.html#afabbff33f9e08d33549d0a8ff026ef30">AppCardWidget</a>.</p>
+
+</div>
+</div>
+<a id="af9c5c47a2649c35f79395fda5c421835" name="af9c5c47a2649c35f79395fda5c421835"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9c5c47a2649c35f79395fda5c421835">&#9670;&#160;</a></span>process_once_fresh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NetCardGadget::process_once_fresh </td>
+          <td>(</td>
+          <td class="paramtype">NetWorkState&#160;</td>
+          <td class="paramname"><em>status</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>process_once_fresh flush the status for once </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">status</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

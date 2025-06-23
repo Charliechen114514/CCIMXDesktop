@@ -1,5 +1,6 @@
 var dir_1788f8309b1a812dcb800a185471cf6c =
 [
+    [ "topstatusbar", "dir_365d48e82f2a94a59db0aa7b79a05418.html", "dir_365d48e82f2a94a59db0aa7b79a05418" ],
     [ "appcardwidget.h", "appcardwidget_8h_source.html", null ],
     [ "appwidget.h", "appwidget_8h_source.html", null ],
     [ "desktopmainwindow.h", "desktopmainwindow_8h_source.html", null ],

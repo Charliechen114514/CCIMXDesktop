@@ -173,9 +173,13 @@ var hierarchy =
           [ "CactusFrameFetch", "classCactusFrameFetch.html", null ]
         ] ]
       ] ],
+      [ "IconEvent", "structIconEvent.html", [
+        [ "NetStatusChangedEvent", "structNetStatusChangedEvent.html", null ]
+      ] ],
       [ "InterfacesQuery", "classInterfacesQuery.html", null ],
       [ "MediaPlayer", "classMediaPlayer.html", null ],
       [ "MemoryInfoFetcher", "classMemoryInfoFetcher.html", null ],
+      [ "NetAbilityScanner", "classNetAbilityScanner.html", null ],
       [ "ObstacleListManager", "classObstacleListManager.html", null ],
       [ "ProcessBroswer", "classProcessBroswer.html", null ],
       [ "ScoreManager", "classScoreManager.html", null ],
@@ -255,11 +259,17 @@ var hierarchy =
       [ "SimpleDrawerWidget", "classSimpleDrawerWidget.html", null ],
       [ "SportsChart", "classSportsChart.html", null ],
       [ "SportsDisplayWidget", "classSportsDisplayWidget.html", null ],
+      [ "StatusBarIconWidget", "classStatusBarIconWidget.html", [
+        [ "StaticStatusBarIconWidget", "classStaticStatusBarIconWidget.html", [
+          [ "NetStatusStatusBarIconWidget", "classNetStatusStatusBarIconWidget.html", null ]
+        ] ]
+      ] ],
       [ "Tablet", "classTablet.html", null ],
       [ "ToolBoxs", "classToolBoxs.html", null ],
       [ "ToolLeftWidgets", "classToolLeftWidgets.html", null ],
       [ "ToolsSideBar", "classToolsSideBar.html", null ],
       [ "ToolsStackedWidget", "classToolsStackedWidget.html", null ],
+      [ "TopSideBarWidget", "classTopSideBarWidget.html", null ],
       [ "WallpaperConfigures", "classWallpaperConfigures.html", null ],
       [ "WeatherChartWidget", "classWeatherChartWidget.html", null ],
       [ "WeatherDailyCard", "classWeatherDailyCard.html", null ]

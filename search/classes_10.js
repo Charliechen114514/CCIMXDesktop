@@ -7,5 +7,6 @@ var searchData=
   ['toolleftwidgets_4',['ToolLeftWidgets',['../classToolLeftWidgets.html',1,'']]],
   ['toolssidebar_5',['ToolsSideBar',['../classToolsSideBar.html',1,'']]],
   ['toolsstackedwidget_6',['ToolsStackedWidget',['../classToolsStackedWidget.html',1,'']]],
-  ['treenodebase_7',['TreeNodeBase',['../structTreeNodeBase.html',1,'']]]
+  ['topsidebarwidget_7',['TopSideBarWidget',['../classTopSideBarWidget.html',1,'']]],
+  ['treenodebase_8',['TreeNodeBase',['../structTreeNodeBase.html',1,'']]]
 ];

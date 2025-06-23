@@ -1,5 +1,13 @@
 var NAVTREEINDEX2 =
 {
+"classCameraCapture.html#aaa1bba7896e9f51b7b0ff6e0d605df4d":[5,0,32,7],
+"classCameraCapture.html#accff1997c75a85ff17d4123325356bf5":[5,0,32,4],
+"classCameraCapture.html#ad15b419181c6bd196a6120fc7471ab95":[5,0,32,6],
+"classCameraCapture.html#adcc683f3079c0a2b45af30cdbe2425c6":[5,0,32,3],
+"classCameraCapture.html#aec7c35d14237db1faad9e83066d36358":[5,0,32,0],
+"classCameraCapture.html#aec7c35d14237db1faad9e83066d36358ac4e68c53e41f938d2ab0af58c31be03f":[5,0,32,0,0],
+"classCameraCapture.html#aec7c35d14237db1faad9e83066d36358acd35f170ba52dd43bd5b67fd26705333":[5,0,32,0,3],
+"classCameraCapture.html#aec7c35d14237db1faad9e83066d36358ae59ab77888e4c47594cc7b33e672e55d":[5,0,32,0,1],
 "classCameraCapture.html#aec7c35d14237db1faad9e83066d36358aebcf7fcb6acf28195cdba149f1ea6ea7":[5,0,32,0,2],
 "classCameraCapture.html#aed151d4bdbd2bc491f1d0b00b2e36e78":[5,0,32,1],
 "classCameraCapture.html#aee4055d166d239eb9656c6bf94268b31":[5,0,32,5],
@@ -78,8 +86,8 @@ var NAVTREEINDEX2 =
 "classDesktopToast.html#a1ba65581e109c0df5fa82f827bf0a4aa":[5,0,66,1],
 "classDesktopToast.html#a1ba65581e109c0df5fa82f827bf0a4aa":[5,0,66,2],
 "classDesktopToast.html#a3acb239f25191bd1018d90cf8601f8c7":[5,0,66,3],
-"classDesktopToast.html#a3acb239f25191bd1018d90cf8601f8c7":[5,0,66,4],
 "classDesktopToast.html#a3acb239f25191bd1018d90cf8601f8c7":[5,0,66,5],
+"classDesktopToast.html#a3acb239f25191bd1018d90cf8601f8c7":[5,0,66,4],
 "classDesktopToast.html#a57feb437e426ca176d02e0c0fb466d41":[5,0,66,6],
 "classDesktopToast.html#a57feb437e426ca176d02e0c0fb466d41":[5,0,66,7],
 "classDesktopToast.html#a57feb437e426ca176d02e0c0fb466d41":[5,0,66,8],
@@ -241,13 +249,5 @@ var NAVTREEINDEX2 =
 "classFileTypeInfo.html":[5,0,89],
 "classFileTypeInfo.html#a4e9fc19f18cb83aad9c5abcce6ea174c":[5,0,89,4],
 "classFileTypeInfo.html#a8e68a882c88ca80ec8a1914d8a4d00d4":[5,0,89,0],
-"classFileTypeInfo.html#ad42632aac0e64591594516ab73839818":[5,0,89,1],
-"classFileTypeInfo.html#ad8770304cf3926d405cc7b2ec0251054":[5,0,89,2],
-"classFileTypeInfo.html#adf07e8c01790f280a0eb81f65c6662c4":[5,0,89,3],
-"classFileTypeInfo.html#af197f1bb0e9b8714f283133aad50eef6":[5,0,89,5],
-"classFilterBlur.html":[5,0,90],
-"classFilterBlur.html#a61a04c8e74f190182ca7ef178a8e408d":[5,0,90,3],
-"classFilterBlur.html#a6e4100e2290ad8c67ccca05f0046bd17":[5,0,90,0],
-"classFilterBlur.html#a8b311ce4ff97eb70b958b3e0a8dafca5":[5,0,90,1],
-"classFilterBlur.html#aef8183403feabc93ce2d2e952144d129":[5,0,90,2]
+"classFileTypeInfo.html#ad42632aac0e64591594516ab73839818":[5,0,89,1]
 };

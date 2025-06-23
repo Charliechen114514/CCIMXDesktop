@@ -17,6 +17,8 @@ var searchData=
   ['sportsdisplaywidget_14',['SportsDisplayWidget',['../classSportsDisplayWidget.html',1,'']]],
   ['sportshealthwindow_15',['SportsHealthWindow',['../classSportsHealthWindow.html',1,'']]],
   ['stackpageswitcheranimation_16',['StackpageSwitcherAnimation',['../structStackpageSwitcherAnimation.html',1,'']]],
-  ['systemstatewindow_17',['SystemStateWindow',['../classSystemStateWindow.html',1,'']]],
-  ['sz_18',['SZ',['../structSettings_1_1SZ.html',1,'Settings']]]
+  ['staticstatusbariconwidget_17',['StaticStatusBarIconWidget',['../classStaticStatusBarIconWidget.html',1,'']]],
+  ['statusbariconwidget_18',['StatusBarIconWidget',['../classStatusBarIconWidget.html',1,'']]],
+  ['systemstatewindow_19',['SystemStateWindow',['../classSystemStateWindow.html',1,'']]],
+  ['sz_20',['SZ',['../structSettings_1_1SZ.html',1,'Settings']]]
 ];
