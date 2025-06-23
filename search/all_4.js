@@ -27,7 +27,7 @@ var searchData=
   ['desktoptoast_24',['desktoptoast',['../classDesktopToast.html#a1ba65581e109c0df5fa82f827bf0a4aa',1,'DesktopToast::DesktopToast(QWidget *parent=nullptr)'],['../classDesktopToast.html#a1ba65581e109c0df5fa82f827bf0a4aa',1,'DesktopToast::DesktopToast(QWidget *parent=nullptr)'],['../classDesktopToast.html#a1ba65581e109c0df5fa82f827bf0a4aa',1,'DesktopToast::DesktopToast(QWidget *parent=nullptr)'],['../classDesktopToast.html',1,'DesktopToast']]],
   ['dev_5ffile_25',['DEV_FILE',['../classLightControllerWindow.html#adbec4204da0949f49c696593aa1f4a64',1,'LightControllerWindow']]],
   ['developer_20reference_26',['🧩 Developer Reference',['../md_README__EN.html#autotoc_md22',1,'']]],
-  ['development_27',['💡 WIP (some WIP Third Party App under development)',['../md_README__EN.html#autotoc_md25',1,'']]],
+  ['development_27',['💡 WIP (some WIP Third Party Apps under development)',['../md_README__EN.html#autotoc_md25',1,'']]],
   ['die_28',['die',['../classDinasour.html#a6acd086f24d8df165a14947f8c5b1ef4a83ebd7c89f4cc1a85396fba7d6f7e900',1,'Dinasour::DIE'],['../classSoundEffectPlayer.html#a7da42a0c3a6ce56c9235ad27dbb99690a83ebd7c89f4cc1a85396fba7d6f7e900',1,'SoundEffectPlayer::DIE']]],
   ['difficulty_5fchanged_29',['difficulty_changed',['../classDifficultyManager.html#aea2f48da0cc7d63438763300da1a5dbe',1,'DifficultyManager']]],
   ['difficultymanager_30',['difficultymanager',['../classDifficultyManager.html',1,'DifficultyManager'],['../classDifficultyManager.html#a07d0bcb630e69e4a2823bd1e75cdf11e',1,'DifficultyManager::DifficultyManager()']]],

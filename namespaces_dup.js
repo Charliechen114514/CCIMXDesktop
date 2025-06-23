@@ -10,6 +10,7 @@ var namespaces_dup =
     [ "ExpressionEvaluator", "namespaceExpressionEvaluator.html", [
       [ "evalute_expression", "namespaceExpressionEvaluator.html#a020740b3fa8807221f6955d336d18311", null ]
     ] ],
+    [ "FontFormater", "namespaceFontFormater.html", null ],
     [ "for", "namespacefor.html", null ],
     [ "HistCreator", "namespaceHistCreator.html", [
       [ "filled_hist", "namespaceHistCreator.html#a59d66f2c584048122c7ee66c3344bbe6", null ]

@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('TopSideBarWidget_8h_source.html',''); 
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef TOPSIDEBARWIDGET_H</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define TOPSIDEBARWIDGET_H</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;desktop_settings.h&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;QWidget&gt;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">class </span><a class="code hl_struct" href="structIconEvent.html">IconEvent</a>;</div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">class </span><a class="code hl_class" href="classStatusBarIconWidget.html">StatusBarIconWidget</a>;</div>
@@ -130,17 +130,25 @@ $(document).ready(function(){initNavTree('TopSideBarWidget_8h_source.html',''); 
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <a class="code hl_class" href="classStatusBarIconWidget.html">StatusBarIconWidget</a>* <a class="code hl_function" href="classTopSideBarWidget.html#afeeccc12213c4de668f5bb3d7622316b">queryFromName</a>(<span class="keyword">const</span> QString&amp; name);</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    Ui::TopSideBarWidget* ui;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">void</span> initLeftHandside(); </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">void</span> initRightHandside(); </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordtype">int</span> selfHeight { TOPSIDEBAR_HEIGHT }; </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    QList&lt;StatusBarIconWidget*&gt; iconsWidgets;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <a class="code hl_class" href="classDesktopMainWindow.html">DesktopMainWindow</a>* mainWindow;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>};</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classTopSideBarWidget.html#aff1b8f7e6bb63f9c845735e64b22c921">setHeight</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> height);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordtype">int</span> height_min() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordtype">int</span> height_max() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordtype">int</span> height()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keywordflow">return</span> selfHeight;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    }</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    Ui::TopSideBarWidget* ui;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordtype">void</span> initLeftHandside(); </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordtype">void</span> initRightHandside(); </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keywordtype">int</span> selfHeight; </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    QList&lt;StatusBarIconWidget*&gt; iconsWidgets;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <a class="code hl_class" href="classDesktopMainWindow.html">DesktopMainWindow</a>* mainWindow;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>};</div>
 </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#endif </span><span class="comment">// TOPSIDEBARWIDGET_H</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="preprocessor">#endif </span><span class="comment">// TOPSIDEBARWIDGET_H</span></div>
 <div class="ttc" id="aclassDesktopMainWindow_html"><div class="ttname"><a href="classDesktopMainWindow.html">DesktopMainWindow</a></div><div class="ttdoc">DesktopMainWindow is the main frontend window of the application. For beginners, this is the starting...</div><div class="ttdef"><b>Definition</b> desktopmainwindow.h:32</div></div>
 <div class="ttc" id="aclassNetStatusStatusBarIconWidget_html"><div class="ttname"><a href="classNetStatusStatusBarIconWidget.html">NetStatusStatusBarIconWidget</a></div><div class="ttdef"><b>Definition</b> NetStatusStatusBarIconWidget.h:11</div></div>
 <div class="ttc" id="aclassStatusBarIconWidget_html"><div class="ttname"><a href="classStatusBarIconWidget.html">StatusBarIconWidget</a></div><div class="ttdoc">The StatusBarIconWidget class is the Icon Interfaces like widget for the icon statusbar.</div><div class="ttdef"><b>Definition</b> StatusBarIconWidget.h:22</div></div>
@@ -149,6 +157,7 @@ $(document).ready(function(){initNavTree('TopSideBarWidget_8h_source.html',''); 
 <div class="ttc" id="aclassTopSideBarWidget_html_aa22ce73f4a00fac93a9a0aac14e2be71"><div class="ttname"><a href="classTopSideBarWidget.html#aa22ce73f4a00fac93a9a0aac14e2be71">TopSideBarWidget::append_to_toolside</a></div><div class="ttdeci">void append_to_toolside(StatusBarIconWidget *src, AcceptPosition position)</div><div class="ttdoc">append_to_toolside</div><div class="ttdef"><b>Definition</b> TopSideBarWidget.cpp:24</div></div>
 <div class="ttc" id="aclassTopSideBarWidget_html_ae890069fb0f6aac93aad9df4a189f428"><div class="ttname"><a href="classTopSideBarWidget.html#ae890069fb0f6aac93aad9df4a189f428">TopSideBarWidget::handle_possibleEvent</a></div><div class="ttdeci">void handle_possibleEvent(IconEvent *events)</div><div class="ttdoc">handle_possibleEvent makes it handle the possible events</div><div class="ttdef"><b>Definition</b> TopSideBarWidget.cpp:37</div></div>
 <div class="ttc" id="aclassTopSideBarWidget_html_afeeccc12213c4de668f5bb3d7622316b"><div class="ttname"><a href="classTopSideBarWidget.html#afeeccc12213c4de668f5bb3d7622316b">TopSideBarWidget::queryFromName</a></div><div class="ttdeci">StatusBarIconWidget * queryFromName(const QString &amp;name)</div><div class="ttdoc">queryFromName query the status icon bar widgets</div><div class="ttdef"><b>Definition</b> TopSideBarWidget.cpp:45</div></div>
+<div class="ttc" id="aclassTopSideBarWidget_html_aff1b8f7e6bb63f9c845735e64b22c921"><div class="ttname"><a href="classTopSideBarWidget.html#aff1b8f7e6bb63f9c845735e64b22c921">TopSideBarWidget::setHeight</a></div><div class="ttdeci">void setHeight(const int height)</div><div class="ttdoc">setHeight set the height for the sessions</div><div class="ttdef"><b>Definition</b> TopSideBarWidget.cpp:54</div></div>
 <div class="ttc" id="astructIconEvent_html"><div class="ttname"><a href="structIconEvent.html">IconEvent</a></div><div class="ttdoc">The IconEvent class.</div><div class="ttdef"><b>Definition</b> StatusBarIconWidget.h:9</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

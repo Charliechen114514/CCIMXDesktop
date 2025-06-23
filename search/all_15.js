@@ -5,7 +5,7 @@ var searchData=
   ['uitools_2',['UiTools',['../namespaceUiTools.html',1,'']]],
   ['unaryoptreenode_3',['unaryoptreenode',['../classUnaryOpTreeNode.html',1,'UnaryOpTreeNode'],['../classUnaryOpTreeNode.html#a1841c04543cac891c46990da00ce1599',1,'UnaryOpTreeNode::UnaryOpTreeNode()']]],
   ['unbinddocument_4',['unbindDocument',['../classCCPdfViewer.html#a26ede651e15807399423cf74ea336ee4',1,'CCPdfViewer']]],
-  ['under_20development_5',['💡 WIP (some WIP Third Party App under development)',['../md_README__EN.html#autotoc_md25',1,'']]],
+  ['under_20development_5',['💡 WIP (some WIP Third Party Apps under development)',['../md_README__EN.html#autotoc_md25',1,'']]],
   ['undo_6',['undo',['../classSimpleDrawingScene.html#a80c84494ebeb23df806f78e4ba15627c',1,'SimpleDrawingScene']]],
   ['unsupportedsymbol_7',['unsupportedsymbol',['../classUnSupportedSymbol.html',1,'UnSupportedSymbol'],['../classUnSupportedSymbol.html#a7d853488c90ed5b61db2f50fa4bd478e',1,'UnSupportedSymbol::UnSupportedSymbol()']]],
   ['unsupportivefunction_8',['unsupportivefunction',['../classUnSupportiveFunction.html#a8a18cff8ffa805b8f9a167f925e3574d',1,'UnSupportiveFunction::UnSupportiveFunction()'],['../classUnSupportiveFunction.html',1,'UnSupportiveFunction']]],

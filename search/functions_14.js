@@ -15,12 +15,13 @@ var searchData=
   ['toolleftwidgets_12',['ToolLeftWidgets',['../classToolLeftWidgets.html#a0f2941e2fb3d57d7ba843945f5f04a9b',1,'ToolLeftWidgets']]],
   ['toolssidebar_13',['ToolsSideBar',['../classToolsSideBar.html#af2244b7ca271046e024977bac0988b59',1,'ToolsSideBar']]],
   ['toolsstackedwidget_14',['ToolsStackedWidget',['../classToolsStackedWidget.html#a9cdfec5728d73ee3d48dc39d58e71afe',1,'ToolsStackedWidget']]],
-  ['toqimage_15',['toQImage',['../namespaceQtAdaptTools.html#a196d95ed886168e637fa84615d53f63c',1,'QtAdaptTools']]],
-  ['toscrolllabeltext_16',['toScrollLabelText',['../namespaceUiTools.html#aa0ceeeec7f42af270fcac8c916f7ff8e',1,'UiTools']]],
-  ['tostring_17',['toString',['../structWallPaperEngine_1_1ModeMapping.html#a562e7e950c4a3b123b57991ac39f0750',1,'WallPaperEngine::ModeMapping']]],
-  ['total_5fframe_18',['total_frame',['../classVideoPlayer.html#ae2588d7f65c777af6227f7ef987729e0',1,'VideoPlayer::total_frame()'],['../classVideoPlayerImpl.html#a8595b0bbe2ebb205c0c02b002755b0d0',1,'VideoPlayerImpl::total_frame()'],['../classVideoPlayerOpencvImpl.html#a4cae59222a5def74c141cb109fe0b56e',1,'VideoPlayerOpencvImpl::total_frame() const override'],['../classVideoPlayerOpencvImpl.html#a4cae59222a5def74c141cb109fe0b56e',1,'VideoPlayerOpencvImpl::total_frame() const override'],['../classVideoPlayerImpl.html#a8595b0bbe2ebb205c0c02b002755b0d0',1,'VideoPlayerImpl::total_frame()'],['../classVideoPlayer.html#ae2588d7f65c777af6227f7ef987729e0',1,'VideoPlayer::total_frame() const']]],
-  ['total_5fmsecs_19',['total_msecs',['../classVideoPlayer.html#a31581e1357ca2d57fed70157fc070bea',1,'VideoPlayer::total_msecs() const'],['../classVideoPlayer.html#a31581e1357ca2d57fed70157fc070bea',1,'VideoPlayer::total_msecs() const']]],
-  ['total_5fpages_20',['total_pages',['../classCCPdfDocument.html#a458047bbb3fae082de34dd05ac2668d7',1,'CCPdfDocument']]],
-  ['try_5fgoto_5fparent_5fview_21',['try_goto_parent_view',['../classMainWindow.html#a7d4e7882ab0a7c5b5a3c4a59fb73fc21',1,'MainWindow']]],
-  ['typeinfo_22',['typeInfo',['../classFileTypeInfo.html#af197f1bb0e9b8714f283133aad50eef6',1,'FileTypeInfo']]]
+  ['topsidebar_15',['topSideBar',['../classDesktopMainWindow.html#a2dfbeb975416c0bc8c27282aea616782',1,'DesktopMainWindow']]],
+  ['toqimage_16',['toQImage',['../namespaceQtAdaptTools.html#a196d95ed886168e637fa84615d53f63c',1,'QtAdaptTools']]],
+  ['toscrolllabeltext_17',['toScrollLabelText',['../namespaceUiTools.html#aa0ceeeec7f42af270fcac8c916f7ff8e',1,'UiTools']]],
+  ['tostring_18',['toString',['../structWallPaperEngine_1_1ModeMapping.html#a562e7e950c4a3b123b57991ac39f0750',1,'WallPaperEngine::ModeMapping']]],
+  ['total_5fframe_19',['total_frame',['../classVideoPlayer.html#ae2588d7f65c777af6227f7ef987729e0',1,'VideoPlayer::total_frame()'],['../classVideoPlayerImpl.html#a8595b0bbe2ebb205c0c02b002755b0d0',1,'VideoPlayerImpl::total_frame()'],['../classVideoPlayerOpencvImpl.html#a4cae59222a5def74c141cb109fe0b56e',1,'VideoPlayerOpencvImpl::total_frame() const override'],['../classVideoPlayerOpencvImpl.html#a4cae59222a5def74c141cb109fe0b56e',1,'VideoPlayerOpencvImpl::total_frame() const override'],['../classVideoPlayerImpl.html#a8595b0bbe2ebb205c0c02b002755b0d0',1,'VideoPlayerImpl::total_frame()'],['../classVideoPlayer.html#ae2588d7f65c777af6227f7ef987729e0',1,'VideoPlayer::total_frame() const']]],
+  ['total_5fmsecs_20',['total_msecs',['../classVideoPlayer.html#a31581e1357ca2d57fed70157fc070bea',1,'VideoPlayer::total_msecs() const'],['../classVideoPlayer.html#a31581e1357ca2d57fed70157fc070bea',1,'VideoPlayer::total_msecs() const']]],
+  ['total_5fpages_21',['total_pages',['../classCCPdfDocument.html#a458047bbb3fae082de34dd05ac2668d7',1,'CCPdfDocument']]],
+  ['try_5fgoto_5fparent_5fview_22',['try_goto_parent_view',['../classMainWindow.html#a7d4e7882ab0a7c5b5a3c4a59fb73fc21',1,'MainWindow']]],
+  ['typeinfo_23',['typeInfo',['../classFileTypeInfo.html#af197f1bb0e9b8714f283133aad50eef6',1,'FileTypeInfo']]]
 ];

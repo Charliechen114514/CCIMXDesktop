@@ -76,6 +76,8 @@ var hierarchy =
       [ "GrayProcessor", "classGrayProcessor.html", null ]
     ] ],
     [ "CCPdfNavigationPolicy::Indicator", "structCCPdfNavigationPolicy_1_1Indicator.html", null ],
+    [ "LabelStyler", "classLabelStyler.html", null ],
+    [ "LabelStyleReader", "classLabelStyleReader.html", null ],
     [ "LEDController", "classLEDController.html", null ],
     [ "LEDParamsPackage", "classLEDParamsPackage.html", [
       [ "LEDParamsPackageBlink", "classLEDParamsPackageBlink.html", null ],
@@ -222,6 +224,7 @@ var hierarchy =
       [ "CameraDisplayWidget", "classCameraDisplayWidget.html", null ],
       [ "CannyExample", "classCannyExample.html", null ],
       [ "ClockWidget", "classClockWidget.html", null ],
+      [ "ColorSelectWidget", "classColorSelectWidget.html", null ],
       [ "ContoursQueryExample", "classContoursQueryExample.html", null ],
       [ "DesktopAboutMainWidget", "classDesktopAboutMainWidget.html", null ],
       [ "DesktopToast", "classDesktopToast.html", null ],
@@ -268,11 +271,13 @@ var hierarchy =
         [ "TimeDisplayIconWidget", "classTimeDisplayIconWidget.html", null ]
       ] ],
       [ "Tablet", "classTablet.html", null ],
+      [ "TimeLabelSettings", "classTimeLabelSettings.html", null ],
       [ "ToolBoxs", "classToolBoxs.html", null ],
       [ "ToolLeftWidgets", "classToolLeftWidgets.html", null ],
       [ "ToolsSideBar", "classToolsSideBar.html", null ],
       [ "ToolsStackedWidget", "classToolsStackedWidget.html", null ],
       [ "TopSideBarWidget", "classTopSideBarWidget.html", null ],
+      [ "TopSideBarWidgetConfigures", "classTopSideBarWidgetConfigures.html", null ],
       [ "WallpaperConfigures", "classWallpaperConfigures.html", null ],
       [ "WeatherChartWidget", "classWeatherChartWidget.html", null ],
       [ "WeatherDailyCard", "classWeatherDailyCard.html", null ]
@@ -304,8 +309,5 @@ var hierarchy =
     ] ],
     [ "VideoPlayerImplFactory", "classVideoPlayerImplFactory.html", null ],
     [ "VideoPlayerInfo", "structVideoPlayerInfo.html", null ],
-    [ "WidgetType", null, [
-      [ "LabelStyler< WidgetType >", "classLabelStyler.html", null ]
-    ] ],
     [ "Settings::XY< value >", "structSettings_1_1XY.html", null ]
 ];

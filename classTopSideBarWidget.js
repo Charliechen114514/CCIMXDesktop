@@ -6,5 +6,6 @@ var classTopSideBarWidget =
     ] ],
     [ "append_to_toolside", "classTopSideBarWidget.html#aa22ce73f4a00fac93a9a0aac14e2be71", null ],
     [ "handle_possibleEvent", "classTopSideBarWidget.html#ae890069fb0f6aac93aad9df4a189f428", null ],
-    [ "queryFromName", "classTopSideBarWidget.html#afeeccc12213c4de668f5bb3d7622316b", null ]
+    [ "queryFromName", "classTopSideBarWidget.html#afeeccc12213c4de668f5bb3d7622316b", null ],
+    [ "setHeight", "classTopSideBarWidget.html#aff1b8f7e6bb63f9c845735e64b22c921", null ]
 ];

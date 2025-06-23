@@ -67,7 +67,7 @@ var searchData=
   ['setfloatrange_64',['setFloatRange',['../classFloatSlider.html#a83e34df811e3f950712fc65657023a25',1,'FloatSlider']]],
   ['setfloatvalue_65',['setFloatValue',['../classFloatSlider.html#aa877bb59f9649d0efd2f5456d8f8e3cc',1,'FloatSlider']]],
   ['setfontcolor_66',['setFontColor',['../classAppWidget.html#a9a278fc846a27afd8c4fa2ca7bc1112d',1,'AppWidget']]],
-  ['setheight_67',['setHeight',['../classBirdObsticals.html#a5f1fec55fada3e5217d44f1519a22669',1,'BirdObsticals']]],
+  ['setheight_67',['setheight',['../classBirdObsticals.html#a5f1fec55fada3e5217d44f1519a22669',1,'BirdObsticals::setHeight()'],['../classTopSideBarWidget.html#aff1b8f7e6bb63f9c845735e64b22c921',1,'TopSideBarWidget::setHeight()']]],
   ['seticon_68',['setIcon',['../classAppWidget.html#a6bf749981f674a76e979dd547ce9666c',1,'AppWidget']]],
   ['seticonsize_69',['setIconSize',['../classAppWidget.html#a4731f40f3875c482958afc96f065f7c4',1,'AppWidget']]],
   ['setimage_70',['setimage',['../classImageLabel.html#a164ec4e9572bb56e734bb88f7daf4516',1,'ImageLabel::setImage(const QImage &amp;image)'],['../classImageLabel.html#a164ec4e9572bb56e734bb88f7daf4516',1,'ImageLabel::setImage(const QImage &amp;image)']]],

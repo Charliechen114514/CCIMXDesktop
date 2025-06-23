@@ -23,6 +23,7 @@ var classDesktopMainWindow =
     [ "stackedWidget", "classDesktopMainWindow.html#a8f361d9bfc1b0745c02a8d8c4ec59beb", null ],
     [ "to_next_page", "classDesktopMainWindow.html#aa904c77c3b7b1f00c55602a47dc7e036", null ],
     [ "to_prev_page", "classDesktopMainWindow.html#a813e78d2d7102d2f5b3d9096f0118dcc", null ],
+    [ "topSideBar", "classDesktopMainWindow.html#a2dfbeb975416c0bc8c27282aea616782", null ],
     [ "press", "classDesktopMainWindow.html#aeadbf1cc99b7fd1c5d7690a0ba7f4577", null ],
     [ "release", "classDesktopMainWindow.html#a84eecc2fcabddb1424455ccf9cc56929", null ]
 ];
