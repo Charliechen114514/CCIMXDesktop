@@ -22,26 +22,26 @@
 | 功能 / 应用名称                                  | 依赖条件或备注                                     | 是否为内建程序 | 说明                                                         | 界面展示                                                     |
 | ------------------------------------------------ | -------------------------------------------------- | -------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | 🏠 CCIMX_Desktop本体                              | 标准最小依赖                                       | 是             | 核心框架，本体                                               | ![image-20250613225001667](./README/image-20250613225001667.png) |
-| ℹ About App                                      | 标准最小依赖                                       | 是             | 简单的介绍本项目桌面的基本情况                               |                                                              |
-| ✏️ CCNoter（记事本）                              | 标准最小依赖                                       | 是             | 超级无敌轻量的记事本                                         |                                                              |
-| 🎨 SimpleDrawer（画图）                           | 标准最小依赖                                       | 是             | 超级无敌轻量的画图，类似Windows的“画图”                      |                                                              |
-| ☀️ WeatherAPP（天气应用）                         | 需设备具备联网能力（网络连接）                     | 可选           | 获取城市所在的天气预报，目前使用的API是心智天气的            |                                                              |
-| 📄 pdfReader（PDF阅读器）                         | MuPDF依赖库                                        | 可选           | 最基础的PDF浏览器，支持章节跳转和查看功能                    |                                                              |
-| 📁 FileRamber（文件浏览器）                       | 标准最小依赖                                       | 是             | 文件管理基础（文件浏览器，具备基本的文件导览，Windows Explorer.exe的Tiny版本） |                                                              |
-| 📷 GeneralLocalCamera（摄像头）                   | 需要OpenCV支持                                     | 可选           | 可以进行拍照                                                 |                                                              |
-| 📊 SystemState（系统状态查看）                    | 标准最小依赖                                       | 是             | 查看运行机的CPU状态，内存容量状态和进程列表                  |                                                              |
-| 🎵 MediaPlayer（音视频播放器）                    | QMediaPlayer支持ALSA或其他音频，视频需要OpenCV支持 | 可选           | 网易云风格的音视频播放器，既可以播放音频也可以播放视频，音频时展示网易云风格的界面！ |                                                              |
-| 💡 LEDController App（灯控制）                    | Platform LED驱动                                   | 可选           | 需硬件支持（开关灯APP，需要 Platform LED 驱动使能）          |                                                              |
-| 🌡️ Environment App（环境监测）                    | AP3216C传感器驱动                                  | 可选           | 需硬件支持（AP3216C驱动需要被挂载且正常驱动）                |                                                              |
-| 🏃 SportHealth App（运动健康）                    | ICM20608驱动                                       | 可选           | 需硬件支持（ICM20608驱动需要被挂载且正常驱动）               |                                                              |
-| 🖼️ ImageWalker（图像浏览器）                      | 标准最小依赖                                       | 是             | 最基础的图像信息浏览查看器，相当于丐版的Windows图像浏览器    |                                                              |
-| ✏️ Markdown阅读器                                 | 标准最小依赖                                       | 是             | 轻量级Markdown编辑预览（最基础的Markdown编辑 + 预览功能，支持草稿 / 加载保存Markdown与基础快捷功能） |                                                              |
-| 🛜 CCNetHelper（网络工具）                        | 需要网卡具备网络连接能力（网卡驱动正常）           | 可选           | 支持网卡信息查看，IP端口扫描和基本测试IP打通能力             |                                                              |
-| 🦖 Dinasour Game（小游戏）                        | 标准最小依赖                                       | 可选           | 是的，就是那个Google Dinasour Game，用Qt6 Widgets实现的版本 :) |                                                              |
-| 🧮 Calculator（计算器）                           | 标准最小依赖                                       | 是             | 基础工具（标准计算器）                                       |                                                              |
-| 🤖 ImageProcessor（图像处理和推理）               | OpenCV，推理库（如有）                             | 可选           | 需OpenCV支持及推理支持                                       |                                                              |
-| ⚙ Settings（设置界面）                           | 标准最小依赖                                       | 是             | 桌面壁纸、亮度和桌面应用风格设置                             |                                                              |
-| 🚀 Dynamic Application Launcher（动态应用启动器） | 标准最小依赖                                       | 是             | 第三方应用运行和管理                                         |                                                              |
+| ℹ About App                                      | 标准最小依赖                                       | 是             | 简单的介绍本项目桌面的基本情况                               | ![image-20250614231912157](./README/image-20250614231912157.png) |
+| ✏️ CCNoter（记事本）                              | 标准最小依赖                                       | 是             | 超级无敌轻量的记事本                                         | ![image-20250614231754881](./README/image-20250614231754881.png) |
+| 🎨 SimpleDrawer（画图）                           | 标准最小依赖                                       | 是             | 超级无敌轻量的画图，类似Windows的“画图”                      | ![image-20250614232836661](./README/image-20250614232836661.png) |
+| ☀️ WeatherAPP（天气应用）                         | 需设备具备联网能力（网络连接）                     | 可选           | 获取城市所在的天气预报，目前使用的API是心智天气的            | ![image-20250614232722896](./README/image-20250614232722896.png) |
+| 📄 pdfReader（PDF阅读器）                         | MuPDF依赖库                                        | 可选           | 最基础的PDF浏览器，支持章节跳转和查看功能                    | ![image-20250614232706288](./README/image-20250614232706288.png) |
+| 📁 FileRamber（文件浏览器）                       | 标准最小依赖                                       | 是             | 文件管理基础（文件浏览器，具备基本的文件导览，Windows Explorer.exe的Tiny版本） | ![image-20250614232241212](./README/image-20250614232241212.png) |
+| 📷 GeneralLocalCamera（摄像头）                   | 需要OpenCV支持                                     | 可选           | 可以进行拍照                                                 | ![image-20250614232213554](./README/image-20250614232213554.png) |
+| 📊 SystemState（系统状态查看）                    | 标准最小依赖                                       | 是             | 查看运行机的CPU状态，内存容量状态和进程列表                  | ![image-20250614232050420](./README/image-20250614232050420.png) |
+| 🎵 MediaPlayer（音视频播放器）                    | QMediaPlayer支持ALSA或其他音频，视频需要OpenCV支持 | 可选           | 网易云风格的音视频播放器，既可以播放音频也可以播放视频，音频时展示网易云风格的界面！ | ![image-20250614232017544](./README/image-20250614232017544.png) |
+| 💡 LEDController App（灯控制）                    | Platform LED驱动                                   | 可选           | 需硬件支持（开关灯APP，需要 Platform LED 驱动使能）          | ![image-20250614231942332](./README/image-20250614231942332.png) |
+| 🌡️ Environment App（环境监测）                    | AP3216C传感器驱动                                  | 可选           | 需硬件支持（AP3216C驱动需要被挂载且正常驱动）                | ![image-20250614232559945](./README/image-20250614232559945.png) |
+| 🏃 SportHealth App（运动健康）                    | ICM20608驱动                                       | 可选           | 需硬件支持（ICM20608驱动需要被挂载且正常驱动）               | ![image-20250614232631305](./README/image-20250614232631305.png) |
+| 🖼️ ImageWalker（图像浏览器）                      | 标准最小依赖                                       | 是             | 最基础的图像信息浏览查看器，相当于丐版的Windows图像浏览器    | ![image-20250614232520438](./README/image-20250614232520438.png) |
+| ✏️ Markdown阅读器                                 | 标准最小依赖                                       | 是             | 轻量级Markdown编辑预览（最基础的Markdown编辑 + 预览功能，支持草稿 / 加载保存Markdown与基础快捷功能） | ![image-20250614232450028](./README/image-20250614232450028.png) |
+| 🛜 CCNetHelper（网络工具）                        | 需要网卡具备网络连接能力（网卡驱动正常）           | 可选           | 支持网卡信息查看，IP端口扫描和基本测试IP打通能力             | ![image-20250614231832285](./README/image-20250614231832285.png) |
+| 🦖 Dinasour Game（小游戏）                        | 标准最小依赖                                       | 可选           | 是的，就是那个Google Dinasour Game，用Qt6 Widgets实现的版本 :) | ![image-20250614231727977](./README/image-20250614231727977.png) |
+| 🧮 Calculator（计算器）                           | 标准最小依赖                                       | 是             | 基础工具（标准计算器）                                       | ![image-20250614231703148](./README/image-20250614231703148.png) |
+| 🤖 ImageProcessor（图像处理和推理）               | OpenCV，推理库（如有）                             | 可选           | 需OpenCV支持及推理支持                                       | ![image-20250614232427874](./README/image-20250614232427874.png) |
+| ⚙ Settings（设置界面）                           | 标准最小依赖                                       | 是             | 桌面壁纸、亮度和桌面应用风格设置                             | ![image-20250614232323164](./README/image-20250614232323164.png) |
+| 🚀 Dynamic Application Launcher（动态应用启动器） | 标准最小依赖                                       | 是             | 第三方应用运行和管理                                         | ![image-20250614232401883](./README/image-20250614232401883.png) |
 
 ------
 
@@ -68,7 +68,7 @@
 ## 🛠️ 基础构建所用技术
 
 ![Qt](https://img.shields.io/badge/Qt-Core%20%26%20Network-41cd52)
-![TSLIB](https://img.shields.io/badge/TSLIB-required-green)![TSLIB](https://img.shields.io/badge/QtCore-required-red)![TSLIB](https://img.shields.io/badge/QtWidget_QtGui-required-blue)![TSLIB](https://img.shields.io/badge/QtNetwork-required-purple)![TSLIB](https://img.shields.io/badge/QtMultiMedia_ALSA_Least-required-purple)
+![TSLIB](https://img.shields.io/badge/TSLIB-required-green)![TSLIB](https://img.shields.io/badge/QtCore-required-red)![TSLIB](https://img.shields.io/badge/QtWidget_QtGui-required-blue)![TSLIB](https://img.shields.io/badge/QtNetwork-required-purple)![TSLIB](https://img.shields.io/badge/QtMultiMedia_ALSA_Least-required-purple)![TSLIB](https://img.shields.io/badge/QtCharts-required-blue)
 
 构建这个项目要求您已经完成对Qt6的移植（基础的必要移植包括TSLib做交互，QtCore QtWidget QtGui三件套，QtNetwork和最小至少支持ALSA音频播放的QtMultiMedia组件的支持），请您核查自己的构建是否足够支持构建本桌面和第三方应用程序！
 
@@ -105,17 +105,14 @@
 
 ## 💡 WIP（一些正在开发的WIP Third Party App）
 
+🚀 计划编写和提供更多的外部基础程序：
+
 - 💬 聊天室（计划类似于QQ）
 - ⏰ 闹钟APP
 - 🔌 串口助手
 - ✅ 任务清单
 - 支持顶部状态栏显示基本信息
 - 可配置的HOME界面
-
-## 💡 未来计划
-
-🚀 计划编写和提供更多的外部基础程序：
-- 
 
 ------
 
