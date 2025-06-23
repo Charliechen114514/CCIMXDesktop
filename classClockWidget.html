@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('classClockWidget.html',''); initResiza
 
 <div class="header">
   <div class="summary">
-<a href="#signals">Signals</a> &#124;
+<a href="#pub-slots">Public Slots</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="classClockWidget-members.html">List of all members</a>  </div>
@@ -115,11 +115,12 @@ Inheritance diagram for ClockWidget:</div>
   <img src="classClockWidget.png" alt=""/>
  </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
-Signals</h2></td></tr>
-<tr class="memitem:a569a140d341c4dc532443abb3800411d" id="r_a569a140d341c4dc532443abb3800411d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classClockWidget.html#a569a140d341c4dc532443abb3800411d">time_update</a> (QTime time)</td></tr>
-<tr class="memdesc:a569a140d341c4dc532443abb3800411d"><td class="mdescLeft">&#160;</td><td class="mdescRight">time_update signals for the time updates, triggered by the internal_updater  <br /></td></tr>
-<tr class="separator:a569a140d341c4dc532443abb3800411d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-slots" name="pub-slots"></a>
+Public Slots</h2></td></tr>
+<tr class="memitem:a686cdfd9b48dc031404afa5d0ef0572b" id="r_a686cdfd9b48dc031404afa5d0ef0572b"><td class="memItemLeft" align="right" valign="top"><a id="a686cdfd9b48dc031404afa5d0ef0572b" name="a686cdfd9b48dc031404afa5d0ef0572b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>process_update_invokation</b> (QTime clockTime)</td></tr>
+<tr class="memdesc:a686cdfd9b48dc031404afa5d0ef0572b"><td class="mdescLeft">&#160;</td><td class="mdescRight">timeout hooks of the internal_updater <br /></td></tr>
+<tr class="separator:a686cdfd9b48dc031404afa5d0ef0572b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -237,41 +238,6 @@ Protected Member Functions</h2></td></tr>
 
 <p>sizeHint provides the size hint for the clock widget </p>
 <dl class="section return"><dt>Returns</dt><dd>yet the size :) </dd></dl>
-
-</div>
-</div>
-<a id="a569a140d341c4dc532443abb3800411d" name="a569a140d341c4dc532443abb3800411d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a569a140d341c4dc532443abb3800411d">&#9670;&#160;</a></span>time_update</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ClockWidget::time_update </td>
-          <td>(</td>
-          <td class="paramtype">QTime&#160;</td>
-          <td class="paramname"><em>time</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>time_update signals for the time updates, triggered by the internal_updater </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">time</td><td>the current time </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>: for other clock relavent widgets, should monitor the signals </dd></dl>
 
 </div>
 </div>

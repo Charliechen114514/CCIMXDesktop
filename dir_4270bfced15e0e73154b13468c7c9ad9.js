@@ -1,5 +1,6 @@
 var dir_4270bfced15e0e73154b13468c7c9ad9 =
 [
+    [ "labelStyler", "dir_8b9f96cd4d386b4c7d476a7efb00f49b.html", "dir_8b9f96cd4d386b4c7d476a7efb00f49b" ],
     [ "wallpaper", "dir_1623a2262c34b2bf43fd75a729c5cc0f.html", "dir_1623a2262c34b2bf43fd75a729c5cc0f" ],
     [ "coretools.h", "coretools_8h_source.html", null ]
 ];

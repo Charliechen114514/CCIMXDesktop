@@ -96,14 +96,14 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AP3216CAdapterFactory_8h_source.html",
-"classApplicationWrapper.html#a1efcf8d4c820fd4c962319f69ccd50fb",
-"classCameraCapture.html#aaa1bba7896e9f51b7b0ff6e0d605df4d",
-"classFileTypeInfo.html#ad8770304cf3926d405cc7b2ec0251054",
-"classMainSideBar.html#aee935a03c36949e12298fdccb8d336b5",
-"classSideBarWidget.html#a198335bded322d74773369bb4136df14",
-"classVideoPlayerOpencvImpl.html#ab0d491bb1ff965a4bcb1338a3f947fe9",
-"functions_s.html",
-"structConfigureUiPairs.html"
+"classApplicationLauncherMainWindow.html#ab6abfbbc7a38a3b3dfb5ca5676662f43",
+"classCaculatorMainWindow.html#afc39ee46409ce86eb14f01f6c47c8a58",
+"classFileNameProviders.html#ad81f8ebbb75db0cee10db72073fbc58b",
+"classMainSideBar.html#a1f51acb4e60e6f53801dc615030ba576",
+"classSettingsLaunch.html",
+"classVideoPlayerOpencvImpl.html#a462b4f6b3463535f2bec58daa5010eaf",
+"functions_func_w.html",
+"structCCPdfMetaInfo.html#adeb1520aa049ca39cc794c4feb232b35"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

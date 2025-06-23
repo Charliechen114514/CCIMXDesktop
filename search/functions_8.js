@@ -9,5 +9,5 @@ var searchData=
   ['headerdata_6',['headerData',['../classCCIMXFileSystemModel.html#aeceaa8e6c1e18cb36f20211176b60096',1,'CCIMXFileSystemModel']]],
   ['hidesidebar_7',['hidesidebar',['../classSideBarWidget.html#a8095035fb628e68ba40c6c66ee009594',1,'SideBarWidget::hideSideBar()'],['../classSideBarWidget.html#a8095035fb628e68ba40c6c66ee009594',1,'SideBarWidget::hideSideBar()'],['../classSideBarWidget.html#a8095035fb628e68ba40c6c66ee009594',1,'SideBarWidget::hideSideBar()']]],
   ['histdrawer_8',['HistDrawer',['../classHistDrawer.html#acac240110b587e7b3884c4a3bd7c098d',1,'HistDrawer']]],
-  ['homepage_9',['HomePage',['../classHomePage.html#a6b43d601ca302278ee9424f71841a4aa',1,'HomePage']]]
+  ['homepage_9',['HomePage',['../classHomePage.html#a019fab66c80b3c809faafce5f3416b63',1,'HomePage']]]
 ];

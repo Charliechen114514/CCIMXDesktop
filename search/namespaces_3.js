@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mediaenableselectfactory_0',['MediaEnableSelectFactory',['../namespaceMediaEnableSelectFactory.html',1,'']]]
+  ['histcreator_0',['HistCreator',['../namespaceHistCreator.html',1,'']]]
 ];

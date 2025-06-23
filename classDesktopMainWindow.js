@@ -2,6 +2,7 @@ var classDesktopMainWindow =
 [
     [ "DesktopMainWindow", "classDesktopMainWindow.html#aaac5851bae7399538f8ba037117bfdbf", null ],
     [ "~DesktopMainWindow", "classDesktopMainWindow.html#a43d7057668fed07e15bf4adee85b0da8", null ],
+    [ "clock_src", "classDesktopMainWindow.html#afc0b94226be4bb3ddf7fcbf7426df62d", null ],
     [ "deptach_app_cards_init", "classDesktopMainWindow.html#a60543a4367ec2d3ae50a5dd2d8743ea7", null ],
     [ "desktop_toast", "classDesktopMainWindow.html#ad96e7341abb14b361bf76d3baff81071", null ],
     [ "downDockWidget", "classDesktopMainWindow.html#a3c9d1ee127d737faa6b73e162a4c28b3", null ],
@@ -10,6 +11,7 @@ var classDesktopMainWindow =
     [ "install_remote_appwrapper", "classDesktopMainWindow.html#a39fb277355a84381bf009a605bd9bc7e", null ],
     [ "mousePressEvent", "classDesktopMainWindow.html#aea9d86ecbe7b54e38e8c871722054274", null ],
     [ "mouseReleaseEvent", "classDesktopMainWindow.html#a4a1c72982f01def8eb97ed697849a1b6", null ],
+    [ "netAbilityScanner", "classDesktopMainWindow.html#ae0bac85372b4389478e069a5979c937f", null ],
     [ "open_launch_window", "classDesktopMainWindow.html#a4cb8de26f974376291b0a5564fe0b1e5", null ],
     [ "open_settings_window", "classDesktopMainWindow.html#aeecac01378d6863ee55953f2ef830532", null ],
     [ "post_show", "classDesktopMainWindow.html#a3f4e883111f10e3fede7ae9818d36a4b", null ],

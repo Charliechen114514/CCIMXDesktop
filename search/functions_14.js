@@ -5,7 +5,7 @@ var searchData=
   ['temp_5flables_2',['temp_lables',['../classLeftSideBar.html#ac24228750557c5f719e18f1c9cafef01',1,'LeftSideBar']]],
   ['temperarycacher_3',['TemperaryCacher',['../classTemperaryCacher.html#acef98e3fff51f7c0e546f65c0103ee0f',1,'TemperaryCacher']]],
   ['terminate_5fflow_4',['terminate_flow',['../classFrameProvider.html#a0730e8ae59b9df14f8599958be4c9db6',1,'FrameProvider']]],
-  ['time_5fupdate_5',['time_update',['../classClockWidget.html#a569a140d341c4dc532443abb3800411d',1,'ClockWidget']]],
+  ['timeupdate_5',['timeUpdate',['../classGlobalClockSources.html#ab863f819afb0e22f559fbfd0a72aa943',1,'GlobalClockSources']]],
   ['to_5fnext_5fpage_6',['to_next_page',['../classDesktopMainWindow.html#aa904c77c3b7b1f00c55602a47dc7e036',1,'DesktopMainWindow']]],
   ['to_5fprev_5fpage_7',['to_prev_page',['../classDesktopMainWindow.html#a813e78d2d7102d2f5b3d9096f0118dcc',1,'DesktopMainWindow']]],
   ['todisplayableimage_8',['toDisplayableImage',['../namespaceQtAdaptTools.html#aac1f5732de2d4a088fd5fccc50b6ffe0',1,'QtAdaptTools']]],

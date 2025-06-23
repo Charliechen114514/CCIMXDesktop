@@ -2,7 +2,7 @@ var indexSectionsWithContent =
 {
   0: "_abcdefghijklmnopqrstuvwxyz~⚙一基完开模许项🌐🌟🎨💡📚📝🔧🖥🚀🛠🧩🧬",
   1: "abcdefghilmnoprstuvwx",
-  2: "cehmopqsuvw",
+  2: "cefhmopqsuvw",
   3: "fs",
   4: "_abcdefghijklmnopqrstuvwz~",
   5: "abcdefghiklmnoprstuvwxyz",

@@ -173,6 +173,7 @@ var hierarchy =
           [ "CactusFrameFetch", "classCactusFrameFetch.html", null ]
         ] ]
       ] ],
+      [ "GlobalClockSources", "classGlobalClockSources.html", null ],
       [ "IconEvent", "structIconEvent.html", [
         [ "NetStatusChangedEvent", "structNetStatusChangedEvent.html", null ]
       ] ],
@@ -261,8 +262,10 @@ var hierarchy =
       [ "SportsDisplayWidget", "classSportsDisplayWidget.html", null ],
       [ "StatusBarIconWidget", "classStatusBarIconWidget.html", [
         [ "StaticStatusBarIconWidget", "classStaticStatusBarIconWidget.html", [
+          [ "BatteryStatusbarIcon", "classBatteryStatusbarIcon.html", null ],
           [ "NetStatusStatusBarIconWidget", "classNetStatusStatusBarIconWidget.html", null ]
-        ] ]
+        ] ],
+        [ "TimeDisplayIconWidget", "classTimeDisplayIconWidget.html", null ]
       ] ],
       [ "Tablet", "classTablet.html", null ],
       [ "ToolBoxs", "classToolBoxs.html", null ],
@@ -301,5 +304,8 @@ var hierarchy =
     ] ],
     [ "VideoPlayerImplFactory", "classVideoPlayerImplFactory.html", null ],
     [ "VideoPlayerInfo", "structVideoPlayerInfo.html", null ],
+    [ "WidgetType", null, [
+      [ "LabelStyler< WidgetType >", "classLabelStyler.html", null ]
+    ] ],
     [ "Settings::XY< value >", "structSettings_1_1XY.html", null ]
 ];

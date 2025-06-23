@@ -108,25 +108,23 @@ $(document).ready(function(){initNavTree('digitaltimewidget_8h_source.html','');
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    Q_OBJECT</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classDigitalTimeWidget.html">DigitalTimeWidget</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classDigitalTimeWidget.html#aa1633fe7d636f9be4fdce7be3b886ab7">bindClockWidget</a>(<a class="code hl_class" href="classClockWidget.html">ClockWidget</a>* clock);</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">public</span> slots:</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classDigitalTimeWidget.html#a5ce8fef8771f16a42f69f4d62aee1167">process_time_update</a>(QTime process_time);</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classDigitalTimeWidget.html#a01011ca236cf3aab580eaca6db1eef9e">paintEvent</a>(QPaintEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    QTime stored_time; </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <a class="code hl_class" href="classClockWidget.html">ClockWidget</a>* clk_widget { <span class="keyword">nullptr</span> }; </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>};</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">public</span> slots:</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classDigitalTimeWidget.html#a5ce8fef8771f16a42f69f4d62aee1167">process_time_update</a>(QTime process_time);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classDigitalTimeWidget.html#a01011ca236cf3aab580eaca6db1eef9e">paintEvent</a>(QPaintEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    QTime stored_time; </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_class" href="classClockWidget.html">ClockWidget</a>* clk_widget { <span class="keyword">nullptr</span> }; </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>};</div>
 </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#endif </span><span class="comment">// DIGITALTIMEWIDGET_H</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#endif </span><span class="comment">// DIGITALTIMEWIDGET_H</span></div>
 <div class="ttc" id="aclassClockWidget_html"><div class="ttname"><a href="classClockWidget.html">ClockWidget</a></div><div class="ttdoc">The ClockWidget class draws the Clock Sessions.</div><div class="ttdef"><b>Definition</b> clockwidget.h:14</div></div>
 <div class="ttc" id="aclassDigitalTimeWidget_html"><div class="ttname"><a href="classDigitalTimeWidget.html">DigitalTimeWidget</a></div><div class="ttdoc">The DigitalTimeWidget class is a digital clock widget.</div><div class="ttdef"><b>Definition</b> digitaltimewidget.h:9</div></div>
-<div class="ttc" id="aclassDigitalTimeWidget_html_a01011ca236cf3aab580eaca6db1eef9e"><div class="ttname"><a href="classDigitalTimeWidget.html#a01011ca236cf3aab580eaca6db1eef9e">DigitalTimeWidget::paintEvent</a></div><div class="ttdeci">void paintEvent(QPaintEvent *event) override</div><div class="ttdoc">paint sessions</div><div class="ttdef"><b>Definition</b> digitaltimewidget.cpp:19</div></div>
-<div class="ttc" id="aclassDigitalTimeWidget_html_a5ce8fef8771f16a42f69f4d62aee1167"><div class="ttname"><a href="classDigitalTimeWidget.html#a5ce8fef8771f16a42f69f4d62aee1167">DigitalTimeWidget::process_time_update</a></div><div class="ttdeci">void process_time_update(QTime process_time)</div><div class="ttdoc">process_time_update: process the time update sessions from clock widgets</div><div class="ttdef"><b>Definition</b> digitaltimewidget.cpp:15</div></div>
-<div class="ttc" id="aclassDigitalTimeWidget_html_aa1633fe7d636f9be4fdce7be3b886ab7"><div class="ttname"><a href="classDigitalTimeWidget.html#aa1633fe7d636f9be4fdce7be3b886ab7">DigitalTimeWidget::bindClockWidget</a></div><div class="ttdeci">void bindClockWidget(ClockWidget *clock)</div><div class="ttdoc">bindClockWidget, the digital displays of the clock</div><div class="ttdef"><b>Definition</b> digitaltimewidget.cpp:9</div></div>
+<div class="ttc" id="aclassDigitalTimeWidget_html_a01011ca236cf3aab580eaca6db1eef9e"><div class="ttname"><a href="classDigitalTimeWidget.html#a01011ca236cf3aab580eaca6db1eef9e">DigitalTimeWidget::paintEvent</a></div><div class="ttdeci">void paintEvent(QPaintEvent *event) override</div><div class="ttdoc">paint sessions</div><div class="ttdef"><b>Definition</b> digitaltimewidget.cpp:13</div></div>
+<div class="ttc" id="aclassDigitalTimeWidget_html_a5ce8fef8771f16a42f69f4d62aee1167"><div class="ttname"><a href="classDigitalTimeWidget.html#a5ce8fef8771f16a42f69f4d62aee1167">DigitalTimeWidget::process_time_update</a></div><div class="ttdeci">void process_time_update(QTime process_time)</div><div class="ttdoc">process_time_update: process the time update sessions from clock widgets</div><div class="ttdef"><b>Definition</b> digitaltimewidget.cpp:8</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -22,7 +22,7 @@ var searchData=
   ['win32platformprocessbroswerdriver_19',['Win32PlatformProcessBroswerDriver',['../classWin32PlatformProcessBroswerDriver.html',1,'']]],
   ['winddirection_20',['windDirection',['../structAppWeatherResult_1_1DailyWeather.html#a5be22399236c7e8590fea089e49a1026',1,'AppWeatherResult::DailyWeather']]],
   ['window_5fsize_21',['window_size',['../structCVTools_1_1DisplayParams.html#aa1430ae3fd50b00f6eb573366e096795',1,'CVTools::DisplayParams']]],
-  ['windscale_22',['windscale',['../structAppWeatherResult_1_1DailyWeather.html#a17265f6cc56388bf07f7bc433bd14d5e',1,'AppWeatherResult::DailyWeather::windScale'],['../classWeatherChartWidget.html#ad917be16972dd0f90aa71df8d0e8e569ad74a32bbd6239ec868d96541f20419ff',1,'WeatherChartWidget::WINDSCALE']]],
+  ['windscale_22',['windscale',['../classWeatherChartWidget.html#ad917be16972dd0f90aa71df8d0e8e569ad74a32bbd6239ec868d96541f20419ff',1,'WeatherChartWidget::WINDSCALE'],['../structAppWeatherResult_1_1DailyWeather.html#a17265f6cc56388bf07f7bc433bd14d5e',1,'AppWeatherResult::DailyWeather::windScale']]],
   ['wip（一些正在开发的wip_20third_20party_20app）_23',['💡 WIP（一些正在开发的WIP Third Party App）',['../md_README.html#autotoc_md11',1,'']]],
   ['wip_20some_20wip_20third_20party_20app_20under_20development_24',['💡 WIP (some WIP Third Party App under development)',['../md_README__EN.html#autotoc_md25',1,'']]]
 ];
