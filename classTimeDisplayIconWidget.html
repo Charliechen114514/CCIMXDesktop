@@ -102,46 +102,153 @@ $(document).ready(function(){initNavTree('classTimeDisplayIconWidget.html',''); 
   <div class="headertitle"><div class="title">TimeDisplayIconWidget Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Widget for displaying time in the status bar.  
+ <a href="classTimeDisplayIconWidget.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="TimeDisplayIconWidget_8h_source.html">TimeDisplayIconWidget.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for TimeDisplayIconWidget:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classTimeDisplayIconWidget.png" usemap="#TimeDisplayIconWidget_map" alt=""/>
   <map id="TimeDisplayIconWidget_map" name="TimeDisplayIconWidget_map">
-<area href="classStatusBarIconWidget.html" title="The StatusBarIconWidget class is the Icon Interfaces like widget for the icon statusbar." alt="StatusBarIconWidget" shape="rect" coords="0,56,142,80"/>
+<area href="classStatusBarIconWidget.html" title="Abstract base widget class representing an icon in the status bar." alt="StatusBarIconWidget" shape="rect" coords="0,56,142,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-slots" name="pub-slots"></a>
 Public Slots</h2></td></tr>
-<tr class="memitem:a547db84ba048a9f25f75182da6545b24" id="r_a547db84ba048a9f25f75182da6545b24"><td class="memItemLeft" align="right" valign="top"><a id="a547db84ba048a9f25f75182da6545b24" name="a547db84ba048a9f25f75182da6545b24"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>update_displayTime</b> (QTime time)</td></tr>
+<tr class="memitem:a547db84ba048a9f25f75182da6545b24" id="r_a547db84ba048a9f25f75182da6545b24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTimeDisplayIconWidget.html#a547db84ba048a9f25f75182da6545b24">update_displayTime</a> (QTime time)</td></tr>
+<tr class="memdesc:a547db84ba048a9f25f75182da6545b24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the displayed time.  <br /></td></tr>
 <tr class="separator:a547db84ba048a9f25f75182da6545b24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af125dea1b85f0747f92e5df9ca06aa24" id="r_af125dea1b85f0747f92e5df9ca06aa24"><td class="memItemLeft" align="right" valign="top"><a id="af125dea1b85f0747f92e5df9ca06aa24" name="af125dea1b85f0747f92e5df9ca06aa24"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>TimeDisplayIconWidget</b> (QWidget *parent=nullptr)</td></tr>
+<tr class="memitem:af125dea1b85f0747f92e5df9ca06aa24" id="r_af125dea1b85f0747f92e5df9ca06aa24"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTimeDisplayIconWidget.html#af125dea1b85f0747f92e5df9ca06aa24">TimeDisplayIconWidget</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:af125dea1b85f0747f92e5df9ca06aa24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs the time display widget.  <br /></td></tr>
 <tr class="separator:af125dea1b85f0747f92e5df9ca06aa24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab39b617bfa4d7b9d5b65b4d8ce265f60" id="r_ab39b617bfa4d7b9d5b65b4d8ce265f60"><td class="memItemLeft" align="right" valign="top"><a id="ab39b617bfa4d7b9d5b65b4d8ce265f60" name="ab39b617bfa4d7b9d5b65b4d8ce265f60"></a>
-QLabel *&#160;</td><td class="memItemRight" valign="bottom"><b>displayedLabel</b> () const</td></tr>
+<tr class="memitem:a9320ac924c3189d6b6a3a8e76232dd94" id="r_a9320ac924c3189d6b6a3a8e76232dd94"><td class="memItemLeft" align="right" valign="top"><a id="a9320ac924c3189d6b6a3a8e76232dd94" name="a9320ac924c3189d6b6a3a8e76232dd94"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~TimeDisplayIconWidget</b> ()</td></tr>
+<tr class="memdesc:a9320ac924c3189d6b6a3a8e76232dd94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the time display widget. <br /></td></tr>
+<tr class="separator:a9320ac924c3189d6b6a3a8e76232dd94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab39b617bfa4d7b9d5b65b4d8ce265f60" id="r_ab39b617bfa4d7b9d5b65b4d8ce265f60"><td class="memItemLeft" align="right" valign="top">QLabel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTimeDisplayIconWidget.html#ab39b617bfa4d7b9d5b65b4d8ce265f60">displayedLabel</a> () const</td></tr>
+<tr class="memdesc:ab39b617bfa4d7b9d5b65b4d8ce265f60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the label used for time display.  <br /></td></tr>
 <tr class="separator:ab39b617bfa4d7b9d5b65b4d8ce265f60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classStatusBarIconWidget"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classStatusBarIconWidget')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classStatusBarIconWidget.html">StatusBarIconWidget</a></td></tr>
 <tr class="memitem:a1f60e698b9c3897f3d3c608f43e95a9a inherit pub_methods_classStatusBarIconWidget" id="r_a1f60e698b9c3897f3d3c608f43e95a9a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatusBarIconWidget.html#a1f60e698b9c3897f3d3c608f43e95a9a">StatusBarIconWidget</a> (QString labeled_name, QWidget *parent=nullptr)</td></tr>
-<tr class="memdesc:a1f60e698b9c3897f3d3c608f43e95a9a inherit pub_methods_classStatusBarIconWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classStatusBarIconWidget.html" title="The StatusBarIconWidget class is the Icon Interfaces like widget for the icon statusbar.">StatusBarIconWidget</a> creator.  <br /></td></tr>
+<tr class="memdesc:a1f60e698b9c3897f3d3c608f43e95a9a inherit pub_methods_classStatusBarIconWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classStatusBarIconWidget.html" title="Abstract base widget class representing an icon in the status bar.">StatusBarIconWidget</a>.  <br /></td></tr>
 <tr class="separator:a1f60e698b9c3897f3d3c608f43e95a9a inherit pub_methods_classStatusBarIconWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3863b3453730825ee4b52f03f089260b inherit pub_methods_classStatusBarIconWidget" id="r_a3863b3453730825ee4b52f03f089260b"><td class="memItemLeft" align="right" valign="top">
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>adjustSelfHeight</b> (int height)</td></tr>
-<tr class="separator:a3863b3453730825ee4b52f03f089260b inherit pub_methods_classStatusBarIconWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbe463fb3a66c88281381cd1a772f57f inherit pub_methods_classStatusBarIconWidget" id="r_adbe463fb3a66c88281381cd1a772f57f"><td class="memItemLeft" align="right" valign="top">
-QString&#160;</td><td class="memItemRight" valign="bottom"><b>labeledName</b> () const</td></tr>
+<tr class="memitem:a1ed71bffc805a6c6ba15a2f2f06fbead inherit pub_methods_classStatusBarIconWidget" id="r_a1ed71bffc805a6c6ba15a2f2f06fbead"><td class="memItemLeft" align="right" valign="top">
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~StatusBarIconWidget</b> ()=default</td></tr>
+<tr class="memdesc:a1ed71bffc805a6c6ba15a2f2f06fbead inherit pub_methods_classStatusBarIconWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the <a class="el" href="classStatusBarIconWidget.html" title="Abstract base widget class representing an icon in the status bar.">StatusBarIconWidget</a>. <br /></td></tr>
+<tr class="separator:a1ed71bffc805a6c6ba15a2f2f06fbead inherit pub_methods_classStatusBarIconWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f96436b0a6cdc397bb3361d987aee40 inherit pub_methods_classStatusBarIconWidget" id="r_a9f96436b0a6cdc397bb3361d987aee40"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatusBarIconWidget.html#a9f96436b0a6cdc397bb3361d987aee40">adjustSelfHeight</a> (int height)</td></tr>
+<tr class="memdesc:a9f96436b0a6cdc397bb3361d987aee40 inherit pub_methods_classStatusBarIconWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adjusts the widget's height to a fixed value.  <br /></td></tr>
+<tr class="separator:a9f96436b0a6cdc397bb3361d987aee40 inherit pub_methods_classStatusBarIconWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbe463fb3a66c88281381cd1a772f57f inherit pub_methods_classStatusBarIconWidget" id="r_adbe463fb3a66c88281381cd1a772f57f"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatusBarIconWidget.html#adbe463fb3a66c88281381cd1a772f57f">labeledName</a> () const</td></tr>
+<tr class="memdesc:adbe463fb3a66c88281381cd1a772f57f inherit pub_methods_classStatusBarIconWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the labeled name of this icon.  <br /></td></tr>
 <tr class="separator:adbe463fb3a66c88281381cd1a772f57f inherit pub_methods_classStatusBarIconWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6f069bbc30ba4aad6ee5d3bd4df25ae inherit pub_methods_classStatusBarIconWidget" id="r_ab6f069bbc30ba4aad6ee5d3bd4df25ae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatusBarIconWidget.html#ab6f069bbc30ba4aad6ee5d3bd4df25ae">processIconsEvent</a> (<a class="el" href="structIconEvent.html">IconEvent</a> *icons)</td></tr>
+<tr class="memdesc:ab6f069bbc30ba4aad6ee5d3bd4df25ae inherit pub_methods_classStatusBarIconWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles an <a class="el" href="structIconEvent.html" title="Represents a custom event targeting a specific StatusBarIconWidget.">IconEvent</a>.  <br /></td></tr>
 <tr class="separator:ab6f069bbc30ba4aad6ee5d3bd4df25ae inherit pub_methods_classStatusBarIconWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07bffe571f54c4400fcd4166862555e8 inherit pub_methods_classStatusBarIconWidget" id="r_a07bffe571f54c4400fcd4166862555e8"><td class="memItemLeft" align="right" valign="top">
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>iconEvents</b> (<a class="el" href="structIconEvent.html">IconEvent</a> *icons)</td></tr>
-<tr class="separator:a07bffe571f54c4400fcd4166862555e8 inherit pub_methods_classStatusBarIconWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab901260c3ec0397dc1cad9225cdb984 inherit pub_methods_classStatusBarIconWidget" id="r_aab901260c3ec0397dc1cad9225cdb984"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatusBarIconWidget.html#aab901260c3ec0397dc1cad9225cdb984">iconEvents</a> (<a class="el" href="structIconEvent.html">IconEvent</a> *icons)</td></tr>
+<tr class="memdesc:aab901260c3ec0397dc1cad9225cdb984 inherit pub_methods_classStatusBarIconWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual handler for icon events. Override in subclasses.  <br /></td></tr>
+<tr class="separator:aab901260c3ec0397dc1cad9225cdb984 inherit pub_methods_classStatusBarIconWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Widget for displaying time in the status bar. </p>
+<p>Shows current time and updates it periodically. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="af125dea1b85f0747f92e5df9ca06aa24" name="af125dea1b85f0747f92e5df9ca06aa24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af125dea1b85f0747f92e5df9ca06aa24">&#9670;&#160;</a></span>TimeDisplayIconWidget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TimeDisplayIconWidget::TimeDisplayIconWidget </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs the time display widget. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Parent widget (optional) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab39b617bfa4d7b9d5b65b4d8ce265f60" name="ab39b617bfa4d7b9d5b65b4d8ce265f60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab39b617bfa4d7b9d5b65b4d8ce265f60">&#9670;&#160;</a></span>displayedLabel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLabel * TimeDisplayIconWidget::displayedLabel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the label used for time display. </p>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the display label </dd></dl>
+
+</div>
+</div>
+<a id="a547db84ba048a9f25f75182da6545b24" name="a547db84ba048a9f25f75182da6545b24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a547db84ba048a9f25f75182da6545b24">&#9670;&#160;</a></span>update_displayTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TimeDisplayIconWidget::update_displayTime </td>
+          <td>(</td>
+          <td class="paramtype">QTime&#160;</td>
+          <td class="paramname"><em>time</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Updates the displayed time. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">time</td><td>New time to display </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>ui/topstatusbar/time_display/<a class="el" href="TimeDisplayIconWidget_8h_source.html">TimeDisplayIconWidget.h</a></li>
 <li>ui/topstatusbar/time_display/<b>TimeDisplayIconWidget.cpp</b></li>

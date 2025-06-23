@@ -1,13 +1,13 @@
 var searchData=
 [
-  ['backlightcontroller_0',['backlightcontroller',['../classBacklightController.html',1,'BacklightController'],['../classBacklightController.html#ab529c5c4e92140fc31b5e8f656ef161b',1,'BacklightController::BacklightController()']]],
+  ['backlightcontroller_0',['backlightcontroller',['../classBacklightController.html#ab529c5c4e92140fc31b5e8f656ef161b',1,'BacklightController::BacklightController()'],['../classBacklightController.html',1,'BacklightController']]],
   ['backlightcontrollerimpl_1',['backlightcontrollerimpl',['../classBacklightControllerImpl.html',1,'BacklightControllerImpl'],['../classBacklightControllerImpl.html#a282a43a3428b4109e9acd1f948879446',1,'BacklightControllerImpl::BacklightControllerImpl()']]],
   ['backward10sec_2',['backward10sec',['../classMediaPlayerWindow.html#a8f600b71fc44c85e4d43e4325676cfe4',1,'MediaPlayerWindow']]],
   ['badsqrtvalue_3',['badsqrtvalue',['../classBadSqrtValue.html',1,'BadSqrtValue'],['../classBadSqrtValue.html#a51e3bd601bff5978cfdee35ce2ed6e6b',1,'BadSqrtValue::BadSqrtValue()']]],
   ['basewallpapersettings_4',['basewallpapersettings',['../structBaseWallPaperSettings.html',1,'BaseWallPaperSettings'],['../structBaseWallPaperSettings.html#a5c82df13ac1f3539568e71d775edeb1f',1,'BaseWallPaperSettings::BaseWallPaperSettings()']]],
-  ['batterystatusbaricon_5',['BatteryStatusbarIcon',['../classBatteryStatusbarIcon.html',1,'']]],
+  ['batterystatusbaricon_5',['batterystatusbaricon',['../classBatteryStatusbarIcon.html',1,'BatteryStatusbarIcon'],['../classBatteryStatusbarIcon.html#aa6079017053cec139ce955e41d2ce655',1,'BatteryStatusbarIcon::BatteryStatusbarIcon()']]],
   ['before_20you_20get_20started_20choose_20your_20language_20🌐_6',['🌐 Before you get started, choose your language! 🌐',['../md_README__EN.html#autotoc_md15',1,'']]],
-  ['binaryoptreenode_7',['binaryoptreenode',['../structBinaryOpTreeNode.html#a9570d816c09da5958d0418bd0713197c',1,'BinaryOpTreeNode::BinaryOpTreeNode()'],['../structBinaryOpTreeNode.html',1,'BinaryOpTreeNode']]],
+  ['binaryoptreenode_7',['binaryoptreenode',['../structBinaryOpTreeNode.html',1,'BinaryOpTreeNode'],['../structBinaryOpTreeNode.html#a9570d816c09da5958d0418bd0713197c',1,'BinaryOpTreeNode::BinaryOpTreeNode()']]],
   ['bind_5fdaily_5finfo_8',['bind_daily_info',['../classWeatherDailyCard.html#a5e8b000f9a09fd2d39bee8edb410a7d3',1,'WeatherDailyCard']]],
   ['bind_5fdisplay_5fwidget_9',['bind_display_widget',['../classCameraCapture.html#adcc683f3079c0a2b45af30cdbe2425c6',1,'CameraCapture']]],
   ['bind_5ffile_10',['bind_file',['../classAP3216CAdapterFactory.html#a40b207a7adb5e3077049d7fca47b8274',1,'AP3216CAdapterFactory::bind_file()'],['../classPesudoAP3216C.html#a03f61c5805f7a5e3a4f42e1d4b14d258',1,'PesudoAP3216C::bind_file()']]],

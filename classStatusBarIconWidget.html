@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('classStatusBarIconWidget.html',''); in
 </div><!--header-->
 <div class="contents">
 
-<p>The <a class="el" href="classStatusBarIconWidget.html" title="The StatusBarIconWidget class is the Icon Interfaces like widget for the icon statusbar.">StatusBarIconWidget</a> class is the Icon Interfaces like widget for the icon statusbar.  
+<p>Abstract base widget class representing an icon in the status bar.  
  <a href="classStatusBarIconWidget.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="StatusBarIconWidget_8h_source.html">StatusBarIconWidget.h</a>&gt;</code></p>
@@ -112,32 +112,38 @@ Inheritance diagram for StatusBarIconWidget:</div>
  <div class="center">
   <img src="classStatusBarIconWidget.png" usemap="#StatusBarIconWidget_map" alt=""/>
   <map id="StatusBarIconWidget_map" name="StatusBarIconWidget_map">
-<area href="classStaticStatusBarIconWidget.html" alt="StaticStatusBarIconWidget" shape="rect" coords="95,112,276,136"/>
-<area href="classTimeDisplayIconWidget.html" alt="TimeDisplayIconWidget" shape="rect" coords="286,112,467,136"/>
-<area href="classBatteryStatusbarIcon.html" alt="BatteryStatusbarIcon" shape="rect" coords="0,168,181,192"/>
-<area href="classNetStatusStatusBarIconWidget.html" alt="NetStatusStatusBarIconWidget" shape="rect" coords="191,168,372,192"/>
+<area href="classStaticStatusBarIconWidget.html" title="the static sessions widgets, using in display statically" alt="StaticStatusBarIconWidget" shape="rect" coords="95,112,276,136"/>
+<area href="classTimeDisplayIconWidget.html" title="Widget for displaying time in the status bar." alt="TimeDisplayIconWidget" shape="rect" coords="286,112,467,136"/>
+<area href="classBatteryStatusbarIcon.html" title="icons for batteries" alt="BatteryStatusbarIcon" shape="rect" coords="0,168,181,192"/>
+<area href="classNetStatusStatusBarIconWidget.html" title="Network status indicator widget for status bar." alt="NetStatusStatusBarIconWidget" shape="rect" coords="191,168,372,192"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a1f60e698b9c3897f3d3c608f43e95a9a" id="r_a1f60e698b9c3897f3d3c608f43e95a9a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatusBarIconWidget.html#a1f60e698b9c3897f3d3c608f43e95a9a">StatusBarIconWidget</a> (QString labeled_name, QWidget *parent=nullptr)</td></tr>
-<tr class="memdesc:a1f60e698b9c3897f3d3c608f43e95a9a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classStatusBarIconWidget.html" title="The StatusBarIconWidget class is the Icon Interfaces like widget for the icon statusbar.">StatusBarIconWidget</a> creator.  <br /></td></tr>
+<tr class="memdesc:a1f60e698b9c3897f3d3c608f43e95a9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classStatusBarIconWidget.html" title="Abstract base widget class representing an icon in the status bar.">StatusBarIconWidget</a>.  <br /></td></tr>
 <tr class="separator:a1f60e698b9c3897f3d3c608f43e95a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3863b3453730825ee4b52f03f089260b" id="r_a3863b3453730825ee4b52f03f089260b"><td class="memItemLeft" align="right" valign="top"><a id="a3863b3453730825ee4b52f03f089260b" name="a3863b3453730825ee4b52f03f089260b"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>adjustSelfHeight</b> (int height)</td></tr>
-<tr class="separator:a3863b3453730825ee4b52f03f089260b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbe463fb3a66c88281381cd1a772f57f" id="r_adbe463fb3a66c88281381cd1a772f57f"><td class="memItemLeft" align="right" valign="top"><a id="adbe463fb3a66c88281381cd1a772f57f" name="adbe463fb3a66c88281381cd1a772f57f"></a>
-QString&#160;</td><td class="memItemRight" valign="bottom"><b>labeledName</b> () const</td></tr>
+<tr class="memitem:a1ed71bffc805a6c6ba15a2f2f06fbead" id="r_a1ed71bffc805a6c6ba15a2f2f06fbead"><td class="memItemLeft" align="right" valign="top"><a id="a1ed71bffc805a6c6ba15a2f2f06fbead" name="a1ed71bffc805a6c6ba15a2f2f06fbead"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~StatusBarIconWidget</b> ()=default</td></tr>
+<tr class="memdesc:a1ed71bffc805a6c6ba15a2f2f06fbead"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the <a class="el" href="classStatusBarIconWidget.html" title="Abstract base widget class representing an icon in the status bar.">StatusBarIconWidget</a>. <br /></td></tr>
+<tr class="separator:a1ed71bffc805a6c6ba15a2f2f06fbead"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f96436b0a6cdc397bb3361d987aee40" id="r_a9f96436b0a6cdc397bb3361d987aee40"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatusBarIconWidget.html#a9f96436b0a6cdc397bb3361d987aee40">adjustSelfHeight</a> (int height)</td></tr>
+<tr class="memdesc:a9f96436b0a6cdc397bb3361d987aee40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adjusts the widget's height to a fixed value.  <br /></td></tr>
+<tr class="separator:a9f96436b0a6cdc397bb3361d987aee40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbe463fb3a66c88281381cd1a772f57f" id="r_adbe463fb3a66c88281381cd1a772f57f"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatusBarIconWidget.html#adbe463fb3a66c88281381cd1a772f57f">labeledName</a> () const</td></tr>
+<tr class="memdesc:adbe463fb3a66c88281381cd1a772f57f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the labeled name of this icon.  <br /></td></tr>
 <tr class="separator:adbe463fb3a66c88281381cd1a772f57f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6f069bbc30ba4aad6ee5d3bd4df25ae" id="r_ab6f069bbc30ba4aad6ee5d3bd4df25ae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatusBarIconWidget.html#ab6f069bbc30ba4aad6ee5d3bd4df25ae">processIconsEvent</a> (<a class="el" href="structIconEvent.html">IconEvent</a> *icons)</td></tr>
+<tr class="memdesc:ab6f069bbc30ba4aad6ee5d3bd4df25ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles an <a class="el" href="structIconEvent.html" title="Represents a custom event targeting a specific StatusBarIconWidget.">IconEvent</a>.  <br /></td></tr>
 <tr class="separator:ab6f069bbc30ba4aad6ee5d3bd4df25ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07bffe571f54c4400fcd4166862555e8" id="r_a07bffe571f54c4400fcd4166862555e8"><td class="memItemLeft" align="right" valign="top"><a id="a07bffe571f54c4400fcd4166862555e8" name="a07bffe571f54c4400fcd4166862555e8"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>iconEvents</b> (<a class="el" href="structIconEvent.html">IconEvent</a> *icons)</td></tr>
-<tr class="separator:a07bffe571f54c4400fcd4166862555e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab901260c3ec0397dc1cad9225cdb984" id="r_aab901260c3ec0397dc1cad9225cdb984"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStatusBarIconWidget.html#aab901260c3ec0397dc1cad9225cdb984">iconEvents</a> (<a class="el" href="structIconEvent.html">IconEvent</a> *icons)</td></tr>
+<tr class="memdesc:aab901260c3ec0397dc1cad9225cdb984"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual handler for icon events. Override in subclasses.  <br /></td></tr>
+<tr class="separator:aab901260c3ec0397dc1cad9225cdb984"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="classStatusBarIconWidget.html" title="The StatusBarIconWidget class is the Icon Interfaces like widget for the icon statusbar.">StatusBarIconWidget</a> class is the Icon Interfaces like widget for the icon statusbar. </p>
+<div class="textblock"><p>Abstract base widget class representing an icon in the status bar. </p>
+<p>Each <a class="el" href="classStatusBarIconWidget.html" title="Abstract base widget class representing an icon in the status bar.">StatusBarIconWidget</a> instance has a labeled name and optionally responds to <a class="el" href="structIconEvent.html" title="Represents a custom event targeting a specific StatusBarIconWidget.">IconEvent</a> instances. Subclass this for specific icons like network, battery, etc. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1f60e698b9c3897f3d3c608f43e95a9a" name="a1f60e698b9c3897f3d3c608f43e95a9a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1f60e698b9c3897f3d3c608f43e95a9a">&#9670;&#160;</a></span>StatusBarIconWidget()</h2>
@@ -173,10 +179,11 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>iconEvents</b
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="classStatusBarIconWidget.html" title="The StatusBarIconWidget class is the Icon Interfaces like widget for the icon statusbar.">StatusBarIconWidget</a> creator. </p>
+<p>Constructs a <a class="el" href="classStatusBarIconWidget.html" title="Abstract base widget class representing an icon in the status bar.">StatusBarIconWidget</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parent</td><td></td></tr>
+    <tr><td class="paramname">labeled_name</td><td>The identifier label for this icon. </td></tr>
+    <tr><td class="paramname">parent</td><td>Optional parent QWidget. </td></tr>
   </table>
   </dd>
 </dl>
@@ -184,6 +191,99 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>iconEvents</b
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9f96436b0a6cdc397bb3361d987aee40" name="a9f96436b0a6cdc397bb3361d987aee40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f96436b0a6cdc397bb3361d987aee40">&#9670;&#160;</a></span>adjustSelfHeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StatusBarIconWidget::adjustSelfHeight </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adjusts the widget's height to a fixed value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">height</td><td>Height in pixels. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="classStaticStatusBarIconWidget.html#ab073c11dbda8fe58467d204cc781ca0e">StaticStatusBarIconWidget</a>.</p>
+
+</div>
+</div>
+<a id="aab901260c3ec0397dc1cad9225cdb984" name="aab901260c3ec0397dc1cad9225cdb984"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab901260c3ec0397dc1cad9225cdb984">&#9670;&#160;</a></span>iconEvents()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool StatusBarIconWidget::iconEvents </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structIconEvent.html">IconEvent</a> *&#160;</td>
+          <td class="paramname"><em>icons</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Virtual handler for icon events. Override in subclasses. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">icons</td><td>The <a class="el" href="structIconEvent.html" title="Represents a custom event targeting a specific StatusBarIconWidget.">IconEvent</a> to process. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if handled; false to ignore. </dd></dl>
+
+<p>Reimplemented in <a class="el" href="classNetStatusStatusBarIconWidget.html#ade0f47edcc0020caad9b9886c83501b2">NetStatusStatusBarIconWidget</a>.</p>
+
+</div>
+</div>
+<a id="adbe463fb3a66c88281381cd1a772f57f" name="adbe463fb3a66c88281381cd1a772f57f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbe463fb3a66c88281381cd1a772f57f">&#9670;&#160;</a></span>labeledName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString StatusBarIconWidget::labeledName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the labeled name of this icon. </p>
+<dl class="section return"><dt>Returns</dt><dd>The label as a QString. </dd></dl>
+
+</div>
+</div>
 <a id="ab6f069bbc30ba4aad6ee5d3bd4df25ae" name="ab6f069bbc30ba4aad6ee5d3bd4df25ae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab6f069bbc30ba4aad6ee5d3bd4df25ae">&#9670;&#160;</a></span>processIconsEvent()</h2>
 
@@ -199,6 +299,15 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>iconEvents</b
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Handles an <a class="el" href="structIconEvent.html" title="Represents a custom event targeting a specific StatusBarIconWidget.">IconEvent</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">icons</td><td>The <a class="el" href="structIconEvent.html" title="Represents a custom event targeting a specific StatusBarIconWidget.">IconEvent</a> to process. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the event was processed, false otherwise. </dd></dl>
 <p>&lt; don't matching these</p>
 <p>&lt; means the object ignores the sessions</p>
 

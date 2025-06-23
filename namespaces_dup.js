@@ -11,7 +11,6 @@ var namespaces_dup =
       [ "evalute_expression", "namespaceExpressionEvaluator.html#a020740b3fa8807221f6955d336d18311", null ]
     ] ],
     [ "FontFormater", "namespaceFontFormater.html", null ],
-    [ "for", "namespacefor.html", null ],
     [ "HistCreator", "namespaceHistCreator.html", [
       [ "filled_hist", "namespaceHistCreator.html#a59d66f2c584048122c7ee66c3344bbe6", null ]
     ] ],
@@ -39,6 +38,7 @@ var namespaces_dup =
     ] ],
     [ "SideBarWidgetStaticConfig", "namespaceSideBarWidgetStaticConfig.html", null ],
     [ "SimpleTools", "namespaceSimpleTools.html", "namespaceSimpleTools" ],
+    [ "TopStatusBar_LabelName", "namespaceTopStatusBar__LabelName.html", null ],
     [ "UiTools", "namespaceUiTools.html", [
       [ "addWidgetToGridTail", "namespaceUiTools.html#a9f60353610b781acba2a6f6040aaeaf5", null ],
       [ "downcast_to_sliderable_period", "namespaceUiTools.html#a999dd6eb96eca168befed930c63f5d6f", null ],

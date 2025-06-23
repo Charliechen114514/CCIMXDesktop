@@ -47,7 +47,7 @@ var searchData=
   ['getrequestflushinterval_44',['getRequestFlushInterval',['../classFlushRequester.html#a2d1aabd696a8e718d67d7ac5bb67715e',1,'FlushRequester']]],
   ['getsize_45',['getsize',['../classBirdObsticals.html#a9874eda32e3f540afd6b3b00b2eb24db',1,'BirdObsticals::getSize()'],['../classCactusObsticals.html#a0f9df5d547b2ec1a86d90a0372c26e54',1,'CactusObsticals::getSize()']]],
   ['getwallpaper_5fswitch_5ftime_46',['getWallpaper_switch_time',['../classSequenciedSettingsWidget.html#a8741686f708adb2534d0cdb230d5e930',1,'SequenciedSettingsWidget']]],
-  ['globalclocksources_47',['GlobalClockSources',['../classGlobalClockSources.html',1,'']]],
+  ['globalclocksources_47',['globalclocksources',['../classGlobalClockSources.html',1,'GlobalClockSources'],['../classGlobalClockSources.html#a7d17a2da74e433a8fc2f5d0da1093fc6',1,'GlobalClockSources::GlobalClockSources()']]],
   ['gradient_48',['Gradient',['../classWallPaperEngine.html#a9b95acff5a7e40cf01b799c2b30995d1a5e59525cb7d1d1cd93be0b9f36e9d09a',1,'WallPaperEngine']]],
   ['grayexample_49',['grayexample',['../classGrayExample.html#a95121c0c58587142fd9beb5466f33cd5',1,'GrayExample::GrayExample()'],['../classGrayExample.html',1,'GrayExample']]],
   ['grayimage_50',['grayImage',['../namespaceOpenCV__ProcessAdapter.html#a57509412f2c7d6bc48e3a1d51ebdcaa8',1,'OpenCV_ProcessAdapter']]],

@@ -107,25 +107,28 @@ $(document).ready(function(){initNavTree('StaticStatusBarIconWidget_8h_source.ht
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">class </span><a class="code hl_class" href="classStaticStatusBarIconWidget.html">StaticStatusBarIconWidget</a>;</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>}</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="classStaticStatusBarIconWidget.html">   10</a></span><span class="keyword">class </span><a class="code hl_class" href="classStaticStatusBarIconWidget.html">StaticStatusBarIconWidget</a> : <span class="keyword">public</span> <a class="code hl_class" href="classStatusBarIconWidget.html">StatusBarIconWidget</a> {</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    Q_OBJECT</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classStaticStatusBarIconWidget.html">StaticStatusBarIconWidget</a>(QString name, QWidget* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <a class="code hl_class" href="classStaticStatusBarIconWidget.html">~StaticStatusBarIconWidget</a>();</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    QPixmap icon();</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordtype">void</span> setIcon(<span class="keyword">const</span> QPixmap&amp; map);</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">void</span> adjustSelfHeight(<span class="keywordtype">int</span> height) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    Ui::StaticStatusBarIconWidget* ui;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>};</div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="};">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="classStaticStatusBarIconWidget.html">   15</a></span><span class="keyword">class </span><a class="code hl_class" href="classStaticStatusBarIconWidget.html">StaticStatusBarIconWidget</a> : <span class="keyword">public</span> <a class="code hl_class" href="classStatusBarIconWidget.html">StatusBarIconWidget</a> {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    Q_OBJECT</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classStaticStatusBarIconWidget.html">StaticStatusBarIconWidget</a>(QString name, QWidget* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <a class="code hl_class" href="classStaticStatusBarIconWidget.html">~StaticStatusBarIconWidget</a>();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    QPixmap <a class="code hl_function" href="classStaticStatusBarIconWidget.html#aaa792a382676a9eba5fccd820de571c3">icon</a>();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classStaticStatusBarIconWidget.html#a676014208280788506a98778bf57401e">setIcon</a>(<span class="keyword">const</span> QPixmap&amp; map);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classStaticStatusBarIconWidget.html#ab073c11dbda8fe58467d204cc781ca0e">adjustSelfHeight</a>(<span class="keywordtype">int</span> height) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    Ui::StaticStatusBarIconWidget* ui;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>};</div>
 </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#endif </span><span class="comment">// STATICSTATUSBARICONWIDGET_H</span></div>
-<div class="ttc" id="aclassStaticStatusBarIconWidget_html"><div class="ttname"><a href="classStaticStatusBarIconWidget.html">StaticStatusBarIconWidget</a></div><div class="ttdef"><b>Definition</b> StaticStatusBarIconWidget.h:10</div></div>
-<div class="ttc" id="aclassStatusBarIconWidget_html"><div class="ttname"><a href="classStatusBarIconWidget.html">StatusBarIconWidget</a></div><div class="ttdoc">The StatusBarIconWidget class is the Icon Interfaces like widget for the icon statusbar.</div><div class="ttdef"><b>Definition</b> StatusBarIconWidget.h:22</div></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#endif </span><span class="comment">// STATICSTATUSBARICONWIDGET_H</span></div>
+<div class="ttc" id="aclassStaticStatusBarIconWidget_html"><div class="ttname"><a href="classStaticStatusBarIconWidget.html">StaticStatusBarIconWidget</a></div><div class="ttdoc">the static sessions widgets, using in display statically</div><div class="ttdef"><b>Definition</b> StaticStatusBarIconWidget.h:15</div></div>
+<div class="ttc" id="aclassStaticStatusBarIconWidget_html_a676014208280788506a98778bf57401e"><div class="ttname"><a href="classStaticStatusBarIconWidget.html#a676014208280788506a98778bf57401e">StaticStatusBarIconWidget::setIcon</a></div><div class="ttdeci">void setIcon(const QPixmap &amp;map)</div><div class="ttdoc">Set the Icon object.</div><div class="ttdef"><b>Definition</b> StaticStatusBarIconWidget.cpp:18</div></div>
+<div class="ttc" id="aclassStaticStatusBarIconWidget_html_aaa792a382676a9eba5fccd820de571c3"><div class="ttname"><a href="classStaticStatusBarIconWidget.html#aaa792a382676a9eba5fccd820de571c3">StaticStatusBarIconWidget::icon</a></div><div class="ttdeci">QPixmap icon()</div><div class="ttdoc">get the icons</div><div class="ttdef"><b>Definition</b> StaticStatusBarIconWidget.cpp:14</div></div>
+<div class="ttc" id="aclassStaticStatusBarIconWidget_html_ab073c11dbda8fe58467d204cc781ca0e"><div class="ttname"><a href="classStaticStatusBarIconWidget.html#ab073c11dbda8fe58467d204cc781ca0e">StaticStatusBarIconWidget::adjustSelfHeight</a></div><div class="ttdeci">void adjustSelfHeight(int height) override</div><div class="ttdoc">adjust the icons size</div><div class="ttdef"><b>Definition</b> StaticStatusBarIconWidget.cpp:22</div></div>
+<div class="ttc" id="aclassStatusBarIconWidget_html"><div class="ttname"><a href="classStatusBarIconWidget.html">StatusBarIconWidget</a></div><div class="ttdoc">Abstract base widget class representing an icon in the status bar.</div><div class="ttdef"><b>Definition</b> StatusBarIconWidget.h:47</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

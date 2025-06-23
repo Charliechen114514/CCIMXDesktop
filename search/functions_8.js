@@ -7,7 +7,10 @@ var searchData=
   ['handlegestureevent_4',['handleGestureEvent',['../classCCPdfScrollArea.html#a688d7e77f99d63bbab5ca7ba24a5d452',1,'CCPdfScrollArea']]],
   ['handletype_5',['handleType',['../classBlurProcessor.html#a8e237a8b492a86872c426ac55ce0e403',1,'BlurProcessor']]],
   ['headerdata_6',['headerData',['../classCCIMXFileSystemModel.html#aeceaa8e6c1e18cb36f20211176b60096',1,'CCIMXFileSystemModel']]],
-  ['hidesidebar_7',['hidesidebar',['../classSideBarWidget.html#a8095035fb628e68ba40c6c66ee009594',1,'SideBarWidget::hideSideBar()'],['../classSideBarWidget.html#a8095035fb628e68ba40c6c66ee009594',1,'SideBarWidget::hideSideBar()'],['../classSideBarWidget.html#a8095035fb628e68ba40c6c66ee009594',1,'SideBarWidget::hideSideBar()']]],
-  ['histdrawer_8',['HistDrawer',['../classHistDrawer.html#acac240110b587e7b3884c4a3bd7c098d',1,'HistDrawer']]],
-  ['homepage_9',['HomePage',['../classHomePage.html#a019fab66c80b3c809faafce5f3416b63',1,'HomePage']]]
+  ['height_7',['height',['../classTopSideBarWidget.html#ac1a73674388bf526457b235891a2cad3',1,'TopSideBarWidget']]],
+  ['height_5fmax_8',['height_max',['../classTopSideBarWidget.html#aa131953e642a1b928a282a2b95c97068',1,'TopSideBarWidget']]],
+  ['height_5fmin_9',['height_min',['../classTopSideBarWidget.html#a3ebb3fc914261bb4fc5f30238caea381',1,'TopSideBarWidget']]],
+  ['hidesidebar_10',['hidesidebar',['../classSideBarWidget.html#a8095035fb628e68ba40c6c66ee009594',1,'SideBarWidget::hideSideBar()'],['../classSideBarWidget.html#a8095035fb628e68ba40c6c66ee009594',1,'SideBarWidget::hideSideBar()'],['../classSideBarWidget.html#a8095035fb628e68ba40c6c66ee009594',1,'SideBarWidget::hideSideBar()']]],
+  ['histdrawer_11',['HistDrawer',['../classHistDrawer.html#acac240110b587e7b3884c4a3bd7c098d',1,'HistDrawer']]],
+  ['homepage_12',['HomePage',['../classHomePage.html#a019fab66c80b3c809faafce5f3416b63',1,'HomePage']]]
 ];

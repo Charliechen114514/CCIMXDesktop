@@ -100,25 +100,37 @@ $(document).ready(function(){initNavTree('LabelStyler_8h_source.html',''); initR
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef LABEL_STYLER</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define LABEL_STYLER</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">class </span>QLabel;</div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">class </span>QColor;</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">class </span>QFont;</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="foldopen" id="foldopen00007" data-start="{" data-end="};">
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="classLabelStyler.html">    7</a></span><span class="keyword">class </span><a class="code hl_class" href="classLabelStyler.html">LabelStyler</a> {</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    QLabel* label = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keywordtype">void</span> setFontSize(<span class="keywordtype">int</span> pointSize);</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keywordtype">void</span> setFont(<span class="keyword">const</span> QFont&amp; font);</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keywordtype">void</span> setTextColor(<span class="keyword">const</span> QColor&amp; color);</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keywordtype">void</span> setLabel(QLabel* lbl) {</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        label = lbl;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    }</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>};</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">class </span>QLabel;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">class </span>QColor;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">class </span>QFont;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classLabelStyler.html">   19</a></span><span class="keyword">class </span><a class="code hl_class" href="classLabelStyler.html">LabelStyler</a> {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classLabelStyler.html#a97ac6d1821d92f2f446d2cfaaabcef6b">   24</a></span>    QLabel* <a class="code hl_variable" href="classLabelStyler.html#a97ac6d1821d92f2f446d2cfaaabcef6b">label</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classLabelStyler.html#a5f3d94e3d8f7900c60acbfe702f5a2b2">setFontSize</a>(<span class="keywordtype">int</span> pointSize);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classLabelStyler.html#ade1b6f7e234f57e33de9f30ea6f8547c">setFont</a>(<span class="keyword">const</span> QFont&amp; font);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classLabelStyler.html#ae9812d07faa8b624426dec3c63b98ca0">setTextColor</a>(<span class="keyword">const</span> QColor&amp; color);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="foldopen" id="foldopen00048" data-start="{" data-end="}">
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classLabelStyler.html#a672b3833794e15687687abc63deb9853">   48</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classLabelStyler.html#a672b3833794e15687687abc63deb9853">setLabel</a>(QLabel* lbl) {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <a class="code hl_variable" href="classLabelStyler.html#a97ac6d1821d92f2f446d2cfaaabcef6b">label</a> = lbl;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
 </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassLabelStyler_html"><div class="ttname"><a href="classLabelStyler.html">LabelStyler</a></div><div class="ttdef"><b>Definition</b> LabelStyler.h:7</div></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>};</div>
+</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#endif </span><span class="comment">// LABEL_STYLER</span></div>
+<div class="ttc" id="aclassLabelStyler_html"><div class="ttname"><a href="classLabelStyler.html">LabelStyler</a></div><div class="ttdoc">Provides utility methods to style a QLabel.</div><div class="ttdef"><b>Definition</b> LabelStyler.h:19</div></div>
+<div class="ttc" id="aclassLabelStyler_html_a5f3d94e3d8f7900c60acbfe702f5a2b2"><div class="ttname"><a href="classLabelStyler.html#a5f3d94e3d8f7900c60acbfe702f5a2b2">LabelStyler::setFontSize</a></div><div class="ttdeci">void setFontSize(int pointSize)</div><div class="ttdoc">Sets the font size of the label.</div><div class="ttdef"><b>Definition</b> LabelStyler.cpp:5</div></div>
+<div class="ttc" id="aclassLabelStyler_html_a672b3833794e15687687abc63deb9853"><div class="ttname"><a href="classLabelStyler.html#a672b3833794e15687687abc63deb9853">LabelStyler::setLabel</a></div><div class="ttdeci">void setLabel(QLabel *lbl)</div><div class="ttdoc">Assigns the label to be styled.</div><div class="ttdef"><b>Definition</b> LabelStyler.h:48</div></div>
+<div class="ttc" id="aclassLabelStyler_html_a97ac6d1821d92f2f446d2cfaaabcef6b"><div class="ttname"><a href="classLabelStyler.html#a97ac6d1821d92f2f446d2cfaaabcef6b">LabelStyler::label</a></div><div class="ttdeci">QLabel * label</div><div class="ttdoc">Pointer to the QLabel to style.</div><div class="ttdef"><b>Definition</b> LabelStyler.h:24</div></div>
+<div class="ttc" id="aclassLabelStyler_html_ade1b6f7e234f57e33de9f30ea6f8547c"><div class="ttname"><a href="classLabelStyler.html#ade1b6f7e234f57e33de9f30ea6f8547c">LabelStyler::setFont</a></div><div class="ttdeci">void setFont(const QFont &amp;font)</div><div class="ttdoc">Sets the font of the label.</div><div class="ttdef"><b>Definition</b> LabelStyler.cpp:11</div></div>
+<div class="ttc" id="aclassLabelStyler_html_ae9812d07faa8b624426dec3c63b98ca0"><div class="ttname"><a href="classLabelStyler.html#ae9812d07faa8b624426dec3c63b98ca0">LabelStyler::setTextColor</a></div><div class="ttdeci">void setTextColor(const QColor &amp;color)</div><div class="ttdoc">Sets the text color of the label.</div><div class="ttdef"><b>Definition</b> LabelStyler.cpp:15</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

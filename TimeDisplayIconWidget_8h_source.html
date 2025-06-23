@@ -104,30 +104,38 @@ $(document).ready(function(){initNavTree('TimeDisplayIconWidget_8h_source.html',
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;../StatusBarIconWidget.h&quot;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;QTime&gt;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;QWidget&gt;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span>Ui {</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">class </span><a class="code hl_class" href="classTimeDisplayIconWidget.html">TimeDisplayIconWidget</a>;</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>}</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">class </span>QLabel;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span>Ui {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">class </span><a class="code hl_class" href="classTimeDisplayIconWidget.html">TimeDisplayIconWidget</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>}</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="foldopen" id="foldopen00012" data-start="{" data-end="};">
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="classTimeDisplayIconWidget.html">   12</a></span><span class="keyword">class </span><a class="code hl_class" href="classTimeDisplayIconWidget.html">TimeDisplayIconWidget</a> : <span class="keyword">public</span> <a class="code hl_class" href="classStatusBarIconWidget.html">StatusBarIconWidget</a> {</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    Q_OBJECT</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classTimeDisplayIconWidget.html">TimeDisplayIconWidget</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <a class="code hl_class" href="classTimeDisplayIconWidget.html">~TimeDisplayIconWidget</a>();</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    QLabel* displayedLabel() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">public</span> slots:</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">void</span> update_displayTime(QTime time);</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">class </span>QLabel;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classTimeDisplayIconWidget.html">   19</a></span><span class="keyword">class </span><a class="code hl_class" href="classTimeDisplayIconWidget.html">TimeDisplayIconWidget</a> : <span class="keyword">public</span> <a class="code hl_class" href="classStatusBarIconWidget.html">StatusBarIconWidget</a> {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    Q_OBJECT</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    Ui::TimeDisplayIconWidget* ui;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>};</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classTimeDisplayIconWidget.html">TimeDisplayIconWidget</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_function" href="classTimeDisplayIconWidget.html#a9320ac924c3189d6b6a3a8e76232dd94">~TimeDisplayIconWidget</a>();</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    QLabel* <a class="code hl_function" href="classTimeDisplayIconWidget.html#ab39b617bfa4d7b9d5b65b4d8ce265f60">displayedLabel</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">public</span> slots:</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classTimeDisplayIconWidget.html#a547db84ba048a9f25f75182da6545b24">update_displayTime</a>(QTime time);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    Ui::TimeDisplayIconWidget* ui;  </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>};</div>
 </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#endif </span><span class="comment">// TIMEDISPLAYICONWIDGET_H</span></div>
-<div class="ttc" id="aclassStatusBarIconWidget_html"><div class="ttname"><a href="classStatusBarIconWidget.html">StatusBarIconWidget</a></div><div class="ttdoc">The StatusBarIconWidget class is the Icon Interfaces like widget for the icon statusbar.</div><div class="ttdef"><b>Definition</b> StatusBarIconWidget.h:22</div></div>
-<div class="ttc" id="aclassTimeDisplayIconWidget_html"><div class="ttname"><a href="classTimeDisplayIconWidget.html">TimeDisplayIconWidget</a></div><div class="ttdef"><b>Definition</b> TimeDisplayIconWidget.h:12</div></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#endif </span><span class="comment">// TIMEDISPLAYICONWIDGET_H</span></div>
+<div class="ttc" id="aclassStatusBarIconWidget_html"><div class="ttname"><a href="classStatusBarIconWidget.html">StatusBarIconWidget</a></div><div class="ttdoc">Abstract base widget class representing an icon in the status bar.</div><div class="ttdef"><b>Definition</b> StatusBarIconWidget.h:47</div></div>
+<div class="ttc" id="aclassTimeDisplayIconWidget_html"><div class="ttname"><a href="classTimeDisplayIconWidget.html">TimeDisplayIconWidget</a></div><div class="ttdoc">Widget for displaying time in the status bar.</div><div class="ttdef"><b>Definition</b> TimeDisplayIconWidget.h:19</div></div>
+<div class="ttc" id="aclassTimeDisplayIconWidget_html_a547db84ba048a9f25f75182da6545b24"><div class="ttname"><a href="classTimeDisplayIconWidget.html#a547db84ba048a9f25f75182da6545b24">TimeDisplayIconWidget::update_displayTime</a></div><div class="ttdeci">void update_displayTime(QTime time)</div><div class="ttdoc">Updates the displayed time.</div><div class="ttdef"><b>Definition</b> TimeDisplayIconWidget.cpp:18</div></div>
+<div class="ttc" id="aclassTimeDisplayIconWidget_html_a9320ac924c3189d6b6a3a8e76232dd94"><div class="ttname"><a href="classTimeDisplayIconWidget.html#a9320ac924c3189d6b6a3a8e76232dd94">TimeDisplayIconWidget::~TimeDisplayIconWidget</a></div><div class="ttdeci">~TimeDisplayIconWidget()</div><div class="ttdoc">Destroys the time display widget.</div><div class="ttdef"><b>Definition</b> TimeDisplayIconWidget.cpp:10</div></div>
+<div class="ttc" id="aclassTimeDisplayIconWidget_html_ab39b617bfa4d7b9d5b65b4d8ce265f60"><div class="ttname"><a href="classTimeDisplayIconWidget.html#ab39b617bfa4d7b9d5b65b4d8ce265f60">TimeDisplayIconWidget::displayedLabel</a></div><div class="ttdeci">QLabel * displayedLabel() const</div><div class="ttdoc">Gets the label used for time display.</div><div class="ttdef"><b>Definition</b> TimeDisplayIconWidget.cpp:14</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

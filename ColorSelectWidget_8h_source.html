@@ -101,33 +101,40 @@ $(document).ready(function(){initNavTree('ColorSelectWidget_8h_source.html','');
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef COLORSELECTWIDGET_H</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define COLORSELECTWIDGET_H</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;QWidget&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span>Ui {</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">class </span><a class="code hl_class" href="classColorSelectWidget.html">ColorSelectWidget</a>;</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>}</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="classColorSelectWidget.html">   10</a></span><span class="keyword">class </span><a class="code hl_class" href="classColorSelectWidget.html">ColorSelectWidget</a> : <span class="keyword">public</span> QWidget {</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    Q_OBJECT</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classColorSelectWidget.html">ColorSelectWidget</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <a class="code hl_class" href="classColorSelectWidget.html">~ColorSelectWidget</a>();</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>signals:</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordtype">void</span> colorSelected(<span class="keyword">const</span> QColor&amp; color);</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;QWidget&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;QColor&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">namespace </span>Ui {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">class </span><a class="code hl_class" href="classColorSelectWidget.html">ColorSelectWidget</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>}</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">void</span> processSelectedColor(<span class="keyword">const</span> QColor&amp; color);</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    Ui::ColorSelectWidget* ui;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    QColor selectedColor;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>};</div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classColorSelectWidget.html">   25</a></span><span class="keyword">class </span><a class="code hl_class" href="classColorSelectWidget.html">ColorSelectWidget</a> : <span class="keyword">public</span> QWidget {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    Q_OBJECT</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classColorSelectWidget.html">ColorSelectWidget</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <a class="code hl_function" href="classColorSelectWidget.html#a4b90bc8b3821b52526275518d7edd1dc">~ColorSelectWidget</a>();</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>signals:</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classColorSelectWidget.html#a3262b0c7559ccc0d0f70d7d5d5107d71">   45</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classColorSelectWidget.html#a3262b0c7559ccc0d0f70d7d5d5107d71">colorSelected</a>(<span class="keyword">const</span> QColor&amp; color);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classColorSelectWidget.html#a398368b23ef8bebaa5c86061fce357b5">processSelectedColor</a>(<span class="keyword">const</span> QColor&amp; color);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    Ui::ColorSelectWidget* ui;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    QColor selectedColor;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>};</div>
 </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#endif </span><span class="comment">// COLORSELECTWIDGET_H</span></div>
-<div class="ttc" id="aclassColorSelectWidget_html"><div class="ttname"><a href="classColorSelectWidget.html">ColorSelectWidget</a></div><div class="ttdef"><b>Definition</b> ColorSelectWidget.h:10</div></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#endif </span><span class="comment">// COLORSELECTWIDGET_H</span></div>
+<div class="ttc" id="aclassColorSelectWidget_html"><div class="ttname"><a href="classColorSelectWidget.html">ColorSelectWidget</a></div><div class="ttdoc">A widget that allows users to select a color.</div><div class="ttdef"><b>Definition</b> ColorSelectWidget.h:25</div></div>
+<div class="ttc" id="aclassColorSelectWidget_html_a3262b0c7559ccc0d0f70d7d5d5107d71"><div class="ttname"><a href="classColorSelectWidget.html#a3262b0c7559ccc0d0f70d7d5d5107d71">ColorSelectWidget::colorSelected</a></div><div class="ttdeci">void colorSelected(const QColor &amp;color)</div><div class="ttdoc">Emitted when the user selects a color.</div></div>
+<div class="ttc" id="aclassColorSelectWidget_html_a398368b23ef8bebaa5c86061fce357b5"><div class="ttname"><a href="classColorSelectWidget.html#a398368b23ef8bebaa5c86061fce357b5">ColorSelectWidget::processSelectedColor</a></div><div class="ttdeci">void processSelectedColor(const QColor &amp;color)</div><div class="ttdoc">Processes the selected color internally.</div><div class="ttdef"><b>Definition</b> ColorSelectWidget.cpp:24</div></div>
+<div class="ttc" id="aclassColorSelectWidget_html_a4b90bc8b3821b52526275518d7edd1dc"><div class="ttname"><a href="classColorSelectWidget.html#a4b90bc8b3821b52526275518d7edd1dc">ColorSelectWidget::~ColorSelectWidget</a></div><div class="ttdeci">~ColorSelectWidget()</div><div class="ttdoc">Destructor.</div><div class="ttdef"><b>Definition</b> ColorSelectWidget.cpp:20</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

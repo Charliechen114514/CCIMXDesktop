@@ -11,11 +11,12 @@ var searchData=
   ['start_8',['start',['../structAppWeatherDetailedRequest.html#aea957e389a8c916be928a45ee192cbc9',1,'AppWeatherDetailedRequest']]],
   ['start_5fangle_9',['START_ANGLE',['../classGaugeWidget.html#a99d142e2cd02e445962fdaa1007fc849',1,'GaugeWidget']]],
   ['start_5fcolor_10',['START_COLOR',['../classGaugeWidget.html#a0fb785ba1093f3e7076d5fe4b791abc9',1,'GaugeWidget']]],
-  ['step_5fshort_11',['STEP_SHORT',['../classScrollingLabel.html#a5312f2d183407cfb37ccfa160c739366',1,'ScrollingLabel']]],
-  ['sub_5fmain_5frate_12',['SUB_MAIN_RATE',['../classGaugeWidget.html#a40f42cfa9170d525b1e4b4f8c065db5c',1,'GaugeWidget']]],
-  ['sub_5ftick_5flength_13',['SUB_TICK_LENGTH',['../classGaugeWidget.html#a51a6dc4916bb8aa3fe7069505d007869',1,'GaugeWidget']]],
-  ['sub_5ftick_5fwidth_14',['SUB_TICK_WIDTH',['../classGaugeWidget.html#a0625d59a9f6b07222eb88e1ff7997e79',1,'GaugeWidget']]],
-  ['subject_15',['subject',['../structCCPdfMetaInfo.html#a6432628cd10311d15f38f6c8dee7031d',1,'CCPdfMetaInfo']]],
-  ['switch_5finterval_16',['switch_interval',['../structFlowTypeTypeWallPaperSettings.html#ad866f6e5b6cb9fc0ed8d2ee12b0febcf',1,'FlowTypeTypeWallPaperSettings']]],
-  ['sz_5fsize_5ftype_5fmax_17',['SZ_SIZE_TYPE_MAX',['../classBirdObsticals.html#a4734aaf039acd43be43b2518439b14b2',1,'BirdObsticals']]]
+  ['status_11',['status',['../structNetStatusChangedEvent.html#a66a1837da355ad9b023e9b8b6e9415fe',1,'NetStatusChangedEvent']]],
+  ['step_5fshort_12',['STEP_SHORT',['../classScrollingLabel.html#a5312f2d183407cfb37ccfa160c739366',1,'ScrollingLabel']]],
+  ['sub_5fmain_5frate_13',['SUB_MAIN_RATE',['../classGaugeWidget.html#a40f42cfa9170d525b1e4b4f8c065db5c',1,'GaugeWidget']]],
+  ['sub_5ftick_5flength_14',['SUB_TICK_LENGTH',['../classGaugeWidget.html#a51a6dc4916bb8aa3fe7069505d007869',1,'GaugeWidget']]],
+  ['sub_5ftick_5fwidth_15',['SUB_TICK_WIDTH',['../classGaugeWidget.html#a0625d59a9f6b07222eb88e1ff7997e79',1,'GaugeWidget']]],
+  ['subject_16',['subject',['../structCCPdfMetaInfo.html#a6432628cd10311d15f38f6c8dee7031d',1,'CCPdfMetaInfo']]],
+  ['switch_5finterval_17',['switch_interval',['../structFlowTypeTypeWallPaperSettings.html#ad866f6e5b6cb9fc0ed8d2ee12b0febcf',1,'FlowTypeTypeWallPaperSettings']]],
+  ['sz_5fsize_5ftype_5fmax_18',['SZ_SIZE_TYPE_MAX',['../classBirdObsticals.html#a4734aaf039acd43be43b2518439b14b2',1,'BirdObsticals']]]
 ];

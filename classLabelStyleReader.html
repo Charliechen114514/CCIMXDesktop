@@ -101,19 +101,133 @@ $(document).ready(function(){initNavTree('classLabelStyleReader.html',''); initR
   <div class="headertitle"><div class="title">LabelStyleReader Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Provides static methods to read style information from QLabel widgets.  
+ <a href="classLabelStyleReader.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="LabelStyleReader_8h_source.html">LabelStyleReader.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a6d45f1406b85b83f496413909a1ba597" id="r_a6d45f1406b85b83f496413909a1ba597"><td class="memItemLeft" align="right" valign="top"><a id="a6d45f1406b85b83f496413909a1ba597" name="a6d45f1406b85b83f496413909a1ba597"></a>
-static QFont&#160;</td><td class="memItemRight" valign="bottom"><b>font</b> (const QLabel *label)</td></tr>
+<tr class="memitem:a6d45f1406b85b83f496413909a1ba597" id="r_a6d45f1406b85b83f496413909a1ba597"><td class="memItemLeft" align="right" valign="top">static QFont&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLabelStyleReader.html#a6d45f1406b85b83f496413909a1ba597">font</a> (const QLabel *label)</td></tr>
+<tr class="memdesc:a6d45f1406b85b83f496413909a1ba597"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the font used in the label.  <br /></td></tr>
 <tr class="separator:a6d45f1406b85b83f496413909a1ba597"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ff0b962603866ae28f0b2ed8d3007c0" id="r_a8ff0b962603866ae28f0b2ed8d3007c0"><td class="memItemLeft" align="right" valign="top"><a id="a8ff0b962603866ae28f0b2ed8d3007c0" name="a8ff0b962603866ae28f0b2ed8d3007c0"></a>
-static int&#160;</td><td class="memItemRight" valign="bottom"><b>fontSize</b> (const QLabel *label)</td></tr>
+<tr class="memitem:a8ff0b962603866ae28f0b2ed8d3007c0" id="r_a8ff0b962603866ae28f0b2ed8d3007c0"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLabelStyleReader.html#a8ff0b962603866ae28f0b2ed8d3007c0">fontSize</a> (const QLabel *label)</td></tr>
+<tr class="memdesc:a8ff0b962603866ae28f0b2ed8d3007c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the font size of the label in points.  <br /></td></tr>
 <tr class="separator:a8ff0b962603866ae28f0b2ed8d3007c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cacc6d89e511523fd0188e7f5ec390b" id="r_a8cacc6d89e511523fd0188e7f5ec390b"><td class="memItemLeft" align="right" valign="top"><a id="a8cacc6d89e511523fd0188e7f5ec390b" name="a8cacc6d89e511523fd0188e7f5ec390b"></a>
-static QColor&#160;</td><td class="memItemRight" valign="bottom"><b>textColor</b> (const QLabel *label)</td></tr>
+<tr class="memitem:a8cacc6d89e511523fd0188e7f5ec390b" id="r_a8cacc6d89e511523fd0188e7f5ec390b"><td class="memItemLeft" align="right" valign="top">static QColor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLabelStyleReader.html#a8cacc6d89e511523fd0188e7f5ec390b">textColor</a> (const QLabel *label)</td></tr>
+<tr class="memdesc:a8cacc6d89e511523fd0188e7f5ec390b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the text color of the label.  <br /></td></tr>
 <tr class="separator:a8cacc6d89e511523fd0188e7f5ec390b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Provides static methods to read style information from QLabel widgets. </p>
+<p>This includes reading font, font size, and text color from a QLabel. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6d45f1406b85b83f496413909a1ba597" name="a6d45f1406b85b83f496413909a1ba597"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d45f1406b85b83f496413909a1ba597">&#9670;&#160;</a></span>font()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QFont LabelStyleReader::font </td>
+          <td>(</td>
+          <td class="paramtype">const QLabel *&#160;</td>
+          <td class="paramname"><em>label</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the font used in the label. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">label</td><td>Pointer to the QLabel. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The QFont applied to the label. </dd></dl>
+
+</div>
+</div>
+<a id="a8ff0b962603866ae28f0b2ed8d3007c0" name="a8ff0b962603866ae28f0b2ed8d3007c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ff0b962603866ae28f0b2ed8d3007c0">&#9670;&#160;</a></span>fontSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int LabelStyleReader::fontSize </td>
+          <td>(</td>
+          <td class="paramtype">const QLabel *&#160;</td>
+          <td class="paramname"><em>label</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the font size of the label in points. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">label</td><td>Pointer to the QLabel. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Font size in points. </dd></dl>
+
+</div>
+</div>
+<a id="a8cacc6d89e511523fd0188e7f5ec390b" name="a8cacc6d89e511523fd0188e7f5ec390b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cacc6d89e511523fd0188e7f5ec390b">&#9670;&#160;</a></span>textColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QColor LabelStyleReader::textColor </td>
+          <td>(</td>
+          <td class="paramtype">const QLabel *&#160;</td>
+          <td class="paramname"><em>label</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the text color of the label. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">label</td><td>Pointer to the QLabel. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The QColor used for the label's text. </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>core/labelStyler/<a class="el" href="LabelStyleReader_8h_source.html">LabelStyleReader.h</a></li>
 <li>core/labelStyler/<b>LabelStyleReader.cpp</b></li>

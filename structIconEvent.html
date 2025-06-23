@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CCIMXDesktop: IconEvent Struct Reference</title>
+<title>CCIMXDesktop: IconEvent Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -99,11 +99,11 @@ $(document).ready(function(){initNavTree('structIconEvent.html',''); initResizab
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structIconEvent-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">IconEvent Struct Reference</div></div>
+  <div class="headertitle"><div class="title">IconEvent Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>The <a class="el" href="structIconEvent.html" title="The IconEvent class.">IconEvent</a> class.  
+<p>Represents a custom event targeting a specific <a class="el" href="classStatusBarIconWidget.html" title="Abstract base widget class representing an icon in the status bar.">StatusBarIconWidget</a>.  
  <a href="structIconEvent.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="StatusBarIconWidget_8h_source.html">StatusBarIconWidget.h</a>&gt;</code></p>
@@ -113,26 +113,79 @@ Inheritance diagram for IconEvent:</div>
  <div class="center">
   <img src="structIconEvent.png" usemap="#IconEvent_map" alt=""/>
   <map id="IconEvent_map" name="IconEvent_map">
-<area href="structNetStatusChangedEvent.html" alt="NetStatusChangedEvent" shape="rect" coords="0,112,148,136"/>
+<area href="structNetStatusChangedEvent.html" title="Event representing network status changes." alt="NetStatusChangedEvent" shape="rect" coords="0,112,148,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1d2eb8a4736e31f6522cadfa22f742f3" id="r_a1d2eb8a4736e31f6522cadfa22f742f3"><td class="memItemLeft" align="right" valign="top"><a id="a1d2eb8a4736e31f6522cadfa22f742f3" name="a1d2eb8a4736e31f6522cadfa22f742f3"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>IconEvent</b> (<a class="el" href="classStatusBarIconWidget.html">StatusBarIconWidget</a> *target, QObject *parent)</td></tr>
+<tr class="memitem:a1d2eb8a4736e31f6522cadfa22f742f3" id="r_a1d2eb8a4736e31f6522cadfa22f742f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIconEvent.html#a1d2eb8a4736e31f6522cadfa22f742f3">IconEvent</a> (<a class="el" href="classStatusBarIconWidget.html">StatusBarIconWidget</a> *<a class="el" href="structIconEvent.html#a8cdd1164469ea05542de2998632be7d3">target</a>, QObject *parent)</td></tr>
+<tr class="memdesc:a1d2eb8a4736e31f6522cadfa22f742f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an <a class="el" href="structIconEvent.html" title="Represents a custom event targeting a specific StatusBarIconWidget.">IconEvent</a>.  <br /></td></tr>
 <tr class="separator:a1d2eb8a4736e31f6522cadfa22f742f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4b40d32e02f0eebf4284ad24c6073fb" id="r_ab4b40d32e02f0eebf4284ad24c6073fb"><td class="memItemLeft" align="right" valign="top"><a id="ab4b40d32e02f0eebf4284ad24c6073fb" name="ab4b40d32e02f0eebf4284ad24c6073fb"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~IconEvent</b> ()=default</td></tr>
+<tr class="memdesc:ab4b40d32e02f0eebf4284ad24c6073fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the <a class="el" href="structIconEvent.html" title="Represents a custom event targeting a specific StatusBarIconWidget.">IconEvent</a>. <br /></td></tr>
+<tr class="separator:ab4b40d32e02f0eebf4284ad24c6073fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a8cdd1164469ea05542de2998632be7d3" id="r_a8cdd1164469ea05542de2998632be7d3"><td class="memItemLeft" align="right" valign="top"><a id="a8cdd1164469ea05542de2998632be7d3" name="a8cdd1164469ea05542de2998632be7d3"></a>
 const <a class="el" href="classStatusBarIconWidget.html">StatusBarIconWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>target</b></td></tr>
+<tr class="memdesc:a8cdd1164469ea05542de2998632be7d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the target <a class="el" href="classStatusBarIconWidget.html" title="Abstract base widget class representing an icon in the status bar.">StatusBarIconWidget</a>. <br /></td></tr>
 <tr class="separator:a8cdd1164469ea05542de2998632be7d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="structIconEvent.html" title="The IconEvent class.">IconEvent</a> class. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<div class="textblock"><p>Represents a custom event targeting a specific <a class="el" href="classStatusBarIconWidget.html" title="Abstract base widget class representing an icon in the status bar.">StatusBarIconWidget</a>. </p>
+<p><a class="el" href="structIconEvent.html" title="Represents a custom event targeting a specific StatusBarIconWidget.">IconEvent</a> is used to deliver status or behavior change notifications to instances of <a class="el" href="classStatusBarIconWidget.html" title="Abstract base widget class representing an icon in the status bar.">StatusBarIconWidget</a>. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a1d2eb8a4736e31f6522cadfa22f742f3" name="a1d2eb8a4736e31f6522cadfa22f742f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d2eb8a4736e31f6522cadfa22f742f3">&#9670;&#160;</a></span>IconEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IconEvent::IconEvent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classStatusBarIconWidget.html">StatusBarIconWidget</a> *&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs an <a class="el" href="structIconEvent.html" title="Represents a custom event targeting a specific StatusBarIconWidget.">IconEvent</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target</td><td>Pointer to the target widget this event is intended for. </td></tr>
+    <tr><td class="paramname">parent</td><td>Optional QObject parent. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>ui/topstatusbar/<a class="el" href="StatusBarIconWidget_8h_source.html">StatusBarIconWidget.h</a></li>
+<li>ui/topstatusbar/<b>StatusBarIconWidget.cpp</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

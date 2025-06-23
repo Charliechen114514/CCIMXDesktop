@@ -102,36 +102,96 @@ $(document).ready(function(){initNavTree('structNetStatusChangedEvent.html','');
   <div class="headertitle"><div class="title">NetStatusChangedEvent Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Event representing network status changes.  
+ <a href="structNetStatusChangedEvent.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="NetStatusChangedEvent_8h_source.html">NetStatusChangedEvent.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for NetStatusChangedEvent:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="structNetStatusChangedEvent.png" usemap="#NetStatusChangedEvent_map" alt=""/>
   <map id="NetStatusChangedEvent_map" name="NetStatusChangedEvent_map">
-<area href="structIconEvent.html" title="The IconEvent class." alt="IconEvent" shape="rect" coords="0,56,148,80"/>
+<area href="structIconEvent.html" title="Represents a custom event targeting a specific StatusBarIconWidget." alt="IconEvent" shape="rect" coords="0,56,148,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a09ab320f3f028e94f3d7bf5776f09581" id="r_a09ab320f3f028e94f3d7bf5776f09581"><td class="memItemLeft" align="right" valign="top"><a id="a09ab320f3f028e94f3d7bf5776f09581" name="a09ab320f3f028e94f3d7bf5776f09581"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>NetStatusChangedEvent</b> (<a class="el" href="classStatusBarIconWidget.html">StatusBarIconWidget</a> *netIcon, QObject *parent)</td></tr>
+<tr class="memitem:a09ab320f3f028e94f3d7bf5776f09581" id="r_a09ab320f3f028e94f3d7bf5776f09581"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNetStatusChangedEvent.html#a09ab320f3f028e94f3d7bf5776f09581">NetStatusChangedEvent</a> (<a class="el" href="classStatusBarIconWidget.html">StatusBarIconWidget</a> *netIcon, QObject *parent)</td></tr>
+<tr class="memdesc:a09ab320f3f028e94f3d7bf5776f09581"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a network status change event.  <br /></td></tr>
 <tr class="separator:a09ab320f3f028e94f3d7bf5776f09581"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structIconEvent"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structIconEvent')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structIconEvent.html">IconEvent</a></td></tr>
-<tr class="memitem:a1d2eb8a4736e31f6522cadfa22f742f3 inherit pub_methods_structIconEvent" id="r_a1d2eb8a4736e31f6522cadfa22f742f3"><td class="memItemLeft" align="right" valign="top">
-&#160;</td><td class="memItemRight" valign="bottom"><b>IconEvent</b> (<a class="el" href="classStatusBarIconWidget.html">StatusBarIconWidget</a> *target, QObject *parent)</td></tr>
+<tr class="memitem:a1d2eb8a4736e31f6522cadfa22f742f3 inherit pub_methods_structIconEvent" id="r_a1d2eb8a4736e31f6522cadfa22f742f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structIconEvent.html#a1d2eb8a4736e31f6522cadfa22f742f3">IconEvent</a> (<a class="el" href="classStatusBarIconWidget.html">StatusBarIconWidget</a> *<a class="el" href="structIconEvent.html#a8cdd1164469ea05542de2998632be7d3">target</a>, QObject *parent)</td></tr>
+<tr class="memdesc:a1d2eb8a4736e31f6522cadfa22f742f3 inherit pub_methods_structIconEvent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an <a class="el" href="structIconEvent.html" title="Represents a custom event targeting a specific StatusBarIconWidget.">IconEvent</a>.  <br /></td></tr>
 <tr class="separator:a1d2eb8a4736e31f6522cadfa22f742f3 inherit pub_methods_structIconEvent"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4b40d32e02f0eebf4284ad24c6073fb inherit pub_methods_structIconEvent" id="r_ab4b40d32e02f0eebf4284ad24c6073fb"><td class="memItemLeft" align="right" valign="top">
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~IconEvent</b> ()=default</td></tr>
+<tr class="memdesc:ab4b40d32e02f0eebf4284ad24c6073fb inherit pub_methods_structIconEvent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the <a class="el" href="structIconEvent.html" title="Represents a custom event targeting a specific StatusBarIconWidget.">IconEvent</a>. <br /></td></tr>
+<tr class="separator:ab4b40d32e02f0eebf4284ad24c6073fb inherit pub_methods_structIconEvent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a66a1837da355ad9b023e9b8b6e9415fe" id="r_a66a1837da355ad9b023e9b8b6e9415fe"><td class="memItemLeft" align="right" valign="top"><a id="a66a1837da355ad9b023e9b8b6e9415fe" name="a66a1837da355ad9b023e9b8b6e9415fe"></a>
 NetWorkState&#160;</td><td class="memItemRight" valign="bottom"><b>status</b> { NetWorkState::DISCONNECTED }</td></tr>
+<tr class="memdesc:a66a1837da355ad9b023e9b8b6e9415fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current network state. <br /></td></tr>
 <tr class="separator:a66a1837da355ad9b023e9b8b6e9415fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_structIconEvent"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_structIconEvent')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="structIconEvent.html">IconEvent</a></td></tr>
 <tr class="memitem:a8cdd1164469ea05542de2998632be7d3 inherit pub_attribs_structIconEvent" id="r_a8cdd1164469ea05542de2998632be7d3"><td class="memItemLeft" align="right" valign="top">
 const <a class="el" href="classStatusBarIconWidget.html">StatusBarIconWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>target</b></td></tr>
+<tr class="memdesc:a8cdd1164469ea05542de2998632be7d3 inherit pub_attribs_structIconEvent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the target <a class="el" href="classStatusBarIconWidget.html" title="Abstract base widget class representing an icon in the status bar.">StatusBarIconWidget</a>. <br /></td></tr>
 <tr class="separator:a8cdd1164469ea05542de2998632be7d3 inherit pub_attribs_structIconEvent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Event representing network status changes. </p>
+<p>Carries information about network connectivity state changes. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a09ab320f3f028e94f3d7bf5776f09581" name="a09ab320f3f028e94f3d7bf5776f09581"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09ab320f3f028e94f3d7bf5776f09581">&#9670;&#160;</a></span>NetStatusChangedEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">NetStatusChangedEvent::NetStatusChangedEvent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classStatusBarIconWidget.html">StatusBarIconWidget</a> *&#160;</td>
+          <td class="paramname"><em>netIcon</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a network status change event. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">netIcon</td><td>Associated network icon widget </td></tr>
+    <tr><td class="paramname">parent</td><td>Parent object (optional) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>ui/topstatusbar/netstat/<a class="el" href="NetStatusChangedEvent_8h_source.html">NetStatusChangedEvent.h</a></li>
 </ul>

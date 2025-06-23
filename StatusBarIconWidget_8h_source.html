@@ -101,42 +101,54 @@ $(document).ready(function(){initNavTree('StatusBarIconWidget_8h_source.html',''
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef STATUSBARICONWIDGET_H</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define STATUSBARICONWIDGET_H</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;QWidget&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">class </span><a class="code hl_class" href="classStatusBarIconWidget.html">StatusBarIconWidget</a>;</div>
-<div class="foldopen" id="foldopen00009" data-start="{" data-end="};">
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="structIconEvent.html">    9</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structIconEvent.html">IconEvent</a> : <span class="keyword">public</span> QObject {</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keyword">explicit</span> <a class="code hl_struct" href="structIconEvent.html">IconEvent</a>(<a class="code hl_class" href="classStatusBarIconWidget.html">StatusBarIconWidget</a>* target, QObject* parent)</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        : QObject(parent)</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        , target(target) { }</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">virtual</span> <a class="code hl_struct" href="structIconEvent.html">~IconEvent</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">const</span> <a class="code hl_class" href="classStatusBarIconWidget.html">StatusBarIconWidget</a>* target;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>};</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;QWidget&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">class </span><a class="code hl_class" href="classStatusBarIconWidget.html">StatusBarIconWidget</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="foldopen" id="foldopen00020" data-start="{" data-end="};">
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="structIconEvent.html">   20</a></span><span class="keyword">struct </span><a class="code hl_class" href="structIconEvent.html">IconEvent</a> : <span class="keyword">public</span> QObject {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="structIconEvent.html">IconEvent</a>(<a class="code hl_class" href="classStatusBarIconWidget.html">StatusBarIconWidget</a>* <a class="code hl_variable" href="structIconEvent.html#a8cdd1164469ea05542de2998632be7d3">target</a>, QObject* parent);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="structIconEvent.html#ab4b40d32e02f0eebf4284ad24c6073fb">   31</a></span>    <span class="keyword">virtual</span> <a class="code hl_function" href="structIconEvent.html#ab4b40d32e02f0eebf4284ad24c6073fb">~IconEvent</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    ;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="structIconEvent.html#a8cdd1164469ea05542de2998632be7d3">   37</a></span>    <span class="keyword">const</span> <a class="code hl_class" href="classStatusBarIconWidget.html">StatusBarIconWidget</a>* <a class="code hl_variable" href="structIconEvent.html#a8cdd1164469ea05542de2998632be7d3">target</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>};</div>
 </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="foldopen" id="foldopen00022" data-start="{" data-end="};">
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classStatusBarIconWidget.html">   22</a></span><span class="keyword">class </span><a class="code hl_class" href="classStatusBarIconWidget.html">StatusBarIconWidget</a> : <span class="keyword">public</span> QWidget {</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    Q_OBJECT</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classStatusBarIconWidget.html">StatusBarIconWidget</a>(QString labeled_name, QWidget* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="comment">/* set to the fixed size */</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classStatusBarIconWidget.html">~StatusBarIconWidget</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> adjustSelfHeight(<span class="keywordtype">int</span> height) {</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        setFixedHeight(height);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    }</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    QString labeledName()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> self_labeled_name; }</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classStatusBarIconWidget.html#ab6f069bbc30ba4aad6ee5d3bd4df25ae">processIconsEvent</a>(<a class="code hl_struct" href="structIconEvent.html">IconEvent</a>* icons);</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> iconEvents(<a class="code hl_struct" href="structIconEvent.html">IconEvent</a>* icons) { <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">const</span> QString self_labeled_name;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>};</div>
+<div class="foldopen" id="foldopen00047" data-start="{" data-end="};">
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classStatusBarIconWidget.html">   47</a></span><span class="keyword">class </span><a class="code hl_class" href="classStatusBarIconWidget.html">StatusBarIconWidget</a> : <span class="keyword">public</span> QWidget {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    Q_OBJECT</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classStatusBarIconWidget.html">StatusBarIconWidget</a>(QString labeled_name, QWidget* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classStatusBarIconWidget.html#a1ed71bffc805a6c6ba15a2f2f06fbead">   61</a></span>    <span class="keyword">virtual</span> <a class="code hl_function" href="classStatusBarIconWidget.html#a1ed71bffc805a6c6ba15a2f2f06fbead">~StatusBarIconWidget</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classStatusBarIconWidget.html#a9f96436b0a6cdc397bb3361d987aee40">adjustSelfHeight</a>(<span class="keywordtype">int</span> height);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    QString <a class="code hl_function" href="classStatusBarIconWidget.html#adbe463fb3a66c88281381cd1a772f57f">labeledName</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classStatusBarIconWidget.html#ab6f069bbc30ba4aad6ee5d3bd4df25ae">processIconsEvent</a>(<a class="code hl_class" href="structIconEvent.html">IconEvent</a>* icons);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classStatusBarIconWidget.html#aab901260c3ec0397dc1cad9225cdb984">iconEvents</a>(<a class="code hl_class" href="structIconEvent.html">IconEvent</a>* icons);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    ;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keyword">const</span> QString self_labeled_name;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>};</div>
 </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#endif </span><span class="comment">// STATUSBARICONWIDGET_H</span></div>
-<div class="ttc" id="aclassStatusBarIconWidget_html"><div class="ttname"><a href="classStatusBarIconWidget.html">StatusBarIconWidget</a></div><div class="ttdoc">The StatusBarIconWidget class is the Icon Interfaces like widget for the icon statusbar.</div><div class="ttdef"><b>Definition</b> StatusBarIconWidget.h:22</div></div>
-<div class="ttc" id="aclassStatusBarIconWidget_html_ab6f069bbc30ba4aad6ee5d3bd4df25ae"><div class="ttname"><a href="classStatusBarIconWidget.html#ab6f069bbc30ba4aad6ee5d3bd4df25ae">StatusBarIconWidget::processIconsEvent</a></div><div class="ttdeci">bool processIconsEvent(IconEvent *icons)</div><div class="ttdef"><b>Definition</b> StatusBarIconWidget.cpp:8</div></div>
-<div class="ttc" id="astructIconEvent_html"><div class="ttname"><a href="structIconEvent.html">IconEvent</a></div><div class="ttdoc">The IconEvent class.</div><div class="ttdef"><b>Definition</b> StatusBarIconWidget.h:9</div></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="preprocessor">#endif </span><span class="comment">// STATUSBARICONWIDGET_H</span></div>
+<div class="ttc" id="aclassStatusBarIconWidget_html"><div class="ttname"><a href="classStatusBarIconWidget.html">StatusBarIconWidget</a></div><div class="ttdoc">Abstract base widget class representing an icon in the status bar.</div><div class="ttdef"><b>Definition</b> StatusBarIconWidget.h:47</div></div>
+<div class="ttc" id="aclassStatusBarIconWidget_html_a1ed71bffc805a6c6ba15a2f2f06fbead"><div class="ttname"><a href="classStatusBarIconWidget.html#a1ed71bffc805a6c6ba15a2f2f06fbead">StatusBarIconWidget::~StatusBarIconWidget</a></div><div class="ttdeci">virtual ~StatusBarIconWidget()=default</div><div class="ttdoc">Destroys the StatusBarIconWidget.</div></div>
+<div class="ttc" id="aclassStatusBarIconWidget_html_a9f96436b0a6cdc397bb3361d987aee40"><div class="ttname"><a href="classStatusBarIconWidget.html#a9f96436b0a6cdc397bb3361d987aee40">StatusBarIconWidget::adjustSelfHeight</a></div><div class="ttdeci">virtual void adjustSelfHeight(int height)</div><div class="ttdoc">Adjusts the widget's height to a fixed value.</div><div class="ttdef"><b>Definition</b> StatusBarIconWidget.cpp:8</div></div>
+<div class="ttc" id="aclassStatusBarIconWidget_html_aab901260c3ec0397dc1cad9225cdb984"><div class="ttname"><a href="classStatusBarIconWidget.html#aab901260c3ec0397dc1cad9225cdb984">StatusBarIconWidget::iconEvents</a></div><div class="ttdeci">virtual bool iconEvents(IconEvent *icons)</div><div class="ttdoc">Virtual handler for icon events. Override in subclasses.</div><div class="ttdef"><b>Definition</b> StatusBarIconWidget.cpp:24</div></div>
+<div class="ttc" id="aclassStatusBarIconWidget_html_ab6f069bbc30ba4aad6ee5d3bd4df25ae"><div class="ttname"><a href="classStatusBarIconWidget.html#ab6f069bbc30ba4aad6ee5d3bd4df25ae">StatusBarIconWidget::processIconsEvent</a></div><div class="ttdeci">bool processIconsEvent(IconEvent *icons)</div><div class="ttdoc">Handles an IconEvent.</div><div class="ttdef"><b>Definition</b> StatusBarIconWidget.cpp:14</div></div>
+<div class="ttc" id="aclassStatusBarIconWidget_html_adbe463fb3a66c88281381cd1a772f57f"><div class="ttname"><a href="classStatusBarIconWidget.html#adbe463fb3a66c88281381cd1a772f57f">StatusBarIconWidget::labeledName</a></div><div class="ttdeci">QString labeledName() const</div><div class="ttdoc">Returns the labeled name of this icon.</div><div class="ttdef"><b>Definition</b> StatusBarIconWidget.cpp:12</div></div>
+<div class="ttc" id="astructIconEvent_html"><div class="ttname"><a href="structIconEvent.html">IconEvent</a></div><div class="ttdoc">Represents a custom event targeting a specific StatusBarIconWidget.</div><div class="ttdef"><b>Definition</b> StatusBarIconWidget.h:20</div></div>
+<div class="ttc" id="astructIconEvent_html_a8cdd1164469ea05542de2998632be7d3"><div class="ttname"><a href="structIconEvent.html#a8cdd1164469ea05542de2998632be7d3">IconEvent::target</a></div><div class="ttdeci">const StatusBarIconWidget * target</div><div class="ttdoc">Pointer to the target StatusBarIconWidget.</div><div class="ttdef"><b>Definition</b> StatusBarIconWidget.h:37</div></div>
+<div class="ttc" id="astructIconEvent_html_ab4b40d32e02f0eebf4284ad24c6073fb"><div class="ttname"><a href="structIconEvent.html#ab4b40d32e02f0eebf4284ad24c6073fb">IconEvent::~IconEvent</a></div><div class="ttdeci">virtual ~IconEvent()=default</div><div class="ttdoc">Destroys the IconEvent.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

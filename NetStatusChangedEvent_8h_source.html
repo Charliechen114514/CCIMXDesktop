@@ -100,22 +100,28 @@ $(document).ready(function(){initNavTree('NetStatusChangedEvent_8h_source.html',
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef NETSTATUSCHANGEDEVENT_H</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define NETSTATUSCHANGEDEVENT_H</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;../StatusBarIconWidget.h&quot;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;builtin/core/netability_scanner/NetAbilityScanEnum.h&quot;</span></div>
-<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="structNetStatusChangedEvent.html">    5</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structNetStatusChangedEvent.html">NetStatusChangedEvent</a> : <span class="keyword">public</span> <a class="code hl_struct" href="structIconEvent.html">IconEvent</a> {</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <span class="keyword">explicit</span> <a class="code hl_struct" href="structNetStatusChangedEvent.html">NetStatusChangedEvent</a>(<a class="code hl_class" href="classStatusBarIconWidget.html">StatusBarIconWidget</a>* netIcon, QObject* parent)</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>        : <a class="code hl_struct" href="structIconEvent.html">IconEvent</a>(netIcon, parent) {</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    }</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    NetWorkState status { NetWorkState::DISCONNECTED };</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>};</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;../StatusBarIconWidget.h&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;builtin/core/netability_scanner/NetAbilityScanEnum.h&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="foldopen" id="foldopen00012" data-start="{" data-end="};">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="structNetStatusChangedEvent.html">   12</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structNetStatusChangedEvent.html">NetStatusChangedEvent</a> : <span class="keyword">public</span> <a class="code hl_class" href="structIconEvent.html">IconEvent</a> {</div>
+<div class="foldopen" id="foldopen00018" data-start="{" data-end="}">
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="structNetStatusChangedEvent.html#a09ab320f3f028e94f3d7bf5776f09581">   18</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="structNetStatusChangedEvent.html#a09ab320f3f028e94f3d7bf5776f09581">NetStatusChangedEvent</a>(<a class="code hl_class" href="classStatusBarIconWidget.html">StatusBarIconWidget</a>* netIcon, QObject* parent)</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        : <a class="code hl_class" href="structIconEvent.html">IconEvent</a>(netIcon, parent) {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    }</div>
 </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#endif </span><span class="comment">// NETSTATUSCHANGEDEVENT_H</span></div>
-<div class="ttc" id="aclassStatusBarIconWidget_html"><div class="ttname"><a href="classStatusBarIconWidget.html">StatusBarIconWidget</a></div><div class="ttdoc">The StatusBarIconWidget class is the Icon Interfaces like widget for the icon statusbar.</div><div class="ttdef"><b>Definition</b> StatusBarIconWidget.h:22</div></div>
-<div class="ttc" id="astructIconEvent_html"><div class="ttname"><a href="structIconEvent.html">IconEvent</a></div><div class="ttdoc">The IconEvent class.</div><div class="ttdef"><b>Definition</b> StatusBarIconWidget.h:9</div></div>
-<div class="ttc" id="astructNetStatusChangedEvent_html"><div class="ttname"><a href="structNetStatusChangedEvent.html">NetStatusChangedEvent</a></div><div class="ttdef"><b>Definition</b> NetStatusChangedEvent.h:5</div></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="structNetStatusChangedEvent.html#a66a1837da355ad9b023e9b8b6e9415fe">   22</a></span>    NetWorkState <a class="code hl_variable" href="structNetStatusChangedEvent.html#a66a1837da355ad9b023e9b8b6e9415fe">status</a> { NetWorkState::DISCONNECTED };  </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>};</div>
+</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#endif </span><span class="comment">// NETSTATUSCHANGEDEVENT_H</span></div>
+<div class="ttc" id="aclassStatusBarIconWidget_html"><div class="ttname"><a href="classStatusBarIconWidget.html">StatusBarIconWidget</a></div><div class="ttdoc">Abstract base widget class representing an icon in the status bar.</div><div class="ttdef"><b>Definition</b> StatusBarIconWidget.h:47</div></div>
+<div class="ttc" id="astructIconEvent_html"><div class="ttname"><a href="structIconEvent.html">IconEvent</a></div><div class="ttdoc">Represents a custom event targeting a specific StatusBarIconWidget.</div><div class="ttdef"><b>Definition</b> StatusBarIconWidget.h:20</div></div>
+<div class="ttc" id="astructNetStatusChangedEvent_html"><div class="ttname"><a href="structNetStatusChangedEvent.html">NetStatusChangedEvent</a></div><div class="ttdoc">Event representing network status changes.</div><div class="ttdef"><b>Definition</b> NetStatusChangedEvent.h:12</div></div>
+<div class="ttc" id="astructNetStatusChangedEvent_html_a09ab320f3f028e94f3d7bf5776f09581"><div class="ttname"><a href="structNetStatusChangedEvent.html#a09ab320f3f028e94f3d7bf5776f09581">NetStatusChangedEvent::NetStatusChangedEvent</a></div><div class="ttdeci">NetStatusChangedEvent(StatusBarIconWidget *netIcon, QObject *parent)</div><div class="ttdoc">Constructs a network status change event.</div><div class="ttdef"><b>Definition</b> NetStatusChangedEvent.h:18</div></div>
+<div class="ttc" id="astructNetStatusChangedEvent_html_a66a1837da355ad9b023e9b8b6e9415fe"><div class="ttname"><a href="structNetStatusChangedEvent.html#a66a1837da355ad9b023e9b8b6e9415fe">NetStatusChangedEvent::status</a></div><div class="ttdeci">NetWorkState status</div><div class="ttdoc">Current network state.</div><div class="ttdef"><b>Definition</b> NetStatusChangedEvent.h:22</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
