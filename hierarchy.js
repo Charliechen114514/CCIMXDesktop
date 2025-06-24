@@ -207,6 +207,9 @@ var hierarchy =
     [ "QSlider", null, [
       [ "FloatSlider", "classFloatSlider.html", null ]
     ] ],
+    [ "QSplashScreen", null, [
+      [ "CCIMX_DesktopSplashWindow", "classCCIMX__DesktopSplashWindow.html", null ]
+    ] ],
     [ "QWidget", null, [
       [ "AppCardWidget", "classAppCardWidget.html", [
         [ "LocalWeatherCard", "classLocalWeatherCard.html", null ],

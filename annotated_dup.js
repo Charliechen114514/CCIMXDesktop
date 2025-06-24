@@ -51,6 +51,7 @@ var annotated_dup =
     [ "CCIMX_AbstractCPUStateDriver", "classCCIMX__AbstractCPUStateDriver.html", "classCCIMX__AbstractCPUStateDriver" ],
     [ "CCIMX_AbstractMemoryInfoDriver", "classCCIMX__AbstractMemoryInfoDriver.html", "classCCIMX__AbstractMemoryInfoDriver" ],
     [ "CCIMX_AbstractProcessBroswerDriver", "classCCIMX__AbstractProcessBroswerDriver.html", "classCCIMX__AbstractProcessBroswerDriver" ],
+    [ "CCIMX_DesktopSplashWindow", "classCCIMX__DesktopSplashWindow.html", "classCCIMX__DesktopSplashWindow" ],
     [ "CCIMXFileSystemModel", "classCCIMXFileSystemModel.html", "classCCIMXFileSystemModel" ],
     [ "CCMediaPlayList", "classCCMediaPlayList.html", "classCCMediaPlayList" ],
     [ "CCNoterWindow", "classCCNoterWindow.html", "classCCNoterWindow" ],

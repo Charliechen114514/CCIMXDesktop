@@ -1,5 +1,6 @@
 var dir_1788f8309b1a812dcb800a185471cf6c =
 [
+    [ "splash_window", "dir_f61e425cd9e2cfdf2f115460fe383553.html", "dir_f61e425cd9e2cfdf2f115460fe383553" ],
     [ "topstatusbar", "dir_365d48e82f2a94a59db0aa7b79a05418.html", "dir_365d48e82f2a94a59db0aa7b79a05418" ],
     [ "UiTools", "dir_096e304104ba6f0a6beff8bc06107b88.html", "dir_096e304104ba6f0a6beff8bc06107b88" ],
     [ "appcardwidget.h", "appcardwidget_8h_source.html", null ],

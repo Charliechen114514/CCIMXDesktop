@@ -96,14 +96,15 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AP3216CAdapterFactory_8h_source.html",
-"classAppWidgetConfigures.html",
-"classCactusObsticals.html#a9b78c30aa699a8c7dc472ac62473ad20a9b9c17e13f0e3dc9860a26e08b59b2a7",
-"classFileInfoProvider.html#aa13112f10f0b93ab09d2c12385b13374",
-"classLinuxPlatformMemoryInfoDriver.html",
-"classScoreManager.html#ad90a12e8f57a175b85d30e43c81b69c9",
-"classVideoPlayer.html#aa694b6b907f0e1935de88613608ff6aa",
-"dir_e7715e758cef16550b71f9866152934d.html",
-"structAppWeatherDetailedRequest.html#a13ced85bff3ab0c1caecc737d607ecf8"
+"classAppWidget.html#af104d532bb3bd2b0889391fff0bab157",
+"classCactusObsticals.html#a0f9df5d547b2ec1a86d90a0372c26e54",
+"classFileInfoDisplayWidget.html#a71aca20562e5b0928d97723e04efd5de",
+"classLightControllerWindow.html#ad01b4159b975884f5398071749f17593ae16b5b7f26f54214445cbe38d72c2828",
+"classScoreManager.html#a03865f6ca585210daf5e91ea3deec5a8",
+"classVideoPlayer.html#a4d021b4f964ff9e444988d5c68941be3",
+"dir_db3084977535c7b8cbaa0c1b0af3ca6c.html",
+"settings__soundeffect_8h_source.html",
+"toolssidebar_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

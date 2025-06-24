@@ -6,6 +6,7 @@ var classDesktopMainWindow =
     [ "desktop_toast", "classDesktopMainWindow.html#ad96e7341abb14b361bf76d3baff81071", null ],
     [ "downDockWidget", "classDesktopMainWindow.html#a3c9d1ee127d737faa6b73e162a4c28b3", null ],
     [ "handle_app_status", "classDesktopMainWindow.html#ad72a53e56f786aa89acd04b1544d709c", null ],
+    [ "init", "classDesktopMainWindow.html#aa965b705677bf5a95dabd575cd43f7e5", null ],
     [ "install_for_new_dynamicpage", "classDesktopMainWindow.html#ae46879bbbc4f868307df5028318c9e0c", null ],
     [ "install_remote_appwrapper", "classDesktopMainWindow.html#a39fb277355a84381bf009a605bd9bc7e", null ],
     [ "mousePressEvent", "classDesktopMainWindow.html#aea9d86ecbe7b54e38e8c871722054274", null ],
