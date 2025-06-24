@@ -40,7 +40,7 @@ var searchData=
   ['indicate_5fopen_5fsettings_5fwindow_37',['indicate_open_settings_window',['../classSettingsLaunch.html#a52540d6599ce4c7bf6b4688e4bc72748',1,'SettingsLaunch::indicate_open_settings_window()'],['../classSettingsApp.html#a6b3bdb5a49fd5453fe4a950f3579f1c7',1,'SettingsApp::indicate_open_settings_window()']]],
   ['indicate_5fshow_38',['indicate_show',['../classToolBoxs.html#afca228f11d7971a4eb5fe905fb5eee70',1,'ToolBoxs']]],
   ['indicate_5fzoom_39',['indicate_zoom',['../classCCPdfScrollArea.html#a659bde2f5fe452c6cc90e0c8c042b18a',1,'CCPdfScrollArea']]],
-  ['indication_40',['indication',['../classEventManager.html#a423683d4091e7ead0bd42058b30869ba',1,'EventManager::Indication'],['../classEventManager.html#a34fbb84264f448a152b44dd06853195a',1,'EventManager::indication() const']]],
+  ['indication_40',['indication',['../classEventManager.html#a34fbb84264f448a152b44dd06853195a',1,'EventManager::indication() const'],['../classEventManager.html#a423683d4091e7ead0bd42058b30869ba',1,'EventManager::Indication']]],
   ['indicator_41',['Indicator',['../structCCPdfNavigationPolicy_1_1Indicator.html',1,'CCPdfNavigationPolicy']]],
   ['infoindex_42',['InfoIndex',['../classMainWindow.html#ad766a05d8996b153d8328819f3fef928',1,'MainWindow']]],
   ['infoindexmax_43',['InfoIndexMax',['../classMainWindow.html#ad766a05d8996b153d8328819f3fef928aae9b08f7c72513fb6e687f24948be53c',1,'MainWindow']]],

@@ -42,6 +42,7 @@ var NAVTREEINDEX0 =
 "DirentSizeCounter_8h_source.html":[6,0,3,1,0,0],
 "DiskMusic_8h_source.html":[6,0,3,4,2,0],
 "DrawerWindow_8h_source.html":[6,0,1,0,4,1,0],
+"EasingCurveComboxBoxSetuper_8h_source.html":[6,0,4,1,0,0],
 "EasyNoteMainWindow_8h_source.html":[6,0,3,0,1,0],
 "EasyNotes_2ui_2SideBarWidget_8h_source.html":[6,0,3,0,1,3],
 "EventManager_8h_source.html":[6,0,3,2,0,0,2],
@@ -61,7 +62,7 @@ var NAVTREEINDEX0 =
 "FixedOptionWidget_8h_source.html":[6,0,1,5,1,0,3,0,0],
 "FloatSlideBar_8h_source.html":[6,0,3,7,1,0,3,1,0],
 "FlushRequester_8h_source.html":[6,0,3,2,0,0,3],
-"FontInfoFormarter_8h_source.html":[6,0,4,1,0,0],
+"FontInfoFormarter_8h_source.html":[6,0,4,1,1,0],
 "FormatDisplayFactory_8h_source.html":[6,0,3,5,0,0,0],
 "FrameProvider_8h_source.html":[6,0,3,2,0,0,4],
 "FunctorTreeNode_8h_source.html":[6,0,1,0,0,0,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "classAppWidget.html#ac73a23e531d3973d20fc887ec6bdd988":[5,0,16,6],
 "classAppWidget.html#ada536f826bb4f11682516d5ad1e6f63e":[5,0,16,10],
 "classAppWidget.html#adfa9de7ff529fef19e235dae59768fac":[5,0,16,3],
-"classAppWidget.html#af104d532bb3bd2b0889391fff0bab157":[5,0,16,4],
-"classAppWidgetConfigures.html":[5,0,17]
+"classAppWidget.html#af104d532bb3bd2b0889391fff0bab157":[5,0,16,4]
 };

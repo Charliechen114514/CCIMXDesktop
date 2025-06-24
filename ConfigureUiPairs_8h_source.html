@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('ConfigureUiPairs_8h_source.html',''); 
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef CONFIGUREUIPAIRS_H</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define CONFIGUREUIPAIRS_H</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;QMap&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;QHash&gt;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;QObject&gt;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">class </span>QTreeWidget;</div>
@@ -125,9 +125,9 @@ $(document).ready(function(){initNavTree('ConfigureUiPairs_8h_source.html',''); 
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordtype">void</span> process_switch_sessions(QTreeWidgetItem* item);</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    QMap&lt;QTreeWidgetItem*, QWidget*&gt; mappings; </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    QTreeWidget* treeWidget;                   </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    QStackedWidget* stackedWidget;             </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    QHash&lt;QTreeWidgetItem*, QWidget*&gt; mappings; </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    QTreeWidget* treeWidget; </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    QStackedWidget* stackedWidget; </div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>};</div>
 </div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>

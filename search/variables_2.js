@@ -17,5 +17,6 @@ var searchData=
   ['creation_5fdatetime_14',['creation_datetime',['../structCCPdfMetaInfo.html#a4f85c5b45e564cedb66e1b1586d397b9',1,'CCPdfMetaInfo']]],
   ['creator_15',['creator',['../structCCPdfMetaInfo.html#a1c1a3c86022af3b969977e1309a08c28',1,'CCPdfMetaInfo']]],
   ['current_5fplaying_16',['current_playing',['../structMediaListMails.html#a9ef8673f8cecb1cd5d7a12af9a2b20ec',1,'MediaListMails']]],
-  ['curval_5ffout_5fsz_17',['CURVAL_FOUT_SZ',['../classGaugeWidget.html#ab14c90d903be853ce7e7e15581c00c90',1,'GaugeWidget']]]
+  ['curval_5ffout_5fsz_17',['CURVAL_FOUT_SZ',['../classGaugeWidget.html#ab14c90d903be853ce7e7e15581c00c90',1,'GaugeWidget']]],
+  ['curve_18',['curve',['../structFlowTypeTypeWallPaperSettings.html#a16ad14484eb1f49ea0e4faf5c48448d9',1,'FlowTypeTypeWallPaperSettings::curve'],['../structWallPaperAnimationHandler_1_1AnimationSettingsPackage.html#a8ce95ae15740e0c4d176cf2b1b205948',1,'WallPaperAnimationHandler::AnimationSettingsPackage::curve']]]
 ];

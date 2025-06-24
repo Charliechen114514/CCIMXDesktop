@@ -5,6 +5,7 @@ var classSequenciedSettingsWidget =
     [ "flush_images", "classSequenciedSettingsWidget.html#ab2a08d4fe88ccb430d6e4bc49de6d4bd", null ],
     [ "flush_with_non_path", "classSequenciedSettingsWidget.html#ab5be5828837fdbcf643a119e43a96ebe", null ],
     [ "folders_image_path", "classSequenciedSettingsWidget.html#a44d8f5086b1535554310ff70a2ebf795", null ],
+    [ "get_easingcurve_type", "classSequenciedSettingsWidget.html#ac6c94534b4cbca4683965520e367f908", null ],
     [ "get_image_lists", "classSequenciedSettingsWidget.html#a0e1610822ea24dd0af34f401113944af", null ],
     [ "getAnimation_duration", "classSequenciedSettingsWidget.html#a72d54b61badf828f9c91f3595d925b69", null ],
     [ "getWallpaper_switch_time", "classSequenciedSettingsWidget.html#a8741686f708adb2534d0cdb230d5e930", null ],

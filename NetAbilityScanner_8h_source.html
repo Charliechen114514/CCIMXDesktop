@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('NetAbilityScanner_8h_source.html','');
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define NETABILITYSCANNER_H</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;NetAbilityScanEnum.h&quot;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;QObject&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">class </span>QNetworkAccessManager;</div>
 <div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="classNetAbilityScanner.html">   10</a></span><span class="keyword">class </span><a class="code hl_class" href="classNetAbilityScanner.html">NetAbilityScanner</a> : <span class="keyword">public</span> QObject {</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    Q_OBJECT</div>
@@ -118,10 +118,11 @@ $(document).ready(function(){initNavTree('NetAbilityScanner_8h_source.html','');
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* online_base_work = <span class="stringliteral">&quot;http://www.baidu.com&quot;</span>;</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    QTimer* scan_timer; </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>};</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    QNetworkAccessManager* manager = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>};</div>
 </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#endif </span><span class="comment">// NETABILITYSCANNER_H</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#endif </span><span class="comment">// NETABILITYSCANNER_H</span></div>
 <div class="ttc" id="aclassNetAbilityScanner_html"><div class="ttname"><a href="classNetAbilityScanner.html">NetAbilityScanner</a></div><div class="ttdoc">The NetAbilityScanner class check the desktop network status.</div><div class="ttdef"><b>Definition</b> NetAbilityScanner.h:10</div></div>
 <div class="ttc" id="aclassNetAbilityScanner_html_a3e4988b5de7e0c13228b0a06300b0055"><div class="ttname"><a href="classNetAbilityScanner.html#a3e4988b5de7e0c13228b0a06300b0055">NetAbilityScanner::postStatus</a></div><div class="ttdeci">void postStatus(NetWorkState status)</div><div class="ttdoc">postStatus connect the signals for</div></div>
 <div class="ttc" id="aclassNetAbilityScanner_html_a83653b685e32384dc06d74b911130660"><div class="ttname"><a href="classNetAbilityScanner.html#a83653b685e32384dc06d74b911130660">NetAbilityScanner::process_once_fresh</a></div><div class="ttdeci">void process_once_fresh()</div><div class="ttdoc">process_once_fresh: invoke this to make a full check</div><div class="ttdef"><b>Definition</b> NetAbilityScanner.cpp:16</div></div>

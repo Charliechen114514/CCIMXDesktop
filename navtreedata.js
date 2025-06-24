@@ -96,14 +96,14 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AP3216CAdapterFactory_8h_source.html",
-"classAppWidgetConfigures.html#ace675c12573a63b60df69269ce45c69c",
-"classCactusObsticals.html#a9b78c30aa699a8c7dc472ac62473ad20ac87f3be66ffc3c0d4249f1c2cc5f3cce",
+"classAppWidgetConfigures.html",
+"classCactusObsticals.html#a9b78c30aa699a8c7dc472ac62473ad20a9b9c17e13f0e3dc9860a26e08b59b2a7",
 "classFileInfoProvider.html#aa13112f10f0b93ab09d2c12385b13374",
 "classLinuxPlatformMemoryInfoDriver.html",
 "classScoreManager.html#ad90a12e8f57a175b85d30e43c81b69c9",
-"classVideoPlayer.html#aa7375d4254665af9993c4000b546d76d",
-"dir_ecfb7e6a2bc50974eff7c8ce129f706a.html",
-"structAppWeatherResult_1_1DailyWeather.html#a1abf94235e3a3de48cb52b2c6c477a6d"
+"classVideoPlayer.html#aa694b6b907f0e1935de88613608ff6aa",
+"dir_e7715e758cef16550b71f9866152934d.html",
+"structAppWeatherDetailedRequest.html#a13ced85bff3ab0c1caecc737d607ecf8"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -7,6 +7,7 @@ var namespaces_dup =
       [ "request_target_page", "namespaceccpdf__tools.html#a70c31d5eeb98044b0ddc6f868aaf68a4", null ]
     ] ],
     [ "CVTools", "namespaceCVTools.html", "namespaceCVTools" ],
+    [ "EasingCurveComboBoxSetuper", "namespaceEasingCurveComboBoxSetuper.html", null ],
     [ "ExpressionEvaluator", "namespaceExpressionEvaluator.html", [
       [ "evalute_expression", "namespaceExpressionEvaluator.html#a020740b3fa8807221f6955d336d18311", null ]
     ] ],

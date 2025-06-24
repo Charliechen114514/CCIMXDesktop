@@ -3,7 +3,6 @@ var classDesktopMainWindow =
     [ "DesktopMainWindow", "classDesktopMainWindow.html#aaac5851bae7399538f8ba037117bfdbf", null ],
     [ "~DesktopMainWindow", "classDesktopMainWindow.html#a43d7057668fed07e15bf4adee85b0da8", null ],
     [ "clock_src", "classDesktopMainWindow.html#afc0b94226be4bb3ddf7fcbf7426df62d", null ],
-    [ "deptach_app_cards_init", "classDesktopMainWindow.html#a60543a4367ec2d3ae50a5dd2d8743ea7", null ],
     [ "desktop_toast", "classDesktopMainWindow.html#ad96e7341abb14b361bf76d3baff81071", null ],
     [ "downDockWidget", "classDesktopMainWindow.html#a3c9d1ee127d737faa6b73e162a4c28b3", null ],
     [ "handle_app_status", "classDesktopMainWindow.html#ad72a53e56f786aa89acd04b1544d709c", null ],
