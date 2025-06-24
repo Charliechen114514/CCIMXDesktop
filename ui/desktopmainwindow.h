@@ -48,6 +48,11 @@ public:
     ~DesktopMainWindow();
 
     /**
+     * @brief init init the windows sessions
+     */
+    void init();
+
+    /**
      * @brief Show a toast message on the main window
      * @param message Message to display
 	 */
@@ -115,6 +120,9 @@ public:
      * @brief Perform initialization after main window is shown
      */
     void post_show();
+
+signals:
+    void updateProgress(const QString& message, const int processings);
 
 public slots:
     /**
@@ -191,7 +199,7 @@ private:
     /**
      * @brief Additional UI setup after ui->setupUi()
      */
-    void post_setupui();
+    void setupui();
 
     /**
      * @brief Setup default and internal applications

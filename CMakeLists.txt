@@ -94,7 +94,9 @@ set(UiSubs
     ui/desktoptoast.h ui/desktoptoast.cpp
     ui/wallpaperanimationhandler.h ui/wallpaperanimationhandler.cpp
     ui/UiTools/font_info_formater/FontInfoFormarter.cpp
-    ui/UiTools/font_info_formater/FontInfoFormarter.h)
+    ui/UiTools/font_info_formater/FontInfoFormarter.h
+    ui/UiTools/easing_curve_combox_setupper/EasingCurveComboxBoxSetuper.h 
+    ui/UiTools/easing_curve_combox_setupper/EasingCurveComboxBoxSetuper.cpp)
 
 set(CoreSubs
     core/coretools.h core/coretools.cpp
@@ -171,6 +173,8 @@ set(ICONQRC_SRC
     ui/topstatusbar/topstatusbar_icons.qrc
     icons.qrc)
 
+set(START_STAGE_SRC
+    ui/splash_window/CCIMX_DesktopSplashWindow.h ui/splash_window/CCIMX_DesktopSplashWindow.cpp)
 
 qt_add_executable(CCIMX_Desktop
     WIN32 MACOSX_BUNDLE
@@ -186,7 +190,8 @@ qt_add_executable(CCIMX_Desktop
     ${BUILT_IN_ICM20608_Support}
     ${UPPER_TOOLBAR_SRC}
     ${ICONQRC_SRC}
-    ui/UiTools/easing_curve_combox_setupper/EasingCurveComboxBoxSetuper.h ui/UiTools/easing_curve_combox_setupper/EasingCurveComboxBoxSetuper.cpp
+    ${START_STAGE_SRC}
+    ui/splash_window/splash_src.qrc
 )
 
 add_custom_command(TARGET CCIMX_Desktop POST_BUILD

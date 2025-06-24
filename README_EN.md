@@ -2,7 +2,7 @@
 
 ![CCIMXDesktopLogo](./CCIMXDesktopLogo.png)
 
-![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-23+-green)![Version](https://img.shields.io/badge/Version-Released_1.4.0-red)
+![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-23+-green)![Version](https://img.shields.io/badge/Version-Released_1.5.0-red)
 
 🔌 Hello! This is a simple desktop and utility collection that can be used in a variety of embedded devices! This project currently requires C++23 to compile (it's worth noting that you can compile with C++17, but any projects that require C++23 will need minor modifications)
 
@@ -21,7 +21,7 @@ Now, CCIMXDesktop supports one-click builds including:
 
 | Function / Application Name | Dependency or Remarks | Is it a built-in program | Description | Interface Display |
 | ------------------------------------------------ | -------------------------------------------------- | -------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 🏠 CCIMX_Desktop Ontology | Standard Minimum Dependency | Yes | Core Framework, Ontology | ![image-20250613225001667](./README/image-20250613225001667.png) |
+| 🏠 CCIMX_Desktop Ontology | Standard Minimum Dependency | Yes | Core Framework, Ontology | ![image-20250623214759448](./README/image-20250623214759448.png) |
 | ℹ About App | Standard minimum dependencies | Yes | A brief introduction to the basic situation of the desktop of this project | ![image-20250614231912157](./README/image-20250614231912157.png) |
 | ✏️ CCNoter (Notepad) | Standard minimum dependencies | Yes | Super lightweight notepad | ![image-20250614231754881](./README/image-20250614231754881.png) |
 | 🎨 SimpleDrawer (Painting) | Standard minimum dependencies | Yes | Super lightweight drawing, similar to Windows' "Paint" | ![image-20250614232836661](./README/image-20250614232836661.png) |
@@ -47,19 +47,23 @@ Now, CCIMXDesktop supports one-click builds including:
 
 ## Some running screenshots
 
-1) Main interface: HOME interface (screenshot version: Release1.3.0)
+1. Start up stage screent shots(screenshot version: Release1.5.0)
+
+![image-20250624200242954](./README/image-20250624200242954.png)
+
+2. Main interface: HOME interface (screenshot version: Release1.3.0)
 
 ![image-20250623214759448](./README/image-20250623214759448.png)
 
-2) BuiltinAPP display interface
+3. BuiltinAPP display interface
 
 ![image-20250623214743004](./README/image-20250623214743004.png)
 
-3) ExternAPP third-party optional build configuration
+4. ExternAPP third-party optional build configuration
 
 ![image-20250623214716793](./README/image-20250623214716793.png)
 
-4) APP settings desktop interface
+5. APP settings desktop interface
 
 ![image-20250623214833847](./README/image-20250623214833847.png)
 

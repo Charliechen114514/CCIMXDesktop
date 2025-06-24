@@ -17,19 +17,24 @@
 DesktopMainWindow::DesktopMainWindow(QWidget* parent)
     : QMainWindow(parent)
     , ui(new Ui::DesktopMainWindow) {
-    ui->setupUi(this);
-    post_setupui();
-    setup_apps();
 }
 
-void DesktopMainWindow::post_setupui() {
-	ui->downdock->set_parent_window(this);
+void DesktopMainWindow::setupui() {
+    emit updateProgress("Setting up Desktop Static Ui", 10);
+    ui->setupUi(this);
+    // sources initing
+    emit updateProgress("Setting up Desktop Global Core Sources", 30);
+    scanner = new NetAbilityScanner(this);
+    clock = new GlobalClockSources(this);
+    emit updateProgress("Setting up Desktop basic components", 40);
+    // desktop basic components init
+    ui->downdock->set_parent_window(this);
 	toast = new DesktopToast(this);
     wallpaper_engine = new WallPaperEngine(this);
     appLauncherWindow = new ApplicationLauncherMainWindow(this);
-    scanner = new NetAbilityScanner(this);
-    clock = new GlobalClockSources(this);
+    /* settingsWindow will scan the window sessions so it must be like this */
     ui->topsidewidgetbar->installHookedWindow(this);
+    emit updateProgress("Scanning the Settable Components", 50);
     settingsWindow = new SettingsWindow(this);
 }
 
@@ -37,16 +42,23 @@ DesktopMainWindow::~DesktopMainWindow() {
 	delete ui;
 }
 
+void DesktopMainWindow::init() {
+    setupui();
+    setup_apps();
+}
+
 void DesktopMainWindow::setup_apps() {
 	/* Home Page */
+    emit updateProgress("Setup the Home Page", 50);
 	QWidget* homePage = PageFactory::build_home_page(this);
 	PageSetuper::create_specified_page(ui->stackedWidget, homePage);
-
+    emit updateProgress("Creating Entries for the Builtin Apps", 55);
     app_widgets << PageSetuper::create_builtin_apps(this);
+    emit updateProgress("Creating Entries for the Internal Apps", 60);
     app_widgets << PageSetuper::create_internal_apps(this);
+    emit updateProgress("Creating Entries for the Third Party Apps", 65);
 	app_widgets << PageSetuper::create_real_app(this);
-
-    app_widgets << PageSetuper::build_pesudo_page(":/icons/sources/def_icon2.png", 8, this);
+    emit updateProgress("Initing the DockWidgets", 70);
 	setup_default_dock();
 }
 
@@ -58,9 +70,11 @@ void DesktopMainWindow::setup_default_dock() {
 
 void DesktopMainWindow::invoke_appcards_init() {
 	/* sequencely invoke the work */
+    showToast("AppCards Are Initing...");
 	for (const auto& each_app_cards : std::as_const(this->app_cards)) {
 		each_app_cards->invoke_preLaunch_work();
 	}
+    showToast("AppCards Init Finished!");
 }
 
 QWidget* DesktopMainWindow::centralWidget() {

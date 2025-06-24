@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/splash_sources">
+        <file>sources/CCIMXDesktopLogo.png</file>
+        <file>sources/silk.png</file>
+    </qresource>
+</RCC>
