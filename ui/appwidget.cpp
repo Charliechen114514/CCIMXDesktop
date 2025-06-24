@@ -33,8 +33,9 @@ AppWidget::AppWidget(const QPixmap& icon, const QString& name, QWidget* parent)
 }
 
 void AppWidget::bindApp(ApplicationWrapper* wrapper) {
-    this->app_internal = wrapper;
-    wrapper->bindAppWidget(this);
+    app_internal = wrapper;
+    if (app_internal) // if it is acceptable
+        wrapper->bindAppWidget(this);
 }
 
 ApplicationWrapper* AppWidget::get_app() const {
@@ -99,7 +100,7 @@ QFont AppWidget::currentFont() const {
 void AppWidget::setFontColor(const QColor& color) {
     QString style = ui->label->styleSheet();
 
-    QRegularExpression re(R"(color\s*:\s*[^;]+;?)");
+    static QRegularExpression re(R"(color\s*:\s*[^;]+;?)");
     if (style.contains(re)) {
         style.replace(re, QString("color: %1;").arg(color.name()));
     } else {

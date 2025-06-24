@@ -37,13 +37,11 @@ TimeLabelSettings::TimeLabelSettings(DesktopMainWindow* parent)
             });
     connect(ui->btn_select_font, &QPushButton::clicked,
             this, [this]() {
-                using UiTools::FontFormater::describeFont;
                 bool ok = false;
-                QFont f = QFontDialog::getFont(&ok);
+                QFont f = QFontDialog::getFont(&ok, settingsPack.font, this);
                 if (!ok)
                     return;
                 settingsPack.font = f;
-                ui->font_info->setPlainText(describeFont(f));
                 process_preview();
             });
     connect(ui->btn_apply, &QPushButton::clicked,
@@ -59,6 +57,8 @@ void TimeLabelSettings::process_preview() {
     styler.label = ui->label;
     styler.setFont(settingsPack.font);
     styler.setTextColor(settingsPack.fontColor);
+    using UiTools::FontFormater::describeFont;
+    ui->font_info->setPlainText(describeFont(settingsPack.font));
 }
 
 void TimeLabelSettings::process_apply() {

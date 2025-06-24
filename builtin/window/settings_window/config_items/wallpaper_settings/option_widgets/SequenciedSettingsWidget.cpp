@@ -2,6 +2,7 @@
 #include "../utils/ImageListViewWidget.h"
 #include "core/coretools.h"
 #include "core/wallpaper/WallPaperUtilsColliections.h"
+#include "ui/UiTools/easing_curve_combox_setupper/EasingCurveComboxBoxSetuper.h"
 #include "ui_SequenciedSettingsWidget.h"
 SequenciedSettingsWidget::SequenciedSettingsWidget(QWidget* parent)
     : QWidget(parent)
@@ -17,6 +18,12 @@ SequenciedSettingsWidget::SequenciedSettingsWidget(QWidget* parent)
     connect(ui->animation_spinbox, &QSpinBox::valueChanged, this,
             &SequenciedSettingsWidget::setAnimation_duration);
     ui->image_displayerWidgets->layout()->addWidget(viewer);
+    using namespace UiTools::EasingCurveComboBoxSetuper;
+    setupComboBox(ui->animate_type);
+    connect(ui->animate_type, &QComboBox::currentTextChanged, this, [this]() {
+        using UiTools::EasingCurveComboBoxSetuper::selectedEasing;
+        curve = selectedEasing(ui->animate_type);
+    });
 }
 
 SequenciedSettingsWidget::~SequenciedSettingsWidget() {
@@ -88,4 +95,8 @@ void SequenciedSettingsWidget::setAnimation_duration(int newAnimation_duration) 
 void SequenciedSettingsWidget::setWallpaper_switch_time(int newWallpaper_switch_time) {
     wallpaper_switch_time = newWallpaper_switch_time;
     enforceTimeConstraint();
+}
+
+QEasingCurve SequenciedSettingsWidget::get_easingcurve_type() const {
+    return curve;
 }

@@ -3,17 +3,17 @@
 
 #include "core/wallpaper/WallPaperEngine.h"
 #include <QColor>
+#include <QEasingCurve>
 #include <QFont>
 #include <QPixmap>
-
 /**
  * @brief The AppWidgetsSettingsInfoPack struct
  * Stores configuration parameters for AppWidget appearance.
  */
 struct AppWidgetsSettingsInfoPack {
     QColor fontColor; ///< Text color for the widget.
-    QFont font;       ///< Font used by the widget.
-    int iconSize;     ///< Size of the icon displayed.
+    QFont font; ///< Font used by the widget.
+    int iconSize; ///< Size of the icon displayed.
 };
 
 /**
@@ -26,8 +26,8 @@ public:
      * @brief Types of wallpaper switching behaviors.
      */
     enum class Type {
-        FIXED,      ///< Fixed image wallpaper.
-        FLOW_LIKE   ///< Sequential image switching.
+        FIXED, ///< Fixed image wallpaper.
+        FLOW_LIKE ///< Sequential image switching.
     };
 
     /**
@@ -71,10 +71,10 @@ struct FlowTypeTypeWallPaperSettings : public BaseWallPaperSettings {
     FlowTypeTypeWallPaperSettings()
         : BaseWallPaperSettings(BaseWallPaperSettings::Type::FLOW_LIKE) {
     }
-
-    QStringList images;              ///< List of images to switch between.
-    int animation_speed;             ///< Transition animation speed (ms).
-    int switch_interval;             ///< Interval between switches (ms).
+    QEasingCurve curve; ///< curve type for animations
+    QStringList images; ///< List of images to switch between.
+    int animation_speed; ///< Transition animation speed (ms).
+    int switch_interval; ///< Interval between switches (ms).
     WallPaperEngine::SwitchingMode mode; ///< Switching mode behavior.
 };
 

@@ -1,4 +1,5 @@
 #include "UiTools.h"
+#include <QDebug>
 #include <QGridLayout>
 namespace {
 int getNextGridPosition(QGridLayout* layout, int columnCount, int& outRow, int& outCol) {

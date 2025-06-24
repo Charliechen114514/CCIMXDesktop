@@ -2,10 +2,10 @@
 #define WALLPAPERANIMATIONHANDLER_H
 
 #include "desktopmainwindow.h"
+#include <QEasingCurve>
 #include <QObject>
 #include <QStringList>
 #include <functional>
-
 /* this class is expected to do the wallpaper switch */
 
 /**
@@ -51,10 +51,11 @@ public:
 
     /**
      * @brief AnimationSettingsPackage settings
-     * 
+     *
      */
     struct AnimationSettingsPackage {
-        int durations; ///< animation durations 
+        int durations; ///< animation durations
+        QEasingCurve curve; ///< animation curve type
     };
 
 	/**

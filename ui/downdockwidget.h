@@ -15,13 +15,13 @@ class AppWidget;
  */
 class DownDockWidget : public QWidget {
 	Q_OBJECT
-	static constexpr unsigned short DOCK_MAX_APP_CNT = 5;
+    static constexpr unsigned short DOCK_MAX_APP_CNT = 4;
 
 public:
 	/**
 	 * @brief Construct a new Down Dock Widget object
-	 * 
-	 * @param parent 
+     *
+     * @param parent
 	 */
 	explicit DownDockWidget(QWidget* parent = nullptr);
 	/**
@@ -32,8 +32,8 @@ public:
 
 	/**
 	 * @brief Set the parent window object
-	 * 
-	 * @param parent_window 
+     *
+     * @param parent_window
 	 */
 	void set_parent_window(DesktopMainWindow* parent_window) {
 		this->parent_window = parent_window;
@@ -41,7 +41,7 @@ public:
 
 	/**
 	 * @brief Destroy the Down Dock Widget object
-	 * 
+     *
 	 */
 	~DownDockWidget();
 	/**

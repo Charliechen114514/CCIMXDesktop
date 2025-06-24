@@ -151,12 +151,6 @@ public slots:
      */
     void process_wallpaper_settings(BaseWallPaperSettings* settings);
 
-signals:
-    /**
-     * @brief Signal emitted when app cards require initialization
-     */
-    void deptach_app_cards_init();
-
 protected:
 	/**
 	 * @brief mouse press sessions

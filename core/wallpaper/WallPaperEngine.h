@@ -1,10 +1,10 @@
 #ifndef WALLPAPERENGINE_H
 #define WALLPAPERENGINE_H
 
+#include <QEasingCurve>
 #include <QMap>
 #include <QObject>
 #include <QStringList>
-
 class QMainWindow;
 class QWidget;
 class QLabel;
@@ -13,7 +13,7 @@ class DesktopMainWindow;
 
 /**
  * @brief Engine managing desktop wallpaper switching and animations.
- * 
+ *
  * Supports multiple switching modes such as gradient, fixed, and movement,
  * handles wallpaper image lists, animation timing, and wallpaper display.
  */
@@ -25,9 +25,9 @@ public:
      * @brief Enum for wallpaper switching modes.
      */
     enum class SwitchingMode {
-        Gradient,   ///< Wallpaper switches with gradient effect.
-        Fixed,      ///< Fixed wallpaper without switching.
-        Movement    ///< Wallpaper switches with movement animation.
+        Gradient, ///< Wallpaper switches with gradient effect.
+        Fixed, ///< Fixed wallpaper without switching.
+        Movement ///< Wallpaper switches with movement animation.
     };
 
     /**
@@ -176,6 +176,17 @@ public:
      * @brief Resets all settings to default values.
      */
     void reset_defaults();
+    /**
+     * @brief get_easingcurve
+     * @return
+     */
+    QEasingCurve get_easingcurve() const;
+
+    /**
+     * @brief set_easingcurve
+     * @param curveType set as curveType indicates
+     */
+    void set_easingcurve(const QEasingCurve curveType);
 
     /**
      * @brief Handles fallback behavior when no wallpaper images are available.
@@ -214,6 +225,7 @@ private:
 
     SwitchingMode mode { DEF_MODE }; ///< Current wallpaper switching mode
     int animation_durations { ANIMATION_DURATION }; ///< Duration of animation in milliseconds
+    QEasingCurve curve { QEasingCurve::InOutCubic }; // current curse;
 };
 
 #endif // WALLPAPERENGINE_H

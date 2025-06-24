@@ -142,7 +142,7 @@ private:
 
 	QString app_path; ///< Path to the application executable.
 	QStringList app_args; ///< Arguments passed to the application.
-	AppCode internal_app_code; ///< Internal code identifying the app.
+    const AppCode internal_app_code; ///< Internal code identifying the app.
 	AppWidget* appWidget; ///< UI widget associated with the app.
 
 	HandlingFinHook rawAppFinHook { nullptr }; ///< Application finish hook.

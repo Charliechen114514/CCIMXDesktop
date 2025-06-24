@@ -6,6 +6,44 @@
 #include <QParallelAnimationGroup>
 #include <QPropertyAnimation>
 
+namespace {
+struct OpacityPackage {
+    QObject* target;
+    qreal start;
+    qreal end;
+    int duration;
+    QEasingCurve curve;
+};
+
+// creating for the conv
+QPropertyAnimation* createOpacityAnimation(const OpacityPackage&& package) {
+    QPropertyAnimation* anim = new QPropertyAnimation(package.target, "opacity");
+    anim->setDuration(package.duration);
+    anim->setStartValue(package.start);
+    anim->setEndValue(package.end);
+    anim->setEasingCurve(package.curve);
+    return anim;
+}
+
+struct MovePackage {
+    QWidget* widget;
+    QPoint start;
+    QPoint end;
+    int duration;
+    QEasingCurve curve;
+};
+
+// creating for the conv
+QPropertyAnimation* createMoveAnimation(const MovePackage&& package) {
+    QPropertyAnimation* anim = new QPropertyAnimation(package.widget, "pos");
+    anim->setDuration(package.duration);
+    anim->setStartValue(package.start);
+    anim->setEndValue(package.end);
+    anim->setEasingCurve(package.curve);
+    return anim;
+}
+}
+
 WallPaperAnimationHandler::WallPaperAnimationHandler(QObject* parent)
     : QObject { parent } { }
 
@@ -55,12 +93,10 @@ void WallPaperAnimationHandler::
 
 	wallpaperlabel->setPixmap(next_one);
 	QGraphicsOpacityEffect* opacityEffect = new QGraphicsOpacityEffect(bufferpaperlabel);
-	bufferpaperlabel->setGraphicsEffect(opacityEffect);
+    bufferpaperlabel->setGraphicsEffect(opacityEffect);
 
-	QPropertyAnimation* fadeOut = new QPropertyAnimation(opacityEffect, "opacity");
-    fadeOut->setDuration(packages.durations);
-	fadeOut->setStartValue(1.0);
-	fadeOut->setEndValue(0.0);
+    QPropertyAnimation* fadeOut = createOpacityAnimation({ opacityEffect, 1.0, 0.0, packages.durations, QEasingCurve::OutCubic });
+    opacityEffect->setParent(fadeOut);
 
 	connect(fadeOut, &QPropertyAnimation::finished, [=]() {
 		bufferpaperlabel->hide();
@@ -98,15 +134,10 @@ void WallPaperAnimationHandler::process_movement_switch(
     bufferpaperlabel->move(wallpaperPos.x() + size.width(), wallpaperPos.y());
     bufferpaperlabel->show();
 
-    QPropertyAnimation* anim_old = new QPropertyAnimation(wallpaperlabel, "pos");
-    anim_old->setDuration(packages.durations);
-    anim_old->setStartValue(wallpaperPos);
-    anim_old->setEndValue(QPoint(wallpaperPos.x() - size.width(), wallpaperPos.y()));
-
-    QPropertyAnimation* anim_new = new QPropertyAnimation(bufferpaperlabel, "pos");
-    anim_new->setDuration(packages.durations);
-    anim_new->setStartValue(QPoint(wallpaperPos.x() + size.width(), wallpaperPos.y()));
-    anim_new->setEndValue(wallpaperPos);
+    QPoint offscreenRight = wallpaperPos + QPoint(size.width(), 0);
+    QPoint offscreenLeft = wallpaperPos - QPoint(size.width(), 0);
+    QPropertyAnimation* anim_old = createMoveAnimation({ wallpaperlabel, wallpaperPos, offscreenLeft, packages.durations, QEasingCurve::InOutCubic });
+    QPropertyAnimation* anim_new = createMoveAnimation({ bufferpaperlabel, offscreenRight, wallpaperPos, packages.durations, QEasingCurve::InOutCubic });
 
     QParallelAnimationGroup* group_anim = new QParallelAnimationGroup;
     group_anim->addAnimation(anim_old);

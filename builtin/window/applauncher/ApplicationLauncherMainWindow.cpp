@@ -76,7 +76,8 @@ void ApplicationLauncherMainWindow::process_depatch() {
     bool isPerminate = ui->checkBox_for_perminant->isChecked();
     shell_delete_current = !isPerminate;
     wrapper->set_app_path(ui->exes->text());
-    QStringList arguments = ui->arguments_lineedit->text().split(" ");
+    // update here: use splitCommand for a better command parser
+    QStringList arguments = QProcess::splitCommand(ui->arguments_lineedit->text());
     wrapper->install_args(arguments);
     this->hide();
     if (isPerminate) {
@@ -86,7 +87,7 @@ void ApplicationLauncherMainWindow::process_depatch() {
 }
 
 void ApplicationLauncherMainWindow::collect_to_commands_depatched() {
-    ui->command_displayings->setText(ui->exes->text() + ui->arguments_lineedit->text());
+    ui->command_displayings->setText(ui->exes->text() + " " + ui->arguments_lineedit->text());
 }
 
 void ApplicationLauncherMainWindow::install_to_window() {
@@ -127,7 +128,6 @@ void ApplicationLauncherMainWindow::process_post_finish() {
     } else {
         install_to_window();
         wrapper = nullptr; // release the handle
-
         appWidget = nullptr; // release the handle and moves to the mainWindow sessions
     }
 }

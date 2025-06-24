@@ -79,6 +79,7 @@ void WallpaperConfigures::apply_settings() {
         settings->mode = current_mode;
         settings->animation_speed = possible_sq->getAnimation_duration();
         settings->switch_interval = possible_sq->getWallpaper_switch_time();
+        settings->curve = possible_sq->get_easingcurve_type();
         window->process_wallpaper_settings(settings);
     } break;
     }

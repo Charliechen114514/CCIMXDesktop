@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.19)
-project(CCIMX_Desktop LANGUAGES CXX VERSION 1.2.0)
+project(CCIMX_Desktop LANGUAGES CXX VERSION 1.4.0)
 
 message(STATUS "Importing cmake modules...")
 set(CCDESKTOPABOUT_CMAKE_DIR "${CMAKE_SOURCE_DIR}/cmake")
@@ -186,6 +186,7 @@ qt_add_executable(CCIMX_Desktop
     ${BUILT_IN_ICM20608_Support}
     ${UPPER_TOOLBAR_SRC}
     ${ICONQRC_SRC}
+    ui/UiTools/easing_curve_combox_setupper/EasingCurveComboxBoxSetuper.h ui/UiTools/easing_curve_combox_setupper/EasingCurveComboxBoxSetuper.cpp
 )
 
 add_custom_command(TARGET CCIMX_Desktop POST_BUILD

@@ -1,6 +1,7 @@
 #ifndef SEQUENCIEDSETTINGSWIDGET_H
 #define SEQUENCIEDSETTINGSWIDGET_H
 
+#include <QEasingCurve>
 #include <QWidget>
 
 class ImageListViewer;
@@ -12,7 +13,7 @@ class SequenciedSettingsWidget;
 /**
  * @brief The SequenciedSettingsWidget class
  * Manages and configures a list of sequentially changing images (e.g., slideshow).
- * 
+ *
  * This widget provides options to control animation duration, switching interval,
  * and manage the list of images used in rotation. It supports interaction with an external
  * image viewer component.
@@ -80,6 +81,12 @@ public:
      */
     void setWallpaper_switch_time(int newWallpaper_switch_time);
 
+    /**
+     * @brief get_easingcurve_type
+     * @return
+     */
+    QEasingCurve get_easingcurve_type() const;
+
 signals:
     /**
      * @brief Emitted when images should be loaded into a viewer.
@@ -106,16 +113,16 @@ private slots:
     void apply_new_images();
 
 private:
-    Ui::SequenciedSettingsWidget* ui;    ///< UI components pointer.
-    ImageListViewer* viewer;             ///< Reference to the image preview/viewer.
-    QString image_lists_folders;         ///< Folder path for loaded images.
-    QStringList image_lists;             ///< List of image paths.
-    int animation_duration;              ///< Duration of transition animations.
-    int wallpaper_switch_time;           ///< Interval for switching images.
-
+    Ui::SequenciedSettingsWidget* ui; ///< UI components pointer.
+    ImageListViewer* viewer; ///< Reference to the image preview/viewer.
+    QString image_lists_folders; ///< Folder path for loaded images.
+    QStringList image_lists; ///< List of image paths.
+    int animation_duration; ///< Duration of transition animations.
+    int wallpaper_switch_time; ///< Interval for switching images.
+    QEasingCurve curve; ///< curve types
     /**
      * @brief Enforces logical constraints on timing values.
-     * 
+     *
      * Ensures that switching interval is always longer than animation duration.
      */
     void enforceTimeConstraint();

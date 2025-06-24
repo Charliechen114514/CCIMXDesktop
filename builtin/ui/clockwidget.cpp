@@ -113,8 +113,6 @@ void ClockWidget::drawTicks(QPainter* painter) {
 }
 
 void ClockWidget::drawHands(QPainter* painter) {
-    cur_time = QTime::currentTime();
-
 	// Draw hour hand
 	painter->save();
 	painter->setPen(Qt::NoPen);

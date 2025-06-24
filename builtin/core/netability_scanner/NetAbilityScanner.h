@@ -2,7 +2,7 @@
 #define NETABILITYSCANNER_H
 #include "NetAbilityScanEnum.h"
 #include <QObject>
-
+class QNetworkAccessManager;
 /**
  * @brief   The NetAbilityScanner class
  *          check the desktop network status
@@ -53,6 +53,7 @@ private:
     static constexpr const char* online_base_work = "http://www.baidu.com";
 
     QTimer* scan_timer; ///< timer triggers the scan sessions
+    QNetworkAccessManager* manager = nullptr;
 };
 
 #endif // NETABILITYSCANNER_H

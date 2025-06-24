@@ -25,7 +25,11 @@ QList<AppCardWidget*> PageFactory::
         placed->setLayout(gridLayout);
     }
 
-	QGridLayout* gridLayout = dynamic_cast<QGridLayout*>(placed->layout());
+    /*
+     *  qobject_cast is performance better then dynamic_cast
+     *  due to the RTTI and qt_meta's performance differs
+     */
+    QGridLayout* gridLayout = qobject_cast<QGridLayout*>(placed->layout());
 	if (!gridLayout)
 		return {}; // not pass the layout check
 

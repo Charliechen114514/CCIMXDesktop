@@ -13,7 +13,7 @@
 #include "ui/stackpage_switcher_animation.h"
 #include "ui_desktopmainwindow.h"
 #include <QMouseEvent>
-
+#include <QTimer>
 DesktopMainWindow::DesktopMainWindow(QWidget* parent)
     : QMainWindow(parent)
     , ui(new Ui::DesktopMainWindow) {
@@ -45,6 +45,8 @@ void DesktopMainWindow::setup_apps() {
     app_widgets << PageSetuper::create_builtin_apps(this);
     app_widgets << PageSetuper::create_internal_apps(this);
 	app_widgets << PageSetuper::create_real_app(this);
+
+    app_widgets << PageSetuper::build_pesudo_page(":/icons/sources/def_icon2.png", 8, this);
 	setup_default_dock();
 }
 
@@ -81,21 +83,11 @@ void DesktopMainWindow::handle_app_status(AppWidget::AppStatus status) {
 }
 
 void DesktopMainWindow::open_settings_window() {
-    if (settingsWindow->isVisible()) {
-        qDebug() << "settings window is already visible";
-        return;
-    }
-
-    settingsWindow->show();
+    UiTools::openIfUnvisible(settingsWindow, "Settings Window");
 }
 
 void DesktopMainWindow::open_launch_window() {
-    if (appLauncherWindow->isVisible()) {
-        qDebug() << "settings window is already visible";
-        return;
-    }
-
-    appLauncherWindow->show();
+    UiTools::openIfUnvisible(appLauncherWindow, "AppLaunchWindow");
 }
 
 void DesktopMainWindow::install_for_new_dynamicpage(AppWidget* appWidgets) {
@@ -139,6 +131,7 @@ void DesktopMainWindow::process_wallpaper_settings(BaseWallPaperSettings* settin
         wallpaper_engine->set_image_list(flow->images);
         wallpaper_engine->set_switch_interval(flow->switch_interval);
         wallpaper_engine->set_mode(flow->mode);
+        wallpaper_engine->set_easingcurve(flow->curve);
     } break;
     }
 }
@@ -152,10 +145,9 @@ TopSideBarWidget* DesktopMainWindow::topSideBar() const {
 }
 
 void DesktopMainWindow::post_show() {
-	connect(this, &DesktopMainWindow::deptach_app_cards_init,
-            this, &DesktopMainWindow::invoke_appcards_init);
-
-	emit deptach_app_cards_init();
+    QTimer::singleShot(0, this, [this]() {
+        invoke_appcards_init();
+    });
 }
 
 void DesktopMainWindow::showToast(const QString& message) {
@@ -168,17 +160,20 @@ DownDockWidget* DesktopMainWindow::downDockWidget() const {
 
 void DesktopMainWindow::mousePressEvent(QMouseEvent* event) {
 	records.press = event->pos();
+    event->accept();
 }
 
 void DesktopMainWindow::mouseReleaseEvent(QMouseEvent* event) {
 	records.release = event->pos();
-	int move_range = records.press.x() - records.release.x();
+    const QPoint diff = records.press - records.release;
 
-	if (qAbs(move_range) < 100) {
-		return;
-	}
+    if (qAbs(diff.x()) < 100 || diff.manhattanLength() < 120) {
+        event->ignore();
+        return;
+    }
 
-	move_range < 0 ? to_next_page() : to_prev_page();
+    diff.x() < 0 ? to_next_page() : to_prev_page();
+    event->accept();
 }
 
 void DesktopMainWindow::to_next_page() {

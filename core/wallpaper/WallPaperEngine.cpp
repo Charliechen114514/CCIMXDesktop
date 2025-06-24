@@ -96,6 +96,14 @@ void WallPaperEngine::reset_defaults() {
     emit imagelist_changed(image_lists);
 }
 
+QEasingCurve WallPaperEngine::get_easingcurve() const {
+    return curve;
+}
+
+void WallPaperEngine::set_easingcurve(const QEasingCurve curveType) {
+    curve = curveType;
+}
+
 void WallPaperEngine::fallback_empty_session() {
     image_lists.clear();
     image_lists << WallPaperUtilsColliections::collect_from_qrcs();
@@ -109,7 +117,8 @@ void WallPaperEngine::process_internal_timer_hook() {
         /* switch the background page */
         WallPaperAnimationHandler::ImagePoolEngine engine;
         engine.image_list = &this->image_lists;
-        WallPaperAnimationHandler::process_opacity_switch(this, engine, { animation_durations });
+        WallPaperAnimationHandler::process_opacity_switch(
+            this, engine, { animation_durations, curve });
         emit wallpaperChanged(this->wallpaperLabel->pixmap());
     } break;
     case SwitchingMode::Fixed:
@@ -118,7 +127,8 @@ void WallPaperEngine::process_internal_timer_hook() {
     case SwitchingMode::Movement:
         WallPaperAnimationHandler::ImagePoolEngine engine;
         engine.image_list = &this->image_lists;
-        WallPaperAnimationHandler::process_movement_switch(this, engine, { animation_durations });
+        WallPaperAnimationHandler::process_movement_switch(
+            this, engine, { animation_durations, curve });
         emit wallpaperChanged(this->bufferpaperLabel->pixmap());
         break;
     }

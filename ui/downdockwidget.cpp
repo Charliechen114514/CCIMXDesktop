@@ -49,15 +49,36 @@ void DownDockWidget::replace_docks() {
 	});
 
 	QList<AppWidget*> top_apps = dock_apps.mid(0, DOCK_MAX_APP_CNT);
-	QLayout* layout = this->layout();
-	if (layout) {
-		QLayoutItem* item;
-		layout->takeAt(0);
-	}
+    // QLayout* layout = this->layout();
+    // if (layout) {
+    // 	QLayoutItem* item;
+    // 	layout->takeAt(0);
+    // }
 
-	for (AppWidget* app : std::as_const(top_apps)) {
-		layout->addWidget(app);
-	}
+    // for (AppWidget* app : std::as_const(top_apps)) {
+    // 	layout->addWidget(app);
+    // }
+
+    QLayout* layout = this->layout();
+    QSet<AppWidget*> currentWidgets;
+    for (int i = 0; i < layout->count(); ++i) {
+        if (auto* widget = qobject_cast<AppWidget*>(layout->itemAt(i)->widget())) {
+            currentWidgets.insert(widget);
+        }
+    }
+
+    for (AppWidget* app : top_apps) {
+        if (!currentWidgets.contains(app)) {
+            layout->addWidget(app);
+        }
+    }
+
+    for (auto it = currentWidgets.begin(); it != currentWidgets.end(); ++it) {
+        if (!top_apps.contains(*it)) {
+            layout->removeWidget(*it);
+            (*it)->hide();
+        }
+    }
 }
 
 DownDockWidget::~DownDockWidget() {

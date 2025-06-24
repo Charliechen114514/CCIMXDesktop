@@ -35,7 +35,8 @@ void NetAbilityScanner::process_once_local_check() {
 }
 
 void NetAbilityScanner::process_once_online_check() {
-    QNetworkAccessManager* manager = new QNetworkAccessManager();
+    if (!manager)
+        manager = new QNetworkAccessManager(this);
     QNetworkRequest request = QNetworkRequest(QUrl(online_base_work));
 
     QNetworkReply* reply = manager->head(request);

@@ -28,12 +28,10 @@ void ApplicationWrapper::def_error_handler() {
         mainWindow->show();
 }
 
-ApplicationWrapper::
-    ApplicationWrapper(QObject* parent, DesktopMainWindow* desktopWindow)
-    : QObject(parent) {
-    mainWindow = desktopWindow;
-    internal_app_code = QUuid::createUuid().toString(QUuid::WithoutBraces);
-}
+ApplicationWrapper::ApplicationWrapper(QObject* parent, DesktopMainWindow* desktopWindow)
+    : QObject(parent)
+    , mainWindow(desktopWindow)
+    , internal_app_code(QUuid::createUuid().toString(QUuid::WithoutBraces)) { }
 
 void ApplicationWrapper::depatch_app() {
 	/* precheck is passed then */

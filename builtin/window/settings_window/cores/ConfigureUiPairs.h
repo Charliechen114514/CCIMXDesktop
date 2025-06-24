@@ -1,7 +1,7 @@
 #ifndef CONFIGUREUIPAIRS_H
 #define CONFIGUREUIPAIRS_H
 
-#include <QMap>
+#include <QHash>
 #include <QObject>
 
 class QTreeWidget;
@@ -12,7 +12,7 @@ class QWidget;
 /**
  * @brief The ConfigureUiPairs struct
  * Manages the mapping between tree items and UI panels for configuration views.
- * 
+ *
  * Allows installing mapping relationships between navigation tree items
  * and associated QWidget panels, and handles automatic switching.
  */
@@ -23,7 +23,7 @@ public:
     ConfigureUiPairs() = delete;
     /**
      * @brief Disable copy move
-     * 
+     *
      */
     Q_DISABLE_COPY_MOVE(ConfigureUiPairs);
 
@@ -51,9 +51,9 @@ private slots:
     void process_switch_sessions(QTreeWidgetItem* item);
 
 private:
-    QMap<QTreeWidgetItem*, QWidget*> mappings; ///< Mapping from tree items to widgets.
-    QTreeWidget* treeWidget;                   ///< Tree navigation component.
-    QStackedWidget* stackedWidget;             ///< Stacked UI widget.
+    QHash<QTreeWidgetItem*, QWidget*> mappings; ///< Mapping from tree items to widgets.
+    QTreeWidget* treeWidget; ///< Tree navigation component.
+    QStackedWidget* stackedWidget; ///< Stacked UI widget.
 };
 
 #endif // CONFIGUREUIPAIRS_H
