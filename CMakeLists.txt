@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.19)
-project(CCIMX_Desktop LANGUAGES CXX VERSION 1.4.0)
+project(CCIMX_Desktop LANGUAGES CXX VERSION 1.5.1)
 
 message(STATUS "Importing cmake modules...")
 set(CCDESKTOPABOUT_CMAKE_DIR "${CMAKE_SOURCE_DIR}/cmake")
@@ -171,10 +171,12 @@ set(ICONQRC_SRC
     builtin/sources/localweather/localweather.qrc
     builtin/sources/other_icons.qrc
     ui/topstatusbar/topstatusbar_icons.qrc
+    ui/splash_window/splash_src.qrc
     icons.qrc)
 
 set(START_STAGE_SRC
-    ui/splash_window/CCIMX_DesktopSplashWindow.h ui/splash_window/CCIMX_DesktopSplashWindow.cpp)
+    ui/splash_window/CCIMX_DesktopSplashWindow.h
+    ui/splash_window/CCIMX_DesktopSplashWindow.cpp)
 
 qt_add_executable(CCIMX_Desktop
     WIN32 MACOSX_BUNDLE
@@ -191,7 +193,6 @@ qt_add_executable(CCIMX_Desktop
     ${UPPER_TOOLBAR_SRC}
     ${ICONQRC_SRC}
     ${START_STAGE_SRC}
-    ui/splash_window/splash_src.qrc
 )
 
 add_custom_command(TARGET CCIMX_Desktop POST_BUILD
