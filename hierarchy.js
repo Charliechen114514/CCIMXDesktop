@@ -93,6 +93,9 @@ var hierarchy =
     [ "MediaPlayerWindowHelper", "classMediaPlayerWindowHelper.html", null ],
     [ "MemoryInfoFetcher::MemoryStat", "structMemoryInfoFetcher_1_1MemoryStat.html", null ],
     [ "WallPaperEngine::ModeMapping", "structWallPaperEngine_1_1ModeMapping.html", null ],
+    [ "NoteInfo", "structNoteInfo.html", null ],
+    [ "Noter", "classNoter.html", null ],
+    [ "NoteCreatorWindow::Package", "structNoteCreatorWindow_1_1Package.html", null ],
     [ "PageFactory", "classPageFactory.html", null ],
     [ "ToolsStackedWidget::PagePackage", "structToolsStackedWidget_1_1PagePackage.html", null ],
     [ "PageSetuper::PageSetupSessionRequest", "structPageSetuper_1_1PageSetupSessionRequest.html", null ],
@@ -103,6 +106,10 @@ var hierarchy =
     [ "PhotoSaver", "classPhotoSaver.html", null ],
     [ "PlatformDriverFactory", "classPlatformDriverFactory.html", null ],
     [ "ProcessBroswer::ProcessInfo", "structProcessBroswer_1_1ProcessInfo.html", null ],
+    [ "QCalendarWidget", null, [
+      [ "ModernCalendarWidget", "classModernCalendarWidget.html", null ],
+      [ "ModernCalendarWidget", "classModernCalendarWidget.html", null ]
+    ] ],
     [ "QFileSystemModel", null, [
       [ "CCIMXFileSystemModel", "classCCIMXFileSystemModel.html", null ]
     ] ],
@@ -118,6 +125,7 @@ var hierarchy =
       [ "ApplicationLauncherMainWindow", "classApplicationLauncherMainWindow.html", null ],
       [ "CCNoterWindow", "classCCNoterWindow.html", null ],
       [ "CaculatorMainWindow", "classCaculatorMainWindow.html", null ],
+      [ "CalendarWindow", "classCalendarWindow.html", null ],
       [ "CameraWindow", "classCameraWindow.html", null ],
       [ "DesktopMainWindow", "classDesktopMainWindow.html", null ],
       [ "DinasourGameWindow", "classDinasourGameWindow.html", null ],
@@ -136,6 +144,7 @@ var hierarchy =
       [ "MediaPlayerWindow", "classMediaPlayerWindow.html", null ],
       [ "MetaInfoWindow", "classMetaInfoWindow.html", null ],
       [ "NetMainWindow", "classNetMainWindow.html", null ],
+      [ "NoteCreatorWindow", "classNoteCreatorWindow.html", null ],
       [ "PlayListMainWindow", "classPlayListMainWindow.html", null ],
       [ "SaveWindow", "classSaveWindow.html", null ],
       [ "SettingsWindow", "classSettingsWindow.html", null ],
@@ -227,8 +236,10 @@ var hierarchy =
       [ "CameraDisplayWidget", "classCameraDisplayWidget.html", null ],
       [ "CannyExample", "classCannyExample.html", null ],
       [ "ClockWidget", "classClockWidget.html", null ],
+      [ "ColorPicker", "classColorPicker.html", null ],
       [ "ColorSelectWidget", "classColorSelectWidget.html", null ],
       [ "ContoursQueryExample", "classContoursQueryExample.html", null ],
+      [ "DateIcon", "classDateIcon.html", null ],
       [ "DesktopAboutMainWidget", "classDesktopAboutMainWidget.html", null ],
       [ "DesktopToast", "classDesktopToast.html", null ],
       [ "DesktopToast", "classDesktopToast.html", null ],
@@ -254,6 +265,9 @@ var hierarchy =
       [ "MainShowWidget", "classMainShowWidget.html", null ],
       [ "MainSideBar", "classMainSideBar.html", null ],
       [ "MemoryUsageChart", "classMemoryUsageChart.html", null ],
+      [ "PanelWidget", "classPanelWidget.html", [
+        [ "DateNoter", "classDateNoter.html", null ]
+      ] ],
       [ "Pinger", "classPinger.html", null ],
       [ "ProcessBrowserWidget", "classProcessBrowserWidget.html", null ],
       [ "ReadMeWidget", "classReadMeWidget.html", null ],

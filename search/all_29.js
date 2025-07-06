@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['📝_20许可证_0',['📝 许可证',['../md_README.html#autotoc_md13',1,'']]],
-  ['📝_20license_1',['📝 License',['../md_README__EN.html#autotoc_md27',1,'']]]
+  ['💡_20wip与计划_0',['💡 WIP与计划',['../md_README.html#autotoc_md12',1,'']]],
+  ['💡_20wip_20and_20plans_1',['💡 WIP and Plans',['../md_README__EN.html#autotoc_md30',1,'']]]
 ];

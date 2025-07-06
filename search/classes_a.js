@@ -18,5 +18,6 @@ var searchData=
   ['memorystat_15',['MemoryStat',['../structMemoryInfoFetcher_1_1MemoryStat.html',1,'MemoryInfoFetcher']]],
   ['memoryusagechart_16',['MemoryUsageChart',['../classMemoryUsageChart.html',1,'']]],
   ['metainfowindow_17',['MetaInfoWindow',['../classMetaInfoWindow.html',1,'']]],
-  ['modemapping_18',['ModeMapping',['../structWallPaperEngine_1_1ModeMapping.html',1,'WallPaperEngine']]]
+  ['modemapping_18',['ModeMapping',['../structWallPaperEngine_1_1ModeMapping.html',1,'WallPaperEngine']]],
+  ['moderncalendarwidget_19',['ModernCalendarWidget',['../classModernCalendarWidget.html',1,'']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['🖥️_0',['🖥️',['../md_README.html',1,'CCIMXDESKTOP 🖥️'],['../md_README__EN.html',1,'CCIMXDESKTOP 🖥️']]]
+  ['📝_20许可证_0',['📝 许可证',['../md_README.html#autotoc_md17',1,'']]],
+  ['📝_20license_1',['📝 License',['../md_README__EN.html#autotoc_md35',1,'']]]
 ];

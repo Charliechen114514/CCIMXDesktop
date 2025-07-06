@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['📚项目文档_0',['📚项目文档',['../md_README.html#autotoc_md10',1,'']]],
-  ['📚_20project_20documentation_1',['📚 Project Documentation',['../md_README__EN.html#autotoc_md24',1,'']]]
+  ['🎨_20tt_20ui_20tt_0',['🎨 tt ui tt',['../md_Components-explain-CN.html#autotoc_md47',1,'🎨 &lt;tt&gt;ui&lt;/tt&gt;'],['../md_Components-explain-EN.html#autotoc_md59',1,'🎨 &lt;tt&gt;ui&lt;/tt&gt;']]]
 ];

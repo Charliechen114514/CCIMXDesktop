@@ -24,7 +24,7 @@ var searchData=
   ['increase_5fonce_21',['increase_once',['../classScoreManager.html#a32b6d765e289d9d76d19a9e3e3424f03',1,'ScoreManager::increase_once()'],['../classScoreManager.html#a0a882a4403a0a2f4b0f50d063d7ce768',1,'ScoreManager::increase_once(int score)']]],
   ['index_22',['index',['../classImageCore.html#a7e95744c1deb8e15d7470552a4f21c71',1,'ImageCore::index()'],['../classSoundEffectPlayer.html#ae70933accefa848f9bf5923f52ff6aa4',1,'SoundEffectPlayer::index(const EffectIndex &amp;e)'],['../classSoundEffectPlayer.html#a945aa394eb416f037ef643b8f693fbb9',1,'SoundEffectPlayer::index(const int e)']]],
   ['indicate_5fopen_5flaunch_5fwindow_23',['indicate_open_launch_window',['../classAppLaunchLauncher.html#af7d3aa5ae9b0024c40d7559873c0b08b',1,'AppLaunchLauncher::indicate_open_launch_window()'],['../classAppLauncherApp.html#a7b35c284e3da6646174090aaa8f6bda3',1,'AppLauncherApp::indicate_open_launch_window()']]],
-  ['indicate_5fopen_5fsettings_5fwindow_24',['indicate_open_settings_window',['../classSettingsApp.html#a6b3bdb5a49fd5453fe4a950f3579f1c7',1,'SettingsApp::indicate_open_settings_window()'],['../classSettingsLaunch.html#a52540d6599ce4c7bf6b4688e4bc72748',1,'SettingsLaunch::indicate_open_settings_window()']]],
+  ['indicate_5fopen_5fsettings_5fwindow_24',['indicate_open_settings_window',['../classSettingsLaunch.html#a52540d6599ce4c7bf6b4688e4bc72748',1,'SettingsLaunch::indicate_open_settings_window()'],['../classSettingsApp.html#a6b3bdb5a49fd5453fe4a950f3579f1c7',1,'SettingsApp::indicate_open_settings_window()']]],
   ['indicate_5fshow_25',['indicate_show',['../classToolBoxs.html#afca228f11d7971a4eb5fe905fb5eee70',1,'ToolBoxs']]],
   ['indicate_5fzoom_26',['indicate_zoom',['../classCCPdfScrollArea.html#a659bde2f5fe452c6cc90e0c8c042b18a',1,'CCPdfScrollArea']]],
   ['indication_27',['indication',['../classEventManager.html#a34fbb84264f448a152b44dd06853195a',1,'EventManager']]],
@@ -46,7 +46,7 @@ var searchData=
   ['interfacesdisplaywidget_43',['InterfacesDisplayWidget',['../classInterfacesDisplayWidget.html#a1d59d7688f558e9ef6051d0fbfb78508',1,'InterfacesDisplayWidget']]],
   ['interfacesquery_44',['InterfacesQuery',['../classInterfacesQuery.html#ababe81a57791aae7fa1bca532074dffc',1,'InterfacesQuery']]],
   ['invalidnumber_45',['InvalidNumber',['../classInvalidNumber.html#acf90c00fc7ff9c39846414a1237d9c01',1,'InvalidNumber']]],
-  ['invoke_5fprelaunch_5fwork_46',['invoke_prelaunch_work',['../classLocalWeatherCard.html#a1bd3f52bf969c5d3747f6934da123fef',1,'LocalWeatherCard::invoke_preLaunch_work()'],['../classNetCardGadget.html#a82d97e27218187db562c8d02bb5866d2',1,'NetCardGadget::invoke_preLaunch_work()'],['../classAppCardWidget.html#a82559c4e4ddb985821a8b87076bb446b',1,'AppCardWidget::invoke_preLaunch_work()']]],
+  ['invoke_5fprelaunch_5fwork_46',['invoke_prelaunch_work',['../classLocalWeatherCard.html#a1bd3f52bf969c5d3747f6934da123fef',1,'LocalWeatherCard::invoke_preLaunch_work()'],['../classAppCardWidget.html#a82559c4e4ddb985821a8b87076bb446b',1,'AppCardWidget::invoke_preLaunch_work()'],['../classNetCardGadget.html#a82d97e27218187db562c8d02bb5866d2',1,'NetCardGadget::invoke_preLaunch_work()']]],
   ['is_5ffileview_5fvisible_47',['is_fileview_visible',['../classImageBrowser.html#a3d4f9c7382924154b2f3aba470f850e7',1,'ImageBrowser']]],
   ['is_5fgame_5fover_48',['is_game_over',['../classDinasourGameMainWidget.html#a215eca1b38e2d5dc73a1eed96c8f0bb9',1,'DinasourGameMainWidget']]],
   ['is_5fgame_5fstarted_49',['is_game_started',['../classDinasourGameMainWidget.html#a11f7c0f3be7f45a639d1c842988eafb9',1,'DinasourGameMainWidget']]],
@@ -54,8 +54,9 @@ var searchData=
   ['is_5fintersects_51',['is_intersects',['../classObstacleListManager.html#a1f67650ec181a687824cab75ce6f940e',1,'ObstacleListManager']]],
   ['is_5fplaying_52',['is_playing',['../classVideoPlayer.html#affa0feb472293724d1f2edfc96677099',1,'VideoPlayer::is_playing() const'],['../classVideoPlayer.html#affa0feb472293724d1f2edfc96677099',1,'VideoPlayer::is_playing() const']]],
   ['isactivate_53',['isActivate',['../classCameraCapture.html#a45c11c334b0609b8af2e08c49fe221fe',1,'CameraCapture']]],
-  ['isjumping_54',['isJumping',['../classDinasour.html#a7f7a450395e087c4daf4b20c836651a9',1,'Dinasour']]],
-  ['islaying_55',['isLaying',['../classDinasour.html#ae9e8525391cf9382c934012aa4b38df0',1,'Dinasour']]],
-  ['isopened_56',['isopened',['../classVideoPlayerImpl.html#af36e6361c5787ae5a92a483295bb11e3',1,'VideoPlayerImpl::isOpened()'],['../classVideoPlayerOpencvImpl.html#ac6dd4e161e7086fef31b4c52729f50af',1,'VideoPlayerOpencvImpl::isOpened()'],['../classVideoPlayerImpl.html#af36e6361c5787ae5a92a483295bb11e3',1,'VideoPlayerImpl::isOpened()'],['../classVideoPlayerOpencvImpl.html#ac6dd4e161e7086fef31b4c52729f50af',1,'VideoPlayerOpencvImpl::isOpened()']]],
-  ['isplaying_57',['isPlaying',['../classMediaPlayer.html#a58820e8ef9e293799d89142ae63a1dfd',1,'MediaPlayer']]]
+  ['isdarkmode_54',['isdarkmode',['../classModernCalendarWidget.html#afd63072287d5d7d10ba6a9ba7b2d7db8',1,'ModernCalendarWidget::isDarkMode() const'],['../classModernCalendarWidget.html#afd63072287d5d7d10ba6a9ba7b2d7db8',1,'ModernCalendarWidget::isDarkMode() const']]],
+  ['isjumping_55',['isJumping',['../classDinasour.html#a7f7a450395e087c4daf4b20c836651a9',1,'Dinasour']]],
+  ['islaying_56',['isLaying',['../classDinasour.html#ae9e8525391cf9382c934012aa4b38df0',1,'Dinasour']]],
+  ['isopened_57',['isopened',['../classVideoPlayerImpl.html#af36e6361c5787ae5a92a483295bb11e3',1,'VideoPlayerImpl::isOpened()'],['../classVideoPlayerOpencvImpl.html#ac6dd4e161e7086fef31b4c52729f50af',1,'VideoPlayerOpencvImpl::isOpened()'],['../classVideoPlayerImpl.html#af36e6361c5787ae5a92a483295bb11e3',1,'VideoPlayerImpl::isOpened()'],['../classVideoPlayerOpencvImpl.html#ac6dd4e161e7086fef31b4c52729f50af',1,'VideoPlayerOpencvImpl::isOpened()']]],
+  ['isplaying_58',['isPlaying',['../classMediaPlayer.html#a58820e8ef9e293799d89142ae63a1dfd',1,'MediaPlayer']]]
 ];
