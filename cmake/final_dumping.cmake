@@ -18,6 +18,7 @@ message(STATUS "About SimpleDrawer: Simple and Free drawer to notify your imagin
 message(STATUS "About CCIMXNoter: Must Basic Notepad in CCIMXDesktop utilities")
 message(STATUS "About ImageWalker: Simple and Free Image Browsing App, which is really easy lol")
 message(STATUS "About Calculator: builtin simple calculator")
+message(STATUS "About CCCalendar: Simple And Tiny Android Style Usable Calendar")
 message(STATUS "-----------------------------------------------------")
 message(STATUS "Dumping the external apps: ")
 message(STATUS "Weather Application Built status Due to INCLUDE_WEATHER_APP:    ${INCLUDE_WEATHER_APP}")

@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.19)
-project(CCIMX_Desktop LANGUAGES CXX VERSION 1.5.1)
+project(CCIMX_Desktop LANGUAGES CXX VERSION 1.6.0)
 
 message(STATUS "Importing cmake modules...")
 set(CCDESKTOPABOUT_CMAKE_DIR "${CMAKE_SOURCE_DIR}/cmake")
@@ -95,6 +95,8 @@ set(UiSubs
     ui/wallpaperanimationhandler.h ui/wallpaperanimationhandler.cpp
     ui/UiTools/font_info_formater/FontInfoFormarter.cpp
     ui/UiTools/font_info_formater/FontInfoFormarter.h
+    ui/internal_calendar/ModernCalendarWidget.cpp
+    ui/internal_calendar/ModernCalendarWidget.h
     ui/UiTools/easing_curve_combox_setupper/EasingCurveComboxBoxSetuper.h 
     ui/UiTools/easing_curve_combox_setupper/EasingCurveComboxBoxSetuper.cpp)
 
@@ -210,9 +212,10 @@ target_link_libraries(CCIMX_Desktop PRIVATE Qt6::Core)
 target_include_directories(CCIMX_Desktop
     PRIVATE
     .
-    ./ui
-    ./builtin/ui
-    ./ui/topstatusbar
+    ui
+    builtin/ui
+    ui/topstatusbar
+    ui/internal_calendar
     ${CMAKE_CURRENT_BINARY_DIR}/generated)
 
 include(GNUInstallDirs)

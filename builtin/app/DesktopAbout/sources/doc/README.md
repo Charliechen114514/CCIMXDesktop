@@ -2,7 +2,7 @@
 
 ![CCIMXDesktopLogo](./CCIMXDesktopLogo.png)
 
-![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-23+-green)![Version](https://img.shields.io/badge/Version-Released_1.5.0-red)
+![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-23+-green)![Version](https://img.shields.io/badge/Version-Released_1.6.0-red)
 
 🔌 您好！这是一个可在多种嵌入式设备中使用的简单桌面和实用程序集合！这个项目目前需要使用C++23进行编译（值得一提的是，您可以使用C++17编译，但是需要少许的修改任何要求使用C++23的项目）
 
@@ -24,6 +24,7 @@
 | 🏠 CCIMX_Desktop本体                              | 标准最小依赖                                       | 是             | 核心框架，本体                                               | ![image-20250623214759448](./README/image-20250623214759448.png) |
 | ℹ About App                                      | 标准最小依赖                                       | 是             | 简单的介绍本项目桌面的基本情况                               | ![image-20250614231912157](./README/image-20250614231912157.png) |
 | ✏️ CCNoter（记事本）                              | 标准最小依赖                                       | 是             | 超级无敌轻量的记事本                                         | ![image-20250614231754881](./README/image-20250614231754881.png) |
+| 📅CCCalendar（日历APP）                           | 标准最小依赖                                       | 是             | 超级无敌轻量的日历APP                                        | ![image-20250706142207503](./README/image-20250706142207503.png) |
 | 🎨 SimpleDrawer（画图）                           | 标准最小依赖                                       | 是             | 超级无敌轻量的画图，类似Windows的“画图”                      | ![image-20250614232836661](./README/image-20250614232836661.png) |
 | ☀️ WeatherAPP（天气应用）                         | 需设备具备联网能力（网络连接）                     | 可选           | 获取城市所在的天气预报，目前使用的API是心智天气的            | ![image-20250614232722896](./README/image-20250614232722896.png) |
 | 📄 pdfReader（PDF阅读器）                         | MuPDF依赖库                                        | 可选           | 最基础的PDF浏览器，支持章节跳转和查看功能                    | ![image-20250614232706288](./README/image-20250614232706288.png) |

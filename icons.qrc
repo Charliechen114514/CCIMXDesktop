@@ -22,5 +22,6 @@
         <file>sources/image_processor.png</file>
         <file>sources/settings.png</file>
         <file>sources/app_launcher.png</file>
+        <file>sources/calendar.png</file>
     </qresource>
 </RCC>
