@@ -7,11 +7,18 @@ var annotated_dup =
       [ "PageSetupSessionRequest", "structPageSetuper_1_1PageSetupSessionRequest.html", "structPageSetuper_1_1PageSetupSessionRequest" ]
     ] ],
     [ "Settings", null, [
+      [ "Figure", null, [
+        [ "FigureSize", "structSettings_1_1Figure_1_1FigureSize.html", "structSettings_1_1Figure_1_1FigureSize" ],
+        [ "Position", "structSettings_1_1Figure_1_1Position.html", "structSettings_1_1Figure_1_1Position" ]
+      ] ],
       [ "SZ", "structSettings_1_1SZ.html", null ],
       [ "XY", "structSettings_1_1XY.html", null ]
     ] ],
     [ "SimpleTools", "namespaceSimpleTools.html", [
       [ "FailedReadFile", "classSimpleTools_1_1FailedReadFile.html", "classSimpleTools_1_1FailedReadFile" ]
+    ] ],
+    [ "ValueLimitUtils", null, [
+      [ "StaticLimiter", "classValueLimitUtils_1_1StaticLimiter.html", null ]
     ] ],
     [ "AboutMainWindow", "classAboutMainWindow.html", "classAboutMainWindow" ],
     [ "AbstractParamsPack", "structAbstractParamsPack.html", null ],
@@ -189,6 +196,7 @@ var annotated_dup =
     [ "ObstacleListManager", "classObstacleListManager.html", "classObstacleListManager" ],
     [ "Obsticals", "classObsticals.html", "classObsticals" ],
     [ "PageFactory", "classPageFactory.html", null ],
+    [ "PageSwitchingLimiter", "classPageSwitchingLimiter.html", null ],
     [ "PanelWidget", "classPanelWidget.html", "classPanelWidget" ],
     [ "Parser", "classParser.html", "classParser" ],
     [ "PesudoAP3216C", "classPesudoAP3216C.html", "classPesudoAP3216C" ],
@@ -239,6 +247,7 @@ var annotated_dup =
     [ "UnSupportedSymbol", "classUnSupportedSymbol.html", "classUnSupportedSymbol" ],
     [ "UnSupportiveFunction", "classUnSupportiveFunction.html", "classUnSupportiveFunction" ],
     [ "UnSymmetryExpression", "classUnSymmetryExpression.html", "classUnSymmetryExpression" ],
+    [ "ValueLimiter", "classValueLimiter.html", null ],
     [ "VideoPlayer", "classVideoPlayer.html", "classVideoPlayer" ],
     [ "VideoPlayerImpl", "classVideoPlayerImpl.html", "classVideoPlayerImpl" ],
     [ "VideoPlayerImplFactory", "classVideoPlayerImplFactory.html", null ],

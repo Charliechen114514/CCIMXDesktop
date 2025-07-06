@@ -106,15 +106,15 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AP3216CAdapterFactory_8h_source.html",
-"classAppWidget.html#a654bb3fd2c1a9fca116ccf71f7660e89",
-"classCVImageOpencvImpl.html#a79ba9b0969a2b6088729ba69025518af",
-"classFigureObject.html#ab3a20305d7d978848b9032f9d0043fd8",
-"classLeftSideBar.html#a6043935a99c8fee68439cffa30ea65fb",
-"classPlayListMainWindow.html#afcb0cd77e1910e75723c05413b78256c",
-"classTopSideBarWidget.html#ae890069fb0f6aac93aad9df4a189f428",
-"dir_83c5e49abc5ac88b747707ab41751666.html",
-"namespaceUiTools.html#a1bf04de71297f008b989b18fba3bea44",
-"structProcessBroswer_1_1ProcessInfo.html#a136f632c347026200676de607dfe1d94"
+"classAppWidget.html#a4f3930474f1966cb9cb72abb34dcd757",
+"classCVImageOpencvImpl.html#a181a4ead3d48ff64268a469a033e8f2c",
+"classFigureObject.html",
+"classLeftSideBar.html#a387763c95911116368aab1524c765671",
+"classPlayListMainWindow.html#a9e86406a121c19a29226961e566f6380",
+"classTopSideBarWidget.html#aa22ce73f4a00fac93a9a0aac14e2be71",
+"dir_75b4929a9761afb8ac3b87fce2c3c21b.html",
+"namespaceProcessor_1_1ContoursQuery.html#abfd9d45eb3a38def1b26510ace6e0d46aa35a539b74ad603c84f6b78c3e4c70e7",
+"structNoteCreatorWindow_1_1Package.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

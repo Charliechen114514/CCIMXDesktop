@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['histcreator_0',['HistCreator',['../namespaceHistCreator.html',1,'']]]
+  ['easingcurvecomboboxsetuper_0',['EasingCurveComboBoxSetuper',['../namespaceEasingCurveComboBoxSetuper.html',1,'']]],
+  ['expressionevaluator_1',['ExpressionEvaluator',['../namespaceExpressionEvaluator.html',1,'']]]
 ];

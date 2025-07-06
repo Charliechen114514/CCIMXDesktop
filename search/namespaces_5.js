@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['opencv_5fprocessadapter_0',['OpenCV_ProcessAdapter',['../namespaceOpenCV__ProcessAdapter.html',1,'']]]
+  ['histcreator_0',['HistCreator',['../namespaceHistCreator.html',1,'']]]
 ];

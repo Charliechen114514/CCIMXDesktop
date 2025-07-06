@@ -49,6 +49,7 @@ var hierarchy =
     [ "AppWeatherResult::DailyWeather", "structAppWeatherResult_1_1DailyWeather.html", null ],
     [ "CVTools::DisplayParams", "structCVTools_1_1DisplayParams.html", null ],
     [ "EventManager", "classEventManager.html", null ],
+    [ "Settings::Figure::FigureSize", "structSettings_1_1Figure_1_1FigureSize.html", null ],
     [ "FileInfoProvider", "classFileInfoProvider.html", [
       [ "DirentSizeCounter", "classDirentSizeCounter.html", null ],
       [ "FileCountInfo", "classFileCountInfo.html", null ],
@@ -99,12 +100,14 @@ var hierarchy =
     [ "PageFactory", "classPageFactory.html", null ],
     [ "ToolsStackedWidget::PagePackage", "structToolsStackedWidget_1_1PagePackage.html", null ],
     [ "PageSetuper::PageSetupSessionRequest", "structPageSetuper_1_1PageSetupSessionRequest.html", null ],
+    [ "PageSwitchingLimiter", "classPageSwitchingLimiter.html", null ],
     [ "Parser", "classParser.html", null ],
     [ "PesudoAP3216C", "classPesudoAP3216C.html", null ],
     [ "PesudoICM20608", "classPesudoICM20608.html", null ],
     [ "PesudoLedController", "classPesudoLedController.html", null ],
     [ "PhotoSaver", "classPhotoSaver.html", null ],
     [ "PlatformDriverFactory", "classPlatformDriverFactory.html", null ],
+    [ "Settings::Figure::Position", "structSettings_1_1Figure_1_1Position.html", null ],
     [ "ProcessBroswer::ProcessInfo", "structProcessBroswer_1_1ProcessInfo.html", null ],
     [ "QCalendarWidget", null, [
       [ "ModernCalendarWidget", "classModernCalendarWidget.html", null ],
@@ -311,6 +314,7 @@ var hierarchy =
       [ "UnSymmetryExpression", "classUnSymmetryExpression.html", null ]
     ] ],
     [ "SceneDrawer", "classSceneDrawer.html", null ],
+    [ "ValueLimitUtils::StaticLimiter< MIN, MAX >", "classValueLimitUtils_1_1StaticLimiter.html", null ],
     [ "Settings::SZ< value >", "structSettings_1_1SZ.html", null ],
     [ "TemperaryCacher", "classTemperaryCacher.html", null ],
     [ "ToolLeftWidgets::ToolButtonInstallPackage", "structToolLeftWidgets_1_1ToolButtonInstallPackage.html", null ],
@@ -320,6 +324,7 @@ var hierarchy =
       [ "NumberNode", "structNumberNode.html", null ],
       [ "UnaryOpTreeNode", "classUnaryOpTreeNode.html", null ]
     ] ],
+    [ "ValueLimiter< MIN, MAX >", "classValueLimiter.html", null ],
     [ "VideoPlayerImpl", "classVideoPlayerImpl.html", [
       [ "VideoPlayerOpencvImpl", "classVideoPlayerOpencvImpl.html", null ],
       [ "VideoPlayerOpencvImpl", "classVideoPlayerOpencvImpl.html", null ]

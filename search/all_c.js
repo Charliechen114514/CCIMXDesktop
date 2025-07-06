@@ -11,7 +11,7 @@ var searchData=
   ['large_8',['large',['../classCactusObsticals.html#a9b78c30aa699a8c7dc472ac62473ad20a71726adf0ff60cd03eaf3c515883eeb8',1,'CactusObsticals::LARGE'],['../classBirdObsticals.html#a6fa31885ff29e1c4d007ea2185fa7f0ca71726adf0ff60cd03eaf3c515883eeb8',1,'BirdObsticals::LARGE']]],
   ['last_5fidle_9',['last_idle',['../classCPUUsageChart.html#a40d01620757b49a86efb9ed120156624',1,'CPUUsageChart']]],
   ['last_5ftol_10',['last_tol',['../classCPUUsageChart.html#ae3a7fad1551601477ed3ae26b199fb72',1,'CPUUsageChart']]],
-  ['launch_5fgame_11',['launch_game',['../classDinasourGameMainWidget.html#a193ac67077ccc23215d71213b7d88eda',1,'DinasourGameMainWidget::launch_game()'],['../classEventManager.html#a423683d4091e7ead0bd42058b30869baa46750841cdc7e2c45bdab55ef1e22b1c',1,'EventManager::LAUNCH_GAME']]],
+  ['launch_5fgame_11',['launch_game',['../classEventManager.html#a423683d4091e7ead0bd42058b30869baa46750841cdc7e2c45bdab55ef1e22b1c',1,'EventManager::LAUNCH_GAME'],['../classDinasourGameMainWidget.html#a193ac67077ccc23215d71213b7d88eda',1,'DinasourGameMainWidget::launch_game()']]],
   ['lay_12',['lay',['../classEventManager.html#a423683d4091e7ead0bd42058b30869baa04c8d84fc9a3e62a03ca514d64a2f908',1,'EventManager::LAY'],['../classDinasourFrameFetcher.html#abd9732a2fc7ec5c1389b3308eb920182a04c8d84fc9a3e62a03ca514d64a2f908',1,'DinasourFrameFetcher::LAY']]],
   ['laying_13',['LAYING',['../classDinasour.html#a6acd086f24d8df165a14947f8c5b1ef4a1a19e1611f993e6bc404e2fbfbd5de69',1,'Dinasour']]],
   ['ledcontroller_14',['ledcontroller',['../classLEDController.html#aee3bdb63c97a7c22e9065eaab8c9ab6d',1,'LEDController::LEDController()'],['../classLEDController.html',1,'LEDController']]],
@@ -38,10 +38,10 @@ var searchData=
   ['load_5ftemp_35',['load_temp',['../classLeftSideBar.html#a1a6b48244b1beecb59f94eb134b855e0',1,'LeftSideBar']]],
   ['loadfile_36',['loadfile',['../classCVImage.html#abbfa8ef2239701e79812d05da44995ab',1,'CVImage::loadFile(const char *filename)'],['../classCVImage.html#abbfa8ef2239701e79812d05da44995ab',1,'CVImage::loadFile(const char *filename)']]],
   ['loadtoimagelistview_37',['loadToImageListView',['../classSequenciedSettingsWidget.html#a3b874ff77f11d450e94c75afd67a3d75',1,'SequenciedSettingsWidget']]],
-  ['localfetcher_38',['localfetcher',['../structLocalFetcher.html#af33c9fa371e87649a1548b5990cd02ca',1,'LocalFetcher::LocalFetcher()'],['../classLocalWeatherCard.html#a1eed22fb3253b6f55884578e75964a01',1,'LocalWeatherCard::localFetcher'],['../structLocalFetcher.html',1,'LocalFetcher']]],
+  ['localfetcher_38',['localfetcher',['../classLocalWeatherCard.html#a1eed22fb3253b6f55884578e75964a01',1,'LocalWeatherCard::localFetcher'],['../structLocalFetcher.html#af33c9fa371e87649a1548b5990cd02ca',1,'LocalFetcher::LocalFetcher()'],['../structLocalFetcher.html',1,'LocalFetcher']]],
   ['localweathercard_39',['localweathercard',['../classLocalWeatherCard.html',1,'LocalWeatherCard'],['../classLocalWeatherCard.html#ac778493f500af33789e82469c7634d1e',1,'LocalWeatherCard::LocalWeatherCard(DesktopToast *toast, QWidget *parent=nullptr)'],['../classLocalWeatherCard.html#a468f0d160123b9f78c9066bb62483e6e',1,'LocalWeatherCard::LocalWeatherCard()=delete']]],
   ['localweatherlightfetcher_40',['localweatherlightfetcher',['../structLocalWeatherLightFetcher.html#a0b1f25b203c03a868ff62fbac5ef8904',1,'LocalWeatherLightFetcher::LocalWeatherLightFetcher()'],['../structLocalWeatherLightFetcher.html',1,'LocalWeatherLightFetcher']]],
   ['lock_5fsrc_41',['lock_src',['../classFrameProvider.html#aba77aa9854f2acab26c5920c1bf6ab18',1,'FrameProvider']]],
-  ['low_42',['low',['../structAppWeatherResult_1_1DailyWeather.html#ad68dc66d4978326345538da3c16781f9',1,'AppWeatherResult::DailyWeather::low'],['../classBirdObsticals.html#a38419a3f4f5ca46c7243184bca781576a41bc94cbd8eebea13ce0491b2ac11b88',1,'BirdObsticals::LOW']]],
+  ['low_42',['low',['../classBirdObsticals.html#a38419a3f4f5ca46c7243184bca781576a41bc94cbd8eebea13ce0491b2ac11b88',1,'BirdObsticals::LOW'],['../structAppWeatherResult_1_1DailyWeather.html#ad68dc66d4978326345538da3c16781f9',1,'AppWeatherResult::DailyWeather::low']]],
   ['low_5ftemp_43',['LOW_TEMP',['../classWeatherChartWidget.html#ad917be16972dd0f90aa71df8d0e8e569ac2e65573563c7444efbfc0dd2bca593c',1,'WeatherChartWidget']]]
 ];

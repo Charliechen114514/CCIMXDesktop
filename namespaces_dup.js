@@ -1,5 +1,7 @@
 var namespaces_dup =
 [
+    [ "Bird", "namespaceBird.html", null ],
+    [ "Cactus", "namespaceCactus.html", null ],
     [ "ccpdf_tools", "namespaceccpdf__tools.html", [
       [ "request_chapter_tree", "namespaceccpdf__tools.html#ab1c411f18137d7b0dd3e7cd6f3b421a7", null ],
       [ "request_meta", "namespaceccpdf__tools.html#a999c0788944933e4c5eb4ba9eeaf7497", null ],
@@ -7,6 +9,7 @@ var namespaces_dup =
       [ "request_target_page", "namespaceccpdf__tools.html#a70c31d5eeb98044b0ddc6f868aaf68a4", null ]
     ] ],
     [ "CVTools", "namespaceCVTools.html", "namespaceCVTools" ],
+    [ "Dinasour", "namespaceDinasour.html", null ],
     [ "EasingCurveComboBoxSetuper", "namespaceEasingCurveComboBoxSetuper.html", null ],
     [ "ExpressionEvaluator", "namespaceExpressionEvaluator.html", [
       [ "evalute_expression", "namespaceExpressionEvaluator.html#a020740b3fa8807221f6955d336d18311", null ]
@@ -20,6 +23,7 @@ var namespaces_dup =
       [ "get_all_enabled_select_medias_fromdialog", "namespaceMediaEnableSelectFactory.html#a09e859d150be9f4494c372c4a907d557", null ],
       [ "get_enabled_select_medias_fromdialog", "namespaceMediaEnableSelectFactory.html#a0a0c469128deff9f3a9e277dca8c7b72", null ]
     ] ],
+    [ "Obstacle", "namespaceObstacle.html", null ],
     [ "OpenCV_ProcessAdapter", "namespaceOpenCV__ProcessAdapter.html", [
       [ "draw_faces", "namespaceOpenCV__ProcessAdapter.html#a04498311974f084a887305d8d5b504e9", null ],
       [ "generate_hist", "namespaceOpenCV__ProcessAdapter.html#ad679ea0481d2a45441339cd99d4213e2", null ],

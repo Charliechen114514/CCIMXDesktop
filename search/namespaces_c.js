@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['wallpaperutilscolliections_0',['WallPaperUtilsColliections',['../namespaceWallPaperUtilsColliections.html',1,'']]]
+  ['uitools_0',['UiTools',['../namespaceUiTools.html',1,'']]]
 ];
