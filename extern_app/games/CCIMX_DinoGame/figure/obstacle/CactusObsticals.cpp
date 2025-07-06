@@ -8,7 +8,7 @@ CactusObsticals::CactusObsticals(QObject* parent) {
 	// everytime we pass, we shell switch a new(oh, possiblly)
 	// a new faces!
 	connect(this, &CactusObsticals::pass_me_already,
-			this, &CactusObsticals::update_frame);
+            this, &CactusObsticals::update_frame);
 }
 
 void CactusObsticals::setSize(Size s) {
@@ -21,15 +21,15 @@ void CactusObsticals::setSize(Size s) {
 	switch (size) {
 	case Size::SMALL:
 		new_base = SMALL_BASE_Y_POS;
-		new_size = { CactusSZ_SMALL.first, CactusSZ_SMALL.second };
+        new_size = { CactusSZ_SMALL.width, CactusSZ_SMALL.height };
 		break;
 	case Size::MEDIUM:
 		new_base = MED_BASE_Y_POS;
-		new_size = { CactusSZ_MED.first, CactusSZ_MED.second };
+        new_size = { CactusSZ_MED.width, CactusSZ_MED.height };
 		break;
 	case Size::LARGE:
 		new_base = LARGE_BASE_Y_POS;
-		new_size = { CactusSZ_LARGE.first, CactusSZ_LARGE.second };
+        new_size = { CactusSZ_LARGE.width, CactusSZ_LARGE.height };
 		break;
 	}
 	src_frame.setTop(new_base);

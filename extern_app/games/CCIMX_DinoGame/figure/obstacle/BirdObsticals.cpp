@@ -5,12 +5,12 @@
 #include <QRandomGenerator>
 #include <QRect>
 BirdObsticals::BirdObsticals(QObject* parent)
-	: Obsticals { parent } {
+    : Obsticals { parent } {
 	init_memory();
 	// everytime we pass, we shell switch a new(oh, possiblly)
 	// a new faces!
 	connect(this, &BirdObsticals::pass_me_already,
-			this, &BirdObsticals::update_frame);
+            this, &BirdObsticals::update_frame);
 }
 
 void BirdObsticals::setHeight(FlyHeight h) {
@@ -40,13 +40,13 @@ void BirdObsticals::setSize(BirdType t) {
 	QSize new_size;
 	switch (type) {
 	case BirdType::SMALL:
-		new_size = { SmallBirdSize.first, SmallBirdSize.second };
+        new_size = { SmallBirdSize.width, SmallBirdSize.height };
 		break;
 	case BirdType::MEDIUM:
-		new_size = { MediumBirdSize.first, MediumBirdSize.second };
+        new_size = { MediumBirdSize.width, MediumBirdSize.height };
 		break;
 	case BirdType::LARGE:
-		new_size = { LargeBirdSize.first, LargeBirdSize.second };
+        new_size = { LargeBirdSize.width, LargeBirdSize.height };
 		break;
 	}
 
@@ -76,7 +76,7 @@ void BirdObsticals::update_frame() {
 		FlyHeight new_height;
 		do {
 			new_height = static_cast<FlyHeight>(
-				QRandomGenerator::global()->bounded(HEIGHT_SIZE_TYPE_MAX));
+                QRandomGenerator::global()->bounded(HEIGHT_SIZE_TYPE_MAX));
 		} while (new_height == current);
 		setHeight(new_height);
 	}
@@ -86,7 +86,7 @@ void BirdObsticals::update_frame() {
 		BirdType new_sz;
 		do {
 			new_sz = static_cast<BirdType>(
-				QRandomGenerator::global()->bounded(SZ_SIZE_TYPE_MAX));
+                QRandomGenerator::global()->bounded(SZ_SIZE_TYPE_MAX));
 		} while (new_sz == current);
 		setSize(new_sz);
 	}

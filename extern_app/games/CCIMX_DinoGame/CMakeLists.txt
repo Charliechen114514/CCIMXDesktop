@@ -1,7 +1,6 @@
 cmake_minimum_required(VERSION 3.19)
 project(CCIMX_DinoGame LANGUAGES CXX)
 set(CMAKE_AUTORCC ON)
-set(CMAKE_CXX_STANDARD 23)
 find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets Multimedia)
 
 qt_standard_project_setup()

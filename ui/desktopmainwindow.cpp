@@ -181,7 +181,7 @@ void DesktopMainWindow::mouseReleaseEvent(QMouseEvent* event) {
 	records.release = event->pos();
     const QPoint diff = records.press - records.release;
 
-    if (qAbs(diff.x()) < 100 || diff.manhattanLength() < 120) {
+    if (qAbs(diff.x()) < 250) {
         event->ignore();
         return;
     }

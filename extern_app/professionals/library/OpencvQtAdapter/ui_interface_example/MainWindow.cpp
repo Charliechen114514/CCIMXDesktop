@@ -11,41 +11,16 @@ MainWindow::MainWindow(QWidget* parent)
     Q_INIT_RESOURCE(sources); ///< we need to call this before the library loaded
     auto left = new ToolLeftWidgets(this);
 
-    ToolLeftWidgets::ToolButtonInstallPackage package = {
-        .name = "This",
-        .icon = QIcon(),
-        .callback = []() {
-            qDebug() << "Hello, world!";
-        }
+    const std::vector<ToolLeftWidgets::ToolButtonInstallPackage> packages = {
+        { "This", QIcon(), [] { qDebug() << "Hello, world!"; } },
+        { "is", QIcon(), [] { qDebug() << "Hello, world2!"; } },
+        { "a", QIcon(), [] { qDebug() << "Hello, world2!"; } },
+        { "demo", QIcon(), [] { qDebug() << "Hello, world2!"; } }
     };
-    left->install_toolbuttons(package);
 
-    ToolLeftWidgets::ToolButtonInstallPackage package2 = {
-        .name = "is",
-        .icon = QIcon(),
-        .callback = []() {
-            qDebug() << "Hello, world2!";
-        }
-    };
-    left->install_toolbuttons(package2);
-
-    ToolLeftWidgets::ToolButtonInstallPackage package3 = {
-        .name = "a",
-        .icon = QIcon(),
-        .callback = []() {
-            qDebug() << "Hello, world2!";
-        }
-    };
-    left->install_toolbuttons(package3);
-
-    ToolLeftWidgets::ToolButtonInstallPackage package4 = {
-        .name = "demo",
-        .icon = QIcon(),
-        .callback = []() {
-            qDebug() << "Hello, world2!";
-        }
-    };
-    left->install_toolbuttons(package4);
+    for (const auto& package : packages) {
+        left->install_toolbuttons(package);
+    }
     ui->centralwidget->layout()->addWidget(left);
     ui->centralwidget->layout()->addItem(new QSpacerItem(300, 100));
     auto floatbar = new FloatSlider(Qt::Horizontal, this);

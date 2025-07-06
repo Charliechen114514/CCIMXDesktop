@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.19)
-project(CCIMX_Desktop LANGUAGES CXX VERSION 1.6.0)
+project(CCIMX_Desktop LANGUAGES CXX VERSION 1.7.0)
 
 message(STATUS "Importing cmake modules...")
 set(CCDESKTOPABOUT_CMAKE_DIR "${CMAKE_SOURCE_DIR}/cmake")
@@ -195,6 +195,8 @@ qt_add_executable(CCIMX_Desktop
     ${UPPER_TOOLBAR_SRC}
     ${ICONQRC_SRC}
     ${START_STAGE_SRC}
+    core/page_switching_limiter/PageSwitchingLimiter.h core/page_switching_limiter/PageSwitchingLimiter.cpp
+    library/limited_value/ValueLimiter.h library/limited_value/ValueLimiter.cpp
 )
 
 add_custom_command(TARGET CCIMX_Desktop POST_BUILD

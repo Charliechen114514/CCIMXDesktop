@@ -14,9 +14,9 @@ ToolsStackedWidget::~ToolsStackedWidget() {
 
 void ToolsStackedWidget::add_switchable_page(const PagePackage& package) {
     ToolLeftWidgets::ToolButtonInstallPackage installer = {
-        .name = package.name,
-        .icon = package.icon,
-        .callback = [this, package]() {
+        package.name,
+        package.icon,
+        [this, package]() {
             ui->stackedWidget->setCurrentWidget(package.widget);
         }
     };

@@ -21,24 +21,24 @@ ImageProcessorWindow::~ImageProcessorWindow() {
 
 void ImageProcessorWindow::setup_panel() {
     ToolsStackedWidget::PagePackage pack[] = {
-        { .name = "Gray Image",
-          .icon = QIcon(":/icons/greyscale.png"),
-          .widget = new GrayExample(this) },
-        { .name = "Blur Image",
-          .icon = QIcon(":/icons/blur.png"),
-          .widget = new BlurExample(this) },
-        { .name = "Canny Image",
-          .icon = QIcon(":/icons/canny.png"),
-          .widget = new CannyExample(this) },
-        { .name = "Find Contours",
-          .icon = QIcon(":/icons/contours.png"),
-          .widget = new ContoursQueryExample(this) },
-        { .name = "Hist Creator",
-          .icon = QIcon(":/icons/histquery.png"),
-          .widget = new HistDrawer(this) },
-        { .name = "Face Detector",
-          .icon = QIcon(":/icons/face_detection.png"),
-          .widget = new FaceDetectionExample(this) }
+        { "Gray Image",
+          QIcon(":/icons/greyscale.png"),
+          new GrayExample(this) },
+        { "Blur Image",
+          QIcon(":/icons/blur.png"),
+          new BlurExample(this) },
+        { "Canny Image",
+          QIcon(":/icons/canny.png"),
+          new CannyExample(this) },
+        { "Find Contours",
+          QIcon(":/icons/contours.png"),
+          new ContoursQueryExample(this) },
+        { "Hist Creator",
+          QIcon(":/icons/histquery.png"),
+          new HistDrawer(this) },
+        { "Face Detector",
+          QIcon(":/icons/face_detection.png"),
+          new FaceDetectionExample(this) }
     };
 
     for (const auto& each : pack) {
