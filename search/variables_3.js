@@ -2,7 +2,7 @@ var searchData=
 [
   ['d_0',['d',['../structFilterPackage.html#a0e9e61c4b31fc6595589ecf28bac2d6c',1,'FilterPackage']]],
   ['daily_5fweather_1',['daily_weather',['../classAppWeatherResult.html#af8ca2efac4e7aa5ef50c2df2c606043d',1,'AppWeatherResult']]],
-  ['date_2',['date',['../structMediaInfo.html#aff128ebc05e035ae6f6417712b2b0de0',1,'MediaInfo::date'],['../structAppWeatherResult_1_1DailyWeather.html#ac7d341bfaa43ef1bf842ac1b8ff498f1',1,'AppWeatherResult::DailyWeather::date']]],
+  ['date_2',['date',['../structNoteCreatorWindow_1_1Package.html#affbbbe2e5b0729159475b406e447aabd',1,'NoteCreatorWindow::Package::date'],['../structMediaInfo.html#aff128ebc05e035ae6f6417712b2b0de0',1,'MediaInfo::date'],['../structAppWeatherResult_1_1DailyWeather.html#ac7d341bfaa43ef1bf842ac1b8ff498f1',1,'AppWeatherResult::DailyWeather::date']]],
   ['days_3',['days',['../structAppWeatherDetailedRequest.html#a13ced85bff3ab0c1caecc737d607ecf8',1,'AppWeatherDetailedRequest']]],
   ['def_5fmax_5fvalue_4',['DEF_MAX_VALUE',['../classGaugeWidget.html#a8823ed29ccfe8076f29097d75ed3ce55',1,'GaugeWidget']]],
   ['def_5fmin_5fvalue_5',['DEF_MIN_VALUE',['../classGaugeWidget.html#a667fc249edc71ec4b237136bdeeff521',1,'GaugeWidget']]],

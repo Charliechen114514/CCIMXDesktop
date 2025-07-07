@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['topstatusbar_5flabelname_0',['TopStatusBar_LabelName',['../namespaceTopStatusBar__LabelName.html',1,'']]]
+  ['sidebarwidgetstaticconfig_0',['SideBarWidgetStaticConfig',['../namespaceSideBarWidgetStaticConfig.html',1,'']]],
+  ['simpletools_1',['SimpleTools',['../namespaceSimpleTools.html',1,'']]]
 ];

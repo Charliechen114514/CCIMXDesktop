@@ -10,11 +10,13 @@ var searchData=
   ['mediatype_7',['mediaType',['../structMediaInfo.html#aafcbdb24bc3d31e9605e703a71a1228b',1,'MediaInfo']]],
   ['mem_5fstat_8',['mem_stat',['../classMemoryInfoFetcher.html#a9bffab9b014b49e72af9822509b20578',1,'MemoryInfoFetcher']]],
   ['memoryusagekb_9',['memoryUsageKB',['../structProcessBroswer_1_1ProcessInfo.html#a136f632c347026200676de607dfe1d94',1,'ProcessBroswer::ProcessInfo']]],
-  ['method_10',['method',['../classContoursQueryProc.html#a2d6c268c3b8971be884228ce0d7287c7',1,'ContoursQueryProc']]],
-  ['minlinelength_11',['minLineLength',['../setting__scene_8h.html#a1cb258045b11217008b51fa51759e230',1,'Settings::Scene::BackGround::RandomLine']]],
-  ['mode_12',['mode',['../structFlowTypeTypeWallPaperSettings.html#acb90b7725aabc0398d627f6236dddff7',1,'FlowTypeTypeWallPaperSettings::mode'],['../structFixedTypeWallPaperSettings.html#a4b59059b48e59f079eeda866152e290d',1,'FixedTypeWallPaperSettings::mode']]],
-  ['models_13',['models',['../classFileInfoProvider.html#ae898e8c9bb3dc76decd869a018f9c0d9',1,'FileInfoProvider']]],
-  ['modemappings_14',['modeMappings',['../classWallPaperEngine.html#a8dbbec77b2eaf0acfa2bf21f5c07b432',1,'WallPaperEngine']]],
-  ['modify_5fdatetime_15',['modify_datetime',['../structCCPdfMetaInfo.html#a7a5ef458c0944b1833a882215934c4a5',1,'CCPdfMetaInfo']]],
-  ['mutex_16',['mutex',['../classObsticals.html#a7c3a67026bea686ee28c973ee7dbf70e',1,'Obsticals']]]
+  ['message_5fconsume_5fbackend_10',['message_consume_backend',['../structDesktopLoggerBackends.html#a0f8221852198ca60ad9e5e6dc387217a',1,'DesktopLoggerBackends']]],
+  ['method_11',['method',['../classContoursQueryProc.html#a2d6c268c3b8971be884228ce0d7287c7',1,'ContoursQueryProc']]],
+  ['minlinelength_12',['minLineLength',['../setting__scene_8h.html#a1cb258045b11217008b51fa51759e230',1,'Settings::Scene::BackGround::RandomLine']]],
+  ['mode_13',['mode',['../structFlowTypeTypeWallPaperSettings.html#acb90b7725aabc0398d627f6236dddff7',1,'FlowTypeTypeWallPaperSettings::mode'],['../structFixedTypeWallPaperSettings.html#a4b59059b48e59f079eeda866152e290d',1,'FixedTypeWallPaperSettings::mode']]],
+  ['models_14',['models',['../classFileInfoProvider.html#ae898e8c9bb3dc76decd869a018f9c0d9',1,'FileInfoProvider']]],
+  ['modemappings_15',['modeMappings',['../classWallPaperEngine.html#a8dbbec77b2eaf0acfa2bf21f5c07b432',1,'WallPaperEngine']]],
+  ['modify_5fdatetime_16',['modify_datetime',['../structCCPdfMetaInfo.html#a7a5ef458c0944b1833a882215934c4a5',1,'CCPdfMetaInfo']]],
+  ['monitoring_5fbar_17',['monitoring_bar',['../classBoundSliderFactory.html#a6652bb0b6a95da9dc38572567672b6de',1,'BoundSliderFactory']]],
+  ['mutex_18',['mutex',['../classObsticals.html#a7c3a67026bea686ee28c973ee7dbf70e',1,'Obsticals']]]
 ];

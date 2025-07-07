@@ -18,6 +18,13 @@ var namespaces_dup =
     [ "HistCreator", "namespaceHistCreator.html", [
       [ "filled_hist", "namespaceHistCreator.html#a59d66f2c584048122c7ee66c3344bbe6", null ]
     ] ],
+    [ "Logger", "namespaceLogger.html", [
+      [ "postDebug", "namespaceLogger.html#a8957975ac80e5d964c1d8336ffda58ee", null ],
+      [ "postError", "namespaceLogger.html#a50ffba412ba175756b615616ab66ded5", null ],
+      [ "postFatal", "namespaceLogger.html#a7f288a7115f4b79073cf6808aaee6b02", null ],
+      [ "postInfo", "namespaceLogger.html#a6be4aa1ba6b6f40fee112a726c84d65c", null ],
+      [ "postWarning", "namespaceLogger.html#aefff81eb40210e5cdd9e860bb627aa03", null ]
+    ] ],
     [ "MediaEnableSelectFactory", "namespaceMediaEnableSelectFactory.html", [
       [ "generateMediaEnableFilter", "namespaceMediaEnableSelectFactory.html#aa989d9dfc4abdbea420b7a3a6f44f73d", null ],
       [ "get_all_enabled_select_medias_fromdialog", "namespaceMediaEnableSelectFactory.html#a09e859d150be9f4494c372c4a907d557", null ],
@@ -35,6 +42,7 @@ var namespaces_dup =
       [ "processGaussainBlurType", "namespaceOpenCV__ProcessAdapter.html#a8e0f4c9434b93c2f368030c9b9e2dc7c", null ],
       [ "processMedianBlurType", "namespaceOpenCV__ProcessAdapter.html#ab964dd9ebe396d2abcb365bd527cfa14", null ]
     ] ],
+    [ "PageSwitchingLimiterParams", "namespacePageSwitchingLimiterParams.html", null ],
     [ "Processor", "namespaceProcessor.html", "namespaceProcessor" ],
     [ "QtAdaptTools", "namespaceQtAdaptTools.html", [
       [ "fromRGBQImage", "namespaceQtAdaptTools.html#a9c241e615eb418c9fe1bba94ba81e4d1", null ],
@@ -48,10 +56,12 @@ var namespaces_dup =
       [ "addWidgetToGridTail", "namespaceUiTools.html#a9f60353610b781acba2a6f6040aaeaf5", null ],
       [ "downcast_to_sliderable_period", "namespaceUiTools.html#a999dd6eb96eca168befed930c63f5d6f", null ],
       [ "downcast_to_sliderable_position", "namespaceUiTools.html#a1bf04de71297f008b989b18fba3bea44", null ],
+      [ "openIfUnvisible", "namespaceUiTools.html#a71658ddf6f0d85d09ae03a7eed2b5f0c", null ],
       [ "toMediaTypicalTimeStr", "namespaceUiTools.html#aff01fcf1564c6a685754aac0343877d5", null ],
       [ "toScrollLabelText", "namespaceUiTools.html#aa0ceeeec7f42af270fcac8c916f7ff8e", null ],
       [ "upcast_to_mseconds", "namespaceUiTools.html#a0851222151caa014bef526893f1995aa", null ]
     ] ],
+    [ "ValueLimitUtils", "namespaceValueLimitUtils.html", "namespaceValueLimitUtils" ],
     [ "VideoPlayerTools", "namespaceVideoPlayerTools.html", [
       [ "frame_to_mseconds", "namespaceVideoPlayerTools.html#a55fe34f01d97db614347b5af132287e1", null ],
       [ "mseconds_to_frame", "namespaceVideoPlayerTools.html#a3ed058f954d8603eaa07a2be89d72431", null ]

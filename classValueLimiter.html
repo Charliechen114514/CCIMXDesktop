@@ -97,19 +97,332 @@ $(document).ready(function(){initNavTree('classValueLimiter.html',''); initResiz
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classValueLimiter-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ValueLimiter&lt; MIN, MAX &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Runtime-configurable value limiter with compile-time defaults.  
+ <a href="classValueLimiter.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="ValueLimiter_8hpp_source.html">ValueLimiter.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad5cc742b121bd24f2142d09b5942a654" id="r_ad5cc742b121bd24f2142d09b5942a654"><td class="memItemLeft" align="right" valign="top"><a id="ad5cc742b121bd24f2142d09b5942a654" name="ad5cc742b121bd24f2142d09b5942a654"></a>
-constexpr ValueLimitType&#160;</td><td class="memItemRight" valign="bottom"><b>boundValue</b> (ValueLimitType value)</td></tr>
-<tr class="separator:ad5cc742b121bd24f2142d09b5942a654"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab01dfb1b5ce3480445d9c5b7b5a22725" id="r_ab01dfb1b5ce3480445d9c5b7b5a22725"><td class="memItemLeft" align="right" valign="top"><a id="ab01dfb1b5ce3480445d9c5b7b5a22725" name="ab01dfb1b5ce3480445d9c5b7b5a22725"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ValueLimiter</b> ()=default</td></tr>
+<tr class="memdesc:ab01dfb1b5ce3480445d9c5b7b5a22725"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor using template bounds. <br /></td></tr>
+<tr class="separator:ab01dfb1b5ce3480445d9c5b7b5a22725"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a399133c3b7cb141b6b1347d144afaf13" id="r_a399133c3b7cb141b6b1347d144afaf13"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValueLimiter.html#a399133c3b7cb141b6b1347d144afaf13">ValueLimiter</a> (ValueLimitType runtime_min, ValueLimitType runtime_max)</td></tr>
+<tr class="memdesc:a399133c3b7cb141b6b1347d144afaf13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct with runtime-specified bounds.  <br /></td></tr>
+<tr class="separator:a399133c3b7cb141b6b1347d144afaf13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6997a10159e4666150c068ea1626427c" id="r_a6997a10159e4666150c068ea1626427c"><td class="memItemLeft" align="right" valign="top">constexpr ValueLimitType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValueLimiter.html#a6997a10159e4666150c068ea1626427c">getMin</a> () const noexcept</td></tr>
+<tr class="memdesc:a6997a10159e4666150c068ea1626427c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current minimum bound.  <br /></td></tr>
+<tr class="separator:a6997a10159e4666150c068ea1626427c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9687369453536138970ee7b5412fdfda" id="r_a9687369453536138970ee7b5412fdfda"><td class="memItemLeft" align="right" valign="top">constexpr ValueLimitType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValueLimiter.html#a9687369453536138970ee7b5412fdfda">getMax</a> () const noexcept</td></tr>
+<tr class="memdesc:a9687369453536138970ee7b5412fdfda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current maximum bound.  <br /></td></tr>
+<tr class="separator:a9687369453536138970ee7b5412fdfda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96d0814b52cb3b2dfbf3b90fd177ccc7" id="r_a96d0814b52cb3b2dfbf3b90fd177ccc7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValueLimiter.html#a96d0814b52cb3b2dfbf3b90fd177ccc7">setMin</a> (ValueLimitType v)</td></tr>
+<tr class="memdesc:a96d0814b52cb3b2dfbf3b90fd177ccc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the minimum bound.  <br /></td></tr>
+<tr class="separator:a96d0814b52cb3b2dfbf3b90fd177ccc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf9091a6cc1dc05c5e43b9ac8749235e" id="r_adf9091a6cc1dc05c5e43b9ac8749235e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValueLimiter.html#adf9091a6cc1dc05c5e43b9ac8749235e">setMax</a> (ValueLimitType v)</td></tr>
+<tr class="memdesc:adf9091a6cc1dc05c5e43b9ac8749235e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the maximum bound.  <br /></td></tr>
+<tr class="separator:adf9091a6cc1dc05c5e43b9ac8749235e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a2210e91977459c0556b5fe2f34e842" id="r_a1a2210e91977459c0556b5fe2f34e842"><td class="memItemLeft" align="right" valign="top">constexpr ValueLimitType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValueLimiter.html#a1a2210e91977459c0556b5fe2f34e842">boundValue</a> (ValueLimitType value) const</td></tr>
+<tr class="memdesc:a1a2210e91977459c0556b5fe2f34e842"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clamps a value to the current bounds.  <br /></td></tr>
+<tr class="separator:a1a2210e91977459c0556b5fe2f34e842"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:abe511140e8697c92b131a30ad189ebb8" id="r_abe511140e8697c92b131a30ad189ebb8"><td class="memItemLeft" align="right" valign="top">static constexpr ValueLimitType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValueLimiter.html#abe511140e8697c92b131a30ad189ebb8">compileMin</a> = MIN</td></tr>
+<tr class="separator:abe511140e8697c92b131a30ad189ebb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dba12ef97ead36acf1a811603906e01" id="r_a2dba12ef97ead36acf1a811603906e01"><td class="memItemLeft" align="right" valign="top">static constexpr ValueLimitType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classValueLimiter.html#a2dba12ef97ead36acf1a811603906e01">compileMax</a> = MAX</td></tr>
+<tr class="separator:a2dba12ef97ead36acf1a811603906e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;ValueLimitType MIN = 0, ValueLimitType MAX = 100&gt;<br />
+class ValueLimiter&lt; MIN, MAX &gt;</div><p>Runtime-configurable value limiter with compile-time defaults. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">MIN</td><td>Default minimum bound (default 0) </td></tr>
+    <tr><td class="paramname">MAX</td><td>Default maximum bound (default 100) </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a399133c3b7cb141b6b1347d144afaf13" name="a399133c3b7cb141b6b1347d144afaf13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a399133c3b7cb141b6b1347d144afaf13">&#9670;&#160;</a></span>ValueLimiter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;ValueLimitType MIN = 0, ValueLimitType MAX = 100&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classValueLimiter.html">ValueLimiter</a>&lt; MIN, MAX &gt;<a class="el" href="classValueLimiter.html">::ValueLimiter</a> </td>
+          <td>(</td>
+          <td class="paramtype">ValueLimitType&#160;</td>
+          <td class="paramname"><em>runtime_min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ValueLimitType&#160;</td>
+          <td class="paramname"><em>runtime_max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct with runtime-specified bounds. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">runtime_min</td><td>The minimum bound </td></tr>
+    <tr><td class="paramname">runtime_max</td><td>The maximum bound </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a1a2210e91977459c0556b5fe2f34e842" name="a1a2210e91977459c0556b5fe2f34e842"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a2210e91977459c0556b5fe2f34e842">&#9670;&#160;</a></span>boundValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;ValueLimitType MIN = 0, ValueLimitType MAX = 100&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr ValueLimitType <a class="el" href="classValueLimiter.html">ValueLimiter</a>&lt; MIN, MAX &gt;::boundValue </td>
+          <td>(</td>
+          <td class="paramtype">ValueLimitType&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Clamps a value to the current bounds. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>The value to clamp </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The clamped value </dd></dl>
+
+</div>
+</div>
+<a id="a9687369453536138970ee7b5412fdfda" name="a9687369453536138970ee7b5412fdfda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9687369453536138970ee7b5412fdfda">&#9670;&#160;</a></span>getMax()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;ValueLimitType MIN = 0, ValueLimitType MAX = 100&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr ValueLimitType <a class="el" href="classValueLimiter.html">ValueLimiter</a>&lt; MIN, MAX &gt;::getMax </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the current maximum bound. </p>
+<dl class="section return"><dt>Returns</dt><dd>The maximum bound value </dd></dl>
+
+</div>
+</div>
+<a id="a6997a10159e4666150c068ea1626427c" name="a6997a10159e4666150c068ea1626427c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6997a10159e4666150c068ea1626427c">&#9670;&#160;</a></span>getMin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;ValueLimitType MIN = 0, ValueLimitType MAX = 100&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr ValueLimitType <a class="el" href="classValueLimiter.html">ValueLimiter</a>&lt; MIN, MAX &gt;::getMin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the current minimum bound. </p>
+<dl class="section return"><dt>Returns</dt><dd>The minimum bound value </dd></dl>
+
+</div>
+</div>
+<a id="adf9091a6cc1dc05c5e43b9ac8749235e" name="adf9091a6cc1dc05c5e43b9ac8749235e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf9091a6cc1dc05c5e43b9ac8749235e">&#9670;&#160;</a></span>setMax()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;ValueLimitType MIN = 0, ValueLimitType MAX = 100&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classValueLimiter.html">ValueLimiter</a>&lt; MIN, MAX &gt;::setMax </td>
+          <td>(</td>
+          <td class="paramtype">ValueLimitType&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the maximum bound. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>The new maximum value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Automatically adjusts if new max would be less than current min </dd></dl>
+
+</div>
+</div>
+<a id="a96d0814b52cb3b2dfbf3b90fd177ccc7" name="a96d0814b52cb3b2dfbf3b90fd177ccc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96d0814b52cb3b2dfbf3b90fd177ccc7">&#9670;&#160;</a></span>setMin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;ValueLimitType MIN = 0, ValueLimitType MAX = 100&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classValueLimiter.html">ValueLimiter</a>&lt; MIN, MAX &gt;::setMin </td>
+          <td>(</td>
+          <td class="paramtype">ValueLimitType&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the minimum bound. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>The new minimum value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Automatically adjusts if new min would exceed current max </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a2dba12ef97ead36acf1a811603906e01" name="a2dba12ef97ead36acf1a811603906e01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dba12ef97ead36acf1a811603906e01">&#9670;&#160;</a></span>compileMax</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;ValueLimitType MIN = 0, ValueLimitType MAX = 100&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr ValueLimitType <a class="el" href="classValueLimiter.html">ValueLimiter</a>&lt; MIN, MAX &gt;::compileMax = MAX</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Compile-time maximum bound </p>
+
+</div>
+</div>
+<a id="abe511140e8697c92b131a30ad189ebb8" name="abe511140e8697c92b131a30ad189ebb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe511140e8697c92b131a30ad189ebb8">&#9670;&#160;</a></span>compileMin</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;ValueLimitType MIN = 0, ValueLimitType MAX = 100&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr ValueLimitType <a class="el" href="classValueLimiter.html">ValueLimiter</a>&lt; MIN, MAX &gt;::compileMin = MIN</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Compile-time minimum bound </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>library/limited_value/<a class="el" href="ValueLimiter_8h_source.html">ValueLimiter.h</a></li>
+<li>library/limited_value/<a class="el" href="ValueLimiter_8hpp_source.html">ValueLimiter.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

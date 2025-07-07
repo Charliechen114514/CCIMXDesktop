@@ -8,6 +8,10 @@ var searchData=
   ['line_5',['Line',['../classSimpleDrawingScene.html#ac1c43148efeef321be72ca1a4baf338fa4803e6b9e63dabf04de980788d6a13c4',1,'SimpleDrawingScene']]],
   ['listcycle_6',['ListCycle',['../classCCMediaPlayList.html#a22ea885ed695b9f7fcabd7b117b4e0b3a2c62ffd47a07bdb6cb4720a0bad933cd',1,'CCMediaPlayList']]],
   ['listplay_7',['ListPlay',['../classCCMediaPlayList.html#a22ea885ed695b9f7fcabd7b117b4e0b3acae9881cfbdbd74078ce3d31eb060791',1,'CCMediaPlayList']]],
-  ['low_8',['LOW',['../classBirdObsticals.html#a38419a3f4f5ca46c7243184bca781576a41bc94cbd8eebea13ce0491b2ac11b88',1,'BirdObsticals']]],
-  ['low_5ftemp_9',['LOW_TEMP',['../classWeatherChartWidget.html#ad917be16972dd0f90aa71df8d0e8e569ac2e65573563c7444efbfc0dd2bca593c',1,'WeatherChartWidget']]]
+  ['logdisabled_8',['LogDisabled',['../structDesktopLoggerBackends.html#a8e4f53f4d26080ea3bae3e7603057c7baa9ee8b67e7d2698eee6e77d96f7c7532',1,'DesktopLoggerBackends']]],
+  ['logfailed_9',['LogFailed',['../structDesktopLoggerBackends.html#a8e4f53f4d26080ea3bae3e7603057c7ba8c493fd66af0b4a77c21317a8ac9141c',1,'DesktopLoggerBackends']]],
+  ['logsuccess_10',['LogSuccess',['../structDesktopLoggerBackends.html#a8e4f53f4d26080ea3bae3e7603057c7ba69fef821d1c5f483a87340100f3f04d6',1,'DesktopLoggerBackends']]],
+  ['logurulike_11',['LoguruLike',['../classConsoleLogger.html#a8a9cdd9ae4dc597c38978d302b99ee44abff4dc044c5675ed305b097f36152166',1,'ConsoleLogger']]],
+  ['low_12',['LOW',['../classBirdObsticals.html#a38419a3f4f5ca46c7243184bca781576a41bc94cbd8eebea13ce0491b2ac11b88',1,'BirdObsticals']]],
+  ['low_5ftemp_13',['LOW_TEMP',['../classWeatherChartWidget.html#ad917be16972dd0f90aa71df8d0e8e569ac2e65573563c7444efbfc0dd2bca593c',1,'WeatherChartWidget']]]
 ];

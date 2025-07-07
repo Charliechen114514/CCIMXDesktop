@@ -102,29 +102,144 @@ $(document).ready(function(){initNavTree('classNoter.html',''); initResizable();
 </div><!--header-->
 <div class="contents">
 
-<p>The <a class="el" href="classNoter.html" title="The Noter class holdings the light recorders of the Date notes.">Noter</a> class holdings the light recorders of the Date notes.  
+<p>Manages date-based note storage and retrieval.  
  <a href="classNoter.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="Noter_8h_source.html">Noter.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a23122e60530233afb68a5d99e04ffa80" id="r_a23122e60530233afb68a5d99e04ffa80"><td class="memItemLeft" align="right" valign="top"><a id="a23122e60530233afb68a5d99e04ffa80" name="a23122e60530233afb68a5d99e04ffa80"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Q_DISABLE_COPY_MOVE</b> (<a class="el" href="classNoter.html">Noter</a>)</td></tr>
+<tr class="memitem:abafede83ac3452b10639b33a13c06899" id="r_abafede83ac3452b10639b33a13c06899"><td class="memItemLeft" align="right" valign="top"><a id="abafede83ac3452b10639b33a13c06899" name="abafede83ac3452b10639b33a13c06899"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Noter</b> ()=default</td></tr>
+<tr class="memdesc:abafede83ac3452b10639b33a13c06899"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br /></td></tr>
+<tr class="separator:abafede83ac3452b10639b33a13c06899"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23122e60530233afb68a5d99e04ffa80" id="r_a23122e60530233afb68a5d99e04ffa80"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNoter.html#a23122e60530233afb68a5d99e04ffa80">Q_DISABLE_COPY_MOVE</a> (<a class="el" href="classNoter.html">Noter</a>)</td></tr>
 <tr class="separator:a23122e60530233afb68a5d99e04ffa80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adced66b8718c45ca11063a1a19e60169" id="r_adced66b8718c45ca11063a1a19e60169"><td class="memItemLeft" align="right" valign="top"><a id="adced66b8718c45ca11063a1a19e60169" name="adced66b8718c45ca11063a1a19e60169"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>submitNoteInfo</b> (const QDate &amp;date, const <a class="el" href="structNoteInfo.html">NoteInfo</a> &amp;infos)</td></tr>
+<tr class="memitem:adced66b8718c45ca11063a1a19e60169" id="r_adced66b8718c45ca11063a1a19e60169"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNoter.html#adced66b8718c45ca11063a1a19e60169">submitNoteInfo</a> (const QDate &amp;date, const <a class="el" href="structNoteInfo.html">NoteInfo</a> &amp;infos)</td></tr>
+<tr class="memdesc:adced66b8718c45ca11063a1a19e60169"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add or update a note for a specific date.  <br /></td></tr>
 <tr class="separator:adced66b8718c45ca11063a1a19e60169"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a212720ec21e601154675cbe76daa3c64" id="r_a212720ec21e601154675cbe76daa3c64"><td class="memItemLeft" align="right" valign="top"><a id="a212720ec21e601154675cbe76daa3c64" name="a212720ec21e601154675cbe76daa3c64"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>removeNoteInfo</b> (const QDate &amp;date)</td></tr>
+<tr class="memitem:a212720ec21e601154675cbe76daa3c64" id="r_a212720ec21e601154675cbe76daa3c64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNoter.html#a212720ec21e601154675cbe76daa3c64">removeNoteInfo</a> (const QDate &amp;date)</td></tr>
+<tr class="memdesc:a212720ec21e601154675cbe76daa3c64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a note for a specific date.  <br /></td></tr>
 <tr class="separator:a212720ec21e601154675cbe76daa3c64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a96652bfaf074d24d4395a92a2174b5" id="r_a1a96652bfaf074d24d4395a92a2174b5"><td class="memItemLeft" align="right" valign="top"><a id="a1a96652bfaf074d24d4395a92a2174b5" name="a1a96652bfaf074d24d4395a92a2174b5"></a>
-<a class="el" href="structNoteInfo.html">NoteInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>noteInfo</b> (const QDate &amp;date) const</td></tr>
+<tr class="memitem:a1a96652bfaf074d24d4395a92a2174b5" id="r_a1a96652bfaf074d24d4395a92a2174b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structNoteInfo.html">NoteInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNoter.html#a1a96652bfaf074d24d4395a92a2174b5">noteInfo</a> (const QDate &amp;date) const</td></tr>
+<tr class="memdesc:a1a96652bfaf074d24d4395a92a2174b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve a note for a specific date.  <br /></td></tr>
 <tr class="separator:a1a96652bfaf074d24d4395a92a2174b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="classNoter.html" title="The Noter class holdings the light recorders of the Date notes.">Noter</a> class holdings the light recorders of the Date notes. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+<div class="textblock"><p>Manages date-based note storage and retrieval. </p>
+<p>Provides functionality to store, retrieve, and manage notes associated with specific dates using a QMap-based storage system. The class is non-copyable and non-movable. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a1a96652bfaf074d24d4395a92a2174b5" name="a1a96652bfaf074d24d4395a92a2174b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a96652bfaf074d24d4395a92a2174b5">&#9670;&#160;</a></span>noteInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structNoteInfo.html">NoteInfo</a> * Noter::noteInfo </td>
+          <td>(</td>
+          <td class="paramtype">const QDate &amp;&#160;</td>
+          <td class="paramname"><em>date</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieve a note for a specific date. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">date</td><td>The date to look up </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the <a class="el" href="structNoteInfo.html" title="Container for note information.">NoteInfo</a> if found, nullptr otherwise </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The returned pointer is only valid while the <a class="el" href="classNoter.html" title="Manages date-based note storage and retrieval.">Noter</a> exists </dd></dl>
+
+</div>
+</div>
+<a id="a23122e60530233afb68a5d99e04ffa80" name="a23122e60530233afb68a5d99e04ffa80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23122e60530233afb68a5d99e04ffa80">&#9670;&#160;</a></span>Q_DISABLE_COPY_MOVE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Noter::Q_DISABLE_COPY_MOVE </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classNoter.html">Noter</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Disables copying and moving </p>
+
+</div>
+</div>
+<a id="a212720ec21e601154675cbe76daa3c64" name="a212720ec21e601154675cbe76daa3c64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a212720ec21e601154675cbe76daa3c64">&#9670;&#160;</a></span>removeNoteInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Noter::removeNoteInfo </td>
+          <td>(</td>
+          <td class="paramtype">const QDate &amp;&#160;</td>
+          <td class="paramname"><em>date</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove a note for a specific date. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">date</td><td>The date whose note should be removed </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adced66b8718c45ca11063a1a19e60169" name="adced66b8718c45ca11063a1a19e60169"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adced66b8718c45ca11063a1a19e60169">&#9670;&#160;</a></span>submitNoteInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Noter::submitNoteInfo </td>
+          <td>(</td>
+          <td class="paramtype">const QDate &amp;&#160;</td>
+          <td class="paramname"><em>date</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structNoteInfo.html">NoteInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>infos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add or update a note for a specific date. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">date</td><td>The date to associate with the note </td></tr>
+    <tr><td class="paramname">infos</td><td>The note content to store </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>builtin/app/CCCalendar/core/<a class="el" href="Noter_8h_source.html">Noter.h</a></li>
 <li>builtin/app/CCCalendar/core/<b>Noter.cpp</b></li>
 </ul>

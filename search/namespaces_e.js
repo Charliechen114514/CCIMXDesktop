@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['wallpaperutilscolliections_0',['WallPaperUtilsColliections',['../namespaceWallPaperUtilsColliections.html',1,'']]]
+  ['valuelimitutils_0',['ValueLimitUtils',['../namespaceValueLimitUtils.html',1,'']]],
+  ['videoplayertools_1',['VideoPlayerTools',['../namespaceVideoPlayerTools.html',1,'']]]
 ];

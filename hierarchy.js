@@ -32,6 +32,7 @@ var hierarchy =
       [ "LinuxPlatformProcessBrowserDriver", "classLinuxPlatformProcessBrowserDriver.html", null ],
       [ "Win32PlatformProcessBroswerDriver", "classWin32PlatformProcessBroswerDriver.html", null ]
     ] ],
+    [ "CCIMXDesktopLoggerCenter", "classCCIMXDesktopLoggerCenter.html", null ],
     [ "CCPdfChapterNode", "structCCPdfChapterNode.html", null ],
     [ "CCPdfContextDeleter", "structCCPdfContextDeleter.html", null ],
     [ "CCPdfDocumentPrivate", "structCCPdfDocumentPrivate.html", null ],
@@ -47,6 +48,9 @@ var hierarchy =
     ] ],
     [ "CVImageImplFactory", "classCVImageImplFactory.html", null ],
     [ "AppWeatherResult::DailyWeather", "structAppWeatherResult_1_1DailyWeather.html", null ],
+    [ "DesktopLoggerBackends", "structDesktopLoggerBackends.html", [
+      [ "ConsoleLogger", "classConsoleLogger.html", null ]
+    ] ],
     [ "CVTools::DisplayParams", "structCVTools_1_1DisplayParams.html", null ],
     [ "EventManager", "classEventManager.html", null ],
     [ "Settings::Figure::FigureSize", "structSettings_1_1Figure_1_1FigureSize.html", null ],
@@ -55,6 +59,11 @@ var hierarchy =
       [ "FileCountInfo", "classFileCountInfo.html", null ],
       [ "FileNameProviders", "classFileNameProviders.html", null ],
       [ "FileTypeInfo", "classFileTypeInfo.html", null ]
+    ] ],
+    [ "FormativeFactory", "classFormativeFactory.html", [
+      [ "ConsoleColorDecorator", "classConsoleColorDecorator.html", null ],
+      [ "PlainFormarter", "classPlainFormarter.html", null ],
+      [ "StandardFormater", "classStandardFormater.html", null ]
     ] ],
     [ "g_acc", "structg__acc.html", null ],
     [ "GroundLineProviders::GroundLine", "structGroundLineProviders_1_1GroundLine.html", null ],
@@ -88,6 +97,10 @@ var hierarchy =
       [ "LocalFetcher", "structLocalFetcher.html", null ],
       [ "PesudoLocalFetcher", "structPesudoLocalFetcher.html", null ]
     ] ],
+    [ "StandardFormater::LogFormatOptions", "structStandardFormater_1_1LogFormatOptions.html", null ],
+    [ "LoggerBaseConsumer", "classLoggerBaseConsumer.html", [
+      [ "ConsoleConsumer", "classConsoleConsumer.html", null ]
+    ] ],
     [ "MediaInfo", "structMediaInfo.html", null ],
     [ "MediaListMails", "structMediaListMails.html", null ],
     [ "MediaPlayer::MediaPlayerStatus", "structMediaPlayer_1_1MediaPlayerStatus.html", null ],
@@ -100,7 +113,6 @@ var hierarchy =
     [ "PageFactory", "classPageFactory.html", null ],
     [ "ToolsStackedWidget::PagePackage", "structToolsStackedWidget_1_1PagePackage.html", null ],
     [ "PageSetuper::PageSetupSessionRequest", "structPageSetuper_1_1PageSetupSessionRequest.html", null ],
-    [ "PageSwitchingLimiter", "classPageSwitchingLimiter.html", null ],
     [ "Parser", "classParser.html", null ],
     [ "PesudoAP3216C", "classPesudoAP3216C.html", null ],
     [ "PesudoICM20608", "classPesudoICM20608.html", null ],
@@ -156,11 +168,15 @@ var hierarchy =
       [ "WeatherAppMainWindow", "classWeatherAppMainWindow.html", null ]
     ] ],
     [ "QObject", null, [
+      [ "BoundSliderFactory< PageSwitchingLimiterParams::DEF_POSX, PageSwitchingLimiterParams::LEAST_POSX, PageSwitchingLimiterParams::MAX_POSX >", "classBoundSliderFactory.html", [
+        [ "PageSwitchingLimiter", "classPageSwitchingLimiter.html", null ]
+      ] ],
       [ "AP3216CAdapterFactory", "classAP3216CAdapterFactory.html", null ],
       [ "ApplicationWrapper", "classApplicationWrapper.html", [
         [ "AppLaunchLauncher", "classAppLaunchLauncher.html", null ],
         [ "SettingsLaunch", "classSettingsLaunch.html", null ]
       ] ],
+      [ "BoundSliderFactory< default_value, min, max >", "classBoundSliderFactory.html", null ],
       [ "CCMediaPlayList", "classCCMediaPlayList.html", null ],
       [ "CCPdfChapterCreator", "classCCPdfChapterCreator.html", null ],
       [ "CCPdfDocument", "classCCPdfDocument.html", null ],
@@ -281,6 +297,7 @@ var hierarchy =
       [ "SideBarWidget", "classSideBarWidget.html", null ],
       [ "SideBarWidget", "classSideBarWidget.html", null ],
       [ "SimpleDrawerWidget", "classSimpleDrawerWidget.html", null ],
+      [ "SlideSettings", "classSlideSettings.html", null ],
       [ "SportsChart", "classSportsChart.html", null ],
       [ "SportsDisplayWidget", "classSportsDisplayWidget.html", null ],
       [ "StatusBarIconWidget", "classStatusBarIconWidget.html", [

@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['name_0',['name',['../structProcessBroswer_1_1ProcessInfo.html#a8d5662e9c3468ad2a814cfd706a40b95',1,'ProcessBroswer::ProcessInfo::name'],['../structToolsStackedWidget_1_1PagePackage.html#a495d4b66e470a58dc509e92024ca74b4',1,'ToolsStackedWidget::PagePackage::name'],['../structCVTools_1_1DisplayParams.html#a366209da85a0c0e2fe1c4fc814c5ef8a',1,'CVTools::DisplayParams::name'],['../structToolLeftWidgets_1_1ToolButtonInstallPackage.html#a4b82beeaaf90facefb4c2ebbcb9d338d',1,'ToolLeftWidgets::ToolButtonInstallPackage::name']]],
+  ['name_0',['name',['../structCVTools_1_1DisplayParams.html#a366209da85a0c0e2fe1c4fc814c5ef8a',1,'CVTools::DisplayParams::name'],['../structToolLeftWidgets_1_1ToolButtonInstallPackage.html#a4b82beeaaf90facefb4c2ebbcb9d338d',1,'ToolLeftWidgets::ToolButtonInstallPackage::name'],['../structToolsStackedWidget_1_1PagePackage.html#a495d4b66e470a58dc509e92024ca74b4',1,'ToolsStackedWidget::PagePackage::name'],['../structProcessBroswer_1_1ProcessInfo.html#a8d5662e9c3468ad2a814cfd706a40b95',1,'ProcessBroswer::ProcessInfo::name']]],
   ['nameproviders_1',['NameProviders',['../classMainWindow.html#ad766a05d8996b153d8328819f3fef928a09675afd3cc4a09f7b50ba42fc455f9f',1,'MainWindow']]],
-  ['netabilityscanner_2',['netabilityscanner',['../classNetAbilityScanner.html',1,'NetAbilityScanner'],['../classDesktopMainWindow.html#ae0bac85372b4389478e069a5979c937f',1,'DesktopMainWindow::netAbilityScanner()'],['../classNetAbilityScanner.html#a64ff720b2dbbb5b75423cdd027a29e7c',1,'NetAbilityScanner::NetAbilityScanner()']]],
+  ['netabilityscanner_2',['netabilityscanner',['../classNetAbilityScanner.html',1,'NetAbilityScanner'],['../classNetAbilityScanner.html#a64ff720b2dbbb5b75423cdd027a29e7c',1,'NetAbilityScanner::NetAbilityScanner()'],['../classDesktopMainWindow.html#ae0bac85372b4389478e069a5979c937f',1,'DesktopMainWindow::netAbilityScanner()']]],
   ['netcardgadget_3',['netcardgadget',['../classNetCardGadget.html',1,'NetCardGadget'],['../classNetCardGadget.html#ae7df34d5c86e08e897248ccc1c111ee3',1,'NetCardGadget::NetCardGadget()']]],
-  ['netmainwindow_4',['netmainwindow',['../classNetMainWindow.html#a3ad9cbbd627ddab9a9182b96a4bcaf5e',1,'NetMainWindow::NetMainWindow()'],['../classNetMainWindow.html',1,'NetMainWindow']]],
+  ['netmainwindow_4',['netmainwindow',['../classNetMainWindow.html',1,'NetMainWindow'],['../classNetMainWindow.html#a3ad9cbbd627ddab9a9182b96a4bcaf5e',1,'NetMainWindow::NetMainWindow()']]],
   ['netstatuschangedevent_5',['netstatuschangedevent',['../structNetStatusChangedEvent.html',1,'NetStatusChangedEvent'],['../structNetStatusChangedEvent.html#a09ab320f3f028e94f3d7bf5776f09581',1,'NetStatusChangedEvent::NetStatusChangedEvent()']]],
-  ['netstatusstatusbariconwidget_6',['netstatusstatusbariconwidget',['../classNetStatusStatusBarIconWidget.html',1,'NetStatusStatusBarIconWidget'],['../classNetStatusStatusBarIconWidget.html#ad223acfed96050cc9f399f49db5c381f',1,'NetStatusStatusBarIconWidget::NetStatusStatusBarIconWidget()']]],
+  ['netstatusstatusbariconwidget_6',['netstatusstatusbariconwidget',['../classNetStatusStatusBarIconWidget.html#ad223acfed96050cc9f399f49db5c381f',1,'NetStatusStatusBarIconWidget::NetStatusStatusBarIconWidget()'],['../classNetStatusStatusBarIconWidget.html',1,'NetStatusStatusBarIconWidget']]],
   ['network_5fquery_5fdisplay_7',['network_query_display',['../classInterfacesQuery.html#a698562491f2cb09f744bfc1344c0fff1',1,'InterfacesQuery']]],
   ['new_5findex_8',['new_index',['../structStackpageSwitcherAnimation_1_1AnimationInfo.html#aabc8b7c8eef5a3d5c027dd3e764ef1c2',1,'StackpageSwitcherAnimation::AnimationInfo']]],
   ['new_5fmove_5fspeed_9',['new_move_speed',['../classDifficultyManager.html#a7a6713f40557ef98a0adbf18b6d8a065',1,'DifficultyManager']]],
@@ -16,11 +16,12 @@ var searchData=
   ['next_5fpage_13',['next_page',['../classMainWindow.html#abc9d84a0a8b9bea132a960fdfa06b2cd',1,'MainWindow']]],
   ['no_5ferror_14',['NO_ERROR',['../classCCPdfDocument.html#a49387984fa059ca9904600ba7edacd39ad306b6fdee05fe87455110ddf6501e6c',1,'CCPdfDocument']]],
   ['normal_15',['normal',['../classLightControllerWindow.html#ad01b4159b975884f5398071749f17593a960b44c579bc2f6818d2daaf9e4c16f0',1,'LightControllerWindow::Normal'],['../classDinasourFrameFetcher.html#abd9732a2fc7ec5c1389b3308eb920182a1e23852820b9154316c7c06e2b7ba051',1,'DinasourFrameFetcher::NORMAL']]],
-  ['notecreatorwindow_16',['NoteCreatorWindow',['../classNoteCreatorWindow.html',1,'']]],
-  ['noteinfo_17',['NoteInfo',['../structNoteInfo.html',1,'']]],
-  ['noter_18',['Noter',['../classNoter.html',1,'']]],
-  ['nothing_19',['nothing',['../classEventManager.html#a423683d4091e7ead0bd42058b30869baa8697250efc73639dd2a6e7da243ac68b',1,'EventManager::NOTHING'],['../classEventManager.html#a4d6495ae514367edefb7fdf64cd72497a8697250efc73639dd2a6e7da243ac68b',1,'EventManager::NOTHING']]],
-  ['nothing_5fthen_20',['NOTHING_THEN',['../classImageCore.html#a1d14c00e103a8bd25db2424fa87426a9af66a586ec3c9e5838a94776b72b6672e',1,'ImageCore']]],
-  ['nullimage_21',['NullImage',['../classPhotoSaver.html#a74898c501e061db0c56ab0b7684fa979a3ed7a65c58f2f380e6a74076e62a5fad',1,'PhotoSaver']]],
-  ['numbernode_22',['numbernode',['../structNumberNode.html',1,'NumberNode'],['../structNumberNode.html#a8cf6c3c2c3a2092a4c3ae66aaaed88fc',1,'NumberNode::NumberNode()']]]
+  ['notecreatorwindow_16',['notecreatorwindow',['../classNoteCreatorWindow.html#ae4e9e8cac1ad751be0d800d48382d65e',1,'NoteCreatorWindow::NoteCreatorWindow()'],['../classNoteCreatorWindow.html',1,'NoteCreatorWindow']]],
+  ['noteinfo_17',['noteinfo',['../classNoter.html#a1a96652bfaf074d24d4395a92a2174b5',1,'Noter::noteInfo()'],['../structNoteInfo.html',1,'NoteInfo']]],
+  ['noter_18',['noter',['../classNoter.html#abafede83ac3452b10639b33a13c06899',1,'Noter::Noter()'],['../classNoter.html',1,'Noter']]],
+  ['notes_19',['notes',['../structNoteInfo.html#a5df98cf92e53c3421e918ddc42c60ab8',1,'NoteInfo']]],
+  ['nothing_20',['nothing',['../classEventManager.html#a423683d4091e7ead0bd42058b30869baa8697250efc73639dd2a6e7da243ac68b',1,'EventManager::NOTHING'],['../classEventManager.html#a4d6495ae514367edefb7fdf64cd72497a8697250efc73639dd2a6e7da243ac68b',1,'EventManager::NOTHING']]],
+  ['nothing_5fthen_21',['NOTHING_THEN',['../classImageCore.html#a1d14c00e103a8bd25db2424fa87426a9af66a586ec3c9e5838a94776b72b6672e',1,'ImageCore']]],
+  ['nullimage_22',['NullImage',['../classPhotoSaver.html#a74898c501e061db0c56ab0b7684fa979a3ed7a65c58f2f380e6a74076e62a5fad',1,'PhotoSaver']]],
+  ['numbernode_23',['numbernode',['../structNumberNode.html',1,'NumberNode'],['../structNumberNode.html#a8cf6c3c2c3a2092a4c3ae66aaaed88fc',1,'NumberNode::NumberNode()']]]
 ];

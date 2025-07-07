@@ -14,5 +14,7 @@ var searchData=
   ['linuxplatformprocessbrowserdriver_11',['LinuxPlatformProcessBrowserDriver',['../classLinuxPlatformProcessBrowserDriver.html',1,'']]],
   ['localfetcher_12',['LocalFetcher',['../structLocalFetcher.html',1,'']]],
   ['localweathercard_13',['LocalWeatherCard',['../classLocalWeatherCard.html',1,'']]],
-  ['localweatherlightfetcher_14',['LocalWeatherLightFetcher',['../structLocalWeatherLightFetcher.html',1,'']]]
+  ['localweatherlightfetcher_14',['LocalWeatherLightFetcher',['../structLocalWeatherLightFetcher.html',1,'']]],
+  ['logformatoptions_15',['LogFormatOptions',['../structStandardFormater_1_1LogFormatOptions.html',1,'StandardFormater']]],
+  ['loggerbaseconsumer_16',['LoggerBaseConsumer',['../classLoggerBaseConsumer.html',1,'']]]
 ];

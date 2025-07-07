@@ -2,6 +2,7 @@ var classDesktopMainWindow =
 [
     [ "DesktopMainWindow", "classDesktopMainWindow.html#aaac5851bae7399538f8ba037117bfdbf", null ],
     [ "~DesktopMainWindow", "classDesktopMainWindow.html#a43d7057668fed07e15bf4adee85b0da8", null ],
+    [ "__PROPERTY_GETSET", "classDesktopMainWindow.html#a9f279f4f7bd6652a0be83b5295ccb46c", null ],
     [ "clock_src", "classDesktopMainWindow.html#afc0b94226be4bb3ddf7fcbf7426df62d", null ],
     [ "desktop_toast", "classDesktopMainWindow.html#ad96e7341abb14b361bf76d3baff81071", null ],
     [ "downDockWidget", "classDesktopMainWindow.html#a3c9d1ee127d737faa6b73e162a4c28b3", null ],
@@ -24,6 +25,7 @@ var classDesktopMainWindow =
     [ "to_next_page", "classDesktopMainWindow.html#aa904c77c3b7b1f00c55602a47dc7e036", null ],
     [ "to_prev_page", "classDesktopMainWindow.html#a813e78d2d7102d2f5b3d9096f0118dcc", null ],
     [ "topSideBar", "classDesktopMainWindow.html#a2dfbeb975416c0bc8c27282aea616782", null ],
+    [ "updateProgress", "classDesktopMainWindow.html#a946de4068284f91fc3041b2150e96c2e", null ],
     [ "press", "classDesktopMainWindow.html#aeadbf1cc99b7fd1c5d7690a0ba7f4577", null ],
     [ "release", "classDesktopMainWindow.html#a84eecc2fcabddb1424455ccf9cc56929", null ]
 ];

@@ -1,13 +1,13 @@
 var indexSectionsWithContent =
 {
-  0: "_abcdefghijklmnopqrstuvwxyz~⚙一基完开模计许这项🌐🌟🎨💡📚📝🔧🖥🚀🛠🧩🧬",
+  0: "_abcdefghijklmnopqrstuvwxyz~⚙一基完开桌模计许这项🌐🌟🎨💡💻📚📝🔧🖥🚀🛠🧩🧬",
   1: "abcdefghilmnoprstuvwx",
-  2: "bcdefhmopqstuvw",
+  2: "bcdefhlmopqstuvw",
   3: "fs",
   4: "_abcdefghijklmnopqrstuvwz~",
   5: "abcdefghiklmnoprstuvwxyz",
   6: "acefhpt",
-  7: "abdefhikmprstz",
+  7: "abcdefhiklmprstz",
   8: "acdefghijklmnoprstwz",
   9: "amv",
   10: "mo",

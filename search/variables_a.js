@@ -7,5 +7,6 @@ var searchData=
   ['last_5ftol_4',['last_tol',['../classCPUUsageChart.html#ae3a7fad1551601477ed3ae26b199fb72',1,'CPUUsageChart']]],
   ['length_5',['length',['../structGroundLineProviders_1_1GroundLine.html#a6e39f6a4c946e7318db810629081178f',1,'GroundLineProviders::GroundLine']]],
   ['localfetcher_6',['localFetcher',['../classLocalWeatherCard.html#a1eed22fb3253b6f55884578e75964a01',1,'LocalWeatherCard']]],
-  ['low_7',['low',['../structAppWeatherResult_1_1DailyWeather.html#ad68dc66d4978326345538da3c16781f9',1,'AppWeatherResult::DailyWeather']]]
+  ['lock_7',['lock',['../structDesktopLoggerBackends.html#a41a22a20e8ea3d6970a3a2cdda9f0ae7',1,'DesktopLoggerBackends']]],
+  ['low_8',['low',['../structAppWeatherResult_1_1DailyWeather.html#ad68dc66d4978326345538da3c16781f9',1,'AppWeatherResult::DailyWeather']]]
 ];

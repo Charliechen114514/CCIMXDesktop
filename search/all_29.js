@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['💡_20wip与计划_0',['💡 WIP与计划',['../md_README.html#autotoc_md12',1,'']]],
-  ['💡_20wip_20and_20plans_1',['💡 WIP and Plans',['../md_README__EN.html#autotoc_md30',1,'']]]
+  ['🎨_20tt_20ui_20tt_0',['🎨 tt ui tt',['../md_Components-explain-CN.html#autotoc_md51',1,'🎨 &lt;tt&gt;ui&lt;/tt&gt;'],['../md_Components-explain-EN.html#autotoc_md63',1,'🎨 &lt;tt&gt;ui&lt;/tt&gt;']]]
 ];

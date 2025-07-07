@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['uitools_0',['UiTools',['../namespaceUiTools.html',1,'']]]
+  ['topstatusbar_5flabelname_0',['TopStatusBar_LabelName',['../namespaceTopStatusBar__LabelName.html',1,'']]]
 ];

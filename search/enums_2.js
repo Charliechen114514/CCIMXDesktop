@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['drawingmode_0',['DrawingMode',['../classSimpleDrawingScene.html#a6db374d8ce718ce634f33c19eca0f142',1,'SimpleDrawingScene']]]
+  ['consoleformatstyle_0',['ConsoleFormatStyle',['../classConsoleLogger.html#a8a9cdd9ae4dc597c38978d302b99ee44',1,'ConsoleLogger']]]
 ];

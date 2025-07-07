@@ -100,32 +100,43 @@ $(document).ready(function(){initNavTree('Noter_8h_source.html',''); initResizab
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef NOTER_H</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define NOTER_H</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;QDate&gt;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;QMap&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;QString&gt;</span></div>
-<div class="foldopen" id="foldopen00006" data-start="{" data-end="};">
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="structNoteInfo.html">    6</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structNoteInfo.html">NoteInfo</a> {</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    QString notes;</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>};</div>
-</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;QDate&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;QMap&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;QString&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
 <div class="foldopen" id="foldopen00014" data-start="{" data-end="};">
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="classNoter.html">   14</a></span><span class="keyword">class </span><a class="code hl_class" href="classNoter.html">Noter</a> {</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <a class="code hl_class" href="classNoter.html">Noter</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    Q_DISABLE_COPY_MOVE(<a class="code hl_class" href="classNoter.html">Noter</a>);</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">void</span> submitNoteInfo(<span class="keyword">const</span> QDate &amp;date, <span class="keyword">const</span> <a class="code hl_struct" href="structNoteInfo.html">NoteInfo</a> &amp;infos);</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordtype">void</span> removeNoteInfo(<span class="keyword">const</span> QDate&amp; date);</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <a class="code hl_struct" href="structNoteInfo.html">NoteInfo</a>* noteInfo(<span class="keyword">const</span> QDate&amp; date) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    QMap&lt;QDate, std::shared_ptr&lt;NoteInfo&gt;&gt; notes;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>};</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="structNoteInfo.html">   14</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structNoteInfo.html">NoteInfo</a> {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="structNoteInfo.html#a5df98cf92e53c3421e918ddc42c60ab8">   15</a></span>    QString <a class="code hl_variable" href="structNoteInfo.html#a5df98cf92e53c3421e918ddc42c60ab8">notes</a>; </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>};</div>
 </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#endif </span><span class="comment">// NOTER_H</span></div>
-<div class="ttc" id="aclassNoter_html"><div class="ttname"><a href="classNoter.html">Noter</a></div><div class="ttdoc">The Noter class holdings the light recorders of the Date notes.</div><div class="ttdef"><b>Definition</b> Noter.h:14</div></div>
-<div class="ttc" id="astructNoteInfo_html"><div class="ttname"><a href="structNoteInfo.html">NoteInfo</a></div><div class="ttdef"><b>Definition</b> Noter.h:6</div></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="};">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="classNoter.html">   26</a></span><span class="keyword">class </span><a class="code hl_class" href="classNoter.html">Noter</a> {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classNoter.html#abafede83ac3452b10639b33a13c06899">   31</a></span>    <a class="code hl_function" href="classNoter.html#abafede83ac3452b10639b33a13c06899">Noter</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classNoter.html#a23122e60530233afb68a5d99e04ffa80">   33</a></span>    <a class="code hl_function" href="classNoter.html#a23122e60530233afb68a5d99e04ffa80">Q_DISABLE_COPY_MOVE</a>(<a class="code hl_class" href="classNoter.html">Noter</a>); </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classNoter.html#adced66b8718c45ca11063a1a19e60169">submitNoteInfo</a>(<span class="keyword">const</span> QDate&amp; date, <span class="keyword">const</span> <a class="code hl_struct" href="structNoteInfo.html">NoteInfo</a>&amp; infos);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classNoter.html#a212720ec21e601154675cbe76daa3c64">removeNoteInfo</a>(<span class="keyword">const</span> QDate&amp; date);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <a class="code hl_struct" href="structNoteInfo.html">NoteInfo</a>* <a class="code hl_function" href="classNoter.html#a1a96652bfaf074d24d4395a92a2174b5">noteInfo</a>(<span class="keyword">const</span> QDate&amp; date) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    QMap&lt;QDate, std::shared_ptr&lt;NoteInfo&gt;&gt; notes; </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>};</div>
+</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#endif </span><span class="comment">// NOTER_H</span></div>
+<div class="ttc" id="aclassNoter_html"><div class="ttname"><a href="classNoter.html">Noter</a></div><div class="ttdoc">Manages date-based note storage and retrieval.</div><div class="ttdef"><b>Definition</b> Noter.h:26</div></div>
+<div class="ttc" id="aclassNoter_html_a1a96652bfaf074d24d4395a92a2174b5"><div class="ttname"><a href="classNoter.html#a1a96652bfaf074d24d4395a92a2174b5">Noter::noteInfo</a></div><div class="ttdeci">NoteInfo * noteInfo(const QDate &amp;date) const</div><div class="ttdoc">Retrieve a note for a specific date.</div><div class="ttdef"><b>Definition</b> Noter.cpp:11</div></div>
+<div class="ttc" id="aclassNoter_html_a212720ec21e601154675cbe76daa3c64"><div class="ttname"><a href="classNoter.html#a212720ec21e601154675cbe76daa3c64">Noter::removeNoteInfo</a></div><div class="ttdeci">void removeNoteInfo(const QDate &amp;date)</div><div class="ttdoc">Remove a note for a specific date.</div><div class="ttdef"><b>Definition</b> Noter.cpp:7</div></div>
+<div class="ttc" id="aclassNoter_html_a23122e60530233afb68a5d99e04ffa80"><div class="ttname"><a href="classNoter.html#a23122e60530233afb68a5d99e04ffa80">Noter::Q_DISABLE_COPY_MOVE</a></div><div class="ttdeci">Q_DISABLE_COPY_MOVE(Noter)</div></div>
+<div class="ttc" id="aclassNoter_html_abafede83ac3452b10639b33a13c06899"><div class="ttname"><a href="classNoter.html#abafede83ac3452b10639b33a13c06899">Noter::Noter</a></div><div class="ttdeci">Noter()=default</div><div class="ttdoc">Default constructor.</div></div>
+<div class="ttc" id="aclassNoter_html_adced66b8718c45ca11063a1a19e60169"><div class="ttname"><a href="classNoter.html#adced66b8718c45ca11063a1a19e60169">Noter::submitNoteInfo</a></div><div class="ttdeci">void submitNoteInfo(const QDate &amp;date, const NoteInfo &amp;infos)</div><div class="ttdoc">Add or update a note for a specific date.</div><div class="ttdef"><b>Definition</b> Noter.cpp:3</div></div>
+<div class="ttc" id="astructNoteInfo_html"><div class="ttname"><a href="structNoteInfo.html">NoteInfo</a></div><div class="ttdoc">Container for note information.</div><div class="ttdef"><b>Definition</b> Noter.h:14</div></div>
+<div class="ttc" id="astructNoteInfo_html_a5df98cf92e53c3421e918ddc42c60ab8"><div class="ttname"><a href="structNoteInfo.html#a5df98cf92e53c3421e918ddc42c60ab8">NoteInfo::notes</a></div><div class="ttdeci">QString notes</div><div class="ttdef"><b>Definition</b> Noter.h:15</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

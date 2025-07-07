@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('md_README.html',''); initResizable(); 
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="autotoc_md0"></a> <img src="./CCIMXDesktopLogo.png" alt="CCIMXDesktopLogo" class="inline"/></p>
-<p><img src="https://img.shields.io/badge/Qt-6.8.3-green" alt="Qt" class="inline"/><img src="https://img.shields.io/badge/OpenCV-4.12.0-blue" alt="OpenCV" class="inline"/><img src="https://img.shields.io/badge/MuPDF-supported-orange" alt="MuPDF" class="inline"/><img src="https://img.shields.io/badge/C++-17-green" alt="Qt" class="inline"/><img src="https://img.shields.io/badge/Version-Released_1.7.0-red" alt="Version" class="inline"/></p>
+<p><img src="https://img.shields.io/badge/Qt-6.8.3-green" alt="Qt" class="inline"/><img src="https://img.shields.io/badge/OpenCV-4.12.0-blue" alt="OpenCV" class="inline"/><img src="https://img.shields.io/badge/MuPDF-supported-orange" alt="MuPDF" class="inline"/><img src="https://img.shields.io/badge/C++-17-green" alt="Qt" class="inline"/><img src="https://img.shields.io/badge/Version-Released_1.8.0-red" alt="Version" class="inline"/></p>
 <p>🔌 您好！这是一个可在多种嵌入式设备中使用的简单桌面和实用程序集合！本项目目前已经可以使用完全的C++17进行编译！</p>
 <h1><a class="anchor" id="autotoc_md1"></a>
 🌐 开始之前，选择你的语言！ 🌐</h1>
@@ -138,7 +138,17 @@ $(document).ready(function(){initNavTree('md_README.html',''); initResizable(); 
 <hr  />
 <h1><a class="anchor" id="autotoc_md7"></a>
 这里有什么？</h1>
-<p>现在，CCIMXDesktop支持的一键构建包括： （注：标准最小依赖为：TSLib做交互，QtCore QtWidget QtGui QtNetwork四件套的基础支持）</p>
+<p>现在，CCIMXDesktop支持的一键构建包括： （注：标准最小依赖为：TSLib做交互📝，QtCore🔧 QtWidget🖼️ QtGui🎨 QtNetwork🌐四件套的基础支持）</p>
+<h3><a class="anchor" id="autotoc_md8"></a>
+桌面本体功能💻</h3>
+<ul>
+<li>📦 基础的应用托管器 + 动态APP启动⚡</li>
+<li>🖼️ 壁纸动画，托管功能🌀</li>
+<li>🛠️ 基础的内建本体辅助APP（不可卸载🔒）</li>
+<li>📜 日志管理系统，为CCIMXDesktop增加日志系统方便调试🔍和观察👀</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md9"></a>
+项目包含</h3>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">功能 / 应用名称   </th><th class="markdownTableHeadNone">依赖条件或备注   </th><th class="markdownTableHeadNone">是否为内建程序   </th><th class="markdownTableHeadNone">说明   </th><th class="markdownTableHeadNone">界面展示    </th></tr>
@@ -188,13 +198,13 @@ $(document).ready(function(){initNavTree('md_README.html',''); initResizable(); 
 <td class="markdownTableBodyNone">🚀 Dynamic Application Launcher（动态应用启动器）   </td><td class="markdownTableBodyNone">标准最小依赖   </td><td class="markdownTableBodyNone">是   </td><td class="markdownTableBodyNone">第三方应用运行和管理   </td><td class="markdownTableBodyNone"><img src="./README/image-20250614232401883.png" alt="image-20250614232401883" class="inline"/>   </td></tr>
 </table>
 <hr  />
-<h1><a class="anchor" id="autotoc_md9"></a>
+<h1><a class="anchor" id="autotoc_md11"></a>
 🧩开发者参考</h1>
 <ul>
 <li><a class="el" href="md_Components-explain-CN.html">📖 汉语模块说明</a></li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md11"></a>
+<h1><a class="anchor" id="autotoc_md13"></a>
 📚项目文档</h1>
 <p><img src="https://img.shields.io/badge/GCC-cross--compile-yellowgreen" alt="GCC" class="inline"/> <img src="https://img.shields.io/badge/ARM-linux--gnueabihf-red" alt="ARM" class="inline"/></p>
 <p>如果您对项目的制作流程和开发文档感兴趣，请参考Documentations文件夹。有关构建流程及定制，请查阅构建手册：</p>
@@ -202,9 +212,9 @@ $(document).ready(function(){initNavTree('md_README.html',''); initResizable(); 
 <p>&zwj;🛠️ 如何构建本项目？（支持 X86 gcc、ARM-linux-gnueabihf-gcc 和 Windows GCC） </p>
 </blockquote>
 <p>文档已通过 GitHub Actions 自动部署，访问：<a href="https://charliechen114514.github.io/CCIMXDesktop/">CCIMXDesktop: Main Page</a></p>
-<h1><a class="anchor" id="autotoc_md12"></a>
+<h1><a class="anchor" id="autotoc_md14"></a>
 💡 WIP与计划</h1>
-<h2><a class="anchor" id="autotoc_md13"></a>
+<h2><a class="anchor" id="autotoc_md15"></a>
 🚀 计划优化的桌面本体工作：</h2>
 <ul>
 <li>更加精细的移植系统状态监视卡片应用（硬存，内存等）</li>
@@ -213,9 +223,8 @@ $(document).ready(function(){initNavTree('md_README.html',''); initResizable(); 
 <li>增加针对按键的桌面刷新功能</li>
 <li>增加为桌面服务的更好的文件夹与存储功能</li>
 <li>开发与桌面深度集成的**待办事项/提醒应用**。支持在状态栏显示即将到来的提醒，锁屏界面显示重要提醒。</li>
-<li>增加日志管理系统，为CCIMXDesktop增加日志系统方便调试和观察</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md14"></a>
+<h2><a class="anchor" id="autotoc_md16"></a>
 🚀 计划编写和提供更多的外部基础程序：</h2>
 <ul>
 <li>💬 聊天室（计划类似于QQ）</li>
@@ -223,13 +232,13 @@ $(document).ready(function(){initNavTree('md_README.html',''); initResizable(); 
 <li>🔌 串口助手</li>
 <li>✅ 任务清单</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md15"></a>
+<h2><a class="anchor" id="autotoc_md17"></a>
 🚀文档计划</h2>
 <ul>
 <li>进一步更加明确的完善项目的设计文档部分，展开针对桌面逐步配置化的相关文档辅助说明</li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md17"></a>
+<h1><a class="anchor" id="autotoc_md19"></a>
 📝 许可证</h1>
 <p><img src="https://img.shields.io/badge/License-MIT-brightgreen" alt="License" class="inline"/></p>
 <p>本项目基于 MIT 许可证，欢迎随意移植、修改和使用！ </p>

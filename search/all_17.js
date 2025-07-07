@@ -13,7 +13,7 @@ var searchData=
   ['weatherresult_10',['weatherresult',['../structWeatherResult.html#a05e61499944a8ccded4e5e3ceeca72b7',1,'WeatherResult::WeatherResult()'],['../structWeatherResult.html',1,'WeatherResult']]],
   ['web_5furl_11',['WEB_URL',['../classWeatherAppMainWindow.html#a9b28f5e7eea424e8ab6ec6badb0183a2',1,'WeatherAppMainWindow']]],
   ['what_12',['what',['../classSimpleTools_1_1FailedReadFile.html#a87e802e391c441215e0bf46c91a4b3ba',1,'SimpleTools::FailedReadFile::what()'],['../classBadSqrtValue.html#ae66f9384ca539e2ebea10e26c162bd68',1,'BadSqrtValue::what()'],['../classDivideZeroException.html#a146a8ecd1af0cdef08b6bdc944d2a80b',1,'DivideZeroException::what()'],['../classUnSupportedSymbol.html#a8fce24f7f9cdffcc14f1003e3983cac5',1,'UnSupportedSymbol::what()'],['../classInvalidNumber.html#abcb69af245f0d502f6f23a745ff0bec2',1,'InvalidNumber::what()'],['../classUnSymmetryExpression.html#a52f0810fd2e1a5392be48eb6338a0141',1,'UnSymmetryExpression::what()'],['../classGeneralParseError.html#a9b2f24e91560528b535dd93816ce9767',1,'GeneralParseError::what()'],['../classUnSupportiveFunction.html#a368181a191c9b0c4677e6f52c4e576e6',1,'UnSupportiveFunction::what()']]],
-  ['what_20s_20here_13',['What&apos;s here?',['../md_README__EN.html#autotoc_md25',1,'']]],
+  ['what_20s_20here_13',['What&apos;s here?',['../md_README__EN.html#autotoc_md27',1,'']]],
   ['widget_14',['widget',['../structToolsStackedWidget_1_1PagePackage.html#a2adf96fe4068636bfef8651c30b799d6',1,'ToolsStackedWidget::PagePackage']]],
   ['widget_5fmin_5fheight_15',['WIDGET_MIN_HEIGHT',['../classGaugeWidget.html#a53db40e089294fe5d482686b7e5d4a36',1,'GaugeWidget']]],
   ['widget_5fmin_5fwidth_16',['WIDGET_MIN_WIDTH',['../classGaugeWidget.html#a35028e69117120cc4f80029e5aaa18a7',1,'GaugeWidget']]],
@@ -23,8 +23,8 @@ var searchData=
   ['win32platformprocessbroswerdriver_20',['Win32PlatformProcessBroswerDriver',['../classWin32PlatformProcessBroswerDriver.html',1,'']]],
   ['winddirection_21',['windDirection',['../structAppWeatherResult_1_1DailyWeather.html#a5be22399236c7e8590fea089e49a1026',1,'AppWeatherResult::DailyWeather']]],
   ['window_5fsize_22',['window_size',['../structCVTools_1_1DisplayParams.html#aa1430ae3fd50b00f6eb573366e096795',1,'CVTools::DisplayParams']]],
-  ['windscale_23',['windscale',['../structAppWeatherResult_1_1DailyWeather.html#a17265f6cc56388bf07f7bc433bd14d5e',1,'AppWeatherResult::DailyWeather::windScale'],['../classWeatherChartWidget.html#ad917be16972dd0f90aa71df8d0e8e569ad74a32bbd6239ec868d96541f20419ff',1,'WeatherChartWidget::WINDSCALE']]],
-  ['wip与计划_24',['💡 WIP与计划',['../md_README.html#autotoc_md12',1,'']]],
-  ['wip_20and_20plans_25',['💡 WIP and Plans',['../md_README__EN.html#autotoc_md30',1,'']]],
-  ['write_20and_20provide_20more_20external_20basic_20programs_3a_26',['🚀 Plan to write and provide more external basic programs:',['../md_README__EN.html#autotoc_md32',1,'']]]
+  ['windscale_23',['windscale',['../classWeatherChartWidget.html#ad917be16972dd0f90aa71df8d0e8e569ad74a32bbd6239ec868d96541f20419ff',1,'WeatherChartWidget::WINDSCALE'],['../structAppWeatherResult_1_1DailyWeather.html#a17265f6cc56388bf07f7bc433bd14d5e',1,'AppWeatherResult::DailyWeather::windScale']]],
+  ['wip与计划_24',['💡 WIP与计划',['../md_README.html#autotoc_md14',1,'']]],
+  ['wip_20and_20plans_25',['💡 WIP and Plans',['../md_README__EN.html#autotoc_md34',1,'']]],
+  ['write_20and_20provide_20more_20external_20basic_20programs_3a_26',['🚀 Plan to write and provide more external basic programs:',['../md_README__EN.html#autotoc_md36',1,'']]]
 ];

@@ -1,8 +1,10 @@
 var searchData=
 [
-  ['🧩开发者参考_0',['🧩开发者参考',['../md_README.html#autotoc_md9',1,'']]],
-  ['🧩_20模块描述_1',['🧩 模块描述',['../md_Components-explain-CN.html',1,'']]],
-  ['🧩_20developer_20reference_2',['🧩 Developer Reference',['../md_README__EN.html#autotoc_md27',1,'']]],
-  ['🧩_20module_20descriptions_3',['🧩 Module Descriptions',['../md_Components-explain-EN.html',1,'']]],
-  ['🧩_20tt_20sources_20tt_4',['🧩 tt sources tt',['../md_Components-explain-CN.html#autotoc_md45',1,'🧩 &lt;tt&gt;sources&lt;/tt&gt;'],['../md_Components-explain-EN.html#autotoc_md57',1,'🧩 &lt;tt&gt;sources&lt;/tt&gt;']]]
+  ['🚀文档计划_0',['🚀文档计划',['../md_README.html#autotoc_md17',1,'']]],
+  ['🚀_20计划优化的桌面本体工作：_1',['🚀 计划优化的桌面本体工作：',['../md_README.html#autotoc_md15',1,'']]],
+  ['🚀_20计划编写和提供更多的外部基础程序：_2',['🚀 计划编写和提供更多的外部基础程序：',['../md_README.html#autotoc_md16',1,'']]],
+  ['🚀_20document_20plan_3',['🚀 Document plan',['../md_README__EN.html#autotoc_md37',1,'']]],
+  ['🚀_20plan_20to_20write_20and_20provide_20more_20external_20basic_20programs_3a_4',['🚀 Plan to write and provide more external basic programs:',['../md_README__EN.html#autotoc_md36',1,'']]],
+  ['🚀_20planned_20optimization_20of_20the_20desktop_20body_3a_5',['🚀 Planned optimization of the desktop body:',['../md_README__EN.html#autotoc_md35',1,'']]],
+  ['🚀_20tt_20extern_5fapp_20tt_6',['🚀 tt extern_app tt',['../md_Components-explain-CN.html#autotoc_md47',1,'🚀 &lt;tt&gt;extern_app&lt;/tt&gt;'],['../md_Components-explain-EN.html#autotoc_md59',1,'🚀 &lt;tt&gt;extern_app&lt;/tt&gt;']]]
 ];

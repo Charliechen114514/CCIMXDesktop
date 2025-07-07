@@ -17,6 +17,7 @@ var searchData=
   ['floatslider_14',['FloatSlider',['../classFloatSlider.html',1,'']]],
   ['flowtypetypewallpapersettings_15',['FlowTypeTypeWallPaperSettings',['../structFlowTypeTypeWallPaperSettings.html',1,'']]],
   ['flushrequester_16',['FlushRequester',['../classFlushRequester.html',1,'']]],
-  ['frameprovider_17',['FrameProvider',['../classFrameProvider.html',1,'']]],
-  ['functortreenode_18',['FunctorTreeNode',['../classFunctorTreeNode.html',1,'']]]
+  ['formativefactory_17',['FormativeFactory',['../classFormativeFactory.html',1,'']]],
+  ['frameprovider_18',['FrameProvider',['../classFrameProvider.html',1,'']]],
+  ['functortreenode_19',['FunctorTreeNode',['../classFunctorTreeNode.html',1,'']]]
 ];

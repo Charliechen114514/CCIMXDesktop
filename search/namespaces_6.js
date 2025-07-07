@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mediaenableselectfactory_0',['MediaEnableSelectFactory',['../namespaceMediaEnableSelectFactory.html',1,'']]]
+  ['logger_0',['Logger',['../namespaceLogger.html',1,'']]]
 ];

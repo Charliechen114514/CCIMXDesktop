@@ -100,33 +100,41 @@ $(document).ready(function(){initNavTree('DateNoter_8h_source.html',''); initRes
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef DATENOTER_H</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define DATENOTER_H</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;panel_widget/PanelWidget.h&quot;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;QDate&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;QWidget&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span>Ui {</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">class </span><a class="code hl_class" href="classDateNoter.html">DateNoter</a>;</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>}</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">class </span><a class="code hl_struct" href="structNoteInfo.html">NoteInfo</a>;</div>
-<div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="classDateNoter.html">   10</a></span><span class="keyword">class </span><a class="code hl_class" href="classDateNoter.html">DateNoter</a> : <span class="keyword">public</span> <a class="code hl_class" href="classPanelWidget.html">PanelWidget</a> {</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    Q_OBJECT</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classDateNoter.html">DateNoter</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <a class="code hl_class" href="classDateNoter.html">~DateNoter</a>();</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">void</span> setDisplayingDate(<span class="keyword">const</span> QDate&amp; date, <a class="code hl_struct" href="structNoteInfo.html">NoteInfo</a>* info);</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    Ui::DateNoter* ui;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    QDate current_date_handling { QDate::currentDate() };</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <a class="code hl_struct" href="structNoteInfo.html">NoteInfo</a>* info { <span class="keyword">nullptr</span> };</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>};</div>
-</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;panel_widget/PanelWidget.h&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;QDate&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;QWidget&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span>Ui {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">class </span><a class="code hl_class" href="classDateNoter.html">DateNoter</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>}</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">class </span><a class="code hl_struct" href="structNoteInfo.html">NoteInfo</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="foldopen" id="foldopen00021" data-start="{" data-end="};">
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="classDateNoter.html">   21</a></span><span class="keyword">class </span><a class="code hl_class" href="classDateNoter.html">DateNoter</a> : <span class="keyword">public</span> <a class="code hl_class" href="classPanelWidget.html">PanelWidget</a> {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    Q_OBJECT</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#endif </span><span class="comment">// DATENOTER_H</span></div>
-<div class="ttc" id="aclassDateNoter_html"><div class="ttname"><a href="classDateNoter.html">DateNoter</a></div><div class="ttdef"><b>Definition</b> DateNoter.h:10</div></div>
-<div class="ttc" id="aclassPanelWidget_html"><div class="ttname"><a href="classPanelWidget.html">PanelWidget</a></div><div class="ttdef"><b>Definition</b> PanelWidget.h:6</div></div>
-<div class="ttc" id="astructNoteInfo_html"><div class="ttname"><a href="structNoteInfo.html">NoteInfo</a></div><div class="ttdef"><b>Definition</b> Noter.h:6</div></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classDateNoter.html">DateNoter</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <a class="code hl_function" href="classDateNoter.html#a413bef2a96e3ca30737699be31b1fc67">~DateNoter</a>();</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classDateNoter.html#add17dac6c6122864e6f018052498c5b4">setDisplayingDate</a>(<span class="keyword">const</span> QDate&amp; date, <a class="code hl_struct" href="structNoteInfo.html">NoteInfo</a>* info);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    Ui::DateNoter* ui; </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    QDate current_date_handling { QDate::currentDate() }; </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <a class="code hl_struct" href="structNoteInfo.html">NoteInfo</a>* info { <span class="keyword">nullptr</span> }; </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>};</div>
+</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#endif </span><span class="comment">// DATENOTER_H</span></div>
+<div class="ttc" id="aclassDateNoter_html"><div class="ttname"><a href="classDateNoter.html">DateNoter</a></div><div class="ttdoc">A panel widget for displaying and editing date notes.</div><div class="ttdef"><b>Definition</b> DateNoter.h:21</div></div>
+<div class="ttc" id="aclassDateNoter_html_a413bef2a96e3ca30737699be31b1fc67"><div class="ttname"><a href="classDateNoter.html#a413bef2a96e3ca30737699be31b1fc67">DateNoter::~DateNoter</a></div><div class="ttdeci">~DateNoter()</div><div class="ttdoc">Destructor.</div><div class="ttdef"><b>Definition</b> DateNoter.cpp:23</div></div>
+<div class="ttc" id="aclassDateNoter_html_add17dac6c6122864e6f018052498c5b4"><div class="ttname"><a href="classDateNoter.html#add17dac6c6122864e6f018052498c5b4">DateNoter::setDisplayingDate</a></div><div class="ttdeci">void setDisplayingDate(const QDate &amp;date, NoteInfo *info)</div><div class="ttdoc">Sets the date and note to display.</div><div class="ttdef"><b>Definition</b> DateNoter.cpp:27</div></div>
+<div class="ttc" id="aclassPanelWidget_html"><div class="ttname"><a href="classPanelWidget.html">PanelWidget</a></div><div class="ttdoc">The PanelWidget class.</div><div class="ttdef"><b>Definition</b> PanelWidget.h:9</div></div>
+<div class="ttc" id="astructNoteInfo_html"><div class="ttname"><a href="structNoteInfo.html">NoteInfo</a></div><div class="ttdoc">Container for note information.</div><div class="ttdef"><b>Definition</b> Noter.h:14</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
