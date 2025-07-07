@@ -22,6 +22,7 @@ void SettingsWindow::setup_connections() {
 #include "builtin/window/settings_window/config_items/wallpaper_settings/WallpaperConfigures.h"
 #include "config_items/appwidgets_globalconfig/AppWidgetConfigures.h"
 #include "config_items/light_controller/LightConfigures.h"
+#include "config_items/slide_settings/SlideSettings.h"
 #include "config_items/topsidebar/TopSideBarWidgetConfigures.h"
 #include "config_items/topsidebar/timesettings/TimeLabelSettings.h"
 void SettingsWindow::setup_panel() {
@@ -36,4 +37,6 @@ void SettingsWindow::setup_panel() {
 
     auto top_sidebar = pairs->install_mappings("TopSideBar", nullptr, new TopSideBarWidgetConfigures(handling_window));
     pairs->install_mappings("TimeLabelSettings", top_sidebar, new TimeLabelSettings(handling_window));
+
+    pairs->install_mappings("Slide Settings", nullptr, new SlideSettings(handling_window));
 }

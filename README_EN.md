@@ -2,7 +2,7 @@
 
 ![CCIMXDesktopLogo](./CCIMXDesktopLogo.png)
 
-![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-17-green)![Version](https://img.shields.io/badge/Version-Released_1.7.0-red)
+![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-17-green)![Version](https://img.shields.io/badge/Version-Released_1.8.0-red)
 
 🔌 Hello! This is a simple desktop and utility collection that can be used in a variety of embedded devices! This project currently support compiling in full C++17 or above versions. Enjoy!
 
@@ -66,7 +66,16 @@ Tip: The full build takes about 10 minutes (16 threads). You can adjust it dynam
 ## What's here?
 
 Now, CCIMXDesktop supports one-click building including:
-(Note: standard minimum dependencies are: TSLib for interaction, QtCore QtWidget QtGui QtNetwork basic support)
+(Note: the standard minimum dependencies are: TSLib for interaction 📝, QtCore 🔧 QtWidget 🖼️ QtGui 🎨 QtNetwork 🌐 basic support for the four-piece set)
+
+#### Desktop main body function 💻
+
+- 📦 Basic application host + dynamic APP startup ⚡
+- 🖼️ Wallpaper animation, hosting function 🌀
+- 🛠️ Basic built-in auxiliary APP (cannot be uninstalled 🔒)
+- 📜 Log management system, add a log system to CCIMXDesktop to facilitate debugging 🔍 and observation 👀
+
+#### Project includes
 
 | Function / Application Name | Dependency Conditions or Remarks | Is it a built-in program | Description | Interface Display |
 | ------------------------------------------------ | -------------------------------------------------- | -------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -118,13 +127,11 @@ The document has been automatically deployed via GitHub Actions, visit: [CCIMXDe
 ### 🚀 Planned optimization of the desktop body:
 
 - More refined porting of system status monitoring card applications (hard storage, memory, etc.)
-
 - Card expansion system
 - Add a drop-down quick settings channel (brightness adjustment, etc.)
 - Add desktop refresh function for buttons
 - Add better folder and storage functions for desktop services
 - Develop a **to-do/reminder application** that is deeply integrated with the desktop. Support displaying upcoming reminders in the status bar and important reminders on the lock screen.
-- Add a log management system to CCIMXDesktop to facilitate debugging and observation
 
 ### 🚀 Plan to write and provide more external basic programs:
 

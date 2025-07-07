@@ -20,6 +20,7 @@ include(app_building_options)
 
 find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets Network)
 find_package(Qt6 REQUIRED COMPONENTS Core)
+find_package(Qt6 REQUIRED COMPONENTS Core)
 qt_standard_project_setup()
 
 if(DEFINED LOCAL_CONFIG_FILE AND EXISTS "${LOCAL_CONFIG_FILE}")
@@ -101,6 +102,8 @@ set(UiSubs
     ui/UiTools/easing_curve_combox_setupper/EasingCurveComboxBoxSetuper.cpp)
 
 set(CoreSubs
+    core/page_switching_limiter/PageSwitchingLimiter.h
+    core/page_switching_limiter/PageSwitchingLimiter.cpp
     core/coretools.h core/coretools.cpp
     core/labelStyler/LabelStyler.h
     core/labelStyler/LabelStyler.cpp
@@ -131,6 +134,7 @@ set(BUILT_IN_ICM20608_Support
     builtin/core/icm20608/icm20608.h)
 
 set(BuiltInWindow_SettingsSrc
+    builtin/window/settings_window/config_items/slide_settings/SlideSettings.h builtin/window/settings_window/config_items/slide_settings/SlideSettings.cpp builtin/window/settings_window/config_items/slide_settings/SlideSettings.ui
     builtin/window/settings_window/config_items/topsidebar/TopSideBarWidgetConfigures.h builtin/window/settings_window/config_items/topsidebar/TopSideBarWidgetConfigures.cpp builtin/window/settings_window/config_items/topsidebar/TopSideBarWidgetConfigures.ui
     builtin/window/settings_window/config_items/topsidebar/timesettings/TimeLabelSettings.h builtin/window/settings_window/config_items/topsidebar/timesettings/TimeLabelSettings.cpp builtin/window/settings_window/config_items/topsidebar/timesettings/TimeLabelSettings.ui
     builtin/ui/ColorSelectWidget.h builtin/ui/ColorSelectWidget.cpp builtin/ui/ColorSelectWidget.ui
@@ -180,6 +184,26 @@ set(START_STAGE_SRC
     ui/splash_window/CCIMX_DesktopSplashWindow.h
     ui/splash_window/CCIMX_DesktopSplashWindow.cpp)
 
+set(LIBRARY_SRC
+    library/limited_value/ValueLimiter.hpp
+    library/simple_gerseter/simple_getseter.hpp
+    library/qt_relative/genbound_progressbar/BoundProgressBarFactory.hpp
+    )
+
+set(Loggy_SRC
+    core/loggers/CCIMXDesktopLoggerCenter.h core/loggers/CCIMXDesktopLoggerCenter.cpp
+    core/loggers/DesktopLoggerBackends.h core/loggers/DesktopLoggerBackends.cpp
+    core/loggers/ConsoleLogger.h core/loggers/ConsoleLogger.cpp
+    core/loggers/decorator/console_color/ConsoleColorDecorator.h core/loggers/decorator/console_color/ConsoleColorDecorator.cpp
+    core/loggers/base_components/message_comsumer/ConsoleConsumer.h core/loggers/base_components/message_comsumer/ConsoleConsumer.cpp
+    core/loggers/base_components/message_comsumer/LoggerBaseConsumer.h
+    core/loggers/base_components/format_factory/FormativeFactory.h
+    core/loggers/base_components/format_factory/plain_format/PlainFormarter.h core/loggers/base_components/format_factory/plain_format/PlainFormarter.cpp
+    core/loggers/base_components/format_factory/standard_format/StandardFormater.h core/loggers/base_components/format_factory/standard_format/StandardFormater.cpp
+    core/loggers/DesktopLoggerConvinients.h core/loggers/DesktopLoggerConvinients.cpp
+    )
+
+
 qt_add_executable(CCIMX_Desktop
     WIN32 MACOSX_BUNDLE
     main.cpp
@@ -195,8 +219,8 @@ qt_add_executable(CCIMX_Desktop
     ${UPPER_TOOLBAR_SRC}
     ${ICONQRC_SRC}
     ${START_STAGE_SRC}
-    core/page_switching_limiter/PageSwitchingLimiter.h core/page_switching_limiter/PageSwitchingLimiter.cpp
-    library/limited_value/ValueLimiter.h library/limited_value/ValueLimiter.cpp
+    ${LIBRARY_SRC}
+    ${Loggy_SRC}
 )
 
 add_custom_command(TARGET CCIMX_Desktop POST_BUILD
@@ -210,6 +234,7 @@ target_link_libraries(CCIMX_Desktop
         Qt::Widgets
         Qt6::Network
 )
+target_link_libraries(CCIMX_Desktop PRIVATE Qt6::Core)
 target_link_libraries(CCIMX_Desktop PRIVATE Qt6::Core)
 target_include_directories(CCIMX_Desktop
     PRIVATE

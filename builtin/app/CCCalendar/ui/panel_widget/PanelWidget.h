@@ -3,6 +3,9 @@
 
 #include <QWidget>
 class QPropertyAnimation;
+/**
+ * @brief The PanelWidget class
+ */
 class PanelWidget : public QWidget {
 	Q_OBJECT
 public:

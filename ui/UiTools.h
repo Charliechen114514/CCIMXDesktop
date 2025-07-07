@@ -20,6 +20,11 @@ namespace UiTools {
  */
 void addWidgetToGridTail(QGridLayout* layout, QWidget* newWidget, int columnCount);
 
+/**
+ * @brief openIfUnvisible
+ * @param window
+ * @param windowName
+ */
 template <typename WindowType>
 void openIfUnvisible(WindowType* window, const QString& windowName) {
     if (window->isVisible()) {

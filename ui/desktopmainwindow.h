@@ -2,6 +2,7 @@
 #define DESKTOPMAINWINDOW_H
 
 #include "builtin/window/settings_window/cores/SettingsPack.h"
+#include "library/simple_gerseter/simple_getseter.hpp"
 #include "ui/appwidget.h"
 #include <QMainWindow>
 QT_BEGIN_NAMESPACE
@@ -47,15 +48,18 @@ public:
      */
     ~DesktopMainWindow();
 
+    /* simple property getset */
+    __PROPERTY_GETSET(int, slide_limitive); ///< slider property setter
+
     /**
      * @brief init init the windows sessions
-     */
+	 */
     void init();
 
     /**
      * @brief Show a toast message on the main window
      * @param message Message to display
-	 */
+     */
     void showToast(const QString& message);
 
     /**
@@ -122,6 +126,11 @@ public:
     void post_show();
 
 signals:
+    /**
+     * @brief updateProgress
+     * @param message
+     * @param processings
+     */
     void updateProgress(const QString& message, const int processings);
 
 public slots:
@@ -195,7 +204,8 @@ private:
     ApplicationLauncherMainWindow* appLauncherWindow; ///< windows for the application launch!
     SettingsWindow* settingsWindow; ///< windows contains settings
     NetAbilityScanner* scanner; ///< scanner for the network sessions
-    GlobalClockSources* clock;
+    GlobalClockSources* clock; ///< clock src
+    int slide_limitive; ///< slide limitives
     /**
      * @brief Additional UI setup after ui->setupUi()
      */
@@ -219,6 +229,15 @@ private:
      * @brief centralWidget get the centralWidget for WallPaperEngine
      */
     QWidget* centralWidget();
+
+    /**
+     * @brief initLogger init the logger level of early stage console
+     */
+    void initLogger();
+    /**
+     * @brief later_initLogger after post ui setups
+     */
+    void later_initLogger();
 };
 
 #endif // DESKTOPMAINWINDOW_H

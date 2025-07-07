@@ -6,6 +6,10 @@
 #include "builtin/ui/pagefactory.h"
 #include "builtin/window/applauncher/ApplicationLauncherMainWindow.h"
 #include "builtin/window/settings_window/SettingsWindow.h"
+#include "core/loggers/CCIMXDesktopLoggerCenter.h"
+#include "core/loggers/ConsoleLogger.h"
+#include "core/loggers/DesktopLoggerConvinients.h"
+#include "core/page_switching_limiter/PageSwitchingLimiter.h"
 #include "core/wallpaper/WallPaperEngine.h"
 #include "ui/UiTools.h"
 #include "ui/appcardwidget.h"
@@ -14,13 +18,24 @@
 #include "ui_desktopmainwindow.h"
 #include <QMouseEvent>
 #include <QTimer>
+void DesktopMainWindow::initLogger() {
+    auto& logger_center = CCIMXDesktopLoggerCenter::global_instance();
+    logger_center.registerBackend(new ConsoleLogger(ConsoleLogger::ConsoleFormatStyle::LoguruLike));
+    Logger::postInfo("ConsoleLogger is Ready!");
+}
+
+void DesktopMainWindow::later_initLogger() {
+}
+
 DesktopMainWindow::DesktopMainWindow(QWidget* parent)
     : QMainWindow(parent)
     , ui(new Ui::DesktopMainWindow) {
+    initLogger();
 }
 
 void DesktopMainWindow::setupui() {
     emit updateProgress("Setting up Desktop Static Ui", 10);
+    qInfo() << "Setting up Desktop Static Ui";
     ui->setupUi(this);
     // sources initing
     emit updateProgress("Setting up Desktop Global Core Sources", 30);
@@ -36,6 +51,7 @@ void DesktopMainWindow::setupui() {
     ui->topsidewidgetbar->installHookedWindow(this);
     emit updateProgress("Scanning the Settable Components", 50);
     settingsWindow = new SettingsWindow(this);
+    slide_limitive = PageSwitchingLimiterParams::DEF_POSX;
 }
 
 DesktopMainWindow::~DesktopMainWindow() {
@@ -45,11 +61,13 @@ DesktopMainWindow::~DesktopMainWindow() {
 void DesktopMainWindow::init() {
     setupui();
     setup_apps();
+    later_initLogger();
 }
 
 void DesktopMainWindow::setup_apps() {
 	/* Home Page */
     emit updateProgress("Setup the Home Page", 50);
+    qDebug() << "Setup HomePage";
 	QWidget* homePage = PageFactory::build_home_page(this);
 	PageSetuper::create_specified_page(ui->stackedWidget, homePage);
     emit updateProgress("Creating Entries for the Builtin Apps", 55);
@@ -181,7 +199,7 @@ void DesktopMainWindow::mouseReleaseEvent(QMouseEvent* event) {
 	records.release = event->pos();
     const QPoint diff = records.press - records.release;
 
-    if (qAbs(diff.x()) < 250) {
+    if (qAbs(diff.x()) < slide_limitive) {
         event->ignore();
         return;
     }

@@ -5,6 +5,9 @@
 #include <QDate>
 #include <QMap>
 
+/**
+ * @brief The ModernCalendarWidget class
+ */
 class ModernCalendarWidget : public QCalendarWidget {
     Q_OBJECT
 public:
@@ -29,6 +32,10 @@ public:
      * @param color
      */
     void setColorForDate(const QDate& date, const QColor& color);
+    /**
+     * @brief popColorForData pop out the markings
+     * @param date
+     */
     void popColorForData(const QDate& date);
 
 protected:
@@ -42,7 +49,7 @@ protected:
 
 private:
     QMap<QDate, QColor> dateColors; ///< data color mappings
-    bool darkMode { false };
+    bool darkMode { false }; ///< darkmode status
     /**
      * @brief styleNavigationBar
      *  process the navigationBar beautify
