@@ -106,6 +106,7 @@ var hierarchy =
     [ "MediaPlayer::MediaPlayerStatus", "structMediaPlayer_1_1MediaPlayerStatus.html", null ],
     [ "MediaPlayerWindowHelper", "classMediaPlayerWindowHelper.html", null ],
     [ "MemoryInfoFetcher::MemoryStat", "structMemoryInfoFetcher_1_1MemoryStat.html", null ],
+    [ "DiskUsage::MetaInfo", "structDiskUsage_1_1MetaInfo.html", null ],
     [ "WallPaperEngine::ModeMapping", "structWallPaperEngine_1_1ModeMapping.html", null ],
     [ "NoteInfo", "structNoteInfo.html", null ],
     [ "Noter", "classNoter.html", null ],
@@ -238,6 +239,9 @@ var hierarchy =
     [ "QSplashScreen", null, [
       [ "CCIMX_DesktopSplashWindow", "classCCIMX__DesktopSplashWindow.html", null ]
     ] ],
+    [ "QStackedWidget", null, [
+      [ "CardStackWidget", "classCardStackWidget.html", null ]
+    ] ],
     [ "QWidget", null, [
       [ "AppCardWidget", "classAppCardWidget.html", [
         [ "LocalWeatherCard", "classLocalWeatherCard.html", null ],
@@ -259,6 +263,7 @@ var hierarchy =
       [ "ColorSelectWidget", "classColorSelectWidget.html", null ],
       [ "ContoursQueryExample", "classContoursQueryExample.html", null ],
       [ "DateIcon", "classDateIcon.html", null ],
+      [ "DateShowCard", "classDateShowCard.html", null ],
       [ "DesktopAboutMainWidget", "classDesktopAboutMainWidget.html", null ],
       [ "DesktopToast", "classDesktopToast.html", null ],
       [ "DesktopToast", "classDesktopToast.html", null ],
@@ -266,10 +271,12 @@ var hierarchy =
       [ "DigitalTimeWidget", "classDigitalTimeWidget.html", null ],
       [ "DinasourGameMainWidget", "classDinasourGameMainWidget.html", null ],
       [ "DiskMusic", "classDiskMusic.html", null ],
+      [ "DiskUsageCardWidget", "classDiskUsageCardWidget.html", null ],
       [ "DownDockWidget", "classDownDockWidget.html", null ],
       [ "FaceDetectionExample", "classFaceDetectionExample.html", null ],
       [ "FileInfoDisplayWidget", "classFileInfoDisplayWidget.html", null ],
       [ "FixedOptionWidget", "classFixedOptionWidget.html", null ],
+      [ "GaugeWidget", "classGaugeWidget.html", null ],
       [ "GaugeWidget", "classGaugeWidget.html", null ],
       [ "GrayExample", "classGrayExample.html", null ],
       [ "HistDrawer", "classHistDrawer.html", null ],
@@ -319,6 +326,7 @@ var hierarchy =
       [ "WeatherChartWidget", "classWeatherChartWidget.html", null ],
       [ "WeatherDailyCard", "classWeatherDailyCard.html", null ]
     ] ],
+    [ "RandomGenerator< RandType >", "classRandomGenerator.html", null ],
     [ "rol", "structrol.html", null ],
     [ "std::runtime_error", null, [
       [ "BadSqrtValue", "classBadSqrtValue.html", null ],

@@ -3,7 +3,7 @@ var searchData=
   ['gain_5fscore_0',['gain_score',['../classDinasourGameMainWidget.html#abdfed6b79f7cc95b52d48b6548c5c5d1',1,'DinasourGameMainWidget']]],
   ['game_5fovered_1',['game_overed',['../classDinasourGameMainWidget.html#aa0c352ed11b0592a41cb06f3fdf12432',1,'DinasourGameMainWidget']]],
   ['game_5fstarted_2',['game_started',['../classDinasourGameMainWidget.html#a320be4cdcf2decffe1d85cdcbd839709',1,'DinasourGameMainWidget']]],
-  ['gaugewidget_3',['GaugeWidget',['../classGaugeWidget.html#a465a803184afa3c090f36452d22483d3',1,'GaugeWidget']]],
+  ['gaugewidget_3',['gaugewidget',['../classGaugeWidget.html#a465a803184afa3c090f36452d22483d3',1,'GaugeWidget::GaugeWidget(QWidget *parent=nullptr)'],['../classGaugeWidget.html#a465a803184afa3c090f36452d22483d3',1,'GaugeWidget::GaugeWidget(QWidget *parent=nullptr)']]],
   ['gaussainpackage_4',['GaussainPackage',['../structGaussainPackage.html#adfd6099611f308e992b8a9f692e9d217',1,'GaussainPackage']]],
   ['generalparseerror_5',['GeneralParseError',['../classGeneralParseError.html#a93f222cfc49e97eb6b0f92c2e62410df',1,'GeneralParseError']]],
   ['generate_5fhist_6',['generate_hist',['../namespaceOpenCV__ProcessAdapter.html#ad679ea0481d2a45441339cd99d4213e2',1,'OpenCV_ProcessAdapter']]],

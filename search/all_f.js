@@ -19,13 +19,14 @@ var searchData=
   ['openerror_16',['openerror',['../classVideoPlayer.html#a1ae3d446db619373212f38415b459f06',1,'VideoPlayer::openError(const VideoPlayerOpenErrorCode error)'],['../classVideoPlayer.html#a1ae3d446db619373212f38415b459f06',1,'VideoPlayer::openError(const VideoPlayerOpenErrorCode error)']]],
   ['openifunvisible_17',['openIfUnvisible',['../namespaceUiTools.html#a71658ddf6f0d85d09ae03a7eed2b5f0c',1,'UiTools']]],
   ['opennotecreator_18',['openNoteCreator',['../classCalendarWindow.html#a635e93a8c6486986dc4a4428625fef39',1,'CalendarWindow']]],
-  ['operator_28_29_19',['operator()',['../structCCPdfContextDeleter.html#a8297c17d52c3cd959b31e011e52da5e4',1,'CCPdfContextDeleter']]],
-  ['operator_3d_20',['operator=',['../classICM20608DataFactory.html#afe9ed4a869dc91b565f45b60b645753e',1,'ICM20608DataFactory::operator=()'],['../classPesudoICM20608.html#ae2249087f6916731180356f574b28380',1,'PesudoICM20608::operator=()'],['../classCVImage.html#af3aca0a5c5d2f8fc17310bab85f445ba',1,'CVImage::operator=()'],['../classICM20608.html#ab49c1e7e37a218f50da5395354a52388',1,'ICM20608::operator=()'],['../classCVImage.html#af3aca0a5c5d2f8fc17310bab85f445ba',1,'CVImage::operator=()'],['../classICM20608.html#ab49c1e7e37a218f50da5395354a52388',1,'ICM20608::operator=()']]],
-  ['operator_3d_3d_21',['operator==',['../classApplicationWrapper.html#af75654ef1cebfcf8d5c1fdec80e7b955',1,'ApplicationWrapper']]],
-  ['oppose_5ffileview_5fvisible_22',['oppose_fileview_visible',['../classImageBrowser.html#a980c9f118b28255ec99a1540be7b17a0',1,'ImageBrowser']]],
-  ['optimization_20of_20the_20desktop_20body_3a_23',['🚀 Planned optimization of the desktop body:',['../md_README__EN.html#autotoc_md35',1,'']]],
-  ['options_24',['options',['../classStandardFormater.html#a3decd79257dcaa2d7cfe353b69d16024',1,'StandardFormater']]],
-  ['oscillationamplitude_25',['oscillationAmplitude',['../setting__scene_8h.html#adba34ff2e3f3ec0cf6f3eb6951d1853e',1,'Settings::Scene::BackGround::RandomLine']]],
-  ['other_5fmistakes_26',['OTHER_MISTAKES',['../classCCPdfDocument.html#a49387984fa059ca9904600ba7edacd39a47cddc738bfdf4c33c7b47355c4c3799',1,'CCPdfDocument']]],
-  ['overview_20🌟_27',['🌟 Project Overview 🌟',['../md_README__EN.html#autotoc_md22',1,'']]]
+  ['operate_5fcomment_5flabel_19',['operate_comment_label',['../classLocalWeatherCard.html#af4ad320a6f4bd354f8e18e6fe0e5a015',1,'LocalWeatherCard::operate_comment_label()'],['../classAppCardWidget.html#ac841d5a3cf7abaec1e61c4e0763881f3',1,'AppCardWidget::operate_comment_label()'],['../classNetCardGadget.html#a6f7a6f785393bfb955ee74e85991c6b5',1,'NetCardGadget::operate_comment_label()']]],
+  ['operator_28_29_20',['operator()',['../structCCPdfContextDeleter.html#a8297c17d52c3cd959b31e011e52da5e4',1,'CCPdfContextDeleter']]],
+  ['operator_3d_21',['operator=',['../classICM20608.html#ab49c1e7e37a218f50da5395354a52388',1,'ICM20608::operator=()'],['../classCVImage.html#af3aca0a5c5d2f8fc17310bab85f445ba',1,'CVImage::operator=()'],['../classICM20608.html#ab49c1e7e37a218f50da5395354a52388',1,'ICM20608::operator=()'],['../classICM20608DataFactory.html#afe9ed4a869dc91b565f45b60b645753e',1,'ICM20608DataFactory::operator=()'],['../classPesudoICM20608.html#ae2249087f6916731180356f574b28380',1,'PesudoICM20608::operator=()'],['../classCVImage.html#af3aca0a5c5d2f8fc17310bab85f445ba',1,'CVImage::operator=()']]],
+  ['operator_3d_3d_22',['operator==',['../classApplicationWrapper.html#af75654ef1cebfcf8d5c1fdec80e7b955',1,'ApplicationWrapper']]],
+  ['oppose_5ffileview_5fvisible_23',['oppose_fileview_visible',['../classImageBrowser.html#a980c9f118b28255ec99a1540be7b17a0',1,'ImageBrowser']]],
+  ['optimization_20of_20the_20desktop_20body_3a_24',['🚀 Planned optimization of the desktop body:',['../md_README__EN.html#autotoc_md35',1,'']]],
+  ['options_25',['options',['../classStandardFormater.html#a3decd79257dcaa2d7cfe353b69d16024',1,'StandardFormater']]],
+  ['oscillationamplitude_26',['oscillationAmplitude',['../setting__scene_8h.html#adba34ff2e3f3ec0cf6f3eb6951d1853e',1,'Settings::Scene::BackGround::RandomLine']]],
+  ['other_5fmistakes_27',['OTHER_MISTAKES',['../classCCPdfDocument.html#a49387984fa059ca9904600ba7edacd39a47cddc738bfdf4c33c7b47355c4c3799',1,'CCPdfDocument']]],
+  ['overview_20🌟_28',['🌟 Project Overview 🌟',['../md_README__EN.html#autotoc_md22',1,'']]]
 ];

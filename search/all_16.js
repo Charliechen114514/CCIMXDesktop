@@ -1,8 +1,8 @@
 var searchData=
 [
   ['valid_5fvideo_0',['valid_video',['../classVideoPlayer.html#aaaa2dbe42365452b5b06d4e8ca01d1b2',1,'VideoPlayer::valid_video() const'],['../classVideoPlayer.html#aaaa2dbe42365452b5b06d4e8ca01d1b2',1,'VideoPlayer::valid_video() const']]],
-  ['value_1',['value',['../classGaugeWidget.html#a1c5e7d4bc4485033603c156f8b96af49',1,'GaugeWidget::value() const'],['../classGaugeWidget.html#a49358e772127bbd3c6d1748da8dbbef5',1,'GaugeWidget::value']]],
-  ['valuechanged_2',['valuechanged',['../classGaugeWidget.html#a3283ed21959a4ebb277833eee3e3fd7c',1,'GaugeWidget::valueChanged()'],['../classPageSwitchingLimiter.html#abfc86f7ce6d814ca6e9acb1618c7a018',1,'PageSwitchingLimiter::valueChanged()']]],
+  ['value_1',['value',['../classGaugeWidget.html#a1c5e7d4bc4485033603c156f8b96af49',1,'GaugeWidget::value() const'],['../classGaugeWidget.html#a1c5e7d4bc4485033603c156f8b96af49',1,'GaugeWidget::value() const'],['../classGaugeWidget.html#a49358e772127bbd3c6d1748da8dbbef5',1,'GaugeWidget::value']]],
+  ['valuechanged_2',['valuechanged',['../classGaugeWidget.html#a3283ed21959a4ebb277833eee3e3fd7c',1,'GaugeWidget::valueChanged(double value)'],['../classGaugeWidget.html#a3283ed21959a4ebb277833eee3e3fd7c',1,'GaugeWidget::valueChanged(double value)'],['../classPageSwitchingLimiter.html#abfc86f7ce6d814ca6e9acb1618c7a018',1,'PageSwitchingLimiter::valueChanged()']]],
   ['valuelimiter_3',['valuelimiter',['../classValueLimiter.html',1,'ValueLimiter&lt; MIN, MAX &gt;'],['../classValueLimiter.html#a399133c3b7cb141b6b1347d144afaf13',1,'ValueLimiter::ValueLimiter(ValueLimitType runtime_min, ValueLimitType runtime_max)'],['../classValueLimiter.html#ab01dfb1b5ce3480445d9c5b7b5a22725',1,'ValueLimiter::ValueLimiter()=default']]],
   ['valuelimitutils_4',['ValueLimitUtils',['../namespaceValueLimitUtils.html',1,'']]],
   ['values_5',['values',['../structWallPaperEngine_1_1ModeMapping.html#a176b25290e16c1e8a91cc5f6943a1071',1,'WallPaperEngine::ModeMapping']]],

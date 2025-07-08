@@ -36,7 +36,8 @@ var searchData=
   ['assigned_33',['assigned',['../classCVImage.html#ae0e9b2ab183866535eac01aee161beda',1,'CVImage::assigned()'],['../classCVImageImpl.html#a301dc980e78028f18bfcc6e4c05761d2',1,'CVImageImpl::assigned()'],['../classCVImageOpencvImpl.html#ae9367615aab4c6af6c0090d4b3c706af',1,'CVImageOpencvImpl::assigned()'],['../classCVImage.html#ae0e9b2ab183866535eac01aee161beda',1,'CVImage::assigned()'],['../classCVImageImpl.html#a301dc980e78028f18bfcc6e4c05761d2',1,'CVImageImpl::assigned()'],['../classCVImageOpencvImpl.html#ae9367615aab4c6af6c0090d4b3c706af',1,'CVImageOpencvImpl::assigned()']]],
   ['async_5frequest_34',['async_request',['../classWeatherRequest.html#a536ac3f283539dd0b7d7885bb53fc7b5',1,'WeatherRequest']]],
   ['autoheightupdateszrandomly_35',['autoheightUpdateSzRandomly',['../classBirdObsticals.html#a80e1185364e072984f1acdf61ceb4fe6',1,'BirdObsticals']]],
-  ['autoupdateszrandomly_36',['autoupdateszrandomly',['../classBirdObsticals.html#aa81415212ed54e0df32ecec75b5ccf8f',1,'BirdObsticals::autoUpdateSzRandomly()'],['../classCactusObsticals.html#a95e167fd879c6cc347434c05a8780032',1,'CactusObsticals::autoUpdateSzRandomly()']]],
-  ['availablebackends_37',['availableBackends',['../classCCIMXDesktopLoggerCenter.html#a10cb8af64a47945013d13ef9d21a50db',1,'CCIMXDesktopLoggerCenter']]],
-  ['availabletargetbackendonly_38',['availableTargetBackendOnly',['../classCCIMXDesktopLoggerCenter.html#af2e216487840c568c2e381f369c760e9',1,'CCIMXDesktopLoggerCenter']]]
+  ['autoswitchability_36',['autoSwitchAbility',['../classCardStackWidget.html#a5915fc10d963fe4b0d6addd639a492a2',1,'CardStackWidget']]],
+  ['autoupdateszrandomly_37',['autoupdateszrandomly',['../classBirdObsticals.html#aa81415212ed54e0df32ecec75b5ccf8f',1,'BirdObsticals::autoUpdateSzRandomly()'],['../classCactusObsticals.html#a95e167fd879c6cc347434c05a8780032',1,'CactusObsticals::autoUpdateSzRandomly()']]],
+  ['availablebackends_38',['availableBackends',['../classCCIMXDesktopLoggerCenter.html#a10cb8af64a47945013d13ef9d21a50db',1,'CCIMXDesktopLoggerCenter']]],
+  ['availabletargetbackendonly_39',['availableTargetBackendOnly',['../classCCIMXDesktopLoggerCenter.html#af2e216487840c568c2e381f369c760e9',1,'CCIMXDesktopLoggerCenter']]]
 ];

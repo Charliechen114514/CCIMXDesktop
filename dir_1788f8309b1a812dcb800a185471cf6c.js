@@ -1,5 +1,7 @@
 var dir_1788f8309b1a812dcb800a185471cf6c =
 [
+    [ "card_stack", "dir_bb75e8bdc66850125b6e8dc6aa1d4bc3.html", "dir_bb75e8bdc66850125b6e8dc6aa1d4bc3" ],
+    [ "gauge_widget", "dir_7477e1ff6c26373d6c1ecaf6d71d5e9d.html", "dir_7477e1ff6c26373d6c1ecaf6d71d5e9d" ],
     [ "internal_calendar", "dir_1d20cc60e892da0f60a038bf836e2521.html", "dir_1d20cc60e892da0f60a038bf836e2521" ],
     [ "splash_window", "dir_f61e425cd9e2cfdf2f115460fe383553.html", "dir_f61e425cd9e2cfdf2f115460fe383553" ],
     [ "topstatusbar", "dir_365d48e82f2a94a59db0aa7b79a05418.html", "dir_365d48e82f2a94a59db0aa7b79a05418" ],

@@ -10,7 +10,7 @@ var searchData=
   ['update_5fdisplaytime_7',['update_displayTime',['../classTimeDisplayIconWidget.html#a547db84ba048a9f25f75182da6545b24',1,'TimeDisplayIconWidget']]],
   ['update_5fparams_8',['update_params',['../classGroundLineProviders.html#a1593b85a09b6c9c261295bd29444e826',1,'GroundLineProviders']]],
   ['update_5fposition_9',['update_position',['../classObsticals.html#a9d983b471e3a215ad3797d87e390c00a',1,'Obsticals']]],
-  ['update_5fvalue_10',['update_value',['../classGaugeWidget.html#a48d06bdd0fc8b272385679dc01a3a0cc',1,'GaugeWidget']]],
+  ['update_5fvalue_10',['update_value',['../classGaugeWidget.html#a48d06bdd0fc8b272385679dc01a3a0cc',1,'GaugeWidget::update_value(const double value)'],['../classGaugeWidget.html#a48d06bdd0fc8b272385679dc01a3a0cc',1,'GaugeWidget::update_value(const double value)']]],
   ['updateprogress_11',['updateProgress',['../classDesktopMainWindow.html#a946de4068284f91fc3041b2150e96c2e',1,'DesktopMainWindow']]],
   ['upgrade_5fdifficulty_12',['upgrade_difficulty',['../classDifficultyManager.html#a1ab2819373431622077be43ffe2bb1d9',1,'DifficultyManager']]]
 ];

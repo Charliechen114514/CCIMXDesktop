@@ -132,9 +132,12 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>LocalWeatherCard</b> (<a class="el" href="classDesktopToast.html">DesktopToast</a> *toast, QWidget *parent=nullptr)</td></tr>
 <tr class="memdesc:ac778493f500af33789e82469c7634d1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Local Weather Card object. <br /></td></tr>
 <tr class="separator:ac778493f500af33789e82469c7634d1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1bd3f52bf969c5d3747f6934da123fef" id="r_a1bd3f52bf969c5d3747f6934da123fef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocalWeatherCard.html#a1bd3f52bf969c5d3747f6934da123fef">invoke_preLaunch_work</a> ()</td></tr>
-<tr class="memdesc:a1bd3f52bf969c5d3747f6934da123fef"><td class="mdescLeft">&#160;</td><td class="mdescRight">concrete implementation of the <a class="el" href="classAppCardWidget.html" title="AppCardWidget is a lightweight widget used to post messages to a DesktopToast.">AppCardWidget</a>  <br /></td></tr>
-<tr class="separator:a1bd3f52bf969c5d3747f6934da123fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5af61ec5445b091fe29c4fa39cb4548" id="r_ac5af61ec5445b091fe29c4fa39cb4548"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocalWeatherCard.html#ac5af61ec5445b091fe29c4fa39cb4548">invoke_preLaunch_work</a> () override</td></tr>
+<tr class="memdesc:ac5af61ec5445b091fe29c4fa39cb4548"><td class="mdescLeft">&#160;</td><td class="mdescRight">concrete implementation of the <a class="el" href="classAppCardWidget.html" title="AppCardWidget is a lightweight widget used to post messages to a DesktopToast.">AppCardWidget</a>  <br /></td></tr>
+<tr class="separator:ac5af61ec5445b091fe29c4fa39cb4548"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4ad320a6f4bd354f8e18e6fe0e5a015" id="r_af4ad320a6f4bd354f8e18e6fe0e5a015"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocalWeatherCard.html#af4ad320a6f4bd354f8e18e6fe0e5a015">operate_comment_label</a> () override</td></tr>
+<tr class="memdesc:af4ad320a6f4bd354f8e18e6fe0e5a015"><td class="mdescLeft">&#160;</td><td class="mdescRight">operate_comment_label operating self labels  <br /></td></tr>
+<tr class="separator:af4ad320a6f4bd354f8e18e6fe0e5a015"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classAppCardWidget"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classAppCardWidget')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classAppCardWidget.html">AppCardWidget</a></td></tr>
 <tr class="memitem:a8396063f654b18f1a739684774051f2f inherit pub_methods_classAppCardWidget" id="r_a8396063f654b18f1a739684774051f2f"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>Q_DISABLE_COPY</b> (<a class="el" href="classAppCardWidget.html">AppCardWidget</a>)</td></tr>
@@ -154,15 +157,26 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4a99ac0e10c319ef328cfa380ba56170 inherit pub_methods_classAppCardWidget" id="r_a4a99ac0e10c319ef328cfa380ba56170"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppCardWidget.html#a4a99ac0e10c319ef328cfa380ba56170">setCurrentIcon</a> (const QPixmap &amp;icons)</td></tr>
 <tr class="memdesc:a4a99ac0e10c319ef328cfa380ba56170 inherit pub_methods_classAppCardWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current icon for the app card.  <br /></td></tr>
 <tr class="separator:a4a99ac0e10c319ef328cfa380ba56170 inherit pub_methods_classAppCardWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe35cc78b087eda88c62eaccf8e72ed1 inherit pub_methods_classAppCardWidget" id="r_abe35cc78b087eda88c62eaccf8e72ed1"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>invoke_textlabel_stylefresh</b> ()</td></tr>
+<tr class="memdesc:abe35cc78b087eda88c62eaccf8e72ed1 inherit pub_methods_classAppCardWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">invoke_textlabel_stylefresh <br /></td></tr>
+<tr class="separator:abe35cc78b087eda88c62eaccf8e72ed1 inherit pub_methods_classAppCardWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa303f4e4011e02c6cf0c776ca093ac3 inherit pub_methods_classAppCardWidget" id="r_aaa303f4e4011e02c6cf0c776ca093ac3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppCardWidget.html#aaa303f4e4011e02c6cf0c776ca093ac3">eventFilter</a> (QObject *watched, QEvent *event) override</td></tr>
 <tr class="memdesc:aaa303f4e4011e02c6cf0c776ca093ac3 inherit pub_methods_classAppCardWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event filter to handle user interaction events.  <br /></td></tr>
 <tr class="separator:aaa303f4e4011e02c6cf0c776ca093ac3 inherit pub_methods_classAppCardWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a6cac71c7f8be8719da4ee37a0c163363" id="r_a6cac71c7f8be8719da4ee37a0c163363"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocalWeatherCard.html#a6cac71c7f8be8719da4ee37a0c163363">postAppCardWidget</a> ()</td></tr>
-<tr class="memdesc:a6cac71c7f8be8719da4ee37a0c163363"><td class="mdescLeft">&#160;</td><td class="mdescRight">postAppCardWidget is the concrete implementation of the <a class="el" href="classAppCardWidget.html" title="AppCardWidget is a lightweight widget used to post messages to a DesktopToast.">AppCardWidget</a>  <br /></td></tr>
-<tr class="separator:a6cac71c7f8be8719da4ee37a0c163363"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2aaacfb4e606d866e815719f61c18649" id="r_a2aaacfb4e606d866e815719f61c18649"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocalWeatherCard.html#a2aaacfb4e606d866e815719f61c18649">postAppCardWidget</a> () override</td></tr>
+<tr class="memdesc:a2aaacfb4e606d866e815719f61c18649"><td class="mdescLeft">&#160;</td><td class="mdescRight">postAppCardWidget is the concrete implementation of the <a class="el" href="classAppCardWidget.html" title="AppCardWidget is a lightweight widget used to post messages to a DesktopToast.">AppCardWidget</a>  <br /></td></tr>
+<tr class="separator:a2aaacfb4e606d866e815719f61c18649"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8d49ee54c60d311a49831ca6ef49019" id="r_ad8d49ee54c60d311a49831ca6ef49019"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocalWeatherCard.html#ad8d49ee54c60d311a49831ca6ef49019">setupSelfTextLabelStyle</a> (QLabel *selfTextLabel) override</td></tr>
+<tr class="memdesc:ad8d49ee54c60d311a49831ca6ef49019"><td class="mdescLeft">&#160;</td><td class="mdescRight">textlabel style reset  <br /></td></tr>
+<tr class="separator:ad8d49ee54c60d311a49831ca6ef49019"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classAppCardWidget"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classAppCardWidget')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classAppCardWidget.html">AppCardWidget</a></td></tr>
+<tr class="memitem:a2fa88d10498e3366f9a2268a74420b4f inherit pro_methods_classAppCardWidget" id="r_a2fa88d10498e3366f9a2268a74420b4f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAppCardWidget.html#a2fa88d10498e3366f9a2268a74420b4f">setHelperFunction</a> (const QString &amp;what)</td></tr>
+<tr class="memdesc:a2fa88d10498e3366f9a2268a74420b4f inherit pro_methods_classAppCardWidget"><td class="mdescLeft">&#160;</td><td class="mdescRight">setHelperFunction: plainly set the text for shown  <br /></td></tr>
+<tr class="separator:a2fa88d10498e3366f9a2268a74420b4f inherit pro_methods_classAppCardWidget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -183,8 +197,8 @@ Ui::AppCardWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>ui</b>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classLocalWeatherCard.html" title="The LocalWeatherCard class is the card widgets, press it to trigger the light service(current display...">LocalWeatherCard</a> class is the card widgets, press it to trigger the light service(current displaying by toast depatching) </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a1bd3f52bf969c5d3747f6934da123fef" name="a1bd3f52bf969c5d3747f6934da123fef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1bd3f52bf969c5d3747f6934da123fef">&#9670;&#160;</a></span>invoke_preLaunch_work()</h2>
+<a id="ac5af61ec5445b091fe29c4fa39cb4548" name="ac5af61ec5445b091fe29c4fa39cb4548"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5af61ec5445b091fe29c4fa39cb4548">&#9670;&#160;</a></span>invoke_preLaunch_work()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -201,7 +215,7 @@ Ui::AppCardWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>ui</b>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -212,8 +226,37 @@ Ui::AppCardWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>ui</b>
 
 </div>
 </div>
-<a id="a6cac71c7f8be8719da4ee37a0c163363" name="a6cac71c7f8be8719da4ee37a0c163363"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6cac71c7f8be8719da4ee37a0c163363">&#9670;&#160;</a></span>postAppCardWidget()</h2>
+<a id="af4ad320a6f4bd354f8e18e6fe0e5a015" name="af4ad320a6f4bd354f8e18e6fe0e5a015"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4ad320a6f4bd354f8e18e6fe0e5a015">&#9670;&#160;</a></span>operate_comment_label()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LocalWeatherCard::operate_comment_label </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>operate_comment_label operating self labels </p>
+
+<p>Implements <a class="el" href="classAppCardWidget.html#ac841d5a3cf7abaec1e61c4e0763881f3">AppCardWidget</a>.</p>
+
+</div>
+</div>
+<a id="a2aaacfb4e606d866e815719f61c18649" name="a2aaacfb4e606d866e815719f61c18649"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2aaacfb4e606d866e815719f61c18649">&#9670;&#160;</a></span>postAppCardWidget()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -230,7 +273,7 @@ Ui::AppCardWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>ui</b>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -239,6 +282,36 @@ Ui::AppCardWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>ui</b>
 <dl class="section note"><dt>Note</dt><dd>this is the main function to post the message to the toast </dd></dl>
 
 <p>Implements <a class="el" href="classAppCardWidget.html#afabbff33f9e08d33549d0a8ff026ef30">AppCardWidget</a>.</p>
+
+</div>
+</div>
+<a id="ad8d49ee54c60d311a49831ca6ef49019" name="ad8d49ee54c60d311a49831ca6ef49019"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8d49ee54c60d311a49831ca6ef49019">&#9670;&#160;</a></span>setupSelfTextLabelStyle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LocalWeatherCard::setupSelfTextLabelStyle </td>
+          <td>(</td>
+          <td class="paramtype">QLabel *&#160;</td>
+          <td class="paramname"><em>selfTextLabel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>textlabel style reset </p>
+
+<p>Implements <a class="el" href="classAppCardWidget.html">AppCardWidget</a>.</p>
 
 </div>
 </div>

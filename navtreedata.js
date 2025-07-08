@@ -106,15 +106,16 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AP3216CAdapterFactory_8h_source.html",
-"classAppWeatherResult.html#a8971c07da34beaefe4f964fc99839a66",
-"classCVImage.html#a3a7a385b2393b3ceec80788250186214",
-"classDinasourGameMainWidget.html#aefe106a117762d7a6226d606003b608c",
-"classImageProcessingWidget.html",
-"classObstacleListManager.html#a1f67650ec181a687824cab75ce6f940e",
-"classSoundEffectPlayer.html#a7da42a0c3a6ce56c9235ad27dbb99690ac9b2281fa6fd403855443e6555aa16a9",
-"classWeatherChartWidget.html#aa328fdcd0c7e3390347a34ada0b82a8f",
-"functions_vars_c.html",
-"structCCPdfMetaInfo.html#a423cdbefdd1463da5d20fd464d9050a5aef1d00d8a237a1bbe431e1091f5715fb"
+"classAppWeatherRequest.html#aa484e3ab2825abedcc5fd80b6969d8a3",
+"classCPUUsageChart.html#a40d01620757b49a86efb9ed120156624",
+"classDinasourFrameFetcher.html#abd9732a2fc7ec5c1389b3308eb920182a1e23852820b9154316c7c06e2b7ba051",
+"classImageBrowser.html#aea0c3a04135e3bf0be6d19d0c080f9f8",
+"classModernCalendarWidget.html#ae007439d8f42284ce71c8d73d0865270",
+"classSideBarWidget.html#ad41e12eec6960deac5b3c6b1d211de64",
+"classVideoPlayerOpencvImpl.html#afe9aafeb0361bb96f609072471e29d0a",
+"functions_func_a.html",
+"structAppWeatherDetailedRequest.html#aea957e389a8c916be928a45ee192cbc9",
+"structVideoPlayerInfo.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

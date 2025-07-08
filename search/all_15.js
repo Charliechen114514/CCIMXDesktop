@@ -13,7 +13,7 @@ var searchData=
   ['update_5fdisplaytime_10',['update_displayTime',['../classTimeDisplayIconWidget.html#a547db84ba048a9f25f75182da6545b24',1,'TimeDisplayIconWidget']]],
   ['update_5fparams_11',['update_params',['../classGroundLineProviders.html#a1593b85a09b6c9c261295bd29444e826',1,'GroundLineProviders']]],
   ['update_5fposition_12',['update_position',['../classObsticals.html#a9d983b471e3a215ad3797d87e390c00a',1,'Obsticals']]],
-  ['update_5fvalue_13',['update_value',['../classGaugeWidget.html#a48d06bdd0fc8b272385679dc01a3a0cc',1,'GaugeWidget']]],
+  ['update_5fvalue_13',['update_value',['../classGaugeWidget.html#a48d06bdd0fc8b272385679dc01a3a0cc',1,'GaugeWidget::update_value(const double value)'],['../classGaugeWidget.html#a48d06bdd0fc8b272385679dc01a3a0cc',1,'GaugeWidget::update_value(const double value)']]],
   ['updateprogress_14',['updateProgress',['../classDesktopMainWindow.html#a946de4068284f91fc3041b2150e96c2e',1,'DesktopMainWindow']]],
   ['upgrade_5fdifficulty_15',['upgrade_difficulty',['../classDifficultyManager.html#a1ab2819373431622077be43ffe2bb1d9',1,'DifficultyManager']]],
   ['used_20to_20build_20the_20foundation_16',['🛠️ Technologies used to build the foundation',['../md_README__EN.html#autotoc_md24',1,'']]],

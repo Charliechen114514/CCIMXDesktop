@@ -3,6 +3,9 @@ var annotated_dup =
     [ "CVTools", "namespaceCVTools.html", [
       [ "DisplayParams", "structCVTools_1_1DisplayParams.html", "structCVTools_1_1DisplayParams" ]
     ] ],
+    [ "DiskUsage", null, [
+      [ "MetaInfo", "structDiskUsage_1_1MetaInfo.html", null ]
+    ] ],
     [ "PageSetuper", null, [
       [ "PageSetupSessionRequest", "structPageSetuper_1_1PageSetupSessionRequest.html", "structPageSetuper_1_1PageSetupSessionRequest" ]
     ] ],
@@ -57,6 +60,7 @@ var annotated_dup =
     [ "CameraWindow", "classCameraWindow.html", "classCameraWindow" ],
     [ "CannyExample", "classCannyExample.html", "classCannyExample" ],
     [ "CannyProcessor", "classCannyProcessor.html", "classCannyProcessor" ],
+    [ "CardStackWidget", "classCardStackWidget.html", "classCardStackWidget" ],
     [ "CCIMX_AbstractCPUStateDriver", "classCCIMX__AbstractCPUStateDriver.html", "classCCIMX__AbstractCPUStateDriver" ],
     [ "CCIMX_AbstractMemoryInfoDriver", "classCCIMX__AbstractMemoryInfoDriver.html", "classCCIMX__AbstractMemoryInfoDriver" ],
     [ "CCIMX_AbstractProcessBroswerDriver", "classCCIMX__AbstractProcessBroswerDriver.html", "classCCIMX__AbstractProcessBroswerDriver" ],
@@ -92,6 +96,7 @@ var annotated_dup =
     [ "CVImageOpencvImpl", "classCVImageOpencvImpl.html", "classCVImageOpencvImpl" ],
     [ "DateIcon", "classDateIcon.html", "classDateIcon" ],
     [ "DateNoter", "classDateNoter.html", "classDateNoter" ],
+    [ "DateShowCard", "classDateShowCard.html", "classDateShowCard" ],
     [ "DesktopAboutMainWidget", "classDesktopAboutMainWidget.html", "classDesktopAboutMainWidget" ],
     [ "DesktopLoggerBackends", "structDesktopLoggerBackends.html", "structDesktopLoggerBackends" ],
     [ "DesktopMainWindow", "classDesktopMainWindow.html", "classDesktopMainWindow" ],
@@ -105,6 +110,7 @@ var annotated_dup =
     [ "DirentSizeCounter", "classDirentSizeCounter.html", "classDirentSizeCounter" ],
     [ "DirentSizeWorker", "classDirentSizeWorker.html", "classDirentSizeWorker" ],
     [ "DiskMusic", "classDiskMusic.html", "classDiskMusic" ],
+    [ "DiskUsageCardWidget", "classDiskUsageCardWidget.html", "classDiskUsageCardWidget" ],
     [ "DivideZeroException", "classDivideZeroException.html", "classDivideZeroException" ],
     [ "DownDockWidget", "classDownDockWidget.html", "classDownDockWidget" ],
     [ "DrawerWindow", "classDrawerWindow.html", "classDrawerWindow" ],
@@ -219,6 +225,7 @@ var annotated_dup =
     [ "PlayListMainWindow", "classPlayListMainWindow.html", "classPlayListMainWindow" ],
     [ "ProcessBroswer", "classProcessBroswer.html", "classProcessBroswer" ],
     [ "ProcessBrowserWidget", "classProcessBrowserWidget.html", "classProcessBrowserWidget" ],
+    [ "RandomGenerator", "classRandomGenerator.html", null ],
     [ "ReadMeWidget", "classReadMeWidget.html", "classReadMeWidget" ],
     [ "rol", "structrol.html", null ],
     [ "SaveWindow", "classSaveWindow.html", "classSaveWindow" ],

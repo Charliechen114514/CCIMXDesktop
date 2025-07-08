@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['g_5facc_0',['g_acc',['../structg__acc.html',1,'g_acc'],['../structICM20608Data.html#a79319bb9a7e29f177d58d75b8a888cab',1,'ICM20608Data::g_acc'],['../structICM20608AppData.html#a140741ae340c84c7dcd2db7f45323851',1,'ICM20608AppData::g_acc'],['../structICM20608Data.html#ae164b0b3e03f3fef3bb65f6929b6b38a',1,'ICM20608Data::g_acc'],['../structICM20608AppData.html#a113a0831f39dc54627d1d36d969af6cb',1,'ICM20608AppData::g_acc']]],
+  ['g_5facc_0',['g_acc',['../structICM20608AppData.html#a113a0831f39dc54627d1d36d969af6cb',1,'ICM20608AppData::g_acc'],['../structICM20608Data.html#ae164b0b3e03f3fef3bb65f6929b6b38a',1,'ICM20608Data::g_acc'],['../structICM20608AppData.html#a140741ae340c84c7dcd2db7f45323851',1,'ICM20608AppData::g_acc'],['../structICM20608Data.html#a79319bb9a7e29f177d58d75b8a888cab',1,'ICM20608Data::g_acc'],['../structg__acc.html',1,'g_acc']]],
   ['gain_5fscore_1',['gain_score',['../classDinasourGameMainWidget.html#abdfed6b79f7cc95b52d48b6548c5c5d1',1,'DinasourGameMainWidget']]],
   ['game_5fovered_2',['game_overed',['../classDinasourGameMainWidget.html#aa0c352ed11b0592a41cb06f3fdf12432',1,'DinasourGameMainWidget']]],
   ['game_5fstarted_3',['game_started',['../classDinasourGameMainWidget.html#a320be4cdcf2decffe1d85cdcbd839709',1,'DinasourGameMainWidget']]],
-  ['gaugewidget_4',['gaugewidget',['../classGaugeWidget.html',1,'GaugeWidget'],['../classGaugeWidget.html#a465a803184afa3c090f36452d22483d3',1,'GaugeWidget::GaugeWidget()']]],
-  ['gaussainpackage_5',['gaussainpackage',['../structGaussainPackage.html',1,'GaussainPackage'],['../structGaussainPackage.html#adfd6099611f308e992b8a9f692e9d217',1,'GaussainPackage::GaussainPackage()']]],
-  ['generalparseerror_6',['generalparseerror',['../classGeneralParseError.html',1,'GeneralParseError'],['../classGeneralParseError.html#a93f222cfc49e97eb6b0f92c2e62410df',1,'GeneralParseError::GeneralParseError()']]],
+  ['gaugewidget_4',['gaugewidget',['../classGaugeWidget.html#a465a803184afa3c090f36452d22483d3',1,'GaugeWidget::GaugeWidget(QWidget *parent=nullptr)'],['../classGaugeWidget.html#a465a803184afa3c090f36452d22483d3',1,'GaugeWidget::GaugeWidget(QWidget *parent=nullptr)'],['../classGaugeWidget.html',1,'GaugeWidget']]],
+  ['gaussainpackage_5',['gaussainpackage',['../structGaussainPackage.html#adfd6099611f308e992b8a9f692e9d217',1,'GaussainPackage::GaussainPackage()'],['../structGaussainPackage.html',1,'GaussainPackage']]],
+  ['generalparseerror_6',['generalparseerror',['../classGeneralParseError.html#a93f222cfc49e97eb6b0f92c2e62410df',1,'GeneralParseError::GeneralParseError()'],['../classGeneralParseError.html',1,'GeneralParseError']]],
   ['generate_5fhist_7',['generate_hist',['../namespaceOpenCV__ProcessAdapter.html#ad679ea0481d2a45441339cd99d4213e2',1,'OpenCV_ProcessAdapter']]],
   ['generatecalendaricon_8',['generateCalendarIcon',['../classDateIcon.html#a40ec263918d3b41a1baa473ca28fbfed',1,'DateIcon']]],
   ['generatemediaenablefilter_9',['generateMediaEnableFilter',['../namespaceMediaEnableSelectFactory.html#aa989d9dfc4abdbea420b7a3a6f44f73d',1,'MediaEnableSelectFactory']]],

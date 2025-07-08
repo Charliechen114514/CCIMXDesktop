@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['main_5ftick_5flength_0',['MAIN_TICK_LENGTH',['../classGaugeWidget.html#a2e409434ea2ec707be357fc7db090436',1,'GaugeWidget']]],
-  ['main_5ftick_5fwidth_1',['MAIN_TICK_WIDTH',['../classGaugeWidget.html#ae76b23fa51810b7e0b12e85ccc6d2258',1,'GaugeWidget']]],
+  ['main_5ftick_5flength_0',['MAIN_TICK_LENGTH',['../classGaugeWidget.html#a1c916450896ec010dc75730200973443',1,'GaugeWidget']]],
+  ['main_5ftick_5fwidth_1',['MAIN_TICK_WIDTH',['../classGaugeWidget.html#ad58e21b90934eff41bee97a8cb256ad2',1,'GaugeWidget']]],
   ['manager_2',['manager',['../classWeatherRequest.html#a409c6257cb30390f26bd3c67f295ef06',1,'WeatherRequest']]],
   ['map_3',['map',['../structFixedTypeWallPaperSettings.html#a01e12ec8c15d887a75adb4b8b290d40e',1,'FixedTypeWallPaperSettings']]],
   ['mappings_4',['mappings',['../structWallPaperEngine_1_1ModeMapping.html#a9ca7cdd7b78145cd1b51bf6cb9c09227',1,'WallPaperEngine::ModeMapping::mappings'],['../namespaceProcessor_1_1ContoursQuery.html#acbd62688dcfb27981a75482fbac5be2c',1,'Processor::ContoursQuery::mappings']]],
