@@ -2,7 +2,7 @@
 
 ![CCIMXDesktopLogo](./CCIMXDesktopLogo.png)
 
-![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-17-green)![Version](https://img.shields.io/badge/Version-Released_1.7.0-red)
+![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-17-green)![Version](https://img.shields.io/badge/Version-Released_1.8.0-red)
 
 🔌 您好！这是一个可在多种嵌入式设备中使用的简单桌面和实用程序集合！本项目目前已经可以使用完全的C++17进行编译！
 
@@ -40,8 +40,6 @@
 4）APP设置桌面界面
 
 ![image-20250623214833847](./README/image-20250623214833847.png)
-
-
 
 ## 🛠️ 基础构建所用技术
 
@@ -132,7 +130,6 @@
 - 增加针对按键的桌面刷新功能
 - 增加为桌面服务的更好的文件夹与存储功能
 - 开发与桌面深度集成的**待办事项/提醒应用**。支持在状态栏显示即将到来的提醒，锁屏界面显示重要提醒。
-- 
 
 ### 🚀 计划编写和提供更多的外部基础程序：
 

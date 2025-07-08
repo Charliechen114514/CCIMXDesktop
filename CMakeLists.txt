@@ -21,6 +21,7 @@ include(app_building_options)
 find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets Network)
 find_package(Qt6 REQUIRED COMPONENTS Core)
 find_package(Qt6 REQUIRED COMPONENTS Core)
+find_package(Qt6 REQUIRED COMPONENTS Widgets)
 qt_standard_project_setup()
 
 if(DEFINED LOCAL_CONFIG_FILE AND EXISTS "${LOCAL_CONFIG_FILE}")
@@ -188,6 +189,7 @@ set(LIBRARY_SRC
     library/limited_value/ValueLimiter.hpp
     library/simple_gerseter/simple_getseter.hpp
     library/qt_relative/genbound_progressbar/BoundProgressBarFactory.hpp
+    library/random_gen_value/random_gen_value.h
     )
 
 set(Loggy_SRC
@@ -202,6 +204,13 @@ set(Loggy_SRC
     core/loggers/base_components/format_factory/standard_format/StandardFormater.h core/loggers/base_components/format_factory/standard_format/StandardFormater.cpp
     core/loggers/DesktopLoggerConvinients.h core/loggers/DesktopLoggerConvinients.cpp
     )
+
+set(CardsSrc
+    ui/card_stack/CardStackWidget.h ui/card_stack/CardStackWidget.cpp
+    builtin/gadgets/larger_card/DateShowCard.h
+    builtin/gadgets/larger_card/DateShowCard.cpp
+    )
+
 
 
 qt_add_executable(CCIMX_Desktop
@@ -221,6 +230,10 @@ qt_add_executable(CCIMX_Desktop
     ${START_STAGE_SRC}
     ${LIBRARY_SRC}
     ${Loggy_SRC}
+    ${CardsSrc}
+    library/platforms/DiskUsage.h library/platforms/DiskUsage.cpp
+    builtin/gadgets/larger_card/system_state/DiskUsageCardWidget.h builtin/gadgets/larger_card/system_state/DiskUsageCardWidget.cpp builtin/gadgets/larger_card/system_state/DiskUsageCardWidget.ui
+    ui/gauge_widget/GaugeWidget.cpp ui/gauge_widget/GaugeWidget.h
 )
 
 add_custom_command(TARGET CCIMX_Desktop POST_BUILD
@@ -236,6 +249,7 @@ target_link_libraries(CCIMX_Desktop
 )
 target_link_libraries(CCIMX_Desktop PRIVATE Qt6::Core)
 target_link_libraries(CCIMX_Desktop PRIVATE Qt6::Core)
+target_link_libraries(CCIMX_Desktop PRIVATE Qt6::Widgets)
 target_include_directories(CCIMX_Desktop
     PRIVATE
     .
@@ -243,6 +257,7 @@ target_include_directories(CCIMX_Desktop
     builtin/ui
     ui/topstatusbar
     ui/internal_calendar
+    ui/card_stack
     ${CMAKE_CURRENT_BINARY_DIR}/generated)
 
 include(GNUInstallDirs)

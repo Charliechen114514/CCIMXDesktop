@@ -2,7 +2,8 @@
 #include "builtin/core/icm20608/icm20608_adapter.h"
 #include "core/coretools.h"
 #include "desktoptoast.h"
-
+#include <QGraphicsDropShadowEffect>
+#include <QLabel>
 /**
  * @brief The PesudoLocalFetcher class works in upper machines
  * this is using in preview and test the ui behaviours
@@ -11,7 +12,7 @@ struct PesudoLocalFetcher : public LocalWeatherLightFetcher {
 public:
 	/**
 	 * @brief disable copy
-	 * 
+     *
 	 */
 	Q_DISABLE_COPY(PesudoLocalFetcher);
 	PesudoLocalFetcher() = default;
@@ -37,12 +38,12 @@ struct LocalFetcher : public LocalWeatherLightFetcher {
 public:
 	/**
 	 * @brief disable copy
-	 * 
+     *
 	 */
 	Q_DISABLE_COPY(LocalFetcher);
 	/**
 	 * @brief Construct a new Local Fetcher object
-	 * 
+     *
 	 */
 	LocalFetcher() = default;
 
@@ -68,7 +69,27 @@ private:
 LocalWeatherCard::
     LocalWeatherCard(DesktopToast* toast, QWidget* parent)
     : AppCardWidget(toast, parent) {
+
+    setAttribute(Qt::WA_StyledBackground);
+    setAutoFillBackground(true);
     setCurrentIcon(QPixmap(":/src/temperature.png"));
+    setObjectName("AppCardWidget");
+    setStyleSheet(R"(
+    #AppCardWidget {
+        border-radius: 20px;
+        background: qlineargradient(
+            x1: 0, y1: 0, x2: 0, y2: 1,
+            stop: 0 #4A90E2,
+            stop: 1 #1E3C72
+        );
+        padding: 12px;
+    }
+)");
+    auto* shadow = new QGraphicsDropShadowEffect(this);
+    shadow->setBlurRadius(10);
+    shadow->setOffset(0, 4);
+    shadow->setColor(QColor(0, 0, 0, 160));
+    setGraphicsEffect(shadow);
 }
 
 void LocalWeatherCard::invoke_preLaunch_work() {
@@ -79,10 +100,28 @@ void LocalWeatherCard::invoke_preLaunch_work() {
 	/* for amd64/x86_64, there shell be no real icm20608 */
 	this->localFetcher = new PesudoLocalFetcher;
 #endif
+    operate_comment_label();
+}
+
+void LocalWeatherCard::operate_comment_label() {
+    setHelperFunction(QString("%1°C").arg(QString::number(localFetcher->fetch_local_tempature())));
 }
 
 void LocalWeatherCard::postAppCardWidget() {
 	/* invoke the read session until we use */
+    operate_comment_label();
 	QString msg = localFetcher->makeup_toast_message();
 	binding_toast->set_message(msg);
+}
+
+void LocalWeatherCard::setupSelfTextLabelStyle(
+    QLabel* selfTextLabel) {
+    selfTextLabel->setAlignment(Qt::AlignCenter);
+    selfTextLabel->setStyleSheet(R"(
+    QLabel {
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+    }
+)");
 }

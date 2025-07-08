@@ -166,4 +166,30 @@ private:
     ValueLimitType runtime_max_ = MAX; /**< Current maximum bound */
 };
 
+#ifdef __BOUND_PROPERTY_GETSET
+#error "__BOUND_PROPERTY_GETSET is defined, which is not allowed!"
+#else
+#define __BOUND_PROPERTY_GETSET(typeName, typeVar, boundary_pair)         \
+    inline void set##typeVar(typeName __value) {                          \
+        typeVar = ValueLimitUtils::boundWithPair(__value, boundary_pair); \
+    }                                                                     \
+    inline typeName get##typeVar() const {                                \
+        return typeVar;                                                   \
+    }
+#endif
+
+#ifdef __BOUND_PROPERTY_GETSET_UNALLOWED_OUTRANGE
+#error "__BOUND_PROPERTY_GETSET_UNALLOWED_OUTRANGE is defined, which is not allowed!"
+#else
+#define __BOUND_PROPERTY_GETSET_UNALLOWED_OUTRANGE(typeName, typeVar, boundary_pair) \
+    inline void set##typeVar(typeName __value) {                                     \
+        if (!ValueLimitUtils::inBound(__value, boundary_pair))                       \
+            throw std::overflow_error("Value you set is out ranges");                \
+        typeVar = __value;                                                           \
+    }                                                                                \
+    inline typeName get##typeVar() const {                                           \
+        return typeVar;                                                              \
+    }
+#endif
+
 #endif // VALUELIMITER_H

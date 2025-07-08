@@ -33,6 +33,10 @@ public:
      * @param status
      */
     void process_once_fresh(NetWorkState status);
+    /**
+     * @brief operate_comment_label
+     */
+    void operate_comment_label() override;
 
 protected:
 	/**
@@ -40,7 +44,7 @@ protected:
 	 * messages to the binding_toast
 	 */
 	void postAppCardWidget() override;
-
+    void setupSelfTextLabelStyle(QLabel* selfTextLabel) override; ///< textlabel style reset
 private:
     NetWorkState cache_reachability;
 };

@@ -2,7 +2,7 @@
 
 ![CCIMXDesktopLogo](./CCIMXDesktopLogo.png)
 
-![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-17-green)![Version](https://img.shields.io/badge/Version-Released_1.8.0-red)
+![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-17-green)![Version](https://img.shields.io/badge/Version-Released_1.10.0-red)
 
 🔌 Hello! This is a simple desktop and utility collection that can be used in a variety of embedded devices! This project currently support compiling in full C++17 or above versions. Enjoy!
 
@@ -26,7 +26,7 @@
 
 2) Main interface: HOME interface (screenshot version: Release1.6.0)
 
-![image-20250706142317084](./README/image-20250706142317084.png)
+![image-20250708213936442](./README/image-20250708213936442.png)
 
 2) BuiltinAPP display interface
 
@@ -74,12 +74,16 @@ Now, CCIMXDesktop supports one-click building including:
 - 🖼️ Wallpaper animation, hosting function 🌀
 - 🛠️ Basic built-in auxiliary APP (cannot be uninstalled 🔒)
 - 📜 Log management system, add a log system to CCIMXDesktop to facilitate debugging 🔍 and observation 👀
+- 🗃️ Smooth Sliding Card System ✨ Currently registered built-in card types 📦:
+  - 📅 Calendar Card
+  - 🗓️ Date Card
+  - 💾 Hardware Storage Info System
 
 #### Project includes
 
 | Function / Application Name | Dependency Conditions or Remarks | Is it a built-in program | Description | Interface Display |
 | ------------------------------------------------ | -------------------------------------------------- | -------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 🏠 CCIMX_Desktop Body | Standard Minimum Dependency | Yes | Core Framework, Body | ![image-20250706142317084](./README/image-20250706142317084.png) |
+| 🏠 CCIMX_Desktop Body | Standard Minimum Dependency | Yes | Core Framework, Body | ![image-20250708213936442](./README/image-20250708213936442.png) |
 | ℹ About App | Standard Minimum Dependency | Yes | Briefly introduce the basic situation of the desktop of this project | ![image-20250614231912157](./README/image-20250614231912157.png) |
 | ✏️ CCNoter (Notepad) | Standard minimum dependencies | Yes | Super lightweight notepad | ![image-20250614231754881](./README/image-20250614231754881.png) |
 | 📅CCCalendar (Calendar APP) | Standard minimum dependencies | Yes | Super lightweight calendar APP | ![image-20250706142207503](./README/image-20250706142207503.png) |

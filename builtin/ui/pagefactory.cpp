@@ -1,15 +1,28 @@
 #include "pagefactory.h"
 #include "app_wrapper/pagesetuper.h"
+#include "builtin/gadgets/larger_card/DateShowCard.h"
+#include "builtin/gadgets/larger_card/system_state/DiskUsageCardWidget.h"
 #include "builtin/page/homepage.h"
 #include "desktopmainwindow.h"
-
+#include "ui/appcardwidget.h"
+#include "ui/card_stack/CardStackWidget.h"
+#include "ui/internal_calendar/ModernCalendarWidget.h"
+#include <QLabel>
 /* create a homepage */
 QWidget* PageFactory::build_home_page(DesktopMainWindow* mainWindow) {
 	HomePage* homePage = new HomePage(mainWindow);
+    CardStackWidget* widget = homePage->card_stack_widget();
+    widget->addWidget(new ModernCalendarWidget(homePage));
+    widget->addWidget(new DateShowCard(homePage));
+    widget->addWidget(new DiskUsageCardWidget(homePage));
+    widget->setablility_of_autoSwitch(false);
 	/* build homepage app cards here */
 	mainWindow->app_cards << PageFactory::place_appcards_in_empty_widgets(
         mainWindow,
         homePage->expected_appcards_widgets());
+    for (const auto& each : std::as_const(mainWindow->app_cards)) {
+        each->invoke_textlabel_stylefresh();
+    }
 	return homePage;
 }
 
@@ -30,6 +43,8 @@ QList<AppCardWidget*> PageFactory::
      *  due to the RTTI and qt_meta's performance differs
      */
     QGridLayout* gridLayout = qobject_cast<QGridLayout*>(placed->layout());
+    gridLayout->setSpacing(3);
+    gridLayout->setContentsMargins(2, 2, 2, 2);
 	if (!gridLayout)
 		return {}; // not pass the layout check
 

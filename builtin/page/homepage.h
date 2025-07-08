@@ -1,6 +1,5 @@
 #ifndef HOMEPAGE_H
 #define HOMEPAGE_H
-
 #include <QWidget>
 
 namespace Ui {
@@ -9,6 +8,7 @@ class HomePage;
 class ClockWidget;
 class DigitalTimeWidget;
 class DesktopMainWindow;
+class CardStackWidget;
 /**
  * @brief The HomePage class exactly, home page :)
  */
@@ -39,6 +39,13 @@ public:
      * @return
      */
     DigitalTimeWidget* digital_timeWidget() const;
+
+    /**
+     * @brief card_stack_widget
+     * @return
+     */
+    CardStackWidget* card_stack_widget() const;
+
 	/**
 	 * @brief Destroy the Home Page object
      *

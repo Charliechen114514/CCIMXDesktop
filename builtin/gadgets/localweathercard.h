@@ -12,12 +12,12 @@ struct LocalWeatherLightFetcher {
 public:
 	/**
 	 * @brief Construct a new Local Weather Light Fetcher object
-	 * 
+     *
 	 */
 	LocalWeatherLightFetcher() = default;
 	/**
 	 * @brief disable copy
-	 * 
+     *
 	 */
 	Q_DISABLE_COPY(LocalWeatherLightFetcher);
 	/* for advanced c++, use concept is better */
@@ -43,34 +43,39 @@ class LocalWeatherCard : public AppCardWidget {
 public:
 	/**
 	 * @brief Construct a new Local Weather Card object default disabled
-	 * 
+     *
 	 */
 	LocalWeatherCard() = delete;
 	/**
 	 * @brief disable copy
-	 * 
+     *
 	 */
 	Q_DISABLE_COPY(LocalWeatherCard);
 	/**
 	 * @brief Construct a new Local Weather Card object
-	 * 
+     *
 	 */
 	explicit LocalWeatherCard(
-		DesktopToast* toast, QWidget* parent = nullptr);
+        DesktopToast* toast, QWidget* parent = nullptr);
 
 public:
 	/**
 	 * @brief concrete implementation of the AppCardWidget
 	 */
-	void invoke_preLaunch_work();
+    void invoke_preLaunch_work() override;
+    /**
+     * @brief operate_comment_label operating self labels
+     */
+    void operate_comment_label() override;
 
 protected:
 	/**
 	 * @brief postAppCardWidget is the concrete implementation of the AppCardWidget
 	 * @note this is the main function to post the message to the toast
 	 */
-	void postAppCardWidget();
+    void postAppCardWidget() override;
 	LocalWeatherLightFetcher* localFetcher { nullptr }; ///< fetcher instance
+    void setupSelfTextLabelStyle(QLabel* selfTextLabel) override; ///< textlabel style reset
 };
 
 #endif // LOCALWEATHERCARD_H

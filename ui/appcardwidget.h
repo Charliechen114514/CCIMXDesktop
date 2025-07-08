@@ -4,7 +4,7 @@
 #include <QWidget>
 
 class DesktopToast;
-
+class QLabel;
 namespace Ui {
 class AppCardWidget;
 }
@@ -58,6 +58,15 @@ public:
      * preparations before the system starts or the app card becomes active.
      */
     virtual void invoke_preLaunch_work() = 0;
+    /**
+     * @brief operate_comment_label
+     */
+    virtual void operate_comment_label() = 0;
+
+    /**
+     * @brief invoke_textlabel_stylefresh
+     */
+    void invoke_textlabel_stylefresh();
 
 protected:
     /**
@@ -68,8 +77,16 @@ protected:
      */
     virtual void postAppCardWidget() = 0;
 
-    DesktopToast* binding_toast;  ///< Pointer to the toast widget used for posting messages.
-    Ui::AppCardWidget* ui;         ///< UI object generated from the Qt Designer form.
+    /**
+     * @brief setHelperFunction: plainly set the text for shown
+     * @param what
+     */
+    virtual void setHelperFunction(const QString& what);
+
+    virtual void setupSelfTextLabelStyle(QLabel* selfTextLabel) = 0;
+
+    DesktopToast* binding_toast; ///< Pointer to the toast widget used for posting messages.
+    Ui::AppCardWidget* ui; ///< UI object generated from the Qt Designer form.
 
 public:
     /**

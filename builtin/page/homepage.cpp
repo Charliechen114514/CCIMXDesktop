@@ -31,3 +31,7 @@ DigitalTimeWidget* HomePage::digital_timeWidget() const {
 HomePage::~HomePage() {
     delete ui;
 }
+
+CardStackWidget* HomePage::card_stack_widget() const {
+    return ui->stackedWidget;
+}

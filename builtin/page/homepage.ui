@@ -68,102 +68,35 @@
       <item>
        <widget class="QWidget" name="right_top_widget" native="true">
         <layout class="QGridLayout" name="gridLayout">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <property name="spacing">
+          <number>0</number>
+         </property>
          <item row="0" column="0">
-          <widget class="ModernCalendarWidget" name="calendarWidget">
-           <property name="styleSheet">
-            <string notr="true">QCalendarWidget {
-    background-color: #ffffff;
-    border: 1px solid #e0e0e0;
-    border-radius: 16px;
-    font-family: &quot;Helvetica Neue&quot;, &quot;Arial&quot;, &quot;Microsoft YaHei&quot;;
-    font-size: 14px;
-    color: #333333;
-}
-
-QCalendarWidget QToolButton {
-    background-color: transparent;
-    color: #333333;
-    font-weight: bold;
-    font-size: 16px;
-    border: none;
-    margin: 6px;
-    border-radius: 8px;
-    padding: 4px 8px;
-}
-
-QCalendarWidget QToolButton:hover {
-    background-color: #e3f2fd;
-    color: #1e88e5;
-}
-
-QCalendarWidget QMenu {
-    background-color: #ffffff;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    font-size: 14px;
-}
-
-QCalendarWidget QSpinBox {
-    background: transparent;
-    font-size: 14px;
-    color: #333333;
-    border: none;
-}
-
-QCalendarWidget QWidget#qt_calendar_navigationbar {
-    background-color: #ffffff;
-    border-bottom: 1px solid #e0e0e0;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-}
-
-QCalendarWidget QTableView {
-    border: none;
-    gridline-color: #eeeeee;
-    selection-background-color: #90caf9;
-    selection-color: white;
-    font-size: 14px;
-    background-color: #ffffff;
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
-}
-
-QCalendarWidget QHeaderView::section {
-    background-color: #ffffff;
-    color: #757575;
-    font-weight: bold;
-    border: none;
-    font-size: 13px;
-}
-
-QCalendarWidget QAbstractItemView:enabled {
-    color: #333333;
-    background-color: #ffffff;
-    selection-background-color: #90caf9;
-    selection-color: white;
-}
-
-QCalendarWidget QAbstractItemView:disabled {
-    color: #cccccc;
-}
-
-QCalendarWidget#qt_calendar_calendarview {
-    outline: 0;
-}</string>
-           </property>
-           <property name="navigationBarVisible">
-            <bool>false</bool>
-           </property>
-           <property name="dateEditEnabled">
-            <bool>false</bool>
-           </property>
-          </widget>
+          <widget class="CardStackWidget" name="stackedWidget"/>
          </item>
         </layout>
        </widget>
       </item>
       <item>
-       <widget class="QWidget" name="right_bottom_widget" native="true"/>
+       <widget class="QWidget" name="right_bottom_widget" native="true">
+        <property name="styleSheet">
+         <string notr="true">background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(150, 150, 150, 100), stop:1 rgba(130, 130, 130, 255));
+border-radius: 15px;
+border: 2px solid rgba(0, 0, 0, 100);</string>
+        </property>
+       </widget>
       </item>
      </layout>
     </widget>
@@ -184,9 +117,10 @@ QCalendarWidget#qt_calendar_calendarview {
    <container>1</container>
   </customwidget>
   <customwidget>
-   <class>ModernCalendarWidget</class>
-   <extends>QCalendarWidget</extends>
-   <header>ModernCalendarWidget.h</header>
+   <class>CardStackWidget</class>
+   <extends>QStackedWidget</extends>
+   <header>CardStackWidget.h</header>
+   <container>1</container>
   </customwidget>
  </customwidgets>
  <resources/>

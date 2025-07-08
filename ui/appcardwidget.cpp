@@ -1,11 +1,9 @@
 #include "appcardwidget.h"
 #include "ui_appcardwidget.h"
 
-
-AppCardWidget::AppCardWidget(DesktopToast *toast, QWidget *parent)
+AppCardWidget::AppCardWidget(DesktopToast* toast, QWidget* parent)
     : QWidget(parent)
-    , ui(new Ui::AppCardWidget)
-{
+    , ui(new Ui::AppCardWidget) {
     ui->setupUi(this);
     /* toast is binding for post some message */
     binding_toast = toast;
@@ -13,6 +11,7 @@ AppCardWidget::AppCardWidget(DesktopToast *toast, QWidget *parent)
     /* properties */
     ui->icons_label->setScaledContents(true);
     ui->icons_label->installEventFilter(this);
+    ui->text_labels->installEventFilter(this);
     ui->icons_label->setStyleSheet(
         "QLabel {"
         "background: qlineargradient(spread:pad, "
@@ -21,25 +20,35 @@ AppCardWidget::AppCardWidget(DesktopToast *toast, QWidget *parent)
         "stop:1 rgba(130, 130, 130, 255));"
         "border-radius: 15px;"
         "border: 2px solid rgba(0, 0, 0, 100);"
-        "}"
-    );
+        "}");
 }
 
 /* set the icon */
-void AppCardWidget::setCurrentIcon(const QPixmap &icons)
-{
+void AppCardWidget::setCurrentIcon(const QPixmap& icons) {
     /* icons */
     ui->icons_label->setPixmap(icons);
 }
 
-AppCardWidget::~AppCardWidget()
-{
+void AppCardWidget::invoke_textlabel_stylefresh() {
+    setupSelfTextLabelStyle(ui->text_labels);
+}
+
+void AppCardWidget::setHelperFunction(const QString& what) {
+    ui->text_labels->setText(what);
+}
+
+AppCardWidget::~AppCardWidget() {
     delete ui;
 }
 
-bool AppCardWidget::eventFilter(QObject *watched, QEvent *event)
-{
+bool AppCardWidget::eventFilter(QObject* watched, QEvent* event) {
     if (watched == ui->icons_label) {
+        if (event->type() == QEvent::MouseButtonPress) {
+            postAppCardWidget();
+            return true;
+        }
+    }
+    if (watched == ui->text_labels) {
         if (event->type() == QEvent::MouseButtonPress) {
             postAppCardWidget();
             return true;
