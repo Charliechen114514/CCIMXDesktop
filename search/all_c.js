@@ -51,6 +51,6 @@ var searchData=
   ['logstatus_48',['LogStatus',['../structDesktopLoggerBackends.html#a8e4f53f4d26080ea3bae3e7603057c7b',1,'DesktopLoggerBackends']]],
   ['logsuccess_49',['LogSuccess',['../structDesktopLoggerBackends.html#a8e4f53f4d26080ea3bae3e7603057c7ba69fef821d1c5f483a87340100f3f04d6',1,'DesktopLoggerBackends']]],
   ['logurulike_50',['LoguruLike',['../classConsoleLogger.html#a8a9cdd9ae4dc597c38978d302b99ee44abff4dc044c5675ed305b097f36152166',1,'ConsoleLogger']]],
-  ['low_51',['low',['../classBirdObsticals.html#a38419a3f4f5ca46c7243184bca781576a41bc94cbd8eebea13ce0491b2ac11b88',1,'BirdObsticals::LOW'],['../structAppWeatherResult_1_1DailyWeather.html#ad68dc66d4978326345538da3c16781f9',1,'AppWeatherResult::DailyWeather::low']]],
+  ['low_51',['low',['../structAppWeatherResult_1_1DailyWeather.html#ad68dc66d4978326345538da3c16781f9',1,'AppWeatherResult::DailyWeather::low'],['../classBirdObsticals.html#a38419a3f4f5ca46c7243184bca781576a41bc94cbd8eebea13ce0491b2ac11b88',1,'BirdObsticals::LOW']]],
   ['low_5ftemp_52',['LOW_TEMP',['../classWeatherChartWidget.html#ad917be16972dd0f90aa71df8d0e8e569ac2e65573563c7444efbfc0dd2bca593c',1,'WeatherChartWidget']]]
 ];

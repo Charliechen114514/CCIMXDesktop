@@ -9,7 +9,7 @@ var searchData=
   ['handletype_6',['handletype',['../classBlurProcessor.html#a3af8708008d25b115a14ebc37fecf2c0',1,'BlurProcessor::HandleType'],['../classBlurProcessor.html#a8e237a8b492a86872c426ac55ce0e403',1,'BlurProcessor::handleType() const']]],
   ['handlingfinhook_7',['HandlingFinHook',['../classApplicationWrapper.html#acaaa113a722e3e2f0625d40181b8c794',1,'ApplicationWrapper']]],
   ['headerdata_8',['headerData',['../classCCIMXFileSystemModel.html#aeceaa8e6c1e18cb36f20211176b60096',1,'CCIMXFileSystemModel']]],
-  ['height_9',['height',['../classTopSideBarWidget.html#ac1a73674388bf526457b235891a2cad3',1,'TopSideBarWidget::height()'],['../structSettings_1_1SZ.html#ace6c223709d507955ec0cd404d3fde33',1,'Settings::SZ::height'],['../structSettings_1_1Figure_1_1FigureSize.html#a60db5d4494a9cf7ffbc2c5c078a4eaa1',1,'Settings::Figure::FigureSize::height'],['../structVideoPlayerInfo.html#ac7292ac9053d124429cb6a5d57730447',1,'VideoPlayerInfo::height']]],
+  ['height_9',['height',['../classTopSideBarWidget.html#ac1a73674388bf526457b235891a2cad3',1,'TopSideBarWidget::height()'],['../structVideoPlayerInfo.html#ac7292ac9053d124429cb6a5d57730447',1,'VideoPlayerInfo::height'],['../structSettings_1_1Figure_1_1FigureSize.html#a60db5d4494a9cf7ffbc2c5c078a4eaa1',1,'Settings::Figure::FigureSize::height'],['../structSettings_1_1SZ.html#ace6c223709d507955ec0cd404d3fde33',1,'Settings::SZ::height']]],
   ['height_5fmax_10',['height_max',['../classTopSideBarWidget.html#aa131953e642a1b928a282a2b95c97068',1,'TopSideBarWidget']]],
   ['height_5fmin_11',['height_min',['../classTopSideBarWidget.html#a3ebb3fc914261bb4fc5f30238caea381',1,'TopSideBarWidget']]],
   ['height_5fsize_5ftype_5fmax_12',['HEIGHT_SIZE_TYPE_MAX',['../classBirdObsticals.html#ab527f57f000642c6f08ddf3631c7a4d2',1,'BirdObsticals']]],
@@ -20,9 +20,10 @@ var searchData=
   ['high_17',['high',['../structAppWeatherResult_1_1DailyWeather.html#a1abf94235e3a3de48cb52b2c6c477a6d',1,'AppWeatherResult::DailyWeather']]],
   ['high_5ftemp_18',['HIGH_TEMP',['../classWeatherChartWidget.html#ad917be16972dd0f90aa71df8d0e8e569a5e3ee21d5c0a12992178c1939c4d7987',1,'WeatherChartWidget']]],
   ['histcreator_19',['HistCreator',['../namespaceHistCreator.html',1,'']]],
-  ['histdrawer_20',['histdrawer',['../classHistDrawer.html#acac240110b587e7b3884c4a3bd7c098d',1,'HistDrawer::HistDrawer()'],['../classHistDrawer.html',1,'HistDrawer']]],
-  ['homepage_21',['homepage',['../classHomePage.html',1,'HomePage'],['../classHomePage.html#a019fab66c80b3c809faafce5f3416b63',1,'HomePage::HomePage()']]],
-  ['hot_5finstall_5fconsumer_22',['hot_install_consumer',['../structDesktopLoggerBackends.html#ad81ccded03ca804da08d1d29f7596e7e',1,'DesktopLoggerBackends']]],
-  ['hot_5finstall_5ffactory_23',['hot_install_factory',['../structDesktopLoggerBackends.html#a361f4a98820b533dee4c8b2acded0cfc',1,'DesktopLoggerBackends']]],
-  ['humidity_24',['humidity',['../structAppWeatherResult_1_1DailyWeather.html#a2faa8ee092e1b9a6cd8ca85fc523196f',1,'AppWeatherResult::DailyWeather::humidity'],['../classWeatherChartWidget.html#ad917be16972dd0f90aa71df8d0e8e569ad95ec1b726d7df75e5cbe026d0c1b721',1,'WeatherChartWidget::HUMIDITY']]]
+  ['histdrawer_20',['histdrawer',['../classHistDrawer.html',1,'HistDrawer'],['../classHistDrawer.html#acac240110b587e7b3884c4a3bd7c098d',1,'HistDrawer::HistDrawer()']]],
+  ['homecardmanager_21',['homecardmanager',['../classHomeCardManager.html',1,'HomeCardManager'],['../classHomePage.html#abea5f810b7fc488f1e1ef0961be08d1e',1,'HomePage::homeCardManager() const']]],
+  ['homepage_22',['homepage',['../classHomePage.html#a019fab66c80b3c809faafce5f3416b63',1,'HomePage::HomePage()'],['../classHomePage.html',1,'HomePage']]],
+  ['hot_5finstall_5fconsumer_23',['hot_install_consumer',['../structDesktopLoggerBackends.html#ad81ccded03ca804da08d1d29f7596e7e',1,'DesktopLoggerBackends']]],
+  ['hot_5finstall_5ffactory_24',['hot_install_factory',['../structDesktopLoggerBackends.html#a361f4a98820b533dee4c8b2acded0cfc',1,'DesktopLoggerBackends']]],
+  ['humidity_25',['humidity',['../structAppWeatherResult_1_1DailyWeather.html#a2faa8ee092e1b9a6cd8ca85fc523196f',1,'AppWeatherResult::DailyWeather::humidity'],['../classWeatherChartWidget.html#ad917be16972dd0f90aa71df8d0e8e569ad95ec1b726d7df75e5cbe026d0c1b721',1,'WeatherChartWidget::HUMIDITY']]]
 ];

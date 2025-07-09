@@ -6,6 +6,9 @@ var annotated_dup =
     [ "DiskUsage", null, [
       [ "MetaInfo", "structDiskUsage_1_1MetaInfo.html", null ]
     ] ],
+    [ "MemoryState", null, [
+      [ "MemState", "structMemoryState_1_1MemState.html", "structMemoryState_1_1MemState" ]
+    ] ],
     [ "PageSetuper", null, [
       [ "PageSetupSessionRequest", "structPageSetuper_1_1PageSetupSessionRequest.html", "structPageSetuper_1_1PageSetupSessionRequest" ]
     ] ],
@@ -145,6 +148,7 @@ var annotated_dup =
     [ "GroundLineProviders", "classGroundLineProviders.html", "classGroundLineProviders" ],
     [ "GuassainBlur", "classGuassainBlur.html", "classGuassainBlur" ],
     [ "HistDrawer", "classHistDrawer.html", "classHistDrawer" ],
+    [ "HomeCardManager", "classHomeCardManager.html", null ],
     [ "HomePage", "classHomePage.html", "classHomePage" ],
     [ "ICM20608", "classICM20608.html", "classICM20608" ],
     [ "ICM20608AppData", "structICM20608AppData.html", "structICM20608AppData" ],
@@ -194,6 +198,7 @@ var annotated_dup =
     [ "MediaPlayerWindow", "classMediaPlayerWindow.html", "classMediaPlayerWindow" ],
     [ "MediaPlayerWindowHelper", "classMediaPlayerWindowHelper.html", null ],
     [ "MemoryInfoFetcher", "classMemoryInfoFetcher.html", "classMemoryInfoFetcher" ],
+    [ "MemoryUsageCard", "classMemoryUsageCard.html", "classMemoryUsageCard" ],
     [ "MemoryUsageChart", "classMemoryUsageChart.html", "classMemoryUsageChart" ],
     [ "MetaInfoWindow", "classMetaInfoWindow.html", "classMetaInfoWindow" ],
     [ "ModernCalendarWidget", "classModernCalendarWidget.html", "classModernCalendarWidget" ],

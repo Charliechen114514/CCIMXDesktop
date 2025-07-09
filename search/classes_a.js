@@ -16,9 +16,11 @@ var searchData=
   ['mediaplayerwindowhelper_13',['MediaPlayerWindowHelper',['../classMediaPlayerWindowHelper.html',1,'']]],
   ['memoryinfofetcher_14',['MemoryInfoFetcher',['../classMemoryInfoFetcher.html',1,'']]],
   ['memorystat_15',['MemoryStat',['../structMemoryInfoFetcher_1_1MemoryStat.html',1,'MemoryInfoFetcher']]],
-  ['memoryusagechart_16',['MemoryUsageChart',['../classMemoryUsageChart.html',1,'']]],
-  ['metainfo_17',['MetaInfo',['../structDiskUsage_1_1MetaInfo.html',1,'DiskUsage']]],
-  ['metainfowindow_18',['MetaInfoWindow',['../classMetaInfoWindow.html',1,'']]],
-  ['modemapping_19',['ModeMapping',['../structWallPaperEngine_1_1ModeMapping.html',1,'WallPaperEngine']]],
-  ['moderncalendarwidget_20',['ModernCalendarWidget',['../classModernCalendarWidget.html',1,'']]]
+  ['memoryusagecard_16',['MemoryUsageCard',['../classMemoryUsageCard.html',1,'']]],
+  ['memoryusagechart_17',['MemoryUsageChart',['../classMemoryUsageChart.html',1,'']]],
+  ['memstate_18',['MemState',['../structMemoryState_1_1MemState.html',1,'MemoryState']]],
+  ['metainfo_19',['MetaInfo',['../structDiskUsage_1_1MetaInfo.html',1,'DiskUsage']]],
+  ['metainfowindow_20',['MetaInfoWindow',['../classMetaInfoWindow.html',1,'']]],
+  ['modemapping_21',['ModeMapping',['../structWallPaperEngine_1_1ModeMapping.html',1,'WallPaperEngine']]],
+  ['moderncalendarwidget_22',['ModernCalendarWidget',['../classModernCalendarWidget.html',1,'']]]
 ];

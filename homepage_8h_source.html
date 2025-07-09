@@ -109,38 +109,42 @@ $(document).ready(function(){initNavTree('homepage_8h_source.html',''); initResi
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">class </span><a class="code hl_class" href="classDigitalTimeWidget.html">DigitalTimeWidget</a>;</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">class </span><a class="code hl_class" href="classDesktopMainWindow.html">DesktopMainWindow</a>;</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">class </span><a class="code hl_class" href="classCardStackWidget.html">CardStackWidget</a>;</div>
-<div class="foldopen" id="foldopen00015" data-start="{" data-end="};">
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="classHomePage.html">   15</a></span><span class="keyword">class </span><a class="code hl_class" href="classHomePage.html">HomePage</a> : <span class="keyword">public</span> QWidget {</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    Q_OBJECT</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classHomePage.html">HomePage</a>(<a class="code hl_class" href="classDesktopMainWindow.html">DesktopMainWindow</a>* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    QWidget* <a class="code hl_function" href="classHomePage.html#a760f39daccf8d87ac86d15c0983e1cfe">expected_appcards_widgets</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_class" href="classClockWidget.html">ClockWidget</a>* <a class="code hl_function" href="classHomePage.html#ae0bb5236a46d28972ed769840aa39b4a">clock_widget</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <a class="code hl_class" href="classDigitalTimeWidget.html">DigitalTimeWidget</a>* <a class="code hl_function" href="classHomePage.html#ae1538d92adaa62a51e1c3c5bb38058fb">digital_timeWidget</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <a class="code hl_class" href="classCardStackWidget.html">CardStackWidget</a>* <a class="code hl_function" href="classHomePage.html#aa47038cbe2bf8e4dfb5eaf87b75165a7">card_stack_widget</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <a class="code hl_function" href="classHomePage.html#aff8e741021104752949c6935c7407f90">~HomePage</a>();</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    Ui::HomePage* ui;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>};</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">class </span><a class="code hl_class" href="classHomeCardManager.html">HomeCardManager</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classHomePage.html">   17</a></span><span class="keyword">class </span><a class="code hl_class" href="classHomePage.html">HomePage</a> : <span class="keyword">public</span> QWidget {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    Q_OBJECT</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classHomePage.html">HomePage</a>(<a class="code hl_class" href="classDesktopMainWindow.html">DesktopMainWindow</a>* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    QWidget* <a class="code hl_function" href="classHomePage.html#a760f39daccf8d87ac86d15c0983e1cfe">expected_appcards_widgets</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <a class="code hl_class" href="classClockWidget.html">ClockWidget</a>* <a class="code hl_function" href="classHomePage.html#ae0bb5236a46d28972ed769840aa39b4a">clock_widget</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <a class="code hl_class" href="classDigitalTimeWidget.html">DigitalTimeWidget</a>* <a class="code hl_function" href="classHomePage.html#ae1538d92adaa62a51e1c3c5bb38058fb">digital_timeWidget</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <a class="code hl_class" href="classHomeCardManager.html">HomeCardManager</a>* <a class="code hl_function" href="classHomePage.html#abea5f810b7fc488f1e1ef0961be08d1e">homeCardManager</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <a class="code hl_function" href="classHomePage.html#aff8e741021104752949c6935c7407f90">~HomePage</a>();</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    Ui::HomePage* ui;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    std::shared_ptr&lt;HomeCardManager&gt; _homeCardManager;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>};</div>
 </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#endif </span><span class="comment">// HOMEPAGE_H</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#endif </span><span class="comment">// HOMEPAGE_H</span></div>
 <div class="ttc" id="aclassCardStackWidget_html"><div class="ttname"><a href="classCardStackWidget.html">CardStackWidget</a></div><div class="ttdoc">An enhanced QStackedWidget with animated card transitions.</div><div class="ttdef"><b>Definition</b> CardStackWidget.h:21</div></div>
 <div class="ttc" id="aclassClockWidget_html"><div class="ttname"><a href="classClockWidget.html">ClockWidget</a></div><div class="ttdoc">The ClockWidget class draws the Clock Sessions.</div><div class="ttdef"><b>Definition</b> clockwidget.h:14</div></div>
 <div class="ttc" id="aclassDesktopMainWindow_html"><div class="ttname"><a href="classDesktopMainWindow.html">DesktopMainWindow</a></div><div class="ttdoc">DesktopMainWindow is the main frontend window of the application. For beginners, this is the starting...</div><div class="ttdef"><b>Definition</b> desktopmainwindow.h:33</div></div>
 <div class="ttc" id="aclassDigitalTimeWidget_html"><div class="ttname"><a href="classDigitalTimeWidget.html">DigitalTimeWidget</a></div><div class="ttdoc">The DigitalTimeWidget class is a digital clock widget.</div><div class="ttdef"><b>Definition</b> digitaltimewidget.h:9</div></div>
-<div class="ttc" id="aclassHomePage_html"><div class="ttname"><a href="classHomePage.html">HomePage</a></div><div class="ttdoc">The HomePage class exactly, home page :)</div><div class="ttdef"><b>Definition</b> homepage.h:15</div></div>
-<div class="ttc" id="aclassHomePage_html_a760f39daccf8d87ac86d15c0983e1cfe"><div class="ttname"><a href="classHomePage.html#a760f39daccf8d87ac86d15c0983e1cfe">HomePage::expected_appcards_widgets</a></div><div class="ttdeci">QWidget * expected_appcards_widgets() const</div><div class="ttdoc">expected_appcards_widgets</div><div class="ttdef"><b>Definition</b> homepage.cpp:19</div></div>
-<div class="ttc" id="aclassHomePage_html_aa47038cbe2bf8e4dfb5eaf87b75165a7"><div class="ttname"><a href="classHomePage.html#aa47038cbe2bf8e4dfb5eaf87b75165a7">HomePage::card_stack_widget</a></div><div class="ttdeci">CardStackWidget * card_stack_widget() const</div><div class="ttdoc">card_stack_widget</div><div class="ttdef"><b>Definition</b> homepage.cpp:35</div></div>
-<div class="ttc" id="aclassHomePage_html_ae0bb5236a46d28972ed769840aa39b4a"><div class="ttname"><a href="classHomePage.html#ae0bb5236a46d28972ed769840aa39b4a">HomePage::clock_widget</a></div><div class="ttdeci">ClockWidget * clock_widget() const</div><div class="ttdoc">clock_widget</div><div class="ttdef"><b>Definition</b> homepage.cpp:23</div></div>
-<div class="ttc" id="aclassHomePage_html_ae1538d92adaa62a51e1c3c5bb38058fb"><div class="ttname"><a href="classHomePage.html#ae1538d92adaa62a51e1c3c5bb38058fb">HomePage::digital_timeWidget</a></div><div class="ttdeci">DigitalTimeWidget * digital_timeWidget() const</div><div class="ttdoc">digital_timeWidget fetch the digital time widgets</div><div class="ttdef"><b>Definition</b> homepage.cpp:27</div></div>
-<div class="ttc" id="aclassHomePage_html_aff8e741021104752949c6935c7407f90"><div class="ttname"><a href="classHomePage.html#aff8e741021104752949c6935c7407f90">HomePage::~HomePage</a></div><div class="ttdeci">~HomePage()</div><div class="ttdoc">Destroy the Home Page object.</div><div class="ttdef"><b>Definition</b> homepage.cpp:31</div></div>
+<div class="ttc" id="aclassHomeCardManager_html"><div class="ttname"><a href="classHomeCardManager.html">HomeCardManager</a></div><div class="ttdef"><b>Definition</b> HomeCardManager.h:7</div></div>
+<div class="ttc" id="aclassHomePage_html"><div class="ttname"><a href="classHomePage.html">HomePage</a></div><div class="ttdoc">The HomePage class exactly, home page :)</div><div class="ttdef"><b>Definition</b> homepage.h:17</div></div>
+<div class="ttc" id="aclassHomePage_html_a760f39daccf8d87ac86d15c0983e1cfe"><div class="ttname"><a href="classHomePage.html#a760f39daccf8d87ac86d15c0983e1cfe">HomePage::expected_appcards_widgets</a></div><div class="ttdeci">QWidget * expected_appcards_widgets() const</div><div class="ttdoc">expected_appcards_widgets</div><div class="ttdef"><b>Definition</b> homepage.cpp:22</div></div>
+<div class="ttc" id="aclassHomePage_html_abea5f810b7fc488f1e1ef0961be08d1e"><div class="ttname"><a href="classHomePage.html#abea5f810b7fc488f1e1ef0961be08d1e">HomePage::homeCardManager</a></div><div class="ttdeci">HomeCardManager * homeCardManager() const</div><div class="ttdoc">homeCardManager return the managers</div><div class="ttdef"><b>Definition</b> homepage.cpp:34</div></div>
+<div class="ttc" id="aclassHomePage_html_ae0bb5236a46d28972ed769840aa39b4a"><div class="ttname"><a href="classHomePage.html#ae0bb5236a46d28972ed769840aa39b4a">HomePage::clock_widget</a></div><div class="ttdeci">ClockWidget * clock_widget() const</div><div class="ttdoc">clock_widget</div><div class="ttdef"><b>Definition</b> homepage.cpp:26</div></div>
+<div class="ttc" id="aclassHomePage_html_ae1538d92adaa62a51e1c3c5bb38058fb"><div class="ttname"><a href="classHomePage.html#ae1538d92adaa62a51e1c3c5bb38058fb">HomePage::digital_timeWidget</a></div><div class="ttdeci">DigitalTimeWidget * digital_timeWidget() const</div><div class="ttdoc">digital_timeWidget fetch the digital time widgets</div><div class="ttdef"><b>Definition</b> homepage.cpp:30</div></div>
+<div class="ttc" id="aclassHomePage_html_aff8e741021104752949c6935c7407f90"><div class="ttname"><a href="classHomePage.html#aff8e741021104752949c6935c7407f90">HomePage::~HomePage</a></div><div class="ttdeci">~HomePage()</div><div class="ttdoc">Destroy the Home Page object.</div><div class="ttdef"><b>Definition</b> homepage.cpp:38</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

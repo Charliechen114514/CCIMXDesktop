@@ -15,6 +15,6 @@ var searchData=
   ['audiobitrate_12',['audioBitRate',['../structMediaInfo.html#a32ff20787a2ffa2ab8e348204cdfaf26',1,'MediaInfo']]],
   ['audiocodec_13',['audioCodec',['../structMediaInfo.html#a4bbf96a1fc0e354d34b4921e83a6d0ec',1,'MediaInfo']]],
   ['author_14',['author',['../structMediaInfo.html#a5800390f193e62611d5e5ebe872c28b8',1,'MediaInfo::author'],['../structCCPdfMetaInfo.html#ad02f378caa4ba18913ff931c50c2fec9',1,'CCPdfMetaInfo::author']]],
-  ['avail_5fphys_5fmemory_15',['avail_phys_memory',['../structMemoryInfoFetcher_1_1MemoryStat.html#af82091061732a922014ca83542a515de',1,'MemoryInfoFetcher::MemoryStat']]],
-  ['avail_5fvirt_5fmemory_16',['avail_virt_memory',['../structMemoryInfoFetcher_1_1MemoryStat.html#a1b5ecd712fc23ca26084c0937517c6c9',1,'MemoryInfoFetcher::MemoryStat']]]
+  ['avail_5fphys_5fmemory_15',['avail_phys_memory',['../structMemoryInfoFetcher_1_1MemoryStat.html#af82091061732a922014ca83542a515de',1,'MemoryInfoFetcher::MemoryStat::avail_phys_memory'],['../structMemoryState_1_1MemState.html#a31ed22636615912ca03eb0afb3a0fbb2',1,'MemoryState::MemState::avail_phys_memory']]],
+  ['avail_5fvirt_5fmemory_16',['avail_virt_memory',['../structMemoryInfoFetcher_1_1MemoryStat.html#a1b5ecd712fc23ca26084c0937517c6c9',1,'MemoryInfoFetcher::MemoryStat::avail_virt_memory'],['../structMemoryState_1_1MemState.html#aa98034e8ceb1579bd99dad52aa31109c',1,'MemoryState::MemState::avail_virt_memory']]]
 ];

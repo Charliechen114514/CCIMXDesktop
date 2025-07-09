@@ -2,7 +2,7 @@ var searchData=
 [
   ['name_0',['name',['../structCVTools_1_1DisplayParams.html#a366209da85a0c0e2fe1c4fc814c5ef8a',1,'CVTools::DisplayParams::name'],['../structToolLeftWidgets_1_1ToolButtonInstallPackage.html#a4b82beeaaf90facefb4c2ebbcb9d338d',1,'ToolLeftWidgets::ToolButtonInstallPackage::name'],['../structToolsStackedWidget_1_1PagePackage.html#a495d4b66e470a58dc509e92024ca74b4',1,'ToolsStackedWidget::PagePackage::name'],['../structProcessBroswer_1_1ProcessInfo.html#a8d5662e9c3468ad2a814cfd706a40b95',1,'ProcessBroswer::ProcessInfo::name']]],
   ['nameproviders_1',['NameProviders',['../classMainWindow.html#ad766a05d8996b153d8328819f3fef928a09675afd3cc4a09f7b50ba42fc455f9f',1,'MainWindow']]],
-  ['netabilityscanner_2',['netabilityscanner',['../classNetAbilityScanner.html',1,'NetAbilityScanner'],['../classDesktopMainWindow.html#ae0bac85372b4389478e069a5979c937f',1,'DesktopMainWindow::netAbilityScanner()'],['../classNetAbilityScanner.html#a64ff720b2dbbb5b75423cdd027a29e7c',1,'NetAbilityScanner::NetAbilityScanner()']]],
+  ['netabilityscanner_2',['netabilityscanner',['../classNetAbilityScanner.html',1,'NetAbilityScanner'],['../classNetAbilityScanner.html#a64ff720b2dbbb5b75423cdd027a29e7c',1,'NetAbilityScanner::NetAbilityScanner()'],['../classDesktopMainWindow.html#ae0bac85372b4389478e069a5979c937f',1,'DesktopMainWindow::netAbilityScanner()']]],
   ['netcardgadget_3',['netcardgadget',['../classNetCardGadget.html',1,'NetCardGadget'],['../classNetCardGadget.html#ae7df34d5c86e08e897248ccc1c111ee3',1,'NetCardGadget::NetCardGadget()']]],
   ['netmainwindow_4',['netmainwindow',['../classNetMainWindow.html',1,'NetMainWindow'],['../classNetMainWindow.html#a3ad9cbbd627ddab9a9182b96a4bcaf5e',1,'NetMainWindow::NetMainWindow()']]],
   ['netstatuschangedevent_5',['netstatuschangedevent',['../structNetStatusChangedEvent.html',1,'NetStatusChangedEvent'],['../structNetStatusChangedEvent.html#a09ab320f3f028e94f3d7bf5776f09581',1,'NetStatusChangedEvent::NetStatusChangedEvent()']]],
@@ -15,7 +15,7 @@ var searchData=
   ['next_5fenabled_12',['next_enabled',['../structMediaListMails.html#a0703dba7f57b07fa6f9f2a8e21042225',1,'MediaListMails']]],
   ['next_5fpage_13',['next_page',['../classMainWindow.html#abc9d84a0a8b9bea132a960fdfa06b2cd',1,'MainWindow']]],
   ['no_5ferror_14',['NO_ERROR',['../classCCPdfDocument.html#a49387984fa059ca9904600ba7edacd39ad306b6fdee05fe87455110ddf6501e6c',1,'CCPdfDocument']]],
-  ['normal_15',['normal',['../classDinasourFrameFetcher.html#abd9732a2fc7ec5c1389b3308eb920182a1e23852820b9154316c7c06e2b7ba051',1,'DinasourFrameFetcher::NORMAL'],['../classLightControllerWindow.html#ad01b4159b975884f5398071749f17593a960b44c579bc2f6818d2daaf9e4c16f0',1,'LightControllerWindow::Normal']]],
+  ['normal_15',['normal',['../classLightControllerWindow.html#ad01b4159b975884f5398071749f17593a960b44c579bc2f6818d2daaf9e4c16f0',1,'LightControllerWindow::Normal'],['../classDinasourFrameFetcher.html#abd9732a2fc7ec5c1389b3308eb920182a1e23852820b9154316c7c06e2b7ba051',1,'DinasourFrameFetcher::NORMAL']]],
   ['notecreatorwindow_16',['notecreatorwindow',['../classNoteCreatorWindow.html#ae4e9e8cac1ad751be0d800d48382d65e',1,'NoteCreatorWindow::NoteCreatorWindow()'],['../classNoteCreatorWindow.html',1,'NoteCreatorWindow']]],
   ['noteinfo_17',['noteinfo',['../classNoter.html#a1a96652bfaf074d24d4395a92a2174b5',1,'Noter::noteInfo()'],['../structNoteInfo.html',1,'NoteInfo']]],
   ['noter_18',['noter',['../classNoter.html#abafede83ac3452b10639b33a13c06899',1,'Noter::Noter()'],['../classNoter.html',1,'Noter']]],

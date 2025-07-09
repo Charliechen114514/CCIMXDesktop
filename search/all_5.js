@@ -15,7 +15,7 @@ var searchData=
   ['ensub_5flabels_12',['ensub_labels',['../classTemperaryCacher.html#aef42681a58fc446595255f0dc20a4b94',1,'TemperaryCacher']]],
   ['entemp_13',['entemp',['../classLeftSideBar.html#ab649b10638a5dfc0a0164d2f466ea73a',1,'LeftSideBar']]],
   ['environmentwindow_14',['environmentwindow',['../classEnvironmentWindow.html#ad7028a4fd7535a29904095ad19730397',1,'EnvironmentWindow::EnvironmentWindow()'],['../classEnvironmentWindow.html',1,'EnvironmentWindow']]],
-  ['error_15',['error',['../classSimpleTools_1_1FailedReadFile.html#a4ecfe83c7ff2ca0794708ef5376d1eff',1,'SimpleTools::FailedReadFile::error'],['../classCameraCapture.html#aec7c35d14237db1faad9e83066d36358',1,'CameraCapture::Error'],['../classPhotoSaver.html#a74898c501e061db0c56ab0b7684fa979',1,'PhotoSaver::Error']]],
+  ['error_15',['error',['../classCameraCapture.html#aec7c35d14237db1faad9e83066d36358',1,'CameraCapture::Error'],['../classPhotoSaver.html#a74898c501e061db0c56ab0b7684fa979',1,'PhotoSaver::Error'],['../classSimpleTools_1_1FailedReadFile.html#a4ecfe83c7ff2ca0794708ef5376d1eff',1,'SimpleTools::FailedReadFile::error']]],
   ['error_5foccurs_16',['error_occurs',['../structWeatherResult.html#ac0bbf6a55fec1721e157da2d1c50b9c3',1,'WeatherResult']]],
   ['errorcode_17',['ErrorCode',['../classCCPdfDocument.html#a49387984fa059ca9904600ba7edacd39',1,'CCPdfDocument']]],
   ['errordepatchhook_18',['ErrorDepatchHook',['../classApplicationWrapper.html#a1efcf8d4c820fd4c962319f69ccd50fb',1,'ApplicationWrapper']]],

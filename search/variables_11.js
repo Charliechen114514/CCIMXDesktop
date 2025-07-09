@@ -19,7 +19,7 @@ var searchData=
   ['tol_16',['tol',['../structCPUStateFetcher_1_1CPUState.html#a20f696bc5db8018c3561150623d4e856',1,'CPUStateFetcher::CPUState']]],
   ['toleft_17',['toLeft',['../structStackpageSwitcherAnimation_1_1AnimationInfo.html#a40c2859da58aa9576cc843ab337bd482',1,'StackpageSwitcherAnimation::AnimationInfo']]],
   ['total_5fangle_18',['TOTAL_ANGLE',['../classGaugeWidget.html#a5d99fb125f16f4f9fda891a4fae76d08',1,'GaugeWidget']]],
-  ['total_5fphys_5fmemory_19',['total_phys_memory',['../structMemoryInfoFetcher_1_1MemoryStat.html#abd79571ff4f095230284968292571c3d',1,'MemoryInfoFetcher::MemoryStat']]],
-  ['total_5fvirt_5fmemory_20',['total_virt_memory',['../structMemoryInfoFetcher_1_1MemoryStat.html#a6bd163ea54a2efe44d8f7b025baa238c',1,'MemoryInfoFetcher::MemoryStat']]],
+  ['total_5fphys_5fmemory_19',['total_phys_memory',['../structMemoryInfoFetcher_1_1MemoryStat.html#abd79571ff4f095230284968292571c3d',1,'MemoryInfoFetcher::MemoryStat::total_phys_memory'],['../structMemoryState_1_1MemState.html#a907f1219dc687d8a16bcf8c357254651',1,'MemoryState::MemState::total_phys_memory']]],
+  ['total_5fvirt_5fmemory_20',['total_virt_memory',['../structMemoryInfoFetcher_1_1MemoryStat.html#a6bd163ea54a2efe44d8f7b025baa238c',1,'MemoryInfoFetcher::MemoryStat::total_virt_memory'],['../structMemoryState_1_1MemState.html#a34c048e7d038a740103f88b0bd0adeaa',1,'MemoryState::MemState::total_virt_memory']]],
   ['tracknumber_21',['trackNumber',['../structMediaInfo.html#afcfbcff6e7948f294733dd3b8bf83c62',1,'MediaInfo']]]
 ];

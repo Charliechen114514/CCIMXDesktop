@@ -9,7 +9,7 @@ var searchData=
   ['redirectto_6',['redirectto',['../classPesudoLedController.html#a1da3b54fbb3eaba82f62657efdd2ac75',1,'PesudoLedController::redirectTo()'],['../classLEDController.html#a375f3956f4fbdd3911d3aa616d46f746',1,'LEDController::redirectTo()']]],
   ['redo_7',['redo',['../classSimpleDrawingScene.html#a1a76c9d86572dafe564ac53f55cdedfb',1,'SimpleDrawingScene']]],
   ['refresh_5fmedia_5flist_8',['refresh_media_list',['../classPlayListMainWindow.html#aa895c0c8f3fdcec039907019baa34bab',1,'PlayListMainWindow']]],
-  ['refresh_5fonce_9',['refresh_once',['../classDiskUsageCardWidget.html#ad12c522a52e9fbd263b209c6336ac5ae',1,'DiskUsageCardWidget']]],
+  ['refresh_5fonce_9',['refresh_once',['../classDiskUsageCardWidget.html#ad12c522a52e9fbd263b209c6336ac5ae',1,'DiskUsageCardWidget::refresh_once()'],['../classMemoryUsageCard.html#a9d1954664a45bf8287d5ddc7ad621b45',1,'MemoryUsageCard::refresh_once()']]],
   ['refresh_5fpost_5frequest_10',['refresh_post_request',['../classWeatherAppMainWindow.html#af97dd260a58f30dd140641b141c83e79',1,'WeatherAppMainWindow']]],
   ['register_5fspecial_5fdircolor_11',['register_special_dircolor',['../classFileNameProviders.html#ad419a989e778ba01fc40417dd78ec62a',1,'FileNameProviders']]],
   ['registerbackend_12',['registerBackend',['../classCCIMXDesktopLoggerCenter.html#aca8e9f523152fa55bc3db39b7cf605ec',1,'CCIMXDesktopLoggerCenter']]],

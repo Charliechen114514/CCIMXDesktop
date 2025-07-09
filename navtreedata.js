@@ -106,16 +106,16 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AP3216CAdapterFactory_8h_source.html",
-"classAppWeatherRequest.html#aa484e3ab2825abedcc5fd80b6969d8a3",
-"classCPUUsageChart.html#a40d01620757b49a86efb9ed120156624",
-"classDinasourFrameFetcher.html#abd9732a2fc7ec5c1389b3308eb920182a1e23852820b9154316c7c06e2b7ba051",
-"classImageBrowser.html#aea0c3a04135e3bf0be6d19d0c080f9f8",
-"classModernCalendarWidget.html#ae007439d8f42284ce71c8d73d0865270",
-"classSideBarWidget.html#ad41e12eec6960deac5b3c6b1d211de64",
-"classVideoPlayerOpencvImpl.html#afe9aafeb0361bb96f609072471e29d0a",
-"functions_func_a.html",
-"structAppWeatherDetailedRequest.html#aea957e389a8c916be928a45ee192cbc9",
-"structVideoPlayerInfo.html"
+"classAppWeatherRequest.html",
+"classCPUUsageChart.html",
+"classDinasourFrameFetcher.html#ab26d46ece4b674739326241b03260ffa",
+"classImageBrowser.html#aa7de62669857ec5c3c38bd8bbc7361c5",
+"classModernCalendarWidget.html#a024f3ddd54dae0a95d8f58956f80c825",
+"classSideBarWidget.html#abc77590c7f86b906b48ac7fcfadd46b1ae6d63e7ba40f80fc13c6eb8accbe716b",
+"classVideoPlayerOpencvImpl.html#aac0098cdf634919d6f12937aefa0bf7f",
+"functions_b.html",
+"sportshealthwindow_8h_source.html",
+"structStandardFormater_1_1LogFormatOptions.html#a005169efaf8e195b9fa4286464f6717b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

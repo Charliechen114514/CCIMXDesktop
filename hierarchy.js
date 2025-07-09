@@ -68,6 +68,7 @@ var hierarchy =
     [ "g_acc", "structg__acc.html", null ],
     [ "GroundLineProviders::GroundLine", "structGroundLineProviders_1_1GroundLine.html", null ],
     [ "GroundLineProviders", "classGroundLineProviders.html", null ],
+    [ "HomeCardManager", "classHomeCardManager.html", null ],
     [ "ICM20608", "classICM20608.html", null ],
     [ "ICM20608AppData", "structICM20608AppData.html", null ],
     [ "ICM20608Data", "structICM20608Data.html", null ],
@@ -106,6 +107,7 @@ var hierarchy =
     [ "MediaPlayer::MediaPlayerStatus", "structMediaPlayer_1_1MediaPlayerStatus.html", null ],
     [ "MediaPlayerWindowHelper", "classMediaPlayerWindowHelper.html", null ],
     [ "MemoryInfoFetcher::MemoryStat", "structMemoryInfoFetcher_1_1MemoryStat.html", null ],
+    [ "MemoryState::MemState", "structMemoryState_1_1MemState.html", null ],
     [ "DiskUsage::MetaInfo", "structDiskUsage_1_1MetaInfo.html", null ],
     [ "WallPaperEngine::ModeMapping", "structWallPaperEngine_1_1ModeMapping.html", null ],
     [ "NoteInfo", "structNoteInfo.html", null ],
@@ -290,6 +292,7 @@ var hierarchy =
       [ "LightConfigures", "classLightConfigures.html", null ],
       [ "MainShowWidget", "classMainShowWidget.html", null ],
       [ "MainSideBar", "classMainSideBar.html", null ],
+      [ "MemoryUsageCard", "classMemoryUsageCard.html", null ],
       [ "MemoryUsageChart", "classMemoryUsageChart.html", null ],
       [ "PanelWidget", "classPanelWidget.html", [
         [ "DateNoter", "classDateNoter.html", null ]

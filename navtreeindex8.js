@@ -1,5 +1,14 @@
 var NAVTREEINDEX8 =
 {
+"functions_b.html":[5,3,0,2],
+"functions_c.html":[5,3,0,3],
+"functions_d.html":[5,3,0,4],
+"functions_e.html":[5,3,0,5],
+"functions_enum.html":[5,3,4],
+"functions_eval.html":[5,3,5],
+"functions_f.html":[5,3,0,6],
+"functions_func.html":[5,3,1,0],
+"functions_func.html":[5,3,1],
 "functions_func_a.html":[5,3,1,1],
 "functions_func_b.html":[5,3,1,2],
 "functions_func_c.html":[5,3,1,3],
@@ -74,7 +83,7 @@ var NAVTREEINDEX8 =
 "functions_z.html":[5,3,0,26],
 "functions_~.html":[5,3,0,27],
 "hierarchy.html":[5,2],
-"homepage_8h_source.html":[6,0,1,3,0],
+"homepage_8h_source.html":[6,0,1,3,1],
 "image__proc__base_8h_source.html":[6,0,3,7,1,0,0,1,6],
 "index.html":[],
 "led__adapter_8h_source.html":[6,0,3,7,0,1,0,0],
@@ -240,14 +249,5 @@ var NAVTREEINDEX8 =
 "settings__figure_8h_source.html":[6,0,3,2,0,2,2],
 "settings__score_8h_source.html":[6,0,3,2,0,2,3],
 "settings__soundeffect_8h_source.html":[6,0,3,2,0,2,4],
-"simple__getseter_8hpp_source.html":[6,0,4,4,0],
-"sportshealthwindow_8h_source.html":[6,0,3,7,0,2,1,2],
-"structAP3216CData.html":[5,0,9],
-"structAP3216CData.html#a40669cff46ee430f2fd1e716ad24b43b":[5,0,9,0],
-"structAP3216CData.html#a593a72bc7abbf88fd9c2a4ebe4078a2a":[5,0,9,1],
-"structAP3216CData.html#a5a85d6a0d77844a18eda81014f239ad8":[5,0,9,2],
-"structAbstractParamsPack.html":[5,0,7],
-"structAppWeatherDetailedRequest.html":[5,0,15],
-"structAppWeatherDetailedRequest.html#a13ced85bff3ab0c1caecc737d607ecf8":[5,0,15,1],
-"structAppWeatherDetailedRequest.html#a31d9b6dd471aabd749f032b560f0391f":[5,0,15,0]
+"simple__getseter_8hpp_source.html":[6,0,4,4,0]
 };
