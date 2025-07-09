@@ -48,8 +48,8 @@ add_executable(test_parser test/test_parser.cpp)
 target_link_libraries(test_parser PRIVATE parser_library Qt::Core)
 
 add_custom_command(TARGET Caculator POST_BUILD
-    COMMAND ${CMAKE_COMMAND} -E make_directory ${CCIMX_ALL_RELEASE_DIR}
-    COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:Caculator> ${CCIMX_ALL_RELEASE_DIR}
+    COMMAND ${CMAKE_COMMAND} -E make_directory ${CCIMX_EXTERNAL_APP_BASE_DIR}
+    COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:Caculator> ${CCIMX_EXTERNAL_APP_BASE_DIR}
 )
 
 include(GNUInstallDirs)

@@ -6,11 +6,13 @@
 #include "builtin/ui/pagefactory.h"
 #include "builtin/window/applauncher/ApplicationLauncherMainWindow.h"
 #include "builtin/window/settings_window/SettingsWindow.h"
+#include "core/desktop_dirent_manager/DesktopDirentLocationManager.h"
 #include "core/loggers/CCIMXDesktopLoggerCenter.h"
 #include "core/loggers/ConsoleLogger.h"
 #include "core/loggers/DesktopLoggerConvinients.h"
 #include "core/page_switching_limiter/PageSwitchingLimiter.h"
 #include "core/wallpaper/WallPaperEngine.h"
+#include "desktop_settings.h"
 #include "ui/UiTools.h"
 #include "ui/appcardwidget.h"
 #include "ui/desktoptoast.h"
@@ -37,6 +39,8 @@ void DesktopMainWindow::setupui() {
     emit updateProgress("Setting up Desktop Static Ui", 10);
     qInfo() << "Setting up Desktop Static Ui";
     ui->setupUi(this);
+    // scan
+    locationManager = new DesktopDirentLocationManager(_DESKTOP_ROOT_PATH);
     // sources initing
     emit updateProgress("Setting up Desktop Global Core Sources", 30);
     scanner = new NetAbilityScanner(this);

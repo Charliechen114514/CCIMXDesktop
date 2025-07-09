@@ -2,7 +2,7 @@
 
 ![CCIMXDesktopLogo](./CCIMXDesktopLogo.png)
 
-![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-17-green)![Version](https://img.shields.io/badge/Version-Released_1.10.0-red)
+![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-17-green)![Version](https://img.shields.io/badge/Version-Released_1.12.0-red)
 
 🔌 Hello! This is a simple desktop and utility collection that can be used in a variety of embedded devices! This project currently support compiling in full C++17 or above versions. Enjoy!
 
@@ -74,6 +74,7 @@ Now, CCIMXDesktop supports one-click building including:
 - 🖼️ Wallpaper animation, hosting function 🌀
 - 🛠️ Basic built-in auxiliary APP (cannot be uninstalled 🔒)
 - 📜 Log management system, add a log system to CCIMXDesktop to facilitate debugging 🔍 and observation 👀
+- 📂 Stagedly Stable Desktop Private Folder Systems, which is ready for the system info
 - 🗃️ Smooth Sliding Card System ✨ Currently registered built-in card types 📦:
   - 📅 Calendar Card
   - 🗓️ Date Card
@@ -131,12 +132,10 @@ The document has been automatically deployed via GitHub Actions, visit: [CCIMXDe
 
 ### 🚀 Planned optimization of the desktop body:
 
-- More refined porting of system status monitoring card applications (hard storage, memory, etc.)
-- Card expansion system
-- Add a drop-down quick settings channel (brightness adjustment, etc.)
-- Add desktop refresh function for buttons
-- Add better folder and storage functions for desktop services
-- Develop a **to-do/reminder application** that is deeply integrated with the desktop. Support displaying upcoming reminders in the status bar and important reminders on the lock screen.
+- Add a pull-down quick settings channel (brightness adjustment, etc.)
+- Add a desktop refresh function for buttons
+- Develop a **to-do/reminder app** that is deeply integrated with the desktop. Support displaying upcoming reminders in the status bar and important reminders on the lock screen. Enhance the automatic brightness reduction after a long period of inactivity and the brightness enhancement setting when clicking
+- Plan to add a lock screen and user settings interface (the most basic user system)
 
 ### 🚀 Plan to write and provide more external basic programs:
 

@@ -63,8 +63,8 @@ target_include_directories(DesktopAbout PRIVATE
 )
 
 add_custom_command(TARGET DesktopAbout POST_BUILD
-    COMMAND ${CMAKE_COMMAND} -E make_directory ${CCIMX_ALL_RELEASE_DIR}
-    COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:DesktopAbout> ${CCIMX_ALL_RELEASE_DIR}
+    COMMAND ${CMAKE_COMMAND} -E make_directory ${CCIMX_EXTERNAL_APP_BASE_DIR}
+    COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:DesktopAbout> ${CCIMX_EXTERNAL_APP_BASE_DIR}
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.

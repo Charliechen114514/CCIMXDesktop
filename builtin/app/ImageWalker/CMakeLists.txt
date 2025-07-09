@@ -49,6 +49,6 @@ qt_generate_deploy_app_script(
 install(SCRIPT ${deploy_script})
 
 add_custom_command(TARGET ImageWalker POST_BUILD
-    COMMAND ${CMAKE_COMMAND} -E make_directory ${CCIMX_ALL_RELEASE_DIR}
-    COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:ImageWalker> ${CCIMX_ALL_RELEASE_DIR}
+    COMMAND ${CMAKE_COMMAND} -E make_directory ${CCIMX_EXTERNAL_APP_BASE_DIR}
+    COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:ImageWalker> ${CCIMX_EXTERNAL_APP_BASE_DIR}
 )

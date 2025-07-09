@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.19)
-project(CCIMX_Desktop LANGUAGES CXX VERSION 1.11.0)
+project(CCIMX_Desktop LANGUAGES CXX VERSION 1.12.0)
 
 message(STATUS "Importing cmake modules...")
 set(CCDESKTOPABOUT_CMAKE_DIR "${CMAKE_SOURCE_DIR}/cmake")
@@ -22,6 +22,8 @@ find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets Network)
 find_package(Qt6 REQUIRED COMPONENTS Core)
 find_package(Qt6 REQUIRED COMPONENTS Core)
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
+find_package(Qt6 REQUIRED COMPONENTS Core)
+find_package(Qt6 REQUIRED COMPONENTS Core)
 qt_standard_project_setup()
 
 if(DEFINED LOCAL_CONFIG_FILE AND EXISTS "${LOCAL_CONFIG_FILE}")
@@ -112,7 +114,10 @@ set(CoreSubs
     core/labelStyler/LabelStyler.h
     core/labelStyler/LabelStyler.cpp
     core/labelStyler/LabelStyleReader.h
-    core/labelStyler/LabelStyleReader.cpp)
+    core/labelStyler/LabelStyleReader.cpp
+    core/desktop_dirent_manager/DesktopDirentLocationManager.h
+    core/desktop_dirent_manager/DesktopDirentLocationManager.cpp
+    core/desktop_dirent_manager/DesktopDirentInfoSettings.h)
 
 set(WallPaperSrc
     core/wallpaper/WallPaperEngine.h core/wallpaper/WallPaperEngine.cpp
@@ -205,6 +210,13 @@ set(LIBRARY_SRC
     library/platforms/DiskUsage.cpp
     library/platforms/MemoryStateQuery.cpp
     library/platforms/MemoryStateQuery.h
+    library/fileio/FileIOUtils.h
+    library/fileio/FileIOUtils.cpp
+    library/FileDefs.h
+    library/qt_relative/fileio/QtFileIO.h
+    library/qt_relative/fileio/QtFileIO.cpp
+    library/qt_relative/file_monitor/FileMonitor.h
+    library/qt_relative/file_monitor/FileMonitor.cpp
     )
 
 set(Loggy_SRC
@@ -262,6 +274,8 @@ target_link_libraries(CCIMX_Desktop
 target_link_libraries(CCIMX_Desktop PRIVATE Qt6::Core)
 target_link_libraries(CCIMX_Desktop PRIVATE Qt6::Core)
 target_link_libraries(CCIMX_Desktop PRIVATE Qt6::Widgets)
+target_link_libraries(CCIMX_Desktop PRIVATE Qt6::Core)
+target_link_libraries(CCIMX_Desktop PRIVATE Qt6::Core)
 target_include_directories(CCIMX_Desktop
     PRIVATE
     .

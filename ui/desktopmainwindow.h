@@ -10,7 +10,7 @@ namespace Ui {
 class DesktopMainWindow;
 }
 QT_END_NAMESPACE
-
+class DesktopDirentLocationManager;
 class QGridLayout;
 class QLabel;
 class DesktopToast;
@@ -193,7 +193,7 @@ private:
     DesktopToast* toast; ///< Toast message widget
     QList<ApplicationWrapper*> app_wrapper; ///< List of application wrappers
     QList<AppWidget*> app_widgets; ///< List of app widgets
-
+    DesktopDirentLocationManager* locationManager; ///< locationManager
     struct {
         QPoint press; ///< Mouse press position
         QPoint release; ///< Mouse release position

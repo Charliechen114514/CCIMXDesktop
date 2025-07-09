@@ -105,8 +105,8 @@ qt_add_executable(pdfReader
 )
 
 add_custom_command(TARGET pdfReader POST_BUILD
-    COMMAND ${CMAKE_COMMAND} -E make_directory ${CCIMX_ALL_RELEASE_DIR}
-    COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:pdfReader> ${CCIMX_ALL_RELEASE_DIR}
+    COMMAND ${CMAKE_COMMAND} -E make_directory ${CCIMX_EXTERNAL_APP_BASE_DIR}
+    COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:pdfReader> ${CCIMX_EXTERNAL_APP_BASE_DIR}
 )
 
 target_link_libraries(pdfReader
