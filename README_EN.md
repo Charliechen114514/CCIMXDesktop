@@ -78,6 +78,7 @@ Now, CCIMXDesktop supports one-click building including:
   - 📅 Calendar Card
   - 🗓️ Date Card
   - 💾 Hardware Storage Info System
+  - 💾 Memory Info System
 
 #### Project includes
 

@@ -19,8 +19,8 @@ public:
     void refresh_once(); ///< refresh once
 
 private:
-    Ui::DiskUsageCardWidget* ui;
-    GaugeWidget* gaugeWidget;
+    Ui::DiskUsageCardWidget* ui; ///< ui handle
+    GaugeWidget* gaugeWidget; ///< gauge widget handling
 };
 
 #endif // DISKUSAGECARDWIDGET_H

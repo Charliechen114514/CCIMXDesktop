@@ -1,5 +1,6 @@
 #include "homepage.h"
 #include "builtin/core/global_clock_src/GlobalClockSources.h"
+#include "builtin/page/home_card_manager/HomeCardManager.h"
 #include "desktopmainwindow.h"
 #include "ui_homepage.h"
 HomePage::HomePage(DesktopMainWindow* parent)
@@ -14,6 +15,8 @@ HomePage::HomePage(DesktopMainWindow* parent)
     DigitalTimeWidget* digital = digital_timeWidget();
     connect(src, &GlobalClockSources::timeUpdate,
             digital, &DigitalTimeWidget::process_time_update);
+
+    _homeCardManager = std::make_shared<HomeCardManager>(ui->stackedWidget);
 }
 
 QWidget* HomePage::expected_appcards_widgets() const {
@@ -28,10 +31,10 @@ DigitalTimeWidget* HomePage::digital_timeWidget() const {
     return ui->left_bottom_widget;
 }
 
-HomePage::~HomePage() {
-    delete ui;
+HomeCardManager* HomePage::homeCardManager() const {
+    return _homeCardManager.get();
 }
 
-CardStackWidget* HomePage::card_stack_widget() const {
-    return ui->stackedWidget;
+HomePage::~HomePage() {
+    delete ui;
 }

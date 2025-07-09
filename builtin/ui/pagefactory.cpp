@@ -1,21 +1,30 @@
 #include "pagefactory.h"
 #include "app_wrapper/pagesetuper.h"
-#include "builtin/gadgets/larger_card/DateShowCard.h"
-#include "builtin/gadgets/larger_card/system_state/DiskUsageCardWidget.h"
+
+#include "builtin/page/home_card_manager/HomeCardManager.h"
 #include "builtin/page/homepage.h"
 #include "desktopmainwindow.h"
 #include "ui/appcardwidget.h"
-#include "ui/card_stack/CardStackWidget.h"
-#include "ui/internal_calendar/ModernCalendarWidget.h"
 #include <QLabel>
+
+#include "builtin/gadgets/larger_card/DateShowCard.h"
+#include "builtin/gadgets/larger_card/system_state/DiskUsageCardWidget.h"
+#include "builtin/gadgets/larger_card/system_state/MemoryUsageCard.h"
+#include "ui/internal_calendar/ModernCalendarWidget.h"
 /* create a homepage */
 QWidget* PageFactory::build_home_page(DesktopMainWindow* mainWindow) {
 	HomePage* homePage = new HomePage(mainWindow);
-    CardStackWidget* widget = homePage->card_stack_widget();
-    widget->addWidget(new ModernCalendarWidget(homePage));
-    widget->addWidget(new DateShowCard(homePage));
-    widget->addWidget(new DiskUsageCardWidget(homePage));
-    widget->setablility_of_autoSwitch(false);
+    HomeCardManager* cardManager = homePage->homeCardManager();
+    QWidgetList widgetList = {
+        new ModernCalendarWidget(homePage),
+        new DateShowCard(homePage),
+        new DiskUsageCardWidget(homePage),
+        new MemoryUsageCard(homePage)
+    };
+    for (const auto& widget : widgetList) {
+        cardManager->installWidget(widget);
+    }
+
 	/* build homepage app cards here */
 	mainWindow->app_cards << PageFactory::place_appcards_in_empty_widgets(
         mainWindow,

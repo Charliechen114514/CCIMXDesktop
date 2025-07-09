@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.19)
-project(CCIMX_Desktop LANGUAGES CXX VERSION 1.7.0)
+project(CCIMX_Desktop LANGUAGES CXX VERSION 1.11.0)
 
 message(STATUS "Importing cmake modules...")
 set(CCDESKTOPABOUT_CMAKE_DIR "${CMAKE_SOURCE_DIR}/cmake")
@@ -100,7 +100,10 @@ set(UiSubs
     ui/internal_calendar/ModernCalendarWidget.cpp
     ui/internal_calendar/ModernCalendarWidget.h
     ui/UiTools/easing_curve_combox_setupper/EasingCurveComboxBoxSetuper.h 
-    ui/UiTools/easing_curve_combox_setupper/EasingCurveComboxBoxSetuper.cpp)
+    ui/UiTools/easing_curve_combox_setupper/EasingCurveComboxBoxSetuper.cpp
+    ui/gauge_widget/GaugeWidget.cpp
+    ui/gauge_widget/GaugeWidget.h
+)
 
 set(CoreSubs
     core/page_switching_limiter/PageSwitchingLimiter.h
@@ -117,6 +120,8 @@ set(WallPaperSrc
     sources/default_backgrounds/defaule_background_sources.qrc)
 
 set(BuiltInPackage
+    builtin/page/home_card_manager/HomeCardManager.h
+    builtin/page/home_card_manager/HomeCardManager.cpp
     builtin/page/homepage.h builtin/page/homepage.cpp builtin/page/homepage.ui
     builtin/ui/pagefactory.h builtin/ui/pagefactory.cpp
     builtin/ui/clockwidget.h builtin/ui/clockwidget.cpp builtin/ui/clockwidget.ui
@@ -127,6 +132,12 @@ set(BONUS_APPCARD
     builtin/gadgets/netcardgadget.h builtin/gadgets/netcardgadget.cpp
     builtin/sources/netcard/netcards_src.qrc
     builtin/gadgets/localweathercard.h builtin/gadgets/localweathercard.cpp
+    builtin/gadgets/larger_card/system_state/DiskUsageCardWidget.h
+    builtin/gadgets/larger_card/system_state/DiskUsageCardWidget.cpp
+    builtin/gadgets/larger_card/system_state/DiskUsageCardWidget.ui
+    builtin/gadgets/larger_card/system_state/MemoryUsageCard.h
+    builtin/gadgets/larger_card/system_state/MemoryUsageCard.cpp
+    builtin/gadgets/larger_card/system_state/MemoryUsageCard.ui
 )
 
 set(BUILT_IN_ICM20608_Support
@@ -190,6 +201,10 @@ set(LIBRARY_SRC
     library/simple_gerseter/simple_getseter.hpp
     library/qt_relative/genbound_progressbar/BoundProgressBarFactory.hpp
     library/random_gen_value/random_gen_value.h
+    library/platforms/DiskUsage.h
+    library/platforms/DiskUsage.cpp
+    library/platforms/MemoryStateQuery.cpp
+    library/platforms/MemoryStateQuery.h
     )
 
 set(Loggy_SRC
@@ -231,9 +246,6 @@ qt_add_executable(CCIMX_Desktop
     ${LIBRARY_SRC}
     ${Loggy_SRC}
     ${CardsSrc}
-    library/platforms/DiskUsage.h library/platforms/DiskUsage.cpp
-    builtin/gadgets/larger_card/system_state/DiskUsageCardWidget.h builtin/gadgets/larger_card/system_state/DiskUsageCardWidget.cpp builtin/gadgets/larger_card/system_state/DiskUsageCardWidget.ui
-    ui/gauge_widget/GaugeWidget.cpp ui/gauge_widget/GaugeWidget.h
 )
 
 add_custom_command(TARGET CCIMX_Desktop POST_BUILD

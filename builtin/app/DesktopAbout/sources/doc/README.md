@@ -2,7 +2,7 @@
 
 ![CCIMXDesktopLogo](./CCIMXDesktopLogo.png)
 
-![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-17-green)![Version](https://img.shields.io/badge/Version-Released_1.8.0-red)
+![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-17-green)![Version](https://img.shields.io/badge/Version-Released_1.10.0-red)
 
 🔌 您好！这是一个可在多种嵌入式设备中使用的简单桌面和实用程序集合！本项目目前已经可以使用完全的C++17进行编译！
 
@@ -25,9 +25,9 @@
 
 ![image-20250624200242954](./README/image-20250624200242954.png)
 
-2）主界面：HOME界面（截图版本：Release1.6.0）
+2）主界面：HOME界面（截图版本：Release1.10.0）
 
-![image-20250706142317084](./README/image-20250706142317084.png)
+![image-20250708213936442](./README/image-20250708213936442.png)
 
 2）BuiltinAPP展示界面
 
@@ -70,15 +70,27 @@
 #### 桌面本体功能💻
 
 - 📦 基础的应用托管器 + 动态APP启动⚡
+
 - 🖼️ 壁纸动画，托管功能🌀
+
 - 🛠️ 基础的内建本体辅助APP（不可卸载🔒）
+
 - 📜 日志管理系统，为CCIMXDesktop增加日志系统方便调试🔍和观察👀
+
+- 🗃️ 丝滑滑动卡片系统 ✨
+
+  目前已注册的内建卡片类型 📦:
+
+  - 📅 日历卡片
+  - 🗓️ 日期卡片
+  - 💾 硬存信息系统
+  - 💾 内存信息系统
 
 #### 项目包含
 
 | 功能 / 应用名称                                  | 依赖条件或备注                                     | 是否为内建程序 | 说明                                                         | 界面展示                                                     |
 | ------------------------------------------------ | -------------------------------------------------- | -------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 🏠 CCIMX_Desktop本体                              | 标准最小依赖                                       | 是             | 核心框架，本体                                               | ![image-20250706142317084](./README/image-20250706142317084.png) |
+| 🏠 CCIMX_Desktop本体                              | 标准最小依赖                                       | 是             | 核心框架，本体                                               | ![image-20250708213936442](./README/image-20250708213936442.png) |
 | ℹ About App                                      | 标准最小依赖                                       | 是             | 简单的介绍本项目桌面的基本情况                               | ![image-20250614231912157](./README/image-20250614231912157.png) |
 | ✏️ CCNoter（记事本）                              | 标准最小依赖                                       | 是             | 超级无敌轻量的记事本                                         | ![image-20250614231754881](./README/image-20250614231754881.png) |
 | 📅CCCalendar（日历APP）                           | 标准最小依赖                                       | 是             | 超级无敌轻量的日历APP                                        | ![image-20250706142207503](./README/image-20250706142207503.png) |
@@ -124,8 +136,6 @@
 
 ### 🚀 计划优化的桌面本体工作：
 
-- 更加精细的移植系统状态监视卡片应用（硬存，内存等）
-- 卡片扩展系统
 - 增加下拉式的快速设置通道（亮度调节等）
 - 增加针对按键的桌面刷新功能
 - 增加为桌面服务的更好的文件夹与存储功能

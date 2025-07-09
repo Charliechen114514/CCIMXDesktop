@@ -9,6 +9,8 @@ class ClockWidget;
 class DigitalTimeWidget;
 class DesktopMainWindow;
 class CardStackWidget;
+class HomeCardManager;
+
 /**
  * @brief The HomePage class exactly, home page :)
  */
@@ -41,10 +43,10 @@ public:
     DigitalTimeWidget* digital_timeWidget() const;
 
     /**
-     * @brief card_stack_widget
+     * @brief homeCardManager return the managers
      * @return
      */
-    CardStackWidget* card_stack_widget() const;
+    HomeCardManager* homeCardManager() const;
 
 	/**
 	 * @brief Destroy the Home Page object
@@ -54,6 +56,7 @@ public:
 
 private:
 	Ui::HomePage* ui;
+    std::shared_ptr<HomeCardManager> _homeCardManager;
 };
 
 #endif // HOMEPAGE_H
