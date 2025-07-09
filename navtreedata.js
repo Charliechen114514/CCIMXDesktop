@@ -106,16 +106,16 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AP3216CAdapterFactory_8h_source.html",
-"classAppWeatherRequest.html",
-"classCPUUsageChart.html",
-"classDinasourFrameFetcher.html#ab26d46ece4b674739326241b03260ffa",
-"classImageBrowser.html#aa7de62669857ec5c3c38bd8bbc7361c5",
-"classModernCalendarWidget.html#a024f3ddd54dae0a95d8f58956f80c825",
-"classSideBarWidget.html#abc77590c7f86b906b48ac7fcfadd46b1ae6d63e7ba40f80fc13c6eb8accbe716b",
-"classVideoPlayerOpencvImpl.html#aac0098cdf634919d6f12937aefa0bf7f",
-"functions_b.html",
-"sportshealthwindow_8h_source.html",
-"structStandardFormater_1_1LogFormatOptions.html#a005169efaf8e195b9fa4286464f6717b"
+"classAppLaunchLauncher.html#af1d1633eb2a8a43fcdea561dae6c9daa",
+"classCPUStateFetcher.html",
+"classDinasour.html#ac0972ed3c9294b75073f8e438d1311c1",
+"classImageBrowser.html#a58d8302fc106f890a6b69ad8fb9ab7ae",
+"classMemoryUsageChart.html",
+"classSideBarWidget.html#abc77590c7f86b906b48ac7fcfadd46b1a0618886ac5850cee7f454d1085a52574",
+"classVideoPlayerOpencvImpl.html#a484886797cbb8c0b125d817a2b08d8cc",
+"environmentwindow_8h_source.html",
+"setting__scene_8h.html#adba34ff2e3f3ec0cf6f3eb6951d1853e",
+"structSettings_1_1Figure_1_1Position.html#ac89f64452b48edb1577d71e6572a78af"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

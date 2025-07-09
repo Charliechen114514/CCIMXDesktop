@@ -1,5 +1,11 @@
 var NAVTREEINDEX1 =
 {
+"classAppLaunchLauncher.html#af1d1633eb2a8a43fcdea561dae6c9daa":[5,0,13,0],
+"classAppLaunchLauncher.html#af7d3aa5ae9b0024c40d7559873c0b08b":[5,0,13,2],
+"classAppLauncherApp.html":[5,0,12],
+"classAppLauncherApp.html#a5bd3ea2ecf22e663d2c1146f8a3b290d":[5,0,12,0],
+"classAppLauncherApp.html#a7b35c284e3da6646174090aaa8f6bda3":[5,0,12,2],
+"classAppLauncherApp.html#a92e758b8ef9f454a60774d5cb511fa90":[5,0,12,1],
 "classAppWeatherRequest.html":[5,0,17],
 "classAppWeatherRequest.html#a2a8538f869a2108344638225ce6d2ea7":[5,0,17,0],
 "classAppWeatherRequest.html#a9bd4a52d3b846938b249ec0c3a71d6f5":[5,0,17,3],
@@ -243,11 +249,5 @@ var NAVTREEINDEX1 =
 "classCCPdfViewer.html#ac8458daf2cedd1f6118454f199401336a9fb15123c848cda02eec2316e765134a":[5,0,62,0,0],
 "classCCPdfViewer.html#ac8458daf2cedd1f6118454f199401336aa2ef1b00efd83e548ce99f6ead83bacd":[5,0,62,0,1],
 "classCCPdfViewer.html#acf622ca3df1b117bb8b1a108d51fe71c":[5,0,62,3],
-"classCCPdfViewer.html#ad2087b6950aafc024c98aa3bc1ec2277":[5,0,62,6],
-"classCPUStateFetcher.html":[5,0,72],
-"classCPUStateFetcher.html#a01d46281a21357f70551a8ce6bdc43d3":[5,0,72,5],
-"classCPUStateFetcher.html#a09065ec05cca98a163b284f9361a6b99":[5,0,72,4],
-"classCPUStateFetcher.html#a13554839ec847bdb41e2a9453c9e58ff":[5,0,72,2],
-"classCPUStateFetcher.html#aa33102b76c3ece9df1cc29db3b1b2f4f":[5,0,72,1],
-"classCPUStateFetcher.html#aadbdb6b963c79d4c55562ab970e61c30":[5,0,72,3]
+"classCCPdfViewer.html#ad2087b6950aafc024c98aa3bc1ec2277":[5,0,62,6]
 };

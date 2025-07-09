@@ -186,6 +186,7 @@ var hierarchy =
       [ "CPUStateFetcher", "classCPUStateFetcher.html", null ],
       [ "CameraCapture", "classCameraCapture.html", null ],
       [ "ConfigureUiPairs", "structConfigureUiPairs.html", null ],
+      [ "DesktopDirentLocationManager", "classDesktopDirentLocationManager.html", null ],
       [ "DifficultyManager", "classDifficultyManager.html", null ],
       [ "DirentSizeCounter", "classDirentSizeCounter.html", null ],
       [ "DirentSizeWorker", "classDirentSizeWorker.html", null ],
@@ -198,6 +199,7 @@ var hierarchy =
       ] ],
       [ "FileCountImplWorker", "classFileCountImplWorker.html", null ],
       [ "FileCountInfo", "classFileCountInfo.html", null ],
+      [ "FileMonitor", "classFileMonitor.html", null ],
       [ "FlushRequester", "classFlushRequester.html", null ],
       [ "FrameProvider", "classFrameProvider.html", [
         [ "DinasourFrameFetcher", "classDinasourFrameFetcher.html", null ],
