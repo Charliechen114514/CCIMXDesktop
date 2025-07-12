@@ -24,6 +24,7 @@ find_package(Qt6 REQUIRED COMPONENTS Core)
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
 find_package(Qt6 REQUIRED COMPONENTS Core)
 find_package(Qt6 REQUIRED COMPONENTS Core)
+find_package(Qt6 REQUIRED COMPONENTS Core)
 qt_standard_project_setup()
 
 if(DEFINED LOCAL_CONFIG_FILE AND EXISTS "${LOCAL_CONFIG_FILE}")
@@ -258,6 +259,13 @@ qt_add_executable(CCIMX_Desktop
     ${LIBRARY_SRC}
     ${Loggy_SRC}
     ${CardsSrc}
+    core/server/toast_file_gen_and_receiver/ToastGenerator.h core/server/toast_file_gen_and_receiver/ToastGenerator.cpp
+    core/server/toast_file_gen_and_receiver/ToastMetaProtocol.h
+    core/server/toast_file_gen_and_receiver/ToastReceiver.h core/server/toast_file_gen_and_receiver/ToastReceiver.cpp
+    core/server/toast_file_gen_and_receiver/ToastMetaProtocol.cpp
+    core/server/toast_file_gen_and_receiver/ToastProxy.h core/server/toast_file_gen_and_receiver/ToastProxy.cpp
+    core/server/toast_file_gen_and_receiver/ToastPostServer.h core/server/toast_file_gen_and_receiver/ToastPostServer.cpp
+    core/server/DesktopServerBase.h
 )
 
 add_custom_command(TARGET CCIMX_Desktop POST_BUILD
@@ -274,6 +282,7 @@ target_link_libraries(CCIMX_Desktop
 target_link_libraries(CCIMX_Desktop PRIVATE Qt6::Core)
 target_link_libraries(CCIMX_Desktop PRIVATE Qt6::Core)
 target_link_libraries(CCIMX_Desktop PRIVATE Qt6::Widgets)
+target_link_libraries(CCIMX_Desktop PRIVATE Qt6::Core)
 target_link_libraries(CCIMX_Desktop PRIVATE Qt6::Core)
 target_link_libraries(CCIMX_Desktop PRIVATE Qt6::Core)
 target_include_directories(CCIMX_Desktop

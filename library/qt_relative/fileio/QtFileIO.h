@@ -36,6 +36,14 @@ bool createDirectoryIfNotExsit(const QString& path);
  * @return true if the file already exists or was successfully created; false otherwise.
  */
 bool createFileIfNotExists(const QString& filePath);
+
+/**
+ * @brief composeDirentAndFile
+ * @param folder
+ * @param fileName
+ * @return return filePath of folders
+ */
+QString composeDirentAndFile(const QString& folder, const QString& fileName);
 };
 
 #endif // QTFILEIO_H

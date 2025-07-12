@@ -1,7 +1,9 @@
 #include "FileMonitor.h"
+#include "library/qt_relative/fileio/QtFileIO.h"
 #include <QDir>
 #include <QMutex>
 #include <QTimer>
+
 FileMonitor::FileMonitor(const QString& path, QObject* parent)
     : QObject { parent }
     , monitoring_folder(path) {
@@ -51,13 +53,21 @@ void FileMonitor::processCompareSession() {
     if (!__newFiles.isEmpty()) {
         auto files = __newFiles.values();
         qDebug() << "New files are scanned:" << files;
-        emit newFiles(files);
+        QStringList readies;
+        for (const auto& file : std::as_const(files)) {
+            readies.emplaceBack(QtFileIOUtils::composeDirentAndFile(monitoring_folder, file));
+        };
+        emit newFiles(readies);
     }
 
     QSet<QString> __deletedFiles = prevFiles - currentFiles;
     if (!__deletedFiles.isEmpty()) {
         auto files = __deletedFiles.values();
         qDebug() << "Deleted files are detected:" << files;
+        QStringList readies;
+        for (const auto& file : std::as_const(files)) {
+            readies.emplaceBack(QtFileIOUtils::composeDirentAndFile(monitoring_folder, file));
+        };
         emit deletedFiles(files);
     }
 

@@ -26,6 +26,7 @@ class AppWidgetsSettingsInfoPack;
 class NetAbilityScanner;
 class GlobalClockSources;
 class TopSideBarWidget;
+class DesktopServerBase;
 /**
  * @brief DesktopMainWindow is the main frontend window of the application.
  * For beginners, this is the starting point to understand the UI details.
@@ -193,7 +194,9 @@ private:
     DesktopToast* toast; ///< Toast message widget
     QList<ApplicationWrapper*> app_wrapper; ///< List of application wrappers
     QList<AppWidget*> app_widgets; ///< List of app widgets
+    QList<DesktopServerBase*> servers; ///< servers
     DesktopDirentLocationManager* locationManager; ///< locationManager
+
     struct {
         QPoint press; ///< Mouse press position
         QPoint release; ///< Mouse release position
@@ -238,6 +241,11 @@ private:
      * @brief later_initLogger after post ui setups
      */
     void later_initLogger();
+
+    /**
+     * @brief setupBuiltInServer will deptach internal simple server
+     */
+    void setupBuiltInServer();
 };
 
 #endif // DESKTOPMAINWINDOW_H

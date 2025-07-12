@@ -84,3 +84,7 @@ bool QtFileIOUtils::createFileIfNotExists(const QString& filePath) {
         }
     }
 }
+
+QString QtFileIOUtils::composeDirentAndFile(const QString& folder, const QString& fileName) {
+    return QDir(folder).absoluteFilePath(fileName);
+}

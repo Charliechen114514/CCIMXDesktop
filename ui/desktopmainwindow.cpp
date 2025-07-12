@@ -29,6 +29,23 @@ void DesktopMainWindow::initLogger() {
 void DesktopMainWindow::later_initLogger() {
 }
 
+#include "core/server/toast_file_gen_and_receiver/ToastGenerator.h"
+#include "core/server/toast_file_gen_and_receiver/ToastPostServer.h"
+void DesktopMainWindow::setupBuiltInServer() {
+    servers.emplaceBack(new ToastPostServer(
+        toast,
+        locationManager->queryFromType(
+            DesktopServerType::TOAST_SUMMON),
+        this));
+    QTimer::singleShot(3000, this, [this]() {
+        ToastGenerator::simpleToastMeta(
+            "test",
+            "This is a test Message",
+            locationManager->queryFromType(
+                DesktopServerType::TOAST_SUMMON));
+    });
+}
+
 DesktopMainWindow::DesktopMainWindow(QWidget* parent)
     : QMainWindow(parent)
     , ui(new Ui::DesktopMainWindow) {
@@ -66,6 +83,7 @@ void DesktopMainWindow::init() {
     setupui();
     setup_apps();
     later_initLogger();
+    setupBuiltInServer();
 }
 
 void DesktopMainWindow::setup_apps() {

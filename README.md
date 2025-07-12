@@ -2,9 +2,9 @@
 
 ![CCIMXDesktopLogo](./CCIMXDesktopLogo.png)
 
-![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-17-green)![Version](https://img.shields.io/badge/Version-Released_1.12.0-red)
+![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-17-green)![Version](https://img.shields.io/badge/Version-Released_1.12.1-red)
 
-🔌 您好！这是一个可在多种嵌入式设备中使用的简单桌面和实用程序集合！本项目目前已经可以使用完全的C++17进行编译！
+🔌 您好！这是一个可在携带LCD屏幕上IMX6ULL的嵌入式设备中使用的简单桌面和实用程序集合！本项目目前已经可以使用完全的C++17进行编译！
 
 ## 🌐 开始之前，选择你的语言！ 🌐
 
@@ -15,7 +15,7 @@
 ![i.MX6ULL](https://img.shields.io/badge/NXP-i.MX6ULL-yellow)
 ![Embedded](https://img.shields.io/badge/Platform-Embedded%20Linux-lightgrey)
 
-**CCIMXDesktop**是一个极简，轻量和高性能，基于Qt6.8.3的桌面环境框架，专门对以 NXP i.MX6ULL 平台为例的嵌入式系统优化，这里提供一系列常见的Qt内置工具封装，设备管理继承和内置的辅助应用程序，所有这些都在一个统一的用户界面中呈现。让您轻松愉快的可视化的使用带有LCD的嵌入式设备！
+**CCIMXDesktop**是一个极简，轻量和高性能，基于Qt6.8.3的桌面环境框架，专门对以 NXP i.MX6ULL 平台为例的嵌入式系统定制（即跑不起重量级桌面服务但是却可以跑的起Qt程序的嵌入式系统），这里提供一系列常见的Qt内置工具封装，设备管理继承和内置的辅助应用程序，所有这些都在一个统一的用户界面中呈现。让您轻松愉快的可视化的使用带有LCD的嵌入式设备！
 
 
 
@@ -77,7 +77,9 @@
 
 - 📜 日志管理系统，为CCIMXDesktop增加日志系统方便调试🔍和观察👀
 
-- 📂 初步稳定的桌面私有文件夹系统，为通知系统服务预备
+- 📂 初步稳定的桌面私有文件夹系统
+
+- ℹ 初步搭建起来服务系统（消息通知系统）
 
 - 🗃️ 丝滑滑动卡片系统 ✨
 

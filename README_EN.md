@@ -2,9 +2,9 @@
 
 ![CCIMXDesktopLogo](./CCIMXDesktopLogo.png)
 
-![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-17-green)![Version](https://img.shields.io/badge/Version-Released_1.12.0-red)
+![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-17-green)![Version](https://img.shields.io/badge/Version-Released_1.12.1-red)
 
-🔌 Hello! This is a simple desktop and utility collection that can be used in a variety of embedded devices! This project currently support compiling in full C++17 or above versions. Enjoy!
+🔌 Hello! This is a collection of simple desktops and utilities that can be used in embedded devices with IMX6ULL LCD screens! This project can now be compiled with full C++17!
 
 ## 🌐 Before you begin, choose your language! 🌐
 
@@ -16,7 +16,7 @@
 
 ![Embedded](https://img.shields.io/badge/Platform-Embedded%20Linux-lightgrey)
 
-**CCIMXDesktop** is a minimalist, lightweight and high-performance desktop environment framework based on Qt6.8.3, specially optimized for embedded systems with NXP i.MX6ULL platform as an example. It provides a series of common Qt built-in tool packages, device management inheritance and built-in auxiliary applications, all of which are presented in a unified user interface. Let you easily and happily use embedded devices with LCD visually!
+**CCIMXDesktop** is a minimalist, lightweight and high-performance desktop environment framework based on Qt6.8.3, specially customized for embedded systems such as NXP i.MX6ULL platform (i.e. embedded systems that cannot run heavyweight desktop services but can run Qt programs). It provides a series of common Qt built-in tool packages, device management inheritance and built-in auxiliary applications, all of which are presented in a unified user interface. Let you use embedded devices with LCD easily and visually!
 
 ## Some running screenshots
 
@@ -75,6 +75,7 @@ Now, CCIMXDesktop supports one-click building including:
 - 🛠️ Basic built-in auxiliary APP (cannot be uninstalled 🔒)
 - 📜 Log management system, add a log system to CCIMXDesktop to facilitate debugging 🔍 and observation 👀
 - 📂 Stagedly Stable Desktop Private Folder Systems, which is ready for the system info
+- ℹ Initially build a service system (message notification system)
 - 🗃️ Smooth Sliding Card System ✨ Currently registered built-in card types 📦:
   - 📅 Calendar Card
   - 🗓️ Date Card
