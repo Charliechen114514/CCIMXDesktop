@@ -187,6 +187,9 @@ var hierarchy =
       [ "CameraCapture", "classCameraCapture.html", null ],
       [ "ConfigureUiPairs", "structConfigureUiPairs.html", null ],
       [ "DesktopDirentLocationManager", "classDesktopDirentLocationManager.html", null ],
+      [ "DesktopServerBase", "classDesktopServerBase.html", [
+        [ "ToastPostServer", "classToastPostServer.html", null ]
+      ] ],
       [ "DifficultyManager", "classDifficultyManager.html", null ],
       [ "DirentSizeCounter", "classDirentSizeCounter.html", null ],
       [ "DirentSizeWorker", "classDirentSizeWorker.html", null ],
@@ -223,6 +226,8 @@ var hierarchy =
       [ "StackpageSwitcherAnimation", "structStackpageSwitcherAnimation.html", null ],
       [ "StackpageSwitcherAnimation", "structStackpageSwitcherAnimation.html", null ],
       [ "StackpageSwitcherAnimation", "structStackpageSwitcherAnimation.html", null ],
+      [ "ToastProxy", "classToastProxy.html", null ],
+      [ "ToastReceiver", "classToastReceiver.html", null ],
       [ "VideoPlayer", "classVideoPlayer.html", null ],
       [ "VideoPlayer", "classVideoPlayer.html", null ],
       [ "WallPaperAnimationHandler", "structWallPaperAnimationHandler.html", null ],
@@ -347,6 +352,8 @@ var hierarchy =
     [ "ValueLimitUtils::StaticLimiter< MIN, MAX >", "classValueLimitUtils_1_1StaticLimiter.html", null ],
     [ "Settings::SZ< value >", "structSettings_1_1SZ.html", null ],
     [ "TemperaryCacher", "classTemperaryCacher.html", null ],
+    [ "ToastGenerator", "classToastGenerator.html", null ],
+    [ "ToastMetaProtocol", "structToastMetaProtocol.html", null ],
     [ "ToolLeftWidgets::ToolButtonInstallPackage", "structToolLeftWidgets_1_1ToolButtonInstallPackage.html", null ],
     [ "TreeNodeBase", "structTreeNodeBase.html", [
       [ "BinaryOpTreeNode", "structBinaryOpTreeNode.html", null ],

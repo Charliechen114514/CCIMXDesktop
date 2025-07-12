@@ -106,16 +106,16 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AP3216CAdapterFactory_8h_source.html",
-"classAppLaunchLauncher.html#af1d1633eb2a8a43fcdea561dae6c9daa",
-"classCPUStateFetcher.html",
-"classDinasour.html#ac0972ed3c9294b75073f8e438d1311c1",
-"classImageBrowser.html#a58d8302fc106f890a6b69ad8fb9ab7ae",
-"classMemoryUsageChart.html",
-"classSideBarWidget.html#abc77590c7f86b906b48ac7fcfadd46b1a0618886ac5850cee7f454d1085a52574",
-"classVideoPlayerOpencvImpl.html#a484886797cbb8c0b125d817a2b08d8cc",
-"environmentwindow_8h_source.html",
-"setting__scene_8h.html#adba34ff2e3f3ec0cf6f3eb6951d1853e",
-"structSettings_1_1Figure_1_1Position.html#ac89f64452b48edb1577d71e6572a78af"
+"classAppCardWidget.html#aee22c9e15e0cb276d33dd51058087204",
+"classCCPdfViewer.html#ac7f3f2ba436fba2eedeaf5580d4630d5",
+"classDinasour.html#a61a633d0c6f9edc2ea3092e970ba3797",
+"classICM20608DataFactory.html#afe9ed4a869dc91b565f45b60b645753e",
+"classMemoryInfoFetcher.html#a4517c8c3b528cd95160256ecf41170aa",
+"classSideBarWidget.html#abc77590c7f86b906b48ac7fcfadd46b1",
+"classVideoPlayerImpl.html#a8595b0bbe2ebb205c0c02b002755b0d0",
+"dir_e8a7c902475073118d8ee4fa973453d5.html",
+"professionals_2library_2OpencvQtAdapter_2core__library_2cvimage_2CVTools_8h_source.html",
+"structProcessBroswer_1_1ProcessInfo.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
