@@ -1,34 +1,41 @@
 #include "desktoptoast.h"
+#include "inform_toast_label/InformToastLabel.h"
 #include <QGuiApplication>
 #include <QLabel>
 #include <QPropertyAnimation>
 #include <QScreen>
 #include <QTimer>
-
 namespace {
 
-QSize get_size(QLabel* label, const QString& message) {
-    if (message.length() > 30) {
-        // if is long text, then we should calculate instead
-        // of direct cached
-        const QFontMetrics fm(label->font());
-        int width = fm.averageCharWidth() * message.length() + 20;
-        int height = fm.height() * ((width - 1) / 300 + 1);
-        return { std::min(width, 400), height + 10 };
-    } else {
-        static QHash<int, QSize> sizeCache;
-        int length = message.length();
-        // cached missing
-        if (sizeCache.contains(length)) {
-            return sizeCache.value(length);
-        } else {
-            // else, enqueue the cached
-            QSize newSize = label->sizeHint();
-            sizeCache.insert(length, newSize);
-            return newSize;
-        }
-    }
+// QSize get_size(InformToastLabel* label, const QString& message) {
+//     if (message.length() > 30) {
+//         // if is long text, then we should calculate instead
+//         // of direct cached
+//         const QFontMetrics fm(label->font());
+//         int width = fm.averageCharWidth() * message.length() + 20;
+//         int height = fm.height() * ((width - 1) / 300 + 1);
+//         return { std::min(width, 400), height + 10 };
+//     } else {
+//         static QHash<int, QSize> sizeCache;
+//         int length = message.length();
+//         // cached missing
+//         if (sizeCache.contains(length)) {
+//             return sizeCache.value(length);
+//         } else {
+//             // else, enqueue the cached
+//             QSize newSize = label->sizeHint();
+//             sizeCache.insert(length, newSize);
+//             return newSize;
+//         }
+//     }
+// }
+
+QSize get_size(InformToastLabel* label, const QString& message, const int width) {
+    const int maxWidth = width;
+    int height = label->height();
+    return QSize(maxWidth, height);
 }
+
 }
 
 DesktopToast::DesktopToast(QWidget* parent)
@@ -37,15 +44,8 @@ DesktopToast::DesktopToast(QWidget* parent)
     setAttribute(Qt::WA_TranslucentBackground);
     setAttribute(Qt::WA_ShowWithoutActivating);
     setAttribute(Qt::WA_NoSystemBackground);
-    label = new QLabel(this);
-    setStyleSheet(
-        "QLabel {"
-        "background: qlineargradient(spread:pad, "
-        "x1:0, y1:0, x2:1, y2:1, "
-        "stop:0 rgba(250, 250, 250, 100), "
-        "stop:1 rgba(230, 230, 230, 100));"
-        "border-radius: 10px;"
-        "}");
+    // label = new QLabel(this);
+    label = new InformToastLabel(this);
     moveAnimation = new QPropertyAnimation(this, "pos");
     fadeAnimation = new QPropertyAnimation(this, "pos");
 
@@ -73,7 +73,6 @@ void DesktopToast::start_animation() {
     moveAnimation->setEndValue(endPos);
     moveAnimation->setEasingCurve(QEasingCurve::OutCubic);
     moveAnimation->start();
-    // moveAnimation->start(QAbstractAnimation::DeleteWhenStopped);
 }
 
 void DesktopToast::start_close_animation() {
@@ -83,7 +82,6 @@ void DesktopToast::start_close_animation() {
     fadeAnimation->setStartValue(endPos);
     fadeAnimation->setEndValue(startPos);
     fadeAnimation->start();
-    // fadeAnimation->start(QAbstractAnimation::DeleteWhenStopped);
 }
 
 void DesktopToast::set_message(const QString& message) {
@@ -98,11 +96,15 @@ void DesktopToast::set_message(const QString& message) {
     // lock ends
 }
 
+void DesktopToast::setWidth(const int width) {
+    this->_width = width;
+}
+
 void DesktopToast::adjust_place() {
     QWidget* referenceWidget = parentWidget();
     if (referenceWidget) {
         QRect parentRect = referenceWidget->rect();
-        QPoint topCenter(parentRect.width() / 2 - width() / 2, 30);
+        QPoint topCenter((parentRect.width() - label->width()) / 2, 30);
         endPos = referenceWidget->mapToGlobal(topCenter);
     } else {
 /* do the stuff according Qt Versions */
@@ -113,18 +115,18 @@ void DesktopToast::adjust_place() {
 #endif
         int screenWidth = screenGeometry.width();
         int screenX = screenGeometry.x();
-        QPoint topCenter(screenX + (screenWidth - width()) / 2, screenGeometry.top() + 30);
+        QPoint topCenter(screenX + (screenWidth - label->width()) / 2, screenGeometry.top() + 30);
         endPos = topCenter;
     }
 
-    startPos = QPoint(endPos.x(), endPos.y() - 70);
+    startPos = QPoint(endPos.x(), endPos.y() - label->height());
     move(startPos);
 }
 
 void DesktopToast::set_message_impl(const QString& message) {
     label->setText(message);
     // resize(label->sizeHint());
-    resize(get_size(label, message));
+    resize(get_size(label, message, _width));
     adjust_place();
     show();
     raise();

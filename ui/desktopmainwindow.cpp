@@ -3,6 +3,7 @@
 #include "app_wrapper/pagesetuper.h"
 #include "builtin/core/global_clock_src/GlobalClockSources.h"
 #include "builtin/core/netability_scanner/NetAbilityScanner.h"
+#include "builtin/page/homepage.h"
 #include "builtin/ui/pagefactory.h"
 #include "builtin/window/applauncher/ApplicationLauncherMainWindow.h"
 #include "builtin/window/settings_window/SettingsWindow.h"
@@ -29,21 +30,28 @@ void DesktopMainWindow::initLogger() {
 void DesktopMainWindow::later_initLogger() {
 }
 
-#include "core/server/toast_file_gen_and_receiver/ToastGenerator.h"
+#include "core/server/plugin_server/DesktopPluginServer.h"
+#include "core/server/server_hooks/DesktopCardHook.h"
 #include "core/server/toast_file_gen_and_receiver/ToastPostServer.h"
 void DesktopMainWindow::setupBuiltInServer() {
+    emit updateProgress("Launching the necessary servers", 90);
     servers.emplaceBack(new ToastPostServer(
         toast,
         locationManager->queryFromType(
             DesktopServerType::TOAST_SUMMON),
         this));
-    QTimer::singleShot(3000, this, [this]() {
-        ToastGenerator::simpleToastMeta(
-            "test",
-            "This is a test Message",
-            locationManager->queryFromType(
-                DesktopServerType::TOAST_SUMMON));
-    });
+
+    DesktopWidgetPluginServer* pluginWidgetServer = new DesktopWidgetPluginServer(
+        locationManager->queryFromType(
+            DesktopServerType::PLUGIN_WIDGET_PLACED),
+        this);
+
+    servers.emplaceBack(pluginWidgetServer);
+
+    hooks.emplaceBack(
+        new DesktopCardHook(homePage->homeCardManager(),
+                            pluginWidgetServer));
+    pluginWidgetServer->scanTargetDirent();
 }
 
 DesktopMainWindow::DesktopMainWindow(QWidget* parent)
@@ -90,7 +98,7 @@ void DesktopMainWindow::setup_apps() {
 	/* Home Page */
     emit updateProgress("Setup the Home Page", 50);
     qDebug() << "Setup HomePage";
-	QWidget* homePage = PageFactory::build_home_page(this);
+    homePage = PageFactory::build_home_page(this);
 	PageSetuper::create_specified_page(ui->stackedWidget, homePage);
     emit updateProgress("Creating Entries for the Builtin Apps", 55);
     app_widgets << PageSetuper::create_builtin_apps(this);

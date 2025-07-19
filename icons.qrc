@@ -24,4 +24,7 @@
         <file>sources/app_launcher.png</file>
         <file>sources/calendar.png</file>
     </qresource>
+    <qresource prefix="/toast">
+        <file>sources/info.png</file>
+    </qresource>
 </RCC>

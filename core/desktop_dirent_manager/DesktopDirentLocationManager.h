@@ -23,7 +23,6 @@ private:
     void check_root_path_sessions();
     void iterate_check_basefolder_components(const DesktopDirentType t, const QString& metaMessage);
     void iterate_check_server_components(const DesktopServerType t, const QString& metaMessage);
-    void check_up_toast_infomations();
 };
 
 #endif // DESKTOPDIRENTLOCATIONMANAGER_H

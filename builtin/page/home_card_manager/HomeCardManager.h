@@ -1,9 +1,10 @@
 #ifndef HOMECARDMANAGER_H
 #define HOMECARDMANAGER_H
-#include "QtClassHelperMacros"
+#include <QtClassHelperMacros>
+#include <memory>
 class QStackedWidget;
 class QWidget;
-
+class QMutex;
 class HomeCardManager {
 public:
     explicit HomeCardManager(QStackedWidget* widget);
@@ -14,6 +15,7 @@ public:
 
 protected:
     QStackedWidget* stacked_widget;
+    std::shared_ptr<QMutex> mutex;
 };
 
 #endif // HOMECARDMANAGER_H

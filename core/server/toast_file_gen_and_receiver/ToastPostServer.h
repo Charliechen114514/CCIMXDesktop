@@ -1,8 +1,8 @@
 #ifndef TOASTPOSTSERVER_H
 #define TOASTPOSTSERVER_H
 #include "core/server/DesktopServerBase.h"
-class ToastReceiver;
 #include <memory>
+class ToastReceiver;
 class DesktopToast;
 class ToastProxy;
 /**

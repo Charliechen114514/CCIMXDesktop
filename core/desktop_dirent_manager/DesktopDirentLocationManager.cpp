@@ -35,6 +35,9 @@ QString fromServerType(const DesktopServerType t) {
     case DesktopServerType::TOAST_SUMMON:
         return TOAST_SUMMON_DIRENT;
         break;
+    case DesktopServerType::PLUGIN_WIDGET_PLACED:
+        return PLUGIN_WIDGET_PLACED;
+        break;
     }
     throw std::invalid_argument("What the fuck of the server type???");
 }
@@ -127,7 +130,4 @@ void DesktopDirentLocationManager::iterate_check_server_components(
                     << "Some functionalities maybe limited!";
         emit missingServerFolder(this_dirent, t);
     }
-}
-
-void DesktopDirentLocationManager::check_up_toast_infomations() {
 }

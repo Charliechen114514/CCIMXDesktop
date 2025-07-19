@@ -5,6 +5,7 @@ class QWidget;
 class AppCardWidget;
 class DesktopMainWindow;
 class AppWidget;
+class HomePage;
 /**
  * @brief Page Factory produce pages for helping setup the pages :)
  */
@@ -17,7 +18,7 @@ public:
 	 * @param mainWindow of the home page contains
 	 * @return
 	 */
-	static QWidget* build_home_page(DesktopMainWindow* mainWindow);
+    static HomePage* build_home_page(DesktopMainWindow* mainWindow);
 	/* using in build a pesudo pages */
 
 	/**
@@ -30,7 +31,7 @@ public:
 	 * desktops
 	 */
 	static QList<AppWidget*> build_pesudo_page(
-		const QString& pixpath, int how_many, DesktopMainWindow* mainWindow);
+        const QString& pixpath, int how_many, DesktopMainWindow* mainWindow);
 
 private:
 	/**

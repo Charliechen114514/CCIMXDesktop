@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>sources/clear.png</file>
+        <file>sources/cloudy_day.png</file>
+        <file>sources/cloudy_night.png</file>
+        <file>sources/drizzle.png</file>
+        <file>sources/fog.png</file>
+        <file>sources/freezing_drizzle.png</file>
+        <file>sources/freezing_rain.png</file>
+        <file>sources/partly_cloudy_day.png</file>
+        <file>sources/partly_cloudy_night.png</file>
+        <file>sources/rain.png</file>
+        <file>sources/rain_showers.png</file>
+        <file>sources/snow.png</file>
+        <file>sources/snow_grains.png</file>
+        <file>sources/snow_showers.png</file>
+        <file>sources/sunny.png</file>
+        <file>sources/thunderstorm.png</file>
+        <file>sources/thunderstorm_hail.png</file>
+        <file>sources/unknown.png</file>
+    </qresource>
+</RCC>

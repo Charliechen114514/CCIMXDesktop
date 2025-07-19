@@ -4,7 +4,7 @@
 #include <QPointer>
 #include <QQueue>
 #include <QWidget>
-class QLabel;
+class InformToastLabel;
 class QPropertyAnimation;
 
 /**
@@ -17,8 +17,8 @@ class DesktopToast : public QWidget {
 public:
 	/**
 	 * @brief Construct a new Desktop Toast object
-	 * 
-	 * @param parent 
+     *
+     * @param parent
 	 */
 	explicit DesktopToast(QWidget* parent = nullptr);
 	/**
@@ -30,6 +30,11 @@ public:
 	 * messages immediately, but wait until the current message is finished
 	 */
 	void set_message(const QString& message);
+    /**
+     * @brief setWidth
+     * @param width
+     */
+    void setWidth(const int width);
 signals:
 	/**
 	 * @brief do_show_toast the signal to show the toast
@@ -59,8 +64,9 @@ private:
 	 */
 	void set_message_impl(const QString& message);
 
-	QLabel* label; ///< the label to display the message
-	QPoint startPos, endPos; ///< recorders
+    // QLabel* label; ///< the label to display the message
+    InformToastLabel* label; ///< the label to display the message
+    QPoint startPos, endPos; ///< recorders
 	int animation_maintain_msec { 500 }; ///< the maintain time
 	int wait_time { 1000 }; ///< the wait time to standby
 	/**
@@ -94,7 +100,8 @@ private:
 	 * @see queue_mutex
 	 */
 	QQueue<QString> pools;
-	QMutex queue_mutex;
+    QMutex queue_mutex; ///< mutex
+    int _width = 1024 * 0.9; ///< width
 };
 
 #endif // DESKTOPTOAST_H

@@ -32,11 +32,13 @@ static_assert(
     "DesktopServerDirentMetas and Enums are count mismatched!");
 
 enum class DesktopServerType {
-    TOAST_SUMMON ///< place where toast summons, which we will monitors
+    TOAST_SUMMON, ///< place where toast summons, which we will monitors
+    PLUGIN_WIDGET_PLACED
 };
 
 static constexpr const char* DesktopServerTypeMETAS[] = {
     "Toast Summon"
+    "Plugin Widget Placed"
 };
 
 static constexpr unsigned short
@@ -49,5 +51,5 @@ static_assert(
     "DesktopServerTypeMETAS and Enums are count mismatched!");
 
 static constexpr const char* TOAST_SUMMON_DIRENT = ".__toast_summon_dirent";
-
+static constexpr const char* PLUGIN_WIDGET_PLACED = "plugins";
 #endif // DESKTOPDIRENTINFOSETTINGS_H

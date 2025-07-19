@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.19)
-project(CCIMX_Desktop LANGUAGES CXX VERSION 1.12.0)
+project(CCIMX_Desktop LANGUAGES CXX VERSION 1.15.0)
 
 message(STATUS "Importing cmake modules...")
 set(CCDESKTOPABOUT_CMAKE_DIR "${CMAKE_SOURCE_DIR}/cmake")
@@ -19,11 +19,6 @@ set(TEMPLATE_FILE_NAME "CCIMXDesktopBuildConfigs")
 include(app_building_options)
 
 find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets Network)
-find_package(Qt6 REQUIRED COMPONENTS Core)
-find_package(Qt6 REQUIRED COMPONENTS Core)
-find_package(Qt6 REQUIRED COMPONENTS Widgets)
-find_package(Qt6 REQUIRED COMPONENTS Core)
-find_package(Qt6 REQUIRED COMPONENTS Core)
 find_package(Qt6 REQUIRED COMPONENTS Core)
 qt_standard_project_setup()
 
@@ -106,6 +101,9 @@ set(UiSubs
     ui/UiTools/easing_curve_combox_setupper/EasingCurveComboxBoxSetuper.cpp
     ui/gauge_widget/GaugeWidget.cpp
     ui/gauge_widget/GaugeWidget.h
+    ui/inform_toast_label/InformToastLabel.h
+    ui/inform_toast_label/InformToastLabel.cpp
+    ui/inform_toast_label/InformToastLabel.ui
 )
 
 set(CoreSubs
@@ -239,7 +237,26 @@ set(CardsSrc
     builtin/gadgets/larger_card/DateShowCard.cpp
     )
 
+set(InternalServer
+    core/server/toast_file_gen_and_receiver/ToastGenerator.h core/server/toast_file_gen_and_receiver/ToastGenerator.cpp
+    core/server/toast_file_gen_and_receiver/ToastMetaProtocol.h
+    core/server/toast_file_gen_and_receiver/ToastReceiver.h core/server/toast_file_gen_and_receiver/ToastReceiver.cpp
+    core/server/toast_file_gen_and_receiver/ToastMetaProtocol.cpp
+    core/server/toast_file_gen_and_receiver/ToastProxy.h core/server/toast_file_gen_and_receiver/ToastProxy.cpp
+    core/server/toast_file_gen_and_receiver/ToastPostServer.h core/server/toast_file_gen_and_receiver/ToastPostServer.cpp
+    core/server/DesktopServerBase.h
+    core/server/plugin_server/DesktopPluginServer.h
+    core/server/plugin_server/DesktopPluginServer.cpp
+    core/server/server_hooks/DesktopCardHook.h
+    core/server/server_hooks/DesktopCardHook.cpp
+    core/server/DesktopServerHookBase.h
+    core/server/plugin_server/PluginValidator.h
+    core/server/plugin_server/PluginValidator.cpp)
 
+set(PluginAbstractSrc
+    plugin_loader/plugin_base/DesktopPluginWidgetBase.h)
+
+add_subdirectory(plugin_loader)
 
 qt_add_executable(CCIMX_Desktop
     WIN32 MACOSX_BUNDLE
@@ -259,13 +276,8 @@ qt_add_executable(CCIMX_Desktop
     ${LIBRARY_SRC}
     ${Loggy_SRC}
     ${CardsSrc}
-    core/server/toast_file_gen_and_receiver/ToastGenerator.h core/server/toast_file_gen_and_receiver/ToastGenerator.cpp
-    core/server/toast_file_gen_and_receiver/ToastMetaProtocol.h
-    core/server/toast_file_gen_and_receiver/ToastReceiver.h core/server/toast_file_gen_and_receiver/ToastReceiver.cpp
-    core/server/toast_file_gen_and_receiver/ToastMetaProtocol.cpp
-    core/server/toast_file_gen_and_receiver/ToastProxy.h core/server/toast_file_gen_and_receiver/ToastProxy.cpp
-    core/server/toast_file_gen_and_receiver/ToastPostServer.h core/server/toast_file_gen_and_receiver/ToastPostServer.cpp
-    core/server/DesktopServerBase.h
+    ${InternalServer}
+    ${PluginAbstractSrc}
 )
 
 add_custom_command(TARGET CCIMX_Desktop POST_BUILD
@@ -280,11 +292,7 @@ target_link_libraries(CCIMX_Desktop
         Qt6::Network
 )
 target_link_libraries(CCIMX_Desktop PRIVATE Qt6::Core)
-target_link_libraries(CCIMX_Desktop PRIVATE Qt6::Core)
-target_link_libraries(CCIMX_Desktop PRIVATE Qt6::Widgets)
-target_link_libraries(CCIMX_Desktop PRIVATE Qt6::Core)
-target_link_libraries(CCIMX_Desktop PRIVATE Qt6::Core)
-target_link_libraries(CCIMX_Desktop PRIVATE Qt6::Core)
+
 target_include_directories(CCIMX_Desktop
     PRIVATE
     .

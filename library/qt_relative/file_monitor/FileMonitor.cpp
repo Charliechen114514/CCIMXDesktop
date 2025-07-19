@@ -7,6 +7,7 @@
 FileMonitor::FileMonitor(const QString& path, QObject* parent)
     : QObject { parent }
     , monitoring_folder(path) {
+    qDebug() << "[FileMonitor]: Hooked on path: " << monitoring_folder;
     prevFiles = scanFiles();
     mutex = std::make_shared<QMutex>();
     timer_scan = new QTimer(this);

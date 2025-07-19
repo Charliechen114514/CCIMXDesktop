@@ -24,9 +24,9 @@
 
 ![image-20250624200242954](./README/image-20250624200242954.png)
 
-2) Main interface: HOME interface (screenshot version: Release1.6.0)
+2) Main interface: HOME interface (screenshot version: Release1.15.0)
 
-![image-20250708213936442](./README/image-20250708213936442.png)
+![f5059a311e8e70a7db9225de6fc79a98](./README/f5059a311e8e70a7db9225de6fc79a98.png)
 
 2) BuiltinAPP display interface
 
@@ -76,6 +76,7 @@ Now, CCIMXDesktop supports one-click building including:
 - 📜 Log management system, add a log system to CCIMXDesktop to facilitate debugging 🔍 and observation 👀
 - 📂 Stagedly Stable Desktop Private Folder Systems, which is ready for the system info
 - ℹ Initially build a service system (message notification system)
+- 🔌 Initially build a widget plugin system(But the card widgets only in this version)
 - 🗃️ Smooth Sliding Card System ✨ Currently registered built-in card types 📦:
   - 📅 Calendar Card
   - 🗓️ Date Card
@@ -86,7 +87,7 @@ Now, CCIMXDesktop supports one-click building including:
 
 | Function / Application Name | Dependency Conditions or Remarks | Is it a built-in program | Description | Interface Display |
 | ------------------------------------------------ | -------------------------------------------------- | -------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 🏠 CCIMX_Desktop Body | Standard Minimum Dependency | Yes | Core Framework, Body | ![image-20250708213936442](./README/image-20250708213936442.png) |
+| 🏠 CCIMX_Desktop Body | Standard Minimum Dependency | Yes | Core Framework, Body | ![f5059a311e8e70a7db9225de6fc79a98](./README/f5059a311e8e70a7db9225de6fc79a98.png) |
 | ℹ About App | Standard Minimum Dependency | Yes | Briefly introduce the basic situation of the desktop of this project | ![image-20250614231912157](./README/image-20250614231912157.png) |
 | ✏️ CCNoter (Notepad) | Standard minimum dependencies | Yes | Super lightweight notepad | ![image-20250614231754881](./README/image-20250614231754881.png) |
 | 📅CCCalendar (Calendar APP) | Standard minimum dependencies | Yes | Super lightweight calendar APP | ![image-20250706142207503](./README/image-20250706142207503.png) |
@@ -133,10 +134,11 @@ The document has been automatically deployed via GitHub Actions, visit: [CCIMXDe
 
 ### 🚀 Planned optimization of the desktop body:
 
-- Add a pull-down quick settings channel (brightness adjustment, etc.)
-- Add a desktop refresh function for buttons
-- Develop a **to-do/reminder app** that is deeply integrated with the desktop. Support displaying upcoming reminders in the status bar and important reminders on the lock screen. Enhance the automatic brightness reduction after a long period of inactivity and the brightness enhancement setting when clicking
-- Plan to add a lock screen and user settings interface (the most basic user system)
+- Added a quick setting channel for the drop-down menu (brightness adjustment, etc.)
+- Added a desktop refresh function for buttons (wait for the next version to update the button driver, press the button to force return to the HOME interface)
+- Developed a **to-do/reminder application** that is deeply integrated with the desktop. Supports displaying upcoming reminders in the status bar and important reminders on the lock screen. (The plug-in system already supports)
+- Enhanced the automatic reduction of brightness after a long period of no response and the brightness enhancement setting when clicking
+- Plan to add lock screen and user settings interface (the most basic user system)
 
 ### 🚀 Plan to write and provide more external basic programs:
 

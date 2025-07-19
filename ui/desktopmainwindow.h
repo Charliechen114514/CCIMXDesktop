@@ -10,6 +10,7 @@ namespace Ui {
 class DesktopMainWindow;
 }
 QT_END_NAMESPACE
+class HomePage;
 class DesktopDirentLocationManager;
 class QGridLayout;
 class QLabel;
@@ -27,6 +28,7 @@ class NetAbilityScanner;
 class GlobalClockSources;
 class TopSideBarWidget;
 class DesktopServerBase;
+class DesktopServerHookBase;
 /**
  * @brief DesktopMainWindow is the main frontend window of the application.
  * For beginners, this is the starting point to understand the UI details.
@@ -195,6 +197,7 @@ private:
     QList<ApplicationWrapper*> app_wrapper; ///< List of application wrappers
     QList<AppWidget*> app_widgets; ///< List of app widgets
     QList<DesktopServerBase*> servers; ///< servers
+    QList<DesktopServerHookBase*> hooks; ///< server hooks;
     DesktopDirentLocationManager* locationManager; ///< locationManager
 
     struct {
@@ -208,6 +211,7 @@ private:
     SettingsWindow* settingsWindow; ///< windows contains settings
     NetAbilityScanner* scanner; ///< scanner for the network sessions
     GlobalClockSources* clock; ///< clock src
+    HomePage* homePage; ///< homePage
     int slide_limitive; ///< slide limitives
     /**
      * @brief Additional UI setup after ui->setupUi()

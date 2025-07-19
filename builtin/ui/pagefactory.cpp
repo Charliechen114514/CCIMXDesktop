@@ -12,7 +12,7 @@
 #include "builtin/gadgets/larger_card/system_state/MemoryUsageCard.h"
 #include "ui/internal_calendar/ModernCalendarWidget.h"
 /* create a homepage */
-QWidget* PageFactory::build_home_page(DesktopMainWindow* mainWindow) {
+HomePage* PageFactory::build_home_page(DesktopMainWindow* mainWindow) {
 	HomePage* homePage = new HomePage(mainWindow);
     HomeCardManager* cardManager = homePage->homeCardManager();
     QWidgetList widgetList = {
