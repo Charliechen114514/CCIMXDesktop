@@ -1,27 +1,6 @@
 var searchData=
 [
-  ['savewindow_0',['SaveWindow',['../classSaveWindow.html',1,'']]],
-  ['scanner_1',['Scanner',['../classScanner.html',1,'']]],
-  ['scenedrawer_2',['SceneDrawer',['../classSceneDrawer.html',1,'']]],
-  ['scoremanager_3',['ScoreManager',['../classScoreManager.html',1,'']]],
-  ['scrollinglabel_4',['ScrollingLabel',['../classScrollingLabel.html',1,'']]],
-  ['sequenciedsettingswidget_5',['SequenciedSettingsWidget',['../classSequenciedSettingsWidget.html',1,'']]],
-  ['settingsapp_6',['SettingsApp',['../classSettingsApp.html',1,'']]],
-  ['settingslaunch_7',['SettingsLaunch',['../classSettingsLaunch.html',1,'']]],
-  ['settingswindow_8',['SettingsWindow',['../classSettingsWindow.html',1,'']]],
-  ['sidebarwidget_9',['SideBarWidget',['../classSideBarWidget.html',1,'']]],
-  ['simpledrawerwidget_10',['SimpleDrawerWidget',['../classSimpleDrawerWidget.html',1,'']]],
-  ['simpledrawingscene_11',['SimpleDrawingScene',['../classSimpleDrawingScene.html',1,'']]],
-  ['slidesettings_12',['SlideSettings',['../classSlideSettings.html',1,'']]],
-  ['soundeffectplayer_13',['SoundEffectPlayer',['../classSoundEffectPlayer.html',1,'']]],
-  ['sportschart_14',['SportsChart',['../classSportsChart.html',1,'']]],
-  ['sportsdisplaywidget_15',['SportsDisplayWidget',['../classSportsDisplayWidget.html',1,'']]],
-  ['sportshealthwindow_16',['SportsHealthWindow',['../classSportsHealthWindow.html',1,'']]],
-  ['stackpageswitcheranimation_17',['StackpageSwitcherAnimation',['../structStackpageSwitcherAnimation.html',1,'']]],
-  ['standardformater_18',['StandardFormater',['../classStandardFormater.html',1,'']]],
-  ['staticlimiter_19',['StaticLimiter',['../classValueLimitUtils_1_1StaticLimiter.html',1,'ValueLimitUtils']]],
-  ['staticstatusbariconwidget_20',['StaticStatusBarIconWidget',['../classStaticStatusBarIconWidget.html',1,'']]],
-  ['statusbariconwidget_21',['StatusBarIconWidget',['../classStatusBarIconWidget.html',1,'']]],
-  ['systemstatewindow_22',['SystemStateWindow',['../classSystemStateWindow.html',1,'']]],
-  ['sz_23',['SZ',['../structSettings_1_1SZ.html',1,'Settings']]]
+  ['randomgenerator_0',['RandomGenerator',['../classRandomGenerator.html',1,'']]],
+  ['readmewidget_1',['ReadMeWidget',['../classReadMeWidget.html',1,'']]],
+  ['rol_2',['rol',['../structrol.html',1,'']]]
 ];

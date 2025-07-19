@@ -4,7 +4,7 @@ var searchData=
   ['albumtitle_1',['albumTitle',['../structMediaInfo.html#a6609ecb62d2db45fed5e662795648269',1,'MediaInfo']]],
   ['als_2',['als',['../structAP3216CData.html#a40669cff46ee430f2fd1e716ad24b43b',1,'AP3216CData']]],
   ['animation_5fbound_3',['animation_bound',['../classCardStackWidget.html#aa09abeccdfa3c7b143ab8906c6dc0a1e',1,'CardStackWidget']]],
-  ['animation_5fduration_4',['animation_duration',['../structStackpageSwitcherAnimation_1_1AnimationInfo.html#a2be11d135f255a6ffcf93b5eb0072050',1,'StackpageSwitcherAnimation::AnimationInfo::animation_duration'],['../classGaugeWidget.html#a97a5afd7fcaf02329bdd3c68a1d56936',1,'GaugeWidget::ANIMATION_DURATION'],['../structStackpageSwitcherAnimation.html#a65662268e6a346dc793df94290a43b98',1,'StackpageSwitcherAnimation::ANIMATION_DURATION']]],
+  ['animation_5fduration_4',['animation_duration',['../classGaugeWidget.html#a97a5afd7fcaf02329bdd3c68a1d56936',1,'GaugeWidget::ANIMATION_DURATION'],['../structStackpageSwitcherAnimation.html#a65662268e6a346dc793df94290a43b98',1,'StackpageSwitcherAnimation::ANIMATION_DURATION'],['../structStackpageSwitcherAnimation_1_1AnimationInfo.html#a2be11d135f255a6ffcf93b5eb0072050',1,'StackpageSwitcherAnimation::AnimationInfo::animation_duration']]],
   ['animation_5finterval_5',['ANIMATION_INTERVAL',['../classScrollingLabel.html#ab6ddbf528e20f3d94f607465f879293f',1,'ScrollingLabel']]],
   ['animation_5fspeed_6',['animation_speed',['../structFlowTypeTypeWallPaperSettings.html#a2953d9cafeb76e5d386328586355944e',1,'FlowTypeTypeWallPaperSettings']]],
   ['app_7',['app',['../structPageSetuper_1_1PageSetupSessionRequest.html#a8522a2cfbefeb286ffacb1af7861036c',1,'PageSetuper::PageSetupSessionRequest']]],

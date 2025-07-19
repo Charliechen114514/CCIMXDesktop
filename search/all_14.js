@@ -26,7 +26,7 @@ var searchData=
   ['timelabelsettings_23',['timelabelsettings',['../classTimeLabelSettings.html#a528ff4626abcc85119d43d5ccedffb3f',1,'TimeLabelSettings::TimeLabelSettings()'],['../classTimeLabelSettings.html',1,'TimeLabelSettings']]],
   ['timer_5fswitch_5finvoker_24',['timer_switch_invoker',['../classCardStackWidget.html#af5a2828268fef10c3b3952b1f9db4ed4',1,'CardStackWidget']]],
   ['timeupdate_25',['timeUpdate',['../classGlobalClockSources.html#ab863f819afb0e22f559fbfd0a72aa943',1,'GlobalClockSources']]],
-  ['title_26',['title',['../structCCPdfMetaInfo.html#a423cdbefdd1463da5d20fd464d9050a5ab78a3223503896721cca1303f776159b',1,'CCPdfMetaInfo::Title'],['../structMediaInfo.html#a843511475196e275f5e79dea5cd81409',1,'MediaInfo::title'],['../structCCPdfMetaInfo.html#a7332fab72592d6f8e6f9ed1d5844bfe0',1,'CCPdfMetaInfo::title']]],
+  ['title_26',['title',['../structMediaInfo.html#a843511475196e275f5e79dea5cd81409',1,'MediaInfo::title'],['../structCCPdfMetaInfo.html#a7332fab72592d6f8e6f9ed1d5844bfe0',1,'CCPdfMetaInfo::title'],['../structCCPdfMetaInfo.html#a423cdbefdd1463da5d20fd464d9050a5ab78a3223503896721cca1303f776159b',1,'CCPdfMetaInfo::Title']]],
   ['title_5ffont_5fsz_27',['TITLE_FONT_SZ',['../classGaugeWidget.html#a9a94205fedd412b099547922971aa40e',1,'GaugeWidget']]],
   ['to_20build_20the_20foundation_28',['🛠️ Technologies used to build the foundation',['../md_README__EN.html#autotoc_md24',1,'']]],
   ['to_20write_20and_20provide_20more_20external_20basic_20programs_3a_29',['🚀 Plan to write and provide more external basic programs:',['../md_README__EN.html#autotoc_md36',1,'']]],

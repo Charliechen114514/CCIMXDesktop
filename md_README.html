@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('md_README.html',''); initResizable(); 
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="autotoc_md0"></a> <img src="./CCIMXDesktopLogo.png" alt="CCIMXDesktopLogo" class="inline"/></p>
-<p><img src="https://img.shields.io/badge/Qt-6.8.3-green" alt="Qt" class="inline"/><img src="https://img.shields.io/badge/OpenCV-4.12.0-blue" alt="OpenCV" class="inline"/><img src="https://img.shields.io/badge/MuPDF-supported-orange" alt="MuPDF" class="inline"/><img src="https://img.shields.io/badge/C++-17-green" alt="Qt" class="inline"/><img src="https://img.shields.io/badge/Version-Released_1.12.1-red" alt="Version" class="inline"/></p>
+<p><img src="https://img.shields.io/badge/Qt-6.8.3-green" alt="Qt" class="inline"/><img src="https://img.shields.io/badge/OpenCV-4.12.0-blue" alt="OpenCV" class="inline"/><img src="https://img.shields.io/badge/MuPDF-supported-orange" alt="MuPDF" class="inline"/><img src="https://img.shields.io/badge/C++-17-green" alt="Qt" class="inline"/><img src="https://img.shields.io/badge/Version-Released_1.15.0-red" alt="Version" class="inline"/></p>
 <p>🔌 您好！这是一个可在携带LCD屏幕上IMX6ULL的嵌入式设备中使用的简单桌面和实用程序集合！本项目目前已经可以使用完全的C++17进行编译！</p>
 <h1><a class="anchor" id="autotoc_md1"></a>
 🌐 开始之前，选择你的语言！ 🌐</h1>
@@ -112,8 +112,8 @@ $(document).ready(function(){initNavTree('md_README.html',''); initResizable(); 
 一些运行截图</h1>
 <p>1）启动加载时画面（截图版本：Release 1.5.0）</p>
 <p><img src="./README/image-20250624200242954.png" alt="image-20250624200242954" class="inline"/></p>
-<p>2）主界面：HOME界面（截图版本：Release1.10.0）</p>
-<p><img src="./README/image-20250708213936442.png" alt="image-20250708213936442" class="inline"/></p>
+<p>2）主界面：HOME界面（截图版本：Release1.15.0）</p>
+<p><img src="./README/f5059a311e8e70a7db9225de6fc79a98.png" alt="f5059a311e8e70a7db9225de6fc79a98" class="inline"/></p>
 <p>2）BuiltinAPP展示界面</p>
 <p><img src="./README/image-20250706142357134.png" alt="image-20250706142357134" class="inline"/></p>
 <p>3）ExternAPP第三方可选构建配置</p>
@@ -148,6 +148,7 @@ $(document).ready(function(){initNavTree('md_README.html',''); initResizable(); 
 <li>📜 日志管理系统，为CCIMXDesktop增加日志系统方便调试🔍和观察👀</li>
 <li>📂 初步稳定的桌面私有文件夹系统</li>
 <li>ℹ 初步搭建起来服务系统（消息通知系统）</li>
+<li>🔌初步搭建起来的Widget插件系统（目前仅限HOME卡片组可用插件化）</li>
 <li><p class="startli">🗃️ 丝滑滑动卡片系统 ✨</p>
 <p class="startli">目前已注册的内建卡片类型 📦:</p><ul>
 <li>📅 日历卡片</li>
@@ -163,7 +164,7 @@ $(document).ready(function(){initNavTree('md_README.html',''); initResizable(); 
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">功能 / 应用名称   </th><th class="markdownTableHeadNone">依赖条件或备注   </th><th class="markdownTableHeadNone">是否为内建程序   </th><th class="markdownTableHeadNone">说明   </th><th class="markdownTableHeadNone">界面展示    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">🏠 CCIMX_Desktop本体   </td><td class="markdownTableBodyNone">标准最小依赖   </td><td class="markdownTableBodyNone">是   </td><td class="markdownTableBodyNone">核心框架，本体   </td><td class="markdownTableBodyNone"><img src="./README/image-20250708213936442.png" alt="image-20250708213936442" class="inline"/>    </td></tr>
+<td class="markdownTableBodyNone">🏠 CCIMX_Desktop本体   </td><td class="markdownTableBodyNone">标准最小依赖   </td><td class="markdownTableBodyNone">是   </td><td class="markdownTableBodyNone">核心框架，本体   </td><td class="markdownTableBodyNone"><img src="./README/f5059a311e8e70a7db9225de6fc79a98.png" alt="f5059a311e8e70a7db9225de6fc79a98" class="inline"/>    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">ℹ About App   </td><td class="markdownTableBodyNone">标准最小依赖   </td><td class="markdownTableBodyNone">是   </td><td class="markdownTableBodyNone">简单的介绍本项目桌面的基本情况   </td><td class="markdownTableBodyNone"><img src="./README/image-20250614231912157.png" alt="image-20250614231912157" class="inline"/>    </td></tr>
 <tr class="markdownTableRowOdd">
@@ -227,9 +228,10 @@ $(document).ready(function(){initNavTree('md_README.html',''); initResizable(); 
 <h2><a class="anchor" id="autotoc_md15"></a>
 🚀 计划优化的桌面本体工作：</h2>
 <ul>
-<li>增加下拉式的快速设置通道（亮度调节等）</li>
-<li>增加针对按键的桌面刷新功能</li>
-<li>开发与桌面深度集成的**待办事项/提醒应用**。支持在状态栏显示即将到来的提醒，锁屏界面显示重要提醒。增强长时间没有反应后自动降低亮度和点击时增强亮度设置</li>
+<li>增加下拉式菜单的快速设置通道（亮度调节等）</li>
+<li>增加针对按键的桌面刷新功能（待下一个版本更新按钮驱动，按按钮强迫返回HOME界面）</li>
+<li>开发与桌面深度集成的**待办事项/提醒应用**。支持在状态栏显示即将到来的提醒，锁屏界面显示重要提醒。（插件系统已经支持）</li>
+<li>增强长时间没有反应后自动降低亮度和点击时增强亮度设置</li>
 <li>计划增加锁屏和用户设置界面（最基础的用户系统）</li>
 </ul>
 <h2><a class="anchor" id="autotoc_md16"></a>

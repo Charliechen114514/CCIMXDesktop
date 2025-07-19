@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['netabilityscanner_0',['netabilityscanner',['../classNetAbilityScanner.html#a64ff720b2dbbb5b75423cdd027a29e7c',1,'NetAbilityScanner::NetAbilityScanner()'],['../classDesktopMainWindow.html#ae0bac85372b4389478e069a5979c937f',1,'DesktopMainWindow::netAbilityScanner()']]],
+  ['netabilityscanner_0',['netabilityscanner',['../classDesktopMainWindow.html#ae0bac85372b4389478e069a5979c937f',1,'DesktopMainWindow::netAbilityScanner()'],['../classNetAbilityScanner.html#a64ff720b2dbbb5b75423cdd027a29e7c',1,'NetAbilityScanner::NetAbilityScanner()']]],
   ['netcardgadget_1',['NetCardGadget',['../classNetCardGadget.html#ae7df34d5c86e08e897248ccc1c111ee3',1,'NetCardGadget']]],
   ['netmainwindow_2',['NetMainWindow',['../classNetMainWindow.html#a3ad9cbbd627ddab9a9182b96a4bcaf5e',1,'NetMainWindow']]],
   ['netstatuschangedevent_3',['NetStatusChangedEvent',['../structNetStatusChangedEvent.html#a09ab320f3f028e94f3d7bf5776f09581',1,'NetStatusChangedEvent']]],

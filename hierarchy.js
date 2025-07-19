@@ -51,6 +51,12 @@ var hierarchy =
     [ "DesktopLoggerBackends", "structDesktopLoggerBackends.html", [
       [ "ConsoleLogger", "classConsoleLogger.html", null ]
     ] ],
+    [ "DesktopPluginWidgetBase", "structDesktopPluginWidgetBase.html", [
+      [ "WeatherCard_Plugins", "classWeatherCard__Plugins.html", null ]
+    ] ],
+    [ "DesktopServerHookBase", "structDesktopServerHookBase.html", [
+      [ "DesktopCardHook", "classDesktopCardHook.html", null ]
+    ] ],
     [ "CVTools::DisplayParams", "structCVTools_1_1DisplayParams.html", null ],
     [ "EventManager", "classEventManager.html", null ],
     [ "Settings::Figure::FigureSize", "structSettings_1_1Figure_1_1FigureSize.html", null ],
@@ -98,6 +104,7 @@ var hierarchy =
       [ "LocalFetcher", "structLocalFetcher.html", null ],
       [ "PesudoLocalFetcher", "structPesudoLocalFetcher.html", null ]
     ] ],
+    [ "LocationData", "structLocationData.html", null ],
     [ "StandardFormater::LogFormatOptions", "structStandardFormater_1_1LogFormatOptions.html", null ],
     [ "LoggerBaseConsumer", "classLoggerBaseConsumer.html", [
       [ "ConsoleConsumer", "classConsoleConsumer.html", null ]
@@ -186,8 +193,10 @@ var hierarchy =
       [ "CPUStateFetcher", "classCPUStateFetcher.html", null ],
       [ "CameraCapture", "classCameraCapture.html", null ],
       [ "ConfigureUiPairs", "structConfigureUiPairs.html", null ],
+      [ "DesktopCardHook", "classDesktopCardHook.html", null ],
       [ "DesktopDirentLocationManager", "classDesktopDirentLocationManager.html", null ],
       [ "DesktopServerBase", "classDesktopServerBase.html", [
+        [ "DesktopWidgetPluginServer", "classDesktopWidgetPluginServer.html", null ],
         [ "ToastPostServer", "classToastPostServer.html", null ]
       ] ],
       [ "DifficultyManager", "classDifficultyManager.html", null ],
@@ -221,6 +230,7 @@ var hierarchy =
       [ "NetAbilityScanner", "classNetAbilityScanner.html", null ],
       [ "ObstacleListManager", "classObstacleListManager.html", null ],
       [ "ProcessBroswer", "classProcessBroswer.html", null ],
+      [ "QueryCached", "classQueryCached.html", null ],
       [ "ScoreManager", "classScoreManager.html", null ],
       [ "SoundEffectPlayer", "classSoundEffectPlayer.html", null ],
       [ "StackpageSwitcherAnimation", "structStackpageSwitcherAnimation.html", null ],
@@ -232,9 +242,11 @@ var hierarchy =
       [ "VideoPlayer", "classVideoPlayer.html", null ],
       [ "WallPaperAnimationHandler", "structWallPaperAnimationHandler.html", null ],
       [ "WallPaperEngine", "classWallPaperEngine.html", null ],
+      [ "WeatherCard_Plugins", "classWeatherCard__Plugins.html", null ],
       [ "WeatherRequest", "classWeatherRequest.html", [
         [ "AppWeatherRequest", "classAppWeatherRequest.html", null ]
       ] ],
+      [ "WeatherRequestEngine", "classWeatherRequestEngine.html", null ],
       [ "WeatherResult", "structWeatherResult.html", [
         [ "AppWeatherResult", "classAppWeatherResult.html", null ]
       ] ]
@@ -294,6 +306,7 @@ var hierarchy =
       [ "ImageListViewer", "classImageListViewer.html", null ],
       [ "ImageProcessingWidget", "classImageProcessingWidget.html", null ],
       [ "ImageResultDisplayer", "classImageResultDisplayer.html", null ],
+      [ "InformToastLabel", "classInformToastLabel.html", null ],
       [ "InterfacesDisplayWidget", "classInterfacesDisplayWidget.html", null ],
       [ "LeftSideBar", "classLeftSideBar.html", null ],
       [ "LightConfigures", "classLightConfigures.html", null ],
@@ -333,6 +346,7 @@ var hierarchy =
       [ "TopSideBarWidget", "classTopSideBarWidget.html", null ],
       [ "TopSideBarWidgetConfigures", "classTopSideBarWidgetConfigures.html", null ],
       [ "WallpaperConfigures", "classWallpaperConfigures.html", null ],
+      [ "WeatherCard", "classWeatherCard.html", null ],
       [ "WeatherChartWidget", "classWeatherChartWidget.html", null ],
       [ "WeatherDailyCard", "classWeatherDailyCard.html", null ]
     ] ],
@@ -368,5 +382,6 @@ var hierarchy =
     ] ],
     [ "VideoPlayerImplFactory", "classVideoPlayerImplFactory.html", null ],
     [ "VideoPlayerInfo", "structVideoPlayerInfo.html", null ],
+    [ "WeatherData", "structWeatherData.html", null ],
     [ "Settings::XY< value >", "structSettings_1_1XY.html", null ]
 ];

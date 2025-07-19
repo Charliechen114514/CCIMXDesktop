@@ -6,7 +6,7 @@ var searchData=
   ['handle_5fprocess_5fissues_3',['handle_process_issues',['../classProcessBrowserWidget.html#adad0c2d2d3da160e265bf0decec95227',1,'ProcessBrowserWidget']]],
   ['handledate_4',['handleDate',['../classDateIcon.html#afb66bbb0785bc64a32eee87a158540ae',1,'DateIcon']]],
   ['handlegestureevent_5',['handleGestureEvent',['../classCCPdfScrollArea.html#a688d7e77f99d63bbab5ca7ba24a5d452',1,'CCPdfScrollArea']]],
-  ['handletype_6',['handletype',['../classBlurProcessor.html#a3af8708008d25b115a14ebc37fecf2c0',1,'BlurProcessor::HandleType'],['../classBlurProcessor.html#a8e237a8b492a86872c426ac55ce0e403',1,'BlurProcessor::handleType() const']]],
+  ['handletype_6',['handletype',['../classBlurProcessor.html#a8e237a8b492a86872c426ac55ce0e403',1,'BlurProcessor::handleType() const'],['../classBlurProcessor.html#a3af8708008d25b115a14ebc37fecf2c0',1,'BlurProcessor::HandleType']]],
   ['handlingfinhook_7',['HandlingFinHook',['../classApplicationWrapper.html#acaaa113a722e3e2f0625d40181b8c794',1,'ApplicationWrapper']]],
   ['headerdata_8',['headerData',['../classCCIMXFileSystemModel.html#aeceaa8e6c1e18cb36f20211176b60096',1,'CCIMXFileSystemModel']]],
   ['height_9',['height',['../classTopSideBarWidget.html#ac1a73674388bf526457b235891a2cad3',1,'TopSideBarWidget::height()'],['../structVideoPlayerInfo.html#ac7292ac9053d124429cb6a5d57730447',1,'VideoPlayerInfo::height'],['../structSettings_1_1Figure_1_1FigureSize.html#a60db5d4494a9cf7ffbc2c5c078a4eaa1',1,'Settings::Figure::FigureSize::height'],['../structSettings_1_1SZ.html#ace6c223709d507955ec0cd404d3fde33',1,'Settings::SZ::height']]],

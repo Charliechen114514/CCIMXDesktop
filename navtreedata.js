@@ -106,16 +106,16 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AP3216CAdapterFactory_8h_source.html",
-"classAppCardWidget.html#aee22c9e15e0cb276d33dd51058087204",
-"classCCPdfViewer.html#ac7f3f2ba436fba2eedeaf5580d4630d5",
-"classDinasour.html#a61a633d0c6f9edc2ea3092e970ba3797",
-"classICM20608DataFactory.html#afe9ed4a869dc91b565f45b60b645753e",
-"classMemoryInfoFetcher.html#a4517c8c3b528cd95160256ecf41170aa",
-"classSideBarWidget.html#abc77590c7f86b906b48ac7fcfadd46b1",
-"classVideoPlayerImpl.html#a8595b0bbe2ebb205c0c02b002755b0d0",
-"dir_e8a7c902475073118d8ee4fa973453d5.html",
-"professionals_2library_2OpencvQtAdapter_2core__library_2cvimage_2CVTools_8h_source.html",
-"structProcessBroswer_1_1ProcessInfo.html"
+"classAppCardWidget.html#a2fa88d10498e3366f9a2268a74420b4f",
+"classCCPdfScrollArea.html#ad413d294c74313cc39189e71018b19aa",
+"classDesktopWidgetPluginServer.html",
+"classHomeCardManager.html",
+"classMediaPlayerWindow.html#a4142b0a25125ca2528786e6d96317e6a",
+"classSideBarWidget.html#a4bf30cbf7343e1e506267d649a0cc155",
+"classVideoPlayer.html#affa0feb472293724d1f2edfc96677099",
+"dir_bf392b1e3ecddf31472ea7f258e867db.html",
+"namespaceValueLimitUtils.html",
+"structMediaPlayer_1_1MediaPlayerStatus.html#aa82a8cda11aff12675474cf20e346e68"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

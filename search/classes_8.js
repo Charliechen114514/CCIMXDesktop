@@ -17,7 +17,8 @@ var searchData=
   ['imageresultdisplayer_14',['ImageResultDisplayer',['../classImageResultDisplayer.html',1,'']]],
   ['imagewalkerwindow_15',['ImageWalkerWindow',['../classImageWalkerWindow.html',1,'']]],
   ['indicator_16',['Indicator',['../structCCPdfNavigationPolicy_1_1Indicator.html',1,'CCPdfNavigationPolicy']]],
-  ['interfacesdisplaywidget_17',['InterfacesDisplayWidget',['../classInterfacesDisplayWidget.html',1,'']]],
-  ['interfacesquery_18',['InterfacesQuery',['../classInterfacesQuery.html',1,'']]],
-  ['invalidnumber_19',['InvalidNumber',['../classInvalidNumber.html',1,'']]]
+  ['informtoastlabel_17',['InformToastLabel',['../classInformToastLabel.html',1,'']]],
+  ['interfacesdisplaywidget_18',['InterfacesDisplayWidget',['../classInterfacesDisplayWidget.html',1,'']]],
+  ['interfacesquery_19',['InterfacesQuery',['../classInterfacesQuery.html',1,'']]],
+  ['invalidnumber_20',['InvalidNumber',['../classInvalidNumber.html',1,'']]]
 ];
