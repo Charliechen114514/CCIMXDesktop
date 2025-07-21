@@ -7,8 +7,8 @@ var searchData=
   ['unbinddocument_4',['unbindDocument',['../classCCPdfViewer.html#a26ede651e15807399423cf74ea336ee4',1,'CCPdfViewer']]],
   ['undo_5',['undo',['../classSimpleDrawingScene.html#a80c84494ebeb23df806f78e4ba15627c',1,'SimpleDrawingScene']]],
   ['unsupportedsymbol_6',['unsupportedsymbol',['../classUnSupportedSymbol.html',1,'UnSupportedSymbol'],['../classUnSupportedSymbol.html#a7d853488c90ed5b61db2f50fa4bd478e',1,'UnSupportedSymbol::UnSupportedSymbol()']]],
-  ['unsupportivefunction_7',['unsupportivefunction',['../classUnSupportiveFunction.html#a8a18cff8ffa805b8f9a167f925e3574d',1,'UnSupportiveFunction::UnSupportiveFunction()'],['../classUnSupportiveFunction.html',1,'UnSupportiveFunction']]],
-  ['unsymmetryexpression_8',['unsymmetryexpression',['../classUnSymmetryExpression.html#a9bfccbe6da8ad05d95f7e01ba9034615',1,'UnSymmetryExpression::UnSymmetryExpression()'],['../classUnSymmetryExpression.html',1,'UnSymmetryExpression']]],
+  ['unsupportivefunction_7',['unsupportivefunction',['../classUnSupportiveFunction.html',1,'UnSupportiveFunction'],['../classUnSupportiveFunction.html#a8a18cff8ffa805b8f9a167f925e3574d',1,'UnSupportiveFunction::UnSupportiveFunction()']]],
+  ['unsymmetryexpression_8',['unsymmetryexpression',['../classUnSymmetryExpression.html',1,'UnSymmetryExpression'],['../classUnSymmetryExpression.html#a9bfccbe6da8ad05d95f7e01ba9034615',1,'UnSymmetryExpression::UnSymmetryExpression()']]],
   ['upcast_5fto_5fmseconds_9',['upcast_to_mseconds',['../namespaceUiTools.html#a0851222151caa014bef526893f1995aa',1,'UiTools']]],
   ['update_5fdisplaytime_10',['update_displayTime',['../classTimeDisplayIconWidget.html#a547db84ba048a9f25f75182da6545b24',1,'TimeDisplayIconWidget']]],
   ['update_5fparams_11',['update_params',['../classGroundLineProviders.html#a1593b85a09b6c9c261295bd29444e826',1,'GroundLineProviders']]],
@@ -18,5 +18,8 @@ var searchData=
   ['upgrade_5fdifficulty_15',['upgrade_difficulty',['../classDifficultyManager.html#a1ab2819373431622077be43ffe2bb1d9',1,'DifficultyManager']]],
   ['used_20to_20build_20the_20foundation_16',['🛠️ Technologies used to build the foundation',['../md_README__EN.html#autotoc_md24',1,'']]],
   ['user_17',['user',['../structCPUStateFetcher_1_1CPUState.html#aab23cf3aea621ea5b5eb81e36553280f',1,'CPUStateFetcher::CPUState']]],
-  ['username_18',['userName',['../structProcessBroswer_1_1ProcessInfo.html#a3bc2a82c21cbfa45ce2503dbe0213efc',1,'ProcessBroswer::ProcessInfo']]]
+  ['userinfo_18',['UserInfo',['../classUserInfo.html',1,'']]],
+  ['userinfobuilder_19',['UserInfoBuilder',['../classUserInfo_1_1UserInfoBuilder.html',1,'UserInfo']]],
+  ['userinfocard_20',['UserInfoCard',['../classUserInfoCard.html',1,'']]],
+  ['username_21',['userName',['../structProcessBroswer_1_1ProcessInfo.html#a3bc2a82c21cbfa45ce2503dbe0213efc',1,'ProcessBroswer::ProcessInfo']]]
 ];

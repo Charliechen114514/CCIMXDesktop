@@ -199,6 +199,7 @@ var hierarchy =
         [ "DesktopWidgetPluginServer", "classDesktopWidgetPluginServer.html", null ],
         [ "ToastPostServer", "classToastPostServer.html", null ]
       ] ],
+      [ "DesktopUserInfo", "classDesktopUserInfo.html", null ],
       [ "DifficultyManager", "classDifficultyManager.html", null ],
       [ "DirentSizeCounter", "classDirentSizeCounter.html", null ],
       [ "DirentSizeWorker", "classDirentSizeWorker.html", null ],
@@ -345,6 +346,7 @@ var hierarchy =
       [ "ToolsStackedWidget", "classToolsStackedWidget.html", null ],
       [ "TopSideBarWidget", "classTopSideBarWidget.html", null ],
       [ "TopSideBarWidgetConfigures", "classTopSideBarWidgetConfigures.html", null ],
+      [ "UserInfoCard", "classUserInfoCard.html", null ],
       [ "WallpaperConfigures", "classWallpaperConfigures.html", null ],
       [ "WeatherCard", "classWeatherCard.html", null ],
       [ "WeatherChartWidget", "classWeatherChartWidget.html", null ],
@@ -375,6 +377,8 @@ var hierarchy =
       [ "NumberNode", "structNumberNode.html", null ],
       [ "UnaryOpTreeNode", "classUnaryOpTreeNode.html", null ]
     ] ],
+    [ "UserInfo", "classUserInfo.html", null ],
+    [ "UserInfo::UserInfoBuilder", "classUserInfo_1_1UserInfoBuilder.html", null ],
     [ "ValueLimiter< MIN, MAX >", "classValueLimiter.html", null ],
     [ "VideoPlayerImpl", "classVideoPlayerImpl.html", [
       [ "VideoPlayerOpencvImpl", "classVideoPlayerOpencvImpl.html", null ],

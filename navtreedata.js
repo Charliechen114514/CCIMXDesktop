@@ -106,16 +106,16 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AP3216CAdapterFactory_8h_source.html",
-"classAppCardWidget.html#a2fa88d10498e3366f9a2268a74420b4f",
-"classCCPdfScrollArea.html#ad413d294c74313cc39189e71018b19aa",
-"classDesktopWidgetPluginServer.html",
-"classHomeCardManager.html",
-"classMediaPlayerWindow.html#a4142b0a25125ca2528786e6d96317e6a",
-"classSideBarWidget.html#a4bf30cbf7343e1e506267d649a0cc155",
-"classVideoPlayer.html#affa0feb472293724d1f2edfc96677099",
-"dir_bf392b1e3ecddf31472ea7f258e867db.html",
-"namespaceValueLimitUtils.html",
-"structMediaPlayer_1_1MediaPlayerStatus.html#aa82a8cda11aff12675474cf20e346e68"
+"classAboutMainWindow.html#a95c30d3e3bd081027a788bc9e17b1a38",
+"classCCPdfScrollArea.html#a7abde81eb52f2b6332ea7dc4217ca79a",
+"classDesktopToast.html#a57feb437e426ca176d02e0c0fb466d41",
+"classGuassainBlur.html#a645122ab822abdc71e4b95c0e5fad61d",
+"classMediaPlayer.html#af16ded3ecace9ebd3b5f34d8ed43bac8",
+"classSideBarWidget.html#a198335bded322d74773369bb4136df14",
+"classVideoPlayer.html#ae1d89d26fbc9972fc14c1fe469e03da3",
+"dir_b37f004d376611515519a1932a656746.html",
+"namespaceSimpleTools.html#af9d000f1e32ab8a018963899c410640f",
+"structMediaInfo.html#adced269a0044b247726c00fb42212a86"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

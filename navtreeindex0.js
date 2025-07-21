@@ -55,6 +55,7 @@ var NAVTREEINDEX0 =
 "DesktopPluginServer_8h_source.html":[6,0,2,4,0,0],
 "DesktopServerBase_8h_source.html":[6,0,2,4,3],
 "DesktopServerHookBase_8h_source.html":[6,0,2,4,4],
+"DesktopUserInfo_8h_source.html":[6,0,2,5,0],
 "DifficultyManager_8h_source.html":[6,0,3,2,0,0,0],
 "DifficultyType_8h_source.html":[6,0,3,2,0,0,1],
 "DinasourGameMainWidget_8h_source.html":[6,0,3,2,0,3,0],
@@ -209,9 +210,11 @@ var NAVTREEINDEX0 =
 "TopSideBarWidget_8h_source.html":[6,0,6,5,6],
 "TreeNodeBase_8h_source.html":[6,0,1,0,0,0,6],
 "UnaryOpTreeNode_8h_source.html":[6,0,1,0,0,0,7],
+"UserInfoCard_8h_source.html":[6,0,1,2,0,2],
+"UserInfo_8h_source.html":[6,0,2,5,1],
 "ValueLimiter_8hpp_source.html":[6,0,4,1,0],
-"WallPaperEngine_8h_source.html":[6,0,2,5,0],
-"WallPaperUtilsColliections_8h_source.html":[6,0,2,5,1],
+"WallPaperEngine_8h_source.html":[6,0,2,6,0],
+"WallPaperUtilsColliections_8h_source.html":[6,0,2,6,1],
 "WallpaperConfigures_8h_source.html":[6,0,1,5,1,0,4,2],
 "WeatherAppMainWindow_8h_source.html":[6,0,3,9,1,0],
 "WeatherApp_2Ui_2DesktopToast_8h_source.html":[6,0,3,9,2,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX0 =
 "classAP3216CAdapterFactory.html#ac9d8bba508b196b8f2a499c1c28e686a":[5,0,9,0],
 "classAboutMainWindow.html":[5,0,7],
 "classAboutMainWindow.html#a185a220e754847a191567ca7c518e823":[5,0,7,3],
-"classAboutMainWindow.html#a7151a58a48cdb7c993fe1f8aecae9256":[5,0,7,2],
-"classAboutMainWindow.html#a95c30d3e3bd081027a788bc9e17b1a38":[5,0,7,0],
-"classAboutMainWindow.html#abb187def904c4025e74fb3e122befc4e":[5,0,7,1],
-"classAppCardWidget.html":[5,0,11]
+"classAboutMainWindow.html#a7151a58a48cdb7c993fe1f8aecae9256":[5,0,7,2]
 };

@@ -42,7 +42,7 @@ var searchData=
   ['indicate_5fopen_5fsettings_5fwindow_39',['indicate_open_settings_window',['../classSettingsApp.html#a6b3bdb5a49fd5453fe4a950f3579f1c7',1,'SettingsApp::indicate_open_settings_window()'],['../classSettingsLaunch.html#a52540d6599ce4c7bf6b4688e4bc72748',1,'SettingsLaunch::indicate_open_settings_window()']]],
   ['indicate_5fshow_40',['indicate_show',['../classToolBoxs.html#afca228f11d7971a4eb5fe905fb5eee70',1,'ToolBoxs']]],
   ['indicate_5fzoom_41',['indicate_zoom',['../classCCPdfScrollArea.html#a659bde2f5fe452c6cc90e0c8c042b18a',1,'CCPdfScrollArea']]],
-  ['indication_42',['indication',['../classEventManager.html#a34fbb84264f448a152b44dd06853195a',1,'EventManager::indication() const'],['../classEventManager.html#a423683d4091e7ead0bd42058b30869ba',1,'EventManager::Indication']]],
+  ['indication_42',['indication',['../classEventManager.html#a423683d4091e7ead0bd42058b30869ba',1,'EventManager::Indication'],['../classEventManager.html#a34fbb84264f448a152b44dd06853195a',1,'EventManager::indication() const']]],
   ['indicator_43',['Indicator',['../structCCPdfNavigationPolicy_1_1Indicator.html',1,'CCPdfNavigationPolicy']]],
   ['info_44',['info',['../structNoteCreatorWindow_1_1Package.html#a0af72880db4da33a707c5817c9b69570',1,'NoteCreatorWindow::Package']]],
   ['infoindex_45',['InfoIndex',['../classMainWindow.html#ad766a05d8996b153d8328819f3fef928',1,'MainWindow']]],

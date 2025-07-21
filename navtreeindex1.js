@@ -1,5 +1,8 @@
 var NAVTREEINDEX1 =
 {
+"classAboutMainWindow.html#a95c30d3e3bd081027a788bc9e17b1a38":[5,0,7,0],
+"classAboutMainWindow.html#abb187def904c4025e74fb3e122befc4e":[5,0,7,1],
+"classAppCardWidget.html":[5,0,11],
 "classAppCardWidget.html#a2fa88d10498e3366f9a2268a74420b4f":[5,0,11,10],
 "classAppCardWidget.html#a4a99ac0e10c319ef328cfa380ba56170":[5,0,11,9],
 "classAppCardWidget.html#a79c645ef1c8e4ca25610676161eeb305":[5,0,11,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX1 =
 "classCCPdfNavigationPolicy.html#a7ea598825fcdc49512b9c9bfb1d5ff79":[5,0,60,1],
 "classCCPdfScrollArea.html":[5,0,61],
 "classCCPdfScrollArea.html#a659bde2f5fe452c6cc90e0c8c042b18a":[5,0,61,2],
-"classCCPdfScrollArea.html#a688d7e77f99d63bbab5ca7ba24a5d452":[5,0,61,1],
-"classCCPdfScrollArea.html#a7abde81eb52f2b6332ea7dc4217ca79a":[5,0,61,0],
-"classCCPdfScrollArea.html#a89efd2947c242db9ca72649d65e40816":[5,0,61,4],
-"classCCPdfScrollArea.html#ab65775e577a1ebaccb70c180ab526d98":[5,0,61,5]
+"classCCPdfScrollArea.html#a688d7e77f99d63bbab5ca7ba24a5d452":[5,0,61,1]
 };

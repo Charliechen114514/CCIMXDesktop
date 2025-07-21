@@ -15,7 +15,7 @@ var searchData=
   ['next_5fenabled_12',['next_enabled',['../structMediaListMails.html#a0703dba7f57b07fa6f9f2a8e21042225',1,'MediaListMails']]],
   ['next_5fpage_13',['next_page',['../classMainWindow.html#abc9d84a0a8b9bea132a960fdfa06b2cd',1,'MainWindow']]],
   ['no_5ferror_14',['NO_ERROR',['../classCCPdfDocument.html#a49387984fa059ca9904600ba7edacd39ad306b6fdee05fe87455110ddf6501e6c',1,'CCPdfDocument']]],
-  ['normal_15',['normal',['../classDinasourFrameFetcher.html#abd9732a2fc7ec5c1389b3308eb920182a1e23852820b9154316c7c06e2b7ba051',1,'DinasourFrameFetcher::NORMAL'],['../classLightControllerWindow.html#ad01b4159b975884f5398071749f17593a960b44c579bc2f6818d2daaf9e4c16f0',1,'LightControllerWindow::Normal']]],
+  ['normal_15',['normal',['../classLightControllerWindow.html#ad01b4159b975884f5398071749f17593a960b44c579bc2f6818d2daaf9e4c16f0',1,'LightControllerWindow::Normal'],['../classDinasourFrameFetcher.html#abd9732a2fc7ec5c1389b3308eb920182a1e23852820b9154316c7c06e2b7ba051',1,'DinasourFrameFetcher::NORMAL']]],
   ['notecreatorwindow_16',['notecreatorwindow',['../classNoteCreatorWindow.html#ae4e9e8cac1ad751be0d800d48382d65e',1,'NoteCreatorWindow::NoteCreatorWindow()'],['../classNoteCreatorWindow.html',1,'NoteCreatorWindow']]],
   ['noteinfo_17',['noteinfo',['../classNoter.html#a1a96652bfaf074d24d4395a92a2174b5',1,'Noter::noteInfo()'],['../structNoteInfo.html',1,'NoteInfo']]],
   ['noter_18',['noter',['../classNoter.html#abafede83ac3452b10639b33a13c06899',1,'Noter::Noter()'],['../classNoter.html',1,'Noter']]],

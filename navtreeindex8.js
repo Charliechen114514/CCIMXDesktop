@@ -1,5 +1,15 @@
 var NAVTREEINDEX8 =
 {
+"dir_b37f004d376611515519a1932a656746.html":[6,0,2,2,0,0,0],
+"dir_b7ac5f0f83aeb17c418c920b0319c97d.html":[6,0,2,2,1],
+"dir_bb70ab7ee13e5b93370bafea8b4c72cf.html":[6,0,1,5,0],
+"dir_bb75e8bdc66850125b6e8dc6aa1d4bc3.html":[6,0,6,0],
+"dir_bcf1cc613455de6583fe8097df6cb895.html":[6,0,3,7,1,0,4],
+"dir_bd181a16d0425cc08490e85da99d665e.html":[6,0,4,2],
+"dir_bd1d4a2199c0bd13fc8693fa2e7d0a50.html":[6,0,2,4,1],
+"dir_bd3774ff2a38a52b7184cd915fc16faf.html":[6,0,2,2,0,0],
+"dir_bee5cbc4432d05d100d8b62dc3c168f9.html":[6,0,4,3],
+"dir_bf2171657b011f44f1cd17a40fcad0bd.html":[6,0,1,1,2],
 "dir_bf392b1e3ecddf31472ea7f258e867db.html":[6,0,3,7,0,2],
 "dir_c0782fa58d2e99d60f57c895987ccfdf.html":[6,0,1,0,1],
 "dir_c41a2c1543436f0aecc231599d1a57d2.html":[6,0,3,6,1],
@@ -63,8 +73,8 @@ var NAVTREEINDEX8 =
 "functions_enum.html":[5,3,4],
 "functions_eval.html":[5,3,5],
 "functions_f.html":[5,3,0,6],
-"functions_func.html":[5,3,1,0],
 "functions_func.html":[5,3,1],
+"functions_func.html":[5,3,1,0],
 "functions_func_a.html":[5,3,1,1],
 "functions_func_b.html":[5,3,1,2],
 "functions_func_c.html":[5,3,1,3],
@@ -239,15 +249,5 @@ var NAVTREEINDEX8 =
 "namespaceQtAdaptTools.html#a9c241e615eb418c9fe1bba94ba81e4d1":[4,0,15,0],
 "namespaceQtAdaptTools.html#aac1f5732de2d4a088fd5fccc50b6ffe0":[4,0,15,1],
 "namespaceSideBarWidgetStaticConfig.html":[4,0,16],
-"namespaceSimpleTools.html":[4,0,17],
-"namespaceSimpleTools.html#af9d000f1e32ab8a018963899c410640f":[4,0,17,1],
-"namespaceTopStatusBar__LabelName.html":[4,0,18],
-"namespaceUiTools.html":[4,0,19],
-"namespaceUiTools.html#a0851222151caa014bef526893f1995aa":[4,0,19,6],
-"namespaceUiTools.html#a1bf04de71297f008b989b18fba3bea44":[4,0,19,2],
-"namespaceUiTools.html#a71658ddf6f0d85d09ae03a7eed2b5f0c":[4,0,19,3],
-"namespaceUiTools.html#a999dd6eb96eca168befed930c63f5d6f":[4,0,19,1],
-"namespaceUiTools.html#a9f60353610b781acba2a6f6040aaeaf5":[4,0,19,0],
-"namespaceUiTools.html#aa0ceeeec7f42af270fcac8c916f7ff8e":[4,0,19,5],
-"namespaceUiTools.html#aff01fcf1564c6a685754aac0343877d5":[4,0,19,4]
+"namespaceSimpleTools.html":[4,0,17]
 };
