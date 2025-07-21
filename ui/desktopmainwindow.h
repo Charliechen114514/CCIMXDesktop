@@ -29,6 +29,7 @@ class GlobalClockSources;
 class TopSideBarWidget;
 class DesktopServerBase;
 class DesktopServerHookBase;
+class DesktopUserInfo;
 /**
  * @brief DesktopMainWindow is the main frontend window of the application.
  * For beginners, this is the starting point to understand the UI details.
@@ -199,7 +200,7 @@ private:
     QList<DesktopServerBase*> servers; ///< servers
     QList<DesktopServerHookBase*> hooks; ///< server hooks;
     DesktopDirentLocationManager* locationManager; ///< locationManager
-
+    DesktopUserInfo* user_info; ///< user info
     struct {
         QPoint press; ///< Mouse press position
         QPoint release; ///< Mouse release position
@@ -250,6 +251,12 @@ private:
      * @brief setupBuiltInServer will deptach internal simple server
      */
     void setupBuiltInServer();
+
+    /**
+     * @brief get_user_info
+     * @return
+     */
+    DesktopUserInfo* get_user_info();
 };
 
 #endif // DESKTOPMAINWINDOW_H

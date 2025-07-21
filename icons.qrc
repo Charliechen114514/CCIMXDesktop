@@ -27,4 +27,10 @@
     <qresource prefix="/toast">
         <file>sources/info.png</file>
     </qresource>
+    <qresource prefix="/avator">
+        <file>sources/avatar/user_avatar.png</file>
+        <file>sources/avatar/email.png</file>
+        <file>sources/avatar/name.png</file>
+        <file>sources/avatar/phone.png</file>
+    </qresource>
 </RCC>

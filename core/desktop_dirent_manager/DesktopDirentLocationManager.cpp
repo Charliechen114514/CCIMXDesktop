@@ -42,6 +42,13 @@ QString fromServerType(const DesktopServerType t) {
     throw std::invalid_argument("What the fuck of the server type???");
 }
 
+QString getConfigPath(const QString& rootPath, int index = 0) {
+    const auto& pair = configs_dirent_name_pair[index];
+    QDir dir(rootPath);
+    dir.cd(QString::fromUtf8(pair.first));
+    return dir.filePath(QString::fromUtf8(pair.second));
+}
+
 }
 
 DesktopDirentLocationManager::DesktopDirentLocationManager(
@@ -85,6 +92,16 @@ bool DesktopDirentLocationManager::checkComponentFolder(const DesktopDirentType 
 bool DesktopDirentLocationManager::checkServerFolder(const DesktopServerType serverType) {
     QString folder = queryFromType(serverType);
     return QtFileIOUtils::checkPathAndPermission(folder, PermissionType::Write);
+}
+
+QString DesktopDirentLocationManager::queryConfigType(const ConfigureFileName name) {
+    return getConfigPath(queryFromType(DesktopDirentType::Config),
+                         static_cast<int>(name));
+}
+
+bool DesktopDirentLocationManager::checkConfigExsited(const ConfigureFileName name) {
+    QString file = queryConfigType(name);
+    return QtFileIOUtils::checkPathAndPermission(file, PermissionType::Write);
 }
 
 void DesktopDirentLocationManager::check_root_path_sessions() {

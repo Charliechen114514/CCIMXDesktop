@@ -52,4 +52,24 @@ static_assert(
 
 static constexpr const char* TOAST_SUMMON_DIRENT = ".__toast_summon_dirent";
 static constexpr const char* PLUGIN_WIDGET_PLACED = "plugins";
+
+enum class ConfigureFileName {
+    UserConfig
+};
+
+static constexpr unsigned short
+    ConfigureFileNameMAX
+    = static_cast<unsigned short>(ConfigureFileName::UserConfig) + 1;
+
+static constexpr std::pair<const char*, const char*>
+    configs_dirent_name_pair[] {
+        // using as dirent in config sub, config name
+        { ".", "user_config.json" }
+    };
+
+static_assert(
+    sizeof(configs_dirent_name_pair) / sizeof(configs_dirent_name_pair[0])
+        == ConfigureFileNameMAX,
+    "configs_dirent_name_pair and Enums are count mismatched!");
+
 #endif // DESKTOPDIRENTINFOSETTINGS_H

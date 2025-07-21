@@ -13,6 +13,9 @@ public:
     bool checkComponentFolder(const DesktopDirentType type);
     bool checkServerFolder(const DesktopServerType serverType);
 
+    QString queryConfigType(const ConfigureFileName name);
+    bool checkConfigExsited(const ConfigureFileName name);
+
 signals:
     void missingDirentFolder(const QString& folder, const DesktopDirentType type);
     void missingServerFolder(const QString& folder, const DesktopServerType type);

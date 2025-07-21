@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.19)
-project(CCIMX_Desktop LANGUAGES CXX VERSION 1.15.0)
+project(CCIMX_Desktop LANGUAGES CXX VERSION 1.16.0)
 
 message(STATUS "Importing cmake modules...")
 set(CCDESKTOPABOUT_CMAKE_DIR "${CMAKE_SOURCE_DIR}/cmake")
@@ -20,6 +20,8 @@ include(app_building_options)
 
 find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets Network)
 find_package(Qt6 REQUIRED COMPONENTS Core)
+find_package(Qt6 REQUIRED COMPONENTS Core)
+find_package(Qt6 REQUIRED COMPONENTS Widgets)
 qt_standard_project_setup()
 
 if(DEFINED LOCAL_CONFIG_FILE AND EXISTS "${LOCAL_CONFIG_FILE}")
@@ -107,6 +109,10 @@ set(UiSubs
 )
 
 set(CoreSubs
+    core/users/UserInfo.h
+    core/users/UserInfo.cpp
+    core/users/DesktopUserInfo.h
+    core/users/DesktopUserInfo.cpp
     core/page_switching_limiter/PageSwitchingLimiter.h
     core/page_switching_limiter/PageSwitchingLimiter.cpp
     core/coretools.h core/coretools.cpp
@@ -235,6 +241,8 @@ set(CardsSrc
     ui/card_stack/CardStackWidget.h ui/card_stack/CardStackWidget.cpp
     builtin/gadgets/larger_card/DateShowCard.h
     builtin/gadgets/larger_card/DateShowCard.cpp
+    builtin/gadgets/larger_card/UserInfoCard.h
+    builtin/gadgets/larger_card/UserInfoCard.cpp
     )
 
 set(InternalServer
@@ -292,6 +300,8 @@ target_link_libraries(CCIMX_Desktop
         Qt6::Network
 )
 target_link_libraries(CCIMX_Desktop PRIVATE Qt6::Core)
+target_link_libraries(CCIMX_Desktop PRIVATE Qt6::Core)
+target_link_libraries(CCIMX_Desktop PRIVATE Qt6::Widgets)
 
 target_include_directories(CCIMX_Desktop
     PRIVATE

@@ -8,14 +8,26 @@
 #include <QLabel>
 
 #include "builtin/gadgets/larger_card/DateShowCard.h"
+#include "builtin/gadgets/larger_card/UserInfoCard.h"
 #include "builtin/gadgets/larger_card/system_state/DiskUsageCardWidget.h"
 #include "builtin/gadgets/larger_card/system_state/MemoryUsageCard.h"
+#include "core/users/DesktopUserInfo.h"
 #include "ui/internal_calendar/ModernCalendarWidget.h"
 /* create a homepage */
 HomePage* PageFactory::build_home_page(DesktopMainWindow* mainWindow) {
 	HomePage* homePage = new HomePage(mainWindow);
     HomeCardManager* cardManager = homePage->homeCardManager();
+    UserInfoCard* user_info_card = new UserInfoCard(homePage);
+    DesktopUserInfo* info = mainWindow->get_user_info();
+    QObject::connect(info, &DesktopUserInfo::user_init_ok,
+                     user_info_card, &UserInfoCard::setUserInfo);
+    UserInfo* user_info = info->get_info();
+    if (user_info) {
+        user_info_card->setUserInfo(*user_info);
+    }
+
     QWidgetList widgetList = {
+        user_info_card,
         new ModernCalendarWidget(homePage),
         new DateShowCard(homePage),
         new DiskUsageCardWidget(homePage),

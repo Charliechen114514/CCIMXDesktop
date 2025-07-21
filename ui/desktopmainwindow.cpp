@@ -12,6 +12,7 @@
 #include "core/loggers/ConsoleLogger.h"
 #include "core/loggers/DesktopLoggerConvinients.h"
 #include "core/page_switching_limiter/PageSwitchingLimiter.h"
+#include "core/users/DesktopUserInfo.h"
 #include "core/wallpaper/WallPaperEngine.h"
 #include "desktop_settings.h"
 #include "ui/UiTools.h"
@@ -54,6 +55,10 @@ void DesktopMainWindow::setupBuiltInServer() {
     pluginWidgetServer->scanTargetDirent();
 }
 
+DesktopUserInfo* DesktopMainWindow::get_user_info() {
+    return user_info;
+}
+
 DesktopMainWindow::DesktopMainWindow(QWidget* parent)
     : QMainWindow(parent)
     , ui(new Ui::DesktopMainWindow) {
@@ -80,6 +85,8 @@ void DesktopMainWindow::setupui() {
     ui->topsidewidgetbar->installHookedWindow(this);
     emit updateProgress("Scanning the Settable Components", 50);
     settingsWindow = new SettingsWindow(this);
+    user_info = new DesktopUserInfo(locationManager);
+    user_info->start_init();
     slide_limitive = PageSwitchingLimiterParams::DEF_POSX;
 }
 
