@@ -18,6 +18,8 @@
 
 **CCIMXDesktop** is a minimalist, lightweight and high-performance desktop environment framework based on Qt6.8.3, specially customized for embedded systems such as NXP i.MX6ULL platform (i.e. embedded systems that cannot run heavyweight desktop services but can run Qt programs). It provides a series of common Qt built-in tool packages, device management inheritance and built-in auxiliary applications, all of which are presented in a unified user interface. Let you use embedded devices with LCD easily and visually!
 
+The project supports running on Windows, Linux host computers and ARM-Linux with a basic environment (complete root file system + Qt + C++ runtime environment)
+
 ## Some running screenshots
 
 1) Screen when starting loading (screenshot version: Release 2.0.0)
