@@ -98,43 +98,53 @@ $(document).ready(function(){initNavTree('InformToastLabel_8h_source.html',''); 
   <div class="headertitle"><div class="title">InformToastLabel.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef INFORMTOASTLABEL_H</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define INFORMTOASTLABEL_H</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;QWidget&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span>Ui {</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">class </span><a class="code hl_class" href="classInformToastLabel.html">InformToastLabel</a>;</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>}</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="classInformToastLabel.html">   10</a></span><span class="keyword">class </span><a class="code hl_class" href="classInformToastLabel.html">InformToastLabel</a> : <span class="keyword">public</span> QWidget {</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    Q_OBJECT</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classInformToastLabel.html">InformToastLabel</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <a class="code hl_class" href="classInformToastLabel.html">~InformToastLabel</a>();</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordtype">void</span> setTitle(<span class="keyword">const</span> QString&amp; title);</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">void</span> setText(<span class="keyword">const</span> QString&amp; text);</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordtype">void</span> setIcon(<span class="keyword">const</span> QString&amp; icons);</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordtype">void</span> paintEvent(QPaintEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    Ui::InformToastLabel* ui;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>};</div>
-</div>
+<a href="InformToastLabel_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef INFORMTOASTLABEL_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define INFORMTOASTLABEL_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;QWidget&gt;</span> <span class="comment">// Base class for InformToastLabel</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">// Forward declaration of the UI namespace generated by Qt Designer</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">namespace </span>Ui {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">class </span><a class="code hl_class" href="classInformToastLabel.html">InformToastLabel</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>}</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classInformToastLabel.html">   25</a></span><span class="keyword">class </span><a class="code hl_class" href="classInformToastLabel.html">InformToastLabel</a> : <span class="keyword">public</span> QWidget {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>Q_OBJECT <span class="comment">// Enables Qt&#39;s meta-object system features like signals and slots</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#endif </span><span class="comment">// INFORMTOASTLABEL_H</span></div>
-<div class="ttc" id="aclassInformToastLabel_html"><div class="ttname"><a href="classInformToastLabel.html">InformToastLabel</a></div><div class="ttdef"><b>Definition</b> InformToastLabel.h:10</div></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    public :</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classInformToastLabel.html">InformToastLabel</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <a class="code hl_function" href="classInformToastLabel.html#a10ab06fb67cdc3ad6d3af676c8e418e5">~InformToastLabel</a>();</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classInformToastLabel.html#ae94110914a1cc22efd8ea308d95711cf">setTitle</a>(<span class="keyword">const</span> QString&amp; title);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classInformToastLabel.html#a48aaf1b7bc22bdfafe427384e278e3b4">setText</a>(<span class="keyword">const</span> QString&amp; text);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classInformToastLabel.html#a94dee96953e039caaf86c611b9b18cab">setIcon</a>(<span class="keyword">const</span> QString&amp; icons);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classInformToastLabel.html#a268459b1c53105dcb93b97372266e67f">paintEvent</a>(QPaintEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    Ui::InformToastLabel* ui;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>};</div>
+</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="preprocessor">#endif </span><span class="comment">// INFORMTOASTLABEL_H</span></div>
+<div class="ttc" id="aclassInformToastLabel_html"><div class="ttname"><a href="classInformToastLabel.html">InformToastLabel</a></div><div class="ttdoc">A custom QWidget designed to display an informative toast notification.</div><div class="ttdef"><b>Definition</b> InformToastLabel.h:25</div></div>
+<div class="ttc" id="aclassInformToastLabel_html_a10ab06fb67cdc3ad6d3af676c8e418e5"><div class="ttname"><a href="classInformToastLabel.html#a10ab06fb67cdc3ad6d3af676c8e418e5">InformToastLabel::~InformToastLabel</a></div><div class="ttdeci">~InformToastLabel()</div><div class="ttdoc">Destroys the InformToastLabel object.</div><div class="ttdef"><b>Definition</b> InformToastLabel.cpp:39</div></div>
+<div class="ttc" id="aclassInformToastLabel_html_a268459b1c53105dcb93b97372266e67f"><div class="ttname"><a href="classInformToastLabel.html#a268459b1c53105dcb93b97372266e67f">InformToastLabel::paintEvent</a></div><div class="ttdeci">void paintEvent(QPaintEvent *event) override</div><div class="ttdoc">Overrides the default paint event for the widget.</div><div class="ttdef"><b>Definition</b> InformToastLabel.cpp:43</div></div>
+<div class="ttc" id="aclassInformToastLabel_html_a48aaf1b7bc22bdfafe427384e278e3b4"><div class="ttname"><a href="classInformToastLabel.html#a48aaf1b7bc22bdfafe427384e278e3b4">InformToastLabel::setText</a></div><div class="ttdeci">void setText(const QString &amp;text)</div><div class="ttdoc">Sets the main text message for the toast notification.</div><div class="ttdef"><b>Definition</b> InformToastLabel.cpp:62</div></div>
+<div class="ttc" id="aclassInformToastLabel_html_a94dee96953e039caaf86c611b9b18cab"><div class="ttname"><a href="classInformToastLabel.html#a94dee96953e039caaf86c611b9b18cab">InformToastLabel::setIcon</a></div><div class="ttdeci">void setIcon(const QString &amp;icons)</div><div class="ttdoc">Sets the icon for the toast notification.</div><div class="ttdef"><b>Definition</b> InformToastLabel.cpp:66</div></div>
+<div class="ttc" id="aclassInformToastLabel_html_ae94110914a1cc22efd8ea308d95711cf"><div class="ttname"><a href="classInformToastLabel.html#ae94110914a1cc22efd8ea308d95711cf">InformToastLabel::setTitle</a></div><div class="ttdeci">void setTitle(const QString &amp;title)</div><div class="ttdoc">Sets the title text for the toast notification.</div><div class="ttdef"><b>Definition</b> InformToastLabel.cpp:58</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_1788f8309b1a812dcb800a185471cf6c.html">ui</a></li><li class="navelem"><a class="el" href="dir_01811e0b8784178c8c119431ff99d1e8.html">inform_toast_label</a></li><li class="navelem"><b>InformToastLabel.h</b></li>
+    <li class="navelem"><a class="el" href="dir_1788f8309b1a812dcb800a185471cf6c.html">ui</a></li><li class="navelem"><a class="el" href="dir_01811e0b8784178c8c119431ff99d1e8.html">inform_toast_label</a></li><li class="navelem"><a class="el" href="InformToastLabel_8h.html">InformToastLabel.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

@@ -102,6 +102,11 @@ $(document).ready(function(){initNavTree('classToastReceiver.html',''); initResi
   <div class="headertitle"><div class="title">ToastReceiver Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Receives toast notification data, often from external sources, and emits it for processing.  
+ <a href="classToastReceiver.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="ToastReceiver_8h_source.html">ToastReceiver.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ToastReceiver:</div>
 <div class="dyncontent">
@@ -111,19 +116,125 @@ Inheritance diagram for ToastReceiver:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
 Signals</h2></td></tr>
-<tr class="memitem:a05a0468cc22be57431f276b65a7f392f" id="r_a05a0468cc22be57431f276b65a7f392f"><td class="memItemLeft" align="right" valign="top"><a id="a05a0468cc22be57431f276b65a7f392f" name="a05a0468cc22be57431f276b65a7f392f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>postToast</b> (const <a class="el" href="structToastMetaProtocol.html">ToastMetaProtocol</a> &amp;protocolMeta)</td></tr>
+<tr class="memitem:a05a0468cc22be57431f276b65a7f392f" id="r_a05a0468cc22be57431f276b65a7f392f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classToastReceiver.html#a05a0468cc22be57431f276b65a7f392f">postToast</a> (const <a class="el" href="structToastMetaProtocol.html">ToastMetaProtocol</a> &amp;protocolMeta)</td></tr>
+<tr class="memdesc:a05a0468cc22be57431f276b65a7f392f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal emitted when a new toast notification is ready to be posted.  <br /></td></tr>
 <tr class="separator:a05a0468cc22be57431f276b65a7f392f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6ae31185d08995f794ce37ab092d386f" id="r_a6ae31185d08995f794ce37ab092d386f"><td class="memItemLeft" align="right" valign="top"><a id="a6ae31185d08995f794ce37ab092d386f" name="a6ae31185d08995f794ce37ab092d386f"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ToastReceiver</b> (<a class="el" href="classFileMonitor.html">FileMonitor</a> *parent=nullptr)</td></tr>
+<tr class="memitem:a6ae31185d08995f794ce37ab092d386f" id="r_a6ae31185d08995f794ce37ab092d386f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classToastReceiver.html#a6ae31185d08995f794ce37ab092d386f">ToastReceiver</a> (<a class="el" href="classFileMonitor.html">FileMonitor</a> *parent=nullptr)</td></tr>
+<tr class="memdesc:a6ae31185d08995f794ce37ab092d386f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classToastReceiver.html" title="Receives toast notification data, often from external sources, and emits it for processing.">ToastReceiver</a> instance.  <br /></td></tr>
 <tr class="separator:a6ae31185d08995f794ce37ab092d386f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ee554c83988a0269f14d1a40c5f7dd1" id="r_a1ee554c83988a0269f14d1a40c5f7dd1"><td class="memItemLeft" align="right" valign="top"><a id="a1ee554c83988a0269f14d1a40c5f7dd1" name="a1ee554c83988a0269f14d1a40c5f7dd1"></a>
-std::optional&lt; <a class="el" href="structToastMetaProtocol.html">ToastMetaProtocol</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>fromExternalJsonString</b> (const QString &amp;json_file) const</td></tr>
+<tr class="memitem:a1ee554c83988a0269f14d1a40c5f7dd1" id="r_a1ee554c83988a0269f14d1a40c5f7dd1"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="structToastMetaProtocol.html">ToastMetaProtocol</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classToastReceiver.html#a1ee554c83988a0269f14d1a40c5f7dd1">fromExternalJsonString</a> (const QString &amp;json_file) const</td></tr>
+<tr class="memdesc:a1ee554c83988a0269f14d1a40c5f7dd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a JSON string from an external source into a <code><a class="el" href="structToastMetaProtocol.html" title="Represents the metadata and content for a toast notification.">ToastMetaProtocol</a></code> object.  <br /></td></tr>
 <tr class="separator:a1ee554c83988a0269f14d1a40c5f7dd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Receives toast notification data, often from external sources, and emits it for processing. </p>
+<p>This class acts as a listener for toast notification data. It is typically connected to a <code><a class="el" href="classFileMonitor.html" title="Monitors a specified directory for file additions or deletions at regular intervals.">FileMonitor</a></code> to detect new toast-related files (e.g., JSON files) and then parses these files into <code><a class="el" href="structToastMetaProtocol.html" title="Represents the metadata and content for a toast notification.">ToastMetaProtocol</a></code> objects. Once successfully parsed, it emits a signal to notify other components (like a <code><a class="el" href="classToastProxy.html" title="Acts as an intermediary to process and forward toast notifications to the display mechanism.">ToastProxy</a></code> or <code><a class="el" href="classToastPostServer.html" title="The ToastPostServer class.">ToastPostServer</a></code>) that a new toast is ready to be displayed. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a6ae31185d08995f794ce37ab092d386f" name="a6ae31185d08995f794ce37ab092d386f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ae31185d08995f794ce37ab092d386f">&#9670;&#160;</a></span>ToastReceiver()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ToastReceiver::ToastReceiver </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classFileMonitor.html">FileMonitor</a> *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a <a class="el" href="classToastReceiver.html" title="Receives toast notification data, often from external sources, and emits it for processing.">ToastReceiver</a> instance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>A pointer to the parent <code>QObject</code>, often a <code><a class="el" href="classFileMonitor.html" title="Monitors a specified directory for file additions or deletions at regular intervals.">FileMonitor</a></code> that this receiver will be associated with for detecting incoming toast data. Defaults to <code>nullptr</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a1ee554c83988a0269f14d1a40c5f7dd1" name="a1ee554c83988a0269f14d1a40c5f7dd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ee554c83988a0269f14d1a40c5f7dd1">&#9670;&#160;</a></span>fromExternalJsonString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; <a class="el" href="structToastMetaProtocol.html">ToastMetaProtocol</a> &gt; ToastReceiver::fromExternalJsonString </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>json_file</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parses a JSON string from an external source into a <code><a class="el" href="structToastMetaProtocol.html" title="Represents the metadata and content for a toast notification.">ToastMetaProtocol</a></code> object. </p>
+<ul>
+<li>This method attempts to read and parse the content of a JSON file (specified by <code>json_file</code>) into a <code><a class="el" href="structToastMetaProtocol.html" title="Represents the metadata and content for a toast notification.">ToastMetaProtocol</a></code> struct. It returns <code>std::nullopt</code> if the file cannot be read, is not valid JSON, or does not contain the expected toast metadata. <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">json_file</td><td>The path to the JSON file containing the toast metadata. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An <code>std::optional&lt;<a class="el" href="structToastMetaProtocol.html" title="Represents the metadata and content for a toast notification.">ToastMetaProtocol</a>&gt;</code> containing the parsed toast data if successful, otherwise <code>std::nullopt</code>. </dd></dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="a05a0468cc22be57431f276b65a7f392f" name="a05a0468cc22be57431f276b65a7f392f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05a0468cc22be57431f276b65a7f392f">&#9670;&#160;</a></span>postToast</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ToastReceiver::postToast </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structToastMetaProtocol.html">ToastMetaProtocol</a> &amp;&#160;</td>
+          <td class="paramname"><em>protocolMeta</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Signal emitted when a new toast notification is ready to be posted. </p>
+<ul>
+<li>This signal carries the parsed <code><a class="el" href="structToastMetaProtocol.html" title="Represents the metadata and content for a toast notification.">ToastMetaProtocol</a></code> data and should be connected to a slot responsible for displaying the toast. <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">protocolMeta</td><td>A constant reference to the <code><a class="el" href="structToastMetaProtocol.html" title="Represents the metadata and content for a toast notification.">ToastMetaProtocol</a></code> object containing the toast data. </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>core/server/toast_file_gen_and_receiver/<a class="el" href="ToastReceiver_8h_source.html">ToastReceiver.h</a></li>
 <li>core/server/toast_file_gen_and_receiver/<b>ToastReceiver.cpp</b></li>

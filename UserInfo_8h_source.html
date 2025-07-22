@@ -98,66 +98,100 @@ $(document).ready(function(){initNavTree('UserInfo_8h_source.html',''); initResi
   <div class="headertitle"><div class="title">UserInfo.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef USERINFO_H</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define USERINFO_H</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;QString&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="foldopen" id="foldopen00007" data-start="{" data-end="};">
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="classUserInfo.html">    7</a></span><span class="keyword">class </span><a class="code hl_class" href="classUserInfo.html">UserInfo</a> {</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">public</span>:</div>
-<div class="foldopen" id="foldopen00009" data-start="{" data-end="};">
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="classUserInfo_1_1UserInfoBuilder.html">    9</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classUserInfo_1_1UserInfoBuilder.html">UserInfoBuilder</a> {</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        <a class="code hl_class" href="classUserInfo_1_1UserInfoBuilder.html">UserInfoBuilder</a>();</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <a class="code hl_class" href="classUserInfo_1_1UserInfoBuilder.html">UserInfoBuilder</a>&amp; set_name(QString name);</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <a class="code hl_class" href="classUserInfo_1_1UserInfoBuilder.html">UserInfoBuilder</a>&amp; set_email(QString email);</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <a class="code hl_class" href="classUserInfo_1_1UserInfoBuilder.html">UserInfoBuilder</a>&amp; set_phone_number(QString phone);</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <a class="code hl_class" href="classUserInfo_1_1UserInfoBuilder.html">UserInfoBuilder</a>&amp; set_avatar(QString path);</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        std::unique_ptr&lt;UserInfo&gt; build();</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="keyword">static</span> std::unique_ptr&lt;UserInfo&gt; fromJson(</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            <span class="keyword">const</span> QString jsonString);</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        std::unique_ptr&lt;UserInfo&gt; internal_info;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    };</div>
+<a href="UserInfo_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef USERINFO_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define USERINFO_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;QString&gt;</span> <span class="comment">// For QString to hold string data</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;memory&gt;</span> <span class="comment">// For std::unique_ptr</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="foldopen" id="foldopen00022" data-start="{" data-end="};">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classUserInfo.html">   22</a></span><span class="keyword">class </span><a class="code hl_class" href="classUserInfo.html">UserInfo</a> {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00032" data-start="{" data-end="};">
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classUserInfo_1_1UserInfoBuilder.html">   32</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classUserInfo_1_1UserInfoBuilder.html">UserInfoBuilder</a> {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <a class="code hl_function" href="classUserInfo_1_1UserInfoBuilder.html#a4b55df439f9a73d1a47645c9b1751d77">UserInfoBuilder</a>();</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <a class="code hl_class" href="classUserInfo_1_1UserInfoBuilder.html">UserInfoBuilder</a>&amp; <a class="code hl_function" href="classUserInfo_1_1UserInfoBuilder.html#a21997b612b7e833272f6b8bd56c2329a">set_name</a>(QString name);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <a class="code hl_class" href="classUserInfo_1_1UserInfoBuilder.html">UserInfoBuilder</a>&amp; <a class="code hl_function" href="classUserInfo_1_1UserInfoBuilder.html#ac55dbd6d079fc18fdcc6799b13c7efdd">set_email</a>(QString email);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <a class="code hl_class" href="classUserInfo_1_1UserInfoBuilder.html">UserInfoBuilder</a>&amp; <a class="code hl_function" href="classUserInfo_1_1UserInfoBuilder.html#a3b3ad91fecc7139670d179ee74f08ab9">set_phone_number</a>(QString phone);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <a class="code hl_class" href="classUserInfo_1_1UserInfoBuilder.html">UserInfoBuilder</a>&amp; <a class="code hl_function" href="classUserInfo_1_1UserInfoBuilder.html#a26d3aac592aa514c82d998d6bfeeff3b">set_avatar</a>(QString path);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        std::unique_ptr&lt;UserInfo&gt; <a class="code hl_function" href="classUserInfo_1_1UserInfoBuilder.html#a1c3fc661261787e877bc7e17d54ce3c8">build</a>();</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="keyword">static</span> std::unique_ptr&lt;UserInfo&gt; <a class="code hl_function" href="classUserInfo_1_1UserInfoBuilder.html#a85ac6fcb1e1b5732dc6a24609d7ef540">fromJson</a>(<span class="keyword">const</span> QString jsonString);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        std::unique_ptr&lt;UserInfo&gt; internal_info;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    };</div>
 </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">const</span> QString&amp; get_name() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">const</span> QString&amp; get_email() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">const</span> QString&amp; get_phone_number() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">const</span> QString&amp; get_avatar() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">void</span> set_avator(<span class="keyword">const</span> QString&amp; av_path);</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">void</span> set_name(<span class="keyword">const</span> QString&amp; name);</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">void</span> set_email(<span class="keyword">const</span> QString&amp; email);</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordtype">void</span> set_phone(<span class="keyword">const</span> QString&amp; phone);</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    QString serialized() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <a class="code hl_class" href="classUserInfo.html">UserInfo</a>(<span class="keyword">const</span> <a class="code hl_class" href="classUserInfo.html">UserInfo</a>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <a class="code hl_class" href="classUserInfo.html">UserInfo</a>&amp; operator=(<span class="keyword">const</span> <a class="code hl_class" href="classUserInfo.html">UserInfo</a>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_class" href="classUserInfo.html">~UserInfo</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="classUserInfo_1_1UserInfoBuilder.html">UserInfoBuilder</a>;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <a class="code hl_class" href="classUserInfo.html">UserInfo</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    QString name;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    QString phone_number;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    QString email;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    QString av_path;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>};</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keyword">const</span> QString&amp; <a class="code hl_function" href="classUserInfo.html#adcc7f3baa5dc72761e9efc2b1e660935">get_name</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keyword">const</span> QString&amp; <a class="code hl_function" href="classUserInfo.html#a00728931943703fc14ed1de2b7286f09">get_email</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keyword">const</span> QString&amp; <a class="code hl_function" href="classUserInfo.html#ae674826a85d8fbea5ea606753e718d4b">get_phone_number</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keyword">const</span> QString&amp; <a class="code hl_function" href="classUserInfo.html#ae855609ec725e7f499c6350a507e72a3">get_avatar</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classUserInfo.html#ab594bb29870300192f75c9db1242a5db">set_avator</a>(<span class="keyword">const</span> QString&amp; av_path);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classUserInfo.html#a11b1707fa2690ecca6fb015f83eb593d">set_name</a>(<span class="keyword">const</span> QString&amp; name);</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classUserInfo.html#aa62763c1e7e8f43e0e14ec62f4885fbf">set_email</a>(<span class="keyword">const</span> QString&amp; email);</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classUserInfo.html#aad87f76675c6075b68dc6d67f7f8f6aa">set_phone</a>(<span class="keyword">const</span> QString&amp; phone);</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    QString <a class="code hl_function" href="classUserInfo.html#a4ed6a1384bdb0464b096c58ccaec9df8">serialized</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    <span class="comment">// Delete copy constructor and copy assignment operator to prevent unintended copying.</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    <a class="code hl_class" href="classUserInfo.html">UserInfo</a>(<span class="keyword">const</span> <a class="code hl_class" href="classUserInfo.html">UserInfo</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    <a class="code hl_class" href="classUserInfo.html">UserInfo</a>&amp; operator=(<span class="keyword">const</span> <a class="code hl_class" href="classUserInfo.html">UserInfo</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="classUserInfo.html#ab0a6c03fae5f88919a303d192bf36401">  155</a></span>    <a class="code hl_function" href="classUserInfo.html#ab0a6c03fae5f88919a303d192bf36401">~UserInfo</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="classUserInfo.html#abd897efc415c127cbacef861387fa0e4">  163</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="classUserInfo_1_1UserInfoBuilder.html">UserInfoBuilder</a>;</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    <a class="code hl_class" href="classUserInfo.html">UserInfo</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    QString name; </div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    QString phone_number; </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    QString email; </div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    QString av_path; </div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>};</div>
 </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#endif </span><span class="comment">// USERINFO_H</span></div>
-<div class="ttc" id="aclassUserInfo_1_1UserInfoBuilder_html"><div class="ttname"><a href="classUserInfo_1_1UserInfoBuilder.html">UserInfo::UserInfoBuilder</a></div><div class="ttdef"><b>Definition</b> UserInfo.h:9</div></div>
-<div class="ttc" id="aclassUserInfo_html"><div class="ttname"><a href="classUserInfo.html">UserInfo</a></div><div class="ttdef"><b>Definition</b> UserInfo.h:7</div></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="preprocessor">#endif </span><span class="comment">// USERINFO_H</span></div>
+<div class="ttc" id="aclassUserInfo_1_1UserInfoBuilder_html"><div class="ttname"><a href="classUserInfo_1_1UserInfoBuilder.html">UserInfo::UserInfoBuilder</a></div><div class="ttdoc">A builder class for constructing UserInfo objects.</div><div class="ttdef"><b>Definition</b> UserInfo.h:32</div></div>
+<div class="ttc" id="aclassUserInfo_1_1UserInfoBuilder_html_a1c3fc661261787e877bc7e17d54ce3c8"><div class="ttname"><a href="classUserInfo_1_1UserInfoBuilder.html#a1c3fc661261787e877bc7e17d54ce3c8">UserInfo::UserInfoBuilder::build</a></div><div class="ttdeci">std::unique_ptr&lt; UserInfo &gt; build()</div><div class="ttdoc">Builds and returns a unique pointer to the constructed UserInfo object.</div><div class="ttdef"><b>Definition</b> UserInfo.cpp:26</div></div>
+<div class="ttc" id="aclassUserInfo_1_1UserInfoBuilder_html_a21997b612b7e833272f6b8bd56c2329a"><div class="ttname"><a href="classUserInfo_1_1UserInfoBuilder.html#a21997b612b7e833272f6b8bd56c2329a">UserInfo::UserInfoBuilder::set_name</a></div><div class="ttdeci">UserInfoBuilder &amp; set_name(QString name)</div><div class="ttdoc">Sets the name for the UserInfo object being built.</div><div class="ttdef"><b>Definition</b> UserInfo.cpp:11</div></div>
+<div class="ttc" id="aclassUserInfo_1_1UserInfoBuilder_html_a26d3aac592aa514c82d998d6bfeeff3b"><div class="ttname"><a href="classUserInfo_1_1UserInfoBuilder.html#a26d3aac592aa514c82d998d6bfeeff3b">UserInfo::UserInfoBuilder::set_avatar</a></div><div class="ttdeci">UserInfoBuilder &amp; set_avatar(QString path)</div><div class="ttdoc">Sets the avatar path for the UserInfo object being built.</div><div class="ttdef"><b>Definition</b> UserInfo.cpp:6</div></div>
+<div class="ttc" id="aclassUserInfo_1_1UserInfoBuilder_html_a3b3ad91fecc7139670d179ee74f08ab9"><div class="ttname"><a href="classUserInfo_1_1UserInfoBuilder.html#a3b3ad91fecc7139670d179ee74f08ab9">UserInfo::UserInfoBuilder::set_phone_number</a></div><div class="ttdeci">UserInfoBuilder &amp; set_phone_number(QString phone)</div><div class="ttdoc">Sets the phone number for the UserInfo object being built.</div><div class="ttdef"><b>Definition</b> UserInfo.cpp:21</div></div>
+<div class="ttc" id="aclassUserInfo_1_1UserInfoBuilder_html_a4b55df439f9a73d1a47645c9b1751d77"><div class="ttname"><a href="classUserInfo_1_1UserInfoBuilder.html#a4b55df439f9a73d1a47645c9b1751d77">UserInfo::UserInfoBuilder::UserInfoBuilder</a></div><div class="ttdeci">UserInfoBuilder()</div><div class="ttdoc">Constructs a new UserInfoBuilder. Initializes an internal UserInfo object that will be populated.</div><div class="ttdef"><b>Definition</b> UserInfo.cpp:3</div></div>
+<div class="ttc" id="aclassUserInfo_1_1UserInfoBuilder_html_a85ac6fcb1e1b5732dc6a24609d7ef540"><div class="ttname"><a href="classUserInfo_1_1UserInfoBuilder.html#a85ac6fcb1e1b5732dc6a24609d7ef540">UserInfo::UserInfoBuilder::fromJson</a></div><div class="ttdeci">static std::unique_ptr&lt; UserInfo &gt; fromJson(const QString jsonString)</div><div class="ttdoc">Static method to construct a UserInfo object from a JSON string.</div><div class="ttdef"><b>Definition</b> UserInfo.cpp:67</div></div>
+<div class="ttc" id="aclassUserInfo_1_1UserInfoBuilder_html_ac55dbd6d079fc18fdcc6799b13c7efdd"><div class="ttname"><a href="classUserInfo_1_1UserInfoBuilder.html#ac55dbd6d079fc18fdcc6799b13c7efdd">UserInfo::UserInfoBuilder::set_email</a></div><div class="ttdeci">UserInfoBuilder &amp; set_email(QString email)</div><div class="ttdoc">Sets the email for the UserInfo object being built.</div><div class="ttdef"><b>Definition</b> UserInfo.cpp:16</div></div>
+<div class="ttc" id="aclassUserInfo_html"><div class="ttname"><a href="classUserInfo.html">UserInfo</a></div><div class="ttdoc">Represents a user's profile information, including name, email, phone number, and avatar path.</div><div class="ttdef"><b>Definition</b> UserInfo.h:22</div></div>
+<div class="ttc" id="aclassUserInfo_html_a00728931943703fc14ed1de2b7286f09"><div class="ttname"><a href="classUserInfo.html#a00728931943703fc14ed1de2b7286f09">UserInfo::get_email</a></div><div class="ttdeci">const QString &amp; get_email() const</div><div class="ttdoc">Gets the user's email address.</div><div class="ttdef"><b>Definition</b> UserInfo.cpp:34</div></div>
+<div class="ttc" id="aclassUserInfo_html_a11b1707fa2690ecca6fb015f83eb593d"><div class="ttname"><a href="classUserInfo.html#a11b1707fa2690ecca6fb015f83eb593d">UserInfo::set_name</a></div><div class="ttdeci">void set_name(const QString &amp;name)</div><div class="ttdoc">Sets the user's name.</div><div class="ttdef"><b>Definition</b> UserInfo.cpp:50</div></div>
+<div class="ttc" id="aclassUserInfo_html_a4ed6a1384bdb0464b096c58ccaec9df8"><div class="ttname"><a href="classUserInfo.html#a4ed6a1384bdb0464b096c58ccaec9df8">UserInfo::serialized</a></div><div class="ttdeci">QString serialized() const</div><div class="ttdoc">Serializes the UserInfo object into a JSON string.</div><div class="ttdef"><b>Definition</b> UserInfo.cpp:85</div></div>
+<div class="ttc" id="aclassUserInfo_html_aa62763c1e7e8f43e0e14ec62f4885fbf"><div class="ttname"><a href="classUserInfo.html#aa62763c1e7e8f43e0e14ec62f4885fbf">UserInfo::set_email</a></div><div class="ttdeci">void set_email(const QString &amp;email)</div><div class="ttdoc">Sets the user's email address.</div><div class="ttdef"><b>Definition</b> UserInfo.cpp:54</div></div>
+<div class="ttc" id="aclassUserInfo_html_aad87f76675c6075b68dc6d67f7f8f6aa"><div class="ttname"><a href="classUserInfo.html#aad87f76675c6075b68dc6d67f7f8f6aa">UserInfo::set_phone</a></div><div class="ttdeci">void set_phone(const QString &amp;phone)</div><div class="ttdoc">Sets the user's phone number.</div><div class="ttdef"><b>Definition</b> UserInfo.cpp:58</div></div>
+<div class="ttc" id="aclassUserInfo_html_ab0a6c03fae5f88919a303d192bf36401"><div class="ttname"><a href="classUserInfo.html#ab0a6c03fae5f88919a303d192bf36401">UserInfo::~UserInfo</a></div><div class="ttdeci">~UserInfo()=default</div><div class="ttdoc">Default destructor for UserInfo.</div></div>
+<div class="ttc" id="aclassUserInfo_html_ab594bb29870300192f75c9db1242a5db"><div class="ttname"><a href="classUserInfo.html#ab594bb29870300192f75c9db1242a5db">UserInfo::set_avator</a></div><div class="ttdeci">void set_avator(const QString &amp;av_path)</div><div class="ttdoc">Sets the file path for the user's avatar.</div><div class="ttdef"><b>Definition</b> UserInfo.cpp:46</div></div>
+<div class="ttc" id="aclassUserInfo_html_adcc7f3baa5dc72761e9efc2b1e660935"><div class="ttname"><a href="classUserInfo.html#adcc7f3baa5dc72761e9efc2b1e660935">UserInfo::get_name</a></div><div class="ttdeci">const QString &amp; get_name() const</div><div class="ttdoc">Gets the user's name.</div><div class="ttdef"><b>Definition</b> UserInfo.cpp:30</div></div>
+<div class="ttc" id="aclassUserInfo_html_ae674826a85d8fbea5ea606753e718d4b"><div class="ttname"><a href="classUserInfo.html#ae674826a85d8fbea5ea606753e718d4b">UserInfo::get_phone_number</a></div><div class="ttdeci">const QString &amp; get_phone_number() const</div><div class="ttdoc">Gets the user's phone number.</div><div class="ttdef"><b>Definition</b> UserInfo.cpp:38</div></div>
+<div class="ttc" id="aclassUserInfo_html_ae855609ec725e7f499c6350a507e72a3"><div class="ttname"><a href="classUserInfo.html#ae855609ec725e7f499c6350a507e72a3">UserInfo::get_avatar</a></div><div class="ttdeci">const QString &amp; get_avatar() const</div><div class="ttdoc">Gets the file path to the user's avatar.</div><div class="ttdef"><b>Definition</b> UserInfo.cpp:42</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_4270bfced15e0e73154b13468c7c9ad9.html">core</a></li><li class="navelem"><a class="el" href="dir_98bf925fb62cd6aad94cebaa78d07067.html">users</a></li><li class="navelem"><b>UserInfo.h</b></li>
+    <li class="navelem"><a class="el" href="dir_4270bfced15e0e73154b13468c7c9ad9.html">core</a></li><li class="navelem"><a class="el" href="dir_98bf925fb62cd6aad94cebaa78d07067.html">users</a></li><li class="navelem"><a class="el" href="UserInfo_8h.html">UserInfo.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

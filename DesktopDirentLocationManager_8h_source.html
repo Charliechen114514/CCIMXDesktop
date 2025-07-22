@@ -98,47 +98,72 @@ $(document).ready(function(){initNavTree('DesktopDirentLocationManager_8h_source
   <div class="headertitle"><div class="title">DesktopDirentLocationManager.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef DESKTOPDIRENTLOCATIONMANAGER_H</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define DESKTOPDIRENTLOCATIONMANAGER_H</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;DesktopDirentInfoSettings.h&quot;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;QObject&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">class </span><a class="code hl_class" href="classDesktopMainWindow.html">DesktopMainWindow</a>;</div>
-<div class="foldopen" id="foldopen00006" data-start="{" data-end="};">
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="classDesktopDirentLocationManager.html">    6</a></span><span class="keyword">class </span><a class="code hl_class" href="classDesktopDirentLocationManager.html">DesktopDirentLocationManager</a> : <span class="keyword">public</span> QObject {</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    Q_OBJECT</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classDesktopDirentLocationManager.html">DesktopDirentLocationManager</a>(<span class="keyword">const</span> QString&amp; root_path, <a class="code hl_class" href="classDesktopMainWindow.html">DesktopMainWindow</a>* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keywordtype">void</span> checkSelfOnce();</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    QString queryFromType(<span class="keyword">const</span> DesktopDirentType type);</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    QString queryFromType(<span class="keyword">const</span> DesktopServerType serverType);</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keywordtype">bool</span> checkComponentFolder(<span class="keyword">const</span> DesktopDirentType type);</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keywordtype">bool</span> checkServerFolder(<span class="keyword">const</span> DesktopServerType serverType);</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    QString queryConfigType(<span class="keyword">const</span> ConfigureFileName name);</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordtype">bool</span> checkConfigExsited(<span class="keyword">const</span> ConfigureFileName name);</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>signals:</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">void</span> missingDirentFolder(<span class="keyword">const</span> QString&amp; folder, <span class="keyword">const</span> DesktopDirentType type);</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordtype">void</span> missingServerFolder(<span class="keyword">const</span> QString&amp; folder, <span class="keyword">const</span> DesktopServerType type);</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    QString root_path;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <a class="code hl_class" href="classDesktopMainWindow.html">DesktopMainWindow</a>* bindingWindow;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordtype">void</span> check_root_path_sessions();</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordtype">void</span> iterate_check_basefolder_components(<span class="keyword">const</span> DesktopDirentType t, <span class="keyword">const</span> QString&amp; metaMessage);</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">void</span> iterate_check_server_components(<span class="keyword">const</span> DesktopServerType t, <span class="keyword">const</span> QString&amp; metaMessage);</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>};</div>
+<a href="DesktopDirentLocationManager_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef DESKTOPDIRENTLOCATIONMANAGER_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define DESKTOPDIRENTLOCATIONMANAGER_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;DesktopDirentInfoSettings.h&quot;</span> <span class="comment">// Assumed to contain DesktopDirentType, DesktopServerType, ConfigureFileName</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;QObject&gt;</span> <span class="comment">// Base class for DesktopDirentLocationManager</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">// Forward declaration to avoid circular dependencies and improve compilation time</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">class </span><a class="code hl_class" href="classDesktopMainWindow.html">DesktopMainWindow</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="};">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classDesktopDirentLocationManager.html">   24</a></span><span class="keyword">class </span><a class="code hl_class" href="classDesktopDirentLocationManager.html">DesktopDirentLocationManager</a> : <span class="keyword">public</span> QObject {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    Q_OBJECT</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classDesktopDirentLocationManager.html">DesktopDirentLocationManager</a>(<span class="keyword">const</span> QString&amp; root_path, <a class="code hl_class" href="classDesktopMainWindow.html">DesktopMainWindow</a>* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classDesktopDirentLocationManager.html#a5b168be25f98769412101889c7276778">checkSelfOnce</a>();</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    QString <a class="code hl_function" href="classDesktopDirentLocationManager.html#a1cc45e08d4df5cf8152cef2c29a7d900">queryFromType</a>(<span class="keyword">const</span> DesktopDirentType type);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    QString <a class="code hl_function" href="classDesktopDirentLocationManager.html#a1cc45e08d4df5cf8152cef2c29a7d900">queryFromType</a>(<span class="keyword">const</span> DesktopServerType serverType);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classDesktopDirentLocationManager.html#a2200c7b36e12a8edbc2a98f318f9ec61">checkComponentFolder</a>(<span class="keyword">const</span> DesktopDirentType type);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classDesktopDirentLocationManager.html#aa7ca3683fc9dda723e91c4b750aceda7">checkServerFolder</a>(<span class="keyword">const</span> DesktopServerType serverType);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    QString <a class="code hl_function" href="classDesktopDirentLocationManager.html#a8974e31a20f30b3145b660cfcbcfe7c8">queryConfigType</a>(<span class="keyword">const</span> ConfigureFileName name);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classDesktopDirentLocationManager.html#ae126e42984b017a31a54ce6b83f8fca5">checkConfigExsited</a>(<span class="keyword">const</span> ConfigureFileName name);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>signals:</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="classDesktopDirentLocationManager.html#a73c7c672b8c19dca1210eef2dc29a0d3">   91</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classDesktopDirentLocationManager.html#a73c7c672b8c19dca1210eef2dc29a0d3">missingDirentFolder</a>(<span class="keyword">const</span> QString&amp; folder, <span class="keyword">const</span> DesktopDirentType type);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="classDesktopDirentLocationManager.html#a50c58ba5a39dd10fe2b951946298fa4d">   98</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classDesktopDirentLocationManager.html#a50c58ba5a39dd10fe2b951946298fa4d">missingServerFolder</a>(<span class="keyword">const</span> QString&amp; folder, <span class="keyword">const</span> DesktopServerType type);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    QString root_path;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <a class="code hl_class" href="classDesktopMainWindow.html">DesktopMainWindow</a>* bindingWindow;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keywordtype">void</span> check_root_path_sessions();</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keywordtype">void</span> iterate_check_basefolder_components(<span class="keyword">const</span> DesktopDirentType t, <span class="keyword">const</span> QString&amp; metaMessage);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="keywordtype">void</span> iterate_check_server_components(<span class="keyword">const</span> DesktopServerType t, <span class="keyword">const</span> QString&amp; metaMessage);</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>};</div>
 </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#endif </span><span class="comment">// DESKTOPDIRENTLOCATIONMANAGER_H</span></div>
-<div class="ttc" id="aclassDesktopDirentLocationManager_html"><div class="ttname"><a href="classDesktopDirentLocationManager.html">DesktopDirentLocationManager</a></div><div class="ttdef"><b>Definition</b> DesktopDirentLocationManager.h:6</div></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="preprocessor">#endif </span><span class="comment">// DESKTOPDIRENTLOCATIONMANAGER_H</span></div>
+<div class="ttc" id="aclassDesktopDirentLocationManager_html"><div class="ttname"><a href="classDesktopDirentLocationManager.html">DesktopDirentLocationManager</a></div><div class="ttdoc">Manages the locations and existence of various desktop directory entries and configuration files.</div><div class="ttdef"><b>Definition</b> DesktopDirentLocationManager.h:24</div></div>
+<div class="ttc" id="aclassDesktopDirentLocationManager_html_a1cc45e08d4df5cf8152cef2c29a7d900"><div class="ttname"><a href="classDesktopDirentLocationManager.html#a1cc45e08d4df5cf8152cef2c29a7d900">DesktopDirentLocationManager::queryFromType</a></div><div class="ttdeci">QString queryFromType(const DesktopDirentType type)</div><div class="ttdoc">Queries the expected path for a given DesktopDirentType.</div><div class="ttdef"><b>Definition</b> DesktopDirentLocationManager.cpp:78</div></div>
+<div class="ttc" id="aclassDesktopDirentLocationManager_html_a2200c7b36e12a8edbc2a98f318f9ec61"><div class="ttname"><a href="classDesktopDirentLocationManager.html#a2200c7b36e12a8edbc2a98f318f9ec61">DesktopDirentLocationManager::checkComponentFolder</a></div><div class="ttdeci">bool checkComponentFolder(const DesktopDirentType type)</div><div class="ttdoc">Checks if a component folder of a specific type exists.</div><div class="ttdef"><b>Definition</b> DesktopDirentLocationManager.cpp:87</div></div>
+<div class="ttc" id="aclassDesktopDirentLocationManager_html_a50c58ba5a39dd10fe2b951946298fa4d"><div class="ttname"><a href="classDesktopDirentLocationManager.html#a50c58ba5a39dd10fe2b951946298fa4d">DesktopDirentLocationManager::missingServerFolder</a></div><div class="ttdeci">void missingServerFolder(const QString &amp;folder, const DesktopServerType type)</div><div class="ttdoc">Signal emitted when an expected server-related folder is missing.</div></div>
+<div class="ttc" id="aclassDesktopDirentLocationManager_html_a5b168be25f98769412101889c7276778"><div class="ttname"><a href="classDesktopDirentLocationManager.html#a5b168be25f98769412101889c7276778">DesktopDirentLocationManager::checkSelfOnce</a></div><div class="ttdeci">void checkSelfOnce()</div><div class="ttdoc">Performs a one-time check of all critical directory entries and configurations.</div><div class="ttdef"><b>Definition</b> DesktopDirentLocationManager.cpp:62</div></div>
+<div class="ttc" id="aclassDesktopDirentLocationManager_html_a73c7c672b8c19dca1210eef2dc29a0d3"><div class="ttname"><a href="classDesktopDirentLocationManager.html#a73c7c672b8c19dca1210eef2dc29a0d3">DesktopDirentLocationManager::missingDirentFolder</a></div><div class="ttdeci">void missingDirentFolder(const QString &amp;folder, const DesktopDirentType type)</div><div class="ttdoc">Signal emitted when an expected desktop directory entry folder is missing.</div></div>
+<div class="ttc" id="aclassDesktopDirentLocationManager_html_a8974e31a20f30b3145b660cfcbcfe7c8"><div class="ttname"><a href="classDesktopDirentLocationManager.html#a8974e31a20f30b3145b660cfcbcfe7c8">DesktopDirentLocationManager::queryConfigType</a></div><div class="ttdeci">QString queryConfigType(const ConfigureFileName name)</div><div class="ttdoc">Queries the expected path for a given configuration file name.</div><div class="ttdef"><b>Definition</b> DesktopDirentLocationManager.cpp:97</div></div>
+<div class="ttc" id="aclassDesktopDirentLocationManager_html_aa7ca3683fc9dda723e91c4b750aceda7"><div class="ttname"><a href="classDesktopDirentLocationManager.html#aa7ca3683fc9dda723e91c4b750aceda7">DesktopDirentLocationManager::checkServerFolder</a></div><div class="ttdeci">bool checkServerFolder(const DesktopServerType serverType)</div><div class="ttdoc">Checks if a server folder of a specific type exists.</div><div class="ttdef"><b>Definition</b> DesktopDirentLocationManager.cpp:92</div></div>
+<div class="ttc" id="aclassDesktopDirentLocationManager_html_ae126e42984b017a31a54ce6b83f8fca5"><div class="ttname"><a href="classDesktopDirentLocationManager.html#ae126e42984b017a31a54ce6b83f8fca5">DesktopDirentLocationManager::checkConfigExsited</a></div><div class="ttdeci">bool checkConfigExsited(const ConfigureFileName name)</div><div class="ttdoc">Checks if a configuration file of a specific name exists.</div><div class="ttdef"><b>Definition</b> DesktopDirentLocationManager.cpp:102</div></div>
 <div class="ttc" id="aclassDesktopMainWindow_html"><div class="ttname"><a href="classDesktopMainWindow.html">DesktopMainWindow</a></div><div class="ttdoc">DesktopMainWindow is the main frontend window of the application. For beginners, this is the starting...</div><div class="ttdef"><b>Definition</b> desktopmainwindow.h:37</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_4270bfced15e0e73154b13468c7c9ad9.html">core</a></li><li class="navelem"><a class="el" href="dir_aafee8ac5b1bab5efaa853b571eaabe9.html">desktop_dirent_manager</a></li><li class="navelem"><b>DesktopDirentLocationManager.h</b></li>
+    <li class="navelem"><a class="el" href="dir_4270bfced15e0e73154b13468c7c9ad9.html">core</a></li><li class="navelem"><a class="el" href="dir_aafee8ac5b1bab5efaa853b571eaabe9.html">desktop_dirent_manager</a></li><li class="navelem"><a class="el" href="DesktopDirentLocationManager_8h.html">DesktopDirentLocationManager.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

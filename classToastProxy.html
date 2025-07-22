@@ -102,6 +102,11 @@ $(document).ready(function(){initNavTree('classToastProxy.html',''); initResizab
   <div class="headertitle"><div class="title">ToastProxy Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Acts as an intermediary to process and forward toast notifications to the display mechanism.  
+ <a href="classToastProxy.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="ToastProxy_8h_source.html">ToastProxy.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ToastProxy:</div>
 <div class="dyncontent">
@@ -111,16 +116,136 @@ Inheritance diagram for ToastProxy:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-slots" name="pub-slots"></a>
 Public Slots</h2></td></tr>
-<tr class="memitem:ac80befe24b55f342f1908febf9541e6a" id="r_ac80befe24b55f342f1908febf9541e6a"><td class="memItemLeft" align="right" valign="top"><a id="ac80befe24b55f342f1908febf9541e6a" name="ac80befe24b55f342f1908febf9541e6a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>process_toastMeta</b> (const <a class="el" href="structToastMetaProtocol.html">ToastMetaProtocol</a> &amp;protocolMeta)</td></tr>
+<tr class="memitem:ac80befe24b55f342f1908febf9541e6a" id="r_ac80befe24b55f342f1908febf9541e6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classToastProxy.html#ac80befe24b55f342f1908febf9541e6a">process_toastMeta</a> (const <a class="el" href="structToastMetaProtocol.html">ToastMetaProtocol</a> &amp;protocolMeta)</td></tr>
+<tr class="memdesc:ac80befe24b55f342f1908febf9541e6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes an incoming <code><a class="el" href="structToastMetaProtocol.html" title="Represents the metadata and content for a toast notification.">ToastMetaProtocol</a></code>.  <br /></td></tr>
 <tr class="separator:ac80befe24b55f342f1908febf9541e6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0414e3d7ac6d8857199e65dedf332edc" id="r_a0414e3d7ac6d8857199e65dedf332edc"><td class="memItemLeft" align="right" valign="top"><a id="a0414e3d7ac6d8857199e65dedf332edc" name="a0414e3d7ac6d8857199e65dedf332edc"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ToastProxy</b> (<a class="el" href="classDesktopToast.html">DesktopToast</a> *toast, QObject *parent)</td></tr>
+<tr class="memitem:a2db0f47d2a6f2ce60b68bff02012b048" id="r_a2db0f47d2a6f2ce60b68bff02012b048"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classToastProxy.html#a2db0f47d2a6f2ce60b68bff02012b048">ToastProxy</a> ()=delete</td></tr>
+<tr class="memdesc:a2db0f47d2a6f2ce60b68bff02012b048"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deleted default constructor.  <br /></td></tr>
+<tr class="separator:a2db0f47d2a6f2ce60b68bff02012b048"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0414e3d7ac6d8857199e65dedf332edc" id="r_a0414e3d7ac6d8857199e65dedf332edc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classToastProxy.html#a0414e3d7ac6d8857199e65dedf332edc">ToastProxy</a> (<a class="el" href="classDesktopToast.html">DesktopToast</a> *toast, QObject *parent)</td></tr>
+<tr class="memdesc:a0414e3d7ac6d8857199e65dedf332edc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classToastProxy.html" title="Acts as an intermediary to process and forward toast notifications to the display mechanism.">ToastProxy</a> instance.  <br /></td></tr>
 <tr class="separator:a0414e3d7ac6d8857199e65dedf332edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Acts as an intermediary to process and forward toast notifications to the display mechanism. </p>
+<p>The <a class="el" href="classToastProxy.html" title="Acts as an intermediary to process and forward toast notifications to the display mechanism.">ToastProxy</a> receives <code><a class="el" href="structToastMetaProtocol.html" title="Represents the metadata and content for a toast notification.">ToastMetaProtocol</a></code> objects, which encapsulate toast notification data. Its primary role is to take this data and pass it to a <code><a class="el" href="classDesktopToast.html" title="The DesktopToast class is the toast handle classes using less lock messages queue to display the mess...">DesktopToast</a></code> instance, which is responsible for rendering and displaying the actual toast notification on the user's desktop. This separation allows for decoupling the toast data generation/reception from its display logic. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a2db0f47d2a6f2ce60b68bff02012b048" name="a2db0f47d2a6f2ce60b68bff02012b048"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2db0f47d2a6f2ce60b68bff02012b048">&#9670;&#160;</a></span>ToastProxy() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ToastProxy::ToastProxy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deleted default constructor. </p>
+<ul>
+<li>This ensures that <code><a class="el" href="classToastProxy.html" title="Acts as an intermediary to process and forward toast notifications to the display mechanism.">ToastProxy</a></code> objects can only be constructed with a <code><a class="el" href="classDesktopToast.html" title="The DesktopToast class is the toast handle classes using less lock messages queue to display the mess...">DesktopToast</a></code> and a parent <code>QObject</code>, reinforcing its role as an intermediary. </li>
+</ul>
+
+</div>
+</div>
+<a id="a0414e3d7ac6d8857199e65dedf332edc" name="a0414e3d7ac6d8857199e65dedf332edc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0414e3d7ac6d8857199e65dedf332edc">&#9670;&#160;</a></span>ToastProxy() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ToastProxy::ToastProxy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDesktopToast.html">DesktopToast</a> *&#160;</td>
+          <td class="paramname"><em>toast</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a <a class="el" href="classToastProxy.html" title="Acts as an intermediary to process and forward toast notifications to the display mechanism.">ToastProxy</a> instance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">toast</td><td>A pointer to the <code><a class="el" href="classDesktopToast.html" title="The DesktopToast class is the toast handle classes using less lock messages queue to display the mess...">DesktopToast</a></code> object that will display the toast notifications. The proxy does not take ownership of this object. </td></tr>
+    <tr><td class="paramname">parent</td><td>A pointer to the parent <code>QObject</code> for this proxy, allowing for proper object hierarchy and memory management. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac80befe24b55f342f1908febf9541e6a" name="ac80befe24b55f342f1908febf9541e6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac80befe24b55f342f1908febf9541e6a">&#9670;&#160;</a></span>process_toastMeta</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ToastProxy::process_toastMeta </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structToastMetaProtocol.html">ToastMetaProtocol</a> &amp;&#160;</td>
+          <td class="paramname"><em>protocolMeta</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Processes an incoming <code><a class="el" href="structToastMetaProtocol.html" title="Represents the metadata and content for a toast notification.">ToastMetaProtocol</a></code>. </p>
+<ul>
+<li>This slot is designed to receive <code><a class="el" href="structToastMetaProtocol.html" title="Represents the metadata and content for a toast notification.">ToastMetaProtocol</a></code> objects. Upon reception, it will extract the necessary information and typically forward it to the associated <code><a class="el" href="classDesktopToast.html" title="The DesktopToast class is the toast handle classes using less lock messages queue to display the mess...">DesktopToast</a></code> instance for display. <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">protocolMeta</td><td>A constant reference to the <code><a class="el" href="structToastMetaProtocol.html" title="Represents the metadata and content for a toast notification.">ToastMetaProtocol</a></code> containing the toast data. </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>core/server/toast_file_gen_and_receiver/<a class="el" href="ToastProxy_8h_source.html">ToastProxy.h</a></li>
 <li>core/server/toast_file_gen_and_receiver/<b>ToastProxy.cpp</b></li>

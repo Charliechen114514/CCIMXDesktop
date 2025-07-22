@@ -101,17 +101,171 @@ $(document).ready(function(){initNavTree('classRandomGenerator.html',''); initRe
   <div class="headertitle"><div class="title">RandomGenerator&lt; RandType &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>A templated class for generating random numbers of a specified arithmetic type.  
+ <a href="classRandomGenerator.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="random__gen__value_8h_source.html">random_gen_value.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ae49e067cf4b62dbf9f2c4c95c54ec44b" id="r_ae49e067cf4b62dbf9f2c4c95c54ec44b"><td class="memItemLeft" align="right" valign="top"><a id="ae49e067cf4b62dbf9f2c4c95c54ec44b" name="ae49e067cf4b62dbf9f2c4c95c54ec44b"></a>
-static RandType&#160;</td><td class="memItemRight" valign="bottom"><b>random</b> (const RandType min, const RandType max)</td></tr>
+<tr class="memitem:ae49e067cf4b62dbf9f2c4c95c54ec44b" id="r_ae49e067cf4b62dbf9f2c4c95c54ec44b"><td class="memItemLeft" align="right" valign="top">static RandType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRandomGenerator.html#ae49e067cf4b62dbf9f2c4c95c54ec44b">random</a> (const RandType min, const RandType max)</td></tr>
+<tr class="memdesc:ae49e067cf4b62dbf9f2c4c95c54ec44b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compile-time assertion to ensure RandType is an arithmetic type. If RandType is not arithmetic (e.g., a custom class), a compilation error will occur.  <br /></td></tr>
 <tr class="separator:ae49e067cf4b62dbf9f2c4c95c54ec44b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac765e3013a529196030db9c369e1895f" id="r_ac765e3013a529196030db9c369e1895f"><td class="memTemplParams" colspan="2"><a id="ac765e3013a529196030db9c369e1895f" name="ac765e3013a529196030db9c369e1895f"></a>
-template&lt;int MAX_TRY = 100&gt; </td></tr>
-<tr class="memitem:ac765e3013a529196030db9c369e1895f"><td class="memTemplItemLeft" align="right" valign="top">static RandType&#160;</td><td class="memTemplItemRight" valign="bottom"><b>random_except</b> (const RandType min, const RandType max, const RandType except)</td></tr>
+<tr class="memitem:ac765e3013a529196030db9c369e1895f" id="r_ac765e3013a529196030db9c369e1895f"><td class="memTemplParams" colspan="2">template&lt;int MAX_TRY = 100&gt; </td></tr>
+<tr class="memitem:ac765e3013a529196030db9c369e1895f"><td class="memTemplItemLeft" align="right" valign="top">static RandType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classRandomGenerator.html#ac765e3013a529196030db9c369e1895f">random_except</a> (const RandType min, const RandType max, const RandType except)</td></tr>
+<tr class="memdesc:ac765e3013a529196030db9c369e1895f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a random number within a specified range, excluding a particular value.  <br /></td></tr>
 <tr class="separator:ac765e3013a529196030db9c369e1895f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename RandType&gt;<br />
+class RandomGenerator&lt; RandType &gt;</div><p>A templated class for generating random numbers of a specified arithmetic type. </p>
+<p>This class provides static methods to generate random numbers within a given range, supporting both integral and floating-point types. It also includes a method to generate a random number while excluding a specific value.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">RandType</td><td>The type of random number to generate. Must be an arithmetic type. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae49e067cf4b62dbf9f2c4c95c54ec44b" name="ae49e067cf4b62dbf9f2c4c95c54ec44b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae49e067cf4b62dbf9f2c4c95c54ec44b">&#9670;&#160;</a></span>random()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename RandType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static RandType <a class="el" href="classRandomGenerator.html">RandomGenerator</a>&lt; RandType &gt;::random </td>
+          <td>(</td>
+          <td class="paramtype">const RandType&#160;</td>
+          <td class="paramname"><em>min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RandType&#160;</td>
+          <td class="paramname"><em>max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compile-time assertion to ensure RandType is an arithmetic type. If RandType is not arithmetic (e.g., a custom class), a compilation error will occur. </p>
+<p>Generates a random number within a specified range [min, max].</p><ul>
+<li>This method uses <code>std::random_device</code> for non-deterministic seeding and <code>std::mt19937</code> as the random number engine. It employs <code>std::uniform_int_distribution</code> for integral types and <code>std::uniform_real_distribution</code> for floating-point types to ensure uniform distribution.</li>
+<li><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">min</td><td>The minimum possible value in the random range (inclusive). </td></tr>
+    <tr><td class="paramname">max</td><td>The maximum possible value in the random range (inclusive). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A randomly generated value of type <code>RandType</code> within the specified range. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::logic_error</td><td>if <code>RandType</code> is not an integral or floating-point type (though <code>static_assert</code> should catch this at compile time). </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+<p>&lt; Non-deterministic random number generator.</p>
+<p>&lt; Mersenne Twister engine seeded by rd.</p>
+<p>&lt; Distribution for integral types.</p>
+<p>&lt; Non-deterministic random number generator.</p>
+<p>&lt; Mersenne Twister engine seeded by rd.</p>
+<p>&lt; Distribution for floating-point types.</p>
+
+</div>
+</div>
+<a id="ac765e3013a529196030db9c369e1895f" name="ac765e3013a529196030db9c369e1895f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac765e3013a529196030db9c369e1895f">&#9670;&#160;</a></span>random_except()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename RandType &gt; </div>
+<div class="memtemplate">
+template&lt;int MAX_TRY = 100&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static RandType <a class="el" href="classRandomGenerator.html">RandomGenerator</a>&lt; RandType &gt;::random_except </td>
+          <td>(</td>
+          <td class="paramtype">const RandType&#160;</td>
+          <td class="paramname"><em>min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RandType&#160;</td>
+          <td class="paramname"><em>max</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RandType&#160;</td>
+          <td class="paramname"><em>except</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Generates a random number within a specified range, excluding a particular value. </p>
+<ul>
+<li>This method repeatedly calls <code>random(min, max)</code> up to <code>MAX_TRY</code> times until a value different from <code>except</code> is generated.</li>
+<li><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">MAX_TRY</td><td>The maximum number of attempts to generate a value different from <code>except</code>. Defaults to 100. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">min</td><td>The minimum possible value in the random range (inclusive). </td></tr>
+    <tr><td class="paramname">max</td><td>The maximum possible value in the random range (inclusive). </td></tr>
+    <tr><td class="paramname">except</td><td>The value to be excluded from the generated random numbers. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A randomly generated value of type <code>RandType</code> within the specified range, not equal to <code>except</code>. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::logic_error</td><td>if the range [min, max] only contains the <code>except</code> value, making generation impossible. </td></tr>
+    <tr><td class="paramname">std::runtime_error</td><td>if a value different from <code>except</code> cannot be generated within <code>MAX_TRY</code> attempts. </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>library/random_gen_value/<a class="el" href="random__gen__value_8h_source.html">random_gen_value.h</a></li>
 </ul>

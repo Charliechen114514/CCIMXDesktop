@@ -101,38 +101,55 @@ $(document).ready(function(){initNavTree('structWeatherData.html',''); initResiz
   <div class="headertitle"><div class="title">WeatherData Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Represents a snapshot of weather conditions for a specific location and time.  
+ <a href="structWeatherData.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="WeatherData_8h_source.html">WeatherData.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a1cf81c56cf0236dae99872435dfcadbd" id="r_a1cf81c56cf0236dae99872435dfcadbd"><td class="memItemLeft" align="right" valign="top"><a id="a1cf81c56cf0236dae99872435dfcadbd" name="a1cf81c56cf0236dae99872435dfcadbd"></a>
 QString&#160;</td><td class="memItemRight" valign="bottom"><b>city</b></td></tr>
+<tr class="memdesc:a1cf81c56cf0236dae99872435dfcadbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the city for which the weather data is provided. <br /></td></tr>
 <tr class="separator:a1cf81c56cf0236dae99872435dfcadbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38ba300bb2c8893c5196c54c5146a6ac" id="r_a38ba300bb2c8893c5196c54c5146a6ac"><td class="memItemLeft" align="right" valign="top"><a id="a38ba300bb2c8893c5196c54c5146a6ac" name="a38ba300bb2c8893c5196c54c5146a6ac"></a>
 QString&#160;</td><td class="memItemRight" valign="bottom"><b>time</b></td></tr>
+<tr class="memdesc:a38ba300bb2c8893c5196c54c5146a6ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">The local time of the weather observation (e.g., "HH:MM AM/PM" or "YYYY-MM-DD HH:MM"). <br /></td></tr>
 <tr class="separator:a38ba300bb2c8893c5196c54c5146a6ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0a308bd4e14ec55dd94019c6d7c0c2d" id="r_ae0a308bd4e14ec55dd94019c6d7c0c2d"><td class="memItemLeft" align="right" valign="top"><a id="ae0a308bd4e14ec55dd94019c6d7c0c2d" name="ae0a308bd4e14ec55dd94019c6d7c0c2d"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>interval</b></td></tr>
+<tr class="memdesc:ae0a308bd4e14ec55dd94019c6d7c0c2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The forecast interval in seconds (e.g., 900 for 15 minutes, 3600 for 1 hour). <br /></td></tr>
 <tr class="separator:ae0a308bd4e14ec55dd94019c6d7c0c2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae94973ffb5ceb5ee3e2aca560562f845" id="r_ae94973ffb5ceb5ee3e2aca560562f845"><td class="memItemLeft" align="right" valign="top"><a id="ae94973ffb5ceb5ee3e2aca560562f845" name="ae94973ffb5ceb5ee3e2aca560562f845"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>temperature</b></td></tr>
+<tr class="memdesc:ae94973ffb5ceb5ee3e2aca560562f845"><td class="mdescLeft">&#160;</td><td class="mdescRight">The temperature in Celsius or Fahrenheit (unit implicitly defined by context). <br /></td></tr>
 <tr class="separator:ae94973ffb5ceb5ee3e2aca560562f845"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace6204ac09c5c858ed06483c496b8108" id="r_ace6204ac09c5c858ed06483c496b8108"><td class="memItemLeft" align="right" valign="top"><a id="ace6204ac09c5c858ed06483c496b8108" name="ace6204ac09c5c858ed06483c496b8108"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>windspeed</b></td></tr>
+<tr class="memdesc:ace6204ac09c5c858ed06483c496b8108"><td class="mdescLeft">&#160;</td><td class="mdescRight">The wind speed (unit implicitly defined by context, e.g., m/s, km/h, mph). <br /></td></tr>
 <tr class="separator:ace6204ac09c5c858ed06483c496b8108"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8095a0625e553ac98c511730ac240209" id="r_a8095a0625e553ac98c511730ac240209"><td class="memItemLeft" align="right" valign="top"><a id="a8095a0625e553ac98c511730ac240209" name="a8095a0625e553ac98c511730ac240209"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>winddirection</b></td></tr>
+<tr class="memdesc:a8095a0625e553ac98c511730ac240209"><td class="mdescLeft">&#160;</td><td class="mdescRight">The wind direction in degrees (0-359, where 0 is North, 90 is East, etc.). <br /></td></tr>
 <tr class="separator:a8095a0625e553ac98c511730ac240209"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fbfefedb5af6676a4ee53f1df77c1ca" id="r_a0fbfefedb5af6676a4ee53f1df77c1ca"><td class="memItemLeft" align="right" valign="top"><a id="a0fbfefedb5af6676a4ee53f1df77c1ca" name="a0fbfefedb5af6676a4ee53f1df77c1ca"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>isDay</b></td></tr>
+<tr class="memdesc:a0fbfefedb5af6676a4ee53f1df77c1ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates if it's currently daytime (1) or nighttime (0). <br /></td></tr>
 <tr class="separator:a0fbfefedb5af6676a4ee53f1df77c1ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab62ef7b564ed975393ba9b09bf8a7f3c" id="r_ab62ef7b564ed975393ba9b09bf8a7f3c"><td class="memItemLeft" align="right" valign="top"><a id="ab62ef7b564ed975393ba9b09bf8a7f3c" name="ab62ef7b564ed975393ba9b09bf8a7f3c"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>weatherCode</b></td></tr>
+<tr class="memdesc:ab62ef7b564ed975393ba9b09bf8a7f3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A numerical code representing the weather condition (e.g., WMO weather codes). <br /></td></tr>
 <tr class="separator:ab62ef7b564ed975393ba9b09bf8a7f3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b470bc177e317a6a6a6b51758724a1a" id="r_a8b470bc177e317a6a6a6b51758724a1a"><td class="memItemLeft" align="right" valign="top"><a id="a8b470bc177e317a6a6a6b51758724a1a" name="a8b470bc177e317a6a6a6b51758724a1a"></a>
 QString&#160;</td><td class="memItemRight" valign="bottom"><b>weatherDescription</b></td></tr>
+<tr class="memdesc:a8b470bc177e317a6a6a6b51758724a1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A textual description of the weather condition (e.g., "Clear sky", "Partly cloudy"). <br /></td></tr>
 <tr class="separator:a8b470bc177e317a6a6a6b51758724a1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Represents a snapshot of weather conditions for a specific location and time. </p>
+<p>This structure holds various meteorological parameters, including temperature, wind details, and a description of the current weather, along with metadata such as city and observation time. </p>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>plugin_loader/plugin_cards/WeatherCard/<a class="el" href="WeatherData_8h_source.html">WeatherData.h</a></li>
 </ul>
 </div><!-- contents -->

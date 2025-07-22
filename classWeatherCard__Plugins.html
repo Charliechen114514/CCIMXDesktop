@@ -101,6 +101,11 @@ $(document).ready(function(){initNavTree('classWeatherCard__Plugins.html',''); i
   <div class="headertitle"><div class="title">WeatherCard_Plugins Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>A plugin factory class for creating <a class="el" href="classWeatherCard.html" title="A custom QWidget that displays current weather information.">WeatherCard</a> instances.  
+ <a href="classWeatherCard__Plugins.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="WeatherCard_8h_source.html">WeatherCard.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for WeatherCard_Plugins:</div>
 <div class="dyncontent">
@@ -114,10 +119,13 @@ Inheritance diagram for WeatherCard_Plugins:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aeb24ebcc44412afa915006560cf4a96d" id="r_aeb24ebcc44412afa915006560cf4a96d"><td class="memItemLeft" align="right" valign="top">QWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWeatherCard__Plugins.html#aeb24ebcc44412afa915006560cf4a96d">factorize_widget</a> (QWidget *parent=nullptr) override</td></tr>
-<tr class="memdesc:aeb24ebcc44412afa915006560cf4a96d"><td class="mdescLeft">&#160;</td><td class="mdescRight">factorize_widget simply fetch a holding widget listing in factory  <br /></td></tr>
+<tr class="memdesc:aeb24ebcc44412afa915006560cf4a96d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Qt plugin metadata macro.  <br /></td></tr>
 <tr class="separator:aeb24ebcc44412afa915006560cf4a96d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A plugin factory class for creating <a class="el" href="classWeatherCard.html" title="A custom QWidget that displays current weather information.">WeatherCard</a> instances. </p>
+<p>This class serves as the entry point for dynamically loading <code><a class="el" href="classWeatherCard.html" title="A custom QWidget that displays current weather information.">WeatherCard</a></code> as a plugin within a Qt application. It implements the <code><a class="el" href="structDesktopPluginWidgetBase.html" title="The DesktopPluginWidgetBase class is such a simple interface class marking in Dynamic Loadable Librar...">DesktopPluginWidgetBase</a></code> interface, allowing it to be discovered and instantiated by a plugin server. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aeb24ebcc44412afa915006560cf4a96d" name="aeb24ebcc44412afa915006560cf4a96d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeb24ebcc44412afa915006560cf4a96d">&#9670;&#160;</a></span>factorize_widget()</h2>
 
@@ -131,7 +139,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">QWidget * WeatherCard_Plugins::factorize_widget </td>
           <td>(</td>
           <td class="paramtype">QWidget *&#160;</td>
-          <td class="paramname"><em>parentWidget</em> = <code>nullptr</code></td><td>)</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -142,14 +150,21 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>factorize_widget simply fetch a holding widget listing in factory </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Qt plugin metadata macro. </p>
+<ul>
+<li>Specifies the unique identifier (IID) for the plugin interface and the path to the JSON file containing additional plugin metadata (e.g., version, dependencies).</li>
+</ul>
+<p>Declares that this class implements the <code><a class="el" href="structDesktopPluginWidgetBase.html" title="The DesktopPluginWidgetBase class is such a simple interface class marking in Dynamic Loadable Librar...">DesktopPluginWidgetBase</a></code> interface. This is crucial for Qt's plugin system to correctly identify and use this class.</p>
+<p>Factory method to create and return a new instance of <a class="el" href="classWeatherCard.html" title="A custom QWidget that displays current weather information.">WeatherCard</a>.</p><ul>
+<li>This method is part of the <code><a class="el" href="structDesktopPluginWidgetBase.html" title="The DesktopPluginWidgetBase class is such a simple interface class marking in Dynamic Loadable Librar...">DesktopPluginWidgetBase</a></code> interface. When the plugin is loaded, this method is called to create the actual widget that will be displayed. <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parentWidget</td><td>widget binding for parent </td></tr>
+    <tr><td class="paramname">parent</td><td>A pointer to the parent widget for the new <a class="el" href="classWeatherCard.html" title="A custom QWidget that displays current weather information.">WeatherCard</a> instance. Defaults to <code>nullptr</code>. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the widget created as newed out! </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to a newly created <code><a class="el" href="classWeatherCard.html" title="A custom QWidget that displays current weather information.">WeatherCard</a></code> widget. Ownership is transferred to the caller. </dd></dl>
+</li>
+</ul>
 
 <p>Implements <a class="el" href="structDesktopPluginWidgetBase.html#a806f4551dd773eb7cdc27f05da6aaccd">DesktopPluginWidgetBase</a>.</p>
 

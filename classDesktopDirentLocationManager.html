@@ -102,6 +102,11 @@ $(document).ready(function(){initNavTree('classDesktopDirentLocationManager.html
   <div class="headertitle"><div class="title">DesktopDirentLocationManager Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Manages the locations and existence of various desktop directory entries and configuration files.  
+ <a href="classDesktopDirentLocationManager.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="DesktopDirentLocationManager_8h_source.html">DesktopDirentLocationManager.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for DesktopDirentLocationManager:</div>
 <div class="dyncontent">
@@ -111,40 +116,364 @@ Inheritance diagram for DesktopDirentLocationManager:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
 Signals</h2></td></tr>
-<tr class="memitem:a73c7c672b8c19dca1210eef2dc29a0d3" id="r_a73c7c672b8c19dca1210eef2dc29a0d3"><td class="memItemLeft" align="right" valign="top"><a id="a73c7c672b8c19dca1210eef2dc29a0d3" name="a73c7c672b8c19dca1210eef2dc29a0d3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>missingDirentFolder</b> (const QString &amp;folder, const DesktopDirentType type)</td></tr>
+<tr class="memitem:a73c7c672b8c19dca1210eef2dc29a0d3" id="r_a73c7c672b8c19dca1210eef2dc29a0d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDesktopDirentLocationManager.html#a73c7c672b8c19dca1210eef2dc29a0d3">missingDirentFolder</a> (const QString &amp;folder, const DesktopDirentType type)</td></tr>
+<tr class="memdesc:a73c7c672b8c19dca1210eef2dc29a0d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal emitted when an expected desktop directory entry folder is missing.  <br /></td></tr>
 <tr class="separator:a73c7c672b8c19dca1210eef2dc29a0d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50c58ba5a39dd10fe2b951946298fa4d" id="r_a50c58ba5a39dd10fe2b951946298fa4d"><td class="memItemLeft" align="right" valign="top"><a id="a50c58ba5a39dd10fe2b951946298fa4d" name="a50c58ba5a39dd10fe2b951946298fa4d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>missingServerFolder</b> (const QString &amp;folder, const DesktopServerType type)</td></tr>
+<tr class="memitem:a50c58ba5a39dd10fe2b951946298fa4d" id="r_a50c58ba5a39dd10fe2b951946298fa4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDesktopDirentLocationManager.html#a50c58ba5a39dd10fe2b951946298fa4d">missingServerFolder</a> (const QString &amp;folder, const DesktopServerType type)</td></tr>
+<tr class="memdesc:a50c58ba5a39dd10fe2b951946298fa4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal emitted when an expected server-related folder is missing.  <br /></td></tr>
 <tr class="separator:a50c58ba5a39dd10fe2b951946298fa4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a297b4a54067b757caebdab5a36b202f7" id="r_a297b4a54067b757caebdab5a36b202f7"><td class="memItemLeft" align="right" valign="top"><a id="a297b4a54067b757caebdab5a36b202f7" name="a297b4a54067b757caebdab5a36b202f7"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DesktopDirentLocationManager</b> (const QString &amp;root_path, <a class="el" href="classDesktopMainWindow.html">DesktopMainWindow</a> *parent=nullptr)</td></tr>
+<tr class="memitem:a297b4a54067b757caebdab5a36b202f7" id="r_a297b4a54067b757caebdab5a36b202f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDesktopDirentLocationManager.html#a297b4a54067b757caebdab5a36b202f7">DesktopDirentLocationManager</a> (const QString &amp;root_path, <a class="el" href="classDesktopMainWindow.html">DesktopMainWindow</a> *parent=nullptr)</td></tr>
+<tr class="memdesc:a297b4a54067b757caebdab5a36b202f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classDesktopDirentLocationManager.html" title="Manages the locations and existence of various desktop directory entries and configuration files.">DesktopDirentLocationManager</a> object.  <br /></td></tr>
 <tr class="separator:a297b4a54067b757caebdab5a36b202f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b168be25f98769412101889c7276778" id="r_a5b168be25f98769412101889c7276778"><td class="memItemLeft" align="right" valign="top"><a id="a5b168be25f98769412101889c7276778" name="a5b168be25f98769412101889c7276778"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>checkSelfOnce</b> ()</td></tr>
+<tr class="memitem:a5b168be25f98769412101889c7276778" id="r_a5b168be25f98769412101889c7276778"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDesktopDirentLocationManager.html#a5b168be25f98769412101889c7276778">checkSelfOnce</a> ()</td></tr>
+<tr class="memdesc:a5b168be25f98769412101889c7276778"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs a one-time check of all critical directory entries and configurations.  <br /></td></tr>
 <tr class="separator:a5b168be25f98769412101889c7276778"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1cc45e08d4df5cf8152cef2c29a7d900" id="r_a1cc45e08d4df5cf8152cef2c29a7d900"><td class="memItemLeft" align="right" valign="top"><a id="a1cc45e08d4df5cf8152cef2c29a7d900" name="a1cc45e08d4df5cf8152cef2c29a7d900"></a>
-QString&#160;</td><td class="memItemRight" valign="bottom"><b>queryFromType</b> (const DesktopDirentType type)</td></tr>
+<tr class="memitem:a1cc45e08d4df5cf8152cef2c29a7d900" id="r_a1cc45e08d4df5cf8152cef2c29a7d900"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDesktopDirentLocationManager.html#a1cc45e08d4df5cf8152cef2c29a7d900">queryFromType</a> (const DesktopDirentType type)</td></tr>
+<tr class="memdesc:a1cc45e08d4df5cf8152cef2c29a7d900"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queries the expected path for a given DesktopDirentType.  <br /></td></tr>
 <tr class="separator:a1cc45e08d4df5cf8152cef2c29a7d900"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a142b663fe5e2ac63ee7bc3b67a5c2ac5" id="r_a142b663fe5e2ac63ee7bc3b67a5c2ac5"><td class="memItemLeft" align="right" valign="top"><a id="a142b663fe5e2ac63ee7bc3b67a5c2ac5" name="a142b663fe5e2ac63ee7bc3b67a5c2ac5"></a>
-QString&#160;</td><td class="memItemRight" valign="bottom"><b>queryFromType</b> (const DesktopServerType serverType)</td></tr>
+<tr class="memitem:a142b663fe5e2ac63ee7bc3b67a5c2ac5" id="r_a142b663fe5e2ac63ee7bc3b67a5c2ac5"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDesktopDirentLocationManager.html#a142b663fe5e2ac63ee7bc3b67a5c2ac5">queryFromType</a> (const DesktopServerType serverType)</td></tr>
+<tr class="memdesc:a142b663fe5e2ac63ee7bc3b67a5c2ac5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queries the expected path for a given DesktopServerType.  <br /></td></tr>
 <tr class="separator:a142b663fe5e2ac63ee7bc3b67a5c2ac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2200c7b36e12a8edbc2a98f318f9ec61" id="r_a2200c7b36e12a8edbc2a98f318f9ec61"><td class="memItemLeft" align="right" valign="top"><a id="a2200c7b36e12a8edbc2a98f318f9ec61" name="a2200c7b36e12a8edbc2a98f318f9ec61"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>checkComponentFolder</b> (const DesktopDirentType type)</td></tr>
+<tr class="memitem:a2200c7b36e12a8edbc2a98f318f9ec61" id="r_a2200c7b36e12a8edbc2a98f318f9ec61"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDesktopDirentLocationManager.html#a2200c7b36e12a8edbc2a98f318f9ec61">checkComponentFolder</a> (const DesktopDirentType type)</td></tr>
+<tr class="memdesc:a2200c7b36e12a8edbc2a98f318f9ec61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a component folder of a specific type exists.  <br /></td></tr>
 <tr class="separator:a2200c7b36e12a8edbc2a98f318f9ec61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7ca3683fc9dda723e91c4b750aceda7" id="r_aa7ca3683fc9dda723e91c4b750aceda7"><td class="memItemLeft" align="right" valign="top"><a id="aa7ca3683fc9dda723e91c4b750aceda7" name="aa7ca3683fc9dda723e91c4b750aceda7"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>checkServerFolder</b> (const DesktopServerType serverType)</td></tr>
+<tr class="memitem:aa7ca3683fc9dda723e91c4b750aceda7" id="r_aa7ca3683fc9dda723e91c4b750aceda7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDesktopDirentLocationManager.html#aa7ca3683fc9dda723e91c4b750aceda7">checkServerFolder</a> (const DesktopServerType serverType)</td></tr>
+<tr class="memdesc:aa7ca3683fc9dda723e91c4b750aceda7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a server folder of a specific type exists.  <br /></td></tr>
 <tr class="separator:aa7ca3683fc9dda723e91c4b750aceda7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8974e31a20f30b3145b660cfcbcfe7c8" id="r_a8974e31a20f30b3145b660cfcbcfe7c8"><td class="memItemLeft" align="right" valign="top"><a id="a8974e31a20f30b3145b660cfcbcfe7c8" name="a8974e31a20f30b3145b660cfcbcfe7c8"></a>
-QString&#160;</td><td class="memItemRight" valign="bottom"><b>queryConfigType</b> (const ConfigureFileName name)</td></tr>
+<tr class="memitem:a8974e31a20f30b3145b660cfcbcfe7c8" id="r_a8974e31a20f30b3145b660cfcbcfe7c8"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDesktopDirentLocationManager.html#a8974e31a20f30b3145b660cfcbcfe7c8">queryConfigType</a> (const ConfigureFileName name)</td></tr>
+<tr class="memdesc:a8974e31a20f30b3145b660cfcbcfe7c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queries the expected path for a given configuration file name.  <br /></td></tr>
 <tr class="separator:a8974e31a20f30b3145b660cfcbcfe7c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae126e42984b017a31a54ce6b83f8fca5" id="r_ae126e42984b017a31a54ce6b83f8fca5"><td class="memItemLeft" align="right" valign="top"><a id="ae126e42984b017a31a54ce6b83f8fca5" name="ae126e42984b017a31a54ce6b83f8fca5"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>checkConfigExsited</b> (const ConfigureFileName name)</td></tr>
+<tr class="memitem:ae126e42984b017a31a54ce6b83f8fca5" id="r_ae126e42984b017a31a54ce6b83f8fca5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDesktopDirentLocationManager.html#ae126e42984b017a31a54ce6b83f8fca5">checkConfigExsited</a> (const ConfigureFileName name)</td></tr>
+<tr class="memdesc:ae126e42984b017a31a54ce6b83f8fca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a configuration file of a specific name exists.  <br /></td></tr>
 <tr class="separator:ae126e42984b017a31a54ce6b83f8fca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Manages the locations and existence of various desktop directory entries and configuration files. </p>
+<p>This class is responsible for verifying the presence of critical directories and files related to desktop components and server types within a specified root path. It provides methods to query paths based on types and to check for their existence. Signals are emitted when expected folders or configuration files are missing. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a297b4a54067b757caebdab5a36b202f7" name="a297b4a54067b757caebdab5a36b202f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a297b4a54067b757caebdab5a36b202f7">&#9670;&#160;</a></span>DesktopDirentLocationManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DesktopDirentLocationManager::DesktopDirentLocationManager </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>root_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classDesktopMainWindow.html">DesktopMainWindow</a> *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a <a class="el" href="classDesktopDirentLocationManager.html" title="Manages the locations and existence of various desktop directory entries and configuration files.">DesktopDirentLocationManager</a> object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root_path</td><td>The base directory path where all desktop directory entries are expected to reside. </td></tr>
+    <tr><td class="paramname">parent</td><td>A pointer to the parent QObject, typically the <a class="el" href="classDesktopMainWindow.html" title="DesktopMainWindow is the main frontend window of the application. For beginners, this is the starting...">DesktopMainWindow</a>. Defaults to nullptr. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2200c7b36e12a8edbc2a98f318f9ec61" name="a2200c7b36e12a8edbc2a98f318f9ec61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2200c7b36e12a8edbc2a98f318f9ec61">&#9670;&#160;</a></span>checkComponentFolder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DesktopDirentLocationManager::checkComponentFolder </td>
+          <td>(</td>
+          <td class="paramtype">const DesktopDirentType&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if a component folder of a specific type exists. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>The DesktopDirentType to check. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the folder exists, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="ae126e42984b017a31a54ce6b83f8fca5" name="ae126e42984b017a31a54ce6b83f8fca5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae126e42984b017a31a54ce6b83f8fca5">&#9670;&#160;</a></span>checkConfigExsited()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DesktopDirentLocationManager::checkConfigExsited </td>
+          <td>(</td>
+          <td class="paramtype">const ConfigureFileName&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if a configuration file of a specific name exists. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The ConfigureFileName to check. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the configuration file exists, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a5b168be25f98769412101889c7276778" name="a5b168be25f98769412101889c7276778"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b168be25f98769412101889c7276778">&#9670;&#160;</a></span>checkSelfOnce()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DesktopDirentLocationManager::checkSelfOnce </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Performs a one-time check of all critical directory entries and configurations. </p>
+<ul>
+<li>This method initiates a comprehensive check of all expected component folders, server folders, and configuration files under the <code>root_path</code>. It will emit <code>missingDirentFolder</code> or <code>missingServerFolder</code> signals for any missing entries. </li>
+</ul>
+
+</div>
+</div>
+<a id="aa7ca3683fc9dda723e91c4b750aceda7" name="aa7ca3683fc9dda723e91c4b750aceda7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7ca3683fc9dda723e91c4b750aceda7">&#9670;&#160;</a></span>checkServerFolder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DesktopDirentLocationManager::checkServerFolder </td>
+          <td>(</td>
+          <td class="paramtype">const DesktopServerType&#160;</td>
+          <td class="paramname"><em>serverType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if a server folder of a specific type exists. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">serverType</td><td>The DesktopServerType to check. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the folder exists, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a73c7c672b8c19dca1210eef2dc29a0d3" name="a73c7c672b8c19dca1210eef2dc29a0d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73c7c672b8c19dca1210eef2dc29a0d3">&#9670;&#160;</a></span>missingDirentFolder</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DesktopDirentLocationManager::missingDirentFolder </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>folder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const DesktopDirentType&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Signal emitted when an expected desktop directory entry folder is missing. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">folder</td><td>The full path of the missing folder. </td></tr>
+    <tr><td class="paramname">type</td><td>The DesktopDirentType of the missing folder. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a50c58ba5a39dd10fe2b951946298fa4d" name="a50c58ba5a39dd10fe2b951946298fa4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50c58ba5a39dd10fe2b951946298fa4d">&#9670;&#160;</a></span>missingServerFolder</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DesktopDirentLocationManager::missingServerFolder </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>folder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const DesktopServerType&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Signal emitted when an expected server-related folder is missing. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">folder</td><td>The full path of the missing server folder. </td></tr>
+    <tr><td class="paramname">type</td><td>The DesktopServerType of the missing server folder. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8974e31a20f30b3145b660cfcbcfe7c8" name="a8974e31a20f30b3145b660cfcbcfe7c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8974e31a20f30b3145b660cfcbcfe7c8">&#9670;&#160;</a></span>queryConfigType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString DesktopDirentLocationManager::queryConfigType </td>
+          <td>(</td>
+          <td class="paramtype">const ConfigureFileName&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Queries the expected path for a given configuration file name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The ConfigureFileName to query for (e.g., main config, user settings). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The absolute path string for the specified configuration file. </dd></dl>
+
+</div>
+</div>
+<a id="a1cc45e08d4df5cf8152cef2c29a7d900" name="a1cc45e08d4df5cf8152cef2c29a7d900"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cc45e08d4df5cf8152cef2c29a7d900">&#9670;&#160;</a></span>queryFromType() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString DesktopDirentLocationManager::queryFromType </td>
+          <td>(</td>
+          <td class="paramtype">const DesktopDirentType&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Queries the expected path for a given DesktopDirentType. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>The type of desktop directory entry to query for (e.g., applications, documents). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The absolute path string for the specified directory entry. </dd></dl>
+
+</div>
+</div>
+<a id="a142b663fe5e2ac63ee7bc3b67a5c2ac5" name="a142b663fe5e2ac63ee7bc3b67a5c2ac5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a142b663fe5e2ac63ee7bc3b67a5c2ac5">&#9670;&#160;</a></span>queryFromType() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString DesktopDirentLocationManager::queryFromType </td>
+          <td>(</td>
+          <td class="paramtype">const DesktopServerType&#160;</td>
+          <td class="paramname"><em>serverType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Queries the expected path for a given DesktopServerType. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">serverType</td><td>The type of desktop server directory to query for (e.g., database, web server). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The absolute path string for the specified server directory. </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>core/desktop_dirent_manager/<a class="el" href="DesktopDirentLocationManager_8h_source.html">DesktopDirentLocationManager.h</a></li>
 <li>core/desktop_dirent_manager/<b>DesktopDirentLocationManager.cpp</b></li>

@@ -103,37 +103,185 @@ $(document).ready(function(){initNavTree('structToastMetaProtocol.html',''); ini
   <div class="headertitle"><div class="title">ToastMetaProtocol Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Represents the metadata and content for a toast notification.  
+ <a href="structToastMetaProtocol.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="ToastMetaProtocol_8h_source.html">ToastMetaProtocol.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac68a412cb069b12d5ac54d0344412433" id="r_ac68a412cb069b12d5ac54d0344412433"><td class="memItemLeft" align="right" valign="top"><a id="ac68a412cb069b12d5ac54d0344412433" name="ac68a412cb069b12d5ac54d0344412433"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ToastMetaProtocol</b> (const QString meta_app, const QString displayMessage, const QDateTime t=QDateTime::currentDateTime())</td></tr>
+<tr class="memitem:ae745be4b28a4dfc92428bf8c01e4656b" id="r_ae745be4b28a4dfc92428bf8c01e4656b"><td class="memItemLeft" align="right" valign="top"><a id="ae745be4b28a4dfc92428bf8c01e4656b" name="ae745be4b28a4dfc92428bf8c01e4656b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ToastMetaProtocol</b> ()=default</td></tr>
+<tr class="memdesc:ae745be4b28a4dfc92428bf8c01e4656b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for <a class="el" href="structToastMetaProtocol.html" title="Represents the metadata and content for a toast notification.">ToastMetaProtocol</a>. Initializes members to their default values (empty strings, null QDateTime). <br /></td></tr>
+<tr class="separator:ae745be4b28a4dfc92428bf8c01e4656b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac68a412cb069b12d5ac54d0344412433" id="r_ac68a412cb069b12d5ac54d0344412433"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structToastMetaProtocol.html#ac68a412cb069b12d5ac54d0344412433">ToastMetaProtocol</a> (const QString meta_app, const QString displayMessage, const QDateTime t=QDateTime::currentDateTime())</td></tr>
+<tr class="memdesc:ac68a412cb069b12d5ac54d0344412433"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="structToastMetaProtocol.html" title="Represents the metadata and content for a toast notification.">ToastMetaProtocol</a> with specified application name and message.  <br /></td></tr>
 <tr class="separator:ac68a412cb069b12d5ac54d0344412433"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a675566b7007f31496041c1b40eaa36a9" id="r_a675566b7007f31496041c1b40eaa36a9"><td class="memItemLeft" align="right" valign="top"><a id="a675566b7007f31496041c1b40eaa36a9" name="a675566b7007f31496041c1b40eaa36a9"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ToastMetaProtocol</b> (const QString &amp;json_string)</td></tr>
+<tr class="memitem:a675566b7007f31496041c1b40eaa36a9" id="r_a675566b7007f31496041c1b40eaa36a9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structToastMetaProtocol.html#a675566b7007f31496041c1b40eaa36a9">ToastMetaProtocol</a> (const QString &amp;json_string)</td></tr>
+<tr class="memdesc:a675566b7007f31496041c1b40eaa36a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="structToastMetaProtocol.html" title="Represents the metadata and content for a toast notification.">ToastMetaProtocol</a> from a JSON string.  <br /></td></tr>
 <tr class="separator:a675566b7007f31496041c1b40eaa36a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a846e016ac6bb9c3f41d831e40f4a94b8" id="r_a846e016ac6bb9c3f41d831e40f4a94b8"><td class="memItemLeft" align="right" valign="top"><a id="a846e016ac6bb9c3f41d831e40f4a94b8" name="a846e016ac6bb9c3f41d831e40f4a94b8"></a>
-QString&#160;</td><td class="memItemRight" valign="bottom"><b>toString</b> () const</td></tr>
+<tr class="memitem:a846e016ac6bb9c3f41d831e40f4a94b8" id="r_a846e016ac6bb9c3f41d831e40f4a94b8"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structToastMetaProtocol.html#a846e016ac6bb9c3f41d831e40f4a94b8">toString</a> () const</td></tr>
+<tr class="memdesc:a846e016ac6bb9c3f41d831e40f4a94b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the <a class="el" href="structToastMetaProtocol.html" title="Represents the metadata and content for a toast notification.">ToastMetaProtocol</a> object into its JSON string representation.  <br /></td></tr>
 <tr class="separator:a846e016ac6bb9c3f41d831e40f4a94b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:af6e161849c04e07b7f15e0b6b76fbea0" id="r_af6e161849c04e07b7f15e0b6b76fbea0"><td class="memItemLeft" align="right" valign="top"><a id="af6e161849c04e07b7f15e0b6b76fbea0" name="af6e161849c04e07b7f15e0b6b76fbea0"></a>
-static std::optional&lt; <a class="el" href="structToastMetaProtocol.html">ToastMetaProtocol</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>from_json_string</b> (const QString &amp;json_string)</td></tr>
+<tr class="memitem:af6e161849c04e07b7f15e0b6b76fbea0" id="r_af6e161849c04e07b7f15e0b6b76fbea0"><td class="memItemLeft" align="right" valign="top">static std::optional&lt; <a class="el" href="structToastMetaProtocol.html">ToastMetaProtocol</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structToastMetaProtocol.html#af6e161849c04e07b7f15e0b6b76fbea0">from_json_string</a> (const QString &amp;json_string)</td></tr>
+<tr class="memdesc:af6e161849c04e07b7f15e0b6b76fbea0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an optional <a class="el" href="structToastMetaProtocol.html" title="Represents the metadata and content for a toast notification.">ToastMetaProtocol</a> object from a JSON string.  <br /></td></tr>
 <tr class="separator:af6e161849c04e07b7f15e0b6b76fbea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a9b485d0e9aa965934c1003341c3bf119" id="r_a9b485d0e9aa965934c1003341c3bf119"><td class="memItemLeft" align="right" valign="top"><a id="a9b485d0e9aa965934c1003341c3bf119" name="a9b485d0e9aa965934c1003341c3bf119"></a>
 QString&#160;</td><td class="memItemRight" valign="bottom"><b>meta_appName</b></td></tr>
+<tr class="memdesc:a9b485d0e9aa965934c1003341c3bf119"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the application that generated the toast notification. This can be used to identify the source of the toast. <br /></td></tr>
 <tr class="separator:a9b485d0e9aa965934c1003341c3bf119"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19b9a1f41d5dfec4b37bbf880846d9f2" id="r_a19b9a1f41d5dfec4b37bbf880846d9f2"><td class="memItemLeft" align="right" valign="top"><a id="a19b9a1f41d5dfec4b37bbf880846d9f2" name="a19b9a1f41d5dfec4b37bbf880846d9f2"></a>
 QDateTime&#160;</td><td class="memItemRight" valign="bottom"><b>announceTime</b></td></tr>
+<tr class="memdesc:a19b9a1f41d5dfec4b37bbf880846d9f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The exact date and time when the toast notification was announced. This helps in ordering or time-stamping notifications. <br /></td></tr>
 <tr class="separator:a19b9a1f41d5dfec4b37bbf880846d9f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e480450cf4b58a5dfa210d8f41dc146" id="r_a8e480450cf4b58a5dfa210d8f41dc146"><td class="memItemLeft" align="right" valign="top"><a id="a8e480450cf4b58a5dfa210d8f41dc146" name="a8e480450cf4b58a5dfa210d8f41dc146"></a>
 QString&#160;</td><td class="memItemRight" valign="bottom"><b>meta_displayMessage</b></td></tr>
+<tr class="memdesc:a8e480450cf4b58a5dfa210d8f41dc146"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main message content to be displayed in the toast notification. This is the primary textual information for the user. <br /></td></tr>
 <tr class="separator:a8e480450cf4b58a5dfa210d8f41dc146"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Represents the metadata and content for a toast notification. </p>
+<p>This struct holds information necessary to display a toast notification, including the originating application's name, the message to display, and the time the notification was announced. It provides constructors for easy initialization and methods for serialization to/from JSON strings. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ac68a412cb069b12d5ac54d0344412433" name="ac68a412cb069b12d5ac54d0344412433"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac68a412cb069b12d5ac54d0344412433">&#9670;&#160;</a></span>ToastMetaProtocol() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ToastMetaProtocol::ToastMetaProtocol </td>
+          <td>(</td>
+          <td class="paramtype">const QString&#160;</td>
+          <td class="paramname"><em>meta_app</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString&#160;</td>
+          <td class="paramname"><em>displayMessage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QDateTime&#160;</td>
+          <td class="paramname"><em>t</em> = <code>QDateTime::currentDateTime()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs a <a class="el" href="structToastMetaProtocol.html" title="Represents the metadata and content for a toast notification.">ToastMetaProtocol</a> with specified application name and message. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">meta_app</td><td>The name of the application. </td></tr>
+    <tr><td class="paramname">displayMessage</td><td>The message to be displayed. </td></tr>
+    <tr><td class="paramname">t</td><td>The announcement time. Defaults to the current system time if not provided. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a675566b7007f31496041c1b40eaa36a9" name="a675566b7007f31496041c1b40eaa36a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a675566b7007f31496041c1b40eaa36a9">&#9670;&#160;</a></span>ToastMetaProtocol() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ToastMetaProtocol::ToastMetaProtocol </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>json_string</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs a <a class="el" href="structToastMetaProtocol.html" title="Represents the metadata and content for a toast notification.">ToastMetaProtocol</a> from a JSON string. </p>
+<ul>
+<li>This constructor attempts to parse the provided JSON string and populate the struct members accordingly. It's generally recommended to use <code>from_json_string</code> for safer parsing. <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">json_string</td><td>The JSON string representing a <a class="el" href="structToastMetaProtocol.html" title="Represents the metadata and content for a toast notification.">ToastMetaProtocol</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="af6e161849c04e07b7f15e0b6b76fbea0" name="af6e161849c04e07b7f15e0b6b76fbea0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6e161849c04e07b7f15e0b6b76fbea0">&#9670;&#160;</a></span>from_json_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; <a class="el" href="structToastMetaProtocol.html">ToastMetaProtocol</a> &gt; ToastMetaProtocol::from_json_string </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>json_string</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates an optional <a class="el" href="structToastMetaProtocol.html" title="Represents the metadata and content for a toast notification.">ToastMetaProtocol</a> object from a JSON string. </p>
+<ul>
+<li>This static method attempts to parse a JSON string and construct a <a class="el" href="structToastMetaProtocol.html" title="Represents the metadata and content for a toast notification.">ToastMetaProtocol</a> object. It returns <code>std::nullopt</code> if the parsing fails (e.g., invalid JSON format, missing required fields), providing a safe way to deserialize the object. <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">json_string</td><td>The JSON string to parse. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An <code>std::optional&lt;<a class="el" href="structToastMetaProtocol.html" title="Represents the metadata and content for a toast notification.">ToastMetaProtocol</a>&gt;</code> containing the parsed object if successful, otherwise <code>std::nullopt</code>. </dd></dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="a846e016ac6bb9c3f41d831e40f4a94b8" name="a846e016ac6bb9c3f41d831e40f4a94b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a846e016ac6bb9c3f41d831e40f4a94b8">&#9670;&#160;</a></span>toString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString ToastMetaProtocol::toString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Converts the <a class="el" href="structToastMetaProtocol.html" title="Represents the metadata and content for a toast notification.">ToastMetaProtocol</a> object into its JSON string representation. </p>
+<dl class="section return"><dt>Returns</dt><dd>A QString containing the JSON representation of the object. </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li>core/server/toast_file_gen_and_receiver/<a class="el" href="ToastMetaProtocol_8h_source.html">ToastMetaProtocol.h</a></li>
 <li>core/server/toast_file_gen_and_receiver/<b>ToastMetaProtocol.cpp</b></li>

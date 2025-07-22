@@ -5,7 +5,7 @@ var searchData=
   ['chapter_5fpage_2',['chapter_page',['../structCCPdfChapterNode.html#aebccf9cdeff5bc1782743ed050f03b6b',1,'CCPdfChapterNode']]],
   ['chapter_5ftitle_3',['chapter_title',['../structCCPdfChapterNode.html#aa38e28f70d067bcd3759f32e6311b811',1,'CCPdfChapterNode']]],
   ['childs_4',['childs',['../structCCPdfChapterNode.html#aec27ffbb948af651fea64095efb35338',1,'CCPdfChapterNode']]],
-  ['city_5',['city',['../structAppWeatherDetailedRequest.html#a31d9b6dd471aabd749f032b560f0391f',1,'AppWeatherDetailedRequest']]],
+  ['city_5',['city',['../structAppWeatherDetailedRequest.html#a31d9b6dd471aabd749f032b560f0391f',1,'AppWeatherDetailedRequest::city'],['../structWeatherData.html#a1cf81c56cf0236dae99872435dfcadbd',1,'WeatherData::city']]],
   ['color_6',['color',['../structNoteCreatorWindow_1_1Package.html#a82a7fcd4ef7a444c3d2fcf91360b9dca',1,'NoteCreatorWindow::Package']]],
   ['color_5fgrad_5fwidth_7',['COLOR_GRAD_WIDTH',['../classGaugeWidget.html#a278ffdd0ea7065bf61caf99d64622a22',1,'GaugeWidget']]],
   ['color_5fradius_8',['COLOR_RADIUS',['../classGaugeWidget.html#acde1eff89c68ee8a88fd6412f3141833',1,'GaugeWidget']]],

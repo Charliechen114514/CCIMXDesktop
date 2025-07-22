@@ -8,9 +8,10 @@ var searchData=
   ['network_5fquery_5fdisplay_5',['network_query_display',['../classInterfacesQuery.html#a698562491f2cb09f744bfc1344c0fff1',1,'InterfacesQuery']]],
   ['new_5fmove_5fspeed_6',['new_move_speed',['../classDifficultyManager.html#a7a6713f40557ef98a0adbf18b6d8a065',1,'DifficultyManager']]],
   ['new_5fobstacle_5fcnt_5fmax_7',['new_obstacle_cnt_max',['../classDifficultyManager.html#a4b9ff3ea8ed4321a82e6e97331e24693',1,'DifficultyManager']]],
-  ['next_5fpage_8',['next_page',['../classMainWindow.html#abc9d84a0a8b9bea132a960fdfa06b2cd',1,'MainWindow']]],
-  ['notecreatorwindow_9',['NoteCreatorWindow',['../classNoteCreatorWindow.html#ae4e9e8cac1ad751be0d800d48382d65e',1,'NoteCreatorWindow']]],
-  ['noteinfo_10',['noteInfo',['../classNoter.html#a1a96652bfaf074d24d4395a92a2174b5',1,'Noter']]],
-  ['noter_11',['Noter',['../classNoter.html#abafede83ac3452b10639b33a13c06899',1,'Noter']]],
-  ['numbernode_12',['NumberNode',['../structNumberNode.html#a8cf6c3c2c3a2092a4c3ae66aaaed88fc',1,'NumberNode']]]
+  ['newfiles_8',['newFiles',['../classFileMonitor.html#a22c8b5885c91f7d14155498d63d00ba1',1,'FileMonitor']]],
+  ['next_5fpage_9',['next_page',['../classMainWindow.html#abc9d84a0a8b9bea132a960fdfa06b2cd',1,'MainWindow']]],
+  ['notecreatorwindow_10',['NoteCreatorWindow',['../classNoteCreatorWindow.html#ae4e9e8cac1ad751be0d800d48382d65e',1,'NoteCreatorWindow']]],
+  ['noteinfo_11',['noteInfo',['../classNoter.html#a1a96652bfaf074d24d4395a92a2174b5',1,'Noter']]],
+  ['noter_12',['Noter',['../classNoter.html#abafede83ac3452b10639b33a13c06899',1,'Noter']]],
+  ['numbernode_13',['NumberNode',['../structNumberNode.html#a8cf6c3c2c3a2092a4c3ae66aaaed88fc',1,'NumberNode']]]
 ];

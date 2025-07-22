@@ -7,5 +7,7 @@ var searchData=
   ['image_5flist_4',['image_list',['../structWallPaperAnimationHandler_1_1ImagePoolEngine.html#a9e00dc9de5cf9ea5a75d757965f9860d',1,'WallPaperAnimationHandler::ImagePoolEngine']]],
   ['images_5',['images',['../structFlowTypeTypeWallPaperSettings.html#a6e05a751cc628ef639dc75cfb07d0774',1,'FlowTypeTypeWallPaperSettings']]],
   ['info_6',['info',['../structNoteCreatorWindow_1_1Package.html#a0af72880db4da33a707c5817c9b69570',1,'NoteCreatorWindow::Package']]],
-  ['ir_7',['ir',['../structAP3216CData.html#a593a72bc7abbf88fd9c2a4ebe4078a2a',1,'AP3216CData']]]
+  ['interval_7',['interval',['../structWeatherData.html#ae0a308bd4e14ec55dd94019c6d7c0c2d',1,'WeatherData']]],
+  ['ir_8',['ir',['../structAP3216CData.html#a593a72bc7abbf88fd9c2a4ebe4078a2a',1,'AP3216CData']]],
+  ['isday_9',['isDay',['../structWeatherData.html#a0fbfefedb5af6676a4ee53f1df77c1ca',1,'WeatherData']]]
 ];

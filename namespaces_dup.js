@@ -10,6 +10,7 @@ var namespaces_dup =
     ] ],
     [ "CVTools", "namespaceCVTools.html", "namespaceCVTools" ],
     [ "Dinasour", "namespaceDinasour.html", null ],
+    [ "DiskUsage", "namespaceDiskUsage.html", "namespaceDiskUsage" ],
     [ "EasingCurveComboBoxSetuper", "namespaceEasingCurveComboBoxSetuper.html", null ],
     [ "ExpressionEvaluator", "namespaceExpressionEvaluator.html", [
       [ "evalute_expression", "namespaceExpressionEvaluator.html#a020740b3fa8807221f6955d336d18311", null ]

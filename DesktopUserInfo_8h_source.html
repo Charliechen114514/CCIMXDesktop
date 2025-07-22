@@ -98,40 +98,55 @@ $(document).ready(function(){initNavTree('DesktopUserInfo_8h_source.html',''); i
   <div class="headertitle"><div class="title">DesktopUserInfo.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef DESKTOPUSERINFO_H</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define DESKTOPUSERINFO_H</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;UserInfo.h&quot;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;QObject&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">class </span><a class="code hl_class" href="classDesktopDirentLocationManager.html">DesktopDirentLocationManager</a>;</div>
-<div class="foldopen" id="foldopen00006" data-start="{" data-end="};">
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="classDesktopUserInfo.html">    6</a></span><span class="keyword">class </span><a class="code hl_class" href="classDesktopUserInfo.html">DesktopUserInfo</a> : <span class="keyword">public</span> QObject {</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    Q_OBJECT</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classDesktopUserInfo.html">DesktopUserInfo</a>(<a class="code hl_class" href="classDesktopDirentLocationManager.html">DesktopDirentLocationManager</a>* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">public</span> slots:</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classDesktopUserInfo.html#aec424842a07dd6eb6cb67aef06b2c317">start_init</a>(); </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="classDesktopUserInfo.html#a820fbf3418f79a1da13cf6708eed66f7">   12</a></span>    <span class="keyword">inline</span> <a class="code hl_class" href="classUserInfo.html">UserInfo</a>* <a class="code hl_slot" href="classDesktopUserInfo.html#a820fbf3418f79a1da13cf6708eed66f7">get_info</a>(){<span class="keywordflow">return</span> info.get();} </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>signals:</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keywordtype">void</span> user_init_ok(<span class="keyword">const</span> <a class="code hl_class" href="classUserInfo.html">UserInfo</a>&amp; info);</div>
+<a href="DesktopUserInfo_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef DESKTOPUSERINFO_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define DESKTOPUSERINFO_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="UserInfo_8h.html">UserInfo.h</a>&quot;</span> <span class="comment">// Includes the UserInfo struct/class definition</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;QObject&gt;</span> <span class="comment">// Base class for DesktopUserInfo, enabling signals/slots</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;memory&gt;</span> <span class="comment">// Required for std::unique_ptr</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">// Forward declaration to avoid heavy includes and circular dependencies</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">class </span><a class="code hl_class" href="classDesktopDirentLocationManager.html">DesktopDirentLocationManager</a>;</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <a class="code hl_class" href="classDesktopDirentLocationManager.html">DesktopDirentLocationManager</a>* manager;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    std::unique_ptr&lt;UserInfo&gt; info;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>};</div>
+<div class="foldopen" id="foldopen00028" data-start="{" data-end="};">
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classDesktopUserInfo.html">   28</a></span><span class="keyword">class </span><a class="code hl_class" href="classDesktopUserInfo.html">DesktopUserInfo</a> : <span class="keyword">public</span> QObject {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    Q_OBJECT</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classDesktopUserInfo.html">DesktopUserInfo</a>(<a class="code hl_class" href="classDesktopDirentLocationManager.html">DesktopDirentLocationManager</a>* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">public</span> slots:</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classDesktopUserInfo.html#aec424842a07dd6eb6cb67aef06b2c317">start_init</a>(); </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classDesktopUserInfo.html#a820fbf3418f79a1da13cf6708eed66f7">   56</a></span>    <span class="keyword">inline</span> <a class="code hl_class" href="classUserInfo.html">UserInfo</a>* <a class="code hl_slot" href="classDesktopUserInfo.html#a820fbf3418f79a1da13cf6708eed66f7">get_info</a>() { <span class="keywordflow">return</span> info.get(); } </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>signals:</div>
+<div class="foldopen" id="foldopen00063" data-start="{" data-end="}">
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classDesktopUserInfo.html#ae66fd133a15da730d4741a0a6c50c6e5">   63</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classDesktopUserInfo.html#ae66fd133a15da730d4741a0a6c50c6e5">user_init_ok</a>(<span class="keyword">const</span> <a class="code hl_class" href="classUserInfo.html">UserInfo</a>&amp; info);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <a class="code hl_class" href="classDesktopDirentLocationManager.html">DesktopDirentLocationManager</a>* manager;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    std::unique_ptr&lt;UserInfo&gt; info;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>};</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="preprocessor">#endif </span><span class="comment">// DESKTOPUSERINFO_H</span></div>
 </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#endif </span><span class="comment">// DESKTOPUSERINFO_H</span></div>
-<div class="ttc" id="aclassDesktopDirentLocationManager_html"><div class="ttname"><a href="classDesktopDirentLocationManager.html">DesktopDirentLocationManager</a></div><div class="ttdef"><b>Definition</b> DesktopDirentLocationManager.h:6</div></div>
-<div class="ttc" id="aclassDesktopUserInfo_html"><div class="ttname"><a href="classDesktopUserInfo.html">DesktopUserInfo</a></div><div class="ttdef"><b>Definition</b> DesktopUserInfo.h:6</div></div>
-<div class="ttc" id="aclassDesktopUserInfo_html_a820fbf3418f79a1da13cf6708eed66f7"><div class="ttname"><a href="classDesktopUserInfo.html#a820fbf3418f79a1da13cf6708eed66f7">DesktopUserInfo::get_info</a></div><div class="ttdeci">UserInfo * get_info()</div><div class="ttdoc">get info, might be not inited!</div><div class="ttdef"><b>Definition</b> DesktopUserInfo.h:12</div></div>
-<div class="ttc" id="aclassDesktopUserInfo_html_aec424842a07dd6eb6cb67aef06b2c317"><div class="ttname"><a href="classDesktopUserInfo.html#aec424842a07dd6eb6cb67aef06b2c317">DesktopUserInfo::start_init</a></div><div class="ttdeci">void start_init()</div><div class="ttdoc">start init will scan the target file once</div><div class="ttdef"><b>Definition</b> DesktopUserInfo.cpp:36</div></div>
-<div class="ttc" id="aclassUserInfo_html"><div class="ttname"><a href="classUserInfo.html">UserInfo</a></div><div class="ttdef"><b>Definition</b> UserInfo.h:7</div></div>
+</div>
+<div class="ttc" id="aUserInfo_8h_html"><div class="ttname"><a href="UserInfo_8h.html">UserInfo.h</a></div><div class="ttdoc">Defines the UserInfo class and its nested UserInfoBuilder class for managing user profile data.</div></div>
+<div class="ttc" id="aclassDesktopDirentLocationManager_html"><div class="ttname"><a href="classDesktopDirentLocationManager.html">DesktopDirentLocationManager</a></div><div class="ttdoc">Manages the locations and existence of various desktop directory entries and configuration files.</div><div class="ttdef"><b>Definition</b> DesktopDirentLocationManager.h:24</div></div>
+<div class="ttc" id="aclassDesktopUserInfo_html"><div class="ttname"><a href="classDesktopUserInfo.html">DesktopUserInfo</a></div><div class="ttdoc">Manages the retrieval and provision of user-specific information within the desktop environment.</div><div class="ttdef"><b>Definition</b> DesktopUserInfo.h:28</div></div>
+<div class="ttc" id="aclassDesktopUserInfo_html_a820fbf3418f79a1da13cf6708eed66f7"><div class="ttname"><a href="classDesktopUserInfo.html#a820fbf3418f79a1da13cf6708eed66f7">DesktopUserInfo::get_info</a></div><div class="ttdeci">UserInfo * get_info()</div><div class="ttdoc">Retrieves a pointer to the UserInfo object.</div><div class="ttdef"><b>Definition</b> DesktopUserInfo.h:56</div></div>
+<div class="ttc" id="aclassDesktopUserInfo_html_ae66fd133a15da730d4741a0a6c50c6e5"><div class="ttname"><a href="classDesktopUserInfo.html#ae66fd133a15da730d4741a0a6c50c6e5">DesktopUserInfo::user_init_ok</a></div><div class="ttdeci">void user_init_ok(const UserInfo &amp;info)</div><div class="ttdoc">Signal emitted when the user information has been successfully initialized.</div></div>
+<div class="ttc" id="aclassDesktopUserInfo_html_aec424842a07dd6eb6cb67aef06b2c317"><div class="ttname"><a href="classDesktopUserInfo.html#aec424842a07dd6eb6cb67aef06b2c317">DesktopUserInfo::start_init</a></div><div class="ttdeci">void start_init()</div><div class="ttdoc">Initiates the user information initialization process.</div><div class="ttdef"><b>Definition</b> DesktopUserInfo.cpp:36</div></div>
+<div class="ttc" id="aclassUserInfo_html"><div class="ttname"><a href="classUserInfo.html">UserInfo</a></div><div class="ttdoc">Represents a user's profile information, including name, email, phone number, and avatar path.</div><div class="ttdef"><b>Definition</b> UserInfo.h:22</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_4270bfced15e0e73154b13468c7c9ad9.html">core</a></li><li class="navelem"><a class="el" href="dir_98bf925fb62cd6aad94cebaa78d07067.html">users</a></li><li class="navelem"><b>DesktopUserInfo.h</b></li>
+    <li class="navelem"><a class="el" href="dir_4270bfced15e0e73154b13468c7c9ad9.html">core</a></li><li class="navelem"><a class="el" href="dir_98bf925fb62cd6aad94cebaa78d07067.html">users</a></li><li class="navelem"><a class="el" href="DesktopUserInfo_8h.html">DesktopUserInfo.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

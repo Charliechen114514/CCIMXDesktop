@@ -102,6 +102,11 @@ $(document).ready(function(){initNavTree('classWeatherRequestEngine.html',''); i
   <div class="headertitle"><div class="title">WeatherRequestEngine Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Handles the logic for requesting geographical and weather data from network services.  
+ <a href="classWeatherRequestEngine.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="WeatherRequestEngine_8h_source.html">WeatherRequestEngine.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for WeatherRequestEngine:</div>
 <div class="dyncontent">
@@ -111,22 +116,195 @@ Inheritance diagram for WeatherRequestEngine:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
 Signals</h2></td></tr>
-<tr class="memitem:ab5aeaa92473653db504ec68ad8c7b788" id="r_ab5aeaa92473653db504ec68ad8c7b788"><td class="memItemLeft" align="right" valign="top"><a id="ab5aeaa92473653db504ec68ad8c7b788" name="ab5aeaa92473653db504ec68ad8c7b788"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>weatherDataReady</b> (const <a class="el" href="structWeatherData.html">WeatherData</a> &amp;data)</td></tr>
+<tr class="memitem:ab5aeaa92473653db504ec68ad8c7b788" id="r_ab5aeaa92473653db504ec68ad8c7b788"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWeatherRequestEngine.html#ab5aeaa92473653db504ec68ad8c7b788">weatherDataReady</a> (const <a class="el" href="structWeatherData.html">WeatherData</a> &amp;data)</td></tr>
+<tr class="memdesc:ab5aeaa92473653db504ec68ad8c7b788"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal emitted when new weather data is successfully retrieved and ready.  <br /></td></tr>
 <tr class="separator:ab5aeaa92473653db504ec68ad8c7b788"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a015c0f2a7cb44aa549dfc227c2d3d4ab" id="r_a015c0f2a7cb44aa549dfc227c2d3d4ab"><td class="memItemLeft" align="right" valign="top"><a id="a015c0f2a7cb44aa549dfc227c2d3d4ab" name="a015c0f2a7cb44aa549dfc227c2d3d4ab"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>errorOccurred</b> (const QString &amp;errorMessage)</td></tr>
+<tr class="memitem:a015c0f2a7cb44aa549dfc227c2d3d4ab" id="r_a015c0f2a7cb44aa549dfc227c2d3d4ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWeatherRequestEngine.html#a015c0f2a7cb44aa549dfc227c2d3d4ab">errorOccurred</a> (const QString &amp;errorMessage)</td></tr>
+<tr class="memdesc:a015c0f2a7cb44aa549dfc227c2d3d4ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal emitted when an error occurs during the data request process.  <br /></td></tr>
 <tr class="separator:a015c0f2a7cb44aa549dfc227c2d3d4ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a90c53267a98c6612bb2d5d2d867df30f" id="r_a90c53267a98c6612bb2d5d2d867df30f"><td class="memItemLeft" align="right" valign="top"><a id="a90c53267a98c6612bb2d5d2d867df30f" name="a90c53267a98c6612bb2d5d2d867df30f"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>WeatherRequestEngine</b> (const QString &amp;city, QObject *parent=nullptr)</td></tr>
+<tr class="memitem:a90c53267a98c6612bb2d5d2d867df30f" id="r_a90c53267a98c6612bb2d5d2d867df30f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWeatherRequestEngine.html#a90c53267a98c6612bb2d5d2d867df30f">WeatherRequestEngine</a> (const QString &amp;city, QObject *parent=nullptr)</td></tr>
+<tr class="memdesc:a90c53267a98c6612bb2d5d2d867df30f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classWeatherRequestEngine.html" title="Handles the logic for requesting geographical and weather data from network services.">WeatherRequestEngine</a> object.  <br /></td></tr>
 <tr class="separator:a90c53267a98c6612bb2d5d2d867df30f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed2190d9beb078536849efda6dbf103c" id="r_aed2190d9beb078536849efda6dbf103c"><td class="memItemLeft" align="right" valign="top"><a id="aed2190d9beb078536849efda6dbf103c" name="aed2190d9beb078536849efda6dbf103c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>queryWeatherData</b> ()</td></tr>
+<tr class="memitem:abc54f14ac29e902933979e0f22e2346c" id="r_abc54f14ac29e902933979e0f22e2346c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWeatherRequestEngine.html#abc54f14ac29e902933979e0f22e2346c">~WeatherRequestEngine</a> ()=default</td></tr>
+<tr class="memdesc:abc54f14ac29e902933979e0f22e2346c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the <a class="el" href="classWeatherRequestEngine.html" title="Handles the logic for requesting geographical and weather data from network services.">WeatherRequestEngine</a> object.  <br /></td></tr>
+<tr class="separator:abc54f14ac29e902933979e0f22e2346c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed2190d9beb078536849efda6dbf103c" id="r_aed2190d9beb078536849efda6dbf103c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWeatherRequestEngine.html#aed2190d9beb078536849efda6dbf103c">queryWeatherData</a> ()</td></tr>
+<tr class="memdesc:aed2190d9beb078536849efda6dbf103c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initiates a request for weather data.  <br /></td></tr>
 <tr class="separator:aed2190d9beb078536849efda6dbf103c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Handles the logic for requesting geographical and weather data from network services. </p>
+<p>This class is responsible for making network requests to obtain location data (latitude and longitude) for a given city, and then using those coordinates to fetch current weather conditions. It utilizes a caching mechanism (<code><a class="el" href="classQueryCached.html" title="Manages a cache of WeatherData with an automatic timeout mechanism.">QueryCached</a></code>) to reduce redundant API calls and optimize performance. Signals are emitted upon successful data retrieval or if an error occurs. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a90c53267a98c6612bb2d5d2d867df30f" name="a90c53267a98c6612bb2d5d2d867df30f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90c53267a98c6612bb2d5d2d867df30f">&#9670;&#160;</a></span>WeatherRequestEngine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">WeatherRequestEngine::WeatherRequestEngine </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>city</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a <a class="el" href="classWeatherRequestEngine.html" title="Handles the logic for requesting geographical and weather data from network services.">WeatherRequestEngine</a> object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">city</td><td>The name of the city for which weather data will be requested. </td></tr>
+    <tr><td class="paramname">parent</td><td>A pointer to the parent QObject, allowing for proper object hierarchy and memory management. Defaults to nullptr. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abc54f14ac29e902933979e0f22e2346c" name="abc54f14ac29e902933979e0f22e2346c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc54f14ac29e902933979e0f22e2346c">&#9670;&#160;</a></span>~WeatherRequestEngine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">WeatherRequestEngine::~WeatherRequestEngine </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destroys the <a class="el" href="classWeatherRequestEngine.html" title="Handles the logic for requesting geographical and weather data from network services.">WeatherRequestEngine</a> object. </p>
+<ul>
+<li>The default destructor is sufficient as <code>QObject</code> handles child deletion, and <code><a class="el" href="classQueryCached.html" title="Manages a cache of WeatherData with an automatic timeout mechanism.">QueryCached</a></code> is a child of this object. </li>
+</ul>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a015c0f2a7cb44aa549dfc227c2d3d4ab" name="a015c0f2a7cb44aa549dfc227c2d3d4ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a015c0f2a7cb44aa549dfc227c2d3d4ab">&#9670;&#160;</a></span>errorOccurred</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WeatherRequestEngine::errorOccurred </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>errorMessage</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Signal emitted when an error occurs during the data request process. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">errorMessage</td><td>A QString describing the nature of the error. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aed2190d9beb078536849efda6dbf103c" name="aed2190d9beb078536849efda6dbf103c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed2190d9beb078536849efda6dbf103c">&#9670;&#160;</a></span>queryWeatherData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WeatherRequestEngine::queryWeatherData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initiates a request for weather data. </p>
+<ul>
+<li>This method first checks the cache. If the cached data is valid, it emits <code>weatherDataReady</code> immediately. Otherwise, it triggers network requests: first for geographical coordinates if not already known, then for weather data. </li>
+</ul>
+
+</div>
+</div>
+<a id="ab5aeaa92473653db504ec68ad8c7b788" name="ab5aeaa92473653db504ec68ad8c7b788"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5aeaa92473653db504ec68ad8c7b788">&#9670;&#160;</a></span>weatherDataReady</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WeatherRequestEngine::weatherDataReady </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structWeatherData.html">WeatherData</a> &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Signal emitted when new weather data is successfully retrieved and ready. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>A constant reference to the <code><a class="el" href="structWeatherData.html" title="Represents a snapshot of weather conditions for a specific location and time.">WeatherData</a></code> object containing the fetched weather details. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>plugin_loader/plugin_cards/WeatherCard/<a class="el" href="WeatherRequestEngine_8h_source.html">WeatherRequestEngine.h</a></li>
 <li>plugin_loader/plugin_cards/WeatherCard/<b>WeatherRequestEngine.cpp</b></li>

@@ -5,6 +5,7 @@ var searchData=
   ['fontcolor_2',['fontColor',['../structAppWidgetsSettingsInfoPack.html#a94842885236e3b69de8391683629c435',1,'AppWidgetsSettingsInfoPack']]],
   ['format_5ffactory_3',['format_factory',['../structDesktopLoggerBackends.html#a81b01e0635c652cac4c372115252f814',1,'DesktopLoggerBackends']]],
   ['fps_4',['fps',['../structVideoPlayerInfo.html#ade10fdac7d6b1c3da50ab5b53c006903',1,'VideoPlayerInfo']]],
-  ['from_5fboard_5fcolor_5',['FROM_BOARD_COLOR',['../classGaugeWidget.html#a87ed23c44ce8292872259eb826836fb1',1,'GaugeWidget']]],
-  ['fullpath_6',['fullPath',['../structProcessBroswer_1_1ProcessInfo.html#af250bfb0d7e057a9f7bf5dbe50372c26',1,'ProcessBroswer::ProcessInfo']]]
+  ['free_5',['free',['../structDiskUsage_1_1MetaInfo.html#a1f6405a517927bb3a2dcf724c01cd14c',1,'DiskUsage::MetaInfo']]],
+  ['from_5fboard_5fcolor_6',['FROM_BOARD_COLOR',['../classGaugeWidget.html#a87ed23c44ce8292872259eb826836fb1',1,'GaugeWidget']]],
+  ['fullpath_7',['fullPath',['../structProcessBroswer_1_1ProcessInfo.html#af250bfb0d7e057a9f7bf5dbe50372c26',1,'ProcessBroswer::ProcessInfo']]]
 ];

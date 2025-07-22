@@ -101,6 +101,11 @@ $(document).ready(function(){initNavTree('classDesktopCardHook.html',''); initRe
   <div class="headertitle"><div class="title">DesktopCardHook Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Integrates a <a class="el" href="classDesktopWidgetPluginServer.html" title="Manages the lifecycle of dynamically loaded QWidget-based plugins.">DesktopWidgetPluginServer</a> with a <a class="el" href="classHomeCardManager.html" title="Manages a collection of QWidget instances displayed within a QStackedWidget.">HomeCardManager</a> to display loaded plugin widgets as cards.  
+ <a href="classDesktopCardHook.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="DesktopCardHook_8h_source.html">DesktopCardHook.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for DesktopCardHook:</div>
 <div class="dyncontent">
@@ -113,13 +118,92 @@ Inheritance diagram for DesktopCardHook:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aab209748ac5aa91e1fd5cc64a9197156" id="r_aab209748ac5aa91e1fd5cc64a9197156"><td class="memItemLeft" align="right" valign="top"><a id="aab209748ac5aa91e1fd5cc64a9197156" name="aab209748ac5aa91e1fd5cc64a9197156"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DesktopCardHook</b> (<a class="el" href="classHomeCardManager.html">HomeCardManager</a> *manager, <a class="el" href="classDesktopWidgetPluginServer.html">DesktopWidgetPluginServer</a> *parent=nullptr)</td></tr>
+<tr class="memitem:aab209748ac5aa91e1fd5cc64a9197156" id="r_aab209748ac5aa91e1fd5cc64a9197156"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDesktopCardHook.html#aab209748ac5aa91e1fd5cc64a9197156">DesktopCardHook</a> (<a class="el" href="classHomeCardManager.html">HomeCardManager</a> *manager, <a class="el" href="classDesktopWidgetPluginServer.html">DesktopWidgetPluginServer</a> *parent=nullptr)</td></tr>
+<tr class="memdesc:aab209748ac5aa91e1fd5cc64a9197156"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classDesktopCardHook.html" title="Integrates a DesktopWidgetPluginServer with a HomeCardManager to display loaded plugin widgets as car...">DesktopCardHook</a> instance.  <br /></td></tr>
 <tr class="separator:aab209748ac5aa91e1fd5cc64a9197156"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2900494411cee28f9e8c0c0e8371a558" id="r_a2900494411cee28f9e8c0c0e8371a558"><td class="memItemLeft" align="right" valign="top"><a id="a2900494411cee28f9e8c0c0e8371a558" name="a2900494411cee28f9e8c0c0e8371a558"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>process_unloaded_widget</b> (const QString &amp;what_plugin_widget)</td></tr>
+<tr class="memitem:a2900494411cee28f9e8c0c0e8371a558" id="r_a2900494411cee28f9e8c0c0e8371a558"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDesktopCardHook.html#a2900494411cee28f9e8c0c0e8371a558">process_unloaded_widget</a> (const QString &amp;what_plugin_widget)</td></tr>
+<tr class="memdesc:a2900494411cee28f9e8c0c0e8371a558"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes an unloaded widget, removing it from the <a class="el" href="classHomeCardManager.html" title="Manages a collection of QWidget instances displayed within a QStackedWidget.">HomeCardManager</a>.  <br /></td></tr>
 <tr class="separator:a2900494411cee28f9e8c0c0e8371a558"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Integrates a <a class="el" href="classDesktopWidgetPluginServer.html" title="Manages the lifecycle of dynamically loaded QWidget-based plugins.">DesktopWidgetPluginServer</a> with a <a class="el" href="classHomeCardManager.html" title="Manages a collection of QWidget instances displayed within a QStackedWidget.">HomeCardManager</a> to display loaded plugin widgets as cards. </p>
+<p>This class acts as a bridge, listening for signals from a <a class="el" href="classDesktopWidgetPluginServer.html" title="Manages the lifecycle of dynamically loaded QWidget-based plugins.">DesktopWidgetPluginServer</a> when plugins (which expose QWidgets) are loaded. Upon a successful plugin load, it takes the widget and installs it into the <a class="el" href="classHomeCardManager.html" title="Manages a collection of QWidget instances displayed within a QStackedWidget.">HomeCardManager</a>, effectively displaying it as a "card" in the UI. It also handles the removal of widgets when plugins are unloaded. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aab209748ac5aa91e1fd5cc64a9197156" name="aab209748ac5aa91e1fd5cc64a9197156"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab209748ac5aa91e1fd5cc64a9197156">&#9670;&#160;</a></span>DesktopCardHook()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DesktopCardHook::DesktopCardHook </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classHomeCardManager.html">HomeCardManager</a> *&#160;</td>
+          <td class="paramname"><em>manager</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classDesktopWidgetPluginServer.html">DesktopWidgetPluginServer</a> *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a <a class="el" href="classDesktopCardHook.html" title="Integrates a DesktopWidgetPluginServer with a HomeCardManager to display loaded plugin widgets as car...">DesktopCardHook</a> instance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">manager</td><td>A pointer to the <a class="el" href="classHomeCardManager.html" title="Manages a collection of QWidget instances displayed within a QStackedWidget.">HomeCardManager</a> that will display the plugin widgets. The hook does not take ownership of the manager. </td></tr>
+    <tr><td class="paramname">parent</td><td>A pointer to the <a class="el" href="classDesktopWidgetPluginServer.html" title="Manages the lifecycle of dynamically loaded QWidget-based plugins.">DesktopWidgetPluginServer</a> that this hook will monitor. This is also the QObject parent for this hook, which means it manages its lifetime. Defaults to nullptr. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2900494411cee28f9e8c0c0e8371a558" name="a2900494411cee28f9e8c0c0e8371a558"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2900494411cee28f9e8c0c0e8371a558">&#9670;&#160;</a></span>process_unloaded_widget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DesktopCardHook::process_unloaded_widget </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>what_plugin_widget</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Processes an unloaded widget, removing it from the <a class="el" href="classHomeCardManager.html" title="Manages a collection of QWidget instances displayed within a QStackedWidget.">HomeCardManager</a>. </p>
+<ul>
+<li>This method is called when a plugin widget is unloaded. It removes the corresponding QWidget from the <a class="el" href="classHomeCardManager.html" title="Manages a collection of QWidget instances displayed within a QStackedWidget.">HomeCardManager</a>, effectively taking the "card" off the display. <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">what_plugin_widget</td><td>The name of the plugin whose widget is being unloaded. </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>core/server/server_hooks/<a class="el" href="DesktopCardHook_8h_source.html">DesktopCardHook.h</a></li>
 <li>core/server/server_hooks/<b>DesktopCardHook.cpp</b></li>

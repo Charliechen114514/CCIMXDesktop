@@ -101,6 +101,11 @@ $(document).ready(function(){initNavTree('classWeatherCard.html',''); initResiza
   <div class="headertitle"><div class="title">WeatherCard Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>A custom QWidget that displays current weather information.  
+ <a href="classWeatherCard.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="WeatherCard_8h_source.html">WeatherCard.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for WeatherCard:</div>
 <div class="dyncontent">
@@ -110,10 +115,73 @@ Inheritance diagram for WeatherCard:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9774c5ca1c3d0a8e70c121d2a9c13706" id="r_a9774c5ca1c3d0a8e70c121d2a9c13706"><td class="memItemLeft" align="right" valign="top"><a id="a9774c5ca1c3d0a8e70c121d2a9c13706" name="a9774c5ca1c3d0a8e70c121d2a9c13706"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>WeatherCard</b> (QWidget *parent=nullptr)</td></tr>
+<tr class="memitem:a9774c5ca1c3d0a8e70c121d2a9c13706" id="r_a9774c5ca1c3d0a8e70c121d2a9c13706"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWeatherCard.html#a9774c5ca1c3d0a8e70c121d2a9c13706">WeatherCard</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:a9774c5ca1c3d0a8e70c121d2a9c13706"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classWeatherCard.html" title="A custom QWidget that displays current weather information.">WeatherCard</a> object.  <br /></td></tr>
 <tr class="separator:a9774c5ca1c3d0a8e70c121d2a9c13706"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53292182f405f68ab2bd507f2e85e280" id="r_a53292182f405f68ab2bd507f2e85e280"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWeatherCard.html#a53292182f405f68ab2bd507f2e85e280">~WeatherCard</a> ()</td></tr>
+<tr class="memdesc:a53292182f405f68ab2bd507f2e85e280"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the <a class="el" href="classWeatherCard.html" title="A custom QWidget that displays current weather information.">WeatherCard</a> object.  <br /></td></tr>
+<tr class="separator:a53292182f405f68ab2bd507f2e85e280"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A custom QWidget that displays current weather information. </p>
+<p>This widget is designed to present weather data in a compact "card" format. It receives <code><a class="el" href="structWeatherData.html" title="Represents a snapshot of weather conditions for a specific location and time.">WeatherData</a></code> objects and updates its UI to reflect the current weather conditions. It typically relies on a <code><a class="el" href="classWeatherRequestEngine.html" title="Handles the logic for requesting geographical and weather data from network services.">WeatherRequestEngine</a></code> to fetch the actual weather data. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a9774c5ca1c3d0a8e70c121d2a9c13706" name="a9774c5ca1c3d0a8e70c121d2a9c13706"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9774c5ca1c3d0a8e70c121d2a9c13706">&#9670;&#160;</a></span>WeatherCard()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">WeatherCard::WeatherCard </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a <a class="el" href="classWeatherCard.html" title="A custom QWidget that displays current weather information.">WeatherCard</a> object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>A pointer to the parent widget, if any. Defaults to <code>nullptr</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a53292182f405f68ab2bd507f2e85e280" name="a53292182f405f68ab2bd507f2e85e280"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53292182f405f68ab2bd507f2e85e280">&#9670;&#160;</a></span>~WeatherCard()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">WeatherCard::~WeatherCard </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroys the <a class="el" href="classWeatherCard.html" title="A custom QWidget that displays current weather information.">WeatherCard</a> object. </p>
+<ul>
+<li>This destructor is responsible for cleaning up resources, particularly the dynamically allocated UI object and the <code><a class="el" href="classWeatherRequestEngine.html" title="Handles the logic for requesting geographical and weather data from network services.">WeatherRequestEngine</a></code>. </li>
+</ul>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>plugin_loader/plugin_cards/WeatherCard/<a class="el" href="WeatherCard_8h_source.html">WeatherCard.h</a></li>
 <li>plugin_loader/plugin_cards/WeatherCard/<b>WeatherCard.cpp</b></li>

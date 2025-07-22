@@ -42,9 +42,10 @@ var searchData=
   ['boundvalue_39',['boundvalue',['../classValueLimiter.html#a1a2210e91977459c0556b5fe2f34e842',1,'ValueLimiter::boundValue()'],['../classValueLimitUtils_1_1StaticLimiter.html#ab3accc15044d32a47cdf68f1944912f2',1,'ValueLimitUtils::StaticLimiter::boundValue()']]],
   ['boundwithpair_40',['boundWithPair',['../namespaceValueLimitUtils.html#aa93c0c9ad219c763b409f9c03cb25cad',1,'ValueLimitUtils']]],
   ['browse_5fdocument_5fmetas_41',['browse_document_metas',['../classMainWindow.html#ad0d5bd0ef2a63f9fa672f284bf381c15',1,'MainWindow']]],
-  ['build_20of_20technologies_42',['🛠️ Full build of technologies',['../md_README__EN.html#autotoc_md25',1,'']]],
-  ['build_20the_20foundation_43',['🛠️ Technologies used to build the foundation',['../md_README__EN.html#autotoc_md24',1,'']]],
-  ['build_5fhome_5fpage_44',['build_home_page',['../classPageFactory.html#ae4b8726f6c1e9bc78bf56970d1ceccb6',1,'PageFactory']]],
-  ['build_5fpesudo_5fpage_45',['build_pesudo_page',['../classPageFactory.html#a0aacbea4749963dcbcb05af9c4798ccc',1,'PageFactory']]],
-  ['builtin_20tt_46',['builtin tt',['../md_Components-explain-CN.html#autotoc_md43',1,'🧬 &lt;tt&gt;builtin&lt;/tt&gt;'],['../md_Components-explain-EN.html#autotoc_md55',1,'🧬 &lt;tt&gt;builtin&lt;/tt&gt;']]]
+  ['build_42',['build',['../classUserInfo_1_1UserInfoBuilder.html#a1c3fc661261787e877bc7e17d54ce3c8',1,'UserInfo::UserInfoBuilder']]],
+  ['build_20of_20technologies_43',['🛠️ Full build of technologies',['../md_README__EN.html#autotoc_md25',1,'']]],
+  ['build_20the_20foundation_44',['🛠️ Technologies used to build the foundation',['../md_README__EN.html#autotoc_md24',1,'']]],
+  ['build_5fhome_5fpage_45',['build_home_page',['../classPageFactory.html#ae4b8726f6c1e9bc78bf56970d1ceccb6',1,'PageFactory']]],
+  ['build_5fpesudo_5fpage_46',['build_pesudo_page',['../classPageFactory.html#a0aacbea4749963dcbcb05af9c4798ccc',1,'PageFactory']]],
+  ['builtin_20tt_47',['builtin tt',['../md_Components-explain-CN.html#autotoc_md43',1,'🧬 &lt;tt&gt;builtin&lt;/tt&gt;'],['../md_Components-explain-EN.html#autotoc_md55',1,'🧬 &lt;tt&gt;builtin&lt;/tt&gt;']]]
 ];

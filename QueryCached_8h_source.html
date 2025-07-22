@@ -98,43 +98,57 @@ $(document).ready(function(){initNavTree('QueryCached_8h_source.html',''); initR
   <div class="headertitle"><div class="title">QueryCached.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef QUERYCACHED_H</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define QUERYCACHED_H</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;WeatherData.h&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;QObject&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="foldopen" id="foldopen00007" data-start="{" data-end="};">
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="classQueryCached.html">    7</a></span><span class="keyword">class </span><a class="code hl_class" href="classQueryCached.html">QueryCached</a> : <span class="keyword">public</span> QObject {</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    Q_OBJECT</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classQueryCached.html">QueryCached</a>(QObject* parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keywordtype">void</span> setTimeoutInterval(<span class="keywordtype">int</span> interval);</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keywordtype">void</span> installWeatherData(<span class="keyword">const</span> <a class="code hl_struct" href="structWeatherData.html">WeatherData</a>&amp; data);</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    std::optional&lt;WeatherData&gt; requestWeatherData();</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>signals:</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">void</span> weatherCacheOutdated();</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">private</span> slots:</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordtype">void</span> onCacheTimeout();</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <a class="code hl_struct" href="structWeatherData.html">WeatherData</a> cachedWeatherData;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    QTimer* timer;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">bool</span> weatherCacheNeedsUpdate { <span class="keyword">true</span> };</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>};</div>
+<a href="QueryCached_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef QUERYCACHED_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define QUERYCACHED_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="WeatherData_8h.html">WeatherData.h</a>&quot;</span> <span class="comment">// Assumed to be a struct or class containing weather information</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;QObject&gt;</span> <span class="comment">// Base class for QueryCached, enabling signals/slots</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;optional&gt;</span> <span class="comment">// For std::optional in requestWeatherData</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">// Forward declaration</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">class </span>QTimer; <span class="comment">// Required for the timer member</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classQueryCached.html">   25</a></span><span class="keyword">class </span><a class="code hl_class" href="classQueryCached.html">QueryCached</a> : <span class="keyword">public</span> QObject {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    Q_OBJECT</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classQueryCached.html">QueryCached</a>(QObject* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classQueryCached.html#a4a900fbce22bc6a033fae2049d50d2e5">setTimeoutInterval</a>(<span class="keywordtype">int</span> interval);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classQueryCached.html#a7ab3c9f0f0fa56b4c3e67efdd241f481">installWeatherData</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structWeatherData.html">WeatherData</a>&amp; data);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    std::optional&lt;WeatherData&gt; <a class="code hl_function" href="classQueryCached.html#a5fcfb790e242b7e4b5158d462960624c">requestWeatherData</a>();</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>signals:</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classQueryCached.html#aea8644fa460284aba7362838d29431cb">   63</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="classQueryCached.html#aea8644fa460284aba7362838d29431cb">weatherCacheOutdated</a>();</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keyword">private</span> slots:</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordtype">void</span> onCacheTimeout();</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <a class="code hl_struct" href="structWeatherData.html">WeatherData</a> cachedWeatherData; </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    QTimer* timer; </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordtype">bool</span> weatherCacheNeedsUpdate { <span class="keyword">true</span> }; </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>};</div>
 </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#endif </span><span class="comment">// QUERYCACHED_H</span></div>
-<div class="ttc" id="aclassQueryCached_html"><div class="ttname"><a href="classQueryCached.html">QueryCached</a></div><div class="ttdef"><b>Definition</b> QueryCached.h:7</div></div>
-<div class="ttc" id="astructWeatherData_html"><div class="ttname"><a href="structWeatherData.html">WeatherData</a></div><div class="ttdef"><b>Definition</b> WeatherData.h:4</div></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="preprocessor">#endif </span><span class="comment">// QUERYCACHED_H</span></div>
+<div class="ttc" id="aWeatherData_8h_html"><div class="ttname"><a href="WeatherData_8h.html">WeatherData.h</a></div><div class="ttdoc">Defines data structures for weather information and geographical location.</div></div>
+<div class="ttc" id="aclassQueryCached_html"><div class="ttname"><a href="classQueryCached.html">QueryCached</a></div><div class="ttdoc">Manages a cache of WeatherData with an automatic timeout mechanism.</div><div class="ttdef"><b>Definition</b> QueryCached.h:25</div></div>
+<div class="ttc" id="aclassQueryCached_html_a4a900fbce22bc6a033fae2049d50d2e5"><div class="ttname"><a href="classQueryCached.html#a4a900fbce22bc6a033fae2049d50d2e5">QueryCached::setTimeoutInterval</a></div><div class="ttdeci">void setTimeoutInterval(int interval)</div><div class="ttdoc">Sets the timeout interval for the cached data.</div><div class="ttdef"><b>Definition</b> QueryCached.cpp:10</div></div>
+<div class="ttc" id="aclassQueryCached_html_a5fcfb790e242b7e4b5158d462960624c"><div class="ttname"><a href="classQueryCached.html#a5fcfb790e242b7e4b5158d462960624c">QueryCached::requestWeatherData</a></div><div class="ttdeci">std::optional&lt; WeatherData &gt; requestWeatherData()</div><div class="ttdoc">Requests the cached WeatherData.</div><div class="ttdef"><b>Definition</b> QueryCached.cpp:24</div></div>
+<div class="ttc" id="aclassQueryCached_html_a7ab3c9f0f0fa56b4c3e67efdd241f481"><div class="ttname"><a href="classQueryCached.html#a7ab3c9f0f0fa56b4c3e67efdd241f481">QueryCached::installWeatherData</a></div><div class="ttdeci">void installWeatherData(const WeatherData &amp;data)</div><div class="ttdoc">Installs new WeatherData into the cache.</div><div class="ttdef"><b>Definition</b> QueryCached.cpp:18</div></div>
+<div class="ttc" id="aclassQueryCached_html_aea8644fa460284aba7362838d29431cb"><div class="ttname"><a href="classQueryCached.html#aea8644fa460284aba7362838d29431cb">QueryCached::weatherCacheOutdated</a></div><div class="ttdeci">void weatherCacheOutdated()</div><div class="ttdoc">Signal emitted when the cached weather data becomes outdated.</div></div>
+<div class="ttc" id="astructWeatherData_html"><div class="ttname"><a href="structWeatherData.html">WeatherData</a></div><div class="ttdoc">Represents a snapshot of weather conditions for a specific location and time.</div><div class="ttdef"><b>Definition</b> WeatherData.h:19</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_31e1dcd1600825a796ae4d65836acc24.html">plugin_loader</a></li><li class="navelem"><a class="el" href="dir_e524f5143a3d75a9efe797e0b8573344.html">plugin_cards</a></li><li class="navelem"><a class="el" href="dir_eee6755f1968cc58e9f622c6f8d1a376.html">WeatherCard</a></li><li class="navelem"><b>QueryCached.h</b></li>
+    <li class="navelem"><a class="el" href="dir_31e1dcd1600825a796ae4d65836acc24.html">plugin_loader</a></li><li class="navelem"><a class="el" href="dir_e524f5143a3d75a9efe797e0b8573344.html">plugin_cards</a></li><li class="navelem"><a class="el" href="dir_eee6755f1968cc58e9f622c6f8d1a376.html">WeatherCard</a></li><li class="navelem"><a class="el" href="QueryCached_8h.html">QueryCached.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

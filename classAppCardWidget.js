@@ -11,6 +11,7 @@ var classAppCardWidget =
     [ "Q_DISABLE_COPY", "classAppCardWidget.html#a8396063f654b18f1a739684774051f2f", null ],
     [ "setCurrentIcon", "classAppCardWidget.html#a4a99ac0e10c319ef328cfa380ba56170", null ],
     [ "setHelperFunction", "classAppCardWidget.html#a2fa88d10498e3366f9a2268a74420b4f", null ],
+    [ "setupSelfTextLabelStyle", "classAppCardWidget.html#aee572bcb1696471bc2a3883f73799a16", null ],
     [ "binding_toast", "classAppCardWidget.html#af944544f55557488171821c0c5e024b7", null ],
     [ "ui", "classAppCardWidget.html#affacf5393eb2f3fcdb94b39c894c188e", null ]
 ];

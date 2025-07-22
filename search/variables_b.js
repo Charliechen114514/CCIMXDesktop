@@ -11,12 +11,14 @@ var searchData=
   ['mem_5fstat_8',['mem_stat',['../classMemoryInfoFetcher.html#a9bffab9b014b49e72af9822509b20578',1,'MemoryInfoFetcher']]],
   ['memoryusagekb_9',['memoryUsageKB',['../structProcessBroswer_1_1ProcessInfo.html#a136f632c347026200676de607dfe1d94',1,'ProcessBroswer::ProcessInfo']]],
   ['message_5fconsume_5fbackend_10',['message_consume_backend',['../structDesktopLoggerBackends.html#a0f8221852198ca60ad9e5e6dc387217a',1,'DesktopLoggerBackends']]],
-  ['method_11',['method',['../classContoursQueryProc.html#a2d6c268c3b8971be884228ce0d7287c7',1,'ContoursQueryProc']]],
-  ['minlinelength_12',['minLineLength',['../setting__scene_8h.html#a1cb258045b11217008b51fa51759e230',1,'Settings::Scene::BackGround::RandomLine']]],
-  ['mode_13',['mode',['../structFlowTypeTypeWallPaperSettings.html#acb90b7725aabc0398d627f6236dddff7',1,'FlowTypeTypeWallPaperSettings::mode'],['../structFixedTypeWallPaperSettings.html#a4b59059b48e59f079eeda866152e290d',1,'FixedTypeWallPaperSettings::mode']]],
-  ['models_14',['models',['../classFileInfoProvider.html#ae898e8c9bb3dc76decd869a018f9c0d9',1,'FileInfoProvider']]],
-  ['modemappings_15',['modeMappings',['../classWallPaperEngine.html#a8dbbec77b2eaf0acfa2bf21f5c07b432',1,'WallPaperEngine']]],
-  ['modify_5fdatetime_16',['modify_datetime',['../structCCPdfMetaInfo.html#a7a5ef458c0944b1833a882215934c4a5',1,'CCPdfMetaInfo']]],
-  ['monitoring_5fbar_17',['monitoring_bar',['../classBoundSliderFactory.html#a6652bb0b6a95da9dc38572567672b6de',1,'BoundSliderFactory']]],
-  ['mutex_18',['mutex',['../classObsticals.html#a7c3a67026bea686ee28c973ee7dbf70e',1,'Obsticals']]]
+  ['meta_5fappname_11',['meta_appName',['../structToastMetaProtocol.html#a9b485d0e9aa965934c1003341c3bf119',1,'ToastMetaProtocol']]],
+  ['meta_5fdisplaymessage_12',['meta_displayMessage',['../structToastMetaProtocol.html#a8e480450cf4b58a5dfa210d8f41dc146',1,'ToastMetaProtocol']]],
+  ['method_13',['method',['../classContoursQueryProc.html#a2d6c268c3b8971be884228ce0d7287c7',1,'ContoursQueryProc']]],
+  ['minlinelength_14',['minLineLength',['../setting__scene_8h.html#a1cb258045b11217008b51fa51759e230',1,'Settings::Scene::BackGround::RandomLine']]],
+  ['mode_15',['mode',['../structFlowTypeTypeWallPaperSettings.html#acb90b7725aabc0398d627f6236dddff7',1,'FlowTypeTypeWallPaperSettings::mode'],['../structFixedTypeWallPaperSettings.html#a4b59059b48e59f079eeda866152e290d',1,'FixedTypeWallPaperSettings::mode']]],
+  ['models_16',['models',['../classFileInfoProvider.html#ae898e8c9bb3dc76decd869a018f9c0d9',1,'FileInfoProvider']]],
+  ['modemappings_17',['modeMappings',['../classWallPaperEngine.html#a8dbbec77b2eaf0acfa2bf21f5c07b432',1,'WallPaperEngine']]],
+  ['modify_5fdatetime_18',['modify_datetime',['../structCCPdfMetaInfo.html#a7a5ef458c0944b1833a882215934c4a5',1,'CCPdfMetaInfo']]],
+  ['monitoring_5fbar_19',['monitoring_bar',['../classBoundSliderFactory.html#a6652bb0b6a95da9dc38572567672b6de',1,'BoundSliderFactory']]],
+  ['mutex_20',['mutex',['../classHomeCardManager.html#a877e12a32d9f31ff494e5e8196e42ac4',1,'HomeCardManager::mutex'],['../classObsticals.html#a7c3a67026bea686ee28c973ee7dbf70e',1,'Obsticals::mutex']]]
 ];

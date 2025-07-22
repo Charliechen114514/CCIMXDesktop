@@ -100,25 +100,28 @@ $(document).ready(function(){initNavTree('ToastGenerator_8h_source.html',''); in
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef TOASTGENERATOR_H</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define TOASTGENERATOR_H</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;ToastMetaProtocol.h&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="ToastMetaProtocol_8h.html">ToastMetaProtocol.h</a>&quot;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;QString&gt;</span></div>
 <div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="classToastGenerator.html">    5</a></span><span class="keyword">class </span><a class="code hl_class" href="classToastGenerator.html">ToastGenerator</a> {</div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> simpleToastMeta(</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>        <span class="keyword">const</span> QString&amp; appName,</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        <span class="keyword">const</span> QString&amp; messageForDisplay,</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        <span class="keyword">const</span> QString&amp; summon_folder);</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> generateToastMeta(</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <a class="code hl_struct" href="structToastMetaProtocol.html">ToastMetaProtocol</a>&amp;&amp; metaInfo, <span class="comment">// for this is about to be consumed</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="keyword">const</span> QString&amp; summon_folder);</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>};</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classToastGenerator.html#aca8d58d0e6379dc493c0421491f0233e">simpleToastMeta</a>(</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <span class="keyword">const</span> QString&amp; appName,</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keyword">const</span> QString&amp; messageForDisplay,</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="keyword">const</span> QString&amp; summon_folder);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classToastGenerator.html#a8c435cb1d2064f9ede825ad1fd2f4640">generateToastMeta</a>(</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <a class="code hl_struct" href="structToastMetaProtocol.html">ToastMetaProtocol</a>&amp;&amp; metaInfo, <span class="comment">// for this is about to be consumed</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keyword">const</span> QString&amp; summon_folder);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>};</div>
 </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#endif </span><span class="comment">// TOASTGENERATOR_H</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#endif </span><span class="comment">// TOASTGENERATOR_H</span></div>
+<div class="ttc" id="aToastMetaProtocol_8h_html"><div class="ttname"><a href="ToastMetaProtocol_8h.html">ToastMetaProtocol.h</a></div><div class="ttdoc">Defines the ToastMetaProtocol struct, used for encapsulating data for toast notifications.</div></div>
 <div class="ttc" id="aclassToastGenerator_html"><div class="ttname"><a href="classToastGenerator.html">ToastGenerator</a></div><div class="ttdef"><b>Definition</b> ToastGenerator.h:5</div></div>
-<div class="ttc" id="astructToastMetaProtocol_html"><div class="ttname"><a href="structToastMetaProtocol.html">ToastMetaProtocol</a></div><div class="ttdef"><b>Definition</b> ToastMetaProtocol.h:6</div></div>
+<div class="ttc" id="aclassToastGenerator_html_a8c435cb1d2064f9ede825ad1fd2f4640"><div class="ttname"><a href="classToastGenerator.html#a8c435cb1d2064f9ede825ad1fd2f4640">ToastGenerator::generateToastMeta</a></div><div class="ttdeci">static bool generateToastMeta(ToastMetaProtocol &amp;&amp;metaInfo, const QString &amp;summon_folder)</div><div class="ttdoc">generateToastMeta</div><div class="ttdef"><b>Definition</b> ToastGenerator.cpp:18</div></div>
+<div class="ttc" id="aclassToastGenerator_html_aca8d58d0e6379dc493c0421491f0233e"><div class="ttname"><a href="classToastGenerator.html#aca8d58d0e6379dc493c0421491f0233e">ToastGenerator::simpleToastMeta</a></div><div class="ttdeci">static bool simpleToastMeta(const QString &amp;appName, const QString &amp;messageForDisplay, const QString &amp;summon_folder)</div><div class="ttdoc">generate simple metas into json file</div><div class="ttdef"><b>Definition</b> ToastGenerator.cpp:11</div></div>
+<div class="ttc" id="astructToastMetaProtocol_html"><div class="ttname"><a href="structToastMetaProtocol.html">ToastMetaProtocol</a></div><div class="ttdoc">Represents the metadata and content for a toast notification.</div><div class="ttdef"><b>Definition</b> ToastMetaProtocol.h:22</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

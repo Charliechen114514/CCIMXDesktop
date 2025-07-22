@@ -102,6 +102,11 @@ $(document).ready(function(){initNavTree('classDesktopWidgetPluginServer.html','
   <div class="headertitle"><div class="title">DesktopWidgetPluginServer Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Manages the lifecycle of dynamically loaded QWidget-based plugins.  
+ <a href="classDesktopWidgetPluginServer.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="DesktopPluginServer_8h_source.html">DesktopPluginServer.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for DesktopWidgetPluginServer:</div>
 <div class="dyncontent">
@@ -114,17 +119,17 @@ Inheritance diagram for DesktopWidgetPluginServer:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
 Signals</h2></td></tr>
-<tr class="memitem:ab311d50e6e82e8fe5eb0d92af1e316ca" id="r_ab311d50e6e82e8fe5eb0d92af1e316ca"><td class="memItemLeft" align="right" valign="top"><a id="ab311d50e6e82e8fe5eb0d92af1e316ca" name="ab311d50e6e82e8fe5eb0d92af1e316ca"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>pluginLoaded</b> (const QString &amp;pluginName, const QString &amp;pluginPath)</td></tr>
+<tr class="memitem:ab311d50e6e82e8fe5eb0d92af1e316ca" id="r_ab311d50e6e82e8fe5eb0d92af1e316ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDesktopWidgetPluginServer.html#ab311d50e6e82e8fe5eb0d92af1e316ca">pluginLoaded</a> (const QString &amp;pluginName, const QString &amp;pluginPath)</td></tr>
+<tr class="memdesc:ab311d50e6e82e8fe5eb0d92af1e316ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal emitted when a plugin has been successfully loaded.  <br /></td></tr>
 <tr class="separator:ab311d50e6e82e8fe5eb0d92af1e316ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61f15e89041c47b288228d70d2bfeefc" id="r_a61f15e89041c47b288228d70d2bfeefc"><td class="memItemLeft" align="right" valign="top"><a id="a61f15e89041c47b288228d70d2bfeefc" name="a61f15e89041c47b288228d70d2bfeefc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>pluginFailed</b> (const QString &amp;pluginName, const QString &amp;pluginPath, const QString &amp;pluginErrorString)</td></tr>
+<tr class="memitem:a61f15e89041c47b288228d70d2bfeefc" id="r_a61f15e89041c47b288228d70d2bfeefc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDesktopWidgetPluginServer.html#a61f15e89041c47b288228d70d2bfeefc">pluginFailed</a> (const QString &amp;pluginName, const QString &amp;pluginPath, const QString &amp;pluginErrorString)</td></tr>
+<tr class="memdesc:a61f15e89041c47b288228d70d2bfeefc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal emitted when a plugin fails to load.  <br /></td></tr>
 <tr class="separator:a61f15e89041c47b288228d70d2bfeefc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3850eda980090aa3df0179dbdd4b2ccf" id="r_a3850eda980090aa3df0179dbdd4b2ccf"><td class="memItemLeft" align="right" valign="top"><a id="a3850eda980090aa3df0179dbdd4b2ccf" name="a3850eda980090aa3df0179dbdd4b2ccf"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>pluginUnloaded</b> (const QString &amp;pluginName)</td></tr>
+<tr class="memitem:a3850eda980090aa3df0179dbdd4b2ccf" id="r_a3850eda980090aa3df0179dbdd4b2ccf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDesktopWidgetPluginServer.html#a3850eda980090aa3df0179dbdd4b2ccf">pluginUnloaded</a> (const QString &amp;pluginName)</td></tr>
+<tr class="memdesc:a3850eda980090aa3df0179dbdd4b2ccf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal emitted when a plugin has been successfully unloaded.  <br /></td></tr>
 <tr class="separator:a3850eda980090aa3df0179dbdd4b2ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad082fa09cf46ea2443dd27bc187e41eb" id="r_ad082fa09cf46ea2443dd27bc187e41eb"><td class="memItemLeft" align="right" valign="top"><a id="ad082fa09cf46ea2443dd27bc187e41eb" name="ad082fa09cf46ea2443dd27bc187e41eb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>pluginUnloadedFailed</b> (const QString &amp;pluginName, const QString &amp;pluginErrorString)</td></tr>
+<tr class="memitem:ad082fa09cf46ea2443dd27bc187e41eb" id="r_ad082fa09cf46ea2443dd27bc187e41eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDesktopWidgetPluginServer.html#ad082fa09cf46ea2443dd27bc187e41eb">pluginUnloadedFailed</a> (const QString &amp;pluginName, const QString &amp;pluginErrorString)</td></tr>
+<tr class="memdesc:ad082fa09cf46ea2443dd27bc187e41eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal emitted when a plugin fails to unload.  <br /></td></tr>
 <tr class="separator:ad082fa09cf46ea2443dd27bc187e41eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header signals_classDesktopServerBase"><td colspan="2" onclick="javascript:toggleInherit('signals_classDesktopServerBase')"><img src="closed.png" alt="-"/>&#160;Signals inherited from <a class="el" href="classDesktopServerBase.html">DesktopServerBase</a></td></tr>
 <tr class="memitem:a3992fe4ed96e5be08f8dd4cd27f54683 inherit signals_classDesktopServerBase" id="r_a3992fe4ed96e5be08f8dd4cd27f54683"><td class="memItemLeft" align="right" valign="top">
@@ -142,33 +147,36 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>server_dead</b> ()</t
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adc8d42d7e152daee13054599725687f9" id="r_adc8d42d7e152daee13054599725687f9"><td class="memItemLeft" align="right" valign="top"><a id="adc8d42d7e152daee13054599725687f9" name="adc8d42d7e152daee13054599725687f9"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DesktopWidgetPluginServer</b> (const QString &amp;monitoring_dll, <a class="el" href="classDesktopMainWindow.html">DesktopMainWindow</a> *parent)</td></tr>
+<tr class="memitem:adc8d42d7e152daee13054599725687f9" id="r_adc8d42d7e152daee13054599725687f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDesktopWidgetPluginServer.html#adc8d42d7e152daee13054599725687f9">DesktopWidgetPluginServer</a> (const QString &amp;monitoring_dll, <a class="el" href="classDesktopMainWindow.html">DesktopMainWindow</a> *parent)</td></tr>
+<tr class="memdesc:adc8d42d7e152daee13054599725687f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classDesktopWidgetPluginServer.html" title="Manages the lifecycle of dynamically loaded QWidget-based plugins.">DesktopWidgetPluginServer</a> instance.  <br /></td></tr>
 <tr class="separator:adc8d42d7e152daee13054599725687f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4be7942dcecff3a4a409c3483d9392cc" id="r_a4be7942dcecff3a4a409c3483d9392cc"><td class="memItemLeft" align="right" valign="top"><a id="a4be7942dcecff3a4a409c3483d9392cc" name="a4be7942dcecff3a4a409c3483d9392cc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>insertPlugin</b> (const QString &amp;pluginName, const QString &amp;plugin_path)</td></tr>
+<tr class="memitem:a30f6f8995769b711dc0422692fda2f14" id="r_a30f6f8995769b711dc0422692fda2f14"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDesktopWidgetPluginServer.html#a30f6f8995769b711dc0422692fda2f14">~DesktopWidgetPluginServer</a> () override</td></tr>
+<tr class="memdesc:a30f6f8995769b711dc0422692fda2f14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the <a class="el" href="classDesktopWidgetPluginServer.html" title="Manages the lifecycle of dynamically loaded QWidget-based plugins.">DesktopWidgetPluginServer</a> object.  <br /></td></tr>
+<tr class="separator:a30f6f8995769b711dc0422692fda2f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4be7942dcecff3a4a409c3483d9392cc" id="r_a4be7942dcecff3a4a409c3483d9392cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDesktopWidgetPluginServer.html#a4be7942dcecff3a4a409c3483d9392cc">insertPlugin</a> (const QString &amp;pluginName, const QString &amp;plugin_path)</td></tr>
+<tr class="memdesc:a4be7942dcecff3a4a409c3483d9392cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts (loads) a plugin into the server.  <br /></td></tr>
 <tr class="separator:a4be7942dcecff3a4a409c3483d9392cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b5fb714d464cd1ad3730d749a704932" id="r_a0b5fb714d464cd1ad3730d749a704932"><td class="memItemLeft" align="right" valign="top"><a id="a0b5fb714d464cd1ad3730d749a704932" name="a0b5fb714d464cd1ad3730d749a704932"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>unloadPlugin</b> (const QString &amp;plugin_name)</td></tr>
+<tr class="memitem:a0b5fb714d464cd1ad3730d749a704932" id="r_a0b5fb714d464cd1ad3730d749a704932"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDesktopWidgetPluginServer.html#a0b5fb714d464cd1ad3730d749a704932">unloadPlugin</a> (const QString &amp;plugin_name)</td></tr>
+<tr class="memdesc:a0b5fb714d464cd1ad3730d749a704932"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unloads a plugin identified by its name.  <br /></td></tr>
 <tr class="separator:a0b5fb714d464cd1ad3730d749a704932"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a866dde8c391d6c34910a412ceba67a8e" id="r_a866dde8c391d6c34910a412ceba67a8e"><td class="memItemLeft" align="right" valign="top"><a id="a866dde8c391d6c34910a412ceba67a8e" name="a866dde8c391d6c34910a412ceba67a8e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>scanTargetDirent</b> ()</td></tr>
+<tr class="memitem:a866dde8c391d6c34910a412ceba67a8e" id="r_a866dde8c391d6c34910a412ceba67a8e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDesktopWidgetPluginServer.html#a866dde8c391d6c34910a412ceba67a8e">scanTargetDirent</a> ()</td></tr>
+<tr class="memdesc:a866dde8c391d6c34910a412ceba67a8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scans the target directory for new or updated plugin DLLs.  <br /></td></tr>
 <tr class="separator:a866dde8c391d6c34910a412ceba67a8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cb81282a93d2f6cce49aea5760de313" id="r_a0cb81282a93d2f6cce49aea5760de313"><td class="memItemLeft" align="right" valign="top"><a id="a0cb81282a93d2f6cce49aea5760de313" name="a0cb81282a93d2f6cce49aea5760de313"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>removeAllPlugins</b> ()</td></tr>
+<tr class="memitem:a0cb81282a93d2f6cce49aea5760de313" id="r_a0cb81282a93d2f6cce49aea5760de313"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDesktopWidgetPluginServer.html#a0cb81282a93d2f6cce49aea5760de313">removeAllPlugins</a> ()</td></tr>
+<tr class="memdesc:a0cb81282a93d2f6cce49aea5760de313"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unloads and removes all currently loaded plugins.  <br /></td></tr>
 <tr class="separator:a0cb81282a93d2f6cce49aea5760de313"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a0b69b83d0e3474c391725bffc8194b" id="r_a8a0b69b83d0e3474c391725bffc8194b"><td class="memItemLeft" align="right" valign="top"><a id="a8a0b69b83d0e3474c391725bffc8194b" name="a8a0b69b83d0e3474c391725bffc8194b"></a>
-QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>queryWidget</b> (const QString &amp;pluginName, QWidget *expected_parent)</td></tr>
+<tr class="memitem:a8a0b69b83d0e3474c391725bffc8194b" id="r_a8a0b69b83d0e3474c391725bffc8194b"><td class="memItemLeft" align="right" valign="top">QWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDesktopWidgetPluginServer.html#a8a0b69b83d0e3474c391725bffc8194b">queryWidget</a> (const QString &amp;pluginName, QWidget *expected_parent)</td></tr>
+<tr class="memdesc:a8a0b69b83d0e3474c391725bffc8194b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queries and instantiates a QWidget from a loaded plugin.  <br /></td></tr>
 <tr class="separator:a8a0b69b83d0e3474c391725bffc8194b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a70237d6d9ed8abfa3f3613a8daae19" id="r_a5a70237d6d9ed8abfa3f3613a8daae19"><td class="memItemLeft" align="right" valign="top"><a id="a5a70237d6d9ed8abfa3f3613a8daae19" name="a5a70237d6d9ed8abfa3f3613a8daae19"></a>
-<a class="el" href="classDesktopMainWindow.html">DesktopMainWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>hooked_window</b> () const</td></tr>
+<tr class="memitem:a5a70237d6d9ed8abfa3f3613a8daae19" id="r_a5a70237d6d9ed8abfa3f3613a8daae19"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDesktopMainWindow.html">DesktopMainWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDesktopWidgetPluginServer.html#a5a70237d6d9ed8abfa3f3613a8daae19">hooked_window</a> () const</td></tr>
+<tr class="memdesc:a5a70237d6d9ed8abfa3f3613a8daae19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the associated <a class="el" href="classDesktopMainWindow.html" title="DesktopMainWindow is the main frontend window of the application. For beginners, this is the starting...">DesktopMainWindow</a>.  <br /></td></tr>
 <tr class="separator:a5a70237d6d9ed8abfa3f3613a8daae19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classDesktopServerBase"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classDesktopServerBase')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classDesktopServerBase.html">DesktopServerBase</a></td></tr>
 <tr class="memitem:a35bfd6e332a63f9dce3e3338498d286d inherit pub_methods_classDesktopServerBase" id="r_a35bfd6e332a63f9dce3e3338498d286d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDesktopServerBase.html#a35bfd6e332a63f9dce3e3338498d286d">DesktopServerBase</a> (QObject *parent)</td></tr>
 <tr class="memdesc:a35bfd6e332a63f9dce3e3338498d286d inherit pub_methods_classDesktopServerBase"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDesktopServerBase.html" title="The DesktopServerBase class notifies the backend Server for desktop with eventloop engaged in desktop...">DesktopServerBase</a>.  <br /></td></tr>
 <tr class="separator:a35bfd6e332a63f9dce3e3338498d286d inherit pub_methods_classDesktopServerBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad993e452c9b9b57f6ad3c09603e702ad inherit pub_methods_classDesktopServerBase" id="r_ad993e452c9b9b57f6ad3c09603e702ad"><td class="memItemLeft" align="right" valign="top">
-&#160;</td><td class="memItemRight" valign="bottom"><b>__PROPERTY_GETSET</b> (bool, enabled)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>__PROPERTY_GETSET</b> (bool, <a class="el" href="classDesktopServerBase.html#aa2393d194faac8ade38e059b20540f94">enabled</a>)</td></tr>
 <tr class="memdesc:ad993e452c9b9b57f6ad3c09603e702ad inherit pub_methods_classDesktopServerBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">server en/disable <br /></td></tr>
 <tr class="separator:ad993e452c9b9b57f6ad3c09603e702ad inherit pub_methods_classDesktopServerBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafc0fea32e734f429c7f72ebf197e8d4 inherit pub_methods_classDesktopServerBase" id="r_aafc0fea32e734f429c7f72ebf197e8d4"><td class="memItemLeft" align="right" valign="top">
@@ -181,8 +189,449 @@ Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_classDesktopServerBase"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classDesktopServerBase')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classDesktopServerBase.html">DesktopServerBase</a></td></tr>
 <tr class="memitem:aa2393d194faac8ade38e059b20540f94 inherit pro_attribs_classDesktopServerBase" id="r_aa2393d194faac8ade38e059b20540f94"><td class="memItemLeft" align="right" valign="top">
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>enabled</b> { true }</td></tr>
+<tr class="memdesc:aa2393d194faac8ade38e059b20540f94 inherit pro_attribs_classDesktopServerBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">is enabled <br /></td></tr>
 <tr class="separator:aa2393d194faac8ade38e059b20540f94 inherit pro_attribs_classDesktopServerBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Manages the lifecycle of dynamically loaded QWidget-based plugins. </p>
+<p>This class extends <a class="el" href="classDesktopServerBase.html" title="The DesktopServerBase class notifies the backend Server for desktop with eventloop engaged in desktop...">DesktopServerBase</a> and provides functionalities to load, unload, and manage plugins that expose QWidget instances. It can monitor a specified directory for new or removed plugin DLLs and automatically manage them.</p>
+<p>It emits signals to notify about the success or failure of plugin operations. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="adc8d42d7e152daee13054599725687f9" name="adc8d42d7e152daee13054599725687f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc8d42d7e152daee13054599725687f9">&#9670;&#160;</a></span>DesktopWidgetPluginServer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DesktopWidgetPluginServer::DesktopWidgetPluginServer </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>monitoring_dll</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classDesktopMainWindow.html">DesktopMainWindow</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a <a class="el" href="classDesktopWidgetPluginServer.html" title="Manages the lifecycle of dynamically loaded QWidget-based plugins.">DesktopWidgetPluginServer</a> instance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">monitoring_dll</td><td>The path to the directory or specific DLL to monitor for plugins. </td></tr>
+    <tr><td class="paramname">parent</td><td>A pointer to the <a class="el" href="classDesktopMainWindow.html" title="DesktopMainWindow is the main frontend window of the application. For beginners, this is the starting...">DesktopMainWindow</a> instance that this server is associated with. This window might be the parent for the loaded widgets. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a30f6f8995769b711dc0422692fda2f14" name="a30f6f8995769b711dc0422692fda2f14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30f6f8995769b711dc0422692fda2f14">&#9670;&#160;</a></span>~DesktopWidgetPluginServer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DesktopWidgetPluginServer::~DesktopWidgetPluginServer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destroys the <a class="el" href="classDesktopWidgetPluginServer.html" title="Manages the lifecycle of dynamically loaded QWidget-based plugins.">DesktopWidgetPluginServer</a> object. </p>
+<ul>
+<li>This destructor ensures all loaded plugins are properly unloaded and resources are released. </li>
+</ul>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a5a70237d6d9ed8abfa3f3613a8daae19" name="a5a70237d6d9ed8abfa3f3613a8daae19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a70237d6d9ed8abfa3f3613a8daae19">&#9670;&#160;</a></span>hooked_window()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDesktopMainWindow.html">DesktopMainWindow</a> * DesktopWidgetPluginServer::hooked_window </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a pointer to the associated <a class="el" href="classDesktopMainWindow.html" title="DesktopMainWindow is the main frontend window of the application. For beginners, this is the starting...">DesktopMainWindow</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the <a class="el" href="classDesktopMainWindow.html" title="DesktopMainWindow is the main frontend window of the application. For beginners, this is the starting...">DesktopMainWindow</a> instance that this server is hooked to. </dd></dl>
+
+</div>
+</div>
+<a id="a4be7942dcecff3a4a409c3483d9392cc" name="a4be7942dcecff3a4a409c3483d9392cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4be7942dcecff3a4a409c3483d9392cc">&#9670;&#160;</a></span>insertPlugin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DesktopWidgetPluginServer::insertPlugin </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>pluginName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>plugin_path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inserts (loads) a plugin into the server. </p>
+<ul>
+<li>This method attempts to load a plugin from the given path and associates it with a unique plugin name. If the plugin is successfully loaded, the <code>pluginLoaded</code> signal is emitted. Otherwise, <code>pluginFailed</code> is emitted. <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pluginName</td><td>A unique name to identify the plugin. </td></tr>
+    <tr><td class="paramname">plugin_path</td><td>The absolute file path to the plugin (DLL/shared library). </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="a61f15e89041c47b288228d70d2bfeefc" name="a61f15e89041c47b288228d70d2bfeefc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61f15e89041c47b288228d70d2bfeefc">&#9670;&#160;</a></span>pluginFailed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DesktopWidgetPluginServer::pluginFailed </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>pluginName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>pluginPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>pluginErrorString</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Signal emitted when a plugin fails to load. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pluginName</td><td>The name of the plugin that failed to load. </td></tr>
+    <tr><td class="paramname">pluginPath</td><td>The file path of the plugin that failed. </td></tr>
+    <tr><td class="paramname">pluginErrorString</td><td>A descriptive string detailing the error. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab311d50e6e82e8fe5eb0d92af1e316ca" name="ab311d50e6e82e8fe5eb0d92af1e316ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab311d50e6e82e8fe5eb0d92af1e316ca">&#9670;&#160;</a></span>pluginLoaded</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DesktopWidgetPluginServer::pluginLoaded </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>pluginName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>pluginPath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Signal emitted when a plugin has been successfully loaded. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pluginName</td><td>The name of the loaded plugin. </td></tr>
+    <tr><td class="paramname">pluginPath</td><td>The file path from which the plugin was loaded. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3850eda980090aa3df0179dbdd4b2ccf" name="a3850eda980090aa3df0179dbdd4b2ccf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3850eda980090aa3df0179dbdd4b2ccf">&#9670;&#160;</a></span>pluginUnloaded</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DesktopWidgetPluginServer::pluginUnloaded </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>pluginName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Signal emitted when a plugin has been successfully unloaded. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pluginName</td><td>The name of the unloaded plugin. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad082fa09cf46ea2443dd27bc187e41eb" name="ad082fa09cf46ea2443dd27bc187e41eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad082fa09cf46ea2443dd27bc187e41eb">&#9670;&#160;</a></span>pluginUnloadedFailed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DesktopWidgetPluginServer::pluginUnloadedFailed </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>pluginName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>pluginErrorString</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Signal emitted when a plugin fails to unload. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pluginName</td><td>The name of the plugin that failed to unload. </td></tr>
+    <tr><td class="paramname">pluginErrorString</td><td>A descriptive string detailing the error. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8a0b69b83d0e3474c391725bffc8194b" name="a8a0b69b83d0e3474c391725bffc8194b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a0b69b83d0e3474c391725bffc8194b">&#9670;&#160;</a></span>queryWidget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QWidget * DesktopWidgetPluginServer::queryWidget </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>pluginName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>expected_parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Queries and instantiates a QWidget from a loaded plugin. </p>
+<ul>
+<li>This method attempts to create an instance of a widget provided by the specified plugin. The plugin must expose a creatable QWidget. <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pluginName</td><td>The unique name of the plugin from which to query the widget. </td></tr>
+    <tr><td class="paramname">expected_parent</td><td>The parent QWidget for the newly created plugin widget. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created QWidget instance, or nullptr if the plugin is not found or the widget cannot be created. </dd></dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="a0cb81282a93d2f6cce49aea5760de313" name="a0cb81282a93d2f6cce49aea5760de313"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cb81282a93d2f6cce49aea5760de313">&#9670;&#160;</a></span>removeAllPlugins()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DesktopWidgetPluginServer::removeAllPlugins </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unloads and removes all currently loaded plugins. </p>
+<ul>
+<li>This method iterates through all managed plugins, unloads them, and clears the internal plugin map. </li>
+</ul>
+
+</div>
+</div>
+<a id="a866dde8c391d6c34910a412ceba67a8e" name="a866dde8c391d6c34910a412ceba67a8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a866dde8c391d6c34910a412ceba67a8e">&#9670;&#160;</a></span>scanTargetDirent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DesktopWidgetPluginServer::scanTargetDirent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Scans the target directory for new or updated plugin DLLs. </p>
+<ul>
+<li>This method is typically called to discover plugins that have been added or modified in the <code>monitoring_dll</code> path since the last scan or initialization. It will load any new plugins found. </li>
+</ul>
+
+</div>
+</div>
+<a id="a0b5fb714d464cd1ad3730d749a704932" name="a0b5fb714d464cd1ad3730d749a704932"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b5fb714d464cd1ad3730d749a704932">&#9670;&#160;</a></span>unloadPlugin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DesktopWidgetPluginServer::unloadPlugin </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>plugin_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unloads a plugin identified by its name. </p>
+<ul>
+<li>This method unloads the specified plugin, removing it from memory. If successful, <code>pluginUnloaded</code> is emitted. If unloading fails, <code>pluginUnloadedFailed</code> is emitted. <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">plugin_name</td><td>The unique name of the plugin to unload. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the plugin was successfully unloaded, false otherwise. </dd></dl>
+</li>
+</ul>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>core/server/plugin_server/<a class="el" href="DesktopPluginServer_8h_source.html">DesktopPluginServer.h</a></li>
 <li>core/server/plugin_server/<b>DesktopPluginServer.cpp</b></li>

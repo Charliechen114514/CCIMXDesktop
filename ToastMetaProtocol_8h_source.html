@@ -98,32 +98,48 @@ $(document).ready(function(){initNavTree('ToastMetaProtocol_8h_source.html','');
   <div class="headertitle"><div class="title">ToastMetaProtocol.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef TOASTMETAPROTOCOL_H</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define TOASTMETAPROTOCOL_H</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;QString&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;QTime&gt;</span></div>
-<div class="foldopen" id="foldopen00006" data-start="{" data-end="};">
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="structToastMetaProtocol.html">    6</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structToastMetaProtocol.html">ToastMetaProtocol</a> {</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    QString meta_appName;</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    QDateTime announceTime;</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    QString meta_displayMessage;</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <a class="code hl_struct" href="structToastMetaProtocol.html">ToastMetaProtocol</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <a class="code hl_struct" href="structToastMetaProtocol.html">ToastMetaProtocol</a>(<span class="keyword">const</span> QString meta_app, <span class="keyword">const</span> QString displayMessage, <span class="keyword">const</span> QDateTime t = QDateTime::currentDateTime());</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <a class="code hl_struct" href="structToastMetaProtocol.html">ToastMetaProtocol</a>(<span class="keyword">const</span> QString&amp; json_string);</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">static</span> std::optional&lt;ToastMetaProtocol&gt; from_json_string(<span class="keyword">const</span> QString&amp; json_string);</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    QString toString() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>};</div>
+<a href="ToastMetaProtocol_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef TOASTMETAPROTOCOL_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define TOASTMETAPROTOCOL_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;QDateTime&gt;</span> <span class="comment">// For QDateTime to store announcement time</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;QString&gt;</span> <span class="comment">// For QString to hold text data</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;optional&gt;</span> <span class="comment">// For std::optional in from_json_string</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="foldopen" id="foldopen00022" data-start="{" data-end="};">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="structToastMetaProtocol.html">   22</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structToastMetaProtocol.html">ToastMetaProtocol</a> {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="structToastMetaProtocol.html#a9b485d0e9aa965934c1003341c3bf119">   27</a></span>    QString <a class="code hl_variable" href="structToastMetaProtocol.html#a9b485d0e9aa965934c1003341c3bf119">meta_appName</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="structToastMetaProtocol.html#a19b9a1f41d5dfec4b37bbf880846d9f2">   33</a></span>    QDateTime <a class="code hl_variable" href="structToastMetaProtocol.html#a19b9a1f41d5dfec4b37bbf880846d9f2">announceTime</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="structToastMetaProtocol.html#a8e480450cf4b58a5dfa210d8f41dc146">   39</a></span>    QString <a class="code hl_variable" href="structToastMetaProtocol.html#a8e480450cf4b58a5dfa210d8f41dc146">meta_displayMessage</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="structToastMetaProtocol.html#ae745be4b28a4dfc92428bf8c01e4656b">   45</a></span>    <a class="code hl_function" href="structToastMetaProtocol.html#ae745be4b28a4dfc92428bf8c01e4656b">ToastMetaProtocol</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <a class="code hl_function" href="structToastMetaProtocol.html#ae745be4b28a4dfc92428bf8c01e4656b">ToastMetaProtocol</a>(<span class="keyword">const</span> QString meta_app, <span class="keyword">const</span> QString displayMessage, <span class="keyword">const</span> QDateTime t = QDateTime::currentDateTime());</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <a class="code hl_function" href="structToastMetaProtocol.html#ae745be4b28a4dfc92428bf8c01e4656b">ToastMetaProtocol</a>(<span class="keyword">const</span> QString&amp; json_string);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keyword">static</span> std::optional&lt;ToastMetaProtocol&gt; <a class="code hl_function" href="structToastMetaProtocol.html#af6e161849c04e07b7f15e0b6b76fbea0">from_json_string</a>(<span class="keyword">const</span> QString&amp; json_string);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    QString <a class="code hl_function" href="structToastMetaProtocol.html#a846e016ac6bb9c3f41d831e40f4a94b8">toString</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>};</div>
 </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#endif </span><span class="comment">// TOASTMETAPROTOCOL_H</span></div>
-<div class="ttc" id="astructToastMetaProtocol_html"><div class="ttname"><a href="structToastMetaProtocol.html">ToastMetaProtocol</a></div><div class="ttdef"><b>Definition</b> ToastMetaProtocol.h:6</div></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="preprocessor">#endif </span><span class="comment">// TOASTMETAPROTOCOL_H</span></div>
+<div class="ttc" id="astructToastMetaProtocol_html"><div class="ttname"><a href="structToastMetaProtocol.html">ToastMetaProtocol</a></div><div class="ttdoc">Represents the metadata and content for a toast notification.</div><div class="ttdef"><b>Definition</b> ToastMetaProtocol.h:22</div></div>
+<div class="ttc" id="astructToastMetaProtocol_html_a19b9a1f41d5dfec4b37bbf880846d9f2"><div class="ttname"><a href="structToastMetaProtocol.html#a19b9a1f41d5dfec4b37bbf880846d9f2">ToastMetaProtocol::announceTime</a></div><div class="ttdeci">QDateTime announceTime</div><div class="ttdoc">The exact date and time when the toast notification was announced. This helps in ordering or time-sta...</div><div class="ttdef"><b>Definition</b> ToastMetaProtocol.h:33</div></div>
+<div class="ttc" id="astructToastMetaProtocol_html_a846e016ac6bb9c3f41d831e40f4a94b8"><div class="ttname"><a href="structToastMetaProtocol.html#a846e016ac6bb9c3f41d831e40f4a94b8">ToastMetaProtocol::toString</a></div><div class="ttdeci">QString toString() const</div><div class="ttdoc">Converts the ToastMetaProtocol object into its JSON string representation.</div><div class="ttdef"><b>Definition</b> ToastMetaProtocol.cpp:42</div></div>
+<div class="ttc" id="astructToastMetaProtocol_html_a8e480450cf4b58a5dfa210d8f41dc146"><div class="ttname"><a href="structToastMetaProtocol.html#a8e480450cf4b58a5dfa210d8f41dc146">ToastMetaProtocol::meta_displayMessage</a></div><div class="ttdeci">QString meta_displayMessage</div><div class="ttdoc">The main message content to be displayed in the toast notification. This is the primary textual infor...</div><div class="ttdef"><b>Definition</b> ToastMetaProtocol.h:39</div></div>
+<div class="ttc" id="astructToastMetaProtocol_html_a9b485d0e9aa965934c1003341c3bf119"><div class="ttname"><a href="structToastMetaProtocol.html#a9b485d0e9aa965934c1003341c3bf119">ToastMetaProtocol::meta_appName</a></div><div class="ttdeci">QString meta_appName</div><div class="ttdoc">The name of the application that generated the toast notification. This can be used to identify the s...</div><div class="ttdef"><b>Definition</b> ToastMetaProtocol.h:27</div></div>
+<div class="ttc" id="astructToastMetaProtocol_html_ae745be4b28a4dfc92428bf8c01e4656b"><div class="ttname"><a href="structToastMetaProtocol.html#ae745be4b28a4dfc92428bf8c01e4656b">ToastMetaProtocol::ToastMetaProtocol</a></div><div class="ttdeci">ToastMetaProtocol()=default</div><div class="ttdoc">Default constructor for ToastMetaProtocol. Initializes members to their default values (empty strings...</div></div>
+<div class="ttc" id="astructToastMetaProtocol_html_af6e161849c04e07b7f15e0b6b76fbea0"><div class="ttname"><a href="structToastMetaProtocol.html#af6e161849c04e07b7f15e0b6b76fbea0">ToastMetaProtocol::from_json_string</a></div><div class="ttdeci">static std::optional&lt; ToastMetaProtocol &gt; from_json_string(const QString &amp;json_string)</div><div class="ttdoc">Creates an optional ToastMetaProtocol object from a JSON string.</div><div class="ttdef"><b>Definition</b> ToastMetaProtocol.cpp:27</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_4270bfced15e0e73154b13468c7c9ad9.html">core</a></li><li class="navelem"><a class="el" href="dir_dcbd9bb762c88fad9b95a77a328196c3.html">server</a></li><li class="navelem"><a class="el" href="dir_0879af3bfefdaae91ef4fa558ba84505.html">toast_file_gen_and_receiver</a></li><li class="navelem"><b>ToastMetaProtocol.h</b></li>
+    <li class="navelem"><a class="el" href="dir_4270bfced15e0e73154b13468c7c9ad9.html">core</a></li><li class="navelem"><a class="el" href="dir_dcbd9bb762c88fad9b95a77a328196c3.html">server</a></li><li class="navelem"><a class="el" href="dir_0879af3bfefdaae91ef4fa558ba84505.html">toast_file_gen_and_receiver</a></li><li class="navelem"><a class="el" href="ToastMetaProtocol_8h.html">ToastMetaProtocol.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

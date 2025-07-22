@@ -21,9 +21,11 @@ var searchData=
   ['high_5ftemp_18',['HIGH_TEMP',['../classWeatherChartWidget.html#ad917be16972dd0f90aa71df8d0e8e569a5e3ee21d5c0a12992178c1939c4d7987',1,'WeatherChartWidget']]],
   ['histcreator_19',['HistCreator',['../namespaceHistCreator.html',1,'']]],
   ['histdrawer_20',['histdrawer',['../classHistDrawer.html',1,'HistDrawer'],['../classHistDrawer.html#acac240110b587e7b3884c4a3bd7c098d',1,'HistDrawer::HistDrawer()']]],
-  ['homecardmanager_21',['homecardmanager',['../classHomeCardManager.html',1,'HomeCardManager'],['../classHomePage.html#abea5f810b7fc488f1e1ef0961be08d1e',1,'HomePage::homeCardManager() const']]],
-  ['homepage_22',['homepage',['../classHomePage.html#a019fab66c80b3c809faafce5f3416b63',1,'HomePage::HomePage()'],['../classHomePage.html',1,'HomePage']]],
-  ['hot_5finstall_5fconsumer_23',['hot_install_consumer',['../structDesktopLoggerBackends.html#ad81ccded03ca804da08d1d29f7596e7e',1,'DesktopLoggerBackends']]],
-  ['hot_5finstall_5ffactory_24',['hot_install_factory',['../structDesktopLoggerBackends.html#a361f4a98820b533dee4c8b2acded0cfc',1,'DesktopLoggerBackends']]],
-  ['humidity_25',['humidity',['../classWeatherChartWidget.html#ad917be16972dd0f90aa71df8d0e8e569ad95ec1b726d7df75e5cbe026d0c1b721',1,'WeatherChartWidget::HUMIDITY'],['../structAppWeatherResult_1_1DailyWeather.html#a2faa8ee092e1b9a6cd8ca85fc523196f',1,'AppWeatherResult::DailyWeather::humidity']]]
+  ['homecardmanager_21',['homecardmanager',['../classHomeCardManager.html',1,'HomeCardManager'],['../classHomePage.html#abea5f810b7fc488f1e1ef0961be08d1e',1,'HomePage::homeCardManager()'],['../classHomeCardManager.html#a12ed272e80a08747d77c0abe046ad75f',1,'HomeCardManager::HomeCardManager()']]],
+  ['homecardmanager_2eh_22',['HomeCardManager.h',['../HomeCardManager_8h.html',1,'']]],
+  ['homepage_23',['homepage',['../classHomePage.html',1,'HomePage'],['../classHomePage.html#a019fab66c80b3c809faafce5f3416b63',1,'HomePage::HomePage()']]],
+  ['hooked_5fwindow_24',['hooked_window',['../classDesktopWidgetPluginServer.html#a5a70237d6d9ed8abfa3f3613a8daae19',1,'DesktopWidgetPluginServer']]],
+  ['hot_5finstall_5fconsumer_25',['hot_install_consumer',['../structDesktopLoggerBackends.html#ad81ccded03ca804da08d1d29f7596e7e',1,'DesktopLoggerBackends']]],
+  ['hot_5finstall_5ffactory_26',['hot_install_factory',['../structDesktopLoggerBackends.html#a361f4a98820b533dee4c8b2acded0cfc',1,'DesktopLoggerBackends']]],
+  ['humidity_27',['humidity',['../structAppWeatherResult_1_1DailyWeather.html#a2faa8ee092e1b9a6cd8ca85fc523196f',1,'AppWeatherResult::DailyWeather::humidity'],['../classWeatherChartWidget.html#ad917be16972dd0f90aa71df8d0e8e569ad95ec1b726d7df75e5cbe026d0c1b721',1,'WeatherChartWidget::HUMIDITY']]]
 ];

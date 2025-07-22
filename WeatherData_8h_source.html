@@ -98,38 +98,53 @@ $(document).ready(function(){initNavTree('WeatherData_8h_source.html',''); initR
   <div class="headertitle"><div class="title">WeatherData.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef WEATHERDATA_H</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define WEATHERDATA_H</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;QString&gt;</span></div>
-<div class="foldopen" id="foldopen00004" data-start="{" data-end="};">
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="structWeatherData.html">    4</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structWeatherData.html">WeatherData</a> {</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    QString city;</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    QString time;</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keywordtype">int</span> interval;</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keywordtype">double</span> temperature;</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keywordtype">double</span> windspeed;</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keywordtype">int</span> winddirection;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keywordtype">int</span> isDay;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keywordtype">int</span> weatherCode;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    QString weatherDescription;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>};</div>
+<a href="WeatherData_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef WEATHERDATA_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define WEATHERDATA_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;QString&gt;</span> <span class="comment">// For QString to hold text data</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="structWeatherData.html">   19</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structWeatherData.html">WeatherData</a> {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="structWeatherData.html#a1cf81c56cf0236dae99872435dfcadbd">   20</a></span>    QString <a class="code hl_variable" href="structWeatherData.html#a1cf81c56cf0236dae99872435dfcadbd">city</a>; </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="structWeatherData.html#a38ba300bb2c8893c5196c54c5146a6ac">   21</a></span>    QString <a class="code hl_variable" href="structWeatherData.html#a38ba300bb2c8893c5196c54c5146a6ac">time</a>; </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="structWeatherData.html#ae0a308bd4e14ec55dd94019c6d7c0c2d">   22</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structWeatherData.html#ae0a308bd4e14ec55dd94019c6d7c0c2d">interval</a>; </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="structWeatherData.html#ae94973ffb5ceb5ee3e2aca560562f845">   23</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="structWeatherData.html#ae94973ffb5ceb5ee3e2aca560562f845">temperature</a>; </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="structWeatherData.html#ace6204ac09c5c858ed06483c496b8108">   24</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="structWeatherData.html#ace6204ac09c5c858ed06483c496b8108">windspeed</a>; </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="structWeatherData.html#a8095a0625e553ac98c511730ac240209">   25</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structWeatherData.html#a8095a0625e553ac98c511730ac240209">winddirection</a>; </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="structWeatherData.html#a0fbfefedb5af6676a4ee53f1df77c1ca">   26</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structWeatherData.html#a0fbfefedb5af6676a4ee53f1df77c1ca">isDay</a>; </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="structWeatherData.html#ab62ef7b564ed975393ba9b09bf8a7f3c">   27</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structWeatherData.html#ab62ef7b564ed975393ba9b09bf8a7f3c">weatherCode</a>; </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="structWeatherData.html#a8b470bc177e317a6a6a6b51758724a1a">   28</a></span>    QString <a class="code hl_variable" href="structWeatherData.html#a8b470bc177e317a6a6a6b51758724a1a">weatherDescription</a>; </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>};</div>
 </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="foldopen" id="foldopen00016" data-start="{" data-end="};">
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="structLocationData.html">   16</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structLocationData.html">LocationData</a> {</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordtype">double</span> latitude;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">double</span> longitude;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>};</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="foldopen" id="foldopen00038" data-start="{" data-end="};">
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="structLocationData.html">   38</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structLocationData.html">LocationData</a> {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="structLocationData.html#a77e2f0be49dc620c827f421f8dd0e2a1">   39</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="structLocationData.html#a77e2f0be49dc620c827f421f8dd0e2a1">latitude</a>; </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="structLocationData.html#a7531ae1a67dd8f436dc9a4d6535a3842">   40</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="structLocationData.html#a7531ae1a67dd8f436dc9a4d6535a3842">longitude</a>; </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>};</div>
 </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#endif </span><span class="comment">// WEATHERDATA_H</span></div>
-<div class="ttc" id="astructLocationData_html"><div class="ttname"><a href="structLocationData.html">LocationData</a></div><div class="ttdef"><b>Definition</b> WeatherData.h:16</div></div>
-<div class="ttc" id="astructWeatherData_html"><div class="ttname"><a href="structWeatherData.html">WeatherData</a></div><div class="ttdef"><b>Definition</b> WeatherData.h:4</div></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#endif </span><span class="comment">// WEATHERDATA_H</span></div>
+<div class="ttc" id="astructLocationData_html"><div class="ttname"><a href="structLocationData.html">LocationData</a></div><div class="ttdoc">Represents geographical coordinates (latitude and longitude).</div><div class="ttdef"><b>Definition</b> WeatherData.h:38</div></div>
+<div class="ttc" id="astructLocationData_html_a7531ae1a67dd8f436dc9a4d6535a3842"><div class="ttname"><a href="structLocationData.html#a7531ae1a67dd8f436dc9a4d6535a3842">LocationData::longitude</a></div><div class="ttdeci">double longitude</div><div class="ttdoc">The longitude coordinate (degrees, typically -180 to +180).</div><div class="ttdef"><b>Definition</b> WeatherData.h:40</div></div>
+<div class="ttc" id="astructLocationData_html_a77e2f0be49dc620c827f421f8dd0e2a1"><div class="ttname"><a href="structLocationData.html#a77e2f0be49dc620c827f421f8dd0e2a1">LocationData::latitude</a></div><div class="ttdeci">double latitude</div><div class="ttdoc">The latitude coordinate (degrees, typically -90 to +90).</div><div class="ttdef"><b>Definition</b> WeatherData.h:39</div></div>
+<div class="ttc" id="astructWeatherData_html"><div class="ttname"><a href="structWeatherData.html">WeatherData</a></div><div class="ttdoc">Represents a snapshot of weather conditions for a specific location and time.</div><div class="ttdef"><b>Definition</b> WeatherData.h:19</div></div>
+<div class="ttc" id="astructWeatherData_html_a0fbfefedb5af6676a4ee53f1df77c1ca"><div class="ttname"><a href="structWeatherData.html#a0fbfefedb5af6676a4ee53f1df77c1ca">WeatherData::isDay</a></div><div class="ttdeci">int isDay</div><div class="ttdoc">Indicates if it's currently daytime (1) or nighttime (0).</div><div class="ttdef"><b>Definition</b> WeatherData.h:26</div></div>
+<div class="ttc" id="astructWeatherData_html_a1cf81c56cf0236dae99872435dfcadbd"><div class="ttname"><a href="structWeatherData.html#a1cf81c56cf0236dae99872435dfcadbd">WeatherData::city</a></div><div class="ttdeci">QString city</div><div class="ttdoc">The name of the city for which the weather data is provided.</div><div class="ttdef"><b>Definition</b> WeatherData.h:20</div></div>
+<div class="ttc" id="astructWeatherData_html_a38ba300bb2c8893c5196c54c5146a6ac"><div class="ttname"><a href="structWeatherData.html#a38ba300bb2c8893c5196c54c5146a6ac">WeatherData::time</a></div><div class="ttdeci">QString time</div><div class="ttdoc">The local time of the weather observation (e.g., &quot;HH:MM AM/PM&quot; or &quot;YYYY-MM-DD HH:MM&quot;).</div><div class="ttdef"><b>Definition</b> WeatherData.h:21</div></div>
+<div class="ttc" id="astructWeatherData_html_a8095a0625e553ac98c511730ac240209"><div class="ttname"><a href="structWeatherData.html#a8095a0625e553ac98c511730ac240209">WeatherData::winddirection</a></div><div class="ttdeci">int winddirection</div><div class="ttdoc">The wind direction in degrees (0-359, where 0 is North, 90 is East, etc.).</div><div class="ttdef"><b>Definition</b> WeatherData.h:25</div></div>
+<div class="ttc" id="astructWeatherData_html_a8b470bc177e317a6a6a6b51758724a1a"><div class="ttname"><a href="structWeatherData.html#a8b470bc177e317a6a6a6b51758724a1a">WeatherData::weatherDescription</a></div><div class="ttdeci">QString weatherDescription</div><div class="ttdoc">A textual description of the weather condition (e.g., &quot;Clear sky&quot;, &quot;Partly cloudy&quot;).</div><div class="ttdef"><b>Definition</b> WeatherData.h:28</div></div>
+<div class="ttc" id="astructWeatherData_html_ab62ef7b564ed975393ba9b09bf8a7f3c"><div class="ttname"><a href="structWeatherData.html#ab62ef7b564ed975393ba9b09bf8a7f3c">WeatherData::weatherCode</a></div><div class="ttdeci">int weatherCode</div><div class="ttdoc">A numerical code representing the weather condition (e.g., WMO weather codes).</div><div class="ttdef"><b>Definition</b> WeatherData.h:27</div></div>
+<div class="ttc" id="astructWeatherData_html_ace6204ac09c5c858ed06483c496b8108"><div class="ttname"><a href="structWeatherData.html#ace6204ac09c5c858ed06483c496b8108">WeatherData::windspeed</a></div><div class="ttdeci">double windspeed</div><div class="ttdoc">The wind speed (unit implicitly defined by context, e.g., m/s, km/h, mph).</div><div class="ttdef"><b>Definition</b> WeatherData.h:24</div></div>
+<div class="ttc" id="astructWeatherData_html_ae0a308bd4e14ec55dd94019c6d7c0c2d"><div class="ttname"><a href="structWeatherData.html#ae0a308bd4e14ec55dd94019c6d7c0c2d">WeatherData::interval</a></div><div class="ttdeci">int interval</div><div class="ttdoc">The forecast interval in seconds (e.g., 900 for 15 minutes, 3600 for 1 hour).</div><div class="ttdef"><b>Definition</b> WeatherData.h:22</div></div>
+<div class="ttc" id="astructWeatherData_html_ae94973ffb5ceb5ee3e2aca560562f845"><div class="ttname"><a href="structWeatherData.html#ae94973ffb5ceb5ee3e2aca560562f845">WeatherData::temperature</a></div><div class="ttdeci">double temperature</div><div class="ttdoc">The temperature in Celsius or Fahrenheit (unit implicitly defined by context).</div><div class="ttdef"><b>Definition</b> WeatherData.h:23</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_31e1dcd1600825a796ae4d65836acc24.html">plugin_loader</a></li><li class="navelem"><a class="el" href="dir_e524f5143a3d75a9efe797e0b8573344.html">plugin_cards</a></li><li class="navelem"><a class="el" href="dir_eee6755f1968cc58e9f622c6f8d1a376.html">WeatherCard</a></li><li class="navelem"><b>WeatherData.h</b></li>
+    <li class="navelem"><a class="el" href="dir_31e1dcd1600825a796ae4d65836acc24.html">plugin_loader</a></li><li class="navelem"><a class="el" href="dir_e524f5143a3d75a9efe797e0b8573344.html">plugin_cards</a></li><li class="navelem"><a class="el" href="dir_eee6755f1968cc58e9f622c6f8d1a376.html">WeatherCard</a></li><li class="navelem"><a class="el" href="WeatherData_8h.html">WeatherData.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

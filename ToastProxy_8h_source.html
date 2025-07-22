@@ -98,33 +98,46 @@ $(document).ready(function(){initNavTree('ToastProxy_8h_source.html',''); initRe
   <div class="headertitle"><div class="title">ToastProxy.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef TOASTPROXY_H</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define TOASTPROXY_H</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;core/server/toast_file_gen_and_receiver/ToastMetaProtocol.h&quot;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">class </span><a class="code hl_class" href="classDesktopToast.html">DesktopToast</a>;</div>
-<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="classToastProxy.html">    5</a></span><span class="keyword">class </span><a class="code hl_class" href="classToastProxy.html">ToastProxy</a> : <span class="keyword">public</span> QObject {</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <a class="code hl_class" href="classToastProxy.html">ToastProxy</a>() = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keyword">explicit</span> <a class="code hl_class" href="classToastProxy.html">ToastProxy</a>(<a class="code hl_class" href="classDesktopToast.html">DesktopToast</a>* toast, QObject* parent);</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">public</span> slots:</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keywordtype">void</span> process_toastMeta(<span class="keyword">const</span> <a class="code hl_struct" href="structToastMetaProtocol.html">ToastMetaProtocol</a>&amp; protocolMeta);</div>
+<a href="ToastProxy_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef TOASTPROXY_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define TOASTPROXY_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="ToastMetaProtocol_8h.html">core/server/toast_file_gen_and_receiver/ToastMetaProtocol.h</a>&quot;</span> <span class="comment">// Includes the data structure for toast messages</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;QObject&gt;</span> <span class="comment">// Base class for ToastProxy, enabling signals/slots</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <a class="code hl_class" href="classDesktopToast.html">DesktopToast</a>* toast;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>};</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">// Forward declaration to avoid circular dependencies and improve compilation time</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">class </span><a class="code hl_class" href="classDesktopToast.html">DesktopToast</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="};">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classToastProxy.html">   24</a></span><span class="keyword">class </span><a class="code hl_class" href="classToastProxy.html">ToastProxy</a> : <span class="keyword">public</span> QObject {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    Q_OBJECT</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classToastProxy.html#a2db0f47d2a6f2ce60b68bff02012b048">   33</a></span>    <a class="code hl_function" href="classToastProxy.html#a2db0f47d2a6f2ce60b68bff02012b048">ToastProxy</a>() = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classToastProxy.html#a2db0f47d2a6f2ce60b68bff02012b048">ToastProxy</a>(<a class="code hl_class" href="classDesktopToast.html">DesktopToast</a>* toast, QObject* parent);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">public</span> slots:</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classToastProxy.html#ac80befe24b55f342f1908febf9541e6a">process_toastMeta</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structToastMetaProtocol.html">ToastMetaProtocol</a>&amp; protocolMeta);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <a class="code hl_class" href="classDesktopToast.html">DesktopToast</a>* toast;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>};</div>
 </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#endif </span><span class="comment">// TOASTPROXY_H</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">#endif </span><span class="comment">// TOASTPROXY_H</span></div>
+<div class="ttc" id="aToastMetaProtocol_8h_html"><div class="ttname"><a href="ToastMetaProtocol_8h.html">ToastMetaProtocol.h</a></div><div class="ttdoc">Defines the ToastMetaProtocol struct, used for encapsulating data for toast notifications.</div></div>
 <div class="ttc" id="aclassDesktopToast_html"><div class="ttname"><a href="classDesktopToast.html">DesktopToast</a></div><div class="ttdoc">The DesktopToast class is the toast handle classes using less lock messages queue to display the mess...</div><div class="ttdef"><b>Definition</b> DesktopToast.h:15</div></div>
-<div class="ttc" id="aclassToastProxy_html"><div class="ttname"><a href="classToastProxy.html">ToastProxy</a></div><div class="ttdef"><b>Definition</b> ToastProxy.h:5</div></div>
-<div class="ttc" id="astructToastMetaProtocol_html"><div class="ttname"><a href="structToastMetaProtocol.html">ToastMetaProtocol</a></div><div class="ttdef"><b>Definition</b> ToastMetaProtocol.h:6</div></div>
+<div class="ttc" id="aclassToastProxy_html"><div class="ttname"><a href="classToastProxy.html">ToastProxy</a></div><div class="ttdoc">Acts as an intermediary to process and forward toast notifications to the display mechanism.</div><div class="ttdef"><b>Definition</b> ToastProxy.h:24</div></div>
+<div class="ttc" id="aclassToastProxy_html_a2db0f47d2a6f2ce60b68bff02012b048"><div class="ttname"><a href="classToastProxy.html#a2db0f47d2a6f2ce60b68bff02012b048">ToastProxy::ToastProxy</a></div><div class="ttdeci">ToastProxy()=delete</div><div class="ttdoc">Deleted default constructor.</div></div>
+<div class="ttc" id="aclassToastProxy_html_ac80befe24b55f342f1908febf9541e6a"><div class="ttname"><a href="classToastProxy.html#ac80befe24b55f342f1908febf9541e6a">ToastProxy::process_toastMeta</a></div><div class="ttdeci">void process_toastMeta(const ToastMetaProtocol &amp;protocolMeta)</div><div class="ttdoc">Processes an incoming ToastMetaProtocol.</div><div class="ttdef"><b>Definition</b> ToastProxy.cpp:11</div></div>
+<div class="ttc" id="astructToastMetaProtocol_html"><div class="ttname"><a href="structToastMetaProtocol.html">ToastMetaProtocol</a></div><div class="ttdoc">Represents the metadata and content for a toast notification.</div><div class="ttdef"><b>Definition</b> ToastMetaProtocol.h:22</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_4270bfced15e0e73154b13468c7c9ad9.html">core</a></li><li class="navelem"><a class="el" href="dir_dcbd9bb762c88fad9b95a77a328196c3.html">server</a></li><li class="navelem"><a class="el" href="dir_0879af3bfefdaae91ef4fa558ba84505.html">toast_file_gen_and_receiver</a></li><li class="navelem"><b>ToastProxy.h</b></li>
+    <li class="navelem"><a class="el" href="dir_4270bfced15e0e73154b13468c7c9ad9.html">core</a></li><li class="navelem"><a class="el" href="dir_dcbd9bb762c88fad9b95a77a328196c3.html">server</a></li><li class="navelem"><a class="el" href="dir_0879af3bfefdaae91ef4fa558ba84505.html">toast_file_gen_and_receiver</a></li><li class="navelem"><a class="el" href="ToastProxy_8h.html">ToastProxy.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
