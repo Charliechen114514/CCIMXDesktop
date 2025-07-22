@@ -62,8 +62,9 @@ DiskUsageCardWidget::DiskUsageCardWidget(QWidget* parent)
             font-weight: bold;
         }
     )");
-
+    qDebug() << "Attempty to refresh disk usage";
     refresh_once();
+    qDebug() << "DiskUsage Card is created ready!";
 }
 
 DiskUsageCardWidget::~DiskUsageCardWidget() {
@@ -72,6 +73,11 @@ DiskUsageCardWidget::~DiskUsageCardWidget() {
 
 void DiskUsageCardWidget::refresh_once() {
     DiskUsage::MetaInfo info = DiskUsage::queryOnce();
+    qDebug().nospace() << "Get the MetaInfo: { "
+                       << "total: " << info.total << ", "
+                       << "free: " << info.free << ", "
+                       << "available: " << info.available
+                       << " }";
     int percentage = 100 - info.available * 100 / info.total;
     gaugeWidget->update_value(percentage);
 

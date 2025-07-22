@@ -61,8 +61,8 @@ target_include_directories(LightController
 target_link_libraries(LightController PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
 
 add_custom_command(TARGET LightController POST_BUILD
-    COMMAND ${CMAKE_COMMAND} -E make_directory ${CCIMX_EXTERNAL_APP_BASE_DIR}
-    COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:LightController> ${CCIMX_EXTERNAL_APP_BASE_DIR}
+    COMMAND ${CMAKE_COMMAND} -E make_directory ${CCIMX_INSTALL_APP_BASE_DIR}
+    COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:LightController> ${CCIMX_INSTALL_APP_BASE_DIR}
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.

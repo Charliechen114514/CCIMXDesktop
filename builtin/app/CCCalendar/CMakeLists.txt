@@ -50,8 +50,8 @@ install(TARGETS CCCalendar
 )
 
 add_custom_command(TARGET CCCalendar POST_BUILD
-    COMMAND ${CMAKE_COMMAND} -E make_directory ${CCIMX_EXTERNAL_APP_BASE_DIR}
-    COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:CCCalendar> ${CCIMX_EXTERNAL_APP_BASE_DIR}
+    COMMAND ${CMAKE_COMMAND} -E make_directory ${CCIMX_INSTALL_APP_BASE_DIR}
+    COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:CCCalendar> ${CCIMX_INSTALL_APP_BASE_DIR}
 )
 
 qt_generate_deploy_app_script(

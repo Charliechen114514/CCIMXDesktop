@@ -11,6 +11,7 @@ ModernCalendarWidget::ModernCalendarWidget(QWidget* parent)
     setFirstDayOfWeek(Qt::Sunday);
     styleNavigationBar();
     setStyleSheet(global_mode_qss());
+    qDebug() << "ModernCalendarWidget Card is created ready!";
 }
 
 void ModernCalendarWidget::setDarkMode(bool darkMode) {

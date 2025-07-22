@@ -1,4 +1,4 @@
-#include "desktoptoast.h"
+#include "DesktopToast.h"
 #include <QGuiApplication>
 #include <QLabel>
 #include <QPropertyAnimation>

@@ -1,4 +1,4 @@
-set(PLUGINWIDGET_PLUGIN_RELEASE_DIR "${CCIMX_ALL_RELEASE_DIR}/Runtime/plugins")
+set(PLUGINWIDGET_PLUGIN_RELEASE_DIR "${CCIMX_ALL_RELEASE_DIR}/RunTime/plugins")
 message(STATUS
     "Widget Plugins will be set at installed in
     ${PLUGINWIDGET_PLUGIN_RELEASE_DIR}")

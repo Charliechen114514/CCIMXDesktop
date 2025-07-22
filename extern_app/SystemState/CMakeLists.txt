@@ -50,8 +50,8 @@ qt_add_executable(SystemState
 )
 
 add_custom_command(TARGET SystemState POST_BUILD
-    COMMAND ${CMAKE_COMMAND} -E make_directory ${CCIMX_EXTERNAL_APP_BASE_DIR}
-    COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:SystemState> ${CCIMX_EXTERNAL_APP_BASE_DIR}
+    COMMAND ${CMAKE_COMMAND} -E make_directory ${CCIMX_INSTALL_APP_BASE_DIR}
+    COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:SystemState> ${CCIMX_INSTALL_APP_BASE_DIR}
 )
 
 target_link_libraries(SystemState

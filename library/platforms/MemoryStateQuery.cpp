@@ -15,6 +15,10 @@ void from_platform(MemoryState::MemState& stat) {
 }
 
 #else
+#include <sstream>
+#include <string>
+#include <unordered_map>
+#include <fstream>
 void from_platform(MemoryState::MemState& mem_stat) {
     std::ifstream meminfo("/proc/meminfo");
     std::string line;
@@ -37,8 +41,8 @@ void from_platform(MemoryState::MemState& mem_stat) {
     uint64_t swap_total = mem.count("SwapTotal") ? mem["SwapTotal"] * 1024 : 0;
     uint64_t swap_free = mem.count("SwapFree") ? mem["SwapFree"] * 1024 : 0;
 
-    mem_stat.total_virt_memory = state.total_phys_memory + swap_total;
-    mem_stat.avail_virt_memory = state.avail_phys_memory + swap_free;
+    mem_stat.total_virt_memory = mem_stat.total_phys_memory + swap_total;
+    mem_stat.avail_virt_memory = mem_stat.avail_phys_memory + swap_free;
 }
 #endif
 

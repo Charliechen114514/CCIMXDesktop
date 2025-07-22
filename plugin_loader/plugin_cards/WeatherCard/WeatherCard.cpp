@@ -149,7 +149,7 @@ WeatherCard::~WeatherCard() {
     delete ui;
 }
 
-void WeatherCard::receiveDatas(const WeatherData& data) {
+void WeatherCard::receiveDatas(const WeatherData data) {
     qDebug() << "WeatherCard received data for display.";
     QString imagePath = getImagePath(data.weatherCode, data.isDay);
     QPixmap pixmap(imagePath);

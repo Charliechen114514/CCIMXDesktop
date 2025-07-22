@@ -5,30 +5,8 @@
 #include <QPropertyAnimation>
 #include <QScreen>
 #include <QTimer>
+#include <QVBoxLayout>
 namespace {
-
-// QSize get_size(InformToastLabel* label, const QString& message) {
-//     if (message.length() > 30) {
-//         // if is long text, then we should calculate instead
-//         // of direct cached
-//         const QFontMetrics fm(label->font());
-//         int width = fm.averageCharWidth() * message.length() + 20;
-//         int height = fm.height() * ((width - 1) / 300 + 1);
-//         return { std::min(width, 400), height + 10 };
-//     } else {
-//         static QHash<int, QSize> sizeCache;
-//         int length = message.length();
-//         // cached missing
-//         if (sizeCache.contains(length)) {
-//             return sizeCache.value(length);
-//         } else {
-//             // else, enqueue the cached
-//             QSize newSize = label->sizeHint();
-//             sizeCache.insert(length, newSize);
-//             return newSize;
-//         }
-//     }
-// }
 
 QSize get_size(InformToastLabel* label, const QString& message, const int width) {
     const int maxWidth = width;
@@ -44,10 +22,18 @@ DesktopToast::DesktopToast(QWidget* parent)
     setAttribute(Qt::WA_TranslucentBackground);
     setAttribute(Qt::WA_ShowWithoutActivating);
     setAttribute(Qt::WA_NoSystemBackground);
-    // label = new QLabel(this);
+    setAutoFillBackground(false);
     label = new InformToastLabel(this);
+    label->setMinimumWidth(400);
     moveAnimation = new QPropertyAnimation(this, "pos");
     fadeAnimation = new QPropertyAnimation(this, "pos");
+
+    QVBoxLayout* layout = new QVBoxLayout(this);
+    layout->addWidget(label);
+    layout->setContentsMargins(0, 0, 0, 0);
+    layout->setSpacing(0);
+    setLayout(layout);
+
 
     connect(fadeAnimation, &QPropertyAnimation::finished, this, [this]() {
         isHandling = false;
@@ -125,9 +111,13 @@ void DesktopToast::adjust_place() {
 
 void DesktopToast::set_message_impl(const QString& message) {
     label->setText(message);
-    // resize(label->sizeHint());
-    resize(get_size(label, message, _width));
+    label->adjustSize();
+    adjustSize();
     adjust_place();
+    // qDebug() << "[Toast] label sizeHint:" << label->sizeHint();
+    // qDebug() << "[Toast] actual label size:" << label->size();
+    // qDebug() << "[Toast] Toast size:" << size();
+    // qDebug() << "[Toast] startPos:" << startPos << "endPos:" << endPos;
     show();
     raise();
     start_animation();

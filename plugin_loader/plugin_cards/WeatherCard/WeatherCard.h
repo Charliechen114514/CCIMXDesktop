@@ -54,7 +54,7 @@ private slots:
      * elements to show the received weather information.
      * @param data A constant reference to the `WeatherData` object containing the weather details.
      */
-    void receiveDatas(const WeatherData& data);
+    void receiveDatas(const WeatherData data);
 
 private:
     /**

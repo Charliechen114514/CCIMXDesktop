@@ -26,7 +26,7 @@ InformToastLabel::InformToastLabel(QWidget* parent)
         background-color: transparent;
     }
     )");
-    setAutoFillBackground(true); // 加上
+    setAutoFillBackground(false);
     setAttribute(Qt::WA_TranslucentBackground);
 
     auto effect = new QGraphicsDropShadowEffect;

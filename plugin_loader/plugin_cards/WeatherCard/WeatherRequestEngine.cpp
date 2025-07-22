@@ -76,6 +76,8 @@ WeatherRequestEngine::WeatherRequestEngine(const QString& city, QObject* parent)
         locationFound = true;
         qDebug() << "Location found in cache for " << city_request << ": lat=" << currentLocation.latitude << ", lon=" << currentLocation.longitude;
     }
+    timeoutTimer = new QTimer(this);
+    timeoutTimer->setSingleShot(true);
 }
 
 void WeatherRequestEngine::queryWeatherData() {
@@ -95,18 +97,30 @@ void WeatherRequestEngine::queryWeatherData() {
         forceQueryWeatherData();
     } else {
         qDebug() << "Fetching location for " << city_request;
-        QUrl url("https://nominatim.openstreetmap.org/search");
+        QUrl url("http://nominatim.openstreetmap.org/search");
         QUrlQuery q;
         q.addQueryItem("q", city_request);
         q.addQueryItem("format", "json");
         q.addQueryItem("limit", "1");
         url.setQuery(q);
-
+        qDebug() << "Request URL:" << url.toString();
         QNetworkRequest req(url);
         req.setHeader(QNetworkRequest::UserAgentHeader, "QtWeatherApp/1.0");
         QObject::connect(manager, &QNetworkAccessManager::finished,
                          this, &WeatherRequestEngine::onGeoReply, Qt::SingleShotConnection);
-        manager->get(req);
+        auto reply = manager->get(req);
+        timeoutTimer->start(3000);
+        QMetaObject::Connection* timeoutConn = new QMetaObject::Connection;
+
+        *timeoutConn = connect(timeoutTimer, &QTimer::timeout, this,
+                               [reply, timeoutConn]() {
+                                   if (reply->isRunning()) {
+                                       qDebug() << "Request timeout, aborting...";
+                                       reply->abort();
+                                   }
+                                   QObject::disconnect(*timeoutConn);
+                                   delete timeoutConn;
+                               });
     }
 }
 
@@ -119,7 +133,7 @@ void WeatherRequestEngine::forceQueryWeatherData() {
     }
 
     qDebug() << "Force querying weather for " << city_request << " (lat:" << currentLocation.latitude << ", lon:" << currentLocation.longitude << ")";
-    QUrl url("https://api.open-meteo.com/v1/forecast");
+    QUrl url("http://api.open-meteo.com/v1/forecast");
     QUrlQuery q;
     q.addQueryItem("latitude", QString::number(currentLocation.latitude));
     q.addQueryItem("longitude", QString::number(currentLocation.longitude));
@@ -127,37 +141,57 @@ void WeatherRequestEngine::forceQueryWeatherData() {
     q.addQueryItem("hourly", "temperature_2m");
     q.addQueryItem("timezone", "Asia/Shanghai");
     url.setQuery(q);
+    qDebug() << "Request URL:" << url.toString();
 
     QNetworkRequest req(url);
     req.setHeader(QNetworkRequest::UserAgentHeader, "QtWeatherApp/1.0");
     QObject::connect(manager, &QNetworkAccessManager::finished,
                      this, &WeatherRequestEngine::onWeatherReply, Qt::SingleShotConnection);
-    manager->get(req);
+    auto reply = manager->get(req);
+    timeoutTimer->start(3000);
+    QMetaObject::Connection* timeoutConn = new QMetaObject::Connection;
+
+    *timeoutConn = connect(timeoutTimer, &QTimer::timeout, this,
+                          [reply, timeoutConn]() {
+        if (reply->isRunning()) {
+            qDebug() << "Request timeout, aborting...";
+            reply->abort();
+        }
+        QObject::disconnect(*timeoutConn);
+        delete timeoutConn;
+    });
+
 }
 
 void WeatherRequestEngine::onGeoReply(QNetworkReply* reply) {
+    if (timeoutTimer->isActive())
+        timeoutTimer->stop();
     if (reply->error() != QNetworkReply::NoError) {
         QString errorMessage = "Geo API Error: " + reply->errorString();
         qDebug() << errorMessage;
         emit errorOccurred(errorMessage);
         reply->deleteLater();
-        return;
+        qDebug() << "Use default to query!";
+        currentLocation.latitude = 38;
+        currentLocation.longitude = 121;
+    }else{
+        auto doc = QJsonDocument::fromJson(reply->readAll());
+        reply->deleteLater();
+
+        auto arr = doc.array();
+        if (arr.isEmpty()) {
+            QString errorMessage = "No geographic information found for " + city_request;
+            qDebug() << errorMessage;
+            emit errorOccurred(errorMessage);
+            return;
+        }
+
+        auto obj = arr.first().toObject();
+        currentLocation.latitude = obj["lat"].toString().toDouble();
+        currentLocation.longitude = obj["lon"].toString().toDouble();
+
     }
 
-    auto doc = QJsonDocument::fromJson(reply->readAll());
-    reply->deleteLater();
-
-    auto arr = doc.array();
-    if (arr.isEmpty()) {
-        QString errorMessage = "No geographic information found for " + city_request;
-        qDebug() << errorMessage;
-        emit errorOccurred(errorMessage);
-        return;
-    }
-
-    auto obj = arr.first().toObject();
-    currentLocation.latitude = obj["lat"].toString().toDouble();
-    currentLocation.longitude = obj["lon"].toString().toDouble();
     locationFound = true;
 
     qDebug() << "Location obtained for " << city_request << ": lat=" << currentLocation.latitude << " lon=" << currentLocation.longitude;
@@ -166,6 +200,8 @@ void WeatherRequestEngine::onGeoReply(QNetworkReply* reply) {
 }
 
 void WeatherRequestEngine::onWeatherReply(QNetworkReply* reply) {
+    if (timeoutTimer->isActive())
+        timeoutTimer->stop();
     if (reply->error() != QNetworkReply::NoError) {
         QString errorMessage = "Weather API Error: " + reply->errorString();
         qDebug() << errorMessage;

@@ -69,8 +69,8 @@ target_link_libraries(SportsHealth PRIVATE
     Qt${QT_VERSION_MAJOR}::Charts)
 
 add_custom_command(TARGET SportsHealth POST_BUILD
-    COMMAND ${CMAKE_COMMAND} -E make_directory ${CCIMX_EXTERNAL_APP_BASE_DIR}
-    COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:SportsHealth> ${CCIMX_EXTERNAL_APP_BASE_DIR}
+    COMMAND ${CMAKE_COMMAND} -E make_directory ${CCIMX_INSTALL_APP_BASE_DIR}
+    COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:SportsHealth> ${CCIMX_INSTALL_APP_BASE_DIR}
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.

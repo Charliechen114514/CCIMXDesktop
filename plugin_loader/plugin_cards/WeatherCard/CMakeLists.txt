@@ -22,5 +22,9 @@ target_sources(WeatherCard
     sources.qrc
 )
 
+add_custom_command(TARGET WeatherCard POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E make_directory ${PLUGINWIDGET_PLUGIN_RELEASE_DIR}
+    COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:WeatherCard> ${PLUGINWIDGET_PLUGIN_RELEASE_DIR}
+)
 
 

@@ -53,6 +53,7 @@ DateShowCard::DateShowCard(QWidget* parent)
     setGraphicsEffect(shadow);
     int day = QDate::currentDate().day();
     setDate(day, QDate::currentDate().toString("MM/dd ddd"), "Date Today");
+    qDebug() << "DateCard Card is created ready!";
 }
 
 void DateShowCard::setDate(int dayOfMonth, const QString& fullDateText, const QString& title) {

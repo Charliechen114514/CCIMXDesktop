@@ -106,14 +106,19 @@ void DesktopMainWindow::setup_apps() {
     emit updateProgress("Setup the Home Page", 50);
     qDebug() << "Setup HomePage";
     homePage = PageFactory::build_home_page(this);
+    qInfo() << "Home Page is Ready!";
 	PageSetuper::create_specified_page(ui->stackedWidget, homePage);
     emit updateProgress("Creating Entries for the Builtin Apps", 55);
     app_widgets << PageSetuper::create_builtin_apps(this);
+    qInfo() << "Bulitin Apps is Ready!";
     emit updateProgress("Creating Entries for the Internal Apps", 60);
     app_widgets << PageSetuper::create_internal_apps(this);
+    qInfo() << "Internal Apps is Ready!";
     emit updateProgress("Creating Entries for the Third Party Apps", 65);
 	app_widgets << PageSetuper::create_real_app(this);
+    qInfo() << "Third Party Apps is Ready!";
     emit updateProgress("Initing the DockWidgets", 70);
+    qInfo() << "Dock Widgets Inits OK!";
 	setup_default_dock();
 }
 

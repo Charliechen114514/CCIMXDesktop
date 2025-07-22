@@ -10,7 +10,7 @@
 #include <QMap> // For QMap to store location cache
 #include <QNetworkReply> // For QNetworkReply to handle network responses
 #include <QObject> // Base class for WeatherRequestEngine, enabling signals/slots
-
+#include <QTimer> // Timer
 // Forward declarations to avoid heavy includes and circular dependencies
 class QNetworkAccessManager;
 class QueryCached;
@@ -56,7 +56,7 @@ signals:
      * @brief Signal emitted when new weather data is successfully retrieved and ready.
      * @param data A constant reference to the `WeatherData` object containing the fetched weather details.
      */
-    void weatherDataReady(const WeatherData& data);
+    void weatherDataReady(const WeatherData data);
 
     /**
      * @brief Signal emitted when an error occurs during the data request process.
@@ -94,7 +94,7 @@ private:
     QNetworkAccessManager* manager; ///< Manages network requests (e.g., HTTP GET).
     QString city_request; ///< The name of the city for which weather is requested.
     QueryCached* cached_weather_data; ///< Manages caching of `WeatherData` to reduce API calls.
-
+    QTimer* timeoutTimer; ///< timeout timer
     /**
      * @brief A static QMap to cache geographical coordinates for cities.
      * 	 * This static member allows location data for frequently requested cities

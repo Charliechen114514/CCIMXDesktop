@@ -11,7 +11,11 @@
 #endif
 
 // root install path
+#ifdef ARM_BUILD
+#define _DESKTOP_ROOT_PATH "."
+#else
 #define _DESKTOP_ROOT_PATH "@CCIMX_ALL_RELEASE_DIR@"
+#endif
 
 // third party query default dirent
 #define _EXTERNAPP_INSTALL_DIR "@CCIMX_EXTERNAL_APP_BASE_DIR@"

@@ -32,8 +32,8 @@ qt_add_executable(FileRamber
 )
 
 add_custom_command(TARGET FileRamber POST_BUILD
-    COMMAND ${CMAKE_COMMAND} -E make_directory ${CCIMX_EXTERNAL_APP_BASE_DIR}
-    COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:FileRamber> ${CCIMX_EXTERNAL_APP_BASE_DIR}
+    COMMAND ${CMAKE_COMMAND} -E make_directory ${CCIMX_INSTALL_APP_BASE_DIR}
+    COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:FileRamber> ${CCIMX_INSTALL_APP_BASE_DIR}
 )
 
 target_link_libraries(FileRamber

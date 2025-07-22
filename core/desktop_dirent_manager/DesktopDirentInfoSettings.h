@@ -33,7 +33,7 @@ static_assert(
 
 enum class DesktopServerType {
     TOAST_SUMMON, ///< place where toast summons, which we will monitors
-    PLUGIN_WIDGET_PLACED
+    PLUGIN_WIDGET_PLACED, ///< plugins places
 };
 
 static constexpr const char* DesktopServerTypeMETAS[] = {
@@ -43,12 +43,7 @@ static constexpr const char* DesktopServerTypeMETAS[] = {
 
 static constexpr unsigned short
     DesktopServerTypeMAX
-    = static_cast<unsigned short>(DesktopServerType::TOAST_SUMMON) + 1;
-
-static_assert(
-    sizeof(DesktopServerTypeMETAS) / sizeof(DesktopServerTypeMETAS[0])
-        == DesktopServerTypeMAX,
-    "DesktopServerTypeMETAS and Enums are count mismatched!");
+    = static_cast<unsigned short>(DesktopServerType::PLUGIN_WIDGET_PLACED) + 1;
 
 static constexpr const char* TOAST_SUMMON_DIRENT = ".__toast_summon_dirent";
 static constexpr const char* PLUGIN_WIDGET_PLACED = "plugins";

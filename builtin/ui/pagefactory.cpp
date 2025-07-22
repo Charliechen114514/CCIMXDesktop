@@ -23,9 +23,10 @@ HomePage* PageFactory::build_home_page(DesktopMainWindow* mainWindow) {
                      user_info_card, &UserInfoCard::setUserInfo);
     UserInfo* user_info = info->get_info();
     if (user_info) {
+        qDebug() << "User info is ready up!";
         user_info_card->setUserInfo(*user_info);
     }
-
+    qDebug() << "Trying to insert card widgets";
     QWidgetList widgetList = {
         user_info_card,
         new ModernCalendarWidget(homePage),
@@ -33,10 +34,11 @@ HomePage* PageFactory::build_home_page(DesktopMainWindow* mainWindow) {
         new DiskUsageCardWidget(homePage),
         new MemoryUsageCard(homePage)
     };
+    qDebug() << "widgetList is prepared!";
     for (const auto& widget : widgetList) {
         cardManager->installWidget(widget);
     }
-
+    qDebug() << "widgetList is inserted!";
 	/* build homepage app cards here */
 	mainWindow->app_cards << PageFactory::place_appcards_in_empty_widgets(
         mainWindow,

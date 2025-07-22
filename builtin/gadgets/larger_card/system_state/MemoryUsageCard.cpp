@@ -31,6 +31,7 @@ MemoryUsageCard::MemoryUsageCard(QWidget* parent)
     shadow->setColor(QColor(0, 0, 0, 160));
     setGraphicsEffect(shadow);
     refresh_once();
+    qDebug() << "Memory Usage Card is created ready!";
 }
 
 MemoryUsageCard::~MemoryUsageCard() {

@@ -63,8 +63,8 @@ target_link_libraries(MediaPlayer
 )
 
 add_custom_command(TARGET MediaPlayer POST_BUILD
-    COMMAND ${CMAKE_COMMAND} -E make_directory ${CCIMX_EXTERNAL_APP_BASE_DIR}
-    COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:MediaPlayer> ${CCIMX_EXTERNAL_APP_BASE_DIR}
+    COMMAND ${CMAKE_COMMAND} -E make_directory ${CCIMX_INSTALL_APP_BASE_DIR}
+    COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:MediaPlayer> ${CCIMX_INSTALL_APP_BASE_DIR}
 )
 
 include(GNUInstallDirs)

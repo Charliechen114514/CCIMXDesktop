@@ -36,8 +36,8 @@ qt_add_executable(GeneralLocalCamera
 )
 
 add_custom_command(TARGET GeneralLocalCamera POST_BUILD
-    COMMAND ${CMAKE_COMMAND} -E make_directory ${CCIMX_EXTERNAL_APP_BASE_DIR}
-    COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:GeneralLocalCamera> ${CCIMX_EXTERNAL_APP_BASE_DIR}
+    COMMAND ${CMAKE_COMMAND} -E make_directory ${CCIMX_INSTALL_APP_BASE_DIR}
+    COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:GeneralLocalCamera> ${CCIMX_INSTALL_APP_BASE_DIR}
 )
 
 target_include_directories(GeneralLocalCamera PRIVATE ${OpenCV_INCLUDE_DIRS} ${OpenCV_INCLUDE_DIRS}/opencv2)

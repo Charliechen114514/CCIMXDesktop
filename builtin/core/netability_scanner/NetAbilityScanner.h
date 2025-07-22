@@ -2,6 +2,7 @@
 #define NETABILITYSCANNER_H
 #include "NetAbilityScanEnum.h"
 #include <QObject>
+class QTimer;
 class QNetworkAccessManager;
 /**
  * @brief   The NetAbilityScanner class

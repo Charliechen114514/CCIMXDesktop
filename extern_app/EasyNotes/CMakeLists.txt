@@ -48,8 +48,8 @@ install(TARGETS EasyNotes
 
 
 add_custom_command(TARGET EasyNotes POST_BUILD
-    COMMAND ${CMAKE_COMMAND} -E make_directory ${CCIMX_EXTERNAL_APP_BASE_DIR}
-    COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:EasyNotes> ${CCIMX_EXTERNAL_APP_BASE_DIR}
+    COMMAND ${CMAKE_COMMAND} -E make_directory ${CCIMX_INSTALL_APP_BASE_DIR}
+    COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:EasyNotes> ${CCIMX_INSTALL_APP_BASE_DIR}
 )
 
 qt_generate_deploy_app_script(
