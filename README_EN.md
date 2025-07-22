@@ -22,6 +22,10 @@ The project supports running on Windows, Linux host computers and ARM-Linux with
 
 ## Some running screenshots
 
+0. Video Previewed (In Bilibili)
+
+[Tiny Desktop Written for IMX6ULL](https://www.bilibili.com/video/BV1cTgnzvEtL?vd_source=7756b1d353ef340c2ab91e80642a8922)
+
 1) Screen when starting loading (screenshot version: Release 2.0.0)
 
 ![image-20250722092731425](./README/image-20250722092731425.png)

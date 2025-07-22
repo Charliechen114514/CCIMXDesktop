@@ -23,6 +23,10 @@
 
 ## 一些运行截图
 
+0）预览视频（见B站）
+
+[IMX6ULL小项目：写的一个跑在IMX6ULL上的基于Qt框架的超级小桌面](https://www.bilibili.com/video/BV1cTgnzvEtL?vd_source=7756b1d353ef340c2ab91e80642a8922)
+
 1）启动加载时画面（截图版本：Release 2.0.0）
 
 ![image-20250722092731425](./README/image-20250722092731425.png)
