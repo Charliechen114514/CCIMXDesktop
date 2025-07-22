@@ -12,6 +12,10 @@ class SlideSettings : public QWidget {
 	Q_OBJECT
 
 public:
+    /**
+     * @brief SlideSettings
+     * @param parent
+     */
     explicit SlideSettings(DesktopMainWindow* parent = nullptr);
 	~SlideSettings();
 

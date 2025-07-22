@@ -55,8 +55,8 @@ public:
 	~HomePage();
 
 private:
-	Ui::HomePage* ui;
-    std::shared_ptr<HomeCardManager> _homeCardManager;
+    Ui::HomePage* ui; ///< ui handle
+    std::shared_ptr<HomeCardManager> _homeCardManager; ///< card manager
 };
 
 #endif // HOMEPAGE_H

@@ -29,10 +29,10 @@ signals:
     void server_dead(); ///< server dead
 
 protected:
-    bool enabled { true };
+    bool enabled { true }; ///< is enabled
 
 private:
-    QString serverName;
+    QString serverName; ///< server name
 };
 
 #endif // DESKTOPSERVERBASE_H

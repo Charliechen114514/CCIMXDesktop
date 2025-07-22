@@ -83,6 +83,10 @@ protected:
      */
     virtual void setHelperFunction(const QString& what);
 
+    /**
+     * @brief setup self text label style
+     * @param selfTextLabel
+     */
     virtual void setupSelfTextLabelStyle(QLabel* selfTextLabel) = 0;
 
     DesktopToast* binding_toast; ///< Pointer to the toast widget used for posting messages.

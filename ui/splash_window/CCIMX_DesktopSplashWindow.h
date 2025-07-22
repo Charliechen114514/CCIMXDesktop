@@ -40,6 +40,7 @@ protected:
     QProgressBar* progressBar; ///< progress sessions
 
 private:
+    int progressValue; ///< processing value
     DesktopMainWindow* holdingWindow; ///< holding window
 };
 
