@@ -16,5 +16,6 @@ var searchData=
   ['upgrade_5fdifficulty_13',['upgrade_difficulty',['../classDifficultyManager.html#a1ab2819373431622077be43ffe2bb1d9',1,'DifficultyManager']]],
   ['user_5finit_5fok_14',['user_init_ok',['../classDesktopUserInfo.html#ae66fd133a15da730d4741a0a6c50c6e5',1,'DesktopUserInfo']]],
   ['userinfobuilder_15',['UserInfoBuilder',['../classUserInfo_1_1UserInfoBuilder.html#a4b55df439f9a73d1a47645c9b1751d77',1,'UserInfo::UserInfoBuilder']]],
-  ['userinfocard_16',['UserInfoCard',['../classUserInfoCard.html#a1787703339bed1ea2278a5e5015c049c',1,'UserInfoCard']]]
+  ['userinfocard_16',['UserInfoCard',['../classUserInfoCard.html#a1787703339bed1ea2278a5e5015c049c',1,'UserInfoCard']]],
+  ['uuid_17',['uuid',['../classPeerConnection.html#af1de228d16f9d1df2f519fb3c86bebb8',1,'PeerConnection']]]
 ];

@@ -15,12 +15,15 @@ var searchData=
   ['mediaplayerwindow_12',['MediaPlayerWindow',['../classMediaPlayerWindow.html',1,'']]],
   ['mediaplayerwindowhelper_13',['MediaPlayerWindowHelper',['../classMediaPlayerWindowHelper.html',1,'']]],
   ['memoryinfofetcher_14',['MemoryInfoFetcher',['../classMemoryInfoFetcher.html',1,'']]],
-  ['memorystat_15',['MemoryStat',['../structMemoryInfoFetcher_1_1MemoryStat.html',1,'MemoryInfoFetcher']]],
-  ['memoryusagecard_16',['MemoryUsageCard',['../classMemoryUsageCard.html',1,'']]],
-  ['memoryusagechart_17',['MemoryUsageChart',['../classMemoryUsageChart.html',1,'']]],
-  ['memstate_18',['MemState',['../structMemoryState_1_1MemState.html',1,'MemoryState']]],
-  ['metainfo_19',['MetaInfo',['../structDiskUsage_1_1MetaInfo.html',1,'DiskUsage']]],
-  ['metainfowindow_20',['MetaInfoWindow',['../classMetaInfoWindow.html',1,'']]],
-  ['modemapping_21',['ModeMapping',['../structWallPaperEngine_1_1ModeMapping.html',1,'WallPaperEngine']]],
-  ['moderncalendarwidget_22',['ModernCalendarWidget',['../classModernCalendarWidget.html',1,'']]]
+  ['memorysinker_15',['MemorySinker',['../classMemorySinker.html',1,'']]],
+  ['memorystat_16',['MemoryStat',['../structMemoryInfoFetcher_1_1MemoryStat.html',1,'MemoryInfoFetcher']]],
+  ['memoryusagecard_17',['MemoryUsageCard',['../classMemoryUsageCard.html',1,'']]],
+  ['memoryusagechart_18',['MemoryUsageChart',['../classMemoryUsageChart.html',1,'']]],
+  ['memstate_19',['MemState',['../structMemoryState_1_1MemState.html',1,'MemoryState']]],
+  ['metainfo_20',['MetaInfo',['../structDiskUsage_1_1MetaInfo.html',1,'DiskUsage']]],
+  ['metainfosinker_21',['MetaInfoSinker',['../classMetaInfoSinker.html',1,'']]],
+  ['metainfowindow_22',['MetaInfoWindow',['../classMetaInfoWindow.html',1,'']]],
+  ['metamessages_23',['MetaMessages',['../structMetaMessages.html',1,'']]],
+  ['modemapping_24',['ModeMapping',['../structWallPaperEngine_1_1ModeMapping.html',1,'WallPaperEngine']]],
+  ['moderncalendarwidget_25',['ModernCalendarWidget',['../classModernCalendarWidget.html',1,'']]]
 ];

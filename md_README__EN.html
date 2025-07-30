@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('md_README__EN.html',''); initResizable
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="autotoc_md20"></a> <img src="./CCIMXDesktopLogo.png" alt="CCIMXDesktopLogo" class="inline"/></p>
-<p><img src="https://img.shields.io/badge/Qt-6.8.3-green" alt="Qt" class="inline"/><img src="https://img.shields.io/badge/OpenCV-4.12.0-blue" alt="OpenCV" class="inline"/><img src="https://img.shields.io/badge/MuPDF-supported-orange" alt="MuPDF" class="inline"/><img src="https://img.shields.io/badge/C++-17-green" alt="Qt" class="inline"/><img src="https://img.shields.io/badge/Version-Released_2.0.1-red" alt="Version" class="inline"/></p>
+<p><img src="https://img.shields.io/badge/Qt-6.8.3-green" alt="Qt" class="inline"/><img src="https://img.shields.io/badge/OpenCV-4.12.0-blue" alt="OpenCV" class="inline"/><img src="https://img.shields.io/badge/MuPDF-supported-orange" alt="MuPDF" class="inline"/><img src="https://img.shields.io/badge/C++-17-green" alt="Qt" class="inline"/><img src="https://img.shields.io/badge/Version-Released_2.1.0-red" alt="Version" class="inline"/></p>
 <p>🔌 Hello! This is a collection of simple desktops and utilities that can be used in embedded devices with IMX6ULL LCD screens! This project can now be compiled with full C++17!</p>
 <h1><a class="anchor" id="autotoc_md21"></a>
 🌐 Before you begin, choose your language! 🌐</h1>
@@ -181,38 +181,40 @@ Project includes</h3>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">🎨 SimpleDrawer (Drawing)   </td><td class="markdownTableBodyNone">Standard minimum dependencies   </td><td class="markdownTableBodyNone">Yes   </td><td class="markdownTableBodyNone">Super lightweight drawing, similar to Windows' "Paint"   </td><td class="markdownTableBodyNone"><img src="./README/image-20250614232836661.png" alt="image-20250614232836661" class="inline"/>    </td></tr>
 <tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">💬 Chat room   </td><td class="markdownTableBodyNone">Standard minimum dependencies   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">similar to QQ, P2P communication, can be used to communicate with the outside world   </td><td class="markdownTableBodyNone"><img src="./README/image-20250730175048704.png" alt="CCIMXCommunicator" class="inline"/>    </td></tr>
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">☀️ WeatherAPP (weather application)   </td><td class="markdownTableBodyNone">The device needs to have Internet access (network connection)   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">Get the weather forecast for the city. The API currently used is Mind Weather's   </td><td class="markdownTableBodyNone"><img src="./README/image-20250614232722896.png" alt="image-20250614232722896" class="inline"/>    </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">📄 pdfReader (PDF reader)   </td><td class="markdownTableBodyNone">MuPDF dependency library   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">The most basic PDF browser, supporting chapter jump and viewing functions   </td><td class="markdownTableBodyNone"><img src="./README/image-20250614232706288.png" alt="image-20250614232706288" class="inline"/>    </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">📁 FileRamber (file browser)   </td><td class="markdownTableBodyNone">Standard minimum dependency   </td><td class="markdownTableBodyNone">Yes   </td><td class="markdownTableBodyNone">File management basics (file browser, with basic file navigation, Tiny version of Windows Explorer.exe)   </td><td class="markdownTableBodyNone"><img src="./README/image-20250614232241212.png" alt="image-20250614232241212" class="inline"/>    </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">📷 GeneralLocalCamera (camera)   </td><td class="markdownTableBodyNone">OpenCV support required   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">Can take pictures   </td><td class="markdownTableBodyNone"><img src="./README/image-20250614232213554.png" alt="image-20250614232213554" class="inline"/>    </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">📊 SystemState (system status view)   </td><td class="markdownTableBodyNone">Standard minimum dependency   </td><td class="markdownTableBodyNone">Yes   </td><td class="markdownTableBodyNone">View the CPU status, memory capacity status and process list of the running machine   </td><td class="markdownTableBodyNone"><img src="./README/image-20250614232050420.png" alt="image-20250614232050420" class="inline"/>    </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">🎵 <a class="el" href="classMediaPlayer.html" title="MediaPlayer is the wrapper of VideoPlayer and AudioPlayer, with the sync of video and audio basically...">MediaPlayer</a> (audio and video player)   </td><td class="markdownTableBodyNone">QMediaPlayer supports ALSA or other audio, and video requires OpenCV support   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">NetEase Cloud style audio and video player, which can play both audio and video, and displays the NetEase Cloud style interface when playing audio!   </td><td class="markdownTableBodyNone"><img src="./README/image-20250614232017544.png" alt="image-20250614232017544" class="inline"/>    </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">💡 <a class="el" href="classLEDController.html" title="High-level controller interface for controlling LEDs, abstracting real or pseudo backends.">LEDController</a> App (light control)   </td><td class="markdownTableBodyNone">Platform LED driver   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">Hardware support required (light switch APP, Platform LED driver needs to be enabled)   </td><td class="markdownTableBodyNone"><img src="./README/image-20250614231942332.png" alt="image-20250614231942332" class="inline"/>    </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">🌡️ Environment App (environmental monitoring)   </td><td class="markdownTableBodyNone">AP3216C sensor driver   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">Hardware support required (AP3216C driver needs to be mounted and driven normally)   </td><td class="markdownTableBodyNone"><img src="./README/image-20250614232559945.png" alt="image-20250614232559945" class="inline"/>    </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">🏃 SportHealth App (Sports Health)   </td><td class="markdownTableBodyNone"><a class="el" href="classICM20608.html" title="Interface for ICM20608 inertial measurement unit (IMU) sensor.">ICM20608</a> driver   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">Hardware support required (<a class="el" href="classICM20608.html" title="Interface for ICM20608 inertial measurement unit (IMU) sensor.">ICM20608</a> driver needs to be mounted and driven normally)   </td><td class="markdownTableBodyNone"><img src="./README/image-20250614232631305.png" alt="image-20250614232631305" class="inline"/>    </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">🖼️ ImageWalker (Image Browser)   </td><td class="markdownTableBodyNone">Standard minimum dependency   </td><td class="markdownTableBodyNone">Yes   </td><td class="markdownTableBodyNone">The most basic image information browser, equivalent to the Windows image browser for the poor version   </td><td class="markdownTableBodyNone"><img src="./README/image-20250614232520438.png" alt="image-20250614232520438" class="inline"/>    </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">✏️ Markdown Reader   </td><td class="markdownTableBodyNone">Standard minimum dependency   </td><td class="markdownTableBodyNone">Yes   </td><td class="markdownTableBodyNone">Lightweight Markdown editing and preview (the most basic Markdown editing + preview function, supporting drafts / Load and save Markdown and basic shortcut functions)   </td><td class="markdownTableBodyNone"><img src="./README/image-20250614232450028.png" alt="image-20250614232450028" class="inline"/>    </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">🛜 CCNetHelper (network tool)   </td><td class="markdownTableBodyNone">Requires the network card to have network connection capability (network card driver is normal)   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">Supports network card information viewing, IP port scanning and basic test IP connection capability   </td><td class="markdownTableBodyNone"><img src="./README/image-20250614231832285.png" alt="image-20250614231832285" class="inline"/>    </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">🦖 <a class="el" href="classDinasour.html" title="The Dinasour Object handle.">Dinasour</a> Game (mini game)   </td><td class="markdownTableBodyNone">Standard minimum dependency   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">Yes, it is the Google <a class="el" href="classDinasour.html" title="The Dinasour Object handle.">Dinasour</a> Game, the version implemented with Qt6 Widgets :)   </td><td class="markdownTableBodyNone"><img src="./README/image-20250614231727977.png" alt="image-20250614231727977" class="inline"/>    </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">🧮 Calculator (Calculator)   </td><td class="markdownTableBodyNone">Standard minimum dependencies   </td><td class="markdownTableBodyNone">Yes   </td><td class="markdownTableBodyNone">Basic tools (standard calculator)   </td><td class="markdownTableBodyNone"><img src="./README/image-20250614231703148.png" alt="image-20250614231703148" class="inline"/>    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">🤖 ImageProcessor (Image processing and reasoning)   </td><td class="markdownTableBodyNone">OpenCV, reasoning library (if any)   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">OpenCV support and reasoning support are required   </td><td class="markdownTableBodyNone"><img src="./README/image-20250614232427874.png" alt="image-20250614232427874" class="inline"/>    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">⚙ Settings (Settings interface)   </td><td class="markdownTableBodyNone">Standard minimum dependencies   </td><td class="markdownTableBodyNone">Yes   </td><td class="markdownTableBodyNone">Desktop wallpaper, brightness and desktop application style settings   </td><td class="markdownTableBodyNone"><img src="./README/image-20250614232323164.png" alt="image-20250614232323164" class="inline"/>    </td></tr>
+<td class="markdownTableBodyNone">🤖 ImageProcessor (Image processing and reasoning)   </td><td class="markdownTableBodyNone">OpenCV, reasoning library (if any)   </td><td class="markdownTableBodyNone">Optional   </td><td class="markdownTableBodyNone">OpenCV support and reasoning support are required   </td><td class="markdownTableBodyNone"><img src="./README/image-20250614232427874.png" alt="image-20250614232427874" class="inline"/>    </td></tr>
 <tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">⚙ Settings (Settings interface)   </td><td class="markdownTableBodyNone">Standard minimum dependencies   </td><td class="markdownTableBodyNone">Yes   </td><td class="markdownTableBodyNone">Desktop wallpaper, brightness and desktop application style settings   </td><td class="markdownTableBodyNone"><img src="./README/image-20250614232323164.png" alt="image-20250614232323164" class="inline"/>    </td></tr>
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">🚀 Dynamic Application Launcher   </td><td class="markdownTableBodyNone">Standard minimum dependencies   </td><td class="markdownTableBodyNone">Yes   </td><td class="markdownTableBodyNone">Third-party application operation and management   </td><td class="markdownTableBodyNone"><img src="./README/image-20250614232401883.png" alt="image-20250614232401883" class="inline"/>   </td></tr>
 </table>
 <hr  />
@@ -245,7 +247,6 @@ Project includes</h3>
 <h2><a class="anchor" id="autotoc_md36"></a>
 🚀 Plan to write and provide more external basic programs:</h2>
 <ul>
-<li>💬 Chat room (planned to be similar to QQ)</li>
 <li>⏰ Alarm clock APP</li>
 <li>🔌 Serial port assistant</li>
 <li>✅ Task list</li>

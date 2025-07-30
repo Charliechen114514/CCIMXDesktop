@@ -25,5 +25,6 @@ var searchData=
   ['userinfobuilder_22',['userinfobuilder',['../classUserInfo.html#abd897efc415c127cbacef861387fa0e4',1,'UserInfo::UserInfoBuilder'],['../classUserInfo_1_1UserInfoBuilder.html#a4b55df439f9a73d1a47645c9b1751d77',1,'UserInfo::UserInfoBuilder::UserInfoBuilder()'],['../classUserInfo_1_1UserInfoBuilder.html',1,'UserInfo::UserInfoBuilder']]],
   ['userinfocard_23',['userinfocard',['../classUserInfoCard.html#a1787703339bed1ea2278a5e5015c049c',1,'UserInfoCard::UserInfoCard()'],['../classUserInfoCard.html',1,'UserInfoCard']]],
   ['userinfocard_2eh_24',['UserInfoCard.h',['../UserInfoCard_8h.html',1,'']]],
-  ['username_25',['userName',['../structProcessBroswer_1_1ProcessInfo.html#a3bc2a82c21cbfa45ce2503dbe0213efc',1,'ProcessBroswer::ProcessInfo']]]
+  ['username_25',['userName',['../structProcessBroswer_1_1ProcessInfo.html#a3bc2a82c21cbfa45ce2503dbe0213efc',1,'ProcessBroswer::ProcessInfo']]],
+  ['uuid_26',['uuid',['../classPeerConnection.html#af1de228d16f9d1df2f519fb3c86bebb8',1,'PeerConnection']]]
 ];

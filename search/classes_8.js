@@ -15,10 +15,13 @@ var searchData=
   ['imageprocessingwidget_12',['ImageProcessingWidget',['../classImageProcessingWidget.html',1,'']]],
   ['imageprocessorwindow_13',['ImageProcessorWindow',['../classImageProcessorWindow.html',1,'']]],
   ['imageresultdisplayer_14',['ImageResultDisplayer',['../classImageResultDisplayer.html',1,'']]],
-  ['imagewalkerwindow_15',['ImageWalkerWindow',['../classImageWalkerWindow.html',1,'']]],
-  ['indicator_16',['Indicator',['../structCCPdfNavigationPolicy_1_1Indicator.html',1,'CCPdfNavigationPolicy']]],
-  ['informtoastlabel_17',['InformToastLabel',['../classInformToastLabel.html',1,'']]],
-  ['interfacesdisplaywidget_18',['InterfacesDisplayWidget',['../classInterfacesDisplayWidget.html',1,'']]],
-  ['interfacesquery_19',['InterfacesQuery',['../classInterfacesQuery.html',1,'']]],
-  ['invalidnumber_20',['InvalidNumber',['../classInvalidNumber.html',1,'']]]
+  ['imagesinker_15',['ImageSinker',['../classImageSinker.html',1,'']]],
+  ['imagewalkerwindow_16',['ImageWalkerWindow',['../classImageWalkerWindow.html',1,'']]],
+  ['indicator_17',['Indicator',['../structCCPdfNavigationPolicy_1_1Indicator.html',1,'CCPdfNavigationPolicy']]],
+  ['informtoastlabel_18',['InformToastLabel',['../classInformToastLabel.html',1,'']]],
+  ['infowidget_19',['InfoWidget',['../classInfoWidget.html',1,'']]],
+  ['interfacesdisplaywidget_20',['InterfacesDisplayWidget',['../classInterfacesDisplayWidget.html',1,'']]],
+  ['interfacesquery_21',['InterfacesQuery',['../classInterfacesQuery.html',1,'']]],
+  ['invalidnumber_22',['InvalidNumber',['../classInvalidNumber.html',1,'']]],
+  ['isinkerrouter_23',['ISinkerRouter',['../classISinkerRouter.html',1,'']]]
 ];

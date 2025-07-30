@@ -40,5 +40,6 @@ var searchData=
   ['autoswitchability_37',['autoSwitchAbility',['../classCardStackWidget.html#a5915fc10d963fe4b0d6addd639a492a2',1,'CardStackWidget']]],
   ['autoupdateszrandomly_38',['autoupdateszrandomly',['../classBirdObsticals.html#aa81415212ed54e0df32ecec75b5ccf8f',1,'BirdObsticals::autoUpdateSzRandomly()'],['../classCactusObsticals.html#a95e167fd879c6cc347434c05a8780032',1,'CactusObsticals::autoUpdateSzRandomly()']]],
   ['availablebackends_39',['availableBackends',['../classCCIMXDesktopLoggerCenter.html#a10cb8af64a47945013d13ef9d21a50db',1,'CCIMXDesktopLoggerCenter']]],
-  ['availabletargetbackendonly_40',['availableTargetBackendOnly',['../classCCIMXDesktopLoggerCenter.html#af2e216487840c568c2e381f369c760e9',1,'CCIMXDesktopLoggerCenter']]]
+  ['availableselflisten_40',['availableSelfListen',['../classPeerConnection.html#a2cd9f449530e606ba1de93fe1f842e10',1,'PeerConnection']]],
+  ['availabletargetbackendonly_41',['availableTargetBackendOnly',['../classCCIMXDesktopLoggerCenter.html#af2e216487840c568c2e381f369c760e9',1,'CCIMXDesktopLoggerCenter']]]
 ];

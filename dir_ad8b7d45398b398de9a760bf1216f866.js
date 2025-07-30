@@ -1,5 +1,6 @@
 var dir_ad8b7d45398b398de9a760bf1216f866 =
 [
+    [ "CCommunicator", "dir_64b13cc854c79971390c8a1d24892bb8.html", "dir_64b13cc854c79971390c8a1d24892bb8" ],
     [ "EasyNotes", "dir_518ff7410e6e6f1997b3a86c9f65dcbb.html", "dir_518ff7410e6e6f1997b3a86c9f65dcbb" ],
     [ "FileRamber", "dir_b216ea465f83aac1637673576671a724.html", "dir_b216ea465f83aac1637673576671a724" ],
     [ "games", "dir_8de909d318bc2317461fb9fdaf794f09.html", "dir_8de909d318bc2317461fb9fdaf794f09" ],

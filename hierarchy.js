@@ -48,6 +48,7 @@ var hierarchy =
     ] ],
     [ "CVImageImplFactory", "classCVImageImplFactory.html", null ],
     [ "AppWeatherResult::DailyWeather", "structAppWeatherResult_1_1DailyWeather.html", null ],
+    [ "DataHeaderUtils::DataHeader", "structDataHeaderUtils_1_1DataHeader.html", null ],
     [ "DesktopLoggerBackends", "structDesktopLoggerBackends.html", [
       [ "ConsoleLogger", "classConsoleLogger.html", null ]
     ] ],
@@ -74,6 +75,7 @@ var hierarchy =
     [ "g_acc", "structg__acc.html", null ],
     [ "GroundLineProviders::GroundLine", "structGroundLineProviders_1_1GroundLine.html", null ],
     [ "GroundLineProviders", "classGroundLineProviders.html", null ],
+    [ "HistoryContainers", "classHistoryContainers.html", null ],
     [ "HomeCardManager", "classHomeCardManager.html", null ],
     [ "ICM20608", "classICM20608.html", null ],
     [ "ICM20608AppData", "structICM20608AppData.html", null ],
@@ -93,6 +95,9 @@ var hierarchy =
       [ "GrayProcessor", "classGrayProcessor.html", null ]
     ] ],
     [ "CCPdfNavigationPolicy::Indicator", "structCCPdfNavigationPolicy_1_1Indicator.html", null ],
+    [ "ISinkerRouter", "classISinkerRouter.html", [
+      [ "DataSinkerRouter", "classDataSinkerRouter.html", null ]
+    ] ],
     [ "LabelStyler", "classLabelStyler.html", null ],
     [ "LabelStyleReader", "classLabelStyleReader.html", null ],
     [ "LEDController", "classLEDController.html", null ],
@@ -100,6 +105,7 @@ var hierarchy =
       [ "LEDParamsPackageBlink", "classLEDParamsPackageBlink.html", null ],
       [ "LEDParamsPackagePlain", "classLEDParamsPackagePlain.html", null ]
     ] ],
+    [ "ListContextInfo", "classListContextInfo.html", null ],
     [ "LocalWeatherLightFetcher", "structLocalWeatherLightFetcher.html", [
       [ "LocalFetcher", "structLocalFetcher.html", null ],
       [ "PesudoLocalFetcher", "structPesudoLocalFetcher.html", null ]
@@ -116,6 +122,7 @@ var hierarchy =
     [ "MemoryInfoFetcher::MemoryStat", "structMemoryInfoFetcher_1_1MemoryStat.html", null ],
     [ "MemoryState::MemState", "structMemoryState_1_1MemState.html", null ],
     [ "DiskUsage::MetaInfo", "structDiskUsage_1_1MetaInfo.html", null ],
+    [ "MetaMessages", "structMetaMessages.html", null ],
     [ "WallPaperEngine::ModeMapping", "structWallPaperEngine_1_1ModeMapping.html", null ],
     [ "NoteInfo", "structNoteInfo.html", null ],
     [ "Noter", "classNoter.html", null ],
@@ -124,6 +131,7 @@ var hierarchy =
     [ "ToolsStackedWidget::PagePackage", "structToolsStackedWidget_1_1PagePackage.html", null ],
     [ "PageSetuper::PageSetupSessionRequest", "structPageSetuper_1_1PageSetupSessionRequest.html", null ],
     [ "Parser", "classParser.html", null ],
+    [ "PeerInfo", "structPeerInfo.html", null ],
     [ "PesudoAP3216C", "classPesudoAP3216C.html", null ],
     [ "PesudoICM20608", "classPesudoICM20608.html", null ],
     [ "PesudoLedController", "classPesudoLedController.html", null ],
@@ -152,6 +160,7 @@ var hierarchy =
       [ "CaculatorMainWindow", "classCaculatorMainWindow.html", null ],
       [ "CalendarWindow", "classCalendarWindow.html", null ],
       [ "CameraWindow", "classCameraWindow.html", null ],
+      [ "CommunicateMainWindow", "classCommunicateMainWindow.html", null ],
       [ "DesktopMainWindow", "classDesktopMainWindow.html", null ],
       [ "DinasourGameWindow", "classDinasourGameWindow.html", null ],
       [ "DrawerWindow", "classDrawerWindow.html", null ],
@@ -193,6 +202,14 @@ var hierarchy =
       [ "CPUStateFetcher", "classCPUStateFetcher.html", null ],
       [ "CameraCapture", "classCameraCapture.html", null ],
       [ "ConfigureUiPairs", "structConfigureUiPairs.html", null ],
+      [ "DataProtoTest", "classDataProtoTest.html", null ],
+      [ "DataProtocolizedController", "classDataProtocolizedController.html", null ],
+      [ "DataSinker", "classDataSinker.html", [
+        [ "FileSinker", "classFileSinker.html", null ],
+        [ "ImageSinker", "classImageSinker.html", null ],
+        [ "MemorySinker", "classMemorySinker.html", null ],
+        [ "MetaInfoSinker", "classMetaInfoSinker.html", null ]
+      ] ],
       [ "DesktopCardHook", "classDesktopCardHook.html", null ],
       [ "DesktopDirentLocationManager", "classDesktopDirentLocationManager.html", null ],
       [ "DesktopServerBase", "classDesktopServerBase.html", [
@@ -222,6 +239,7 @@ var hierarchy =
         ] ]
       ] ],
       [ "GlobalClockSources", "classGlobalClockSources.html", null ],
+      [ "HistoryManagerSchedular", "classHistoryManagerSchedular.html", null ],
       [ "IconEvent", "structIconEvent.html", [
         [ "NetStatusChangedEvent", "structNetStatusChangedEvent.html", null ]
       ] ],
@@ -230,13 +248,18 @@ var hierarchy =
       [ "MemoryInfoFetcher", "classMemoryInfoFetcher.html", null ],
       [ "NetAbilityScanner", "classNetAbilityScanner.html", null ],
       [ "ObstacleListManager", "classObstacleListManager.html", null ],
+      [ "PeerConnection", "classPeerConnection.html", null ],
       [ "ProcessBroswer", "classProcessBroswer.html", null ],
       [ "QueryCached", "classQueryCached.html", null ],
       [ "ScoreManager", "classScoreManager.html", null ],
+      [ "Session", "classSession.html", null ],
+      [ "SessionHub", "classSessionHub.html", null ],
       [ "SoundEffectPlayer", "classSoundEffectPlayer.html", null ],
       [ "StackpageSwitcherAnimation", "structStackpageSwitcherAnimation.html", null ],
       [ "StackpageSwitcherAnimation", "structStackpageSwitcherAnimation.html", null ],
       [ "StackpageSwitcherAnimation", "structStackpageSwitcherAnimation.html", null ],
+      [ "TestDataProtocolizedController", "classTestDataProtocolizedController.html", null ],
+      [ "TestDataSinker", "classTestDataSinker.html", null ],
       [ "ToastProxy", "classToastProxy.html", null ],
       [ "ToastReceiver", "classToastReceiver.html", null ],
       [ "VideoPlayer", "classVideoPlayer.html", null ],
@@ -264,7 +287,12 @@ var hierarchy =
     [ "QStackedWidget", null, [
       [ "CardStackWidget", "classCardStackWidget.html", null ]
     ] ],
+    [ "QStyledItemDelegate", null, [
+      [ "ConnectorDelegate", "classConnectorDelegate.html", null ],
+      [ "SessionDrawDelegate", "classSessionDrawDelegate.html", null ]
+    ] ],
     [ "QWidget", null, [
+      [ "AddPanel", "classAddPanel.html", null ],
       [ "AppCardWidget", "classAppCardWidget.html", [
         [ "LocalWeatherCard", "classLocalWeatherCard.html", null ],
         [ "NetCardGadget", "classNetCardGadget.html", null ]
@@ -280,9 +308,13 @@ var hierarchy =
       [ "CPUUsageChart", "classCPUUsageChart.html", null ],
       [ "CameraDisplayWidget", "classCameraDisplayWidget.html", null ],
       [ "CannyExample", "classCannyExample.html", null ],
+      [ "ChatBubble", "classChatBubble.html", null ],
+      [ "ChatListPanel", "classChatListPanel.html", null ],
+      [ "ChatMainPanel", "classChatMainPanel.html", null ],
       [ "ClockWidget", "classClockWidget.html", null ],
       [ "ColorPicker", "classColorPicker.html", null ],
       [ "ColorSelectWidget", "classColorSelectWidget.html", null ],
+      [ "ConnectorsWidget", "classConnectorsWidget.html", null ],
       [ "ContoursQueryExample", "classContoursQueryExample.html", null ],
       [ "DateIcon", "classDateIcon.html", null ],
       [ "DateShowCard", "classDateShowCard.html", null ],
@@ -307,6 +339,7 @@ var hierarchy =
       [ "ImageListViewer", "classImageListViewer.html", null ],
       [ "ImageProcessingWidget", "classImageProcessingWidget.html", null ],
       [ "ImageResultDisplayer", "classImageResultDisplayer.html", null ],
+      [ "InfoWidget", "classInfoWidget.html", null ],
       [ "InformToastLabel", "classInformToastLabel.html", null ],
       [ "InterfacesDisplayWidget", "classInterfacesDisplayWidget.html", null ],
       [ "LeftSideBar", "classLeftSideBar.html", null ],
@@ -324,6 +357,7 @@ var hierarchy =
       [ "Scanner", "classScanner.html", null ],
       [ "ScrollingLabel", "classScrollingLabel.html", null ],
       [ "SequenciedSettingsWidget", "classSequenciedSettingsWidget.html", null ],
+      [ "SettingsWidget", "classSettingsWidget.html", null ],
       [ "SideBarWidget", "classSideBarWidget.html", null ],
       [ "SideBarWidget", "classSideBarWidget.html", null ],
       [ "SideBarWidget", "classSideBarWidget.html", null ],
@@ -342,6 +376,7 @@ var hierarchy =
       [ "TimeLabelSettings", "classTimeLabelSettings.html", null ],
       [ "ToolBoxs", "classToolBoxs.html", null ],
       [ "ToolLeftWidgets", "classToolLeftWidgets.html", null ],
+      [ "ToolPanel", "classToolPanel.html", null ],
       [ "ToolsSideBar", "classToolsSideBar.html", null ],
       [ "ToolsStackedWidget", "classToolsStackedWidget.html", null ],
       [ "TopSideBarWidget", "classTopSideBarWidget.html", null ],
@@ -359,12 +394,15 @@ var hierarchy =
       [ "DivideZeroException", "classDivideZeroException.html", null ],
       [ "GeneralParseError", "classGeneralParseError.html", null ],
       [ "InvalidNumber", "classInvalidNumber.html", null ],
+      [ "SessionError::NameInvalid", "classSessionError_1_1NameInvalid.html", null ],
       [ "SimpleTools::FailedReadFile", "classSimpleTools_1_1FailedReadFile.html", null ],
       [ "UnSupportedSymbol", "classUnSupportedSymbol.html", null ],
       [ "UnSupportiveFunction", "classUnSupportiveFunction.html", null ],
       [ "UnSymmetryExpression", "classUnSymmetryExpression.html", null ]
     ] ],
     [ "SceneDrawer", "classSceneDrawer.html", null ],
+    [ "SelfInfo", "structSelfInfo.html", null ],
+    [ "SessionInfo", "classSessionInfo.html", null ],
     [ "ValueLimitUtils::StaticLimiter< MIN, MAX >", "classValueLimitUtils_1_1StaticLimiter.html", null ],
     [ "Settings::SZ< value >", "structSettings_1_1SZ.html", null ],
     [ "TemperaryCacher", "classTemperaryCacher.html", null ],

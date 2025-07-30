@@ -12,10 +12,11 @@ var searchData=
   ['linuxplatformcpustatedriver_9',['LinuxPlatformCPUStateDriver',['../classLinuxPlatformCPUStateDriver.html',1,'']]],
   ['linuxplatformmemoryinfodriver_10',['LinuxPlatformMemoryInfoDriver',['../classLinuxPlatformMemoryInfoDriver.html',1,'']]],
   ['linuxplatformprocessbrowserdriver_11',['LinuxPlatformProcessBrowserDriver',['../classLinuxPlatformProcessBrowserDriver.html',1,'']]],
-  ['localfetcher_12',['LocalFetcher',['../structLocalFetcher.html',1,'']]],
-  ['localweathercard_13',['LocalWeatherCard',['../classLocalWeatherCard.html',1,'']]],
-  ['localweatherlightfetcher_14',['LocalWeatherLightFetcher',['../structLocalWeatherLightFetcher.html',1,'']]],
-  ['locationdata_15',['LocationData',['../structLocationData.html',1,'']]],
-  ['logformatoptions_16',['LogFormatOptions',['../structStandardFormater_1_1LogFormatOptions.html',1,'StandardFormater']]],
-  ['loggerbaseconsumer_17',['LoggerBaseConsumer',['../classLoggerBaseConsumer.html',1,'']]]
+  ['listcontextinfo_12',['ListContextInfo',['../classListContextInfo.html',1,'']]],
+  ['localfetcher_13',['LocalFetcher',['../structLocalFetcher.html',1,'']]],
+  ['localweathercard_14',['LocalWeatherCard',['../classLocalWeatherCard.html',1,'']]],
+  ['localweatherlightfetcher_15',['LocalWeatherLightFetcher',['../structLocalWeatherLightFetcher.html',1,'']]],
+  ['locationdata_16',['LocationData',['../structLocationData.html',1,'']]],
+  ['logformatoptions_17',['LogFormatOptions',['../structStandardFormater_1_1LogFormatOptions.html',1,'StandardFormater']]],
+  ['loggerbaseconsumer_18',['LoggerBaseConsumer',['../classLoggerBaseConsumer.html',1,'']]]
 ];
