@@ -23,6 +23,7 @@
         <file>sources/settings.png</file>
         <file>sources/app_launcher.png</file>
         <file>sources/calendar.png</file>
+        <file>sources/communicator.png</file>
     </qresource>
     <qresource prefix="/toast">
         <file>sources/info.png</file>

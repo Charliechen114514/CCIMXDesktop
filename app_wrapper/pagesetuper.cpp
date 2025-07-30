@@ -198,6 +198,14 @@ QList<AppWidget*> PageSetuper::create_real_app(DesktopMainWindow* mainWindow) {
         "ImageProcessor",
         mainWindow));
 #endif
+    req.push_back(make_up_request(
+        _EXTERNAPP_INSTALL_DIR "/CCIMXCommunicate",
+        ":/icons/sources/communicator.png",
+        "CCommunicator",
+        mainWindow));
+#ifdef INCLUDE_CCOMMUNICATOR_APP
+
+#endif
     return PageSetuper::create_one_app_only_page_append(mainWindow, req, "realapp_page");
 }
 

@@ -61,9 +61,16 @@ add_compile_definitions(
     $<$<BOOL:${INCLUDE_MEDIAPLAYER_APP}>:INCLUDE_MEDIAPLAYER_APP>
     $<$<BOOL:${INCLUDE_NETHELPER_APP}>:INCLUDE_NETHELPER_APP>
     $<$<BOOL:${INCLUDE_EASYNOTE_APP}>:INCLUDE_EASYNOTE_APP>
+    $<$<BOOL:${INCLUDE_CCOMMUNICATOR_APP}>:INCLUDE_CCOMMUNICATOR_APP>
 )
+
+message(STATUS "----------------------------------------------------")
+message(STATUS "[CCIMXDesktop]: About to scan the extern apps builds")
 add_subdirectory(builtin/app)
+message(STATUS "----------------------------------------------------")
+message(STATUS "[CCIMXDesktop]: About to scan the extern apps builds")
 add_subdirectory(extern_app)
+message(STATUS "----------------------------------------------------")
 
 # As the configuration cmake included, configure the template desktop_settings_sessions
 configure_file(

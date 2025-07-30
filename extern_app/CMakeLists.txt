@@ -48,3 +48,8 @@ if(INCLUDE_GAME_APP)
     add_subdirectory(games)
 endif()
 
+if(INCLUDE_CCOMMUNICATOR_APP)
+    message(STATUS "Communicator Apps built due to INCLUDE_CCOMMUNICATOR_APP")
+    add_subdirectory(CCommunicator)
+endif()
+

@@ -2,7 +2,7 @@
 
 ![CCIMXDesktopLogo](./CCIMXDesktopLogo.png)
 
-![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-17-green)![Version](https://img.shields.io/badge/Version-Released_2.0.1-red)
+![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-17-green)![Version](https://img.shields.io/badge/Version-Released_2.1.0-red)
 
 🔌 Hello! This is a collection of simple desktops and utilities that can be used in embedded devices with IMX6ULL LCD screens! This project can now be compiled with full C++17!
 
@@ -110,6 +110,7 @@ Currently registered built-in card types 📦:
 | ✏️ CCNoter (Notepad) | Standard minimum dependencies | Yes | Super lightweight notepad | ![image-20250614231754881](./README/image-20250614231754881.png) |
 | 📅CCCalendar (Calendar APP) | Standard minimum dependencies | Yes | Super lightweight calendar APP | ![image-20250706142207503](./README/image-20250706142207503.png) |
 | 🎨 SimpleDrawer (Drawing) | Standard minimum dependencies | Yes | Super lightweight drawing, similar to Windows' "Paint" | ![image-20250614232836661](./README/image-20250614232836661.png) |
+| 💬 Chat room | Standard minimum dependencies | Optional | similar to QQ, P2P communication, can be used to communicate with the outside world | ![CCIMXCommunicator](./README/image-20250730175048704.png) |
 | ☀️ WeatherAPP (weather application) | The device needs to have Internet access (network connection) | Optional | Get the weather forecast for the city. The API currently used is Mind Weather's | ![image-20250614232722896](./README/image-20250614232722896.png) |
 | 📄 pdfReader (PDF reader) | MuPDF dependency library | Optional | The most basic PDF browser, supporting chapter jump and viewing functions | ![image-20250614232706288](./README/image-20250614232706288.png) |
 | 📁 FileRamber (file browser) | Standard minimum dependency | Yes | File management basics (file browser, with basic file navigation, Tiny version of Windows Explorer.exe) | ![image-20250614232241212](./README/image-20250614232241212.png) |
@@ -159,8 +160,6 @@ The document has been automatically deployed via GitHub Actions, visit: [CCIMXDe
 - Plan to add lock screen
 
 ### 🚀 Plan to write and provide more external basic programs:
-
-- 💬 Chat room (planned to be similar to QQ)
 
 - ⏰ Alarm clock APP
 - 🔌 Serial port assistant

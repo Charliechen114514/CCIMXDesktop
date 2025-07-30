@@ -2,6 +2,7 @@
 option(CCIMX_DESKTOP_DOCGEN_REQ "Options for whether generate the document, Now Doxygen required" ON)
 
 # Options for support
+option(INCLUDE_CCOMMUNICATOR_APP "Build the Communicator App" ON)
 option(INCLUDE_WEATHER_APP "Build the Weather App" ON)
 option(INCLUDE_PDF_BROWSER_APP "Build the PDF Browser App" ON)
 option(INCLUDE_CAMERA_APP "Build the Camera App" ON)
