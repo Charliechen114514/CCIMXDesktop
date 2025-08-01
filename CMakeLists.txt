@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.19)
-project(CCIMX_Desktop LANGUAGES CXX VERSION 2.0.1)
+project(CCIMX_Desktop LANGUAGES CXX VERSION 2.2.0)
 
 message(STATUS "Importing cmake modules...")
 set(CCDESKTOPABOUT_CMAKE_DIR "${CMAKE_SOURCE_DIR}/cmake")
@@ -19,6 +19,7 @@ set(TEMPLATE_FILE_NAME "CCIMXDesktopBuildConfigs")
 include(app_building_options)
 
 find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets Network)
+find_package(Qt6 REQUIRED COMPONENTS Core)
 qt_standard_project_setup()
 
 if(DEFINED LOCAL_CONFIG_FILE AND EXISTS "${LOCAL_CONFIG_FILE}")
@@ -290,6 +291,15 @@ qt_add_executable(CCIMX_Desktop
     ${CardsSrc}
     ${InternalServer}
     ${PluginAbstractSrc}
+    library/qt_relative/mouse_press_manager/MouseManager.h library/qt_relative/mouse_press_manager/MouseManager.cpp
+    library/qt_relative/mouse_press_manager/MouseProcessor.h library/qt_relative/mouse_press_manager/MouseProcessor.cpp
+    library/qt_relative/mouse_press_manager/MouseRecorder.h
+    library/qt_relative/auto_step_init/AutoStepIniter.h library/qt_relative/auto_step_init/AutoStepIniter.cpp
+    library/qt_relative/auto_step_init/AutoStepInitTask.h library/qt_relative/auto_step_init/AutoStepInitTask.cpp
+    ui/DesktopMainWindowInitHelper.h ui/DesktopMainWindowInitHelper.cpp
+    ui/fast_settings/FastSettingsWidget.h ui/fast_settings/FastSettingsWidget.cpp ui/fast_settings/FastSettingsWidget.ui
+    builtin/core/backlight/BackLightControllerSingleton.h builtin/core/backlight/BackLightControllerSingleton.cpp
+
 )
 
 add_custom_command(TARGET CCIMX_Desktop POST_BUILD
@@ -306,6 +316,7 @@ target_link_libraries(CCIMX_Desktop
 target_link_libraries(CCIMX_Desktop PRIVATE Qt6::Core)
 target_link_libraries(CCIMX_Desktop PRIVATE Qt6::Core)
 target_link_libraries(CCIMX_Desktop PRIVATE Qt6::Widgets)
+target_link_libraries(CCIMX_Desktop PRIVATE Qt6::Core)
 
 target_include_directories(CCIMX_Desktop
     PRIVATE

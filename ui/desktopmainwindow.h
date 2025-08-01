@@ -10,13 +10,12 @@ namespace Ui {
 class DesktopMainWindow;
 }
 QT_END_NAMESPACE
+
 class HomePage;
 class DesktopDirentLocationManager;
 class QGridLayout;
-class QLabel;
 class DesktopToast;
 class ApplicationWrapper;
-class QTimer;
 class QStackedWidget;
 class DownDockWidget;
 class AppCardWidget;
@@ -30,6 +29,9 @@ class TopSideBarWidget;
 class DesktopServerBase;
 class DesktopServerHookBase;
 class DesktopUserInfo;
+class FastSettingsWidget;
+class MouseManager;
+class CCIMX_DesktopSplashWindow;
 /**
  * @brief DesktopMainWindow is the main frontend window of the application.
  * For beginners, this is the starting point to understand the UI details.
@@ -40,6 +42,7 @@ class DesktopMainWindow : public QMainWindow {
 public:
     friend class PageFactory;
     friend class WallPaperEngine;
+    friend class DesktopMainWindowInitHelper;
 	/**
 	 * @brief Construct a new Desktop Main Window object
      *
@@ -58,7 +61,7 @@ public:
     /**
      * @brief init init the windows sessions
 	 */
-    void init();
+    void init(CCIMX_DesktopSplashWindow* splash);
 
     /**
      * @brief Show a toast message on the main window
@@ -201,11 +204,7 @@ private:
     QList<DesktopServerHookBase*> hooks; ///< server hooks;
     DesktopDirentLocationManager* locationManager; ///< locationManager
     DesktopUserInfo* user_info; ///< user info
-    struct {
-        QPoint press; ///< Mouse press position
-        QPoint release; ///< Mouse release position
-    } records; ///< Used for swipe gesture detection
-
+    std::shared_ptr<MouseManager> mouseManager; ///< managing mouse sessions
     QList<AppCardWidget*> app_cards; ///< List of application card widgets
     WallPaperEngine* wallpaper_engine; ///< wallpaper handler
     ApplicationLauncherMainWindow* appLauncherWindow; ///< windows for the application launch!
@@ -213,16 +212,13 @@ private:
     NetAbilityScanner* scanner; ///< scanner for the network sessions
     GlobalClockSources* clock; ///< clock src
     HomePage* homePage; ///< homePage
+    FastSettingsWidget* fastSettingsWidget; ///< fast settings widgets
     int slide_limitive; ///< slide limitives
+    int tool_settings_bar_slide_limitive; ///< for the settings of slide
     /**
-     * @brief Additional UI setup after ui->setupUi()
+     * @brief staic UI setup for ui->setupUi()
      */
-    void setupui();
-
-    /**
-     * @brief Setup default and internal applications
-     */
-    void setup_apps();
+    void setup_static_ui();
 
     /**
      * @brief Setup default dock widgets with pre-installed apps
@@ -242,15 +238,6 @@ private:
      * @brief initLogger init the logger level of early stage console
      */
     void initLogger();
-    /**
-     * @brief later_initLogger after post ui setups
-     */
-    void later_initLogger();
-
-    /**
-     * @brief setupBuiltInServer will deptach internal simple server
-     */
-    void setupBuiltInServer();
 
     /**
      * @brief get_user_info

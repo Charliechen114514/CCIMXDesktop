@@ -5,6 +5,7 @@
 
 class DesktopMainWindow;
 class QProgressBar;
+class QPropertyAnimation;
 
 /**
  * @brief The CCIMX_DesktopSplashWindow class
@@ -12,18 +13,18 @@ class QProgressBar;
  */
 class CCIMX_DesktopSplashWindow : public QSplashScreen {
 	Q_OBJECT
+    static constexpr const unsigned int CLOSE_DURATION = 500;
+
 public:
     /**
      * @brief CCIMX_DesktopSplashWindow
-     * @param holdingWindow
      */
-    explicit CCIMX_DesktopSplashWindow(
-        DesktopMainWindow* holdingWindow);
+    CCIMX_DesktopSplashWindow();
     /**
      * @brief close called when the init comes to the end
      */
     void close();
-private slots:
+public slots:
     /**
      * @brief handle_accessment handle the accessiments
      * @param message
@@ -38,10 +39,10 @@ protected:
      */
     void drawContents(QPainter* painter) override;
     QProgressBar* progressBar; ///< progress sessions
-
+    QPropertyAnimation* progressAnim = nullptr; ///< processing bars
 private:
     int progressValue; ///< processing value
-    DesktopMainWindow* holdingWindow; ///< holding window
+    QString currentMessage; ///< current displaying
 };
 
 #endif // CCIMX_DESKTOPSPLASHWINDOW_H

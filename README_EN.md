@@ -2,7 +2,7 @@
 
 ![CCIMXDesktopLogo](./CCIMXDesktopLogo.png)
 
-![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-17-green)![Version](https://img.shields.io/badge/Version-Released_2.1.0-red)
+![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-17-green)![Version](https://img.shields.io/badge/Version-Released_2.2.0-red)
 
 🔌 Hello! This is a collection of simple desktops and utilities that can be used in embedded devices with IMX6ULL LCD screens! This project can now be compiled with full C++17!
 
@@ -72,7 +72,6 @@ Tip: The full build takes about 10 minutes (16 threads). You can adjust it dynam
 ## What's here?
 
 Now, CCIMXDesktop supports one-click building including:
-(Note: the standard minimum dependencies are: TSLib for interaction 📝, QtCore 🔧 QtWidget 🖼️ QtGui 🎨 QtNetwork 🌐 basic support for the four-piece set)
 
 #### Desktop main body function 💻
 
@@ -91,6 +90,8 @@ Now, CCIMXDesktop supports one-click building including:
 
 - 👨 The most basic user information system
 
+- ⬇️ a quick setting channel for the drop-down menu (WIP: Add more functionalities like network status display)
+
 - 🗃️ Silky sliding card system ✨
 
 Currently registered built-in card types 📦:
@@ -101,7 +102,11 @@ Currently registered built-in card types 📦:
 - 💾 Memory information system
 - 👨Default user information card display
 
+Note that you can also register your inbuild card, documentations later release will attempt to show how to do this. 
+
 #### Project includes
+
+(Note: the standard minimum dependencies are: TSLib for interaction 📝, QtCore 🔧 QtWidget 🖼️ QtGui 🎨 QtNetwork 🌐 basic support for the four-piece set)
 
 | Function / Application Name | Dependency Conditions or Remarks | Is it a built-in program | Description | Interface Display |
 | ------------------------------------------------ | -------------------------------------------------- | -------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -153,7 +158,6 @@ The document has been automatically deployed via GitHub Actions, visit: [CCIMXDe
 
 ### 🚀 Planned optimization of the desktop body:
 
-- Added a quick setting channel for the drop-down menu (brightness adjustment, etc.)
 - Added a desktop refresh function for buttons (wait for the next version to update the button driver, press the button to force return to the HOME interface)
 - Developed a **to-do/reminder application** that is deeply integrated with the desktop. Supports displaying upcoming reminders in the status bar and important reminders on the lock screen. (The plug-in system already supports)
 - Enhanced the automatic reduction of brightness after a long period of no response and the brightness enhancement setting when clicking

@@ -5,48 +5,46 @@ class BacklightControllerImpl;
 
 /**
  * @brief backlighty controller
- * 
+ *
  */
 class BacklightController {
 public:
-    /**
-     * @brief Disable copy move
-     * 
-     */
-    Q_DISABLE_COPY_MOVE(BacklightController);
+    friend class BackLightControllerSingleton;
     /**
      * @brief Construct a new Backlight Controller object
-     * 
-     */
-	BacklightController();
-
+     * 	 */
+    BacklightController();
     /**
      * @brief max level light
-     * 
-     * @return int 
+     *
+     * @return int
      */
     int max_level();
     /**
      * @brief min level light
-     * 
-     * @return int 
+     *
+     * @return int
      */
     int min_level();
     /**
      * @brief Set the Light Level object
-     * 
-     * @param lightLevel 
+     *
+     * @param lightLevel
      */
     void setLightLevel(int lightLevel);
     /**
      * @brief get the light level
-     * 
-     * @return int 
+     *
+     * @return int
      */
     int lightLevel();
 
 private:
     BacklightControllerImpl* impl; ///< impl handle
+    /**
+     * @brief Disable copy move
+     * 	 */
+    Q_DISABLE_COPY_MOVE(BacklightController);
 };
 
 #endif // BACKLIGHTCONTROLLER_H

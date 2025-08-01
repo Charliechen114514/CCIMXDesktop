@@ -1,4 +1,5 @@
 #include "desktopmainwindow.h"
+#include "DesktopMainWindowInitHelper.h"
 #include "app_wrapper/applicationwrapper.h"
 #include "app_wrapper/pagesetuper.h"
 #include "builtin/core/global_clock_src/GlobalClockSources.h"
@@ -11,48 +12,22 @@
 #include "core/loggers/CCIMXDesktopLoggerCenter.h"
 #include "core/loggers/ConsoleLogger.h"
 #include "core/loggers/DesktopLoggerConvinients.h"
-#include "core/page_switching_limiter/PageSwitchingLimiter.h"
 #include "core/users/DesktopUserInfo.h"
 #include "core/wallpaper/WallPaperEngine.h"
 #include "desktop_settings.h"
+#include "library/qt_relative/mouse_press_manager/MouseManager.h"
 #include "ui/UiTools.h"
 #include "ui/appcardwidget.h"
 #include "ui/desktoptoast.h"
 #include "ui/stackpage_switcher_animation.h"
 #include "ui_desktopmainwindow.h"
+#include "ui/fast_settings/FastSettingsWidget.h"
 #include <QMouseEvent>
 #include <QTimer>
 void DesktopMainWindow::initLogger() {
     auto& logger_center = CCIMXDesktopLoggerCenter::global_instance();
     logger_center.registerBackend(new ConsoleLogger(ConsoleLogger::ConsoleFormatStyle::LoguruLike));
     Logger::postInfo("ConsoleLogger is Ready!");
-}
-
-void DesktopMainWindow::later_initLogger() {
-}
-
-#include "core/server/plugin_server/DesktopPluginServer.h"
-#include "core/server/server_hooks/DesktopCardHook.h"
-#include "core/server/toast_file_gen_and_receiver/ToastPostServer.h"
-void DesktopMainWindow::setupBuiltInServer() {
-    emit updateProgress("Launching the necessary servers", 90);
-    servers.emplaceBack(new ToastPostServer(
-        toast,
-        locationManager->queryFromType(
-            DesktopServerType::TOAST_SUMMON),
-        this));
-
-    DesktopWidgetPluginServer* pluginWidgetServer = new DesktopWidgetPluginServer(
-        locationManager->queryFromType(
-            DesktopServerType::PLUGIN_WIDGET_PLACED),
-        this);
-
-    servers.emplaceBack(pluginWidgetServer);
-
-    hooks.emplaceBack(
-        new DesktopCardHook(homePage->homeCardManager(),
-                            pluginWidgetServer));
-    pluginWidgetServer->scanTargetDirent();
 }
 
 DesktopUserInfo* DesktopMainWindow::get_user_info() {
@@ -65,61 +40,16 @@ DesktopMainWindow::DesktopMainWindow(QWidget* parent)
     initLogger();
 }
 
-void DesktopMainWindow::setupui() {
-    emit updateProgress("Setting up Desktop Static Ui", 10);
-    qInfo() << "Setting up Desktop Static Ui";
+void DesktopMainWindow::setup_static_ui() {
     ui->setupUi(this);
-    // scan
-    locationManager = new DesktopDirentLocationManager(_DESKTOP_ROOT_PATH);
-    // sources initing
-    emit updateProgress("Setting up Desktop Global Core Sources", 30);
-    scanner = new NetAbilityScanner(this);
-    clock = new GlobalClockSources(this);
-    emit updateProgress("Setting up Desktop basic components", 40);
-    // desktop basic components init
-    ui->downdock->set_parent_window(this);
-	toast = new DesktopToast(this);
-    wallpaper_engine = new WallPaperEngine(this);
-    appLauncherWindow = new ApplicationLauncherMainWindow(this);
-    /* settingsWindow will scan the window sessions so it must be like this */
-    ui->topsidewidgetbar->installHookedWindow(this);
-    emit updateProgress("Scanning the Settable Components", 50);
-    settingsWindow = new SettingsWindow(this);
-    user_info = new DesktopUserInfo(locationManager);
-    user_info->start_init();
-    slide_limitive = PageSwitchingLimiterParams::DEF_POSX;
 }
 
 DesktopMainWindow::~DesktopMainWindow() {
 	delete ui;
 }
 
-void DesktopMainWindow::init() {
-    setupui();
-    setup_apps();
-    later_initLogger();
-    setupBuiltInServer();
-}
-
-void DesktopMainWindow::setup_apps() {
-	/* Home Page */
-    emit updateProgress("Setup the Home Page", 50);
-    qDebug() << "Setup HomePage";
-    homePage = PageFactory::build_home_page(this);
-    qInfo() << "Home Page is Ready!";
-	PageSetuper::create_specified_page(ui->stackedWidget, homePage);
-    emit updateProgress("Creating Entries for the Builtin Apps", 55);
-    app_widgets << PageSetuper::create_builtin_apps(this);
-    qInfo() << "Bulitin Apps is Ready!";
-    emit updateProgress("Creating Entries for the Internal Apps", 60);
-    app_widgets << PageSetuper::create_internal_apps(this);
-    qInfo() << "Internal Apps is Ready!";
-    emit updateProgress("Creating Entries for the Third Party Apps", 65);
-	app_widgets << PageSetuper::create_real_app(this);
-    qInfo() << "Third Party Apps is Ready!";
-    emit updateProgress("Initing the DockWidgets", 70);
-    qInfo() << "Dock Widgets Inits OK!";
-	setup_default_dock();
+void DesktopMainWindow::init(CCIMX_DesktopSplashWindow* splash) {
+    DesktopMainWindowInitHelper::run_init_session(this, splash);
 }
 
 void DesktopMainWindow::setup_default_dock() {
@@ -233,20 +163,22 @@ DownDockWidget* DesktopMainWindow::downDockWidget() const {
 }
 
 void DesktopMainWindow::mousePressEvent(QMouseEvent* event) {
-	records.press = event->pos();
+    mouseManager->install_mousepoint(
+        event->pos(),
+        MouseManager::PointType::Press);
     event->accept();
 }
 
 void DesktopMainWindow::mouseReleaseEvent(QMouseEvent* event) {
-	records.release = event->pos();
-    const QPoint diff = records.press - records.release;
+    mouseManager->install_mousepoint(
+        event->pos(),
+        MouseManager::PointType::Release);
 
-    if (qAbs(diff.x()) < slide_limitive) {
+    if (!mouseManager->run_processor()) {
         event->ignore();
         return;
     }
-
-    diff.x() < 0 ? to_next_page() : to_prev_page();
+    qDebug() << "Ok, handled!";
     event->accept();
 }
 

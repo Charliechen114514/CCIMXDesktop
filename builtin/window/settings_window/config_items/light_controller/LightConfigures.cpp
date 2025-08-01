@@ -1,11 +1,12 @@
 #include "LightConfigures.h"
+#include "builtin/core/backlight/BackLightControllerSingleton.h"
 #include "builtin/core/backlight/BacklightController.h"
 #include "ui_LightConfigures.h"
 LightConfigures::LightConfigures(QWidget* parent)
     : QWidget(parent)
     , ui(new Ui::LightConfigures) {
     ui->setupUi(this);
-    controller = std::make_shared<BacklightController>();
+    controller = BackLightControllerSingleton::instance();
     setLightLevel(controller->lightLevel());
 
     ui->light_setterbar->setMaximum(controller->max_level());
@@ -13,15 +14,18 @@ LightConfigures::LightConfigures(QWidget* parent)
 
     connect(ui->light_setterbar, &QSlider::valueChanged,
             this, [this](int value) {
+                qInfo() << "set the light level at" << value;
                 setLightLevel(value);
             });
     connect(ui->btn_set_min, &QPushButton::clicked,
             this, [this]() {
+                qInfo() << "set the light level at min level";
                 setLightLevel(controller->min_level());
             });
 
     connect(ui->btn_set_max, &QPushButton::clicked,
             this, [this]() {
+                qInfo() << "set the light level at max level";
                 setLightLevel(controller->max_level());
             });
 

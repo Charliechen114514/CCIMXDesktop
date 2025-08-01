@@ -6,10 +6,10 @@ int main(int argc, char* argv[]) {
 	QApplication a(argc, argv);
 	/* this is the main entry mainwindow */
 	DesktopMainWindow w;
-    CCIMX_DesktopSplashWindow splash_window(&w);
+    CCIMX_DesktopSplashWindow splash_window;
     splash_window.show();
     a.processEvents();
-    w.init();
+    w.init(&splash_window);
     /* init the window sessions */
     splash_window.close();
     w.show();
