@@ -12,7 +12,7 @@ var searchData=
   ['last_5fidle_9',['last_idle',['../classCPUUsageChart.html#a40d01620757b49a86efb9ed120156624',1,'CPUUsageChart']]],
   ['last_5ftol_10',['last_tol',['../classCPUUsageChart.html#ae3a7fad1551601477ed3ae26b199fb72',1,'CPUUsageChart']]],
   ['latitude_11',['latitude',['../structLocationData.html#a77e2f0be49dc620c827f421f8dd0e2a1',1,'LocationData']]],
-  ['launch_5fgame_12',['launch_game',['../classEventManager.html#a423683d4091e7ead0bd42058b30869baa46750841cdc7e2c45bdab55ef1e22b1c',1,'EventManager::LAUNCH_GAME'],['../classDinasourGameMainWidget.html#a193ac67077ccc23215d71213b7d88eda',1,'DinasourGameMainWidget::launch_game()']]],
+  ['launch_5fgame_12',['launch_game',['../classDinasourGameMainWidget.html#a193ac67077ccc23215d71213b7d88eda',1,'DinasourGameMainWidget::launch_game()'],['../classEventManager.html#a423683d4091e7ead0bd42058b30869baa46750841cdc7e2c45bdab55ef1e22b1c',1,'EventManager::LAUNCH_GAME']]],
   ['lay_13',['lay',['../classDinasourFrameFetcher.html#abd9732a2fc7ec5c1389b3308eb920182a04c8d84fc9a3e62a03ca514d64a2f908',1,'DinasourFrameFetcher::LAY'],['../classEventManager.html#a423683d4091e7ead0bd42058b30869baa04c8d84fc9a3e62a03ca514d64a2f908',1,'EventManager::LAY']]],
   ['laying_14',['LAYING',['../classDinasour.html#a6acd086f24d8df165a14947f8c5b1ef4a1a19e1611f993e6bc404e2fbfbd5de69',1,'Dinasour']]],
   ['ledcontroller_15',['ledcontroller',['../classLEDController.html#aee3bdb63c97a7c22e9065eaab8c9ab6d',1,'LEDController::LEDController()'],['../classLEDController.html',1,'LEDController']]],

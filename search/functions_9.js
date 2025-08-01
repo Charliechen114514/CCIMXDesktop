@@ -31,7 +31,7 @@ var searchData=
   ['indication_28',['indication',['../classEventManager.html#a34fbb84264f448a152b44dd06853195a',1,'EventManager']]],
   ['infopack_29',['infoPack',['../classDinasourGameMainWidget.html#ad122a5db6a9223b18c19cc9dd8b6f1c3',1,'DinasourGameMainWidget']]],
   ['informtoastlabel_30',['InformToastLabel',['../classInformToastLabel.html#a9ec914d0b5cbb25cd6f3806a89b8e91c',1,'InformToastLabel']]],
-  ['init_31',['init',['../classDesktopMainWindow.html#aa965b705677bf5a95dabd575cd43f7e5',1,'DesktopMainWindow']]],
+  ['init_31',['init',['../classDesktopMainWindow.html#a9ec82d96d1a19a6acf4fc72c5106ddbf',1,'DesktopMainWindow']]],
   ['initgroundlines_32',['initGroundLines',['../classGroundLineProviders.html#a6f6ec8bf00092770fc7286649702595a',1,'GroundLineProviders']]],
   ['insertplugin_33',['insertPlugin',['../classDesktopWidgetPluginServer.html#a4be7942dcecff3a4a409c3483d9392cc',1,'DesktopWidgetPluginServer']]],
   ['install_5fargs_34',['install_args',['../classApplicationWrapper.html#a53d1462666f96dc21afb656dde0d0aa8',1,'ApplicationWrapper']]],

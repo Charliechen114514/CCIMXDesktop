@@ -34,7 +34,7 @@ var searchData=
   ['win32platformprocessbroswerdriver_31',['Win32PlatformProcessBroswerDriver',['../classWin32PlatformProcessBroswerDriver.html',1,'']]],
   ['winddirection_32',['winddirection',['../structWeatherData.html#a8095a0625e553ac98c511730ac240209',1,'WeatherData::winddirection'],['../structAppWeatherResult_1_1DailyWeather.html#a5be22399236c7e8590fea089e49a1026',1,'AppWeatherResult::DailyWeather::windDirection']]],
   ['window_5fsize_33',['window_size',['../structCVTools_1_1DisplayParams.html#aa1430ae3fd50b00f6eb573366e096795',1,'CVTools::DisplayParams']]],
-  ['windscale_34',['windscale',['../classWeatherChartWidget.html#ad917be16972dd0f90aa71df8d0e8e569ad74a32bbd6239ec868d96541f20419ff',1,'WeatherChartWidget::WINDSCALE'],['../structAppWeatherResult_1_1DailyWeather.html#a17265f6cc56388bf07f7bc433bd14d5e',1,'AppWeatherResult::DailyWeather::windScale']]],
+  ['windscale_34',['windscale',['../structAppWeatherResult_1_1DailyWeather.html#a17265f6cc56388bf07f7bc433bd14d5e',1,'AppWeatherResult::DailyWeather::windScale'],['../classWeatherChartWidget.html#ad917be16972dd0f90aa71df8d0e8e569ad74a32bbd6239ec868d96541f20419ff',1,'WeatherChartWidget::WINDSCALE']]],
   ['windspeed_35',['windspeed',['../structWeatherData.html#ace6204ac09c5c858ed06483c496b8108',1,'WeatherData']]],
   ['wip与计划_36',['💡 WIP与计划',['../md_README.html#autotoc_md14',1,'']]],
   ['wip_20and_20plans_37',['💡 WIP and Plans',['../md_README__EN.html#autotoc_md34',1,'']]],

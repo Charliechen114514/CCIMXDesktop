@@ -13,7 +13,7 @@ var searchData=
   ['cannyexample_10',['CannyExample',['../classCannyExample.html#a16848688524456cf7dacc795205d97ee',1,'CannyExample']]],
   ['cardstackwidget_11',['CardStackWidget',['../classCardStackWidget.html#a7fdfa2750c833429d8ac2018c5376c23',1,'CardStackWidget']]],
   ['cardtransitionmode_12',['cardTransitionMode',['../classCardStackWidget.html#af438f9038453d49553274db680e9f337',1,'CardStackWidget']]],
-  ['ccimx_5fdesktopsplashwindow_13',['CCIMX_DesktopSplashWindow',['../classCCIMX__DesktopSplashWindow.html#a2173ce40017ebc87243a98eed7c6add8',1,'CCIMX_DesktopSplashWindow']]],
+  ['ccimx_5fdesktopsplashwindow_13',['CCIMX_DesktopSplashWindow',['../classCCIMX__DesktopSplashWindow.html#a9d1203d27a930767deaa6f6177f5df01',1,'CCIMX_DesktopSplashWindow']]],
   ['ccimxfilesystemmodel_14',['CCIMXFileSystemModel',['../classCCIMXFileSystemModel.html#aaeb0c17207115bb4daa9a493fac17e23',1,'CCIMXFileSystemModel']]],
   ['ccmediaplaylist_15',['CCMediaPlayList',['../classCCMediaPlayList.html#a32b802259d0a81fa00edd6b4a0bc46d0',1,'CCMediaPlayList']]],
   ['ccnoterwindow_16',['CCNoterWindow',['../classCCNoterWindow.html#adc9c298a8c5b7747c8172705ffd483b4',1,'CCNoterWindow']]],

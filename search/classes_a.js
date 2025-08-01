@@ -25,5 +25,8 @@ var searchData=
   ['metainfowindow_22',['MetaInfoWindow',['../classMetaInfoWindow.html',1,'']]],
   ['metamessages_23',['MetaMessages',['../structMetaMessages.html',1,'']]],
   ['modemapping_24',['ModeMapping',['../structWallPaperEngine_1_1ModeMapping.html',1,'WallPaperEngine']]],
-  ['moderncalendarwidget_25',['ModernCalendarWidget',['../classModernCalendarWidget.html',1,'']]]
+  ['moderncalendarwidget_25',['ModernCalendarWidget',['../classModernCalendarWidget.html',1,'']]],
+  ['mousemanager_26',['MouseManager',['../classMouseManager.html',1,'']]],
+  ['mouseprocessor_27',['MouseProcessor',['../classMouseProcessor.html',1,'']]],
+  ['mouserecorder_28',['MouseRecorder',['../classMouseRecorder.html',1,'']]]
 ];

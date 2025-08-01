@@ -11,10 +11,12 @@ var hierarchy =
     [ "AP3216CData", "structAP3216CData.html", null ],
     [ "AppWeatherDetailedRequest", "structAppWeatherDetailedRequest.html", null ],
     [ "AppWidgetsSettingsInfoPack", "structAppWidgetsSettingsInfoPack.html", null ],
+    [ "AutoStepInitTask", "classAutoStepInitTask.html", null ],
     [ "BacklightController", "classBacklightController.html", null ],
     [ "BacklightControllerImpl", "classBacklightControllerImpl.html", [
       [ "PesudoLightController", "classPesudoLightController.html", null ]
     ] ],
+    [ "BackLightControllerSingleton", "classBackLightControllerSingleton.html", null ],
     [ "BaseWallPaperSettings", "structBaseWallPaperSettings.html", [
       [ "FixedTypeWallPaperSettings", "structFixedTypeWallPaperSettings.html", null ],
       [ "FlowTypeTypeWallPaperSettings", "structFlowTypeTypeWallPaperSettings.html", null ]
@@ -52,6 +54,7 @@ var hierarchy =
     [ "DesktopLoggerBackends", "structDesktopLoggerBackends.html", [
       [ "ConsoleLogger", "classConsoleLogger.html", null ]
     ] ],
+    [ "DesktopMainWindowInitHelper", "classDesktopMainWindowInitHelper.html", null ],
     [ "DesktopPluginWidgetBase", "structDesktopPluginWidgetBase.html", [
       [ "WeatherCard_Plugins", "classWeatherCard__Plugins.html", null ]
     ] ],
@@ -124,6 +127,9 @@ var hierarchy =
     [ "DiskUsage::MetaInfo", "structDiskUsage_1_1MetaInfo.html", null ],
     [ "MetaMessages", "structMetaMessages.html", null ],
     [ "WallPaperEngine::ModeMapping", "structWallPaperEngine_1_1ModeMapping.html", null ],
+    [ "MouseManager", "classMouseManager.html", null ],
+    [ "MouseProcessor", "classMouseProcessor.html", null ],
+    [ "MouseRecorder", "classMouseRecorder.html", null ],
     [ "NoteInfo", "structNoteInfo.html", null ],
     [ "Noter", "classNoter.html", null ],
     [ "NoteCreatorWindow::Package", "structNoteCreatorWindow_1_1Package.html", null ],
@@ -195,6 +201,7 @@ var hierarchy =
         [ "AppLaunchLauncher", "classAppLaunchLauncher.html", null ],
         [ "SettingsLaunch", "classSettingsLaunch.html", null ]
       ] ],
+      [ "AutoStepIniter", "classAutoStepIniter.html", null ],
       [ "BoundSliderFactory< default_value, min, max >", "classBoundSliderFactory.html", null ],
       [ "CCMediaPlayList", "classCCMediaPlayList.html", null ],
       [ "CCPdfChapterCreator", "classCCPdfChapterCreator.html", null ],
@@ -328,6 +335,7 @@ var hierarchy =
       [ "DiskUsageCardWidget", "classDiskUsageCardWidget.html", null ],
       [ "DownDockWidget", "classDownDockWidget.html", null ],
       [ "FaceDetectionExample", "classFaceDetectionExample.html", null ],
+      [ "FastSettingsWidget", "classFastSettingsWidget.html", null ],
       [ "FileInfoDisplayWidget", "classFileInfoDisplayWidget.html", null ],
       [ "FixedOptionWidget", "classFixedOptionWidget.html", null ],
       [ "GaugeWidget", "classGaugeWidget.html", null ],

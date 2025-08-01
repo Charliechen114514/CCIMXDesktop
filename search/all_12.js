@@ -24,7 +24,7 @@ var searchData=
   ['registercolorpairs_21',['registerColorPairs',['../classFileNameProviders.html#ad649d1ca2c8291733510803220b61b5d',1,'FileNameProviders']]],
   ['reinstalls_22',['reinstalls',['../classSequenciedSettingsWidget.html#ab4a03f4f5f7b91dc88d8af6cdadf8f6e',1,'SequenciedSettingsWidget']]],
   ['relax_23',['RELAX',['../classEventManager.html#a4d6495ae514367edefb7fdf64cd72497a78e9f9db6910deab5907b24d0cf03705',1,'EventManager']]],
-  ['release_24',['release',['../classDesktopMainWindow.html#a84eecc2fcabddb1424455ccf9cc56929',1,'DesktopMainWindow']]],
+  ['release_24',['release',['../classMouseRecorder.html#a6a80cc9ba89033080de94c32bdeefd6e',1,'MouseRecorder']]],
   ['release_5findication_25',['release_indication',['../classEventManager.html#afd4fad37a94dc0c5da6c7e0bbf073b21',1,'EventManager']]],
   ['remove_5ffrom_5fname_26',['remove_from_name',['../classImageBrowser.html#ae7566f4d448e2c3b6db6c66f6141e2b3',1,'ImageBrowser']]],
   ['remove_5flabel_27',['remove_label',['../classTemperaryCacher.html#abea456ba279385daa9e8a4d24d1d8dbf',1,'TemperaryCacher']]],

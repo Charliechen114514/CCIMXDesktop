@@ -17,5 +17,7 @@ var searchData=
   ['appweatherresult_14',['AppWeatherResult',['../classAppWeatherResult.html',1,'']]],
   ['appwidget_15',['AppWidget',['../classAppWidget.html',1,'']]],
   ['appwidgetconfigures_16',['AppWidgetConfigures',['../classAppWidgetConfigures.html',1,'']]],
-  ['appwidgetssettingsinfopack_17',['AppWidgetsSettingsInfoPack',['../structAppWidgetsSettingsInfoPack.html',1,'']]]
+  ['appwidgetssettingsinfopack_17',['AppWidgetsSettingsInfoPack',['../structAppWidgetsSettingsInfoPack.html',1,'']]],
+  ['autostepiniter_18',['AutoStepIniter',['../classAutoStepIniter.html',1,'']]],
+  ['autostepinittask_19',['AutoStepInitTask',['../classAutoStepInitTask.html',1,'']]]
 ];
