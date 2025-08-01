@@ -2,7 +2,7 @@
 
 ![CCIMXDesktopLogo](./CCIMXDesktopLogo.png)
 
-![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-17-green)![Version](https://img.shields.io/badge/Version-Released_2.2.0-red)
+![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-17-green)![Version](https://img.shields.io/badge/Version-Released_2.2.1-red)
 
 🔌 Hello! This is a collection of simple desktops and utilities that can be used in embedded devices with IMX6ULL LCD screens! This project can now be compiled with full C++17!
 
@@ -28,7 +28,7 @@ The project supports running on Windows, Linux host computers and ARM-Linux with
 
 1) Screen when starting loading (screenshot version: Release 2.0.0)
 
-![image-20250722092731425](./README/image-20250722092731425.png)
+![image-20250801101452056](./README/image-20250801101452056.png)
 
 2) Main interface: HOME interface (screenshot version: Release1.15.0)
 
@@ -102,7 +102,7 @@ Currently registered built-in card types 📦:
 - 💾 Memory information system
 - 👨Default user information card display
 
-Note that you can also register your inbuild card, documentations later release will attempt to show how to do this. 
+Note that you can also register your inbuild card, Please refer to [How to build your own cards and insert them dynamically? ](Documentations/HOW_To_Add_Plugins_In_Desktop.md)
 
 #### Project includes
 

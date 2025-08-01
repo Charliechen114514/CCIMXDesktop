@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.19)
-project(CCIMX_Desktop LANGUAGES CXX VERSION 2.2.0)
+project(CCIMX_Desktop LANGUAGES CXX VERSION 2.2.1)
 
 message(STATUS "Importing cmake modules...")
 set(CCDESKTOPABOUT_CMAKE_DIR "${CMAKE_SOURCE_DIR}/cmake")
@@ -92,6 +92,11 @@ set(AppWrapper
     app_wrapper/pagesetuper.h app_wrapper/pagesetuper.cpp)
 
 set(UiSubs
+    ui/DesktopMainWindowInitHelper.h
+    ui/DesktopMainWindowInitHelper.cpp
+    ui/fast_settings/FastSettingsWidget.h
+    ui/fast_settings/FastSettingsWidget.cpp
+    ui/fast_settings/FastSettingsWidget.ui
     ui/UiTools.h ui/UiTools.cpp
     ui/appwidget.h ui/appwidget.cpp ui/appwidget.ui
     ui/stackpage_switcher_animation.h
@@ -111,6 +116,7 @@ set(UiSubs
     ui/inform_toast_label/InformToastLabel.h
     ui/inform_toast_label/InformToastLabel.cpp
     ui/inform_toast_label/InformToastLabel.ui
+
 )
 
 set(CoreSubs
@@ -155,7 +161,9 @@ set(BONUS_APPCARD
     builtin/gadgets/larger_card/system_state/MemoryUsageCard.ui
 )
 
-set(BUILT_IN_ICM20608_Support
+set(BUILTIN_DRIVER_ADAPTER_SRC
+    builtin/core/backlight/BackLightControllerSingleton.h
+    builtin/core/backlight/BackLightControllerSingleton.cpp
     builtin/core/icm20608/icm20608_adapter.h
     builtin/core/icm20608/icm20608_adapter.cpp
     builtin/core/icm20608/icm20608.h)
@@ -223,6 +231,11 @@ set(LIBRARY_SRC
     library/fileio/FileIOUtils.h
     library/fileio/FileIOUtils.cpp
     library/FileDefs.h
+    library/qt_relative/mouse_press_manager/MouseManager.h library/qt_relative/mouse_press_manager/MouseManager.cpp
+    library/qt_relative/mouse_press_manager/MouseProcessor.h library/qt_relative/mouse_press_manager/MouseProcessor.cpp
+    library/qt_relative/mouse_press_manager/MouseRecorder.h
+    library/qt_relative/auto_step_init/AutoStepIniter.h library/qt_relative/auto_step_init/AutoStepIniter.cpp
+    library/qt_relative/auto_step_init/AutoStepInitTask.h library/qt_relative/auto_step_init/AutoStepInitTask.cpp
     library/qt_relative/fileio/QtFileIO.h
     library/qt_relative/fileio/QtFileIO.cpp
     library/qt_relative/file_monitor/FileMonitor.h
@@ -282,7 +295,7 @@ qt_add_executable(CCIMX_Desktop
     ${BuiltInPackage}
     ${BONUS_APPCARD}
     ${BuiltInWindow_SettingsSrc}
-    ${BUILT_IN_ICM20608_Support}
+    ${BUILTIN_DRIVER_ADAPTER_SRC}
     ${UPPER_TOOLBAR_SRC}
     ${ICONQRC_SRC}
     ${START_STAGE_SRC}
@@ -291,15 +304,6 @@ qt_add_executable(CCIMX_Desktop
     ${CardsSrc}
     ${InternalServer}
     ${PluginAbstractSrc}
-    library/qt_relative/mouse_press_manager/MouseManager.h library/qt_relative/mouse_press_manager/MouseManager.cpp
-    library/qt_relative/mouse_press_manager/MouseProcessor.h library/qt_relative/mouse_press_manager/MouseProcessor.cpp
-    library/qt_relative/mouse_press_manager/MouseRecorder.h
-    library/qt_relative/auto_step_init/AutoStepIniter.h library/qt_relative/auto_step_init/AutoStepIniter.cpp
-    library/qt_relative/auto_step_init/AutoStepInitTask.h library/qt_relative/auto_step_init/AutoStepInitTask.cpp
-    ui/DesktopMainWindowInitHelper.h ui/DesktopMainWindowInitHelper.cpp
-    ui/fast_settings/FastSettingsWidget.h ui/fast_settings/FastSettingsWidget.cpp ui/fast_settings/FastSettingsWidget.ui
-    builtin/core/backlight/BackLightControllerSingleton.h builtin/core/backlight/BackLightControllerSingleton.cpp
-
 )
 
 add_custom_command(TARGET CCIMX_Desktop POST_BUILD
@@ -313,10 +317,6 @@ target_link_libraries(CCIMX_Desktop
         Qt::Widgets
         Qt6::Network
 )
-target_link_libraries(CCIMX_Desktop PRIVATE Qt6::Core)
-target_link_libraries(CCIMX_Desktop PRIVATE Qt6::Core)
-target_link_libraries(CCIMX_Desktop PRIVATE Qt6::Widgets)
-target_link_libraries(CCIMX_Desktop PRIVATE Qt6::Core)
 
 target_include_directories(CCIMX_Desktop
     PRIVATE

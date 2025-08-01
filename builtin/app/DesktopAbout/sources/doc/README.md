@@ -2,7 +2,7 @@
 
 ![CCIMXDesktopLogo](./CCIMXDesktopLogo.png)
 
-![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-17-green)![Version](https://img.shields.io/badge/Version-Released_2.1.0-red)
+![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-17-green)![Version](https://img.shields.io/badge/Version-Released_2.2.0-red)
 
 🔌 您好！这是一个可在携带LCD屏幕上IMX6ULL的嵌入式设备中使用的简单桌面和实用程序集合！本项目目前已经可以使用完全的C++17进行编译！
 
@@ -27,9 +27,9 @@
 
 [IMX6ULL小项目：写的一个跑在IMX6ULL上的基于Qt框架的超级小桌面](https://www.bilibili.com/video/BV1cTgnzvEtL?vd_source=7756b1d353ef340c2ab91e80642a8922)
 
-1）启动加载时画面（截图版本：Release 2.0.0）
+1）启动加载时画面（截图版本：Release 2.2.1）
 
-![image-20250722092731425](./README/image-20250722092731425.png)
+![image-20250801101452056](./README/image-20250801101452056.png)
 
 2）主界面：HOME界面（截图版本：Release1.15.0）
 
@@ -71,7 +71,6 @@
 ## 这里有什么？
 
 现在，CCIMXDesktop支持的一键构建包括：
-（注：标准最小依赖为：TSLib做交互📝，QtCore🔧 QtWidget🖼️ QtGui🎨 QtNetwork🌐四件套的基础支持）
 
 #### 桌面本体功能💻
 
@@ -91,6 +90,8 @@
 
 - 👨最基本的用户信息系统
 
+- ⬇️增加下拉式菜单，可以在这里进行基础的设置（WIP：增加更多功能如表达联网状态等）
+
 - 🗃️ 丝滑滑动卡片系统 ✨
 
   目前已注册的内建卡片类型 📦:
@@ -100,8 +101,14 @@
   - 💾 硬存信息系统
   - 💾 内存信息系统
   - 👨 默认的用户信息卡片显示
+  
+  （提示，你也可以自己注册自己的内建卡片系统，这会在之后发布的文档中说明）
+
+
 
 #### 项目包含
+
+（注：标准最小依赖为：TSLib做交互📝，QtCore🔧 QtWidget🖼️ QtGui🎨 QtNetwork🌐四件套的基础支持）
 
 
 
@@ -154,9 +161,8 @@
 
 ### 🚀 计划优化的桌面本体工作：
 
-- 增加下拉式菜单的快速设置通道（亮度调节等）
 - 增加针对按键的桌面刷新功能（待下一个版本更新按钮驱动，按按钮强迫返回HOME界面）
-- 开发与桌面深度集成的**待办事项/提醒应用**。支持在状态栏显示即将到来的提醒，锁屏界面显示重要提醒。（插件系统已经支持）
+- 开发与桌面深度集成的**待办事项/提醒应用**。支持在状态栏显示即将到来的提醒，锁屏界面显示重要提醒。
 - 增强长时间没有反应后自动降低亮度和点击时增强亮度设置
 - 计划增加锁屏功能
 

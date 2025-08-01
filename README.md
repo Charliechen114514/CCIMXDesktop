@@ -27,9 +27,9 @@
 
 [IMX6ULL小项目：写的一个跑在IMX6ULL上的基于Qt框架的超级小桌面](https://www.bilibili.com/video/BV1cTgnzvEtL?vd_source=7756b1d353ef340c2ab91e80642a8922)
 
-1）启动加载时画面（截图版本：Release 2.0.0）
+1）启动加载时画面（截图版本：Release 2.2.1）
 
-![image-20250722092731425](./README/image-20250722092731425.png)
+![image-20250801101452056](./README/image-20250801101452056.png)
 
 2）主界面：HOME界面（截图版本：Release1.15.0）
 
@@ -102,7 +102,7 @@
   - 💾 内存信息系统
   - 👨 默认的用户信息卡片显示
   
-  （提示，你也可以自己注册自己的内建卡片系统，这会在之后发布的文档中说明）
+  （提示，你也可以自己注册自己的内建卡片系统，请参考[如何构建自己的卡片且动态插入？](Documentations/HOW_To_Add_Plugins_In_Desktop.md)）
 
 
 
