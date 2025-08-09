@@ -1,6 +1,6 @@
 #ifndef DESKTOPLOGGERCONVINIENTS_H
 #define DESKTOPLOGGERCONVINIENTS_H
-class QString;
+#include <QString>
 
 /**
  * @namespace Logger
@@ -20,11 +20,43 @@ namespace Logger {
 void postDebug(const QString& info);
 
 /**
+ * @brief Log a debug message with component name
+ * @param name: the component name
+ * @param debug_info: The debug message to log
+ * @note These messages are typically only visible in debug builds
+ */
+void postDebug(const QString& name, const QString& debug_info);
+
+/**
+ * @brief Log a debug message with component name using move semantics
+ * @param name: the component name
+ * @param debug_info: The debug message to log
+ * @note These messages are typically only visible in debug builds
+ */
+void postDebug(const QString& name, QString&& debug_info);
+
+/**
  * @brief Log an informational message
  * @param info The informational message to log
  * @note These messages indicate normal application operation
  */
 void postInfo(const QString& info);
+
+/**
+ * @brief Log an informational message with component name
+ * @param name: the component name
+ * @param info: The informational message to log
+ * @note These messages indicate normal application operation
+ */
+void postInfo(const QString& name, const QString& info);
+
+/**
+ * @brief Log an informational message with component name using move semantics
+ * @param name: the component name
+ * @param info: The informational message to log
+ * @note These messages indicate normal application operation
+ */
+void postInfo(const QString& name, QString&& info);
 
 /**
  * @brief Log a warning message
@@ -34,6 +66,22 @@ void postInfo(const QString& info);
 void postWarning(const QString& info);
 
 /**
+ * @brief Log a warning message with component name
+ * @param name: the component name
+ * @param info: The warning message to log
+ * @note These messages indicate potential issues that aren't critical
+ */
+void postWarning(const QString& name, const QString& info);
+
+/**
+ * @brief Log a warning message with component name using move semantics
+ * @param name: the component name
+ * @param info: The warning message to log
+ * @note These messages indicate potential issues that aren't critical
+ */
+void postWarning(const QString& name, QString&& info);
+
+/**
  * @brief Log an error message
  * @param info The error message to log
  * @note These messages indicate serious problems that affect functionality
@@ -41,11 +89,43 @@ void postWarning(const QString& info);
 void postError(const QString& info);
 
 /**
+ * @brief Log an error message with component name
+ * @param name: the component name
+ * @param info: The error message to log
+ * @note These messages indicate serious problems that affect functionality
+ */
+void postError(const QString& name, const QString& info);
+
+/**
+ * @brief Log an error message with component name using move semantics
+ * @param name: the component name
+ * @param info: The error message to log
+ * @note These messages indicate serious problems that affect functionality
+ */
+void postError(const QString& name, QString&& info);
+
+/**
  * @brief Log a fatal error message
  * @param info The fatal error message to log
  * @note These messages indicate critical failures that may terminate the application
  */
 void postFatal(const QString& info);
+
+/**
+ * @brief Log a fatal error message with component name
+ * @param name: the component name
+ * @param info: The fatal error message to log
+ * @note These messages indicate critical failures that may terminate the application
+ */
+void postFatal(const QString& name, const QString& info);
+
+/**
+ * @brief Log a fatal error message with component name using move semantics
+ * @param name: the component name
+ * @param info: The fatal error message to log
+ * @note These messages indicate critical failures that may terminate the application
+ */
+void postFatal(const QString& name, QString&& info);
 
 } // namespace Logger
 

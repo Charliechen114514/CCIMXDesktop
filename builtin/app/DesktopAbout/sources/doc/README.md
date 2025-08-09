@@ -2,7 +2,7 @@
 
 ![CCIMXDesktopLogo](./CCIMXDesktopLogo.png)
 
-![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-17-green)![Version](https://img.shields.io/badge/Version-Released_2.2.0-red)
+![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-17-green)![Version](https://img.shields.io/badge/Version-Released_2.3.0-red)
 
 🔌 您好！这是一个可在携带LCD屏幕上IMX6ULL的嵌入式设备中使用的简单桌面和实用程序集合！本项目目前已经可以使用完全的C++17进行编译！
 
@@ -92,7 +92,9 @@
 
 - ⬇️增加下拉式菜单，可以在这里进行基础的设置（WIP：增加更多功能如表达联网状态等）
 
-- 🗃️ 丝滑滑动卡片系统 ✨
+- 🗃️ 丝滑滑动卡片系统 
+
+- ✨长时间没有反应后自动降低亮度和点击时增强亮度设置
 
   目前已注册的内建卡片类型 📦:
 
@@ -102,7 +104,7 @@
   - 💾 内存信息系统
   - 👨 默认的用户信息卡片显示
   
-  （提示，你也可以自己注册自己的内建卡片系统，这会在之后发布的文档中说明）
+  （提示，你也可以自己注册自己的内建卡片系统，请参考[如何构建自己的卡片且动态插入？](Documentations/HOW_To_Add_Plugins_In_Desktop.md)）
 
 
 
@@ -163,7 +165,6 @@
 
 - 增加针对按键的桌面刷新功能（待下一个版本更新按钮驱动，按按钮强迫返回HOME界面）
 - 开发与桌面深度集成的**待办事项/提醒应用**。支持在状态栏显示即将到来的提醒，锁屏界面显示重要提醒。
-- 增强长时间没有反应后自动降低亮度和点击时增强亮度设置
 - 计划增加锁屏功能
 
 ### 🚀 计划编写和提供更多的外部基础程序：

@@ -195,6 +195,9 @@ void DesktopMainWindowInitHelper::session_of_init_ui(DesktopMainWindow* mainWind
     }
 }
 
+
+#include "core/server/timer_server/timerservermonitoring.h"
+#include "core/server/timer_server/screen_server/screendetectorserver.h"
 void DesktopMainWindowInitHelper::session_of_init_server(DesktopMainWindow* mainWindow, AutoStepIniter* initer) {
     const std::pair<std::function<void()>, const char*> sessions[] = {
         { [mainWindow]() {
@@ -203,7 +206,24 @@ void DesktopMainWindowInitHelper::session_of_init_server(DesktopMainWindow* main
                  mainWindow->locationManager->queryFromType(DesktopServerType::TOAST_SUMMON),
                  mainWindow));
          },
-          "Initializing ToastPostServer for toast summon" }
+          "Initializing ToastPostServer for toast summon" },
+        {
+          [mainWindow](){
+            auto timer_server = new TimerServerMonitoring(mainWindow);
+            auto screen_server = new ScreenDetectorServer(timer_server);
+            mainWindow->servers.emplaceBack(timer_server);
+
+            MouseProcessor* screen_clicker = new MouseProcessor([mainWindow](MouseRecorder* recorder) -> bool {
+                return true; // Always process
+            },
+            [screen_server, mainWindow](MouseRecorder* recorder) -> bool {
+                screen_server->process_reset_timer();
+                return true;
+            });
+            screen_clicker->setName("Screen Light Controller");
+            mainWindow->mouseManager->register_processor(screen_clicker);
+         }, "Initializing Period Timer Server For backend timers"
+        }
     };
 
     for (const auto& session : sessions) {

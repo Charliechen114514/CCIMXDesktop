@@ -2,7 +2,7 @@
 
 ![CCIMXDesktopLogo](./CCIMXDesktopLogo.png)
 
-![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-17-green)![Version](https://img.shields.io/badge/Version-Released_2.2.1-red)
+![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-17-green)![Version](https://img.shields.io/badge/Version-Released_2.3.0-red)
 
 🔌 Hello! This is a collection of simple desktops and utilities that can be used in embedded devices with IMX6ULL LCD screens! This project can now be compiled with full C++17!
 
@@ -92,7 +92,9 @@ Now, CCIMXDesktop supports one-click building including:
 
 - ⬇️ a quick setting channel for the drop-down menu (WIP: Add more functionalities like network status display)
 
-- 🗃️ Silky sliding card system ✨
+- 🗃️ Silky sliding card system 
+
+- ✨The automatic reduction of brightness after a long period of no response and the brightness enhancement setting when clicking
 
 Currently registered built-in card types 📦:
 
@@ -160,7 +162,6 @@ The document has been automatically deployed via GitHub Actions, visit: [CCIMXDe
 
 - Added a desktop refresh function for buttons (wait for the next version to update the button driver, press the button to force return to the HOME interface)
 - Developed a **to-do/reminder application** that is deeply integrated with the desktop. Supports displaying upcoming reminders in the status bar and important reminders on the lock screen. (The plug-in system already supports)
-- Enhanced the automatic reduction of brightness after a long period of no response and the brightness enhancement setting when clicking
 - Plan to add lock screen
 
 ### 🚀 Plan to write and provide more external basic programs:

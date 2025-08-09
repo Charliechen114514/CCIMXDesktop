@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.19)
-project(CCIMX_Desktop LANGUAGES CXX VERSION 2.2.1)
+project(CCIMX_Desktop LANGUAGES CXX VERSION 2.3.0)
 
 message(STATUS "Importing cmake modules...")
 set(CCDESKTOPABOUT_CMAKE_DIR "${CMAKE_SOURCE_DIR}/cmake")
@@ -19,6 +19,8 @@ set(TEMPLATE_FILE_NAME "CCIMXDesktopBuildConfigs")
 include(app_building_options)
 
 find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets Network)
+find_package(Qt6 REQUIRED COMPONENTS Core)
+find_package(Qt6 REQUIRED COMPONENTS Core)
 find_package(Qt6 REQUIRED COMPONENTS Core)
 qt_standard_project_setup()
 
@@ -277,7 +279,11 @@ set(InternalServer
     core/server/server_hooks/DesktopCardHook.cpp
     core/server/DesktopServerHookBase.h
     core/server/plugin_server/PluginValidator.h
-    core/server/plugin_server/PluginValidator.cpp)
+    core/server/plugin_server/PluginValidator.cpp
+    core/server/timer_server/timerservermonitoring.h core/server/timer_server/timerservermonitoring.cpp
+    core/server/timer_server/TimeServerType.h
+    core/server/timer_server/timerhandleserver.h core/server/timer_server/timerhandleserver.cpp
+    core/server/timer_server/screen_server/screendetectorserver.h core/server/timer_server/screen_server/screendetectorserver.cpp)
 
 set(PluginAbstractSrc
     plugin_loader/plugin_base/DesktopPluginWidgetBase.h)
@@ -317,6 +323,8 @@ target_link_libraries(CCIMX_Desktop
         Qt::Widgets
         Qt6::Network
 )
+target_link_libraries(CCIMX_Desktop PRIVATE Qt6::Core)
+target_link_libraries(CCIMX_Desktop PRIVATE Qt6::Core)
 
 target_include_directories(CCIMX_Desktop
     PRIVATE
