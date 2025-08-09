@@ -53,7 +53,7 @@ var searchData=
   ['document_5fpage_50',['document_page',['../classCCPdfDocument.html#abf9058577d2c7f75dd522bef8bd1ace5',1,'CCPdfDocument']]],
   ['downcast_5fto_5fsliderable_5fperiod_51',['downcast_to_sliderable_period',['../namespaceUiTools.html#a999dd6eb96eca168befed930c63f5d6f',1,'UiTools']]],
   ['downcast_5fto_5fsliderable_5fposition_52',['downcast_to_sliderable_position',['../namespaceUiTools.html#a1bf04de71297f008b989b18fba3bea44',1,'UiTools']]],
-  ['downdockwidget_53',['downdockwidget',['../classDownDockWidget.html#aece8d1a8bb339ee68244eb3e6bd749ef',1,'DownDockWidget::DownDockWidget()'],['../classDesktopMainWindow.html#a3c9d1ee127d737faa6b73e162a4c28b3',1,'DesktopMainWindow::downDockWidget()']]],
+  ['downdockwidget_53',['downdockwidget',['../classDesktopMainWindow.html#a3c9d1ee127d737faa6b73e162a4c28b3',1,'DesktopMainWindow::downDockWidget()'],['../classDownDockWidget.html#aece8d1a8bb339ee68244eb3e6bd749ef',1,'DownDockWidget::DownDockWidget()']]],
   ['draw_5ffaces_54',['draw_faces',['../namespaceOpenCV__ProcessAdapter.html#a04498311974f084a887305d8d5b504e9',1,'OpenCV_ProcessAdapter']]],
   ['drawcontent_55',['drawContent',['../classSceneDrawer.html#a26df04532535c19bc6a811cbad2ee945',1,'SceneDrawer']]],
   ['drawcontents_56',['drawContents',['../classCCIMX__DesktopSplashWindow.html#a0a7e332e7f725b090c789944b3b74b8b',1,'CCIMX_DesktopSplashWindow']]],

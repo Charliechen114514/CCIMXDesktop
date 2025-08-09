@@ -41,7 +41,7 @@ var searchData=
   ['load_5ftemp_38',['load_temp',['../classLeftSideBar.html#a1a6b48244b1beecb59f94eb134b855e0',1,'LeftSideBar']]],
   ['loadfile_39',['loadfile',['../classCVImage.html#abbfa8ef2239701e79812d05da44995ab',1,'CVImage::loadFile(const char *filename)'],['../classCVImage.html#abbfa8ef2239701e79812d05da44995ab',1,'CVImage::loadFile(const char *filename)']]],
   ['loadtoimagelistview_40',['loadToImageListView',['../classSequenciedSettingsWidget.html#a3b874ff77f11d450e94c75afd67a3d75',1,'SequenciedSettingsWidget']]],
-  ['localfetcher_41',['localfetcher',['../structLocalFetcher.html',1,'LocalFetcher'],['../classLocalWeatherCard.html#a1eed22fb3253b6f55884578e75964a01',1,'LocalWeatherCard::localFetcher'],['../structLocalFetcher.html#af33c9fa371e87649a1548b5990cd02ca',1,'LocalFetcher::LocalFetcher()']]],
+  ['localfetcher_41',['localfetcher',['../structLocalFetcher.html',1,'LocalFetcher'],['../structLocalFetcher.html#af33c9fa371e87649a1548b5990cd02ca',1,'LocalFetcher::LocalFetcher()'],['../classLocalWeatherCard.html#a1eed22fb3253b6f55884578e75964a01',1,'LocalWeatherCard::localFetcher']]],
   ['localweathercard_42',['localweathercard',['../classLocalWeatherCard.html',1,'LocalWeatherCard'],['../classLocalWeatherCard.html#ac778493f500af33789e82469c7634d1e',1,'LocalWeatherCard::LocalWeatherCard(DesktopToast *toast, QWidget *parent=nullptr)'],['../classLocalWeatherCard.html#a468f0d160123b9f78c9066bb62483e6e',1,'LocalWeatherCard::LocalWeatherCard()=delete']]],
   ['localweatherlightfetcher_43',['localweatherlightfetcher',['../structLocalWeatherLightFetcher.html',1,'LocalWeatherLightFetcher'],['../structLocalWeatherLightFetcher.html#a0b1f25b203c03a868ff62fbac5ef8904',1,'LocalWeatherLightFetcher::LocalWeatherLightFetcher()']]],
   ['locationdata_44',['LocationData',['../structLocationData.html',1,'']]],
@@ -56,6 +56,6 @@ var searchData=
   ['logsuccess_53',['LogSuccess',['../structDesktopLoggerBackends.html#a8e4f53f4d26080ea3bae3e7603057c7ba69fef821d1c5f483a87340100f3f04d6',1,'DesktopLoggerBackends']]],
   ['logurulike_54',['LoguruLike',['../classConsoleLogger.html#a8a9cdd9ae4dc597c38978d302b99ee44abff4dc044c5675ed305b097f36152166',1,'ConsoleLogger']]],
   ['longitude_55',['longitude',['../structLocationData.html#a7531ae1a67dd8f436dc9a4d6535a3842',1,'LocationData']]],
-  ['low_56',['low',['../structAppWeatherResult_1_1DailyWeather.html#ad68dc66d4978326345538da3c16781f9',1,'AppWeatherResult::DailyWeather::low'],['../classBirdObsticals.html#a38419a3f4f5ca46c7243184bca781576a41bc94cbd8eebea13ce0491b2ac11b88',1,'BirdObsticals::LOW']]],
+  ['low_56',['low',['../classBirdObsticals.html#a38419a3f4f5ca46c7243184bca781576a41bc94cbd8eebea13ce0491b2ac11b88',1,'BirdObsticals::LOW'],['../structAppWeatherResult_1_1DailyWeather.html#ad68dc66d4978326345538da3c16781f9',1,'AppWeatherResult::DailyWeather::low']]],
   ['low_5ftemp_57',['LOW_TEMP',['../classWeatherChartWidget.html#ad917be16972dd0f90aa71df8d0e8e569ac2e65573563c7444efbfc0dd2bca593c',1,'WeatherChartWidget']]]
 ];

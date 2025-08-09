@@ -21,10 +21,20 @@ var namespaces_dup =
     ] ],
     [ "Logger", "namespaceLogger.html", [
       [ "postDebug", "namespaceLogger.html#a8957975ac80e5d964c1d8336ffda58ee", null ],
+      [ "postDebug", "namespaceLogger.html#a180b8d189996912ce37e60b2b11cbf16", null ],
+      [ "postDebug", "namespaceLogger.html#a05534dd84f9246a37aba86346a273b1a", null ],
       [ "postError", "namespaceLogger.html#a50ffba412ba175756b615616ab66ded5", null ],
+      [ "postError", "namespaceLogger.html#a4563521799eef746543a9d542bdcfe1c", null ],
+      [ "postError", "namespaceLogger.html#ade4d32945faf84310e06d0fd0d6a8196", null ],
       [ "postFatal", "namespaceLogger.html#a7f288a7115f4b79073cf6808aaee6b02", null ],
+      [ "postFatal", "namespaceLogger.html#a92db582f82731d9821f3e53cd7906592", null ],
+      [ "postFatal", "namespaceLogger.html#adee88e8d39c569f55f3fad9f8e29e2d8", null ],
       [ "postInfo", "namespaceLogger.html#a6be4aa1ba6b6f40fee112a726c84d65c", null ],
-      [ "postWarning", "namespaceLogger.html#aefff81eb40210e5cdd9e860bb627aa03", null ]
+      [ "postInfo", "namespaceLogger.html#a3f93460ccdaed5aac0419f6c35a53721", null ],
+      [ "postInfo", "namespaceLogger.html#a45b15b5fdec3b76795c07931d506cb58", null ],
+      [ "postWarning", "namespaceLogger.html#aefff81eb40210e5cdd9e860bb627aa03", null ],
+      [ "postWarning", "namespaceLogger.html#a6949d33ec7acd7b850ad832cba41b307", null ],
+      [ "postWarning", "namespaceLogger.html#aaecf489c6d6bdc61052c87cad58cf433", null ]
     ] ],
     [ "MediaEnableSelectFactory", "namespaceMediaEnableSelectFactory.html", [
       [ "generateMediaEnableFilter", "namespaceMediaEnableSelectFactory.html#aa989d9dfc4abdbea420b7a3a6f44f73d", null ],

@@ -221,6 +221,7 @@ var hierarchy =
       [ "DesktopDirentLocationManager", "classDesktopDirentLocationManager.html", null ],
       [ "DesktopServerBase", "classDesktopServerBase.html", [
         [ "DesktopWidgetPluginServer", "classDesktopWidgetPluginServer.html", null ],
+        [ "TimerServerMonitoring", "classTimerServerMonitoring.html", null ],
         [ "ToastPostServer", "classToastPostServer.html", null ]
       ] ],
       [ "DesktopUserInfo", "classDesktopUserInfo.html", null ],
@@ -259,6 +260,7 @@ var hierarchy =
       [ "ProcessBroswer", "classProcessBroswer.html", null ],
       [ "QueryCached", "classQueryCached.html", null ],
       [ "ScoreManager", "classScoreManager.html", null ],
+      [ "ScreenDetectorServer", "classScreenDetectorServer.html", null ],
       [ "Session", "classSession.html", null ],
       [ "SessionHub", "classSessionHub.html", null ],
       [ "SoundEffectPlayer", "classSoundEffectPlayer.html", null ],
@@ -267,6 +269,7 @@ var hierarchy =
       [ "StackpageSwitcherAnimation", "structStackpageSwitcherAnimation.html", null ],
       [ "TestDataProtocolizedController", "classTestDataProtocolizedController.html", null ],
       [ "TestDataSinker", "classTestDataSinker.html", null ],
+      [ "TimerHandleServer", "classTimerHandleServer.html", null ],
       [ "ToastProxy", "classToastProxy.html", null ],
       [ "ToastReceiver", "classToastReceiver.html", null ],
       [ "VideoPlayer", "classVideoPlayer.html", null ],
@@ -414,6 +417,7 @@ var hierarchy =
     [ "ValueLimitUtils::StaticLimiter< MIN, MAX >", "classValueLimitUtils_1_1StaticLimiter.html", null ],
     [ "Settings::SZ< value >", "structSettings_1_1SZ.html", null ],
     [ "TemperaryCacher", "classTemperaryCacher.html", null ],
+    [ "TimerServerProperty", "structTimerServerProperty.html", null ],
     [ "ToastGenerator", "classToastGenerator.html", null ],
     [ "ToastMetaProtocol", "structToastMetaProtocol.html", null ],
     [ "ToolLeftWidgets::ToolButtonInstallPackage", "structToolLeftWidgets_1_1ToolButtonInstallPackage.html", null ],
