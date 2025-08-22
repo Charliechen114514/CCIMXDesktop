@@ -81,7 +81,7 @@ var searchData=
   ['compose_5frequest_78',['compose_request',['../classAppWeatherRequest.html#aa484e3ab2825abedcc5fd80b6969d8a3',1,'AppWeatherRequest::compose_request()'],['../classWeatherRequest.html#a2faec779862560dbe931d723025787d1',1,'WeatherRequest::compose_request()']]],
   ['composer_79',['composer',['../structMediaInfo.html#a3659fe88439251fcdf8d81dffae10020',1,'MediaInfo']]],
   ['configureuipairs_80',['configureuipairs',['../structConfigureUiPairs.html#a2fd113b4529cc4a349a2b81c1b7294da',1,'ConfigureUiPairs::ConfigureUiPairs()'],['../structConfigureUiPairs.html',1,'ConfigureUiPairs']]],
-  ['connected_81',['connected',['../classPeerConnection.html#a177d7d05db4a1d0fcb48de6174232ea5a2ec0d16e4ca169baedb9b2d50ec5c6d7',1,'PeerConnection::Connected'],['../classPeerConnection.html#a97fef2588bb7ff56c0efd89395af7ce8',1,'PeerConnection::connected()']]],
+  ['connected_81',['connected',['../classPeerConnection.html#a97fef2588bb7ff56c0efd89395af7ce8',1,'PeerConnection::connected()'],['../classPeerConnection.html#a177d7d05db4a1d0fcb48de6174232ea5a2ec0d16e4ca169baedb9b2d50ec5c6d7',1,'PeerConnection::Connected']]],
   ['connecting_82',['Connecting',['../classPeerConnection.html#a177d7d05db4a1d0fcb48de6174232ea5ae321c53b354930ba96f0243e652df458',1,'PeerConnection']]],
   ['connectionstate_83',['ConnectionState',['../classPeerConnection.html#a177d7d05db4a1d0fcb48de6174232ea5',1,'PeerConnection']]],
   ['connectordelegate_84',['ConnectorDelegate',['../classConnectorDelegate.html',1,'']]],

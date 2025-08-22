@@ -7,7 +7,7 @@ var searchData=
   ['handle_5fprocess_5fissues_4',['handle_process_issues',['../classProcessBrowserWidget.html#adad0c2d2d3da160e265bf0decec95227',1,'ProcessBrowserWidget']]],
   ['handledate_5',['handleDate',['../classDateIcon.html#afb66bbb0785bc64a32eee87a158540ae',1,'DateIcon']]],
   ['handlegestureevent_6',['handleGestureEvent',['../classCCPdfScrollArea.html#a688d7e77f99d63bbab5ca7ba24a5d452',1,'CCPdfScrollArea']]],
-  ['handletype_7',['handletype',['../classBlurProcessor.html#a8e237a8b492a86872c426ac55ce0e403',1,'BlurProcessor::handleType() const'],['../classBlurProcessor.html#a3af8708008d25b115a14ebc37fecf2c0',1,'BlurProcessor::HandleType']]],
+  ['handletype_7',['handletype',['../classBlurProcessor.html#a3af8708008d25b115a14ebc37fecf2c0',1,'BlurProcessor::HandleType'],['../classBlurProcessor.html#a8e237a8b492a86872c426ac55ce0e403',1,'BlurProcessor::handleType() const']]],
   ['handlingfinhook_8',['HandlingFinHook',['../classApplicationWrapper.html#acaaa113a722e3e2f0625d40181b8c794',1,'ApplicationWrapper']]],
   ['headerdata_9',['headerData',['../classCCIMXFileSystemModel.html#aeceaa8e6c1e18cb36f20211176b60096',1,'CCIMXFileSystemModel']]],
   ['height_10',['height',['../structSettings_1_1Figure_1_1FigureSize.html#a60db5d4494a9cf7ffbc2c5c078a4eaa1',1,'Settings::Figure::FigureSize::height'],['../structSettings_1_1SZ.html#ace6c223709d507955ec0cd404d3fde33',1,'Settings::SZ::height'],['../structVideoPlayerInfo.html#ac7292ac9053d124429cb6a5d57730447',1,'VideoPlayerInfo::height'],['../classTopSideBarWidget.html#ac1a73674388bf526457b235891a2cad3',1,'TopSideBarWidget::height() const']]],
@@ -24,11 +24,11 @@ var searchData=
   ['histdrawer_21',['histdrawer',['../classHistDrawer.html#acac240110b587e7b3884c4a3bd7c098d',1,'HistDrawer::HistDrawer()'],['../classHistDrawer.html',1,'HistDrawer']]],
   ['historycontainers_22',['HistoryContainers',['../classHistoryContainers.html',1,'']]],
   ['historymanagerschedular_23',['HistoryManagerSchedular',['../classHistoryManagerSchedular.html',1,'']]],
-  ['homecardmanager_24',['homecardmanager',['../classHomeCardManager.html',1,'HomeCardManager'],['../classHomePage.html#abea5f810b7fc488f1e1ef0961be08d1e',1,'HomePage::homeCardManager()'],['../classHomeCardManager.html#a12ed272e80a08747d77c0abe046ad75f',1,'HomeCardManager::HomeCardManager()']]],
+  ['homecardmanager_24',['homecardmanager',['../classHomeCardManager.html',1,'HomeCardManager'],['../classHomeCardManager.html#a12ed272e80a08747d77c0abe046ad75f',1,'HomeCardManager::HomeCardManager()'],['../classHomePage.html#abea5f810b7fc488f1e1ef0961be08d1e',1,'HomePage::homeCardManager()']]],
   ['homecardmanager_2eh_25',['HomeCardManager.h',['../HomeCardManager_8h.html',1,'']]],
   ['homepage_26',['homepage',['../classHomePage.html',1,'HomePage'],['../classHomePage.html#a019fab66c80b3c809faafce5f3416b63',1,'HomePage::HomePage()']]],
   ['hooked_5fwindow_27',['hooked_window',['../classDesktopWidgetPluginServer.html#a5a70237d6d9ed8abfa3f3613a8daae19',1,'DesktopWidgetPluginServer']]],
   ['hot_5finstall_5fconsumer_28',['hot_install_consumer',['../structDesktopLoggerBackends.html#ad81ccded03ca804da08d1d29f7596e7e',1,'DesktopLoggerBackends']]],
   ['hot_5finstall_5ffactory_29',['hot_install_factory',['../structDesktopLoggerBackends.html#a361f4a98820b533dee4c8b2acded0cfc',1,'DesktopLoggerBackends']]],
-  ['humidity_30',['humidity',['../structAppWeatherResult_1_1DailyWeather.html#a2faa8ee092e1b9a6cd8ca85fc523196f',1,'AppWeatherResult::DailyWeather::humidity'],['../classWeatherChartWidget.html#ad917be16972dd0f90aa71df8d0e8e569ad95ec1b726d7df75e5cbe026d0c1b721',1,'WeatherChartWidget::HUMIDITY']]]
+  ['humidity_30',['humidity',['../classWeatherChartWidget.html#ad917be16972dd0f90aa71df8d0e8e569ad95ec1b726d7df75e5cbe026d0c1b721',1,'WeatherChartWidget::HUMIDITY'],['../structAppWeatherResult_1_1DailyWeather.html#a2faa8ee092e1b9a6cd8ca85fc523196f',1,'AppWeatherResult::DailyWeather::humidity']]]
 ];

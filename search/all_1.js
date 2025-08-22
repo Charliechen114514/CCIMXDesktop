@@ -66,7 +66,7 @@ var searchData=
   ['audio_5fready_63',['audio_ready',['../structMediaPlayer_1_1MediaPlayerStatus.html#a327fcaa8e0779d5670869ea5736dc36d',1,'MediaPlayer::MediaPlayerStatus']]],
   ['audiobitrate_64',['audioBitRate',['../structMediaInfo.html#a32ff20787a2ffa2ab8e348204cdfaf26',1,'MediaInfo']]],
   ['audiocodec_65',['audioCodec',['../structMediaInfo.html#a4bbf96a1fc0e354d34b4921e83a6d0ec',1,'MediaInfo']]],
-  ['author_66',['author',['../structMediaInfo.html#a5800390f193e62611d5e5ebe872c28b8',1,'MediaInfo::author'],['../structCCPdfMetaInfo.html#ad02f378caa4ba18913ff931c50c2fec9',1,'CCPdfMetaInfo::author'],['../structCCPdfMetaInfo.html#a423cdbefdd1463da5d20fd464d9050a5aa517747c3d12f99244ae598910d979c5',1,'CCPdfMetaInfo::Author']]],
+  ['author_66',['author',['../structCCPdfMetaInfo.html#a423cdbefdd1463da5d20fd464d9050a5aa517747c3d12f99244ae598910d979c5',1,'CCPdfMetaInfo::Author'],['../structMediaInfo.html#a5800390f193e62611d5e5ebe872c28b8',1,'MediaInfo::author'],['../structCCPdfMetaInfo.html#ad02f378caa4ba18913ff931c50c2fec9',1,'CCPdfMetaInfo::author']]],
   ['autoheightupdateszrandomly_67',['autoheightUpdateSzRandomly',['../classBirdObsticals.html#a80e1185364e072984f1acdf61ceb4fe6',1,'BirdObsticals']]],
   ['autostepiniter_68',['AutoStepIniter',['../classAutoStepIniter.html',1,'']]],
   ['autostepinittask_69',['AutoStepInitTask',['../classAutoStepInitTask.html',1,'']]],

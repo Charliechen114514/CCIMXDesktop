@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"classInvalidNumber.html#abcb69af245f0d502f6f23a745ff0bec2":[5,0,180,1],
 "classInvalidNumber.html#acf90c00fc7ff9c39846414a1237d9c01":[5,0,180,0],
 "classLEDController.html":[5,0,184],
 "classLEDController.html#a096b7909d7569a92e31fdfd3c4b8bebc":[5,0,184,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "classObstacleListManager.html#ace1ab3832c266ce63a6ee1cf75b1e081":[5,0,234,9],
 "classObstacleListManager.html#ae9a462b59970f132ebbfe32a71d31fe4":[5,0,234,2],
 "classObsticals.html":[5,0,235],
-"classObsticals.html#a02c2edb6545d318aa189ceb22ff77999":[5,0,235,1],
-"classObsticals.html#a2da8039ec5e75ce2865caa8e182277c5":[5,0,235,8]
+"classObsticals.html#a02c2edb6545d318aa189ceb22ff77999":[5,0,235,1]
 };

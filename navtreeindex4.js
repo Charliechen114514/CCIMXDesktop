@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"classFileCountInfo.html#aa3a0221ae640730854e92c66e57c51de":[5,0,129,1],
 "classFileInfoDisplayWidget.html":[5,0,130],
 "classFileInfoDisplayWidget.html#a3b59cff1a04a1cdd161c4b1cd2a6cc25":[5,0,130,2],
 "classFileInfoDisplayWidget.html#a71aca20562e5b0928d97723e04efd5de":[5,0,130,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "classInterfacesQuery.html#a737af0c754c96b586cc3145ed3fdf514":[5,0,179,2],
 "classInterfacesQuery.html#a76595a4ff47f886a014ac0829d483249":[5,0,179,1],
 "classInterfacesQuery.html#ababe81a57791aae7fa1bca532074dffc":[5,0,179,0],
-"classInvalidNumber.html":[5,0,180],
-"classInvalidNumber.html#abcb69af245f0d502f6f23a745ff0bec2":[5,0,180,1]
+"classInvalidNumber.html":[5,0,180]
 };

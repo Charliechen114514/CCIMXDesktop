@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"classObsticals.html#a2da8039ec5e75ce2865caa8e182277c5":[5,0,235,8],
 "classObsticals.html#a2f411fe4e0fdf19ede9e1c62077d2e93":[5,0,235,0],
 "classObsticals.html#a3b0642aa5007f93d802238079fef219e":[5,0,235,3],
 "classObsticals.html#a3e3be942c1c78b4d94c5e81b452e899a":[5,0,235,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "classSimpleDrawingScene.html#a80c84494ebeb23df806f78e4ba15627c":[5,0,276,14],
 "classSimpleDrawingScene.html#aa5508ce91110c69ff182d182234ae0ed":[5,0,276,11],
 "classSimpleDrawingScene.html#ac1c43148efeef321be72ca1a4baf338f":[5,0,276,1],
-"classSimpleDrawingScene.html#ac1c43148efeef321be72ca1a4baf338fa0d77efdcd3fbbbf8497cb965f771c30f":[5,0,276,1,3],
-"classSimpleDrawingScene.html#ac1c43148efeef321be72ca1a4baf338fa119518c2134c46108179369f0ce81fa2":[5,0,276,1,2]
+"classSimpleDrawingScene.html#ac1c43148efeef321be72ca1a4baf338fa0d77efdcd3fbbbf8497cb965f771c30f":[5,0,276,1,3]
 };

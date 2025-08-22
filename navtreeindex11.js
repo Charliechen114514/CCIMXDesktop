@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"structLocalWeatherLightFetcher.html#a7406fce33112897beff0da487ffd2440":[5,0,197,1],
 "structLocationData.html":[5,0,198],
 "structLocationData.html#a7531ae1a67dd8f436dc9a4d6535a3842":[5,0,198,1],
 "structLocationData.html#a77e2f0be49dc620c827f421f8dd0e2a1":[5,0,198,0],

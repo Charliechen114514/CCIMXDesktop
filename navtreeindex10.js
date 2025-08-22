@@ -1,5 +1,6 @@
 var NAVTREEINDEX10 =
 {
+"namespaceProcessor_1_1ContoursQuery.html#acbd62688dcfb27981a75482fbac5be2c":[4,0,15,1,1],
 "namespaceQtAdaptTools.html":[4,0,16],
 "namespaceQtAdaptTools.html#a196d95ed886168e637fa84615d53f63c":[4,0,16,2],
 "namespaceQtAdaptTools.html#a9c241e615eb418c9fe1bba94ba81e4d1":[4,0,16,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX10 =
 "structLocalWeatherLightFetcher.html":[5,0,197],
 "structLocalWeatherLightFetcher.html#a0547d83e3889a740caabab87e00d2303":[5,0,197,2],
 "structLocalWeatherLightFetcher.html#a0b1f25b203c03a868ff62fbac5ef8904":[5,0,197,0],
-"structLocalWeatherLightFetcher.html#a20ab2ed9b5af31f5793516e9849ee252":[5,0,197,3],
-"structLocalWeatherLightFetcher.html#a7406fce33112897beff0da487ffd2440":[5,0,197,1]
+"structLocalWeatherLightFetcher.html#a20ab2ed9b5af31f5793516e9849ee252":[5,0,197,3]
 };

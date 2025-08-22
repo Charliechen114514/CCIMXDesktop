@@ -15,7 +15,7 @@ var searchData=
   ['heightforwidth_12',['heightForWidth',['../classDateIcon.html#a242ff91432984eadcf7b4077a3473961',1,'DateIcon']]],
   ['hidesidebar_13',['hidesidebar',['../classSideBarWidget.html#a8095035fb628e68ba40c6c66ee009594',1,'SideBarWidget::hideSideBar()'],['../classSideBarWidget.html#a8095035fb628e68ba40c6c66ee009594',1,'SideBarWidget::hideSideBar()'],['../classSideBarWidget.html#a8095035fb628e68ba40c6c66ee009594',1,'SideBarWidget::hideSideBar()']]],
   ['histdrawer_14',['HistDrawer',['../classHistDrawer.html#acac240110b587e7b3884c4a3bd7c098d',1,'HistDrawer']]],
-  ['homecardmanager_15',['homecardmanager',['../classHomePage.html#abea5f810b7fc488f1e1ef0961be08d1e',1,'HomePage::homeCardManager()'],['../classHomeCardManager.html#a12ed272e80a08747d77c0abe046ad75f',1,'HomeCardManager::HomeCardManager()']]],
+  ['homecardmanager_15',['homecardmanager',['../classHomeCardManager.html#a12ed272e80a08747d77c0abe046ad75f',1,'HomeCardManager::HomeCardManager()'],['../classHomePage.html#abea5f810b7fc488f1e1ef0961be08d1e',1,'HomePage::homeCardManager() const']]],
   ['homepage_16',['HomePage',['../classHomePage.html#a019fab66c80b3c809faafce5f3416b63',1,'HomePage']]],
   ['hooked_5fwindow_17',['hooked_window',['../classDesktopWidgetPluginServer.html#a5a70237d6d9ed8abfa3f3613a8daae19',1,'DesktopWidgetPluginServer']]],
   ['hot_5finstall_5fconsumer_18',['hot_install_consumer',['../structDesktopLoggerBackends.html#ad81ccded03ca804da08d1d29f7596e7e',1,'DesktopLoggerBackends']]],
