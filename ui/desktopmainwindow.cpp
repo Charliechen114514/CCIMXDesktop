@@ -21,7 +21,6 @@
 #include "ui/desktoptoast.h"
 #include "ui/stackpage_switcher_animation.h"
 #include "ui_desktopmainwindow.h"
-#include "ui/fast_settings/FastSettingsWidget.h"
 #include <QMouseEvent>
 #include <QTimer>
 void DesktopMainWindow::initLogger() {
@@ -54,7 +53,10 @@ void DesktopMainWindow::init(CCIMX_DesktopSplashWindow* splash) {
 
 void DesktopMainWindow::setup_default_dock() {
 	QList<AppWidget*> docks;
-    docks << app_widgets[0];
+    if(!app_widgets.empty())
+        docks << app_widgets[0];
+    else
+        qWarning() << "No app_widget found in app_widgets, so dock widget will place nothing else";
 	PageSetuper::add_to_dock(this, docks);
 }
 
@@ -160,6 +162,14 @@ void DesktopMainWindow::showToast(const QString& message) {
 
 DownDockWidget* DesktopMainWindow::downDockWidget() const {
 	return ui->downdock;
+}
+
+void DesktopMainWindow::back_home_page()
+{
+    StackpageSwitcherAnimation::AnimationInfo info;
+    info.new_index = 0;
+    info.toLeft = true;
+    StackpageSwitcherAnimation::process_animations(ui->stackedWidget, &info);
 }
 
 void DesktopMainWindow::mousePressEvent(QMouseEvent* event) {

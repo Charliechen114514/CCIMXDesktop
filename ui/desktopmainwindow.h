@@ -88,16 +88,6 @@ public:
     DownDockWidget* downDockWidget() const;
 
     /**
-     * @brief Slide to the next page in UI
-     */
-    void to_next_page();
-
-    /**
-     * @brief Slide to the previous page in UI
-     */
-    void to_prev_page();
-
-    /**
      * @brief Install a remote application wrapper
      * @param wrapper Pointer to ApplicationWrapper to install
      */
@@ -141,6 +131,21 @@ signals:
     void updateProgress(const QString& message, const int processings);
 
 public slots:
+    /**
+     * @brief back_home_page this api is about to lead
+     * the desktop to the homepage :)
+     */
+    void back_home_page();
+
+    /**
+     * @brief Slide to the next page in UI
+     */
+    void to_next_page();
+
+    /**
+     * @brief Slide to the previous page in UI
+     */
+    void to_prev_page();
     /**
      * @brief Handle status changes of applications (like errors)
      * @param status Current app status
