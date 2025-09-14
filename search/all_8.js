@@ -16,7 +16,7 @@ var searchData=
   ['height_5fsize_5ftype_5fmax_13',['HEIGHT_SIZE_TYPE_MAX',['../classBirdObsticals.html#ab527f57f000642c6f08ddf3631c7a4d2',1,'BirdObsticals']]],
   ['heightforwidth_14',['heightForWidth',['../classDateIcon.html#a242ff91432984eadcf7b4077a3473961',1,'DateIcon']]],
   ['here_15',['What&apos;s here?',['../md_README__EN.html#autotoc_md27',1,'']]],
-  ['hidesidebar_16',['hidesidebar',['../classSideBarWidget.html#a8095035fb628e68ba40c6c66ee009594',1,'SideBarWidget::hideSideBar()'],['../classSideBarWidget.html#a8095035fb628e68ba40c6c66ee009594',1,'SideBarWidget::hideSideBar()'],['../classSideBarWidget.html#a8095035fb628e68ba40c6c66ee009594',1,'SideBarWidget::hideSideBar()']]],
+  ['hidesidebar_16',['hidesidebar',['../classSideBarWidget.html#a8095035fb628e68ba40c6c66ee009594',1,'SideBarWidget::hideSideBar()'],['../classSideBarWidget.html#a8095035fb628e68ba40c6c66ee009594',1,'SideBarWidget::hideSideBar()'],['../classSideBarWidget.html#a8095035fb628e68ba40c6c66ee009594',1,'SideBarWidget::hideSideBar()'],['../classSideBarWidget.html#a8095035fb628e68ba40c6c66ee009594',1,'SideBarWidget::hideSideBar()']]],
   ['hig_17',['HIG',['../classBirdObsticals.html#a38419a3f4f5ca46c7243184bca781576af02195bef3c137263c48d2b5246c2b12',1,'BirdObsticals']]],
   ['high_18',['high',['../structAppWeatherResult_1_1DailyWeather.html#a1abf94235e3a3de48cb52b2c6c477a6d',1,'AppWeatherResult::DailyWeather']]],
   ['high_5ftemp_19',['HIGH_TEMP',['../classWeatherChartWidget.html#ad917be16972dd0f90aa71df8d0e8e569a5e3ee21d5c0a12992178c1939c4d7987',1,'WeatherChartWidget']]],
@@ -30,5 +30,5 @@ var searchData=
   ['hooked_5fwindow_27',['hooked_window',['../classDesktopWidgetPluginServer.html#a5a70237d6d9ed8abfa3f3613a8daae19',1,'DesktopWidgetPluginServer']]],
   ['hot_5finstall_5fconsumer_28',['hot_install_consumer',['../structDesktopLoggerBackends.html#ad81ccded03ca804da08d1d29f7596e7e',1,'DesktopLoggerBackends']]],
   ['hot_5finstall_5ffactory_29',['hot_install_factory',['../structDesktopLoggerBackends.html#a361f4a98820b533dee4c8b2acded0cfc',1,'DesktopLoggerBackends']]],
-  ['humidity_30',['humidity',['../classWeatherChartWidget.html#ad917be16972dd0f90aa71df8d0e8e569ad95ec1b726d7df75e5cbe026d0c1b721',1,'WeatherChartWidget::HUMIDITY'],['../structAppWeatherResult_1_1DailyWeather.html#a2faa8ee092e1b9a6cd8ca85fc523196f',1,'AppWeatherResult::DailyWeather::humidity']]]
+  ['humidity_30',['humidity',['../structAppWeatherResult_1_1DailyWeather.html#a2faa8ee092e1b9a6cd8ca85fc523196f',1,'AppWeatherResult::DailyWeather::humidity'],['../classWeatherChartWidget.html#ad917be16972dd0f90aa71df8d0e8e569ad95ec1b726d7df75e5cbe026d0c1b721',1,'WeatherChartWidget::HUMIDITY']]]
 ];

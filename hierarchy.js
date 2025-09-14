@@ -6,6 +6,7 @@ var hierarchy =
       [ "MeanBlurPackage", "structMeanBlurPackage.html", null ],
       [ "MedianBlurPackage", "structMedianBlurPackage.html", null ]
     ] ],
+    [ "AlarmyNote", "classAlarmyNote.html", null ],
     [ "StackpageSwitcherAnimation::AnimationInfo", "structStackpageSwitcherAnimation_1_1AnimationInfo.html", null ],
     [ "WallPaperAnimationHandler::AnimationSettingsPackage", "structWallPaperAnimationHandler_1_1AnimationSettingsPackage.html", null ],
     [ "AP3216CData", "structAP3216CData.html", null ],
@@ -41,6 +42,10 @@ var hierarchy =
     [ "CCPdfImageRequest", "structCCPdfImageRequest.html", null ],
     [ "CCPdfMetaInfo", "structCCPdfMetaInfo.html", null ],
     [ "CCPdfNavigationPolicy", "classCCPdfNavigationPolicy.html", null ],
+    [ "ClockEventProcessor", "classClockEventProcessor.html", [
+      [ "ConsoleProcessor", "classConsoleProcessor.html", null ],
+      [ "DefaultProcessor", "classDefaultProcessor.html", null ]
+    ] ],
     [ "CPUStateFetcher::CPUState", "structCPUStateFetcher_1_1CPUState.html", null ],
     [ "DinasourGameMainWidget::CurrentInfoPack", "structDinasourGameMainWidget_1_1CurrentInfoPack.html", null ],
     [ "CVImage", "classCVImage.html", null ],
@@ -166,6 +171,7 @@ var hierarchy =
       [ "CaculatorMainWindow", "classCaculatorMainWindow.html", null ],
       [ "CalendarWindow", "classCalendarWindow.html", null ],
       [ "CameraWindow", "classCameraWindow.html", null ],
+      [ "ClockWindow", "classClockWindow.html", null ],
       [ "CommunicateMainWindow", "classCommunicateMainWindow.html", null ],
       [ "DesktopMainWindow", "classDesktopMainWindow.html", null ],
       [ "DinasourGameWindow", "classDinasourGameWindow.html", null ],
@@ -190,6 +196,7 @@ var hierarchy =
       [ "SettingsWindow", "classSettingsWindow.html", null ],
       [ "SportsHealthWindow", "classSportsHealthWindow.html", null ],
       [ "SystemStateWindow", "classSystemStateWindow.html", null ],
+      [ "TimerCreatorWindow", "classTimerCreatorWindow.html", null ],
       [ "WeatherAppMainWindow", "classWeatherAppMainWindow.html", null ]
     ] ],
     [ "QObject", null, [
@@ -197,6 +204,7 @@ var hierarchy =
         [ "PageSwitchingLimiter", "classPageSwitchingLimiter.html", null ]
       ] ],
       [ "AP3216CAdapterFactory", "classAP3216CAdapterFactory.html", null ],
+      [ "AlarmyNotifier", "classAlarmyNotifier.html", null ],
       [ "ApplicationWrapper", "classApplicationWrapper.html", [
         [ "AppLaunchLauncher", "classAppLaunchLauncher.html", null ],
         [ "SettingsLaunch", "classSettingsLaunch.html", null ]
@@ -208,6 +216,7 @@ var hierarchy =
       [ "CCPdfDocument", "classCCPdfDocument.html", null ],
       [ "CPUStateFetcher", "classCPUStateFetcher.html", null ],
       [ "CameraCapture", "classCameraCapture.html", null ],
+      [ "ClockEventBroadcaster", "classClockEventBroadcaster.html", null ],
       [ "ConfigureUiPairs", "structConfigureUiPairs.html", null ],
       [ "DataProtoTest", "classDataProtoTest.html", null ],
       [ "DataProtocolizedController", "classDataProtocolizedController.html", null ],
@@ -247,6 +256,7 @@ var hierarchy =
         ] ]
       ] ],
       [ "GlobalClockSources", "classGlobalClockSources.html", null ],
+      [ "GlobalTimerSrc", "classGlobalTimerSrc.html", null ],
       [ "HistoryManagerSchedular", "classHistoryManagerSchedular.html", null ],
       [ "IconEvent", "structIconEvent.html", [
         [ "NetStatusChangedEvent", "structNetStatusChangedEvent.html", null ]
@@ -285,6 +295,9 @@ var hierarchy =
         [ "AppWeatherResult", "classAppWeatherResult.html", null ]
       ] ]
     ] ],
+    [ "QProxyStyle", null, [
+      [ "CustomProxyStyle", "classCustomProxyStyle.html", null ]
+    ] ],
     [ "QScrollArea", null, [
       [ "CCPdfScrollArea", "classCCPdfScrollArea.html", null ]
     ] ],
@@ -322,6 +335,7 @@ var hierarchy =
       [ "ChatListPanel", "classChatListPanel.html", null ],
       [ "ChatMainPanel", "classChatMainPanel.html", null ],
       [ "ClockWidget", "classClockWidget.html", null ],
+      [ "ClockWidget", "classClockWidget.html", null ],
       [ "ColorPicker", "classColorPicker.html", null ],
       [ "ColorSelectWidget", "classColorSelectWidget.html", null ],
       [ "ConnectorsWidget", "classConnectorsWidget.html", null ],
@@ -337,6 +351,7 @@ var hierarchy =
       [ "DiskMusic", "classDiskMusic.html", null ],
       [ "DiskUsageCardWidget", "classDiskUsageCardWidget.html", null ],
       [ "DownDockWidget", "classDownDockWidget.html", null ],
+      [ "EditTimeWidget", "classEditTimeWidget.html", null ],
       [ "FaceDetectionExample", "classFaceDetectionExample.html", null ],
       [ "FastSettingsWidget", "classFastSettingsWidget.html", null ],
       [ "FileInfoDisplayWidget", "classFileInfoDisplayWidget.html", null ],
@@ -372,6 +387,7 @@ var hierarchy =
       [ "SideBarWidget", "classSideBarWidget.html", null ],
       [ "SideBarWidget", "classSideBarWidget.html", null ],
       [ "SideBarWidget", "classSideBarWidget.html", null ],
+      [ "SideBarWidget", "classSideBarWidget.html", null ],
       [ "SimpleDrawerWidget", "classSimpleDrawerWidget.html", null ],
       [ "SlideSettings", "classSlideSettings.html", null ],
       [ "SportsChart", "classSportsChart.html", null ],
@@ -388,6 +404,7 @@ var hierarchy =
       [ "ToolBoxs", "classToolBoxs.html", null ],
       [ "ToolLeftWidgets", "classToolLeftWidgets.html", null ],
       [ "ToolPanel", "classToolPanel.html", null ],
+      [ "ToolsBar", "classToolsBar.html", null ],
       [ "ToolsSideBar", "classToolsSideBar.html", null ],
       [ "ToolsStackedWidget", "classToolsStackedWidget.html", null ],
       [ "TopSideBarWidget", "classTopSideBarWidget.html", null ],
