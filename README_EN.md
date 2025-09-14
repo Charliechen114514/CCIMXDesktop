@@ -2,7 +2,7 @@
 
 ![CCIMXDesktopLogo](./CCIMXDesktopLogo.png)
 
-![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-17-green)![Version](https://img.shields.io/badge/Version-Released_2.3.0-red)
+![Qt](https://img.shields.io/badge/Qt-6.8.3-green)![OpenCV](https://img.shields.io/badge/OpenCV-4.12.0-blue)![MuPDF](https://img.shields.io/badge/MuPDF-supported-orange)![Qt](https://img.shields.io/badge/C++-17-green)![Version](https://img.shields.io/badge/Version-Released_2.4.0-red)
 
 🔌 Hello! This is a collection of simple desktops and utilities that can be used in embedded devices with IMX6ULL LCD screens! This project can now be compiled with full C++17!
 
@@ -135,6 +135,7 @@ Note that you can also register your inbuild card, Please refer to [How to build
 | 🤖 ImageProcessor (Image processing and reasoning) | OpenCV, reasoning library (if any) | Optional | OpenCV support and reasoning support are required | ![image-20250614232427874](./README/image-20250614232427874.png) |
 | ⚙ Settings (Settings interface) | Standard minimum dependencies | Yes | Desktop wallpaper, brightness and desktop application style settings | ![image-20250614232323164](./README/image-20250614232323164.png) |
 | 🚀 Dynamic Application Launcher | Standard minimum dependencies | Yes | Third-party application operation and management | ![image-20250614232401883](./README/image-20250614232401883.png) |
+| ⏰ Alarmy Clock | Standard minimum dependencies | Yes | Clock App | ![Clock App](./README/image-20250914181544169.png) |
 
 ------
 
@@ -168,7 +169,6 @@ The document has been automatically deployed via GitHub Actions, visit: [CCIMXDe
 
 ### 🚀 Plan to write and provide more external basic programs:
 
-- ⏰ Alarm clock APP
 - 🔌 Serial port assistant
 - ✅ Task list
 

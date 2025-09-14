@@ -24,6 +24,7 @@
         <file>sources/app_launcher.png</file>
         <file>sources/calendar.png</file>
         <file>sources/communicator.png</file>
+        <file>sources/alarmy_clock.png</file>
     </qresource>
     <qresource prefix="/toast">
         <file>sources/info.png</file>

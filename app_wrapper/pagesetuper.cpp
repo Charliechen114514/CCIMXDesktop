@@ -250,6 +250,10 @@ QList<AppWidget*> PageSetuper::create_builtin_apps(DesktopMainWindow* mainWindow
         "Calendar",
         mainWindow));
 
+    req.push_back(make_up_request(_EXTERNAPP_INSTALL_DIR"/AlarmyClock",
+                                  ":/icons/sources/alarmy_clock.png",
+                                  "Clock",mainWindow));
+
     return PageSetuper::create_one_app_only_page_append(
         mainWindow, req, "builtin_page");
 }

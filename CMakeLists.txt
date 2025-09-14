@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.19)
-project(CCIMX_Desktop LANGUAGES CXX VERSION 2.3.0)
+project(CCIMX_Desktop LANGUAGES CXX VERSION 2.4.0)
 
 message(STATUS "Importing cmake modules...")
 set(CCDESKTOPABOUT_CMAKE_DIR "${CMAKE_SOURCE_DIR}/cmake")
@@ -324,8 +324,6 @@ target_link_libraries(CCIMX_Desktop
         Qt6::Network
 )
 target_link_libraries(CCIMX_Desktop PRIVATE Qt6::Core)
-target_link_libraries(CCIMX_Desktop PRIVATE Qt6::Core)
-
 target_include_directories(CCIMX_Desktop
     PRIVATE
     .
